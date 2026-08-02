@@ -1,22 +1,31 @@
-import { useState } from 'react';
-import { MatchData } from '../types/match';
+import { useEffect, useMemo, useState } from 'react';
+import { MatchData, VideoClip, AnalysisVideo } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
+import { CLIP_LABELS, type ClipLabelId } from '../i18n/clipLabels';
 
 interface StatsDashboardProps {
   match: MatchData;
 }
 
-type TabId = 'dynamics' | 'teamstats' | 'gkanalysis' | 'video';
+type TabId =
+  | 'dynamics'
+  | 'teamstats'
+  | 'gkanalysis'
+  | 'fullmatch'
+  | 'clips'
+  | 'videoanalysis';
 
 export default function StatsDashboard({ match }: StatsDashboardProps) {
   const [activeTab, setActiveTab] = useState<TabId>('dynamics');
   const { t, L } = useLanguage();
 
-  const tabs: [TabId, 'tabDynamics' | 'tabTeamStats' | 'tabGk' | 'tabVideo'][] = [
+  const tabs: [TabId, 'tabDynamics' | 'tabTeamStats' | 'tabGk' | 'tabFullMatch' | 'tabClips' | 'tabVideoAnalysis'][] = [
     ['dynamics', 'tabDynamics'],
     ['teamstats', 'tabTeamStats'],
     ['gkanalysis', 'tabGk'],
-    ['video', 'tabVideo'],
+    ['fullmatch', 'tabFullMatch'],
+    ['clips', 'tabClips'],
+    ['videoanalysis', 'tabVideoAnalysis'],
   ];
 
   return (
@@ -124,27 +133,55 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
       </div>
 
       <div
-        className={`tab-content ${activeTab === 'video' ? 'active' : ''}`}
+        className={`tab-content ${activeTab === 'fullmatch' ? 'active' : ''}`}
         role="tabpanel"
       >
-        <VideoSection match={match} />
+        <FullMatchPanel match={match} />
+      </div>
+
+      <div
+        className={`tab-content ${activeTab === 'clips' ? 'active' : ''}`}
+        role="tabpanel"
+      >
+        <ClipsPanel match={match} />
+      </div>
+
+      <div
+        className={`tab-content ${activeTab === 'videoanalysis' ? 'active' : ''}`}
+        role="tabpanel"
+      >
+        <VideoAnalysisPanel match={match} />
       </div>
     </>
   );
 }
 
-function VideoSection({ match }: { match: MatchData }) {
+function formatClipTimestamp(clip: VideoClip): string {
+  const m = clip.minute;
+  const s = clip.second ?? 0;
+  if (s > 0) {
+    return `${m}'${String(s).padStart(2, '0')}"`;
+  }
+  return `${m}'`;
+}
+
+function clipSortKey(clip: VideoClip): number {
+  return clip.minute * 60 + (clip.second ?? 0);
+}
+
+function FullMatchPanel({ match }: { match: MatchData }) {
   const { t } = useLanguage();
-  const fullMatchSrc = match.video?.fullMatch
+  const src = match.video?.fullMatch
     ? `/matches/${match.slug}/${match.video.fullMatch}`
     : null;
 
   return (
     <div className="video-section">
       <div className="section-title">{t('fullMatchVideo')}</div>
-      {fullMatchSrc ? (
-        <div className="video-player-wrap">
-          <video controls playsInline preload="metadata" src={fullMatchSrc}>
+      <p className="video-hint">{t('fullMatchHint')}</p>
+      {src ? (
+        <div className="video-player-wrap video-player-wrap--full">
+          <video controls playsInline preload="metadata" src={src}>
             {t('videoUnsupported')}
           </video>
         </div>
@@ -153,34 +190,110 @@ function VideoSection({ match }: { match: MatchData }) {
           {t('noVideo').replace('{slug}', match.slug)}
         </div>
       )}
+    </div>
+  );
+}
 
-      <div className="section-title" style={{ marginTop: 24 }}>
-        {t('analysisClips')}
+function ClipsPanel({ match }: { match: MatchData }) {
+  const { t, L } = useLanguage();
+  const sorted = useMemo(
+    () => [...match.clips].sort((a, b) => clipSortKey(a) - clipSortKey(b)),
+    [match.clips]
+  );
+  const [selectedId, setSelectedId] = useState<string | null>(
+    sorted[0]?.id ?? null
+  );
+
+  useEffect(() => {
+    if (!sorted.some((c) => c.id === selectedId)) {
+      setSelectedId(sorted[0]?.id ?? null);
+    }
+  }, [sorted, selectedId]);
+
+  const selected = sorted.find((c) => c.id === selectedId) ?? null;
+
+  if (sorted.length === 0) {
+    return (
+      <div className="empty-clips">
+        {t('noClips').replace(/\{slug\}/g, match.slug)}
       </div>
-      {match.clips.length === 0 ? (
-        <div className="empty-clips">
-          {t('noClips').replace(/\{slug\}/g, match.slug)}
-        </div>
-      ) : (
-        <div className="clips-grid">
-          {match.clips.map((clip) => (
-            <div className="clip-card" key={clip.id}>
+    );
+  }
+
+  return (
+    <div className="clips-layout">
+      <aside className="clips-sidebar" aria-label={t('clipsSidebarTitle')}>
+        <div className="clips-sidebar-title">{t('clipsSidebarTitle')}</div>
+        <ul className="clips-list">
+          {sorted.map((clip) => {
+            const primaryLabel = clip.labels[0];
+            const labelText = primaryLabel
+              ? L(CLIP_LABELS[primaryLabel])
+              : L(clip.title);
+            return (
+              <li key={clip.id}>
+                <button
+                  type="button"
+                  className={`clips-list-item ${selectedId === clip.id ? 'active' : ''}`}
+                  onClick={() => setSelectedId(clip.id)}
+                >
+                  <span className="clips-list-time">{formatClipTimestamp(clip)}</span>
+                  <span className="clips-list-body">
+                    <span className="clips-list-label">{labelText}</span>
+                    <span className="clips-list-title">{L(clip.title)}</span>
+                  </span>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      </aside>
+
+      <div className="clips-detail">
+        {selected ? (
+          <>
+            <div className="video-player-wrap">
               <video
+                key={selected.id}
                 controls
                 playsInline
                 preload="metadata"
-                src={`/matches/${match.slug}/clips/${clip.videoFile}`}
-              />
-              <div className="clip-card-body">
-                <div className="clip-card-title">
-                  <ClipTitle clip={clip} />
-                </div>
-                <div className="clip-card-desc">
-                  <ClipDesc clip={clip} />
-                </div>
-                {clip.tags && clip.tags.length > 0 ? (
+                src={`/matches/${match.slug}/clips/${selected.videoFile}`}
+              >
+                {t('videoUnsupported')}
+              </video>
+            </div>
+            <div className="clip-detail-meta">
+              <div className="clip-detail-header">
+                <h3 className="clip-detail-title">
+                  {formatClipTimestamp(selected)} — {L(selected.title)}
+                </h3>
+              </div>
+
+              {selected.labels.length > 0 ? (
+                <div className="clip-meta-block">
+                  <div className="clip-meta-heading">{t('labels')}</div>
                   <div className="clip-tags">
-                    {clip.tags.map((tag) => (
+                    {selected.labels.map((labelId) => (
+                      <span className="clip-tag clip-tag--label" key={labelId}>
+                        {L(
+                          CLIP_LABELS[labelId as ClipLabelId] ?? {
+                            en: labelId,
+                            it: labelId,
+                          }
+                        )}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+
+              <div className="clip-meta-block">
+                <div className="clip-meta-heading">{t('analystComments')}</div>
+                <p className="clip-comments">{L(selected.comments)}</p>
+                {selected.tags && selected.tags.length > 0 ? (
+                  <div className="clip-tags" style={{ marginTop: 10 }}>
+                    {selected.tags.map((tag) => (
                       <span className="clip-tag" key={tag}>
                         {tag}
                       </span>
@@ -189,24 +302,57 @@ function VideoSection({ match }: { match: MatchData }) {
                 ) : null}
               </div>
             </div>
+          </>
+        ) : (
+          <div className="empty-clips">{t('selectClip')}</div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function VideoAnalysisPanel({ match }: { match: MatchData }) {
+  const { t, L } = useLanguage();
+  const videos = match.analysisVideos ?? [];
+
+  return (
+    <div className="video-section">
+      <p className="video-hint">{t('videoAnalysisHint')}</p>
+      {videos.length === 0 ? (
+        <div className="empty-clips">
+          {t('noAnalysis').replace(/\{slug\}/g, match.slug)}
+        </div>
+      ) : (
+        <div className="analysis-grid">
+          {videos.map((item: AnalysisVideo) => (
+            <article className="analysis-card" key={item.id}>
+              <div className="video-player-wrap">
+                <video
+                  controls
+                  playsInline
+                  preload="metadata"
+                  src={`/matches/${match.slug}/analysis/${item.videoFile}`}
+                >
+                  {t('videoUnsupported')}
+                </video>
+              </div>
+              <div className="clip-card-body">
+                <div className="clip-card-title">{L(item.title)}</div>
+                <div className="clip-card-desc">{L(item.description)}</div>
+                {item.tags && item.tags.length > 0 ? (
+                  <div className="clip-tags">
+                    {item.tags.map((tag) => (
+                      <span className="clip-tag" key={tag}>
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
+              </div>
+            </article>
           ))}
         </div>
       )}
     </div>
   );
-}
-
-function ClipTitle({ clip }: { clip: MatchData['clips'][number] }) {
-  const { L } = useLanguage();
-  return (
-    <>
-      {L(clip.title)}
-      {clip.minute != null ? ` (${clip.minute}')` : ''}
-    </>
-  );
-}
-
-function ClipDesc({ clip }: { clip: MatchData['clips'][number] }) {
-  const { L } = useLanguage();
-  return <>{L(clip.description)}</>;
 }

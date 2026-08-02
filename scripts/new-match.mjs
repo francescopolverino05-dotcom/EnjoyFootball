@@ -45,8 +45,9 @@ if (existsSync(matchDir)) {
   process.exit(1);
 }
 
-mkdirSync(join(matchDir, 'video'), { recursive: true });
+.mkdirSync(join(matchDir, 'video'), { recursive: true });
 mkdirSync(join(matchDir, 'clips'), { recursive: true });
+mkdirSync(join(matchDir, 'analysis'), { recursive: true });
 
 const title = args.title || slug.replace(/-/g, ' ');
 const typeLabel = type.charAt(0).toUpperCase() + type.slice(1);
@@ -92,11 +93,13 @@ const template = {
     },
   },
   clips: [],
+  analysisVideos: [],
 };
 
 writeFileSync(join(matchDir, 'match.json'), JSON.stringify(template, null, 2) + '\n');
 writeFileSync(join(matchDir, 'video', '.gitkeep'), '');
 writeFileSync(join(matchDir, 'clips', '.gitkeep'), '');
+writeFileSync(join(matchDir, 'analysis', '.gitkeep'), '');
 
 writeFileSync(
   join(matchDir, 'README.md'),
@@ -111,16 +114,36 @@ writeFileSync(
 3. Chiedi all'agente Cursor di analizzare il video e compilare le statistiche
 4. Quando pronto, imposta \`status\` su \`"published"\` in match.json
 
-### Clip metadata (esempio)
+### Clip metadata (example)
 
 \`\`\`json
 {
-  "id": "gol-32-esposito",
-  "title": "Gol Esposito",
-  "description": "Azione cornicione destro, cross e conclusione",
+  "id": "goal-esposito-32",
+  "title": { "en": "Esposito goal", "it": "Gol Esposito" },
+  "comments": {
+    "en": "Build-up through the right half-space, late run into the box.",
+    "it": "Costruzione dal half-space destro, inserimento in area."
+  },
   "minute": 32,
-  "videoFile": "gol-esposito-32.mp4",
-  "tags": ["gol", "attacco"]
+  "second": 14,
+  "videoFile": "goal-esposito-32.mp4",
+  "labels": ["goal", "build-up"],
+  "tags": ["right half-space", "late run"]
+}
+\`\`\`
+
+### Analysis video metadata (example)
+
+\`\`\`json
+{
+  "id": "pressing-review",
+  "title": { "en": "Pressing review", "it": "Review pressing" },
+  "description": {
+    "en": "Full pressing structure analysis from the first half.",
+    "it": "Analisi completa della struttura di pressing nel primo tempo."
+  },
+  "videoFile": "pressing-review.mp4",
+  "tags": ["pressing", "1H"]
 }
 \`\`\`
 `

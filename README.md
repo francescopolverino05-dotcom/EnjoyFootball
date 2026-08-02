@@ -19,7 +19,8 @@ SSCN-Primavera/
 │   └── YYYY-MM-DD_tipo-squadre/
 │       ├── match.json                ← dati e statistiche
 │       ├── video/match.mp4           ← video completo (locale, non in git)
-│       └── clips/                    ← clip di analisi
+│       ├── clips/                    ← clip di analisi
+│       └── analysis/                 ← video analisi dell'analista
 ├── src/                              ← app React
 ├── scripts/new-match.mjs             ← crea nuova cartella partita
 └── WORKFLOW.md                       ← processo settimanale

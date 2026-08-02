@@ -9,7 +9,10 @@ matches/**/video/*.mp4
 matches/**/video/*.mov
 matches/**/clips/*.mp4
 matches/**/clips/*.mov
+matches/**/analysis/*.mp4
+matches/**/analysis/*.mov
 
 # Keep placeholders
 !matches/**/video/.gitkeep
 !matches/**/clips/.gitkeep
+!matches/**/analysis/.gitkeep

@@ -27,13 +27,24 @@ const dictionaries = {
     tabDynamics: 'Match Dynamics',
     tabTeamStats: 'Team Statistics',
     tabGk: 'Goalkeeper Analysis',
-    tabVideo: 'Video & Clips',
+    tabFullMatch: 'Full Match',
+    tabClips: 'Clips',
+    tabVideoAnalysis: 'Video Analysis',
     fullMatchVideo: 'Full Match Video',
-    analysisClips: 'Analysis Clips',
+    fullMatchHint: 'Watch the complete match recording.',
+    clipsSidebarTitle: 'Clip list',
+    analystComments: 'Analyst comments',
+    labels: 'Labels',
+    tags: 'Tags',
+    selectClip: 'Select a clip from the list to play it.',
     noVideo:
       'No video uploaded yet. Add the MP4 file to matches/{slug}/video/match.mp4',
     noClips:
       'No clips yet. Add MP4 files to matches/{slug}/clips/ and register them in match.json.',
+    noAnalysis:
+      'No video analysis uploaded yet. Add MP4 files to matches/{slug}/analysis/ and register them in match.json → analysisVideos.',
+    videoAnalysisHint:
+      'Longer analysis videos prepared by the analyst for the coaching staff.',
     videoUnsupported: 'Your browser does not support video playback.',
     minutes: 'minutes',
     team: 'Team',
@@ -66,13 +77,24 @@ const dictionaries = {
     tabDynamics: 'Dinamiche di Gara',
     tabTeamStats: 'Statistiche Squadra',
     tabGk: 'Analisi Portieri',
-    tabVideo: 'Video & Clip',
+    tabFullMatch: 'Partita Intera',
+    tabClips: 'Clip',
+    tabVideoAnalysis: 'Analisi Video',
     fullMatchVideo: 'Video Partita Completa',
-    analysisClips: 'Clip di Analisi',
+    fullMatchHint: 'Guarda la registrazione completa della partita.',
+    clipsSidebarTitle: 'Elenco clip',
+    analystComments: 'Commenti analista',
+    labels: 'Etichette',
+    tags: 'Tag',
+    selectClip: 'Seleziona una clip dall’elenco per riprodurla.',
     noVideo:
       'Nessun video caricato. Aggiungi il file MP4 in matches/{slug}/video/match.mp4',
     noClips:
       'Nessuna clip ancora. Aggiungi file MP4 in matches/{slug}/clips/ e registra i metadata in match.json.',
+    noAnalysis:
+      'Nessuna analisi video ancora. Aggiungi file MP4 in matches/{slug}/analysis/ e registrali in match.json → analysisVideos.',
+    videoAnalysisHint:
+      'Video di analisi preparati dall’analista per lo staff tecnico.',
     videoUnsupported: 'Il browser non supporta la riproduzione video.',
     minutes: 'minuti',
     team: 'Squadra',

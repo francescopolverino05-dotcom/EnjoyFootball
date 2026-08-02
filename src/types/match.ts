@@ -1,6 +1,8 @@
 import type { Localized } from '../i18n/translations';
+import type { ClipLabelId } from '../i18n/clipLabels';
 
 export type { Localized };
+export type { ClipLabelId };
 
 export interface TeamInfo {
   id: string;
@@ -68,12 +70,33 @@ export interface GoalkeeperLog {
   colorClass: 'blue' | 'orange' | 'green';
 }
 
+/** Match clip with controlled labels + analyst comments (tags). */
 export interface VideoClip {
+  id: string;
+  /** Short title shown in the clip list */
+  title: Localized;
+  /** Analyst comments — free text from the analyst */
+  comments: Localized;
+  /** Match minute (and optional seconds) for chronological sorting */
+  minute: number;
+  second?: number;
+  videoFile: string;
+  /** Controlled labels from CLIP_LABEL_IDS */
+  labels: ClipLabelId[];
+  /**
+   * Analyst tags (shown as comment chips).
+   * Prefer `comments` for prose; use tags for short keywords.
+   */
+  tags?: string[];
+}
+
+/** Longer analyst video breakdowns (not raw match clips). */
+export interface AnalysisVideo {
   id: string;
   title: Localized;
   description: Localized;
-  minute?: number;
   videoFile: string;
+  createdAt?: string;
   tags?: string[];
 }
 
@@ -99,6 +122,7 @@ export interface MatchData {
     notes?: Localized;
   };
   clips: VideoClip[];
+  analysisVideos: AnalysisVideo[];
 }
 
 export interface MatchSummary {

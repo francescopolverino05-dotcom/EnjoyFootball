@@ -95,22 +95,47 @@ Chiedi correzioni finché i numeri non tornano.
 Per ogni clip:
 
 1. Esporta il MP4 in `matches/<slug>/clips/nome-clip.mp4`
-2. Aggiungi l'entry in `match.json` → array `clips`:
+2. Aggiungi l'entry in `match.json` → array `clips` (ordine cronologico automatico per `minute`/`second`):
 
 ```json
 {
-  "id": "gol-esposito-32",
-  "title": "Gol Esposito 32'",
-  "description": "Costruzione dal basso, triangolo centrale, cross e conclusione.",
+  "id": "goal-esposito-32",
+  "title": { "en": "Esposito goal", "it": "Gol Esposito" },
+  "comments": {
+    "en": "Build-up through the right half-space.",
+    "it": "Costruzione dal half-space destro."
+  },
   "minute": 32,
-  "videoFile": "gol-esposito-32.mp4",
-  "tags": ["gol", "attacco", "triangolo"]
+  "second": 14,
+  "videoFile": "goal-esposito-32.mp4",
+  "labels": ["goal", "build-up"],
+  "tags": ["right half-space", "late run"]
 }
 ```
 
-3. Chiedi all'agente: *"Aggiungi questa clip al match X con descrizione Y"*
+**Labels controllate** (usare sempre queste): `goal`, `chance`, `build-up`, `pressing`, `defensive-transition`, `offensive-transition`, `set-piece`, `individual`, `tactical-pattern`, `gk-action`, `other`
 
-Le clip compaiono nel tab **Video & Clip** della pagina partita.
+**Tags** = commenti/keywords dell'analista (liberi).
+
+### Video Analysis
+
+Metti i video di analisi in `matches/<slug>/analysis/` e registrali in `analysisVideos`:
+
+```json
+{
+  "id": "pressing-review",
+  "title": { "en": "Pressing review", "it": "Review pressing" },
+  "description": { "en": "First-half pressing structure.", "it": "Struttura pressing 1° tempo." },
+  "videoFile": "pressing-review.mp4",
+  "tags": ["pressing"]
+}
+```
+
+Nell'app:
+- **Full Match** — video completo
+- **Clips** — sidebar cronologica + player + commenti
+- **Video Analysis** — video lunghi dell'analista
+
 
 ---
 
