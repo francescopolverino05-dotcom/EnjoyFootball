@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "new-match": "node scripts/new-match.mjs",
     "setup-token": "node scripts/setup-token.mjs",
+    "setup-vimeo-token": "node scripts/setup-vimeo-token.mjs",
     "upload-clips": "node scripts/upload-clips-to-release.mjs",
     "sync-clips": "node scripts/sync-clips.mjs",
     "publish-clips": "node scripts/publish-clips.mjs"
