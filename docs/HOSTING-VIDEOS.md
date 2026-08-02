@@ -1,54 +1,57 @@
-# Hosting match videos on the website
+# Getting clips onto the website (simple weekly flow)
 
-GitHub **Pages cannot play large MP4s from the git repo**. Git LFS also does **not** work on Pages (visitors would get a tiny pointer file instead of video).
+GitHub Pages **cannot** host big MP4s from the git folder.  
+So we upload clips to a **GitHub Release** once per match, and the site plays those URLs.
 
-## Recommended: GitHub Releases
+## One-time setup (do this once on this Mac)
 
-1. Keep MP4s on your laptop under `matches/<slug>/clips/` (as you already do).
-2. Upload them once to a GitHub Release (public download URLs).
-3. Point `match.json` at those URLs — the website plays them.
+1. Create a classic token with **`repo`** scope:  
+   https://github.com/settings/tokens  
+   Tip: set expiration to **No expiration** (or 1 year). You will **not** make a new token every match.
 
-### One-time setup
-
-Create a GitHub classic token with **`repo`** scope:  
-https://github.com/settings/tokens
-
-### Upload clips for a match
+2. Save it locally:
 
 ```bash
 cd ~/SSCN-Primavera
-export GITHUB_TOKEN=ghp_your_token_here
-npm run upload-clips -- --slug 2026-08-01_amichevole-u19-vs-u18
+npm run setup-token -- ghp_PASTE_YOUR_TOKEN_HERE
 ```
 
-Dry run (no upload):
+That writes a private `.env` file (gitignored). Done forever (until the token expires).
+
+## Every match / every week
+
+1. Drop clip folders into:
+
+```text
+~/SSCN-Primavera/Amivhevole v U18_01.08.2026/
+# or directly:
+~/SSCN-Primavera/matches/<slug>/clips/
+```
+
+2. Publish:
 
 ```bash
-npm run upload-clips -- --slug 2026-08-01_amichevole-u19-vs-u18 --dry-run
+npm run publish-clips -- --slug 2026-08-01_amichevole-u19-vs-u18
 ```
 
-Then push the updated `match.json`:
+That command:
+- syncs the drop folder into `matches/<slug>/clips`
+- updates `match.json`
+- uploads **new** MP4s to a GitHub Release (skips ones already uploaded)
+- commits + pushes `match.json` so the website updates
+
+Dry run (no upload / no push):
 
 ```bash
-git add matches/<slug>/match.json
-git commit -m "Point clips to GitHub Release"
-git push
+npm run publish-clips -- --slug 2026-08-01_amichevole-u19-vs-u18 --dry-run
 ```
 
-### After that
+## What you do NOT need
 
-- **Local:** clips still play from disk (or from the release URLs).
-- **Website:** plays from  
-  `https://github.com/.../releases/download/clips-YYYY-MM-DD/<clip-id>.mp4`
+- A new token for every match  
+- Committing MP4s into git  
+- Manual GitHub Release clicking
 
-## Alternatives
+## If the token expires later
 
-| Option | When to use |
-|--------|-------------|
-| **Cloudflare R2 / S3** | Bigger libraries, private control, CDN |
-| **Vimeo / YouTube unlisted** | Easy sharing, less “in-app” control |
-| **Git LFS** | Backup in git only — **not** for GitHub Pages playback |
-
-## Optional: shrink files first
-
-If uploads are slow, re-encode with HandBrake or ffmpeg (e.g. 720p) before `upload-clips`. Smaller files = faster upload and cheaper bandwidth.
+Just run `npm run setup-token -- ghp_NEW_TOKEN` again once.

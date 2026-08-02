@@ -3,21 +3,18 @@
  * Upload match clip MP4s to a GitHub Release and write public download URLs
  * into match.json so the website can play them.
  *
- * Why: GitHub Pages cannot serve large MP4s from the git repo (or Git LFS).
- * Release assets are downloadable over HTTPS and work in <video> tags.
+ * Token is loaded ONCE from .env (run: npm run setup-token -- ghp_...)
+ * You do NOT need a new token for each match.
  *
  * Usage:
- *   export GITHUB_TOKEN=ghp_...   # classic token with `repo` scope
  *   npm run upload-clips -- --slug 2026-08-01_amichevole-u19-vs-u18
- *
- * Optional:
- *   --tag clips-2026-08-01        (default: clips-<match-date>)
- *   --dry-run
+ *   npm run upload-clips -- --slug ... --dry-run
  */
 
 import { existsSync, readdirSync, statSync, readFileSync, writeFileSync } from 'fs';
-import { basename, dirname, join, relative } from 'path';
+import { dirname, join, relative } from 'path';
 import { fileURLToPath } from 'url';
+import { resolveGitHubToken } from './load-env.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
@@ -53,11 +50,15 @@ function walkMp4s(dir) {
 }
 
 function safeAssetName(clipId, originalPath) {
-  const ext = originalPath.toLowerCase().endsWith('.mp4') ? '.mp4' : '';
+  const ext = originalPath.toLowerCase().endsWith('.mp4') ? '.mp4' : '.mp4';
   return `${clipId.replace(/[^a-zA-Z0-9._-]/g, '_')}${ext}`;
 }
 
-async function gh(token, method, urlPath, { body, raw, contentType } = {}) {
+function isHttp(value) {
+  return typeof value === 'string' && /^https?:\/\//i.test(value);
+}
+
+async function gh(token, method, urlPath, { body, contentType } = {}) {
   const res = await fetch(`https://api.github.com${urlPath}`, {
     method,
     headers: {
@@ -65,7 +66,6 @@ async function gh(token, method, urlPath, { body, raw, contentType } = {}) {
       Authorization: `Bearer ${token}`,
       'X-GitHub-Api-Version': '2022-11-28',
       ...(contentType ? { 'Content-Type': contentType } : {}),
-      ...(raw ? { 'Content-Type': 'application/octet-stream' } : {}),
     },
     body,
   });
@@ -105,6 +105,20 @@ async function uploadAsset(token, releaseId, filePath, assetName) {
   return json;
 }
 
+function resolveLocalPath(clip, byRel, files) {
+  const candidates = [clip.localFile, clip.videoFile].filter(
+    (p) => p && !isHttp(p)
+  );
+  for (const rel of candidates) {
+    if (byRel.has(rel)) return { abs: byRel.get(rel), rel };
+  }
+  // Fallback: match by clip id fragment in filename
+  const idPart = clip.id.replace(/[^a-zA-Z0-9]+/g, '_');
+  const hit = files.find((abs) => abs.includes(clip.id) || abs.includes(idPart));
+  if (hit) return { abs: hit, rel: relative(join(root, 'matches'), hit) };
+  return null;
+}
+
 const args = parseArgs(process.argv.slice(2));
 const slug = args.slug;
 if (!slug) {
@@ -112,15 +126,18 @@ if (!slug) {
   process.exit(1);
 }
 
-const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN;
+const token = resolveGitHubToken();
 if (!token && !args['dry-run']) {
   console.error(`
-Missing GITHUB_TOKEN.
+No GitHub token found on this Mac.
 
-1. Create a classic PAT with "repo" scope: https://github.com/settings/tokens
-2. Run:
-   export GITHUB_TOKEN=ghp_...
-   npm run upload-clips -- --slug ${slug}
+One-time setup (only once — not every match):
+  1. Create a classic token with "repo" scope: https://github.com/settings/tokens
+     Tip: set expiration to "No expiration" or 1 year
+  2. Save it:
+       npm run setup-token -- ghp_PASTE_TOKEN_HERE
+  3. Then publish clips anytime:
+       npm run publish-clips -- --slug ${slug}
 `);
   process.exit(1);
 }
@@ -147,24 +164,22 @@ console.log(`Clips on disk: ${files.length}`);
 console.log(`Release tag: ${tag}`);
 console.log(`Clips in match.json: ${match.clips?.length ?? 0}`);
 
-// Map relative local path → absolute path
 const byRel = new Map(
   files.map((abs) => [relative(clipsDir, abs).split('\\').join('/'), abs])
 );
 
 if (args['dry-run']) {
   for (const clip of match.clips || []) {
-    const local = byRel.get(clip.videoFile);
-    const asset = safeAssetName(clip.id, clip.videoFile);
+    const local = resolveLocalPath(clip, byRel, files);
+    const asset = safeAssetName(clip.id, local?.rel || clip.localFile || clip.videoFile || '.mp4');
     console.log(`- ${clip.id}`);
-    console.log(`  local: ${local ? 'OK' : 'MISSING'} ${clip.videoFile}`);
+    console.log(`  local: ${local ? 'OK ' + local.rel : 'MISSING'}`);
     console.log(`  asset: ${asset}`);
     console.log(`  url:   https://github.com/${OWNER}/${REPO}/releases/download/${tag}/${asset}`);
   }
   process.exit(0);
 }
 
-// Ensure release exists
 let release;
 try {
   release = await gh(token, 'GET', `/repos/${OWNER}/${REPO}/releases/tags/${tag}`);
@@ -187,19 +202,23 @@ try {
 const existingAssets = new Map((release.assets || []).map((a) => [a.name, a]));
 
 for (const clip of match.clips || []) {
-  const local = byRel.get(clip.videoFile);
+  const local = resolveLocalPath(clip, byRel, files);
   if (!local) {
-    console.warn(`Skip ${clip.id}: local file missing for ${clip.videoFile}`);
+    console.warn(`Skip ${clip.id}: local file missing`);
     continue;
   }
-  const assetName = safeAssetName(clip.id, clip.videoFile);
+
+  // Keep local path for future re-syncs / re-uploads
+  clip.localFile = local.rel;
+
+  const assetName = safeAssetName(clip.id, local.rel);
   let asset = existingAssets.get(assetName);
   if (asset) {
     console.log(`Exists: ${assetName}`);
   } else {
-    const mb = (statSync(local).size / (1024 * 1024)).toFixed(1);
+    const mb = (statSync(local.abs).size / (1024 * 1024)).toFixed(1);
     console.log(`Uploading ${assetName} (${mb} MB)…`);
-    asset = await uploadAsset(token, release.id, local, assetName);
+    asset = await uploadAsset(token, release.id, local.abs, assetName);
     existingAssets.set(assetName, asset);
     console.log(`  ✓ uploaded`);
   }
@@ -208,5 +227,3 @@ for (const clip of match.clips || []) {
 
 writeFileSync(matchPath, JSON.stringify(match, null, 2) + '\n');
 console.log(`\nUpdated ${matchPath}`);
-console.log('Next: commit + push match.json so the website uses the release URLs.');
-console.log(`  git add matches/${slug}/match.json && git commit -m "Point clips to GitHub Release ${tag}" && git push`);

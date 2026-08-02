@@ -61,17 +61,14 @@ git lfs track "matches/**/clips/*.mp4"
 git add .gitattributes
 ```
 
-## Deploy
+## Hosting videos on the website
+
+MP4s stay on your Mac. Publish them with one saved token (set up once):
 
 ```bash
-npm run build
-# dist/ contiene l'app statica + cartella matches
+npm run setup-token -- ghp_YOUR_TOKEN   # once only
+npm run publish-clips -- --slug <match-folder>   # every match
 ```
 
-Servi `dist/` con qualsiasi host statico (Netlify, Vercel, nginx interno).
+Details: [docs/HOSTING-VIDEOS.md](docs/HOSTING-VIDEOS.md)
 
-## Partite attuali
-
-| Data | Partita | Stato |
-|------|---------|-------|
-| 01/08/2026 | Napoli U19 vs Napoli U18 (Amichevole) | Pubblicato |

@@ -80,8 +80,10 @@ export interface VideoClip {
   /** Match minute (and optional seconds) for chronological sorting */
   minute: number;
   second?: number;
-  /** Path relative to matches/<slug>/clips/ */
+  /** Path relative to matches/<slug>/clips/ (or absolute https URL after publish) */
   videoFile: string;
+  /** Original relative path on disk — kept so re-publish can find the file after videoFile becomes a URL */
+  localFile?: string;
   /** Section id used to group on Video Analysis (usually same as primary label) */
   section?: ClipLabelId;
   /** Controlled labels from CLIP_LABEL_IDS */

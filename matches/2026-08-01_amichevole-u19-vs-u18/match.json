@@ -754,6 +754,27 @@
   },
   "clips": [
     {
+      "id": "build-up-1132-1",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 11,
+      "second": 32,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/11_32_nd_Build_up__11_51_Attacking_1.mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
       "id": "progress-1334-4",
       "title": {
         "en": "Little mobility from the attackers",
@@ -782,7 +803,7 @@
         "it": "Transizione difensiva"
       },
       "comments": {
-        "en": "Transizione difensiva",
+        "en": "Transition to defence",
         "it": "Transizione difensiva"
       },
       "minute": 17,
@@ -798,14 +819,35 @@
       ]
     },
     {
-      "id": "offensive-transition-3125-5",
+      "id": "other-2010-17",
       "title": {
-        "en": "Trasizione offensiva buona",
-        "it": "Trasizione offensiva buona"
+        "en": "Final_third",
+        "it": "Final_third"
       },
       "comments": {
-        "en": "Trasizione offensiva buona",
-        "it": "Trasizione offensiva buona"
+        "en": "Final_third",
+        "it": "Final_third"
+      },
+      "minute": 20,
+      "second": 10,
+      "videoFile": "Amivhevole v U18_01.08.2026/Final_third/20_10_nd_Final_third__20_28_Attacking_17.mp4",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
+      "id": "offensive-transition-3125-5",
+      "title": {
+        "en": "Good offensive transition",
+        "it": "Transizione offensiva buona"
+      },
+      "comments": {
+        "en": "Good offensive transition",
+        "it": "Transizione offensiva buona"
       },
       "minute": 31,
       "second": 25,
@@ -842,7 +884,49 @@
       ]
     },
     {
-      "id": "build-up-4041-1",
+      "id": "build-up-3754-2",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 37,
+      "second": 54,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/37_54_nd_Build_up__38_09_Attacking_2.mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
+      "id": "build-up-3917-3",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 39,
+      "second": 17,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/39_17_nd_Build_up__39_47_Attacking_3.mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
+      "id": "build-up-4041-4",
       "title": {
         "en": "GK distribution and decision",
         "it": "Distribuzione e decisione portiere"
@@ -853,7 +937,7 @@
       },
       "minute": 40,
       "second": 41,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/40_41_wd_Build_up__bad_favorite_40_54_Attacking_1_Distribuzione e decisione port.mp4",
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/40_41_nd_Build_up__bad_favorite_40_54_Attacking_4_Distribuzione e decisione port.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -864,14 +948,35 @@
       ]
     },
     {
-      "id": "mid-block-5701-9",
+      "id": "build-up-4132-5",
       "title": {
-        "en": "Molto buona la marcatura uomo",
-        "it": "Molto buona la marcatura uomo"
+        "en": "Build-up",
+        "it": "Costruzione"
       },
       "comments": {
-        "en": "Molto buona la marcatura uomo",
-        "it": "Molto buona la marcatura uomo"
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 41,
+      "second": 32,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/41_32_nd_Build_up__41_53_Attacking_5.mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
+      "id": "mid-block-5701-9",
+      "title": {
+        "en": "Very good man-marking",
+        "it": "Molto buona la marcatura a uomo"
+      },
+      "comments": {
+        "en": "Very good man-marking",
+        "it": "Molto buona la marcatura a uomo"
       },
       "minute": 57,
       "second": 1,
@@ -883,6 +988,27 @@
       "tags": [
         "good",
         "defending"
+      ]
+    },
+    {
+      "id": "build-up-5726-6",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 57,
+      "second": 26,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/57_26_nd_Build_up__57_43_Attacking_6.mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "attacking"
       ]
     },
     {
@@ -914,7 +1040,7 @@
         "it": "Transizione difensiva"
       },
       "comments": {
-        "en": "Transizione difensiva",
+        "en": "Transition to defence",
         "it": "Transizione difensiva"
       },
       "minute": 64,
@@ -930,18 +1056,18 @@
       ]
     },
     {
-      "id": "build-up-6853-2",
+      "id": "build-up-6853-7",
       "title": {
-        "en": "rotazione centrocampo naturale",
-        "it": "rotazione centrocampo naturale"
+        "en": "Natural midfield rotation",
+        "it": "Rotazione centrocampo naturale"
       },
       "comments": {
-        "en": "rotazione centrocampo naturale",
-        "it": "rotazione centrocampo naturale"
+        "en": "Natural midfield rotation",
+        "it": "Rotazione centrocampo naturale"
       },
       "minute": 68,
       "second": 53,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/68_53_wd_Build_up__good_favorite_69_14_Attacking_2_rotazione centrocampo naturale.mp4",
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/68_53_nd_Build_up__good_favorite_69_14_Attacking_7_rotazione centrocampo naturale.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -952,13 +1078,119 @@
       ]
     },
     {
+      "id": "build-up-7209-8",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 72,
+      "second": 9,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/72_09_nd_Build_up__72_39_Attacking_8.mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
+      "id": "build-up-7314-9",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 73,
+      "second": 14,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/73_14_nd_Build_up__73_53_Attacking_9.mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
+      "id": "build-up-7603-10",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 76,
+      "second": 3,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/76_03_nd_Build_up__good_76_31_Attacking_10.mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "build-up-7845-11",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 78,
+      "second": 45,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/78_45_nd_Build_up__79_33_Attacking_11.mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
+      "id": "build-up-7949-12",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 79,
+      "second": 49,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/79_49_nd_Build_up__80_06_Attacking_12.mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
       "id": "offensive-transition-8104-6",
       "title": {
         "en": "Transition to attack",
         "it": "Transizione offensiva"
       },
       "comments": {
-        "en": "Transizione offensiva",
+        "en": "Transition to attack",
         "it": "Transizione offensiva"
       },
       "minute": 81,
@@ -967,6 +1199,70 @@
       "section": "offensive-transition",
       "labels": [
         "offensive-transition"
+      ],
+      "tags": [
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "build-up-8218-13",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 82,
+      "second": 18,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/82_18_nd_Build_up__83_00_Attacking_13.mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
+      "id": "build-up-8413-14",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 84,
+      "second": 13,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/84_13_nd_Build_up__84_51_Attacking_14.mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
+      "id": "build-up-8542-15",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 85,
+      "second": 42,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/85_42_nd_Build_up__good_86_21_Attacking_15.mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
       ],
       "tags": [
         "good",
@@ -996,18 +1292,18 @@
       ]
     },
     {
-      "id": "build-up-8845-3",
+      "id": "build-up-8845-16",
       "title": {
-        "en": "Esempio Ideale Di costruzione",
-        "it": "Esempio Ideale Di costruzione"
+        "en": "Ideal build-up example",
+        "it": "Esempio ideale di costruzione"
       },
       "comments": {
-        "en": "Esempio Ideale Di costruzione",
-        "it": "Esempio Ideale Di costruzione"
+        "en": "Ideal build-up example",
+        "it": "Esempio ideale di costruzione"
       },
       "minute": 88,
       "second": 45,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/88_45_wd_Build_up__good_favorite_89_14_Attacking_3_Esempio Ideale Di costruzione .mp4",
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/88_45_nd_Build_up__good_favorite_89_14_Attacking_16_Esempio Ideale Di costruzione .mp4",
       "section": "build-up",
       "labels": [
         "build-up"

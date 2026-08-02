@@ -3,6 +3,13 @@ dist/
 .DS_Store
 *.local
 tsconfig.tsbuildinfo
+.env
+.env.*
+!.env.example
+
+# Drop folders at repo root (sync into matches/<slug>/clips/)
+/Amivhevole*/
+/Amichevole*/
 
 # Large video files — keep folder structure, ignore binaries
 matches/**/video/**/*.mp4

@@ -8,7 +8,10 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "new-match": "node scripts/new-match.mjs",
-    "upload-clips": "node scripts/upload-clips-to-release.mjs"
+    "setup-token": "node scripts/setup-token.mjs",
+    "upload-clips": "node scripts/upload-clips-to-release.mjs",
+    "sync-clips": "node scripts/sync-clips.mjs",
+    "publish-clips": "node scripts/publish-clips.mjs"
   },
   "dependencies": {
     "react": "^19.1.0",
