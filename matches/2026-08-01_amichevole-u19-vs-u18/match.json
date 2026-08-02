@@ -754,7 +754,8 @@
   },
   "vimeo": {
     "folderId": "30093272",
-    "folderUrl": "https://vimeo.com/user/170593333/folder/30093272"
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30093272",
+    "lastSyncedAt": "2026-08-02T15:15:05.219Z"
   },
   "clips": [
     {
@@ -882,7 +883,7 @@
       },
       "minute": 16,
       "second": 59,
-      "videoFile": "Transition_to_attack/16_59_nd_Transition_to_attack__good_17_18_Attacking_34.mp4",
+      "videoFile": "https://vimeo.com/1214967818/66528e5705",
       "localFile": "Transition_to_attack/16_59_nd_Transition_to_attack__good_17_18_Attacking_34.mp4",
       "section": "offensive-transition",
       "labels": [
@@ -890,7 +891,8 @@
       ],
       "tags": [
         "good",
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -929,14 +931,15 @@
       },
       "minute": 19,
       "second": 0,
-      "videoFile": "Mid_Block/19_00_nd_Mid_Block__19_19_Defending_50.mp4",
+      "videoFile": "https://vimeo.com/1214967832/b0fa94cbf1",
       "localFile": "Mid_Block/19_00_nd_Mid_Block__19_19_Defending_50.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -975,14 +978,15 @@
       },
       "minute": 20,
       "second": 10,
-      "videoFile": "Final_third/20_10_nd_Final_third__20_28_Attacking_17.mp4",
+      "videoFile": "https://vimeo.com/1214967973/a4391a9e68",
       "localFile": "Final_third/20_10_nd_Final_third__20_28_Attacking_17.mp4",
       "section": "final-third",
       "labels": [
         "final-third"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -997,14 +1001,15 @@
       },
       "minute": 21,
       "second": 35,
-      "videoFile": "Own_Third/21_35_nd_Own_Third__21_53_Defending_61.mp4",
+      "videoFile": "https://vimeo.com/1214967978/3016435289",
       "localFile": "Own_Third/21_35_nd_Own_Third__21_53_Defending_61.mp4",
       "section": "own-third",
       "labels": [
         "own-third"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1019,14 +1024,15 @@
       },
       "minute": 27,
       "second": 41,
-      "videoFile": "Mid_Block/27_41_nd_Mid_Block__28_13_Defending_51.mp4",
+      "videoFile": "https://vimeo.com/1214967987/c30422357e",
       "localFile": "Mid_Block/27_41_nd_Mid_Block__28_13_Defending_51.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1041,14 +1047,15 @@
       },
       "minute": 28,
       "second": 19,
-      "videoFile": "Transition_to_attack/28_19_nd_Transition_to_attack__28_51_Attacking_35.mp4",
+      "videoFile": "https://vimeo.com/1214968024/9e92c560ad",
       "localFile": "Transition_to_attack/28_19_nd_Transition_to_attack__28_51_Attacking_35.mp4",
       "section": "offensive-transition",
       "labels": [
         "offensive-transition"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1063,14 +1070,15 @@
       },
       "minute": 29,
       "second": 43,
-      "videoFile": "High_Defence/29_43_nd_High_Defence__30_12_Defending_41.mp4",
+      "videoFile": "https://vimeo.com/1214968170/50590768fc",
       "localFile": "High_Defence/29_43_nd_High_Defence__30_12_Defending_41.mp4",
       "section": "high-defence",
       "labels": [
         "high-defence"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1109,7 +1117,7 @@
       },
       "minute": 31,
       "second": 25,
-      "videoFile": "Transition_to_attack/31_25_nd_Transition_to_attack__good_favorite_32_00_Attacking_36_Trasizione offensiva buona -_ .mp4",
+      "videoFile": "https://vimeo.com/1214968169/89ab6930ed",
       "localFile": "Transition_to_attack/31_25_nd_Transition_to_attack__good_favorite_32_00_Attacking_36_Trasizione offensiva buona -_ .mp4",
       "section": "offensive-transition",
       "labels": [
@@ -1117,7 +1125,8 @@
       ],
       "tags": [
         "good",
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1154,14 +1163,15 @@
       },
       "minute": 33,
       "second": 36,
-      "videoFile": "Progress/33_36_nd_Progress__33_55_Attacking_24.mp4",
+      "videoFile": "https://vimeo.com/1214968282/0822815b1e",
       "localFile": "Progress/33_36_nd_Progress__33_55_Attacking_24.mp4",
       "section": "progress",
       "labels": [
         "progress"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1200,14 +1210,15 @@
       },
       "minute": 34,
       "second": 27,
-      "videoFile": "Progress/34_27_nd_Progress__35_19_Attacking_25.mp4",
+      "videoFile": "https://vimeo.com/1214968455/e2a10f622a",
       "localFile": "Progress/34_27_nd_Progress__35_19_Attacking_25.mp4",
       "section": "progress",
       "labels": [
         "progress"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1222,14 +1233,15 @@
       },
       "minute": 35,
       "second": 13,
-      "videoFile": "Final_third/35_13_nd_Final_third__35_39_Attacking_18.mp4",
+      "videoFile": "https://vimeo.com/1214968503/6fe8f17221",
       "localFile": "Final_third/35_13_nd_Final_third__35_39_Attacking_18.mp4",
       "section": "final-third",
       "labels": [
         "final-third"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1244,7 +1256,7 @@
       },
       "minute": 35,
       "second": 48,
-      "videoFile": "Mid_Block/35_48_nd_Mid_Block__good_favorite_36_30_Defending_52_Posizionaento generalmente buo.mp4",
+      "videoFile": "https://vimeo.com/1214968536/a0c2d71500",
       "localFile": "Mid_Block/35_48_nd_Mid_Block__good_favorite_36_30_Defending_52_Posizionaento generalmente buo.mp4",
       "section": "mid-block",
       "labels": [
@@ -1252,7 +1264,8 @@
       ],
       "tags": [
         "good",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1290,7 +1303,7 @@
       },
       "minute": 37,
       "second": 7,
-      "videoFile": "Progress/37_07_nd_Progress__bad_37_35_Attacking_26.mp4",
+      "videoFile": "https://vimeo.com/1214968851/4b11baef63",
       "localFile": "Progress/37_07_nd_Progress__bad_37_35_Attacking_26.mp4",
       "section": "progress",
       "labels": [
@@ -1298,7 +1311,8 @@
       ],
       "tags": [
         "bad",
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1313,14 +1327,15 @@
       },
       "minute": 37,
       "second": 54,
-      "videoFile": "Build_up/37_54_nd_Build_up__38_09_Attacking_2.mp4",
+      "videoFile": "https://vimeo.com/1214969020/c903e7ca78",
       "localFile": "Build_up/37_54_nd_Build_up__38_09_Attacking_2.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1335,7 +1350,7 @@
       },
       "minute": 38,
       "second": 22,
-      "videoFile": "Mid_Block/38_22_nd_Mid_Block__bad_38_40_Defending_53.mp4",
+      "videoFile": "https://vimeo.com/1214969040/ff3f148527",
       "localFile": "Mid_Block/38_22_nd_Mid_Block__bad_38_40_Defending_53.mp4",
       "section": "mid-block",
       "labels": [
@@ -1343,7 +1358,8 @@
       ],
       "tags": [
         "bad",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1358,14 +1374,15 @@
       },
       "minute": 39,
       "second": 17,
-      "videoFile": "Build_up/39_17_nd_Build_up__39_47_Attacking_3.mp4",
+      "videoFile": "https://vimeo.com/1214969133/3ee798a682",
       "localFile": "Build_up/39_17_nd_Build_up__39_47_Attacking_3.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1380,7 +1397,7 @@
       },
       "minute": 40,
       "second": 41,
-      "videoFile": "Build_up/40_41_nd_Build_up__bad_favorite_40_54_Attacking_4_Distribuzione e decisione port.mp4",
+      "videoFile": "https://vimeo.com/1214969195/fded496991",
       "localFile": "Build_up/40_41_nd_Build_up__bad_favorite_40_54_Attacking_4_Distribuzione e decisione port.mp4",
       "section": "build-up",
       "labels": [
@@ -1388,7 +1405,8 @@
       ],
       "tags": [
         "bad",
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1403,14 +1421,15 @@
       },
       "minute": 41,
       "second": 12,
-      "videoFile": "Mid_Block/41_12_nd_Mid_Block__41_33_Defending_54.mp4",
+      "videoFile": "https://vimeo.com/1214969258/c0dcc2464c",
       "localFile": "Mid_Block/41_12_nd_Mid_Block__41_33_Defending_54.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1425,14 +1444,15 @@
       },
       "minute": 41,
       "second": 32,
-      "videoFile": "Build_up/41_32_nd_Build_up__41_53_Attacking_5.mp4",
+      "videoFile": "https://vimeo.com/1214969328/43407aa5bc",
       "localFile": "Build_up/41_32_nd_Build_up__41_53_Attacking_5.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1447,14 +1467,15 @@
       },
       "minute": 42,
       "second": 0,
-      "videoFile": "Transition_to_attack/42_00_nd_Transition_to_attack__42_33_Attacking_37.mp4",
+      "videoFile": "https://vimeo.com/1214969423/038b23b650",
       "localFile": "Transition_to_attack/42_00_nd_Transition_to_attack__42_33_Attacking_37.mp4",
       "section": "offensive-transition",
       "labels": [
         "offensive-transition"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1469,7 +1490,7 @@
       },
       "minute": 42,
       "second": 48,
-      "videoFile": "High_Defence/42_48_nd_High_Defence__good_43_06_Defending_42.mp4",
+      "videoFile": "https://vimeo.com/1214969496/15c6dcd92a",
       "localFile": "High_Defence/42_48_nd_High_Defence__good_43_06_Defending_42.mp4",
       "section": "high-defence",
       "labels": [
@@ -1477,7 +1498,8 @@
       ],
       "tags": [
         "good",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1578,7 +1600,7 @@
       },
       "minute": 57,
       "second": 1,
-      "videoFile": "Mid_Block/57_01_nd_Mid_Block__good_favorite_57_22_Defending_55_Molto buona la marcatura uomo .mp4",
+      "videoFile": "https://vimeo.com/1214969528/421b67ad84",
       "localFile": "Mid_Block/57_01_nd_Mid_Block__good_favorite_57_22_Defending_55_Molto buona la marcatura uomo .mp4",
       "section": "mid-block",
       "labels": [
@@ -1586,7 +1608,8 @@
       ],
       "tags": [
         "good",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1601,14 +1624,15 @@
       },
       "minute": 57,
       "second": 26,
-      "videoFile": "Build_up/57_26_nd_Build_up__57_43_Attacking_6.mp4",
+      "videoFile": "https://vimeo.com/1214969726",
       "localFile": "Build_up/57_26_nd_Build_up__57_43_Attacking_6.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1623,14 +1647,15 @@
       },
       "minute": 59,
       "second": 0,
-      "videoFile": "Transition_to_attack/59_00_nd_Transition_to_attack__59_28_Attacking_38.mp4",
+      "videoFile": "https://vimeo.com/1214969811",
       "localFile": "Transition_to_attack/59_00_nd_Transition_to_attack__59_28_Attacking_38.mp4",
       "section": "offensive-transition",
       "labels": [
         "offensive-transition"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1645,7 +1670,7 @@
       },
       "minute": 59,
       "second": 37,
-      "videoFile": "High_Defence/59_37_nd_High_Defence__bad_60_06_Defending_43.mp4",
+      "videoFile": "https://vimeo.com/1214969853",
       "localFile": "High_Defence/59_37_nd_High_Defence__bad_60_06_Defending_43.mp4",
       "section": "high-defence",
       "labels": [
@@ -1653,7 +1678,8 @@
       ],
       "tags": [
         "bad",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1668,7 +1694,7 @@
       },
       "minute": 60,
       "second": 6,
-      "videoFile": "Progress/60_06_nd_Progress__bad_60_53_Attacking_27.mp4",
+      "videoFile": "https://vimeo.com/1214969934",
       "localFile": "Progress/60_06_nd_Progress__bad_60_53_Attacking_27.mp4",
       "section": "progress",
       "labels": [
@@ -1676,7 +1702,8 @@
       ],
       "tags": [
         "bad",
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1691,14 +1718,15 @@
       },
       "minute": 63,
       "second": 34,
-      "videoFile": "High_Defence/63_34_nd_High_Defence__63_50_Defending_44.mp4",
+      "videoFile": "https://vimeo.com/1214970025",
       "localFile": "High_Defence/63_34_nd_High_Defence__63_50_Defending_44.mp4",
       "section": "high-defence",
       "labels": [
         "high-defence"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1713,7 +1741,7 @@
       },
       "minute": 63,
       "second": 50,
-      "videoFile": "Mid_Block/63_50_nd_Mid_Block__bad_favorite_64_14_Defending_56_Prossimo step (piü verso la li.mp4",
+      "videoFile": "https://vimeo.com/1214970078",
       "localFile": "Mid_Block/63_50_nd_Mid_Block__bad_favorite_64_14_Defending_56_Prossimo step (piü verso la li.mp4",
       "section": "mid-block",
       "labels": [
@@ -1721,7 +1749,8 @@
       ],
       "tags": [
         "bad",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1760,14 +1789,15 @@
       },
       "minute": 65,
       "second": 0,
-      "videoFile": "Progress/65_00_nd_Progress__65_29_Attacking_28.mp4",
+      "videoFile": "https://vimeo.com/1214970179",
       "localFile": "Progress/65_00_nd_Progress__65_29_Attacking_28.mp4",
       "section": "progress",
       "labels": [
         "progress"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1782,14 +1812,15 @@
       },
       "minute": 65,
       "second": 49,
-      "videoFile": "Progress/65_49_nd_Progress__66_07_Attacking_29.mp4",
+      "videoFile": "https://vimeo.com/1214970340",
       "localFile": "Progress/65_49_nd_Progress__66_07_Attacking_29.mp4",
       "section": "progress",
       "labels": [
         "progress"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1827,7 +1858,7 @@
       },
       "minute": 66,
       "second": 31,
-      "videoFile": "Progress/66_31_nd_Progress__good_67_00_Attacking_30.mp4",
+      "videoFile": "https://vimeo.com/1214970409",
       "localFile": "Progress/66_31_nd_Progress__good_67_00_Attacking_30.mp4",
       "section": "progress",
       "labels": [
@@ -1835,7 +1866,8 @@
       ],
       "tags": [
         "good",
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1850,14 +1882,15 @@
       },
       "minute": 67,
       "second": 3,
-      "videoFile": "Progress/67_03_nd_Progress__67_31_Attacking_31.mp4",
+      "videoFile": "https://vimeo.com/1214970481",
       "localFile": "Progress/67_03_nd_Progress__67_31_Attacking_31.mp4",
       "section": "progress",
       "labels": [
         "progress"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1872,7 +1905,7 @@
       },
       "minute": 68,
       "second": 53,
-      "videoFile": "Build_up/68_53_nd_Build_up__good_favorite_69_14_Attacking_7_rotazione centrocampo naturale.mp4",
+      "videoFile": "https://vimeo.com/1214970523",
       "localFile": "Build_up/68_53_nd_Build_up__good_favorite_69_14_Attacking_7_rotazione centrocampo naturale.mp4",
       "section": "build-up",
       "labels": [
@@ -1880,7 +1913,8 @@
       ],
       "tags": [
         "good",
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1919,14 +1953,15 @@
       },
       "minute": 72,
       "second": 9,
-      "videoFile": "Build_up/72_09_nd_Build_up__72_39_Attacking_8.mp4",
+      "videoFile": "https://vimeo.com/1214970700",
       "localFile": "Build_up/72_09_nd_Build_up__72_39_Attacking_8.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1941,14 +1976,15 @@
       },
       "minute": 73,
       "second": 14,
-      "videoFile": "Build_up/73_14_nd_Build_up__73_53_Attacking_9.mp4",
+      "videoFile": "https://vimeo.com/1214970714",
       "localFile": "Build_up/73_14_nd_Build_up__73_53_Attacking_9.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -1963,14 +1999,15 @@
       },
       "minute": 74,
       "second": 8,
-      "videoFile": "High_Defence/74_08_nd_High_Defence__74_34_Defending_45.mp4",
+      "videoFile": "https://vimeo.com/1214970735",
       "localFile": "High_Defence/74_08_nd_High_Defence__74_34_Defending_45.mp4",
       "section": "high-defence",
       "labels": [
         "high-defence"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1985,7 +2022,7 @@
       },
       "minute": 75,
       "second": 12,
-      "videoFile": "Progress/75_12_nd_Progress__bad_75_42_Attacking_32.mp4",
+      "videoFile": "https://vimeo.com/1214970795",
       "localFile": "Progress/75_12_nd_Progress__bad_75_42_Attacking_32.mp4",
       "section": "progress",
       "labels": [
@@ -1993,7 +2030,8 @@
       ],
       "tags": [
         "bad",
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -2008,7 +2046,7 @@
       },
       "minute": 76,
       "second": 3,
-      "videoFile": "Build_up/76_03_nd_Build_up__good_76_31_Attacking_10.mp4",
+      "videoFile": "https://vimeo.com/1214971007",
       "localFile": "Build_up/76_03_nd_Build_up__good_76_31_Attacking_10.mp4",
       "section": "build-up",
       "labels": [
@@ -2016,7 +2054,8 @@
       ],
       "tags": [
         "good",
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -2031,7 +2070,7 @@
       },
       "minute": 76,
       "second": 43,
-      "videoFile": "High_Defence/76_43_nd_High_Defence__bad_77_10_Defending_46.mp4",
+      "videoFile": "https://vimeo.com/1214971021",
       "localFile": "High_Defence/76_43_nd_High_Defence__bad_77_10_Defending_46.mp4",
       "section": "high-defence",
       "labels": [
@@ -2039,7 +2078,8 @@
       ],
       "tags": [
         "bad",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -2054,14 +2094,15 @@
       },
       "minute": 77,
       "second": 51,
-      "videoFile": "Mid_Block/77_51_nd_Mid_Block__78_05_Defending_57.mp4",
+      "videoFile": "https://vimeo.com/1214971207",
       "localFile": "Mid_Block/77_51_nd_Mid_Block__78_05_Defending_57.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -2076,14 +2117,15 @@
       },
       "minute": 78,
       "second": 45,
-      "videoFile": "Build_up/78_45_nd_Build_up__79_33_Attacking_11.mp4",
+      "videoFile": "https://vimeo.com/1214971275",
       "localFile": "Build_up/78_45_nd_Build_up__79_33_Attacking_11.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -2098,14 +2140,15 @@
       },
       "minute": 79,
       "second": 49,
-      "videoFile": "Build_up/79_49_nd_Build_up__80_06_Attacking_12.mp4",
+      "videoFile": "https://vimeo.com/1214971415",
       "localFile": "Build_up/79_49_nd_Build_up__80_06_Attacking_12.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -2120,7 +2163,7 @@
       },
       "minute": 80,
       "second": 7,
-      "videoFile": "High_Defence/80_07_nd_High_Defence__bad_80_29_Defending_47.mp4",
+      "videoFile": "https://vimeo.com/1214971473",
       "localFile": "High_Defence/80_07_nd_High_Defence__bad_80_29_Defending_47.mp4",
       "section": "high-defence",
       "labels": [
@@ -2128,7 +2171,8 @@
       ],
       "tags": [
         "bad",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -2143,14 +2187,15 @@
       },
       "minute": 80,
       "second": 23,
-      "videoFile": "Progress/80_23_nd_Progress__80_41_Attacking_33.mp4",
+      "videoFile": "https://vimeo.com/1214971481",
       "localFile": "Progress/80_23_nd_Progress__80_41_Attacking_33.mp4",
       "section": "progress",
       "labels": [
         "progress"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -2188,7 +2233,7 @@
       },
       "minute": 81,
       "second": 4,
-      "videoFile": "Transition_to_attack/81_04_nd_Transition_to_attack__good_favorite_81_24_Attacking_39.mp4",
+      "videoFile": "https://vimeo.com/1214971853",
       "localFile": "Transition_to_attack/81_04_nd_Transition_to_attack__good_favorite_81_24_Attacking_39.mp4",
       "section": "offensive-transition",
       "labels": [
@@ -2196,7 +2241,8 @@
       ],
       "tags": [
         "good",
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -2211,14 +2257,15 @@
       },
       "minute": 81,
       "second": 44,
-      "videoFile": "Mid_Block/81_44_nd_Mid_Block__82_01_Defending_58.mp4",
+      "videoFile": "https://vimeo.com/1214971961",
       "localFile": "Mid_Block/81_44_nd_Mid_Block__82_01_Defending_58.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -2233,14 +2280,15 @@
       },
       "minute": 82,
       "second": 18,
-      "videoFile": "Build_up/82_18_nd_Build_up__83_00_Attacking_13.mp4",
+      "videoFile": "https://vimeo.com/1214972095",
       "localFile": "Build_up/82_18_nd_Build_up__83_00_Attacking_13.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -2255,14 +2303,15 @@
       },
       "minute": 83,
       "second": 2,
-      "videoFile": "High_Defence/83_02_nd_High_Defence__83_31_Defending_48.mp4",
+      "videoFile": "https://vimeo.com/1214972099",
       "localFile": "High_Defence/83_02_nd_High_Defence__83_31_Defending_48.mp4",
       "section": "high-defence",
       "labels": [
         "high-defence"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -2277,14 +2326,15 @@
       },
       "minute": 83,
       "second": 40,
-      "videoFile": "Mid_Block/83_40_nd_Mid_Block__84_01_Defending_59.mp4",
+      "videoFile": "https://vimeo.com/1214972124",
       "localFile": "Mid_Block/83_40_nd_Mid_Block__84_01_Defending_59.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -2299,14 +2349,15 @@
       },
       "minute": 84,
       "second": 13,
-      "videoFile": "Build_up/84_13_nd_Build_up__84_51_Attacking_14.mp4",
+      "videoFile": "https://vimeo.com/1214972129",
       "localFile": "Build_up/84_13_nd_Build_up__84_51_Attacking_14.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -2345,7 +2396,7 @@
       },
       "minute": 85,
       "second": 42,
-      "videoFile": "Build_up/85_42_nd_Build_up__good_86_21_Attacking_15.mp4",
+      "videoFile": "https://vimeo.com/1214972341",
       "localFile": "Build_up/85_42_nd_Build_up__good_86_21_Attacking_15.mp4",
       "section": "build-up",
       "labels": [
@@ -2353,7 +2404,8 @@
       ],
       "tags": [
         "good",
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -2368,7 +2420,7 @@
       },
       "minute": 86,
       "second": 16,
-      "videoFile": "High_Defence/86_16_nd_High_Defence__bad_favorite_87_01_Defending_49_gol concesso\nPoco aggressivi s.mp4",
+      "videoFile": "https://vimeo.com/1214972596",
       "localFile": "High_Defence/86_16_nd_High_Defence__bad_favorite_87_01_Defending_49_gol concesso\nPoco aggressivi s.mp4",
       "section": "high-defence",
       "labels": [
@@ -2376,7 +2428,8 @@
       ],
       "tags": [
         "bad",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -2437,14 +2490,15 @@
       },
       "minute": 88,
       "second": 2,
-      "videoFile": "Mid_Block/88_02_nd_Mid_Block__88_23_Defending_60.mp4",
+      "videoFile": "https://vimeo.com/1214972656",
       "localFile": "Mid_Block/88_02_nd_Mid_Block__88_23_Defending_60.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -2459,7 +2513,7 @@
       },
       "minute": 88,
       "second": 45,
-      "videoFile": "Build_up/88_45_nd_Build_up__good_favorite_89_14_Attacking_16_Esempio Ideale Di costruzione .mp4",
+      "videoFile": "https://vimeo.com/1214972740",
       "localFile": "Build_up/88_45_nd_Build_up__good_favorite_89_14_Attacking_16_Esempio Ideale Di costruzione .mp4",
       "section": "build-up",
       "labels": [
@@ -2467,7 +2521,8 @@
       ],
       "tags": [
         "good",
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -2495,19 +2550,19 @@
   ],
   "analysisVideos": [
     {
-      "id": "post-match-u18",
+      "id": "vimeo-1214963786",
       "title": {
-        "en": "Post-match analysis vs U18",
-        "it": "Analisi post-partita vs U18"
+        "en": "Post Match v U18",
+        "it": "Post Match v U18"
       },
       "description": {
-        "en": "Post-match video analysis for the amichevole vs Napoli U18 (Vimeo).",
-        "it": "Video di analisi post-partita dell’amichevole vs Napoli U18 (Vimeo)."
+        "en": "Synced from Vimeo folder.",
+        "it": "Sincronizzato dalla cartella Vimeo."
       },
       "videoFile": "https://vimeo.com/1214963786",
       "tags": [
-        "post-match",
-        "vimeo"
+        "vimeo",
+        "analysis"
       ]
     }
   ]
