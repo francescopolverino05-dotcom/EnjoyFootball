@@ -821,6 +821,29 @@
       ]
     },
     {
+      "id": "offensive-transition-1659-34",
+      "title": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "comments": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "minute": 16,
+      "second": 59,
+      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/16_59_nd_Transition_to_attack__good_17_18_Attacking_34.mp4",
+      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/16_59_nd_Transition_to_attack__good_17_18_Attacking_34.mp4",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
+      ],
+      "tags": [
+        "good",
+        "attacking"
+      ]
+    },
+    {
       "id": "defensive-transition-1713-11",
       "title": {
         "en": "Transition to defence",
@@ -844,22 +867,44 @@
       ]
     },
     {
-      "id": "other-2010-17",
+      "id": "final-third-2010-17",
       "title": {
-        "en": "Final_third",
-        "it": "Final_third"
+        "en": "Final third",
+        "it": "Ultimo terzo"
       },
       "comments": {
-        "en": "Final_third",
-        "it": "Final_third"
+        "en": "Final third",
+        "it": "Ultimo terzo"
       },
       "minute": 20,
       "second": 10,
       "videoFile": "Amivhevole v U18_01.08.2026/Final_third/20_10_nd_Final_third__20_28_Attacking_17.mp4",
       "localFile": "Amivhevole v U18_01.08.2026/Final_third/20_10_nd_Final_third__20_28_Attacking_17.mp4",
-      "section": "other",
+      "section": "final-third",
       "labels": [
-        "other"
+        "final-third"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
+      "id": "offensive-transition-2819-35",
+      "title": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "comments": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "minute": 28,
+      "second": 19,
+      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/28_19_nd_Transition_to_attack__28_51_Attacking_35.mp4",
+      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/28_19_nd_Transition_to_attack__28_51_Attacking_35.mp4",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
       ],
       "tags": [
         "attacking"
@@ -955,22 +1000,22 @@
       ]
     },
     {
-      "id": "other-3513-18",
+      "id": "final-third-3513-18",
       "title": {
-        "en": "Final_third",
-        "it": "Final_third"
+        "en": "Final third",
+        "it": "Ultimo terzo"
       },
       "comments": {
-        "en": "Final_third",
-        "it": "Final_third"
+        "en": "Final third",
+        "it": "Ultimo terzo"
       },
       "minute": 35,
       "second": 13,
       "videoFile": "Amivhevole v U18_01.08.2026/Final_third/35_13_nd_Final_third__35_39_Attacking_18.mp4",
       "localFile": "Amivhevole v U18_01.08.2026/Final_third/35_13_nd_Final_third__35_39_Attacking_18.mp4",
-      "section": "other",
+      "section": "final-third",
       "labels": [
-        "other"
+        "final-third"
       ],
       "tags": [
         "attacking"
@@ -1404,6 +1449,29 @@
       ]
     },
     {
+      "id": "progress-7512-32",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 75,
+      "second": 12,
+      "videoFile": "Amivhevole v U18_01.08.2026/Progress/75_12_nd_Progress__bad_75_42_Attacking_32.mp4",
+      "localFile": "Amivhevole v U18_01.08.2026/Progress/75_12_nd_Progress__bad_75_42_Attacking_32.mp4",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "bad",
+        "attacking"
+      ]
+    },
+    {
       "id": "build-up-7603-10",
       "title": {
         "en": "Build-up",
@@ -1465,6 +1533,28 @@
       "section": "build-up",
       "labels": [
         "build-up"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
+      "id": "progress-8023-33",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 80,
+      "second": 23,
+      "videoFile": "Amivhevole v U18_01.08.2026/Progress/80_23_nd_Progress__80_41_Attacking_33.mp4",
+      "localFile": "Amivhevole v U18_01.08.2026/Progress/80_23_nd_Progress__80_41_Attacking_33.mp4",
+      "section": "progress",
+      "labels": [
+        "progress"
       ],
       "tags": [
         "attacking"
