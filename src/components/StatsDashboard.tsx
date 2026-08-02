@@ -281,7 +281,9 @@ function FullMatchPanel({ match }: { match: MatchData }) {
           src={src}
           kind={null}
           unsupportedLabel={t('videoUnsupported')}
+          playLabel={t('playVideo')}
           fullHeight
+          autoload
           title={t('fullMatchVideo')}
         />
       ) : (
@@ -375,6 +377,7 @@ function ClipsPanel({ match }: { match: MatchData }) {
                     src={clip.videoFile}
                     kind="clips"
                     unsupportedLabel={t('videoUnsupported')}
+                    playLabel={t('playVideo')}
                     title={L(clip.title)}
                   />
                   <div className="clip-card-body">
@@ -424,7 +427,9 @@ function VideoAnalysisPanel({ match }: { match: MatchData }) {
               src={item.videoFile}
               kind="analysis"
               unsupportedLabel={t('videoUnsupported')}
+              playLabel={t('playVideo')}
               title={L(item.title)}
+              autoload
             />
             <div className="clip-card-body">
               <div className="clip-card-title">{L(item.title)}</div>

@@ -50,6 +50,7 @@ const dictionaries = {
     videoAnalysisHint:
       'Full analyst video breakdowns for the coaching staff.',
     videoUnsupported: 'Your browser does not support video playback.',
+    playVideo: 'Play video',
     minutes: 'minutes',
     team: 'Team',
     jerseyColour: 'Jersey colour',
@@ -105,6 +106,7 @@ const dictionaries = {
     videoAnalysisHint:
       'Video di analisi completi preparati dall’analista per lo staff tecnico.',
     videoUnsupported: 'Il browser non supporta la riproduzione video.',
+    playVideo: 'Riproduci video',
     minutes: 'minuti',
     team: 'Squadra',
     jerseyColour: 'Colore maglia',
