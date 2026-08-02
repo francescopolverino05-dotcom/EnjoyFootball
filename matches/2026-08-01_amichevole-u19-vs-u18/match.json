@@ -746,10 +746,10 @@
     }
   ],
   "video": {
-    "fullMatch": "video/match.mp4",
+    "fullMatch": "video/Amichevole vs U18.mp4",
     "notes": {
-      "en": "Add the full MP4 to matches/2026-08-01_amichevole-u19-vs-u18/video/match.mp4",
-      "it": "Aggiungere il file MP4 completo in matches/2026-08-01_amichevole-u19-vs-u18/video/match.mp4"
+      "en": "Full match file is in video/Amichevole vs U18.mp4",
+      "it": "Il video della partita è in video/Amichevole vs U18.mp4"
     }
   },
   "clips": [
@@ -765,8 +765,8 @@
       },
       "minute": 0,
       "second": 0,
-      "videoFile": "Amivhevole v U18_01.08.2026/Half_Start/0_00_nd_Half_Start__0_02_Other_76.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Half_Start/0_00_nd_Half_Start__0_02_Other_76.mp4",
+      "videoFile": "Half_Start/0_00_nd_Half_Start__0_02_Other_76.mp4",
+      "localFile": "Half_Start/0_00_nd_Half_Start__0_02_Other_76.mp4",
       "section": "other",
       "labels": [
         "other"
@@ -785,8 +785,8 @@
       },
       "minute": 10,
       "second": 12,
-      "videoFile": "Amivhevole v U18_01.08.2026/Progress/10_12_nd_Progress__10_24_Attacking_22.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Progress/10_12_nd_Progress__10_24_Attacking_22.mp4",
+      "videoFile": "Progress/10_12_nd_Progress__10_24_Attacking_22.mp4",
+      "localFile": "Progress/10_12_nd_Progress__10_24_Attacking_22.mp4",
       "section": "progress",
       "labels": [
         "progress"
@@ -807,8 +807,8 @@
       },
       "minute": 11,
       "second": 32,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/11_32_nd_Build_up__11_51_Attacking_1.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/11_32_nd_Build_up__11_51_Attacking_1.mp4",
+      "videoFile": "Build_up/11_32_nd_Build_up__11_51_Attacking_1.mp4",
+      "localFile": "Build_up/11_32_nd_Build_up__11_51_Attacking_1.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -829,8 +829,8 @@
       },
       "minute": 13,
       "second": 34,
-      "videoFile": "Amivhevole v U18_01.08.2026/Progress/13_34_nd_Progress__bad_favorite_14_10_Attacking_23_Poca mobilitá dagli attaccanti.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Progress/13_34_nd_Progress__bad_favorite_14_10_Attacking_23_Poca mobilitá dagli attaccanti.mp4",
+      "videoFile": "Progress/13_34_nd_Progress__bad_favorite_14_10_Attacking_23_Poca mobilitá dagli attaccanti.mp4",
+      "localFile": "Progress/13_34_nd_Progress__bad_favorite_14_10_Attacking_23_Poca mobilitá dagli attaccanti.mp4",
       "section": "progress",
       "labels": [
         "progress"
@@ -852,8 +852,8 @@
       },
       "minute": 13,
       "second": 57,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/13_57_nd_Transition_to_defence__14_30_Defending_62.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/13_57_nd_Transition_to_defence__14_30_Defending_62.mp4",
+      "videoFile": "Transition_to_defence/13_57_nd_Transition_to_defence__14_30_Defending_62.mp4",
+      "localFile": "Transition_to_defence/13_57_nd_Transition_to_defence__14_30_Defending_62.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
@@ -874,8 +874,8 @@
       },
       "minute": 16,
       "second": 59,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/16_59_nd_Transition_to_attack__good_17_18_Attacking_34.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/16_59_nd_Transition_to_attack__good_17_18_Attacking_34.mp4",
+      "videoFile": "Transition_to_attack/16_59_nd_Transition_to_attack__good_17_18_Attacking_34.mp4",
+      "localFile": "Transition_to_attack/16_59_nd_Transition_to_attack__good_17_18_Attacking_34.mp4",
       "section": "offensive-transition",
       "labels": [
         "offensive-transition"
@@ -897,8 +897,8 @@
       },
       "minute": 17,
       "second": 13,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/17_13_nd_Transition_to_defence__bad_favorite_17_36_Defending_63.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/17_13_nd_Transition_to_defence__bad_favorite_17_36_Defending_63.mp4",
+      "videoFile": "Transition_to_defence/17_13_nd_Transition_to_defence__bad_favorite_17_36_Defending_63.mp4",
+      "localFile": "Transition_to_defence/17_13_nd_Transition_to_defence__bad_favorite_17_36_Defending_63.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
@@ -920,8 +920,8 @@
       },
       "minute": 19,
       "second": 0,
-      "videoFile": "Amivhevole v U18_01.08.2026/Mid_Block/19_00_nd_Mid_Block__19_19_Defending_50.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Mid_Block/19_00_nd_Mid_Block__19_19_Defending_50.mp4",
+      "videoFile": "Mid_Block/19_00_nd_Mid_Block__19_19_Defending_50.mp4",
+      "localFile": "Mid_Block/19_00_nd_Mid_Block__19_19_Defending_50.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
@@ -942,8 +942,8 @@
       },
       "minute": 20,
       "second": 9,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/20_09_nd_Transition_to_defence__good_20_30_Defending_64.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/20_09_nd_Transition_to_defence__good_20_30_Defending_64.mp4",
+      "videoFile": "Transition_to_defence/20_09_nd_Transition_to_defence__good_20_30_Defending_64.mp4",
+      "localFile": "Transition_to_defence/20_09_nd_Transition_to_defence__good_20_30_Defending_64.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
@@ -965,8 +965,8 @@
       },
       "minute": 20,
       "second": 10,
-      "videoFile": "Amivhevole v U18_01.08.2026/Final_third/20_10_nd_Final_third__20_28_Attacking_17.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Final_third/20_10_nd_Final_third__20_28_Attacking_17.mp4",
+      "videoFile": "Final_third/20_10_nd_Final_third__20_28_Attacking_17.mp4",
+      "localFile": "Final_third/20_10_nd_Final_third__20_28_Attacking_17.mp4",
       "section": "final-third",
       "labels": [
         "final-third"
@@ -987,8 +987,8 @@
       },
       "minute": 21,
       "second": 35,
-      "videoFile": "Amivhevole v U18_01.08.2026/Own_Third/21_35_nd_Own_Third__21_53_Defending_61.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Own_Third/21_35_nd_Own_Third__21_53_Defending_61.mp4",
+      "videoFile": "Own_Third/21_35_nd_Own_Third__21_53_Defending_61.mp4",
+      "localFile": "Own_Third/21_35_nd_Own_Third__21_53_Defending_61.mp4",
       "section": "own-third",
       "labels": [
         "own-third"
@@ -1009,8 +1009,8 @@
       },
       "minute": 27,
       "second": 41,
-      "videoFile": "Amivhevole v U18_01.08.2026/Mid_Block/27_41_nd_Mid_Block__28_13_Defending_51.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Mid_Block/27_41_nd_Mid_Block__28_13_Defending_51.mp4",
+      "videoFile": "Mid_Block/27_41_nd_Mid_Block__28_13_Defending_51.mp4",
+      "localFile": "Mid_Block/27_41_nd_Mid_Block__28_13_Defending_51.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
@@ -1031,8 +1031,8 @@
       },
       "minute": 28,
       "second": 19,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/28_19_nd_Transition_to_attack__28_51_Attacking_35.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/28_19_nd_Transition_to_attack__28_51_Attacking_35.mp4",
+      "videoFile": "Transition_to_attack/28_19_nd_Transition_to_attack__28_51_Attacking_35.mp4",
+      "localFile": "Transition_to_attack/28_19_nd_Transition_to_attack__28_51_Attacking_35.mp4",
       "section": "offensive-transition",
       "labels": [
         "offensive-transition"
@@ -1053,8 +1053,8 @@
       },
       "minute": 29,
       "second": 43,
-      "videoFile": "Amivhevole v U18_01.08.2026/High_Defence/29_43_nd_High_Defence__30_12_Defending_41.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/High_Defence/29_43_nd_High_Defence__30_12_Defending_41.mp4",
+      "videoFile": "High_Defence/29_43_nd_High_Defence__30_12_Defending_41.mp4",
+      "localFile": "High_Defence/29_43_nd_High_Defence__30_12_Defending_41.mp4",
       "section": "high-defence",
       "labels": [
         "high-defence"
@@ -1075,8 +1075,8 @@
       },
       "minute": 31,
       "second": 19,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/31_19_nd_Transition_to_defence__bad_31_43_Defending_65.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/31_19_nd_Transition_to_defence__bad_31_43_Defending_65.mp4",
+      "videoFile": "Transition_to_defence/31_19_nd_Transition_to_defence__bad_31_43_Defending_65.mp4",
+      "localFile": "Transition_to_defence/31_19_nd_Transition_to_defence__bad_31_43_Defending_65.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
@@ -1098,8 +1098,8 @@
       },
       "minute": 31,
       "second": 25,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/31_25_nd_Transition_to_attack__good_favorite_32_00_Attacking_36_Trasizione offensiva buona -_ .mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/31_25_nd_Transition_to_attack__good_favorite_32_00_Attacking_36_Trasizione offensiva buona -_ .mp4",
+      "videoFile": "Transition_to_attack/31_25_nd_Transition_to_attack__good_favorite_32_00_Attacking_36_Trasizione offensiva buona -_ .mp4",
+      "localFile": "Transition_to_attack/31_25_nd_Transition_to_attack__good_favorite_32_00_Attacking_36_Trasizione offensiva buona -_ .mp4",
       "section": "offensive-transition",
       "labels": [
         "offensive-transition"
@@ -1121,8 +1121,8 @@
       },
       "minute": 31,
       "second": 55,
-      "videoFile": "Amivhevole v U18_01.08.2026/Goal/31_55_nd_Goal__32_03_Attacking_19.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Goal/31_55_nd_Goal__32_03_Attacking_19.mp4",
+      "videoFile": "Goal/31_55_nd_Goal__32_03_Attacking_19.mp4",
+      "localFile": "Goal/31_55_nd_Goal__32_03_Attacking_19.mp4",
       "section": "goal",
       "labels": [
         "goal"
@@ -1143,8 +1143,8 @@
       },
       "minute": 33,
       "second": 36,
-      "videoFile": "Amivhevole v U18_01.08.2026/Progress/33_36_nd_Progress__33_55_Attacking_24.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Progress/33_36_nd_Progress__33_55_Attacking_24.mp4",
+      "videoFile": "Progress/33_36_nd_Progress__33_55_Attacking_24.mp4",
+      "localFile": "Progress/33_36_nd_Progress__33_55_Attacking_24.mp4",
       "section": "progress",
       "labels": [
         "progress"
@@ -1165,8 +1165,8 @@
       },
       "minute": 33,
       "second": 36,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/33_36_nd_Transition_to_defence__good_33_54_Defending_66.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/33_36_nd_Transition_to_defence__good_33_54_Defending_66.mp4",
+      "videoFile": "Transition_to_defence/33_36_nd_Transition_to_defence__good_33_54_Defending_66.mp4",
+      "localFile": "Transition_to_defence/33_36_nd_Transition_to_defence__good_33_54_Defending_66.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
@@ -1188,8 +1188,8 @@
       },
       "minute": 34,
       "second": 27,
-      "videoFile": "Amivhevole v U18_01.08.2026/Progress/34_27_nd_Progress__35_19_Attacking_25.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Progress/34_27_nd_Progress__35_19_Attacking_25.mp4",
+      "videoFile": "Progress/34_27_nd_Progress__35_19_Attacking_25.mp4",
+      "localFile": "Progress/34_27_nd_Progress__35_19_Attacking_25.mp4",
       "section": "progress",
       "labels": [
         "progress"
@@ -1210,8 +1210,8 @@
       },
       "minute": 35,
       "second": 13,
-      "videoFile": "Amivhevole v U18_01.08.2026/Final_third/35_13_nd_Final_third__35_39_Attacking_18.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Final_third/35_13_nd_Final_third__35_39_Attacking_18.mp4",
+      "videoFile": "Final_third/35_13_nd_Final_third__35_39_Attacking_18.mp4",
+      "localFile": "Final_third/35_13_nd_Final_third__35_39_Attacking_18.mp4",
       "section": "final-third",
       "labels": [
         "final-third"
@@ -1232,8 +1232,8 @@
       },
       "minute": 35,
       "second": 48,
-      "videoFile": "Amivhevole v U18_01.08.2026/Mid_Block/35_48_nd_Mid_Block__good_favorite_36_30_Defending_52_Posizionaento generalmente buo.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Mid_Block/35_48_nd_Mid_Block__good_favorite_36_30_Defending_52_Posizionaento generalmente buo.mp4",
+      "videoFile": "Mid_Block/35_48_nd_Mid_Block__good_favorite_36_30_Defending_52_Posizionaento generalmente buo.mp4",
+      "localFile": "Mid_Block/35_48_nd_Mid_Block__good_favorite_36_30_Defending_52_Posizionaento generalmente buo.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
@@ -1255,8 +1255,8 @@
       },
       "minute": 37,
       "second": 6,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/37_06_nd_Transition_to_defence__37_34_Defending_67.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/37_06_nd_Transition_to_defence__37_34_Defending_67.mp4",
+      "videoFile": "Transition_to_defence/37_06_nd_Transition_to_defence__37_34_Defending_67.mp4",
+      "localFile": "Transition_to_defence/37_06_nd_Transition_to_defence__37_34_Defending_67.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
@@ -1277,8 +1277,8 @@
       },
       "minute": 37,
       "second": 7,
-      "videoFile": "Amivhevole v U18_01.08.2026/Progress/37_07_nd_Progress__bad_37_35_Attacking_26.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Progress/37_07_nd_Progress__bad_37_35_Attacking_26.mp4",
+      "videoFile": "Progress/37_07_nd_Progress__bad_37_35_Attacking_26.mp4",
+      "localFile": "Progress/37_07_nd_Progress__bad_37_35_Attacking_26.mp4",
       "section": "progress",
       "labels": [
         "progress"
@@ -1300,8 +1300,8 @@
       },
       "minute": 37,
       "second": 54,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/37_54_nd_Build_up__38_09_Attacking_2.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/37_54_nd_Build_up__38_09_Attacking_2.mp4",
+      "videoFile": "Build_up/37_54_nd_Build_up__38_09_Attacking_2.mp4",
+      "localFile": "Build_up/37_54_nd_Build_up__38_09_Attacking_2.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -1322,8 +1322,8 @@
       },
       "minute": 38,
       "second": 22,
-      "videoFile": "Amivhevole v U18_01.08.2026/Mid_Block/38_22_nd_Mid_Block__bad_38_40_Defending_53.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Mid_Block/38_22_nd_Mid_Block__bad_38_40_Defending_53.mp4",
+      "videoFile": "Mid_Block/38_22_nd_Mid_Block__bad_38_40_Defending_53.mp4",
+      "localFile": "Mid_Block/38_22_nd_Mid_Block__bad_38_40_Defending_53.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
@@ -1345,8 +1345,8 @@
       },
       "minute": 39,
       "second": 17,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/39_17_nd_Build_up__39_47_Attacking_3.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/39_17_nd_Build_up__39_47_Attacking_3.mp4",
+      "videoFile": "Build_up/39_17_nd_Build_up__39_47_Attacking_3.mp4",
+      "localFile": "Build_up/39_17_nd_Build_up__39_47_Attacking_3.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -1367,8 +1367,8 @@
       },
       "minute": 40,
       "second": 41,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/40_41_nd_Build_up__bad_favorite_40_54_Attacking_4_Distribuzione e decisione port.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/40_41_nd_Build_up__bad_favorite_40_54_Attacking_4_Distribuzione e decisione port.mp4",
+      "videoFile": "Build_up/40_41_nd_Build_up__bad_favorite_40_54_Attacking_4_Distribuzione e decisione port.mp4",
+      "localFile": "Build_up/40_41_nd_Build_up__bad_favorite_40_54_Attacking_4_Distribuzione e decisione port.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -1390,8 +1390,8 @@
       },
       "minute": 41,
       "second": 12,
-      "videoFile": "Amivhevole v U18_01.08.2026/Mid_Block/41_12_nd_Mid_Block__41_33_Defending_54.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Mid_Block/41_12_nd_Mid_Block__41_33_Defending_54.mp4",
+      "videoFile": "Mid_Block/41_12_nd_Mid_Block__41_33_Defending_54.mp4",
+      "localFile": "Mid_Block/41_12_nd_Mid_Block__41_33_Defending_54.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
@@ -1412,8 +1412,8 @@
       },
       "minute": 41,
       "second": 32,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/41_32_nd_Build_up__41_53_Attacking_5.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/41_32_nd_Build_up__41_53_Attacking_5.mp4",
+      "videoFile": "Build_up/41_32_nd_Build_up__41_53_Attacking_5.mp4",
+      "localFile": "Build_up/41_32_nd_Build_up__41_53_Attacking_5.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -1434,8 +1434,8 @@
       },
       "minute": 42,
       "second": 0,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/42_00_nd_Transition_to_attack__42_33_Attacking_37.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/42_00_nd_Transition_to_attack__42_33_Attacking_37.mp4",
+      "videoFile": "Transition_to_attack/42_00_nd_Transition_to_attack__42_33_Attacking_37.mp4",
+      "localFile": "Transition_to_attack/42_00_nd_Transition_to_attack__42_33_Attacking_37.mp4",
       "section": "offensive-transition",
       "labels": [
         "offensive-transition"
@@ -1456,8 +1456,8 @@
       },
       "minute": 42,
       "second": 48,
-      "videoFile": "Amivhevole v U18_01.08.2026/High_Defence/42_48_nd_High_Defence__good_43_06_Defending_42.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/High_Defence/42_48_nd_High_Defence__good_43_06_Defending_42.mp4",
+      "videoFile": "High_Defence/42_48_nd_High_Defence__good_43_06_Defending_42.mp4",
+      "localFile": "High_Defence/42_48_nd_High_Defence__good_43_06_Defending_42.mp4",
       "section": "high-defence",
       "labels": [
         "high-defence"
@@ -1479,8 +1479,8 @@
       },
       "minute": 43,
       "second": 3,
-      "videoFile": "Amivhevole v U18_01.08.2026/Goal/43_03_nd_Goal__43_11_Attacking_20.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Goal/43_03_nd_Goal__43_11_Attacking_20.mp4",
+      "videoFile": "Goal/43_03_nd_Goal__43_11_Attacking_20.mp4",
+      "localFile": "Goal/43_03_nd_Goal__43_11_Attacking_20.mp4",
       "section": "goal",
       "labels": [
         "goal"
@@ -1501,8 +1501,8 @@
       },
       "minute": 49,
       "second": 6,
-      "videoFile": "Amivhevole v U18_01.08.2026/Half_Finish/49_06_nd_Half_Finish__49_08_Other_75.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Half_Finish/49_06_nd_Half_Finish__49_08_Other_75.mp4",
+      "videoFile": "Half_Finish/49_06_nd_Half_Finish__49_08_Other_75.mp4",
+      "localFile": "Half_Finish/49_06_nd_Half_Finish__49_08_Other_75.mp4",
       "section": "other",
       "labels": [
         "other"
@@ -1521,8 +1521,8 @@
       },
       "minute": 49,
       "second": 11,
-      "videoFile": "Amivhevole v U18_01.08.2026/Half_Start/49_11_nd_Half_Start__49_13_Other_77.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Half_Start/49_11_nd_Half_Start__49_13_Other_77.mp4",
+      "videoFile": "Half_Start/49_11_nd_Half_Start__49_13_Other_77.mp4",
+      "localFile": "Half_Start/49_11_nd_Half_Start__49_13_Other_77.mp4",
       "section": "other",
       "labels": [
         "other"
@@ -1541,8 +1541,8 @@
       },
       "minute": 55,
       "second": 40,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/55_40_nd_Transition_to_defence__bad_55_56_Defending_68.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/55_40_nd_Transition_to_defence__bad_55_56_Defending_68.mp4",
+      "videoFile": "Transition_to_defence/55_40_nd_Transition_to_defence__bad_55_56_Defending_68.mp4",
+      "localFile": "Transition_to_defence/55_40_nd_Transition_to_defence__bad_55_56_Defending_68.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
@@ -1564,8 +1564,8 @@
       },
       "minute": 57,
       "second": 1,
-      "videoFile": "Amivhevole v U18_01.08.2026/Mid_Block/57_01_nd_Mid_Block__good_favorite_57_22_Defending_55_Molto buona la marcatura uomo .mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Mid_Block/57_01_nd_Mid_Block__good_favorite_57_22_Defending_55_Molto buona la marcatura uomo .mp4",
+      "videoFile": "Mid_Block/57_01_nd_Mid_Block__good_favorite_57_22_Defending_55_Molto buona la marcatura uomo .mp4",
+      "localFile": "Mid_Block/57_01_nd_Mid_Block__good_favorite_57_22_Defending_55_Molto buona la marcatura uomo .mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
@@ -1587,8 +1587,8 @@
       },
       "minute": 57,
       "second": 26,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/57_26_nd_Build_up__57_43_Attacking_6.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/57_26_nd_Build_up__57_43_Attacking_6.mp4",
+      "videoFile": "Build_up/57_26_nd_Build_up__57_43_Attacking_6.mp4",
+      "localFile": "Build_up/57_26_nd_Build_up__57_43_Attacking_6.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -1609,8 +1609,8 @@
       },
       "minute": 59,
       "second": 0,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/59_00_nd_Transition_to_attack__59_28_Attacking_38.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/59_00_nd_Transition_to_attack__59_28_Attacking_38.mp4",
+      "videoFile": "Transition_to_attack/59_00_nd_Transition_to_attack__59_28_Attacking_38.mp4",
+      "localFile": "Transition_to_attack/59_00_nd_Transition_to_attack__59_28_Attacking_38.mp4",
       "section": "offensive-transition",
       "labels": [
         "offensive-transition"
@@ -1631,8 +1631,8 @@
       },
       "minute": 59,
       "second": 37,
-      "videoFile": "Amivhevole v U18_01.08.2026/High_Defence/59_37_nd_High_Defence__bad_60_06_Defending_43.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/High_Defence/59_37_nd_High_Defence__bad_60_06_Defending_43.mp4",
+      "videoFile": "High_Defence/59_37_nd_High_Defence__bad_60_06_Defending_43.mp4",
+      "localFile": "High_Defence/59_37_nd_High_Defence__bad_60_06_Defending_43.mp4",
       "section": "high-defence",
       "labels": [
         "high-defence"
@@ -1654,8 +1654,8 @@
       },
       "minute": 60,
       "second": 6,
-      "videoFile": "Amivhevole v U18_01.08.2026/Progress/60_06_nd_Progress__bad_60_53_Attacking_27.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Progress/60_06_nd_Progress__bad_60_53_Attacking_27.mp4",
+      "videoFile": "Progress/60_06_nd_Progress__bad_60_53_Attacking_27.mp4",
+      "localFile": "Progress/60_06_nd_Progress__bad_60_53_Attacking_27.mp4",
       "section": "progress",
       "labels": [
         "progress"
@@ -1677,8 +1677,8 @@
       },
       "minute": 63,
       "second": 34,
-      "videoFile": "Amivhevole v U18_01.08.2026/High_Defence/63_34_nd_High_Defence__63_50_Defending_44.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/High_Defence/63_34_nd_High_Defence__63_50_Defending_44.mp4",
+      "videoFile": "High_Defence/63_34_nd_High_Defence__63_50_Defending_44.mp4",
+      "localFile": "High_Defence/63_34_nd_High_Defence__63_50_Defending_44.mp4",
       "section": "high-defence",
       "labels": [
         "high-defence"
@@ -1699,8 +1699,8 @@
       },
       "minute": 63,
       "second": 50,
-      "videoFile": "Amivhevole v U18_01.08.2026/Mid_Block/63_50_nd_Mid_Block__bad_favorite_64_14_Defending_56_Prossimo step (piü verso la li.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Mid_Block/63_50_nd_Mid_Block__bad_favorite_64_14_Defending_56_Prossimo step (piü verso la li.mp4",
+      "videoFile": "Mid_Block/63_50_nd_Mid_Block__bad_favorite_64_14_Defending_56_Prossimo step (piü verso la li.mp4",
+      "localFile": "Mid_Block/63_50_nd_Mid_Block__bad_favorite_64_14_Defending_56_Prossimo step (piü verso la li.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
@@ -1722,8 +1722,8 @@
       },
       "minute": 64,
       "second": 17,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/64_17_nd_Transition_to_defence__bad_favorite_64_53_Defending_69.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/64_17_nd_Transition_to_defence__bad_favorite_64_53_Defending_69.mp4",
+      "videoFile": "Transition_to_defence/64_17_nd_Transition_to_defence__bad_favorite_64_53_Defending_69.mp4",
+      "localFile": "Transition_to_defence/64_17_nd_Transition_to_defence__bad_favorite_64_53_Defending_69.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
@@ -1745,8 +1745,8 @@
       },
       "minute": 65,
       "second": 0,
-      "videoFile": "Amivhevole v U18_01.08.2026/Progress/65_00_nd_Progress__65_29_Attacking_28.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Progress/65_00_nd_Progress__65_29_Attacking_28.mp4",
+      "videoFile": "Progress/65_00_nd_Progress__65_29_Attacking_28.mp4",
+      "localFile": "Progress/65_00_nd_Progress__65_29_Attacking_28.mp4",
       "section": "progress",
       "labels": [
         "progress"
@@ -1767,8 +1767,8 @@
       },
       "minute": 65,
       "second": 49,
-      "videoFile": "Amivhevole v U18_01.08.2026/Progress/65_49_nd_Progress__66_07_Attacking_29.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Progress/65_49_nd_Progress__66_07_Attacking_29.mp4",
+      "videoFile": "Progress/65_49_nd_Progress__66_07_Attacking_29.mp4",
+      "localFile": "Progress/65_49_nd_Progress__66_07_Attacking_29.mp4",
       "section": "progress",
       "labels": [
         "progress"
@@ -1789,8 +1789,8 @@
       },
       "minute": 66,
       "second": 2,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/66_02_nd_Transition_to_defence__66_20_Defending_70.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/66_02_nd_Transition_to_defence__66_20_Defending_70.mp4",
+      "videoFile": "Transition_to_defence/66_02_nd_Transition_to_defence__66_20_Defending_70.mp4",
+      "localFile": "Transition_to_defence/66_02_nd_Transition_to_defence__66_20_Defending_70.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
@@ -1811,8 +1811,8 @@
       },
       "minute": 66,
       "second": 31,
-      "videoFile": "Amivhevole v U18_01.08.2026/Progress/66_31_nd_Progress__good_67_00_Attacking_30.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Progress/66_31_nd_Progress__good_67_00_Attacking_30.mp4",
+      "videoFile": "Progress/66_31_nd_Progress__good_67_00_Attacking_30.mp4",
+      "localFile": "Progress/66_31_nd_Progress__good_67_00_Attacking_30.mp4",
       "section": "progress",
       "labels": [
         "progress"
@@ -1834,8 +1834,8 @@
       },
       "minute": 67,
       "second": 3,
-      "videoFile": "Amivhevole v U18_01.08.2026/Progress/67_03_nd_Progress__67_31_Attacking_31.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Progress/67_03_nd_Progress__67_31_Attacking_31.mp4",
+      "videoFile": "Progress/67_03_nd_Progress__67_31_Attacking_31.mp4",
+      "localFile": "Progress/67_03_nd_Progress__67_31_Attacking_31.mp4",
       "section": "progress",
       "labels": [
         "progress"
@@ -1856,8 +1856,8 @@
       },
       "minute": 68,
       "second": 53,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/68_53_nd_Build_up__good_favorite_69_14_Attacking_7_rotazione centrocampo naturale.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/68_53_nd_Build_up__good_favorite_69_14_Attacking_7_rotazione centrocampo naturale.mp4",
+      "videoFile": "Build_up/68_53_nd_Build_up__good_favorite_69_14_Attacking_7_rotazione centrocampo naturale.mp4",
+      "localFile": "Build_up/68_53_nd_Build_up__good_favorite_69_14_Attacking_7_rotazione centrocampo naturale.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -1879,8 +1879,8 @@
       },
       "minute": 71,
       "second": 15,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/71_15_nd_Transition_to_defence__good_72_00_Defending_71.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/71_15_nd_Transition_to_defence__good_72_00_Defending_71.mp4",
+      "videoFile": "Transition_to_defence/71_15_nd_Transition_to_defence__good_72_00_Defending_71.mp4",
+      "localFile": "Transition_to_defence/71_15_nd_Transition_to_defence__good_72_00_Defending_71.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
@@ -1902,8 +1902,8 @@
       },
       "minute": 72,
       "second": 9,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/72_09_nd_Build_up__72_39_Attacking_8.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/72_09_nd_Build_up__72_39_Attacking_8.mp4",
+      "videoFile": "Build_up/72_09_nd_Build_up__72_39_Attacking_8.mp4",
+      "localFile": "Build_up/72_09_nd_Build_up__72_39_Attacking_8.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -1924,8 +1924,8 @@
       },
       "minute": 73,
       "second": 14,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/73_14_nd_Build_up__73_53_Attacking_9.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/73_14_nd_Build_up__73_53_Attacking_9.mp4",
+      "videoFile": "Build_up/73_14_nd_Build_up__73_53_Attacking_9.mp4",
+      "localFile": "Build_up/73_14_nd_Build_up__73_53_Attacking_9.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -1946,8 +1946,8 @@
       },
       "minute": 74,
       "second": 8,
-      "videoFile": "Amivhevole v U18_01.08.2026/High_Defence/74_08_nd_High_Defence__74_34_Defending_45.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/High_Defence/74_08_nd_High_Defence__74_34_Defending_45.mp4",
+      "videoFile": "High_Defence/74_08_nd_High_Defence__74_34_Defending_45.mp4",
+      "localFile": "High_Defence/74_08_nd_High_Defence__74_34_Defending_45.mp4",
       "section": "high-defence",
       "labels": [
         "high-defence"
@@ -1968,8 +1968,8 @@
       },
       "minute": 75,
       "second": 12,
-      "videoFile": "Amivhevole v U18_01.08.2026/Progress/75_12_nd_Progress__bad_75_42_Attacking_32.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Progress/75_12_nd_Progress__bad_75_42_Attacking_32.mp4",
+      "videoFile": "Progress/75_12_nd_Progress__bad_75_42_Attacking_32.mp4",
+      "localFile": "Progress/75_12_nd_Progress__bad_75_42_Attacking_32.mp4",
       "section": "progress",
       "labels": [
         "progress"
@@ -1991,8 +1991,8 @@
       },
       "minute": 76,
       "second": 3,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/76_03_nd_Build_up__good_76_31_Attacking_10.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/76_03_nd_Build_up__good_76_31_Attacking_10.mp4",
+      "videoFile": "Build_up/76_03_nd_Build_up__good_76_31_Attacking_10.mp4",
+      "localFile": "Build_up/76_03_nd_Build_up__good_76_31_Attacking_10.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -2014,8 +2014,8 @@
       },
       "minute": 76,
       "second": 43,
-      "videoFile": "Amivhevole v U18_01.08.2026/High_Defence/76_43_nd_High_Defence__bad_77_10_Defending_46.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/High_Defence/76_43_nd_High_Defence__bad_77_10_Defending_46.mp4",
+      "videoFile": "High_Defence/76_43_nd_High_Defence__bad_77_10_Defending_46.mp4",
+      "localFile": "High_Defence/76_43_nd_High_Defence__bad_77_10_Defending_46.mp4",
       "section": "high-defence",
       "labels": [
         "high-defence"
@@ -2037,8 +2037,8 @@
       },
       "minute": 77,
       "second": 51,
-      "videoFile": "Amivhevole v U18_01.08.2026/Mid_Block/77_51_nd_Mid_Block__78_05_Defending_57.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Mid_Block/77_51_nd_Mid_Block__78_05_Defending_57.mp4",
+      "videoFile": "Mid_Block/77_51_nd_Mid_Block__78_05_Defending_57.mp4",
+      "localFile": "Mid_Block/77_51_nd_Mid_Block__78_05_Defending_57.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
@@ -2059,8 +2059,8 @@
       },
       "minute": 78,
       "second": 45,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/78_45_nd_Build_up__79_33_Attacking_11.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/78_45_nd_Build_up__79_33_Attacking_11.mp4",
+      "videoFile": "Build_up/78_45_nd_Build_up__79_33_Attacking_11.mp4",
+      "localFile": "Build_up/78_45_nd_Build_up__79_33_Attacking_11.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -2081,8 +2081,8 @@
       },
       "minute": 79,
       "second": 49,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/79_49_nd_Build_up__80_06_Attacking_12.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/79_49_nd_Build_up__80_06_Attacking_12.mp4",
+      "videoFile": "Build_up/79_49_nd_Build_up__80_06_Attacking_12.mp4",
+      "localFile": "Build_up/79_49_nd_Build_up__80_06_Attacking_12.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -2103,8 +2103,8 @@
       },
       "minute": 80,
       "second": 7,
-      "videoFile": "Amivhevole v U18_01.08.2026/High_Defence/80_07_nd_High_Defence__bad_80_29_Defending_47.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/High_Defence/80_07_nd_High_Defence__bad_80_29_Defending_47.mp4",
+      "videoFile": "High_Defence/80_07_nd_High_Defence__bad_80_29_Defending_47.mp4",
+      "localFile": "High_Defence/80_07_nd_High_Defence__bad_80_29_Defending_47.mp4",
       "section": "high-defence",
       "labels": [
         "high-defence"
@@ -2126,8 +2126,8 @@
       },
       "minute": 80,
       "second": 23,
-      "videoFile": "Amivhevole v U18_01.08.2026/Progress/80_23_nd_Progress__80_41_Attacking_33.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Progress/80_23_nd_Progress__80_41_Attacking_33.mp4",
+      "videoFile": "Progress/80_23_nd_Progress__80_41_Attacking_33.mp4",
+      "localFile": "Progress/80_23_nd_Progress__80_41_Attacking_33.mp4",
       "section": "progress",
       "labels": [
         "progress"
@@ -2148,8 +2148,8 @@
       },
       "minute": 80,
       "second": 25,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/80_25_nd_Transition_to_defence__80_48_Defending_72.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/80_25_nd_Transition_to_defence__80_48_Defending_72.mp4",
+      "videoFile": "Transition_to_defence/80_25_nd_Transition_to_defence__80_48_Defending_72.mp4",
+      "localFile": "Transition_to_defence/80_25_nd_Transition_to_defence__80_48_Defending_72.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
@@ -2170,8 +2170,8 @@
       },
       "minute": 81,
       "second": 4,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/81_04_nd_Transition_to_attack__good_favorite_81_24_Attacking_39.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/81_04_nd_Transition_to_attack__good_favorite_81_24_Attacking_39.mp4",
+      "videoFile": "Transition_to_attack/81_04_nd_Transition_to_attack__good_favorite_81_24_Attacking_39.mp4",
+      "localFile": "Transition_to_attack/81_04_nd_Transition_to_attack__good_favorite_81_24_Attacking_39.mp4",
       "section": "offensive-transition",
       "labels": [
         "offensive-transition"
@@ -2193,8 +2193,8 @@
       },
       "minute": 81,
       "second": 44,
-      "videoFile": "Amivhevole v U18_01.08.2026/Mid_Block/81_44_nd_Mid_Block__82_01_Defending_58.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Mid_Block/81_44_nd_Mid_Block__82_01_Defending_58.mp4",
+      "videoFile": "Mid_Block/81_44_nd_Mid_Block__82_01_Defending_58.mp4",
+      "localFile": "Mid_Block/81_44_nd_Mid_Block__82_01_Defending_58.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
@@ -2215,8 +2215,8 @@
       },
       "minute": 82,
       "second": 18,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/82_18_nd_Build_up__83_00_Attacking_13.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/82_18_nd_Build_up__83_00_Attacking_13.mp4",
+      "videoFile": "Build_up/82_18_nd_Build_up__83_00_Attacking_13.mp4",
+      "localFile": "Build_up/82_18_nd_Build_up__83_00_Attacking_13.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -2237,8 +2237,8 @@
       },
       "minute": 83,
       "second": 2,
-      "videoFile": "Amivhevole v U18_01.08.2026/High_Defence/83_02_nd_High_Defence__83_31_Defending_48.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/High_Defence/83_02_nd_High_Defence__83_31_Defending_48.mp4",
+      "videoFile": "High_Defence/83_02_nd_High_Defence__83_31_Defending_48.mp4",
+      "localFile": "High_Defence/83_02_nd_High_Defence__83_31_Defending_48.mp4",
       "section": "high-defence",
       "labels": [
         "high-defence"
@@ -2259,8 +2259,8 @@
       },
       "minute": 83,
       "second": 40,
-      "videoFile": "Amivhevole v U18_01.08.2026/Mid_Block/83_40_nd_Mid_Block__84_01_Defending_59.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Mid_Block/83_40_nd_Mid_Block__84_01_Defending_59.mp4",
+      "videoFile": "Mid_Block/83_40_nd_Mid_Block__84_01_Defending_59.mp4",
+      "localFile": "Mid_Block/83_40_nd_Mid_Block__84_01_Defending_59.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
@@ -2281,8 +2281,8 @@
       },
       "minute": 84,
       "second": 13,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/84_13_nd_Build_up__84_51_Attacking_14.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/84_13_nd_Build_up__84_51_Attacking_14.mp4",
+      "videoFile": "Build_up/84_13_nd_Build_up__84_51_Attacking_14.mp4",
+      "localFile": "Build_up/84_13_nd_Build_up__84_51_Attacking_14.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -2303,8 +2303,8 @@
       },
       "minute": 84,
       "second": 42,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/84_42_nd_Transition_to_defence__bad_85_25_Defending_73.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/84_42_nd_Transition_to_defence__bad_85_25_Defending_73.mp4",
+      "videoFile": "Transition_to_defence/84_42_nd_Transition_to_defence__bad_85_25_Defending_73.mp4",
+      "localFile": "Transition_to_defence/84_42_nd_Transition_to_defence__bad_85_25_Defending_73.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
@@ -2326,8 +2326,8 @@
       },
       "minute": 85,
       "second": 42,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/85_42_nd_Build_up__good_86_21_Attacking_15.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/85_42_nd_Build_up__good_86_21_Attacking_15.mp4",
+      "videoFile": "Build_up/85_42_nd_Build_up__good_86_21_Attacking_15.mp4",
+      "localFile": "Build_up/85_42_nd_Build_up__good_86_21_Attacking_15.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -2349,8 +2349,8 @@
       },
       "minute": 86,
       "second": 16,
-      "videoFile": "Amivhevole v U18_01.08.2026/High_Defence/86_16_nd_High_Defence__bad_favorite_87_01_Defending_49_gol concesso\nPoco aggressivi s.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/High_Defence/86_16_nd_High_Defence__bad_favorite_87_01_Defending_49_gol concesso\nPoco aggressivi s.mp4",
+      "videoFile": "High_Defence/86_16_nd_High_Defence__bad_favorite_87_01_Defending_49_gol concesso\nPoco aggressivi s.mp4",
+      "localFile": "High_Defence/86_16_nd_High_Defence__bad_favorite_87_01_Defending_49_gol concesso\nPoco aggressivi s.mp4",
       "section": "high-defence",
       "labels": [
         "high-defence"
@@ -2372,8 +2372,8 @@
       },
       "minute": 86,
       "second": 16,
-      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/86_16_nd_Transition_to_defence__bad_86_37_Defending_74.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/86_16_nd_Transition_to_defence__bad_86_37_Defending_74.mp4",
+      "videoFile": "Transition_to_defence/86_16_nd_Transition_to_defence__bad_86_37_Defending_74.mp4",
+      "localFile": "Transition_to_defence/86_16_nd_Transition_to_defence__bad_86_37_Defending_74.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
@@ -2395,8 +2395,8 @@
       },
       "minute": 86,
       "second": 56,
-      "videoFile": "Amivhevole v U18_01.08.2026/Goal/86_56_nd_Goal__87_04_Defending_40.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Goal/86_56_nd_Goal__87_04_Defending_40.mp4",
+      "videoFile": "Goal/86_56_nd_Goal__87_04_Defending_40.mp4",
+      "localFile": "Goal/86_56_nd_Goal__87_04_Defending_40.mp4",
       "section": "goal",
       "labels": [
         "goal"
@@ -2417,8 +2417,8 @@
       },
       "minute": 88,
       "second": 2,
-      "videoFile": "Amivhevole v U18_01.08.2026/Mid_Block/88_02_nd_Mid_Block__88_23_Defending_60.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Mid_Block/88_02_nd_Mid_Block__88_23_Defending_60.mp4",
+      "videoFile": "Mid_Block/88_02_nd_Mid_Block__88_23_Defending_60.mp4",
+      "localFile": "Mid_Block/88_02_nd_Mid_Block__88_23_Defending_60.mp4",
       "section": "mid-block",
       "labels": [
         "mid-block"
@@ -2439,8 +2439,8 @@
       },
       "minute": 88,
       "second": 45,
-      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/88_45_nd_Build_up__good_favorite_89_14_Attacking_16_Esempio Ideale Di costruzione .mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Build_up/88_45_nd_Build_up__good_favorite_89_14_Attacking_16_Esempio Ideale Di costruzione .mp4",
+      "videoFile": "Build_up/88_45_nd_Build_up__good_favorite_89_14_Attacking_16_Esempio Ideale Di costruzione .mp4",
+      "localFile": "Build_up/88_45_nd_Build_up__good_favorite_89_14_Attacking_16_Esempio Ideale Di costruzione .mp4",
       "section": "build-up",
       "labels": [
         "build-up"
@@ -2462,8 +2462,8 @@
       },
       "minute": 89,
       "second": 9,
-      "videoFile": "Amivhevole v U18_01.08.2026/Goal/89_09_nd_Goal__89_17_Attacking_21.mp4",
-      "localFile": "Amivhevole v U18_01.08.2026/Goal/89_09_nd_Goal__89_17_Attacking_21.mp4",
+      "videoFile": "Goal/89_09_nd_Goal__89_17_Attacking_21.mp4",
+      "localFile": "Goal/89_09_nd_Goal__89_17_Attacking_21.mp4",
       "section": "goal",
       "labels": [
         "goal"
@@ -2473,5 +2473,22 @@
       ]
     }
   ],
-  "analysisVideos": []
+  "analysisVideos": [
+    {
+      "id": "post-match-u18",
+      "title": {
+        "en": "Post-match analysis vs U18",
+        "it": "Analisi post-partita vs U18"
+      },
+      "description": {
+        "en": "Post-match video analysis for the amichevole vs Napoli U18 (Vimeo showcase).",
+        "it": "Video di analisi post-partita dell’amichevole vs Napoli U18 (showcase Vimeo)."
+      },
+      "videoFile": "https://vimeo.com/1214963786",
+      "tags": [
+        "post-match",
+        "vimeo"
+      ]
+    }
+  ]
 }

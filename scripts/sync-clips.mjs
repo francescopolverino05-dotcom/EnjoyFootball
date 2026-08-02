@@ -91,7 +91,13 @@ candidates = {}
 for f in sorted(clips_root.rglob('*.mp4')):
     rel = f.relative_to(clips_root).as_posix()
     parts = Path(rel).parts
-    folder = parts[1] if len(parts) > 2 else 'Other'
+    # clips/<Section>/file.mp4  OR  clips/<Drop>/<Section>/file.mp4
+    if len(parts) >= 3:
+        folder = parts[1]
+    elif len(parts) == 2:
+        folder = parts[0]
+    else:
+        folder = 'Other'
     section_id, en_label, it_label = SECTION_MAP.get(folder, ('other', folder, folder))
     stem = f.stem
     m = pat.match(stem)

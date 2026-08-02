@@ -3,7 +3,7 @@ import { MatchData, VideoClip, AnalysisVideo } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
 import { CLIP_LABELS, ANALYSIS_SECTION_ORDER, type ClipLabelId } from '../i18n/clipLabels';
 import type { Localized } from '../i18n/translations';
-import { mediaUrl } from '../utils/mediaUrl';
+import MatchMedia from './MatchMedia';
 
 interface StatsDashboardProps {
   match: MatchData;
@@ -269,20 +269,21 @@ function clipMatchesSearch(
 
 function FullMatchPanel({ match }: { match: MatchData }) {
   const { t } = useLanguage();
-  const src = match.video?.fullMatch
-    ? mediaUrl(match.slug, match.video.fullMatch)
-    : null;
+  const src = match.video?.fullMatch ?? null;
 
   return (
     <div className="video-section">
       <div className="section-title">{t('fullMatchVideo')}</div>
       <p className="video-hint">{t('fullMatchHint')}</p>
       {src ? (
-        <div className="video-player-wrap video-player-wrap--full">
-          <video controls playsInline preload="metadata" src={src}>
-            {t('videoUnsupported')}
-          </video>
-        </div>
+        <MatchMedia
+          slug={match.slug}
+          src={src}
+          kind={null}
+          unsupportedLabel={t('videoUnsupported')}
+          fullHeight
+          title={t('fullMatchVideo')}
+        />
       ) : (
         <div className="video-placeholder">
           {t('noVideo').replace('{slug}', match.slug)}
@@ -368,16 +369,13 @@ function ClipsPanel({ match }: { match: MatchData }) {
             <div className="analysis-grid">
               {section.clips.map((clip) => (
                 <article className="analysis-card" key={clip.id}>
-                  <div className="video-player-wrap">
-                    <video
-                      controls
-                      playsInline
-                      preload="metadata"
-                      src={mediaUrl(match.slug, 'clips', clip.videoFile)}
-                    >
-                      {t('videoUnsupported')}
-                    </video>
-                  </div>
+                  <MatchMedia
+                    slug={match.slug}
+                    src={clip.videoFile}
+                    kind="clips"
+                    unsupportedLabel={t('videoUnsupported')}
+                    title={L(clip.title)}
+                  />
                   <div className="clip-card-body">
                     <div className="clip-card-time">{formatClipTimestamp(clip)}</div>
                     <div className="clip-card-title">{L(clip.title)}</div>
@@ -420,16 +418,13 @@ function VideoAnalysisPanel({ match }: { match: MatchData }) {
       <div className="analysis-grid">
         {videos.map((item: AnalysisVideo) => (
           <article className="analysis-card" key={item.id}>
-            <div className="video-player-wrap">
-              <video
-                controls
-                playsInline
-                preload="metadata"
-                src={mediaUrl(match.slug, 'analysis', item.videoFile)}
-              >
-                {t('videoUnsupported')}
-              </video>
-            </div>
+            <MatchMedia
+              slug={match.slug}
+              src={item.videoFile}
+              kind="analysis"
+              unsupportedLabel={t('videoUnsupported')}
+              title={L(item.title)}
+            />
             <div className="clip-card-body">
               <div className="clip-card-title">{L(item.title)}</div>
               <div className="clip-card-desc">{L(item.description)}</div>

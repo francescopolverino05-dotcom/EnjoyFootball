@@ -2,14 +2,20 @@
 
 ```text
 matches/2026-08-01_amichevole-u19-vs-u18/
-├── match.json      ← stats + clip metadata
-├── video/          ← FULL MATCH  →  video/match.mp4
-├── clips/          ← tactical clips (Clips tab)
-└── analysis/       ← analyst reports (Video Analysis tab)
+├── match.json
+├── video/
+│   └── Amichevole vs U18.mp4     ← FULL MATCH
+├── clips/
+│   ├── Build_up/
+│   ├── Progress/
+│   ├── Mid_Block/
+│   └── …                         ← tactical clips by theme
+└── analysis/
+    └── Post Match v U18.mp4      ← Video Analysis tab
 ```
 
-| Put this…              | Here                         |
-|------------------------|------------------------------|
-| Full game MP4          | `video/match.mp4`            |
-| Hudl / tactical clips  | `clips/` (or root drop → sync) |
-| Long analyst report    | `analysis/`                  |
+| Put this…             | Here |
+|-----------------------|------|
+| Full game MP4         | `video/Amichevole vs U18.mp4` |
+| Tactical clips        | `clips/<Section>/` |
+| Analyst report video  | `analysis/` |
