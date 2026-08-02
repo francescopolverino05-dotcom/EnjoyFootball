@@ -8,7 +8,6 @@ export const CLIP_LABEL_IDS = [
   'mid-block',
   'high-defence',
   'final-third',
-  'final-third',
   'defensive-transition',
   'goal',
   'chance',
