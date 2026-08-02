@@ -1,6 +1,10 @@
+import type { Localized } from '../i18n/translations';
+
+export type { Localized };
+
 export interface TeamInfo {
   id: string;
-  name: string;
+  name: Localized;
   shortName: string;
   colorClass: 'u19' | 'u18' | 'opponent';
 }
@@ -14,7 +18,7 @@ export interface Goal {
 
 export interface TimelineEvent {
   minute: number;
-  label: string;
+  label: Localized;
   type: 'goal' | 'substitution' | 'gk-entry' | 'other';
   teamId?: string;
   positionPercent: number;
@@ -33,41 +37,41 @@ export interface PitchPlayer {
 
 export interface Formation {
   teamId: string;
-  label: string;
+  label: Localized;
   system: string;
   players: PitchPlayer[];
 }
 
 export interface DynamicMetric {
-  name: string;
+  name: Localized;
   homeValue: number;
   awayValue: number;
   unit?: '%';
 }
 
 export interface TeamStat {
-  category: string;
-  name: string;
-  home: string;
-  away: string;
+  category: Localized;
+  name: Localized;
+  home: Localized;
+  away: Localized;
 }
 
 export interface GoalkeeperLog {
   name: string;
   minutes: number;
-  team: string;
-  jerseyColor: string;
+  team: Localized;
+  jerseyColor: Localized;
   shotsFaced: number;
   saves: number;
   goalsConceded: number;
-  notes?: string;
+  notes?: Localized;
   colorClass: 'blue' | 'orange' | 'green';
 }
 
 export interface VideoClip {
   id: string;
-  title: string;
-  description: string;
+  title: Localized;
+  description: Localized;
   minute?: number;
   videoFile: string;
   tags?: string[];
@@ -76,10 +80,10 @@ export interface VideoClip {
 export interface MatchData {
   id: string;
   slug: string;
-  title: string;
-  subtitle: string;
+  title: Localized;
+  subtitle: Localized;
   date: string;
-  competition: string;
+  competition: Localized;
   status: 'draft' | 'in-review' | 'published';
   homeTeam: TeamInfo;
   awayTeam: TeamInfo;
@@ -92,7 +96,7 @@ export interface MatchData {
   goalkeepers: GoalkeeperLog[];
   video?: {
     fullMatch?: string;
-    notes?: string;
+    notes?: Localized;
   };
   clips: VideoClip[];
 }
@@ -100,9 +104,9 @@ export interface MatchData {
 export interface MatchSummary {
   id: string;
   slug: string;
-  title: string;
+  title: Localized;
   date: string;
-  competition: string;
+  competition: Localized;
   status: MatchData['status'];
   homeTeam: string;
   awayTeam: string;

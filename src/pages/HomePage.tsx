@@ -1,30 +1,29 @@
 import { getAllMatches } from '../data/matches';
 import MatchCard from '../components/MatchCard';
 import ReportHeader from '../components/ReportHeader';
+import { useLanguage } from '../i18n/LanguageContext';
 
 export default function HomePage() {
   const matches = getAllMatches();
+  const { t } = useLanguage();
 
   return (
     <div className="app-shell">
       <div className="report-page">
         <ReportHeader
-          pageTitle="ANALISI PARTITE"
-          matchTitle="Primavera — Dashboard"
+          pageTitle={t('homePageTitle')}
+          matchTitle={t('homeDashboard')}
           matchDate={new Date().toISOString().slice(0, 10)}
-          competition="Stagione 2025/26"
+          competition={t('season')}
         />
         <div className="home-hero">
-          <h1>Report Tecnici Partita</h1>
-          <p>
-            Tutte le analisi partita U19/U18 in un unico posto — statistiche,
-            formazioni, video completo e clip di analisi per lo staff tecnico.
-          </p>
+          <h1>{t('homeHeroTitle')}</h1>
+          <p>{t('homeHeroBody')}</p>
         </div>
       </div>
 
       <div className="section-title" style={{ marginBottom: 16 }}>
-        Partite ({matches.length})
+        {t('matches')} ({matches.length})
       </div>
       <div className="match-grid">
         {matches.map((match) => (

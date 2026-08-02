@@ -1,10 +1,12 @@
 import { MatchData } from '../types/match';
+import { useLanguage } from '../i18n/LanguageContext';
 
 interface ScoreboardProps {
   match: MatchData;
 }
 
 export default function Scoreboard({ match }: ScoreboardProps) {
+  const { L } = useLanguage();
   const homeGoals = match.goals.filter((g) => g.teamId === match.homeTeam.id);
   const awayGoals = match.goals.filter((g) => g.teamId === match.awayTeam.id);
 
@@ -15,7 +17,7 @@ export default function Scoreboard({ match }: ScoreboardProps) {
           <div className={`team-badge-circle ${match.homeTeam.colorClass}`}>
             {match.homeTeam.shortName}
           </div>
-          <div className="team-cover-name">{match.homeTeam.name}</div>
+          <div className="team-cover-name">{L(match.homeTeam.name)}</div>
         </div>
         <div className="score-display">
           {match.score.home} – {match.score.away}
@@ -24,7 +26,7 @@ export default function Scoreboard({ match }: ScoreboardProps) {
           <div className={`team-badge-circle ${match.awayTeam.colorClass}`}>
             {match.awayTeam.shortName}
           </div>
-          <div className="team-cover-name">{match.awayTeam.name}</div>
+          <div className="team-cover-name">{L(match.awayTeam.name)}</div>
         </div>
       </div>
 
@@ -37,13 +39,9 @@ export default function Scoreboard({ match }: ScoreboardProps) {
             </div>
           ))}
         </div>
-        <div style={{ textAlign: 'right' }}>
+        <div className="scorers-away">
           {awayGoals.map((g) => (
-            <div
-              className="scorer-item"
-              key={`${g.minute}-${g.scorer}`}
-              style={{ justifyContent: 'flex-end' }}
-            >
+            <div className="scorer-item scorer-item-away" key={`${g.minute}-${g.scorer}`}>
               {g.minute}&apos; {g.scorer} ⚽
             </div>
           ))}

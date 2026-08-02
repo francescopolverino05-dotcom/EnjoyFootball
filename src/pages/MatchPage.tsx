@@ -5,19 +5,21 @@ import Scoreboard from '../components/Scoreboard';
 import Timeline from '../components/Timeline';
 import Formations from '../components/Formations';
 import StatsDashboard from '../components/StatsDashboard';
+import { useLanguage } from '../i18n/LanguageContext';
 
 export default function MatchPage() {
   const { slug } = useParams<{ slug: string }>();
   const match = slug ? getMatchBySlug(slug) : undefined;
+  const { t, L } = useLanguage();
 
   if (!match) {
     return (
       <div className="app-shell">
         <Link to="/" className="back-link">
-          ← Torna alle partite
+          {t('backToMatches')}
         </Link>
         <div className="report-page">
-          <p>Partita non trovata.</p>
+          <p>{t('matchNotFound')}</p>
         </div>
       </div>
     );
@@ -28,15 +30,15 @@ export default function MatchPage() {
   return (
     <div className="app-shell">
       <Link to="/" className="back-link">
-        ← Torna alle partite
+        {t('backToMatches')}
       </Link>
 
       <div className="report-page">
         <ReportHeader
-          pageTitle="DISTINTA DI GARA"
+          pageTitle={t('teamSheet')}
           matchTitle={scoreLine}
           matchDate={match.date}
-          competition={match.subtitle}
+          competition={L(match.subtitle)}
         />
         <Scoreboard match={match} />
         <Timeline events={match.timeline} />
@@ -45,10 +47,10 @@ export default function MatchPage() {
 
       <div className="report-page">
         <ReportHeader
-          pageTitle="DASHBOARD TATTICA"
+          pageTitle={t('tacticalDashboard')}
           matchTitle={scoreLine}
           matchDate={match.date}
-          competition={match.subtitle}
+          competition={L(match.subtitle)}
         />
         <StatsDashboard match={match} />
       </div>

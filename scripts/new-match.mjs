@@ -49,24 +49,31 @@ mkdirSync(join(matchDir, 'video'), { recursive: true });
 mkdirSync(join(matchDir, 'clips'), { recursive: true });
 
 const title = args.title || slug.replace(/-/g, ' ');
+const typeLabel = type.charAt(0).toUpperCase() + type.slice(1);
 
 const template = {
   id: slug,
   slug,
-  title,
-  subtitle: type.charAt(0).toUpperCase() + type.slice(1),
+  title: { en: title, it: title },
+  subtitle: { en: typeLabel, it: typeLabel },
   date: args.date,
-  competition: type.charAt(0).toUpperCase() + type.slice(1),
+  competition: { en: typeLabel, it: typeLabel },
   status: 'draft',
   homeTeam: {
     id: 'u19',
-    name: 'Napoli U19 (Azzurri)',
+    name: {
+      en: 'Napoli Primavera (Azzurri)',
+      it: 'Napoli Primavera (Azzurri)',
+    },
     shortName: 'U19',
     colorClass: 'u19',
   },
   awayTeam: {
     id: 'opponent',
-    name: 'Avversario',
+    name: {
+      en: 'Opponent',
+      it: 'Avversario',
+    },
     shortName: 'OPP',
     colorClass: 'opponent',
   },
@@ -79,7 +86,10 @@ const template = {
   goalkeepers: [],
   video: {
     fullMatch: 'video/match.mp4',
-    notes: `Aggiungere match.mp4 in matches/${slug}/video/`,
+    notes: {
+      en: `Add match.mp4 to matches/${slug}/video/`,
+      it: `Aggiungere match.mp4 in matches/${slug}/video/`,
+    },
   },
   clips: [],
 };

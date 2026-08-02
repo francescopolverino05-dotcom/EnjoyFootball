@@ -1,18 +1,21 @@
 import { Formation } from '../types/match';
+import { useLanguage } from '../i18n/LanguageContext';
 
 interface FormationsProps {
   formations: Formation[];
 }
 
 export default function Formations({ formations }: FormationsProps) {
+  const { t, L } = useLanguage();
+
   return (
     <>
-      <div className="section-title">Disposizione Tattica</div>
+      <div className="section-title">{t('tacticalSetup')}</div>
       <div className="formations-grid">
         {formations.map((formation) => (
           <div className="tactical-pitch-card" key={formation.teamId}>
             <div className="pitch-header">
-              {formation.label} ({formation.system})
+              {L(formation.label)} ({formation.system})
             </div>
             <div className="pitch-canvas">
               <div className="pitch-center-line" />
@@ -21,7 +24,7 @@ export default function Formations({ formations }: FormationsProps) {
               <div className="pitch-penalty-area top" />
               {formation.players.map((player) => (
                 <div
-                  key={`${player.number}-${player.name}`}
+                  key={`${player.number}-${player.name}-${player.left}`}
                   className={`pitch-player ${player.isGk ? 'gk' : player.teamId}`}
                   style={{
                     top: player.top,
