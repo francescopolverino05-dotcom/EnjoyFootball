@@ -2,6 +2,7 @@ import { useState } from 'react';
 import {
   sessionMediaUrl,
   isVimeoUrl,
+  isPdfSrc,
   vimeoEmbedUrl,
   type MediaLibrary,
 } from '../utils/mediaUrl';
@@ -16,6 +17,8 @@ interface MatchMediaProps {
   title?: string;
   unsupportedLabel: string;
   playLabel?: string;
+  openPdfLabel?: string;
+  downloadPdfLabel?: string;
   fullHeight?: boolean;
   /**
    * If false (default for grids), show a play button and only mount the Vimeo
@@ -24,7 +27,7 @@ interface MatchMediaProps {
   autoload?: boolean;
 }
 
-/** Renders a local/remote MP4 or a Vimeo embed. */
+/** Renders a local/remote MP4, a Vimeo embed, or an analysis PDF. */
 export default function MatchMedia({
   slug,
   library = 'matches',
@@ -33,6 +36,8 @@ export default function MatchMedia({
   title,
   unsupportedLabel,
   playLabel = 'Play',
+  openPdfLabel = 'Open PDF',
+  downloadPdfLabel = 'Download',
   fullHeight = false,
   autoload = false,
 }: MatchMediaProps) {
@@ -84,6 +89,29 @@ export default function MatchMedia({
     kind && !/^https?:\/\//i.test(src)
       ? sessionMediaUrl(library, slug, kind, src)
       : sessionMediaUrl(library, slug, src);
+
+  if (isPdfSrc(src)) {
+    return (
+      <div
+        className={`video-player-wrap video-player-wrap--pdf ${fullHeight ? 'video-player-wrap--full' : ''}`}
+      >
+        <iframe src={resolved} title={title || 'PDF'} className="pdf-frame" />
+        <div className="pdf-actions">
+          <a
+            className="pdf-action"
+            href={resolved}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {openPdfLabel}
+          </a>
+          <a className="pdf-action pdf-action--secondary" href={resolved} download>
+            {downloadPdfLabel}
+          </a>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className={`video-player-wrap ${fullHeight ? 'video-player-wrap--full' : ''}`}>

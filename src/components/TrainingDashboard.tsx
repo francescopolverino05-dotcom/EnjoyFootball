@@ -238,6 +238,8 @@ function TrainingAnalysisPanel({ session }: { session: TrainingSession }) {
               kind="analysis"
               unsupportedLabel={t('videoUnsupported')}
               playLabel={t('playVideo')}
+              openPdfLabel={t('openPdf')}
+              downloadPdfLabel={t('downloadPdf')}
               title={L(item.title)}
               autoload
             />

@@ -428,6 +428,8 @@ function VideoAnalysisPanel({ match }: { match: MatchData }) {
               kind="analysis"
               unsupportedLabel={t('videoUnsupported')}
               playLabel={t('playVideo')}
+              openPdfLabel={t('openPdf')}
+              downloadPdfLabel={t('downloadPdf')}
               title={L(item.title)}
               autoload
             />

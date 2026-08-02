@@ -2416,6 +2416,24 @@
         "vimeo",
         "analysis"
       ]
+    },
+    {
+      "id": "tactical-blueprint",
+      "title": {
+        "en": "Tactical Blueprint",
+        "it": "Blueprint tattico"
+      },
+      "description": {
+        "en": "Napoli Primavera post-match tactical blueprint (U19 vs U18).",
+        "it": "Blueprint tattico post-partita Napoli Primavera (U19 vs U18)."
+      },
+      "videoFile": "Napoli_Tactical_Blueprint.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "analysis",
+        "tactical"
+      ]
     }
   ]
 }

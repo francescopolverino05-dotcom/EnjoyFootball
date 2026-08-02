@@ -95,12 +95,15 @@ export interface VideoClip {
   tags?: string[];
 }
 
-/** Longer analyst video breakdowns (not raw match clips). */
+/** Longer analyst video breakdowns or PDF documents (not raw match clips). */
 export interface AnalysisVideo {
   id: string;
   title: Localized;
   description: Localized;
+  /** Relative path under analysis/, absolute URL, Vimeo URL, or PDF path */
   videoFile: string;
+  /** Optional; inferred from videoFile when omitted (e.g. .pdf → document). */
+  kind?: 'video' | 'pdf';
   createdAt?: string;
   tags?: string[];
 }

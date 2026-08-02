@@ -959,6 +959,54 @@ button {
   max-height: min(70vh, 640px);
 }
 
+.video-player-wrap--pdf {
+  display: flex;
+  flex-direction: column;
+  background: #f3f5f8;
+  margin-bottom: 0;
+}
+
+.video-player-wrap--pdf .pdf-frame {
+  width: 100%;
+  height: min(52vh, 420px);
+  border: 0;
+  display: block;
+  background: #e8ecf1;
+}
+
+.video-player-wrap--full.video-player-wrap--pdf .pdf-frame {
+  height: min(70vh, 640px);
+}
+
+.pdf-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px 12px;
+  border-top: 1px solid var(--border-light);
+  background: #fff;
+}
+
+.pdf-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #fff;
+  background: var(--napoli-blue, #007fff);
+  border-radius: 4px;
+}
+
+.pdf-action--secondary {
+  color: var(--napoli-blue-dark, #0054a6);
+  background: transparent;
+  border: 1px solid var(--border-light);
+}
+
 .vimeo-play-button {
   position: absolute;
   inset: 0;

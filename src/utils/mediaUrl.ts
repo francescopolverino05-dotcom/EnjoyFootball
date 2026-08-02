@@ -90,6 +90,21 @@ export function isVimeoUrl(input: string): boolean {
   return parseVimeoRef(input) != null || /vimeo\.com/i.test(input);
 }
 
+/** True for PDF paths or absolute URLs ending in .pdf (ignoring query/hash). */
+export function isPdfSrc(input: string): boolean {
+  if (!input) return false;
+  const trimmed = input.trim();
+  try {
+    if (/^https?:\/\//i.test(trimmed)) {
+      const path = new URL(trimmed).pathname;
+      return /\.pdf$/i.test(path);
+    }
+  } catch {
+    // fall through
+  }
+  return /\.pdf$/i.test(trimmed.split(/[?#]/)[0] ?? '');
+}
+
 /** Player embed URL for an iframe (includes unlisted privacy hash when present). */
 export function vimeoEmbedUrl(input: string): string | null {
   const ref = parseVimeoRef(input);
