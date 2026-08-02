@@ -1248,6 +1248,73 @@
       ]
     },
     {
+      "id": "progress-6500-28",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 65,
+      "second": 0,
+      "videoFile": "Amivhevole v U18_01.08.2026/Progress/65_00_nd_Progress__65_29_Attacking_28.mp4",
+      "localFile": "Amivhevole v U18_01.08.2026/Progress/65_00_nd_Progress__65_29_Attacking_28.mp4",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
+      "id": "progress-6549-29",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 65,
+      "second": 49,
+      "videoFile": "Amivhevole v U18_01.08.2026/Progress/65_49_nd_Progress__66_07_Attacking_29.mp4",
+      "localFile": "Amivhevole v U18_01.08.2026/Progress/65_49_nd_Progress__66_07_Attacking_29.mp4",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
+      "id": "progress-6631-30",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 66,
+      "second": 31,
+      "videoFile": "Amivhevole v U18_01.08.2026/Progress/66_31_nd_Progress__good_67_00_Attacking_30.mp4",
+      "localFile": "Amivhevole v U18_01.08.2026/Progress/66_31_nd_Progress__good_67_00_Attacking_30.mp4",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "good",
+        "attacking"
+      ]
+    },
+    {
       "id": "build-up-6853-7",
       "title": {
         "en": "Natural midfield rotation",
