@@ -5,10 +5,16 @@ dist/
 tsconfig.tsbuildinfo
 
 # Large video files — keep folder structure, ignore binaries
+matches/**/video/**/*.mp4
+matches/**/video/**/*.mov
 matches/**/video/*.mp4
 matches/**/video/*.mov
+matches/**/clips/**/*.mp4
+matches/**/clips/**/*.mov
 matches/**/clips/*.mp4
 matches/**/clips/*.mov
+matches/**/analysis/**/*.mp4
+matches/**/analysis/**/*.mov
 matches/**/analysis/*.mp4
 matches/**/analysis/*.mov
 

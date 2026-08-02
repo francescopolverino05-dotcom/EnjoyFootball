@@ -33,17 +33,42 @@
     "shortName": "U18",
     "colorClass": "u18"
   },
-  "score": { "home": 3, "away": 1 },
+  "score": {
+    "home": 3,
+    "away": 1
+  },
   "goals": [
-    { "minute": 32, "scorer": "Esposito", "position": "RW", "teamId": "u19" },
-    { "minute": 38, "scorer": "Esposito", "position": "RW", "teamId": "u19" },
-    { "minute": 86, "scorer": "U18 Goal", "teamId": "u18" },
-    { "minute": 92, "scorer": "Mané", "position": "CF", "teamId": "u19" }
+    {
+      "minute": 32,
+      "scorer": "Esposito",
+      "position": "RW",
+      "teamId": "u19"
+    },
+    {
+      "minute": 38,
+      "scorer": "Esposito",
+      "position": "RW",
+      "teamId": "u19"
+    },
+    {
+      "minute": 86,
+      "scorer": "U18 Goal",
+      "teamId": "u18"
+    },
+    {
+      "minute": 92,
+      "scorer": "Mané",
+      "position": "CF",
+      "teamId": "u19"
+    }
   ],
   "timeline": [
     {
       "minute": 1,
-      "label": { "en": "Magliano GK", "it": "Magliano GK" },
+      "label": {
+        "en": "Magliano GK",
+        "it": "Magliano GK"
+      },
       "type": "gk-entry",
       "teamId": "u19",
       "positionPercent": 5,
@@ -51,21 +76,30 @@
     },
     {
       "minute": 32,
-      "label": { "en": "Esposito 1-0", "it": "Esposito 1-0" },
+      "label": {
+        "en": "Esposito 1-0",
+        "it": "Esposito 1-0"
+      },
       "type": "goal",
       "teamId": "u19",
       "positionPercent": 35
     },
     {
       "minute": 38,
-      "label": { "en": "Esposito 2-0", "it": "Esposito 2-0" },
+      "label": {
+        "en": "Esposito 2-0",
+        "it": "Esposito 2-0"
+      },
       "type": "goal",
       "teamId": "u19",
       "positionPercent": 42
     },
     {
       "minute": 46,
-      "label": { "en": "Merone GK", "it": "Merone GK" },
+      "label": {
+        "en": "Merone GK",
+        "it": "Merone GK"
+      },
       "type": "gk-entry",
       "teamId": "u19",
       "positionPercent": 52,
@@ -73,7 +107,10 @@
     },
     {
       "minute": 70,
-      "label": { "en": "Spinelli GK", "it": "Spinelli GK" },
+      "label": {
+        "en": "Spinelli GK",
+        "it": "Spinelli GK"
+      },
       "type": "gk-entry",
       "teamId": "u19",
       "positionPercent": 77,
@@ -81,14 +118,20 @@
     },
     {
       "minute": 86,
-      "label": { "en": "U18 Goal 2-1", "it": "Gol U18 2-1" },
+      "label": {
+        "en": "U18 Goal 2-1",
+        "it": "Gol U18 2-1"
+      },
       "type": "goal",
       "teamId": "u18",
       "positionPercent": 90
     },
     {
       "minute": 92,
-      "label": { "en": "Mané 3-1", "it": "Mané 3-1" },
+      "label": {
+        "en": "Mané 3-1",
+        "it": "Mané 3-1"
+      },
       "type": "goal",
       "teamId": "u19",
       "positionPercent": 96
@@ -97,74 +140,232 @@
   "formations": [
     {
       "teamId": "u19",
-      "label": { "en": "Napoli Primavera", "it": "Napoli Primavera" },
+      "label": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
       "system": "4-2-3-1",
       "players": [
-        { "number": 61, "name": "Magliano", "teamId": "u19", "isGk": true, "bottom": "10%", "left": "50%" },
-        { "number": 2, "name": "Zappalà", "teamId": "u19", "bottom": "25%", "left": "15%" },
-        { "number": 3, "name": "Branchizzo", "teamId": "u19", "bottom": "22%", "left": "38%" },
-        { "number": 15, "name": "Lieto", "teamId": "u19", "bottom": "22%", "left": "62%" },
-        { "number": 16, "name": "Melnyk", "teamId": "u19", "bottom": "25%", "left": "85%" },
-        { "number": 29, "name": "Chiummariello", "teamId": "u19", "bottom": "40%", "left": "35%" },
-        { "number": 19, "name": "De Stefano", "teamId": "u19", "bottom": "40%", "left": "65%" },
-        { "number": 27, "name": "Rovetini", "teamId": "u19", "bottom": "58%", "left": "20%" },
-        { "number": 8, "name": "Anic", "teamId": "u19", "bottom": "58%", "left": "50%" },
-        { "number": 18, "name": "Esposito", "teamId": "u19", "bottom": "58%", "left": "80%" },
-        { "number": 33, "name": "Pengue", "teamId": "u19", "bottom": "78%", "left": "50%" }
+        {
+          "number": 61,
+          "name": "Magliano",
+          "teamId": "u19",
+          "isGk": true,
+          "bottom": "10%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Zappalà",
+          "teamId": "u19",
+          "bottom": "25%",
+          "left": "15%"
+        },
+        {
+          "number": 3,
+          "name": "Branchizzo",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "38%"
+        },
+        {
+          "number": 15,
+          "name": "Lieto",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "62%"
+        },
+        {
+          "number": 16,
+          "name": "Melnyk",
+          "teamId": "u19",
+          "bottom": "25%",
+          "left": "85%"
+        },
+        {
+          "number": 29,
+          "name": "Chiummariello",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "35%"
+        },
+        {
+          "number": 19,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "65%"
+        },
+        {
+          "number": 27,
+          "name": "Rovetini",
+          "teamId": "u19",
+          "bottom": "58%",
+          "left": "20%"
+        },
+        {
+          "number": 8,
+          "name": "Anic",
+          "teamId": "u19",
+          "bottom": "58%",
+          "left": "50%"
+        },
+        {
+          "number": 18,
+          "name": "Esposito",
+          "teamId": "u19",
+          "bottom": "58%",
+          "left": "80%"
+        },
+        {
+          "number": 33,
+          "name": "Pengue",
+          "teamId": "u19",
+          "bottom": "78%",
+          "left": "50%"
+        }
       ]
     },
     {
       "teamId": "u18",
-      "label": { "en": "Napoli U18", "it": "Napoli U18" },
+      "label": {
+        "en": "Napoli U18",
+        "it": "Napoli U18"
+      },
       "system": "4-3-3",
       "players": [
-        { "number": 1, "name": "GK U18", "teamId": "u18", "isGk": true, "top": "10%", "left": "50%" },
-        { "number": 4, "name": "LB", "teamId": "u18", "top": "25%", "left": "15%" },
-        { "number": 5, "name": "LCB", "teamId": "u18", "top": "22%", "left": "38%" },
-        { "number": 6, "name": "RCB", "teamId": "u18", "top": "22%", "left": "62%" },
-        { "number": 2, "name": "RB", "teamId": "u18", "top": "25%", "left": "85%" },
-        { "number": 8, "name": "DM", "teamId": "u18", "top": "40%", "left": "50%" },
-        { "number": 10, "name": "LCM", "teamId": "u18", "top": "50%", "left": "30%" },
-        { "number": 11, "name": "RCM", "teamId": "u18", "top": "50%", "left": "70%" },
-        { "number": 7, "name": "LW", "teamId": "u18", "top": "72%", "left": "20%" },
-        { "number": 9, "name": "RW", "teamId": "u18", "top": "72%", "left": "80%" },
-        { "number": 11, "name": "ST", "teamId": "u18", "top": "82%", "left": "50%" }
+        {
+          "number": 1,
+          "name": "GK U18",
+          "teamId": "u18",
+          "isGk": true,
+          "top": "10%",
+          "left": "50%"
+        },
+        {
+          "number": 4,
+          "name": "LB",
+          "teamId": "u18",
+          "top": "25%",
+          "left": "15%"
+        },
+        {
+          "number": 5,
+          "name": "LCB",
+          "teamId": "u18",
+          "top": "22%",
+          "left": "38%"
+        },
+        {
+          "number": 6,
+          "name": "RCB",
+          "teamId": "u18",
+          "top": "22%",
+          "left": "62%"
+        },
+        {
+          "number": 2,
+          "name": "RB",
+          "teamId": "u18",
+          "top": "25%",
+          "left": "85%"
+        },
+        {
+          "number": 8,
+          "name": "DM",
+          "teamId": "u18",
+          "top": "40%",
+          "left": "50%"
+        },
+        {
+          "number": 10,
+          "name": "LCM",
+          "teamId": "u18",
+          "top": "50%",
+          "left": "30%"
+        },
+        {
+          "number": 11,
+          "name": "RCM",
+          "teamId": "u18",
+          "top": "50%",
+          "left": "70%"
+        },
+        {
+          "number": 7,
+          "name": "LW",
+          "teamId": "u18",
+          "top": "72%",
+          "left": "20%"
+        },
+        {
+          "number": 9,
+          "name": "RW",
+          "teamId": "u18",
+          "top": "72%",
+          "left": "80%"
+        },
+        {
+          "number": 11,
+          "name": "ST",
+          "teamId": "u18",
+          "top": "82%",
+          "left": "50%"
+        }
       ]
     }
   ],
   "dynamics": [
     {
-      "name": { "en": "Possession %", "it": "Possesso Palla %" },
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
       "homeValue": 54,
       "awayValue": 46,
       "unit": "%"
     },
     {
-      "name": { "en": "Pass Accuracy %", "it": "Precisione Passaggi %" },
+      "name": {
+        "en": "Pass Accuracy %",
+        "it": "Precisione Passaggi %"
+      },
       "homeValue": 82.6,
       "awayValue": 76.8,
       "unit": "%"
     },
     {
-      "name": { "en": "Defensive Triangle Stability %", "it": "Stabilità Triangoli Difensivi %" },
+      "name": {
+        "en": "Defensive Triangle Stability %",
+        "it": "Stabilità Triangoli Difensivi %"
+      },
       "homeValue": 88,
       "awayValue": 76,
       "unit": "%"
     },
     {
-      "name": { "en": "Offensive Triangle Efficiency %", "it": "Efficienza Triangoli Offensivi %" },
+      "name": {
+        "en": "Offensive Triangle Efficiency %",
+        "it": "Efficienza Triangoli Offensivi %"
+      },
       "homeValue": 82,
       "awayValue": 70,
       "unit": "%"
     },
     {
-      "name": { "en": "Compact Defence %", "it": "Difesa Compatta %" },
+      "name": {
+        "en": "Compact Defence %",
+        "it": "Difesa Compatta %"
+      },
       "homeValue": 78,
       "awayValue": 60,
       "unit": "%"
     },
     {
-      "name": { "en": "Disunited Defence %", "it": "Difesa Disunita %" },
+      "name": {
+        "en": "Disunited Defence %",
+        "it": "Difesa Disunita %"
+      },
       "homeValue": 22,
       "awayValue": 40,
       "unit": "%"
@@ -172,146 +373,290 @@
   ],
   "teamStats": [
     {
-      "category": { "en": "Scoring", "it": "Marcature" },
-      "name": { "en": "Goals Scored", "it": "Gol Segnati" },
+      "category": {
+        "en": "Scoring",
+        "it": "Marcature"
+      },
+      "name": {
+        "en": "Goals Scored",
+        "it": "Gol Segnati"
+      },
       "home": "3",
       "away": "1"
     },
     {
-      "category": { "en": "Scoring", "it": "Marcature" },
-      "name": { "en": "Assists", "it": "Assist" },
+      "category": {
+        "en": "Scoring",
+        "it": "Marcature"
+      },
+      "name": {
+        "en": "Assists",
+        "it": "Assist"
+      },
       "home": "3",
       "away": "1"
     },
     {
-      "category": { "en": "Attack", "it": "Attacco" },
-      "name": { "en": "Total Shots", "it": "Tiri Totali" },
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Total Shots",
+        "it": "Tiri Totali"
+      },
       "home": "15",
       "away": "8"
     },
     {
-      "category": { "en": "Attack", "it": "Attacco" },
-      "name": { "en": "Shots on Target", "it": "Tiri In Porta" },
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Shots on Target",
+        "it": "Tiri In Porta"
+      },
       "home": "7",
       "away": "3"
     },
     {
-      "category": { "en": "Defence", "it": "Difesa" },
-      "name": { "en": "Saves", "it": "Parate" },
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Saves",
+        "it": "Parate"
+      },
       "home": "2",
       "away": "4"
     },
     {
-      "category": { "en": "Possession", "it": "Possesso" },
-      "name": { "en": "Possession %", "it": "Possesso Palla %" },
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
       "home": "54%",
       "away": "46%"
     },
     {
-      "category": { "en": "Passing", "it": "Passaggi" },
-      "name": { "en": "Total Passes", "it": "Passaggi Totali" },
+      "category": {
+        "en": "Passing",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Total Passes",
+        "it": "Passaggi Totali"
+      },
       "home": "438",
       "away": "362"
     },
     {
-      "category": { "en": "Passing", "it": "Passaggi" },
-      "name": { "en": "Completed Passes", "it": "Passaggi Riusciti" },
+      "category": {
+        "en": "Passing",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Completed Passes",
+        "it": "Passaggi Riusciti"
+      },
       "home": "362",
       "away": "278"
     },
     {
-      "category": { "en": "Passing", "it": "Passaggi" },
-      "name": { "en": "Pass Accuracy %", "it": "Precisione Passaggi %" },
+      "category": {
+        "en": "Passing",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Pass Accuracy %",
+        "it": "Precisione Passaggi %"
+      },
       "home": "82.6%",
       "away": "76.8%"
     },
     {
-      "category": { "en": "Passing", "it": "Passaggi" },
-      "name": { "en": "Key Passes", "it": "Passaggi Chiave" },
+      "category": {
+        "en": "Passing",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Key Passes",
+        "it": "Passaggi Chiave"
+      },
       "home": "8",
       "away": "4"
     },
     {
-      "category": { "en": "Duels", "it": "Duelli" },
-      "name": { "en": "Duels Won", "it": "Duelli Vinti" },
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Duels Won",
+        "it": "Duelli Vinti"
+      },
       "home": "52",
       "away": "42"
     },
     {
-      "category": { "en": "Duels", "it": "Duelli" },
-      "name": { "en": "Total Duels", "it": "Duelli Totali" },
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Total Duels",
+        "it": "Duelli Totali"
+      },
       "home": "94",
       "away": "94"
     },
     {
-      "category": { "en": "Duels", "it": "Duelli" },
-      "name": { "en": "Duels Won %", "it": "Duelli Vinti %" },
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Duels Won %",
+        "it": "Duelli Vinti %"
+      },
       "home": "55.3%",
       "away": "44.7%"
     },
     {
-      "category": { "en": "Fouls", "it": "Falli" },
-      "name": { "en": "Fouls Committed", "it": "Falli Commessi" },
+      "category": {
+        "en": "Fouls",
+        "it": "Falli"
+      },
+      "name": {
+        "en": "Fouls Committed",
+        "it": "Falli Commessi"
+      },
       "home": "11",
       "away": "14"
     },
     {
-      "category": { "en": "Fouls", "it": "Falli" },
-      "name": { "en": "Offsides", "it": "Fuorigioco" },
+      "category": {
+        "en": "Fouls",
+        "it": "Falli"
+      },
+      "name": {
+        "en": "Offsides",
+        "it": "Fuorigioco"
+      },
       "home": "3",
       "away": "2"
     },
     {
-      "category": { "en": "Set Pieces", "it": "Calci Piazzati" },
-      "name": { "en": "Corners", "it": "Calci d'Angolo" },
+      "category": {
+        "en": "Set Pieces",
+        "it": "Calci Piazzati"
+      },
+      "name": {
+        "en": "Corners",
+        "it": "Calci d'Angolo"
+      },
       "home": "6",
       "away": "4"
     },
     {
-      "category": { "en": "Set Pieces", "it": "Calci Piazzati" },
-      "name": { "en": "Free Kicks", "it": "Calci di Punizione" },
+      "category": {
+        "en": "Set Pieces",
+        "it": "Calci Piazzati"
+      },
+      "name": {
+        "en": "Free Kicks",
+        "it": "Calci di Punizione"
+      },
       "home": "12",
       "away": "10"
     },
     {
-      "category": { "en": "Set Pieces", "it": "Calci Piazzati" },
-      "name": { "en": "Penalties", "it": "Rigori" },
+      "category": {
+        "en": "Set Pieces",
+        "it": "Calci Piazzati"
+      },
+      "name": {
+        "en": "Penalties",
+        "it": "Rigori"
+      },
       "home": "0",
       "away": "0"
     },
     {
-      "category": { "en": "Tactics", "it": "Tattica" },
-      "name": { "en": "Pressing System", "it": "Sistema di Pressing" },
+      "category": {
+        "en": "Tactics",
+        "it": "Tattica"
+      },
+      "name": {
+        "en": "Pressing System",
+        "it": "Sistema di Pressing"
+      },
       "home": "4-4-2",
       "away": "4-3-3 Block"
     },
     {
-      "category": { "en": "Tactics", "it": "Tattica" },
-      "name": { "en": "Defensive Triangle Stability", "it": "Stabilità Triangoli Difensivi" },
+      "category": {
+        "en": "Tactics",
+        "it": "Tattica"
+      },
+      "name": {
+        "en": "Defensive Triangle Stability",
+        "it": "Stabilità Triangoli Difensivi"
+      },
       "home": "88%",
       "away": "76%"
     },
     {
-      "category": { "en": "Tactics", "it": "Tattica" },
-      "name": { "en": "Offensive Triangle Efficiency", "it": "Efficienza Triangoli Offensivi" },
+      "category": {
+        "en": "Tactics",
+        "it": "Tattica"
+      },
+      "name": {
+        "en": "Offensive Triangle Efficiency",
+        "it": "Efficienza Triangoli Offensivi"
+      },
       "home": "82%",
       "away": "70%"
     },
     {
-      "category": { "en": "Tactics", "it": "Tattica" },
-      "name": { "en": "Compact Defence %", "it": "Difesa Compatta %" },
+      "category": {
+        "en": "Tactics",
+        "it": "Tattica"
+      },
+      "name": {
+        "en": "Compact Defence %",
+        "it": "Difesa Compatta %"
+      },
       "home": "78%",
       "away": "60%"
     },
     {
-      "category": { "en": "Tactics", "it": "Tattica" },
-      "name": { "en": "Disunited Defence %", "it": "Difesa Disunita %" },
+      "category": {
+        "en": "Tactics",
+        "it": "Tattica"
+      },
+      "name": {
+        "en": "Disunited Defence %",
+        "it": "Difesa Disunita %"
+      },
       "home": "22%",
       "away": "40%"
     },
     {
-      "category": { "en": "Tactics", "it": "Tattica" },
-      "name": { "en": "Compactness State", "it": "Stato di Compattezza" },
+      "category": {
+        "en": "Tactics",
+        "it": "Tattica"
+      },
+      "name": {
+        "en": "Compactness State",
+        "it": "Stato di Compattezza"
+      },
       "home": {
         "en": "Predominantly Compact",
         "it": "Prevalentemente Compatta"
@@ -322,14 +667,26 @@
       }
     },
     {
-      "category": { "en": "Tactics", "it": "Tattica" },
-      "name": { "en": "Opportunity Index", "it": "Indice Opportunità" },
+      "category": {
+        "en": "Tactics",
+        "it": "Tattica"
+      },
+      "name": {
+        "en": "Opportunity Index",
+        "it": "Indice Opportunità"
+      },
       "home": "8.5",
       "away": "5.0"
     },
     {
-      "category": { "en": "Tactics", "it": "Tattica" },
-      "name": { "en": "Defensive Recovery Index", "it": "Indice Recupero Difensivo" },
+      "category": {
+        "en": "Tactics",
+        "it": "Tattica"
+      },
+      "name": {
+        "en": "Defensive Recovery Index",
+        "it": "Indice Recupero Difensivo"
+      },
       "home": "7.8",
       "away": "6.2"
     }
@@ -342,7 +699,10 @@
         "en": "Napoli Primavera (First Half)",
         "it": "Napoli Primavera (Primo Tempo)"
       },
-      "jerseyColor": { "en": "Sky blue", "it": "Azzurra" },
+      "jerseyColor": {
+        "en": "Sky blue",
+        "it": "Azzurra"
+      },
       "shotsFaced": 1,
       "saves": 1,
       "goalsConceded": 0,
@@ -355,7 +715,10 @@
         "en": "Napoli Primavera (Second Half — Start)",
         "it": "Napoli Primavera (Secondo Tempo - Inizio)"
       },
-      "jerseyColor": { "en": "Orange", "it": "Arancione" },
+      "jerseyColor": {
+        "en": "Orange",
+        "it": "Arancione"
+      },
       "shotsFaced": 1,
       "saves": 1,
       "goalsConceded": 0,
@@ -368,7 +731,10 @@
         "en": "Napoli Primavera (Second Half — End)",
         "it": "Napoli Primavera (Secondo Tempo - Finale)"
       },
-      "jerseyColor": { "en": "Green", "it": "Verde" },
+      "jerseyColor": {
+        "en": "Green",
+        "it": "Verde"
+      },
       "shotsFaced": 1,
       "saves": 0,
       "goalsConceded": 1,
@@ -386,6 +752,271 @@
       "it": "Aggiungere il file MP4 completo in matches/2026-08-01_amichevole-u19-vs-u18/video/match.mp4"
     }
   },
-  "clips": [],
+  "clips": [
+    {
+      "id": "progress-1334-4",
+      "title": {
+        "en": "Little mobility from the attackers",
+        "it": "Poca mobilità dagli attaccanti"
+      },
+      "comments": {
+        "en": "Little mobility from the attackers",
+        "it": "Poca mobilità dagli attaccanti"
+      },
+      "minute": 13,
+      "second": 34,
+      "videoFile": "Amivhevole v U18_01.08.2026/Progress/13_34_wd_Progress__bad_favorite_14_10_Attacking_4_Poca mobilitá dagli attaccanti.mp4",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "bad",
+        "attacking"
+      ]
+    },
+    {
+      "id": "defensive-transition-1713-11",
+      "title": {
+        "en": "Transition to defence",
+        "it": "Transizione difensiva"
+      },
+      "comments": {
+        "en": "Transizione difensiva",
+        "it": "Transizione difensiva"
+      },
+      "minute": 17,
+      "second": 13,
+      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/17_13_wd_Transition_to_defence__bad_favorite_17_36_Defending_11.mp4",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "bad",
+        "defending"
+      ]
+    },
+    {
+      "id": "offensive-transition-3125-5",
+      "title": {
+        "en": "Trasizione offensiva buona",
+        "it": "Trasizione offensiva buona"
+      },
+      "comments": {
+        "en": "Trasizione offensiva buona",
+        "it": "Trasizione offensiva buona"
+      },
+      "minute": 31,
+      "second": 25,
+      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/31_25_wd_Transition_to_attack__good_favorite_32_00_Attacking_5_Trasizione offensiva buona -_ .mp4",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
+      ],
+      "tags": [
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "mid-block-3548-8",
+      "title": {
+        "en": "Generally good positioning",
+        "it": "Posizionamento generalmente buono"
+      },
+      "comments": {
+        "en": "Generally good positioning",
+        "it": "Posizionamento generalmente buono"
+      },
+      "minute": 35,
+      "second": 48,
+      "videoFile": "Amivhevole v U18_01.08.2026/Mid_Block/35_48_wd_Mid_Block__good_favorite_36_30_Defending_8_Posizionaento generalmente buo.mp4",
+      "section": "mid-block",
+      "labels": [
+        "mid-block"
+      ],
+      "tags": [
+        "good",
+        "defending"
+      ]
+    },
+    {
+      "id": "build-up-4041-1",
+      "title": {
+        "en": "GK distribution and decision",
+        "it": "Distribuzione e decisione portiere"
+      },
+      "comments": {
+        "en": "GK distribution and decision",
+        "it": "Distribuzione e decisione portiere"
+      },
+      "minute": 40,
+      "second": 41,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/40_41_wd_Build_up__bad_favorite_40_54_Attacking_1_Distribuzione e decisione port.mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "bad",
+        "attacking"
+      ]
+    },
+    {
+      "id": "mid-block-5701-9",
+      "title": {
+        "en": "Molto buona la marcatura uomo",
+        "it": "Molto buona la marcatura uomo"
+      },
+      "comments": {
+        "en": "Molto buona la marcatura uomo",
+        "it": "Molto buona la marcatura uomo"
+      },
+      "minute": 57,
+      "second": 1,
+      "videoFile": "Amivhevole v U18_01.08.2026/Mid_Block/57_01_wd_Mid_Block__good_favorite_57_22_Defending_9_Molto buona la marcatura uomo .mp4",
+      "section": "mid-block",
+      "labels": [
+        "mid-block"
+      ],
+      "tags": [
+        "good",
+        "defending"
+      ]
+    },
+    {
+      "id": "mid-block-6350-10",
+      "title": {
+        "en": "Next step — more toward the line",
+        "it": "Prossimo step — più verso la linea"
+      },
+      "comments": {
+        "en": "Next step — more toward the line",
+        "it": "Prossimo step — più verso la linea"
+      },
+      "minute": 63,
+      "second": 50,
+      "videoFile": "Amivhevole v U18_01.08.2026/Mid_Block/63_50_wd_Mid_Block__bad_favorite_64_14_Defending_10_Prossimo step (piü verso la li.mp4",
+      "section": "mid-block",
+      "labels": [
+        "mid-block"
+      ],
+      "tags": [
+        "bad",
+        "defending"
+      ]
+    },
+    {
+      "id": "defensive-transition-6417-12",
+      "title": {
+        "en": "Transition to defence",
+        "it": "Transizione difensiva"
+      },
+      "comments": {
+        "en": "Transizione difensiva",
+        "it": "Transizione difensiva"
+      },
+      "minute": 64,
+      "second": 17,
+      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_defence/64_17_wd_Transition_to_defence__bad_favorite_64_53_Defending_12.mp4",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "bad",
+        "defending"
+      ]
+    },
+    {
+      "id": "build-up-6853-2",
+      "title": {
+        "en": "rotazione centrocampo naturale",
+        "it": "rotazione centrocampo naturale"
+      },
+      "comments": {
+        "en": "rotazione centrocampo naturale",
+        "it": "rotazione centrocampo naturale"
+      },
+      "minute": 68,
+      "second": 53,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/68_53_wd_Build_up__good_favorite_69_14_Attacking_2_rotazione centrocampo naturale.mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "offensive-transition-8104-6",
+      "title": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "comments": {
+        "en": "Transizione offensiva",
+        "it": "Transizione offensiva"
+      },
+      "minute": 81,
+      "second": 4,
+      "videoFile": "Amivhevole v U18_01.08.2026/Transition_to_attack/81_04_wd_Transition_to_attack__good_favorite_81_24_Attacking_6.mp4",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
+      ],
+      "tags": [
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "high-defence-8616-7",
+      "title": {
+        "en": "Goal conceded — not aggressive enough",
+        "it": "Gol concesso — poco aggressivi"
+      },
+      "comments": {
+        "en": "Goal conceded — not aggressive enough",
+        "it": "Gol concesso — poco aggressivi"
+      },
+      "minute": 86,
+      "second": 16,
+      "videoFile": "Amivhevole v U18_01.08.2026/High_Defence/86_16_wd_High_Defence__bad_favorite_87_01_Defending_7_gol_concesso_poco_aggressivi.mp4",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "bad",
+        "defending"
+      ]
+    },
+    {
+      "id": "build-up-8845-3",
+      "title": {
+        "en": "Esempio Ideale Di costruzione",
+        "it": "Esempio Ideale Di costruzione"
+      },
+      "comments": {
+        "en": "Esempio Ideale Di costruzione",
+        "it": "Esempio Ideale Di costruzione"
+      },
+      "minute": 88,
+      "second": 45,
+      "videoFile": "Amivhevole v U18_01.08.2026/Build_up/88_45_wd_Build_up__good_favorite_89_14_Attacking_3_Esempio Ideale Di costruzione .mp4",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "good",
+        "attacking"
+      ]
+    }
+  ],
   "analysisVideos": []
 }

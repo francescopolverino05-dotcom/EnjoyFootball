@@ -44,7 +44,7 @@ const dictionaries = {
     noAnalysis:
       'No video analysis uploaded yet. Add MP4 files to matches/{slug}/analysis/ and register them in match.json → analysisVideos.',
     videoAnalysisHint:
-      'Longer analysis videos prepared by the analyst for the coaching staff.',
+      'Clips grouped by tactical theme for coaching review. Upload longer standalone analysis videos to matches/{slug}/analysis/ if needed.',
     videoUnsupported: 'Your browser does not support video playback.',
     minutes: 'minutes',
     team: 'Team',
@@ -94,7 +94,7 @@ const dictionaries = {
     noAnalysis:
       'Nessuna analisi video ancora. Aggiungi file MP4 in matches/{slug}/analysis/ e registrali in match.json → analysisVideos.',
     videoAnalysisHint:
-      'Video di analisi preparati dall’analista per lo staff tecnico.',
+      'Clip raggruppate per tema tattico per lo staff. Carica video di analisi autonomi in matches/{slug}/analysis/ se necessario.',
     videoUnsupported: 'Il browser non supporta la riproduzione video.',
     minutes: 'minuti',
     team: 'Squadra',
