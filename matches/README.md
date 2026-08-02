@@ -4,14 +4,15 @@ Ogni partita ha una cartella con questo formato:
 
 ```
 YYYY-MM-DD_<tipo>-<squadre>/
-├── match.json       ← dati partita, statistiche, clip metadata
+├── match.json       ← dati partita, statistiche, clip + analysis metadata
 ├── README.md        ← note locali (opzionale)
 ├── video/
-│   └── match.mp4    ← video completo (non tracciato in git, troppo grande)
-└── clips/
-    ├── gol-esposito-32.mp4
-    ├── pressione-alta-15.mp4
-    └── ...
+│   └── match.mp4    ← video completo (locale, non in git)
+├── clips/           ← clip tattiche (Build-up, Progress, …) → tab Clips
+│   └── …
+└── analysis/        ← report video analista → tab Video Analysis
+    ├── README.md
+    └── your-report.mp4
 ```
 
 ## Convenzione nomi cartella
@@ -21,10 +22,14 @@ YYYY-MM-DD_<tipo>-<squadre>/
 | `2026-08-01_amichevole-u19-vs-u18` | Amichevole del 1 agosto |
 | `2026-08-08_campionato-u19-vs-roma` | Campionato U19 vs Roma |
 
-## Video
+## Clips vs Video Analysis
 
-I file `.mp4` sono ignorati da git (`.gitignore`). Per condividerli con lo staff:
+| Folder | App tab | Use for |
+|--------|---------|---------|
+| `clips/` | **Clips** | Short tagged moments (Build-up, Mid block, …) |
+| `analysis/` | **Video Analysis** | Longer analyst reports / presentations |
+| `video/` | **Full Match** | Full match recording |
 
-1. **Locale / rete club** — metti i file nella cartella `video/` e `clips/`
-2. **Git LFS** — se vuoi versionare i video su GitHub, abilita LFS (vedi README principale)
-3. **Deploy** — al deploy, i video nella cartella matches vengono serviti dall'app
+## Video files
+
+I file `.mp4` sono ignorati da git. Vedi `docs/HOSTING-VIDEOS.md` per pubblicarli sul sito.

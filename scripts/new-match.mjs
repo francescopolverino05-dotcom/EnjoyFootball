@@ -100,6 +100,28 @@ writeFileSync(join(matchDir, 'match.json'), JSON.stringify(template, null, 2) + 
 writeFileSync(join(matchDir, 'video', '.gitkeep'), '');
 writeFileSync(join(matchDir, 'clips', '.gitkeep'), '');
 writeFileSync(join(matchDir, 'analysis', '.gitkeep'), '');
+writeFileSync(
+  join(matchDir, 'analysis', 'README.md'),
+  `# Video Analysis
+
+Put analyst video reports for this match here (not short tactical clips).
+
+Clips → \`../clips/\` (Clips tab)  
+Analysis reports → this folder (Video Analysis tab)
+
+Example \`match.json\` → \`analysisVideos\` entry:
+
+\`\`\`json
+{
+  "id": "match-report",
+  "title": { "en": "Match video report", "it": "Report video partita" },
+  "description": { "en": "Full analyst breakdown.", "it": "Analisi completa." },
+  "videoFile": "match-report.mp4",
+  "tags": []
+}
+\`\`\`
+`
+);
 
 writeFileSync(
   join(matchDir, 'README.md'),
@@ -110,9 +132,10 @@ writeFileSync(
 ### Prossimi passi
 
 1. Copia il video completo in \`video/match.mp4\`
-2. Aggiungi eventuali clip in \`clips/\` e registrale in \`match.json\` → \`clips\`
-3. Chiedi all'agente Cursor di analizzare il video e compilare le statistiche
-4. Quando pronto, imposta \`status\` su \`"published"\` in match.json
+2. Aggiungi clip tattiche in \`clips/\` (tab Clips)
+3. Aggiungi report analista in \`analysis/\` (tab Video Analysis)
+4. Chiedi all'agente Cursor di analizzare / registrare i file
+5. Quando pronto, imposta \`status\` su \`"published"\` in match.json
 
 ### Clip metadata (example)
 
