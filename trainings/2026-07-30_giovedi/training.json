@@ -1,0 +1,115 @@
+{
+  "id": "2026-07-30_giovedi",
+  "slug": "2026-07-30_giovedi",
+  "date": "2026-07-30",
+  "title": {
+    "en": "Thursday — Build-up from the back",
+    "it": "Giovedì — Costruzione dal basso"
+  },
+  "focus": {
+    "en": "Costruzione dal basso",
+    "it": "Costruzione dal basso"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Week 1 (Sett. 1 27/07) — Giovedí. Local files symlinked from Desktop/Allenamento.",
+    "it": "Settimana 1 (Sett. 1 27/07) — Giovedí. File locali collegati da Desktop/Allenamento."
+  },
+  "video": {
+    "fullSession": "analysis/Build_up/Costruzione dal Basso IOrange).MP4",
+    "notes": {
+      "en": "Largest session video linked when available.",
+      "it": "Collegato il video più lungo quando disponibile."
+    }
+  },
+  "clips": [
+    {
+      "id": "2026-07-30_giovedi-5",
+      "title": {
+        "en": "Progressione Medio (Orange)",
+        "it": "Progressione Medio (Orange)"
+      },
+      "videoFile": "Build_up/Progressione Medio (Orange).MP4",
+      "comments": {
+        "en": "Progressione Medio (Orange)",
+        "it": "Progressione Medio (Orange)"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "Build_up/Progressione Medio (Orange).MP4"
+    }
+  ],
+  "analysisVideos": [
+    {
+      "id": "2026-07-30_giovedi-1",
+      "title": {
+        "en": "Costruzione dal Basso IOrange)",
+        "it": "Costruzione dal Basso IOrange)"
+      },
+      "videoFile": "Build_up/Costruzione dal Basso IOrange).MP4",
+      "description": {
+        "en": "Training analysis — Costruzione dal basso",
+        "it": "Analisi allenamento — Costruzione dal basso"
+      },
+      "tags": [
+        "build-up",
+        "week-1"
+      ]
+    },
+    {
+      "id": "2026-07-30_giovedi-2",
+      "title": {
+        "en": "Practice Match (1T)",
+        "it": "Practice Match (1T)"
+      },
+      "videoFile": "Build_up/Practice Match (1T).MP4",
+      "description": {
+        "en": "Training analysis — Costruzione dal basso",
+        "it": "Analisi allenamento — Costruzione dal basso"
+      },
+      "tags": [
+        "build-up",
+        "week-1"
+      ]
+    },
+    {
+      "id": "2026-07-30_giovedi-3",
+      "title": {
+        "en": "Practice Match (2T)",
+        "it": "Practice Match (2T)"
+      },
+      "videoFile": "Build_up/Practice Match (2T).MP4",
+      "description": {
+        "en": "Training analysis — Costruzione dal basso",
+        "it": "Analisi allenamento — Costruzione dal basso"
+      },
+      "tags": [
+        "build-up",
+        "week-1"
+      ]
+    },
+    {
+      "id": "2026-07-30_giovedi-4",
+      "title": {
+        "en": "Construizone - Progressione (Blú)",
+        "it": "Construizone - Progressione (Blú)"
+      },
+      "videoFile": "Build_up/Construizone - Progressione (Blú).MP4",
+      "description": {
+        "en": "Training analysis — Costruzione dal basso",
+        "it": "Analisi allenamento — Costruzione dal basso"
+      },
+      "tags": [
+        "build-up",
+        "week-1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "2026-07-28_martedi-forza",
+  "slug": "2026-07-28_martedi-forza",
+  "date": "2026-07-28",
+  "title": {
+    "en": "Tuesday (Strength) — Attack shadow play & GK",
+    "it": "Martedì (Forza) — Attack shadow play e portieri"
+  },
+  "focus": {
+    "en": "Attack shadow play (11v0) + GK distribution",
+    "it": "Attack shadow play (11v0) + GK distribution"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Week 1 (Sett. 1 27/07) — Martedî (Forza). Local files symlinked from Desktop/Allenamento.",
+    "it": "Settimana 1 (Sett. 1 27/07) — Martedî (Forza). File locali collegati da Desktop/Allenamento."
+  },
+  "video": {
+    "fullSession": "analysis/Tactical/Attack Shadow Play (11v0).mp4",
+    "notes": {
+      "en": "Largest session video linked when available.",
+      "it": "Collegato il video più lungo quando disponibile."
+    }
+  },
+  "clips": [
+    {
+      "id": "2026-07-28_martedi-forza-2",
+      "title": {
+        "en": "GK distribution 1",
+        "it": "GK distribution 1"
+      },
+      "videoFile": "GK/GK distribution 1.MP4",
+      "comments": {
+        "en": "GK distribution 1",
+        "it": "GK distribution 1"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "gk-action",
+      "labels": [
+        "gk-action"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "GK/GK distribution 1.MP4"
+    },
+    {
+      "id": "2026-07-28_martedi-forza-3",
+      "title": {
+        "en": "GK distribution 2",
+        "it": "GK distribution 2"
+      },
+      "videoFile": "GK/GK distribution 2.MP4",
+      "comments": {
+        "en": "GK distribution 2",
+        "it": "GK distribution 2"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "gk-action",
+      "labels": [
+        "gk-action"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "GK/GK distribution 2.MP4"
+    }
+  ],
+  "analysisVideos": [
+    {
+      "id": "2026-07-28_martedi-forza-1",
+      "title": {
+        "en": "Attack Shadow Play (11v0)",
+        "it": "Attack Shadow Play (11v0)"
+      },
+      "videoFile": "Tactical/Attack Shadow Play (11v0).mp4",
+      "description": {
+        "en": "Training analysis — Attack shadow play (11v0) + GK distribution",
+        "it": "Analisi allenamento — Attack shadow play (11v0) + GK distribution"
+      },
+      "tags": [
+        "tactical-pattern",
+        "week-1"
+      ]
+    }
+  ]
+}

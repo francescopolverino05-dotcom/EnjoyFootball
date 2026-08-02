@@ -20,10 +20,12 @@ export function sessionMediaUrl(
   const absolute = parts.find((p) => /^https?:\/\//i.test(p));
   if (absolute) return absolute;
 
+  // encodeURIComponent encodes ':' → %3A, but local files (e.g. ATT:DEF…) need a
+  // literal colon in the URL path for Vite/static serving to resolve them.
   const encoded = parts
     .flatMap((p) => p.split('/'))
     .filter(Boolean)
-    .map((seg) => encodeURIComponent(seg))
+    .map((seg) => encodeURIComponent(seg).replace(/%3A/gi, ':'))
     .join('/');
   return `/${library}/${slug}/${encoded}`;
 }

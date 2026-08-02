@@ -1,0 +1,60 @@
+{
+  "id": "2026-07-29_mercoledi",
+  "slug": "2026-07-29_mercoledi",
+  "date": "2026-07-29",
+  "title": {
+    "en": "Wednesday — High defence, mid block & final third",
+    "it": "Mercoledì — Difesa alta, mid block e final third"
+  },
+  "focus": {
+    "en": "High defence / Mid block / Final third",
+    "it": "High defence / Mid block / Final third"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Week 1 (Sett. 1 27/07) — Mercoledí. Local files symlinked from Desktop/Allenamento.",
+    "it": "Settimana 1 (Sett. 1 27/07) — Mercoledí. File locali collegati da Desktop/Allenamento."
+  },
+  "video": {
+    "fullSession": "analysis/Final_third/Final Third (Dealing With Crosses).MP4",
+    "notes": {
+      "en": "Largest session video linked when available.",
+      "it": "Collegato il video più lungo quando disponibile."
+    }
+  },
+  "clips": [],
+  "analysisVideos": [
+    {
+      "id": "2026-07-29_mercoledi-1",
+      "title": {
+        "en": "Final Third (Dealing With Crosses)",
+        "it": "Final Third (Dealing With Crosses)"
+      },
+      "videoFile": "Final_third/Final Third (Dealing With Crosses).MP4",
+      "description": {
+        "en": "Training analysis — High defence / Mid block / Final third",
+        "it": "Analisi allenamento — High defence / Mid block / Final third"
+      },
+      "tags": [
+        "final-third",
+        "week-1"
+      ]
+    },
+    {
+      "id": "2026-07-29_mercoledi-2",
+      "title": {
+        "en": "High Defence - Mid Block",
+        "it": "High Defence - Mid Block"
+      },
+      "videoFile": "Mid_Block/High Defence - Mid Block.mp4",
+      "description": {
+        "en": "Training analysis — High defence / Mid block / Final third",
+        "it": "Analisi allenamento — High defence / Mid block / Final third"
+      },
+      "tags": [
+        "mid-block",
+        "week-1"
+      ]
+    }
+  ]
+}

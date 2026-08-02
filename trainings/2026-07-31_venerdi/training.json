@@ -1,0 +1,111 @@
+{
+  "id": "2026-07-31_venerdi",
+  "slug": "2026-07-31_venerdi",
+  "date": "2026-07-31",
+  "title": {
+    "en": "Friday — Attack vs defence",
+    "it": "Venerdì — Attacco vs difesa"
+  },
+  "focus": {
+    "en": "Attack vs defence / Shadow play",
+    "it": "Attack vs defence / Shadow play"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Week 1 (Sett. 1 27/07) — Venerdí. Local files symlinked from Desktop/Allenamento.",
+    "it": "Settimana 1 (Sett. 1 27/07) — Venerdí. File locali collegati da Desktop/Allenamento."
+  },
+  "video": {
+    "fullSession": "clips/Tactical/ATT:DEF Shadow PLay Pt 1.2.MOV",
+    "notes": {
+      "en": "Largest session video linked when available.",
+      "it": "Collegato il video più lungo quando disponibile."
+    }
+  },
+  "clips": [
+    {
+      "id": "2026-07-31_venerdi-1",
+      "title": {
+        "en": "ATT - DEF Shadow PLay Pt 1.2",
+        "it": "ATT - DEF Shadow PLay Pt 1.2"
+      },
+      "videoFile": "Tactical/ATT:DEF Shadow PLay Pt 1.2.MOV",
+      "comments": {
+        "en": "ATT - DEF Shadow PLay Pt 1.2",
+        "it": "ATT - DEF Shadow PLay Pt 1.2"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "tactical-pattern",
+      "labels": [
+        "tactical-pattern"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "Tactical/ATT:DEF Shadow PLay Pt 1.2.MOV"
+    },
+    {
+      "id": "2026-07-31_venerdi-2",
+      "title": {
+        "en": "ATT - DEF Shadow Play Part 2",
+        "it": "ATT - DEF Shadow Play Part 2"
+      },
+      "videoFile": "Tactical/ATT:DEF Shadow Play Part 2.MP4",
+      "comments": {
+        "en": "ATT - DEF Shadow Play Part 2",
+        "it": "ATT - DEF Shadow Play Part 2"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "tactical-pattern",
+      "labels": [
+        "tactical-pattern"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "Tactical/ATT:DEF Shadow Play Part 2.MP4"
+    },
+    {
+      "id": "2026-07-31_venerdi-3",
+      "title": {
+        "en": "Attack -  Defence Shadow Play Part 1",
+        "it": "Attack -  Defence Shadow Play Part 1"
+      },
+      "videoFile": "Tactical/Attack: Defence Shadow Play Part 1.MP4",
+      "comments": {
+        "en": "Attack -  Defence Shadow Play Part 1",
+        "it": "Attack -  Defence Shadow Play Part 1"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "tactical-pattern",
+      "labels": [
+        "tactical-pattern"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "Tactical/Attack: Defence Shadow Play Part 1.MP4"
+    }
+  ],
+  "analysisVideos": [
+    {
+      "id": "2026-07-31_venerdi-4",
+      "title": {
+        "en": "Attack v Defence",
+        "it": "Attack v Defence"
+      },
+      "videoFile": "Tactical/Attack v Defence.MP4",
+      "description": {
+        "en": "Training analysis — Attack vs defence / Shadow play",
+        "it": "Analisi allenamento — Attack vs defence / Shadow play"
+      },
+      "tags": [
+        "tactical-pattern",
+        "week-1"
+      ]
+    }
+  ]
+}

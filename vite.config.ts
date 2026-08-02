@@ -31,7 +31,14 @@ export default defineConfig({
   },
   server: {
     fs: {
-      allow: ['.', 'matches', 'trainings'],
+      // Optional absolute path for local media outside the repo (e.g. Desktop folder).
+      // Example: SSCN_LOCAL_MEDIA="$HOME/Desktop/Allenamento" npm run dev
+      allow: [
+        '.',
+        'matches',
+        'trainings',
+        ...(process.env.SSCN_LOCAL_MEDIA ? [process.env.SSCN_LOCAL_MEDIA] : []),
+      ],
     },
   },
 });

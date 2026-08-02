@@ -1,0 +1,313 @@
+{
+  "id": "2026-07-27_lunedi",
+  "slug": "2026-07-27_lunedi",
+  "date": "2026-07-27",
+  "title": {
+    "en": "Monday training — Possession, match practice & GK",
+    "it": "Lunedì — Possession, match practice e portieri"
+  },
+  "focus": {
+    "en": "Possession / Match practice / GK",
+    "it": "Possession / Match practice / GK"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Week 1 (Sett. 1 27/07) — Lunedì. Local files symlinked from Desktop/Allenamento.",
+    "it": "Settimana 1 (Sett. 1 27/07) — Lunedì. File locali collegati da Desktop/Allenamento."
+  },
+  "video": {
+    "fullSession": "analysis/Other/1x10.MOV",
+    "notes": {
+      "en": "Largest session video linked when available.",
+      "it": "Collegato il video più lungo quando disponibile."
+    }
+  },
+  "clips": [
+    {
+      "id": "2026-07-27_lunedi-5",
+      "title": {
+        "en": "2x5",
+        "it": "2x5"
+      },
+      "videoFile": "Possession_Rondo/2x5.MOV",
+      "comments": {
+        "en": "2x5",
+        "it": "2x5"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "pressing",
+      "labels": [
+        "pressing"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "Possession_Rondo/2x5.MOV"
+    },
+    {
+      "id": "2026-07-27_lunedi-6",
+      "title": {
+        "en": "4x5",
+        "it": "4x5"
+      },
+      "videoFile": "Possession_Rondo/4x5.mp4",
+      "comments": {
+        "en": "4x5",
+        "it": "4x5"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "pressing",
+      "labels": [
+        "pressing"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "Possession_Rondo/4x5.mp4"
+    },
+    {
+      "id": "2026-07-27_lunedi-7",
+      "title": {
+        "en": "Gk7",
+        "it": "Gk7"
+      },
+      "videoFile": "GK/Gk7.mov",
+      "comments": {
+        "en": "Gk7",
+        "it": "Gk7"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "gk-action",
+      "labels": [
+        "gk-action"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "GK/Gk7.mov"
+    },
+    {
+      "id": "2026-07-27_lunedi-8",
+      "title": {
+        "en": "GK5",
+        "it": "GK5"
+      },
+      "videoFile": "GK/GK5.MOV",
+      "comments": {
+        "en": "GK5",
+        "it": "GK5"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "gk-action",
+      "labels": [
+        "gk-action"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "GK/GK5.MOV"
+    },
+    {
+      "id": "2026-07-27_lunedi-9",
+      "title": {
+        "en": "Gk8",
+        "it": "Gk8"
+      },
+      "videoFile": "GK/Gk8.mov",
+      "comments": {
+        "en": "Gk8",
+        "it": "Gk8"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "gk-action",
+      "labels": [
+        "gk-action"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "GK/Gk8.mov"
+    },
+    {
+      "id": "2026-07-27_lunedi-10",
+      "title": {
+        "en": "GK2",
+        "it": "GK2"
+      },
+      "videoFile": "GK/GK2.mov",
+      "comments": {
+        "en": "GK2",
+        "it": "GK2"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "gk-action",
+      "labels": [
+        "gk-action"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "GK/GK2.mov"
+    },
+    {
+      "id": "2026-07-27_lunedi-11",
+      "title": {
+        "en": "Gk6",
+        "it": "Gk6"
+      },
+      "videoFile": "GK/Gk6.mov",
+      "comments": {
+        "en": "Gk6",
+        "it": "Gk6"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "gk-action",
+      "labels": [
+        "gk-action"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "GK/Gk6.mov"
+    },
+    {
+      "id": "2026-07-27_lunedi-12",
+      "title": {
+        "en": "Gk3",
+        "it": "Gk3"
+      },
+      "videoFile": "GK/Gk3.mov",
+      "comments": {
+        "en": "Gk3",
+        "it": "Gk3"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "gk-action",
+      "labels": [
+        "gk-action"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "GK/Gk3.mov"
+    },
+    {
+      "id": "2026-07-27_lunedi-13",
+      "title": {
+        "en": "Gk4",
+        "it": "Gk4"
+      },
+      "videoFile": "GK/Gk4.mov",
+      "comments": {
+        "en": "Gk4",
+        "it": "Gk4"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "gk-action",
+      "labels": [
+        "gk-action"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "GK/Gk4.mov"
+    },
+    {
+      "id": "2026-07-27_lunedi-14",
+      "title": {
+        "en": "GK1",
+        "it": "GK1"
+      },
+      "videoFile": "GK/GK1.mov",
+      "comments": {
+        "en": "GK1",
+        "it": "GK1"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "gk-action",
+      "labels": [
+        "gk-action"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "GK/GK1.mov"
+    }
+  ],
+  "analysisVideos": [
+    {
+      "id": "2026-07-27_lunedi-1",
+      "title": {
+        "en": "1x10",
+        "it": "1x10"
+      },
+      "videoFile": "Other/1x10.MOV",
+      "description": {
+        "en": "Training analysis — Possession / Match practice / GK",
+        "it": "Analisi allenamento — Possession / Match practice / GK"
+      },
+      "tags": [
+        "other",
+        "week-1"
+      ]
+    },
+    {
+      "id": "2026-07-27_lunedi-2",
+      "title": {
+        "en": "2x10",
+        "it": "2x10"
+      },
+      "videoFile": "Other/2x10.MOV",
+      "description": {
+        "en": "Training analysis — Possession / Match practice / GK",
+        "it": "Analisi allenamento — Possession / Match practice / GK"
+      },
+      "tags": [
+        "other",
+        "week-1"
+      ]
+    },
+    {
+      "id": "2026-07-27_lunedi-3",
+      "title": {
+        "en": "3x5",
+        "it": "3x5"
+      },
+      "videoFile": "Possession_Rondo/3x5.MOV",
+      "description": {
+        "en": "Training analysis — Possession / Match practice / GK",
+        "it": "Analisi allenamento — Possession / Match practice / GK"
+      },
+      "tags": [
+        "pressing",
+        "week-1"
+      ]
+    },
+    {
+      "id": "2026-07-27_lunedi-4",
+      "title": {
+        "en": "1x5",
+        "it": "1x5"
+      },
+      "videoFile": "Possession_Rondo/1x5.MOV",
+      "description": {
+        "en": "Training analysis — Possession / Match practice / GK",
+        "it": "Analisi allenamento — Possession / Match practice / GK"
+      },
+      "tags": [
+        "pressing",
+        "week-1"
+      ]
+    }
+  ]
+}
