@@ -746,16 +746,16 @@
     }
   ],
   "video": {
-    "fullMatch": "video/Amichevole vs U18.mp4",
+    "fullMatch": "https://vimeo.com/1214973782",
     "notes": {
-      "en": "Full match file is in video/Amichevole vs U18.mp4",
-      "it": "Il video della partita è in video/Amichevole vs U18.mp4"
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
     }
   },
   "vimeo": {
     "folderId": "30093272",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30093272",
-    "lastSyncedAt": "2026-08-02T15:23:16.834Z"
+    "lastSyncedAt": "2026-08-02T18:00:57.332Z"
   },
   "clips": [
     {

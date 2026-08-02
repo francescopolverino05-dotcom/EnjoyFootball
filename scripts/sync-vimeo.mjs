@@ -74,10 +74,27 @@ function normalizeSection(raw) {
   return SECTION_ALIASES[key] || SECTION_ALIASES[dashed] || null;
 }
 
-function classifyVideo(name, parentFolderName) {
+function isClipStyleName(name) {
+  return /^\d{1,3}_\d{2}_(?:nd|wd)_/i.test(name || '');
+}
+
+function sectionFromClipName(name) {
+  // e.g. 88_45_wd_Build_up__good... or 13_57_nd_Transition_to_defence__14_30...
+  const m = (name || '').match(/^\d{1,3}_\d{2}_(?:nd|wd)_([A-Za-z0-9]+(?:_[A-Za-z0-9]+)*)__/i);
+  return m ? normalizeSection(m[1]) : null;
+}
+
+function classifyVideo(name, parentFolderName, duration = 0) {
   const n = (name || '').toLowerCase();
   if (/full\s*match|partita\s*intera|partita\s*completa/.test(n)) {
     return { kind: 'full' };
+  }
+  // Full match uploads often keep the match title (no clip timestamp prefix).
+  // Prefer long duration; also accept short/processing stubs with match-like titles.
+  if (!isClipStyleName(name) && !/post[\s_-]*match|analisi|analysis|video\s*analysis/.test(n)) {
+    if (duration >= 1800 || /amichevole|friendly|vs\.?\s*u18|vs\.?\s*u19|primavera/i.test(name || '')) {
+      return { kind: 'full' };
+    }
   }
   if (/post[\s_-]*match|analisi|analysis|video\s*analysis/.test(n)) {
     return { kind: 'analysis' };
@@ -94,13 +111,14 @@ function classifyVideo(name, parentFolderName) {
 
   const bracket = name.match(/\[([^\]]+)\]/);
   let section =
+    sectionFromClipName(name) ||
     normalizeSection(bracket?.[1]) ||
     normalizeSection(parentFolderName) ||
     null;
 
   if (!section) {
     for (const alias of Object.keys(SECTION_ALIASES)) {
-      const re = new RegExp(`\\b${alias.replace(/_/g, '[\\s_-]+')}\\b`, 'i');
+      const re = new RegExp(`(?:^|[_\\s-])${alias.replace(/_/g, '[_\\s-]+')}(?:$|[_\\s-])`, 'i');
       if (re.test(name)) {
         section = SECTION_ALIASES[alias];
         break;
@@ -114,7 +132,7 @@ function classifyVideo(name, parentFolderName) {
 
   const time =
     name.match(/(\d{1,3})[:'′](\d{2})/) ||
-    name.match(/\b(\d{1,3})_(\d{2})\b/);
+    name.match(/^(\d{1,3})_(\d{2})_/);
   const minute = time ? Number(time[1]) : 0;
   const second = time ? Number(time[2]) : 0;
 
@@ -242,16 +260,23 @@ Upload videos into the Vimeo folder, then re-run:
 const clips = [];
 const analysisVideos = [];
 let fullMatchUrl = null;
+let fullMatchDuration = 0;
 
 for (const { video, parentFolderName } of listed) {
   const name = video.name || 'Untitled';
   const link = videoLink(video);
   const id = videoNumericId(video);
-  const kind = classifyVideo(name, parentFolderName);
+  const kind = classifyVideo(name, parentFolderName, Number(video.duration) || 0);
 
   if (kind.kind === 'full') {
-    fullMatchUrl = link;
-    console.log(`  full match ← ${name}`);
+    const dur = Number(video.duration) || 0;
+    if (!fullMatchUrl || dur >= (fullMatchDuration || 0)) {
+      fullMatchUrl = link;
+      fullMatchDuration = dur;
+      console.log(`  full match ← ${name} (${dur}s) ${link}`);
+    } else {
+      console.log(`  full match (skipped shorter/stub) ← ${name} (${dur}s)`);
+    }
     continue;
   }
   if (kind.kind === 'analysis') {
