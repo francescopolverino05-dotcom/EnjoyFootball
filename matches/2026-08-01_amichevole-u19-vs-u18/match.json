@@ -1315,6 +1315,28 @@
       ]
     },
     {
+      "id": "progress-6703-31",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 67,
+      "second": 3,
+      "videoFile": "Amivhevole v U18_01.08.2026/Progress/67_03_nd_Progress__67_31_Attacking_31.mp4",
+      "localFile": "Amivhevole v U18_01.08.2026/Progress/67_03_nd_Progress__67_31_Attacking_31.mp4",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "attacking"
+      ]
+    },
+    {
       "id": "build-up-6853-7",
       "title": {
         "en": "Natural midfield rotation",
