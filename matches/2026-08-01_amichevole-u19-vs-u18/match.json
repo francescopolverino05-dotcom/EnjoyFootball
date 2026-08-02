@@ -752,6 +752,10 @@
       "it": "Il video della partita è in video/Amichevole vs U18.mp4"
     }
   },
+  "vimeo": {
+    "folderId": "30093272",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30093272"
+  },
   "clips": [
     {
       "id": "other-0000-x",
@@ -2481,8 +2485,8 @@
         "it": "Analisi post-partita vs U18"
       },
       "description": {
-        "en": "Post-match video analysis for the amichevole vs Napoli U18 (Vimeo showcase).",
-        "it": "Video di analisi post-partita dell’amichevole vs Napoli U18 (showcase Vimeo)."
+        "en": "Post-match video analysis for the amichevole vs Napoli U18 (Vimeo).",
+        "it": "Video di analisi post-partita dell’amichevole vs Napoli U18 (Vimeo)."
       },
       "videoFile": "https://vimeo.com/1214963786",
       "tags": [

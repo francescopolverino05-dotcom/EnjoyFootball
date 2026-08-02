@@ -126,6 +126,12 @@ export interface MatchData {
     fullMatch?: string;
     notes?: Localized;
   };
+  /** Vimeo hosting for this match (folder preferred). */
+  vimeo?: {
+    folderId?: string;
+    folderUrl?: string;
+    showcaseId?: string;
+  };
   clips: VideoClip[];
   analysisVideos: AnalysisVideo[];
 }
