@@ -1,0 +1,149 @@
+{
+  "id": "2026-08-01_amichevole-u19-vs-u18",
+  "slug": "2026-08-01_amichevole-u19-vs-u18",
+  "title": "Napoli U19 vs Napoli U18",
+  "subtitle": "Partita Amichevole",
+  "date": "2026-08-01",
+  "competition": "Amichevole",
+  "status": "published",
+  "homeTeam": {
+    "id": "u19",
+    "name": "Napoli U19 (Azzurri)",
+    "shortName": "U19",
+    "colorClass": "u19"
+  },
+  "awayTeam": {
+    "id": "u18",
+    "name": "Napoli U18 (Verdi)",
+    "shortName": "U18",
+    "colorClass": "u18"
+  },
+  "score": { "home": 3, "away": 1 },
+  "goals": [
+    { "minute": 32, "scorer": "Esposito", "position": "RW", "teamId": "u19" },
+    { "minute": 38, "scorer": "Esposito", "position": "RW", "teamId": "u19" },
+    { "minute": 86, "scorer": "Gol U18", "teamId": "u18" },
+    { "minute": 92, "scorer": "Mané", "position": "CF", "teamId": "u19" }
+  ],
+  "timeline": [
+    { "minute": 1, "label": "Magliano GK", "type": "gk-entry", "teamId": "u19", "positionPercent": 5, "markerColor": "#0054a6" },
+    { "minute": 32, "label": "Esposito 1-0", "type": "goal", "teamId": "u19", "positionPercent": 35 },
+    { "minute": 38, "label": "Esposito 2-0", "type": "goal", "teamId": "u19", "positionPercent": 42 },
+    { "minute": 46, "label": "Merone GK", "type": "gk-entry", "teamId": "u19", "positionPercent": 52, "markerColor": "#f97316" },
+    { "minute": 70, "label": "Spinelli GK", "type": "gk-entry", "teamId": "u19", "positionPercent": 77, "markerColor": "#10b981" },
+    { "minute": 86, "label": "Gol U18 2-1", "type": "goal", "teamId": "u18", "positionPercent": 90 },
+    { "minute": 92, "label": "Mané 3-1", "type": "goal", "teamId": "u19", "positionPercent": 96 }
+  ],
+  "formations": [
+    {
+      "teamId": "u19",
+      "label": "Napoli U19",
+      "system": "4-2-3-1",
+      "players": [
+        { "number": 61, "name": "Magliano", "teamId": "u19", "isGk": true, "bottom": "10%", "left": "50%" },
+        { "number": 2, "name": "Zappalà", "teamId": "u19", "bottom": "25%", "left": "15%" },
+        { "number": 3, "name": "Branchizzo", "teamId": "u19", "bottom": "22%", "left": "38%" },
+        { "number": 15, "name": "Lieto", "teamId": "u19", "bottom": "22%", "left": "62%" },
+        { "number": 16, "name": "Melnyk", "teamId": "u19", "bottom": "25%", "left": "85%" },
+        { "number": 29, "name": "Chiummariello", "teamId": "u19", "bottom": "40%", "left": "35%" },
+        { "number": 19, "name": "De Stefano", "teamId": "u19", "bottom": "40%", "left": "65%" },
+        { "number": 27, "name": "Rovetini", "teamId": "u19", "bottom": "58%", "left": "20%" },
+        { "number": 8, "name": "Anic", "teamId": "u19", "bottom": "58%", "left": "50%" },
+        { "number": 18, "name": "Esposito", "teamId": "u19", "bottom": "58%", "left": "80%" },
+        { "number": 33, "name": "Pengue", "teamId": "u19", "bottom": "78%", "left": "50%" }
+      ]
+    },
+    {
+      "teamId": "u18",
+      "label": "Napoli U18",
+      "system": "4-3-3",
+      "players": [
+        { "number": 1, "name": "Portiere U18", "teamId": "u18", "isGk": true, "top": "10%", "left": "50%" },
+        { "number": 4, "name": "U18 LB", "teamId": "u18", "top": "25%", "left": "15%" },
+        { "number": 5, "name": "U18 LCB", "teamId": "u18", "top": "22%", "left": "38%" },
+        { "number": 6, "name": "U18 RCB", "teamId": "u18", "top": "22%", "left": "62%" },
+        { "number": 2, "name": "U18 RB", "teamId": "u18", "top": "25%", "left": "85%" },
+        { "number": 8, "name": "U18 DM", "teamId": "u18", "top": "40%", "left": "50%" },
+        { "number": 10, "name": "U18 LCM", "teamId": "u18", "top": "50%", "left": "30%" },
+        { "number": 11, "name": "U18 RCM", "teamId": "u18", "top": "50%", "left": "70%" },
+        { "number": 7, "name": "U18 LW", "teamId": "u18", "top": "72%", "left": "20%" },
+        { "number": 9, "name": "U18 RW", "teamId": "u18", "top": "72%", "left": "80%" },
+        { "number": 11, "name": "U18 ST", "teamId": "u18", "top": "82%", "left": "50%" }
+      ]
+    }
+  ],
+  "dynamics": [
+    { "name": "Possesso Palla %", "homeValue": 54, "awayValue": 46, "unit": "%" },
+    { "name": "Precisione Passaggi %", "homeValue": 82.6, "awayValue": 76.8, "unit": "%" },
+    { "name": "Stabilità Triangoli Difensivi %", "homeValue": 88, "awayValue": 76, "unit": "%" },
+    { "name": "Efficienza Triangoli Offensivi %", "homeValue": 82, "awayValue": 70, "unit": "%" },
+    { "name": "Difesa Compatta %", "homeValue": 78, "awayValue": 60, "unit": "%" },
+    { "name": "Difesa Disunita %", "homeValue": 22, "awayValue": 40, "unit": "%" }
+  ],
+  "teamStats": [
+    { "category": "Marcature", "name": "Gol Segnati", "home": "3", "away": "1" },
+    { "category": "Marcature", "name": "Assist", "home": "3", "away": "1" },
+    { "category": "Attacco", "name": "Tiri Totali", "home": "15", "away": "8" },
+    { "category": "Attacco", "name": "Tiri In Porta", "home": "7", "away": "3" },
+    { "category": "Difesa", "name": "Parate", "home": "2", "away": "4" },
+    { "category": "Possesso", "name": "Possesso Palla %", "home": "54%", "away": "46%" },
+    { "category": "Passaggi", "name": "Passaggi Totali", "home": "438", "away": "362" },
+    { "category": "Passaggi", "name": "Passaggi Riusciti", "home": "362", "away": "278" },
+    { "category": "Passaggi", "name": "Precisione Passaggi %", "home": "82.6%", "away": "76.8%" },
+    { "category": "Passaggi", "name": "Passaggi Chiave", "home": "8", "away": "4" },
+    { "category": "Duelli", "name": "Duelli Vinti", "home": "52", "away": "42" },
+    { "category": "Duelli", "name": "Duelli Totali", "home": "94", "away": "94" },
+    { "category": "Duelli", "name": "Duelli Vinti %", "home": "55.3%", "away": "44.7%" },
+    { "category": "Falli", "name": "Falli Commessi", "home": "11", "away": "14" },
+    { "category": "Falli", "name": "Fuorigioco", "home": "3", "away": "2" },
+    { "category": "Calci Piazzati", "name": "Calci d'Angolo", "home": "6", "away": "4" },
+    { "category": "Calci Piazzati", "name": "Calci di Punizione", "home": "12", "away": "10" },
+    { "category": "Calci Piazzati", "name": "Rigori", "home": "0", "away": "0" },
+    { "category": "Tattica", "name": "Sistema di Pressing", "home": "4-4-2", "away": "4-3-3 Block" },
+    { "category": "Tattica", "name": "Stabilità Triangoli Difensivi", "home": "88%", "away": "76%" },
+    { "category": "Tattica", "name": "Efficienza Triangoli Offensivi", "home": "82%", "away": "70%" },
+    { "category": "Tattica", "name": "Difesa Compatta %", "home": "78%", "away": "60%" },
+    { "category": "Tattica", "name": "Difesa Disunita %", "home": "22%", "away": "40%" },
+    { "category": "Tattica", "name": "Stato di Compattezza", "home": "Prevalentemente Compatta", "away": "Disunita in Transizione" },
+    { "category": "Tattica", "name": "Indice Opportunità", "home": "8.5", "away": "5.0" },
+    { "category": "Tattica", "name": "Indice Recupero Difensivo", "home": "7.8", "away": "6.2" }
+  ],
+  "goalkeepers": [
+    {
+      "name": "Magliano",
+      "minutes": 45,
+      "team": "Napoli U19 (Primo Tempo)",
+      "jerseyColor": "Azzurra",
+      "shotsFaced": 1,
+      "saves": 1,
+      "goalsConceded": 0,
+      "colorClass": "blue"
+    },
+    {
+      "name": "Merone",
+      "minutes": 25,
+      "team": "Napoli U19 (Secondo Tempo - Inizio)",
+      "jerseyColor": "Arancione",
+      "shotsFaced": 1,
+      "saves": 1,
+      "goalsConceded": 0,
+      "colorClass": "orange"
+    },
+    {
+      "name": "Spinelli",
+      "minutes": 20,
+      "team": "Napoli U19 (Secondo Tempo - Finale)",
+      "jerseyColor": "Verde",
+      "shotsFaced": 1,
+      "saves": 0,
+      "goalsConceded": 1,
+      "notes": "Gol su calcio d'angolo",
+      "colorClass": "green"
+    }
+  ],
+  "video": {
+    "fullMatch": "video/match.mp4",
+    "notes": "Aggiungere il file MP4 completo in matches/2026-08-01_amichevole-u19-vs-u18/video/match.mp4"
+  },
+  "clips": []
+}
