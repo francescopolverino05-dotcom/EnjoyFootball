@@ -56,13 +56,14 @@ export default function MatchMedia({
       );
     }
 
-    const embedSrc = `${embed}${embed.includes('?') ? '&' : '?'}autoplay=1`;
+    const embedUrl = new URL(embed);
+    embedUrl.searchParams.set('autoplay', '1');
     return (
       <div
         className={`video-player-wrap video-player-wrap--vimeo ${fullHeight ? 'video-player-wrap--full' : ''}`}
       >
         <iframe
-          src={embedSrc}
+          src={embedUrl.toString()}
           title={title || 'Vimeo video'}
           allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
           allowFullScreen
