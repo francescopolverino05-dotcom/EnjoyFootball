@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { MatchData, VideoClip, AnalysisVideo } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
 import { CLIP_LABELS, ANALYSIS_SECTION_ORDER, type ClipLabelId } from '../i18n/clipLabels';
+import { mediaUrl } from '../utils/mediaUrl';
 
 interface StatsDashboardProps {
   match: MatchData;
@@ -167,16 +168,6 @@ function formatClipTimestamp(clip: VideoClip): string {
 
 function clipSortKey(clip: VideoClip): number {
   return clip.minute * 60 + (clip.second ?? 0);
-}
-
-/** Encode each path segment so spaces / accents work in video URLs. */
-function mediaUrl(slug: string, ...parts: string[]): string {
-  const encoded = parts
-    .flatMap((p) => p.split('/'))
-    .filter(Boolean)
-    .map((seg) => encodeURIComponent(seg))
-    .join('/');
-  return `/matches/${slug}/${encoded}`;
 }
 
 function FullMatchPanel({ match }: { match: MatchData }) {

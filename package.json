@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "new-match": "node scripts/new-match.mjs"
+    "new-match": "node scripts/new-match.mjs",
+    "upload-clips": "node scripts/upload-clips-to-release.mjs"
   },
   "dependencies": {
     "react": "^19.1.0",
