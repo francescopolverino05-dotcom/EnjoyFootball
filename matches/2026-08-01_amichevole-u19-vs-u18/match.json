@@ -789,14 +789,15 @@
       },
       "minute": 10,
       "second": 12,
-      "videoFile": "Progress/10_12_nd_Progress__10_24_Attacking_22.mp4",
+      "videoFile": "https://vimeo.com/1214967584",
       "localFile": "Progress/10_12_nd_Progress__10_24_Attacking_22.mp4",
       "section": "progress",
       "labels": [
         "progress"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -811,14 +812,15 @@
       },
       "minute": 11,
       "second": 32,
-      "videoFile": "Build_up/11_32_nd_Build_up__11_51_Attacking_1.mp4",
+      "videoFile": "https://vimeo.com/1214967587",
       "localFile": "Build_up/11_32_nd_Build_up__11_51_Attacking_1.mp4",
       "section": "build-up",
       "labels": [
         "build-up"
       ],
       "tags": [
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -833,7 +835,7 @@
       },
       "minute": 13,
       "second": 34,
-      "videoFile": "Progress/13_34_nd_Progress__bad_favorite_14_10_Attacking_23_Poca mobilitá dagli attaccanti.mp4",
+      "videoFile": "https://vimeo.com/1214967585",
       "localFile": "Progress/13_34_nd_Progress__bad_favorite_14_10_Attacking_23_Poca mobilitá dagli attaccanti.mp4",
       "section": "progress",
       "labels": [
@@ -841,7 +843,8 @@
       ],
       "tags": [
         "bad",
-        "attacking"
+        "attacking",
+        "vimeo"
       ]
     },
     {
@@ -856,14 +859,15 @@
       },
       "minute": 13,
       "second": 57,
-      "videoFile": "Transition_to_defence/13_57_nd_Transition_to_defence__14_30_Defending_62.mp4",
+      "videoFile": "https://vimeo.com/1214966834",
       "localFile": "Transition_to_defence/13_57_nd_Transition_to_defence__14_30_Defending_62.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -901,7 +905,7 @@
       },
       "minute": 17,
       "second": 13,
-      "videoFile": "Transition_to_defence/17_13_nd_Transition_to_defence__bad_favorite_17_36_Defending_63.mp4",
+      "videoFile": "https://vimeo.com/1214966714",
       "localFile": "Transition_to_defence/17_13_nd_Transition_to_defence__bad_favorite_17_36_Defending_63.mp4",
       "section": "defensive-transition",
       "labels": [
@@ -909,7 +913,8 @@
       ],
       "tags": [
         "bad",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -946,7 +951,7 @@
       },
       "minute": 20,
       "second": 9,
-      "videoFile": "Transition_to_defence/20_09_nd_Transition_to_defence__good_20_30_Defending_64.mp4",
+      "videoFile": "https://vimeo.com/1214966634",
       "localFile": "Transition_to_defence/20_09_nd_Transition_to_defence__good_20_30_Defending_64.mp4",
       "section": "defensive-transition",
       "labels": [
@@ -954,7 +959,8 @@
       ],
       "tags": [
         "good",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1079,7 +1085,7 @@
       },
       "minute": 31,
       "second": 19,
-      "videoFile": "Transition_to_defence/31_19_nd_Transition_to_defence__bad_31_43_Defending_65.mp4",
+      "videoFile": "https://vimeo.com/1214966520",
       "localFile": "Transition_to_defence/31_19_nd_Transition_to_defence__bad_31_43_Defending_65.mp4",
       "section": "defensive-transition",
       "labels": [
@@ -1087,7 +1093,8 @@
       ],
       "tags": [
         "bad",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1169,7 +1176,7 @@
       },
       "minute": 33,
       "second": 36,
-      "videoFile": "Transition_to_defence/33_36_nd_Transition_to_defence__good_33_54_Defending_66.mp4",
+      "videoFile": "https://vimeo.com/1214966479",
       "localFile": "Transition_to_defence/33_36_nd_Transition_to_defence__good_33_54_Defending_66.mp4",
       "section": "defensive-transition",
       "labels": [
@@ -1177,7 +1184,8 @@
       ],
       "tags": [
         "good",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1259,14 +1267,15 @@
       },
       "minute": 37,
       "second": 6,
-      "videoFile": "Transition_to_defence/37_06_nd_Transition_to_defence__37_34_Defending_67.mp4",
+      "videoFile": "https://vimeo.com/1214966314",
       "localFile": "Transition_to_defence/37_06_nd_Transition_to_defence__37_34_Defending_67.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1545,7 +1554,7 @@
       },
       "minute": 55,
       "second": 40,
-      "videoFile": "Transition_to_defence/55_40_nd_Transition_to_defence__bad_55_56_Defending_68.mp4",
+      "videoFile": "https://vimeo.com/1214966263",
       "localFile": "Transition_to_defence/55_40_nd_Transition_to_defence__bad_55_56_Defending_68.mp4",
       "section": "defensive-transition",
       "labels": [
@@ -1553,7 +1562,8 @@
       ],
       "tags": [
         "bad",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1726,7 +1736,7 @@
       },
       "minute": 64,
       "second": 17,
-      "videoFile": "Transition_to_defence/64_17_nd_Transition_to_defence__bad_favorite_64_53_Defending_69.mp4",
+      "videoFile": "https://vimeo.com/1214966233",
       "localFile": "Transition_to_defence/64_17_nd_Transition_to_defence__bad_favorite_64_53_Defending_69.mp4",
       "section": "defensive-transition",
       "labels": [
@@ -1734,7 +1744,8 @@
       ],
       "tags": [
         "bad",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1793,14 +1804,15 @@
       },
       "minute": 66,
       "second": 2,
-      "videoFile": "Transition_to_defence/66_02_nd_Transition_to_defence__66_20_Defending_70.mp4",
+      "videoFile": "https://vimeo.com/1214965991",
       "localFile": "Transition_to_defence/66_02_nd_Transition_to_defence__66_20_Defending_70.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -1883,7 +1895,7 @@
       },
       "minute": 71,
       "second": 15,
-      "videoFile": "Transition_to_defence/71_15_nd_Transition_to_defence__good_72_00_Defending_71.mp4",
+      "videoFile": "https://vimeo.com/1214965798",
       "localFile": "Transition_to_defence/71_15_nd_Transition_to_defence__good_72_00_Defending_71.mp4",
       "section": "defensive-transition",
       "labels": [
@@ -1891,7 +1903,8 @@
       ],
       "tags": [
         "good",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -2152,14 +2165,15 @@
       },
       "minute": 80,
       "second": 25,
-      "videoFile": "Transition_to_defence/80_25_nd_Transition_to_defence__80_48_Defending_72.mp4",
+      "videoFile": "https://vimeo.com/1214965795",
       "localFile": "Transition_to_defence/80_25_nd_Transition_to_defence__80_48_Defending_72.mp4",
       "section": "defensive-transition",
       "labels": [
         "defensive-transition"
       ],
       "tags": [
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -2307,7 +2321,7 @@
       },
       "minute": 84,
       "second": 42,
-      "videoFile": "Transition_to_defence/84_42_nd_Transition_to_defence__bad_85_25_Defending_73.mp4",
+      "videoFile": "https://vimeo.com/1214965796",
       "localFile": "Transition_to_defence/84_42_nd_Transition_to_defence__bad_85_25_Defending_73.mp4",
       "section": "defensive-transition",
       "labels": [
@@ -2315,7 +2329,8 @@
       ],
       "tags": [
         "bad",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
@@ -2376,7 +2391,7 @@
       },
       "minute": 86,
       "second": 16,
-      "videoFile": "Transition_to_defence/86_16_nd_Transition_to_defence__bad_86_37_Defending_74.mp4",
+      "videoFile": "https://vimeo.com/1214965797",
       "localFile": "Transition_to_defence/86_16_nd_Transition_to_defence__bad_86_37_Defending_74.mp4",
       "section": "defensive-transition",
       "labels": [
@@ -2384,7 +2399,8 @@
       ],
       "tags": [
         "bad",
-        "defending"
+        "defending",
+        "vimeo"
       ]
     },
     {
