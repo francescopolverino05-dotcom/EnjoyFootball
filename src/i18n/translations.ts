@@ -42,9 +42,9 @@ const dictionaries = {
     noClips:
       'No clips yet. Add MP4 files to matches/{slug}/clips/ and register them in match.json.',
     noAnalysis:
-      'No video analysis uploaded yet. Add MP4 files to matches/{slug}/analysis/ and register them in match.json → analysisVideos.',
+      'No video analysis yet. Drop your analyst video into matches/{slug}/analysis/ and tell the agent to register it.',
     videoAnalysisHint:
-      'Longer analysis videos prepared by the analyst for the coaching staff.',
+      'Full analyst video breakdowns for the coaching staff.',
     videoUnsupported: 'Your browser does not support video playback.',
     minutes: 'minutes',
     team: 'Team',
@@ -92,9 +92,9 @@ const dictionaries = {
     noClips:
       'Nessuna clip ancora. Aggiungi file MP4 in matches/{slug}/clips/ e registra i metadata in match.json.',
     noAnalysis:
-      'Nessuna analisi video ancora. Aggiungi file MP4 in matches/{slug}/analysis/ e registrali in match.json → analysisVideos.',
+      'Nessuna analisi video ancora. Metti il video in matches/{slug}/analysis/ e chiedi all’agente di registrarlo.',
     videoAnalysisHint:
-      'Video di analisi preparati dall’analista per lo staff tecnico.',
+      'Video di analisi completi preparati dall’analista per lo staff tecnico.',
     videoUnsupported: 'Il browser non supporta la riproduzione video.',
     minutes: 'minuti',
     team: 'Squadra',
