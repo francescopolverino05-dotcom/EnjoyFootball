@@ -88,6 +88,10 @@ COMMENT_FIX = {
 }
 
 candidates = {}
+SKIP_FOLDERS = {
+    'Goal', 'Half_Start', 'Half_Finish',
+    'Vimeo upload — Amichevole clips',
+}
 for f in sorted(clips_root.rglob('*.mp4')):
     rel = f.relative_to(clips_root).as_posix()
     parts = Path(rel).parts
@@ -98,7 +102,11 @@ for f in sorted(clips_root.rglob('*.mp4')):
         folder = parts[0]
     else:
         folder = 'Other'
+    if folder in SKIP_FOLDERS or parts[0] in SKIP_FOLDERS:
+        continue
     section_id, en_label, it_label = SECTION_MAP.get(folder, ('other', folder, folder))
+    if section_id in ('goal', 'other'):
+        continue
     stem = f.stem
     m = pat.match(stem)
     if not m:

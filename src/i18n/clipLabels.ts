@@ -47,6 +47,12 @@ export const CLIP_LABELS: Record<ClipLabelId, Localized> = {
   other: { en: 'Other', it: 'Altro' },
 };
 
+/** Sections never shown on the Clips tab (any match). */
+export const HIDDEN_CLIP_SECTIONS: ReadonlySet<ClipLabelId> = new Set([
+  'goal',
+  'other',
+]);
+
 /** Preferred display order for Clips sections. */
 export const ANALYSIS_SECTION_ORDER: ClipLabelId[] = [
   'build-up',
@@ -57,14 +63,12 @@ export const ANALYSIS_SECTION_ORDER: ClipLabelId[] = [
   'final-third',
   'own-third',
   'defensive-transition',
-  'goal',
   'chance',
   'pressing',
   'set-piece',
   'individual',
   'tactical-pattern',
   'gk-action',
-  'other',
 ];
 
 export function isClipLabelId(value: string): value is ClipLabelId {

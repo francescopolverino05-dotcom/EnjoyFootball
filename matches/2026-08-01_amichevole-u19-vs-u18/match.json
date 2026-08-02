@@ -759,26 +759,6 @@
   },
   "clips": [
     {
-      "id": "other-0000-x",
-      "title": {
-        "en": "Half_Start",
-        "it": "Half_Start"
-      },
-      "comments": {
-        "en": "Half_Start",
-        "it": "Half_Start"
-      },
-      "minute": 0,
-      "second": 0,
-      "videoFile": "Half_Start/0_00_nd_Half_Start__0_02_Other_76.mp4",
-      "localFile": "Half_Start/0_00_nd_Half_Start__0_02_Other_76.mp4",
-      "section": "other",
-      "labels": [
-        "other"
-      ],
-      "tags": []
-    },
-    {
       "id": "progress-1012-22",
       "title": {
         "en": "Progression",
@@ -1127,28 +1107,6 @@
         "good",
         "attacking",
         "vimeo"
-      ]
-    },
-    {
-      "id": "goal-3155-19",
-      "title": {
-        "en": "Goal",
-        "it": "Gol"
-      },
-      "comments": {
-        "en": "Goal",
-        "it": "Gol"
-      },
-      "minute": 31,
-      "second": 55,
-      "videoFile": "Goal/31_55_nd_Goal__32_03_Attacking_19.mp4",
-      "localFile": "Goal/31_55_nd_Goal__32_03_Attacking_19.mp4",
-      "section": "goal",
-      "labels": [
-        "goal"
-      ],
-      "tags": [
-        "attacking"
       ]
     },
     {
@@ -1501,68 +1459,6 @@
         "defending",
         "vimeo"
       ]
-    },
-    {
-      "id": "goal-4303-20",
-      "title": {
-        "en": "Goal",
-        "it": "Gol"
-      },
-      "comments": {
-        "en": "Goal",
-        "it": "Gol"
-      },
-      "minute": 43,
-      "second": 3,
-      "videoFile": "Goal/43_03_nd_Goal__43_11_Attacking_20.mp4",
-      "localFile": "Goal/43_03_nd_Goal__43_11_Attacking_20.mp4",
-      "section": "goal",
-      "labels": [
-        "goal"
-      ],
-      "tags": [
-        "attacking"
-      ]
-    },
-    {
-      "id": "other-4906-x",
-      "title": {
-        "en": "Half_Finish",
-        "it": "Half_Finish"
-      },
-      "comments": {
-        "en": "Half_Finish",
-        "it": "Half_Finish"
-      },
-      "minute": 49,
-      "second": 6,
-      "videoFile": "Half_Finish/49_06_nd_Half_Finish__49_08_Other_75.mp4",
-      "localFile": "Half_Finish/49_06_nd_Half_Finish__49_08_Other_75.mp4",
-      "section": "other",
-      "labels": [
-        "other"
-      ],
-      "tags": []
-    },
-    {
-      "id": "other-4911-x",
-      "title": {
-        "en": "Half_Start",
-        "it": "Half_Start"
-      },
-      "comments": {
-        "en": "Half_Start",
-        "it": "Half_Start"
-      },
-      "minute": 49,
-      "second": 11,
-      "videoFile": "Half_Start/49_11_nd_Half_Start__49_13_Other_77.mp4",
-      "localFile": "Half_Start/49_11_nd_Half_Start__49_13_Other_77.mp4",
-      "section": "other",
-      "labels": [
-        "other"
-      ],
-      "tags": []
     },
     {
       "id": "defensive-transition-5540-68",
@@ -2457,28 +2353,6 @@
       ]
     },
     {
-      "id": "goal-8656-40",
-      "title": {
-        "en": "Goal",
-        "it": "Gol"
-      },
-      "comments": {
-        "en": "Goal",
-        "it": "Gol"
-      },
-      "minute": 86,
-      "second": 56,
-      "videoFile": "Goal/86_56_nd_Goal__87_04_Defending_40.mp4",
-      "localFile": "Goal/86_56_nd_Goal__87_04_Defending_40.mp4",
-      "section": "goal",
-      "labels": [
-        "goal"
-      ],
-      "tags": [
-        "defending"
-      ]
-    },
-    {
       "id": "mid-block-8802-60",
       "title": {
         "en": "Mid block",
@@ -2523,28 +2397,6 @@
         "good",
         "attacking",
         "vimeo"
-      ]
-    },
-    {
-      "id": "goal-8909-21",
-      "title": {
-        "en": "Goal",
-        "it": "Gol"
-      },
-      "comments": {
-        "en": "Goal",
-        "it": "Gol"
-      },
-      "minute": 89,
-      "second": 9,
-      "videoFile": "Goal/89_09_nd_Goal__89_17_Attacking_21.mp4",
-      "localFile": "Goal/89_09_nd_Goal__89_17_Attacking_21.mp4",
-      "section": "goal",
-      "labels": [
-        "goal"
-      ],
-      "tags": [
-        "attacking"
       ]
     }
   ],

@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { MatchData, VideoClip, AnalysisVideo } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
-import { CLIP_LABELS, ANALYSIS_SECTION_ORDER, type ClipLabelId } from '../i18n/clipLabels';
+import { CLIP_LABELS, ANALYSIS_SECTION_ORDER, HIDDEN_CLIP_SECTIONS, type ClipLabelId } from '../i18n/clipLabels';
 import type { Localized } from '../i18n/translations';
 import MatchMedia from './MatchMedia';
 
@@ -301,6 +301,7 @@ function ClipsPanel({ match }: { match: MatchData }) {
     const map = new Map<ClipLabelId, VideoClip[]>();
     for (const clip of match.clips) {
       const key = (clip.section ?? clip.labels[0] ?? 'other') as ClipLabelId;
+      if (HIDDEN_CLIP_SECTIONS.has(key)) continue;
       const list = map.get(key) ?? [];
       list.push(clip);
       map.set(key, list);

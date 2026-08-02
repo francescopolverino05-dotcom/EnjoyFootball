@@ -83,6 +83,15 @@ function classifyVideo(name, parentFolderName) {
     return { kind: 'analysis' };
   }
 
+  if (/half[_\s-]*start|half[_\s-]*finish|\bgoal\b/i.test(name) && /_(nd|wd)_/i.test(name)) {
+    if (/Half_Start|Half_Finish|_Goal__/i.test(name) || /_nd_Goal_|_wd_Goal_/i.test(name)) {
+      return { kind: 'skip' };
+    }
+  }
+  if (/Half_Start|Half_Finish/i.test(name) || /_nd_Goal__|_wd_Goal__/i.test(name)) {
+    return { kind: 'skip' };
+  }
+
   const bracket = name.match(/\[([^\]]+)\]/);
   let section =
     normalizeSection(bracket?.[1]) ||
@@ -97,6 +106,10 @@ function classifyVideo(name, parentFolderName) {
         break;
       }
     }
+  }
+
+  if (section === 'goal' || section === 'other') {
+    return { kind: 'skip' };
   }
 
   const time =
@@ -253,6 +266,9 @@ for (const { video, parentFolderName } of listed) {
       tags: ['vimeo', 'analysis'],
     });
     console.log(`  analysis ← ${name}`);
+    continue;
+  }
+  if (kind.kind === 'skip') {
     continue;
   }
 
