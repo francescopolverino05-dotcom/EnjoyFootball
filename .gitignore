@@ -33,3 +33,6 @@ matches/**/analysis/*.mov
 !matches/**/video/.gitkeep
 !matches/**/clips/.gitkeep
 !matches/**/analysis/.gitkeep
+
+# Local Vimeo drag-drop staging (do not commit)
+Vimeo upload*/
