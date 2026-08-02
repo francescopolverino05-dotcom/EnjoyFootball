@@ -1,35 +1,37 @@
 # Cartelle Partite
 
-Ogni partita ha una cartella con questo formato:
+Every match uses this layout:
 
-```
+```text
 YYYY-MM-DD_<tipo>-<squadre>/
-├── match.json       ← dati partita, statistiche, clip + analysis metadata
-├── README.md        ← note locali (opzionale)
-├── video/
-│   └── match.mp4    ← video completo (locale, non in git)
-├── clips/           ← clip tattiche (Build-up, Progress, …) → tab Clips
-│   └── …
-└── analysis/        ← report video analista → tab Video Analysis
-    ├── README.md
-    └── your-report.mp4
+├── match.json
+├── README.md
+├── video/          ← FULL MATCH MP4 (usually match.mp4)
+├── clips/          ← tactical clips → Clips tab
+└── analysis/       ← analyst reports → Video Analysis tab
 ```
 
-## Convenzione nomi cartella
+## Where to put files
 
-| Esempio | Significato |
-|---------|-------------|
-| `2026-08-01_amichevole-u19-vs-u18` | Amichevole del 1 agosto |
-| `2026-08-08_campionato-u19-vs-roma` | Campionato U19 vs Roma |
+| Media | Folder | App tab |
+|-------|--------|---------|
+| Full match recording | `video/match.mp4` | **Full Match** |
+| Short tactical clips | `clips/` | **Clips** |
+| Long analyst / coach videos | `analysis/` | **Video Analysis** |
 
-## Clips vs Video Analysis
+## New match
 
-| Folder | App tab | Use for |
-|--------|---------|---------|
-| `clips/` | **Clips** | Short tagged moments (Build-up, Mid block, …) |
-| `analysis/` | **Video Analysis** | Longer analyst reports / presentations |
-| `video/` | **Full Match** | Full match recording |
+```bash
+npm run new-match -- --date 2026-08-08 --type campionato --teams u19-vs-roma --title "Napoli U19 vs Roma"
+```
 
-## Video files
+## Weekly clip drop → sync
 
-I file `.mp4` sono ignorati da git. Vedi `docs/HOSTING-VIDEOS.md` per pubblicarli sul sito.
+1. Drop the export folder at the **repo root** (e.g. `Amivhevole v U18_01.08.2026/`)
+2. Sync into the match:
+
+```bash
+npm run sync-clips -- --slug 2026-08-01_amichevole-u19-vs-u18
+```
+
+MP4s are gitignored. See `docs/HOSTING-VIDEOS.md` for publishing to the site.

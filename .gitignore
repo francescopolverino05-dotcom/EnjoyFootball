@@ -7,9 +7,13 @@ tsconfig.tsbuildinfo
 .env.*
 !.env.example
 
-# Drop folders at repo root (sync into matches/<slug>/clips/)
+# Drop folders + stray full-match dumps at repo root
 /Amivhevole*/
 /Amichevole*/
+/Amivhevole*.MP4
+/Amivhevole*.mp4
+/Amichevole*.MP4
+/Amichevole*.mp4
 
 # Large video files — keep folder structure, ignore binaries
 matches/**/video/**/*.mp4

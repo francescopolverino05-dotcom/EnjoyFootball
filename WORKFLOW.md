@@ -41,12 +41,13 @@ L'agente creerà la cartella in `matches/` con la struttura corretta.
 ```
 matches/2026-08-08_campionato-u19-vs-roma/
 ├── video/
-│   └── match.mp4          ← video completo partita (obbligatorio)
-├── clips/                 ← clip singole (opzionale, si aggiungono dopo)
-│   ├── gol-32.mp4
-│   └── pressing-alto-15.mp4
-└── (opzionale) notes.txt  ← appunti, distinta, dati grezzi
+│   └── match.mp4          ← FULL MATCH (obbligatorio)
+├── clips/                 ← clip tattiche → tab Clips
+├── analysis/              ← report analista → tab Video Analysis
+└── match.json
 ```
+
+Clip export settimanale: cartella drop nella root del repo → `npm run sync-clips -- --slug <slug>`
 
 ---
 

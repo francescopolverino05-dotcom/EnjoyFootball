@@ -8,6 +8,7 @@ export const CLIP_LABEL_IDS = [
   'mid-block',
   'high-defence',
   'final-third',
+  'own-third',
   'defensive-transition',
   'goal',
   'chance',
@@ -31,6 +32,7 @@ export const CLIP_LABELS: Record<ClipLabelId, Localized> = {
   'mid-block': { en: 'Mid block', it: 'Blocco medio' },
   'high-defence': { en: 'High defence', it: 'Difesa alta' },
   'final-third': { en: 'Final third', it: 'Ultimo terzo' },
+  'own-third': { en: 'Own third', it: 'Proprio terzo' },
   'defensive-transition': {
     en: 'Transition to defence',
     it: 'Transizione difensiva',
@@ -45,7 +47,7 @@ export const CLIP_LABELS: Record<ClipLabelId, Localized> = {
   other: { en: 'Other', it: 'Altro' },
 };
 
-/** Preferred display order for Video Analysis sections. */
+/** Preferred display order for Clips sections. */
 export const ANALYSIS_SECTION_ORDER: ClipLabelId[] = [
   'build-up',
   'progress',
@@ -53,6 +55,7 @@ export const ANALYSIS_SECTION_ORDER: ClipLabelId[] = [
   'mid-block',
   'high-defence',
   'final-third',
+  'own-third',
   'defensive-transition',
   'goal',
   'chance',

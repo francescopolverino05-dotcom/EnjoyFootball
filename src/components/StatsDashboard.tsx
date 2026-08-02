@@ -1,7 +1,8 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { MatchData, VideoClip, AnalysisVideo } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
 import { CLIP_LABELS, ANALYSIS_SECTION_ORDER, type ClipLabelId } from '../i18n/clipLabels';
+import type { Localized } from '../i18n/translations';
 import { mediaUrl } from '../utils/mediaUrl';
 
 interface StatsDashboardProps {
@@ -170,6 +171,102 @@ function clipSortKey(clip: VideoClip): number {
   return clip.minute * 60 + (clip.second ?? 0);
 }
 
+function localizedText(value: Localized | undefined): string {
+  if (value == null) return '';
+  if (typeof value === 'string') return value;
+  return `${value.en} ${value.it}`;
+}
+
+type ClipTimeFilter =
+  | { kind: 'minute'; minute: number }
+  | { kind: 'point'; totalSeconds: number }
+  | { kind: 'range'; fromMinute: number; toMinute: number };
+
+/** Parse queries like `10`, `10'`, `10:12`, `10-20`, `10'-20'`. */
+function parseClipTimeQuery(raw: string): ClipTimeFilter | null {
+  const q = raw.trim();
+  const range = q.match(
+    /^(\d+)\s*['′]?(?::(\d{1,2}))?\s*[-–—]\s*(\d+)\s*['′]?(?::(\d{1,2}))?\s*['′"]?$/
+  );
+  if (range) {
+    const fromMinute = Number(range[1]);
+    const toMinute = Number(range[3]);
+    if (Number.isFinite(fromMinute) && Number.isFinite(toMinute)) {
+      return {
+        kind: 'range',
+        fromMinute: Math.min(fromMinute, toMinute),
+        toMinute: Math.max(fromMinute, toMinute),
+      };
+    }
+  }
+
+  const withSeconds = q.match(/^(\d+)\s*[:'′]\s*(\d{1,2})\s*["″]?$/);
+  if (withSeconds) {
+    const minute = Number(withSeconds[1]);
+    const second = Number(withSeconds[2]);
+    if (Number.isFinite(minute) && Number.isFinite(second) && second < 60) {
+      return { kind: 'point', totalSeconds: minute * 60 + second };
+    }
+  }
+
+  const minuteOnly = q.match(/^(\d+)\s*['′]?$/);
+  if (minuteOnly) {
+    const minute = Number(minuteOnly[1]);
+    if (Number.isFinite(minute)) return { kind: 'minute', minute };
+  }
+
+  return null;
+}
+
+function clipMatchesTime(clip: VideoClip, filter: ClipTimeFilter): boolean {
+  if (filter.kind === 'minute') return clip.minute === filter.minute;
+  if (filter.kind === 'point') return clipSortKey(clip) === filter.totalSeconds;
+  return clip.minute >= filter.fromMinute && clip.minute <= filter.toMinute;
+}
+
+function clipSearchHaystack(clip: VideoClip, sectionId: ClipLabelId): string {
+  const sectionLabel = CLIP_LABELS[sectionId];
+  const labelTexts = clip.labels
+    .map((id) => {
+      const label = CLIP_LABELS[id];
+      return label ? `${id} ${localizedText(label)}` : id;
+    })
+    .join(' ');
+
+  return [
+    sectionId,
+    localizedText(sectionLabel),
+    localizedText(clip.title),
+    localizedText(clip.comments),
+    labelTexts,
+    ...(clip.tags ?? []),
+    formatClipTimestamp(clip),
+    String(clip.minute),
+    clip.second != null ? `${clip.minute}:${String(clip.second).padStart(2, '0')}` : '',
+  ]
+    .join(' ')
+    .toLowerCase();
+}
+
+function clipMatchesSearch(
+  clip: VideoClip,
+  sectionId: ClipLabelId,
+  query: string
+): boolean {
+  const q = query.trim().toLowerCase();
+  if (!q) return true;
+
+  const timeFilter = parseClipTimeQuery(q);
+  if (timeFilter?.kind === 'range') {
+    return clipMatchesTime(clip, timeFilter);
+  }
+  if (timeFilter && clipMatchesTime(clip, timeFilter)) {
+    return true;
+  }
+
+  return clipSearchHaystack(clip, sectionId).includes(q);
+}
+
 function FullMatchPanel({ match }: { match: MatchData }) {
   const { t } = useLanguage();
   const src = match.video?.fullMatch
@@ -197,6 +294,7 @@ function FullMatchPanel({ match }: { match: MatchData }) {
 
 function ClipsPanel({ match }: { match: MatchData }) {
   const { t, L } = useLanguage();
+  const [searchQuery, setSearchQuery] = useState('');
 
   const sections = useMemo(() => {
     const map = new Map<ClipLabelId, VideoClip[]>();
@@ -214,24 +312,20 @@ function ClipsPanel({ match }: { match: MatchData }) {
     );
   }, [match.clips]);
 
-  const allSorted = useMemo(
-    () => sections.flatMap((s) => s.clips),
-    [sections]
-  );
+  const filteredSections = useMemo(() => {
+    const q = searchQuery.trim();
+    if (!q) return sections;
+    return sections
+      .map((section) => ({
+        ...section,
+        clips: section.clips.filter((clip) =>
+          clipMatchesSearch(clip, section.id, q)
+        ),
+      }))
+      .filter((section) => section.clips.length > 0);
+  }, [sections, searchQuery]);
 
-  const [selectedId, setSelectedId] = useState<string | null>(
-    allSorted[0]?.id ?? null
-  );
-
-  useEffect(() => {
-    if (!allSorted.some((c) => c.id === selectedId)) {
-      setSelectedId(allSorted[0]?.id ?? null);
-    }
-  }, [allSorted, selectedId]);
-
-  const selected = allSorted.find((c) => c.id === selectedId) ?? null;
-
-  if (allSorted.length === 0) {
+  if (sections.length === 0) {
     return (
       <div className="empty-clips">
         {t('noClips').replace(/\{slug\}/g, match.slug)}
@@ -240,93 +334,70 @@ function ClipsPanel({ match }: { match: MatchData }) {
   }
 
   return (
-    <div className="clips-layout">
-      <aside className="clips-sidebar" aria-label={t('clipsSidebarTitle')}>
-        <div className="clips-sidebar-title">{t('clipsSidebarTitle')}</div>
-        <div className="clips-sidebar-sections">
-          {sections.map((section) => (
-            <div className="clips-sidebar-section" key={section.id}>
-              <div className="clips-sidebar-section-title">
-                <span>
-                  {L(CLIP_LABELS[section.id] ?? { en: section.id, it: section.id })}
-                </span>
-                <span className="clips-sidebar-section-count">{section.clips.length}</span>
-              </div>
-              <ul className="clips-list">
-                {section.clips.map((clip) => (
-                  <li key={clip.id}>
-                    <button
-                      type="button"
-                      className={`clips-list-item ${selectedId === clip.id ? 'active' : ''}`}
-                      onClick={() => setSelectedId(clip.id)}
-                    >
-                      <span className="clips-list-time">
-                        {formatClipTimestamp(clip)}
-                      </span>
-                      <span className="clips-list-body">
-                        <span className="clips-list-title">{L(clip.title)}</span>
-                      </span>
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </aside>
+    <div className="video-section">
+      <p className="video-hint">{t('clipsHint')}</p>
 
-      <div className="clips-detail">
-        {selected ? (
-          <>
-            <div className="video-player-wrap">
-              <video
-                key={selected.id}
-                controls
-                playsInline
-                preload="metadata"
-                src={mediaUrl(match.slug, 'clips', selected.videoFile)}
-              >
-                {t('videoUnsupported')}
-              </video>
-            </div>
-            <div className="clip-detail-meta">
-              <div className="clip-detail-header">
-                <h3 className="clip-detail-title">
-                  {formatClipTimestamp(selected)} — {L(selected.title)}
-                </h3>
-                {(selected.section || selected.labels[0]) && (
-                  <span className="clip-tag clip-tag--label">
-                    {L(
-                      CLIP_LABELS[
-                        (selected.section ?? selected.labels[0]) as ClipLabelId
-                      ] ?? {
-                        en: String(selected.section ?? selected.labels[0]),
-                        it: String(selected.section ?? selected.labels[0]),
-                      }
-                    )}
-                  </span>
-                )}
-              </div>
-
-              <div className="clip-meta-block">
-                <div className="clip-meta-heading">{t('analystComments')}</div>
-                <p className="clip-comments">{L(selected.comments)}</p>
-                {selected.tags && selected.tags.length > 0 ? (
-                  <div className="clip-tags" style={{ marginTop: 10 }}>
-                    {selected.tags.map((tag) => (
-                      <span className="clip-tag" key={tag}>
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                ) : null}
-              </div>
-            </div>
-          </>
-        ) : (
-          <div className="empty-clips">{t('selectClip')}</div>
-        )}
+      <div className="clips-search">
+        <label className="clips-search-label" htmlFor="clips-search-input">
+          {t('clipsSearchAria')}
+        </label>
+        <input
+          id="clips-search-input"
+          type="search"
+          className="clips-search-input"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          placeholder={t('clipsSearchPlaceholder')}
+          aria-label={t('clipsSearchAria')}
+          autoComplete="off"
+          spellCheck={false}
+        />
       </div>
+
+      {filteredSections.length === 0 ? (
+        <div className="clips-search-empty">{t('clipsSearchEmpty')}</div>
+      ) : (
+        filteredSections.map((section) => (
+          <section className="analysis-section" key={section.id} id={`clips-${section.id}`}>
+            <div className="analysis-section-header">
+              <h3 className="analysis-section-title">
+                {L(CLIP_LABELS[section.id] ?? { en: section.id, it: section.id })}
+              </h3>
+              <span className="analysis-section-count">{section.clips.length}</span>
+            </div>
+            <div className="analysis-grid">
+              {section.clips.map((clip) => (
+                <article className="analysis-card" key={clip.id}>
+                  <div className="video-player-wrap">
+                    <video
+                      controls
+                      playsInline
+                      preload="metadata"
+                      src={mediaUrl(match.slug, 'clips', clip.videoFile)}
+                    >
+                      {t('videoUnsupported')}
+                    </video>
+                  </div>
+                  <div className="clip-card-body">
+                    <div className="clip-card-time">{formatClipTimestamp(clip)}</div>
+                    <div className="clip-card-title">{L(clip.title)}</div>
+                    <div className="clip-card-desc">{L(clip.comments)}</div>
+                    {clip.tags && clip.tags.length > 0 ? (
+                      <div className="clip-tags">
+                        {clip.tags.map((tag) => (
+                          <span className="clip-tag" key={tag}>
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    ) : null}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
+        ))
+      )}
     </div>
   );
 }

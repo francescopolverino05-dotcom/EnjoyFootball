@@ -64,6 +64,7 @@ SECTION_MAP = {
     'High_Defence': ('high-defence', 'High defence', 'Difesa alta'),
     'Goal': ('goal', 'Goal', 'Gol'),
     'Final_third': ('final-third', 'Final third', 'Ultimo terzo'),
+    'Own_Third': ('own-third', 'Own third', 'Proprio terzo'),
     'Transition_to_defence': ('defensive-transition', 'Transition to defence', 'Transizione difensiva'),
 }
 

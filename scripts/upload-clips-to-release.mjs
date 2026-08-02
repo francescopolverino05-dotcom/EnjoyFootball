@@ -83,26 +83,52 @@ async function gh(token, method, urlPath, { body, contentType } = {}) {
   return json;
 }
 
-async function uploadAsset(token, releaseId, filePath, assetName) {
+function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+async function uploadAsset(token, releaseId, filePath, assetName, attempts = 4) {
   const size = statSync(filePath).size;
   const url = `https://uploads.github.com/repos/${OWNER}/${REPO}/releases/${releaseId}/assets?name=${encodeURIComponent(assetName)}`;
-  const buffer = readFileSync(filePath);
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: {
-      Accept: 'application/vnd.github+json',
-      Authorization: `Bearer ${token}`,
-      'Content-Type': 'application/octet-stream',
-      'Content-Length': String(size),
-      'X-GitHub-Api-Version': '2022-11-28',
-    },
-    body: buffer,
-  });
-  const json = await res.json();
-  if (!res.ok) {
-    throw new Error(`Upload ${assetName} → ${res.status}: ${json.message || JSON.stringify(json)}`);
+  let lastErr;
+  for (let i = 1; i <= attempts; i++) {
+    try {
+      const buffer = readFileSync(filePath);
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/vnd.github+json',
+          Authorization: `Bearer ${token}`,
+          'Content-Type': 'application/octet-stream',
+          'Content-Length': String(size),
+          'X-GitHub-Api-Version': '2022-11-28',
+        },
+        body: buffer,
+      });
+      const json = await res.json();
+      if (res.status === 422 && /already_exists/i.test(json.message || '')) {
+        // Asset appeared between list and upload — caller should refresh.
+        const err = new Error(`already_exists:${assetName}`);
+        err.code = 'ALREADY_EXISTS';
+        throw err;
+      }
+      if (!res.ok) {
+        throw new Error(`Upload ${assetName} → ${res.status}: ${json.message || JSON.stringify(json)}`);
+      }
+      return json;
+    } catch (err) {
+      lastErr = err;
+      if (err?.code === 'ALREADY_EXISTS') throw err;
+      const retryable = /EPIPE|ECONNRESET|ETIMEDOUT|fetch failed|socket/i.test(
+        String(err?.cause?.code || err?.message || err)
+      );
+      if (!retryable || i === attempts) break;
+      const wait = 2000 * i;
+      console.warn(`  retry ${i}/${attempts - 1} after network error…`);
+      await sleep(wait);
+    }
   }
-  return json;
+  throw lastErr;
 }
 
 function resolveLocalPath(clip, byRel, files) {
@@ -201,10 +227,19 @@ try {
 
 const existingAssets = new Map((release.assets || []).map((a) => [a.name, a]));
 
+function saveMatch() {
+  writeFileSync(matchPath, JSON.stringify(match, null, 2) + '\n');
+}
+
+let uploaded = 0;
+let existed = 0;
+let failed = 0;
+
 for (const clip of match.clips || []) {
   const local = resolveLocalPath(clip, byRel, files);
   if (!local) {
     console.warn(`Skip ${clip.id}: local file missing`);
+    failed += 1;
     continue;
   }
 
@@ -215,15 +250,36 @@ for (const clip of match.clips || []) {
   let asset = existingAssets.get(assetName);
   if (asset) {
     console.log(`Exists: ${assetName}`);
+    existed += 1;
   } else {
     const mb = (statSync(local.abs).size / (1024 * 1024)).toFixed(1);
     console.log(`Uploading ${assetName} (${mb} MB)…`);
-    asset = await uploadAsset(token, release.id, local.abs, assetName);
-    existingAssets.set(assetName, asset);
-    console.log(`  ✓ uploaded`);
+    try {
+      asset = await uploadAsset(token, release.id, local.abs, assetName);
+      existingAssets.set(assetName, asset);
+      console.log(`  ✓ uploaded`);
+      uploaded += 1;
+    } catch (err) {
+      if (err?.code === 'ALREADY_EXISTS') {
+        // Refresh release assets and reuse
+        release = await gh(token, 'GET', `/repos/${OWNER}/${REPO}/releases/${release.id}`);
+        for (const a of release.assets || []) existingAssets.set(a.name, a);
+        asset = existingAssets.get(assetName);
+        if (!asset) throw err;
+        console.log(`  ✓ already on release`);
+        existed += 1;
+      } else {
+        console.error(`  ✗ ${assetName}: ${err.message || err}`);
+        failed += 1;
+        continue;
+      }
+    }
   }
   clip.videoFile = `https://github.com/${OWNER}/${REPO}/releases/download/${tag}/${assetName}`;
+  saveMatch();
 }
 
-writeFileSync(matchPath, JSON.stringify(match, null, 2) + '\n');
+saveMatch();
 console.log(`\nUpdated ${matchPath}`);
+console.log(`Summary: ${existed} existed, ${uploaded} uploaded, ${failed} failed, ${match.clips?.length ?? 0} total in match.json`);
+if (failed > 0) process.exit(1);

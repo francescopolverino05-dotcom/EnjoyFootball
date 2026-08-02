@@ -1,17 +1,17 @@
 # Video Analysis
 
-Put **analyst video reports** for this match here (not the short tactical clips).
-
-## Folder
+Long **analyst / coach reports** for the Video Analysis tab go here.
 
 ```text
 analysis/
-├── README.md          ← this file
-└── your-report.mp4    ← full video analysis / coach presentation
+├── README.md
+└── your-report.mp4
 ```
 
-Clips (Build-up, Progress, etc.) stay in `../clips/`.  
-This folder is only for longer **Video Analysis** tab content.
+| Not here | Put there instead |
+|----------|-------------------|
+| Full match | `../video/match.mp4` |
+| Short tactical clips | `../clips/` |
 
 ## How to add a report
 

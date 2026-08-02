@@ -100,16 +100,48 @@ writeFileSync(join(matchDir, 'match.json'), JSON.stringify(template, null, 2) + 
 writeFileSync(join(matchDir, 'video', '.gitkeep'), '');
 writeFileSync(join(matchDir, 'clips', '.gitkeep'), '');
 writeFileSync(join(matchDir, 'analysis', '.gitkeep'), '');
+
+writeFileSync(
+  join(matchDir, 'video', 'README.md'),
+  `# Full match video
+
+Drop the complete match recording here as:
+
+\`\`\`text
+video/match.mp4
+\`\`\`
+
+\`match.json\` → \`video.fullMatch\` (Full Match tab). MP4s are gitignored.
+`
+);
+
+writeFileSync(
+  join(matchDir, 'clips', 'README.md'),
+  `# Tactical clips
+
+Short tagged moments for the **Clips** tab.
+
+1. Drop Hudl/export folder at the **repo root**, or copy MP4s here directly
+2. Sync if using a root drop: \`npm run sync-clips -- --slug ${slug}\`
+3. Register clips in \`../match.json\` → \`clips\`
+
+Full match → \`../video/match.mp4\`  
+Analyst reports → \`../analysis/\`
+`
+);
+
 writeFileSync(
   join(matchDir, 'analysis', 'README.md'),
   `# Video Analysis
 
-Put analyst video reports for this match here (not short tactical clips).
+Long analyst / coach reports for the **Video Analysis** tab.
 
-Clips → \`../clips/\` (Clips tab)  
-Analysis reports → this folder (Video Analysis tab)
+\`\`\`text
+analysis/
+└── your-report.mp4
+\`\`\`
 
-Example \`match.json\` → \`analysisVideos\` entry:
+Register in \`../match.json\` → \`analysisVideos\`:
 
 \`\`\`json
 {
@@ -120,6 +152,8 @@ Example \`match.json\` → \`analysisVideos\` entry:
   "tags": []
 }
 \`\`\`
+
+Full match → \`../video/\` · Clips → \`../clips/\`
 `
 );
 
@@ -127,56 +161,28 @@ writeFileSync(
   join(matchDir, 'README.md'),
   `# ${title}
 
-## Cartella partita: \`${slug}\`
-
-### Prossimi passi
-
-1. Copia il video completo in \`video/match.mp4\`
-2. Aggiungi clip tattiche in \`clips/\` (tab Clips)
-3. Aggiungi report analista in \`analysis/\` (tab Video Analysis)
-4. Chiedi all'agente Cursor di analizzare / registrare i file
-5. Quando pronto, imposta \`status\` su \`"published"\` in match.json
-
-### Clip metadata (example)
-
-\`\`\`json
-{
-  "id": "goal-esposito-32",
-  "title": { "en": "Esposito goal", "it": "Gol Esposito" },
-  "comments": {
-    "en": "Build-up through the right half-space, late run into the box.",
-    "it": "Costruzione dal half-space destro, inserimento in area."
-  },
-  "minute": 32,
-  "second": 14,
-  "videoFile": "goal-esposito-32.mp4",
-  "labels": ["goal", "build-up"],
-  "tags": ["right half-space", "late run"]
-}
+\`\`\`text
+matches/${slug}/
+├── match.json
+├── video/      ← FULL MATCH → video/match.mp4
+├── clips/      ← tactical clips (Clips tab)
+└── analysis/   ← analyst reports (Video Analysis tab)
 \`\`\`
 
-### Analysis video metadata (example)
-
-\`\`\`json
-{
-  "id": "pressing-review",
-  "title": { "en": "Pressing review", "it": "Review pressing" },
-  "description": {
-    "en": "Full pressing structure analysis from the first half.",
-    "it": "Analisi completa della struttura di pressing nel primo tempo."
-  },
-  "videoFile": "pressing-review.mp4",
-  "tags": ["pressing", "1H"]
-}
-\`\`\`
+1. Copy full match → \`video/match.mp4\`
+2. Add clips → \`clips/\` (or root drop + \`npm run sync-clips\`)
+3. Add analyst reports → \`analysis/\`
+4. Ask Cursor to fill / register \`match.json\`
+5. Set \`status\` to \`"published"\` when ready
 `
 );
 
 console.log(`
 ✓ Created match folder: matches/${slug}/
 
-Next steps:
-  1. Drop your MP4 into matches/${slug}/video/match.mp4
-  2. Open Cursor and ask the agent to analyze the match folder
-  3. Run: npm run dev
+  video/     ← put full match as video/match.mp4
+  clips/     ← tactical clips (or root drop + npm run sync-clips)
+  analysis/  ← analyst reports
+
+Next: npm run dev → open the match → Full Match tab
 `);
