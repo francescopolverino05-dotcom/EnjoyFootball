@@ -1,8 +1,14 @@
 import { useState } from 'react';
-import { mediaUrl, isVimeoUrl, vimeoEmbedUrl } from '../utils/mediaUrl';
+import {
+  sessionMediaUrl,
+  isVimeoUrl,
+  vimeoEmbedUrl,
+  type MediaLibrary,
+} from '../utils/mediaUrl';
 
 interface MatchMediaProps {
   slug: string;
+  library?: MediaLibrary;
   /** Relative path under clips/analysis/video, or absolute http(s) / Vimeo URL */
   src: string;
   /** Folder prefix when src is a relative local file */
@@ -21,6 +27,7 @@ interface MatchMediaProps {
 /** Renders a local/remote MP4 or a Vimeo embed. */
 export default function MatchMedia({
   slug,
+  library = 'matches',
   src,
   kind = null,
   title,
@@ -75,8 +82,8 @@ export default function MatchMedia({
 
   const resolved =
     kind && !/^https?:\/\//i.test(src)
-      ? mediaUrl(slug, kind, src)
-      : mediaUrl(slug, src);
+      ? sessionMediaUrl(library, slug, kind, src)
+      : sessionMediaUrl(library, slug, src);
 
   return (
     <div className={`video-player-wrap ${fullHeight ? 'video-player-wrap--full' : ''}`}>

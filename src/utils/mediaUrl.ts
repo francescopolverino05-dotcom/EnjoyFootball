@@ -1,9 +1,22 @@
 /**
  * Resolve a media path for the app.
  * - Absolute http(s) URLs are used as-is (GitHub Releases, Vimeo, CDN, etc.)
- * - Relative paths are served from /matches/<slug>/...
+ * - Relative paths are served from /matches/<slug>/... or /trainings/<slug>/...
  */
-export function mediaUrl(slug: string, ...parts: string[]): string {
+export type MediaLibrary = 'matches' | 'trainings';
+
+export function mediaUrl(
+  slug: string,
+  ...parts: string[]
+): string {
+  return sessionMediaUrl('matches', slug, ...parts);
+}
+
+export function sessionMediaUrl(
+  library: MediaLibrary,
+  slug: string,
+  ...parts: string[]
+): string {
   const absolute = parts.find((p) => /^https?:\/\//i.test(p));
   if (absolute) return absolute;
 
@@ -12,7 +25,7 @@ export function mediaUrl(slug: string, ...parts: string[]): string {
     .filter(Boolean)
     .map((seg) => encodeURIComponent(seg))
     .join('/');
-  return `/matches/${slug}/${encoded}`;
+  return `/${library}/${slug}/${encoded}`;
 }
 
 export type VimeoRef = {

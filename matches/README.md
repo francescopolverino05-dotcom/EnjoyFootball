@@ -3,13 +3,16 @@
 Every match uses this layout:
 
 ```text
-YYYY-MM-DD_<tipo>-<squadre>/
-├── match.json
-├── README.md
-├── video/          ← FULL MATCH MP4 (usually match.mp4)
-├── clips/          ← tactical clips → Clips tab
-└── analysis/       ← analyst reports → Video Analysis tab
+matches/
+└── YYYY-MM-DD_<tipo>-<squadre>/
+    ├── match.json
+    ├── README.md
+    ├── video/          ← FULL MATCH MP4 (usually match.mp4)
+    ├── clips/          ← tactical clips → Clips tab
+    └── analysis/       ← analyst reports → Video Analysis tab
 ```
+
+Training sessions live separately in [`../trainings/`](../trainings/README.md).
 
 ## Where to put files
 

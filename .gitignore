@@ -29,10 +29,27 @@ matches/**/analysis/**/*.mov
 matches/**/analysis/*.mp4
 matches/**/analysis/*.mov
 
+# Training session videos
+trainings/**/video/**/*.mp4
+trainings/**/video/**/*.mov
+trainings/**/video/*.mp4
+trainings/**/video/*.mov
+trainings/**/clips/**/*.mp4
+trainings/**/clips/**/*.mov
+trainings/**/clips/*.mp4
+trainings/**/clips/*.mov
+trainings/**/analysis/**/*.mp4
+trainings/**/analysis/**/*.mov
+trainings/**/analysis/*.mp4
+trainings/**/analysis/*.mov
+
 # Keep placeholders
 !matches/**/video/.gitkeep
 !matches/**/clips/.gitkeep
 !matches/**/analysis/.gitkeep
+!trainings/**/video/.gitkeep
+!trainings/**/clips/.gitkeep
+!trainings/**/analysis/.gitkeep
 
 # Local Vimeo drag-drop staging (do not commit)
 Vimeo upload*/

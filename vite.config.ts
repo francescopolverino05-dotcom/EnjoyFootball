@@ -3,15 +3,17 @@ import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 import { cpSync, existsSync, mkdirSync } from 'fs';
 
-function copyMatchesPlugin(): Plugin {
+function copyMediaLibrariesPlugin(): Plugin {
   return {
-    name: 'copy-matches',
+    name: 'copy-media-libraries',
     closeBundle() {
-      const src = resolve(__dirname, 'matches');
-      const dest = resolve(__dirname, 'dist/matches');
-      if (existsSync(src)) {
-        mkdirSync(resolve(__dirname, 'dist'), { recursive: true });
-        cpSync(src, dest, { recursive: true });
+      for (const name of ['matches', 'trainings'] as const) {
+        const src = resolve(__dirname, name);
+        const dest = resolve(__dirname, 'dist', name);
+        if (existsSync(src)) {
+          mkdirSync(resolve(__dirname, 'dist'), { recursive: true });
+          cpSync(src, dest, { recursive: true });
+        }
       }
     },
   };
@@ -19,16 +21,17 @@ function copyMatchesPlugin(): Plugin {
 
 export default defineConfig({
   base: process.env.GITHUB_PAGES === 'true' ? '/SSCN-Primavera/' : '/',
-  plugins: [react(), copyMatchesPlugin()],
+  plugins: [react(), copyMediaLibrariesPlugin()],
   publicDir: 'public',
   resolve: {
     alias: {
       '@matches': resolve(__dirname, 'matches'),
+      '@trainings': resolve(__dirname, 'trainings'),
     },
   },
   server: {
     fs: {
-      allow: ['.', 'matches'],
+      allow: ['.', 'matches', 'trainings'],
     },
   },
 });

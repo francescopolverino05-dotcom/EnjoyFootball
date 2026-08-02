@@ -12,14 +12,23 @@ const dictionaries = {
   en: {
     brandSubtitle: 'Match Technical Report',
     season: 'Season 2026/27',
-    homePageTitle: 'MATCH ANALYSIS',
+    homePageTitle: 'ANALYSIS HUB',
     homeDashboard: 'Primavera — Dashboard',
-    homeHeroTitle: 'Match Technical Reports',
+    homeHeroTitle: 'Match & Training Analysis',
     homeHeroBody:
-      'All Primavera (U19) match analysis in one place — statistics, formations, full video and analysis clips for the coaching staff.',
+      'All Primavera (U19) match and training analysis in one place — statistics, formations, full video and analysis clips for the coaching staff.',
+    analystCredit: 'All analysis completed by Francesco Polverino',
     matches: 'Matches',
+    trainings: 'Training sessions',
+    trainingsHint: 'Each session is labelled by date.',
+    noMatchesYet: 'No matches published yet.',
+    noTrainingsYet: 'No training sessions yet. Add one under trainings/.',
     backToMatches: '← Back to matches',
+    backToHome: '← Back to home',
     matchNotFound: 'Match not found.',
+    trainingNotFound: 'Training session not found.',
+    trainingSession: 'Training session',
+    trainingAnalysis: 'TRAINING ANALYSIS',
     teamSheet: 'TEAM SHEET',
     tacticalDashboard: 'TACTICAL DASHBOARD',
     keyMoments: 'Key Moments & Events',
@@ -28,10 +37,13 @@ const dictionaries = {
     tabTeamStats: 'Team Statistics',
     tabGk: 'Goalkeeper Analysis',
     tabFullMatch: 'Full Match',
+    tabFullSession: 'Full Session',
     tabClips: 'Clips',
     tabVideoAnalysis: 'Video Analysis',
     fullMatchVideo: 'Full Match Video',
     fullMatchHint: 'Watch the complete match recording.',
+    fullSessionVideo: 'Full Session Video',
+    fullSessionHint: 'Watch the complete training session recording.',
     clipsSidebarTitle: 'Clip list',
     clipsHint: 'Clips grouped by theme — Build-up, Progression, Mid block, and more.',
     clipsSearchPlaceholder: 'Search clips by theme, keyword, or minute…',
@@ -47,6 +59,12 @@ const dictionaries = {
       'No clips yet. Add MP4 files to matches/{slug}/clips/ and register them in match.json.',
     noAnalysis:
       'No video analysis yet. Drop your analyst video into matches/{slug}/analysis/ and tell the agent to register it.',
+    noTrainingVideo:
+      'No session video yet. Add the MP4 to trainings/{slug}/video/session.mp4',
+    noTrainingClips:
+      'No clips yet. Add MP4 files to trainings/{slug}/clips/ and register them in training.json.',
+    noTrainingAnalysis:
+      'No video analysis yet. Add files to trainings/{slug}/analysis/ and register them in training.json.',
     videoAnalysisHint:
       'Full analyst video breakdowns for the coaching staff.',
     videoUnsupported: 'Your browser does not support video playback.',
@@ -67,14 +85,23 @@ const dictionaries = {
   it: {
     brandSubtitle: 'Report Tecnico Partita',
     season: 'Stagione 2026/27',
-    homePageTitle: 'ANALISI PARTITE',
+    homePageTitle: 'HUB ANALISI',
     homeDashboard: 'Primavera — Dashboard',
-    homeHeroTitle: 'Report Tecnici Partita',
+    homeHeroTitle: 'Analisi Partite e Allenamenti',
     homeHeroBody:
-      'Tutte le analisi della Primavera (U19) in un unico posto — statistiche, formazioni, video completo e clip di analisi per lo staff tecnico.',
+      'Tutte le analisi della Primavera (U19) — partite e allenamenti — in un unico posto per lo staff tecnico.',
+    analystCredit: 'Tutte le analisi sono a cura di Francesco Polverino',
     matches: 'Partite',
+    trainings: 'Allenamenti',
+    trainingsHint: 'Ogni sessione è etichettata per data.',
+    noMatchesYet: 'Nessuna partita pubblicata ancora.',
+    noTrainingsYet: 'Nessun allenamento ancora. Aggiungine uno in trainings/.',
     backToMatches: '← Torna alle partite',
+    backToHome: '← Torna alla home',
     matchNotFound: 'Partita non trovata.',
+    trainingNotFound: 'Allenamento non trovato.',
+    trainingSession: 'Allenamento',
+    trainingAnalysis: 'ANALISI ALLENAMENTO',
     teamSheet: 'DISTINTA DI GARA',
     tacticalDashboard: 'DASHBOARD TATTICA',
     keyMoments: 'Azioni Salienti ed Eventi',
@@ -83,10 +110,13 @@ const dictionaries = {
     tabTeamStats: 'Statistiche Squadra',
     tabGk: 'Analisi Portieri',
     tabFullMatch: 'Partita Intera',
+    tabFullSession: 'Sessione Intera',
     tabClips: 'Clip',
     tabVideoAnalysis: 'Analisi Video',
     fullMatchVideo: 'Video Partita Completa',
     fullMatchHint: 'Guarda la registrazione completa della partita.',
+    fullSessionVideo: 'Video Sessione Completa',
+    fullSessionHint: 'Guarda la registrazione completa dell’allenamento.',
     clipsSidebarTitle: 'Elenco clip',
     clipsHint:
       'Clip raggruppate per tema — Costruzione, Progressione, Blocco mediano e altro.',
@@ -103,6 +133,12 @@ const dictionaries = {
       'Nessuna clip ancora. Aggiungi file MP4 in matches/{slug}/clips/ e registra i metadata in match.json.',
     noAnalysis:
       'Nessuna analisi video ancora. Metti il video in matches/{slug}/analysis/ e chiedi all’agente di registrarlo.',
+    noTrainingVideo:
+      'Nessun video sessione. Aggiungi il MP4 in trainings/{slug}/video/session.mp4',
+    noTrainingClips:
+      'Nessuna clip ancora. Aggiungi MP4 in trainings/{slug}/clips/ e registrali in training.json.',
+    noTrainingAnalysis:
+      'Nessuna analisi video ancora. Aggiungi file in trainings/{slug}/analysis/ e registrali in training.json.',
     videoAnalysisHint:
       'Video di analisi completi preparati dall’analista per lo staff tecnico.',
     videoUnsupported: 'Il browser non supporta la riproduzione video.',

@@ -716,6 +716,74 @@ button {
   margin: 0 auto;
 }
 
+.home-analyst-credit {
+  margin-top: 18px !important;
+  font-size: 14px !important;
+  font-weight: 700;
+  color: var(--napoli-blue-dark) !important;
+  letter-spacing: 0.02em;
+}
+
+.home-section {
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+.home-section-hint {
+  margin: -8px 0 16px;
+  font-size: 13px;
+  color: var(--text-gray);
+}
+
+.home-empty {
+  padding: 20px;
+  border: 1px dashed var(--border-color);
+  border-radius: 6px;
+  color: var(--text-gray);
+  font-size: 14px;
+  background: #fff;
+}
+
+.training-card-date {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--napoli-blue-dark);
+  letter-spacing: 0.02em;
+  margin-bottom: 6px;
+}
+
+.training-card-focus {
+  font-size: 14px;
+  color: var(--text-gray);
+  margin: 6px 0 10px;
+}
+
+.training-hero {
+  text-align: center;
+  padding: 12px 8px 8px;
+}
+
+.training-hero-date {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--napoli-blue-dark);
+  margin-bottom: 8px;
+}
+
+.training-hero-title {
+  font-size: 22px;
+  color: var(--text-dark);
+  margin: 0 0 8px;
+}
+
+.training-hero-focus,
+.training-hero-notes {
+  color: var(--text-gray);
+  max-width: 640px;
+  margin: 0 auto 6px;
+  font-size: 14px;
+}
+
 .match-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

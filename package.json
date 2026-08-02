@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "new-match": "node scripts/new-match.mjs",
+    "new-training": "node scripts/new-training.mjs",
     "setup-token": "node scripts/setup-token.mjs",
     "setup-vimeo-token": "node scripts/setup-vimeo-token.mjs",
     "sync-vimeo": "node scripts/sync-vimeo.mjs",
