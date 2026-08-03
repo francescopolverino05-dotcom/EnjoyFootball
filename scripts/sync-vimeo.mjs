@@ -1,14 +1,24 @@
 #!/usr/bin/env node
 /**
- * Sync videos from a Vimeo folder into match.json.
+ * Sync videos from a Vimeo folder into match.json or training.json.
  *
+ * Match:
  *   npm run sync-vimeo -- --slug 2026-08-01_amichevole-u19-vs-u18
  *   npm run sync-vimeo -- --slug ... --folder 30093272
  *
- * Classification (by video / parent-folder name):
+ * Training:
+ *   npm run sync-vimeo -- --training 2026-08-03_lunedi
+ *   npm run sync-vimeo-training -- --slug 2026-08-03_lunedi
+ *   npm run sync-vimeo -- --training 2026-08-03_lunedi --folder 30099288
+ *
+ * Match classification (by video / parent-folder name):
  *   - "full match" / "partita intera" → video.fullMatch
  *   - "post match" / "analysis" / "analisi" → analysisVideos
  *   - otherwise → clips (section from [Build_up] in title, tags, or subfolder name)
+ *
+ * Training classification:
+ *   - "full session" / "sessione" / largest → video.fullSession
+ *   - rest → analysisVideos
  */
 
 import { existsSync, readFileSync, writeFileSync } from 'fs';
@@ -266,10 +276,329 @@ function videoNumericId(video) {
   return String(video.uri || '').split('/').pop();
 }
 
+function normalizeVideoUrl(url) {
+  return String(url || '').split('?')[0].replace(/\/$/, '');
+}
+
+function humanizeTrainingTitle(name) {
+  const cleaned = String(name || 'Untitled')
+    .replace(/[_\-]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return { en: cleaned, it: cleaned };
+}
+
+function isFullSessionName(name) {
+  const n = (name || '').toLowerCase();
+  return /full\s*session|sessione\s*(completa|intera)?|full\s*training|intera\s*sessione|session\s*highlight/.test(
+    n
+  );
+}
+
+function defaultVimeoFolderUrl(folderId) {
+  return `https://vimeo.com/user/170593333/folder/${folderId}`;
+}
+
+function preserveNonVimeoAnalysis(entries) {
+  return (entries || []).filter(
+    (a) =>
+      a?.kind === 'pdf' ||
+      a?.kind === 'markdown' ||
+      (a?.videoFile && !String(a.videoFile).includes('vimeo.com'))
+  );
+}
+
+async function syncMatch(token, slug, folderOverride) {
+  const matchPath = join(root, 'matches', slug, 'match.json');
+  if (!existsSync(matchPath)) {
+    console.error('match.json not found:', matchPath);
+    process.exit(1);
+  }
+
+  const match = JSON.parse(readFileSync(matchPath, 'utf8'));
+  const folderId = String(folderOverride || match.vimeo?.folderId || '');
+  if (!folderId) {
+    console.error('No folder id. Pass --folder <id> or set match.json → vimeo.folderId');
+    process.exit(1);
+  }
+
+  match.vimeo = {
+    ...(match.vimeo || {}),
+    folderId,
+    folderUrl: match.vimeo?.folderUrl || defaultVimeoFolderUrl(folderId),
+  };
+
+  const folder = await vimeoGet(token, `/me/projects/${folderId}`);
+  console.log(`Folder: ${folder.name} (#${folderId})`);
+
+  const listed = await listFolderVideos(token, folderId);
+  console.log(`Videos found: ${listed.length}`);
+
+  if (listed.length === 0) {
+    writeFileSync(matchPath, JSON.stringify(match, null, 2) + '\n');
+    console.log(`
+Folder is empty — match.json folder mapping saved.
+Upload videos into the Vimeo folder, then re-run:
+
+  npm run sync-vimeo -- --slug ${slug}
+`);
+    return;
+  }
+
+  const clips = [];
+  const analysisVideos = [];
+  let fullMatchUrl = null;
+  let fullMatchDuration = 0;
+
+  for (const { video, parentFolderName } of listed) {
+    const name = video.name || 'Untitled';
+    const link = videoLink(video);
+    const id = videoNumericId(video);
+    const kind = classifyVideo(name, parentFolderName, Number(video.duration) || 0);
+
+    if (kind.kind === 'full') {
+      const dur = Number(video.duration) || 0;
+      if (!fullMatchUrl || dur >= (fullMatchDuration || 0)) {
+        fullMatchUrl = link;
+        fullMatchDuration = dur;
+        console.log(`  full match ← ${name} (${dur}s) ${link}`);
+      } else {
+        console.log(`  full match (skipped shorter/stub) ← ${name} (${dur}s)`);
+      }
+      continue;
+    }
+    if (kind.kind === 'analysis') {
+      analysisVideos.push({
+        id: `vimeo-${id}`,
+        title: { en: name, it: name },
+        description: {
+          en: 'Synced from Vimeo folder.',
+          it: 'Sincronizzato dalla cartella Vimeo.',
+        },
+        videoFile: link,
+        tags: ['vimeo', 'analysis'],
+      });
+      console.log(`  analysis ← ${name}`);
+      continue;
+    }
+    if (kind.kind === 'skip') {
+      continue;
+    }
+
+    const section = kind.section;
+    const { title, tags } = titleFromClipName(name, section);
+    clips.push({
+      id: `vimeo-${id}`,
+      title,
+      comments: title,
+      minute: kind.minute,
+      second: kind.second,
+      videoFile: link,
+      section,
+      labels: [section],
+      tags,
+    });
+    console.log(`  clip [${section}] ← ${name}`);
+  }
+
+  if (fullMatchUrl) {
+    match.video = {
+      ...(match.video || {}),
+      fullMatch: fullMatchUrl,
+      notes: {
+        en: 'Full match hosted on Vimeo.',
+        it: 'Partita intera su Vimeo.',
+      },
+    };
+  }
+
+  if (analysisVideos.length > 0) {
+    const preserved = preserveNonVimeoAnalysis(match.analysisVideos);
+    const byId = new Map();
+    for (const a of [...analysisVideos, ...preserved]) byId.set(a.id, a);
+    match.analysisVideos = [...byId.values()];
+  }
+
+  if (clips.length > 0) {
+    const prevByUrl = new Map(
+      (match.clips || [])
+        .filter((c) => c?.videoFile)
+        .map((c) => [normalizeVideoUrl(c.videoFile), c])
+    );
+    match.clips = clips.map((c) => {
+      const prev = prevByUrl.get(normalizeVideoUrl(c.videoFile));
+      if (prev?.localFile) return { ...c, localFile: prev.localFile };
+      return c;
+    });
+  }
+
+  match.vimeo = {
+    ...(match.vimeo || {}),
+    lastSyncedAt: new Date().toISOString(),
+  };
+
+  writeFileSync(matchPath, JSON.stringify(match, null, 2) + '\n');
+  console.log(`
+Updated ${matchPath}
+  fullMatch: ${fullMatchUrl ? 'yes' : '(unchanged)'}
+  analysis:  ${(match.analysisVideos || []).length}
+  clips:     ${clips.length}
+`);
+}
+
+async function syncTraining(token, slug, folderOverride) {
+  const trainingPath = join(root, 'trainings', slug, 'training.json');
+  if (!existsSync(trainingPath)) {
+    console.error('training.json not found:', trainingPath);
+    process.exit(1);
+  }
+
+  const training = JSON.parse(readFileSync(trainingPath, 'utf8'));
+  const folderId = String(folderOverride || training.vimeo?.folderId || '');
+  if (!folderId) {
+    console.error('No folder id. Pass --folder <id> or set training.json → vimeo.folderId');
+    process.exit(1);
+  }
+
+  training.vimeo = {
+    ...(training.vimeo || {}),
+    folderId,
+    folderUrl: training.vimeo?.folderUrl || defaultVimeoFolderUrl(folderId),
+  };
+
+  const folder = await vimeoGet(token, `/me/projects/${folderId}`);
+  console.log(`Folder: ${folder.name} (#${folderId})`);
+
+  const listed = await listFolderVideos(token, folderId);
+  console.log(`Videos found: ${listed.length}`);
+
+  if (listed.length === 0) {
+    writeFileSync(trainingPath, JSON.stringify(training, null, 2) + '\n');
+    console.log(`
+Folder is empty — training.json folder mapping saved.
+Upload videos into the Vimeo folder, then re-run:
+
+  npm run sync-vimeo -- --training ${slug}
+`);
+    return;
+  }
+
+  const prevByUrl = new Map(
+    (training.analysisVideos || [])
+      .filter((a) => a?.videoFile)
+      .map((a) => [normalizeVideoUrl(a.videoFile), a])
+  );
+
+  const analysisVideos = [];
+  let fullSessionUrl = null;
+  let fullSessionDuration = -1;
+  let fullSessionName = '';
+  let namedFullSession = false;
+
+  for (const { video } of listed) {
+    const name = video.name || 'Untitled';
+    const link = videoLink(video);
+    const id = videoNumericId(video);
+    const dur = Number(video.duration) || 0;
+    const title = humanizeTrainingTitle(name);
+    const prev = prevByUrl.get(normalizeVideoUrl(link));
+
+    const entry = {
+      id: prev?.id || `vimeo-${id}`,
+      title: prev?.title || title,
+      description: prev?.description || {
+        en: 'Synced from Vimeo training folder.',
+        it: 'Sincronizzato dalla cartella Vimeo allenamento.',
+      },
+      videoFile: link,
+      tags: prev?.tags || ['vimeo', 'training'],
+    };
+    analysisVideos.push(entry);
+
+    const named = isFullSessionName(name);
+    if (named) {
+      if (!namedFullSession || dur >= fullSessionDuration) {
+        fullSessionUrl = link;
+        fullSessionDuration = dur;
+        fullSessionName = name;
+        namedFullSession = true;
+      }
+      console.log(`  full session ← ${name} (${dur}s) ${link}`);
+    } else {
+      if (!namedFullSession && dur > fullSessionDuration) {
+        fullSessionUrl = link;
+        fullSessionDuration = dur;
+        fullSessionName = name;
+      }
+      console.log(`  analysis ← ${name} (${dur}s)`);
+    }
+  }
+
+  // Stable order: prefer previous order for known URLs, then new videos
+  const ordered = [];
+  const seen = new Set();
+  for (const prev of training.analysisVideos || []) {
+    const url = normalizeVideoUrl(prev.videoFile);
+    const next = analysisVideos.find((a) => normalizeVideoUrl(a.videoFile) === url);
+    if (next) {
+      ordered.push(next);
+      seen.add(normalizeVideoUrl(next.videoFile));
+    }
+  }
+  for (const a of analysisVideos) {
+    const url = normalizeVideoUrl(a.videoFile);
+    if (!seen.has(url)) ordered.push(a);
+  }
+
+  const preserved = preserveNonVimeoAnalysis(training.analysisVideos);
+  const byId = new Map();
+  for (const a of [...ordered, ...preserved]) byId.set(a.id, a);
+  training.analysisVideos = [...byId.values()];
+
+  if (fullSessionUrl) {
+    training.video = {
+      ...(training.video || {}),
+      fullSession: fullSessionUrl,
+      notes: {
+        en: training.video?.notes?.en || `Full session hosted on Vimeo (${fullSessionName}).`,
+        it: training.video?.notes?.it || `Sessione su Vimeo (${fullSessionName}).`,
+      },
+    };
+    if (!namedFullSession) {
+      console.log(`  fullSession (largest) ← ${fullSessionName} (${fullSessionDuration}s)`);
+    }
+  }
+
+  training.vimeo = {
+    ...(training.vimeo || {}),
+    lastSyncedAt: new Date().toISOString(),
+  };
+
+  // Keep status as-is (do not force draft)
+  writeFileSync(trainingPath, JSON.stringify(training, null, 2) + '\n');
+  console.log(`
+Updated ${trainingPath}
+  status:      ${training.status || '(unset)'}
+  fullSession: ${fullSessionUrl ? 'yes' : '(unchanged)'}
+  analysis:    ${(training.analysisVideos || []).length}
+`);
+}
+
 const args = parseArgs(process.argv.slice(2));
-const slug = args.slug;
+const trainingFlag = args.training;
+const isTraining =
+  trainingFlag === true ||
+  (typeof trainingFlag === 'string' && trainingFlag.length > 0);
+const slug =
+  (typeof trainingFlag === 'string' && trainingFlag !== 'true' ? trainingFlag : null) ||
+  args.slug ||
+  null;
+
 if (!slug) {
-  console.error(`Usage: npm run sync-vimeo -- --slug <match-folder> [--folder <id>]`);
+  console.error(`Usage:
+  Match:    npm run sync-vimeo -- --slug <match-folder> [--folder <id>]
+  Training: npm run sync-vimeo -- --training <training-slug> [--folder <id>]
+            npm run sync-vimeo-training -- --slug <training-slug> [--folder <id>]`);
   process.exit(1);
 }
 
@@ -279,145 +608,8 @@ if (!token) {
   process.exit(1);
 }
 
-const matchPath = join(root, 'matches', slug, 'match.json');
-if (!existsSync(matchPath)) {
-  console.error('match.json not found:', matchPath);
-  process.exit(1);
+if (isTraining) {
+  await syncTraining(token, slug, args.folder);
+} else {
+  await syncMatch(token, slug, args.folder);
 }
-
-const match = JSON.parse(readFileSync(matchPath, 'utf8'));
-const folderId = String(args.folder || match.vimeo?.folderId || '');
-if (!folderId) {
-  console.error('No folder id. Pass --folder <id> or set match.json → vimeo.folderId');
-  process.exit(1);
-}
-
-match.vimeo = {
-  ...(match.vimeo || {}),
-  folderId,
-  folderUrl:
-    match.vimeo?.folderUrl ||
-    `https://vimeo.com/user/170593333/folder/${folderId}`,
-};
-
-const folder = await vimeoGet(token, `/me/projects/${folderId}`);
-console.log(`Folder: ${folder.name} (#${folderId})`);
-
-const listed = await listFolderVideos(token, folderId);
-console.log(`Videos found: ${listed.length}`);
-
-if (listed.length === 0) {
-  writeFileSync(matchPath, JSON.stringify(match, null, 2) + '\n');
-  console.log(`
-Folder is empty — match.json folder mapping saved.
-Upload videos into the Vimeo folder, then re-run:
-
-  npm run sync-vimeo -- --slug ${slug}
-`);
-  process.exit(0);
-}
-
-const clips = [];
-const analysisVideos = [];
-let fullMatchUrl = null;
-let fullMatchDuration = 0;
-
-for (const { video, parentFolderName } of listed) {
-  const name = video.name || 'Untitled';
-  const link = videoLink(video);
-  const id = videoNumericId(video);
-  const kind = classifyVideo(name, parentFolderName, Number(video.duration) || 0);
-
-  if (kind.kind === 'full') {
-    const dur = Number(video.duration) || 0;
-    if (!fullMatchUrl || dur >= (fullMatchDuration || 0)) {
-      fullMatchUrl = link;
-      fullMatchDuration = dur;
-      console.log(`  full match ← ${name} (${dur}s) ${link}`);
-    } else {
-      console.log(`  full match (skipped shorter/stub) ← ${name} (${dur}s)`);
-    }
-    continue;
-  }
-  if (kind.kind === 'analysis') {
-    analysisVideos.push({
-      id: `vimeo-${id}`,
-      title: { en: name, it: name },
-      description: {
-        en: 'Synced from Vimeo folder.',
-        it: 'Sincronizzato dalla cartella Vimeo.',
-      },
-      videoFile: link,
-      tags: ['vimeo', 'analysis'],
-    });
-    console.log(`  analysis ← ${name}`);
-    continue;
-  }
-  if (kind.kind === 'skip') {
-    continue;
-  }
-
-  const section = kind.section;
-  const { title, tags } = titleFromClipName(name, section);
-  clips.push({
-    id: `vimeo-${id}`,
-    title,
-    comments: title,
-    minute: kind.minute,
-    second: kind.second,
-    videoFile: link,
-    section,
-    labels: [section],
-    tags,
-  });
-  console.log(`  clip [${section}] ← ${name}`);
-}
-
-if (fullMatchUrl) {
-  match.video = {
-    ...(match.video || {}),
-    fullMatch: fullMatchUrl,
-    notes: {
-      en: 'Full match hosted on Vimeo.',
-      it: 'Partita intera su Vimeo.',
-    },
-  };
-}
-
-if (analysisVideos.length > 0) {
-  const preserved = (match.analysisVideos || []).filter(
-    (a) =>
-      a?.kind === 'pdf' ||
-      a?.kind === 'markdown' ||
-      (a?.videoFile && !String(a.videoFile).includes('vimeo.com'))
-  );
-  const byId = new Map();
-  for (const a of [...analysisVideos, ...preserved]) byId.set(a.id, a);
-  match.analysisVideos = [...byId.values()];
-}
-
-if (clips.length > 0) {
-  const prevByUrl = new Map(
-    (match.clips || [])
-      .filter((c) => c?.videoFile)
-      .map((c) => [String(c.videoFile).split('?')[0], c])
-  );
-  match.clips = clips.map((c) => {
-    const prev = prevByUrl.get(String(c.videoFile).split('?')[0]);
-    if (prev?.localFile) return { ...c, localFile: prev.localFile };
-    return c;
-  });
-}
-
-match.vimeo = {
-  ...(match.vimeo || {}),
-  lastSyncedAt: new Date().toISOString(),
-};
-
-writeFileSync(matchPath, JSON.stringify(match, null, 2) + '\n');
-console.log(`
-Updated ${matchPath}
-  fullMatch: ${fullMatchUrl ? 'yes' : '(unchanged)'}
-  analysis:  ${(match.analysisVideos || []).length}
-  clips:     ${clips.length}
-`);

@@ -16,9 +16,29 @@ trainings/
 
 ```bash
 npm run new-training -- --date 2026-08-05 --title "Rondo + Finishing" --focus "Build-up"
+# optional: seed Vimeo folder id
+npm run new-training -- --date 2026-08-05 --title "Monday" --vimeo-folder 30099288
 ```
 
 Sessions appear on the home page under **Training sessions**, labelled by date.
+
+## Sync training videos from Vimeo
+
+1. Upload session videos into a Vimeo folder.
+2. Put the folder id in `training.json` → `vimeo.folderId` (or pass `--folder`), e.g. via `--vimeo-folder` when scaffolding.
+3. Sync into the portal metadata:
+
+```bash
+npm run sync-vimeo -- --training 2026-08-03_lunedi
+# same thing:
+npm run sync-vimeo-training -- --slug 2026-08-03_lunedi
+# override folder:
+npm run sync-vimeo -- --training 2026-08-03_lunedi --folder 30099288
+```
+
+4. Commit `training.json` and push — the portal reads Vimeo https URLs from there.
+
+The sync maps the largest / “full session” / “sessione” video to `video.fullSession` and the rest to `analysisVideos`. Existing non-Vimeo entries (PDF, local files) are kept; `status` is not changed.
 
 ## vs Matches
 
@@ -28,3 +48,4 @@ Sessions appear on the home page under **Training sessions**, labelled by date.
 | Metadata | `match.json` | `training.json` |
 | Site route | `/match/:slug` | `/training/:slug` |
 | Full video | `video/match.mp4` | `video/session.mp4` |
+| Vimeo sync | `npm run sync-vimeo -- --slug …` | `npm run sync-vimeo -- --training …` |

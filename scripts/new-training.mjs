@@ -4,6 +4,7 @@
  *
  * Usage:
  *   npm run new-training -- --date 2026-08-05 --title "Rondo + Finishing" --focus "Build-up"
+ *   npm run new-training -- --date 2026-08-05 --title "..." --vimeo-folder 30099288
  */
 
 import { mkdirSync, writeFileSync, existsSync } from 'fs';
@@ -43,10 +44,11 @@ const args = parseArgs(process.argv.slice(2));
 
 if (!args.date) {
   console.error(`
-Usage: npm run new-training -- --date YYYY-MM-DD [--title "..."] [--focus "..."] [--slug optional-name]
+Usage: npm run new-training -- --date YYYY-MM-DD [--title "..."] [--focus "..."] [--slug optional-name] [--vimeo-folder <id>]
 
 Example:
   npm run new-training -- --date 2026-08-05 --title "Rondo + Finishing" --focus "Build-up under pressure"
+  npm run new-training -- --date 2026-08-05 --title "Monday" --vimeo-folder 30099288
 `);
   process.exit(1);
 }
@@ -89,6 +91,26 @@ const template = {
   clips: [],
   analysisVideos: [],
 };
+
+const vimeoFolder = args['vimeo-folder'] || args.vimeoFolder;
+if (vimeoFolder) {
+  const folderId = String(vimeoFolder);
+  template.vimeo = {
+    folderId,
+    folderUrl: `https://vimeo.com/user/170593333/folder/${folderId}`,
+  };
+  template.notes = {
+    en: 'Videos hosted on Vimeo — run npm run sync-vimeo -- --training ' + slug,
+    it: 'Video su Vimeo — esegui npm run sync-vimeo -- --training ' + slug,
+  };
+  template.video = {
+    fullSession: '',
+    notes: {
+      en: 'Synced from Vimeo after upload.',
+      it: 'Sincronizzato da Vimeo dopo il caricamento.',
+    },
+  };
+}
 
 writeFileSync(
   join(trainingDir, 'training.json'),
@@ -149,7 +171,15 @@ console.log(`
 ✓ Created trainings/${slug}
 
 Next:
-  1. Add video/session.mp4
+${
+  vimeoFolder
+    ? `  1. Upload videos to Vimeo folder ${vimeoFolder}
+  2. npm run sync-vimeo -- --training ${slug}
+  3. Edit training.json (title, focus) and set status to "published"
+  4. git add / commit / push`
+    : `  1. Add video/session.mp4 (or set vimeo.folderId and sync)
   2. Add clips / analysis as needed
   3. Edit training.json (title, focus, status)
+  4. Or: npm run sync-vimeo -- --training ${slug} --folder <id>`
+}
 `);

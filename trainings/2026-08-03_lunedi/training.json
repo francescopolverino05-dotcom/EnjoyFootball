@@ -18,13 +18,13 @@
   "vimeo": {
     "folderId": "30099288",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099288",
-    "lastSyncedAt": "2026-08-03T13:20:00.000Z"
+    "lastSyncedAt": "2026-08-03T13:39:26.852Z"
   },
   "video": {
-    "fullSession": "https://vimeo.com/1215133092",
+    "fullSession": "https://vimeo.com/1215133093",
     "notes": {
-      "en": "Full session highlight: Attack 3-4-2-1 First XI Part 2 (Vimeo).",
-      "it": "Video sessione: Attacco 3-4-2-1 Prima XI Parte 2 (Vimeo)."
+      "en": "Full session (longest clip): Partitella (Vimeo).",
+      "it": "Sessione (clip più lunga): Partitella (Vimeo)."
     }
   },
   "clips": [],
@@ -35,12 +35,17 @@
         "en": "Attack in a 3-4-2-1 — First XI (Part 1)",
         "it": "Attacco in 3-4-2-1 — Prima XI (Parte 1)"
       },
-      "videoFile": "https://vimeo.com/1215133094",
       "description": {
         "en": "Training analysis — 3-4-2-1 attack (First XI, part 1)",
         "it": "Analisi allenamento — Attacco 3-4-2-1 (Prima XI, parte 1)"
       },
-      "tags": ["attack", "3-4-2-1", "week-2", "vimeo"]
+      "videoFile": "https://vimeo.com/1215133094",
+      "tags": [
+        "attack",
+        "3-4-2-1",
+        "week-2",
+        "vimeo"
+      ]
     },
     {
       "id": "2026-08-03_lunedi-2",
@@ -48,12 +53,17 @@
         "en": "Attack in a 3-4-2-1 — First XI (Part 2)",
         "it": "Attacco in 3-4-2-1 — Prima XI (Parte 2)"
       },
-      "videoFile": "https://vimeo.com/1215133092",
       "description": {
         "en": "Training analysis — 3-4-2-1 attack (First XI, part 2)",
         "it": "Analisi allenamento — Attacco 3-4-2-1 (Prima XI, parte 2)"
       },
-      "tags": ["attack", "3-4-2-1", "week-2", "vimeo"]
+      "videoFile": "https://vimeo.com/1215133092",
+      "tags": [
+        "attack",
+        "3-4-2-1",
+        "week-2",
+        "vimeo"
+      ]
     },
     {
       "id": "2026-08-03_lunedi-3",
@@ -61,12 +71,17 @@
         "en": "Attack in a 3-4-2-1 — Second XI",
         "it": "Attacco in 3-4-2-1 — Seconda XI"
       },
-      "videoFile": "https://vimeo.com/1215133091",
       "description": {
         "en": "Training analysis — 3-4-2-1 attack (Second XI)",
         "it": "Analisi allenamento — Attacco 3-4-2-1 (Seconda XI)"
       },
-      "tags": ["attack", "3-4-2-1", "week-2", "vimeo"]
+      "videoFile": "https://vimeo.com/1215133091",
+      "tags": [
+        "attack",
+        "3-4-2-1",
+        "week-2",
+        "vimeo"
+      ]
     },
     {
       "id": "2026-08-03_lunedi-4",
@@ -74,12 +89,17 @@
         "en": "Possession Rondo",
         "it": "Possession Rondo"
       },
-      "videoFile": "https://vimeo.com/1215134654",
       "description": {
         "en": "Training analysis — Possession rondo",
         "it": "Analisi allenamento — Possession rondo"
       },
-      "tags": ["possession", "rondo", "week-2", "vimeo"]
+      "videoFile": "https://vimeo.com/1215134654",
+      "tags": [
+        "possession",
+        "rondo",
+        "week-2",
+        "vimeo"
+      ]
     },
     {
       "id": "2026-08-03_lunedi-5",
@@ -87,12 +107,16 @@
         "en": "Partitella",
         "it": "Partitella"
       },
-      "videoFile": "https://vimeo.com/1215133093",
       "description": {
         "en": "Training analysis — Partitella",
         "it": "Analisi allenamento — Partitella"
       },
-      "tags": ["partitella", "week-2", "vimeo"]
+      "videoFile": "https://vimeo.com/1215133093",
+      "tags": [
+        "partitella",
+        "week-2",
+        "vimeo"
+      ]
     },
     {
       "id": "2026-08-03_lunedi-6",
@@ -100,12 +124,16 @@
         "en": "Partitelle Intese",
         "it": "Partitelle Intese"
       },
-      "videoFile": "https://vimeo.com/1215133929",
       "description": {
         "en": "Training analysis — Intense small-sided games",
         "it": "Analisi allenamento — Partitelle intese"
       },
-      "tags": ["partitelle", "week-2", "vimeo"]
+      "videoFile": "https://vimeo.com/1215133929",
+      "tags": [
+        "partitelle",
+        "week-2",
+        "vimeo"
+      ]
     }
   ]
 }
