@@ -126,52 +126,7 @@
       }
     ]
   },
-  "clips": [
-    {
-      "id": "2026-07-27_lunedi-5",
-      "title": {
-        "en": "2x5",
-        "it": "2x5"
-      },
-      "videoFile": "Possession_Rondo/2x5.MOV",
-      "comments": {
-        "en": "2x5",
-        "it": "2x5"
-      },
-      "minute": 0,
-      "second": 0,
-      "section": "pressing",
-      "labels": [
-        "pressing"
-      ],
-      "tags": [
-        "week-1"
-      ],
-      "localFile": "Possession_Rondo/2x5.MOV"
-    },
-    {
-      "id": "2026-07-27_lunedi-6",
-      "title": {
-        "en": "4x5",
-        "it": "4x5"
-      },
-      "videoFile": "Possession_Rondo/4x5.mp4",
-      "comments": {
-        "en": "4x5",
-        "it": "4x5"
-      },
-      "minute": 0,
-      "second": 0,
-      "section": "pressing",
-      "labels": [
-        "pressing"
-      ],
-      "tags": [
-        "week-1"
-      ],
-      "localFile": "Possession_Rondo/4x5.mp4"
-    }
-  ],
+  "clips": [],
   "analysisVideos": [],
   "vimeo": {
     "folderId": "30099274",
