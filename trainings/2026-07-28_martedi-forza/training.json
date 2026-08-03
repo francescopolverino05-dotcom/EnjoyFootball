@@ -16,26 +16,61 @@
     "it": "Settimana 1 (Sett. 1 28/07) — Martedì (Forza). Media locali ripristinati; cartella Vimeo collegata per upload."
   },
   "video": {
-    "fullSession": "analysis/Tactical/Attack Shadow Play (11v0).mp4",
+    "fullSession": "https://vimeo.com/1215202216",
     "notes": {
       "en": "Largest session video linked when available.",
       "it": "Collegato il video più lungo quando disponibile."
     },
     "parts": [
       {
-        "id": "2026-07-28_martedi-forza-1",
+        "id": "vimeo-1215202846",
+        "title": {
+          "en": "GK distribution 1",
+          "it": "GK distribution 1"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215202846",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1215202386",
+        "title": {
+          "en": "GK distribution 2",
+          "it": "GK distribution 2"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215202386",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1215202216",
         "title": {
           "en": "Attack Shadow Play (11v0)",
           "it": "Attack Shadow Play (11v0)"
         },
-        "videoFile": "Tactical/Attack Shadow Play (11v0).mp4",
         "description": {
-          "en": "Training analysis — Attack shadow play (11v0) + GK distribution",
-          "it": "Analisi allenamento — Attack shadow play (11v0) + GK distribution"
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
         },
+        "videoFile": "https://vimeo.com/1215202216",
         "tags": [
-          "tactical-pattern",
-          "week-1"
+          "vimeo",
+          "training",
+          "session"
         ]
       }
     ]
@@ -89,6 +124,7 @@
   "analysisVideos": [],
   "vimeo": {
     "folderId": "30099278",
-    "folderUrl": "https://vimeo.com/user/170593333/folder/30099278"
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30099278",
+    "lastSyncedAt": "2026-08-03T14:57:23.085Z"
   }
 }

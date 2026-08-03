@@ -16,26 +16,44 @@
     "it": "Settimana 1 (Sett. 1 29/07) — Mercoledì. Media locali ripristinati; cartella Vimeo collegata per upload."
   },
   "video": {
-    "fullSession": "analysis/Final_third/Final Third (Dealing With Crosses).MP4",
+    "fullSession": "https://vimeo.com/1215196383",
     "notes": {
       "en": "Largest session video linked when available.",
       "it": "Collegato il video più lungo quando disponibile."
     },
     "parts": [
       {
-        "id": "2026-07-29_mercoledi-1",
+        "id": "vimeo-1215200555",
         "title": {
           "en": "Final Third (Dealing With Crosses)",
           "it": "Final Third (Dealing With Crosses)"
         },
-        "videoFile": "Final_third/Final Third (Dealing With Crosses).MP4",
         "description": {
-          "en": "Training analysis — High defence / Mid block / Final third",
-          "it": "Analisi allenamento — High defence / Mid block / Final third"
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
         },
+        "videoFile": "https://vimeo.com/1215200555",
         "tags": [
-          "final-third",
-          "week-1"
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1215196383",
+        "title": {
+          "en": "High Defence Mid Block",
+          "it": "High Defence Mid Block"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215196383",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
         ]
       },
       {
@@ -60,6 +78,7 @@
   "analysisVideos": [],
   "vimeo": {
     "folderId": "30099282",
-    "folderUrl": "https://vimeo.com/user/170593333/folder/30099282"
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30099282",
+    "lastSyncedAt": "2026-08-03T14:57:24.138Z"
   }
 }

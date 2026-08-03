@@ -16,26 +16,78 @@
     "it": "Settimana 1 (Sett. 1 31/07) — Venerdì. Media locali ripristinati; cartella Vimeo collegata per upload."
   },
   "video": {
-    "fullSession": "clips/Tactical/ATT:DEF Shadow PLay Pt 1.2.MOV",
+    "fullSession": "https://vimeo.com/1215195133",
     "notes": {
       "en": "Largest session video linked when available.",
       "it": "Collegato il video più lungo quando disponibile."
     },
     "parts": [
       {
-        "id": "2026-07-31_venerdi-4",
+        "id": "vimeo-1215195369",
         "title": {
           "en": "Attack v Defence",
           "it": "Attack v Defence"
         },
-        "videoFile": "Tactical/Attack v Defence.MP4",
         "description": {
-          "en": "Training analysis — Attack vs defence / Shadow play",
-          "it": "Analisi allenamento — Attack vs defence / Shadow play"
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
         },
+        "videoFile": "https://vimeo.com/1215195369",
         "tags": [
-          "tactical-pattern",
-          "week-1"
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1215195133",
+        "title": {
+          "en": "ATT:DEF Shadow Play Part 2",
+          "it": "ATT:DEF Shadow Play Part 2"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215195133",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1215194913",
+        "title": {
+          "en": "ATT:DEF Shadow PLay Pt 1.2",
+          "it": "ATT:DEF Shadow PLay Pt 1.2"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215194913",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1215194720",
+        "title": {
+          "en": "Attack: Defence Shadow Play Part 1",
+          "it": "Attack: Defence Shadow Play Part 1"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215194720",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
         ]
       }
     ]
@@ -111,6 +163,7 @@
   "analysisVideos": [],
   "vimeo": {
     "folderId": "30099286",
-    "folderUrl": "https://vimeo.com/user/170593333/folder/30099286"
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30099286",
+    "lastSyncedAt": "2026-08-03T14:57:26.755Z"
   }
 }
