@@ -144,7 +144,7 @@
         "en": "Napoli Primavera",
         "it": "Napoli Primavera"
       },
-      "system": "4-2-3-1",
+      "system": "1-4-2-3-1",
       "players": [
         {
           "number": 61,
@@ -232,7 +232,7 @@
         "en": "Napoli U18",
         "it": "Napoli U18"
       },
-      "system": "4-3-3",
+      "system": "1-4-3-3",
       "players": [
         {
           "number": 1,
