@@ -12,14 +12,19 @@
   },
   "status": "published",
   "notes": {
-    "en": "Week 2 (Sett. 2 03/08) — Lunedì. Local files symlinked from Desktop/Allenamento.",
-    "it": "Settimana 2 (Sett. 2 03/08) — Lunedì. File locali collegati da Desktop/Allenamento."
+    "en": "Week 2 (Sett. 2 03/08) — Lunedì. Videos hosted on Vimeo (folder Lunedi).",
+    "it": "Settimana 2 (Sett. 2 03/08) — Lunedì. Video su Vimeo (cartella Lunedi)."
+  },
+  "vimeo": {
+    "folderId": "30099288",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30099288",
+    "lastSyncedAt": "2026-08-03T13:20:00.000Z"
   },
   "video": {
-    "fullSession": "analysis/Attack_3-4-2-1/First_XI_Part_2.MP4",
+    "fullSession": "https://vimeo.com/1215133092",
     "notes": {
-      "en": "Largest session video linked when available (Attack 3-4-2-1 First XI Part 2).",
-      "it": "Collegato il video più lungo quando disponibile (Attacco 3-4-2-1 Prima XI Parte 2)."
+      "en": "Full session highlight: Attack 3-4-2-1 First XI Part 2 (Vimeo).",
+      "it": "Video sessione: Attacco 3-4-2-1 Prima XI Parte 2 (Vimeo)."
     }
   },
   "clips": [],
@@ -30,12 +35,12 @@
         "en": "Attack in a 3-4-2-1 — First XI (Part 1)",
         "it": "Attacco in 3-4-2-1 — Prima XI (Parte 1)"
       },
-      "videoFile": "Attack_3-4-2-1/First_XI_Part_1.MP4",
+      "videoFile": "https://vimeo.com/1215133094",
       "description": {
         "en": "Training analysis — 3-4-2-1 attack (First XI, part 1)",
         "it": "Analisi allenamento — Attacco 3-4-2-1 (Prima XI, parte 1)"
       },
-      "tags": ["attack", "3-4-2-1", "week-2"]
+      "tags": ["attack", "3-4-2-1", "week-2", "vimeo"]
     },
     {
       "id": "2026-08-03_lunedi-2",
@@ -43,12 +48,12 @@
         "en": "Attack in a 3-4-2-1 — First XI (Part 2)",
         "it": "Attacco in 3-4-2-1 — Prima XI (Parte 2)"
       },
-      "videoFile": "Attack_3-4-2-1/First_XI_Part_2.MP4",
+      "videoFile": "https://vimeo.com/1215133092",
       "description": {
         "en": "Training analysis — 3-4-2-1 attack (First XI, part 2)",
         "it": "Analisi allenamento — Attacco 3-4-2-1 (Prima XI, parte 2)"
       },
-      "tags": ["attack", "3-4-2-1", "week-2"]
+      "tags": ["attack", "3-4-2-1", "week-2", "vimeo"]
     },
     {
       "id": "2026-08-03_lunedi-3",
@@ -56,12 +61,12 @@
         "en": "Attack in a 3-4-2-1 — Second XI",
         "it": "Attacco in 3-4-2-1 — Seconda XI"
       },
-      "videoFile": "Attack_3-4-2-1/Second_XI.MP4",
+      "videoFile": "https://vimeo.com/1215133091",
       "description": {
         "en": "Training analysis — 3-4-2-1 attack (Second XI)",
         "it": "Analisi allenamento — Attacco 3-4-2-1 (Seconda XI)"
       },
-      "tags": ["attack", "3-4-2-1", "week-2"]
+      "tags": ["attack", "3-4-2-1", "week-2", "vimeo"]
     },
     {
       "id": "2026-08-03_lunedi-4",
@@ -69,12 +74,12 @@
         "en": "Possession Rondo",
         "it": "Possession Rondo"
       },
-      "videoFile": "Possession_Rondo/Possession_Rondo.MP4",
+      "videoFile": "https://vimeo.com/1215134654",
       "description": {
         "en": "Training analysis — Possession rondo",
         "it": "Analisi allenamento — Possession rondo"
       },
-      "tags": ["possession", "rondo", "week-2"]
+      "tags": ["possession", "rondo", "week-2", "vimeo"]
     },
     {
       "id": "2026-08-03_lunedi-5",
@@ -82,12 +87,12 @@
         "en": "Partitella",
         "it": "Partitella"
       },
-      "videoFile": "Partitelle/Partitella.MP4",
+      "videoFile": "https://vimeo.com/1215133093",
       "description": {
         "en": "Training analysis — Partitella",
         "it": "Analisi allenamento — Partitella"
       },
-      "tags": ["partitella", "week-2"]
+      "tags": ["partitella", "week-2", "vimeo"]
     },
     {
       "id": "2026-08-03_lunedi-6",
@@ -95,12 +100,12 @@
         "en": "Partitelle Intese",
         "it": "Partitelle Intese"
       },
-      "videoFile": "Partitelle/Partitelle_Intese.MP4",
+      "videoFile": "https://vimeo.com/1215133929",
       "description": {
         "en": "Training analysis — Intense small-sided games",
         "it": "Analisi allenamento — Partitelle intese"
       },
-      "tags": ["partitelle", "week-2"]
+      "tags": ["partitelle", "week-2", "vimeo"]
     }
   ]
 }
