@@ -12,15 +12,49 @@
   },
   "status": "published",
   "notes": {
-    "en": "Week 1 (Sett. 1 29/07) — Mercoledì. Vimeo folder mapped; upload Final Third / High Defence–Mid Block then re-sync.",
-    "it": "Settimana 1 (Sett. 1 29/07) — Mercoledì. Cartella Vimeo collegata; carica Final Third / Difesa alta–Mid block e ri-sincronizza."
+    "en": "Week 1 (Sett. 1 29/07) — Mercoledì. Local Desktop media restored; Vimeo folder mapped for upload.",
+    "it": "Settimana 1 (Sett. 1 29/07) — Mercoledì. Media locali ripristinati; cartella Vimeo collegata per upload."
   },
   "video": {
+    "fullSession": "analysis/Final_third/Final Third (Dealing With Crosses).MP4",
     "notes": {
       "en": "Largest session video linked when available.",
       "it": "Collegato il video più lungo quando disponibile."
     },
-    "parts": []
+    "parts": [
+      {
+        "id": "2026-07-29_mercoledi-1",
+        "title": {
+          "en": "Final Third (Dealing With Crosses)",
+          "it": "Final Third (Dealing With Crosses)"
+        },
+        "videoFile": "Final_third/Final Third (Dealing With Crosses).MP4",
+        "description": {
+          "en": "Training analysis — High defence / Mid block / Final third",
+          "it": "Analisi allenamento — High defence / Mid block / Final third"
+        },
+        "tags": [
+          "final-third",
+          "week-1"
+        ]
+      },
+      {
+        "id": "2026-07-29_mercoledi-2",
+        "title": {
+          "en": "High Defence - Mid Block",
+          "it": "High Defence - Mid Block"
+        },
+        "videoFile": "Mid_Block/High Defence - Mid Block.mp4",
+        "description": {
+          "en": "Training analysis — High defence / Mid block / Final third",
+          "it": "Analisi allenamento — High defence / Mid block / Final third"
+        },
+        "tags": [
+          "mid-block",
+          "week-1"
+        ]
+      }
+    ]
   },
   "clips": [],
   "analysisVideos": [],

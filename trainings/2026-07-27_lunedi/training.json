@@ -12,8 +12,8 @@
   },
   "status": "published",
   "notes": {
-    "en": "Week 1 (Sett. 1 27/07) — Lunedì. Videos hosted on Vimeo (folder Lunedí). Possession Rondo clips (3x5, 1x5) not yet uploaded.",
-    "it": "Settimana 1 (Sett. 1 27/07) — Lunedì. Video su Vimeo (cartella Lunedí). Clip Possession Rondo (3x5, 1x5) non ancora caricate."
+    "en": "Week 1 (Sett. 1 27/07) — Lunedì. 1x10/2x10 on Vimeo; Possession Rondo (3x5, 1x5) local until uploaded.",
+    "it": "Settimana 1 (Sett. 1 27/07) — Lunedì. 1x10/2x10 su Vimeo; Possession Rondo (3x5, 1x5) locali finché non caricati."
   },
   "video": {
     "fullSession": "https://vimeo.com/1215137745",
@@ -22,6 +22,23 @@
       "it": "Collegato il video più lungo quando disponibile."
     },
     "parts": [
+      {
+        "id": "vimeo-1215137745",
+        "title": {
+          "en": "1x10",
+          "it": "1x10"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215137745",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
       {
         "id": "vimeo-1215137744",
         "title": {
@@ -40,20 +57,35 @@
         ]
       },
       {
-        "id": "vimeo-1215137745",
+        "id": "2026-07-27_lunedi-3",
         "title": {
-          "en": "1x10",
-          "it": "1x10"
+          "en": "3x5",
+          "it": "3x5"
         },
+        "videoFile": "Possession_Rondo/3x5.MOV",
         "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
+          "en": "Training analysis — Possession / Match practice / GK",
+          "it": "Analisi allenamento — Possession / Match practice / GK"
         },
-        "videoFile": "https://vimeo.com/1215137745",
         "tags": [
-          "vimeo",
-          "training",
-          "session"
+          "pressing",
+          "week-1"
+        ]
+      },
+      {
+        "id": "2026-07-27_lunedi-4",
+        "title": {
+          "en": "1x5",
+          "it": "1x5"
+        },
+        "videoFile": "Possession_Rondo/1x5.MOV",
+        "description": {
+          "en": "Training analysis — Possession / Match practice / GK",
+          "it": "Analisi allenamento — Possession / Match practice / GK"
+        },
+        "tags": [
+          "pressing",
+          "week-1"
         ]
       }
     ]

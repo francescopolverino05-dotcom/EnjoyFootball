@@ -86,26 +86,33 @@ function FullSessionPanel({ session }: { session: TrainingSession }) {
         <div className="section-title">{t('fullSessionVideo')}</div>
         <p className="video-hint">{t('fullSessionHint')}</p>
         <div className="analysis-grid">
-          {parts.map((item) => (
-            <article className="analysis-card" key={item.id}>
-              <MatchMedia
-                library="trainings"
-                slug={session.slug}
-                src={item.videoFile}
-                kind={null}
-                unsupportedLabel={t('videoUnsupported')}
-                playLabel={t('playVideo')}
-                title={L(item.title)}
-                autoload
-              />
-              <div className="clip-card-body">
-                <div className="clip-card-title">{L(item.title)}</div>
-                {item.description ? (
-                  <div className="clip-card-desc">{L(item.description)}</div>
-                ) : null}
-              </div>
-            </article>
-          ))}
+          {parts.map((item) => {
+            const src = item.videoFile || '';
+            const remote = /^https?:\/\//i.test(src);
+            // Local session parts live under analysis/ (paths often omit the prefix).
+            const kind =
+              remote || /^(analysis|clips|video)\//i.test(src) ? null : 'analysis';
+            return (
+              <article className="analysis-card" key={item.id}>
+                <MatchMedia
+                  library="trainings"
+                  slug={session.slug}
+                  src={src}
+                  kind={kind}
+                  unsupportedLabel={t('videoUnsupported')}
+                  playLabel={t('playVideo')}
+                  title={L(item.title)}
+                  autoload
+                />
+                <div className="clip-card-body">
+                  <div className="clip-card-title">{L(item.title)}</div>
+                  {item.description ? (
+                    <div className="clip-card-desc">{L(item.description)}</div>
+                  ) : null}
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     );

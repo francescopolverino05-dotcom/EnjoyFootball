@@ -17,9 +17,10 @@
  *   - otherwise → clips (section from [Build_up] in title, tags, or subfolder name)
  *
  * Training classification:
- * Training classification:
  *   - all folder videos → video.parts (Full Session tab)
  *   - largest / "full session" name → also video.fullSession
+ *   - empty Vimeo folder → save folderId only; never clear video.parts / fullSession
+ *   - non-empty sync merges: update/add Vimeo parts, keep local (non-Vimeo) parts
  *   - non-Vimeo PDF/markdown in analysisVideos are preserved
  */
 
@@ -310,6 +311,16 @@ function preserveNonVimeoAnalysis(entries) {
   );
 }
 
+function isVimeoVideoFile(url) {
+  return /vimeo\.com/i.test(String(url || ''));
+}
+
+function partTitleKey(part) {
+  const t = part?.title;
+  const s = typeof t === 'string' ? t : t?.en || t?.it || '';
+  return String(s).trim().toLowerCase();
+}
+
 async function syncMatch(token, slug, folderOverride) {
   const matchPath = join(root, 'matches', slug, 'match.json');
   if (!existsSync(matchPath)) {
@@ -475,9 +486,11 @@ async function syncTraining(token, slug, folderOverride) {
   console.log(`Videos found: ${listed.length}`);
 
   if (listed.length === 0) {
+    // Preserve existing video.parts / fullSession — empty folders must not wipe local media.
     writeFileSync(trainingPath, JSON.stringify(training, null, 2) + '\n');
     console.log(`
-Folder is empty — training.json folder mapping saved.
+Folder is empty — folder mapping saved; video.parts / fullSession left unchanged
+  (${(training.video?.parts || []).length} existing parts preserved).
 Upload videos into the Vimeo folder, then re-run:
 
   npm run sync-vimeo -- --training ${slug}
@@ -537,20 +550,42 @@ Upload videos into the Vimeo folder, then re-run:
     }
   }
 
-  // Stable order: prefer previous parts order for known URLs, then new videos
+  const vimeoTitleKeys = new Set(sessionParts.map(partTitleKey).filter(Boolean));
+
+  // Merge: keep previous order for known Vimeo URLs, append new Vimeo, then
+  // preserve local (non-Vimeo) parts that were not replaced by a matching Vimeo URL/title.
   const ordered = [];
-  const seen = new Set();
+  const seenUrls = new Set();
   for (const prev of prevParts) {
     const url = normalizeVideoUrl(prev.videoFile);
     const next = sessionParts.find((a) => normalizeVideoUrl(a.videoFile) === url);
     if (next) {
       ordered.push(next);
-      seen.add(normalizeVideoUrl(next.videoFile));
+      seenUrls.add(normalizeVideoUrl(next.videoFile));
     }
   }
   for (const a of sessionParts) {
     const url = normalizeVideoUrl(a.videoFile);
-    if (!seen.has(url)) ordered.push(a);
+    if (!seenUrls.has(url)) {
+      ordered.push(a);
+      seenUrls.add(url);
+    }
+  }
+
+  let keptLocal = 0;
+  for (const prev of prevParts) {
+    if (isVimeoVideoFile(prev.videoFile)) continue;
+    const url = normalizeVideoUrl(prev.videoFile);
+    if (seenUrls.has(url)) continue;
+    const titleKey = partTitleKey(prev);
+    if (titleKey && vimeoTitleKeys.has(titleKey)) {
+      console.log(`  local replaced by Vimeo title match ← ${titleKey} (${prev.videoFile})`);
+      continue;
+    }
+    ordered.push(prev);
+    seenUrls.add(url);
+    keptLocal += 1;
+    console.log(`  keep local ← ${prev.videoFile}`);
   }
 
   // Keep PDF/markdown (and any other non-Vimeo docs) on Video Analysis
@@ -565,12 +600,12 @@ Upload videos into the Vimeo folder, then re-run:
       en:
         training.video?.notes?.en ||
         (fullSessionName
-          ? `Session recordings on Vimeo (${ordered.length} videos).`
+          ? `Session recordings on Vimeo (${sessionParts.length} videos).`
           : 'Session recordings on Vimeo.'),
       it:
         training.video?.notes?.it ||
         (fullSessionName
-          ? `Registrazioni sessione su Vimeo (${ordered.length} video).`
+          ? `Registrazioni sessione su Vimeo (${sessionParts.length} video).`
           : 'Registrazioni sessione su Vimeo.'),
     },
   };
@@ -589,7 +624,7 @@ Upload videos into the Vimeo folder, then re-run:
 Updated ${trainingPath}
   status:      ${training.status || '(unset)'}
   fullSession: ${training.video?.fullSession ? 'yes' : '(none)'}
-  parts:       ${ordered.length}
+  parts:       ${ordered.length} (${sessionParts.length} Vimeo + ${keptLocal} local)
   analysis:    ${preservedDocs.length} (docs only)
 `);
 }
