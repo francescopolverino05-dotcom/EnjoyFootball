@@ -12,33 +12,15 @@
   },
   "status": "published",
   "notes": {
-    "en": "Week 1 (Sett. 1 27/07) — Venerdí. Local files symlinked from Desktop/Allenamento.",
-    "it": "Settimana 1 (Sett. 1 27/07) — Venerdí. File locali collegati da Desktop/Allenamento."
+    "en": "Week 1 (Sett. 1 31/07) — Venerdì. Vimeo folder mapped; upload Attack v Defence then re-sync.",
+    "it": "Settimana 1 (Sett. 1 31/07) — Venerdì. Cartella Vimeo collegata; carica Attack v Defence e ri-sincronizza."
   },
   "video": {
-    "fullSession": "clips/Tactical/ATT:DEF Shadow PLay Pt 1.2.MOV",
     "notes": {
       "en": "Largest session video linked when available.",
       "it": "Collegato il video più lungo quando disponibile."
     },
-    "parts": [
-      {
-        "id": "2026-07-31_venerdi-4",
-        "title": {
-          "en": "Attack v Defence",
-          "it": "Attack v Defence"
-        },
-        "videoFile": "Tactical/Attack v Defence.MP4",
-        "description": {
-          "en": "Training analysis — Attack vs defence / Shadow play",
-          "it": "Analisi allenamento — Attack vs defence / Shadow play"
-        },
-        "tags": [
-          "tactical-pattern",
-          "week-1"
-        ]
-      }
-    ]
+    "parts": []
   },
   "clips": [
     {
@@ -108,5 +90,9 @@
       "localFile": "Tactical/Attack: Defence Shadow Play Part 1.MP4"
     }
   ],
-  "analysisVideos": []
+  "analysisVideos": [],
+  "vimeo": {
+    "folderId": "30099286",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30099286"
+  }
 }

@@ -12,33 +12,15 @@
   },
   "status": "published",
   "notes": {
-    "en": "Week 1 (Sett. 1 27/07) — Martedî (Forza). Local files symlinked from Desktop/Allenamento.",
-    "it": "Settimana 1 (Sett. 1 27/07) — Martedî (Forza). File locali collegati da Desktop/Allenamento."
+    "en": "Week 1 (Sett. 1 28/07) — Martedì. Vimeo folder mapped; upload Attack Shadow Play then re-sync.",
+    "it": "Settimana 1 (Sett. 1 28/07) — Martedì. Cartella Vimeo collegata; carica Attack Shadow Play e ri-sincronizza."
   },
   "video": {
-    "fullSession": "analysis/Tactical/Attack Shadow Play (11v0).mp4",
     "notes": {
       "en": "Largest session video linked when available.",
       "it": "Collegato il video più lungo quando disponibile."
     },
-    "parts": [
-      {
-        "id": "2026-07-28_martedi-forza-1",
-        "title": {
-          "en": "Attack Shadow Play (11v0)",
-          "it": "Attack Shadow Play (11v0)"
-        },
-        "videoFile": "Tactical/Attack Shadow Play (11v0).mp4",
-        "description": {
-          "en": "Training analysis — Attack shadow play (11v0) + GK distribution",
-          "it": "Analisi allenamento — Attack shadow play (11v0) + GK distribution"
-        },
-        "tags": [
-          "tactical-pattern",
-          "week-1"
-        ]
-      }
-    ]
+    "parts": []
   },
   "clips": [
     {
@@ -86,5 +68,9 @@
       "localFile": "GK/GK distribution 2.MP4"
     }
   ],
-  "analysisVideos": []
+  "analysisVideos": [],
+  "vimeo": {
+    "folderId": "30099278",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30099278"
+  }
 }
