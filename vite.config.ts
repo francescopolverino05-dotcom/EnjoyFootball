@@ -10,6 +10,8 @@ const MIME: Record<string, string> = {
   '.mov': 'video/quicktime',
   '.webm': 'video/webm',
   '.pdf': 'application/pdf',
+  '.docx':
+    'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
   '.json': 'application/json',
   '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg',
