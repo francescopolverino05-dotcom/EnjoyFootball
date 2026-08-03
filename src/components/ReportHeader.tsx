@@ -1,7 +1,7 @@
 import { useLanguage } from '../i18n/LanguageContext';
 
-const NAPOLI_LOGO =
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Mb7o5uu6kphzBaGlPMYHSWOtML2btlqFY7TdOXkfTg&s=10';
+/** Local SSC Napoli crest (transparent background) */
+const NAPOLI_LOGO = `${import.meta.env.BASE_URL}napoli-logo.png`;
 
 interface ReportHeaderProps {
   pageTitle: string;
