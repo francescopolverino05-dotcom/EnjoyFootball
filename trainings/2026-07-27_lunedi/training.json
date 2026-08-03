@@ -3,12 +3,12 @@
   "slug": "2026-07-27_lunedi",
   "date": "2026-07-27",
   "title": {
-    "en": "Monday training — Possession, match practice & GK",
-    "it": "Lunedì — Possession, match practice e portieri"
+    "en": "Monday training — Possession & match practice",
+    "it": "Lunedì — Possession e match practice"
   },
   "focus": {
-    "en": "Possession / Match practice / GK",
-    "it": "Possession / Match practice / GK"
+    "en": "Possession / Match practice",
+    "it": "Possession / Match practice"
   },
   "status": "published",
   "notes": {
@@ -170,182 +170,6 @@
         "week-1"
       ],
       "localFile": "Possession_Rondo/4x5.mp4"
-    },
-    {
-      "id": "2026-07-27_lunedi-7",
-      "title": {
-        "en": "Gk7",
-        "it": "Gk7"
-      },
-      "videoFile": "GK/Gk7.mov",
-      "comments": {
-        "en": "Gk7",
-        "it": "Gk7"
-      },
-      "minute": 0,
-      "second": 0,
-      "section": "gk-action",
-      "labels": [
-        "gk-action"
-      ],
-      "tags": [
-        "week-1"
-      ],
-      "localFile": "GK/Gk7.mov"
-    },
-    {
-      "id": "2026-07-27_lunedi-8",
-      "title": {
-        "en": "GK5",
-        "it": "GK5"
-      },
-      "videoFile": "GK/GK5.MOV",
-      "comments": {
-        "en": "GK5",
-        "it": "GK5"
-      },
-      "minute": 0,
-      "second": 0,
-      "section": "gk-action",
-      "labels": [
-        "gk-action"
-      ],
-      "tags": [
-        "week-1"
-      ],
-      "localFile": "GK/GK5.MOV"
-    },
-    {
-      "id": "2026-07-27_lunedi-9",
-      "title": {
-        "en": "Gk8",
-        "it": "Gk8"
-      },
-      "videoFile": "GK/Gk8.mov",
-      "comments": {
-        "en": "Gk8",
-        "it": "Gk8"
-      },
-      "minute": 0,
-      "second": 0,
-      "section": "gk-action",
-      "labels": [
-        "gk-action"
-      ],
-      "tags": [
-        "week-1"
-      ],
-      "localFile": "GK/Gk8.mov"
-    },
-    {
-      "id": "2026-07-27_lunedi-10",
-      "title": {
-        "en": "GK2",
-        "it": "GK2"
-      },
-      "videoFile": "GK/GK2.mov",
-      "comments": {
-        "en": "GK2",
-        "it": "GK2"
-      },
-      "minute": 0,
-      "second": 0,
-      "section": "gk-action",
-      "labels": [
-        "gk-action"
-      ],
-      "tags": [
-        "week-1"
-      ],
-      "localFile": "GK/GK2.mov"
-    },
-    {
-      "id": "2026-07-27_lunedi-11",
-      "title": {
-        "en": "Gk6",
-        "it": "Gk6"
-      },
-      "videoFile": "GK/Gk6.mov",
-      "comments": {
-        "en": "Gk6",
-        "it": "Gk6"
-      },
-      "minute": 0,
-      "second": 0,
-      "section": "gk-action",
-      "labels": [
-        "gk-action"
-      ],
-      "tags": [
-        "week-1"
-      ],
-      "localFile": "GK/Gk6.mov"
-    },
-    {
-      "id": "2026-07-27_lunedi-12",
-      "title": {
-        "en": "Gk3",
-        "it": "Gk3"
-      },
-      "videoFile": "GK/Gk3.mov",
-      "comments": {
-        "en": "Gk3",
-        "it": "Gk3"
-      },
-      "minute": 0,
-      "second": 0,
-      "section": "gk-action",
-      "labels": [
-        "gk-action"
-      ],
-      "tags": [
-        "week-1"
-      ],
-      "localFile": "GK/Gk3.mov"
-    },
-    {
-      "id": "2026-07-27_lunedi-13",
-      "title": {
-        "en": "Gk4",
-        "it": "Gk4"
-      },
-      "videoFile": "GK/Gk4.mov",
-      "comments": {
-        "en": "Gk4",
-        "it": "Gk4"
-      },
-      "minute": 0,
-      "second": 0,
-      "section": "gk-action",
-      "labels": [
-        "gk-action"
-      ],
-      "tags": [
-        "week-1"
-      ],
-      "localFile": "GK/Gk4.mov"
-    },
-    {
-      "id": "2026-07-27_lunedi-14",
-      "title": {
-        "en": "GK1",
-        "it": "GK1"
-      },
-      "videoFile": "GK/GK1.mov",
-      "comments": {
-        "en": "GK1",
-        "it": "GK1"
-      },
-      "minute": 0,
-      "second": 0,
-      "section": "gk-action",
-      "labels": [
-        "gk-action"
-      ],
-      "tags": [
-        "week-1"
-      ],
-      "localFile": "GK/GK1.mov"
     }
   ],
   "analysisVideos": [],
