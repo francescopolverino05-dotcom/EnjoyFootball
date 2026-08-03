@@ -1,6 +1,8 @@
 import { MatchData } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
 
+const NAPOLI_CREST = `${import.meta.env.BASE_URL}napoli-logo-white.png`;
+
 interface ScoreboardProps {
   match: MatchData;
 }
@@ -15,7 +17,12 @@ export default function Scoreboard({ match }: ScoreboardProps) {
       <div className="scoreboard-cover">
         <div className="team-cover-card">
           <div className={`team-badge-circle ${match.homeTeam.colorClass}`}>
-            {match.homeTeam.shortName}
+            <img
+              src={NAPOLI_CREST}
+              alt={match.homeTeam.shortName}
+              className="team-badge-crest"
+            />
+            <span className="team-badge-label">{match.homeTeam.shortName}</span>
           </div>
           <div className="team-cover-name">{L(match.homeTeam.name)}</div>
         </div>
@@ -24,7 +31,12 @@ export default function Scoreboard({ match }: ScoreboardProps) {
         </div>
         <div className="team-cover-card">
           <div className={`team-badge-circle ${match.awayTeam.colorClass}`}>
-            {match.awayTeam.shortName}
+            <img
+              src={NAPOLI_CREST}
+              alt={match.awayTeam.shortName}
+              className="team-badge-crest"
+            />
+            <span className="team-badge-label">{match.awayTeam.shortName}</span>
           </div>
           <div className="team-cover-name">{L(match.awayTeam.name)}</div>
         </div>

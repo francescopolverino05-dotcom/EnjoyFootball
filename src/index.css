@@ -221,14 +221,33 @@ button {
 }
 
 .team-badge-circle {
-  width: 80px;
-  height: 80px;
+  position: relative;
+  width: 88px;
+  height: 88px;
   border-radius: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 2px;
   font-size: 22px;
   font-weight: bold;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.team-badge-crest {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  display: block;
+}
+
+.team-badge-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  line-height: 1;
   color: #ffffff;
 }
 
