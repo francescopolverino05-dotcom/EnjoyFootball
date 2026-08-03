@@ -43,7 +43,8 @@ const dictionaries = {
     fullMatchVideo: 'Full Match Video',
     fullMatchHint: 'Watch the complete match recording.',
     fullSessionVideo: 'Full Session Video',
-    fullSessionHint: 'Watch the complete training session recording.',
+    fullSessionHint:
+      'Watch the training session recordings (drills and partitelle for this day).',
     clipsSidebarTitle: 'Clip list',
     clipsHint: 'Clips grouped by theme — Build-up, Progression, Mid block, and more.',
     clipsSearchPlaceholder: 'Search clips by theme, keyword, or minute…',
@@ -119,7 +120,8 @@ const dictionaries = {
     fullMatchVideo: 'Video Partita Completa',
     fullMatchHint: 'Guarda la registrazione completa della partita.',
     fullSessionVideo: 'Video Sessione Completa',
-    fullSessionHint: 'Guarda la registrazione completa dell’allenamento.',
+    fullSessionHint:
+      'Guarda le registrazioni della sessione (esercitazioni e partitelle del giorno).',
     clipsSidebarTitle: 'Elenco clip',
     clipsHint:
       'Clip raggruppate per tema — Costruzione, Progressione, Blocco mediano e altro.',

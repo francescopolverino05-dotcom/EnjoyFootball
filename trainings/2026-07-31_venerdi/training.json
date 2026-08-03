@@ -20,7 +20,25 @@
     "notes": {
       "en": "Largest session video linked when available.",
       "it": "Collegato il video più lungo quando disponibile."
-    }
+    },
+    "parts": [
+      {
+        "id": "2026-07-31_venerdi-4",
+        "title": {
+          "en": "Attack v Defence",
+          "it": "Attack v Defence"
+        },
+        "videoFile": "Tactical/Attack v Defence.MP4",
+        "description": {
+          "en": "Training analysis — Attack vs defence / Shadow play",
+          "it": "Analisi allenamento — Attack vs defence / Shadow play"
+        },
+        "tags": [
+          "tactical-pattern",
+          "week-1"
+        ]
+      }
+    ]
   },
   "clips": [
     {
@@ -90,22 +108,5 @@
       "localFile": "Tactical/Attack: Defence Shadow Play Part 1.MP4"
     }
   ],
-  "analysisVideos": [
-    {
-      "id": "2026-07-31_venerdi-4",
-      "title": {
-        "en": "Attack v Defence",
-        "it": "Attack v Defence"
-      },
-      "videoFile": "Tactical/Attack v Defence.MP4",
-      "description": {
-        "en": "Training analysis — Attack vs defence / Shadow play",
-        "it": "Analisi allenamento — Attack vs defence / Shadow play"
-      },
-      "tags": [
-        "tactical-pattern",
-        "week-1"
-      ]
-    }
-  ]
+  "analysisVideos": []
 }

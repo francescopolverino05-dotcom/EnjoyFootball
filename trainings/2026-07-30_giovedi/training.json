@@ -20,7 +20,73 @@
     "notes": {
       "en": "Largest session video linked when available.",
       "it": "Collegato il video più lungo quando disponibile."
-    }
+    },
+    "parts": [
+      {
+        "id": "2026-07-30_giovedi-1",
+        "title": {
+          "en": "Costruzione dal Basso IOrange)",
+          "it": "Costruzione dal Basso IOrange)"
+        },
+        "videoFile": "Build_up/Costruzione dal Basso IOrange).MP4",
+        "description": {
+          "en": "Training analysis — Costruzione dal basso",
+          "it": "Analisi allenamento — Costruzione dal basso"
+        },
+        "tags": [
+          "build-up",
+          "week-1"
+        ]
+      },
+      {
+        "id": "2026-07-30_giovedi-2",
+        "title": {
+          "en": "Practice Match (1T)",
+          "it": "Practice Match (1T)"
+        },
+        "videoFile": "Build_up/Practice Match (1T).MP4",
+        "description": {
+          "en": "Training analysis — Costruzione dal basso",
+          "it": "Analisi allenamento — Costruzione dal basso"
+        },
+        "tags": [
+          "build-up",
+          "week-1"
+        ]
+      },
+      {
+        "id": "2026-07-30_giovedi-3",
+        "title": {
+          "en": "Practice Match (2T)",
+          "it": "Practice Match (2T)"
+        },
+        "videoFile": "Build_up/Practice Match (2T).MP4",
+        "description": {
+          "en": "Training analysis — Costruzione dal basso",
+          "it": "Analisi allenamento — Costruzione dal basso"
+        },
+        "tags": [
+          "build-up",
+          "week-1"
+        ]
+      },
+      {
+        "id": "2026-07-30_giovedi-4",
+        "title": {
+          "en": "Construizone - Progressione (Blú)",
+          "it": "Construizone - Progressione (Blú)"
+        },
+        "videoFile": "Build_up/Construizone - Progressione (Blú).MP4",
+        "description": {
+          "en": "Training analysis — Costruzione dal basso",
+          "it": "Analisi allenamento — Costruzione dal basso"
+        },
+        "tags": [
+          "build-up",
+          "week-1"
+        ]
+      }
+    ]
   },
   "clips": [
     {
@@ -46,70 +112,5 @@
       "localFile": "Build_up/Progressione Medio (Orange).MP4"
     }
   ],
-  "analysisVideos": [
-    {
-      "id": "2026-07-30_giovedi-1",
-      "title": {
-        "en": "Costruzione dal Basso IOrange)",
-        "it": "Costruzione dal Basso IOrange)"
-      },
-      "videoFile": "Build_up/Costruzione dal Basso IOrange).MP4",
-      "description": {
-        "en": "Training analysis — Costruzione dal basso",
-        "it": "Analisi allenamento — Costruzione dal basso"
-      },
-      "tags": [
-        "build-up",
-        "week-1"
-      ]
-    },
-    {
-      "id": "2026-07-30_giovedi-2",
-      "title": {
-        "en": "Practice Match (1T)",
-        "it": "Practice Match (1T)"
-      },
-      "videoFile": "Build_up/Practice Match (1T).MP4",
-      "description": {
-        "en": "Training analysis — Costruzione dal basso",
-        "it": "Analisi allenamento — Costruzione dal basso"
-      },
-      "tags": [
-        "build-up",
-        "week-1"
-      ]
-    },
-    {
-      "id": "2026-07-30_giovedi-3",
-      "title": {
-        "en": "Practice Match (2T)",
-        "it": "Practice Match (2T)"
-      },
-      "videoFile": "Build_up/Practice Match (2T).MP4",
-      "description": {
-        "en": "Training analysis — Costruzione dal basso",
-        "it": "Analisi allenamento — Costruzione dal basso"
-      },
-      "tags": [
-        "build-up",
-        "week-1"
-      ]
-    },
-    {
-      "id": "2026-07-30_giovedi-4",
-      "title": {
-        "en": "Construizone - Progressione (Blú)",
-        "it": "Construizone - Progressione (Blú)"
-      },
-      "videoFile": "Build_up/Construizone - Progressione (Blú).MP4",
-      "description": {
-        "en": "Training analysis — Costruzione dal basso",
-        "it": "Analisi allenamento — Costruzione dal basso"
-      },
-      "tags": [
-        "build-up",
-        "week-1"
-      ]
-    }
-  ]
+  "analysisVideos": []
 }

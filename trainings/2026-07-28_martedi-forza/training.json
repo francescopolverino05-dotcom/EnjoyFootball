@@ -20,7 +20,25 @@
     "notes": {
       "en": "Largest session video linked when available.",
       "it": "Collegato il video più lungo quando disponibile."
-    }
+    },
+    "parts": [
+      {
+        "id": "2026-07-28_martedi-forza-1",
+        "title": {
+          "en": "Attack Shadow Play (11v0)",
+          "it": "Attack Shadow Play (11v0)"
+        },
+        "videoFile": "Tactical/Attack Shadow Play (11v0).mp4",
+        "description": {
+          "en": "Training analysis — Attack shadow play (11v0) + GK distribution",
+          "it": "Analisi allenamento — Attack shadow play (11v0) + GK distribution"
+        },
+        "tags": [
+          "tactical-pattern",
+          "week-1"
+        ]
+      }
+    ]
   },
   "clips": [
     {
@@ -68,22 +86,5 @@
       "localFile": "GK/GK distribution 2.MP4"
     }
   ],
-  "analysisVideos": [
-    {
-      "id": "2026-07-28_martedi-forza-1",
-      "title": {
-        "en": "Attack Shadow Play (11v0)",
-        "it": "Attack Shadow Play (11v0)"
-      },
-      "videoFile": "Tactical/Attack Shadow Play (11v0).mp4",
-      "description": {
-        "en": "Training analysis — Attack shadow play (11v0) + GK distribution",
-        "it": "Analisi allenamento — Attack shadow play (11v0) + GK distribution"
-      },
-      "tags": [
-        "tactical-pattern",
-        "week-1"
-      ]
-    }
-  ]
+  "analysisVideos": []
 }

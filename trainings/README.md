@@ -38,7 +38,7 @@ npm run sync-vimeo -- --training 2026-08-03_lunedi --folder 30099288
 
 4. Commit `training.json` and push — the portal reads Vimeo https URLs from there.
 
-The sync maps the largest / “full session” / “sessione” video to `video.fullSession` and the rest to `analysisVideos`. Existing non-Vimeo entries (PDF, local files) are kept; `status` is not changed.
+The sync maps all folder videos to `video.parts` (Full Session tab). The largest / “full session” / “sessione” video is also set as `video.fullSession`. PDF/markdown docs stay in `analysisVideos` (Video Analysis tab). `status` is not changed.
 
 ## vs Matches
 

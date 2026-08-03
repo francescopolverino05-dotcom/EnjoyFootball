@@ -69,9 +69,47 @@ export default function TrainingDashboard({
   );
 }
 
+function isDocAnalysis(item: AnalysisVideo): boolean {
+  if (item.kind === 'pdf' || item.kind === 'markdown') return true;
+  const src = item.videoFile || '';
+  return /\.pdf($|\?)/i.test(src) || /\.md($|\?)/i.test(src);
+}
+
 function FullSessionPanel({ session }: { session: TrainingSession }) {
-  const { t } = useLanguage();
+  const { t, L } = useLanguage();
+  const parts = session.video?.parts ?? [];
   const src = session.video?.fullSession ?? null;
+
+  if (parts.length > 0) {
+    return (
+      <div className="video-section">
+        <div className="section-title">{t('fullSessionVideo')}</div>
+        <p className="video-hint">{t('fullSessionHint')}</p>
+        <div className="analysis-grid">
+          {parts.map((item) => (
+            <article className="analysis-card" key={item.id}>
+              <MatchMedia
+                library="trainings"
+                slug={session.slug}
+                src={item.videoFile}
+                kind={null}
+                unsupportedLabel={t('videoUnsupported')}
+                playLabel={t('playVideo')}
+                title={L(item.title)}
+                autoload
+              />
+              <div className="clip-card-body">
+                <div className="clip-card-title">{L(item.title)}</div>
+                {item.description ? (
+                  <div className="clip-card-desc">{L(item.description)}</div>
+                ) : null}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="video-section">
@@ -215,7 +253,8 @@ function TrainingClipsPanel({ session }: { session: TrainingSession }) {
 
 function TrainingAnalysisPanel({ session }: { session: TrainingSession }) {
   const { t, L } = useLanguage();
-  const videos = session.analysisVideos ?? [];
+  // Session recordings live under Full Session (`video.parts`); this tab is for docs / analysis.
+  const videos = (session.analysisVideos ?? []).filter(isDocAnalysis);
 
   if (videos.length === 0) {
     return (

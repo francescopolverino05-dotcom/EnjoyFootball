@@ -17,8 +17,10 @@
  *   - otherwise → clips (section from [Build_up] in title, tags, or subfolder name)
  *
  * Training classification:
- *   - "full session" / "sessione" / largest → video.fullSession
- *   - rest → analysisVideos
+ * Training classification:
+ *   - all folder videos → video.parts (Full Session tab)
+ *   - largest / "full session" name → also video.fullSession
+ *   - non-Vimeo PDF/markdown in analysisVideos are preserved
  */
 
 import { existsSync, readFileSync, writeFileSync } from 'fs';
@@ -483,13 +485,14 @@ Upload videos into the Vimeo folder, then re-run:
     return;
   }
 
+  const prevParts = training.video?.parts || [];
   const prevByUrl = new Map(
-    (training.analysisVideos || [])
+    [...prevParts, ...(training.analysisVideos || [])]
       .filter((a) => a?.videoFile)
       .map((a) => [normalizeVideoUrl(a.videoFile), a])
   );
 
-  const analysisVideos = [];
+  const sessionParts = [];
   let fullSessionUrl = null;
   let fullSessionDuration = -1;
   let fullSessionName = '';
@@ -507,13 +510,13 @@ Upload videos into the Vimeo folder, then re-run:
       id: prev?.id || `vimeo-${id}`,
       title: prev?.title || title,
       description: prev?.description || {
-        en: 'Synced from Vimeo training folder.',
-        it: 'Sincronizzato dalla cartella Vimeo allenamento.',
+        en: 'Training session recording.',
+        it: 'Registrazione della sessione di allenamento.',
       },
       videoFile: link,
-      tags: prev?.tags || ['vimeo', 'training'],
+      tags: prev?.tags || ['vimeo', 'training', 'session'],
     };
-    analysisVideos.push(entry);
+    sessionParts.push(entry);
 
     const named = isFullSessionName(name);
     if (named) {
@@ -523,50 +526,56 @@ Upload videos into the Vimeo folder, then re-run:
         fullSessionName = name;
         namedFullSession = true;
       }
-      console.log(`  full session ← ${name} (${dur}s) ${link}`);
+      console.log(`  session ← ${name} (${dur}s) ${link}`);
     } else {
       if (!namedFullSession && dur > fullSessionDuration) {
         fullSessionUrl = link;
         fullSessionDuration = dur;
         fullSessionName = name;
       }
-      console.log(`  analysis ← ${name} (${dur}s)`);
+      console.log(`  session ← ${name} (${dur}s)`);
     }
   }
 
-  // Stable order: prefer previous order for known URLs, then new videos
+  // Stable order: prefer previous parts order for known URLs, then new videos
   const ordered = [];
   const seen = new Set();
-  for (const prev of training.analysisVideos || []) {
+  for (const prev of prevParts) {
     const url = normalizeVideoUrl(prev.videoFile);
-    const next = analysisVideos.find((a) => normalizeVideoUrl(a.videoFile) === url);
+    const next = sessionParts.find((a) => normalizeVideoUrl(a.videoFile) === url);
     if (next) {
       ordered.push(next);
       seen.add(normalizeVideoUrl(next.videoFile));
     }
   }
-  for (const a of analysisVideos) {
+  for (const a of sessionParts) {
     const url = normalizeVideoUrl(a.videoFile);
     if (!seen.has(url)) ordered.push(a);
   }
 
-  const preserved = preserveNonVimeoAnalysis(training.analysisVideos);
-  const byId = new Map();
-  for (const a of [...ordered, ...preserved]) byId.set(a.id, a);
-  training.analysisVideos = [...byId.values()];
+  // Keep PDF/markdown (and any other non-Vimeo docs) on Video Analysis
+  const preservedDocs = preserveNonVimeoAnalysis(training.analysisVideos);
+  training.analysisVideos = preservedDocs;
 
-  if (fullSessionUrl) {
-    training.video = {
-      ...(training.video || {}),
-      fullSession: fullSessionUrl,
-      notes: {
-        en: training.video?.notes?.en || `Full session hosted on Vimeo (${fullSessionName}).`,
-        it: training.video?.notes?.it || `Sessione su Vimeo (${fullSessionName}).`,
-      },
-    };
-    if (!namedFullSession) {
-      console.log(`  fullSession (largest) ← ${fullSessionName} (${fullSessionDuration}s)`);
-    }
+  training.video = {
+    ...(training.video || {}),
+    parts: ordered,
+    fullSession: fullSessionUrl || training.video?.fullSession || ordered[0]?.videoFile,
+    notes: {
+      en:
+        training.video?.notes?.en ||
+        (fullSessionName
+          ? `Session recordings on Vimeo (${ordered.length} videos).`
+          : 'Session recordings on Vimeo.'),
+      it:
+        training.video?.notes?.it ||
+        (fullSessionName
+          ? `Registrazioni sessione su Vimeo (${ordered.length} video).`
+          : 'Registrazioni sessione su Vimeo.'),
+    },
+  };
+  if (fullSessionUrl && !namedFullSession) {
+    console.log(`  fullSession highlight (largest) ← ${fullSessionName} (${fullSessionDuration}s)`);
   }
 
   training.vimeo = {
@@ -579,8 +588,9 @@ Upload videos into the Vimeo folder, then re-run:
   console.log(`
 Updated ${trainingPath}
   status:      ${training.status || '(unset)'}
-  fullSession: ${fullSessionUrl ? 'yes' : '(unchanged)'}
-  analysis:    ${(training.analysisVideos || []).length}
+  fullSession: ${training.video?.fullSession ? 'yes' : '(none)'}
+  parts:       ${ordered.length}
+  analysis:    ${preservedDocs.length} (docs only)
 `);
 }
 

@@ -15,10 +15,14 @@ export interface TrainingSession {
   status: TrainingStatus;
   notes?: Localized;
   video?: {
+    /** Primary / highlight URL (optional if `parts` is set) */
     fullSession?: string;
+    /** Session recordings shown on the Full Session tab */
+    parts?: AnalysisVideo[];
     notes?: Localized;
   };
   clips: VideoClip[];
+  /** Coach docs / post-session analysis (PDF, markdown, analysis video) */
   analysisVideos: AnalysisVideo[];
   vimeo?: {
     folderId?: string;
