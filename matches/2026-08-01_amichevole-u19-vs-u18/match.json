@@ -2714,17 +2714,17 @@
     {
       "id": "written-post-match-report",
       "title": {
-        "en": "Written post-match report",
-        "it": "Report scritto post-partita"
+        "en": "Written post-match report (Word)",
+        "it": "Report scritto post-partita (Word)"
       },
       "description": {
-        "en": "Updated tactical analysis report — Amichevole U19 vs U18 (1 Aug 2026).",
-        "it": "Report di analisi tattica aggiornato — Amichevole U19 vs U18 (1 ago 2026)."
+        "en": "Polished Word report — Amichevole U19 vs U18 (1 Aug 2026).",
+        "it": "Report Word — Amichevole U19 vs U18 (1 ago 2026)."
       },
-      "videoFile": "Report_Amichevole_U19_vs_U18.md",
-      "kind": "markdown",
+      "videoFile": "Report_Amichevole_U19_vs_U18.docx",
+      "kind": "docx",
       "tags": [
-        "markdown",
+        "docx",
         "analysis",
         "report"
       ]

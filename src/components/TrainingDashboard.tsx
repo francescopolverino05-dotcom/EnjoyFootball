@@ -70,9 +70,9 @@ export default function TrainingDashboard({
 }
 
 function isDocAnalysis(item: AnalysisVideo): boolean {
-  if (item.kind === 'pdf' || item.kind === 'markdown') return true;
+  if (item.kind === 'pdf' || item.kind === 'markdown' || item.kind === 'docx') return true;
   const src = item.videoFile || '';
-  return /\.pdf($|\?)/i.test(src) || /\.md($|\?)/i.test(src);
+  return /\.pdf($|\?)/i.test(src) || /\.md($|\?)/i.test(src) || /\.docx($|\?)/i.test(src);
 }
 
 function FullSessionPanel({ session }: { session: TrainingSession }) {
@@ -287,6 +287,7 @@ function TrainingAnalysisPanel({ session }: { session: TrainingSession }) {
               openPdfLabel={t('openPdf')}
               downloadPdfLabel={t('downloadPdf')}
               openReportLabel={t('openReport')}
+              openDocLabel={t('openDoc')}
               title={L(item.title)}
               autoload
             />

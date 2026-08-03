@@ -431,6 +431,7 @@ function VideoAnalysisPanel({ match }: { match: MatchData }) {
               openPdfLabel={t('openPdf')}
               downloadPdfLabel={t('downloadPdf')}
               openReportLabel={t('openReport')}
+              openDocLabel={t('openDoc')}
               title={L(item.title)}
               autoload
             />

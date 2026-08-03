@@ -4,6 +4,7 @@ import {
   isVimeoUrl,
   isPdfSrc,
   isMarkdownSrc,
+  isDocxSrc,
   vimeoEmbedUrl,
   type MediaLibrary,
 } from '../utils/mediaUrl';
@@ -21,6 +22,7 @@ interface MatchMediaProps {
   openPdfLabel?: string;
   downloadPdfLabel?: string;
   openReportLabel?: string;
+  openDocLabel?: string;
   fullHeight?: boolean;
   /**
    * If false (default for grids), show a play button and only mount the Vimeo
@@ -29,7 +31,7 @@ interface MatchMediaProps {
   autoload?: boolean;
 }
 
-/** Renders a local/remote MP4, a Vimeo embed, or an analysis PDF. */
+/** Renders a local/remote MP4, a Vimeo embed, or an analysis document. */
 export default function MatchMedia({
   slug,
   library = 'matches',
@@ -41,6 +43,7 @@ export default function MatchMedia({
   openPdfLabel = 'Open PDF',
   downloadPdfLabel = 'Download',
   openReportLabel = 'Open report',
+  openDocLabel = 'Open Word document',
   fullHeight = false,
   autoload = false,
 }: MatchMediaProps) {
@@ -116,11 +119,16 @@ export default function MatchMedia({
     );
   }
 
-  if (isMarkdownSrc(src)) {
+  if (isDocxSrc(src) || isMarkdownSrc(src)) {
+    const openLabel = isDocxSrc(src) ? openDocLabel : openReportLabel;
     return (
       <div
-        className={`video-player-wrap video-player-wrap--pdf video-player-wrap--markdown ${fullHeight ? 'video-player-wrap--full' : ''}`}
+        className={`video-player-wrap video-player-wrap--pdf video-player-wrap--doc ${fullHeight ? 'video-player-wrap--full' : ''}`}
       >
+        <div className="doc-card-preview" aria-hidden>
+          <span className="doc-card-icon">{isDocxSrc(src) ? 'DOCX' : 'MD'}</span>
+          <span className="doc-card-title">{title || 'Report'}</span>
+        </div>
         <div className="pdf-actions">
           <a
             className="pdf-action"
@@ -128,7 +136,7 @@ export default function MatchMedia({
             target="_blank"
             rel="noopener noreferrer"
           >
-            {openReportLabel}
+            {openLabel}
           </a>
           <a className="pdf-action pdf-action--secondary" href={resolved} download>
             {downloadPdfLabel}

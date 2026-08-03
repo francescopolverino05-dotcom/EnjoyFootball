@@ -108,6 +108,12 @@ export function isPdfSrc(input: string): boolean {
   return /\.pdf$/i.test(mediaPathExt(input));
 }
 
+/** True for Word report paths (.docx). */
+export function isDocxSrc(input: string): boolean {
+  if (!input) return false;
+  return /\.docx$/i.test(mediaPathExt(input));
+}
+
 /** True for Markdown report paths (.md). */
 export function isMarkdownSrc(input: string): boolean {
   if (!input) return false;

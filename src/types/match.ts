@@ -103,7 +103,7 @@ export interface AnalysisVideo {
   /** Relative path under analysis/, absolute URL, Vimeo URL, or PDF path */
   videoFile: string;
   /** Optional; inferred from videoFile when omitted (e.g. .pdf → document). */
-  kind?: 'video' | 'pdf' | 'markdown';
+  kind?: 'video' | 'pdf' | 'markdown' | 'docx';
   createdAt?: string;
   tags?: string[];
 }

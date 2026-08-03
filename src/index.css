@@ -1026,14 +1026,48 @@ button {
   border: 1px solid var(--border-light);
 }
 
-.video-player-wrap--markdown {
+.video-player-wrap--markdown,
+.video-player-wrap--doc {
   min-height: 72px;
   justify-content: center;
+  flex-direction: column;
 }
 
-.video-player-wrap--markdown .pdf-actions {
+.video-player-wrap--markdown .pdf-actions,
+.video-player-wrap--doc .pdf-actions {
   border-top: 0;
   width: 100%;
+}
+
+.doc-card-preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 16px 14px 6px;
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+}
+
+.doc-card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 36px;
+  padding: 0 8px;
+  border-radius: 6px;
+  background: var(--napoli-blue-dark);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.doc-card-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.3;
 }
 
 .vimeo-play-button {
