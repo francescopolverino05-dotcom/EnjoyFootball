@@ -1007,6 +1007,16 @@ button {
   border: 1px solid var(--border-light);
 }
 
+.video-player-wrap--markdown {
+  min-height: 72px;
+  justify-content: center;
+}
+
+.video-player-wrap--markdown .pdf-actions {
+  border-top: 0;
+  width: 100%;
+}
+
 .vimeo-play-button {
   position: absolute;
   inset: 0;

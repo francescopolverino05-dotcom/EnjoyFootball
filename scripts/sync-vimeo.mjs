@@ -386,7 +386,10 @@ if (fullMatchUrl) {
 
 if (analysisVideos.length > 0) {
   const preserved = (match.analysisVideos || []).filter(
-    (a) => a?.kind === 'pdf' || (a?.videoFile && !String(a.videoFile).includes('vimeo.com'))
+    (a) =>
+      a?.kind === 'pdf' ||
+      a?.kind === 'markdown' ||
+      (a?.videoFile && !String(a.videoFile).includes('vimeo.com'))
   );
   const byId = new Map();
   for (const a of [...analysisVideos, ...preserved]) byId.set(a.id, a);

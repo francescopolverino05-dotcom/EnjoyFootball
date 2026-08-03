@@ -755,7 +755,7 @@
   "vimeo": {
     "folderId": "30093272",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30093272",
-    "lastSyncedAt": "2026-08-03T10:42:48.989Z"
+    "lastSyncedAt": "2026-08-03T13:14:54.910Z"
   },
   "clips": [
     {
@@ -2709,6 +2709,24 @@
         "pdf",
         "analysis",
         "tactical"
+      ]
+    },
+    {
+      "id": "written-post-match-report",
+      "title": {
+        "en": "Written post-match report",
+        "it": "Report scritto post-partita"
+      },
+      "description": {
+        "en": "Updated tactical analysis report — Amichevole U19 vs U18 (1 Aug 2026).",
+        "it": "Report di analisi tattica aggiornato — Amichevole U19 vs U18 (1 ago 2026)."
+      },
+      "videoFile": "Report_Amichevole_U19_vs_U18.md",
+      "kind": "markdown",
+      "tags": [
+        "markdown",
+        "analysis",
+        "report"
       ]
     }
   ]

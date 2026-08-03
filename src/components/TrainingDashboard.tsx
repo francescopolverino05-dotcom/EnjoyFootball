@@ -240,6 +240,7 @@ function TrainingAnalysisPanel({ session }: { session: TrainingSession }) {
               playLabel={t('playVideo')}
               openPdfLabel={t('openPdf')}
               downloadPdfLabel={t('downloadPdf')}
+              openReportLabel={t('openReport')}
               title={L(item.title)}
               autoload
             />

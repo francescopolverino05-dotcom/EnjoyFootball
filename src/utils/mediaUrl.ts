@@ -90,19 +90,28 @@ export function isVimeoUrl(input: string): boolean {
   return parseVimeoRef(input) != null || /vimeo\.com/i.test(input);
 }
 
-/** True for PDF paths or absolute URLs ending in .pdf (ignoring query/hash). */
-export function isPdfSrc(input: string): boolean {
-  if (!input) return false;
+function mediaPathExt(input: string): string {
   const trimmed = input.trim();
   try {
     if (/^https?:\/\//i.test(trimmed)) {
-      const path = new URL(trimmed).pathname;
-      return /\.pdf$/i.test(path);
+      return new URL(trimmed).pathname;
     }
   } catch {
     // fall through
   }
-  return /\.pdf$/i.test(trimmed.split(/[?#]/)[0] ?? '');
+  return trimmed.split(/[?#]/)[0] ?? '';
+}
+
+/** True for PDF paths or absolute URLs ending in .pdf (ignoring query/hash). */
+export function isPdfSrc(input: string): boolean {
+  if (!input) return false;
+  return /\.pdf$/i.test(mediaPathExt(input));
+}
+
+/** True for Markdown report paths (.md). */
+export function isMarkdownSrc(input: string): boolean {
+  if (!input) return false;
+  return /\.md$/i.test(mediaPathExt(input));
 }
 
 /** Player embed URL for an iframe (includes unlisted privacy hash when present). */

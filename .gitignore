@@ -17,31 +17,55 @@ tsconfig.tsbuildinfo
 
 # Large video files — keep folder structure, ignore binaries
 matches/**/video/**/*.mp4
+matches/**/video/**/*.MP4
 matches/**/video/**/*.mov
+matches/**/video/**/*.MOV
 matches/**/video/*.mp4
+matches/**/video/*.MP4
 matches/**/video/*.mov
+matches/**/video/*.MOV
 matches/**/clips/**/*.mp4
+matches/**/clips/**/*.MP4
 matches/**/clips/**/*.mov
+matches/**/clips/**/*.MOV
 matches/**/clips/*.mp4
+matches/**/clips/*.MP4
 matches/**/clips/*.mov
+matches/**/clips/*.MOV
 matches/**/analysis/**/*.mp4
+matches/**/analysis/**/*.MP4
 matches/**/analysis/**/*.mov
+matches/**/analysis/**/*.MOV
 matches/**/analysis/*.mp4
+matches/**/analysis/*.MP4
 matches/**/analysis/*.mov
+matches/**/analysis/*.MOV
 
 # Training session videos
 trainings/**/video/**/*.mp4
+trainings/**/video/**/*.MP4
 trainings/**/video/**/*.mov
+trainings/**/video/**/*.MOV
 trainings/**/video/*.mp4
+trainings/**/video/*.MP4
 trainings/**/video/*.mov
+trainings/**/video/*.MOV
 trainings/**/clips/**/*.mp4
+trainings/**/clips/**/*.MP4
 trainings/**/clips/**/*.mov
+trainings/**/clips/**/*.MOV
 trainings/**/clips/*.mp4
+trainings/**/clips/*.MP4
 trainings/**/clips/*.mov
+trainings/**/clips/*.MOV
 trainings/**/analysis/**/*.mp4
+trainings/**/analysis/**/*.MP4
 trainings/**/analysis/**/*.mov
+trainings/**/analysis/**/*.MOV
 trainings/**/analysis/*.mp4
+trainings/**/analysis/*.MP4
 trainings/**/analysis/*.mov
+trainings/**/analysis/*.MOV
 
 # Keep placeholders
 !matches/**/video/.gitkeep

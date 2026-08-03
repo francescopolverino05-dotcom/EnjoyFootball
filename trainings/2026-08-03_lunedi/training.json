@@ -1,0 +1,106 @@
+{
+  "id": "2026-08-03_lunedi",
+  "slug": "2026-08-03_lunedi",
+  "date": "2026-08-03",
+  "title": {
+    "en": "Monday training — 3-4-2-1 attack, rondo & partitelle",
+    "it": "Lunedì — Attacco 3-4-2-1, rondo e partitelle"
+  },
+  "focus": {
+    "en": "3-4-2-1 attack / Possession rondo / Partitelle",
+    "it": "Attacco 3-4-2-1 / Possession rondo / Partitelle"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Week 2 (Sett. 2 03/08) — Lunedì. Local files symlinked from Desktop/Allenamento.",
+    "it": "Settimana 2 (Sett. 2 03/08) — Lunedì. File locali collegati da Desktop/Allenamento."
+  },
+  "video": {
+    "fullSession": "analysis/Attack_3-4-2-1/First_XI_Part_2.MP4",
+    "notes": {
+      "en": "Largest session video linked when available (Attack 3-4-2-1 First XI Part 2).",
+      "it": "Collegato il video più lungo quando disponibile (Attacco 3-4-2-1 Prima XI Parte 2)."
+    }
+  },
+  "clips": [],
+  "analysisVideos": [
+    {
+      "id": "2026-08-03_lunedi-1",
+      "title": {
+        "en": "Attack in a 3-4-2-1 — First XI (Part 1)",
+        "it": "Attacco in 3-4-2-1 — Prima XI (Parte 1)"
+      },
+      "videoFile": "Attack_3-4-2-1/First_XI_Part_1.MP4",
+      "description": {
+        "en": "Training analysis — 3-4-2-1 attack (First XI, part 1)",
+        "it": "Analisi allenamento — Attacco 3-4-2-1 (Prima XI, parte 1)"
+      },
+      "tags": ["attack", "3-4-2-1", "week-2"]
+    },
+    {
+      "id": "2026-08-03_lunedi-2",
+      "title": {
+        "en": "Attack in a 3-4-2-1 — First XI (Part 2)",
+        "it": "Attacco in 3-4-2-1 — Prima XI (Parte 2)"
+      },
+      "videoFile": "Attack_3-4-2-1/First_XI_Part_2.MP4",
+      "description": {
+        "en": "Training analysis — 3-4-2-1 attack (First XI, part 2)",
+        "it": "Analisi allenamento — Attacco 3-4-2-1 (Prima XI, parte 2)"
+      },
+      "tags": ["attack", "3-4-2-1", "week-2"]
+    },
+    {
+      "id": "2026-08-03_lunedi-3",
+      "title": {
+        "en": "Attack in a 3-4-2-1 — Second XI",
+        "it": "Attacco in 3-4-2-1 — Seconda XI"
+      },
+      "videoFile": "Attack_3-4-2-1/Second_XI.MP4",
+      "description": {
+        "en": "Training analysis — 3-4-2-1 attack (Second XI)",
+        "it": "Analisi allenamento — Attacco 3-4-2-1 (Seconda XI)"
+      },
+      "tags": ["attack", "3-4-2-1", "week-2"]
+    },
+    {
+      "id": "2026-08-03_lunedi-4",
+      "title": {
+        "en": "Possession Rondo",
+        "it": "Possession Rondo"
+      },
+      "videoFile": "Possession_Rondo/Possession_Rondo.MP4",
+      "description": {
+        "en": "Training analysis — Possession rondo",
+        "it": "Analisi allenamento — Possession rondo"
+      },
+      "tags": ["possession", "rondo", "week-2"]
+    },
+    {
+      "id": "2026-08-03_lunedi-5",
+      "title": {
+        "en": "Partitella",
+        "it": "Partitella"
+      },
+      "videoFile": "Partitelle/Partitella.MP4",
+      "description": {
+        "en": "Training analysis — Partitella",
+        "it": "Analisi allenamento — Partitella"
+      },
+      "tags": ["partitella", "week-2"]
+    },
+    {
+      "id": "2026-08-03_lunedi-6",
+      "title": {
+        "en": "Partitelle Intese",
+        "it": "Partitelle Intese"
+      },
+      "videoFile": "Partitelle/Partitelle_Intese.MP4",
+      "description": {
+        "en": "Training analysis — Intense small-sided games",
+        "it": "Analisi allenamento — Partitelle intese"
+      },
+      "tags": ["partitelle", "week-2"]
+    }
+  ]
+}

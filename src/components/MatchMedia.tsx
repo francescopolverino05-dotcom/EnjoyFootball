@@ -3,6 +3,7 @@ import {
   sessionMediaUrl,
   isVimeoUrl,
   isPdfSrc,
+  isMarkdownSrc,
   vimeoEmbedUrl,
   type MediaLibrary,
 } from '../utils/mediaUrl';
@@ -19,6 +20,7 @@ interface MatchMediaProps {
   playLabel?: string;
   openPdfLabel?: string;
   downloadPdfLabel?: string;
+  openReportLabel?: string;
   fullHeight?: boolean;
   /**
    * If false (default for grids), show a play button and only mount the Vimeo
@@ -38,6 +40,7 @@ export default function MatchMedia({
   playLabel = 'Play',
   openPdfLabel = 'Open PDF',
   downloadPdfLabel = 'Download',
+  openReportLabel = 'Open report',
   fullHeight = false,
   autoload = false,
 }: MatchMediaProps) {
@@ -104,6 +107,28 @@ export default function MatchMedia({
             rel="noopener noreferrer"
           >
             {openPdfLabel}
+          </a>
+          <a className="pdf-action pdf-action--secondary" href={resolved} download>
+            {downloadPdfLabel}
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  if (isMarkdownSrc(src)) {
+    return (
+      <div
+        className={`video-player-wrap video-player-wrap--pdf video-player-wrap--markdown ${fullHeight ? 'video-player-wrap--full' : ''}`}
+      >
+        <div className="pdf-actions">
+          <a
+            className="pdf-action"
+            href={resolved}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {openReportLabel}
           </a>
           <a className="pdf-action pdf-action--secondary" href={resolved} download>
             {downloadPdfLabel}
