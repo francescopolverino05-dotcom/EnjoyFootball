@@ -755,7 +755,7 @@
   "vimeo": {
     "folderId": "30093272",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30093272",
-    "lastSyncedAt": "2026-08-03T13:14:54.910Z"
+    "lastSyncedAt": "2026-08-03T16:10:25.698Z"
   },
   "clips": [
     {
@@ -2678,16 +2678,16 @@
   ],
   "analysisVideos": [
     {
-      "id": "vimeo-1214963786",
+      "id": "vimeo-1215225205",
       "title": {
-        "en": "Post Match v U18",
-        "it": "Post Match v U18"
+        "en": "Post Match v U18 FINAL",
+        "it": "Post Match v U18 FINAL"
       },
       "description": {
         "en": "Synced from Vimeo folder.",
         "it": "Sincronizzato dalla cartella Vimeo."
       },
-      "videoFile": "https://vimeo.com/1214963786",
+      "videoFile": "https://vimeo.com/1215225205",
       "tags": [
         "vimeo",
         "analysis"
