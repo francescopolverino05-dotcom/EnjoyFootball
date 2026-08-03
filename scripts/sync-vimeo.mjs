@@ -47,6 +47,66 @@ const SECTION_ALIASES = {
   other: 'other',
 };
 
+const SECTION_LABELS = {
+  'build-up': { en: 'Build-up', it: 'Costruzione' },
+  progress: { en: 'Progression', it: 'Progressione' },
+  'offensive-transition': { en: 'Transition to attack', it: 'Transizione offensiva' },
+  'mid-block': { en: 'Mid block', it: 'Blocco medio' },
+  'high-defence': { en: 'High defence', it: 'Difesa alta' },
+  'final-third': { en: 'Final third', it: 'Ultimo terzo' },
+  'own-third': { en: 'Own third', it: 'Proprio terzo' },
+  'defensive-transition': { en: 'Transition to defence', it: 'Transizione difensiva' },
+};
+
+const COMMENT_FIX = [
+  ['Distribuzione e decisione port', { en: 'GK distribution and decision', it: 'Distribuzione e decisione portiere' }],
+  ['rotazione centrocampo naturale', { en: 'Natural midfield rotation', it: 'Rotazione centrocampo naturale' }],
+  ['Esempio Ideale Di costruzione', { en: 'Ideal build-up example', it: 'Esempio ideale di costruzione' }],
+  ['Poca mobilit', { en: 'Little mobility from the attackers', it: 'Poca mobilità dagli attaccanti' }],
+  ['Posizionaento generalmente buo', { en: 'Generally good positioning', it: 'Posizionamento generalmente buono' }],
+  ['Molto buona la marcatura', { en: 'Very good man-marking', it: 'Molto buona la marcatura a uomo' }],
+  ['Prossimo step', { en: 'Next step — more toward the line', it: 'Prossimo step — più verso la linea' }],
+  ['Trasizione offensiva buona', { en: 'Good offensive transition', it: 'Transizione offensiva buona' }],
+  ['gol concesso', { en: 'Goal conceded — not aggressive enough', it: 'Gol concesso — poco aggressivi' }],
+];
+
+function titleFromClipName(name, section) {
+  const labels = SECTION_LABELS[section] || { en: section || 'Clip', it: section || 'Clip' };
+  const m = String(name || '').match(
+    /^(\d{1,3})_(\d{2})_(?:wd|nd)_(.+?)__(?:(?:good|bad)(?:_favorite)?_)?(?:\d{1,3}_\d{2}_(?:Attacking|Defending)_\d+)?(?:_(.*))?$/i
+  );
+  let comment = '';
+  let rating = null;
+  let phase = null;
+  if (m) {
+    const rest = m[0];
+    if (/_good(?:_favorite)?_/i.test(rest)) rating = 'good';
+    else if (/_bad(?:_favorite)?_/i.test(rest)) rating = 'bad';
+    if (/_Attacking_/i.test(rest)) phase = 'attacking';
+    else if (/_Defending_/i.test(rest)) phase = 'defending';
+    comment = String(m[4] || '')
+      .replace(/_/g, ' ')
+      .replace(/\s+/g, ' ')
+      .replace(/^[\s\-_]+|[\s\-_]+$/g, '')
+      .trim();
+  }
+  let title = { ...labels };
+  if (comment) {
+    title = { en: comment, it: comment };
+    for (const [key, fixed] of COMMENT_FIX) {
+      if (comment.includes(key) || comment.startsWith(key)) {
+        title = { ...fixed };
+        break;
+      }
+    }
+  }
+  const tags = ['vimeo'];
+  if (rating) tags.push(rating);
+  if (phase) tags.push(phase);
+  return { title, tags };
+}
+
+
 function parseArgs(argv) {
   const args = {};
   for (let i = 0; i < argv.length; i++) {
@@ -298,16 +358,17 @@ for (const { video, parentFolderName } of listed) {
   }
 
   const section = kind.section;
+  const { title, tags } = titleFromClipName(name, section);
   clips.push({
     id: `vimeo-${id}`,
-    title: { en: name, it: name },
-    comments: { en: name, it: name },
+    title,
+    comments: title,
     minute: kind.minute,
     second: kind.second,
     videoFile: link,
     section,
     labels: [section],
-    tags: ['vimeo'],
+    tags,
   });
   console.log(`  clip [${section}] ← ${name}`);
 }
@@ -324,17 +385,36 @@ if (fullMatchUrl) {
 }
 
 if (analysisVideos.length > 0) {
-  match.analysisVideos = analysisVideos;
+  const preserved = (match.analysisVideos || []).filter(
+    (a) => a?.kind === 'pdf' || (a?.videoFile && !String(a.videoFile).includes('vimeo.com'))
+  );
+  const byId = new Map();
+  for (const a of [...analysisVideos, ...preserved]) byId.set(a.id, a);
+  match.analysisVideos = [...byId.values()];
 }
 
 if (clips.length > 0) {
-  match.clips = clips;
+  const prevByUrl = new Map(
+    (match.clips || [])
+      .filter((c) => c?.videoFile)
+      .map((c) => [String(c.videoFile).split('?')[0], c])
+  );
+  match.clips = clips.map((c) => {
+    const prev = prevByUrl.get(String(c.videoFile).split('?')[0]);
+    if (prev?.localFile) return { ...c, localFile: prev.localFile };
+    return c;
+  });
 }
+
+match.vimeo = {
+  ...(match.vimeo || {}),
+  lastSyncedAt: new Date().toISOString(),
+};
 
 writeFileSync(matchPath, JSON.stringify(match, null, 2) + '\n');
 console.log(`
 Updated ${matchPath}
   fullMatch: ${fullMatchUrl ? 'yes' : '(unchanged)'}
-  analysis:  ${analysisVideos.length}
+  analysis:  ${(match.analysisVideos || []).length}
   clips:     ${clips.length}
 `);
