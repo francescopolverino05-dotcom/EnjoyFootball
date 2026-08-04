@@ -3,6 +3,58 @@ import type { Player, PlayersRoster } from '../types/player';
 
 const data = roster as PlayersRoster;
 
+export type PlayerPositionGroup =
+  | 'gk'
+  | 'defenders'
+  | 'midfielders'
+  | 'forwards'
+  | 'tbd';
+
+export const PLAYER_POSITION_GROUP_ORDER: PlayerPositionGroup[] = [
+  'gk',
+  'defenders',
+  'midfielders',
+  'forwards',
+  'tbd',
+];
+
+const GK = new Set(['GK']);
+const DEFENDERS = new Set(['CB', 'LB', 'RB', 'LWB', 'RWB', 'DF']);
+const MIDFIELDERS = new Set(['CM', 'DM', 'AM', 'RM', 'LM', 'WM', 'MF']);
+const FORWARDS = new Set(['CF', 'ST', 'LW', 'RW', 'SS', 'FW']);
+
+export function getPlayerPositionGroup(
+  positionShort: string | null | undefined
+): PlayerPositionGroup {
+  const code = (positionShort ?? '').trim().toUpperCase();
+  if (!code) return 'tbd';
+  if (GK.has(code)) return 'gk';
+  if (DEFENDERS.has(code) || code.startsWith('DF')) return 'defenders';
+  if (MIDFIELDERS.has(code)) return 'midfielders';
+  if (FORWARDS.has(code)) return 'forwards';
+  return 'tbd';
+}
+
+export function groupPlayersByPosition(
+  players: Player[]
+): { group: PlayerPositionGroup; players: Player[] }[] {
+  const buckets: Record<PlayerPositionGroup, Player[]> = {
+    gk: [],
+    defenders: [],
+    midfielders: [],
+    forwards: [],
+    tbd: [],
+  };
+
+  for (const player of players) {
+    buckets[getPlayerPositionGroup(player.positionShort)].push(player);
+  }
+
+  return PLAYER_POSITION_GROUP_ORDER.filter((group) => buckets[group].length > 0).map(
+    (group) => ({ group, players: buckets[group] })
+  );
+}
+
 export function getAllPlayers(): Player[] {
   return [...data.players].sort((a, b) =>
     a.displayName.localeCompare(b.displayName, 'it')

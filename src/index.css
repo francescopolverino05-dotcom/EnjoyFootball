@@ -921,6 +921,21 @@ button {
   color: var(--napoli-blue-dark);
 }
 
+.player-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.player-group-title {
+  margin: 0 0 14px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--napoli-blue-dark);
+}
+
 .player-card-top {
   display: flex;
   align-items: center;

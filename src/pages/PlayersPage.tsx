@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { getAllPlayers } from '../data/players';
-import PlayerCard from '../components/PlayerCard';
+import PlayersGroupedList from '../components/PlayersGroupedList';
 import ReportHeader from '../components/ReportHeader';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -28,11 +28,7 @@ export default function PlayersPage() {
           {t('players')} ({players.length})
         </div>
         <p className="home-section-hint">{t('playersHint')}</p>
-        <div className="match-grid player-grid">
-          {players.map((player) => (
-            <PlayerCard key={player.slug} player={player} />
-          ))}
-        </div>
+        <PlayersGroupedList players={players} />
       </section>
     </div>
   );
