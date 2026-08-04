@@ -90,6 +90,7 @@ const template = {
   },
   clips: [],
   analysisVideos: [],
+  trainingDesign: [],
 };
 
 const vimeoFolder = args['vimeo-folder'] || args.vimeoFolder;
@@ -142,9 +143,10 @@ Short moments for the **Clips** tab. Register in \`../training.json\` → \`clip
 
 writeFileSync(
   join(trainingDir, 'analysis', 'README.md'),
-  `# Training video analysis
+  `# Training analysis & session plans
 
-Longer analyst reports for the **Video Analysis** tab. Register in \`../training.json\` → \`analysisVideos\`.
+- **Video Analysis** tab: analyst reports (md/docx/video). Register in \`../training.json\` → \`analysisVideos\`.
+- **Training Design** tab: session-plan PDFs (CamScanner sheets). Register in \`../training.json\` → \`trainingDesign\`.
 `
 );
 

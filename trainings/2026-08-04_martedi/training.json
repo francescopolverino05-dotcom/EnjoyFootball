@@ -49,5 +49,25 @@
     "folderId": "30099293",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099293",
     "lastSyncedAt": "2026-08-04T09:30:16.558Z"
-  }
+  },
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-04",
+      "title": {
+        "en": "Session plan — Tue 4 Aug",
+        "it": "Piano seduta — Mar 4 ago"
+      },
+      "description": {
+        "en": "Seduta video, possesso 10v10+3 jolly, partita 11v11 campo 70m (1-3-4-2-1), lavoro metabolico.",
+        "it": "Seduta video, possesso 10v10+3 jolly, partita 11v11 campo 70m (1-3-4-2-1), lavoro metabolico."
+      },
+      "videoFile": "Session_Plan_2026-08-04.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-2"
+      ]
+    }
+  ]
 }

@@ -165,5 +165,25 @@
     "folderId": "30099286",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099286",
     "lastSyncedAt": "2026-08-04T09:18:25.354Z"
-  }
+  },
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-07-31",
+      "title": {
+        "en": "Session plan — Fri 31 Jul",
+        "it": "Piano seduta — Ven 31 lug"
+      },
+      "description": {
+        "en": "Possesso/non possesso, attacco vs difesa, palle inattive, lavoro metabolico.",
+        "it": "Possesso/non possesso, attacco vs difesa, palle inattive, lavoro metabolico."
+      },
+      "videoFile": "Session_Plan_2026-07-31.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-1"
+      ]
+    }
+  ]
 }

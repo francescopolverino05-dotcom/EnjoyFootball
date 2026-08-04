@@ -10,7 +10,13 @@ import {
 } from '../i18n/clipLabels';
 import MatchMedia from './MatchMedia';
 
-type TabId = 'fullsession' | 'clips' | 'videoanalysis';
+type TabId = 'fullsession' | 'clips' | 'trainingdesign' | 'videoanalysis';
+
+type TabLabelKey =
+  | 'tabFullSession'
+  | 'tabClips'
+  | 'tabTrainingDesign'
+  | 'tabVideoAnalysis';
 
 function clipSortKey(clip: VideoClip): number {
   return clip.minute * 60 + (clip.second ?? 0);
@@ -31,9 +37,10 @@ export default function TrainingDashboard({
   const [activeTab, setActiveTab] = useState<TabId>('fullsession');
   const { t } = useLanguage();
 
-  const tabs: [TabId, 'tabFullSession' | 'tabClips' | 'tabVideoAnalysis'][] = [
+  const tabs: [TabId, TabLabelKey][] = [
     ['fullsession', 'tabFullSession'],
     ['clips', 'tabClips'],
+    ['trainingdesign', 'tabTrainingDesign'],
     ['videoanalysis', 'tabVideoAnalysis'],
   ];
 
@@ -59,6 +66,11 @@ export default function TrainingDashboard({
       </div>
       <div className={`tab-content ${activeTab === 'clips' ? 'active' : ''}`}>
         <TrainingClipsPanel session={session} />
+      </div>
+      <div
+        className={`tab-content ${activeTab === 'trainingdesign' ? 'active' : ''}`}
+      >
+        <TrainingDesignPanel session={session} />
       </div>
       <div
         className={`tab-content ${activeTab === 'videoanalysis' ? 'active' : ''}`}
@@ -258,24 +270,32 @@ function TrainingClipsPanel({ session }: { session: TrainingSession }) {
   );
 }
 
-function TrainingAnalysisPanel({ session }: { session: TrainingSession }) {
+function DocMediaGrid({
+  session,
+  items,
+  hintKey,
+  emptyKey,
+}: {
+  session: TrainingSession;
+  items: AnalysisVideo[];
+  hintKey: 'videoAnalysisHint' | 'trainingDesignHint';
+  emptyKey: 'noTrainingAnalysis' | 'noTrainingDesign';
+}) {
   const { t, L } = useLanguage();
-  // Session recordings live under Full Session (`video.parts`); this tab is for docs / analysis.
-  const videos = (session.analysisVideos ?? []).filter(isDocAnalysis);
 
-  if (videos.length === 0) {
+  if (items.length === 0) {
     return (
       <div className="empty-clips">
-        {t('noTrainingAnalysis').replace(/\{slug\}/g, session.slug)}
+        {t(emptyKey).replace(/\{slug\}/g, session.slug)}
       </div>
     );
   }
 
   return (
     <div className="video-section">
-      <p className="video-hint">{t('videoAnalysisHint')}</p>
+      <p className="video-hint">{t(hintKey)}</p>
       <div className="analysis-grid">
-        {videos.map((item: AnalysisVideo) => (
+        {items.map((item: AnalysisVideo) => (
           <article className="analysis-card" key={item.id}>
             <MatchMedia
               library="trainings"
@@ -299,5 +319,44 @@ function TrainingAnalysisPanel({ session }: { session: TrainingSession }) {
         ))}
       </div>
     </div>
+  );
+}
+
+function isSessionPlanDoc(item: AnalysisVideo): boolean {
+  if ((item.tags || []).includes('session-plan')) return true;
+  const src = item.videoFile || '';
+  return /session[_-]?plan/i.test(item.id) || /Session_Plan/i.test(src);
+}
+
+function TrainingDesignPanel({ session }: { session: TrainingSession }) {
+  // Prefer explicit trainingDesign; fall back to tagged session plans still in analysisVideos.
+  const fromField = session.trainingDesign ?? [];
+  const fromAnalysis = (session.analysisVideos ?? []).filter(isSessionPlanDoc);
+  const items = fromField.length > 0 ? fromField : fromAnalysis;
+
+  return (
+    <DocMediaGrid
+      session={session}
+      items={items}
+      hintKey="trainingDesignHint"
+      emptyKey="noTrainingDesign"
+    />
+  );
+}
+
+function TrainingAnalysisPanel({ session }: { session: TrainingSession }) {
+  // Session recordings live under Full Session (`video.parts`); this tab is for docs / analysis.
+  // Session-plan PDFs belong on Training Design (trainingDesign), not here.
+  const videos = (session.analysisVideos ?? [])
+    .filter(isDocAnalysis)
+    .filter((item) => !isSessionPlanDoc(item));
+
+  return (
+    <DocMediaGrid
+      session={session}
+      items={videos}
+      hintKey="videoAnalysisHint"
+      emptyKey="noTrainingAnalysis"
+    />
   );
 }

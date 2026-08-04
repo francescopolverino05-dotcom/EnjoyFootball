@@ -133,5 +133,25 @@
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099274",
     "skipNameRegex": "^(gk|goalkeeper)",
     "lastSyncedAt": "2026-08-04T09:30:18.264Z"
-  }
+  },
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-07-27",
+      "title": {
+        "en": "Session plan — Mon 27 Jul",
+        "it": "Piano seduta — Lun 27 lug"
+      },
+      "description": {
+        "en": "SSC Napoli Primavera 2 — Possesso 9v9 + jolly, partita 9v9, 4×1000m (Campo Cercola). Printed 27/07; handwritten note «8 agosto (Portici)».",
+        "it": "SSC Napoli Primavera 2 — Possesso 9v9 + jolly, partita 9v9, 4×1000m (Campo Cercola). Stampato 27/07; nota a mano «8 agosto (Portici)»."
+      },
+      "videoFile": "Session_Plan_2026-07-27.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-1"
+      ]
+    }
+  ]
 }

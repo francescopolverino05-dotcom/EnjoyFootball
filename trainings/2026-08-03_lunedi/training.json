@@ -136,5 +136,25 @@
     ]
   },
   "clips": [],
-  "analysisVideos": []
+  "analysisVideos": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-03",
+      "title": {
+        "en": "Session plan — Mon 3 Aug",
+        "it": "Piano seduta — Lun 3 ago"
+      },
+      "description": {
+        "en": "Possesso 6v4, divisione gruppo (forza + fasi), partitine a pressione, 11v11 (1-3-4-2-1).",
+        "it": "Possesso 6v4, divisione gruppo (forza + fasi), partitine a pressione, 11v11 (1-3-4-2-1)."
+      },
+      "videoFile": "Session_Plan_2026-08-03.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-2"
+      ]
+    }
+  ]
 }

@@ -68,6 +68,7 @@ const dictionaries = {
     tabFullMatch: 'Full Match',
     tabFullSession: 'Full Session',
     tabClips: 'Clips',
+    tabTrainingDesign: 'Training Design',
     tabVideoAnalysis: 'Video Analysis',
     fullMatchVideo: 'Full Match Video',
     fullMatchHint: 'Watch the complete match recording.',
@@ -95,8 +96,12 @@ const dictionaries = {
       'No clips yet. Add MP4 files to trainings/{slug}/clips/ and register them in training.json.',
     noTrainingAnalysis:
       'No video analysis yet. Add files to trainings/{slug}/analysis/ and register them in training.json.',
+    noTrainingDesign:
+      'No session plan yet. Add the PDF to trainings/{slug}/analysis/ and register it in training.json → trainingDesign.',
     videoAnalysisHint:
       'Full analyst video breakdowns for the coaching staff.',
+    trainingDesignHint:
+      'Session plans and training design sheets for this day.',
     videoUnsupported: 'Your browser does not support video playback.',
     playVideo: 'Play video',
     openPdf: 'Open PDF',
@@ -175,6 +180,7 @@ const dictionaries = {
     tabFullMatch: 'Partita Intera',
     tabFullSession: 'Sessione Intera',
     tabClips: 'Clip',
+    tabTrainingDesign: 'Design allenamento',
     tabVideoAnalysis: 'Analisi Video',
     fullMatchVideo: 'Video Partita Completa',
     fullMatchHint: 'Guarda la registrazione completa della partita.',
@@ -203,8 +209,12 @@ const dictionaries = {
       'Nessuna clip ancora. Aggiungi MP4 in trainings/{slug}/clips/ e registrali in training.json.',
     noTrainingAnalysis:
       'Nessuna analisi video ancora. Aggiungi file in trainings/{slug}/analysis/ e registrali in training.json.',
+    noTrainingDesign:
+      'Nessun piano seduta ancora. Aggiungi il PDF in trainings/{slug}/analysis/ e registralo in training.json → trainingDesign.',
     videoAnalysisHint:
       'Video di analisi completi preparati dall’analista per lo staff tecnico.',
+    trainingDesignHint:
+      'Piani seduta e fogli di design allenamento per questa giornata.',
     videoUnsupported: 'Il browser non supporta la riproduzione video.',
     playVideo: 'Riproduci video',
     openPdf: 'Apri PDF',

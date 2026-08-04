@@ -126,5 +126,25 @@
     "folderId": "30099278",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099278",
     "lastSyncedAt": "2026-08-04T09:18:21.143Z"
-  }
+  },
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-07-28",
+      "title": {
+        "en": "Session plan — Tue 28 Jul (Forza)",
+        "it": "Piano seduta — Mar 28 lug (Forza)"
+      },
+      "description": {
+        "en": "Mobility, group split (gym + tecnica/tattica), pressure games, 10v10.",
+        "it": "Mobilità, divisione gruppo (palestra + tecnica/tattica), partite a pressione, 10v10."
+      },
+      "videoFile": "Session_Plan_2026-07-28.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-1"
+      ]
+    }
+  ]
 }

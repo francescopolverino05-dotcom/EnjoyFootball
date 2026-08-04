@@ -24,6 +24,11 @@ export interface TrainingSession {
   clips: VideoClip[];
   /** Coach docs / post-session analysis (PDF, markdown, analysis video) */
   analysisVideos: AnalysisVideo[];
+  /**
+   * Session plan / CamScanner sheets for the Training Design tab
+   * (same entry shape as analysisVideos).
+   */
+  trainingDesign?: AnalysisVideo[];
   vimeo?: {
     folderId?: string;
     folderUrl?: string;

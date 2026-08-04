@@ -80,5 +80,25 @@
     "folderId": "30099282",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099282",
     "lastSyncedAt": "2026-08-04T09:18:22.577Z"
-  }
+  },
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-07-29",
+      "title": {
+        "en": "Session plan — Wed 29 Jul",
+        "it": "Piano seduta — Mer 29 lug"
+      },
+      "description": {
+        "en": "Attivazione tecnica, movimenti fase di non possesso, Test di Gacon.",
+        "it": "Attivazione tecnica, movimenti fase di non possesso, Test di Gacon."
+      },
+      "videoFile": "Session_Plan_2026-07-29.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-1"
+      ]
+    }
+  ]
 }
