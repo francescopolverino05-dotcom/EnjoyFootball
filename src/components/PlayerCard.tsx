@@ -40,8 +40,12 @@ export default function PlayerCard({ player }: PlayerCardProps) {
           </div>
         )}
         <div className="player-card-info">
-          <div className="match-card-title">{player.displayName}</div>
-          <div className="player-card-position">{player.positionShort}</div>
+          <div className="match-card-title notranslate" translate="no">
+            {player.displayName}
+          </div>
+          <div className="player-card-position notranslate" translate="no">
+            {player.positionShort}
+          </div>
         </div>
       </div>
       <div className="match-card-meta">

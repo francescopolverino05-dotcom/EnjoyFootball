@@ -32,7 +32,9 @@ export default function ReportHeader({
         <div className="report-title">{pageTitle}</div>
       </div>
       <div className="match-meta-block">
-        <div className="match-teams-title">{matchTitle}</div>
+        <div className="match-teams-title notranslate" translate="no">
+          {matchTitle}
+        </div>
         <div>
           {competition} ({formatDate(matchDate)})
         </div>

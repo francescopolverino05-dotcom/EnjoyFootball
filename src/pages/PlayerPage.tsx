@@ -78,9 +78,16 @@ export default function PlayerPage() {
           </div>
 
           <div className="player-profile-body">
-            <h1 className="player-profile-name">{player.displayName}</h1>
+            <h1 className="player-profile-name notranslate" translate="no">
+              {player.displayName}
+            </h1>
             <div className="player-profile-meta">
-              <span className="player-profile-position">{player.positionShort}</span>
+              <span
+                className="player-profile-position notranslate"
+                translate="no"
+              >
+                {player.positionShort}
+              </span>
               <span className={`squad-badge ${squadClass}`}>{squadLabel}</span>
             </div>
 
