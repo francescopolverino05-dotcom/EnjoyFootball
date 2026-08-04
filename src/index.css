@@ -48,12 +48,48 @@ button {
 
 .app-topbar {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  gap: 12px;
   max-width: 1100px;
   margin: 0 auto;
   padding: calc(12px + var(--safe-top)) calc(20px + var(--safe-right)) 0
     calc(20px + var(--safe-left));
+}
+
+.app-nav {
+  display: inline-flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.app-nav-link {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--text-gray);
+  padding: 8px 12px;
+  border-radius: 6px;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  transition: var(--transition-standard);
+}
+
+.app-nav-link:hover {
+  color: var(--napoli-blue-dark);
+  background: #fff;
+}
+
+.app-nav-link.active {
+  color: #ffffff;
+  background: var(--napoli-blue-dark);
+}
+
+.app-nav-link:focus-visible {
+  outline: 2px solid var(--napoli-blue);
+  outline-offset: 2px;
 }
 
 .lang-toggle {
@@ -877,6 +913,162 @@ button {
   color: #1e40af;
 }
 
+.section-title-link {
+  color: inherit;
+}
+
+.section-title-link:hover {
+  color: var(--napoli-blue-dark);
+}
+
+.player-card-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.player-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  flex-shrink: 0;
+  background: var(--border-light);
+  border: 2px solid var(--border-color);
+}
+
+.player-avatar-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+  background: var(--napoli-blue-dark);
+  border-color: var(--napoli-blue-dark);
+}
+
+.player-card-info {
+  min-width: 0;
+}
+
+.player-card-position {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-gray);
+  margin-top: 2px;
+}
+
+.squad-badge {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 2px;
+  background: #e5e7eb;
+  color: var(--text-gray);
+}
+
+.squad-badge.primavera {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.squad-badge.u18 {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.player-profile {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 28px;
+  align-items: start;
+  padding: 8px 4px 16px;
+}
+
+.player-profile-portrait {
+  display: flex;
+  justify-content: center;
+}
+
+.player-portrait {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  background: #fff;
+}
+
+.player-portrait-initials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 800;
+  color: #ffffff;
+  background: var(--napoli-blue-dark);
+  border-color: var(--napoli-blue-dark);
+}
+
+.player-profile-name {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--napoli-blue-dark);
+  margin: 0 0 10px;
+  letter-spacing: 0.01em;
+}
+
+.player-profile-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.player-profile-position {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-gray);
+}
+
+.player-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+
+.player-stat {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 12px 14px;
+}
+
+.player-stat dt {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+
+.player-stat dd {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
 .video-section {
   margin-top: 8px;
 }
@@ -1652,6 +1844,21 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .player-profile {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .player-profile-meta {
+    justify-content: center;
+  }
+
+  .player-stats-grid {
+    width: 100%;
+    text-align: left;
+  }
+
   .clips-layout {
     grid-template-columns: 1fr;
   }
@@ -1701,7 +1908,8 @@ button {
     padding: 22px;
   }
 
-  .lang-btn {
+  .lang-btn,
+  .app-nav-link {
     min-height: 44px;
   }
 }

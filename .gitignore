@@ -77,3 +77,6 @@ trainings/**/analysis/*.MOV
 
 # Local Vimeo drag-drop staging (do not commit)
 Vimeo upload*/
+
+# CamScanner / WhatsApp drop zone (do not commit)
+trainings/_inbox/

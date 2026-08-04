@@ -1,6 +1,10 @@
+import { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { getAllMatches } from '../data/matches';
+import { getAllPlayers } from '../data/players';
 import { getAllTrainings } from '../data/trainings';
 import MatchCard from '../components/MatchCard';
+import PlayerCard from '../components/PlayerCard';
 import TrainingCard from '../components/TrainingCard';
 import ReportHeader from '../components/ReportHeader';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -8,7 +12,18 @@ import { useLanguage } from '../i18n/LanguageContext';
 export default function HomePage() {
   const matches = getAllMatches();
   const trainings = getAllTrainings();
+  const players = getAllPlayers();
   const { t } = useLanguage();
+  const location = useLocation();
+
+  useEffect(() => {
+    const id = location.hash.replace(/^#/, '');
+    if (!id) return;
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [location.hash]);
 
   return (
     <div className="app-shell">
@@ -26,7 +41,11 @@ export default function HomePage() {
         </div>
       </div>
 
-      <section className="home-section" aria-labelledby="home-matches-heading">
+      <section
+        id="matches"
+        className="home-section"
+        aria-labelledby="home-matches-heading"
+      >
         <div className="section-title" id="home-matches-heading">
           {t('matches')} ({matches.length})
         </div>
@@ -41,7 +60,11 @@ export default function HomePage() {
         )}
       </section>
 
-      <section className="home-section" aria-labelledby="home-trainings-heading">
+      <section
+        id="trainings"
+        className="home-section"
+        aria-labelledby="home-trainings-heading"
+      >
         <div className="section-title" id="home-trainings-heading">
           {t('trainings')} ({trainings.length})
         </div>
@@ -55,6 +78,24 @@ export default function HomePage() {
             ))}
           </div>
         )}
+      </section>
+
+      <section
+        id="players"
+        className="home-section"
+        aria-labelledby="home-players-heading"
+      >
+        <div className="section-title" id="home-players-heading">
+          <Link to="/players" className="section-title-link">
+            {t('players')} ({players.length})
+          </Link>
+        </div>
+        <p className="home-section-hint">{t('playersHint')}</p>
+        <div className="match-grid player-grid">
+          {players.map((player) => (
+            <PlayerCard key={player.slug} player={player} />
+          ))}
+        </div>
       </section>
     </div>
   );
