@@ -123,74 +123,6 @@
           "training",
           "session"
         ]
-      },
-      {
-        "id": "vimeo-1215230855",
-        "title": {
-          "en": "Gk3",
-          "it": "Gk3"
-        },
-        "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
-        },
-        "videoFile": "https://vimeo.com/1215230855",
-        "tags": [
-          "vimeo",
-          "training",
-          "session"
-        ]
-      },
-      {
-        "id": "vimeo-1215230837",
-        "title": {
-          "en": "GK1",
-          "it": "GK1"
-        },
-        "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
-        },
-        "videoFile": "https://vimeo.com/1215230837",
-        "tags": [
-          "vimeo",
-          "training",
-          "session"
-        ]
-      },
-      {
-        "id": "vimeo-1215230802",
-        "title": {
-          "en": "GK2",
-          "it": "GK2"
-        },
-        "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
-        },
-        "videoFile": "https://vimeo.com/1215230802",
-        "tags": [
-          "vimeo",
-          "training",
-          "session"
-        ]
-      },
-      {
-        "id": "vimeo-1215230801",
-        "title": {
-          "en": "Gk4",
-          "it": "Gk4"
-        },
-        "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
-        },
-        "videoFile": "https://vimeo.com/1215230801",
-        "tags": [
-          "vimeo",
-          "training",
-          "session"
-        ]
       }
     ]
   },
@@ -199,6 +131,7 @@
   "vimeo": {
     "folderId": "30099274",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099274",
-    "lastSyncedAt": "2026-08-04T09:18:19.794Z"
+    "skipNameRegex": "^(gk|goalkeeper)",
+    "lastSyncedAt": "2026-08-04T09:30:18.264Z"
   }
 }

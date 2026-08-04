@@ -22,6 +22,7 @@
  *   - empty Vimeo folder → save folderId only; never clear video.parts / fullSession
  *   - non-empty sync merges: update/add Vimeo parts, keep local (non-Vimeo) parts
  *   - non-Vimeo PDF/markdown in analysisVideos are preserved
+ *   - optional training.json → vimeo.skipNameRegex skips matching video names (e.g. "^(gk|goalkeeper)")
  */
 
 import { existsSync, readFileSync, writeFileSync } from 'fs';
@@ -498,6 +499,10 @@ Upload videos into the Vimeo folder, then re-run:
     return;
   }
 
+  const skipNameRegex = training.vimeo?.skipNameRegex
+    ? new RegExp(String(training.vimeo.skipNameRegex), 'i')
+    : null;
+
   const prevParts = training.video?.parts || [];
   const prevByUrl = new Map(
     [...prevParts, ...(training.analysisVideos || [])]
@@ -513,6 +518,10 @@ Upload videos into the Vimeo folder, then re-run:
 
   for (const { video } of listed) {
     const name = video.name || 'Untitled';
+    if (skipNameRegex && skipNameRegex.test(name)) {
+      console.log(`  skip (skipNameRegex) ← ${name}`);
+      continue;
+    }
     const link = videoLink(video);
     const id = videoNumericId(video);
     const dur = Number(video.duration) || 0;

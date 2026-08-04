@@ -1,0 +1,53 @@
+{
+  "id": "2026-08-04_martedi",
+  "slug": "2026-08-04_martedi",
+  "date": "2026-08-04",
+  "title": {
+    "en": "Tuesday training — Partitella Blu vs Rosa",
+    "it": "Martedì — Partitella Blu vs Rosa"
+  },
+  "focus": {
+    "en": "Partitella 1-3-4-2-1 vs 1-4-2-3-1",
+    "it": "Partitella 1-3-4-2-1 vs 1-4-2-3-1"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Week 2 (Sett. 2 03/08) — Martedì. Videos hosted on Vimeo (folder Martedi).",
+    "it": "Settimana 2 (Sett. 2 03/08) — Martedì. Video su Vimeo (cartella Martedi)."
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1215422798",
+    "notes": {
+      "en": "Full session (Partitella Blu vs Rosa) on Vimeo.",
+      "it": "Sessione (Partitella Blu vs Rosa) su Vimeo."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1215422798",
+        "title": {
+          "en": "Partitella Blu v Rosa (1-3-4-2-1 v 1-4-2-3-1)",
+          "it": "Partitella Blu v Rosa (1-3-4-2-1 v 1-4-2-3-1)"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215422798",
+        "tags": [
+          "vimeo",
+          "training",
+          "session",
+          "partitella",
+          "week-2"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "vimeo": {
+    "folderId": "30099293",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30099293",
+    "lastSyncedAt": "2026-08-04T09:30:16.558Z"
+  }
+}
