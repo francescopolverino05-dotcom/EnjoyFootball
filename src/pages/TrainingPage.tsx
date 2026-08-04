@@ -12,8 +12,8 @@ export default function TrainingPage() {
   if (!session) {
     return (
       <div className="app-shell">
-        <Link to="/" className="back-link">
-          {t('backToHome')}
+        <Link to="/trainings" className="back-link">
+          {t('backToTrainings')}
         </Link>
         <div className="report-page">
           <p>{t('trainingNotFound')}</p>
@@ -27,8 +27,8 @@ export default function TrainingPage() {
 
   return (
     <div className="app-shell">
-      <Link to="/" className="back-link">
-        {t('backToHome')}
+      <Link to="/trainings" className="back-link">
+        {t('backToTrainings')}
       </Link>
 
       <div className="report-page">

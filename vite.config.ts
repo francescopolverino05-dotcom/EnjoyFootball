@@ -37,13 +37,15 @@ function mediaLibrariesPlugin(): Plugin {
     next: Connect.NextFunction
   ) {
     const url = req.url?.split('?')[0] ?? '';
-    const lib = MEDIA_LIBS.find(
-      (name) => url === `/${name}` || url.startsWith(`/${name}/`)
-    );
+    // Only intercept media file paths (/matches/<slug>/...), not the
+    // SPA list routes /matches and /trainings (exact or trailing slash).
+    const lib = MEDIA_LIBS.find((name) => url.startsWith(`/${name}/`));
     if (!lib) return next();
 
     const root = roots[lib];
     const rel = decodeURIComponent(url.slice(lib.length + 2));
+    if (!rel || rel.endsWith('/')) return next();
+
     const candidate = normalize(join(root, rel));
     if (!candidate.startsWith(root + sep) && candidate !== root) {
       res.statusCode = 403;
@@ -61,9 +63,7 @@ function mediaLibrariesPlugin(): Plugin {
     }
 
     if (st.isDirectory()) {
-      res.statusCode = 404;
-      res.end('Not found');
-      return;
+      return next();
     }
 
     // Confirm symlink targets resolve (local Desktop media) before streaming.

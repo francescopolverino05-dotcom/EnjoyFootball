@@ -3,31 +3,19 @@ import { useLanguage } from '../i18n/LanguageContext';
 
 /**
  * Top nav is always Home | Matches | Training | Players.
- * Active state follows the current route/section; secondary page tabs
- * (match StatsDashboard vs training TrainingDashboard) stay scoped
- * to their own pages and are not shown here.
+ * Active state follows the current route; detail pages light up their
+ * parent section (match → Matches, training → Training, player → Players).
  */
 export default function AppNav() {
   const { t } = useLanguage();
   const location = useLocation();
   const path = location.pathname;
-  const hash = location.hash.replace(/^#/, '');
 
-  const onHome = path === '/' || path === '';
-  const onMatch = path.startsWith('/match/');
-  const onTraining = path.startsWith('/training/');
-  const onPlayers = path === '/players' || path.startsWith('/players/');
-
-  const sectionHashes = new Set(['matches', 'trainings', 'players']);
-  const onHomeSection = onHome && sectionHashes.has(hash);
-
-  const homeActive = onHome && !onHomeSection;
-  const matchesActive =
-    onMatch || (onHome && hash === 'matches');
+  const homeActive = path === '/' || path === '';
+  const matchesActive = path === '/matches' || path.startsWith('/match/');
   const trainingActive =
-    onTraining || (onHome && hash === 'trainings');
-  const playersActive =
-    onPlayers || (onHome && hash === 'players');
+    path === '/trainings' || path.startsWith('/training/');
+  const playersActive = path === '/players' || path.startsWith('/players/');
 
   return (
     <nav className="app-nav" aria-label={t('navAria')}>
@@ -41,7 +29,7 @@ export default function AppNav() {
         {t('navHome')}
       </NavLink>
       <NavLink
-        to="/#matches"
+        to="/matches"
         className={() =>
           matchesActive ? 'app-nav-link active' : 'app-nav-link'
         }
@@ -49,7 +37,7 @@ export default function AppNav() {
         {t('matches')}
       </NavLink>
       <NavLink
-        to="/#trainings"
+        to="/trainings"
         className={() =>
           trainingActive ? 'app-nav-link active' : 'app-nav-link'
         }

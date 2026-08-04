@@ -15,7 +15,7 @@ export default function MatchPage() {
   if (!match) {
     return (
       <div className="app-shell">
-        <Link to="/" className="back-link">
+        <Link to="/matches" className="back-link">
           {t('backToMatches')}
         </Link>
         <div className="report-page">
@@ -29,7 +29,7 @@ export default function MatchPage() {
 
   return (
     <div className="app-shell">
-      <Link to="/" className="back-link">
+      <Link to="/matches" className="back-link">
         {t('backToMatches')}
       </Link>
 
