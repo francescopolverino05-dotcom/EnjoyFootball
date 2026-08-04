@@ -13,9 +13,10 @@ export default function HomePage() {
           matchDate={new Date().toISOString().slice(0, 10)}
           competition={t('season')}
         />
-        <div className="home-hero">
-          <h1>{t('homeComingSoonTitle')}</h1>
-          <p>{t('homeComingSoonBody')}</p>
+        <div className="home-hero home-credit">
+          <p className="home-credit-label">{t('homeCreatedBy')}</p>
+          <h1 className="home-credit-name">{t('homeCreatorName')}</h1>
+          <p className="home-analyst-credit">{t('homeCreatorBrand')}</p>
         </div>
       </div>
     </div>

@@ -771,8 +771,29 @@ button {
   margin: 0 auto;
 }
 
+.home-credit {
+  padding: 56px 20px 48px;
+}
+
+.home-credit-label {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-gray);
+}
+
+.home-hero .home-credit-name {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  color: var(--napoli-blue-dark);
+}
+
 .home-analyst-credit {
-  margin-top: 18px !important;
+  margin-top: 14px !important;
   font-size: 14px !important;
   font-weight: 700;
   color: var(--napoli-blue-dark) !important;

@@ -20,6 +20,9 @@ const dictionaries = {
     homeComingSoonTitle: 'Coming soon',
     homeComingSoonBody:
       'Home content will appear here. Use Matches, Training, and Players in the nav for now.',
+    homeCreatedBy: 'Created by',
+    homeCreatorName: 'Francesco Polverino',
+    homeCreatorBrand: 'Enjoy Football',
     analystCredit: 'All analysis completed by Francesco Polverino',
     matches: 'Matches',
     matchesPageTitle: 'MATCHES',
@@ -138,6 +141,9 @@ const dictionaries = {
     homeComingSoonTitle: 'Prossimamente',
     homeComingSoonBody:
       'I contenuti della home appariranno qui. Per ora usa Partite, Allenamenti e Giocatori nella navigazione.',
+    homeCreatedBy: 'Creato da',
+    homeCreatorName: 'Francesco Polverino',
+    homeCreatorBrand: 'Enjoy Football',
     analystCredit: 'Tutte le analisi sono a cura di Francesco Polverino',
     matches: 'Partite',
     matchesPageTitle: 'PARTITE',
