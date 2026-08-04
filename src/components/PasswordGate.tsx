@@ -36,14 +36,14 @@ export default function PasswordGate({ children }: PasswordGateProps) {
     locale === 'it'
       ? {
           title: 'Accesso riservato',
-          subtitle: 'FPFootPortal — inserisci la password',
+          subtitle: 'Enjoy Football — inserisci la password',
           label: 'Password',
           submit: 'Entra',
           error: 'Password non corretta',
         }
       : {
           title: 'Restricted access',
-          subtitle: 'FPFootPortal — enter the password',
+          subtitle: 'Enjoy Football — enter the password',
           label: 'Password',
           submit: 'Enter',
           error: 'Incorrect password',
@@ -62,7 +62,7 @@ export default function PasswordGate({ children }: PasswordGateProps) {
   return (
     <div className="auth-gate">
       <form className="auth-card" onSubmit={onSubmit}>
-        <div className="auth-brand">FPFootPortal</div>
+        <div className="auth-brand">Enjoy Football</div>
         <h1 className="auth-title">{copy.title}</h1>
         <p className="auth-subtitle">{copy.subtitle}</p>
         <label className="auth-label" htmlFor="sscn-password">

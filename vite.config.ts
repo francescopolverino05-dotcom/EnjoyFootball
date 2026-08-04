@@ -99,7 +99,7 @@ function mediaLibrariesPlugin(): Plugin {
 }
 
 export default defineConfig({
-  base: process.env.GITHUB_PAGES === 'true' ? '/FPFootPortal/' : '/',
+  base: process.env.GITHUB_PAGES === 'true' ? '/EnjoyFootball/' : '/',
   plugins: [react(), mediaLibrariesPlugin()],
   publicDir: 'public',
   resolve: {

@@ -54,8 +54,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     document.documentElement.lang = locale === 'en' ? 'en-GB' : 'it';
     document.title =
       locale === 'en'
-        ? 'FPFootPortal — Match & Training Analysis'
-        : 'FPFootPortal — Analisi Partite e Allenamenti';
+        ? 'Enjoy Football — Match & Training Analysis'
+        : 'Enjoy Football — Analisi Partite e Allenamenti';
   }, [locale]);
 
   const value = useMemo<LanguageContextValue>(
