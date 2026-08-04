@@ -1,14 +1,33 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 
+/**
+ * Top nav is always Home | Matches | Training | Players.
+ * Active state follows the current route/section; secondary page tabs
+ * (match StatsDashboard vs training TrainingDashboard) stay scoped
+ * to their own pages and are not shown here.
+ */
 export default function AppNav() {
   const { t } = useLanguage();
   const location = useLocation();
+  const path = location.pathname;
   const hash = location.hash.replace(/^#/, '');
-  const onHome = location.pathname === '/' || location.pathname === '';
+
+  const onHome = path === '/' || path === '';
+  const onMatch = path.startsWith('/match/');
+  const onTraining = path.startsWith('/training/');
+  const onPlayers = path === '/players' || path.startsWith('/players/');
 
   const sectionHashes = new Set(['matches', 'trainings', 'players']);
-  const onSection = onHome && sectionHashes.has(hash);
+  const onHomeSection = onHome && sectionHashes.has(hash);
+
+  const homeActive = onHome && !onHomeSection;
+  const matchesActive =
+    onMatch || (onHome && hash === 'matches');
+  const trainingActive =
+    onTraining || (onHome && hash === 'trainings');
+  const playersActive =
+    onPlayers || (onHome && hash === 'players');
 
   return (
     <nav className="app-nav" aria-label={t('navAria')}>
@@ -16,7 +35,7 @@ export default function AppNav() {
         to="/"
         end
         className={() =>
-          onHome && !onSection ? 'app-nav-link active' : 'app-nav-link'
+          homeActive ? 'app-nav-link active' : 'app-nav-link'
         }
       >
         {t('navHome')}
@@ -24,7 +43,7 @@ export default function AppNav() {
       <NavLink
         to="/#matches"
         className={() =>
-          onHome && hash === 'matches' ? 'app-nav-link active' : 'app-nav-link'
+          matchesActive ? 'app-nav-link active' : 'app-nav-link'
         }
       >
         {t('matches')}
@@ -32,18 +51,19 @@ export default function AppNav() {
       <NavLink
         to="/#trainings"
         className={() =>
-          onHome && hash === 'trainings' ? 'app-nav-link active' : 'app-nav-link'
+          trainingActive ? 'app-nav-link active' : 'app-nav-link'
         }
       >
         {t('navTraining')}
       </NavLink>
-      <NavLink to="/players" className={navClass}>
+      <NavLink
+        to="/players"
+        className={() =>
+          playersActive ? 'app-nav-link active' : 'app-nav-link'
+        }
+      >
         {t('players')}
       </NavLink>
     </nav>
   );
-}
-
-function navClass({ isActive }: { isActive: boolean }): string {
-  return isActive ? 'app-nav-link active' : 'app-nav-link';
 }

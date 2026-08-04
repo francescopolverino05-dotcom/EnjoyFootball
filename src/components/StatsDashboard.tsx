@@ -21,6 +21,7 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
   const [activeTab, setActiveTab] = useState<TabId>('dynamics');
   const { t, L } = useLanguage();
 
+  // Match-only tabs — never include training tabs (Full Session / Training Design).
   const tabs: [TabId, 'tabDynamics' | 'tabTeamStats' | 'tabGk' | 'tabFullMatch' | 'tabClips' | 'tabVideoAnalysis'][] = [
     ['dynamics', 'tabDynamics'],
     ['teamstats', 'tabTeamStats'],
