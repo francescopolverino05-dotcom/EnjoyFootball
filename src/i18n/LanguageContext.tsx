@@ -54,8 +54,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     document.documentElement.lang = locale === 'en' ? 'en-GB' : 'it';
     document.title =
       locale === 'en'
-        ? 'SSC Napoli Primavera — Match Analysis'
-        : 'SSC Napoli Primavera — Analisi Partite';
+        ? 'FPFootPortal — Match & Training Analysis'
+        : 'FPFootPortal — Analisi Partite e Allenamenti';
   }, [locale]);
 
   const value = useMemo<LanguageContextValue>(

@@ -21,9 +21,9 @@ export default function ReportHeader({
   return (
     <div className="header-container">
       <div className="brand-group">
-        <img src={NAPOLI_LOGO} alt="SSC Napoli Logo" className="napoli-logo" />
+        <img src={NAPOLI_LOGO} alt="FPFootPortal" className="napoli-logo" />
         <div className="brand-block">
-          <div className="brand-title-text">SSC Napoli</div>
+          <div className="brand-title-text">FPFootPortal</div>
           <div className="brand-sub-text">Primavera</div>
         </div>
       </div>
