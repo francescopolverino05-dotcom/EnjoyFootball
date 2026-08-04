@@ -1,11 +1,12 @@
 {
-  "rule": "23 Excel-complete + Magliano (179 cm) + 5 Excel-incomplete anthropometrics (Baridó/Marotta/Pugliese: height+weight TBD; Pereyra height 176 from TM weight TBD; Prisco height 165 from TM weight TBD) + 2 TBD identity (Baudot Enzo LB, Kebe Lamine CB). All squad Primavera. Mastari Riyad removed (U18).",
+  "rule": "23 Excel-complete + Magliano (179 cm) + 6 Excel-incomplete anthropometrics (Baridó/Marotta/Pugliese/Pengue: height+weight TBD; Pereyra height 176 from TM weight TBD; Prisco height 165 from TM weight TBD) + 2 TBD identity (Baudot Enzo LB, Kebe Lamine CB). All squad Primavera. Mastari Riyad removed (U18).",
   "sources": [
     "DATI ANTROPOMETRICI.xlsx",
     "https://www.transfermarkt.it/napoli-primavera/kader/verein/12819",
-    "https://www.transfermarkt.it/napoli-under-18/kader/verein/100431/saison_id/2026"
+    "https://www.transfermarkt.it/napoli-under-18/kader/verein/100431/saison_id/2026",
+    "https://www.transfermarkt.com/salvatore-pengue/profil/spieler/1446537"
   ],
-  "tmMatchedCount": 28,
+  "tmMatchedCount": 29,
   "stillMissingTm": [
     "Baudot Enzo",
     "Kebe Lamine"
@@ -19,6 +20,7 @@
     "Kebe Lamine",
     "Baridó Francisco Martin",
     "Marotta Gabriele",
+    "Pengue Salvatore",
     "Pereyra Alvarez Milton Agustin",
     "Prisco Vincenzo",
     "Pugliese Claudio"
@@ -400,6 +402,24 @@
       "photoMissingReason": "Transfermarkt uses default silhouette; no verified public portrait found."
     },
     {
+      "displayName": "Pengue Salvatore",
+      "weightKg": null,
+      "heightCm": null,
+      "positionShort": "CF",
+      "age": 17,
+      "birthDate": "13/05/2009",
+      "foot": "Right",
+      "squad": "Primavera",
+      "tmMatched": true,
+      "bmi": null,
+      "photo": null,
+      "photoPath": null,
+      "photoUrl": null,
+      "photoSource": null,
+      "tmProfile": "https://www.transfermarkt.com/salvatore-pengue/profil/spieler/1446537",
+      "photoMissingReason": "Transfermarkt uses default silhouette; height/weight not listed. Added with TM identity fields; anthropometrics TBD."
+    },
+    {
       "displayName": "Prisco Vincenzo",
       "weightKg": null,
       "heightCm": 165,
@@ -536,7 +556,7 @@
     }
   ],
   "photoNotes": {
-    "coverage": "3/30 verified portraits downloaded to public/players/",
+    "coverage": "3/31 verified portraits downloaded to public/players/",
     "strategy": "Prefer SSC Napoli/academy/matchday/official DB portraits; skip TM defaults and unverified same-name people.",
     "found": [
       {
@@ -575,6 +595,11 @@
         "displayName": "Marotta Gabriele",
         "positionShort": "CB",
         "note": "TM: CB left, DOB 21/03/2008, Napoli Primavera. Height/weight not listed."
+      },
+      {
+        "displayName": "Pengue Salvatore",
+        "positionShort": "CF",
+        "note": "TM: CF right, DOB 13/05/2009 (17), Napoli Primavera. Height/weight/photo not listed (silhouette)."
       },
       {
         "displayName": "Pereyra Alvarez Milton Agustin",
