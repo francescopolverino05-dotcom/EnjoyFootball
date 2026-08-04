@@ -2728,6 +2728,24 @@
         "analysis",
         "report"
       ]
+    },
+    {
+      "id": "session-plan-2026-08-01",
+      "title": {
+        "en": "Session / matchday plan — Sat 1 Aug",
+        "it": "Piano seduta / matchday — Sab 1 ago"
+      },
+      "description": {
+        "en": "Primavera 2 plan: mobility, possesso 9v9+2 jolly, amichevole vs U18 (2×45'), lavoro metabolico.",
+        "it": "Piano Primavera 2: mobilità, possesso 9v9+2 jolly, amichevole vs U18 (2×45'), lavoro metabolico."
+      },
+      "videoFile": "Session_Plan_2026-08-01.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "matchday"
+      ]
     }
   ]
 }

@@ -16,12 +16,14 @@
  *   - "post match" / "analysis" / "analisi" → analysisVideos
  *   - otherwise → clips (section from [Build_up] in title, tags, or subfolder name)
  *
- * Training classification:
- *   - all folder videos → video.parts (Full Session tab)
- *   - largest / "full session" name → also video.fullSession
+ * Training classification (by video / parent-folder name):
+ *   - "clip" / "clips" / timestamp clip names → clips (Clips tab)
+ *   - "video analysis" / "analysis" / "analisi" → analysisVideos (Video Analysis tab)
+ *   - otherwise → video.parts (Full Session tab); largest / "full session" → also fullSession
  *   - empty Vimeo folder → save folderId only; never clear video.parts / fullSession
- *   - non-empty sync merges: update/add Vimeo parts, keep local (non-Vimeo) parts
+ *   - non-empty sync merges: update/add Vimeo entries, keep local (non-Vimeo) parts/clips/docs
  *   - non-Vimeo PDF/markdown in analysisVideos are preserved
+ *   - trainingDesign (session-plan PDFs) is left untouched
  *   - optional training.json → vimeo.skipNameRegex skips matching video names (e.g. "^(gk|goalkeeper)")
  */
 
@@ -299,6 +301,23 @@ function isFullSessionName(name) {
   );
 }
 
+/** Classify a training Vimeo item into clips / analysis / full-session parts. */
+function classifyTrainingVideo(name, parentFolderName = '') {
+  const hay = `${name || ''} ${parentFolderName || ''}`.toLowerCase();
+  if (/\bclips?\b/.test(hay) || isClipStyleName(name)) {
+    return 'clip';
+  }
+  if (/video\s*analysis|\banalisi\b|\banalysis\b/.test(hay)) {
+    return 'analysis';
+  }
+  return 'session';
+}
+
+function clipNumberFromName(name) {
+  const m = String(name || '').match(/\bclip\s*(\d+)\b/i);
+  return m ? Number(m[1]) : 0;
+}
+
 function defaultVimeoFolderUrl(folderId) {
   return `https://vimeo.com/user/170593333/folder/${folderId}`;
 }
@@ -504,19 +523,23 @@ Upload videos into the Vimeo folder, then re-run:
     : null;
 
   const prevParts = training.video?.parts || [];
+  const prevClips = training.clips || [];
+  const prevAnalysis = training.analysisVideos || [];
   const prevByUrl = new Map(
-    [...prevParts, ...(training.analysisVideos || [])]
+    [...prevParts, ...prevClips, ...prevAnalysis]
       .filter((a) => a?.videoFile)
       .map((a) => [normalizeVideoUrl(a.videoFile), a])
   );
 
   const sessionParts = [];
+  const clipEntries = [];
+  const analysisEntries = [];
   let fullSessionUrl = null;
   let fullSessionDuration = -1;
   let fullSessionName = '';
   let namedFullSession = false;
 
-  for (const { video } of listed) {
+  for (const { video, parentFolderName } of listed) {
     const name = video.name || 'Untitled';
     if (skipNameRegex && skipNameRegex.test(name)) {
       console.log(`  skip (skipNameRegex) ← ${name}`);
@@ -527,6 +550,41 @@ Upload videos into the Vimeo folder, then re-run:
     const dur = Number(video.duration) || 0;
     const title = humanizeTrainingTitle(name);
     const prev = prevByUrl.get(normalizeVideoUrl(link));
+    const bucket = classifyTrainingVideo(name, parentFolderName);
+
+    if (bucket === 'clip') {
+      const n = clipNumberFromName(name);
+      const section = prev?.section || 'other';
+      clipEntries.push({
+        id: prev?.id || `vimeo-${id}`,
+        title: prev?.title || title,
+        comments: prev?.comments || title,
+        minute: prev?.minute ?? n,
+        second: prev?.second ?? 0,
+        videoFile: link,
+        section,
+        labels: prev?.labels || [section],
+        tags: prev?.tags || ['vimeo', 'training', 'clip'],
+        ...(prev?.localFile ? { localFile: prev.localFile } : {}),
+      });
+      console.log(`  clip ← ${name} (${dur}s)`);
+      continue;
+    }
+
+    if (bucket === 'analysis') {
+      analysisEntries.push({
+        id: prev?.id || `vimeo-${id}`,
+        title: prev?.title || title,
+        description: prev?.description || {
+          en: 'Synced from Vimeo folder.',
+          it: 'Sincronizzato dalla cartella Vimeo.',
+        },
+        videoFile: link,
+        tags: prev?.tags || ['vimeo', 'analysis'],
+      });
+      console.log(`  analysis ← ${name} (${dur}s)`);
+      continue;
+    }
 
     const entry = {
       id: prev?.id || `vimeo-${id}`,
@@ -559,48 +617,81 @@ Upload videos into the Vimeo folder, then re-run:
     }
   }
 
-  const vimeoTitleKeys = new Set(sessionParts.map(partTitleKey).filter(Boolean));
-
-  // Merge: keep previous order for known Vimeo URLs, append new Vimeo, then
-  // preserve local (non-Vimeo) parts that were not replaced by a matching Vimeo URL/title.
-  const ordered = [];
-  const seenUrls = new Set();
-  for (const prev of prevParts) {
-    const url = normalizeVideoUrl(prev.videoFile);
-    const next = sessionParts.find((a) => normalizeVideoUrl(a.videoFile) === url);
-    if (next) {
-      ordered.push(next);
-      seenUrls.add(normalizeVideoUrl(next.videoFile));
+  function mergeVimeoWithLocal(prevList, vimeoList, { preferTitleMatch = false } = {}) {
+    const vimeoTitleKeys = new Set(vimeoList.map(partTitleKey).filter(Boolean));
+    const ordered = [];
+    const seenUrls = new Set();
+    for (const prev of prevList) {
+      const url = normalizeVideoUrl(prev.videoFile);
+      const next = vimeoList.find((a) => normalizeVideoUrl(a.videoFile) === url);
+      if (next) {
+        ordered.push(next);
+        seenUrls.add(normalizeVideoUrl(next.videoFile));
+      }
     }
-  }
-  for (const a of sessionParts) {
-    const url = normalizeVideoUrl(a.videoFile);
-    if (!seenUrls.has(url)) {
-      ordered.push(a);
+    for (const a of vimeoList) {
+      const url = normalizeVideoUrl(a.videoFile);
+      if (!seenUrls.has(url)) {
+        ordered.push(a);
+        seenUrls.add(url);
+      }
+    }
+    let keptLocal = 0;
+    for (const prev of prevList) {
+      if (isVimeoVideoFile(prev.videoFile)) continue;
+      const url = normalizeVideoUrl(prev.videoFile);
+      if (seenUrls.has(url)) continue;
+      if (preferTitleMatch) {
+        const titleKey = partTitleKey(prev);
+        if (titleKey && vimeoTitleKeys.has(titleKey)) {
+          console.log(`  local replaced by Vimeo title match ← ${titleKey} (${prev.videoFile})`);
+          continue;
+        }
+      }
+      ordered.push(prev);
       seenUrls.add(url);
+      keptLocal += 1;
+      console.log(`  keep local ← ${prev.videoFile}`);
     }
+    return { ordered, keptLocal };
   }
 
-  let keptLocal = 0;
-  for (const prev of prevParts) {
-    if (isVimeoVideoFile(prev.videoFile)) continue;
-    const url = normalizeVideoUrl(prev.videoFile);
-    if (seenUrls.has(url)) continue;
-    const titleKey = partTitleKey(prev);
-    if (titleKey && vimeoTitleKeys.has(titleKey)) {
-      console.log(`  local replaced by Vimeo title match ← ${titleKey} (${prev.videoFile})`);
-      continue;
-    }
-    ordered.push(prev);
-    seenUrls.add(url);
-    keptLocal += 1;
-    console.log(`  keep local ← ${prev.videoFile}`);
-  }
+  const { ordered, keptLocal } = mergeVimeoWithLocal(prevParts, sessionParts, {
+    preferTitleMatch: true,
+  });
 
-  // Keep PDF/markdown (and any other non-Vimeo docs) on Video Analysis
+  // Drop stale Vimeo clips that moved into analysis/session; keep local (non-Vimeo) clips.
+  const sessionAndAnalysisUrls = new Set(
+    [...sessionParts, ...analysisEntries].map((a) => normalizeVideoUrl(a.videoFile))
+  );
+  const prevClipsForMerge = prevClips.filter((c) => {
+    if (!isVimeoVideoFile(c.videoFile)) return true;
+    const url = normalizeVideoUrl(c.videoFile);
+    if (sessionAndAnalysisUrls.has(url)) return false;
+    return true;
+  });
+  const { ordered: mergedClips, keptLocal: keptLocalClips } = mergeVimeoWithLocal(
+    prevClipsForMerge,
+    clipEntries
+  );
+  mergedClips.sort((a, b) => {
+    const an = a.minute * 60 + (a.second || 0);
+    const bn = b.minute * 60 + (b.second || 0);
+    if (an !== bn) return an - bn;
+    return String(a.title?.en || a.title || '').localeCompare(String(b.title?.en || b.title || ''));
+  });
+
+  // Keep PDF/markdown (and any other non-Vimeo docs) on Video Analysis.
+  // Session-plan PDFs live on trainingDesign (Training Design tab) — leave untouched.
   const preservedDocs = preserveNonVimeoAnalysis(training.analysisVideos);
-  training.analysisVideos = preservedDocs;
+  const analysisById = new Map();
+  for (const a of [...analysisEntries, ...preservedDocs]) analysisById.set(a.id, a);
+  training.analysisVideos = [...analysisById.values()];
+  if (!Array.isArray(training.trainingDesign)) {
+    training.trainingDesign = [];
+  }
 
+  training.clips = mergedClips;
   training.video = {
     ...(training.video || {}),
     parts: ordered,
@@ -634,7 +725,9 @@ Updated ${trainingPath}
   status:      ${training.status || '(unset)'}
   fullSession: ${training.video?.fullSession ? 'yes' : '(none)'}
   parts:       ${ordered.length} (${sessionParts.length} Vimeo + ${keptLocal} local)
-  analysis:    ${preservedDocs.length} (docs only)
+  clips:       ${mergedClips.length} (${clipEntries.length} Vimeo + ${keptLocalClips} local)
+  analysis:    ${training.analysisVideos.length} (${analysisEntries.length} Vimeo + ${preservedDocs.length} docs)
+  design:      ${(training.trainingDesign || []).length} (session plans, untouched)
 `);
 }
 
