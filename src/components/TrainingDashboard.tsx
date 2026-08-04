@@ -5,7 +5,6 @@ import { useLanguage } from '../i18n/LanguageContext';
 import {
   CLIP_LABELS,
   ANALYSIS_SECTION_ORDER,
-  HIDDEN_CLIP_SECTIONS,
   type ClipLabelId,
 } from '../i18n/clipLabels';
 import MatchMedia from './MatchMedia';
@@ -81,12 +80,6 @@ export default function TrainingDashboard({
   );
 }
 
-function isDocAnalysis(item: AnalysisVideo): boolean {
-  if (item.kind === 'pdf' || item.kind === 'markdown' || item.kind === 'docx') return true;
-  const src = item.videoFile || '';
-  return /\.pdf($|\?)/i.test(src) || /\.md($|\?)/i.test(src) || /\.docx($|\?)/i.test(src);
-}
-
 function FullSessionPanel({ session }: { session: TrainingSession }) {
   const { t, L } = useLanguage();
   const parts = session.video?.parts ?? [];
@@ -155,6 +148,12 @@ function FullSessionPanel({ session }: { session: TrainingSession }) {
   );
 }
 
+/** Training Vimeo sync defaults uncategorized clips to `other`; match UI hides that section. */
+const TRAINING_CLIP_SECTION_ORDER: ClipLabelId[] = [
+  ...ANALYSIS_SECTION_ORDER,
+  'other',
+];
+
 function TrainingClipsPanel({ session }: { session: TrainingSession }) {
   const { t, L } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
@@ -163,7 +162,8 @@ function TrainingClipsPanel({ session }: { session: TrainingSession }) {
     const map = new Map<ClipLabelId, VideoClip[]>();
     for (const clip of session.clips) {
       const key = (clip.section ?? clip.labels[0] ?? 'other') as ClipLabelId;
-      if (HIDDEN_CLIP_SECTIONS.has(key)) continue;
+      // Match Clips tab hides `goal`/`other`; training Vimeo sync defaults to `other`.
+      if (key === 'goal') continue;
       const list = map.get(key) ?? [];
       list.push(clip);
       map.set(key, list);
@@ -171,7 +171,7 @@ function TrainingClipsPanel({ session }: { session: TrainingSession }) {
     for (const list of map.values()) {
       list.sort((a, b) => clipSortKey(a) - clipSortKey(b));
     }
-    return ANALYSIS_SECTION_ORDER.filter((id) => (map.get(id)?.length ?? 0) > 0).map(
+    return TRAINING_CLIP_SECTION_ORDER.filter((id) => (map.get(id)?.length ?? 0) > 0).map(
       (id) => ({ id, clips: map.get(id)! })
     );
   }, [session.clips]);
@@ -345,11 +345,8 @@ function TrainingDesignPanel({ session }: { session: TrainingSession }) {
 }
 
 function TrainingAnalysisPanel({ session }: { session: TrainingSession }) {
-  // Session recordings live under Full Session (`video.parts`); this tab is for docs / analysis.
-  // Session-plan PDFs belong on Training Design (trainingDesign), not here.
-  const videos = (session.analysisVideos ?? [])
-    .filter(isDocAnalysis)
-    .filter((item) => !isSessionPlanDoc(item));
+  // Analyst videos + remaining docs (Vimeo analysis, md/docx). Session-plan PDFs → Training Design.
+  const videos = (session.analysisVideos ?? []).filter((item) => !isSessionPlanDoc(item));
 
   return (
     <DocMediaGrid
