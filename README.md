@@ -1,4 +1,4 @@
-# SSC Napoli Primavera — Analisi Partite
+# FPFootPortal — Analisi Partite
 
 Piattaforma web per report tecnici partita U19/U18: statistiche, formazioni, video completo e clip di analisi — tutto in un unico posto per lo staff.
 
@@ -14,7 +14,7 @@ Apri [http://localhost:5173](http://localhost:5173)
 ## Struttura repository
 
 ```
-SSCN-Primavera/
+FPFootPortal/  (local folder may still be SSCN-Primavera)
 ├── matches/                          ← una cartella per ogni partita (visibile su GitHub)
 │   └── YYYY-MM-DD_tipo-squadre/
 │       ├── match.json                ← dati e statistiche

@@ -19,7 +19,7 @@ import { resolveGitHubToken } from './load-env.mjs';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, '..');
 const OWNER = 'francescopolverino05-dotcom';
-const REPO = 'SSCN-Primavera';
+const REPO = 'FPFootPortal';
 
 function parseArgs(argv) {
   const args = {};
