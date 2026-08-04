@@ -3,7 +3,7 @@
     {
       "slug": "anic-ivan",
       "displayName": "Anic Ivan",
-      "positionShort": "DM",
+      "positionShort": "AM",
       "age": 19,
       "birthDate": "16/01/2007",
       "foot": "Right",
@@ -120,7 +120,7 @@
     {
       "slug": "esposito-luigi",
       "displayName": "Esposito Luigi",
-      "positionShort": "RW",
+      "positionShort": "AM",
       "age": 18,
       "birthDate": "19/06/2008",
       "foot": "Left",
@@ -133,7 +133,7 @@
     {
       "slug": "favicchio-elia",
       "displayName": "Favicchio Elia",
-      "positionShort": "LW",
+      "positionShort": "AM",
       "age": 18,
       "birthDate": "12/03/2008",
       "foot": "Right",
@@ -289,7 +289,7 @@
     {
       "slug": "prisco-vincenzo",
       "displayName": "Prisco Vincenzo",
-      "positionShort": "DM",
+      "positionShort": "CM",
       "age": 17,
       "birthDate": "07/08/2008",
       "foot": "Left",
