@@ -23,6 +23,41 @@ const DEFENDERS = new Set(['CB', 'LB', 'RB', 'LWB', 'RWB', 'DF']);
 const MIDFIELDERS = new Set(['CM', 'DM', 'AM', 'RM', 'LM', 'WM', 'MF']);
 const FORWARDS = new Set(['CF', 'ST', 'LW', 'RW', 'SS', 'FW']);
 
+/** Preferred order within each category so same roles stay contiguous. */
+const POSITION_SHORT_ORDER: Record<PlayerPositionGroup, string[]> = {
+  gk: ['GK'],
+  defenders: ['CB', 'LB', 'RB', 'LWB', 'RWB', 'DF'],
+  midfielders: ['DM', 'CM', 'AM', 'RM', 'LM', 'WM', 'MF'],
+  forwards: ['CF', 'ST', 'SS', 'LW', 'RW', 'FW'],
+  tbd: [],
+};
+
+function positionShortRank(
+  group: PlayerPositionGroup,
+  positionShort: string | null | undefined
+): number {
+  const code = (positionShort ?? '').trim().toUpperCase();
+  const order = POSITION_SHORT_ORDER[group];
+  const idx = order.indexOf(code);
+  return idx === -1 ? order.length : idx;
+}
+
+export function comparePlayersWithinGroup(a: Player, b: Player): number {
+  const groupA = getPlayerPositionGroup(a.positionShort);
+  const groupB = getPlayerPositionGroup(b.positionShort);
+  if (groupA !== groupB) {
+    return (
+      PLAYER_POSITION_GROUP_ORDER.indexOf(groupA) -
+      PLAYER_POSITION_GROUP_ORDER.indexOf(groupB)
+    );
+  }
+  const rank =
+    positionShortRank(groupA, a.positionShort) -
+    positionShortRank(groupB, b.positionShort);
+  if (rank !== 0) return rank;
+  return a.displayName.localeCompare(b.displayName, 'it');
+}
+
 export function getPlayerPositionGroup(
   positionShort: string | null | undefined
 ): PlayerPositionGroup {
@@ -51,7 +86,10 @@ export function groupPlayersByPosition(
   }
 
   return PLAYER_POSITION_GROUP_ORDER.filter((group) => buckets[group].length > 0).map(
-    (group) => ({ group, players: buckets[group] })
+    (group) => ({
+      group,
+      players: [...buckets[group]].sort(comparePlayersWithinGroup),
+    })
   );
 }
 
