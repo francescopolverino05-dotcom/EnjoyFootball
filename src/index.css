@@ -1017,6 +1017,11 @@ button {
   color: #065f46;
 }
 
+.squad-badge.trialist {
+  background: #fef3c7;
+  color: #92400e;
+}
+
 .player-profile {
   display: grid;
   grid-template-columns: 200px 1fr;

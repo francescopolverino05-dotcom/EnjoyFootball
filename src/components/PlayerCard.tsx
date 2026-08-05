@@ -14,7 +14,13 @@ export default function PlayerCard({ player }: PlayerCardProps) {
   const { t } = useLanguage();
   const photo = playerPhotoUrl(player.photoPath);
   const squadClass =
-    player.squad === 'U18' ? 'u18' : player.squad === 'Primavera' ? 'primavera' : '';
+    player.squad === 'U18'
+      ? 'u18'
+      : player.squad === 'Primavera'
+        ? 'primavera'
+        : player.squad === 'Trialist'
+          ? 'trialist'
+          : '';
   const squadLabel =
     player.squad == null
       ? t('playerValueTbd')
@@ -22,7 +28,9 @@ export default function PlayerCard({ player }: PlayerCardProps) {
         ? t('squadU18')
         : player.squad === 'Primavera'
           ? t('squadPrimavera')
-          : player.squad;
+          : player.squad === 'Trialist'
+            ? t('squadTrialist')
+            : player.squad;
 
   return (
     <Link to={`/players/${player.slug}`} className="match-card player-card">

@@ -1,5 +1,5 @@
 {
-  "rule": "23 Excel-complete + Magliano (179 cm) + 6 Excel-incomplete anthropometrics (Baridó/Marotta/Pugliese/Pengue: height+weight TBD; Pereyra height 176 from TM weight TBD; Prisco height 165 from TM weight TBD) + 2 TBD identity (Baudot Enzo LB, Kebe Lamine CB). All squad Primavera. Mastari Riyad removed (U18).",
+  "rule": "23 Excel-complete + Magliano (179 cm) + 6 Excel-incomplete anthropometrics (Baridó/Marotta/Pugliese/Pengue: height+weight TBD; Pereyra height 176 from TM weight TBD; Prisco height 165 from TM weight TBD) + 2 trialists TBD identity (Baudot Enzo LB, Kebe Lamine CB). Rest squad Primavera. Mastari Riyad removed (U18).",
   "sources": [
     "DATI ANTROPOMETRICI.xlsx",
     "https://www.transfermarkt.it/napoli-primavera/kader/verein/12819",
@@ -67,7 +67,7 @@
       "age": null,
       "birthDate": null,
       "foot": null,
-      "squad": "Primavera",
+      "squad": "Trialist",
       "tmMatched": false,
       "bmi": null,
       "photo": null,
@@ -220,7 +220,7 @@
       "age": null,
       "birthDate": null,
       "foot": null,
-      "squad": "Primavera",
+      "squad": "Trialist",
       "tmMatched": false,
       "bmi": null,
       "photo": null,

@@ -1,4 +1,4 @@
-export type PlayerSquad = 'Primavera' | 'U18';
+export type PlayerSquad = 'Primavera' | 'U18' | 'Trialist';
 
 export type PlayerFoot = 'Left' | 'Right' | 'Both';
 
