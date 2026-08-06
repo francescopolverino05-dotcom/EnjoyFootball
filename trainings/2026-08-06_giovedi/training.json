@@ -94,29 +94,6 @@
   },
   "clips": [
     {
-      "id": "vimeo-1216201323",
-      "title": {
-        "en": "Final Third Clips",
-        "it": "Final Third Clips"
-      },
-      "comments": {
-        "en": "Final Third Clips",
-        "it": "Final Third Clips"
-      },
-      "minute": 0,
-      "second": 0,
-      "videoFile": "https://vimeo.com/1216201323",
-      "section": "other",
-      "labels": [
-        "other"
-      ],
-      "tags": [
-        "vimeo",
-        "training",
-        "clip"
-      ]
-    },
-    {
       "id": "vimeo-1216200471",
       "title": {
         "en": "clip 1",
@@ -255,7 +232,24 @@
       ]
     }
   ],
-  "analysisVideos": [],
+  "analysisVideos": [
+    {
+      "id": "vimeo-1216201323",
+      "title": {
+        "en": "Final Third Clips",
+        "it": "Final Third Clips"
+      },
+      "description": {
+        "en": "Compilation of clips 1–6 (final third).",
+        "it": "Compilazione delle clip 1–6 (ultimo terzo)."
+      },
+      "videoFile": "https://vimeo.com/1216201323",
+      "tags": [
+        "vimeo",
+        "analysis"
+      ]
+    }
+  ],
   "trainingDesign": [],
   "vimeo": {
     "folderId": "30099306",

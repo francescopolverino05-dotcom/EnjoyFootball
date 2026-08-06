@@ -17,8 +17,9 @@
  *   - otherwise → clips (section from [Build_up] in title, tags, or subfolder name)
  *
  * Training classification (by video / parent-folder name):
+ *   - "video analysis" / "analysis" / "analisi" / "Final Third Clips" (clip compilations)
+ *     → analysisVideos (Video Analysis tab)
  *   - "clip" / "clips" / timestamp clip names → clips (Clips tab)
- *   - "video analysis" / "analysis" / "analisi" → analysisVideos (Video Analysis tab)
  *   - otherwise → video.parts (Full Session tab); largest / "full session" → also fullSession
  *   - empty Vimeo folder → save folderId only; never clear video.parts / fullSession
  *   - non-empty sync merges: update/add Vimeo entries, keep local (non-Vimeo) parts/clips/docs
@@ -301,14 +302,28 @@ function isFullSessionName(name) {
   );
 }
 
+/**
+ * Thematic clip compilations / review reels for Video Analysis
+ * (not numbered individual clips like "clip 1").
+ */
+function isTrainingAnalysisCompilation(name) {
+  const n = String(name || '').toLowerCase();
+  // e.g. "Final Third Clips" — reel of numbered clips 1–N
+  return /final\s*third\s*clips?\b/.test(n);
+}
+
 /** Classify a training Vimeo item into clips / analysis / full-session parts. */
 function classifyTrainingVideo(name, parentFolderName = '') {
   const hay = `${name || ''} ${parentFolderName || ''}`.toLowerCase();
+  // Analysis before clip: names like "Final Third Clips" contain "clips"
+  if (
+    isTrainingAnalysisCompilation(name) ||
+    /video\s*analysis|\banalisi\b|\banalysis\b/.test(hay)
+  ) {
+    return 'analysis';
+  }
   if (/\bclips?\b/.test(hay) || isClipStyleName(name)) {
     return 'clip';
-  }
-  if (/video\s*analysis|\banalisi\b|\banalysis\b/.test(hay)) {
-    return 'analysis';
   }
   return 'session';
 }
