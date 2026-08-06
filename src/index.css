@@ -820,35 +820,41 @@ button {
   background: #fff;
 }
 
-.training-weeks {
+.training-weeks,
+.match-competitions {
   display: flex;
   flex-direction: column;
   gap: 0;
 }
 
-.training-weeks .tabs-header {
+.training-weeks .tabs-header,
+.match-competitions .tabs-header {
   margin-bottom: 0;
 }
 
-.training-weeks .training-week {
+.training-weeks .training-week,
+.match-competitions .match-competition {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.training-week {
+.training-week,
+.match-competition {
   background: #fff;
   border: 1px solid var(--border-color);
   border-radius: 6px;
   padding: 18px 18px 20px;
 }
 
-.training-week-header {
+.training-week-header,
+.match-competition-header {
   margin-bottom: 16px;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--border-color);
 }
 
-.training-week-title {
+.training-week-title,
+.match-competition-title {
   margin: 0 0 4px;
   font-size: 15px;
   font-weight: 800;

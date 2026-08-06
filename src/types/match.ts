@@ -108,12 +108,25 @@ export interface AnalysisVideo {
   tags?: string[];
 }
 
+/** Season bucket for Matches list tabs (see matchCompetitions.ts). */
+export type MatchCompetitionId =
+  | 'friendlies'
+  | 'primavera2'
+  | 'uefaYouthLeague'
+  | 'coppaItalia';
+
 export interface MatchData {
   id: string;
   slug: string;
   title: Localized;
   subtitle: Localized;
   date: string;
+  /**
+   * Machine-readable competition bucket for /matches tabs.
+   * Prefer setting this explicitly; otherwise inferred from competition/slug.
+   */
+  competitionId?: MatchCompetitionId;
+  /** Display label on cards / headers (localized). */
   competition: Localized;
   status: 'draft' | 'in-review' | 'published';
   homeTeam: TeamInfo;
@@ -144,6 +157,7 @@ export interface MatchSummary {
   slug: string;
   title: Localized;
   date: string;
+  competitionId: MatchCompetitionId;
   competition: Localized;
   status: MatchData['status'];
   homeTeam: string;

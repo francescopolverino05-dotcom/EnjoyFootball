@@ -1,3 +1,4 @@
+import { resolveMatchCompetitionId } from './matchCompetitions';
 import { MatchData, MatchSummary } from '../types/match';
 
 const matchModules = import.meta.glob<{ default: MatchData }>(
@@ -6,11 +7,13 @@ const matchModules = import.meta.glob<{ default: MatchData }>(
 );
 
 function toSummary(match: MatchData): MatchSummary {
+  const competitionId = resolveMatchCompetitionId(match);
   return {
     id: match.id,
     slug: match.slug,
     title: match.title,
     date: match.date,
+    competitionId,
     competition: match.competition,
     status: match.status,
     homeTeam: match.homeTeam.shortName,

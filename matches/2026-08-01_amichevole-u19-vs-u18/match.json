@@ -10,9 +10,10 @@
     "it": "Partita Amichevole"
   },
   "date": "2026-08-01",
+  "competitionId": "friendlies",
   "competition": {
-    "en": "Friendly",
-    "it": "Amichevole"
+    "en": "Friendlies",
+    "it": "Amichevoli"
   },
   "status": "published",
   "homeTeam": {

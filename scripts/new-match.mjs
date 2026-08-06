@@ -4,6 +4,12 @@
  *
  * Usage:
  *   npm run new-match -- --date 2026-08-08 --type amichevole --teams u19-vs-roma --title "Napoli U19 vs Roma"
+ *
+ * --type maps to competition tabs:
+ *   amichevole|friendly → friendlies
+ *   campionato|primavera2 → primavera2
+ *   uyl|uefa → uefaYouthLeague
+ *   coppa → coppaItalia
  */
 
 import { mkdirSync, writeFileSync, existsSync } from 'fs';
@@ -50,15 +56,39 @@ mkdirSync(join(matchDir, 'clips'), { recursive: true });
 mkdirSync(join(matchDir, 'analysis'), { recursive: true });
 
 const title = args.title || slug.replace(/-/g, ' ');
-const typeLabel = type.charAt(0).toUpperCase() + type.slice(1);
+
+const COMPETITION_BY_TYPE = {
+  amichevole: 'friendlies',
+  friendly: 'friendlies',
+  friendlies: 'friendlies',
+  campionato: 'primavera2',
+  primavera2: 'primavera2',
+  league: 'primavera2',
+  uyl: 'uefaYouthLeague',
+  uefa: 'uefaYouthLeague',
+  'uefa-youth-league': 'uefaYouthLeague',
+  coppa: 'coppaItalia',
+  'coppa-italia': 'coppaItalia',
+};
+
+const COMPETITION_LABELS = {
+  friendlies: { en: 'Friendlies', it: 'Amichevoli' },
+  primavera2: { en: 'Primavera 2', it: 'Primavera 2' },
+  uefaYouthLeague: { en: 'UEFA Youth League', it: 'UEFA Youth League' },
+  coppaItalia: { en: 'Coppa Italia', it: 'Coppa Italia' },
+};
+
+const competitionId = COMPETITION_BY_TYPE[type.toLowerCase()] || 'friendlies';
+const competition = COMPETITION_LABELS[competitionId];
 
 const template = {
   id: slug,
   slug,
   title: { en: title, it: title },
-  subtitle: { en: typeLabel, it: typeLabel },
+  subtitle: { en: competition.en, it: competition.it },
   date: args.date,
-  competition: { en: typeLabel, it: typeLabel },
+  competitionId,
+  competition,
   status: 'draft',
   homeTeam: {
     id: 'u19',
