@@ -823,7 +823,16 @@ button {
 .training-weeks {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0;
+}
+
+.training-weeks .tabs-header {
+  margin-bottom: 0;
+}
+
+.training-weeks .training-week {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .training-week {
