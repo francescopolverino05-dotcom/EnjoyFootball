@@ -92,12 +92,174 @@
       }
     ]
   },
-  "clips": [],
+  "clips": [
+    {
+      "id": "vimeo-1216201323",
+      "title": {
+        "en": "Final Third Clips",
+        "it": "Final Third Clips"
+      },
+      "comments": {
+        "en": "Final Third Clips",
+        "it": "Final Third Clips"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1216201323",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    },
+    {
+      "id": "vimeo-1216200471",
+      "title": {
+        "en": "clip 1",
+        "it": "clip 1"
+      },
+      "comments": {
+        "en": "clip 1",
+        "it": "clip 1"
+      },
+      "minute": 1,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1216200471",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    },
+    {
+      "id": "vimeo-1216200473",
+      "title": {
+        "en": "clip 2",
+        "it": "clip 2"
+      },
+      "comments": {
+        "en": "clip 2",
+        "it": "clip 2"
+      },
+      "minute": 2,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1216200473",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    },
+    {
+      "id": "vimeo-1216201238",
+      "title": {
+        "en": "clip 3",
+        "it": "clip 3"
+      },
+      "comments": {
+        "en": "clip 3",
+        "it": "clip 3"
+      },
+      "minute": 3,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1216201238",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    },
+    {
+      "id": "vimeo-1216201047",
+      "title": {
+        "en": "clip 4",
+        "it": "clip 4"
+      },
+      "comments": {
+        "en": "clip 4",
+        "it": "clip 4"
+      },
+      "minute": 4,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1216201047",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    },
+    {
+      "id": "vimeo-1216200991",
+      "title": {
+        "en": "Clip 5",
+        "it": "Clip 5"
+      },
+      "comments": {
+        "en": "Clip 5",
+        "it": "Clip 5"
+      },
+      "minute": 5,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1216200991",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    },
+    {
+      "id": "vimeo-1216200472",
+      "title": {
+        "en": "clip 6",
+        "it": "clip 6"
+      },
+      "comments": {
+        "en": "clip 6",
+        "it": "clip 6"
+      },
+      "minute": 6,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1216200472",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    }
+  ],
   "analysisVideos": [],
   "trainingDesign": [],
   "vimeo": {
     "folderId": "30099306",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099306",
-    "lastSyncedAt": "2026-08-06T10:47:14.351Z"
+    "lastSyncedAt": "2026-08-06T18:27:40.749Z"
   }
 }
