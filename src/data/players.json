@@ -11,7 +11,7 @@
       "weightKg": 78.3,
       "bmi": 21.9,
       "squad": "Primavera",
-      "photoPath": "/players/anic-ivan.jpg"
+      "photoPath": "/players/anic-ivan.png"
     },
     {
       "slug": "barido-francisco-martin",
@@ -63,7 +63,7 @@
       "weightKg": 68.6,
       "bmi": 19.8,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/capozzoli-emanuele.png"
     },
     {
       "slug": "castaldi-ciro-junior",
@@ -76,7 +76,7 @@
       "weightKg": 66.3,
       "bmi": 22.2,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/castaldi-ciro-junior.png"
     },
     {
       "slug": "chiummariello-andrea",
@@ -115,7 +115,7 @@
       "weightKg": 66.5,
       "bmi": 24.1,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/esposito-luigi.png"
     },
     {
       "slug": "favicchio-elia",
@@ -141,7 +141,7 @@
       "weightKg": null,
       "bmi": null,
       "squad": "Trialist",
-      "photoPath": null
+      "photoPath": "/players/kebe-lamine.png"
     },
     {
       "slug": "lepre-giuseppe",
@@ -362,7 +362,7 @@
       "weightKg": 80.2,
       "bmi": 23.4,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/saviano-raffaele-junior.png"
     },
     {
       "slug": "spinelli-david-antonio",
@@ -375,7 +375,7 @@
       "weightKg": 85,
       "bmi": 23.3,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/spinelli-david-antonio.png"
     },
     {
       "slug": "zappala-andrea",
