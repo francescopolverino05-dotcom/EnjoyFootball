@@ -67,11 +67,11 @@
       "squad": "Primavera",
       "tmMatched": true,
       "bmi": 22.6,
-      "photo": null,
-      "photoPath": null,
+      "photo": true,
+      "photoPath": "/players/branchizio-agostino.png",
       "photoUrl": null,
-      "photoSource": null,
-      "photoMissingReason": "No verified public head-and-shoulders portrait found for this Napoli Primavera/U18 player. Transfermarkt uses default silhouette; BeSoccer/news sources lack a downloadable identity-confirmed portrait."
+      "photoSource": "Named club portrait",
+      "photoMissingReason": null
     },
     {
       "displayName": "Candela Ivan Giovanni",
@@ -237,11 +237,11 @@
       "squad": "Primavera",
       "tmMatched": true,
       "bmi": 22.1,
-      "photo": null,
-      "photoPath": null,
+      "photo": true,
+      "photoPath": "/players/lieto-claudio.png",
       "photoUrl": null,
-      "photoSource": null,
-      "photoMissingReason": "No verified public head-and-shoulders portrait found for this Napoli Primavera/U18 player. Transfermarkt uses default silhouette; BeSoccer/news sources lack a downloadable identity-confirmed portrait."
+      "photoSource": "Named club portrait",
+      "photoMissingReason": null
     },
     {
       "displayName": "Maida Giuseppe",
