@@ -16,46 +16,12 @@
     "it": "Settimana 1 (Sett. 1 27/07) — Lunedì. 1x10/2x10 su Vimeo; Possession Rondo (3x5, 1x5) locali finché non caricati."
   },
   "video": {
-    "fullSession": "https://vimeo.com/1215137745",
+    "fullSession": "https://vimeo.com/1215137745/0720f87524",
     "notes": {
       "en": "Largest session video linked when available.",
       "it": "Collegato il video più lungo quando disponibile."
     },
     "parts": [
-      {
-        "id": "vimeo-1215137745",
-        "title": {
-          "en": "1x10",
-          "it": "1x10"
-        },
-        "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
-        },
-        "videoFile": "https://vimeo.com/1215137745",
-        "tags": [
-          "vimeo",
-          "training",
-          "session"
-        ]
-      },
-      {
-        "id": "vimeo-1215137744",
-        "title": {
-          "en": "2x10",
-          "it": "2x10"
-        },
-        "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
-        },
-        "videoFile": "https://vimeo.com/1215137744",
-        "tags": [
-          "vimeo",
-          "training",
-          "session"
-        ]
-      },
       {
         "id": "vimeo-1215204290",
         "title": {
@@ -66,7 +32,7 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1215204290",
+        "videoFile": "https://vimeo.com/1215204290/22359fcb82",
         "tags": [
           "vimeo",
           "training",
@@ -83,7 +49,7 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1215203614",
+        "videoFile": "https://vimeo.com/1215203614/c4579e5e51",
         "tags": [
           "vimeo",
           "training",
@@ -100,7 +66,7 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1215203475",
+        "videoFile": "https://vimeo.com/1215203475/018a3c3e9b",
         "tags": [
           "vimeo",
           "training",
@@ -117,7 +83,41 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1215203015",
+        "videoFile": "https://vimeo.com/1215203015/0f5437245e",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1215137744",
+        "title": {
+          "en": "2x10",
+          "it": "2x10"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215137744/17a3e386b3",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1215137745",
+        "title": {
+          "en": "1x10",
+          "it": "1x10"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215137745/0720f87524",
         "tags": [
           "vimeo",
           "training",
@@ -132,7 +132,7 @@
     "folderId": "30099274",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099274",
     "skipNameRegex": "^(gk|goalkeeper)",
-    "lastSyncedAt": "2026-08-04T09:30:18.264Z"
+    "lastSyncedAt": "2026-08-06T07:44:35.191Z"
   },
   "trainingDesign": [
     {

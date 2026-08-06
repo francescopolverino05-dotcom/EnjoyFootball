@@ -16,7 +16,7 @@
     "it": "Settimana 2 (Sett. 2 03/08) — Martedì. Video su Vimeo (cartella Martedi)."
   },
   "video": {
-    "fullSession": "https://vimeo.com/1215518789",
+    "fullSession": "https://vimeo.com/1215518789/2a664f1723",
     "notes": {
       "en": "Full session (Partitella Blu vs Rosa) on Vimeo.",
       "it": "Sessione (Partitella Blu vs Rosa) su Vimeo."
@@ -32,7 +32,7 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1215518789",
+        "videoFile": "https://vimeo.com/1215518789/2a664f1723",
         "tags": [
           "vimeo",
           "training",
@@ -54,7 +54,7 @@
       },
       "minute": 1,
       "second": 0,
-      "videoFile": "https://vimeo.com/1215496957",
+      "videoFile": "https://vimeo.com/1215496957/12dca069db",
       "section": "other",
       "labels": [
         "other"
@@ -77,7 +77,7 @@
       },
       "minute": 2,
       "second": 0,
-      "videoFile": "https://vimeo.com/1215496960",
+      "videoFile": "https://vimeo.com/1215496960/2af7baae44",
       "section": "other",
       "labels": [
         "other"
@@ -100,7 +100,7 @@
       },
       "minute": 3,
       "second": 0,
-      "videoFile": "https://vimeo.com/1215496958",
+      "videoFile": "https://vimeo.com/1215496958/1f13bcaa90",
       "section": "other",
       "labels": [
         "other"
@@ -123,7 +123,7 @@
       },
       "minute": 4,
       "second": 0,
-      "videoFile": "https://vimeo.com/1215496956",
+      "videoFile": "https://vimeo.com/1215496956/2d7a201ff0",
       "section": "other",
       "labels": [
         "other"
@@ -146,7 +146,7 @@
         "en": "Synced from Vimeo folder.",
         "it": "Sincronizzato dalla cartella Vimeo."
       },
-      "videoFile": "https://vimeo.com/1215517269",
+      "videoFile": "https://vimeo.com/1215517269/bee1756658",
       "tags": [
         "vimeo",
         "analysis"
@@ -156,7 +156,7 @@
   "vimeo": {
     "folderId": "30099293",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099293",
-    "lastSyncedAt": "2026-08-04T15:46:01.467Z"
+    "lastSyncedAt": "2026-08-06T07:44:49.123Z"
   },
   "trainingDesign": [
     {

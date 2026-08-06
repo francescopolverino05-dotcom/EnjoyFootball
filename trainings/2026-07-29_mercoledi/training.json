@@ -16,7 +16,7 @@
     "it": "Settimana 1 (Sett. 1 29/07) — Mercoledì. Media locali ripristinati; cartella Vimeo collegata per upload."
   },
   "video": {
-    "fullSession": "https://vimeo.com/1215196383",
+    "fullSession": "https://vimeo.com/1215196383/def5cc2eb9",
     "notes": {
       "en": "Largest session video linked when available.",
       "it": "Collegato il video più lungo quando disponibile."
@@ -32,7 +32,7 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1215200555",
+        "videoFile": "https://vimeo.com/1215200555/87c1f12e79",
         "tags": [
           "vimeo",
           "training",
@@ -49,7 +49,7 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1215196383",
+        "videoFile": "https://vimeo.com/1215196383/def5cc2eb9",
         "tags": [
           "vimeo",
           "training",
@@ -79,7 +79,7 @@
   "vimeo": {
     "folderId": "30099282",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099282",
-    "lastSyncedAt": "2026-08-04T09:18:22.577Z"
+    "lastSyncedAt": "2026-08-06T07:44:39.896Z"
   },
   "trainingDesign": [
     {

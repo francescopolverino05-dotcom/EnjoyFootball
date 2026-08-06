@@ -16,7 +16,7 @@
     "it": "Settimana 2 (Sett. 2 03/08) — Mercoledì. Video su Vimeo (cartella Mercoledi)."
   },
   "video": {
-    "fullSession": "https://vimeo.com/1215730180",
+    "fullSession": "https://vimeo.com/1215730180/34a0050346",
     "notes": {
       "en": "Full session (longest clip): 5 v 7 + GK Costruzione Parte 1 (Vimeo).",
       "it": "Sessione (clip più lunga): 5 v 7 + GK Costruzione Parte 1 (Vimeo)."
@@ -25,14 +25,14 @@
       {
         "id": "vimeo-1215740442",
         "title": {
-          "en": "7v5 Possesso > 5v4+GK Attacco",
-          "it": "7v5 Possesso > 5v4+GK Attacco"
+          "en": "7v5 Posesso > 5v4+GK Attacco",
+          "it": "7v5 Posesso > 5v4+GK Attacco"
         },
         "description": {
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1215740442",
+        "videoFile": "https://vimeo.com/1215740442/763517dfe4",
         "tags": [
           "vimeo",
           "training",
@@ -49,7 +49,7 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1215736079",
+        "videoFile": "https://vimeo.com/1215736079/ff64e89196",
         "tags": [
           "vimeo",
           "training",
@@ -66,7 +66,7 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1215730180",
+        "videoFile": "https://vimeo.com/1215730180/34a0050346",
         "tags": [
           "vimeo",
           "training",
@@ -83,7 +83,7 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1215722292",
+        "videoFile": "https://vimeo.com/1215722292/b612a90881",
         "tags": [
           "vimeo",
           "training",
@@ -98,6 +98,6 @@
   "vimeo": {
     "folderId": "30099305",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099305",
-    "lastSyncedAt": "2026-08-05T09:30:51.453Z"
+    "lastSyncedAt": "2026-08-06T07:44:51.338Z"
   }
 }
