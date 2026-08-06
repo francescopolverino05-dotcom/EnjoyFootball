@@ -50,7 +50,7 @@
       "weightKg": 75.8,
       "bmi": 23.7,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/candela-ivan-giovanni.png"
     },
     {
       "slug": "capozzoli-emanuele",
@@ -89,7 +89,7 @@
       "weightKg": 70.3,
       "bmi": 24,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/chiummariello-andrea.png"
     },
     {
       "slug": "de-stefano-francesco",
@@ -102,7 +102,7 @@
       "weightKg": 60,
       "bmi": 22.3,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/de-stefano-francesco.png"
     },
     {
       "slug": "esposito-luigi",
@@ -180,7 +180,7 @@
       "weightKg": 76,
       "bmi": 24.3,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/maida-giuseppe.png"
     },
     {
       "slug": "magliano-mattia",
@@ -193,7 +193,7 @@
       "weightKg": 86,
       "bmi": 26.8,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/magliano-mattia.png"
     },
     {
       "slug": "mane-mohamed-seick",
@@ -206,7 +206,7 @@
       "weightKg": 75.1,
       "bmi": 25.1,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/mane-mohamed-seick.png"
     },
     {
       "slug": "marotta-gabriele",
@@ -245,7 +245,7 @@
       "weightKg": 83.04,
       "bmi": 25.9,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/merone-alessandro-emanuele.png"
     },
     {
       "slug": "natale-raffaele",
@@ -258,7 +258,7 @@
       "weightKg": 67.8,
       "bmi": 20.7,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/natale-raffaele.png"
     },
     {
       "slug": "pereyra-alvarez-milton-agustin",
@@ -284,7 +284,7 @@
       "weightKg": null,
       "bmi": null,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/pengue-salvatore.png"
     },
     {
       "slug": "prisco-vincenzo",
@@ -336,7 +336,7 @@
       "weightKg": 77,
       "bmi": 24.3,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/rovetini-alessandro.png"
     },
     {
       "slug": "santella-alessandro",
@@ -349,7 +349,7 @@
       "weightKg": 74,
       "bmi": 20.9,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/santella-alessandro.png"
     },
     {
       "slug": "saviano-raffaele-junior",
@@ -379,7 +379,7 @@
     },
     {
       "slug": "zappala-andrea",
-      "displayName": "Zappala Andrea",
+      "displayName": "Zappalá Andrea",
       "positionShort": "RB",
       "age": 17,
       "birthDate": "13/01/2009",
@@ -388,7 +388,7 @@
       "weightKg": 75,
       "bmi": 23.9,
       "squad": "Primavera",
-      "photoPath": null
+      "photoPath": "/players/zappala-andrea.png"
     }
   ]
 }
