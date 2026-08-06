@@ -1,0 +1,103 @@
+{
+  "id": "2026-08-06_giovedi",
+  "slug": "2026-08-06_giovedi",
+  "date": "2026-08-06",
+  "title": {
+    "en": "Thursday training — Build-up, defence focus & match-ups",
+    "it": "Giovedì — Costruzione, focus difensivo e match-up"
+  },
+  "focus": {
+    "en": "Build-up from the back / 8v7 defence / Final third / Partitella",
+    "it": "Costruzione dal basso / 8v7 difesa / Ultimo terzo / Partitella"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Week 2 (Sett. 2 03/08) — Giovedì. Videos hosted on Vimeo (folder Giovedi).",
+    "it": "Settimana 2 (Sett. 2 03/08) — Giovedì. Video su Vimeo (cartella Giovedi)."
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1216062910/71c255cc83",
+    "notes": {
+      "en": "Full session (longest clip): Ful Match Up - Build Up from the Back (Vimeo).",
+      "it": "Sessione (clip più lunga): Ful Match Up - Build Up from the Back (Vimeo)."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1216063541",
+        "title": {
+          "en": "Partitella",
+          "it": "Partitella"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1216063541/83a480bea6",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1216062909",
+        "title": {
+          "en": "8v7 Defence Focus",
+          "it": "8v7 Defence Focus"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1216062909/6903a910ed",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1216062910",
+        "title": {
+          "en": "Ful Match Up - Build Up from the Back",
+          "it": "Ful Match Up - Build Up from the Back"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1216062910/71c255cc83",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1216062911",
+        "title": {
+          "en": "Full Match Up - Final Third Attack",
+          "it": "Full Match Up - Final Third Attack"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1216062911/46b13c1747",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "vimeo": {
+    "folderId": "30099306",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30099306",
+    "lastSyncedAt": "2026-08-06T10:47:14.351Z"
+  }
+}
