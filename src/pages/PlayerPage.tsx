@@ -5,6 +5,7 @@ import {
   playerPhotoUrl,
 } from '../data/players';
 import ReportHeader from '../components/ReportHeader';
+import PlayerLoadTimeline from '../components/PlayerLoadTimeline';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export default function PlayerPage() {
@@ -137,6 +138,8 @@ export default function PlayerPage() {
             </dl>
           </div>
         </div>
+
+        <PlayerLoadTimeline playerSlug={player.slug} />
       </div>
     </div>
   );

@@ -7,15 +7,23 @@ import {
   ANALYSIS_SECTION_ORDER,
   type ClipLabelId,
 } from '../i18n/clipLabels';
+import { getRpeSessionByTrainingSlug } from '../data/rpeLoad';
 import MatchMedia from './MatchMedia';
+import PhysicalLoadPanel from './PhysicalLoadPanel';
 
-type TabId = 'fullsession' | 'clips' | 'trainingdesign' | 'videoanalysis';
+type TabId =
+  | 'fullsession'
+  | 'clips'
+  | 'trainingdesign'
+  | 'videoanalysis'
+  | 'physicalload';
 
 type TabLabelKey =
   | 'tabFullSession'
   | 'tabClips'
   | 'tabTrainingDesign'
-  | 'tabVideoAnalysis';
+  | 'tabVideoAnalysis'
+  | 'tabPhysicalLoad';
 
 function clipSortKey(clip: VideoClip): number {
   return clip.minute * 60 + (clip.second ?? 0);
@@ -35,12 +43,16 @@ export default function TrainingDashboard({
 }) {
   const [activeTab, setActiveTab] = useState<TabId>('fullsession');
   const { t } = useLanguage();
+  const rpeSession = getRpeSessionByTrainingSlug(session.slug);
 
   const tabs: [TabId, TabLabelKey][] = [
     ['fullsession', 'tabFullSession'],
     ['clips', 'tabClips'],
     ['trainingdesign', 'tabTrainingDesign'],
     ['videoanalysis', 'tabVideoAnalysis'],
+    ...(rpeSession
+      ? ([['physicalload', 'tabPhysicalLoad']] as [TabId, TabLabelKey][])
+      : []),
   ];
 
   return (
@@ -76,6 +88,13 @@ export default function TrainingDashboard({
       >
         <TrainingAnalysisPanel session={session} />
       </div>
+      {rpeSession ? (
+        <div
+          className={`tab-content ${activeTab === 'physicalload' ? 'active' : ''}`}
+        >
+          <PhysicalLoadPanel session={rpeSession} />
+        </div>
+      ) : null}
     </>
   );
 }

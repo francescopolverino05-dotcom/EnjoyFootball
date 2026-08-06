@@ -1110,6 +1110,260 @@ button {
   color: var(--text-dark);
 }
 
+/* —— Physical load (RPE) —— */
+.rpe-panel {
+  margin-top: 8px;
+}
+
+.player-rpe {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-light);
+}
+
+.rpe-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 16px 0 24px;
+}
+
+.rpe-kpi {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 12px 14px;
+}
+
+.rpe-kpi-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+
+.rpe-kpi-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--napoli-blue-dark);
+}
+
+.rpe-chart-block,
+.rpe-players-block {
+  margin-bottom: 24px;
+}
+
+.rpe-chart-title {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-gray);
+  margin-bottom: 12px;
+}
+
+.rpe-bars,
+.rpe-timeline-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  min-height: 160px;
+  padding: 8px 4px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.rpe-bar-col,
+.rpe-tl-col {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: inherit;
+}
+
+.rpe-tl-col:hover .rpe-tl-fill,
+.rpe-bar-col.active .rpe-bar-fill {
+  background: var(--napoli-blue-dark);
+}
+
+.rpe-bar-value,
+.rpe-tl-values {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-gray);
+  text-align: center;
+  line-height: 1.2;
+  min-height: 28px;
+}
+
+.rpe-tl-values {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rpe-tl-rpe {
+  color: var(--napoli-blue-dark);
+}
+
+.rpe-tl-load {
+  font-size: 10px;
+  color: var(--text-light);
+}
+
+.rpe-bar-track,
+.rpe-tl-track {
+  position: relative;
+  width: 100%;
+  max-width: 36px;
+  height: 110px;
+  background: #eef2f6;
+  border-radius: 3px 3px 0 0;
+  display: flex;
+  align-items: flex-end;
+  overflow: visible;
+}
+
+.rpe-bar-fill,
+.rpe-tl-fill {
+  width: 100%;
+  background: var(--napoli-blue);
+  border-radius: 3px 3px 0 0;
+  transition: height 0.2s ease;
+}
+
+.rpe-bar-col.is-match .rpe-bar-fill,
+.rpe-tl-fill.is-match {
+  background: #64748b;
+}
+
+.rpe-bar-col.active .rpe-bar-fill {
+  background: var(--napoli-blue-dark);
+}
+
+.rpe-tl-team-mark {
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  height: 2px;
+  background: #f59e0b;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.rpe-bar-label,
+.rpe-tl-date {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-gray);
+}
+
+.rpe-tl-kind {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-light);
+  min-height: 12px;
+}
+
+.rpe-chart-legend,
+.rpe-footnote {
+  font-size: 12px;
+  color: var(--text-light);
+  margin-top: 10px;
+  line-height: 1.45;
+}
+
+.rpe-player-table {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.rpe-player-row {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) 0.7fr 1fr 0.9fr;
+  gap: 8px;
+  align-items: center;
+  padding: 10px 14px;
+  border-top: 1px solid var(--border-light);
+  color: inherit;
+  transition: background 0.15s ease;
+}
+
+.rpe-player-row:first-child {
+  border-top: none;
+}
+
+.rpe-player-row.head {
+  background: #f3f4f6;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.35px;
+  color: var(--text-gray);
+}
+
+a.rpe-player-row:hover {
+  background: #f0f7ff;
+}
+
+.rpe-player-name {
+  font-size: 14px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rpe-player-num {
+  font-size: 14px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.rpe-player-row.head > div:not(:first-child),
+.rpe-player-row > .rpe-player-num {
+  text-align: right;
+}
+
+.rpe-inline-tag {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-left: 6px;
+}
+
+@media (max-width: 720px) {
+  .rpe-kpis {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rpe-bars,
+  .rpe-timeline-chart {
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .rpe-bar-col,
+  .rpe-tl-col {
+    min-width: 44px;
+  }
+
+  .rpe-player-row {
+    grid-template-columns: minmax(0, 1.6fr) 0.6fr 0.9fr 0.8fr;
+    padding: 10px 10px;
+    font-size: 13px;
+  }
+}
+
 .video-section {
   margin-top: 8px;
 }
