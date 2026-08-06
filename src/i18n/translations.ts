@@ -99,12 +99,19 @@ const dictionaries = {
     rpeDate: 'Date',
     rpeTeamAvg: 'Team avg RPE',
     rpeMatchDay: 'Match',
+    rpeMetricToggle: 'Chart metric',
+    rpeMetricLoad: 'Session load (T.L.)',
+    rpeMetricRpe: 'RPE',
+    rpePlayerSeries: 'Player',
+    rpeTeamAvgSeries: 'Team average',
     playerPhysicalLoad: 'Physical load timeline',
     playerPhysicalLoadHint:
-      'RPE and session load across imported days. Marker line = team average session load.',
+      'Session load (T.L.) and RPE across imported days, compared with the team average.',
     playerPhysicalLoadEmpty: 'No RPE data for this player in the imported block.',
     playerPhysicalLoadLegend:
-      'Bars = player session load. Horizontal mark = team average for that day.',
+      'Solid line = player. Dashed line = team average for that day. Click a point to open the session.',
+    playerPhysicalLoadChartAria:
+      'Line chart of player load versus team average over time',
     fullMatchVideo: 'Full Match Video',
     fullMatchHint: 'Watch the complete match recording.',
     fullSessionVideo: 'Full Session Video',
@@ -246,13 +253,20 @@ const dictionaries = {
     rpeDate: 'Data',
     rpeTeamAvg: 'RPE medio squadra',
     rpeMatchDay: 'Partita',
+    rpeMetricToggle: 'Metrica grafico',
+    rpeMetricLoad: 'Carico seduta (T.L.)',
+    rpeMetricRpe: 'RPE',
+    rpePlayerSeries: 'Giocatore',
+    rpeTeamAvgSeries: 'Media squadra',
     playerPhysicalLoad: 'Timeline carico fisico',
     playerPhysicalLoadHint:
-      'RPE e carico di seduta nei giorni importati. Linea = carico medio squadra.',
+      'Carico di seduta (T.L.) e RPE nei giorni importati, confrontati con la media squadra.',
     playerPhysicalLoadEmpty:
       'Nessun dato RPE per questo giocatore nel blocco importato.',
     playerPhysicalLoadLegend:
-      'Barre = carico del giocatore. Segno orizzontale = media squadra del giorno.',
+      'Linea continua = giocatore. Linea tratteggiata = media squadra del giorno. Clicca un punto per aprire la seduta.',
+    playerPhysicalLoadChartAria:
+      'Grafico a linee del carico del giocatore rispetto alla media squadra nel tempo',
     fullMatchVideo: 'Video Partita Completa',
     fullMatchHint: 'Guarda la registrazione completa della partita.',
     fullSessionVideo: 'Video Sessione Completa',
