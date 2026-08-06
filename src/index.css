@@ -820,6 +820,40 @@ button {
   background: #fff;
 }
 
+.training-weeks {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.training-week {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 18px 18px 20px;
+}
+
+.training-week-header {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.training-week-title {
+  margin: 0 0 4px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--napoli-blue-dark);
+}
+
+.training-week-range {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-gray);
+}
+
 .training-card-date {
   font-size: 22px;
   font-weight: 800;
