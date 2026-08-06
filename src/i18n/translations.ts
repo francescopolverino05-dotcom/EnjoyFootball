@@ -113,6 +113,23 @@ const dictionaries = {
       'Solid line = player. Dashed line = team average for that day. Click a point to open the session.',
     playerPhysicalLoadChartAria:
       'Line chart of player load versus team average over time',
+    tqrTitle: 'Recovery (TQR)',
+    tqrHint:
+      'TQR values copied from the staff Excel — squad and individual histograms only.',
+    tqrSquadHistogram: 'Squad TQR histogram',
+    tqrSquadLegend:
+      'Bars show average TQR for each day in the imported block. Current day highlighted. Match day marked separately.',
+    tqrIndividualHistogram: 'Individual TQR histogram',
+    tqrIndividualLegend:
+      'Horizontal bars show each player’s TQR for this day (Excel values). Tap a name for the player profile.',
+    tqrIndividualEmpty: 'No TQR answers for this day.',
+    playerTqrTitle: 'TQR histogram',
+    playerTqrHint:
+      'Player TQR per day (solid) beside team average (lighter) — values from the imported Excel.',
+    playerTqrEmpty: 'No TQR data for this player in the imported block.',
+    playerTqrLegend:
+      'Left bar = player TQR. Right bar = team average that day. Click a day to open the session when available.',
+    playerTqrChartAria: 'Histogram of player TQR versus team average over time',
     fullMatchVideo: 'Full Match Video',
     fullMatchHint: 'Watch the complete match recording.',
     fullSessionVideo: 'Full Session Video',
@@ -269,6 +286,25 @@ const dictionaries = {
       'Linea continua = giocatore. Linea tratteggiata = media squadra del giorno. Clicca un punto per aprire la seduta.',
     playerPhysicalLoadChartAria:
       'Grafico a linee del carico del giocatore rispetto alla media squadra nel tempo',
+    tqrTitle: 'Recupero (TQR)',
+    tqrHint:
+      'Valori TQR copiati dall’Excel dello staff — solo istogrammi di squadra e individuali.',
+    tqrSquadHistogram: 'Istogramma TQR di squadra',
+    tqrSquadLegend:
+      'Le barre mostrano il TQR medio di ciascun giorno del blocco importato. Il giorno corrente è evidenziato. La partita è distinta.',
+    tqrIndividualHistogram: 'Istogramma TQR individuale',
+    tqrIndividualLegend:
+      'Le barre orizzontali mostrano il TQR di ciascun giocatore per questa giornata (valori Excel). Tocca un nome per il profilo.',
+    tqrIndividualEmpty: 'Nessuna risposta TQR per questa giornata.',
+    playerTqrTitle: 'Istogramma TQR',
+    playerTqrHint:
+      'TQR del giocatore per giorno (barra piena) accanto alla media squadra (più chiara) — valori dall’Excel importato.',
+    playerTqrEmpty:
+      'Nessun dato TQR per questo giocatore nel blocco importato.',
+    playerTqrLegend:
+      'Barra sinistra = TQR giocatore. Barra destra = media squadra del giorno. Clicca un giorno per aprire la seduta se disponibile.',
+    playerTqrChartAria:
+      'Istogramma del TQR del giocatore rispetto alla media squadra nel tempo',
     fullMatchVideo: 'Video Partita Completa',
     fullMatchHint: 'Guarda la registrazione completa della partita.',
     fullSessionVideo: 'Video Sessione Completa',

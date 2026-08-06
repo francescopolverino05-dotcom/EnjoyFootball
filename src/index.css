@@ -1505,6 +1505,119 @@ a.rpe-player-row:hover {
   margin-left: 6px;
 }
 
+/* TQR histograms (squad + individual) */
+.tqr-panel {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-light);
+}
+
+.tqr-panel:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.player-tqr {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-light);
+}
+
+.tqr-bar-fill {
+  background: #0d9488;
+}
+
+.rpe-bar-col.active .tqr-bar-fill {
+  background: #0f766e;
+}
+
+.rpe-bar-col.is-match .tqr-bar-fill,
+.tqr-bar-fill.is-match-fill {
+  background: #64748b;
+}
+
+.tqr-team-fill {
+  background: #fbbf24;
+}
+
+.tqr-ind-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 10px 12px;
+}
+
+.tqr-ind-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 2fr) 36px;
+  gap: 10px;
+  align-items: center;
+  color: inherit;
+  padding: 4px 2px;
+  border-radius: 3px;
+  transition: background 0.15s ease;
+}
+
+a.tqr-ind-row:hover {
+  background: #f0fdfa;
+}
+
+.tqr-ind-name {
+  font-size: 13px;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tqr-ind-track {
+  height: 14px;
+  background: #eef2f6;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.tqr-ind-fill {
+  height: 100%;
+  background: #0d9488;
+  border-radius: 2px;
+  min-width: 2px;
+}
+
+.tqr-ind-value {
+  font-size: 13px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  color: var(--napoli-blue-dark);
+}
+
+.tqr-dual-track {
+  display: flex;
+  gap: 3px;
+  align-items: flex-end;
+  width: 100%;
+  justify-content: center;
+}
+
+.tqr-track-player,
+.tqr-track-team {
+  max-width: 18px;
+  flex: 1;
+}
+
+.tqr-player-bars .rpe-bar-col {
+  text-decoration: none;
+}
+
+.rpe-bar-label.is-match-label {
+  color: #64748b;
+}
+
 @media (max-width: 720px) {
   .rpe-kpis {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1528,6 +1641,11 @@ a.rpe-player-row:hover {
     grid-template-columns: minmax(0, 1.6fr) 0.6fr 0.9fr 0.8fr;
     padding: 10px 10px;
     font-size: 13px;
+  }
+
+  .tqr-ind-row {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.5fr) 32px;
+    gap: 8px;
   }
 }
 

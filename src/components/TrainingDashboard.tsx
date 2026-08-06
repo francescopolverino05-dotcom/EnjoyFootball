@@ -8,6 +8,7 @@ import {
   type ClipLabelId,
 } from '../i18n/clipLabels';
 import { getRpeSessionByTrainingSlug } from '../data/rpeLoad';
+import { getTqrSessionByTrainingSlug } from '../data/tqrLoad';
 import MatchMedia from './MatchMedia';
 import PhysicalLoadPanel from './PhysicalLoadPanel';
 
@@ -44,13 +45,15 @@ export default function TrainingDashboard({
   const [activeTab, setActiveTab] = useState<TabId>('fullsession');
   const { t } = useLanguage();
   const rpeSession = getRpeSessionByTrainingSlug(session.slug);
+  const tqrSession = getTqrSessionByTrainingSlug(session.slug);
+  const hasPhysicalLoad = Boolean(rpeSession || tqrSession);
 
   const tabs: [TabId, TabLabelKey][] = [
     ['fullsession', 'tabFullSession'],
     ['clips', 'tabClips'],
     ['trainingdesign', 'tabTrainingDesign'],
     ['videoanalysis', 'tabVideoAnalysis'],
-    ...(rpeSession
+    ...(hasPhysicalLoad
       ? ([['physicalload', 'tabPhysicalLoad']] as [TabId, TabLabelKey][])
       : []),
   ];
@@ -88,11 +91,14 @@ export default function TrainingDashboard({
       >
         <TrainingAnalysisPanel session={session} />
       </div>
-      {rpeSession ? (
+      {hasPhysicalLoad ? (
         <div
           className={`tab-content ${activeTab === 'physicalload' ? 'active' : ''}`}
         >
-          <PhysicalLoadPanel session={rpeSession} />
+          <PhysicalLoadPanel
+            session={rpeSession ?? null}
+            tqrSession={tqrSession ?? null}
+          />
         </div>
       ) : null}
     </>

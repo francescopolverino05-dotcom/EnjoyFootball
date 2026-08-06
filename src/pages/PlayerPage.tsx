@@ -6,6 +6,7 @@ import {
 } from '../data/players';
 import ReportHeader from '../components/ReportHeader';
 import PlayerLoadTimeline from '../components/PlayerLoadTimeline';
+import PlayerTqrHistogram from '../components/PlayerTqrHistogram';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export default function PlayerPage() {
@@ -140,6 +141,7 @@ export default function PlayerPage() {
         </div>
 
         <PlayerLoadTimeline playerSlug={player.slug} />
+        <PlayerTqrHistogram playerSlug={player.slug} />
       </div>
     </div>
   );
