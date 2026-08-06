@@ -1,5 +1,5 @@
 {
-  "rule": "23 Excel-complete + Magliano (179 cm) + 6 Excel-incomplete anthropometrics (Baridó/Marotta/Pugliese/Pengue: height+weight TBD; Pereyra height 176 from TM weight TBD; Prisco height 165 from TM weight TBD) + 2 trialists TBD identity (Baudot Enzo LB, Kebe Lamine CB). Rest squad Primavera. Mastari Riyad removed (U18).",
+  "rule": "23 Excel-complete + Magliano (179 cm) + 6 Excel-incomplete anthropometrics (Baridó/Marotta/Pugliese/Pengue: height+weight TBD; Pereyra height 176 from TM weight TBD; Prisco height 165 from TM weight TBD) + 1 trialist TBD identity (Kebe Lamine CB). Rest squad Primavera. Mastari Riyad removed (U18). Baudot Enzo removed (gone).",
   "sources": [
     "DATI ANTROPOMETRICI.xlsx",
     "https://www.transfermarkt.it/napoli-primavera/kader/verein/12819",
@@ -8,15 +8,12 @@
   ],
   "tmMatchedCount": 29,
   "stillMissingTm": [
-    "Baudot Enzo",
     "Kebe Lamine"
   ],
   "birthPending": [
-    "Baudot Enzo",
     "Kebe Lamine"
   ],
   "excelIncomplete": [
-    "Baudot Enzo",
     "Kebe Lamine",
     "Baridó Francisco Martin",
     "Marotta Gabriele",
@@ -58,23 +55,6 @@
       "photoUrl": null,
       "photoSource": null,
       "photoMissingReason": "Transfermarkt uses default silhouette; no verified public portrait found."
-    },
-    {
-      "displayName": "Baudot Enzo",
-      "weightKg": null,
-      "heightCm": null,
-      "positionShort": "LB",
-      "age": null,
-      "birthDate": null,
-      "foot": null,
-      "squad": "Trialist",
-      "tmMatched": false,
-      "bmi": null,
-      "photo": null,
-      "photoPath": null,
-      "photoUrl": null,
-      "photoSource": null,
-      "photoMissingReason": "TBD — not yet in Excel anthropometrics; no confirmed Napoli youth Transfermarkt profile."
     },
     {
       "displayName": "Branchizio Agostino",
@@ -576,11 +556,6 @@
       }
     ],
     "tbdPlayers": [
-      {
-        "displayName": "Baudot Enzo",
-        "positionShort": "LB",
-        "note": "Added by user request; all fields TBD except position. Quick TM/BeSoccer search found Thionville Lusitanos U17 Enzo Baudot (b. 05/07/2009) but no Napoli youth link — left unmatched."
-      },
       {
         "displayName": "Kebe Lamine",
         "positionShort": "CB",
