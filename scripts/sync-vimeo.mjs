@@ -17,6 +17,9 @@
  *   - otherwise → clips (section from [Build_up] in title, tags, or subfolder name)
  *
  * Training classification (by video / parent-folder name):
+ *   - GK unit titles ("GK …", "goalkeeper", "portiere", "GK distribution", GK parent folder)
+ *     → goalkeepers.video.parts / goalkeepers.clips / goalkeepers.analysisVideos
+ *     (team drills like "5v7+GK" stay on the team side)
  *   - "video analysis" / "analysis" / "analisi" / "Final Third Clips" (clip compilations)
  *     → analysisVideos (Video Analysis tab)
  *   - "clip" / "clips" / timestamp clip names → clips (Clips tab)
@@ -25,7 +28,7 @@
  *   - non-empty sync merges: update/add Vimeo entries, keep local (non-Vimeo) parts/clips/docs
  *   - non-Vimeo PDF/markdown in analysisVideos are preserved
  *   - trainingDesign (session-plan PDFs) is left untouched
- *   - optional training.json → vimeo.skipNameRegex skips matching video names (e.g. "^(gk|goalkeeper)")
+ *   - optional training.json → vimeo.skipNameRegex skips matching video names
  */
 
 import { existsSync, readFileSync, writeFileSync } from 'fs';
@@ -312,6 +315,33 @@ function isTrainingAnalysisCompilation(name) {
   return /final\s*third\s*clips?\b/.test(n);
 }
 
+/**
+ * True for dedicated GK-unit recordings (not team drills that merely include a GK).
+ * Matches titles like "GK distribution 1", "goalkeeper 2", "portiere …", or a GK parent folder.
+ * Leaves "5v7+GK" / "5v4+GK Attacco" on the team side.
+ */
+function isGoalkeeperTrainingVideo(name, parentFolderName = '') {
+  const n = String(name || '').trim();
+  const p = String(parentFolderName || '').trim();
+  if (/^(gk|gks|goalkeeper|goalkeepers|portiere|portieri)(\b|[_\s-]|$)/i.test(p)) {
+    return true;
+  }
+  if (/^(gk|goalkeeper|goalkeepers|portiere|portieri)\b/i.test(n)) {
+    return true;
+  }
+  if (/\bgoalkeepers?\b/i.test(n) || /\bportieri?\b/i.test(n)) {
+    return true;
+  }
+  // e.g. "… GK distribution …" / "distribuzione portiere"
+  if (/\bgk\b/i.test(n) && /\b(distribution|distribuzione|training|session|drill|work|action)\b/i.test(n)) {
+    return true;
+  }
+  if (/\bdistribuzione\b/i.test(n) && /\b(portiere|portieri|gk|goalkeeper)\b/i.test(n)) {
+    return true;
+  }
+  return false;
+}
+
 /** Classify a training Vimeo item into clips / analysis / full-session parts. */
 function classifyTrainingVideo(name, parentFolderName = '') {
   const hay = `${name || ''} ${parentFolderName || ''}`.toLowerCase();
@@ -537,11 +567,27 @@ Upload videos into the Vimeo folder, then re-run:
     ? new RegExp(String(training.vimeo.skipNameRegex), 'i')
     : null;
 
+  if (!training.goalkeepers || typeof training.goalkeepers !== 'object') {
+    training.goalkeepers = {
+      video: { parts: [] },
+      clips: [],
+      trainingDesign: null,
+      analysisVideos: [],
+    };
+  }
+  const gkBlock = training.goalkeepers;
+  if (!gkBlock.video || typeof gkBlock.video !== 'object') gkBlock.video = { parts: [] };
+  if (!Array.isArray(gkBlock.clips)) gkBlock.clips = [];
+  if (!Array.isArray(gkBlock.analysisVideos)) gkBlock.analysisVideos = [];
+
   const prevParts = training.video?.parts || [];
   const prevClips = training.clips || [];
   const prevAnalysis = training.analysisVideos || [];
+  const prevGkParts = gkBlock.video?.parts || [];
+  const prevGkClips = gkBlock.clips || [];
+  const prevGkAnalysis = gkBlock.analysisVideos || [];
   const prevByUrl = new Map(
-    [...prevParts, ...prevClips, ...prevAnalysis]
+    [...prevParts, ...prevClips, ...prevAnalysis, ...prevGkParts, ...prevGkClips, ...prevGkAnalysis]
       .filter((a) => a?.videoFile)
       .map((a) => [normalizeVideoUrl(a.videoFile), a])
   );
@@ -549,14 +595,23 @@ Upload videos into the Vimeo folder, then re-run:
   const sessionParts = [];
   const clipEntries = [];
   const analysisEntries = [];
+  const gkSessionParts = [];
+  const gkClipEntries = [];
+  const gkAnalysisEntries = [];
   let fullSessionUrl = null;
   let fullSessionDuration = -1;
   let fullSessionName = '';
   let namedFullSession = false;
+  let gkFullSessionUrl = null;
+  let gkFullSessionDuration = -1;
+  let gkFullSessionName = '';
+  let gkNamedFullSession = false;
 
   for (const { video, parentFolderName } of listed) {
     const name = video.name || 'Untitled';
-    if (skipNameRegex && skipNameRegex.test(name)) {
+    const isGk = isGoalkeeperTrainingVideo(name, parentFolderName);
+    // skipNameRegex is for true omissions; GK-titled videos are routed to goalkeepers instead.
+    if (!isGk && skipNameRegex && skipNameRegex.test(name)) {
       console.log(`  skip (skipNameRegex) ← ${name}`);
       continue;
     }
@@ -566,11 +621,12 @@ Upload videos into the Vimeo folder, then re-run:
     const title = humanizeTrainingTitle(name);
     const prev = prevByUrl.get(normalizeVideoUrl(link));
     const bucket = classifyTrainingVideo(name, parentFolderName);
+    const destLabel = isGk ? 'gk' : 'team';
 
     if (bucket === 'clip') {
       const n = clipNumberFromName(name);
-      const section = prev?.section || 'other';
-      clipEntries.push({
+      const section = prev?.section || (isGk ? 'gk-action' : 'other');
+      const entry = {
         id: prev?.id || `vimeo-${id}`,
         title: prev?.title || title,
         comments: prev?.comments || title,
@@ -581,13 +637,15 @@ Upload videos into the Vimeo folder, then re-run:
         labels: prev?.labels || [section],
         tags: prev?.tags || ['vimeo', 'training', 'clip'],
         ...(prev?.localFile ? { localFile: prev.localFile } : {}),
-      });
-      console.log(`  clip ← ${name} (${dur}s)`);
+      };
+      if (isGk) gkClipEntries.push(entry);
+      else clipEntries.push(entry);
+      console.log(`  ${destLabel} clip ← ${name} (${dur}s)`);
       continue;
     }
 
     if (bucket === 'analysis') {
-      analysisEntries.push({
+      const entry = {
         id: prev?.id || `vimeo-${id}`,
         title: prev?.title || title,
         description: prev?.description || {
@@ -596,8 +654,10 @@ Upload videos into the Vimeo folder, then re-run:
         },
         videoFile: link,
         tags: prev?.tags || ['vimeo', 'analysis'],
-      });
-      console.log(`  analysis ← ${name} (${dur}s)`);
+      };
+      if (isGk) gkAnalysisEntries.push(entry);
+      else analysisEntries.push(entry);
+      console.log(`  ${destLabel} analysis ← ${name} (${dur}s)`);
       continue;
     }
 
@@ -611,6 +671,26 @@ Upload videos into the Vimeo folder, then re-run:
       videoFile: link,
       tags: prev?.tags || ['vimeo', 'training', 'session'],
     };
+
+    if (isGk) {
+      gkSessionParts.push(entry);
+      const named = isFullSessionName(name);
+      if (named) {
+        if (!gkNamedFullSession || dur >= gkFullSessionDuration) {
+          gkFullSessionUrl = link;
+          gkFullSessionDuration = dur;
+          gkFullSessionName = name;
+          gkNamedFullSession = true;
+        }
+      } else if (!gkNamedFullSession && dur > gkFullSessionDuration) {
+        gkFullSessionUrl = link;
+        gkFullSessionDuration = dur;
+        gkFullSessionName = name;
+      }
+      console.log(`  gk session ← ${name} (${dur}s)`);
+      continue;
+    }
+
     sessionParts.push(entry);
 
     const named = isFullSessionName(name);
@@ -671,7 +751,34 @@ Upload videos into the Vimeo folder, then re-run:
     return { ordered, keptLocal };
   }
 
-  const { ordered, keptLocal } = mergeVimeoWithLocal(prevParts, sessionParts, {
+  function entryLooksGk(entry) {
+    const t = partTitleKey(entry);
+    const local = String(entry?.localFile || entry?.videoFile || '');
+    return (
+      isGoalkeeperTrainingVideo(t) ||
+      isGoalkeeperTrainingVideo(local) ||
+      /(?:^|\/)gk(?:\/|$)/i.test(local)
+    );
+  }
+
+  // Keep GK-titled leftovers off the team side (and vice versa) across re-syncs.
+  const teamPrevParts = prevParts.filter((e) => !entryLooksGk(e));
+  const teamPrevClips = prevClips.filter((e) => !entryLooksGk(e));
+  const teamPrevAnalysis = prevAnalysis.filter((e) => !entryLooksGk(e));
+  const gkPrevParts = [
+    ...prevGkParts,
+    ...prevParts.filter((e) => entryLooksGk(e) && !isVimeoVideoFile(e.videoFile)),
+  ];
+  const gkPrevClips = [
+    ...prevGkClips,
+    ...prevClips.filter((e) => entryLooksGk(e) && !isVimeoVideoFile(e.videoFile)),
+  ];
+  const gkPrevAnalysis = [
+    ...prevGkAnalysis,
+    ...prevAnalysis.filter((e) => entryLooksGk(e) && !isVimeoVideoFile(e.videoFile)),
+  ];
+
+  const { ordered, keptLocal } = mergeVimeoWithLocal(teamPrevParts, sessionParts, {
     preferTitleMatch: true,
   });
 
@@ -679,7 +786,7 @@ Upload videos into the Vimeo folder, then re-run:
   const sessionAndAnalysisUrls = new Set(
     [...sessionParts, ...analysisEntries].map((a) => normalizeVideoUrl(a.videoFile))
   );
-  const prevClipsForMerge = prevClips.filter((c) => {
+  const prevClipsForMerge = teamPrevClips.filter((c) => {
     if (!isVimeoVideoFile(c.videoFile)) return true;
     const url = normalizeVideoUrl(c.videoFile);
     if (sessionAndAnalysisUrls.has(url)) return false;
@@ -698,7 +805,7 @@ Upload videos into the Vimeo folder, then re-run:
 
   // Keep PDF/markdown (and any other non-Vimeo docs) on Video Analysis.
   // Session-plan PDFs live on trainingDesign (Training Design tab) — leave untouched.
-  const preservedDocs = preserveNonVimeoAnalysis(training.analysisVideos);
+  const preservedDocs = preserveNonVimeoAnalysis(teamPrevAnalysis);
   const analysisById = new Map();
   for (const a of [...analysisEntries, ...preservedDocs]) analysisById.set(a.id, a);
   training.analysisVideos = [...analysisById.values()];
@@ -707,10 +814,20 @@ Upload videos into the Vimeo folder, then re-run:
   }
 
   training.clips = mergedClips;
+  const gkVimeoUrls = new Set(
+    [...gkSessionParts, ...gkClipEntries, ...gkAnalysisEntries].map((a) =>
+      normalizeVideoUrl(a.videoFile)
+    )
+  );
+  let resolvedFullSession =
+    fullSessionUrl || training.video?.fullSession || ordered[0]?.videoFile;
+  if (resolvedFullSession && gkVimeoUrls.has(normalizeVideoUrl(resolvedFullSession))) {
+    resolvedFullSession = fullSessionUrl || ordered[0]?.videoFile;
+  }
   training.video = {
     ...(training.video || {}),
     parts: ordered,
-    fullSession: fullSessionUrl || training.video?.fullSession || ordered[0]?.videoFile,
+    fullSession: resolvedFullSession,
     notes: {
       en:
         training.video?.notes?.en ||
@@ -728,6 +845,52 @@ Upload videos into the Vimeo folder, then re-run:
     console.log(`  fullSession highlight (largest) ← ${fullSessionName} (${fullSessionDuration}s)`);
   }
 
+  const { ordered: gkOrderedParts, keptLocal: keptLocalGkParts } = mergeVimeoWithLocal(
+    gkPrevParts,
+    gkSessionParts,
+    { preferTitleMatch: true }
+  );
+  const gkSessionAnalysisUrls = new Set(
+    [...gkSessionParts, ...gkAnalysisEntries].map((a) => normalizeVideoUrl(a.videoFile))
+  );
+  const gkPrevClipsForMerge = gkPrevClips.filter((c) => {
+    if (!isVimeoVideoFile(c.videoFile)) return true;
+    return !gkSessionAnalysisUrls.has(normalizeVideoUrl(c.videoFile));
+  });
+  const { ordered: gkMergedClips, keptLocal: keptLocalGkClips } = mergeVimeoWithLocal(
+    gkPrevClipsForMerge,
+    gkClipEntries
+  );
+  gkMergedClips.sort((a, b) => {
+    const an = a.minute * 60 + (a.second || 0);
+    const bn = b.minute * 60 + (b.second || 0);
+    if (an !== bn) return an - bn;
+    return String(a.title?.en || a.title || '').localeCompare(String(b.title?.en || b.title || ''));
+  });
+  const gkPreservedDocs = preserveNonVimeoAnalysis(gkPrevAnalysis);
+  const gkAnalysisById = new Map();
+  for (const a of [...gkAnalysisEntries, ...gkPreservedDocs]) gkAnalysisById.set(a.id, a);
+
+  training.goalkeepers = {
+    ...gkBlock,
+    video: {
+      ...(gkBlock.video || {}),
+      parts: gkOrderedParts,
+      fullSession:
+        gkFullSessionUrl ||
+        gkBlock.video?.fullSession ||
+        gkOrderedParts[0]?.videoFile ||
+        undefined,
+    },
+    clips: gkMergedClips,
+    analysisVideos: [...gkAnalysisById.values()],
+  };
+  if (gkFullSessionUrl && !gkNamedFullSession && gkFullSessionName) {
+    console.log(
+      `  gk fullSession highlight (largest) ← ${gkFullSessionName} (${gkFullSessionDuration}s)`
+    );
+  }
+
   training.vimeo = {
     ...(training.vimeo || {}),
     lastSyncedAt: new Date().toISOString(),
@@ -743,6 +906,9 @@ Updated ${trainingPath}
   clips:       ${mergedClips.length} (${clipEntries.length} Vimeo + ${keptLocalClips} local)
   analysis:    ${training.analysisVideos.length} (${analysisEntries.length} Vimeo + ${preservedDocs.length} docs)
   design:      ${(training.trainingDesign || []).length} (session plans, untouched)
+  gk parts:    ${gkOrderedParts.length} (${gkSessionParts.length} Vimeo + ${keptLocalGkParts} local)
+  gk clips:    ${gkMergedClips.length} (${gkClipEntries.length} Vimeo + ${keptLocalGkClips} local)
+  gk analysis: ${training.goalkeepers.analysisVideos.length} (${gkAnalysisEntries.length} Vimeo)
 `);
 }
 
