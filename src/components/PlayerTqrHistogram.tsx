@@ -5,6 +5,7 @@ import {
   getTqrDataset,
 } from '../data/tqrLoad';
 import { useLanguage } from '../i18n/LanguageContext';
+import BorgScaleLegend from './BorgScaleLegend';
 
 function pointHref(p: {
   trainingSlug: string | null;
@@ -43,6 +44,7 @@ export default function PlayerTqrHistogram({
     <div className="tqr-panel player-tqr">
       <div className="section-title">{t('playerTqrTitle')}</div>
       <p className="video-hint">{t('playerTqrHint')}</p>
+      <BorgScaleLegend kind="tqr" />
 
       <div
         className="rpe-bars tqr-player-bars"

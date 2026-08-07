@@ -8,6 +8,7 @@ import {
   type PlayerRpePoint,
 } from '../data/rpeLoad';
 import { useLanguage } from '../i18n/LanguageContext';
+import BorgScaleLegend from './BorgScaleLegend';
 
 type Metric = 'load' | 'rpe';
 
@@ -139,6 +140,7 @@ export default function PlayerLoadTimeline({
     <div className="rpe-panel player-rpe">
       <div className="section-title">{t('playerPhysicalLoad')}</div>
       <p className="video-hint">{t('playerPhysicalLoadHint')}</p>
+      <BorgScaleLegend kind="rpe" />
 
       <div className="rpe-line-toolbar">
         <div

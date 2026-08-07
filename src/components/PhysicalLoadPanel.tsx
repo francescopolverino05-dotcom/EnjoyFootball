@@ -10,6 +10,7 @@ import { getPlayerBySlug } from '../data/players';
 import type { RpeSession } from '../types/rpe';
 import type { TqrSession } from '../types/tqr';
 import { useLanguage } from '../i18n/LanguageContext';
+import BorgScaleLegend from './BorgScaleLegend';
 import TqrHistograms from './TqrHistograms';
 
 export default function PhysicalLoadPanel({
@@ -34,6 +35,7 @@ export default function PhysicalLoadPanel({
         <>
           <div className="section-title">{t('physicalLoad')}</div>
           <p className="video-hint">{t('physicalLoadHint')}</p>
+          <BorgScaleLegend kind="rpe" />
 
           <div className="rpe-kpis">
             <div className="rpe-kpi">

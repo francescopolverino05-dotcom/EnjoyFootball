@@ -91,6 +91,8 @@ const dictionaries = {
     physicalLoad: 'Physical load (RPE)',
     physicalLoadHint:
       'Squad and individual session load for this day — RPE and session load (min × RPE).',
+    borgScaleCaption:
+      'Official staff scale — use these labels to interpret scores from 6 to 20.',
     rpeAvgRpe: 'Avg RPE',
     rpeAvgSessionLoad: 'Avg session load',
     rpeDuration: 'Duration',
@@ -269,6 +271,8 @@ const dictionaries = {
     physicalLoad: 'Carico fisico (RPE)',
     physicalLoadHint:
       'Carico di squadra e individuale per questa giornata — RPE e carico di seduta (min × RPE).',
+    borgScaleCaption:
+      'Scala ufficiale dello staff — usa queste etichette per interpretare i punteggi da 6 a 20.',
     rpeAvgRpe: 'RPE medio',
     rpeAvgSessionLoad: 'Carico medio',
     rpeDuration: 'Durata',

@@ -8,6 +8,7 @@ import {
 import { getPlayerBySlug } from '../data/players';
 import type { TqrSession } from '../types/tqr';
 import { useLanguage } from '../i18n/LanguageContext';
+import BorgScaleLegend from './BorgScaleLegend';
 
 /** TQR histograms only — squad block + individual bars (Excel values as-is). */
 export default function TqrHistograms({ session }: { session: TqrSession }) {
@@ -23,6 +24,7 @@ export default function TqrHistograms({ session }: { session: TqrSession }) {
     <div className="tqr-panel">
       <div className="section-title">{t('tqrTitle')}</div>
       <p className="video-hint">{t('tqrHint')}</p>
+      <BorgScaleLegend kind="tqr" />
 
       <div className="rpe-chart-block">
         <div className="rpe-chart-title">{t('tqrSquadHistogram')}</div>
