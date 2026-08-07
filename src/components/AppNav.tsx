@@ -2,9 +2,9 @@ import { NavLink, useLocation } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 
 /**
- * Top nav is always Home | Matches | Training | Players.
- * Active state follows the current route; detail pages light up their
- * parent section (match → Matches, training → Training, player → Players).
+ * Top nav: Home first, then alphabetical —
+ * Home | Calendar | Matches | Players | Training.
+ * Detail pages light up their parent section.
  */
 export default function AppNav() {
   const { t } = useLanguage();
@@ -12,10 +12,11 @@ export default function AppNav() {
   const path = location.pathname;
 
   const homeActive = path === '/' || path === '';
+  const calendarActive = path === '/calendar' || path.startsWith('/calendar/');
   const matchesActive = path === '/matches' || path.startsWith('/match/');
+  const playersActive = path === '/players' || path.startsWith('/players/');
   const trainingActive =
     path === '/trainings' || path.startsWith('/training/');
-  const playersActive = path === '/players' || path.startsWith('/players/');
 
   return (
     <nav className="app-nav" aria-label={t('navAria')}>
@@ -29,6 +30,14 @@ export default function AppNav() {
         {t('navHome')}
       </NavLink>
       <NavLink
+        to="/calendar"
+        className={() =>
+          calendarActive ? 'app-nav-link active' : 'app-nav-link'
+        }
+      >
+        {t('calendar')}
+      </NavLink>
+      <NavLink
         to="/matches"
         className={() =>
           matchesActive ? 'app-nav-link active' : 'app-nav-link'
@@ -37,20 +46,20 @@ export default function AppNav() {
         {t('matches')}
       </NavLink>
       <NavLink
-        to="/trainings"
-        className={() =>
-          trainingActive ? 'app-nav-link active' : 'app-nav-link'
-        }
-      >
-        {t('navTraining')}
-      </NavLink>
-      <NavLink
         to="/players"
         className={() =>
           playersActive ? 'app-nav-link active' : 'app-nav-link'
         }
       >
         {t('players')}
+      </NavLink>
+      <NavLink
+        to="/trainings"
+        className={() =>
+          trainingActive ? 'app-nav-link active' : 'app-nav-link'
+        }
+      >
+        {t('navTraining')}
       </NavLink>
     </nav>
   );

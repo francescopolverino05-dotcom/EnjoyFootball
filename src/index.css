@@ -820,6 +820,335 @@ button {
   background: #fff;
 }
 
+.calendar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-gray);
+}
+
+.calendar-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.calendar-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.calendar-dot--training {
+  background: var(--napoli-blue);
+}
+
+.calendar-dot--match {
+  background: var(--gk-orange);
+}
+
+.calendar-panel {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 18px 18px 20px;
+}
+
+.calendar-toolbar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.calendar-view-tabs {
+  margin-bottom: 0;
+}
+
+.calendar-filters,
+.calendar-nav-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.calendar-filter-chip,
+.calendar-nav-btn {
+  border: 1px solid var(--border-color);
+  background: #fff;
+  color: var(--text-gray);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  min-height: 40px;
+  cursor: pointer;
+  transition: var(--transition-standard);
+}
+
+.calendar-filter-chip:hover,
+.calendar-nav-btn:hover {
+  color: var(--napoli-blue-dark);
+  border-color: var(--napoli-blue);
+}
+
+.calendar-filter-chip.active {
+  color: #fff;
+  background: var(--napoli-blue-dark);
+  border-color: var(--napoli-blue-dark);
+}
+
+.calendar-view-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.calendar-view-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--napoli-blue-dark);
+}
+
+.calendar-month-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.calendar-week-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.calendar-dow {
+  padding: 4px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-light);
+}
+
+.calendar-day,
+.calendar-week-day {
+  min-height: 72px;
+  padding: 8px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #fff;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  cursor: pointer;
+  color: inherit;
+  transition: var(--transition-standard);
+}
+
+.calendar-week-day {
+  min-height: 96px;
+}
+
+.calendar-day--empty {
+  min-height: 72px;
+  background: #f3f4f6;
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+}
+
+.calendar-day:not(.has-events) {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.calendar-day.has-events:hover,
+.calendar-week-day.has-events:hover,
+.calendar-week-day:hover {
+  border-color: var(--napoli-blue);
+}
+
+.calendar-day.selected,
+.calendar-week-day.selected {
+  border-color: var(--napoli-blue);
+  background: #eef6ff;
+  box-shadow: inset 0 0 0 1px var(--napoli-blue);
+}
+
+.calendar-day-num {
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.calendar-day.selected .calendar-day-num,
+.calendar-week-day.selected .calendar-day-num {
+  color: var(--napoli-blue-dark);
+}
+
+.calendar-day-dots {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  min-height: 8px;
+}
+
+.calendar-day-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-light);
+  line-height: 1.2;
+}
+
+.calendar-agenda {
+  border-top: 1px solid var(--border-color);
+  padding-top: 16px;
+}
+
+.calendar-agenda-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.calendar-agenda-title {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--napoli-blue-dark);
+}
+
+.calendar-agenda-count {
+  min-width: 28px;
+  height: 28px;
+  padding: 0 8px;
+  border-radius: 14px;
+  background: var(--bg-light);
+  border: 1px solid var(--border-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--text-gray);
+}
+
+.calendar-event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.calendar-event-card {
+  display: block;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 12px 14px;
+  background: #fff;
+  transition: var(--transition-standard);
+}
+
+.calendar-event-card:hover {
+  border-color: var(--napoli-blue);
+}
+
+.calendar-event-card--training {
+  box-shadow: inset 3px 0 0 var(--napoli-blue);
+}
+
+.calendar-event-card--match {
+  box-shadow: inset 3px 0 0 var(--gk-orange);
+}
+
+.calendar-event-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.calendar-event-kind {
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-gray);
+}
+
+.calendar-event-week {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-left: auto;
+}
+
+.calendar-event-date {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-gray);
+  margin-bottom: 4px;
+}
+
+.calendar-event-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.calendar-event-subtitle {
+  font-size: 13px;
+  color: var(--text-gray);
+  margin-bottom: 8px;
+}
+
+.calendar-event-open {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--napoli-blue-dark);
+}
+
+.calendar-week-rest {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border-light);
+}
+
+.calendar-week-rest-label {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-light);
+}
+
 .training-weeks,
 .match-competitions {
   display: flex;
@@ -2620,6 +2949,30 @@ a.gacon-ind-row:hover {
   .tab-button {
     font-size: 11px;
     padding: 12px 12px;
+  }
+
+  .calendar-month-grid,
+  .calendar-week-grid {
+    gap: 3px;
+  }
+
+  .calendar-day,
+  .calendar-week-day {
+    min-height: 64px;
+    padding: 6px;
+  }
+
+  .calendar-week-day {
+    min-height: 80px;
+  }
+
+  .calendar-day-label {
+    display: none;
+  }
+
+  .calendar-view-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
