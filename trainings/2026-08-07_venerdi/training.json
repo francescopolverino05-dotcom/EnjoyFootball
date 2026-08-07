@@ -1,0 +1,48 @@
+{
+  "id": "2026-08-07_venerdi",
+  "slug": "2026-08-07_venerdi",
+  "date": "2026-08-07",
+  "title": {
+    "en": "Friday training",
+    "it": "Venerdì"
+  },
+  "focus": {
+    "en": "General session",
+    "it": "Sessione generale"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Week 2 (Sett. 2 03/08) — Venerdì. Session plan attached; videos pending sync.",
+    "it": "Settimana 2 (Sett. 2 03/08) — Venerdì. Piano seduta allegato; video in attesa di sync."
+  },
+  "video": {
+    "fullSession": "",
+    "notes": {
+      "en": "Videos pending — sync from Vimeo when ready.",
+      "it": "Video in attesa — sincronizzare da Vimeo quando pronti."
+    },
+    "parts": []
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-07",
+      "title": {
+        "en": "Session plan — Fri 7 Aug",
+        "it": "Piano seduta — Ven 7 ago"
+      },
+      "description": {
+        "en": "CamScanner session plan for Friday 7 August.",
+        "it": "Piano seduta CamScanner — Venerdì 7 agosto."
+      },
+      "videoFile": "Session_Plan_2026-08-07.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-2"
+      ]
+    }
+  ]
+}
