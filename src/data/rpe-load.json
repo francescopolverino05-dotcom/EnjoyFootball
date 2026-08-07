@@ -1,5 +1,5 @@
 {
-  "source": "RPE 2.xlsx sheet CR-10 (Napoli Primavera ~28 Jul–6 Aug 2026)",
+  "source": "RPE 2.xlsx sheet CR-10 (Napoli Primavera ~28 Jul–7 Aug 2026)",
   "scaleNote": {
     "en": "Values look Borg-like (approx. 6–20) despite the CR-10 sheet title. Shown as RPE and session load (min × RPE).",
     "it": "I valori sembrano in scala Borg (circa 6–20) nonostante il titolo foglio CR-10. Mostrati come RPE e carico di seduta (min × RPE)."
@@ -1330,6 +1330,152 @@
           "min": 120,
           "rpe": 13,
           "sessionLoad": 1560
+        }
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "kind": "training",
+      "trainingSlug": "2026-08-07_venerdi",
+      "matchSlug": null,
+      "playersPresent": 19,
+      "playersAnswered": 19,
+      "avgMin": 120.0,
+      "avgRpe": 12.37,
+      "avgSessionLoad": 1484.2,
+      "players": [
+        {
+          "playerSlug": "anic-ivan",
+          "excelName": "Anic Ivan",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "candela-ivan-giovanni",
+          "excelName": "Candela Ivan Giovanni",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "capozzoli-emanuele",
+          "excelName": "Capozzoli Emanuele",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "castaldi-ciro-junior",
+          "excelName": "Castaldi Ciro Junior",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "chiummariello-andrea",
+          "excelName": "Chiummariello Andrea",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "de-stefano-francesco",
+          "excelName": "De Stefano Francesco",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "esposito-luigi",
+          "excelName": "Esposito Luigi",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "favicchio-elia",
+          "excelName": "Favicchio Elia",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "lieto-claudio",
+          "excelName": "Lieto Claudio",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "maida-giuseppe",
+          "excelName": "Maida Giuseppe",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "mane-mohamed-seick",
+          "excelName": "Mane Mohamed Seick",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "melnyk-mykyta",
+          "excelName": "Melnyk Mykyta",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "natale-raffaele",
+          "excelName": "Natale Raffaele",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "pengue-salvatore",
+          "excelName": "Pengue Salvatore",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "riccio-luigi",
+          "excelName": "Riccio Luigi",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "zappala-andrea",
+          "excelName": "Zappalà Andrea",
+          "min": 120,
+          "rpe": 13,
+          "sessionLoad": 1560
+        },
+        {
+          "playerSlug": "branchizio-agostino",
+          "excelName": "Branchizio Agostino",
+          "min": 120,
+          "rpe": 9,
+          "sessionLoad": 1080
+        },
+        {
+          "playerSlug": "lepre-giuseppe",
+          "excelName": "Lepre Giuseppe",
+          "min": 120,
+          "rpe": 9,
+          "sessionLoad": 1080
+        },
+        {
+          "playerSlug": "rovetini-alessandro",
+          "excelName": "Ruvetini Alessandro",
+          "min": 120,
+          "rpe": 9,
+          "sessionLoad": 1080
         }
       ]
     }
