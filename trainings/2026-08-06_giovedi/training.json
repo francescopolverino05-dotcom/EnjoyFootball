@@ -250,7 +250,26 @@
       ]
     }
   ],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-06",
+      "title": {
+        "en": "Session plan — Thu 6 Aug",
+        "it": "Piano seduta — Gio 6 ago"
+      },
+      "description": {
+        "en": "CamScanner session plan for Thursday 6 August.",
+        "it": "Piano seduta CamScanner — Giovedì 6 agosto."
+      },
+      "videoFile": "Session_Plan_2026-08-06.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-2"
+      ]
+    }
+  ],
   "vimeo": {
     "folderId": "30099306",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099306",
