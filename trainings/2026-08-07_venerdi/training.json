@@ -3,25 +3,111 @@
   "slug": "2026-08-07_venerdi",
   "date": "2026-08-07",
   "title": {
-    "en": "Friday training",
-    "it": "Venerdì"
+    "en": "Friday training — Blocks, set pieces & chance conversion",
+    "it": "Venerdì — Blocchi, palle inattive e finalizzazione"
   },
   "focus": {
-    "en": "General session",
-    "it": "Sessione generale"
+    "en": "High / mid / low block / Set pieces / Chance conversion",
+    "it": "Blocco alto / medio / basso / Palle inattive / Finalizzazione"
   },
   "status": "published",
   "notes": {
-    "en": "Week 2 (Sett. 2 03/08) — Venerdì. Session plan attached; videos pending sync.",
-    "it": "Settimana 2 (Sett. 2 03/08) — Venerdì. Piano seduta allegato; video in attesa di sync."
+    "en": "Week 2 (Sett. 2 03/08) — Venerdì. Videos hosted on Vimeo (folder Venerdi).",
+    "it": "Settimana 2 (Sett. 2 03/08) — Venerdì. Video su Vimeo (cartella Venerdi)."
   },
   "video": {
-    "fullSession": "",
+    "fullSession": "https://vimeo.com/1216381484",
     "notes": {
-      "en": "Videos pending — sync from Vimeo when ready.",
-      "it": "Video in attesa — sincronizzare da Vimeo quando pronti."
+      "en": "Full session (longest clip): mid block (Vimeo).",
+      "it": "Sessione (clip più lunga): mid block (Vimeo)."
     },
-    "parts": []
+    "parts": [
+      {
+        "id": "vimeo-1216381482",
+        "title": {
+          "en": "High Defence",
+          "it": "High Defence"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1216381482",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1216381483",
+        "title": {
+          "en": "low block",
+          "it": "low block"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1216381483",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1216381484",
+        "title": {
+          "en": "mid block",
+          "it": "mid block"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1216381484",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1216365908",
+        "title": {
+          "en": "Set Pieces (Free Kicks)",
+          "it": "Set Pieces (Free Kicks)"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1216365908",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1216365457",
+        "title": {
+          "en": "Chance Conversion",
+          "it": "Chance Conversion"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1216365457",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
   },
   "clips": [],
   "analysisVideos": [],
@@ -44,5 +130,10 @@
         "week-2"
       ]
     }
-  ]
+  ],
+  "vimeo": {
+    "folderId": "30099308",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30099308",
+    "lastSyncedAt": "2026-08-07T11:10:47.558Z"
+  }
 }
