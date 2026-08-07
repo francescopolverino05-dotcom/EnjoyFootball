@@ -40,6 +40,21 @@ npm run sync-vimeo -- --training 2026-08-03_lunedi --folder 30099288
 
 The sync maps all folder videos to `video.parts` (Full Session tab). The largest / “full session” / “sessione” video is also set as `video.fullSession`. PDF/markdown docs stay in `analysisVideos` (Video Analysis tab). `status` is not changed.
 
+## Goalkeepers content
+
+Every `training.json` includes a `goalkeepers` block mirroring team media fields:
+
+```json
+"goalkeepers": {
+  "video": { "parts": [] },
+  "clips": [],
+  "trainingDesign": null,
+  "analysisVideos": []
+}
+```
+
+On `/training/:slug`, the first toggle is **Team | Goalkeepers** (Squadra | Portieri). Team mode uses the top-level fields (including Physical Load). Goalkeepers mode uses this block and omits Physical Load. Leave empty until the GK coach sends schede / videos — the UI shows a short empty state. Deep-link: `?view=gk`.
+
 ## vs Matches
 
 | | Matches | Trainings |

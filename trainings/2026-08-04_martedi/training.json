@@ -177,5 +177,13 @@
         "week-2"
       ]
     }
-  ]
+  ],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  }
 }

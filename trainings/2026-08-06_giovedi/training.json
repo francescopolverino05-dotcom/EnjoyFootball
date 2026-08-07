@@ -274,5 +274,13 @@
     "folderId": "30099306",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099306",
     "lastSyncedAt": "2026-08-06T18:27:40.749Z"
+  },
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
   }
 }

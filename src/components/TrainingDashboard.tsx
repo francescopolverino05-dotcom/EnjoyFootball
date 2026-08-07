@@ -1,5 +1,11 @@
-import { useMemo, useState } from 'react';
-import type { TrainingSession } from '../types/training';
+import { useEffect, useMemo, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
+import type {
+  TrainingGoalkeepersBlock,
+  TrainingMediaBlock,
+  TrainingSession,
+} from '../types/training';
+import { EMPTY_TRAINING_GOALKEEPERS } from '../types/training';
 import type { AnalysisVideo, VideoClip } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
 import {
@@ -12,6 +18,8 @@ import { getRpeSessionByTrainingSlug } from '../data/rpeLoad';
 import { getTqrSessionByTrainingSlug } from '../data/tqrLoad';
 import MatchMedia from './MatchMedia';
 import PhysicalLoadPanel from './PhysicalLoadPanel';
+
+type RoleView = 'team' | 'gk';
 
 type TabId =
   | 'fullsession'
@@ -27,6 +35,14 @@ type TabLabelKey =
   | 'tabVideoAnalysis'
   | 'tabPhysicalLoad';
 
+/** Resolved media for the active Team / Goalkeepers mode */
+type ContentSource = {
+  video?: TrainingMediaBlock;
+  clips: VideoClip[];
+  analysisVideos: AnalysisVideo[];
+  trainingDesign?: AnalysisVideo[] | null;
+};
+
 function clipSortKey(clip: VideoClip): number {
   return clip.minute * 60 + (clip.second ?? 0);
 }
@@ -38,17 +54,68 @@ function formatClipTimestamp(clip: VideoClip): string {
     : `${clip.minute}'`;
 }
 
+function resolveGkBlock(
+  block: TrainingGoalkeepersBlock | undefined
+): TrainingGoalkeepersBlock {
+  return block ?? EMPTY_TRAINING_GOALKEEPERS;
+}
+
+function contentForRole(
+  session: TrainingSession,
+  role: RoleView
+): ContentSource {
+  if (role === 'gk') {
+    const gk = resolveGkBlock(session.goalkeepers);
+    return {
+      video: gk.video,
+      clips: gk.clips ?? [],
+      analysisVideos: gk.analysisVideos ?? [],
+      trainingDesign: gk.trainingDesign,
+    };
+  }
+  return {
+    video: session.video,
+    clips: session.clips ?? [],
+    analysisVideos: session.analysisVideos ?? [],
+    trainingDesign: session.trainingDesign,
+  };
+}
+
 export default function TrainingDashboard({
   session,
 }: {
   session: TrainingSession;
 }) {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const role: RoleView = searchParams.get('view') === 'gk' ? 'gk' : 'team';
   const [activeTab, setActiveTab] = useState<TabId>('fullsession');
   const { t } = useLanguage();
   const rpeSession = getRpeSessionByTrainingSlug(session.slug);
   const tqrSession = getTqrSessionByTrainingSlug(session.slug);
   const gaconSession = getGaconSessionByTrainingSlug(session.slug);
-  const hasPhysicalLoad = Boolean(rpeSession || tqrSession || gaconSession);
+  const hasPhysicalLoad =
+    role === 'team' && Boolean(rpeSession || tqrSession || gaconSession);
+
+  const content = contentForRole(session, role);
+  const emptyKey = role === 'gk' ? 'noGkContent' : undefined;
+
+  const setRole = (next: RoleView) => {
+    setSearchParams(
+      (prev) => {
+        const params = new URLSearchParams(prev);
+        if (next === 'gk') params.set('view', 'gk');
+        else params.delete('view');
+        return params;
+      },
+      { replace: true }
+    );
+  };
+
+  useEffect(() => {
+    if (role === 'gk' && activeTab === 'physicalload') {
+      setActiveTab('fullsession');
+    }
+  }, [role, activeTab]);
 
   const tabs: [TabId, TabLabelKey][] = [
     ['fullsession', 'tabFullSession'],
@@ -62,7 +129,36 @@ export default function TrainingDashboard({
 
   return (
     <>
-      <div className="tabs-header" role="tablist">
+      <div
+        className="tabs-header training-role-tabs"
+        role="tablist"
+        aria-label={t('trainingViewAria')}
+      >
+        <button
+          type="button"
+          role="tab"
+          aria-selected={role === 'team'}
+          className={`tab-button ${role === 'team' ? 'active' : ''}`}
+          onClick={() => setRole('team')}
+        >
+          {t('trainingViewTeam')}
+        </button>
+        <button
+          type="button"
+          role="tab"
+          aria-selected={role === 'gk'}
+          className={`tab-button ${role === 'gk' ? 'active' : ''}`}
+          onClick={() => setRole('gk')}
+        >
+          {t('trainingViewGoalkeepers')}
+        </button>
+      </div>
+
+      <div
+        className="tabs-header"
+        role="tablist"
+        aria-label={t('trainingContentAria')}
+      >
         {tabs.map(([id, labelKey]) => (
           <button
             key={id}
@@ -78,20 +174,37 @@ export default function TrainingDashboard({
       </div>
 
       <div className={`tab-content ${activeTab === 'fullsession' ? 'active' : ''}`}>
-        <FullSessionPanel session={session} />
+        <FullSessionPanel
+          slug={session.slug}
+          video={content.video}
+          emptyKey={emptyKey ?? 'noTrainingVideo'}
+        />
       </div>
       <div className={`tab-content ${activeTab === 'clips' ? 'active' : ''}`}>
-        <TrainingClipsPanel session={session} />
+        <TrainingClipsPanel
+          slug={session.slug}
+          clips={content.clips}
+          emptyKey={emptyKey ?? 'noTrainingClips'}
+        />
       </div>
       <div
         className={`tab-content ${activeTab === 'trainingdesign' ? 'active' : ''}`}
       >
-        <TrainingDesignPanel session={session} />
+        <TrainingDesignPanel
+          slug={session.slug}
+          trainingDesign={content.trainingDesign}
+          analysisVideos={content.analysisVideos}
+          emptyKey={emptyKey ?? 'noTrainingDesign'}
+        />
       </div>
       <div
         className={`tab-content ${activeTab === 'videoanalysis' ? 'active' : ''}`}
       >
-        <TrainingAnalysisPanel session={session} />
+        <TrainingAnalysisPanel
+          slug={session.slug}
+          analysisVideos={content.analysisVideos}
+          emptyKey={emptyKey ?? 'noTrainingAnalysis'}
+        />
       </div>
       {hasPhysicalLoad ? (
         <div
@@ -108,10 +221,18 @@ export default function TrainingDashboard({
   );
 }
 
-function FullSessionPanel({ session }: { session: TrainingSession }) {
+function FullSessionPanel({
+  slug,
+  video,
+  emptyKey,
+}: {
+  slug: string;
+  video?: TrainingMediaBlock;
+  emptyKey: 'noTrainingVideo' | 'noGkContent';
+}) {
   const { t, L } = useLanguage();
-  const parts = session.video?.parts ?? [];
-  const src = session.video?.fullSession ?? null;
+  const parts = video?.parts ?? [];
+  const src = video?.fullSession ?? null;
 
   if (parts.length > 0) {
     return (
@@ -129,7 +250,7 @@ function FullSessionPanel({ session }: { session: TrainingSession }) {
               <article className="analysis-card" key={item.id}>
                 <MatchMedia
                   library="trainings"
-                  slug={session.slug}
+                  slug={slug}
                   src={src}
                   kind={kind}
                   unsupportedLabel={t('videoUnsupported')}
@@ -154,11 +275,13 @@ function FullSessionPanel({ session }: { session: TrainingSession }) {
   return (
     <div className="video-section">
       <div className="section-title">{t('fullSessionVideo')}</div>
-      <p className="video-hint">{t('fullSessionHint')}</p>
+      {emptyKey === 'noGkContent' ? null : (
+        <p className="video-hint">{t('fullSessionHint')}</p>
+      )}
       {src ? (
         <MatchMedia
           library="trainings"
-          slug={session.slug}
+          slug={slug}
           src={src}
           kind={null}
           unsupportedLabel={t('videoUnsupported')}
@@ -169,7 +292,7 @@ function FullSessionPanel({ session }: { session: TrainingSession }) {
         />
       ) : (
         <div className="video-placeholder">
-          {t('noTrainingVideo').replace(/\{slug\}/g, session.slug)}
+          {t(emptyKey).replace(/\{slug\}/g, slug)}
         </div>
       )}
     </div>
@@ -182,13 +305,21 @@ const TRAINING_CLIP_SECTION_ORDER: ClipLabelId[] = [
   'other',
 ];
 
-function TrainingClipsPanel({ session }: { session: TrainingSession }) {
+function TrainingClipsPanel({
+  slug,
+  clips,
+  emptyKey,
+}: {
+  slug: string;
+  clips: VideoClip[];
+  emptyKey: 'noTrainingClips' | 'noGkContent';
+}) {
   const { t, L } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
 
   const sections = useMemo(() => {
     const map = new Map<ClipLabelId, VideoClip[]>();
-    for (const clip of session.clips) {
+    for (const clip of clips) {
       const key = (clip.section ?? clip.labels[0] ?? 'other') as ClipLabelId;
       // Match Clips tab hides `goal`/`other`; training Vimeo sync defaults to `other`.
       if (key === 'goal') continue;
@@ -202,7 +333,7 @@ function TrainingClipsPanel({ session }: { session: TrainingSession }) {
     return TRAINING_CLIP_SECTION_ORDER.filter((id) => (map.get(id)?.length ?? 0) > 0).map(
       (id) => ({ id, clips: map.get(id)! })
     );
-  }, [session.clips]);
+  }, [clips]);
 
   const filteredSections = useMemo(() => {
     const q = searchQuery.trim().toLowerCase();
@@ -231,7 +362,7 @@ function TrainingClipsPanel({ session }: { session: TrainingSession }) {
   if (sections.length === 0) {
     return (
       <div className="empty-clips">
-        {t('noTrainingClips').replace(/\{slug\}/g, session.slug)}
+        {t(emptyKey).replace(/\{slug\}/g, slug)}
       </div>
     );
   }
@@ -276,7 +407,7 @@ function TrainingClipsPanel({ session }: { session: TrainingSession }) {
                 <article className="analysis-card" key={clip.id}>
                   <MatchMedia
                     library="trainings"
-                    slug={session.slug}
+                    slug={slug}
                     src={clip.videoFile}
                     kind="clips"
                     unsupportedLabel={t('videoUnsupported')}
@@ -299,22 +430,22 @@ function TrainingClipsPanel({ session }: { session: TrainingSession }) {
 }
 
 function DocMediaGrid({
-  session,
+  slug,
   items,
   hintKey,
   emptyKey,
 }: {
-  session: TrainingSession;
+  slug: string;
   items: AnalysisVideo[];
   hintKey: 'videoAnalysisHint' | 'trainingDesignHint';
-  emptyKey: 'noTrainingAnalysis' | 'noTrainingDesign';
+  emptyKey: 'noTrainingAnalysis' | 'noTrainingDesign' | 'noGkContent';
 }) {
   const { t, L } = useLanguage();
 
   if (items.length === 0) {
     return (
       <div className="empty-clips">
-        {t(emptyKey).replace(/\{slug\}/g, session.slug)}
+        {t(emptyKey).replace(/\{slug\}/g, slug)}
       </div>
     );
   }
@@ -327,7 +458,7 @@ function DocMediaGrid({
           <article className="analysis-card" key={item.id}>
             <MatchMedia
               library="trainings"
-              slug={session.slug}
+              slug={slug}
               src={item.videoFile}
               kind="analysis"
               unsupportedLabel={t('videoUnsupported')}
@@ -356,32 +487,50 @@ function isSessionPlanDoc(item: AnalysisVideo): boolean {
   return /session[_-]?plan/i.test(item.id) || /Session_Plan/i.test(src);
 }
 
-function TrainingDesignPanel({ session }: { session: TrainingSession }) {
+function TrainingDesignPanel({
+  slug,
+  trainingDesign,
+  analysisVideos,
+  emptyKey,
+}: {
+  slug: string;
+  trainingDesign?: AnalysisVideo[] | null;
+  analysisVideos: AnalysisVideo[];
+  emptyKey: 'noTrainingDesign' | 'noGkContent';
+}) {
   // Prefer explicit trainingDesign; fall back to tagged session plans still in analysisVideos.
-  const fromField = session.trainingDesign ?? [];
-  const fromAnalysis = (session.analysisVideos ?? []).filter(isSessionPlanDoc);
+  const fromField = trainingDesign ?? [];
+  const fromAnalysis = analysisVideos.filter(isSessionPlanDoc);
   const items = fromField.length > 0 ? fromField : fromAnalysis;
 
   return (
     <DocMediaGrid
-      session={session}
+      slug={slug}
       items={items}
       hintKey="trainingDesignHint"
-      emptyKey="noTrainingDesign"
+      emptyKey={emptyKey}
     />
   );
 }
 
-function TrainingAnalysisPanel({ session }: { session: TrainingSession }) {
+function TrainingAnalysisPanel({
+  slug,
+  analysisVideos,
+  emptyKey,
+}: {
+  slug: string;
+  analysisVideos: AnalysisVideo[];
+  emptyKey: 'noTrainingAnalysis' | 'noGkContent';
+}) {
   // Analyst videos + remaining docs (Vimeo analysis, md/docx). Session-plan PDFs → Training Design.
-  const videos = (session.analysisVideos ?? []).filter((item) => !isSessionPlanDoc(item));
+  const videos = analysisVideos.filter((item) => !isSessionPlanDoc(item));
 
   return (
     <DocMediaGrid
-      session={session}
+      slug={slug}
       items={videos}
       hintKey="videoAnalysisHint"
-      emptyKey="noTrainingAnalysis"
+      emptyKey={emptyKey}
     />
   );
 }

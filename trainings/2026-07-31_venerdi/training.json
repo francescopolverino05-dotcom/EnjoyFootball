@@ -185,5 +185,13 @@
         "week-1"
       ]
     }
-  ]
+  ],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  }
 }

@@ -113,6 +113,11 @@ const dictionaries = {
     tabTrainingDesign: 'Training Design',
     tabVideoAnalysis: 'Video Analysis',
     tabPhysicalLoad: 'Physical Load',
+    trainingViewTeam: 'Team',
+    trainingViewGoalkeepers: 'Goalkeepers',
+    trainingViewAria: 'Team or Goalkeepers',
+    trainingContentAria: 'Training content',
+    noGkContent: 'No GK content yet.',
     physicalLoad: 'Physical load (RPE)',
     physicalLoadHint:
       'Squad and individual session load for this day — RPE and session load (min × RPE).',
@@ -338,6 +343,11 @@ const dictionaries = {
     tabTrainingDesign: 'Design allenamento',
     tabVideoAnalysis: 'Analisi Video',
     tabPhysicalLoad: 'Carico fisico',
+    trainingViewTeam: 'Squadra',
+    trainingViewGoalkeepers: 'Portieri',
+    trainingViewAria: 'Squadra o Portieri',
+    trainingContentAria: 'Contenuto allenamento',
+    noGkContent: 'Nessun contenuto portieri ancora.',
     physicalLoad: 'Carico fisico (RPE)',
     physicalLoadHint:
       'Carico di squadra e individuale per questa giornata — RPE e carico di seduta (min × RPE).',

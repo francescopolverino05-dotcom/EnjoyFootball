@@ -91,6 +91,12 @@ const template = {
   clips: [],
   analysisVideos: [],
   trainingDesign: [],
+  goalkeepers: {
+    video: { parts: [] },
+    clips: [],
+    trainingDesign: null,
+    analysisVideos: [],
+  },
 };
 
 const vimeoFolder = args['vimeo-folder'] || args.vimeoFolder;
