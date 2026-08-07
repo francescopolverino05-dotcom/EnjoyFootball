@@ -1712,6 +1712,35 @@ a.tqr-ind-row:hover {
   text-decoration: none;
 }
 
+/* Gacon VAM histograms (reuse TQR layout; blue accent) */
+.gacon-bar-fill {
+  background: #2563eb;
+}
+
+.rpe-bar-col.active .gacon-bar-fill {
+  background: #1d4ed8;
+}
+
+.rpe-bar-col.is-match .gacon-bar-fill,
+.gacon-bar-fill.is-match-fill {
+  background: #64748b;
+}
+
+.gacon-ind-fill {
+  background: #2563eb;
+}
+
+a.gacon-ind-row:hover {
+  background: #eff6ff;
+}
+
+.gacon-unit {
+  font-size: 0.55em;
+  font-weight: 700;
+  margin-left: 2px;
+  color: var(--text-muted, #64748b);
+}
+
 .rpe-bar-label.is-match-label {
   color: #64748b;
 }

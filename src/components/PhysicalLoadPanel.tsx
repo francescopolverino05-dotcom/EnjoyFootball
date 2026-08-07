@@ -7,18 +7,22 @@ import {
   sortPlayersBySessionLoad,
 } from '../data/rpeLoad';
 import { getPlayerBySlug } from '../data/players';
+import type { GaconSession } from '../types/gacon';
 import type { RpeSession } from '../types/rpe';
 import type { TqrSession } from '../types/tqr';
 import { useLanguage } from '../i18n/LanguageContext';
 import BorgScaleLegend from './BorgScaleLegend';
+import GaconHistograms from './GaconHistograms';
 import TqrHistograms from './TqrHistograms';
 
 export default function PhysicalLoadPanel({
   session,
   tqrSession,
+  gaconSession,
 }: {
   session: RpeSession | null;
   tqrSession: TqrSession | null;
+  gaconSession: GaconSession | null;
 }) {
   const { t, L, formatDate } = useLanguage();
   const allSessions = getAllRpeSessions();
@@ -139,6 +143,8 @@ export default function PhysicalLoadPanel({
       ) : null}
 
       {tqrSession ? <TqrHistograms session={tqrSession} /> : null}
+
+      {gaconSession ? <GaconHistograms session={gaconSession} /> : null}
     </div>
   );
 }

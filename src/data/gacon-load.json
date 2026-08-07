@@ -1,0 +1,114 @@
+{
+  "source": "test di Gacon Napoli.xlsx sheet Test Aerobico-Gacon — Agosto VAM finale (km/h); mapped to 2026-07-29 (2026-07-29_mercoledi)",
+  "scaleNote": {
+    "en": "Gacon aerobic test — VAM finale (km/h) copied from the staff Excel (Agosto column). Higher = higher maximal aerobic speed. Only players with a recorded VAM are listed.",
+    "it": "Test aerobico di Gacon — VAM finale (km/h) copiata dall’Excel dello staff (colonna Agosto). Più alto = velocità aerobica massima più elevata. Solo i giocatori con VAM registrata sono elencati."
+  },
+  "sessions": [
+    {
+      "date": "2026-07-29",
+      "kind": "training",
+      "trainingSlug": "2026-07-29_mercoledi",
+      "matchSlug": null,
+      "period": "agosto",
+      "metric": "vamKmh",
+      "unit": "km/h",
+      "playersTested": 17,
+      "avgVamKmh": 20.71,
+      "players": [
+        {
+          "playerSlug": "melnyk-mykyta",
+          "excelName": "Melnyk Mykyta",
+          "vamKmh": 24
+        },
+        {
+          "playerSlug": "anic-ivan",
+          "excelName": "Anic Ivan",
+          "vamKmh": 23
+        },
+        {
+          "playerSlug": "capozzoli-emanuele",
+          "excelName": "Capozzoli Emanuele",
+          "vamKmh": 23
+        },
+        {
+          "playerSlug": "maida-giuseppe",
+          "excelName": "Maida Giuseppe",
+          "vamKmh": 22
+        },
+        {
+          "playerSlug": "rovetini-alessandro",
+          "excelName": "Rovettini",
+          "vamKmh": 22
+        },
+        {
+          "playerSlug": "branchizio-agostino",
+          "excelName": "Branchizio Agostino",
+          "vamKmh": 21
+        },
+        {
+          "playerSlug": "candela-ivan-giovanni",
+          "excelName": "Candela Ivan Giovanni",
+          "vamKmh": 21
+        },
+        {
+          "playerSlug": "chiummariello-andrea",
+          "excelName": "Chiummariello Andrea",
+          "vamKmh": 21
+        },
+        {
+          "playerSlug": "de-stefano-francesco",
+          "excelName": "De Stefano Francesco",
+          "vamKmh": 21
+        },
+        {
+          "playerSlug": "lieto-claudio",
+          "excelName": "Lieto Claudio",
+          "vamKmh": 21
+        },
+        {
+          "playerSlug": "natale-raffaele",
+          "excelName": "Natale Raffaele",
+          "vamKmh": 21
+        },
+        {
+          "playerSlug": "riccio-luigi",
+          "excelName": "Riccio Luigi",
+          "vamKmh": 21
+        },
+        {
+          "playerSlug": "castaldi-ciro-junior",
+          "excelName": "Castaldi Ciro Junior",
+          "vamKmh": 20
+        },
+        {
+          "playerSlug": "zappala-andrea",
+          "excelName": "Zappalardo",
+          "vamKmh": 20
+        },
+        {
+          "playerSlug": "favicchio-elia",
+          "excelName": "Favicchio Elia",
+          "vamKmh": 18
+        },
+        {
+          "playerSlug": "esposito-luigi",
+          "excelName": "Esposito Luigi",
+          "vamKmh": 17
+        },
+        {
+          "playerSlug": "mane-mohamed-seick",
+          "excelName": "Mane Mohamed Seick",
+          "vamKmh": 16
+        }
+      ]
+    }
+  ],
+  "unmatchedNames": [],
+  "skippedNoVam": [
+    "Baridó Francisco Martin",
+    "Marotta Gabriele",
+    "Pereyra Alvarez Milton Agustin",
+    "Prisco Vincenzo"
+  ]
+}

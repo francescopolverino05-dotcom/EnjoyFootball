@@ -7,6 +7,7 @@ import {
   ANALYSIS_SECTION_ORDER,
   type ClipLabelId,
 } from '../i18n/clipLabels';
+import { getGaconSessionByTrainingSlug } from '../data/gaconLoad';
 import { getRpeSessionByTrainingSlug } from '../data/rpeLoad';
 import { getTqrSessionByTrainingSlug } from '../data/tqrLoad';
 import MatchMedia from './MatchMedia';
@@ -46,7 +47,8 @@ export default function TrainingDashboard({
   const { t } = useLanguage();
   const rpeSession = getRpeSessionByTrainingSlug(session.slug);
   const tqrSession = getTqrSessionByTrainingSlug(session.slug);
-  const hasPhysicalLoad = Boolean(rpeSession || tqrSession);
+  const gaconSession = getGaconSessionByTrainingSlug(session.slug);
+  const hasPhysicalLoad = Boolean(rpeSession || tqrSession || gaconSession);
 
   const tabs: [TabId, TabLabelKey][] = [
     ['fullsession', 'tabFullSession'],
@@ -98,6 +100,7 @@ export default function TrainingDashboard({
           <PhysicalLoadPanel
             session={rpeSession ?? null}
             tqrSession={tqrSession ?? null}
+            gaconSession={gaconSession ?? null}
           />
         </div>
       ) : null}

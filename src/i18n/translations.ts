@@ -138,6 +138,26 @@ const dictionaries = {
     playerTqrLegend:
       'Left bar = player TQR. Right bar = team average that day. Click a day to open the session when available.',
     playerTqrChartAria: 'Histogram of player TQR versus team average over time',
+    gaconTitle: 'Gacon test',
+    gaconHint:
+      'Aerobic Gacon test — VAM finale (km/h) from the staff Excel. Only players who completed the test are shown.',
+    gaconAvgVam: 'Avg VAM',
+    gaconPlayersTested: 'Players tested',
+    gaconUnitKmh: 'km/h',
+    gaconSquadHistogram: 'Squad VAM histogram',
+    gaconSquadLegend:
+      'Bars show average VAM (km/h) for each imported Gacon test day. Current day highlighted.',
+    gaconIndividualHistogram: 'Individual VAM histogram',
+    gaconIndividualLegend:
+      'Horizontal bars show each player’s VAM finale (km/h) for this day. Tap a name for the player profile.',
+    gaconIndividualEmpty: 'No Gacon results for this day.',
+    playerGaconTitle: 'Gacon test',
+    playerGaconHint:
+      'Player VAM finale (km/h) per test day (solid) beside team average (lighter).',
+    playerGaconLegend:
+      'Left bar = player VAM. Right bar = team average that day. Click a day to open the session when available.',
+    playerGaconChartAria:
+      'Histogram of player Gacon VAM versus team average over time',
     fullMatchVideo: 'Full Match Video',
     fullMatchHint: 'Watch the complete match recording.',
     fullSessionVideo: 'Full Session Video',
@@ -321,6 +341,26 @@ const dictionaries = {
       'Barra sinistra = TQR giocatore. Barra destra = media squadra del giorno. Clicca un giorno per aprire la seduta se disponibile.',
     playerTqrChartAria:
       'Istogramma del TQR del giocatore rispetto alla media squadra nel tempo',
+    gaconTitle: 'Test di Gacon',
+    gaconHint:
+      'Test aerobico di Gacon — VAM finale (km/h) dall’Excel dello staff. Solo i giocatori che hanno svolto il test sono mostrati.',
+    gaconAvgVam: 'VAM media',
+    gaconPlayersTested: 'Giocatori testati',
+    gaconUnitKmh: 'km/h',
+    gaconSquadHistogram: 'Istogramma VAM di squadra',
+    gaconSquadLegend:
+      'Le barre mostrano la VAM media (km/h) di ciascun giorno di test Gacon importato. Il giorno corrente è evidenziato.',
+    gaconIndividualHistogram: 'Istogramma VAM individuale',
+    gaconIndividualLegend:
+      'Le barre orizzontali mostrano la VAM finale (km/h) di ciascun giocatore per questa giornata. Tocca un nome per il profilo.',
+    gaconIndividualEmpty: 'Nessun risultato Gacon per questa giornata.',
+    playerGaconTitle: 'Test di Gacon',
+    playerGaconHint:
+      'VAM finale (km/h) del giocatore per giorno di test (barra piena) accanto alla media squadra (più chiara).',
+    playerGaconLegend:
+      'Barra sinistra = VAM giocatore. Barra destra = media squadra del giorno. Clicca un giorno per aprire la seduta se disponibile.',
+    playerGaconChartAria:
+      'Istogramma della VAM Gacon del giocatore rispetto alla media squadra nel tempo',
     fullMatchVideo: 'Video Partita Completa',
     fullMatchHint: 'Guarda la registrazione completa della partita.',
     fullSessionVideo: 'Video Sessione Completa',
