@@ -16,7 +16,7 @@
     "it": "Settimana 2 (Sett. 2 03/08) — Venerdì. Video su Vimeo (cartella Venerdi)."
   },
   "video": {
-    "fullSession": "https://vimeo.com/1216381484",
+    "fullSession": "https://vimeo.com/1216381484/3cf5cc1547",
     "notes": {
       "en": "Full session (longest clip): mid block (Vimeo).",
       "it": "Sessione (clip più lunga): mid block (Vimeo)."
@@ -32,7 +32,7 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1216381482",
+        "videoFile": "https://vimeo.com/1216381482/0aadf764e5",
         "tags": [
           "vimeo",
           "training",
@@ -49,7 +49,7 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1216381483",
+        "videoFile": "https://vimeo.com/1216381483/ac97468a72",
         "tags": [
           "vimeo",
           "training",
@@ -66,7 +66,7 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1216381484",
+        "videoFile": "https://vimeo.com/1216381484/3cf5cc1547",
         "tags": [
           "vimeo",
           "training",
@@ -83,7 +83,7 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1216365908",
+        "videoFile": "https://vimeo.com/1216365908/4a17176ff2",
         "tags": [
           "vimeo",
           "training",
@@ -100,7 +100,7 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1216365457",
+        "videoFile": "https://vimeo.com/1216365457/ef57e47d02",
         "tags": [
           "vimeo",
           "training",
@@ -134,6 +134,6 @@
   "vimeo": {
     "folderId": "30099308",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099308",
-    "lastSyncedAt": "2026-08-07T11:10:47.558Z"
+    "lastSyncedAt": "2026-08-07T11:47:02.386Z"
   }
 }
