@@ -943,11 +943,42 @@ button {
   margin-bottom: 4px;
 }
 
+.match-card-scoreline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.match-card-team {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex: 1;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.match-card-team-away {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.match-card-crest {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .match-card-score {
   font-size: 24px;
   font-weight: 800;
   color: var(--napoli-blue-dark);
-  margin: 12px 0;
+  flex-shrink: 0;
 }
 
 .match-card-meta {

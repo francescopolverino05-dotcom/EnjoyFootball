@@ -1,7 +1,6 @@
 import { MatchData } from '../types/match';
+import { teamCrestUrl } from '../data/teamLogos';
 import { useLanguage } from '../i18n/LanguageContext';
-
-const NAPOLI_CREST = `${import.meta.env.BASE_URL}napoli-logo-white.png`;
 
 interface ScoreboardProps {
   match: MatchData;
@@ -18,7 +17,7 @@ export default function Scoreboard({ match }: ScoreboardProps) {
         <div className="team-cover-card">
           <div className={`team-badge-circle ${match.homeTeam.colorClass}`}>
             <img
-              src={NAPOLI_CREST}
+              src={teamCrestUrl(match.homeTeam, 'onDark')}
               alt={match.homeTeam.shortName}
               className="team-badge-crest"
             />
@@ -32,7 +31,7 @@ export default function Scoreboard({ match }: ScoreboardProps) {
         <div className="team-cover-card">
           <div className={`team-badge-circle ${match.awayTeam.colorClass}`}>
             <img
-              src={NAPOLI_CREST}
+              src={teamCrestUrl(match.awayTeam, 'onDark')}
               alt={match.awayTeam.shortName}
               className="team-badge-crest"
             />

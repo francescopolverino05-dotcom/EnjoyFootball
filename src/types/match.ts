@@ -9,6 +9,11 @@ export interface TeamInfo {
   name: Localized;
   shortName: string;
   colorClass: 'u19' | 'u18' | 'opponent';
+  /**
+   * Crest under `public/` (e.g. `napoli-logo.png`, `logos/portici.png`).
+   * UI picks the Napoli white variant on dark badge backgrounds.
+   */
+  logo?: string;
 }
 
 export interface Goal {
@@ -162,5 +167,9 @@ export interface MatchSummary {
   status: MatchData['status'];
   homeTeam: string;
   awayTeam: string;
+  homeLogo?: string;
+  awayLogo?: string;
+  homeColorClass: TeamInfo['colorClass'];
+  awayColorClass: TeamInfo['colorClass'];
   score: { home: number; away: number };
 }

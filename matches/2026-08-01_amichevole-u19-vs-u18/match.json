@@ -23,7 +23,8 @@
       "it": "Napoli Primavera (Azzurri)"
     },
     "shortName": "U19",
-    "colorClass": "u19"
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
   },
   "awayTeam": {
     "id": "u18",
@@ -32,7 +33,8 @@
       "it": "Napoli U18 (Verdi)"
     },
     "shortName": "U18",
-    "colorClass": "u18"
+    "colorClass": "u18",
+    "logo": "napoli-logo.png"
   },
   "score": {
     "home": 3,

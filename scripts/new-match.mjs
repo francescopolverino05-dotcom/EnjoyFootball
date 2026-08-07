@@ -51,7 +51,7 @@ if (existsSync(matchDir)) {
   process.exit(1);
 }
 
-.mkdirSync(join(matchDir, 'video'), { recursive: true });
+mkdirSync(join(matchDir, 'video'), { recursive: true });
 mkdirSync(join(matchDir, 'clips'), { recursive: true });
 mkdirSync(join(matchDir, 'analysis'), { recursive: true });
 
@@ -98,6 +98,7 @@ const template = {
     },
     shortName: 'U19',
     colorClass: 'u19',
+    logo: 'napoli-logo.png',
   },
   awayTeam: {
     id: 'opponent',

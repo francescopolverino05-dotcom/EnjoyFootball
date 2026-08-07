@@ -1,0 +1,51 @@
+{
+  "id": "2026-08-22_amichevole-u19-vs-virtus-stabia",
+  "slug": "2026-08-22_amichevole-u19-vs-virtus-stabia",
+  "title": {
+    "en": "Napoli Primavera vs Virtus Stabia",
+    "it": "Napoli Primavera vs Virtus Stabia"
+  },
+  "subtitle": {
+    "en": "Friendly Match · KO 10:30",
+    "it": "Partita Amichevole · KO 10:30"
+  },
+  "date": "2026-08-22",
+  "competitionId": "friendlies",
+  "competition": {
+    "en": "Friendlies",
+    "it": "Amichevoli"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "U19",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "virtus-stabia",
+    "name": {
+      "en": "Virtus Stabia Junior",
+      "it": "Virtus Stabia Junior"
+    },
+    "shortName": "V. Stabia",
+    "colorClass": "opponent",
+    "logo": "logos/virtus-stabia.png"
+  },
+  "score": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}

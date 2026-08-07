@@ -18,6 +18,10 @@ function toSummary(match: MatchData): MatchSummary {
     status: match.status,
     homeTeam: match.homeTeam.shortName,
     awayTeam: match.awayTeam.shortName,
+    homeLogo: match.homeTeam.logo,
+    awayLogo: match.awayTeam.logo,
+    homeColorClass: match.homeTeam.colorClass,
+    awayColorClass: match.awayTeam.colorClass,
     score: match.score,
   };
 }

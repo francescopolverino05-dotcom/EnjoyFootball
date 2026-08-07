@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
+import { teamCrestUrl } from '../data/teamLogos';
 import { MatchSummary } from '../types/match';
 
 interface MatchCardProps {
@@ -15,8 +16,26 @@ export default function MatchCard({ match }: MatchCardProps) {
         {formatDate(match.date)} · {L(match.competition)}
       </div>
       <div className="match-card-title">{L(match.title)}</div>
-      <div className="match-card-score">
-        {match.score.home} – {match.score.away}
+      <div className="match-card-scoreline">
+        <div className={`match-card-team ${match.homeColorClass}`}>
+          <img
+            src={teamCrestUrl({ logo: match.homeLogo }, 'onLight')}
+            alt={match.homeTeam}
+            className="match-card-crest"
+          />
+          <span>{match.homeTeam}</span>
+        </div>
+        <div className="match-card-score">
+          {match.score.home} – {match.score.away}
+        </div>
+        <div className={`match-card-team match-card-team-away ${match.awayColorClass}`}>
+          <span>{match.awayTeam}</span>
+          <img
+            src={teamCrestUrl({ logo: match.awayLogo }, 'onLight')}
+            alt={match.awayTeam}
+            className="match-card-crest"
+          />
+        </div>
       </div>
       <div className="match-card-meta">
         <span>
