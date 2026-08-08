@@ -156,8 +156,8 @@
           "left": "50%"
         },
         {
-          "number": 4,
-          "name": "Natale",
+          "number": 3,
+          "name": "Branchizio",
           "teamId": "u19",
           "bottom": "22%",
           "left": "22%"
@@ -170,43 +170,43 @@
           "left": "50%"
         },
         {
-          "number": 3,
-          "name": "Branchizio",
+          "number": 4,
+          "name": "Natale",
           "teamId": "u19",
           "bottom": "22%",
           "left": "78%"
-        },
-        {
-          "number": 16,
-          "name": "Melnyk",
-          "teamId": "u19",
-          "bottom": "40%",
-          "left": "12%"
-        },
-        {
-          "number": 19,
-          "name": "De Stefano",
-          "teamId": "u19",
-          "bottom": "42%",
-          "left": "38%"
-        },
-        {
-          "number": 29,
-          "name": "Chiummariello",
-          "teamId": "u19",
-          "bottom": "42%",
-          "left": "62%"
         },
         {
           "number": 2,
           "name": "Zappalá",
           "teamId": "u19",
           "bottom": "40%",
+          "left": "12%"
+        },
+        {
+          "number": 29,
+          "name": "Chiummariello",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "38%"
+        },
+        {
+          "number": 19,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "62%"
+        },
+        {
+          "number": 16,
+          "name": "Melnyk",
+          "teamId": "u19",
+          "bottom": "40%",
           "left": "88%"
         },
         {
-          "number": 18,
-          "name": "Esposito",
+          "number": 27,
+          "name": "Rovetini",
           "teamId": "u19",
           "bottom": "68%",
           "left": "22%"
@@ -219,8 +219,8 @@
           "left": "50%"
         },
         {
-          "number": 27,
-          "name": "Rovetini",
+          "number": 18,
+          "name": "Esposito",
           "teamId": "u19",
           "bottom": "68%",
           "left": "78%"
