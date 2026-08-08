@@ -47,8 +47,7 @@
   "teamStats": [],
   "goalkeepers": [],
   "clips": [],
-  "analysisVideos": [],
-  "trainingDesign": [
+  "analysisVideos": [
     {
       "id": "session-plan-2026-08-08",
       "title": {

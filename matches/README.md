@@ -9,7 +9,7 @@ matches/
     ├── README.md
     ├── video/          ← FULL MATCH MP4 (usually match.mp4)
     ├── clips/          ← tactical clips → Clips tab
-    └── analysis/       ← session plans → Training Design; analyst reports → Video Analysis
+    └── analysis/       ← analyst reports → Video Analysis tab
 ```
 
 Training sessions live separately in [`../trainings/`](../trainings/README.md).
@@ -20,8 +20,7 @@ Training sessions live separately in [`../trainings/`](../trainings/README.md).
 |-------|--------|---------|
 | Full match recording | `video/match.mp4` | **Full Match** |
 | Short tactical clips | `clips/` | **Clips** |
-| Session / matchday plan PDF | `analysis/` + `match.json` → `trainingDesign` | **Training Design** |
-| Long analyst / coach videos | `analysis/` + `match.json` → `analysisVideos` | **Video Analysis** |
+| Long analyst / coach videos | `analysis/` | **Video Analysis** |
 
 ## New match
 
