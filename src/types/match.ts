@@ -67,10 +67,21 @@ export interface GoalkeeperLog {
   name: string;
   minutes: number;
   team: Localized;
+  /** Short half/period label for table columns, e.g. "1° Tempo". */
+  period?: Localized;
   jerseyColor: Localized;
   shotsFaced: number;
+  shotsOnTargetFaced?: number;
   saves: number;
+  reflexSaves?: number;
   goalsConceded: number;
+  /** e.g. "50.0%" */
+  savePercentage?: Localized;
+  /** e.g. "1 / 1 (100%)" */
+  aerialDuels?: Localized;
+  exits?: number;
+  /** e.g. "10 / 7 (70%)" */
+  passes?: Localized;
   notes?: Localized;
   colorClass: 'blue' | 'orange' | 'green';
 }

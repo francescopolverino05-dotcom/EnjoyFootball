@@ -1,8 +1,8 @@
 import { useMemo, useState } from 'react';
-import { MatchData, VideoClip, AnalysisVideo } from '../types/match';
+import { MatchData, VideoClip, AnalysisVideo, GoalkeeperLog } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
 import { CLIP_LABELS, ANALYSIS_SECTION_ORDER, HIDDEN_CLIP_SECTIONS, type ClipLabelId } from '../i18n/clipLabels';
-import type { Localized } from '../i18n/translations';
+import type { Localized, UiKey } from '../i18n/translations';
 import MatchMedia from './MatchMedia';
 
 interface StatsDashboardProps {
@@ -104,35 +104,7 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
         className={`tab-content ${activeTab === 'gkanalysis' ? 'active' : ''}`}
         role="tabpanel"
       >
-        <div className="gk-grid">
-          {match.goalkeepers.map((gk) => (
-            <div className={`gk-log-item ${gk.colorClass}`} key={gk.name}>
-              <div className="gk-log-header">
-                <span>{gk.name}</span>
-                <span className="gk-val-pill">
-                  {gk.minutes}&apos; {t('minutes')}
-                </span>
-              </div>
-              <div className="gk-log-meta">
-                <strong>{t('team')}:</strong> {L(gk.team)}
-                <br />
-                <strong>{t('jerseyColour')}:</strong> {L(gk.jerseyColor)}
-                <br />
-                <strong>{t('shotsFaced')}:</strong> {gk.shotsFaced}
-                <br />
-                <strong>{t('saves')}:</strong> {gk.saves}
-                <br />
-                <strong>{t('goalsConceded')}:</strong> {gk.goalsConceded}
-                {gk.notes ? (
-                  <>
-                    <br />
-                    <em>{L(gk.notes)}</em>
-                  </>
-                ) : null}
-              </div>
-            </div>
-          ))}
-        </div>
+        <GkAnalysisPanel goalkeepers={match.goalkeepers} />
       </div>
 
       <div
@@ -166,6 +138,158 @@ function formatClipTimestamp(clip: VideoClip): string {
     return `${m}'${String(s).padStart(2, '0')}"`;
   }
   return `${m}'`;
+}
+
+function gkColumnTitle(
+  gk: GoalkeeperLog,
+  L: (value: Localized) => string
+): string {
+  const period = gk.period ? L(gk.period) : null;
+  if (period) return `${gk.name} (${period} — ${gk.minutes}')`;
+  return `${gk.name} (${gk.minutes}')`;
+}
+
+type GkStatRow = {
+  key: string;
+  labelKey: UiKey;
+  values: Array<Localized | number | string | undefined>;
+};
+
+function formatGkCell(
+  value: Localized | number | string | undefined,
+  L: (value: Localized) => string
+): string {
+  if (value == null) return '—';
+  if (typeof value === 'number' || typeof value === 'string') return String(value);
+  return L(value);
+}
+
+function buildGkStatRows(goalkeepers: GoalkeeperLog[]): GkStatRow[] {
+  const optional = (
+    key: string,
+    labelKey: UiKey,
+    pick: (gk: GoalkeeperLog) => Localized | number | string | undefined
+  ): GkStatRow | null => {
+    if (!goalkeepers.some((gk) => pick(gk) != null)) return null;
+    return { key, labelKey, values: goalkeepers.map(pick) };
+  };
+
+  return [
+    {
+      key: 'jersey',
+      labelKey: 'jerseyColour',
+      values: goalkeepers.map((gk) => gk.jerseyColor),
+    },
+    {
+      key: 'shotsFaced',
+      labelKey: 'shotsFaced',
+      values: goalkeepers.map((gk) => gk.shotsFaced),
+    },
+    optional('sotFaced', 'shotsOnTargetFaced', (gk) => gk.shotsOnTargetFaced),
+    {
+      key: 'goalsConceded',
+      labelKey: 'goalsConceded',
+      values: goalkeepers.map((gk) => gk.goalsConceded),
+    },
+    {
+      key: 'saves',
+      labelKey: 'saves',
+      values: goalkeepers.map((gk) => gk.saves),
+    },
+    optional('reflexSaves', 'reflexSaves', (gk) => gk.reflexSaves),
+    optional('savePercentage', 'savePercentage', (gk) => gk.savePercentage),
+    optional('aerialDuels', 'aerialDuels', (gk) => gk.aerialDuels),
+    optional('exits', 'gkExits', (gk) => gk.exits),
+    optional('passes', 'gkPasses', (gk) => gk.passes),
+  ].filter((row): row is GkStatRow => row != null);
+}
+
+function GkAnalysisPanel({ goalkeepers }: { goalkeepers: GoalkeeperLog[] }) {
+  const { t, L } = useLanguage();
+  const rows = useMemo(() => buildGkStatRows(goalkeepers), [goalkeepers]);
+  const notes = goalkeepers.filter((gk) => gk.notes);
+
+  if (goalkeepers.length === 0) {
+    return null;
+  }
+
+  if (goalkeepers.length === 2) {
+    const [a, b] = goalkeepers;
+    return (
+      <div className="gk-stats-panel">
+        <div className="stats-comparison-row stats-comparison-header">
+          <span className={`stats-val-home gk-val-${a.colorClass}`}>
+            {gkColumnTitle(a, L)}
+          </span>
+          <span className="stats-label" aria-hidden="true" />
+          <span className={`stats-val-away gk-val-${b.colorClass}`}>
+            {gkColumnTitle(b, L)}
+          </span>
+        </div>
+        {rows.map((row) => (
+          <div className="stats-comparison-row" key={row.key}>
+            <span className={`stats-val-home gk-val-${a.colorClass}`}>
+              {formatGkCell(row.values[0], L)}
+            </span>
+            <span className="stats-label">{t(row.labelKey)}</span>
+            <span className={`stats-val-away gk-val-${b.colorClass}`}>
+              {formatGkCell(row.values[1], L)}
+            </span>
+          </div>
+        ))}
+        {notes.length > 0 ? (
+          <div className="gk-stats-notes">
+            {notes.map((gk) => (
+              <p key={gk.name}>
+                <strong>{gk.name}:</strong> {L(gk.notes!)}
+              </p>
+            ))}
+          </div>
+        ) : null}
+      </div>
+    );
+  }
+
+  return (
+    <div
+      className="gk-stats-panel gk-stats-multi"
+      style={{ ['--gk-cols' as string]: goalkeepers.length }}
+    >
+      <div className="gk-stats-row gk-stats-header">
+        <span className="gk-stats-metric" aria-hidden="true" />
+        {goalkeepers.map((gk) => (
+          <span
+            className={`gk-stats-val gk-val-${gk.colorClass}`}
+            key={gk.name}
+          >
+            {gkColumnTitle(gk, L)}
+          </span>
+        ))}
+      </div>
+      {rows.map((row) => (
+        <div className="gk-stats-row" key={row.key}>
+          <span className="gk-stats-metric">{t(row.labelKey)}</span>
+          {row.values.map((value, i) => (
+            <span
+              className={`gk-stats-val gk-val-${goalkeepers[i].colorClass}`}
+              key={`${row.key}-${goalkeepers[i].name}`}
+            >
+              {formatGkCell(value, L)}
+            </span>
+          ))}
+        </div>
+      ))}
+      {notes.length > 0 ? (
+        <div className="gk-stats-notes">
+          {notes.map((gk) => (
+            <p key={gk.name}>
+              <strong>{gk.name}:</strong> {L(gk.notes!)}
+            </p>
+          ))}
+        </div>
+      ) : null}
+    </div>
+  );
 }
 
 function clipSortKey(clip: VideoClip): number {

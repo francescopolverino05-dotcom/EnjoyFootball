@@ -1036,16 +1036,31 @@
         "en": "Napoli Primavera (First Half)",
         "it": "Napoli Primavera (Primo Tempo)"
       },
+      "period": {
+        "en": "1st Half",
+        "it": "1° Tempo"
+      },
       "jerseyColor": {
         "en": "Green",
         "it": "Verde"
       },
       "shotsFaced": 5,
+      "shotsOnTargetFaced": 2,
       "saves": 1,
+      "reflexSaves": 1,
       "goalsConceded": 1,
-      "notes": {
-        "en": "SOT faced 2 · Reflex saves 1 · Save% 50.0% · Aerial 1/1 (100%) · Exits 2 · Passes 10/7 (70%)",
-        "it": "Tiri in porta subiti 2 · Parate di riflesso 1 · % parate 50,0% · Aerei 1/1 (100%) · Uscite 2 · Passaggi 10/7 (70%)"
+      "savePercentage": {
+        "en": "50.0%",
+        "it": "50,0%"
+      },
+      "aerialDuels": {
+        "en": "1 / 1 (100%)",
+        "it": "1 / 1 (100%)"
+      },
+      "exits": 2,
+      "passes": {
+        "en": "10 / 7 (70%)",
+        "it": "10 / 7 (70%)"
       },
       "colorClass": "green"
     },
@@ -1056,16 +1071,31 @@
         "en": "Napoli Primavera (Second Half)",
         "it": "Napoli Primavera (Secondo Tempo)"
       },
+      "period": {
+        "en": "2nd Half",
+        "it": "2° Tempo"
+      },
       "jerseyColor": {
         "en": "Sky blue",
         "it": "Azzurra"
       },
       "shotsFaced": 9,
+      "shotsOnTargetFaced": 5,
       "saves": 3,
+      "reflexSaves": 2,
       "goalsConceded": 2,
-      "notes": {
-        "en": "SOT faced 5 · Reflex saves 2 · Save% 60.0% · Aerial 2/1 (50%) · Exits 3 · Passes 12/9 (75%)",
-        "it": "Tiri in porta subiti 5 · Parate di riflesso 2 · % parate 60,0% · Aerei 2/1 (50%) · Uscite 3 · Passaggi 12/9 (75%)"
+      "savePercentage": {
+        "en": "60.0%",
+        "it": "60,0%"
+      },
+      "aerialDuels": {
+        "en": "2 / 1 (50%)",
+        "it": "2 / 1 (50%)"
+      },
+      "exits": 3,
+      "passes": {
+        "en": "12 / 9 (75%)",
+        "it": "12 / 9 (75%)"
       },
       "colorClass": "blue"
     }

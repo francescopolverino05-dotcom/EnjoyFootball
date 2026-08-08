@@ -698,6 +698,81 @@ button {
   word-break: break-word;
 }
 
+.stats-comparison-header {
+  border-bottom: 2px solid var(--border-color);
+  background: #f3f4f6;
+}
+
+.stats-comparison-header .stats-val-home,
+.stats-comparison-header .stats-val-away {
+  width: auto;
+  min-width: 100px;
+  max-width: 42%;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.gk-val-blue {
+  color: var(--napoli-blue-dark) !important;
+}
+
+.gk-val-green {
+  color: var(--away-green) !important;
+}
+
+.gk-val-orange {
+  color: var(--gk-orange) !important;
+}
+
+.gk-stats-panel {
+  width: 100%;
+}
+
+.gk-stats-notes {
+  margin-top: 14px;
+  padding: 0 15px;
+  font-size: 12px;
+  color: var(--text-gray);
+  line-height: 1.5;
+}
+
+.gk-stats-notes p {
+  margin: 0 0 6px;
+}
+
+.gk-stats-multi .gk-stats-row {
+  display: grid;
+  grid-template-columns: minmax(110px, 1.4fr) repeat(var(--gk-cols, 3), minmax(72px, 1fr));
+  gap: 8px;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 13px;
+}
+
+.gk-stats-multi .gk-stats-row:nth-child(even) {
+  background: #fafafa;
+}
+
+.gk-stats-multi .gk-stats-header {
+  border-bottom: 2px solid var(--border-color);
+  background: #f3f4f6;
+  font-size: 12px;
+}
+
+.gk-stats-metric {
+  font-weight: 600;
+  color: var(--text-gray);
+  text-align: left;
+  min-width: 0;
+}
+
+.gk-stats-val {
+  font-weight: 700;
+  text-align: center;
+  word-break: break-word;
+}
+
 .gk-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
