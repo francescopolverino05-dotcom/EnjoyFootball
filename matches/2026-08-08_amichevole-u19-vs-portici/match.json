@@ -351,24 +351,6 @@
   "teamStats": [
     {
       "category": {
-        "en": "Note",
-        "it": "Nota"
-      },
-      "name": {
-        "en": "Data quality",
-        "it": "Qualità dati"
-      },
-      "home": {
-        "en": "Approximate / video-coded",
-        "it": "Approssimative / da video"
-      },
-      "away": {
-        "en": "Approximate / video-coded",
-        "it": "Approssimative / da video"
-      }
-    },
-    {
-      "category": {
         "en": "General",
         "it": "Generale"
       },
