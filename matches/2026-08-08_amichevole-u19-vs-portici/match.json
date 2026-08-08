@@ -1105,7 +1105,338 @@
       "colorClass": "blue"
     }
   ],
-  "clips": [],
+  "clips": [
+    {
+      "id": "vimeo-1216680545",
+      "title": {
+        "en": "Mid block",
+        "it": "Blocco medio"
+      },
+      "comments": {
+        "en": "Mid block",
+        "it": "Blocco medio"
+      },
+      "minute": 76,
+      "second": 20,
+      "videoFile": "https://vimeo.com/1216680545/9d6b808cbc",
+      "section": "mid-block",
+      "labels": [
+        "mid-block"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216680471",
+      "title": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "comments": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "minute": 65,
+      "second": 21,
+      "videoFile": "https://vimeo.com/1216680471/2849a247cb",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216680465",
+      "title": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "comments": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "minute": 50,
+      "second": 37,
+      "videoFile": "https://vimeo.com/1216680465/44d453baad",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216680191",
+      "title": {
+        "en": "Mid block",
+        "it": "Blocco medio"
+      },
+      "comments": {
+        "en": "Mid block",
+        "it": "Blocco medio"
+      },
+      "minute": 36,
+      "second": 59,
+      "videoFile": "https://vimeo.com/1216680191/795dddab3a",
+      "section": "mid-block",
+      "labels": [
+        "mid-block"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216680176",
+      "title": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "comments": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "minute": 34,
+      "second": 53,
+      "videoFile": "https://vimeo.com/1216680176/5a0adce546",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216679889",
+      "title": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "comments": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "minute": 28,
+      "second": 7,
+      "videoFile": "https://vimeo.com/1216679889/19c033de55",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
+      ],
+      "tags": [
+        "vimeo",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216679767",
+      "title": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "comments": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "minute": 18,
+      "second": 13,
+      "videoFile": "https://vimeo.com/1216679767/b933017137",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
+      ],
+      "tags": [
+        "vimeo",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216679753",
+      "title": {
+        "en": "Transition to defence",
+        "it": "Transizione difensiva"
+      },
+      "comments": {
+        "en": "Transition to defence",
+        "it": "Transizione difensiva"
+      },
+      "minute": 16,
+      "second": 38,
+      "videoFile": "https://vimeo.com/1216679753/a78c5875ba",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216679653",
+      "title": {
+        "en": "Final third",
+        "it": "Ultimo terzo"
+      },
+      "comments": {
+        "en": "Final third",
+        "it": "Ultimo terzo"
+      },
+      "minute": 16,
+      "second": 22,
+      "videoFile": "https://vimeo.com/1216679653/6b5c5927ed",
+      "section": "final-third",
+      "labels": [
+        "final-third"
+      ],
+      "tags": [
+        "vimeo",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216679581",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 15,
+      "second": 55,
+      "videoFile": "https://vimeo.com/1216679581/88ade834d2",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216679451",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 14,
+      "second": 11,
+      "videoFile": "https://vimeo.com/1216679451/1c182153d8",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216679312",
+      "title": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "comments": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "minute": 11,
+      "second": 50,
+      "videoFile": "https://vimeo.com/1216679312/e197edd100",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216679262",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 7,
+      "second": 37,
+      "videoFile": "https://vimeo.com/1216679262/3b6f819a5d",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216679263",
+      "title": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "comments": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "minute": 10,
+      "second": 22,
+      "videoFile": "https://vimeo.com/1216679263/df4327ce64",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
+      ],
+      "tags": [
+        "vimeo",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216679264",
+      "title": {
+        "en": "Transition to defence",
+        "it": "Transizione difensiva"
+      },
+      "comments": {
+        "en": "Transition to defence",
+        "it": "Transizione difensiva"
+      },
+      "minute": 7,
+      "second": 42,
+      "videoFile": "https://vimeo.com/1216679264/d2f3215015",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    }
+  ],
   "analysisVideos": [
     {
       "id": "session-plan-2026-08-08",
@@ -1135,6 +1466,8 @@
   },
   "vimeo": {
     "videoId": "1216625977",
-    "lastSyncedAt": "2026-08-08T11:08:44.565Z"
+    "lastSyncedAt": "2026-08-08T18:27:47.882Z",
+    "folderId": "30162360",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30162360"
   }
 }
