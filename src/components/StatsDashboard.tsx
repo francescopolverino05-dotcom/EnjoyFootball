@@ -88,16 +88,7 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
         className={`tab-content ${activeTab === 'teamstats' ? 'active' : ''}`}
         role="tabpanel"
       >
-        {match.teamStats.map((stat) => (
-          <div
-            className="stats-comparison-row"
-            key={typeof stat.name === 'string' ? stat.name : `${stat.name.en}-${stat.name.it}`}
-          >
-            <span className="stats-val-home">{L(stat.home)}</span>
-            <span className="stats-label">{L(stat.name)}</span>
-            <span className="stats-val-away">{L(stat.away)}</span>
-          </div>
-        ))}
+        <TeamStatsPanel match={match} />
       </div>
 
       <div
@@ -128,6 +119,56 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
         <VideoAnalysisPanel match={match} />
       </div>
     </>
+  );
+}
+
+function localizedKey(value: Localized): string {
+  if (typeof value === 'string') return value;
+  return `${value.en}|${value.it}`;
+}
+
+function TeamStatsPanel({ match }: { match: MatchData }) {
+  const { L } = useLanguage();
+
+  const sections = useMemo(() => {
+    const groups: { key: string; category: Localized; stats: typeof match.teamStats }[] = [];
+    for (const stat of match.teamStats) {
+      const key = localizedKey(stat.category);
+      const last = groups[groups.length - 1];
+      if (last && last.key === key) {
+        last.stats.push(stat);
+      } else {
+        groups.push({ key, category: stat.category, stats: [stat] });
+      }
+    }
+    return groups;
+  }, [match.teamStats]);
+
+  if (sections.length === 0) return null;
+
+  return (
+    <div className="team-stats-panel">
+      <div className="stats-comparison-row stats-comparison-header">
+        <span className="stats-val-home">{match.homeTeam.shortName}</span>
+        <span className="stats-label" aria-hidden="true" />
+        <span className="stats-val-away">{match.awayTeam.shortName}</span>
+      </div>
+      {sections.map((section) => (
+        <section className="team-stats-section" key={section.key}>
+          <h3 className="team-stats-section-title">{L(section.category)}</h3>
+          {section.stats.map((stat) => (
+            <div
+              className="stats-comparison-row"
+              key={localizedKey(stat.name)}
+            >
+              <span className="stats-val-home">{L(stat.home)}</span>
+              <span className="stats-label">{L(stat.name)}</span>
+              <span className="stats-val-away">{L(stat.away)}</span>
+            </div>
+          ))}
+        </section>
+      ))}
+    </div>
   );
 }
 

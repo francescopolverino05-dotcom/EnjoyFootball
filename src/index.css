@@ -658,6 +658,26 @@ button {
   flex-wrap: wrap;
 }
 
+.team-stats-panel {
+  width: 100%;
+}
+
+.team-stats-section {
+  margin: 0;
+}
+
+.team-stats-section-title {
+  margin: 0;
+  padding: 14px 15px 8px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--napoli-blue-dark);
+  background: #eef4fb;
+  border-bottom: 1px solid var(--border-color);
+}
+
 .stats-comparison-row {
   display: flex;
   align-items: center;
@@ -666,6 +686,10 @@ button {
   padding: 12px 15px;
   border-bottom: 1px solid var(--border-light);
   font-size: 13px;
+}
+
+.team-stats-section .stats-comparison-row:nth-child(even) {
+  background: #fafafa;
 }
 
 .stats-comparison-row:nth-child(even) {

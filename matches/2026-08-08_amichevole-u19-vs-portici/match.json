@@ -22,7 +22,7 @@
       "en": "Napoli Primavera",
       "it": "Napoli Primavera"
     },
-    "shortName": "U19",
+    "shortName": "Napoli",
     "colorClass": "u19",
     "logo": "napoli-logo.png"
   },
@@ -538,7 +538,7 @@
     {
       "category": {
         "en": "Attacks",
-        "it": "Attacco"
+        "it": "Attacchi"
       },
       "name": {
         "en": "Total attacks / with shots",
@@ -550,7 +550,7 @@
     {
       "category": {
         "en": "Attacks",
-        "it": "Attacco"
+        "it": "Attacchi"
       },
       "name": {
         "en": "Counterattacks / with shots",
@@ -562,7 +562,7 @@
     {
       "category": {
         "en": "Attacks",
-        "it": "Attacco"
+        "it": "Attacchi"
       },
       "name": {
         "en": "Free-kick attacks / with shots",
@@ -574,7 +574,7 @@
     {
       "category": {
         "en": "Attacks",
-        "it": "Attacco"
+        "it": "Attacchi"
       },
       "name": {
         "en": "Corner attacks / with shots",
@@ -586,7 +586,7 @@
     {
       "category": {
         "en": "Attacks",
-        "it": "Attacco"
+        "it": "Attacchi"
       },
       "name": {
         "en": "Left flank attacks (xG)",
@@ -598,7 +598,7 @@
     {
       "category": {
         "en": "Attacks",
-        "it": "Attacco"
+        "it": "Attacchi"
       },
       "name": {
         "en": "Central attacks (xG)",
@@ -610,7 +610,7 @@
     {
       "category": {
         "en": "Attacks",
-        "it": "Attacco"
+        "it": "Attacchi"
       },
       "name": {
         "en": "Right flank attacks (xG)",
@@ -921,8 +921,8 @@
     },
     {
       "category": {
-        "en": "Antigravity soft scores",
-        "it": "Indici Tattici"
+        "en": "Soft scores",
+        "it": "Indici soft"
       },
       "name": {
         "en": "Assists (goal)",
@@ -933,8 +933,8 @@
     },
     {
       "category": {
-        "en": "Antigravity soft scores",
-        "it": "Indici Tattici"
+        "en": "Soft scores",
+        "it": "Indici soft"
       },
       "name": {
         "en": "Opportunity Score",
@@ -945,8 +945,8 @@
     },
     {
       "category": {
-        "en": "Antigravity soft scores",
-        "it": "Indici Tattici"
+        "en": "Soft scores",
+        "it": "Indici soft"
       },
       "name": {
         "en": "Offensive Triangles",
@@ -957,8 +957,8 @@
     },
     {
       "category": {
-        "en": "Antigravity soft scores",
-        "it": "Indici Tattici"
+        "en": "Soft scores",
+        "it": "Indici soft"
       },
       "name": {
         "en": "Defensive Triangles",
@@ -969,8 +969,8 @@
     },
     {
       "category": {
-        "en": "Antigravity soft scores",
-        "it": "Indici Tattici"
+        "en": "Soft scores",
+        "it": "Indici soft"
       },
       "name": {
         "en": "Compact Defense %",
@@ -981,8 +981,8 @@
     },
     {
       "category": {
-        "en": "Antigravity soft scores",
-        "it": "Indici Tattici"
+        "en": "Soft scores",
+        "it": "Indici soft"
       },
       "name": {
         "en": "Stretched Defense %",
@@ -993,8 +993,8 @@
     },
     {
       "category": {
-        "en": "Antigravity soft scores",
-        "it": "Indici Tattici"
+        "en": "Soft scores",
+        "it": "Indici soft"
       },
       "name": {
         "en": "Compact or Stretched",
@@ -1011,8 +1011,8 @@
     },
     {
       "category": {
-        "en": "Antigravity soft scores",
-        "it": "Indici Tattici"
+        "en": "Soft scores",
+        "it": "Indici soft"
       },
       "name": {
         "en": "Pressing Shape",
