@@ -66,5 +66,16 @@
         "matchday"
       ]
     }
-  ]
+  ],
+  "video": {
+    "fullMatch": "https://vimeo.com/1216625977/6a54a6aca1",
+    "notes": {
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
+    }
+  },
+  "vimeo": {
+    "videoId": "1216625977",
+    "lastSyncedAt": "2026-08-08T11:08:44.565Z"
+  }
 }
