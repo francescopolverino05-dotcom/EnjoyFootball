@@ -81,6 +81,11 @@ DATE_SLUGS = {
         "matchSlug": None,
         "kind": "training",
     },
+    "2026-08-08": {
+        "trainingSlug": None,
+        "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
+        "kind": "match",
+    },
 }
 
 ALIASES = {

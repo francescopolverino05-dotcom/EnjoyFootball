@@ -3,7 +3,10 @@ import { MatchData, VideoClip, AnalysisVideo, GoalkeeperLog } from '../types/mat
 import { useLanguage } from '../i18n/LanguageContext';
 import { CLIP_LABELS, ANALYSIS_SECTION_ORDER, HIDDEN_CLIP_SECTIONS, type ClipLabelId } from '../i18n/clipLabels';
 import type { Localized, UiKey } from '../i18n/translations';
+import { getRpeSessionByMatchSlug } from '../data/rpeLoad';
+import { getTqrSessionByMatchSlug } from '../data/tqrLoad';
 import MatchMedia from './MatchMedia';
+import PhysicalLoadPanel from './PhysicalLoadPanel';
 
 interface StatsDashboardProps {
   match: MatchData;
@@ -15,20 +18,36 @@ type TabId =
   | 'gkanalysis'
   | 'fullmatch'
   | 'clips'
-  | 'videoanalysis';
+  | 'videoanalysis'
+  | 'physicalload';
+
+type TabLabelKey =
+  | 'tabDynamics'
+  | 'tabTeamStats'
+  | 'tabGk'
+  | 'tabFullMatch'
+  | 'tabClips'
+  | 'tabVideoAnalysis'
+  | 'tabPhysicalLoad';
 
 export default function StatsDashboard({ match }: StatsDashboardProps) {
   const [activeTab, setActiveTab] = useState<TabId>('dynamics');
   const { t, L } = useLanguage();
+  const rpeSession = getRpeSessionByMatchSlug(match.slug);
+  const tqrSession = getTqrSessionByMatchSlug(match.slug);
+  const hasPhysicalLoad = Boolean(rpeSession || tqrSession);
 
   // Match-only tabs — never include training tabs (Full Session / Training Design).
-  const tabs: [TabId, 'tabDynamics' | 'tabTeamStats' | 'tabGk' | 'tabFullMatch' | 'tabClips' | 'tabVideoAnalysis'][] = [
+  const tabs: [TabId, TabLabelKey][] = [
     ['dynamics', 'tabDynamics'],
     ['teamstats', 'tabTeamStats'],
     ['gkanalysis', 'tabGk'],
     ['fullmatch', 'tabFullMatch'],
     ['clips', 'tabClips'],
     ['videoanalysis', 'tabVideoAnalysis'],
+    ...(hasPhysicalLoad
+      ? ([['physicalload', 'tabPhysicalLoad']] as [TabId, TabLabelKey][])
+      : []),
   ];
 
   return (
@@ -118,6 +137,19 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
       >
         <VideoAnalysisPanel match={match} />
       </div>
+
+      {hasPhysicalLoad ? (
+        <div
+          className={`tab-content ${activeTab === 'physicalload' ? 'active' : ''}`}
+          role="tabpanel"
+        >
+          <PhysicalLoadPanel
+            session={rpeSession ?? null}
+            tqrSession={tqrSession ?? null}
+            gaconSession={null}
+          />
+        </div>
+      ) : null}
     </>
   );
 }
