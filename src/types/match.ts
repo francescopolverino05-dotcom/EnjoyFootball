@@ -20,6 +20,8 @@ export interface Goal {
   minute: number;
   scorer: string;
   position?: string;
+  /** Null/omitted = no assist recorded. */
+  assist?: string | null;
   teamId: string;
 }
 
@@ -47,6 +49,8 @@ export interface Formation {
   label: Localized;
   system: string;
   players: PitchPlayer[];
+  /** Optional pitch diagram under matches/<slug>/ (e.g. assets/formation-napoli.png). */
+  image?: string;
 }
 
 export interface DynamicMetric {

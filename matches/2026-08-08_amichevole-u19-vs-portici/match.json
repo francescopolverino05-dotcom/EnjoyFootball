@@ -40,7 +40,15 @@
     "home": 1,
     "away": 3
   },
-  "goals": [],
+  "goals": [
+    {
+      "minute": 66,
+      "scorer": "Pengue",
+      "position": "CF",
+      "assist": null,
+      "teamId": "u19"
+    }
+  ],
   "timeline": [
     {
       "minute": 1,
@@ -86,8 +94,8 @@
     {
       "minute": 66,
       "label": {
-        "en": "Napoli 1-2",
-        "it": "Napoli 1-2"
+        "en": "Pengue 1-2",
+        "it": "Pengue 1-2"
       },
       "type": "goal",
       "teamId": "u19",
@@ -122,6 +130,7 @@
         "it": "Napoli Primavera"
       },
       "system": "1-3-4-2-1",
+      "image": "assets/formation-napoli.png",
       "players": [
         {
           "number": 1,
@@ -133,70 +142,70 @@
         },
         {
           "number": 3,
-          "name": "Lieto",
+          "name": "Branchizio",
           "teamId": "u19",
           "bottom": "22%",
           "left": "22%"
         },
         {
-          "number": 4,
-          "name": "Natale",
+          "number": 15,
+          "name": "Lieto",
           "teamId": "u19",
           "bottom": "20%",
           "left": "50%"
         },
         {
-          "number": 5,
-          "name": "Branchizio",
+          "number": 4,
+          "name": "Natale",
           "teamId": "u19",
           "bottom": "22%",
           "left": "78%"
         },
         {
-          "number": 6,
-          "name": "Melnyk",
+          "number": 2,
+          "name": "Zappalá",
           "teamId": "u19",
           "bottom": "38%",
           "left": "12%"
         },
         {
-          "number": 8,
-          "name": "Zappalà",
+          "number": 29,
+          "name": "Chiummariello",
           "teamId": "u19",
           "bottom": "40%",
           "left": "38%"
         },
         {
-          "number": 10,
+          "number": 19,
           "name": "De Stefano",
           "teamId": "u19",
           "bottom": "40%",
           "left": "62%"
         },
         {
-          "number": 7,
-          "name": "Chiummariello",
+          "number": 16,
+          "name": "Melnyk",
           "teamId": "u19",
           "bottom": "38%",
           "left": "88%"
         },
         {
-          "number": 11,
-          "name": "Anic",
+          "number": 27,
+          "name": "Rovetini",
           "teamId": "u19",
           "bottom": "58%",
           "left": "35%"
         },
         {
-          "number": 14,
-          "name": "Rovetini",
+          "number": 18,
+          "name": "Esposito",
           "teamId": "u19",
           "bottom": "58%",
           "left": "65%"
         },
         {
           "number": 9,
-          "name": "Pengue",
+          "name": "Mané",
           "teamId": "u19",
           "bottom": "78%",
           "left": "50%"
@@ -910,7 +919,7 @@
         "en": "Assists (goal)",
         "it": "Assist (gol)"
       },
-      "home": "1",
+      "home": "0",
       "away": "2"
     },
     {

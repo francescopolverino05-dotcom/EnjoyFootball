@@ -1,11 +1,13 @@
 import { Formation } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
+import { mediaUrl } from '../utils/mediaUrl';
 
 interface FormationsProps {
   formations: Formation[];
+  matchSlug?: string;
 }
 
-export default function Formations({ formations }: FormationsProps) {
+export default function Formations({ formations, matchSlug }: FormationsProps) {
   const { t, L } = useLanguage();
 
   return (
@@ -17,6 +19,15 @@ export default function Formations({ formations }: FormationsProps) {
             <div className="pitch-header">
               {L(formation.label)} ({formation.system})
             </div>
+            {formation.image && matchSlug ? (
+              <div className="formation-image-wrap">
+                <img
+                  className="formation-image"
+                  src={mediaUrl(matchSlug, formation.image)}
+                  alt={`${L(formation.label)} ${formation.system}`}
+                />
+              </div>
+            ) : null}
             <div className="pitch-canvas">
               <div className="pitch-center-line" />
               <div className="pitch-center-circle" />

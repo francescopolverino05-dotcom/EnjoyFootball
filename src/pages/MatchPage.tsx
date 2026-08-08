@@ -42,7 +42,7 @@ export default function MatchPage() {
         />
         <Scoreboard match={match} />
         <Timeline events={match.timeline} />
-        <Formations formations={match.formations} />
+        <Formations formations={match.formations} matchSlug={match.slug} />
       </div>
 
       <div className="report-page">

@@ -460,6 +460,21 @@ button {
   padding-bottom: 6px;
 }
 
+.formation-image-wrap {
+  margin-bottom: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  background: #0b1f14;
+}
+
+.formation-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
 .pitch-canvas {
   height: 280px;
   background: #eef2f6;
