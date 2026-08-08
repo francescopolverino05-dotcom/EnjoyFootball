@@ -27,7 +27,7 @@
  *   - empty Vimeo folder → save folderId only; never clear video.parts / fullSession
  *   - non-empty sync merges: update/add Vimeo entries, keep local (non-Vimeo) parts/clips/docs
  *   - non-Vimeo PDF/markdown in analysisVideos are preserved
- *   - trainingDesign (session-plan PDFs) is left untouched
+ *   - trainingDesign (session-plan PDFs) is left untouched on matches and trainings
  *   - optional training.json → vimeo.skipNameRegex skips matching video names
  */
 
@@ -510,6 +510,11 @@ Upload videos into the Vimeo folder, then re-run:
     });
   }
 
+  // Session-plan PDFs live on trainingDesign (Training Design tab) — leave untouched.
+  if (!Array.isArray(match.trainingDesign)) {
+    match.trainingDesign = [];
+  }
+
   match.vimeo = {
     ...(match.vimeo || {}),
     lastSyncedAt: new Date().toISOString(),
@@ -520,6 +525,7 @@ Upload videos into the Vimeo folder, then re-run:
 Updated ${matchPath}
   fullMatch: ${fullMatchUrl ? 'yes' : '(unchanged)'}
   analysis:  ${(match.analysisVideos || []).length}
+  design:    ${(match.trainingDesign || []).length} (session plans, untouched)
   clips:     ${clips.length}
 `);
 }

@@ -124,6 +124,7 @@ const template = {
     },
   },
   clips: [],
+  trainingDesign: [],
   analysisVideos: [],
 };
 
@@ -163,16 +164,28 @@ Analyst reports → \`../analysis/\`
 
 writeFileSync(
   join(matchDir, 'analysis', 'README.md'),
-  `# Video Analysis
-
-Long analyst / coach reports for the **Video Analysis** tab.
+  `# Analysis & Training Design
 
 \`\`\`text
 analysis/
-└── your-report.mp4
+├── Session_Plan_YYYY-MM-DD.pdf   ← Training Design tab
+└── your-report.mp4               ← Video Analysis tab
 \`\`\`
 
-Register in \`../match.json\` → \`analysisVideos\`:
+**Training Design** — session / matchday plan PDFs. Register in \`../match.json\` → \`trainingDesign\`:
+
+\`\`\`json
+{
+  "id": "session-plan-YYYY-MM-DD",
+  "title": { "en": "Session / matchday plan", "it": "Piano seduta / matchday" },
+  "description": { "en": "…", "it": "…" },
+  "videoFile": "Session_Plan_YYYY-MM-DD.pdf",
+  "kind": "pdf",
+  "tags": ["pdf", "session-plan", "matchday"]
+}
+\`\`\`
+
+**Video Analysis** — long analyst / coach reports. Register in \`../match.json\` → \`analysisVideos\`:
 
 \`\`\`json
 {
@@ -197,14 +210,15 @@ matches/${slug}/
 ├── match.json
 ├── video/      ← FULL MATCH → video/match.mp4
 ├── clips/      ← tactical clips (Clips tab)
-└── analysis/   ← analyst reports (Video Analysis tab)
+└── analysis/   ← session plans (Training Design) + analyst reports (Video Analysis)
 \`\`\`
 
 1. Copy full match → \`video/match.mp4\`
 2. Add clips → \`clips/\` (or root drop + \`npm run sync-clips\`)
-3. Add analyst reports → \`analysis/\`
-4. Ask Cursor to fill / register \`match.json\`
-5. Set \`status\` to \`"published"\` when ready
+3. Add session-plan PDF → \`analysis/\` + \`match.json\` → \`trainingDesign\`
+4. Add analyst reports → \`analysis/\` + \`match.json\` → \`analysisVideos\`
+5. Ask Cursor to fill / register \`match.json\`
+6. Set \`status\` to \`"published"\` when ready
 `
 );
 
@@ -215,5 +229,5 @@ console.log(`
   clips/     ← tactical clips (or root drop + npm run sync-clips)
   analysis/  ← analyst reports
 
-Next: npm run dev → open the match → Full Match tab
+Next: npm run dev → open the match → Full Match / Training Design tabs
 `);

@@ -1,22 +1,13 @@
-# Video Analysis
-
-Long analyst / coach reports for the **Video Analysis** tab.
+# Analysis & Training Design
 
 ```text
 analysis/
-└── your-report.mp4
+├── Session_Plan_2026-08-08.pdf   ← Training Design tab
+└── (analyst reports)             ← Video Analysis tab
 ```
 
-Register in `../match.json` → `analysisVideos`:
+**Training Design** — session / matchday plan PDFs. Register in `../match.json` → `trainingDesign`.
 
-```json
-{
-  "id": "match-report",
-  "title": { "en": "Match video report", "it": "Report video partita" },
-  "description": { "en": "Full analyst breakdown.", "it": "Analisi completa." },
-  "videoFile": "match-report.mp4",
-  "tags": []
-}
-```
+**Video Analysis** — long analyst / coach reports. Register in `../match.json` → `analysisVideos`.
 
 Full match → `../video/` · Clips → `../clips/`

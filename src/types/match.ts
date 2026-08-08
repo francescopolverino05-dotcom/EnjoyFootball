@@ -154,6 +154,11 @@ export interface MatchData {
     showcaseId?: string;
   };
   clips: VideoClip[];
+  /**
+   * Session / matchday plan PDFs for the Training Design tab
+   * (same entry shape as analysisVideos).
+   */
+  trainingDesign?: AnalysisVideo[];
   analysisVideos: AnalysisVideo[];
 }
 

@@ -216,6 +216,8 @@ const dictionaries = {
       'No video analysis yet. Add files to trainings/{slug}/analysis/ and register them in training.json.',
     noTrainingDesign:
       'No session plan yet. Add the PDF to trainings/{slug}/analysis/ and register it in training.json → trainingDesign.',
+    noMatchTrainingDesign:
+      'No session plan yet. Add the PDF to matches/{slug}/analysis/ and register it in match.json → trainingDesign.',
     videoAnalysisHint:
       'Full analyst video breakdowns for the coaching staff.',
     trainingDesignHint:
@@ -450,6 +452,8 @@ const dictionaries = {
       'Nessuna analisi video ancora. Aggiungi file in trainings/{slug}/analysis/ e registrali in training.json.',
     noTrainingDesign:
       'Nessun piano seduta ancora. Aggiungi il PDF in trainings/{slug}/analysis/ e registralo in training.json → trainingDesign.',
+    noMatchTrainingDesign:
+      'Nessun piano seduta ancora. Aggiungi il PDF in matches/{slug}/analysis/ e registralo in match.json → trainingDesign.',
     videoAnalysisHint:
       'Video di analisi completi preparati dall’analista per lo staff tecnico.',
     trainingDesignHint:

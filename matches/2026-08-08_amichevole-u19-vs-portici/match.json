@@ -47,5 +47,25 @@
   "teamStats": [],
   "goalkeepers": [],
   "clips": [],
-  "analysisVideos": []
+  "analysisVideos": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-08",
+      "title": {
+        "en": "Session / matchday plan — Sat 8 Aug",
+        "it": "Piano seduta / matchday — Sab 8 ago"
+      },
+      "description": {
+        "en": "Primavera training / matchday plan for the friendly vs Portici (8 Aug 2026).",
+        "it": "Piano allenamento / matchday Primavera per l’amichevole vs Portici (8 ago 2026)."
+      },
+      "videoFile": "Session_Plan_2026-08-08.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "matchday"
+      ]
+    }
+  ]
 }

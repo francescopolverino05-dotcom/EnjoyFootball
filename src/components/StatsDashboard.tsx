@@ -15,19 +15,31 @@ type TabId =
   | 'gkanalysis'
   | 'fullmatch'
   | 'clips'
+  | 'trainingdesign'
   | 'videoanalysis';
 
 export default function StatsDashboard({ match }: StatsDashboardProps) {
   const [activeTab, setActiveTab] = useState<TabId>('dynamics');
   const { t, L } = useLanguage();
 
-  // Match-only tabs — never include training tabs (Full Session / Training Design).
-  const tabs: [TabId, 'tabDynamics' | 'tabTeamStats' | 'tabGk' | 'tabFullMatch' | 'tabClips' | 'tabVideoAnalysis'][] = [
+  const tabs: [
+    TabId,
+    (
+      | 'tabDynamics'
+      | 'tabTeamStats'
+      | 'tabGk'
+      | 'tabFullMatch'
+      | 'tabClips'
+      | 'tabTrainingDesign'
+      | 'tabVideoAnalysis'
+    ),
+  ][] = [
     ['dynamics', 'tabDynamics'],
     ['teamstats', 'tabTeamStats'],
     ['gkanalysis', 'tabGk'],
     ['fullmatch', 'tabFullMatch'],
     ['clips', 'tabClips'],
+    ['trainingdesign', 'tabTrainingDesign'],
     ['videoanalysis', 'tabVideoAnalysis'],
   ];
 
@@ -147,6 +159,13 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
         role="tabpanel"
       >
         <ClipsPanel match={match} />
+      </div>
+
+      <div
+        className={`tab-content ${activeTab === 'trainingdesign' ? 'active' : ''}`}
+        role="tabpanel"
+      >
+        <TrainingDesignPanel match={match} />
       </div>
 
       <div
@@ -405,9 +424,61 @@ function ClipsPanel({ match }: { match: MatchData }) {
   );
 }
 
+function isSessionPlanDoc(item: AnalysisVideo): boolean {
+  if ((item.tags || []).includes('session-plan')) return true;
+  const src = item.videoFile || '';
+  return /session[_-]?plan/i.test(item.id) || /Session_Plan/i.test(src);
+}
+
+function TrainingDesignPanel({ match }: { match: MatchData }) {
+  const { t, L } = useLanguage();
+  // Prefer explicit trainingDesign; fall back to tagged session plans still in analysisVideos.
+  const fromField = match.trainingDesign ?? [];
+  const fromAnalysis = (match.analysisVideos ?? []).filter(isSessionPlanDoc);
+  const items = fromField.length > 0 ? fromField : fromAnalysis;
+
+  if (items.length === 0) {
+    return (
+      <div className="empty-clips">
+        {t('noMatchTrainingDesign').replace(/\{slug\}/g, match.slug)}
+      </div>
+    );
+  }
+
+  return (
+    <div className="video-section">
+      <p className="video-hint">{t('trainingDesignHint')}</p>
+      <div className="analysis-grid">
+        {items.map((item: AnalysisVideo) => (
+          <article className="analysis-card" key={item.id}>
+            <MatchMedia
+              slug={match.slug}
+              src={item.videoFile}
+              kind="analysis"
+              unsupportedLabel={t('videoUnsupported')}
+              playLabel={t('playVideo')}
+              openPdfLabel={t('openPdf')}
+              downloadPdfLabel={t('downloadPdf')}
+              openReportLabel={t('openReport')}
+              openDocLabel={t('openDoc')}
+              title={L(item.title)}
+              autoload
+            />
+            <div className="clip-card-body">
+              <div className="clip-card-title">{L(item.title)}</div>
+              <div className="clip-card-desc">{L(item.description)}</div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function VideoAnalysisPanel({ match }: { match: MatchData }) {
   const { t, L } = useLanguage();
-  const videos = match.analysisVideos ?? [];
+  // Analyst videos + remaining docs. Session-plan PDFs → Training Design.
+  const videos = (match.analysisVideos ?? []).filter((item) => !isSessionPlanDoc(item));
 
   if (videos.length === 0) {
     return (
