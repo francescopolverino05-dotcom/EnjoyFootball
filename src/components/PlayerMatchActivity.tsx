@@ -41,8 +41,8 @@ export default function PlayerMatchActivity({
           </h2>
           <p className="player-activity-hint">{t('playerMatchActivityHint')}</p>
         </div>
-        <span className="home-draft-badge home-draft-badge-inline">
-          {t('homeDraftPreview')}
+        <span className="player-draft-badge">
+          {t('playerDraftPreview')}
         </span>
       </div>
 
@@ -86,9 +86,9 @@ export default function PlayerMatchActivity({
                     </span>
                     <Link
                       to={`/match/${link.matchSlug}`}
-                      className="home-section-link"
+                      className="player-inline-link"
                     >
-                      {t('homeOpenReport')}
+                      {t('playerOpenReport')}
                     </Link>
                   </div>
                 </header>
@@ -124,7 +124,7 @@ export default function PlayerMatchActivity({
                     <h4>{t('playerTaggedClips')}</h4>
                     <span>
                       {link.clips.length
-                        ? t('homeClipsAvailable').replace(
+                        ? t('playerClipsAvailable').replace(
                             '{n}',
                             String(link.clips.length)
                           )
@@ -166,7 +166,7 @@ export default function PlayerMatchActivity({
                                 ) : null}
                                 <Link
                                   to={`/match/${link.matchSlug}?tab=clips&clip=${encodeURIComponent(clip.id)}`}
-                                  className="home-section-link"
+                                  className="player-inline-link"
                                 >
                                   {t('playerOpenInMatch')}
                                 </Link>

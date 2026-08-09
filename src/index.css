@@ -2006,6 +2006,30 @@ button {
   border-radius: 2px;
 }
 
+.player-draft-badge {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #92400e;
+  background: #fef3c7;
+  border: 1px solid #f6d787;
+  padding: 6px 10px;
+  border-radius: 2px;
+}
+
+.player-inline-link {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--napoli-blue-dark);
+  white-space: nowrap;
+}
+
+.player-inline-link:hover {
+  text-decoration: underline;
+}
+
 .clip-player-links {
   display: flex;
   flex-wrap: wrap;
