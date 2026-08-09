@@ -1207,6 +1207,190 @@
   ],
   "clips": [
     {
+      "id": "vimeo-1216747585",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 81,
+      "second": 48,
+      "videoFile": "https://vimeo.com/1216747585/39a15112c1",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216747488",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 63,
+      "second": 38,
+      "videoFile": "https://vimeo.com/1216747488/3aa716a32d",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216747443",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 61,
+      "second": 50,
+      "videoFile": "https://vimeo.com/1216747443/e2c8fcf2d7",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216747309",
+      "title": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "comments": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "minute": 56,
+      "second": 57,
+      "videoFile": "https://vimeo.com/1216747309/4799eceddf",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216747291",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 56,
+      "second": 32,
+      "videoFile": "https://vimeo.com/1216747291/f907bae6f8",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216747127",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 2,
+      "second": 17,
+      "videoFile": "https://vimeo.com/1216747127/5df94cf42a",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216747128",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 0,
+      "second": 57,
+      "videoFile": "https://vimeo.com/1216747128/11f1150a5d",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216747129",
+      "title": {
+        "en": "Transition to defence",
+        "it": "Transizione difensiva"
+      },
+      "comments": {
+        "en": "Transition to defence",
+        "it": "Transizione difensiva"
+      },
+      "minute": 2,
+      "second": 43,
+      "videoFile": "https://vimeo.com/1216747129/df71cf30e3",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "defending"
+      ]
+    },
+    {
       "id": "vimeo-1216680545",
       "title": {
         "en": "Mid block",
@@ -1471,6 +1655,29 @@
       ]
     },
     {
+      "id": "vimeo-1216679273",
+      "title": {
+        "en": "Actions",
+        "it": "Azioni"
+      },
+      "comments": {
+        "en": "Actions",
+        "it": "Azioni"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1216679273/64252443c5",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "actions",
+        "other"
+      ]
+    },
+    {
       "id": "vimeo-1216679262",
       "title": {
         "en": "Progression",
@@ -1566,7 +1773,7 @@
   },
   "vimeo": {
     "videoId": "1216625977",
-    "lastSyncedAt": "2026-08-08T18:27:47.882Z",
+    "lastSyncedAt": "2026-08-09T07:15:19.426Z",
     "folderId": "30162360",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30162360"
   },
