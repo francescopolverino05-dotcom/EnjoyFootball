@@ -1116,6 +1116,29 @@
   ],
   "clips": [
     {
+      "id": "vimeo-1216749400",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 40,
+      "second": 25,
+      "videoFile": "https://vimeo.com/1216749400/188000a71e",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
       "id": "vimeo-1216747585",
       "title": {
         "en": "Progression",
@@ -1682,7 +1705,7 @@
   },
   "vimeo": {
     "videoId": "1216625977",
-    "lastSyncedAt": "2026-08-09T07:15:19.426Z",
+    "lastSyncedAt": "2026-08-09T07:36:39.782Z",
     "folderId": "30162360",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30162360"
   },
