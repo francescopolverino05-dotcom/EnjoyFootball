@@ -1,0 +1,102 @@
+{
+  "_comment": "Draft coach briefing packs for match-report preview. Prefer writing coachBriefing onto match.json once approved.",
+  "briefings": {
+    "2026-08-08_amichevole-u19-vs-portici": {
+      "headline": {
+        "en": "Lost the game in the moments after first contact and in the second-ball phase.",
+        "it": "La partita si è persa nei momenti dopo il primo contatto e nella gestione del secondo pallone."
+      },
+      "summary": {
+        "en": "Possession was fine (51%), but Portici were sharper in transitions and set-piece second balls. Focus the next microcycle on rest-defence, wide recovery, and defending the box after the first duel.",
+        "it": "Il possesso era accettabile (51%), ma Portici è stata più tagliente in transizione e sui secondi palloni da palla inattiva. Nel prossimo microciclo: rest-defence, recupero sulle fasce e difesa dell’area dopo il primo duello."
+      },
+      "takeaways": [
+        {
+          "en": "Protect the box earlier after losing the first ball in wide areas — several entries started from delayed recovery runs.",
+          "it": "Proteggere prima l’area dopo la perdita del primo pallone sulle fasce — diverse penetrazioni nascono da corse di recupero in ritardo."
+        },
+        {
+          "en": "Build-up under press needs a clearer third-man option between the lines; progressive accuracy (63%) trailed Portici (67%).",
+          "it": "In costruzione sotto pressione serve un’opzione third-man più chiara tra le linee; la precisione progressiva (63%) è sotto Portici (67%)."
+        },
+        {
+          "en": "Set-piece defending: first contact was mixed and second-ball reactions were costly in the 1–3 result.",
+          "it": "Palle inattive difensive: primo contatto altalenante e reazioni sul secondo pallone costose nel 1–3."
+        },
+        {
+          "en": "Positive: Pengue’s goal (66') and several progressive clips show we can break lines when the middle is free.",
+          "it": "Positivo: il gol di Pengue (66') e diverse clip di progressione mostrano che possiamo rompere le linee quando il centro è libero."
+        }
+      ],
+      "priorities": [
+        {
+          "en": "Rondo → progressive possession under press (third man + opposite half-space).",
+          "it": "Rondo → possesso progressivo sotto pressing (third man + half-space opposto)."
+        },
+        {
+          "en": "Wide rest-defence and recovery runs after losing the first duel.",
+          "it": "Rest-defence sulle fasce e corse di recupero dopo la perdita del primo duello."
+        },
+        {
+          "en": "Defensive set pieces: zonal + man responsibilities on first and second ball.",
+          "it": "Palle inattive difensive: responsabilità a zona + uomo su primo e secondo pallone."
+        }
+      ],
+      "keyClipIds": [
+        "vimeo-1216749400",
+        "vimeo-1216679581",
+        "vimeo-1216679889",
+        "vimeo-1216747309",
+        "vimeo-1216747488",
+        "vimeo-1216680471",
+        "vimeo-1216747585"
+      ]
+    },
+    "2026-08-01_amichevole-u19-vs-u18": {
+      "headline": {
+        "en": "Clear win (3–1) with strong attacking transitions — still clean up late rest-defence.",
+        "it": "Vittoria chiara (3–1) con buone transizioni offensive — da ripulire il rest-defence a fine gara."
+      },
+      "summary": {
+        "en": "Esposito’s brace and Mané’s late goal show good chance conversion. Use the mid-block and build-up clips as the model; address the conceded goal with more aggressive pressure on the ball carrier.",
+        "it": "La doppietta di Esposito e il gol di Mané mostrano buona conversione. Usare le clip di blocco medio e costruzione come modello; sul gol subito, pressing più aggressivo sul portatore."
+      },
+      "takeaways": [
+        {
+          "en": "Offensive transitions around 31' are a reference pattern for the next attacking sessions.",
+          "it": "Le transizioni offensive intorno al 31' sono un pattern di riferimento per le prossime sedute offensive."
+        },
+        {
+          "en": "Build-up examples late in the game (88') show composure — keep demanding the same under fatigue.",
+          "it": "Gli esempi di costruzione a fine gara (88') mostrano personalità — pretendere lo stesso sotto fatica."
+        },
+        {
+          "en": "Goal conceded (86'): not aggressive enough on the ball — tighten mid-block distances and first press.",
+          "it": "Gol subito (86'): poco aggressivi sul pallone — chiudere le distanze del blocco medio e il primo pressing."
+        }
+      ],
+      "priorities": [
+        {
+          "en": "Repeat the ideal build-up pattern with U18/U19 intensity.",
+          "it": "Ripetere il pattern ideale di costruzione con intensità U18/U19."
+        },
+        {
+          "en": "Mid-block → jump to press on the trigger pass.",
+          "it": "Blocco medio → salto in pressing sul passaggio trigger."
+        },
+        {
+          "en": "Final-third finishing combinations from Esposito/Pengue lanes.",
+          "it": "Combinazioni finalizzanti nell’ultimo terzo dalle corsie di Esposito/Pengue."
+        }
+      ],
+      "keyClipIds": [
+        "vimeo-1214968243",
+        "vimeo-1214968169",
+        "vimeo-1214968503",
+        "vimeo-1214968851",
+        "vimeo-1214972768",
+        "vimeo-1214972656"
+      ]
+    }
+  }
+}
