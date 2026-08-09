@@ -1111,6 +1111,309 @@ button {
   background: #fff;
 }
 
+.home-dash {
+  margin-top: 4px;
+}
+
+.home-dash-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 28px;
+  padding: 22px 22px 20px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background:
+    linear-gradient(135deg, rgba(0, 84, 166, 0.08), rgba(0, 127, 255, 0.02)),
+    #fff;
+}
+
+.home-dash-kicker {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--napoli-blue-dark);
+}
+
+.home-dash-title {
+  margin: 0 0 8px;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+}
+
+.home-dash-lead {
+  margin: 0;
+  max-width: 52ch;
+  font-size: 14px;
+  color: var(--text-gray);
+}
+
+.home-draft-badge {
+  flex-shrink: 0;
+  align-self: flex-start;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #92400e;
+  background: #fef3c7;
+  border: 1px solid #f6d787;
+  padding: 6px 10px;
+  border-radius: 2px;
+}
+
+.home-draft-badge-inline {
+  align-self: center;
+}
+
+.home-section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.home-section-head .section-title {
+  margin-bottom: 0;
+}
+
+.home-section-link {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--napoli-blue-dark);
+  white-space: nowrap;
+}
+
+.home-section-link:hover {
+  text-decoration: underline;
+}
+
+.home-week-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.home-week-day {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 12px 14px;
+}
+
+.home-week-day-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+.home-week-today {
+  color: #fff;
+  background: var(--napoli-blue-dark);
+  padding: 2px 6px;
+  border-radius: 2px;
+  letter-spacing: 0.06em;
+}
+
+.home-week-events {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.home-week-chip {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-light);
+  transition: var(--transition-standard);
+}
+
+.home-week-chip:hover {
+  border-color: var(--napoli-blue);
+  background: #fff;
+}
+
+.home-week-chip.match {
+  border-left: 3px solid var(--napoli-blue-dark);
+}
+
+.home-week-chip.training {
+  border-left: 3px solid var(--away-green);
+}
+
+.home-week-chip-kind {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  flex-shrink: 0;
+}
+
+.home-week-chip-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.home-match-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 28px 0 8px;
+}
+
+.home-panel {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.home-panel .match-card {
+  border-style: dashed;
+}
+
+.home-match-meta-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.home-match-meta-list li {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--napoli-blue-dark);
+  background: rgba(0, 127, 255, 0.08);
+  padding: 5px 9px;
+  border-radius: 2px;
+}
+
+.home-panel-note {
+  margin: 12px 0 0 !important;
+}
+
+.home-briefing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 18px;
+}
+
+.home-briefing-col h3 {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-gray);
+}
+
+.home-briefing-col ol {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-dark);
+  font-size: 14px;
+}
+
+.home-briefing-col li + li {
+  margin-top: 8px;
+}
+
+.home-briefing-cta {
+  grid-column: 1 / -1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  margin-top: 4px;
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+  background: var(--napoli-blue-dark);
+  border-radius: 4px;
+  transition: var(--transition-standard);
+}
+
+.home-briefing-cta:hover {
+  background: var(--napoli-blue);
+}
+
+.home-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.home-quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 28px 0 8px;
+}
+
+.home-quick-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-gray);
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  transition: var(--transition-standard);
+}
+
+.home-quick-link:hover {
+  color: var(--napoli-blue-dark);
+  border-color: var(--napoli-blue);
+}
+
+.home-dash-footer {
+  text-align: center;
+  margin-top: 36px;
+  padding: 28px 12px 8px;
+  border-top: 1px solid var(--border-light);
+}
+
+.home-dash-footer .home-credit-name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--napoli-blue-dark);
+}
+
+.home-dash-footer .home-analyst-credit {
+  margin-top: 8px !important;
+}
+
 .calendar-legend {
   display: flex;
   flex-wrap: wrap;
@@ -3115,6 +3418,21 @@ a.gacon-ind-row:hover {
   .app-shell {
     padding-left: calc(14px + var(--safe-left));
     padding-right: calc(14px + var(--safe-right));
+  }
+
+  .home-dash-intro {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .home-dash-title {
+    font-size: 22px;
+  }
+
+  .home-match-grid,
+  .home-briefing,
+  .home-card-grid {
+    grid-template-columns: 1fr;
   }
 
   .report-page {
