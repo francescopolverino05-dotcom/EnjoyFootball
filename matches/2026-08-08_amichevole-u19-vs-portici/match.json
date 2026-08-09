@@ -88,73 +88,12 @@
     {
       "minute": 45,
       "label": {
-        "en": "Spinelli → Magliano",
-        "it": "Spinelli → Magliano"
-      },
-      "type": "gk-entry",
-      "teamId": "u19",
-      "positionPercent": 44,
-      "markerColor": "#0054a6"
-    },
-    {
-      "minute": 45,
-      "label": {
-        "en": "Branchizio → Kebe",
-        "it": "Branchizio → Kebe"
+        "en": "Napoli subs",
+        "it": "Sub Napoli"
       },
       "type": "substitution",
       "teamId": "u19",
-      "positionPercent": 46
-    },
-    {
-      "minute": 45,
-      "label": {
-        "en": "Lieto → Lepre",
-        "it": "Lieto → Lepre"
-      },
-      "type": "substitution",
-      "teamId": "u19",
-      "positionPercent": 47.5
-    },
-    {
-      "minute": 45,
-      "label": {
-        "en": "Natale → Chiaiese",
-        "it": "Natale → Chiaiese"
-      },
-      "type": "substitution",
-      "teamId": "u19",
-      "positionPercent": 49
-    },
-    {
-      "minute": 45,
-      "label": {
-        "en": "Rovetini → Favicchio",
-        "it": "Rovetini → Favicchio"
-      },
-      "type": "substitution",
-      "teamId": "u19",
-      "positionPercent": 50.5
-    },
-    {
-      "minute": 45,
-      "label": {
-        "en": "Mané → Pengue",
-        "it": "Mané → Pengue"
-      },
-      "type": "substitution",
-      "teamId": "u19",
-      "positionPercent": 52
-    },
-    {
-      "minute": 45,
-      "label": {
-        "en": "Esposito → Anic",
-        "it": "Esposito → Anic"
-      },
-      "type": "substitution",
-      "teamId": "u19",
-      "positionPercent": 53.5
+      "positionPercent": 48
     },
     {
       "minute": 52,
@@ -169,42 +108,12 @@
     {
       "minute": 58,
       "label": {
-        "en": "Melnyk → Capozzoli",
-        "it": "Melnyk → Capozzoli"
+        "en": "Napoli subs",
+        "it": "Sub Napoli"
       },
       "type": "substitution",
       "teamId": "u19",
-      "positionPercent": 61
-    },
-    {
-      "minute": 58,
-      "label": {
-        "en": "Zappalá → Candela",
-        "it": "Zappalá → Candela"
-      },
-      "type": "substitution",
-      "teamId": "u19",
-      "positionPercent": 62.5
-    },
-    {
-      "minute": 58,
-      "label": {
-        "en": "Chiummariello → Castaldi",
-        "it": "Chiummariello → Castaldi"
-      },
-      "type": "substitution",
-      "teamId": "u19",
-      "positionPercent": 64
-    },
-    {
-      "minute": 58,
-      "label": {
-        "en": "De Stefano → Maida",
-        "it": "De Stefano → Maida"
-      },
-      "type": "substitution",
-      "teamId": "u19",
-      "positionPercent": 65.5
+      "positionPercent": 63
     },
     {
       "minute": 66,
