@@ -1484,11 +1484,11 @@
       "kind": "match",
       "trainingSlug": null,
       "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
-      "playersPresent": 17,
-      "playersAnswered": 17,
-      "avgMin": 48.65,
-      "avgRpe": 16.0,
-      "avgSessionLoad": 777.0,
+      "playersPresent": 16,
+      "playersAnswered": 16,
+      "avgMin": 44.19,
+      "avgRpe": 16.06,
+      "avgSessionLoad": 713.06,
       "players": [
         {
           "playerSlug": "melnyk-mykyta",
@@ -1601,13 +1601,6 @@
           "min": 45,
           "rpe": 15,
           "sessionLoad": 675
-        },
-        {
-          "playerSlug": "riccio-luigi",
-          "excelName": "Riccio Luigi",
-          "min": 120,
-          "rpe": 15,
-          "sessionLoad": 1800
         }
       ]
     }
