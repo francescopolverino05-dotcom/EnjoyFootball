@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { getPlayerSlugForAppearanceName } from '../data/playerLinks';
 import type { MatchAppearances, PlayerAppearance, TeamInfo } from '../types/match';
 import type { UiKey } from '../i18n/translations';
 import { useLanguage } from '../i18n/LanguageContext';
@@ -153,7 +155,19 @@ function TeamAppearanceTable({
                         {player.number != null ? (
                           <span className="appearance-number">{player.number}</span>
                         ) : null}
-                        <span className="appearance-name">{player.name}</span>
+                        {(() => {
+                          const slug = getPlayerSlugForAppearanceName(player.name);
+                          return slug ? (
+                            <Link
+                              to={`/players/${slug}`}
+                              className="appearance-name appearance-name-link"
+                            >
+                              {player.name}
+                            </Link>
+                          ) : (
+                            <span className="appearance-name">{player.name}</span>
+                          );
+                        })()}
                         {player.notes ? (
                           <span className="appearance-note" title={L(player.notes)}>
                             *

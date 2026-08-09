@@ -1,0 +1,172 @@
+{
+  "_comment": "Draft player↔clip tags for UI preview. Prefer writing playerSlugs on clips later.",
+  "links": [
+    {
+      "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
+      "clipId": "vimeo-1216747488",
+      "playerSlugs": [
+        "pengue-salvatore",
+        "capozzoli-emanuele"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
+      "clipId": "vimeo-1216747443",
+      "playerSlugs": [
+        "pengue-salvatore",
+        "castaldi-ciro-junior"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
+      "clipId": "vimeo-1216680471",
+      "playerSlugs": [
+        "pengue-salvatore",
+        "chiaiese-riccardo"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
+      "clipId": "vimeo-1216747585",
+      "playerSlugs": [
+        "pengue-salvatore",
+        "favicchio-elia"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
+      "clipId": "vimeo-1216749400",
+      "playerSlugs": [
+        "branchizio-agostino",
+        "de-stefano-francesco",
+        "melnyk-mykyta"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
+      "clipId": "vimeo-1216679581",
+      "playerSlugs": [
+        "branchizio-agostino",
+        "rovetini-alessandro",
+        "esposito-luigi"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
+      "clipId": "vimeo-1216679451",
+      "playerSlugs": [
+        "chiummariello-andrea",
+        "lieto-claudio"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
+      "clipId": "vimeo-1216679312",
+      "playerSlugs": [
+        "natale-raffaele",
+        "zappala-andrea",
+        "spinelli-david-antonio"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
+      "clipId": "vimeo-1216679889",
+      "playerSlugs": [
+        "mane-mohamed-seick",
+        "esposito-luigi",
+        "melnyk-mykyta"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
+      "clipId": "vimeo-1216679767",
+      "playerSlugs": [
+        "mane-mohamed-seick",
+        "rovetini-alessandro"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
+      "clipId": "vimeo-1216680191",
+      "playerSlugs": [
+        "zappala-andrea",
+        "chiummariello-andrea",
+        "de-stefano-francesco"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
+      "clipId": "vimeo-1216747309",
+      "playerSlugs": [
+        "pengue-salvatore",
+        "anic-ivan",
+        "lepre-giuseppe"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-01_amichevole-u19-vs-u18",
+      "clipId": "vimeo-1214968243",
+      "playerSlugs": [
+        "esposito-luigi",
+        "pengue-salvatore",
+        "anic-ivan"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-01_amichevole-u19-vs-u18",
+      "clipId": "vimeo-1214968169",
+      "playerSlugs": [
+        "esposito-luigi",
+        "pengue-salvatore"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-01_amichevole-u19-vs-u18",
+      "clipId": "vimeo-1214968503",
+      "playerSlugs": [
+        "esposito-luigi",
+        "pengue-salvatore"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-01_amichevole-u19-vs-u18",
+      "clipId": "vimeo-1214968851",
+      "playerSlugs": [
+        "esposito-luigi",
+        "rovetini-alessandro"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-01_amichevole-u19-vs-u18",
+      "clipId": "vimeo-1214972768",
+      "playerSlugs": [
+        "mane-mohamed-seick",
+        "branchizio-agostino"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-01_amichevole-u19-vs-u18",
+      "clipId": "vimeo-1214972740",
+      "playerSlugs": [
+        "mane-mohamed-seick"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-01_amichevole-u19-vs-u18",
+      "clipId": "vimeo-1214969328",
+      "playerSlugs": [
+        "magliano-mattia",
+        "branchizio-agostino",
+        "lieto-claudio"
+      ]
+    },
+    {
+      "matchSlug": "2026-08-01_amichevole-u19-vs-u18",
+      "clipId": "vimeo-1214969133",
+      "playerSlugs": [
+        "magliano-mattia",
+        "melnyk-mykyta"
+      ]
+    }
+  ]
+}

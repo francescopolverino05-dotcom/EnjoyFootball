@@ -141,6 +141,8 @@ export interface VideoClip {
    * Prefer `comments` for prose; use tags for short keywords.
    */
   tags?: string[];
+  /** Roster player slugs featured in this clip (player ↔ clip linking). */
+  playerSlugs?: string[];
 }
 
 /** Longer analyst video breakdowns or PDF documents (not raw match clips). */

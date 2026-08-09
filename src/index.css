@@ -1803,6 +1803,244 @@ button {
   margin-bottom: 4px;
 }
 
+.appearance-name-link {
+  color: var(--napoli-blue-dark);
+  font-weight: 700;
+}
+
+.appearance-name-link:hover {
+  text-decoration: underline;
+}
+
+.player-activity {
+  margin-top: 28px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-light);
+}
+
+.player-activity-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.player-activity-hint {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--text-gray);
+  max-width: 60ch;
+}
+
+.player-activity-kpis {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.player-activity-kpi {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.player-activity-kpi-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--napoli-blue-dark);
+  line-height: 1;
+}
+
+.player-activity-kpi-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-light);
+}
+
+.player-activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.player-match-card {
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.player-match-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.player-match-card-date {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 4px;
+}
+
+.player-match-card-title {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.player-match-card-score {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--napoli-blue-dark);
+}
+
+.player-match-card-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.player-link-source {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #92400e;
+  background: #fef3c7;
+  border: 1px solid #f6d787;
+  padding: 4px 8px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+.player-match-meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0 0 14px;
+}
+
+.player-match-meta dt {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 2px;
+}
+
+.player-match-meta dd {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.player-match-clips-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.player-match-clips-head h4 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-gray);
+}
+
+.player-match-clips-head span {
+  font-size: 12px;
+  color: var(--text-light);
+}
+
+.player-clip-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.player-clip-card {
+  border: 1px solid var(--border-light);
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fafafa;
+}
+
+.player-clip-card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.player-draft-tag {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #92400e;
+  background: #fef3c7;
+  padding: 3px 6px;
+  border-radius: 2px;
+}
+
+.clip-player-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 8px 0;
+}
+
+.clip-player-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--napoli-blue-dark);
+  background: rgba(0, 127, 255, 0.08);
+  border: 1px solid rgba(0, 84, 166, 0.18);
+  border-radius: 2px;
+}
+
+.clip-player-chip.draft {
+  color: #92400e;
+  background: #fef3c7;
+  border-color: #f6d787;
+}
+
+.clip-player-chip:hover {
+  text-decoration: underline;
+}
+
+.analysis-card-highlight {
+  outline: 2px solid var(--napoli-blue);
+  outline-offset: 2px;
+}
+
 .player-stat dd {
   margin: 0;
   font-size: 18px;
@@ -3115,6 +3353,21 @@ a.gacon-ind-row:hover {
   .app-shell {
     padding-left: calc(14px + var(--safe-left));
     padding-right: calc(14px + var(--safe-right));
+  }
+
+  .player-activity-kpis,
+  .player-match-meta,
+  .player-clip-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .player-match-card-head,
+  .player-activity-head {
+    flex-direction: column;
+  }
+
+  .player-match-card-actions {
+    align-items: flex-start;
   }
 
   .report-page {
