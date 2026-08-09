@@ -1486,9 +1486,9 @@
       "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
       "playersPresent": 17,
       "playersAnswered": 17,
-      "avgMin": 82.59,
+      "avgMin": 48.65,
       "avgRpe": 16.0,
-      "avgSessionLoad": 1314.12,
+      "avgSessionLoad": 777.0,
       "players": [
         {
           "playerSlug": "melnyk-mykyta",
@@ -1500,16 +1500,16 @@
         {
           "playerSlug": "anic-ivan",
           "excelName": "Anic Ivan",
-          "min": 120,
+          "min": 45,
           "rpe": 17,
-          "sessionLoad": 2040
+          "sessionLoad": 765
         },
         {
           "playerSlug": "lepre-giuseppe",
           "excelName": "Lepre Giuseppe",
-          "min": 120,
+          "min": 45,
           "rpe": 17,
-          "sessionLoad": 2040
+          "sessionLoad": 765
         },
         {
           "playerSlug": "lieto-claudio",
@@ -1528,16 +1528,16 @@
         {
           "playerSlug": "capozzoli-emanuele",
           "excelName": "Capozzoli Emanuele",
-          "min": 120,
+          "min": 32,
           "rpe": 16,
-          "sessionLoad": 1920
+          "sessionLoad": 512
         },
         {
           "playerSlug": "castaldi-ciro-junior",
           "excelName": "Castaldi Ciro Junior",
-          "min": 120,
+          "min": 32,
           "rpe": 16,
-          "sessionLoad": 1920
+          "sessionLoad": 512
         },
         {
           "playerSlug": "chiummariello-andrea",
@@ -1577,16 +1577,16 @@
         {
           "playerSlug": "candela-ivan-giovanni",
           "excelName": "Candela Ivan Giovanni",
-          "min": 120,
+          "min": 32,
           "rpe": 15,
-          "sessionLoad": 1800
+          "sessionLoad": 480
         },
         {
           "playerSlug": "maida-giuseppe",
           "excelName": "Maida Giuseppe",
-          "min": 120,
+          "min": 32,
           "rpe": 15,
-          "sessionLoad": 1800
+          "sessionLoad": 480
         },
         {
           "playerSlug": "natale-raffaele",
@@ -1598,9 +1598,9 @@
         {
           "playerSlug": "pengue-salvatore",
           "excelName": "Pengue Salvatore",
-          "min": 120,
+          "min": 45,
           "rpe": 15,
-          "sessionLoad": 1800
+          "sessionLoad": 675
         },
         {
           "playerSlug": "riccio-luigi",

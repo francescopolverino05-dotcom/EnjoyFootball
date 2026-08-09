@@ -90,6 +90,34 @@ export interface GoalkeeperLog {
   colorClass: 'blue' | 'orange' | 'green';
 }
 
+/** Squad appearance / substitution row for the match sheet. */
+export interface PlayerAppearance {
+  name: string;
+  teamId: string;
+  number?: number | null;
+  /** True if in the starting XI. */
+  starter?: boolean;
+  /** Minute entered (0 for starters). Omit when unknown. */
+  onMinute?: number | null;
+  /** Minute left. Omit / null if finished or unknown. */
+  offMinute?: number | null;
+  /** Goal minutes scored by this player. */
+  goals?: number[];
+  /** Assist minutes. */
+  assists?: number[];
+  /** Yellow card minutes. */
+  yellowCards?: number[];
+  /** Red card minutes. */
+  redCards?: number[];
+  notes?: Localized;
+}
+
+export interface MatchAppearances {
+  home: PlayerAppearance[];
+  away: PlayerAppearance[];
+  notes?: Localized;
+}
+
 /** Match clip with controlled labels + analyst comments (tags). */
 export interface VideoClip {
   id: string;
@@ -158,6 +186,8 @@ export interface MatchData {
   dynamics: DynamicMetric[];
   teamStats: TeamStat[];
   goalkeepers: GoalkeeperLog[];
+  /** Optional squad / substitution appearance lists (home + away). */
+  appearances?: MatchAppearances;
   video?: {
     fullMatch?: string;
     notes?: Localized;

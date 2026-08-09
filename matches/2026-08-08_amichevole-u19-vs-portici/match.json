@@ -93,34 +93,34 @@
       },
       "type": "gk-entry",
       "teamId": "u19",
-      "positionPercent": 46,
+      "positionPercent": 44,
       "markerColor": "#0054a6"
     },
     {
       "minute": 45,
       "label": {
-        "en": "Branchizio OUT",
-        "it": "Branchizio OUT"
+        "en": "Branchizio → Kebe",
+        "it": "Branchizio → Kebe"
       },
       "type": "substitution",
       "teamId": "u19",
-      "positionPercent": 47
+      "positionPercent": 46
     },
     {
       "minute": 45,
       "label": {
-        "en": "Lieto OUT",
-        "it": "Lieto OUT"
+        "en": "Lieto → Lepre",
+        "it": "Lieto → Lepre"
       },
       "type": "substitution",
       "teamId": "u19",
-      "positionPercent": 48
+      "positionPercent": 47.5
     },
     {
       "minute": 45,
       "label": {
-        "en": "Natale OUT",
-        "it": "Natale OUT"
+        "en": "Natale → Chiaiese",
+        "it": "Natale → Chiaiese"
       },
       "type": "substitution",
       "teamId": "u19",
@@ -129,32 +129,32 @@
     {
       "minute": 45,
       "label": {
-        "en": "Rovetini OUT",
-        "it": "Rovetini OUT"
+        "en": "Rovetini → Favicchio",
+        "it": "Rovetini → Favicchio"
       },
       "type": "substitution",
       "teamId": "u19",
-      "positionPercent": 50
+      "positionPercent": 50.5
     },
     {
       "minute": 45,
       "label": {
-        "en": "Mané OUT",
-        "it": "Mané OUT"
-      },
-      "type": "substitution",
-      "teamId": "u19",
-      "positionPercent": 51
-    },
-    {
-      "minute": 45,
-      "label": {
-        "en": "Esposito OUT",
-        "it": "Esposito OUT"
+        "en": "Mané → Pengue",
+        "it": "Mané → Pengue"
       },
       "type": "substitution",
       "teamId": "u19",
       "positionPercent": 52
+    },
+    {
+      "minute": 45,
+      "label": {
+        "en": "Esposito → Anic",
+        "it": "Esposito → Anic"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 53.5
     },
     {
       "minute": 52,
@@ -164,13 +164,13 @@
       },
       "type": "goal",
       "teamId": "portici",
-      "positionPercent": 56
+      "positionPercent": 57
     },
     {
       "minute": 58,
       "label": {
-        "en": "Chiummariello OUT",
-        "it": "Chiummariello OUT"
+        "en": "Melnyk → Capozzoli",
+        "it": "Melnyk → Capozzoli"
       },
       "type": "substitution",
       "teamId": "u19",
@@ -179,32 +179,32 @@
     {
       "minute": 58,
       "label": {
-        "en": "De Stefano OUT",
-        "it": "De Stefano OUT"
+        "en": "Zappalá → Candela",
+        "it": "Zappalá → Candela"
       },
       "type": "substitution",
       "teamId": "u19",
-      "positionPercent": 62
+      "positionPercent": 62.5
     },
     {
       "minute": 58,
       "label": {
-        "en": "Melnyk OUT",
-        "it": "Melnyk OUT"
-      },
-      "type": "substitution",
-      "teamId": "u19",
-      "positionPercent": 63
-    },
-    {
-      "minute": 58,
-      "label": {
-        "en": "Zappalá OUT",
-        "it": "Zappalá OUT"
+        "en": "Chiummariello → Castaldi",
+        "it": "Chiummariello → Castaldi"
       },
       "type": "substitution",
       "teamId": "u19",
       "positionPercent": 64
+    },
+    {
+      "minute": 58,
+      "label": {
+        "en": "De Stefano → Maida",
+        "it": "De Stefano → Maida"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 65.5
     },
     {
       "minute": 66,
@@ -214,7 +214,7 @@
       },
       "type": "goal",
       "teamId": "u19",
-      "positionPercent": 70
+      "positionPercent": 72
     },
     {
       "minute": 78,
@@ -1569,5 +1569,198 @@
     "lastSyncedAt": "2026-08-08T18:27:47.882Z",
     "folderId": "30162360",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30162360"
+  },
+  "appearances": {
+    "home": [
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Lieto",
+        "teamId": "u19",
+        "number": 15,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Natale",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Zappalá",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 58
+      },
+      {
+        "name": "Chiummariello",
+        "teamId": "u19",
+        "number": 29,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 58
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 19,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 58
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 16,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 58
+      },
+      {
+        "name": "Rovetini",
+        "teamId": "u19",
+        "number": 27,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Mané",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Esposito",
+        "teamId": "u19",
+        "number": 18,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Magliano",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 45
+      },
+      {
+        "name": "Kebe",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 45
+      },
+      {
+        "name": "Chiaiese",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 45,
+        "notes": {
+          "en": "Name as given on sheet — no roster match (Chialese/Chianese fuzzy).",
+          "it": "Nome come da foglio — nessun match in rosa (Chialese/Chianese fuzzy)."
+        }
+      },
+      {
+        "name": "Lepre",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 45
+      },
+      {
+        "name": "Anic",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 45
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 45
+      },
+      {
+        "name": "Pengue",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 45,
+        "goals": [
+          66
+        ],
+        "assists": []
+      },
+      {
+        "name": "Capozzoli",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 58
+      },
+      {
+        "name": "Castaldi",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 58
+      },
+      {
+        "name": "Maida",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 58
+      },
+      {
+        "name": "Candela",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 58
+      }
+    ],
+    "away": [
+      {
+        "name": "Amelio",
+        "teamId": "portici",
+        "goals": [
+          26
+        ]
+      },
+      {
+        "name": "Pinzolo",
+        "teamId": "portici",
+        "goals": [
+          52
+        ]
+      },
+      {
+        "name": "Zulli",
+        "teamId": "portici",
+        "goals": [
+          78
+        ]
+      }
+    ],
+    "notes": {
+      "en": "Napoli XI/subs from video + staff ON lists. Portici XI/subs/cards unknown — scorers only. Chiaiese unmatched on roster. Riccio on RPE sheet but not in XI/ON (minutes left unchanged).",
+      "it": "XI/sub Napoli da video + liste ON staff. XI/sub/cartellini Portici sconosciuti — solo marcatori. Chiaiese senza match in rosa. Riccio sul foglio RPE ma non in XI/ON (minuti lasciati invariati)."
+    }
   }
 }

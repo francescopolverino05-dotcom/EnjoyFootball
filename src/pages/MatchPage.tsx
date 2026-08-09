@@ -4,6 +4,7 @@ import ReportHeader from '../components/ReportHeader';
 import Scoreboard from '../components/Scoreboard';
 import Timeline from '../components/Timeline';
 import Formations from '../components/Formations';
+import AppearancesPanel from '../components/AppearancesPanel';
 import StatsDashboard from '../components/StatsDashboard';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -43,6 +44,13 @@ export default function MatchPage() {
         <Scoreboard match={match} />
         <Timeline events={match.timeline} />
         <Formations formations={match.formations} matchSlug={match.slug} />
+        {match.appearances ? (
+          <AppearancesPanel
+            appearances={match.appearances}
+            homeTeam={match.homeTeam}
+            awayTeam={match.awayTeam}
+          />
+        ) : null}
       </div>
 
       <div className="report-page">
