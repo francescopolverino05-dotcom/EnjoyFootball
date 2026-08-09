@@ -1240,8 +1240,8 @@
       "kind": "match",
       "trainingSlug": null,
       "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
-      "playersAnswered": 17,
-      "avgTqr": 15.18,
+      "playersAnswered": 18,
+      "avgTqr": 15.17,
       "players": [
         {
           "playerSlug": "anic-ivan",
@@ -1276,6 +1276,11 @@
         {
           "playerSlug": "branchizio-agostino",
           "excelName": "Branchizio Agostino",
+          "tqr": 15
+        },
+        {
+          "playerSlug": "chiaiese-riccardo",
+          "excelName": "Chialese",
           "tqr": 15
         },
         {
@@ -1332,7 +1337,6 @@
     }
   ],
   "unmatchedNames": [
-    "Chialese",
     "Garofalo Cristian"
   ],
   "unmatchedDates": []

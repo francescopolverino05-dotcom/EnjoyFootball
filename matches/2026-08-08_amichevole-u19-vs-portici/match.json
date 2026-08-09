@@ -1676,11 +1676,7 @@
         "name": "Chiaiese",
         "teamId": "u19",
         "starter": false,
-        "onMinute": 45,
-        "notes": {
-          "en": "Name as given on sheet — no roster match (Chialese/Chianese fuzzy).",
-          "it": "Nome come da foglio — nessun match in rosa (Chialese/Chianese fuzzy)."
-        }
+        "onMinute": 45
       },
       {
         "name": "Lepre",
@@ -1759,8 +1755,8 @@
       }
     ],
     "notes": {
-      "en": "Napoli XI/subs from video + staff ON lists. Portici XI/subs/cards unknown — scorers only. Chiaiese unmatched on roster. Riccio on RPE sheet but not in XI/ON (minutes left unchanged).",
-      "it": "XI/sub Napoli da video + liste ON staff. XI/sub/cartellini Portici sconosciuti — solo marcatori. Chiaiese senza match in rosa. Riccio sul foglio RPE ma non in XI/ON (minuti lasciati invariati)."
+      "en": "Napoli XI/subs from video + staff ON lists. Portici XI/subs/cards unknown — scorers only. Riccio on RPE sheet but not in XI/ON (minutes left unchanged).",
+      "it": "XI/sub Napoli da video + liste ON staff. XI/sub/cartellini Portici sconosciuti — solo marcatori. Riccio sul foglio RPE ma non in XI/ON (minuti lasciati invariati)."
     }
   }
 }

@@ -91,6 +91,8 @@ DATE_SLUGS = {
 ALIASES = {
     "ruvetini alessandro": "rovetini-alessandro",
     "saviano raffaele": "saviano-raffaele-junior",
+    "chialese": "chiaiese-riccardo",
+    "chianese": "chiaiese-riccardo",
 }
 
 

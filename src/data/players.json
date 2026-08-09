@@ -79,6 +79,19 @@
       "photoPath": "/players/castaldi-ciro-junior.png"
     },
     {
+      "slug": "chiaiese-riccardo",
+      "displayName": "Chiaiese Riccardo",
+      "positionShort": "CM",
+      "age": 16,
+      "birthDate": "25/08/2009",
+      "foot": "Left",
+      "heightCm": null,
+      "weightKg": null,
+      "bmi": null,
+      "squad": "Primavera",
+      "photoPath": null
+    },
+    {
       "slug": "chiummariello-andrea",
       "displayName": "Chiummariello Andrea",
       "positionShort": "CM",
