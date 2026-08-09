@@ -93,8 +93,68 @@
       },
       "type": "gk-entry",
       "teamId": "u19",
-      "positionPercent": 48,
+      "positionPercent": 46,
       "markerColor": "#0054a6"
+    },
+    {
+      "minute": 45,
+      "label": {
+        "en": "Branchizio OUT",
+        "it": "Branchizio OUT"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 47
+    },
+    {
+      "minute": 45,
+      "label": {
+        "en": "Lieto OUT",
+        "it": "Lieto OUT"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 48
+    },
+    {
+      "minute": 45,
+      "label": {
+        "en": "Natale OUT",
+        "it": "Natale OUT"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 49
+    },
+    {
+      "minute": 45,
+      "label": {
+        "en": "Rovetini OUT",
+        "it": "Rovetini OUT"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 50
+    },
+    {
+      "minute": 45,
+      "label": {
+        "en": "Mané OUT",
+        "it": "Mané OUT"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 51
+    },
+    {
+      "minute": 45,
+      "label": {
+        "en": "Esposito OUT",
+        "it": "Esposito OUT"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 52
     },
     {
       "minute": 52,
@@ -105,6 +165,46 @@
       "type": "goal",
       "teamId": "portici",
       "positionPercent": 56
+    },
+    {
+      "minute": 58,
+      "label": {
+        "en": "Chiummariello OUT",
+        "it": "Chiummariello OUT"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 61
+    },
+    {
+      "minute": 58,
+      "label": {
+        "en": "De Stefano OUT",
+        "it": "De Stefano OUT"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 62
+    },
+    {
+      "minute": 58,
+      "label": {
+        "en": "Melnyk OUT",
+        "it": "Melnyk OUT"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 63
+    },
+    {
+      "minute": 58,
+      "label": {
+        "en": "Zappalá OUT",
+        "it": "Zappalá OUT"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 64
     },
     {
       "minute": 66,
