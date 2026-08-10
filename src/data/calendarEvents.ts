@@ -1,10 +1,16 @@
 import { getAllMatches } from './matches';
 import { getAllTrainings } from './trainings';
 import {
+  formatTrainingTimeRange,
+  resolveTrainingSessionType,
+  TRAINING_SESSION_TYPE_LABELS,
+} from './trainingDayTypes';
+import {
   getTrainingWeekNumber,
   getWeekStartMonday,
 } from './trainingWeeks';
 import type { Localized } from '../i18n/translations';
+import type { TrainingSessionType } from '../types/training';
 
 export type CalendarEventKind = 'training' | 'match';
 export type CalendarFilter = 'all' | 'trainings' | 'matches';
@@ -19,6 +25,10 @@ export interface CalendarEvent {
   href: string;
   weekNumber: number;
   slug: string;
+  /** Training microcycle type when kind === 'training'. */
+  sessionType?: TrainingSessionType | null;
+  /** Display time range for trainings, e.g. 09:00–11:00. */
+  timeLabel?: string;
 }
 
 function parseIsoDate(iso: string): Date {
@@ -77,15 +87,34 @@ export function passesCalendarFilter(
 export function getCalendarEvents(): CalendarEvent[] {
   const trainings = getAllTrainings().map((session) => {
     const weekStart = getWeekStartMonday(session.date);
+    const sessionType = resolveTrainingSessionType(
+      session.date,
+      session.sessionType
+    );
+    const typeLabel = sessionType
+      ? TRAINING_SESSION_TYPE_LABELS[sessionType]
+      : undefined;
+    const timeLabel = formatTrainingTimeRange(
+      session.startTime,
+      session.endTime
+    );
+    const typeSubtitle = typeLabel
+      ? {
+          en: `${typeof typeLabel === 'string' ? typeLabel : typeLabel.en} · ${timeLabel}`,
+          it: `${typeof typeLabel === 'string' ? typeLabel : typeLabel.it} · ${timeLabel}`,
+        }
+      : undefined;
     return {
       id: `training:${session.id}`,
       date: session.date,
       kind: 'training' as const,
       title: session.title,
-      subtitle: session.focus,
+      subtitle: typeSubtitle ?? session.focus,
       href: `/training/${session.slug}`,
       weekNumber: getTrainingWeekNumber(weekStart),
       slug: session.slug,
+      sessionType,
+      timeLabel,
     };
   });
 

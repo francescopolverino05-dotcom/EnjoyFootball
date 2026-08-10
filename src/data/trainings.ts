@@ -12,6 +12,9 @@ function toSummary(session: TrainingSession): TrainingSummary {
     date: session.date,
     title: session.title,
     focus: session.focus,
+    sessionType: session.sessionType,
+    startTime: session.startTime,
+    endTime: session.endTime,
     status: session.status,
   };
 }

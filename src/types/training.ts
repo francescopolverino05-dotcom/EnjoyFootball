@@ -1,6 +1,13 @@
 import type { Localized } from '../i18n/translations';
 import type { AnalysisVideo, VideoClip } from './match';
 
+/** Microcycle day type used by the Primavera staff schedule. */
+export type TrainingSessionType =
+  | 'strength'
+  | 'metabolic'
+  | 'activation'
+  | 'match-practice';
+
 export type TrainingStatus = 'draft' | 'in-review' | 'published';
 
 /** Team or GK media for Full Session / Clips / Design / Video Analysis tabs */
@@ -32,6 +39,15 @@ export interface TrainingSession {
   title: Localized;
   /** Optional theme / focus of the session */
   focus?: Localized;
+  /**
+   * Microcycle day type (Strength / Metabolic / Activation / Match Practice).
+   * If omitted, inferred from weekday (Mon–Fri staff schedule).
+   */
+  sessionType?: TrainingSessionType;
+  /** Local start time HH:MM (default 09:00). */
+  startTime?: string;
+  /** Local end time HH:MM (default 11:00). */
+  endTime?: string;
   location?: Localized;
   status: TrainingStatus;
   notes?: Localized;
@@ -70,5 +86,8 @@ export interface TrainingSummary {
   date: string;
   title: Localized;
   focus?: Localized;
+  sessionType?: TrainingSessionType;
+  startTime?: string;
+  endTime?: string;
   status: TrainingStatus;
 }

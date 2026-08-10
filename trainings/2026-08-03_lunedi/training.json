@@ -160,5 +160,8 @@
     "clips": [],
     "trainingDesign": null,
     "analysisVideos": []
-  }
+  },
+  "sessionType": "strength",
+  "startTime": "09:00",
+  "endTime": "11:00"
 }

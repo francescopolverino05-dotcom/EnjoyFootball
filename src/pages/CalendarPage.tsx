@@ -21,6 +21,7 @@ import {
 import { getWeekStartMonday } from '../data/trainingWeeks';
 import { useLanguage } from '../i18n/LanguageContext';
 import type { Locale } from '../i18n/translations';
+import { TRAINING_SESSION_TYPE_LABELS } from '../data/trainingDayTypes';
 
 const DOW_EN = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 const DOW_IT = ['Lun', 'Mar', 'Mer', 'Gio', 'Ven', 'Sab', 'Dom'];
@@ -98,13 +99,21 @@ function EventCard({
   showDate?: boolean;
 }) {
   const { t, L, formatDate } = useLanguage();
+  const kindLabel =
+    event.kind === 'match'
+      ? t('calendarKindMatch')
+      : event.sessionType
+        ? L(TRAINING_SESSION_TYPE_LABELS[event.sessionType])
+        : t('calendarKindTraining');
+
   return (
     <Link to={event.href} className={`calendar-event-card calendar-event-card--${event.kind}`}>
       <div className="calendar-event-card-top">
         <EventKindDot kind={event.kind} />
-        <span className="calendar-event-kind">
-          {event.kind === 'match' ? t('calendarKindMatch') : t('calendarKindTraining')}
-        </span>
+        <span className="calendar-event-kind">{kindLabel}</span>
+        {event.timeLabel ? (
+          <span className="calendar-event-time">{event.timeLabel}</span>
+        ) : null}
         <span className="calendar-event-week">
           {t('trainingWeek').replace('{n}', String(event.weekNumber))}
         </span>
@@ -124,7 +133,7 @@ function EventCard({
 }
 
 export default function CalendarPage() {
-  const { t, locale } = useLanguage();
+  const { t, L, locale } = useLanguage();
   const events = useMemo(() => getCalendarEvents(), []);
   const months = useMemo(() => getCalendarMonths(events), [events]);
 
@@ -379,7 +388,13 @@ export default function CalendarPage() {
                             {dayEvents.length === 1
                               ? dayEvents[0].kind === 'match'
                                 ? t('calendarKindMatch')
-                                : t('calendarKindTraining')
+                                : dayEvents[0].sessionType
+                                  ? L(
+                                      TRAINING_SESSION_TYPE_LABELS[
+                                        dayEvents[0].sessionType
+                                      ]
+                                    )
+                                  : t('calendarKindTraining')
                               : t('calendarItemsCount').replace(
                                   '{n}',
                                   String(dayEvents.length)
@@ -423,7 +438,13 @@ export default function CalendarPage() {
                           <span className="calendar-day-label">
                             {dayEvents[0].kind === 'match'
                               ? t('calendarKindMatch')
-                              : t('calendarKindTraining')}
+                              : dayEvents[0].sessionType
+                                ? L(
+                                    TRAINING_SESSION_TYPE_LABELS[
+                                      dayEvents[0].sessionType
+                                    ]
+                                  )
+                                : t('calendarKindTraining')}
                             {dayEvents.length > 1
                               ? ` +${dayEvents.length - 1}`
                               : ''}

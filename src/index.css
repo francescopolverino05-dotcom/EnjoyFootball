@@ -1392,6 +1392,12 @@ button {
   color: var(--text-gray);
 }
 
+.calendar-event-time {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--napoli-blue-dark);
+}
+
 .calendar-event-week {
   font-size: 11px;
   font-weight: 700;
@@ -1497,6 +1503,50 @@ button {
   margin-bottom: 6px;
 }
 
+.training-type-badge {
+  display: inline-flex;
+  align-items: center;
+  margin: 4px 0 8px;
+  padding: 4px 9px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  border: 1px solid transparent;
+}
+
+.training-type-badge--strength {
+  color: #9a3412;
+  background: #ffedd5;
+  border-color: #fdba74;
+}
+
+.training-type-badge--metabolic {
+  color: #1e40af;
+  background: #dbeafe;
+  border-color: #93c5fd;
+}
+
+.training-type-badge--activation {
+  color: #065f46;
+  background: #d1fae5;
+  border-color: #6ee7b7;
+}
+
+.training-type-badge--match-practice {
+  color: #5b21b6;
+  background: #ede9fe;
+  border-color: #c4b5fd;
+}
+
+.training-card-time {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--napoli-blue-dark);
+  margin: 2px 0 6px;
+}
+
 .training-card-focus {
   font-size: 14px;
   color: var(--text-gray);
@@ -1515,10 +1565,21 @@ button {
   margin-bottom: 8px;
 }
 
+.training-hero .training-type-badge {
+  margin-bottom: 10px;
+}
+
 .training-hero-title {
   font-size: 22px;
   color: var(--text-dark);
   margin: 0 0 8px;
+}
+
+.training-hero-time {
+  margin: 0 auto 8px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--napoli-blue-dark);
 }
 
 .training-hero-focus,

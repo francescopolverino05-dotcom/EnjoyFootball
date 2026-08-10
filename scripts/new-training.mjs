@@ -68,6 +68,18 @@ mkdirSync(join(trainingDir, 'video'), { recursive: true });
 mkdirSync(join(trainingDir, 'clips'), { recursive: true });
 mkdirSync(join(trainingDir, 'analysis'), { recursive: true });
 
+/** Mon=1 … Fri=5 staff schedule */
+const WEEKDAY_TYPE = {
+  1: 'strength',
+  2: 'metabolic',
+  3: 'activation',
+  4: 'activation',
+  5: 'match-practice',
+};
+const [yy, mm, dd] = args.date.split('-').map(Number);
+const dow = new Date(Date.UTC(yy, mm - 1, dd)).getUTCDay();
+const inferredType = WEEKDAY_TYPE[dow];
+
 const template = {
   id: slug,
   slug,
@@ -76,6 +88,9 @@ const template = {
   focus: focus
     ? { en: focus, it: focus }
     : { en: 'General session', it: 'Sessione generale' },
+  ...(inferredType ? { sessionType: inferredType } : {}),
+  startTime: '09:00',
+  endTime: '11:00',
   status: 'draft',
   notes: {
     en: 'Add session notes here.',
