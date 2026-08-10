@@ -27,7 +27,10 @@ export function sessionMediaUrl(
     .filter(Boolean)
     .map((seg) => encodeURIComponent(seg).replace(/%3A/gi, ':'))
     .join('/');
-  return `/${library}/${slug}/${encoded}`;
+  // Honor Vite base (e.g. /EnjoyFootball/ on GitHub Pages).
+  const base = import.meta.env.BASE_URL || '/';
+  const prefix = base.endsWith('/') ? base.slice(0, -1) : base;
+  return `${prefix}/${library}/${slug}/${encoded}`;
 }
 
 export type VimeoRef = {

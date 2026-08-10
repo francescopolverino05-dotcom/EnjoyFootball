@@ -1,5 +1,6 @@
 import { resolveMatchCompetitionId } from './matchCompetitions';
 import { MatchData, MatchSummary } from '../types/match';
+import { sessionMediaUrl } from '../utils/mediaUrl';
 
 const matchModules = import.meta.glob<{ default: MatchData }>(
   '../../matches/*/match.json',
@@ -40,5 +41,5 @@ export function getMatchBySlug(slug: string): MatchData | undefined {
 }
 
 export function matchAssetUrl(slug: string, relativePath: string): string {
-  return `/matches/${slug}/${relativePath}`;
+  return sessionMediaUrl('matches', slug, relativePath);
 }
