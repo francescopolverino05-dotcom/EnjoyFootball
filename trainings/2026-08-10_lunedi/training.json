@@ -1,0 +1,56 @@
+{
+  "id": "2026-08-10_lunedi",
+  "slug": "2026-08-10_lunedi",
+  "date": "2026-08-10",
+  "title": {
+    "en": "Monday training — Strength, situational work & press games",
+    "it": "Lunedì — Forza, situazionali e partitine a pressione"
+  },
+  "focus": {
+    "en": "Strength / Situational (1v1–5v5) / Press games 7v7 / 11v11",
+    "it": "Forza / Situazionali (1vs1–5vs5) / Partitine a pressione 7vs7 / 11vs11"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Week 3 (Sett. 3 10/08) — Lunedì. Campo Cercola 09:00. Session plan attached; videos pending.",
+    "it": "Settimana 3 (Sett. 3 10/08) — Lunedì. Campo Cercola 09:00. Piano seduta allegato; video in attesa."
+  },
+  "video": {
+    "fullSession": "",
+    "notes": {
+      "en": "No session videos yet — do not invent Vimeo links.",
+      "it": "Nessun video sessione ancora — non inventare link Vimeo."
+    },
+    "parts": []
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-10",
+      "title": {
+        "en": "Session plan — Mon 10 Aug",
+        "it": "Piano seduta — Lun 10 ago"
+      },
+      "description": {
+        "en": "Cercola 09:00 — roster, forza, situazionali, partitine a pressione 7v7+sponde, 11v11 (1-3-4-2-1). Converted from 1 LUNEDI.docx.",
+        "it": "Cercola 09:00 — convocati, forza, situazionali, partitine a pressione 7vs7+sponde, 11vs11 (1-3-4-2-1). Convertito da 1 LUNEDI.docx."
+      },
+      "videoFile": "Session_Plan_2026-08-10.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-3"
+      ]
+    }
+  ],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  }
+}
