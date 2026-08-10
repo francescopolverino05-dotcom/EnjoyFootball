@@ -282,5 +282,8 @@
     "clips": [],
     "trainingDesign": null,
     "analysisVideos": []
-  }
+  },
+  "sessionType": "activation",
+  "startTime": "09:00",
+  "endTime": "11:00"
 }

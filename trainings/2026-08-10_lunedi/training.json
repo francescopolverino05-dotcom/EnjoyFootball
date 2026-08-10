@@ -1,0 +1,35 @@
+{
+  "id": "2026-08-10_lunedi",
+  "slug": "2026-08-10_lunedi",
+  "date": "2026-08-10",
+  "title": {
+    "en": "Monday — Strength",
+    "it": "Lunedì — Forza"
+  },
+  "focus": {
+    "en": "Strength",
+    "it": "Forza"
+  },
+  "sessionType": "strength",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Week of 10 Aug 2026 — Strength session (09:00–11:00). Media to follow.",
+    "it": "Settimana del 10 ago 2026 — seduta Forza (09:00–11:00). Media in arrivo."
+  },
+  "video": {
+    "parts": []
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  }
+}

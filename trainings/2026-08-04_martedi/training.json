@@ -185,5 +185,8 @@
     "clips": [],
     "trainingDesign": null,
     "analysisVideos": []
-  }
+  },
+  "sessionType": "metabolic",
+  "startTime": "09:00",
+  "endTime": "11:00"
 }

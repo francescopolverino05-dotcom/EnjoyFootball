@@ -143,5 +143,8 @@
     "clips": [],
     "trainingDesign": null,
     "analysisVideos": []
-  }
+  },
+  "sessionType": "match-practice",
+  "startTime": "09:00",
+  "endTime": "11:00"
 }
