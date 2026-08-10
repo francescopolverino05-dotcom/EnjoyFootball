@@ -1,8 +1,10 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { MatchData, VideoClip, AnalysisVideo, GoalkeeperLog } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
 import { CLIP_LABELS, ANALYSIS_SECTION_ORDER, HIDDEN_CLIP_SECTIONS, type ClipLabelId } from '../i18n/clipLabels';
 import type { Localized, UiKey } from '../i18n/translations';
+import { getPlayersForClip } from '../data/playerLinks';
 import { getRpeSessionByMatchSlug } from '../data/rpeLoad';
 import { getTqrSessionByMatchSlug } from '../data/tqrLoad';
 import MatchMedia from './MatchMedia';
@@ -30,12 +32,46 @@ type TabLabelKey =
   | 'tabVideoAnalysis'
   | 'tabPhysicalLoad';
 
+const TAB_IDS: TabId[] = [
+  'dynamics',
+  'teamstats',
+  'gkanalysis',
+  'fullmatch',
+  'clips',
+  'videoanalysis',
+  'physicalload',
+];
+
+function isTabId(value: string | null): value is TabId {
+  return Boolean(value && TAB_IDS.includes(value as TabId));
+}
+
 export default function StatsDashboard({ match }: StatsDashboardProps) {
-  const [activeTab, setActiveTab] = useState<TabId>('dynamics');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const initialTab = searchParams.get('tab');
+  const highlightClipId = searchParams.get('clip');
+  const [activeTab, setActiveTab] = useState<TabId>(() =>
+    isTabId(initialTab) ? initialTab : 'dynamics'
+  );
   const { t, L } = useLanguage();
   const rpeSession = getRpeSessionByMatchSlug(match.slug);
   const tqrSession = getTqrSessionByMatchSlug(match.slug);
   const hasPhysicalLoad = Boolean(rpeSession || tqrSession);
+
+  useEffect(() => {
+    if (isTabId(initialTab) && initialTab !== activeTab) {
+      setActiveTab(initialTab);
+    }
+  }, [initialTab, activeTab]);
+
+  function selectTab(id: TabId) {
+    setActiveTab(id);
+    const next = new URLSearchParams(searchParams);
+    if (id === 'dynamics') next.delete('tab');
+    else next.set('tab', id);
+    if (id !== 'clips') next.delete('clip');
+    setSearchParams(next, { replace: true });
+  }
 
   // Match-only tabs — never include training tabs (Full Session / Training Design).
   const tabs: [TabId, TabLabelKey][] = [
@@ -60,7 +96,7 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
             role="tab"
             aria-selected={activeTab === id}
             className={`tab-button ${activeTab === id ? 'active' : ''}`}
-            onClick={() => setActiveTab(id)}
+            onClick={() => selectTab(id)}
           >
             {t(labelKey)}
           </button>
@@ -128,7 +164,7 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
         className={`tab-content ${activeTab === 'clips' ? 'active' : ''}`}
         role="tabpanel"
       >
-        <ClipsPanel match={match} />
+        <ClipsPanel match={match} highlightClipId={highlightClipId} />
       </div>
 
       <div
@@ -493,7 +529,13 @@ function FullMatchPanel({ match }: { match: MatchData }) {
   );
 }
 
-function ClipsPanel({ match }: { match: MatchData }) {
+function ClipsPanel({
+  match,
+  highlightClipId,
+}: {
+  match: MatchData;
+  highlightClipId: string | null;
+}) {
   const { t, L } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -526,6 +568,14 @@ function ClipsPanel({ match }: { match: MatchData }) {
       }))
       .filter((section) => section.clips.length > 0);
   }, [sections, searchQuery]);
+
+  useEffect(() => {
+    if (!highlightClipId) return;
+    const el = document.getElementById(`clip-${highlightClipId}`);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [highlightClipId, filteredSections]);
 
   if (sections.length === 0) {
     return (
@@ -568,32 +618,54 @@ function ClipsPanel({ match }: { match: MatchData }) {
               <span className="analysis-section-count">{section.clips.length}</span>
             </div>
             <div className="analysis-grid">
-              {section.clips.map((clip) => (
-                <article className="analysis-card" key={clip.id}>
-                  <MatchMedia
-                    slug={match.slug}
-                    src={clip.videoFile}
-                    kind="clips"
-                    unsupportedLabel={t('videoUnsupported')}
-                    playLabel={t('playVideo')}
-                    title={L(clip.title)}
-                  />
-                  <div className="clip-card-body">
-                    <div className="clip-card-time">{formatClipTimestamp(clip)}</div>
-                    <div className="clip-card-title">{L(clip.title)}</div>
-                    <div className="clip-card-desc">{L(clip.comments)}</div>
-                    {clip.tags && clip.tags.length > 0 ? (
-                      <div className="clip-tags">
-                        {clip.tags.map((tag) => (
-                          <span className="clip-tag" key={tag}>
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    ) : null}
-                  </div>
-                </article>
-              ))}
+              {section.clips.map((clip) => {
+                const linkedPlayers = getPlayersForClip(match.slug, clip);
+                const highlighted = highlightClipId === clip.id;
+                return (
+                  <article
+                    className={`analysis-card ${highlighted ? 'analysis-card-highlight' : ''}`}
+                    key={clip.id}
+                    id={`clip-${clip.id}`}
+                  >
+                    <MatchMedia
+                      slug={match.slug}
+                      src={clip.videoFile}
+                      kind="clips"
+                      unsupportedLabel={t('videoUnsupported')}
+                      playLabel={t('playVideo')}
+                      title={L(clip.title)}
+                    />
+                    <div className="clip-card-body">
+                      <div className="clip-card-time">{formatClipTimestamp(clip)}</div>
+                      <div className="clip-card-title">{L(clip.title)}</div>
+                      <div className="clip-card-desc">{L(clip.comments)}</div>
+                      {linkedPlayers.length > 0 ? (
+                        <div className="clip-player-links">
+                          {linkedPlayers.map(({ player, draftTagged }) => (
+                            <Link
+                              key={player.slug}
+                              to={`/players/${player.slug}`}
+                              className={`clip-player-chip ${draftTagged ? 'draft' : ''}`}
+                            >
+                              {player.displayName}
+                              {draftTagged ? ` · ${t('playerDraftClipTag')}` : ''}
+                            </Link>
+                          ))}
+                        </div>
+                      ) : null}
+                      {clip.tags && clip.tags.length > 0 ? (
+                        <div className="clip-tags">
+                          {clip.tags.map((tag) => (
+                            <span className="clip-tag" key={tag}>
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      ) : null}
+                    </div>
+                  </article>
+                );
+              })}
             </div>
           </section>
         ))

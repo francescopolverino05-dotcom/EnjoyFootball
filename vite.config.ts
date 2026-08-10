@@ -44,6 +44,9 @@ function mediaLibrariesPlugin(): Plugin {
 
     const root = roots[lib];
     const rel = decodeURIComponent(url.slice(lib.length + 2));
+    // Skip JSON files - let Vite handle them as modules
+    if (rel.endsWith('.json')) return next();
+
     if (!rel || rel.endsWith('/')) return next();
 
     const candidate = normalize(join(root, rel));

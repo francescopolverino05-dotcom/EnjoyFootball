@@ -7,6 +7,7 @@ import {
 import ReportHeader from '../components/ReportHeader';
 import PlayerGaconHistogram from '../components/PlayerGaconHistogram';
 import PlayerLoadTimeline from '../components/PlayerLoadTimeline';
+import PlayerMatchActivity from '../components/PlayerMatchActivity';
 import PlayerTqrHistogram from '../components/PlayerTqrHistogram';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -140,6 +141,8 @@ export default function PlayerPage() {
             </dl>
           </div>
         </div>
+
+        <PlayerMatchActivity playerSlug={player.slug} />
 
         <PlayerLoadTimeline playerSlug={player.slug} />
         <PlayerTqrHistogram playerSlug={player.slug} />
