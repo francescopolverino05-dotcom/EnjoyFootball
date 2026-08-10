@@ -15,15 +15,35 @@
   "endTime": "11:00",
   "status": "published",
   "notes": {
-    "en": "Week of 10 Aug 2026 — Metabolic session (09:00–11:00). Media to follow.",
-    "it": "Settimana del 10 ago 2026 — seduta Metabolica (09:00–11:00). Media in arrivo."
+    "en": "Week 3 (Sett. 3 10/08) — Tuesday Metabolic session (09:00–11:00). Session plan uploaded.",
+    "it": "Settimana 3 (Sett. 3 10/08) — Martedì Metabolica (09:00–11:00). Piano seduta caricato."
   },
   "video": {
     "parts": []
   },
   "clips": [],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-11",
+      "title": {
+        "en": "Session plan — Tue 11 Aug (Week 3)",
+        "it": "Piano seduta — Mar 11 ago (Sett. 3)"
+      },
+      "description": {
+        "en": "Tuesday Metabolic training design for Week 3 (11 Aug 2026).",
+        "it": "Disegno seduta Metabolica di martedì — Settimana 3 (11 ago 2026)."
+      },
+      "videoFile": "Session_Plan_2026-08-11.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-3",
+        "metabolic"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": []

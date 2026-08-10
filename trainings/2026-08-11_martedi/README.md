@@ -1,5 +1,7 @@
 # Tuesday 2026-08-11 — Metabolic (Metabolica)
 
-Time: 09:00–11:00
+Week 3 · Time: 09:00–11:00
 
-Drop session video in `video/`, clips in `clips/`, plans in `analysis/`.
+Training design PDF: `analysis/Session_Plan_2026-08-11.pdf`
+
+Drop session video in `video/`, clips in `clips/`.
