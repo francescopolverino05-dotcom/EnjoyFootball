@@ -50,7 +50,27 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-10",
+        "title": {
+          "en": "GK design — Lower limbs, catching & diagonals",
+          "it": "Scheda portieri — Arti inferiori, prese e diagonali"
+        },
+        "description": {
+          "en": "All. N°13 — Arena G. Piccolo Cercola. Lower-limb activation, analytical catching, diagonal catches/dives (objective: diagonals). Converted from PPTX.",
+          "it": "All. N°13 — Arena G. Piccolo Cercola. Attivazione arti inferiori, prese analitiche, prese su diagonali (obiettivo: diagonali). Convertito da PPTX."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-10_Arti_Inferiori_Prese_Diagonali.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers",
+          "week-3"
+        ]
+      }
+    ],
     "analysisVideos": []
   }
 }
