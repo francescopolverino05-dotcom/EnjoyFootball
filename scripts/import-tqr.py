@@ -86,12 +86,18 @@ DATE_SLUGS = {
         "matchSlug": "2026-08-08_amichevole-u19-vs-portici",
         "kind": "match",
     },
+    "2026-08-10": {
+        "trainingSlug": "2026-08-10_lunedi",
+        "matchSlug": None,
+        "kind": "training",
+    },
 }
 
 ALIASES = {
     "ruvetini alessandro": "rovetini-alessandro",
     "saviano raffaele": "saviano-raffaele-junior",
     "chialese": "chiaiese-riccardo",
+    "chiaiese": "chiaiese-riccardo",
     "chianese": "chiaiese-riccardo",
 }
 
