@@ -1684,14 +1684,16 @@
         "it": "Post Match v Portici"
       },
       "description": {
-        "en": "Synced from Vimeo folder.",
-        "it": "Sincronizzato dalla cartella Vimeo."
+        "en": "Post-match video analysis — Napoli Primavera vs Portici (8 Aug 2026).",
+        "it": "Video analisi post-partita — Napoli Primavera vs Portici (8 ago 2026)."
       },
       "videoFile": "https://vimeo.com/1217074924/ad5c37b7df",
       "tags": [
         "vimeo",
-        "analysis"
-      ]
+        "analysis",
+        "post-match"
+      ],
+      "kind": "video"
     },
     {
       "id": "session-plan-2026-08-08",
@@ -1721,7 +1723,7 @@
   },
   "vimeo": {
     "videoId": "1216625977",
-    "lastSyncedAt": "2026-08-10T18:11:06.784Z",
+    "lastSyncedAt": "2026-08-10T19:08:40.302Z",
     "folderId": "30162360",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30162360"
   },

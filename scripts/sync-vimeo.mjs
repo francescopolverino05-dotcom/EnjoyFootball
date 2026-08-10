@@ -513,8 +513,28 @@ Upload videos into the Vimeo folder, then re-run:
 
   if (analysisVideos.length > 0) {
     const preserved = preserveNonVimeoAnalysis(match.analysisVideos);
+    const prevById = new Map(
+      (match.analysisVideos || [])
+        .filter((a) => a?.id)
+        .map((a) => [a.id, a])
+    );
     const byId = new Map();
-    for (const a of [...analysisVideos, ...preserved]) byId.set(a.id, a);
+    for (const a of [...analysisVideos, ...preserved]) {
+      const prev = prevById.get(a.id);
+      if (!prev || !isVimeoVideoFile(a.videoFile)) {
+        byId.set(a.id, a);
+        continue;
+      }
+      // Keep curated analysis copy (title/description/kind/tags) across re-syncs.
+      byId.set(a.id, {
+        ...a,
+        title: prev.title || a.title,
+        description: prev.description || a.description,
+        kind: prev.kind || a.kind || 'video',
+        tags:
+          Array.isArray(prev.tags) && prev.tags.length ? prev.tags : a.tags,
+      });
+    }
     match.analysisVideos = [...byId.values()];
   }
 

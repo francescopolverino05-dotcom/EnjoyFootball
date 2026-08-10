@@ -67,89 +67,62 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
         ))}
       </div>
 
-      <div
-        className={`tab-content ${activeTab === 'dynamics' ? 'active' : ''}`}
-        role="tabpanel"
-      >
-        <div className="dynamics-panel">
-          {match.dynamics.map((metric) => (
-            <div
-              className="dynamic-metric-card"
-              key={typeof metric.name === 'string' ? metric.name : metric.name.en}
-            >
-              <div className="dynamic-metric-header">{L(metric.name)}</div>
-              <div className="dynamic-bar-container">
-                <div
-                  className="dynamic-bar-fill home"
-                  style={{ width: `${metric.homeValue}%` }}
-                />
-                <div
-                  className="dynamic-bar-fill away"
-                  style={{ width: `${metric.awayValue}%` }}
-                />
+      {/*
+        Mount only the active tab. Hidden panels used to keep Full Match / analysis
+        Vimeo iframes alive (display:none + autoload), which can leave Video Analysis
+        embeds black or stuck on mobile.
+      */}
+      <div className="tab-content active" role="tabpanel">
+        {activeTab === 'dynamics' ? (
+          <div className="dynamics-panel">
+            {match.dynamics.map((metric) => (
+              <div
+                className="dynamic-metric-card"
+                key={typeof metric.name === 'string' ? metric.name : metric.name.en}
+              >
+                <div className="dynamic-metric-header">{L(metric.name)}</div>
+                <div className="dynamic-bar-container">
+                  <div
+                    className="dynamic-bar-fill home"
+                    style={{ width: `${metric.homeValue}%` }}
+                  />
+                  <div
+                    className="dynamic-bar-fill away"
+                    style={{ width: `${metric.awayValue}%` }}
+                  />
+                </div>
+                <div className="dynamic-labels-footer">
+                  <span style={{ color: 'var(--napoli-blue-dark)' }}>
+                    {metric.homeValue}
+                    {metric.unit ?? ''} {match.homeTeam.shortName}
+                  </span>
+                  <span style={{ color: 'var(--away-green)' }}>
+                    {metric.awayValue}
+                    {metric.unit ?? ''} {match.awayTeam.shortName}
+                  </span>
+                </div>
               </div>
-              <div className="dynamic-labels-footer">
-                <span style={{ color: 'var(--napoli-blue-dark)' }}>
-                  {metric.homeValue}
-                  {metric.unit ?? ''} {match.homeTeam.shortName}
-                </span>
-                <span style={{ color: 'var(--away-green)' }}>
-                  {metric.awayValue}
-                  {metric.unit ?? ''} {match.awayTeam.shortName}
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+            ))}
+          </div>
+        ) : null}
 
-      <div
-        className={`tab-content ${activeTab === 'teamstats' ? 'active' : ''}`}
-        role="tabpanel"
-      >
-        <TeamStatsPanel match={match} />
-      </div>
-
-      <div
-        className={`tab-content ${activeTab === 'gkanalysis' ? 'active' : ''}`}
-        role="tabpanel"
-      >
-        <GkAnalysisPanel goalkeepers={match.goalkeepers} />
-      </div>
-
-      <div
-        className={`tab-content ${activeTab === 'fullmatch' ? 'active' : ''}`}
-        role="tabpanel"
-      >
-        <FullMatchPanel match={match} />
-      </div>
-
-      <div
-        className={`tab-content ${activeTab === 'clips' ? 'active' : ''}`}
-        role="tabpanel"
-      >
-        <ClipsPanel match={match} />
-      </div>
-
-      <div
-        className={`tab-content ${activeTab === 'videoanalysis' ? 'active' : ''}`}
-        role="tabpanel"
-      >
-        <VideoAnalysisPanel match={match} />
-      </div>
-
-      {hasPhysicalLoad ? (
-        <div
-          className={`tab-content ${activeTab === 'physicalload' ? 'active' : ''}`}
-          role="tabpanel"
-        >
+        {activeTab === 'teamstats' ? <TeamStatsPanel match={match} /> : null}
+        {activeTab === 'gkanalysis' ? (
+          <GkAnalysisPanel goalkeepers={match.goalkeepers} />
+        ) : null}
+        {activeTab === 'fullmatch' ? <FullMatchPanel match={match} /> : null}
+        {activeTab === 'clips' ? <ClipsPanel match={match} /> : null}
+        {activeTab === 'videoanalysis' ? (
+          <VideoAnalysisPanel match={match} />
+        ) : null}
+        {activeTab === 'physicalload' && hasPhysicalLoad ? (
           <PhysicalLoadPanel
             session={rpeSession ?? null}
             tqrSession={tqrSession ?? null}
             gaconSession={null}
           />
-        </div>
-      ) : null}
+        ) : null}
+      </div>
     </>
   );
 }
@@ -602,9 +575,22 @@ function ClipsPanel({ match }: { match: MatchData }) {
   );
 }
 
+function isAnalysisDocument(item: AnalysisVideo): boolean {
+  const src = item.videoFile || '';
+  if (item.kind === 'pdf' || item.kind === 'markdown' || item.kind === 'docx') {
+    return true;
+  }
+  return /\.(pdf|docx?|md)$/i.test(src.split(/[?#]/)[0] ?? '');
+}
+
 function VideoAnalysisPanel({ match }: { match: MatchData }) {
   const { t, L } = useLanguage();
-  const videos = match.analysisVideos ?? [];
+  // Videos first so post-match Vimeo is not buried under tall PDF previews.
+  const videos = [...(match.analysisVideos ?? [])].sort((a, b) => {
+    const aDoc = isAnalysisDocument(a) ? 1 : 0;
+    const bDoc = isAnalysisDocument(b) ? 1 : 0;
+    return aDoc - bDoc;
+  });
 
   if (videos.length === 0) {
     return (
@@ -620,20 +606,7 @@ function VideoAnalysisPanel({ match }: { match: MatchData }) {
       <div className="analysis-grid">
         {videos.map((item: AnalysisVideo) => (
           <article className="analysis-card" key={item.id}>
-            <MatchMedia
-              slug={match.slug}
-              src={item.videoFile}
-              kind="analysis"
-              unsupportedLabel={t('videoUnsupported')}
-              playLabel={t('playVideo')}
-              openPdfLabel={t('openPdf')}
-              downloadPdfLabel={t('downloadPdf')}
-              openReportLabel={t('openReport')}
-              openDocLabel={t('openDoc')}
-              title={L(item.title)}
-              autoload
-            />
-            <div className="clip-card-body">
+            <div className="clip-card-body clip-card-body--above">
               <div className="clip-card-title">{L(item.title)}</div>
               <div className="clip-card-desc">{L(item.description)}</div>
               {item.tags && item.tags.length > 0 ? (
@@ -646,6 +619,18 @@ function VideoAnalysisPanel({ match }: { match: MatchData }) {
                 </div>
               ) : null}
             </div>
+            <MatchMedia
+              slug={match.slug}
+              src={item.videoFile}
+              kind="analysis"
+              unsupportedLabel={t('videoUnsupported')}
+              playLabel={t('playVideo')}
+              openPdfLabel={t('openPdf')}
+              downloadPdfLabel={t('downloadPdf')}
+              openReportLabel={t('openReport')}
+              openDocLabel={t('openDoc')}
+              title={L(item.title)}
+            />
           </article>
         ))}
       </div>

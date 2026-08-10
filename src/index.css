@@ -3047,6 +3047,10 @@ a.gacon-ind-row:hover {
   padding: 14px;
 }
 
+.clip-card-body--above {
+  border-bottom: 1px solid var(--border-light);
+}
+
 .clip-card-title {
   font-weight: 700;
   font-size: 14px;
