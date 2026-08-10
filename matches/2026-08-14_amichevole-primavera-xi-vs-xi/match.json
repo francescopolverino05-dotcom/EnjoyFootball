@@ -1,0 +1,51 @@
+{
+  "id": "2026-08-14_amichevole-primavera-xi-vs-xi",
+  "slug": "2026-08-14_amichevole-primavera-xi-vs-xi",
+  "title": {
+    "en": "Primavera First XI vs Second XI",
+    "it": "Primavera Prima XI vs Seconda XI"
+  },
+  "subtitle": {
+    "en": "Friendly Match",
+    "it": "Partita Amichevole"
+  },
+  "date": "2026-08-14",
+  "competitionId": "friendlies",
+  "competition": {
+    "en": "Friendlies",
+    "it": "Amichevoli"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "first-xi",
+    "name": {
+      "en": "Primavera First XI",
+      "it": "Primavera Prima XI"
+    },
+    "shortName": "I",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "second-xi",
+    "name": {
+      "en": "Primavera Second XI",
+      "it": "Primavera Seconda XI"
+    },
+    "shortName": "II",
+    "colorClass": "u18",
+    "logo": "napoli-logo.png"
+  },
+  "score": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}
