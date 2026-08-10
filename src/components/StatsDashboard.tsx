@@ -1,4 +1,5 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { MatchData, VideoClip, AnalysisVideo, GoalkeeperLog } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
 import { CLIP_LABELS, ANALYSIS_SECTION_ORDER, HIDDEN_CLIP_SECTIONS, type ClipLabelId } from '../i18n/clipLabels';
@@ -30,12 +31,46 @@ type TabLabelKey =
   | 'tabVideoAnalysis'
   | 'tabPhysicalLoad';
 
+const TAB_IDS: TabId[] = [
+  'dynamics',
+  'teamstats',
+  'gkanalysis',
+  'fullmatch',
+  'clips',
+  'videoanalysis',
+  'physicalload',
+];
+
+function isTabId(value: string | null): value is TabId {
+  return Boolean(value && TAB_IDS.includes(value as TabId));
+}
+
 export default function StatsDashboard({ match }: StatsDashboardProps) {
-  const [activeTab, setActiveTab] = useState<TabId>('dynamics');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const initialTab = searchParams.get('tab');
+  const highlightClipId = searchParams.get('clip');
+  const [activeTab, setActiveTab] = useState<TabId>(() =>
+    isTabId(initialTab) ? initialTab : 'dynamics'
+  );
   const { t, L } = useLanguage();
   const rpeSession = getRpeSessionByMatchSlug(match.slug);
   const tqrSession = getTqrSessionByMatchSlug(match.slug);
   const hasPhysicalLoad = Boolean(rpeSession || tqrSession);
+
+  useEffect(() => {
+    if (isTabId(initialTab) && initialTab !== activeTab) {
+      setActiveTab(initialTab);
+    }
+  }, [initialTab, activeTab]);
+
+  function selectTab(id: TabId) {
+    setActiveTab(id);
+    const next = new URLSearchParams(searchParams);
+    if (id === 'dynamics') next.delete('tab');
+    else next.set('tab', id);
+    if (id !== 'clips') next.delete('clip');
+    setSearchParams(next, { replace: true });
+  }
 
   // Match-only tabs — never include training tabs (Full Session / Training Design).
   const tabs: [TabId, TabLabelKey][] = [
@@ -60,7 +95,7 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
             role="tab"
             aria-selected={activeTab === id}
             className={`tab-button ${activeTab === id ? 'active' : ''}`}
-            onClick={() => setActiveTab(id)}
+            onClick={() => selectTab(id)}
           >
             {t(labelKey)}
           </button>
@@ -128,7 +163,7 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
         className={`tab-content ${activeTab === 'clips' ? 'active' : ''}`}
         role="tabpanel"
       >
-        <ClipsPanel match={match} />
+        <ClipsPanel match={match} highlightClipId={highlightClipId} />
       </div>
 
       <div
@@ -493,7 +528,13 @@ function FullMatchPanel({ match }: { match: MatchData }) {
   );
 }
 
-function ClipsPanel({ match }: { match: MatchData }) {
+function ClipsPanel({
+  match,
+  highlightClipId,
+}: {
+  match: MatchData;
+  highlightClipId: string | null;
+}) {
   const { t, L } = useLanguage();
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -526,6 +567,12 @@ function ClipsPanel({ match }: { match: MatchData }) {
       }))
       .filter((section) => section.clips.length > 0);
   }, [sections, searchQuery]);
+
+  useEffect(() => {
+    if (!highlightClipId) return;
+    const el = document.getElementById(`clip-${highlightClipId}`);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, [highlightClipId, filteredSections]);
 
   if (sections.length === 0) {
     return (
@@ -569,7 +616,11 @@ function ClipsPanel({ match }: { match: MatchData }) {
             </div>
             <div className="analysis-grid">
               {section.clips.map((clip) => (
-                <article className="analysis-card" key={clip.id}>
+                <article
+                  className={`analysis-card ${highlightClipId === clip.id ? 'analysis-card-highlight' : ''}`}
+                  key={clip.id}
+                  id={`clip-${clip.id}`}
+                >
                   <MatchMedia
                     slug={match.slug}
                     src={clip.videoFile}

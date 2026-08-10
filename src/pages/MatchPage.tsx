@@ -5,6 +5,7 @@ import Scoreboard from '../components/Scoreboard';
 import Timeline from '../components/Timeline';
 import Formations from '../components/Formations';
 import AppearancesPanel from '../components/AppearancesPanel';
+import CoachBriefingPanel from '../components/CoachBriefingPanel';
 import StatsDashboard from '../components/StatsDashboard';
 import { useLanguage } from '../i18n/LanguageContext';
 
@@ -43,6 +44,7 @@ export default function MatchPage() {
         />
         <Scoreboard match={match} />
         <Timeline events={match.timeline} />
+        <CoachBriefingPanel match={match} />
         <Formations formations={match.formations} matchSlug={match.slug} />
         {match.appearances ? (
           <AppearancesPanel

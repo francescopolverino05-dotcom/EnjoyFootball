@@ -200,6 +200,21 @@ export interface MatchData {
   };
   clips: VideoClip[];
   analysisVideos: AnalysisVideo[];
+  /**
+   * Short coach-facing briefing for staff meetings.
+   * If omitted, a draft overlay in `coachBriefingDraft.json` may still apply.
+   */
+  coachBriefing?: CoachBriefing;
+}
+
+/** Staff briefing pack shown near the top of a match report. */
+export interface CoachBriefing {
+  headline: Localized;
+  summary?: Localized;
+  takeaways: Localized[];
+  priorities: Localized[];
+  /** Clip ids from `clips` to feature in the meeting pack. */
+  keyClipIds?: string[];
 }
 
 export interface MatchSummary {
