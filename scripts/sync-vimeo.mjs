@@ -92,6 +92,19 @@ const COMMENT_FIX = [
 
 function titleFromClipName(name, section) {
   const labels = SECTION_LABELS[section] || { en: section || 'Clip', it: section || 'Clip' };
+  // Human-titled clips (e.g. "Actions") — keep the Vimeo name, not the section slug.
+  if (!isClipStyleName(name)) {
+    const cleaned = String(name || '')
+      .replace(/[_\-]+/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    if (cleaned) {
+      const tags = ['vimeo'];
+      if (section && section !== 'other') tags.push(section);
+      else if (/actions?/i.test(cleaned)) tags.push('actions', 'other');
+      return { title: { en: cleaned, it: cleaned }, tags };
+    }
+  }
   const m = String(name || '').match(
     /^(\d{1,3})_(\d{2})_(?:wd|nd)_(.+?)__(?:(?:good|bad)(?:_favorite)?_)?(?:\d{1,3}_\d{2}_(?:Attacking|Defending)_\d+)?(?:_(.*))?$/i
   );
@@ -279,7 +292,14 @@ async function listFolderVideos(token, folderId, parentName = '') {
 }
 
 function videoLink(video) {
-  return video.link || `https://vimeo.com/${String(video.uri || '').split('/').pop()}`;
+  const id = videoNumericId(video);
+  const link = video.link || (id ? `https://vimeo.com/${id}` : '');
+  // Prefer watch URL that already includes the unlisted privacy hash path segment.
+  if (/vimeo\.com\/\d+\/[a-f0-9]+/i.test(link)) return link;
+  const embedHash = String(video.player_embed_url || '').match(/[?&]h=([a-f0-9]+)/i)?.[1];
+  const privacyHash = video.privacy?.unlisted_hash || embedHash;
+  if (id && privacyHash) return `https://vimeo.com/${id}/${privacyHash}`;
+  return link;
 }
 
 function videoNumericId(video) {
@@ -483,7 +503,8 @@ Upload videos into the Vimeo folder, then re-run:
     match.video = {
       ...(match.video || {}),
       fullMatch: fullMatchUrl,
-      notes: {
+      // Preserve custom notes (e.g. stats caveats); only set a default when missing.
+      notes: match.video?.notes || {
         en: 'Full match hosted on Vimeo.',
         it: 'Partita intera su Vimeo.',
       },
@@ -505,8 +526,14 @@ Upload videos into the Vimeo folder, then re-run:
     );
     match.clips = clips.map((c) => {
       const prev = prevByUrl.get(normalizeVideoUrl(c.videoFile));
-      if (prev?.localFile) return { ...c, localFile: prev.localFile };
-      return c;
+      if (!prev) return c;
+      const merged = { ...c };
+      if (prev.localFile) merged.localFile = prev.localFile;
+      // Keep hand-tuned titles / comments / tags (e.g. Actions / Azioni).
+      if (prev.title) merged.title = prev.title;
+      if (prev.comments) merged.comments = prev.comments;
+      if (Array.isArray(prev.tags) && prev.tags.length) merged.tags = prev.tags;
+      return merged;
     });
   }
 

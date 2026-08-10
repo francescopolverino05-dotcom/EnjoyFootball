@@ -1678,6 +1678,22 @@
   ],
   "analysisVideos": [
     {
+      "id": "vimeo-1217074924",
+      "title": {
+        "en": "Post Match v Portici",
+        "it": "Post Match v Portici"
+      },
+      "description": {
+        "en": "Synced from Vimeo folder.",
+        "it": "Sincronizzato dalla cartella Vimeo."
+      },
+      "videoFile": "https://vimeo.com/1217074924/ad5c37b7df",
+      "tags": [
+        "vimeo",
+        "analysis"
+      ]
+    },
+    {
       "id": "session-plan-2026-08-08",
       "title": {
         "en": "Session / matchday plan — Sat 8 Aug",
@@ -1705,7 +1721,7 @@
   },
   "vimeo": {
     "videoId": "1216625977",
-    "lastSyncedAt": "2026-08-09T07:36:39.782Z",
+    "lastSyncedAt": "2026-08-10T18:11:06.784Z",
     "folderId": "30162360",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30162360"
   },
