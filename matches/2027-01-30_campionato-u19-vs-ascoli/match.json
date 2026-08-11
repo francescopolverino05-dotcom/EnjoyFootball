@@ -1,0 +1,51 @@
+{
+  "id": "2027-01-30_campionato-u19-vs-ascoli",
+  "slug": "2027-01-30_campionato-u19-vs-ascoli",
+  "title": {
+    "en": "Napoli vs Ascoli",
+    "it": "Napoli vs Ascoli"
+  },
+  "subtitle": {
+    "en": "Primavera 2 · Matchday 17",
+    "it": "Primavera 2 · Giornata 17"
+  },
+  "date": "2027-01-30",
+  "competitionId": "primavera2",
+  "competition": {
+    "en": "Primavera 2",
+    "it": "Primavera 2"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "ascoli",
+    "name": {
+      "en": "Ascoli",
+      "it": "Ascoli"
+    },
+    "shortName": "Ascoli",
+    "colorClass": "opponent",
+    "logo": "logos/ascoli.svg"
+  },
+  "score": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}

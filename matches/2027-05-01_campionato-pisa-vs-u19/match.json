@@ -1,0 +1,51 @@
+{
+  "id": "2027-05-01_campionato-pisa-vs-u19",
+  "slug": "2027-05-01_campionato-pisa-vs-u19",
+  "title": {
+    "en": "Pisa vs Napoli",
+    "it": "Pisa vs Napoli"
+  },
+  "subtitle": {
+    "en": "Primavera 2 · Matchday 29",
+    "it": "Primavera 2 · Giornata 29"
+  },
+  "date": "2027-05-01",
+  "competitionId": "primavera2",
+  "competition": {
+    "en": "Primavera 2",
+    "it": "Primavera 2"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "pisa",
+    "name": {
+      "en": "Pisa",
+      "it": "Pisa"
+    },
+    "shortName": "Pisa",
+    "colorClass": "opponent",
+    "logo": "logos/pisa.svg"
+  },
+  "awayTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "score": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}

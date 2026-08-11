@@ -1,0 +1,51 @@
+{
+  "id": "2027-04-03_campionato-u19-vs-cosenza",
+  "slug": "2027-04-03_campionato-u19-vs-cosenza",
+  "title": {
+    "en": "Napoli vs Cosenza",
+    "it": "Napoli vs Cosenza"
+  },
+  "subtitle": {
+    "en": "Primavera 2 · Matchday 25",
+    "it": "Primavera 2 · Giornata 25"
+  },
+  "date": "2027-04-03",
+  "competitionId": "primavera2",
+  "competition": {
+    "en": "Primavera 2",
+    "it": "Primavera 2"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "cosenza",
+    "name": {
+      "en": "Cosenza",
+      "it": "Cosenza"
+    },
+    "shortName": "Cosenza",
+    "colorClass": "opponent",
+    "logo": "logos/cosenza.svg"
+  },
+  "score": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}

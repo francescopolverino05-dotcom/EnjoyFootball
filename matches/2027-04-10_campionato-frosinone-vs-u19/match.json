@@ -1,0 +1,51 @@
+{
+  "id": "2027-04-10_campionato-frosinone-vs-u19",
+  "slug": "2027-04-10_campionato-frosinone-vs-u19",
+  "title": {
+    "en": "Frosinone vs Napoli",
+    "it": "Frosinone vs Napoli"
+  },
+  "subtitle": {
+    "en": "Primavera 2 · Matchday 26",
+    "it": "Primavera 2 · Giornata 26"
+  },
+  "date": "2027-04-10",
+  "competitionId": "primavera2",
+  "competition": {
+    "en": "Primavera 2",
+    "it": "Primavera 2"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "frosinone",
+    "name": {
+      "en": "Frosinone",
+      "it": "Frosinone"
+    },
+    "shortName": "Frosinone",
+    "colorClass": "opponent",
+    "logo": "logos/frosinone.svg"
+  },
+  "awayTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "score": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}

@@ -1,0 +1,51 @@
+{
+  "id": "2027-04-24_campionato-u19-vs-latina",
+  "slug": "2027-04-24_campionato-u19-vs-latina",
+  "title": {
+    "en": "Napoli vs Latina",
+    "it": "Napoli vs Latina"
+  },
+  "subtitle": {
+    "en": "Primavera 2 · Matchday 28",
+    "it": "Primavera 2 · Giornata 28"
+  },
+  "date": "2027-04-24",
+  "competitionId": "primavera2",
+  "competition": {
+    "en": "Primavera 2",
+    "it": "Primavera 2"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "latina",
+    "name": {
+      "en": "Latina",
+      "it": "Latina"
+    },
+    "shortName": "Latina",
+    "colorClass": "opponent",
+    "logo": "logos/latina.svg"
+  },
+  "score": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}

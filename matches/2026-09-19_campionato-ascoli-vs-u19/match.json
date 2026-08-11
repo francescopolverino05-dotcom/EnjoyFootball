@@ -1,0 +1,51 @@
+{
+  "id": "2026-09-19_campionato-ascoli-vs-u19",
+  "slug": "2026-09-19_campionato-ascoli-vs-u19",
+  "title": {
+    "en": "Ascoli vs Napoli",
+    "it": "Ascoli vs Napoli"
+  },
+  "subtitle": {
+    "en": "Primavera 2 · Matchday 3",
+    "it": "Primavera 2 · Giornata 3"
+  },
+  "date": "2026-09-19",
+  "competitionId": "primavera2",
+  "competition": {
+    "en": "Primavera 2",
+    "it": "Primavera 2"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "ascoli",
+    "name": {
+      "en": "Ascoli",
+      "it": "Ascoli"
+    },
+    "shortName": "Ascoli",
+    "colorClass": "opponent",
+    "logo": "logos/ascoli.svg"
+  },
+  "awayTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "score": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}

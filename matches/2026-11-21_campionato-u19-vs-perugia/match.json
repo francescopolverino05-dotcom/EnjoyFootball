@@ -1,0 +1,51 @@
+{
+  "id": "2026-11-21_campionato-u19-vs-perugia",
+  "slug": "2026-11-21_campionato-u19-vs-perugia",
+  "title": {
+    "en": "Napoli vs Perugia",
+    "it": "Napoli vs Perugia"
+  },
+  "subtitle": {
+    "en": "Primavera 2 · Matchday 9",
+    "it": "Primavera 2 · Giornata 9"
+  },
+  "date": "2026-11-21",
+  "competitionId": "primavera2",
+  "competition": {
+    "en": "Primavera 2",
+    "it": "Primavera 2"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "perugia",
+    "name": {
+      "en": "Perugia",
+      "it": "Perugia"
+    },
+    "shortName": "Perugia",
+    "colorClass": "opponent",
+    "logo": "logos/perugia.svg"
+  },
+  "score": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}

@@ -1,0 +1,51 @@
+{
+  "id": "2027-03-06_campionato-u19-vs-avellino",
+  "slug": "2027-03-06_campionato-u19-vs-avellino",
+  "title": {
+    "en": "Napoli vs Avellino",
+    "it": "Napoli vs Avellino"
+  },
+  "subtitle": {
+    "en": "Primavera 2 · Matchday 22",
+    "it": "Primavera 2 · Giornata 22"
+  },
+  "date": "2027-03-06",
+  "competitionId": "primavera2",
+  "competition": {
+    "en": "Primavera 2",
+    "it": "Primavera 2"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "avellino",
+    "name": {
+      "en": "Avellino",
+      "it": "Avellino"
+    },
+    "shortName": "Avellino",
+    "colorClass": "opponent",
+    "logo": "logos/avellino.svg"
+  },
+  "score": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}

@@ -1,0 +1,51 @@
+{
+  "id": "2026-10-31_campionato-monopoli-vs-u19",
+  "slug": "2026-10-31_campionato-monopoli-vs-u19",
+  "title": {
+    "en": "Monopoli vs Napoli",
+    "it": "Monopoli vs Napoli"
+  },
+  "subtitle": {
+    "en": "Primavera 2 · Matchday 7",
+    "it": "Primavera 2 · Giornata 7"
+  },
+  "date": "2026-10-31",
+  "competitionId": "primavera2",
+  "competition": {
+    "en": "Primavera 2",
+    "it": "Primavera 2"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "monopoli",
+    "name": {
+      "en": "Monopoli",
+      "it": "Monopoli"
+    },
+    "shortName": "Monopoli",
+    "colorClass": "opponent",
+    "logo": "logos/monopoli.svg"
+  },
+  "awayTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "score": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}
