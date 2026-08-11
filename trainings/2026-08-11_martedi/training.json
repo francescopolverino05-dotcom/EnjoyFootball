@@ -7,19 +7,93 @@
     "it": "Martedì — Metabolica"
   },
   "focus": {
-    "en": "Metabolic",
-    "it": "Metabolica"
+    "en": "Technical activation / 3-team possession / Tactical possession / Partitella",
+    "it": "Attivazione tecnica / Possesso a 3 squadre / Possesso tattico / Partitella"
   },
   "sessionType": "metabolic",
   "startTime": "09:00",
   "endTime": "11:00",
   "status": "published",
   "notes": {
-    "en": "Week 3 (Sett. 3 10/08) — Tuesday Metabolic session (09:00–11:00). Session plan uploaded.",
-    "it": "Settimana 3 (Sett. 3 10/08) — Martedì Metabolica (09:00–11:00). Piano seduta caricato."
+    "en": "Week 3 (Sett. 3 10/08) — Tuesday Metabolic (09:00–11:00). Videos from Vimeo week folder 10/08/2026 mapped here (not Monday).",
+    "it": "Settimana 3 (Sett. 3 10/08) — Martedì Metabolica (09:00–11:00). Video dalla cartella Vimeo 10/08/2026 collegati qui (non al lunedì)."
   },
   "video": {
-    "parts": []
+    "fullSession": "https://vimeo.com/1217244752/256c9de1fc",
+    "notes": {
+      "en": "Full session (longest clip): Possesso Tattico (Vimeo).",
+      "it": "Sessione (clip più lunga): Possesso Tattico (Vimeo)."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1217235500",
+        "title": {
+          "en": "Attivazione Tecnica",
+          "it": "Attivazione Tecnica"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1217235500/413637508d",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1217239178",
+        "title": {
+          "en": "Possesso a 3 squadre",
+          "it": "Possesso a 3 squadre"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1217239178/be32aabe0f",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1217244752",
+        "title": {
+          "en": "Possesso Tattico",
+          "it": "Possesso Tattico"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1217244752/256c9de1fc",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1217261492",
+        "title": {
+          "en": "Partitella",
+          "it": "Partitella"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1217261492/fe8b3c6f37",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
   },
   "clips": [],
   "analysisVideos": [],
@@ -51,5 +125,10 @@
     "clips": [],
     "trainingDesign": null,
     "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30181275",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30181275",
+    "lastSyncedAt": "2026-08-11T10:03:41.884Z"
   }
 }
