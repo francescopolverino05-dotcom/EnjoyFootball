@@ -3,27 +3,47 @@
   "slug": "2026-08-12_mercoledi",
   "date": "2026-08-12",
   "title": {
-    "en": "Wednesday — Activation",
-    "it": "Mercoledì — Attivazione"
+    "en": "Wednesday — Strength, tactical work & 11v11",
+    "it": "Mercoledì — Forza, lavoro tattico e 11vs11"
   },
   "focus": {
-    "en": "Activation",
-    "it": "Attivazione"
+    "en": "Mobility / Technical activation / Strength (def line + finishing) / Tactical / 11v11",
+    "it": "Mobilità / Attivazione tecnica / Forza (linea + conclusioni) / Tattico / 11vs11"
   },
   "sessionType": "activation",
   "startTime": "09:00",
   "endTime": "11:00",
   "status": "published",
   "notes": {
-    "en": "Week of 10 Aug 2026 — Activation session (09:00–11:00). Media to follow.",
-    "it": "Settimana del 10 ago 2026 — seduta Attivazione (09:00–11:00). Media in arrivo."
+    "en": "Week 3 (Sett. 3 10/08) — Mercoledì. Campo Cercola 09:00. Session plan attached; videos pending.",
+    "it": "Settimana 3 (Sett. 3 10/08) — Mercoledì. Campo Cercola 09:00. Piano seduta allegato; video in attesa."
   },
   "video": {
     "parts": []
   },
   "clips": [],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-12",
+      "title": {
+        "en": "Session plan — Wed 12 Aug (Week 3)",
+        "it": "Piano seduta — Mer 12 ago (Sett. 3)"
+      },
+      "description": {
+        "en": "Cercola 09:00 — roster, mobility, technical activation, strength split (defensive line / finishing), out-of-possession & in-possession tactical work, 11v11 reduced pitch (1-3-4-2-1). From 3 MERCOLEDI.docx.",
+        "it": "Cercola 09:00 — convocati, mobilità, attivazione tecnica, forza a gruppi (linea difensiva / conclusioni), lavoro tattico non possesso e possesso, 11vs11 campo ridotto (1-3-4-2-1). Da 3 MERCOLEDI.docx."
+      },
+      "videoFile": "Session_Plan_2026-08-12.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-3",
+        "activation"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": []
