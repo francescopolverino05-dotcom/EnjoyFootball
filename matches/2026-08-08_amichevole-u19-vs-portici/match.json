@@ -1254,6 +1254,27 @@
       ]
     },
     {
+      "id": "vimeo-1216747126",
+      "title": {
+        "en": "Set piece",
+        "it": "Palla inattiva"
+      },
+      "comments": {
+        "en": "Set piece",
+        "it": "Palla inattiva"
+      },
+      "minute": 5,
+      "second": 42,
+      "videoFile": "https://vimeo.com/1216747126/22729dfd80",
+      "section": "set-piece",
+      "labels": [
+        "set-piece"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
       "id": "vimeo-1216747127",
       "title": {
         "en": "Progression",
@@ -1430,6 +1451,27 @@
       "tags": [
         "vimeo",
         "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216679970",
+      "title": {
+        "en": "Set piece",
+        "it": "Palla inattiva"
+      },
+      "comments": {
+        "en": "Set piece",
+        "it": "Palla inattiva"
+      },
+      "minute": 31,
+      "second": 3,
+      "videoFile": "https://vimeo.com/1216679970/4ef71953de",
+      "section": "set-piece",
+      "labels": [
+        "set-piece"
+      ],
+      "tags": [
+        "vimeo"
       ]
     },
     {
@@ -1723,7 +1765,7 @@
   },
   "vimeo": {
     "videoId": "1216625977",
-    "lastSyncedAt": "2026-08-10T19:08:40.302Z",
+    "lastSyncedAt": "2026-08-12T12:39:23.843Z",
     "folderId": "30162360",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30162360"
   },

@@ -1,4 +1,5 @@
 import type { TrainingSession, TrainingSummary } from '../types/training';
+import { getMicrocycleDay } from './microcycleDays';
 
 const trainingModules = import.meta.glob<{ default: TrainingSession }>(
   '../../trainings/*/training.json',
@@ -16,6 +17,7 @@ function toSummary(session: TrainingSession): TrainingSummary {
     startTime: session.startTime,
     endTime: session.endTime,
     status: session.status,
+    microcycleDay: getMicrocycleDay(session.slug),
   };
 }
 

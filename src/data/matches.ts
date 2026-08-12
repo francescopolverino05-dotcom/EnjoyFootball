@@ -1,6 +1,7 @@
 import { resolveMatchCompetitionId } from './matchCompetitions';
 import { MatchData, MatchSummary } from '../types/match';
 import { sessionMediaUrl } from '../utils/mediaUrl';
+import { getMicrocycleDay } from './microcycleDays';
 
 const matchModules = import.meta.glob<{ default: MatchData }>(
   '../../matches/*/match.json',
@@ -24,6 +25,7 @@ function toSummary(match: MatchData): MatchSummary {
     homeColorClass: match.homeTeam.colorClass,
     awayColorClass: match.awayTeam.colorClass,
     score: match.score,
+    microcycleDay: getMicrocycleDay(match.slug),
   };
 }
 

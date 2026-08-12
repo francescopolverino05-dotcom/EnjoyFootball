@@ -62,6 +62,12 @@ const SECTION_ALIASES = {
   'transition-to-defence': 'defensive-transition',
   'defensive-transition': 'defensive-transition',
   goal: 'goal',
+  free_kick: 'set-piece',
+  'free-kick': 'set-piece',
+  opponent_free_kick: 'set-piece',
+  'opponent-free-kick': 'set-piece',
+  set_piece: 'set-piece',
+  'set-piece': 'set-piece',
   half_start: 'other',
   half_finish: 'other',
   other: 'other',
@@ -76,6 +82,7 @@ const SECTION_LABELS = {
   'final-third': { en: 'Final third', it: 'Ultimo terzo' },
   'own-third': { en: 'Own third', it: 'Proprio terzo' },
   'defensive-transition': { en: 'Transition to defence', it: 'Transizione difensiva' },
+  'set-piece': { en: 'Set piece', it: 'Palla inattiva' },
 };
 
 const COMMENT_FIX = [

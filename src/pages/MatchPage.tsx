@@ -1,11 +1,13 @@
 import { Link, useParams } from 'react-router-dom';
 import { getMatchBySlug } from '../data/matches';
+import { getMicrocycleDay } from '../data/microcycleDays';
 import ReportHeader from '../components/ReportHeader';
 import Scoreboard from '../components/Scoreboard';
 import Timeline from '../components/Timeline';
 import Formations from '../components/Formations';
 import AppearancesPanel from '../components/AppearancesPanel';
 import StatsDashboard from '../components/StatsDashboard';
+import MicrocycleDayBadge from '../components/MicrocycleDayBadge';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export default function MatchPage() {
@@ -27,6 +29,7 @@ export default function MatchPage() {
   }
 
   const scoreLine = `${match.homeTeam.shortName} ${match.score.home} – ${match.score.away} ${match.awayTeam.shortName}`;
+  const microcycleDay = getMicrocycleDay(match.slug);
 
   return (
     <div className="app-shell">
@@ -41,6 +44,11 @@ export default function MatchPage() {
           matchDate={match.date}
           competition={L(match.subtitle)}
         />
+        {microcycleDay ? (
+          <div className="match-microcycle-day">
+            <MicrocycleDayBadge day={microcycleDay} className="microcycle-day-badge--hero" />
+          </div>
+        ) : null}
         <Scoreboard match={match} />
         <Timeline events={match.timeline} />
         <Formations formations={match.formations} matchSlug={match.slug} />

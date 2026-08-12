@@ -1540,6 +1540,38 @@ button {
   border-color: #c4b5fd;
 }
 
+.microcycle-day-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 2px;
+  color: var(--napoli-blue-dark);
+  background: #e8f2fc;
+  border: 1px solid #b8d4f0;
+}
+
+.microcycle-day-badge--hero {
+  margin: 0 auto 10px;
+  font-size: 12px;
+  padding: 5px 12px;
+}
+
+.training-card .microcycle-day-badge,
+.match-card .microcycle-day-badge,
+.calendar-event-card .microcycle-day-badge {
+  margin-right: 6px;
+}
+
+.match-microcycle-day {
+  display: flex;
+  justify-content: center;
+  margin: -8px 0 16px;
+}
+
 .training-card-time {
   font-size: 13px;
   font-weight: 700;

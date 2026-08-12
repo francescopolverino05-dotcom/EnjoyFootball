@@ -5,8 +5,10 @@ import {
   TRAINING_SESSION_TYPE_LABELS,
 } from '../data/trainingDayTypes';
 import { getTrainingBySlug } from '../data/trainings';
+import { getMicrocycleDay } from '../data/microcycleDays';
 import ReportHeader from '../components/ReportHeader';
 import TrainingDashboard from '../components/TrainingDashboard';
+import MicrocycleDayBadge from '../components/MicrocycleDayBadge';
 import { useLanguage } from '../i18n/LanguageContext';
 
 export default function TrainingPage() {
@@ -36,6 +38,7 @@ export default function TrainingPage() {
     ? L(TRAINING_SESSION_TYPE_LABELS[sessionType])
     : null;
   const timeRange = formatTrainingTimeRange(session.startTime, session.endTime);
+  const microcycleDay = getMicrocycleDay(session.slug);
   const headerMeta = typeLabel
     ? `${typeLabel} · ${timeRange}`
     : session.focus
@@ -57,6 +60,12 @@ export default function TrainingPage() {
         />
         <div className="training-hero">
           <div className="training-hero-date">{dateLabel}</div>
+          {microcycleDay ? (
+            <MicrocycleDayBadge
+              day={microcycleDay}
+              className="microcycle-day-badge--hero"
+            />
+          ) : null}
           {typeLabel && sessionType ? (
             <div
               className={`training-type-badge training-type-badge--${sessionType}`}

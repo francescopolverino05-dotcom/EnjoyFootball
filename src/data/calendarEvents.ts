@@ -5,6 +5,7 @@ import {
   resolveTrainingSessionType,
   TRAINING_SESSION_TYPE_LABELS,
 } from './trainingDayTypes';
+import { getMicrocycleDay } from './microcycleDays';
 import {
   getTrainingWeekNumber,
   getWeekStartMonday,
@@ -29,6 +30,8 @@ export interface CalendarEvent {
   sessionType?: TrainingSessionType | null;
   /** Display time range for trainings, e.g. 09:00–11:00. */
   timeLabel?: string;
+  /** Pre-season microcycle label (Day 1, Day 2, …). */
+  microcycleDay?: number | null;
 }
 
 function parseIsoDate(iso: string): Date {
@@ -115,6 +118,7 @@ export function getCalendarEvents(): CalendarEvent[] {
       slug: session.slug,
       sessionType,
       timeLabel,
+      microcycleDay: getMicrocycleDay(session.slug),
     };
   });
 
@@ -129,6 +133,7 @@ export function getCalendarEvents(): CalendarEvent[] {
       href: `/match/${match.slug}`,
       weekNumber: getTrainingWeekNumber(weekStart),
       slug: match.slug,
+      microcycleDay: getMicrocycleDay(match.slug),
     };
   });
 

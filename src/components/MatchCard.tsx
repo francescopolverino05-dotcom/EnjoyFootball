@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 import { teamCrestUrl } from '../data/teamLogos';
 import { MatchSummary } from '../types/match';
+import MicrocycleDayBadge from './MicrocycleDayBadge';
 
 interface MatchCardProps {
   match: MatchSummary;
@@ -13,6 +14,10 @@ export default function MatchCard({ match }: MatchCardProps) {
   return (
     <Link to={`/match/${match.slug}`} className="match-card">
       <div className="match-card-date">
+        {match.microcycleDay ? (
+          <MicrocycleDayBadge day={match.microcycleDay} />
+        ) : null}
+        {match.microcycleDay ? ' · ' : ''}
         {formatDate(match.date)} · {L(match.competition)}
       </div>
       <div className="match-card-title">{L(match.title)}</div>

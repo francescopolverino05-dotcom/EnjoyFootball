@@ -19,7 +19,81 @@
     "it": "Settimana 3 (Sett. 3 10/08) — Mercoledì. Campo Cercola 09:00. Piano seduta allegato; video in attesa."
   },
   "video": {
-    "parts": []
+    "parts": [
+      {
+        "id": "vimeo-1217633457",
+        "title": {
+          "en": "Finalizzazione",
+          "it": "Finalizzazione"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1217633457/ded39d829e",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1217631326",
+        "title": {
+          "en": "Creazione Occasioni",
+          "it": "Creazione Occasioni"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1217631326/3eb1f740d1",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1217605287",
+        "title": {
+          "en": "Defence Shadow Play",
+          "it": "Defence Shadow Play"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1217605287/7613e357a2",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1217570349",
+        "title": {
+          "en": "Linea Difensiva",
+          "it": "Linea Difensiva"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1217570349/8c636a96f9",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "fullSession": "https://vimeo.com/1217633457/ded39d829e",
+    "notes": {
+      "en": "Session recordings on Vimeo (4 videos).",
+      "it": "Registrazioni sessione su Vimeo (4 video)."
+    }
   },
   "clips": [],
   "analysisVideos": [],
@@ -71,5 +145,10 @@
       }
     ],
     "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30195121",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30195121",
+    "lastSyncedAt": "2026-08-12T12:37:54.821Z"
   }
 }

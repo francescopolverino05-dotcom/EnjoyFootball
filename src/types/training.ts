@@ -90,4 +90,6 @@ export interface TrainingSummary {
   startTime?: string;
   endTime?: string;
   status: TrainingStatus;
+  /** Pre-season microcycle label (Day 1, Day 2, … from 27 Jul 2026). */
+  microcycleDay?: number | null;
 }

@@ -217,4 +217,6 @@ export interface MatchSummary {
   homeColorClass: TeamInfo['colorClass'];
   awayColorClass: TeamInfo['colorClass'];
   score: { home: number; away: number };
+  /** Pre-season microcycle label for friendlies (Day 1, Day 2, …). */
+  microcycleDay?: number | null;
 }

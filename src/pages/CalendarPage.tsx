@@ -22,6 +22,7 @@ import { getWeekStartMonday } from '../data/trainingWeeks';
 import { useLanguage } from '../i18n/LanguageContext';
 import type { Locale } from '../i18n/translations';
 import { TRAINING_SESSION_TYPE_LABELS } from '../data/trainingDayTypes';
+import MicrocycleDayBadge from '../components/MicrocycleDayBadge';
 
 const DOW_EN = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 const DOW_IT = ['Lun', 'Mar', 'Mer', 'Gio', 'Ven', 'Sab', 'Dom'];
@@ -110,6 +111,9 @@ function EventCard({
     <Link to={event.href} className={`calendar-event-card calendar-event-card--${event.kind}`}>
       <div className="calendar-event-card-top">
         <EventKindDot kind={event.kind} />
+        {event.microcycleDay ? (
+          <MicrocycleDayBadge day={event.microcycleDay} />
+        ) : null}
         <span className="calendar-event-kind">{kindLabel}</span>
         {event.timeLabel ? (
           <span className="calendar-event-time">{event.timeLabel}</span>

@@ -1,0 +1,35 @@
+{
+  "id": "2026-08-17_lunedi",
+  "slug": "2026-08-17_lunedi",
+  "date": "2026-08-17",
+  "title": {
+    "en": "Monday training — Strength",
+    "it": "Lunedì — Forza"
+  },
+  "focus": {
+    "en": "Strength",
+    "it": "Forza"
+  },
+  "sessionType": "strength",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Day 18 — Week of 17 Aug 2026. Media and session plan to follow.",
+    "it": "Giorno 18 — Settimana del 17 ago 2026. Media e piano seduta in arrivo."
+  },
+  "video": {
+    "parts": []
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  }
+}

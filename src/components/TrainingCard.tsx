@@ -6,6 +6,7 @@ import {
 } from '../data/trainingDayTypes';
 import { useLanguage } from '../i18n/LanguageContext';
 import type { TrainingSummary } from '../types/training';
+import MicrocycleDayBadge from './MicrocycleDayBadge';
 
 interface TrainingCardProps {
   session: TrainingSummary;
@@ -25,7 +26,13 @@ export default function TrainingCard({ session }: TrainingCardProps) {
   return (
     <Link to={`/training/${session.slug}`} className="match-card training-card">
       <div className="training-card-date">{formatDate(session.date)}</div>
-      <div className="match-card-date">{t('trainingSession')}</div>
+      <div className="match-card-date">
+        {session.microcycleDay ? (
+          <MicrocycleDayBadge day={session.microcycleDay} />
+        ) : (
+          t('trainingSession')
+        )}
+      </div>
       {typeLabel ? (
         <div className={`training-type-badge training-type-badge--${sessionType}`}>
           {typeLabel}
