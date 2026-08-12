@@ -123,7 +123,27 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-11",
+        "title": {
+          "en": "GK design — Upper limbs, footwork & attacking the ball",
+          "it": "Scheda portieri — Arti superiori, podalico e attacco palla"
+        },
+        "description": {
+          "en": "All. N°14 — 11 Aug 2026 (Week 3 Tuesday). Upper-limb work, footwork (podalico), attacking the ball.",
+          "it": "All. N°14 — 11 ago 2026 (Sett. 3 Martedì). Lavoro arti superiori, podalico, attacco palla."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-11_Arti_Superiori_Podalico_Attacco_Palla.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers",
+          "week-3"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "vimeo": {

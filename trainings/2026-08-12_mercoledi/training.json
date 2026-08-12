@@ -49,7 +49,27 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-12",
+        "title": {
+          "en": "GK design — Lower limbs & goal defence",
+          "it": "Scheda portieri — Arti inferiori e difesa della porta"
+        },
+        "description": {
+          "en": "All. N°15 — 12 Aug 2026 (Week 3 Wednesday). Lower-limb work and defending the goal.",
+          "it": "All. N°15 — 12 ago 2026 (Sett. 3 Mercoledì). Lavoro arti inferiori e difesa della porta."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-12_Arti_Inferiori_Difesa_Porta.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers",
+          "week-3"
+        ]
+      }
+    ],
     "analysisVideos": []
   }
 }
