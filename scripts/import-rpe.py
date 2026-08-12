@@ -85,6 +85,11 @@ DATE_SLUGS = {
         "matchSlug": None,
         "kind": "training",
     },
+    "2026-08-12": {
+        "trainingSlug": "2026-08-12_mercoledi",
+        "matchSlug": None,
+        "kind": "training",
+    },
 }
 
 ALIASES = {
