@@ -120,9 +120,320 @@
   ],
   "goalkeepers": {
     "video": {
-      "parts": []
+      "parts": [
+        {
+          "id": "vimeo-1218067947",
+          "title": {
+            "en": "prese + dif porta (7)",
+            "it": "prese + dif porta (7)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218067947/12524a10b1",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218067581",
+          "title": {
+            "en": "prese + dif porta (10)",
+            "it": "prese + dif porta (10)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218067581/d7c644f16c",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218065850",
+          "title": {
+            "en": "prese + dif porta (11)",
+            "it": "prese + dif porta (11)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218065850/5217aa93ad",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218065473",
+          "title": {
+            "en": "prese + dif porta (5)",
+            "it": "prese + dif porta (5)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218065473/feb78f7ee6",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218061997",
+          "title": {
+            "en": "prese + dif porta (9)",
+            "it": "prese + dif porta (9)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218061997/49077738e2",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218060460",
+          "title": {
+            "en": "prese + dif porta (12)",
+            "it": "prese + dif porta (12)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218060460/88b20db1f2",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218059086",
+          "title": {
+            "en": "prese + dif porta (8)",
+            "it": "prese + dif porta (8)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218059086/72bd700ca3",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218057747",
+          "title": {
+            "en": "RECUPERO PORTA + ATTACCO PALLA",
+            "it": "RECUPERO PORTA + ATTACCO PALLA"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218057747/9de26e167c",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218057480",
+          "title": {
+            "en": "TransferNow ALLEMENTO GK 12 8 26",
+            "it": "TransferNow ALLEMENTO GK 12 8 26"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218057480/81c2a0d39c",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218057433",
+          "title": {
+            "en": "prese + dif porta (6)",
+            "it": "prese + dif porta (6)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218057433/178290c906",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        }
+      ],
+      "fullSession": "https://vimeo.com/1218060460/88b20db1f2"
     },
-    "clips": [],
+    "clips": [
+      {
+        "id": "vimeo-1218066889",
+        "title": {
+          "en": "0 41 nd SPSOTAMENTO + PRESA 1 18 Other 5",
+          "it": "0 41 nd SPSOTAMENTO + PRESA 1 18 Other 5"
+        },
+        "comments": {
+          "en": "0 41 nd SPSOTAMENTO + PRESA 1 18 Other 5",
+          "it": "0 41 nd SPSOTAMENTO + PRESA 1 18 Other 5"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1218066889/ed2620d10d",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1218057432",
+        "title": {
+          "en": "1 23 nd SPOSTAMENTO+ PRESA 1 43 Other 2",
+          "it": "1 23 nd SPOSTAMENTO+ PRESA 1 43 Other 2"
+        },
+        "comments": {
+          "en": "1 23 nd SPOSTAMENTO+ PRESA 1 43 Other 2",
+          "it": "1 23 nd SPOSTAMENTO+ PRESA 1 43 Other 2"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1218057432/d8d9471516",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1218064613",
+        "title": {
+          "en": "2 18 nd SPOSTAMENTO + RACCOLTA 3 24 Other 0",
+          "it": "2 18 nd SPOSTAMENTO + RACCOLTA 3 24 Other 0"
+        },
+        "comments": {
+          "en": "2 18 nd SPOSTAMENTO + RACCOLTA 3 24 Other 0",
+          "it": "2 18 nd SPOSTAMENTO + RACCOLTA 3 24 Other 0"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1218064613/27d53e993a",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1218067357",
+        "title": {
+          "en": "3 41 nd SPOSTAMENTO+RACCOLTA 4 17 Other 4",
+          "it": "3 41 nd SPOSTAMENTO+RACCOLTA 4 17 Other 4"
+        },
+        "comments": {
+          "en": "3 41 nd SPOSTAMENTO+RACCOLTA 4 17 Other 4",
+          "it": "3 41 nd SPOSTAMENTO+RACCOLTA 4 17 Other 4"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1218067357/704f4a54e3",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1218057434",
+        "title": {
+          "en": "5 29 nd SPOSTAMENTO+ADATTAMENTO 6 23 Other 3",
+          "it": "5 29 nd SPOSTAMENTO+ADATTAMENTO 6 23 Other 3"
+        },
+        "comments": {
+          "en": "5 29 nd SPOSTAMENTO+ADATTAMENTO 6 23 Other 3",
+          "it": "5 29 nd SPOSTAMENTO+ADATTAMENTO 6 23 Other 3"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1218057434/b09ca1b770",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1218067389",
+        "title": {
+          "en": "7 25 nd SPOSTAMENTO+ ADATTAMENTO 8 21 Other 1",
+          "it": "7 25 nd SPOSTAMENTO+ ADATTAMENTO 8 21 Other 1"
+        },
+        "comments": {
+          "en": "7 25 nd SPOSTAMENTO+ ADATTAMENTO 8 21 Other 1",
+          "it": "7 25 nd SPOSTAMENTO+ ADATTAMENTO 8 21 Other 1"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1218067389/dbf10a5e5e",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      }
+    ],
     "trainingDesign": [
       {
         "id": "gk-design-2026-08-12",
@@ -149,6 +460,6 @@
   "vimeo": {
     "folderId": "30195121",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30195121",
-    "lastSyncedAt": "2026-08-12T12:37:54.821Z"
+    "lastSyncedAt": "2026-08-13T17:58:52.941Z"
   }
 }

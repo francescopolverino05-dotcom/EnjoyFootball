@@ -186,6 +186,11 @@ export interface MatchData {
   dynamics: DynamicMetric[];
   teamStats: TeamStat[];
   goalkeepers: GoalkeeperLog[];
+  /**
+   * Individual GK review videos (shown on the Goalkeeper Analysis tab).
+   * Separate from post-match Video Analysis.
+   */
+  goalkeeperAnalysisVideos?: AnalysisVideo[];
   /** Optional squad / substitution appearance lists (home + away). */
   appearances?: MatchAppearances;
   video?: {

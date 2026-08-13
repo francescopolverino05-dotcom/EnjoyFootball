@@ -13,6 +13,8 @@
  *
  * Match classification (by video / parent-folder name):
  *   - "full match" / "partita intera" → video.fullMatch
+ *   - GK player reviews (Spinelli / Merone / Magliano / …, short duration)
+ *     → goalkeeperAnalysisVideos (Goalkeeper Analysis tab)
  *   - "post match" / "analysis" / "analisi" → analysisVideos
  *   - otherwise → clips (section from [Build_up] in title, tags, or subfolder name)
  *
@@ -184,10 +186,20 @@ function sectionFromClipName(name) {
   return m ? normalizeSection(m[1]) : null;
 }
 
+function isGoalkeeperMatchAnalysis(name, duration = 0) {
+  const n = String(name || '');
+  // Short/medium keeper review reels — not the full match tape.
+  if (Number(duration) >= 1800) return false;
+  return /\b(spinelli|merone|magliano|maiano|lieto|napoletano)\b/i.test(n);
+}
+
 function classifyVideo(name, parentFolderName, duration = 0) {
   const n = (name || '').toLowerCase();
   if (/full\s*match|partita\s*intera|partita\s*completa/.test(n)) {
     return { kind: 'full' };
+  }
+  if (isGoalkeeperMatchAnalysis(name, duration)) {
+    return { kind: 'gk-analysis' };
   }
   // Full match uploads often keep the match title (no clip timestamp prefix).
   // Prefer long duration; also accept short/processing stubs with match-like titles.
@@ -452,6 +464,7 @@ Upload videos into the Vimeo folder, then re-run:
 
   const clips = [];
   const analysisVideos = [];
+  const gkAnalysisVideos = [];
   let fullMatchUrl = null;
   let fullMatchDuration = 0;
 
@@ -470,6 +483,21 @@ Upload videos into the Vimeo folder, then re-run:
       } else {
         console.log(`  full match (skipped shorter/stub) ← ${name} (${dur}s)`);
       }
+      continue;
+    }
+    if (kind.kind === 'gk-analysis') {
+      gkAnalysisVideos.push({
+        id: `vimeo-${id}`,
+        title: { en: name, it: name },
+        description: {
+          en: 'Goalkeeper analysis synced from Vimeo.',
+          it: 'Analisi portiere sincronizzata da Vimeo.',
+        },
+        videoFile: link,
+        kind: 'video',
+        tags: ['vimeo', 'analysis', 'goalkeeper'],
+      });
+      console.log(`  gk analysis ← ${name}`);
       continue;
     }
     if (kind.kind === 'analysis') {
@@ -543,6 +571,31 @@ Upload videos into the Vimeo folder, then re-run:
       });
     }
     match.analysisVideos = [...byId.values()];
+  }
+
+  if (gkAnalysisVideos.length > 0) {
+    const prevById = new Map(
+      (match.goalkeeperAnalysisVideos || [])
+        .filter((a) => a?.id)
+        .map((a) => [a.id, a])
+    );
+    const byId = new Map();
+    for (const a of gkAnalysisVideos) {
+      const prev = prevById.get(a.id);
+      if (!prev) {
+        byId.set(a.id, a);
+        continue;
+      }
+      byId.set(a.id, {
+        ...a,
+        title: prev.title || a.title,
+        description: prev.description || a.description,
+        kind: prev.kind || a.kind || 'video',
+        tags:
+          Array.isArray(prev.tags) && prev.tags.length ? prev.tags : a.tags,
+      });
+    }
+    match.goalkeeperAnalysisVideos = [...byId.values()];
   }
 
   if (clips.length > 0) {

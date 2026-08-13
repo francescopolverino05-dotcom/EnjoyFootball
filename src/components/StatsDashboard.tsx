@@ -108,7 +108,11 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
 
         {activeTab === 'teamstats' ? <TeamStatsPanel match={match} /> : null}
         {activeTab === 'gkanalysis' ? (
-          <GkAnalysisPanel goalkeepers={match.goalkeepers} />
+          <GkAnalysisPanel
+            matchSlug={match.slug}
+            goalkeepers={match.goalkeepers}
+            analysisVideos={match.goalkeeperAnalysisVideos}
+          />
         ) : null}
         {activeTab === 'fullmatch' ? <FullMatchPanel match={match} /> : null}
         {activeTab === 'clips' ? <ClipsPanel match={match} /> : null}
@@ -250,37 +254,89 @@ function buildGkStatRows(goalkeepers: GoalkeeperLog[]): GkStatRow[] {
   ].filter((row): row is GkStatRow => row != null);
 }
 
-function GkAnalysisPanel({ goalkeepers }: { goalkeepers: GoalkeeperLog[] }) {
+function GkAnalysisPanel({
+  matchSlug,
+  goalkeepers,
+  analysisVideos,
+}: {
+  matchSlug: string;
+  goalkeepers: GoalkeeperLog[];
+  analysisVideos?: AnalysisVideo[];
+}) {
   const { t, L } = useLanguage();
   const rows = useMemo(() => buildGkStatRows(goalkeepers), [goalkeepers]);
   const notes = goalkeepers.filter((gk) => gk.notes);
+  const videos = analysisVideos ?? [];
 
-  if (goalkeepers.length === 0) {
+  if (goalkeepers.length === 0 && videos.length === 0) {
     return null;
   }
 
-  if (goalkeepers.length === 2) {
-    const [a, b] = goalkeepers;
-    return (
-      <div className="gk-stats-panel">
-        <div className="stats-comparison-row stats-comparison-header">
-          <span className={`stats-val-home gk-val-${a.colorClass}`}>
-            {gkColumnTitle(a, L)}
-          </span>
-          <span className="stats-label" aria-hidden="true" />
-          <span className={`stats-val-away gk-val-${b.colorClass}`}>
-            {gkColumnTitle(b, L)}
-          </span>
+  const statsBlock =
+    goalkeepers.length === 0 ? null : goalkeepers.length === 2 ? (
+      (() => {
+        const [a, b] = goalkeepers;
+        return (
+          <div className="gk-stats-panel">
+            <div className="stats-comparison-row stats-comparison-header">
+              <span className={`stats-val-home gk-val-${a.colorClass}`}>
+                {gkColumnTitle(a, L)}
+              </span>
+              <span className="stats-label" aria-hidden="true" />
+              <span className={`stats-val-away gk-val-${b.colorClass}`}>
+                {gkColumnTitle(b, L)}
+              </span>
+            </div>
+            {rows.map((row) => (
+              <div className="stats-comparison-row" key={row.key}>
+                <span className={`stats-val-home gk-val-${a.colorClass}`}>
+                  {formatGkCell(row.values[0], L)}
+                </span>
+                <span className="stats-label">{t(row.labelKey)}</span>
+                <span className={`stats-val-away gk-val-${b.colorClass}`}>
+                  {formatGkCell(row.values[1], L)}
+                </span>
+              </div>
+            ))}
+            {notes.length > 0 ? (
+              <div className="gk-stats-notes">
+                {notes.map((gk) => (
+                  <p key={gk.name}>
+                    <strong>{gk.name}:</strong> {L(gk.notes!)}
+                  </p>
+                ))}
+              </div>
+            ) : null}
+          </div>
+        );
+      })()
+    ) : (
+      <div
+        className="gk-stats-panel gk-stats-multi"
+        style={{ ['--gk-cols' as string]: goalkeepers.length }}
+      >
+        <div className="gk-stats-row gk-stats-header">
+          <span className="gk-stats-metric" aria-hidden="true" />
+          {goalkeepers.map((gk) => (
+            <span
+              className={`gk-stats-val gk-val-${gk.colorClass}`}
+              key={gk.name}
+            >
+              {gkColumnTitle(gk, L)}
+            </span>
+          ))}
         </div>
         {rows.map((row) => (
-          <div className="stats-comparison-row" key={row.key}>
-            <span className={`stats-val-home gk-val-${a.colorClass}`}>
-              {formatGkCell(row.values[0], L)}
-            </span>
-            <span className="stats-label">{t(row.labelKey)}</span>
-            <span className={`stats-val-away gk-val-${b.colorClass}`}>
-              {formatGkCell(row.values[1], L)}
-            </span>
+          <div className="gk-stats-row" key={row.key}>
+            <span className="gk-stats-metric">{t(row.labelKey)}</span>
+            {row.values.map((value, i) => (
+              <span
+                className={`gk-stats-val gk-val-${goalkeepers[i].colorClass}`}
+                key={`${row.key}-${goalkeepers[i].name}`}
+              >
+                {formatGkCell(value, L)}
+              </span>
+            ))}
           </div>
         ))}
         {notes.length > 0 ? (
@@ -294,44 +350,32 @@ function GkAnalysisPanel({ goalkeepers }: { goalkeepers: GoalkeeperLog[] }) {
         ) : null}
       </div>
     );
-  }
 
   return (
-    <div
-      className="gk-stats-panel gk-stats-multi"
-      style={{ ['--gk-cols' as string]: goalkeepers.length }}
-    >
-      <div className="gk-stats-row gk-stats-header">
-        <span className="gk-stats-metric" aria-hidden="true" />
-        {goalkeepers.map((gk) => (
-          <span
-            className={`gk-stats-val gk-val-${gk.colorClass}`}
-            key={gk.name}
-          >
-            {gkColumnTitle(gk, L)}
-          </span>
-        ))}
-      </div>
-      {rows.map((row) => (
-        <div className="gk-stats-row" key={row.key}>
-          <span className="gk-stats-metric">{t(row.labelKey)}</span>
-          {row.values.map((value, i) => (
-            <span
-              className={`gk-stats-val gk-val-${goalkeepers[i].colorClass}`}
-              key={`${row.key}-${goalkeepers[i].name}`}
-            >
-              {formatGkCell(value, L)}
-            </span>
-          ))}
-        </div>
-      ))}
-      {notes.length > 0 ? (
-        <div className="gk-stats-notes">
-          {notes.map((gk) => (
-            <p key={gk.name}>
-              <strong>{gk.name}:</strong> {L(gk.notes!)}
-            </p>
-          ))}
+    <div className="gk-analysis-shell">
+      {statsBlock}
+      {videos.length > 0 ? (
+        <div className="video-section gk-analysis-videos">
+          <div className="section-title">{t('gkAnalysisVideos')}</div>
+          <p className="video-hint">{t('gkAnalysisVideosHint')}</p>
+          <div className="analysis-grid">
+            {videos.map((item) => (
+              <article className="analysis-card" key={item.id}>
+                <div className="clip-card-body clip-card-body--above">
+                  <div className="clip-card-title">{L(item.title)}</div>
+                  <div className="clip-card-desc">{L(item.description)}</div>
+                </div>
+                <MatchMedia
+                  slug={matchSlug}
+                  src={item.videoFile}
+                  kind="analysis"
+                  unsupportedLabel={t('videoUnsupported')}
+                  playLabel={t('playVideo')}
+                  title={L(item.title)}
+                />
+              </article>
+            ))}
+          </div>
         </div>
       ) : null}
     </div>

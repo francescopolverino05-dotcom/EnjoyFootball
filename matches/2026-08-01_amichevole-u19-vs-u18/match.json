@@ -758,7 +758,7 @@
   "vimeo": {
     "folderId": "30093272",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30093272",
-    "lastSyncedAt": "2026-08-06T07:44:56.600Z"
+    "lastSyncedAt": "2026-08-13T17:58:57.247Z"
   },
   "clips": [
     {
@@ -2646,7 +2646,8 @@
       "tags": [
         "vimeo",
         "analysis"
-      ]
+      ],
+      "kind": "video"
     },
     {
       "id": "tactical-blueprint",
@@ -2700,6 +2701,62 @@
         "pdf",
         "session-plan",
         "matchday"
+      ]
+    }
+  ],
+  "goalkeeperAnalysisVideos": [
+    {
+      "id": "vimeo-1218069356",
+      "title": {
+        "en": "NAPOLI vs UN18 MAGLIANO",
+        "it": "NAPOLI vs UN18 MAGLIANO"
+      },
+      "description": {
+        "en": "Goalkeeper analysis synced from Vimeo.",
+        "it": "Analisi portiere sincronizzata da Vimeo."
+      },
+      "videoFile": "https://vimeo.com/1218069356/da154c8d3e",
+      "kind": "video",
+      "tags": [
+        "vimeo",
+        "analysis",
+        "goalkeeper"
+      ]
+    },
+    {
+      "id": "vimeo-1218069358",
+      "title": {
+        "en": "NAPOLI vs UN18 MERONE",
+        "it": "NAPOLI vs UN18 MERONE"
+      },
+      "description": {
+        "en": "Goalkeeper analysis synced from Vimeo.",
+        "it": "Analisi portiere sincronizzata da Vimeo."
+      },
+      "videoFile": "https://vimeo.com/1218069358/b5e3015673",
+      "kind": "video",
+      "tags": [
+        "vimeo",
+        "analysis",
+        "goalkeeper"
+      ]
+    },
+    {
+      "id": "vimeo-1218069357",
+      "title": {
+        "en": "NAPOLI vs UN 18 SPINELLI",
+        "it": "NAPOLI vs UN 18 SPINELLI"
+      },
+      "description": {
+        "en": "Goalkeeper analysis synced from Vimeo.",
+        "it": "Analisi portiere sincronizzata da Vimeo."
+      },
+      "videoFile": "https://vimeo.com/1218069357/38c9246e77",
+      "kind": "video",
+      "tags": [
+        "vimeo",
+        "analysis",
+        "goalkeeper"
       ]
     }
   ]

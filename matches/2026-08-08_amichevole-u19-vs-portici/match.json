@@ -1765,7 +1765,7 @@
   },
   "vimeo": {
     "videoId": "1216625977",
-    "lastSyncedAt": "2026-08-12T12:39:23.843Z",
+    "lastSyncedAt": "2026-08-13T17:58:59.101Z",
     "folderId": "30162360",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30162360"
   },
@@ -1957,5 +1957,43 @@
       "en": "Napoli XI/subs from video + staff ON lists. Portici XI/subs/cards unknown — scorers only.",
       "it": "XI/sub Napoli da video + liste ON staff. XI/sub/cartellini Portici sconosciuti — solo marcatori."
     }
-  }
+  },
+  "goalkeeperAnalysisVideos": [
+    {
+      "id": "vimeo-1218070444",
+      "title": {
+        "en": "MAGLIANO NAPOLI-PORTICI",
+        "it": "MAGLIANO NAPOLI-PORTICI"
+      },
+      "description": {
+        "en": "Goalkeeper analysis synced from Vimeo.",
+        "it": "Analisi portiere sincronizzata da Vimeo."
+      },
+      "videoFile": "https://vimeo.com/1218070444/87706eb97d",
+      "kind": "video",
+      "tags": [
+        "vimeo",
+        "analysis",
+        "goalkeeper"
+      ]
+    },
+    {
+      "id": "vimeo-1218069462",
+      "title": {
+        "en": "SPINELLI NAPOLI-PORTICI",
+        "it": "SPINELLI NAPOLI-PORTICI"
+      },
+      "description": {
+        "en": "Goalkeeper analysis synced from Vimeo.",
+        "it": "Analisi portiere sincronizzata da Vimeo."
+      },
+      "videoFile": "https://vimeo.com/1218069462/faf1c8d73d",
+      "kind": "video",
+      "tags": [
+        "vimeo",
+        "analysis",
+        "goalkeeper"
+      ]
+    }
+  ]
 }

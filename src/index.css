@@ -939,6 +939,11 @@ button {
 
 .gk-stats-panel {
   width: 100%;
+  margin-bottom: 8px;
+}
+
+.gk-analysis-videos {
+  margin-top: 20px;
 }
 
 .gk-stats-notes {

@@ -93,6 +93,78 @@ const OPPONENTS: OppositionOpponent[] = [
   club('spezia', 'Spezia', ['primavera2', 'coppaItalia']),
 ];
 
+/** Reference tapes from Vimeo Avversari folders (synced manually from folder uploads). */
+function attachReferencePack(
+  opponentId: string,
+  matchSlug: string,
+  references: OppositionOpponent['fixturePacks'][string]['referenceMatches']
+) {
+  const opponent = OPPONENTS.find((o) => o.id === opponentId);
+  if (!opponent) return;
+  opponent.fixturePacks[matchSlug] = {
+    referenceMatches: references,
+    reportItems: opponent.fixturePacks[matchSlug]?.reportItems ?? [],
+  };
+}
+
+attachReferencePack('avellino', '2026-09-05_campionato-avellino-vs-u19', [
+  {
+    id: 'avellino-ref-empoli',
+    title: {
+      en: 'Empoli vs Avellino 2–0',
+      it: 'Empoli vs Avellino 2–0',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 26 (Girone C)',
+      it: 'Primavera 2 · Giornata 26 (Girone C)',
+    },
+    score: '2–0',
+    videoFile: 'https://vimeo.com/1218076436/077a17e699',
+  },
+  {
+    id: 'avellino-ref-catanzaro',
+    title: {
+      en: 'Catanzaro vs Avellino 1–3',
+      it: 'Catanzaro vs Avellino 1–3',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 24 (Girone C)',
+      it: 'Primavera 2 · Giornata 24 (Girone C)',
+    },
+    score: '1–3',
+    videoFile: 'https://vimeo.com/1218073956/93cf2dcb8a',
+  },
+]);
+
+attachReferencePack('catanzaro', '2026-09-12_campionato-u19-vs-catanzaro', [
+  {
+    id: 'catanzaro-ref-salernitana',
+    title: {
+      en: 'Salernitana vs Catanzaro U19 3–0',
+      it: 'Salernitana vs Catanzaro U19 3–0',
+    },
+    competition: {
+      en: 'U19 reference',
+      it: 'Riferimento U19',
+    },
+    score: '3–0',
+    videoFile: 'https://vimeo.com/1218053897/6fa1a75c8c',
+  },
+  {
+    id: 'catanzaro-ref-avellino',
+    title: {
+      en: 'Catanzaro vs Avellino 1–3',
+      it: 'Catanzaro vs Avellino 1–3',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 24 (Girone C)',
+      it: 'Primavera 2 · Giornata 24 (Girone C)',
+    },
+    score: '1–3',
+    videoFile: 'https://vimeo.com/1218078567/7be6470e66',
+  },
+]);
+
 export function getAllOpponents(): OppositionOpponent[] {
   return [...OPPONENTS].sort((a, b) => a.shortName.localeCompare(b.shortName));
 }

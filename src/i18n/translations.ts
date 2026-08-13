@@ -204,6 +204,9 @@ const dictionaries = {
     tabDynamics: 'Match Dynamics',
     tabTeamStats: 'Team Statistics',
     tabGk: 'Goalkeeper Analysis',
+    gkAnalysisVideos: 'GK analysis videos',
+    gkAnalysisVideosHint:
+      'Individual goalkeeper reviews from this match.',
     tabFullMatch: 'Full Match',
     tabFullSession: 'Full Session',
     tabClips: 'Clips',
@@ -537,6 +540,9 @@ const dictionaries = {
     tabDynamics: 'Dinamiche di Gara',
     tabTeamStats: 'Statistiche Squadra',
     tabGk: 'Analisi Portieri',
+    gkAnalysisVideos: 'Video analisi portieri',
+    gkAnalysisVideosHint:
+      'Analisi individuali dei portieri di questa partita.',
     tabFullMatch: 'Partita Intera',
     tabFullSession: 'Sessione Intera',
     tabClips: 'Clip',
