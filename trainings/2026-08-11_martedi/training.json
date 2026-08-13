@@ -120,9 +120,719 @@
   ],
   "goalkeepers": {
     "video": {
-      "parts": []
+      "parts": [
+        {
+          "id": "vimeo-1217938930",
+          "title": {
+            "en": "PODALICO +REC PORTA",
+            "it": "PODALICO +REC PORTA"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1217938930/ca28c8dc65",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        }
+      ],
+      "fullSession": "https://vimeo.com/1217938930/ca28c8dc65"
     },
-    "clips": [],
+    "clips": [
+      {
+        "id": "vimeo-1217940372",
+        "title": {
+          "en": "0 03 nd PODALICA + RECUPERO PORTA 1 22 Other 4",
+          "it": "0 03 nd PODALICA + RECUPERO PORTA 1 22 Other 4"
+        },
+        "comments": {
+          "en": "0 03 nd PODALICA + RECUPERO PORTA 1 22 Other 4",
+          "it": "0 03 nd PODALICA + RECUPERO PORTA 1 22 Other 4"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217940372/b5b76e1afc",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217938002",
+        "title": {
+          "en": "0 05 nd ADATTAMENTO 0 21 Other 0",
+          "it": "0 05 nd ADATTAMENTO 0 21 Other 0"
+        },
+        "comments": {
+          "en": "0 05 nd ADATTAMENTO 0 21 Other 0",
+          "it": "0 05 nd ADATTAMENTO 0 21 Other 0"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217938002/fbc6ef4e32",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217940378",
+        "title": {
+          "en": "0 05 nd PODALICA SITUAZIONE 1 29 Other 1",
+          "it": "0 05 nd PODALICA SITUAZIONE 1 29 Other 1"
+        },
+        "comments": {
+          "en": "0 05 nd PODALICA SITUAZIONE 1 29 Other 1",
+          "it": "0 05 nd PODALICA SITUAZIONE 1 29 Other 1"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217940378/9b59efc1d8",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217937272",
+        "title": {
+          "en": "0 15 nd ATTACCO PALLA 2 31 Other 0",
+          "it": "0 15 nd ATTACCO PALLA 2 31 Other 0"
+        },
+        "comments": {
+          "en": "0 15 nd ATTACCO PALLA 2 31 Other 0",
+          "it": "0 15 nd ATTACCO PALLA 2 31 Other 0"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217937272/20264e7c4e",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217938261",
+        "title": {
+          "en": "0 15 nd COORDINAZIONE + GESTO TECNICO 1 41 Other 1",
+          "it": "0 15 nd COORDINAZIONE + GESTO TECNICO 1 41 Other 1"
+        },
+        "comments": {
+          "en": "0 15 nd COORDINAZIONE + GESTO TECNICO 1 41 Other 1",
+          "it": "0 15 nd COORDINAZIONE + GESTO TECNICO 1 41 Other 1"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217938261/b449c112f8",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217937584",
+        "title": {
+          "en": "1 29 nd ADATTAMENTO 2 49 Other 1",
+          "it": "1 29 nd ADATTAMENTO 2 49 Other 1"
+        },
+        "comments": {
+          "en": "1 29 nd ADATTAMENTO 2 49 Other 1",
+          "it": "1 29 nd ADATTAMENTO 2 49 Other 1"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217937584/638a15ed09",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217937678",
+        "title": {
+          "en": "1 52 nd COORDINAZIONE + GESTO TECNICO 3 03 Other 2",
+          "it": "1 52 nd COORDINAZIONE + GESTO TECNICO 3 03 Other 2"
+        },
+        "comments": {
+          "en": "1 52 nd COORDINAZIONE + GESTO TECNICO 3 03 Other 2",
+          "it": "1 52 nd COORDINAZIONE + GESTO TECNICO 3 03 Other 2"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217937678/a3ab0dc38a",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217937274",
+        "title": {
+          "en": "2 04 nd Azione senza nome 2 50 Other 0",
+          "it": "2 04 nd Azione senza nome 2 50 Other 0"
+        },
+        "comments": {
+          "en": "2 04 nd Azione senza nome 2 50 Other 0",
+          "it": "2 04 nd Azione senza nome 2 50 Other 0"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217937274/d6ed61c13b",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217939162",
+        "title": {
+          "en": "2 11 nd PODALICA SITUAZIONE 4 16 Other 2",
+          "it": "2 11 nd PODALICA SITUAZIONE 4 16 Other 2"
+        },
+        "comments": {
+          "en": "2 11 nd PODALICA SITUAZIONE 4 16 Other 2",
+          "it": "2 11 nd PODALICA SITUAZIONE 4 16 Other 2"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217939162/a740f0c5e8",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217938366",
+        "title": {
+          "en": "2 36 nd ATTACCO PALLA 4 16 Other 1",
+          "it": "2 36 nd ATTACCO PALLA 4 16 Other 1"
+        },
+        "comments": {
+          "en": "2 36 nd ATTACCO PALLA 4 16 Other 1",
+          "it": "2 36 nd ATTACCO PALLA 4 16 Other 1"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217938366/687347b9b4",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217940409",
+        "title": {
+          "en": "2 52 nd Azione senza nome 3 29 Other 1",
+          "it": "2 52 nd Azione senza nome 3 29 Other 1"
+        },
+        "comments": {
+          "en": "2 52 nd Azione senza nome 3 29 Other 1",
+          "it": "2 52 nd Azione senza nome 3 29 Other 1"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217940409/23e70657a4",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217941130",
+        "title": {
+          "en": "3 01 nd COORDINAZIONE + GESTO TECNICO 4 14 Other 3",
+          "it": "3 01 nd COORDINAZIONE + GESTO TECNICO 4 14 Other 3"
+        },
+        "comments": {
+          "en": "3 01 nd COORDINAZIONE + GESTO TECNICO 4 14 Other 3",
+          "it": "3 01 nd COORDINAZIONE + GESTO TECNICO 4 14 Other 3"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217941130/1f7fe3ce32",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217940764",
+        "title": {
+          "en": "3 17 nd ADATTAMETO 4 27 Other 3",
+          "it": "3 17 nd ADATTAMETO 4 27 Other 3"
+        },
+        "comments": {
+          "en": "3 17 nd ADATTAMETO 4 27 Other 3",
+          "it": "3 17 nd ADATTAMETO 4 27 Other 3"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217940764/f91a30bd7c",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217940528",
+        "title": {
+          "en": "3 34 nd Azione senza nome 3 43 Other 2",
+          "it": "3 34 nd Azione senza nome 3 43 Other 2"
+        },
+        "comments": {
+          "en": "3 34 nd Azione senza nome 3 43 Other 2",
+          "it": "3 34 nd Azione senza nome 3 43 Other 2"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217940528/e6740b5795",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217938154",
+        "title": {
+          "en": "4 29 nd PODALICO SITUAZIONE 5 13 Other 3",
+          "it": "4 29 nd PODALICO SITUAZIONE 5 13 Other 3"
+        },
+        "comments": {
+          "en": "4 29 nd PODALICO SITUAZIONE 5 13 Other 3",
+          "it": "4 29 nd PODALICO SITUAZIONE 5 13 Other 3"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217938154/349c1589b7",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217941063",
+        "title": {
+          "en": "4 39 nd ATTACCO PALLA 5 34 Other 2",
+          "it": "4 39 nd ATTACCO PALLA 5 34 Other 2"
+        },
+        "comments": {
+          "en": "4 39 nd ATTACCO PALLA 5 34 Other 2",
+          "it": "4 39 nd ATTACCO PALLA 5 34 Other 2"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217941063/1f99b60577",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217938525",
+        "title": {
+          "en": "4 41 nd ADATTAMENTO 6 47 Other 0",
+          "it": "4 41 nd ADATTAMENTO 6 47 Other 0"
+        },
+        "comments": {
+          "en": "4 41 nd ADATTAMENTO 6 47 Other 0",
+          "it": "4 41 nd ADATTAMENTO 6 47 Other 0"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217938525/bb3e4ea315",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217937273",
+        "title": {
+          "en": "5 40 nd SPOST.+ ADATTAMENTO 7 23 Other 3",
+          "it": "5 40 nd SPOST.+ ADATTAMENTO 7 23 Other 3"
+        },
+        "comments": {
+          "en": "5 40 nd SPOST.+ ADATTAMENTO 7 23 Other 3",
+          "it": "5 40 nd SPOST.+ ADATTAMENTO 7 23 Other 3"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217937273/df49337497",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217939906",
+        "title": {
+          "en": "5 50 nd ABILITA' TECNICA 6 50 Other 0",
+          "it": "5 50 nd ABILITA' TECNICA 6 50 Other 0"
+        },
+        "comments": {
+          "en": "5 50 nd ABILITA' TECNICA 6 50 Other 0",
+          "it": "5 50 nd ABILITA' TECNICA 6 50 Other 0"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217939906/35c1644bf8",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217940620",
+        "title": {
+          "en": "5 50 nd Azione senza nome 6 01 Other 3",
+          "it": "5 50 nd Azione senza nome 6 01 Other 3"
+        },
+        "comments": {
+          "en": "5 50 nd Azione senza nome 6 01 Other 3",
+          "it": "5 50 nd Azione senza nome 6 01 Other 3"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217940620/30edb8a357",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217941433",
+        "title": {
+          "en": "6 17 nd Azione senza nome 6 33 Other 4",
+          "it": "6 17 nd Azione senza nome 6 33 Other 4"
+        },
+        "comments": {
+          "en": "6 17 nd Azione senza nome 6 33 Other 4",
+          "it": "6 17 nd Azione senza nome 6 33 Other 4"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217941433/c992b71a9a",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217937292",
+        "title": {
+          "en": "7 15 nd SPOSTAMENTO + ATTACCO PALLA 7 53 Other 4",
+          "it": "7 15 nd SPOSTAMENTO + ATTACCO PALLA 7 53 Other 4"
+        },
+        "comments": {
+          "en": "7 15 nd SPOSTAMENTO + ATTACCO PALLA 7 53 Other 4",
+          "it": "7 15 nd SPOSTAMENTO + ATTACCO PALLA 7 53 Other 4"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217937292/0be955c3fb",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217937275",
+        "title": {
+          "en": "7 19 nd PODALICA + REC PORTA 7 20 Other 0",
+          "it": "7 19 nd PODALICA + REC PORTA 7 20 Other 0"
+        },
+        "comments": {
+          "en": "7 19 nd PODALICA + REC PORTA 7 20 Other 0",
+          "it": "7 19 nd PODALICA + REC PORTA 7 20 Other 0"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217937275/0c1647226f",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217939064",
+        "title": {
+          "en": "7 32 nd Azione senza nome 7 50 Other 5",
+          "it": "7 32 nd Azione senza nome 7 50 Other 5"
+        },
+        "comments": {
+          "en": "7 32 nd Azione senza nome 7 50 Other 5",
+          "it": "7 32 nd Azione senza nome 7 50 Other 5"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217939064/fb62f7b092",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217940728",
+        "title": {
+          "en": "7 36 nd SPOST + ADATTAMENTO 9 16 Other 2",
+          "it": "7 36 nd SPOST + ADATTAMENTO 9 16 Other 2"
+        },
+        "comments": {
+          "en": "7 36 nd SPOST + ADATTAMENTO 9 16 Other 2",
+          "it": "7 36 nd SPOST + ADATTAMENTO 9 16 Other 2"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217940728/3810cfeeea",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217940020",
+        "title": {
+          "en": "7 40 nd ADATTAMENTO 8 41 Other 1",
+          "it": "7 40 nd ADATTAMENTO 8 41 Other 1"
+        },
+        "comments": {
+          "en": "7 40 nd ADATTAMENTO 8 41 Other 1",
+          "it": "7 40 nd ADATTAMENTO 8 41 Other 1"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217940020/a151ba8e6b",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217939257",
+        "title": {
+          "en": "8 00 nd SPOST+ATTACCO PALLA 9 16 Other 3",
+          "it": "8 00 nd SPOST+ATTACCO PALLA 9 16 Other 3"
+        },
+        "comments": {
+          "en": "8 00 nd SPOST+ATTACCO PALLA 9 16 Other 3",
+          "it": "8 00 nd SPOST+ATTACCO PALLA 9 16 Other 3"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217939257/0f959d6cfb",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217940385",
+        "title": {
+          "en": "8 59 nd PODALICA SITUAZIONE 9 00 Other 4",
+          "it": "8 59 nd PODALICA SITUAZIONE 9 00 Other 4"
+        },
+        "comments": {
+          "en": "8 59 nd PODALICA SITUAZIONE 9 00 Other 4",
+          "it": "8 59 nd PODALICA SITUAZIONE 9 00 Other 4"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217940385/1f86c5fd9f",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217938523",
+        "title": {
+          "en": "9 10 nd ADATTAMENTO 9 56 Other 2",
+          "it": "9 10 nd ADATTAMENTO 9 56 Other 2"
+        },
+        "comments": {
+          "en": "9 10 nd ADATTAMENTO 9 56 Other 2",
+          "it": "9 10 nd ADATTAMENTO 9 56 Other 2"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217938523/090cc4d46f",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1217938295",
+        "title": {
+          "en": "9 28 nd SPOSTAMENTO +ATT PALLA 9 56 Other 5",
+          "it": "9 28 nd SPOSTAMENTO +ATT PALLA 9 56 Other 5"
+        },
+        "comments": {
+          "en": "9 28 nd SPOSTAMENTO +ATT PALLA 9 56 Other 5",
+          "it": "9 28 nd SPOSTAMENTO +ATT PALLA 9 56 Other 5"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1217938295/2595c4aa30",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      }
+    ],
     "trainingDesign": [
       {
         "id": "gk-design-2026-08-11",
@@ -149,6 +859,6 @@
   "vimeo": {
     "folderId": "30195116",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30181275",
-    "lastSyncedAt": "2026-08-12T12:37:55.873Z"
+    "lastSyncedAt": "2026-08-13T11:16:49.985Z"
   }
 }
