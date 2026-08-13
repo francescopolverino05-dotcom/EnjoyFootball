@@ -7,6 +7,8 @@ import { getRpeSessionByMatchSlug } from '../data/rpeLoad';
 import { getTqrSessionByMatchSlug } from '../data/tqrLoad';
 import MatchMedia from './MatchMedia';
 import PhysicalLoadPanel from './PhysicalLoadPanel';
+import TwoColumnNotesPanel from './TwoColumnNotesPanel';
+import { EMPTY_MATCH_REFLECTION } from '../types/scoutNotes';
 
 interface StatsDashboardProps {
   match: MatchData;
@@ -19,6 +21,7 @@ type TabId =
   | 'fullmatch'
   | 'clips'
   | 'videoanalysis'
+  | 'reflection'
   | 'physicalload';
 
 type TabLabelKey =
@@ -28,6 +31,7 @@ type TabLabelKey =
   | 'tabFullMatch'
   | 'tabClips'
   | 'tabVideoAnalysis'
+  | 'tabWwbEbi'
   | 'tabPhysicalLoad';
 
 export default function StatsDashboard({ match }: StatsDashboardProps) {
@@ -36,6 +40,7 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
   const rpeSession = getRpeSessionByMatchSlug(match.slug);
   const tqrSession = getTqrSessionByMatchSlug(match.slug);
   const hasPhysicalLoad = Boolean(rpeSession || tqrSession);
+  const reflection = match.reflection ?? EMPTY_MATCH_REFLECTION;
 
   // Match-only tabs — never include training tabs (Full Session / Training Design).
   const tabs: [TabId, TabLabelKey][] = [
@@ -45,6 +50,7 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
     ['fullmatch', 'tabFullMatch'],
     ['clips', 'tabClips'],
     ['videoanalysis', 'tabVideoAnalysis'],
+    ['reflection', 'tabWwbEbi'],
     ...(hasPhysicalLoad
       ? ([['physicalload', 'tabPhysicalLoad']] as [TabId, TabLabelKey][])
       : []),
@@ -118,6 +124,17 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
         {activeTab === 'clips' ? <ClipsPanel match={match} /> : null}
         {activeTab === 'videoanalysis' ? (
           <VideoAnalysisPanel match={match} />
+        ) : null}
+        {activeTab === 'reflection' ? (
+          <TwoColumnNotesPanel
+            hint={t('reflectionHint')}
+            leftTitle={t('reflectionWentWell')}
+            rightTitle={t('reflectionEvenBetterIf')}
+            leftEmpty={t('reflectionWentWellEmpty')}
+            rightEmpty={t('reflectionEvenBetterIfEmpty')}
+            leftNotes={reflection.wentWell}
+            rightNotes={reflection.evenBetterIf}
+          />
         ) : null}
         {activeTab === 'physicalload' && hasPhysicalLoad ? (
           <PhysicalLoadPanel

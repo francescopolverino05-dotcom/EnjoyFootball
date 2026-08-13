@@ -2,6 +2,7 @@ import type { OppositionClipSectionId } from '../i18n/oppositionClipSections';
 import type { Localized } from '../i18n/translations';
 import type { AnalysisVideo, PitchPlayer } from './match';
 import type { MatchCompetitionId } from './match';
+import type { StrengthsWeaknesses } from './scoutNotes';
 
 /** Competitions that have an Opposition directory (no Friendlies). */
 export type OppositionCompetitionId = Extract<
@@ -84,6 +85,8 @@ export interface OppositionFixturePack {
   referenceMatches: OppositionReferenceMatch[];
   /** Written notes and/or video reports for this fixture. */
   reportItems: AnalysisVideo[];
+  /** Scout strengths / weaknesses for this fixture. */
+  strengthsWeaknesses?: StrengthsWeaknesses;
 }
 
 export interface OppositionOpponent {

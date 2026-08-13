@@ -2052,6 +2052,53 @@ button {
   max-width: 720px;
 }
 
+.two-column-notes {
+  max-width: 960px;
+}
+
+.notes-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.notes-column {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 14px 16px;
+  background: #fff;
+}
+
+.notes-column-title {
+  margin: 0 0 12px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--napoli-blue-dark);
+}
+
+.notes-column-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.notes-column-list li {
+  margin-bottom: 8px;
+}
+
+.notes-column-list li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 720px) {
+  .notes-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
 .match-card {
   background: #ffffff;
   border: 1px solid var(--border-color);

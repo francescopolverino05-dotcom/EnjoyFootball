@@ -1,5 +1,6 @@
 import type { Localized } from '../i18n/translations';
 import type { ClipLabelId } from '../i18n/clipLabels';
+import type { MatchReflection } from './scoutNotes';
 
 export type { Localized };
 export type { ClipLabelId };
@@ -205,6 +206,8 @@ export interface MatchData {
   };
   clips: VideoClip[];
   analysisVideos: AnalysisVideo[];
+  /** Post-match WWB/EBI (CAB/AMS) reflection notes. */
+  reflection?: MatchReflection;
 }
 
 export interface MatchSummary {

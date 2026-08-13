@@ -5,6 +5,7 @@ import type {
   OppositionFixturePack,
   OppositionOpponent,
 } from '../types/opposition';
+import { EMPTY_STRENGTHS_WEAKNESSES } from '../types/scoutNotes';
 import { getAllMatches } from './matches';
 import {
   OPPOSITION_CLIP_SECTION_LABELS,
@@ -60,6 +61,7 @@ function club(
 export const EMPTY_FIXTURE_PACK: OppositionFixturePack = {
   referenceMatches: [],
   reportItems: [],
+  strengthsWeaknesses: EMPTY_STRENGTHS_WEAKNESSES,
 };
 
 export function getFixturePack(
@@ -67,7 +69,13 @@ export function getFixturePack(
   matchSlug: string | null
 ): OppositionFixturePack {
   if (!matchSlug) return EMPTY_FIXTURE_PACK;
-  return opponent.fixturePacks[matchSlug] ?? EMPTY_FIXTURE_PACK;
+  const pack = opponent.fixturePacks[matchSlug];
+  if (!pack) return EMPTY_FIXTURE_PACK;
+  return {
+    ...pack,
+    strengthsWeaknesses:
+      pack.strengthsWeaknesses ?? EMPTY_STRENGTHS_WEAKNESSES,
+  };
 }
 
 export function oppositionClipSectionLabel(id: OppositionClipSectionId) {
@@ -104,6 +112,9 @@ function attachReferencePack(
   opponent.fixturePacks[matchSlug] = {
     referenceMatches: references,
     reportItems: opponent.fixturePacks[matchSlug]?.reportItems ?? [],
+    strengthsWeaknesses:
+      opponent.fixturePacks[matchSlug]?.strengthsWeaknesses ??
+      EMPTY_STRENGTHS_WEAKNESSES,
   };
 }
 

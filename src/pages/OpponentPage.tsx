@@ -4,6 +4,7 @@ import Formations from '../components/Formations';
 import GkStrikerScout from '../components/GkStrikerScout';
 import MatchMedia from '../components/MatchMedia';
 import ReportHeader from '../components/ReportHeader';
+import TwoColumnNotesPanel from '../components/TwoColumnNotesPanel';
 import { strikersForGkTab } from '../data/gkStrikerSample';
 import { teamCrestUrl } from '../data/teamLogos';
 import {
@@ -17,6 +18,7 @@ import {
 } from '../data/opposition';
 import { MATCH_COMPETITION_LABELS } from '../data/matchCompetitions';
 import { OPPOSITION_MAX_REFERENCE_MATCHES } from '../types/opposition';
+import { EMPTY_STRENGTHS_WEAKNESSES } from '../types/scoutNotes';
 import {
   OPPOSITION_CLIP_GROUP_IDS,
   OPPOSITION_CLIP_GROUP_LABEL_KEYS,
@@ -27,7 +29,13 @@ import {
 import { useLanguage } from '../i18n/LanguageContext';
 import type { Formation } from '../types/match';
 
-type OpponentTab = 'formation' | 'clips' | 'matches' | 'report' | 'gk';
+type OpponentTab =
+  | 'formation'
+  | 'clips'
+  | 'strengths'
+  | 'matches'
+  | 'report'
+  | 'gk';
 
 export default function OpponentPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -76,6 +84,8 @@ export default function OpponentPage() {
   const refs = pack.referenceMatches.slice(0, OPPOSITION_MAX_REFERENCE_MATCHES);
   const emptySlots = Math.max(0, OPPOSITION_MAX_REFERENCE_MATCHES - refs.length);
   const reports = pack.reportItems;
+  const strengthsWeaknesses =
+    pack.strengthsWeaknesses ?? EMPTY_STRENGTHS_WEAKNESSES;
   const gkStrikers = strikersForGkTab(opponent.gkStrikers, opponent.shortName);
   const selectedGkStriker =
     gkStrikers.find((s) => s.id === gkStrikerId) ?? gkStrikers[0] ?? null;
@@ -90,12 +100,14 @@ export default function OpponentPage() {
     OpponentTab,
     | 'tabOppositionFormation'
     | 'tabOppositionClips'
+    | 'tabOppositionStrengthsWeaknesses'
     | 'tabOppositionMatches'
     | 'tabOppositionReport'
     | 'tabOppositionGk',
   ][] = [
     ['formation', 'tabOppositionFormation'],
     ['clips', 'tabOppositionClips'],
+    ['strengths', 'tabOppositionStrengthsWeaknesses'],
     ['matches', 'tabOppositionMatches'],
     ['report', 'tabOppositionReport'],
     ['gk', 'tabOppositionGk'],
@@ -281,6 +293,20 @@ export default function OpponentPage() {
                 </div>
               ))
             )}
+          </div>
+        ) : null}
+
+        {tab === 'strengths' ? (
+          <div className="tab-content active" role="tabpanel">
+            <TwoColumnNotesPanel
+              hint={t('oppositionStrengthsWeaknessesHint')}
+              leftTitle={t('oppositionStrengths')}
+              rightTitle={t('oppositionWeaknesses')}
+              leftEmpty={t('oppositionStrengthsEmpty')}
+              rightEmpty={t('oppositionWeaknessesEmpty')}
+              leftNotes={strengthsWeaknesses.strengths}
+              rightNotes={strengthsWeaknesses.weaknesses}
+            />
           </div>
         ) : null}
 
