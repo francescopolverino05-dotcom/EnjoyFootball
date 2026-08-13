@@ -15,15 +15,35 @@
   "endTime": "11:00",
   "status": "published",
   "notes": {
-    "en": "Week of 10 Aug 2026 — Match Practice session (09:00–11:00). Media to follow.",
-    "it": "Settimana del 10 ago 2026 — seduta Partitella (09:00–11:00). Media in arrivo."
+    "en": "Week of 10 Aug 2026 — Match Practice session (09:00–11:00). Session plan attached.",
+    "it": "Settimana del 10 ago 2026 — seduta Partitella (09:00–11:00). Piano seduta allegato."
   },
   "video": {
     "parts": []
   },
   "clips": [],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-14",
+      "title": {
+        "en": "Session plan — Fri 14 Aug (Week 3)",
+        "it": "Piano seduta — Ven 14 ago (Sett. 3)"
+      },
+      "description": {
+        "en": "Friday session plan from 5 VENERDI.pdf.",
+        "it": "Piano seduta di venerdì da 5 VENERDI.pdf."
+      },
+      "videoFile": "Session_Plan_2026-08-14.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-3",
+        "match-practice"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": []
