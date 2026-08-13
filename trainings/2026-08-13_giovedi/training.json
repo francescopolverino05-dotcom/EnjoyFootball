@@ -15,21 +15,61 @@
   "endTime": "11:00",
   "status": "published",
   "notes": {
-    "en": "Week of 10 Aug 2026 — Activation session (09:00–11:00). Media to follow.",
-    "it": "Settimana del 10 ago 2026 — seduta Attivazione (09:00–11:00). Media in arrivo."
+    "en": "Week of 10 Aug 2026 — Activation session (09:00–11:00). Session plan + GK design attached.",
+    "it": "Settimana del 10 ago 2026 — seduta Attivazione (09:00–11:00). Piano seduta + scheda portieri allegati."
   },
   "video": {
     "parts": []
   },
   "clips": [],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-13",
+      "title": {
+        "en": "Session plan — Thu 13 Aug (Week 3)",
+        "it": "Piano seduta — Gio 13 ago (Sett. 3)"
+      },
+      "description": {
+        "en": "Thursday session plan from 4 GIOVEDI.pdf.",
+        "it": "Piano seduta di giovedì da 4 GIOVEDI.pdf."
+      },
+      "videoFile": "Session_Plan_2026-08-13.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-3",
+        "activation"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-13",
+        "title": {
+          "en": "GK design — Upper limbs, plyometrics & high exits",
+          "it": "Scheda portieri — Arti superiori, pliometria e uscite alte"
+        },
+        "description": {
+          "en": "All. N°16 — 13 Aug 2026, Arena G. Piccolo Cercola. Upper-limb/TRX activation, plyometrics + high-exit technique, analytical high exits (objective: uscita alta). Converted from PPTX.",
+          "it": "All. N°16 — 13 ago 2026, Arena G. Piccolo Cercola. Attivazione arti superiori/TRX, pliometria + gesto tecnico uscita alta, prese in uscita alta analitico (obiettivo: uscita alta). Convertito da PPTX."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-13_Arti_Superiori_Pliometria_Uscite_Alte.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers",
+          "week-3"
+        ]
+      }
+    ],
     "analysisVideos": []
   }
 }
