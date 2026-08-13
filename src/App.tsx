@@ -8,6 +8,8 @@ import MatchPage from './pages/MatchPage';
 import MatchesPage from './pages/MatchesPage';
 import PlayerPage from './pages/PlayerPage';
 import PlayersPage from './pages/PlayersPage';
+import OppositionPage from './pages/OppositionPage';
+import OpponentPage from './pages/OpponentPage';
 import TrainingPage from './pages/TrainingPage';
 import TrainingsPage from './pages/TrainingsPage';
 
@@ -23,6 +25,8 @@ export default function App() {
         <Route path="/calendar" element={<CalendarPage />} />
         <Route path="/matches" element={<MatchesPage />} />
         <Route path="/match/:slug" element={<MatchPage />} />
+        <Route path="/opposition" element={<OppositionPage />} />
+        <Route path="/opposition/:slug" element={<OpponentPage />} />
         <Route path="/trainings" element={<TrainingsPage />} />
         <Route path="/training/:slug" element={<TrainingPage />} />
         <Route path="/players" element={<PlayersPage />} />

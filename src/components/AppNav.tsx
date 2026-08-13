@@ -3,7 +3,7 @@ import { useLanguage } from '../i18n/LanguageContext';
 
 /**
  * Top nav: Home first, then alphabetical —
- * Home | Calendar | Matches | Players | Training.
+ * Home | Calendar | Matches | Opposition | Players | Training.
  * Detail pages light up their parent section.
  */
 export default function AppNav() {
@@ -14,6 +14,8 @@ export default function AppNav() {
   const homeActive = path === '/' || path === '';
   const calendarActive = path === '/calendar' || path.startsWith('/calendar/');
   const matchesActive = path === '/matches' || path.startsWith('/match/');
+  const oppositionActive =
+    path === '/opposition' || path.startsWith('/opposition/');
   const playersActive = path === '/players' || path.startsWith('/players/');
   const trainingActive =
     path === '/trainings' || path.startsWith('/training/');
@@ -44,6 +46,14 @@ export default function AppNav() {
         }
       >
         {t('matches')}
+      </NavLink>
+      <NavLink
+        to="/opposition"
+        className={() =>
+          oppositionActive ? 'app-nav-link active' : 'app-nav-link'
+        }
+      >
+        {t('navOpposition')}
       </NavLink>
       <NavLink
         to="/players"

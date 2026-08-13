@@ -1,6 +1,7 @@
 import { Formation } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
 import { mediaUrl } from '../utils/mediaUrl';
+import { withGoalkeeperInSystem } from '../utils/formationSystem';
 
 interface FormationsProps {
   formations: Formation[];
@@ -17,14 +18,14 @@ export default function Formations({ formations, matchSlug }: FormationsProps) {
         {formations.map((formation) => (
           <div className="tactical-pitch-card" key={formation.teamId}>
             <div className="pitch-header">
-              {L(formation.label)} ({formation.system})
+              {L(formation.label)} ({withGoalkeeperInSystem(formation.system)})
             </div>
             {formation.image && matchSlug ? (
               <div className="formation-image-wrap">
                 <img
                   className="formation-image"
                   src={mediaUrl(matchSlug, formation.image)}
-                  alt={`${L(formation.label)} ${formation.system}`}
+                  alt={`${L(formation.label)} ${withGoalkeeperInSystem(formation.system)}`}
                 />
               </div>
             ) : null}
