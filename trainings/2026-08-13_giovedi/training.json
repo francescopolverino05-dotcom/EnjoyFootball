@@ -19,7 +19,64 @@
     "it": "Settimana del 10 ago 2026 — seduta Attivazione (09:00–11:00). Piano seduta + scheda portieri allegati."
   },
   "video": {
-    "parts": []
+    "parts": [
+      {
+        "id": "vimeo-1217914348",
+        "title": {
+          "en": "Possesso Tecnico",
+          "it": "Possesso Tecnico"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1217914348/2eab282058",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1217911961",
+        "title": {
+          "en": "Possesso Tattico",
+          "it": "Possesso Tattico"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1217911961/6fd795ac86",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1217907777",
+        "title": {
+          "en": "Partitella",
+          "it": "Partitella"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1217907777/d944d49868",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "fullSession": "https://vimeo.com/1217911961/6fd795ac86",
+    "notes": {
+      "en": "Session recordings on Vimeo (3 videos).",
+      "it": "Registrazioni sessione su Vimeo (3 video)."
+    }
   },
   "clips": [],
   "analysisVideos": [],
@@ -71,5 +128,10 @@
       }
     ],
     "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30207157",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30207157",
+    "lastSyncedAt": "2026-08-13T10:11:23.215Z"
   }
 }
