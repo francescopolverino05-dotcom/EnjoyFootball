@@ -1,5 +1,5 @@
 {
-  "source": "-TQR SSC NAPOLI.xlsx sheets TQR 1 + TQR (2) (Napoli Primavera ~28 Jul–7 Aug 2026); 2026-08-08 Portici matchday from TQR sheet photo (col 08); 2026-08-10 Monday training from TQR sheet photo (col 10, black ink); 2026-08-11 Tuesday training from TQR sheet photo (col 11, black ink); 2026-08-12 Wednesday training from TQR sheet photo (circled today / col 12, black ink)",
+  "source": "-TQR SSC NAPOLI.xlsx sheets TQR 1 + TQR (2) (Napoli Primavera ~28 Jul–7 Aug 2026); 2026-08-08 Portici matchday from TQR sheet photo (col 08); 2026-08-10 Monday training from TQR sheet photo (col 10, black ink); 2026-08-11 Tuesday training from TQR sheet photo (col 11, black ink); 2026-08-12 Wednesday training from TQR sheet photo (circled today / col 12, black ink); 2026-08-13 Thursday training from TQR sheet photo (circled col 13, black ink)",
   "scaleNote": {
     "en": "TQR (Total Quality Recovery) values copied from the Excel as reported (typically ~6–20; higher = better perceived recovery).",
     "it": "Valori TQR (Total Quality Recovery) copiati dall’Excel così come riportati (tipicamente ~6–20; più alto = migliore recupero percepito)."
@@ -1612,6 +1612,106 @@
           "playerSlug": "zappala-andrea",
           "excelName": "Zappalà Andrea",
           "tqr": 11
+        }
+      ]
+    },
+    {
+      "date": "2026-08-13",
+      "kind": "training",
+      "trainingSlug": "2026-08-13_giovedi",
+      "matchSlug": null,
+      "playersAnswered": 18,
+      "avgTqr": 13.61,
+      "players": [
+        {
+          "playerSlug": "branchizio-agostino",
+          "excelName": "Branchizio Agostino",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "candela-ivan-giovanni",
+          "excelName": "Candela Ivan Giovanni",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "capozzoli-emanuele",
+          "excelName": "Capozzoli Emanuele",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "castaldi-ciro-junior",
+          "excelName": "Castaldi Ciro Junior",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "esposito-luigi",
+          "excelName": "Esposito Luigi",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "favicchio-elia",
+          "excelName": "Favicchio Elia",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "lepre-giuseppe",
+          "excelName": "Lepre Giuseppe",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "lieto-claudio",
+          "excelName": "Lieto Claudio",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "melnyk-mykyta",
+          "excelName": "Melnyk Mykyta",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "natale-raffaele",
+          "excelName": "Natale Raffaele",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "pengue-salvatore",
+          "excelName": "Pengue Salvatore",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "riccio-luigi",
+          "excelName": "Riccio Luigi",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "rovetini-alessandro",
+          "excelName": "Ruvetini Alessandro",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "zappala-andrea",
+          "excelName": "Zappalà Andrea",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "mane-mohamed-seick",
+          "excelName": "Mane Mohamed Seick",
+          "tqr": 13
+        },
+        {
+          "playerSlug": "chiummariello-andrea",
+          "excelName": "Chiummariello Andrea",
+          "tqr": 12
+        },
+        {
+          "playerSlug": "de-stefano-francesco",
+          "excelName": "De Stefano Francesco",
+          "tqr": 12
+        },
+        {
+          "playerSlug": "saviano-raffaele-junior",
+          "excelName": "Saviano Raffaele",
+          "tqr": 12
         }
       ]
     }
