@@ -193,6 +193,105 @@ Drop the final MP4 into `matches/<slug>/analysis/` for the app **Video Analysis*
 
 ---
 
+## Creating the title card & formation board
+
+The Arcieri Marco samples use **static graphic slides** (not tagged from match footage). Once Analyser cannot auto-build these — use **Once Coach Board**, **Canva**, or **Keynote** and import the result as a short clip or PNG in your join.
+
+### What to copy (layout spec)
+
+**Title card**
+
+| Element | Position | Notes |
+| --- | --- | --- |
+| Club crest | Left ~35%, vertically centred | Large, transparent PNG |
+| `TEAM STUDIO` | Right half, centred | Bold black sans-serif, all caps |
+| Background | Full frame | White top + club-colour gradient bottom (Avellino: green; Benevento: yellow→orange) |
+| Credit line | Bottom-left | Your name + role; optional Once / club logo |
+
+**Formation board**
+
+| Element | Position | Notes |
+| --- | --- | --- |
+| 3D pitch | Centre-left ~60% of frame | Isometric green pitch (Coach Board has 3D field presets) |
+| Numbered circles | On pitch positions | GK = yellow or blue; outfield = club colour (green / red) |
+| Player names | Above each circle | Stack 2–4 names per spot (starters + rotation) |
+| Modules | Top-right of pitch | e.g. `4-3-1-2` / `4-3-2-1` on two lines |
+| Coach | Bottom-right | `Allenatore [Nome]` |
+
+Canvas size: **1920×1080**. Hold each slide **3–5 seconds** in the final video.
+
+---
+
+### Option A — Once Coach Board (best fit with your stack)
+
+Requires **Coach Board Pro** for PNG/PDF/video export (Basic has no export).
+
+**Title card**
+
+1. New project → **Football** → blank page (no pitch needed).
+2. Background: white rectangle + gradient shape in club colours (Inspector → fill gradient).
+3. **Import image** → opponent crest (PNG with transparency) → resize left.
+4. **Text** → `TEAM STUDIO` → large bold, right side.
+5. Smaller text bottom-left → your analyst line.
+6. **Export → Image (PNG)** at 1920×1080.
+
+**Formation board**
+
+1. New project → **Football** → choose a **3D field** layout (Coach Board offers several 2D/3D pitch options).
+2. Add **Players Formation** elements (numbered circles) — drag into a 4-3-1-2 / 3-5-2 shape.
+3. Recolour: GK circle vs outfield (right-click → colour).
+4. **Text** above each player → surname; duplicate text boxes for rotation names.
+5. Top-right text → primary + alternate module.
+6. Bottom-right → `Allenatore …`.
+7. Export PNG (or **export 3–5 s video** if you want a subtle animation later).
+
+**Turn PNG into a clip for the Analyser playlist**
+
+- Import the PNG into iMovie / DaVinci / Once Analyser merge → 3 s still.
+- Or in Coach Board: duplicate frame, export as **video** (Pro).
+
+Reuse the same Coach Board project each week: swap crest, names, modules, gradient colours.
+
+---
+
+### Option B — Canva (fastest title card)
+
+1. Custom size **1920×1080**.
+2. Search templates: “football presentation” or “sports title slide”.
+3. Left: upload crest. Right: `TEAM STUDIO`. Background: gradient in club colours.
+4. Duplicate page → search “football formation” / “lineup” templates for the board (many have a top-down pitch; acceptable if you skip the 3D look).
+5. Download **PNG** per slide.
+
+Canva is weaker on the **isometric 3D pitch** look; use Coach Board or LiveTag for that.
+
+---
+
+### Option C — Keynote / PowerPoint
+
+Same layout as the spec table. Built-in shapes for circles + a pitch image as background. Export **PDF → PNG** or **Export video** (slideshow, 1 slide, 5 s timing).
+
+Good if you already live in Apple/Google slides and want a master template file per season.
+
+---
+
+### Option D — LiveTag.pro (what the samples used)
+
+The Avellino / Benevento files were authored in **LiveTag.pro** (watermark bottom-left). If you have access, Team Studio title + formation boards are generated inside that ecosystem — closest pixel match, but a separate subscription from Once.
+
+---
+
+### Section cards (FASE OFFENSIVA, etc.)
+
+Same tools as the title card — **no pitch**:
+
+- Crest left (smaller than title slide)
+- Section title right: `FASE OFFENSIVA`, `FASE DIFENSIVA`, `PALLE INATTIVE OFFENSIVE`, `PALLE INATTIVE DIFENSIVE`
+- 4–5 bullet agenda under the title (opponent-specific — see quick reference below)
+
+Build **one master Keynote/Canva file** with 6 pages; duplicate per opponent and change text + colours only.
+
+---
+
 ## Static slides checklist (6 per opponent)
 
 Make once, reuse layout, swap crest / colours / text:
