@@ -1,4 +1,4 @@
-# Primavera First XI vs Second XI / Primavera Prima XI vs Seconda XI
+# Napoli Blu vs Napoli Green / Napoli Blu vs Napoli Verde
 
 ```text
 matches/2026-08-14_amichevole-primavera-xi-vs-xi/

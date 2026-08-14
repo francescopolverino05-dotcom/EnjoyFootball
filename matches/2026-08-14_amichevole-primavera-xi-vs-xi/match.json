@@ -2,8 +2,8 @@
   "id": "2026-08-14_amichevole-primavera-xi-vs-xi",
   "slug": "2026-08-14_amichevole-primavera-xi-vs-xi",
   "title": {
-    "en": "Primavera First XI vs Second XI",
-    "it": "Primavera Prima XI vs Seconda XI"
+    "en": "Napoli Blu vs Napoli Green",
+    "it": "Napoli Blu vs Napoli Verde"
   },
   "subtitle": {
     "en": "Friendly Match",
@@ -17,28 +17,28 @@
   },
   "status": "published",
   "homeTeam": {
-    "id": "first-xi",
+    "id": "blu",
     "name": {
-      "en": "Primavera First XI",
-      "it": "Primavera Prima XI"
+      "en": "Napoli Blu",
+      "it": "Napoli Blu"
     },
-    "shortName": "I",
+    "shortName": "Blu",
     "colorClass": "u19",
     "logo": "napoli-logo.png"
   },
   "awayTeam": {
-    "id": "second-xi",
+    "id": "green",
     "name": {
-      "en": "Primavera Second XI",
-      "it": "Primavera Seconda XI"
+      "en": "Napoli Green",
+      "it": "Napoli Verde"
     },
-    "shortName": "II",
+    "shortName": "Verde",
     "colorClass": "u18",
     "logo": "napoli-logo.png"
   },
   "score": {
-    "home": 0,
-    "away": 0
+    "home": 3,
+    "away": 1
   },
   "goals": [],
   "timeline": [],
