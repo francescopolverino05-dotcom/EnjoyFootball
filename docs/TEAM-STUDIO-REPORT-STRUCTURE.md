@@ -4,6 +4,8 @@ Decoded from LiveTag.pro “Team Studio” presentations (Avellino, Benevento; P
 
 Every report is the same skeleton. Only the club colours, formation, player names, and the wording of each clip label change.
 
+**Building this in Once Sport Analyser:** see [TEAM-STUDIO-ONCE-SPORT.md](./TEAM-STUDIO-ONCE-SPORT.md) (template buttons, labels, playlist order, export).
+
 ---
 
 ## The 10-step template
