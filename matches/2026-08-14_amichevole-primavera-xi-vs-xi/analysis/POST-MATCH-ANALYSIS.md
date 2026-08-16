@@ -104,6 +104,7 @@ Short bullets for `reflection.evenBetterIf`:
 5. When countering, more direct risk-taking — same standard as organised build-up.  
 6. Spinelli: see further, play more direct vs man-to-man (use Saviano’s physical profile); stay more onto players after errors.  
 7. Wing-backs on the ball: decide earlier (drive, cross, isolate) — Melnyk drive/cross vs tuck-back; Zappalá progress vs early cut-inside.
+8. Set pieces — clearer ideas and rehearsed routines for more efficiency; prepare strategies for the next friendly.
 
 ---
 
@@ -217,6 +218,13 @@ Short bullets for `reflection.evenBetterIf`:
       "text": {
         "en": "Wing-backs on the ball: clearer decisions — Melnyk drive/cross vs tuck-back; Zappalá progress forward vs early cut-inside.",
         "it": "Quinti in possesso: decisioni più chiare — Melnyk spingere/cross vs tornare indietro; Zappalá progressione vs taglio dentro precoce."
+      }
+    },
+    {
+      "id": "ebi-09",
+      "text": {
+        "en": "Set pieces — clearer ideas and rehearsed routines so we are more efficient; prepare strategies ahead of the next friendly.",
+        "it": "Piazzati — idee più chiare e schemi allenati per più efficienza; preparare strategie già per la prossima amichevole."
       }
     }
   ]
