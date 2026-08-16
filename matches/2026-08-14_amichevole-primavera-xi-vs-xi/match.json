@@ -114,7 +114,62 @@
     }
   ],
   "formations": [],
-  "dynamics": [],
+  "dynamics": [
+    {
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
+      "homeValue": 54,
+      "awayValue": 46,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Pass Accuracy %",
+        "it": "Precisione Passaggi %"
+      },
+      "homeValue": 82.6,
+      "awayValue": 76.8,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Defensive Triangle Stability %",
+        "it": "Stabilità Triangoli Difensivi %"
+      },
+      "homeValue": 88,
+      "awayValue": 76,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Offensive Triangle Efficiency %",
+        "it": "Efficienza Triangoli Offensivi %"
+      },
+      "homeValue": 82,
+      "awayValue": 70,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Compact Defence %",
+        "it": "Difesa Compatta %"
+      },
+      "homeValue": 78,
+      "awayValue": 60,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Disunited Defence %",
+        "it": "Difesa Disunita %"
+      },
+      "homeValue": 22,
+      "awayValue": 40,
+      "unit": "%"
+    }
+  ],
   "teamStats": [
     {
       "category": {
@@ -581,8 +636,8 @@
         "en": "Total passes / accurate",
         "it": "Passaggi Totali / Riusciti"
       },
-      "home": "359 / 298 (83%)",
-      "away": "305 / 238 (78%)"
+      "home": "359 / 298 (82.6%)",
+      "away": "305 / 238 (76.8%)"
     },
     {
       "category": {
@@ -725,8 +780,8 @@
         "en": "Opportunity Score",
         "it": "Indice Opportunità"
       },
-      "home": "n/c",
-      "away": "n/c"
+      "home": "8.5",
+      "away": "5.0"
     },
     {
       "category": {
@@ -761,8 +816,8 @@
         "en": "Compact Defense %",
         "it": "Difesa Compatta %"
       },
-      "home": "n/c",
-      "away": "n/c"
+      "home": "78%",
+      "away": "60%"
     },
     {
       "category": {
@@ -773,8 +828,8 @@
         "en": "Stretched Defense %",
         "it": "Difesa Disunita %"
       },
-      "home": "n/c",
-      "away": "n/c"
+      "home": "22%",
+      "away": "40%"
     },
     {
       "category": {
