@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import type {
   TrainingGoalkeepersBlock,
@@ -8,15 +8,11 @@ import type {
 import { EMPTY_TRAINING_GOALKEEPERS } from '../types/training';
 import type { AnalysisVideo, VideoClip } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
-import {
-  CLIP_LABELS,
-  ANALYSIS_SECTION_ORDER,
-  type ClipLabelId,
-} from '../i18n/clipLabels';
 import { getGaconSessionByTrainingSlug } from '../data/gaconLoad';
 import { getRpeSessionByTrainingSlug } from '../data/rpeLoad';
 import { getTqrSessionByTrainingSlug } from '../data/tqrLoad';
 import MatchMedia from './MatchMedia';
+import PhaseClipsPanel from './PhaseClipsPanel';
 import PhysicalLoadPanel from './PhysicalLoadPanel';
 
 type RoleView = 'team' | 'gk';
@@ -42,17 +38,6 @@ type ContentSource = {
   analysisVideos: AnalysisVideo[];
   trainingDesign?: AnalysisVideo[] | null;
 };
-
-function clipSortKey(clip: VideoClip): number {
-  return clip.minute * 60 + (clip.second ?? 0);
-}
-
-function formatClipTimestamp(clip: VideoClip): string {
-  const s = clip.second ?? 0;
-  return s > 0
-    ? `${clip.minute}'${String(s).padStart(2, '0')}"`
-    : `${clip.minute}'`;
-}
 
 function resolveGkBlock(
   block: TrainingGoalkeepersBlock | undefined
@@ -181,10 +166,15 @@ export default function TrainingDashboard({
         />
       </div>
       <div className={`tab-content ${activeTab === 'clips' ? 'active' : ''}`}>
-        <TrainingClipsPanel
+        <PhaseClipsPanel
           slug={session.slug}
           clips={content.clips}
-          emptyKey={emptyKey ?? 'noTrainingClips'}
+          library="trainings"
+          includeOtherSection
+          emptyMessage={t(emptyKey ?? 'noTrainingClips').replace(
+            /\{slug\}/g,
+            session.slug
+          )}
         />
       </div>
       <div
@@ -294,136 +284,6 @@ function FullSessionPanel({
         <div className="video-placeholder">
           {t(emptyKey).replace(/\{slug\}/g, slug)}
         </div>
-      )}
-    </div>
-  );
-}
-
-/** Training Vimeo sync defaults uncategorized clips to `other`; match UI hides that section. */
-const TRAINING_CLIP_SECTION_ORDER: ClipLabelId[] = [
-  ...ANALYSIS_SECTION_ORDER,
-  'other',
-];
-
-function TrainingClipsPanel({
-  slug,
-  clips,
-  emptyKey,
-}: {
-  slug: string;
-  clips: VideoClip[];
-  emptyKey: 'noTrainingClips' | 'noGkContent';
-}) {
-  const { t, L } = useLanguage();
-  const [searchQuery, setSearchQuery] = useState('');
-
-  const sections = useMemo(() => {
-    const map = new Map<ClipLabelId, VideoClip[]>();
-    for (const clip of clips) {
-      const key = (clip.section ?? clip.labels[0] ?? 'other') as ClipLabelId;
-      // Match Clips tab hides `goal`/`other`; training Vimeo sync defaults to `other`.
-      if (key === 'goal') continue;
-      const list = map.get(key) ?? [];
-      list.push(clip);
-      map.set(key, list);
-    }
-    for (const list of map.values()) {
-      list.sort((a, b) => clipSortKey(a) - clipSortKey(b));
-    }
-    return TRAINING_CLIP_SECTION_ORDER.filter((id) => (map.get(id)?.length ?? 0) > 0).map(
-      (id) => ({ id, clips: map.get(id)! })
-    );
-  }, [clips]);
-
-  const filteredSections = useMemo(() => {
-    const q = searchQuery.trim().toLowerCase();
-    if (!q) return sections;
-    return sections
-      .map((section) => ({
-        ...section,
-        clips: section.clips.filter((clip) => {
-          const hay = [
-            section.id,
-            L(CLIP_LABELS[section.id] ?? { en: section.id, it: section.id }),
-            L(clip.title),
-            L(clip.comments),
-            ...(clip.tags || []),
-            formatClipTimestamp(clip),
-            String(clip.minute),
-          ]
-            .join(' ')
-            .toLowerCase();
-          return hay.includes(q);
-        }),
-      }))
-      .filter((s) => s.clips.length > 0);
-  }, [sections, searchQuery, L]);
-
-  if (sections.length === 0) {
-    return (
-      <div className="empty-clips">
-        {t(emptyKey).replace(/\{slug\}/g, slug)}
-      </div>
-    );
-  }
-
-  return (
-    <div className="video-section">
-      <p className="video-hint">{t('clipsHint')}</p>
-      <div className="clips-search">
-        <label className="clips-search-label" htmlFor="training-clips-search">
-          {t('clipsSearchAria')}
-        </label>
-        <input
-          id="training-clips-search"
-          type="search"
-          className="clips-search-input"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder={t('clipsSearchPlaceholder')}
-          aria-label={t('clipsSearchAria')}
-          autoComplete="off"
-          spellCheck={false}
-        />
-      </div>
-
-      {filteredSections.length === 0 ? (
-        <div className="clips-search-empty">{t('clipsSearchEmpty')}</div>
-      ) : (
-        filteredSections.map((section) => (
-          <section
-            className="analysis-section"
-            key={section.id}
-            id={`training-clips-${section.id}`}
-          >
-            <div className="analysis-section-header">
-              <h3 className="analysis-section-title">
-                {L(CLIP_LABELS[section.id] ?? { en: section.id, it: section.id })}
-              </h3>
-              <span className="analysis-section-count">{section.clips.length}</span>
-            </div>
-            <div className="analysis-grid">
-              {section.clips.map((clip) => (
-                <article className="analysis-card" key={clip.id}>
-                  <MatchMedia
-                    library="trainings"
-                    slug={slug}
-                    src={clip.videoFile}
-                    kind="clips"
-                    unsupportedLabel={t('videoUnsupported')}
-                    playLabel={t('playVideo')}
-                    title={L(clip.title)}
-                  />
-                  <div className="clip-card-body">
-                    <div className="clip-card-time">{formatClipTimestamp(clip)}</div>
-                    <div className="clip-card-title">{L(clip.title)}</div>
-                    <div className="clip-card-desc">{L(clip.comments)}</div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </section>
-        ))
       )}
     </div>
   );

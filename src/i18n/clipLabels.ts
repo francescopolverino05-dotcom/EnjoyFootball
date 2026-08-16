@@ -47,29 +47,66 @@ export const CLIP_LABELS: Record<ClipLabelId, Localized> = {
   other: { en: 'Other', it: 'Altro' },
 };
 
-/** Sections never shown on the Clips tab (any match). */
+/** Sections never shown on the match Clips tab. */
 export const HIDDEN_CLIP_SECTIONS: ReadonlySet<ClipLabelId> = new Set([
   'goal',
   'other',
 ]);
 
-/** Preferred display order for Clips sections. */
+/**
+ * Phase groups for match/training Clips — same UX as Opposition
+ * (Attack · Defence · Transition · Set pieces).
+ */
+export const MATCH_CLIP_GROUP_IDS = [
+  'attack',
+  'defence',
+  'transition',
+  'setPieces',
+] as const;
+
+export type MatchClipGroupId = (typeof MATCH_CLIP_GROUP_IDS)[number];
+
+export const MATCH_CLIP_GROUPS: Record<MatchClipGroupId, ClipLabelId[]> = {
+  attack: [
+    'build-up',
+    'progress',
+    'final-third',
+    'chance',
+    'individual',
+    'tactical-pattern',
+  ],
+  defence: ['high-defence', 'mid-block', 'own-third', 'pressing', 'gk-action'],
+  transition: ['offensive-transition', 'defensive-transition'],
+  setPieces: ['set-piece'],
+};
+
+/** Preferred display order for Clips sections (within groups). */
 export const ANALYSIS_SECTION_ORDER: ClipLabelId[] = [
-  'build-up',
-  'progress',
-  'offensive-transition',
-  'mid-block',
-  'high-defence',
-  'final-third',
-  'own-third',
-  'defensive-transition',
-  'chance',
-  'pressing',
-  'set-piece',
-  'individual',
-  'tactical-pattern',
-  'gk-action',
+  ...MATCH_CLIP_GROUPS.attack,
+  ...MATCH_CLIP_GROUPS.defence,
+  ...MATCH_CLIP_GROUPS.transition,
+  ...MATCH_CLIP_GROUPS.setPieces,
 ];
+
+export const MATCH_CLIP_GROUP_LABEL_KEYS: Record<
+  MatchClipGroupId,
+  | 'oppositionClipGroupAttack'
+  | 'oppositionClipGroupDefence'
+  | 'oppositionClipGroupTransition'
+  | 'oppositionClipGroupSetPieces'
+> = {
+  attack: 'oppositionClipGroupAttack',
+  defence: 'oppositionClipGroupDefence',
+  transition: 'oppositionClipGroupTransition',
+  setPieces: 'oppositionClipGroupSetPieces',
+};
+
+export function matchClipGroupFor(sectionId: ClipLabelId): MatchClipGroupId {
+  for (const groupId of MATCH_CLIP_GROUP_IDS) {
+    if (MATCH_CLIP_GROUPS[groupId].includes(sectionId)) return groupId;
+  }
+  return 'attack';
+}
 
 export function isClipLabelId(value: string): value is ClipLabelId {
   return (CLIP_LABEL_IDS as readonly string[]).includes(value);

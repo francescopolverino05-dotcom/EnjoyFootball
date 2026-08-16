@@ -1,11 +1,11 @@
 import { useMemo, useState } from 'react';
-import { MatchData, VideoClip, AnalysisVideo, GoalkeeperLog } from '../types/match';
+import { MatchData, AnalysisVideo, GoalkeeperLog } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
-import { CLIP_LABELS, ANALYSIS_SECTION_ORDER, HIDDEN_CLIP_SECTIONS, type ClipLabelId } from '../i18n/clipLabels';
 import type { Localized, UiKey } from '../i18n/translations';
 import { getRpeSessionByMatchSlug } from '../data/rpeLoad';
 import { getTqrSessionByMatchSlug } from '../data/tqrLoad';
 import MatchMedia from './MatchMedia';
+import PhaseClipsPanel from './PhaseClipsPanel';
 import PhysicalLoadPanel from './PhysicalLoadPanel';
 import TwoColumnNotesPanel from './TwoColumnNotesPanel';
 import { EMPTY_MATCH_REFLECTION } from '../types/scoutNotes';
@@ -121,7 +121,14 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
           />
         ) : null}
         {activeTab === 'fullmatch' ? <FullMatchPanel match={match} /> : null}
-        {activeTab === 'clips' ? <ClipsPanel match={match} /> : null}
+        {activeTab === 'clips' ? (
+          <PhaseClipsPanel
+            slug={match.slug}
+            clips={match.clips}
+            library="matches"
+            emptyMessage={t('noClips').replace(/\{slug\}/g, match.slug)}
+          />
+        ) : null}
         {activeTab === 'videoanalysis' ? (
           <VideoAnalysisPanel match={match} />
         ) : null}
@@ -196,15 +203,6 @@ function TeamStatsPanel({ match }: { match: MatchData }) {
       ))}
     </div>
   );
-}
-
-function formatClipTimestamp(clip: VideoClip): string {
-  const m = clip.minute;
-  const s = clip.second ?? 0;
-  if (s > 0) {
-    return `${m}'${String(s).padStart(2, '0')}"`;
-  }
-  return `${m}'`;
 }
 
 function gkColumnTitle(
@@ -399,106 +397,6 @@ function GkAnalysisPanel({
   );
 }
 
-function clipSortKey(clip: VideoClip): number {
-  return clip.minute * 60 + (clip.second ?? 0);
-}
-
-function localizedText(value: Localized | undefined): string {
-  if (value == null) return '';
-  if (typeof value === 'string') return value;
-  return `${value.en} ${value.it}`;
-}
-
-type ClipTimeFilter =
-  | { kind: 'minute'; minute: number }
-  | { kind: 'point'; totalSeconds: number }
-  | { kind: 'range'; fromMinute: number; toMinute: number };
-
-/** Parse queries like `10`, `10'`, `10:12`, `10-20`, `10'-20'`. */
-function parseClipTimeQuery(raw: string): ClipTimeFilter | null {
-  const q = raw.trim();
-  const range = q.match(
-    /^(\d+)\s*['′]?(?::(\d{1,2}))?\s*[-–—]\s*(\d+)\s*['′]?(?::(\d{1,2}))?\s*['′"]?$/
-  );
-  if (range) {
-    const fromMinute = Number(range[1]);
-    const toMinute = Number(range[3]);
-    if (Number.isFinite(fromMinute) && Number.isFinite(toMinute)) {
-      return {
-        kind: 'range',
-        fromMinute: Math.min(fromMinute, toMinute),
-        toMinute: Math.max(fromMinute, toMinute),
-      };
-    }
-  }
-
-  const withSeconds = q.match(/^(\d+)\s*[:'′]\s*(\d{1,2})\s*["″]?$/);
-  if (withSeconds) {
-    const minute = Number(withSeconds[1]);
-    const second = Number(withSeconds[2]);
-    if (Number.isFinite(minute) && Number.isFinite(second) && second < 60) {
-      return { kind: 'point', totalSeconds: minute * 60 + second };
-    }
-  }
-
-  const minuteOnly = q.match(/^(\d+)\s*['′]?$/);
-  if (minuteOnly) {
-    const minute = Number(minuteOnly[1]);
-    if (Number.isFinite(minute)) return { kind: 'minute', minute };
-  }
-
-  return null;
-}
-
-function clipMatchesTime(clip: VideoClip, filter: ClipTimeFilter): boolean {
-  if (filter.kind === 'minute') return clip.minute === filter.minute;
-  if (filter.kind === 'point') return clipSortKey(clip) === filter.totalSeconds;
-  return clip.minute >= filter.fromMinute && clip.minute <= filter.toMinute;
-}
-
-function clipSearchHaystack(clip: VideoClip, sectionId: ClipLabelId): string {
-  const sectionLabel = CLIP_LABELS[sectionId];
-  const labelTexts = clip.labels
-    .map((id) => {
-      const label = CLIP_LABELS[id];
-      return label ? `${id} ${localizedText(label)}` : id;
-    })
-    .join(' ');
-
-  return [
-    sectionId,
-    localizedText(sectionLabel),
-    localizedText(clip.title),
-    localizedText(clip.comments),
-    labelTexts,
-    ...(clip.tags ?? []),
-    formatClipTimestamp(clip),
-    String(clip.minute),
-    clip.second != null ? `${clip.minute}:${String(clip.second).padStart(2, '0')}` : '',
-  ]
-    .join(' ')
-    .toLowerCase();
-}
-
-function clipMatchesSearch(
-  clip: VideoClip,
-  sectionId: ClipLabelId,
-  query: string
-): boolean {
-  const q = query.trim().toLowerCase();
-  if (!q) return true;
-
-  const timeFilter = parseClipTimeQuery(q);
-  if (timeFilter?.kind === 'range') {
-    return clipMatchesTime(clip, timeFilter);
-  }
-  if (timeFilter && clipMatchesTime(clip, timeFilter)) {
-    return true;
-  }
-
-  return clipSearchHaystack(clip, sectionId).includes(q);
-}
-
 function FullMatchPanel({ match }: { match: MatchData }) {
   const { t } = useLanguage();
   const src = match.video?.fullMatch ?? null;
@@ -522,115 +420,6 @@ function FullMatchPanel({ match }: { match: MatchData }) {
         <div className="video-placeholder">
           {t('noVideo').replace('{slug}', match.slug)}
         </div>
-      )}
-    </div>
-  );
-}
-
-function ClipsPanel({ match }: { match: MatchData }) {
-  const { t, L } = useLanguage();
-  const [searchQuery, setSearchQuery] = useState('');
-
-  const sections = useMemo(() => {
-    const map = new Map<ClipLabelId, VideoClip[]>();
-    for (const clip of match.clips) {
-      const key = (clip.section ?? clip.labels[0] ?? 'other') as ClipLabelId;
-      if (HIDDEN_CLIP_SECTIONS.has(key)) continue;
-      const list = map.get(key) ?? [];
-      list.push(clip);
-      map.set(key, list);
-    }
-    for (const list of map.values()) {
-      list.sort((a, b) => clipSortKey(a) - clipSortKey(b));
-    }
-    return ANALYSIS_SECTION_ORDER.filter((id) => (map.get(id)?.length ?? 0) > 0).map(
-      (id) => ({ id, clips: map.get(id)! })
-    );
-  }, [match.clips]);
-
-  const filteredSections = useMemo(() => {
-    const q = searchQuery.trim();
-    if (!q) return sections;
-    return sections
-      .map((section) => ({
-        ...section,
-        clips: section.clips.filter((clip) =>
-          clipMatchesSearch(clip, section.id, q)
-        ),
-      }))
-      .filter((section) => section.clips.length > 0);
-  }, [sections, searchQuery]);
-
-  if (sections.length === 0) {
-    return (
-      <div className="empty-clips">
-        {t('noClips').replace(/\{slug\}/g, match.slug)}
-      </div>
-    );
-  }
-
-  return (
-    <div className="video-section">
-      <p className="video-hint">{t('clipsHint')}</p>
-
-      <div className="clips-search">
-        <label className="clips-search-label" htmlFor="clips-search-input">
-          {t('clipsSearchAria')}
-        </label>
-        <input
-          id="clips-search-input"
-          type="search"
-          className="clips-search-input"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder={t('clipsSearchPlaceholder')}
-          aria-label={t('clipsSearchAria')}
-          autoComplete="off"
-          spellCheck={false}
-        />
-      </div>
-
-      {filteredSections.length === 0 ? (
-        <div className="clips-search-empty">{t('clipsSearchEmpty')}</div>
-      ) : (
-        filteredSections.map((section) => (
-          <section className="analysis-section" key={section.id} id={`clips-${section.id}`}>
-            <div className="analysis-section-header">
-              <h3 className="analysis-section-title">
-                {L(CLIP_LABELS[section.id] ?? { en: section.id, it: section.id })}
-              </h3>
-              <span className="analysis-section-count">{section.clips.length}</span>
-            </div>
-            <div className="analysis-grid">
-              {section.clips.map((clip) => (
-                <article className="analysis-card" key={clip.id}>
-                  <MatchMedia
-                    slug={match.slug}
-                    src={clip.videoFile}
-                    kind="clips"
-                    unsupportedLabel={t('videoUnsupported')}
-                    playLabel={t('playVideo')}
-                    title={L(clip.title)}
-                  />
-                  <div className="clip-card-body">
-                    <div className="clip-card-time">{formatClipTimestamp(clip)}</div>
-                    <div className="clip-card-title">{L(clip.title)}</div>
-                    <div className="clip-card-desc">{L(clip.comments)}</div>
-                    {clip.tags && clip.tags.length > 0 ? (
-                      <div className="clip-tags">
-                        {clip.tags.map((tag) => (
-                          <span className="clip-tag" key={tag}>
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    ) : null}
-                  </div>
-                </article>
-              ))}
-            </div>
-          </section>
-        ))
       )}
     </div>
   );

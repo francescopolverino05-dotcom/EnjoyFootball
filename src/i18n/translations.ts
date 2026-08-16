@@ -308,7 +308,8 @@ const dictionaries = {
     fullSessionHint:
       'Watch the training session recordings (drills and partitelle for this day).',
     clipsSidebarTitle: 'Clip list',
-    clipsHint: 'Clips grouped by theme — Build-up, Progression, Mid block, and more.',
+    clipsHint:
+      'Tactical clip library by phase. Start on Attack, then add Defence, Transition or Set pieces.',
     clipsSearchPlaceholder: 'Search clips by theme, keyword, or minute…',
     clipsSearchEmpty: 'No clips match your search.',
     clipsSearchAria: 'Search clips',
@@ -662,7 +663,7 @@ const dictionaries = {
       'Guarda le registrazioni della sessione (esercitazioni e partitelle del giorno).',
     clipsSidebarTitle: 'Elenco clip',
     clipsHint:
-      'Clip raggruppate per tema — Costruzione, Progressione, Blocco mediano e altro.',
+      'Libreria tattica per fase. Parti da Attacco, poi aggiungi Difesa, Transizione o Piazzati.',
     clipsSearchPlaceholder: 'Cerca clip per tema, parola chiave o minuto…',
     clipsSearchEmpty: 'Nessuna clip corrisponde alla ricerca.',
     clipsSearchAria: 'Cerca clip',
