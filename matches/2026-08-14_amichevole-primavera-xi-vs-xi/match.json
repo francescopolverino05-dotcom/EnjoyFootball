@@ -40,12 +40,856 @@
     "home": 3,
     "away": 1
   },
-  "goals": [],
-  "timeline": [],
+  "goals": [
+    {
+      "minute": 9,
+      "scorer": "Saviano",
+      "teamId": "blu"
+    },
+    {
+      "minute": 30,
+      "scorer": "Saviano",
+      "teamId": "blu"
+    },
+    {
+      "minute": 31,
+      "scorer": "Anic",
+      "teamId": "green"
+    },
+    {
+      "minute": 44,
+      "scorer": "Mané",
+      "teamId": "blu"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 9,
+      "label": {
+        "en": "Saviano 1-0",
+        "it": "Saviano 1-0"
+      },
+      "type": "goal",
+      "teamId": "blu",
+      "positionPercent": 17
+    },
+    {
+      "minute": 30,
+      "label": {
+        "en": "Saviano 2-0",
+        "it": "Saviano 2-0"
+      },
+      "type": "goal",
+      "teamId": "blu",
+      "positionPercent": 45
+    },
+    {
+      "minute": 30,
+      "label": {
+        "en": "2nd half",
+        "it": "2° tempo"
+      },
+      "type": "other",
+      "positionPercent": 48
+    },
+    {
+      "minute": 31,
+      "label": {
+        "en": "Anic 2-1 (2H 1')",
+        "it": "Anic 2-1 (2° 1')"
+      },
+      "type": "goal",
+      "teamId": "green",
+      "positionPercent": 52
+    },
+    {
+      "minute": 44,
+      "label": {
+        "en": "Mané 3-1 (2H 14')",
+        "it": "Mané 3-1 (2° 14')"
+      },
+      "type": "goal",
+      "teamId": "blu",
+      "positionPercent": 72
+    }
+  ],
   "formations": [],
   "dynamics": [],
-  "teamStats": [],
-  "goalkeepers": [],
+  "teamStats": [
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Goals",
+        "it": "Gol"
+      },
+      "home": "3",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Half-time score",
+        "it": "Risultato 1° Tempo"
+      },
+      "home": "2",
+      "away": "0"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "home": "2.35",
+      "away": "1.15"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots",
+        "it": "Tiri"
+      },
+      "home": "14",
+      "away": "9"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots on Target",
+        "it": "Tiri in Porta"
+      },
+      "home": "7",
+      "away": "4"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots on Post",
+        "it": "Pali / Traverse"
+      },
+      "home": "0",
+      "away": "0"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots Blocked",
+        "it": "Tiri Respinti"
+      },
+      "home": "3",
+      "away": "2"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots Wide",
+        "it": "Tiri Fuori"
+      },
+      "home": "4",
+      "away": "3"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "From Penalty Area / on target",
+        "it": "Da Dentro l'Area / in Porta"
+      },
+      "home": "9 / 5 (56%)",
+      "away": "5 / 3 (60%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Outside Penalty Area / on target",
+        "it": "Da Fuori Area / in Porta"
+      },
+      "home": "5 / 2 (40%)",
+      "away": "4 / 1 (25%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Corners",
+        "it": "Calci d'Angolo"
+      },
+      "home": "5",
+      "away": "3"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Free Kicks (all)",
+        "it": "Calci di Punizione (totali)"
+      },
+      "home": "9",
+      "away": "11"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Offsides",
+        "it": "Fuorigioco"
+      },
+      "home": "2",
+      "away": "3"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Fouls / Suffered",
+        "it": "Falli Commessi / Subiti"
+      },
+      "home": "7 / 9",
+      "away": "9 / 7"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Yellow / Red Cards",
+        "it": "Cartellini Gialli / Rossi"
+      },
+      "home": "0 / 0",
+      "away": "0 / 0"
+    },
+    {
+      "category": {
+        "en": "Attacks",
+        "it": "Attacchi"
+      },
+      "name": {
+        "en": "Total attacks / with shots",
+        "it": "Attacchi Totali / con Tiri"
+      },
+      "home": "48 / 14 (29%)",
+      "away": "42 / 9 (21%)"
+    },
+    {
+      "category": {
+        "en": "Attacks",
+        "it": "Attacchi"
+      },
+      "name": {
+        "en": "Counterattacks / with shots",
+        "it": "Contropiedi / con Tiri"
+      },
+      "home": "11 / 4 (36%)",
+      "away": "8 / 2 (25%)"
+    },
+    {
+      "category": {
+        "en": "Attacks",
+        "it": "Attacchi"
+      },
+      "name": {
+        "en": "Free-kick attacks / with shots",
+        "it": "Punizioni Offensive / con Tiri"
+      },
+      "home": "3 / 1",
+      "away": "4 / 1"
+    },
+    {
+      "category": {
+        "en": "Attacks",
+        "it": "Attacchi"
+      },
+      "name": {
+        "en": "Corner attacks / with shots",
+        "it": "Angoli Offensivi / con Tiri"
+      },
+      "home": "5 / 1",
+      "away": "3 / 1"
+    },
+    {
+      "category": {
+        "en": "Attacks",
+        "it": "Attacchi"
+      },
+      "name": {
+        "en": "Left flank attacks (xG)",
+        "it": "Attacchi Fascia Sinistra (xG)"
+      },
+      "home": "14 (0.42)",
+      "away": "12 (0.22)"
+    },
+    {
+      "category": {
+        "en": "Attacks",
+        "it": "Attacchi"
+      },
+      "name": {
+        "en": "Central attacks (xG)",
+        "it": "Attacchi Centrali (xG)"
+      },
+      "home": "20 (1.28)",
+      "away": "16 (0.68)"
+    },
+    {
+      "category": {
+        "en": "Attacks",
+        "it": "Attacchi"
+      },
+      "name": {
+        "en": "Right flank attacks (xG)",
+        "it": "Attacchi Fascia Destra (xG)"
+      },
+      "home": "14 (0.65)",
+      "away": "14 (0.25)"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Sliding tackles",
+        "it": "Scivolate"
+      },
+      "home": "8",
+      "away": "7"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Interceptions",
+        "it": "Intercettazioni"
+      },
+      "home": "14",
+      "away": "11"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Clearances",
+        "it": "Spazzate"
+      },
+      "home": "18",
+      "away": "15"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "PPDA",
+        "it": "PPDA"
+      },
+      "home": "10.8",
+      "away": "12.4"
+    },
+    {
+      "category": {
+        "en": "Transitions",
+        "it": "Transizioni"
+      },
+      "name": {
+        "en": "Losses (total)",
+        "it": "Palle Perse Totali"
+      },
+      "home": "68",
+      "away": "74"
+    },
+    {
+      "category": {
+        "en": "Transitions",
+        "it": "Transizioni"
+      },
+      "name": {
+        "en": "Losses low / mid / high",
+        "it": "Palle Perse Basso / Medio / Alto"
+      },
+      "home": "12 / 28 / 28",
+      "away": "18 / 32 / 24"
+    },
+    {
+      "category": {
+        "en": "Transitions",
+        "it": "Transizioni"
+      },
+      "name": {
+        "en": "Losses leading to shot against",
+        "it": "Palle Perse con Tiro Subito"
+      },
+      "home": "3",
+      "away": "5"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Duels / won",
+        "it": "Duelli Totali / Vinti"
+      },
+      "home": "98 / 54 (55%)",
+      "away": "98 / 44 (45%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Offensive duels / won",
+        "it": "Duelli Offensivi / Vinti"
+      },
+      "home": "42 / 23 (55%)",
+      "away": "40 / 18 (45%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Defensive duels / won",
+        "it": "Duelli Difensivi / Vinti"
+      },
+      "home": "40 / 22 (55%)",
+      "away": "42 / 19 (45%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Loose-ball duels / won",
+        "it": "Contrasti su Palla Persa / Vinti"
+      },
+      "home": "16 / 9 (56%)",
+      "away": "16 / 7 (44%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Aerial duels / won",
+        "it": "Duelli Aerei / Vinti"
+      },
+      "home": "20 / 11 (55%)",
+      "away": "20 / 9 (45%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Dribbles / successful",
+        "it": "Dribbling / Riusciti"
+      },
+      "home": "15 / 9 (60%)",
+      "away": "12 / 6 (50%)"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "Possession % (total)",
+        "it": "Possesso Palla % (Totale)"
+      },
+      "home": "54%",
+      "away": "46%"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "Possession % (1st half)",
+        "it": "Possesso Palla % (1° Tempo)"
+      },
+      "home": "57%",
+      "away": "43%"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "Possession % (2nd half)",
+        "it": "Possesso Palla % (2° Tempo)"
+      },
+      "home": "51%",
+      "away": "49%"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Total passes / accurate",
+        "it": "Passaggi Totali / Riusciti"
+      },
+      "home": "359 / 298 (83%)",
+      "away": "305 / 238 (78%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Forward / accurate",
+        "it": "Passaggi in Avanti / Riusciti"
+      },
+      "home": "125 / 94 (75%)",
+      "away": "112 / 78 (70%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Back / accurate",
+        "it": "Passaggi all'Indietro / Riusciti"
+      },
+      "home": "78 / 74 (95%)",
+      "away": "68 / 62 (91%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Lateral / accurate",
+        "it": "Passaggi Laterali / Riusciti"
+      },
+      "home": "156 / 130 (83%)",
+      "away": "125 / 98 (78%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Progressive passes / accurate",
+        "it": "Passaggi Progressivi / Riusciti"
+      },
+      "home": "28 / 20 (71%)",
+      "away": "24 / 15 (63%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Long passes / accurate",
+        "it": "Lanci Lunghi / Riusciti"
+      },
+      "home": "27 / 18 (67%)",
+      "away": "25 / 14 (56%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "To final third / accurate",
+        "it": "Passaggi sulla Trequarti / Riusciti"
+      },
+      "home": "44 / 31 (70%)",
+      "away": "36 / 22 (61%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "To penalty area / accurate",
+        "it": "Passaggi in Area di Rigore / Riusciti"
+      },
+      "home": "18 / 9 (50%)",
+      "away": "13 / 6 (46%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Through passes / accurate",
+        "it": "Passaggi Filtranti / Riusciti"
+      },
+      "home": "4 / 2 (50%)",
+      "away": "3 / 1 (33%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Crosses / accurate (low/high/blocked)",
+        "it": "Cross / Riusciti (basso/alto/bloccato)"
+      },
+      "home": "14 / 5 (6/5/3)",
+      "away": "11 / 3 (5/4/2)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Inaccurate Pass %",
+        "it": "Percentuale Passaggi Sbagliati %"
+      },
+      "home": "17%",
+      "away": "22%"
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Assists (goal)",
+        "it": "Assist (gol)"
+      },
+      "home": "2",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Opportunity Score",
+        "it": "Indice Opportunità"
+      },
+      "home": "n/c",
+      "away": "n/c"
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Offensive Triangles",
+        "it": "Triangoli Offensivi"
+      },
+      "home": "n/c",
+      "away": "n/c"
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Defensive Triangles",
+        "it": "Triangoli Difensivi"
+      },
+      "home": "n/c",
+      "away": "n/c"
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Compact Defense %",
+        "it": "Difesa Compatta %"
+      },
+      "home": "n/c",
+      "away": "n/c"
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Stretched Defense %",
+        "it": "Difesa Disunita %"
+      },
+      "home": "n/c",
+      "away": "n/c"
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Compact or Stretched",
+        "it": "Stato di Compattezza"
+      },
+      "home": {
+        "en": "Più compatta (nel 1°T)",
+        "it": "Più compatta (nel 1°T)"
+      },
+      "away": {
+        "en": "Più allungata (in pressing)",
+        "it": "Più allungata (in pressing)"
+      }
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Pressing Shape",
+        "it": "Sistema di Pressing"
+      },
+      "home": {
+        "en": "Blocco medio-alto / reattivo",
+        "it": "Blocco medio-alto / reattivo"
+      },
+      "away": {
+        "en": "Alto / aggressivo su prima linea",
+        "it": "Alto / aggressivo su prima linea"
+      }
+    }
+  ],
+  "goalkeepers": [
+    {
+      "name": "GK Blu (1st half)",
+      "minutes": 42,
+      "team": {
+        "en": "Napoli Blu (1st half)",
+        "it": "Napoli Blu (1° Tempo)"
+      },
+      "period": {
+        "en": "1st Half",
+        "it": "1° Tempo"
+      },
+      "jerseyColor": {
+        "en": "Blue",
+        "it": "Blu"
+      },
+      "shotsFaced": 1,
+      "shotsOnTargetFaced": 1,
+      "saves": 1,
+      "goalsConceded": 0,
+      "savePercentage": {
+        "en": "100.0%",
+        "it": "100,0%"
+      },
+      "colorClass": "blue"
+    },
+    {
+      "name": "GK Blu (2nd half)",
+      "minutes": 11,
+      "team": {
+        "en": "Napoli Blu (2nd half)",
+        "it": "Napoli Blu (2° Tempo)"
+      },
+      "period": {
+        "en": "2nd Half",
+        "it": "2° Tempo"
+      },
+      "jerseyColor": {
+        "en": "Blue",
+        "it": "Blu"
+      },
+      "shotsFaced": 3,
+      "shotsOnTargetFaced": 3,
+      "saves": 2,
+      "goalsConceded": 1,
+      "savePercentage": {
+        "en": "66.7%",
+        "it": "66,7%"
+      },
+      "colorClass": "blue"
+    },
+    {
+      "name": "GK Verde",
+      "minutes": 53,
+      "team": {
+        "en": "Napoli Green",
+        "it": "Napoli Verde"
+      },
+      "period": {
+        "en": "Full match",
+        "it": "Intera gara"
+      },
+      "jerseyColor": {
+        "en": "Green",
+        "it": "Verde"
+      },
+      "shotsFaced": 7,
+      "shotsOnTargetFaced": 7,
+      "saves": 4,
+      "goalsConceded": 3,
+      "savePercentage": {
+        "en": "57.1%",
+        "it": "57,1%"
+      },
+      "colorClass": "green"
+    }
+  ],
   "clips": [],
   "analysisVideos": [],
   "vimeo": {
@@ -56,8 +900,8 @@
   "video": {
     "fullMatch": "https://vimeo.com/1218249138/d75459b86c",
     "notes": {
-      "en": "Full match hosted on Vimeo.",
-      "it": "Partita intera su Vimeo."
+      "en": "Full match on Vimeo (FootGo / XootGo). Goals verified from scoreboard + staff. Team/GK stats video-coded via Antigravity (Portici schema) — approximate, not Opta/Wyscout.",
+      "it": "Partita intera su Vimeo (FootGo / XootGo). Gol verificati da tabellone + staff. Statistiche squadra/portieri da video (Antigravity, schema Portici) — approssimative, non Opta/Wyscout."
     }
   }
 }
