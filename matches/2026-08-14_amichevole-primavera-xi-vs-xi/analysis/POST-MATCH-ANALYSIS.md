@@ -88,10 +88,8 @@ Short bullets for `reflection.wentWell`:
 4. Organised build-up broke lines; defenders dictated fluid/direct play; all goals from build-up.  
 5. High volume of chances / goal threat across the game.  
 6. High-defence triggers clearer in transition; good Blu spell pinning Verde and forcing errors.  
-7. Mid-block composed; shifting consistent with Portici.  
-8. Better feel for when to counter vs consolidate shape.  
-9. GK–team communication out of possession improving (Magliano early signs).  
-10. Wing-backs outstanding work rate off the ball.
+7. Better feel for when to counter vs consolidate shape.  
+8. GK–team communication out of possession improving (Magliano early signs).
 
 ---
 
@@ -105,8 +103,7 @@ Short bullets for `reflection.evenBetterIf`:
 4. When build-up is about to break, keep the line high and squeeze space so the opponent can’t play through.  
 5. When countering, more direct risk-taking — same standard as organised build-up.  
 6. Spinelli: see further, play more direct vs man-to-man (use Saviano’s physical profile); stay more onto players after errors.  
-7. Wing-backs on the ball: decide earlier (drive, cross, isolate) — Melnyk drive/cross vs tuck-back; Zappalá progress vs early cut-inside.  
-8. Pre-receive scanning for wing-backs (Branchizio’s delay model); striker–10–WB communication on runs into space.
+7. Wing-backs on the ball: decide earlier (drive, cross, isolate) — Melnyk drive/cross vs tuck-back; Zappalá progress vs early cut-inside.
 
 ---
 
@@ -158,13 +155,6 @@ Short bullets for `reflection.evenBetterIf`:
       }
     },
     {
-      "id": "wwb-07",
-      "text": {
-        "en": "Mid-block composed; side-to-side shifting consistent with Portici.",
-        "it": "Blocco medio composto; spostamenti laterali in continuità con Portici."
-      }
-    },
-    {
       "id": "wwb-08",
       "text": {
         "en": "Clearer decisions on when to counter-attack vs consolidate shape.",
@@ -176,13 +166,6 @@ Short bullets for `reflection.evenBetterIf`:
       "text": {
         "en": "GK–outfield communication out of possession improving (Magliano early progress).",
         "it": "Comunicazione portieri–reparto a palla persa in miglioramento (primi segnali da Magliano)."
-      }
-    },
-    {
-      "id": "wwb-10",
-      "text": {
-        "en": "Wing-backs among the hardest workers off the ball.",
-        "it": "I quinti tra i più duri al lavoro senza palla."
       }
     }
   ],
@@ -234,13 +217,6 @@ Short bullets for `reflection.evenBetterIf`:
       "text": {
         "en": "Wing-backs on the ball: clearer decisions — Melnyk drive/cross vs tuck-back; Zappalá progress forward vs early cut-inside.",
         "it": "Quinti in possesso: decisioni più chiare — Melnyk spingere/cross vs tornare indietro; Zappalá progressione vs taglio dentro precoce."
-      }
-    },
-    {
-      "id": "ebi-08",
-      "text": {
-        "en": "Pre-receive scanning for wing-backs (Branchizio delay model) and clearer striker–10–WB calls into space.",
-        "it": "Scansione pre-ricezione per i quinti (modello pausa Branchizio) e chiamate punta–n.10–quinto sugli spazi."
       }
     }
   ]
