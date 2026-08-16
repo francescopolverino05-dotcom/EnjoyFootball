@@ -19,7 +19,30 @@
     "it": "Settimana del 10 ago 2026 — seduta Partitella (09:00–11:00). Piano seduta allegato."
   },
   "video": {
-    "parts": []
+    "parts": [
+      {
+        "id": "vimeo-1218632056",
+        "title": {
+          "en": "Possesso",
+          "it": "Possesso"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1218632056/e9dc4be715",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "fullSession": "https://vimeo.com/1218632056/e9dc4be715",
+    "notes": {
+      "en": "Session recordings on Vimeo (1 videos).",
+      "it": "Registrazioni sessione su Vimeo (1 video)."
+    }
   },
   "clips": [],
   "analysisVideos": [],
@@ -51,5 +74,10 @@
     "clips": [],
     "trainingDesign": null,
     "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30230982",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30230982",
+    "lastSyncedAt": "2026-08-16T08:23:03.501Z"
   }
 }
