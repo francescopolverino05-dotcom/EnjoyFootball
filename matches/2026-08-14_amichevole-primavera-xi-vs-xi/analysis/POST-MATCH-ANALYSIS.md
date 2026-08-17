@@ -117,56 +117,56 @@ Short bullets for `reflection.evenBetterIf`:
       "id": "wwb-01",
       "text": {
         "en": "No. 10s — especially Anic — found pockets then attacked channels; creative, insisting off-ball movement in build-up (Rovetini same idea).",
-        "it": "I n.10 — soprattutto Anic — trovavano le tasche e attaccavano i canali; movimento senza palla creativo e insistente in costruzione (stessa idea Rovetini)."
+        "it": "N.10 (Anic; stessa idea Rovetini): smarcamento tra le linee e in profondità; mobilità in costruzione."
       }
     },
     {
       "id": "wwb-02",
       "text": {
         "en": "Saviano and Mané staying high on the line created space for the 10s; positioning and off-ball connection are developing well.",
-        "it": "Saviano e Mané alti in linea creavano spazio per i n.10; posizionamento e connessione senza palla in crescita."
+        "it": "Saviano e Mané occupano la profondità: spazio per i n.10; occupazione razionale in crescita."
       }
     },
     {
       "id": "wwb-03",
       "text": {
         "en": "Progression with fewer, quality passes; Branchizio’s diagonals into 9/10 and his delay-to-scan under the sole.",
-        "it": "Progressione con pochi passaggi di qualità; diagonali di Branchizio su 9/10 e pausa sotto la suola per leggere."
+        "it": "Sviluppo con pochi passaggi di qualità; diagonali di Branchizio su 9/10 e temporizzazione per attirare pressione."
       }
     },
     {
       "id": "wwb-04",
       "text": {
         "en": "Organised build-up broke lines; defenders often directed play; all goals came from build-up.",
-        "it": "Costruzione organizzata che spezzava le linee; i difensori spesso dirigevano il gioco; tutti i gol da costruzione."
+        "it": "Costruzione che supera le linee; i difensori dirigono il gioco; tutti i gol da costruzione."
       }
     },
     {
       "id": "wwb-05",
       "text": {
         "en": "High chance volume and goal threat across both sides.",
-        "it": "Alto volume di occasioni e pericolosità da entrambe le parti."
+        "it": "Tante occasioni da gol da entrambe le parti."
       }
     },
     {
       "id": "wwb-06",
       "text": {
         "en": "High-defence triggers clearer in transition; Blu pinned Verde and forced errors in a strong spell.",
-        "it": "Trigger in difesa alta più chiari in transizione; momento forte del Blu che chiudeva il Verde e forzava errori."
+        "it": "Triggers pressing nel blocco alto più chiari in transizione negativa; densità e riaggressione del Blu sul Verde."
       }
     },
     {
       "id": "wwb-08",
       "text": {
         "en": "Clearer decisions on when to counter-attack vs consolidate shape.",
-        "it": "Decisioni più chiare su quando contropiede e quando consolidare."
+        "it": "Transizione positiva: più chiaro se ripartire o consolidare."
       }
     },
     {
       "id": "wwb-09",
       "text": {
         "en": "GK–outfield communication out of possession improving (Magliano early progress).",
-        "it": "Comunicazione portieri–reparto a palla persa in miglioramento (primi segnali da Magliano)."
+        "it": "Comunicazione portieri–reparto in transizione negativa in miglioramento (Magliano)."
       }
     }
   ],
@@ -175,56 +175,56 @@ Short bullets for `reflection.evenBetterIf`:
       "id": "ebi-01",
       "text": {
         "en": "Stronger attacking communication (esp. striker ↔ 10s): call the ball so deep drops and channel runs don’t collide.",
-        "it": "Comunicazione offensiva più forte (specie punta ↔ n.10): chiamare palla così abbassamenti e tagli non si sovrappongono."
+        "it": "Comunicazione punta–n.10: chiamare palla, così appoggio e profondità non si sovrappongono."
       }
     },
     {
       "id": "ebi-02",
       "text": {
         "en": "Better run timing / body shape vs the line from Saviano and Mané — fewer offsides, more legal goals.",
-        "it": "Timing / corpo rispetto alla linea da Saviano e Mané — meno fuorigioco, più gol validi."
+        "it": "Tempi coordinati di Saviano e Mané nell’attacco della profondità — meno fuorigioco, più gol validi."
       }
     },
     {
       "id": "ebi-03",
       "text": {
         "en": "In transition, scan and take the surprise switch (e.g. Chiummariello to free De Stefano) instead of always recycling easy.",
-        "it": "In transizione, scansione e cambio lato a sorpresa (es. Chiummariello su De Stefano libero) invece di sempre riciclare facile."
+        "it": "In transizione positiva: lettura e cambio lato (es. Chiummariello su De Stefano libero) invece del passaggio facile."
       }
     },
     {
       "id": "ebi-04",
       "text": {
         "en": "When build-up is about to break, keep the line high and squeeze space so they can’t play through.",
-        "it": "Quando la costruzione sta per rompersi, tenere la linea alta e soffocare lo spazio per non farli uscire."
+        "it": "A costruzione che si rompe: accorciare e chiudere le linee (gioco preventivo) per impedire la progressione."
       }
     },
     {
       "id": "ebi-05",
       "text": {
         "en": "When the decision is to counter, more direct risk-taking — same standard as organised build-up.",
-        "it": "Quando si decide di contropiede, più rischio e verticalità — stesso standard della costruzione."
+        "it": "Se si riparte: più profondità — stesso standard della costruzione."
       }
     },
     {
       "id": "ebi-06",
       "text": {
         "en": "Spinelli: see further and play more direct vs man-to-man (use Saviano); stay more onto players after mistakes.",
-        "it": "Spinelli: vedere più lontano e giocare più diretto vs uomo (usare Saviano); più sopra i giocatori dopo gli errori."
+        "it": "Spinelli: più profondità vs marcatura a uomo (usare Saviano); più sopra i giocatori dopo gli errori."
       }
     },
     {
       "id": "ebi-07",
       "text": {
         "en": "Wing-backs on the ball: clearer decisions — Melnyk drive/cross vs tuck-back; Zappalá progress forward vs early cut-inside.",
-        "it": "Quinti in possesso: decisioni più chiare — Melnyk spingere/cross vs tornare indietro; Zappalá progressione vs taglio dentro precoce."
+        "it": "Quinti in possesso: Melnyk condurre/cross vs rientro; Zappalá sviluppo vs rientro prematuro."
       }
     },
     {
       "id": "ebi-09",
       "text": {
         "en": "Set pieces — clearer ideas and rehearsed routines so we are more efficient; prepare strategies ahead of the next friendly.",
-        "it": "Piazzati — idee più chiare e schemi allenati per più efficienza; preparare strategie già per la prossima amichevole."
+        "it": "Palle inattive: idee e schemi più chiari; preparare strategie per la prossima amichevole."
       }
     }
   ]
