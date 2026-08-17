@@ -1,0 +1,58 @@
+{
+  "id": "2026-08-18_martedi",
+  "slug": "2026-08-18_martedi",
+  "date": "2026-08-18",
+  "title": {
+    "en": "Tuesday training — Strength",
+    "it": "Martedì — Forza"
+  },
+  "focus": {
+    "en": "Strength test / Technical activation / Tactical possession 7v5+5v5 / 11v11 (50m)",
+    "it": "Test di forza / Attivazione tecnica / Possesso tattico 7vs5+5vs5 / Partita 11vs11 (50m)"
+  },
+  "sessionType": "strength",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "location": {
+    "en": "Cercola",
+    "it": "Cercola"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Day 19 — Tue 18 Aug 2026. Strength session at Cercola (09:00). Session plan attached.",
+    "it": "Giorno 19 — Mar 18 ago 2026. Seduta forza a Cercola (09:00). Piano seduta allegato."
+  },
+  "video": {
+    "parts": []
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-18",
+      "title": {
+        "en": "Session plan — Tue 18 Aug",
+        "it": "Piano seduta — Mar 18 ago"
+      },
+      "description": {
+        "en": "Tuesday strength session plan (2 MARTEDI.pdf).",
+        "it": "Piano seduta di martedì forza (2 MARTEDI.pdf)."
+      },
+      "videoFile": "Session_Plan_2026-08-18.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "strength"
+      ]
+    }
+  ],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  }
+}
