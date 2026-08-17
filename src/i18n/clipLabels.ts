@@ -99,14 +99,7 @@ export const MATCH_CLIP_GROUP_IDS = [
 export type MatchClipGroupId = (typeof MATCH_CLIP_GROUP_IDS)[number];
 
 export const MATCH_CLIP_GROUPS: Record<MatchClipGroupId, ClipLabelId[]> = {
-  attack: [
-    'build-up',
-    'progress',
-    'final-third',
-    'chance',
-    'individual',
-    'tactical-pattern',
-  ],
+  attack: ['build-up', 'progress'],
   defence: ['high-defence', 'mid-block', 'own-third', 'pressing', 'gk-action'],
   transition: ['offensive-transition', 'defensive-transition'],
   setPieces: [
@@ -120,6 +113,14 @@ export const MATCH_CLIP_GROUPS: Record<MatchClipGroupId, ClipLabelId[]> = {
     'set-piece',
   ],
 };
+
+/** Attack extras — only listed when a match actually has clips in that bucket. */
+export const MATCH_CLIP_OPTIONAL_SECTIONS: ClipLabelId[] = [
+  'final-third',
+  'chance',
+  'individual',
+  'tactical-pattern',
+];
 
 /** Preferred display order for Clips sections (within groups). */
 export const ANALYSIS_SECTION_ORDER: ClipLabelId[] = [

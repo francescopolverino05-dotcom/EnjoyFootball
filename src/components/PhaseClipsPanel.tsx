@@ -7,6 +7,7 @@ import {
   HIDDEN_CLIP_SECTIONS,
   MATCH_CLIP_GROUP_IDS,
   MATCH_CLIP_GROUP_LABEL_KEYS,
+  MATCH_CLIP_OPTIONAL_SECTIONS,
   matchClipGroupFor,
   type ClipLabelId,
   type MatchClipGroupId,
@@ -44,6 +45,11 @@ export default function PhaseClipsPanel({
 
   const sectionOrder = useMemo(() => {
     const order = [...ANALYSIS_SECTION_ORDER];
+    const progressIdx = order.indexOf('progress');
+    const insertAt = progressIdx >= 0 ? progressIdx + 1 : order.length;
+    for (const [i, id] of MATCH_CLIP_OPTIONAL_SECTIONS.entries()) {
+      if (!order.includes(id)) order.splice(insertAt + i, 0, id);
+    }
     if (includeOtherSection) order.push('other');
     return order;
   }, [includeOtherSection]);
@@ -73,7 +79,8 @@ export default function PhaseClipsPanel({
         if (id === 'other') return includeOtherSection && activeGroups.has('attack');
         // Generic catch-all — only show when clips were tagged `set-piece`.
         if (
-          id === 'set-piece' &&
+          (id === 'set-piece' ||
+            MATCH_CLIP_OPTIONAL_SECTIONS.includes(id)) &&
           (clipsBySectionId.get(id)?.length ?? 0) === 0
         ) {
           return false;
