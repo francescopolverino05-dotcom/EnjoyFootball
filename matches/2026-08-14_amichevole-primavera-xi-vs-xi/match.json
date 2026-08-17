@@ -1814,11 +1814,28 @@
       ]
     }
   ],
-  "analysisVideos": [],
+  "analysisVideos": [
+    {
+      "id": "vimeo-1219042066",
+      "title": {
+        "en": "Post-match analysis",
+        "it": "Analisi post-partita"
+      },
+      "description": {
+        "en": "Post-match video analysis of Napoli Blu vs Napoli Green.",
+        "it": "Analisi video post-partita di Napoli Blu vs Napoli Verde."
+      },
+      "videoFile": "https://vimeo.com/1219042066/abd70a0a86",
+      "tags": [
+        "vimeo",
+        "analysis"
+      ]
+    }
+  ],
   "vimeo": {
     "folderId": "30218436",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30218436",
-    "lastSyncedAt": "2026-08-17T19:59:46.381Z"
+    "lastSyncedAt": "2026-08-17T21:38:00.298Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1218249138/d75459b86c",
