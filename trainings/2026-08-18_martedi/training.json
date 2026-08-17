@@ -52,7 +52,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-18",
+        "title": {
+          "en": "GK design — Upper limbs, footwork & diagonals",
+          "it": "Scheda portieri — Arti superiori, podalico e diagonali"
+        },
+        "description": {
+          "en": "All. N°19 — 18 Aug 2026. Upper-limb work, footwork (podalico), diagonals.",
+          "it": "All. N°19 — 18 ago 2026. Lavoro arti superiori, podalico, diagonali."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-18_Arti_Superiori_Podalico_Diagonali.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   }
 }

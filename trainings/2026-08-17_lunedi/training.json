@@ -88,7 +88,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-17",
+        "title": {
+          "en": "GK design — Plyometrics, footwork & positional shifts",
+          "it": "Scheda portieri — Pliometria, podalico e spostamenti su posizioni"
+        },
+        "description": {
+          "en": "All. N°18 — 17 Aug 2026. Plyometrics, footwork (podalico), shifts onto positions. Updated sheet from the GK coach.",
+          "it": "All. N°18 — 17 ago 2026. Pliometria, podalico, spostamenti su posizioni. Scheda aggiornata dal preparatore portieri."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-17_Pliometria_Podalico_Spostamenti_Su_Posizioni.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "vimeo": {
