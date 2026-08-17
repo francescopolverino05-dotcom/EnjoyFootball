@@ -15,15 +15,34 @@
   "endTime": "11:00",
   "status": "published",
   "notes": {
-    "en": "Day 18 — Week of 17 Aug 2026. Media and session plan to follow.",
-    "it": "Giorno 18 — Settimana del 17 ago 2026. Media e piano seduta in arrivo."
+    "en": "Day 18 — Week of 17 Aug 2026. Strength session (09:00–11:00). Session plan attached.",
+    "it": "Giorno 18 — Settimana del 17 ago 2026. Seduta Forza (09:00–11:00). Piano seduta allegato."
   },
   "video": {
     "parts": []
   },
   "clips": [],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-17",
+      "title": {
+        "en": "Session plan — Mon 17 Aug",
+        "it": "Piano seduta — Lun 17 ago"
+      },
+      "description": {
+        "en": "Monday strength session plan (CamScanner 17-08-2026).",
+        "it": "Piano seduta di lunedì forza (CamScanner 17-08-2026)."
+      },
+      "videoFile": "Session_Plan_2026-08-17.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "strength"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": []
