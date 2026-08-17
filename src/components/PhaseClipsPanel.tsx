@@ -71,6 +71,13 @@ export default function PhaseClipsPanel({
     return sectionOrder
       .filter((id) => {
         if (id === 'other') return includeOtherSection && activeGroups.has('attack');
+        // Generic catch-all — only show when clips were tagged `set-piece`.
+        if (
+          id === 'set-piece' &&
+          (clipsBySectionId.get(id)?.length ?? 0) === 0
+        ) {
+          return false;
+        }
         return activeGroups.has(matchClipGroupFor(id));
       })
       .map((id) => ({

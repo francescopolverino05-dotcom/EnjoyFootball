@@ -14,6 +14,13 @@ export const CLIP_LABEL_IDS = [
   'chance',
   'pressing',
   'set-piece',
+  'attacking-corners',
+  'defending-corners',
+  'attacking-free-kicks',
+  'defending-free-kicks',
+  'attacking-throw-ins',
+  'defending-throw-ins',
+  'kickoffs',
   'individual',
   'tactical-pattern',
   'gk-action',
@@ -41,6 +48,31 @@ export const CLIP_LABELS: Record<ClipLabelId, Localized> = {
   chance: { en: 'Chance', it: 'Occasione' },
   pressing: { en: 'Pressing', it: 'Pressing' },
   'set-piece': { en: 'Set piece', it: 'Calcio piazzato' },
+  'attacking-corners': {
+    en: 'Attacking corners',
+    it: 'Calci d’angolo offensivi',
+  },
+  'defending-corners': {
+    en: 'Defending corners',
+    it: 'Calci d’angolo difensivi',
+  },
+  'attacking-free-kicks': {
+    en: 'Attacking free kicks',
+    it: 'Punizioni offensive',
+  },
+  'defending-free-kicks': {
+    en: 'Defending free kicks',
+    it: 'Punizioni difensive',
+  },
+  'attacking-throw-ins': {
+    en: 'Attacking throw-ins',
+    it: 'Rimesse laterali offensive',
+  },
+  'defending-throw-ins': {
+    en: 'Defending throw-ins',
+    it: 'Rimesse laterali difensive',
+  },
+  kickoffs: { en: 'Kickoffs', it: 'Calci d’inizio' },
   individual: { en: 'Individual action', it: 'Azione individuale' },
   'tactical-pattern': { en: 'Tactical pattern', it: 'Schema tattico' },
   'gk-action': { en: 'Goalkeeper action', it: 'Azione portiere' },
@@ -77,7 +109,16 @@ export const MATCH_CLIP_GROUPS: Record<MatchClipGroupId, ClipLabelId[]> = {
   ],
   defence: ['high-defence', 'mid-block', 'own-third', 'pressing', 'gk-action'],
   transition: ['offensive-transition', 'defensive-transition'],
-  setPieces: ['set-piece'],
+  setPieces: [
+    'attacking-corners',
+    'defending-corners',
+    'attacking-free-kicks',
+    'defending-free-kicks',
+    'attacking-throw-ins',
+    'defending-throw-ins',
+    'kickoffs',
+    'set-piece',
+  ],
 };
 
 /** Preferred display order for Clips sections (within groups). */
