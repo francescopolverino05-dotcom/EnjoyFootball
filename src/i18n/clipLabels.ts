@@ -120,6 +120,8 @@ export const MATCH_CLIP_OPTIONAL_SECTIONS: ClipLabelId[] = [
   'chance',
   'individual',
   'tactical-pattern',
+  'pressing',
+  'gk-action',
 ];
 
 /** Preferred display order for Clips sections (within groups). */
