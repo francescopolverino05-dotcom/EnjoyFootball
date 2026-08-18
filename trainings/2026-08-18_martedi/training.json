@@ -23,7 +23,81 @@
     "it": "Giorno 19 — Mar 18 ago 2026. Seduta forza a Cercola (09:00). Piano seduta allegato."
   },
   "video": {
-    "parts": []
+    "parts": [
+      {
+        "id": "vimeo-1219171779",
+        "title": {
+          "en": "Linea DIfensiva",
+          "it": "Linea DIfensiva"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1219171779/1a9c42310e",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1219171780",
+        "title": {
+          "en": "Convertire l'Attacco",
+          "it": "Convertire l'Attacco"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1219171780/58daf22b20",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1219171782",
+        "title": {
+          "en": "Partitella",
+          "it": "Partitella"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1219171782/2b759f0915",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1219171781",
+        "title": {
+          "en": "Attacco v Difesa",
+          "it": "Attacco v Difesa"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1219171781/262ada6df7",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "fullSession": "https://vimeo.com/1219171779/1a9c42310e",
+    "notes": {
+      "en": "Session recordings on Vimeo (4 videos).",
+      "it": "Registrazioni sessione su Vimeo (4 video)."
+    }
   },
   "clips": [],
   "analysisVideos": [],
@@ -73,5 +147,10 @@
       }
     ],
     "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30245003",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30245003",
+    "lastSyncedAt": "2026-08-18T10:00:31.354Z"
   }
 }
