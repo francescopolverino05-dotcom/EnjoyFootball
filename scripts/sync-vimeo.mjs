@@ -10,6 +10,7 @@
  *   npm run sync-vimeo -- --training 2026-08-03_lunedi
  *   npm run sync-vimeo-training -- --slug 2026-08-03_lunedi
  *   npm run sync-vimeo -- --training 2026-08-03_lunedi --folder 30099288
+ *   Optional training.json → vimeo.gkFolderId for a separate GK folder (merged in one sync).
  *
  * Match classification (by video / parent-folder name):
  *   - "full match" / "partita intera" → video.fullMatch
@@ -401,6 +402,9 @@ function isGoalkeeperTrainingVideo(name, parentFolderName = '') {
   if (/^(gk|gks|goalkeeper|goalkeepers|portiere|portieri)(\b|[_\s-]|$)/i.test(p)) {
     return true;
   }
+  if (/\b(goalkeeper|goalkeepers|portiere|portieri)\b/i.test(p)) {
+    return true;
+  }
   if (/^(gk|goalkeeper|goalkeepers|portiere|portieri)\b/i.test(n)) {
     return true;
   }
@@ -687,10 +691,21 @@ async function syncTraining(token, slug, folderOverride) {
     folderUrl: training.vimeo?.folderUrl || defaultVimeoFolderUrl(folderId),
   };
 
-  const folder = await vimeoGet(token, `/me/projects/${folderId}`);
-  console.log(`Folder: ${folder.name} (#${folderId})`);
-
-  const listed = await listFolderVideos(token, folderId);
+  const gkFolderId = String(training.vimeo?.gkFolderId || '').trim();
+  const folderIds = [folderId, gkFolderId].filter(Boolean);
+  const listed = [];
+  const seenVideoIds = new Set();
+  for (const id of folderIds) {
+    const folder = await vimeoGet(token, `/me/projects/${id}`);
+    console.log(`Folder: ${folder.name} (#${id})`);
+    const batch = await listFolderVideos(token, id, folder.name);
+    for (const entry of batch) {
+      const vid = videoNumericId(entry.video);
+      if (vid && seenVideoIds.has(vid)) continue;
+      if (vid) seenVideoIds.add(vid);
+      listed.push(entry);
+    }
+  }
   console.log(`Videos found: ${listed.length}`);
 
   if (listed.length === 0) {
