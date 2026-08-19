@@ -1800,9 +1800,44 @@
         }
       ]
     }
+    ,
+    {
+      "date": "2026-08-18",
+      "kind": "training",
+      "trainingSlug": "2026-08-18_martedi",
+      "matchSlug": null,
+      "playersPresent": 20,
+      "playersAnswered": 20,
+      "avgTqr": 14.75,
+      "players": [
+        { "playerSlug": "anic-ivan",                      "excelName": "Anic Ivan",                      "tqr": 17 },
+        { "playerSlug": "santella-alessandro",            "excelName": "Santella Alessandro",            "tqr": 18 },
+        { "playerSlug": "branchizio-agostino",            "excelName": "Branchizio Agostino",            "tqr": 15 },
+        { "playerSlug": "candela-ivan-giovanni",          "excelName": "Candela Ivan Giovanni",          "tqr": 15 },
+        { "playerSlug": "castaldi-ciro-junior",           "excelName": "Castaldi Ciro Junior",           "tqr": 15 },
+        { "playerSlug": "chiummariello-andrea",           "excelName": "Chiummariello Andrea",           "tqr": 14 },
+        { "playerSlug": "de-stefano-francesco",           "excelName": "De Stefano Francesco",           "tqr": 14 },
+        { "playerSlug": "esposito-luigi",                 "excelName": "Esposito Luigi",                 "tqr": 15 },
+        { "playerSlug": "favicchio-elia",                 "excelName": "Favicchio Elia",                 "tqr": 14 },
+        { "playerSlug": "lieto-claudio",                  "excelName": "Lieto Claudio",                  "tqr": 14 },
+        { "playerSlug": "lepre-giuseppe",                 "excelName": "Lepre Giuseppe",                 "tqr": 15 },
+        { "playerSlug": "mane-mohamed-seick",             "excelName": "Mane Mohamed Seick",             "tqr": 15 },
+        { "playerSlug": "melnyk-mykyta",                  "excelName": "Melnyk Mykyta",                  "tqr": 15 },
+        { "playerSlug": "natale-raffaele",                "excelName": "Natale Raffaele",                "tqr": 15 },
+        { "playerSlug": "pereyra-alvarez-milton-agustin", "excelName": "Pereyra Alvarez Milton Agustin", "tqr": 15 },
+        { "playerSlug": "saviano-raffaele-junior",        "excelName": "Saviano Raffaele",               "tqr": 15 },
+        { "playerSlug": "riccio-luigi",                   "excelName": "Riccio Luigi",                   "tqr": 15 },
+        { "playerSlug": "zappala-andrea",                 "excelName": "Zappalà Andrea",                 "tqr": 15 },
+        { "playerSlug": "rovetini-alessandro",            "excelName": "Ruvetini Alessandro",            "tqr": 14 },
+        { "playerSlug": "chiaiese-riccardo",              "excelName": "Chiaiese Riccardo",              "tqr": 15 }
+      ]
+    }
   ],
   "unmatchedNames": [
-    "Garofalo Cristian"
+    "Garofalo Cristian",
+    "D'Angelo Adrian",
+    "Borzillo Eleonthion",
+    "Alessandro Napolitano"
   ],
   "unmatchedDates": []
 }
