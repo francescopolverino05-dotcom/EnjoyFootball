@@ -1,0 +1,101 @@
+{
+  "id": "2026-08-19_mercoledi",
+  "slug": "2026-08-19_mercoledi",
+  "date": "2026-08-19",
+  "title": {
+    "en": "Wednesday training — Practice match",
+    "it": "Mercoledì — Partitella"
+  },
+  "focus": {
+    "en": "Possession / Chance creation / Practice match (2×20/30)",
+    "it": "Possesso / Creazione occasioni / Partitella (2×20/30)"
+  },
+  "sessionType": "activation",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "location": {
+    "en": "Cercola",
+    "it": "Cercola"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Day 20 — Wed 19 Aug 2026. Activation session at Cercola (09:00). Practice match XI vs XI.",
+    "it": "Giorno 20 — Mer 19 ago 2026. Seduta attivazione a Cercola (09:00). Partitella XI vs XI."
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1219607618/eb6e10f618",
+    "notes": {
+      "en": "Session recordings on Vimeo (3 videos).",
+      "it": "Registrazioni sessione su Vimeo (3 video)."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1219609980",
+        "title": {
+          "en": "Possesso",
+          "it": "Possesso"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1219609980/4358c60c47",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1219609949",
+        "title": {
+          "en": "Creazione Occasioni",
+          "it": "Creazione Occasioni"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1219609949/c2d9998146",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1219607618",
+        "title": {
+          "en": "Partitella 19:08",
+          "it": "Partitella 19:08"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1219607618/eb6e10f618",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": [],
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30267556",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30267556",
+    "lastSyncedAt": "2026-08-19T17:17:53.369Z"
+  }
+}
