@@ -87,16 +87,16 @@
     "video": {
       "parts": [
         {
-          "id": "vimeo-1219017233",
+          "id": "vimeo-1219681644",
           "title": {
-            "en": "USCITE ALTE (5)",
-            "it": "USCITE ALTE (5)"
+            "en": "REC20260604 013831 0",
+            "it": "REC20260604 013831 0"
           },
           "description": {
             "en": "Training session recording.",
             "it": "Registrazione della sessione di allenamento."
           },
-          "videoFile": "https://vimeo.com/1219017233/d47023ac36",
+          "videoFile": "https://vimeo.com/1219681644/de163f1a27",
           "tags": [
             "vimeo",
             "training",
@@ -104,16 +104,16 @@
           ]
         },
         {
-          "id": "vimeo-1219016552",
+          "id": "vimeo-1219681083",
           "title": {
-            "en": "USCITE ALTE (4)",
-            "it": "USCITE ALTE (4)"
+            "en": "REC20260604 020832 4",
+            "it": "REC20260604 020832 4"
           },
           "description": {
             "en": "Training session recording.",
             "it": "Registrazione della sessione di allenamento."
           },
-          "videoFile": "https://vimeo.com/1219016552/a117cc55ce",
+          "videoFile": "https://vimeo.com/1219681083/40bfa3bb68",
           "tags": [
             "vimeo",
             "training",
@@ -121,16 +121,16 @@
           ]
         },
         {
-          "id": "vimeo-1219016119",
+          "id": "vimeo-1219678083",
           "title": {
-            "en": "USCITE ALTE (3)",
-            "it": "USCITE ALTE (3)"
+            "en": "REC20260604 014216 1",
+            "it": "REC20260604 014216 1"
           },
           "description": {
             "en": "Training session recording.",
             "it": "Registrazione della sessione di allenamento."
           },
-          "videoFile": "https://vimeo.com/1219016119/fa417ee35f",
+          "videoFile": "https://vimeo.com/1219678083/4b17dd54e1",
           "tags": [
             "vimeo",
             "training",
@@ -138,33 +138,16 @@
           ]
         },
         {
-          "id": "vimeo-1219015282",
+          "id": "vimeo-1219678082",
           "title": {
-            "en": "USCITE ALTE (2)",
-            "it": "USCITE ALTE (2)"
+            "en": "REC20260604 015217 2",
+            "it": "REC20260604 015217 2"
           },
           "description": {
             "en": "Training session recording.",
             "it": "Registrazione della sessione di allenamento."
           },
-          "videoFile": "https://vimeo.com/1219015282/26d10c6966",
-          "tags": [
-            "vimeo",
-            "training",
-            "session"
-          ]
-        },
-        {
-          "id": "vimeo-1219012961",
-          "title": {
-            "en": "USCITE ALTE (1)",
-            "it": "USCITE ALTE (1)"
-          },
-          "description": {
-            "en": "Training session recording.",
-            "it": "Registrazione della sessione di allenamento."
-          },
-          "videoFile": "https://vimeo.com/1219012961/c80138452b",
+          "videoFile": "https://vimeo.com/1219678082/4226cf19fd",
           "tags": [
             "vimeo",
             "training",
@@ -172,25 +155,25 @@
           ]
         }
       ],
-      "fullSession": "https://vimeo.com/1219017233/d47023ac36"
+      "fullSession": "https://vimeo.com/1219678083/4b17dd54e1"
     },
     "clips": [
       {
-        "id": "vimeo-1219018138",
+        "id": "vimeo-1219678080",
         "title": {
-          "en": "0 03 nd POSIZIONAMENTO USCITA ALTA PS. 4 09 Other 2",
-          "it": "0 03 nd POSIZIONAMENTO USCITA ALTA PS. 4 09 Other 2"
+          "en": "0 05 nd SPOSTAMENTI 1 03 Other 1",
+          "it": "0 05 nd SPOSTAMENTI 1 03 Other 1"
         },
         "comments": {
-          "en": "0 03 nd POSIZIONAMENTO USCITA ALTA PS. 4 09 Other 2",
-          "it": "0 03 nd POSIZIONAMENTO USCITA ALTA PS. 4 09 Other 2"
+          "en": "0 05 nd SPOSTAMENTI 1 03 Other 1",
+          "it": "0 05 nd SPOSTAMENTI 1 03 Other 1"
         },
         "minute": 0,
         "second": 0,
-        "videoFile": "https://vimeo.com/1219018138/af5243750e",
-        "section": "other",
+        "videoFile": "https://vimeo.com/1219678080/c0ab728474",
+        "section": "gk-action",
         "labels": [
-          "other"
+          "gk-action"
         ],
         "tags": [
           "vimeo",
@@ -199,21 +182,21 @@
         ]
       },
       {
-        "id": "vimeo-1219015899",
+        "id": "vimeo-1219681552",
         "title": {
-          "en": "1 29 nd USCITA ALTA POS 5 5 41 Other 2",
-          "it": "1 29 nd USCITA ALTA POS 5 5 41 Other 2"
+          "en": "1 15 nd SPOSTAMENTI E POSIZIONI 3 15 Other 2",
+          "it": "1 15 nd SPOSTAMENTI E POSIZIONI 3 15 Other 2"
         },
         "comments": {
-          "en": "1 29 nd USCITA ALTA POS 5 5 41 Other 2",
-          "it": "1 29 nd USCITA ALTA POS 5 5 41 Other 2"
+          "en": "1 15 nd SPOSTAMENTI E POSIZIONI 3 15 Other 2",
+          "it": "1 15 nd SPOSTAMENTI E POSIZIONI 3 15 Other 2"
         },
         "minute": 0,
         "second": 0,
-        "videoFile": "https://vimeo.com/1219015899/6adbdea91c",
-        "section": "other",
+        "videoFile": "https://vimeo.com/1219681552/996fdeaa35",
+        "section": "gk-action",
         "labels": [
-          "other"
+          "gk-action"
         ],
         "tags": [
           "vimeo",
@@ -222,21 +205,21 @@
         ]
       },
       {
-        "id": "vimeo-1219018139",
+        "id": "vimeo-1219681598",
         "title": {
-          "en": "4 11 nd ANALITICO SU POSIZIONI 4 5 3 2 7 24 Other 1",
-          "it": "4 11 nd ANALITICO SU POSIZIONI 4 5 3 2 7 24 Other 1"
+          "en": "3 22 nd SPOSTAMENTI E POSIZIONI 8 23 Other 3",
+          "it": "3 22 nd SPOSTAMENTI E POSIZIONI 8 23 Other 3"
         },
         "comments": {
-          "en": "4 11 nd ANALITICO SU POSIZIONI 4 5 3 2 7 24 Other 1",
-          "it": "4 11 nd ANALITICO SU POSIZIONI 4 5 3 2 7 24 Other 1"
+          "en": "3 22 nd SPOSTAMENTI E POSIZIONI 8 23 Other 3",
+          "it": "3 22 nd SPOSTAMENTI E POSIZIONI 8 23 Other 3"
         },
         "minute": 0,
         "second": 0,
-        "videoFile": "https://vimeo.com/1219018139/c11fa80045",
-        "section": "other",
+        "videoFile": "https://vimeo.com/1219681598/3f33022d61",
+        "section": "gk-action",
         "labels": [
-          "other"
+          "gk-action"
         ],
         "tags": [
           "vimeo",
@@ -245,90 +228,21 @@
         ]
       },
       {
-        "id": "vimeo-1219015586",
+        "id": "vimeo-1219678081",
         "title": {
-          "en": "6 22 nd USCITA ALTA POS 3 7 30 Other 1",
-          "it": "6 22 nd USCITA ALTA POS 3 7 30 Other 1"
+          "en": "3 38 nd Azione senza nome 8 40 Other 0",
+          "it": "3 38 nd Azione senza nome 8 40 Other 0"
         },
         "comments": {
-          "en": "6 22 nd USCITA ALTA POS 3 7 30 Other 1",
-          "it": "6 22 nd USCITA ALTA POS 3 7 30 Other 1"
+          "en": "3 38 nd Azione senza nome 8 40 Other 0",
+          "it": "3 38 nd Azione senza nome 8 40 Other 0"
         },
         "minute": 0,
         "second": 0,
-        "videoFile": "https://vimeo.com/1219015586/74dface38a",
-        "section": "other",
+        "videoFile": "https://vimeo.com/1219678081/5bdc0a4ba3",
+        "section": "gk-action",
         "labels": [
-          "other"
-        ],
-        "tags": [
-          "vimeo",
-          "training",
-          "clip"
-        ]
-      },
-      {
-        "id": "vimeo-1219015879",
-        "title": {
-          "en": "7 18 nd ADATTAMENTO USCITA ALTA PUGNO 9 52 Other 0",
-          "it": "7 18 nd ADATTAMENTO USCITA ALTA PUGNO 9 52 Other 0"
-        },
-        "comments": {
-          "en": "7 18 nd ADATTAMENTO USCITA ALTA PUGNO 9 52 Other 0",
-          "it": "7 18 nd ADATTAMENTO USCITA ALTA PUGNO 9 52 Other 0"
-        },
-        "minute": 0,
-        "second": 0,
-        "videoFile": "https://vimeo.com/1219015879/5eba401109",
-        "section": "other",
-        "labels": [
-          "other"
-        ],
-        "tags": [
-          "vimeo",
-          "training",
-          "clip"
-        ]
-      },
-      {
-        "id": "vimeo-1219015854",
-        "title": {
-          "en": "7 46 nd USCITA ALTA POS 3 9 41 Other 0",
-          "it": "7 46 nd USCITA ALTA POS 3 9 41 Other 0"
-        },
-        "comments": {
-          "en": "7 46 nd USCITA ALTA POS 3 9 41 Other 0",
-          "it": "7 46 nd USCITA ALTA POS 3 9 41 Other 0"
-        },
-        "minute": 0,
-        "second": 0,
-        "videoFile": "https://vimeo.com/1219015854/da34cbe10c",
-        "section": "other",
-        "labels": [
-          "other"
-        ],
-        "tags": [
-          "vimeo",
-          "training",
-          "clip"
-        ]
-      },
-      {
-        "id": "vimeo-1219017734",
-        "title": {
-          "en": "SITUAZIONE USCITA ALTA",
-          "it": "SITUAZIONE USCITA ALTA"
-        },
-        "comments": {
-          "en": "SITUAZIONE USCITA ALTA",
-          "it": "SITUAZIONE USCITA ALTA"
-        },
-        "minute": 0,
-        "second": 0,
-        "videoFile": "https://vimeo.com/1219017734/903dda4824",
-        "section": "other",
-        "labels": [
-          "other"
+          "gk-action"
         ],
         "tags": [
           "vimeo",
@@ -361,8 +275,7 @@
   },
   "vimeo": {
     "folderId": "30244997",
-    "gkFolderId": "30243919",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30244997",
-    "lastSyncedAt": "2026-08-18T10:23:59.956Z"
+    "lastSyncedAt": "2026-08-19T21:42:49.888Z"
   }
 }
