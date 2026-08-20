@@ -6,7 +6,7 @@ export interface Player {
   slug: string;
   displayName: string;
   positionShort: string;
-  /** Null when TBD (pending Excel / TM enrichment) */
+  /** Derived from birthDate at runtime when birthDate is set; otherwise null / JSON fallback */
   age: number | null;
   /** Display birth date as DD/MM/YYYY from source data; null when TBD */
   birthDate: string | null;

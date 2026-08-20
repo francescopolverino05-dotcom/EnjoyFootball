@@ -93,15 +93,59 @@ export function groupPlayersByPosition(
   );
 }
 
+/** Parse DD/MM/YYYY (also accepts D/M/YYYY). */
+export function parseBirthDate(birthDate: string | null | undefined): Date | null {
+  if (!birthDate) return null;
+  const m = String(birthDate).trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
+  if (!m) return null;
+  const day = Number(m[1]);
+  const month = Number(m[2]);
+  const year = Number(m[3]);
+  const d = new Date(year, month - 1, day);
+  if (
+    Number.isNaN(d.getTime()) ||
+    d.getFullYear() !== year ||
+    d.getMonth() !== month - 1 ||
+    d.getDate() !== day
+  ) {
+    return null;
+  }
+  return d;
+}
+
+/** Age in full years on `asOf` (defaults to today). */
+export function ageFromBirthDate(
+  birthDate: string | null | undefined,
+  asOf: Date = new Date()
+): number | null {
+  const born = parseBirthDate(birthDate);
+  if (!born) return null;
+  let age = asOf.getFullYear() - born.getFullYear();
+  const monthDiff = asOf.getMonth() - born.getMonth();
+  if (monthDiff < 0 || (monthDiff === 0 && asOf.getDate() < born.getDate())) {
+    age -= 1;
+  }
+  return age >= 0 ? age : null;
+}
+
+function withComputedAge(player: Player): Player {
+  return {
+    ...player,
+    age: ageFromBirthDate(player.birthDate) ?? player.age,
+  };
+}
+
 export function getAllPlayers(): Player[] {
-  return [...data.players].sort((a, b) =>
-    a.displayName.localeCompare(b.displayName, 'it')
-  );
+  return data.players
+    .map(withComputedAge)
+    .sort((a, b) => a.displayName.localeCompare(b.displayName, 'it'));
 }
 
 /** Same order as the Players page (GK → DEF → MID → FWD, then name within group). */
 export function getPlayersInRosterOrder(): Player[] {
-  return groupPlayersByPosition(data.players).flatMap((g) => g.players);
+  return groupPlayersByPosition(data.players.map(withComputedAge)).flatMap(
+    (g) => g.players
+  );
 }
 
 export function getAdjacentPlayerSlugs(slug: string): {
@@ -117,7 +161,8 @@ export function getAdjacentPlayerSlugs(slug: string): {
 }
 
 export function getPlayerBySlug(slug: string): Player | undefined {
-  return data.players.find((p) => p.slug === slug);
+  const player = data.players.find((p) => p.slug === slug);
+  return player ? withComputedAge(player) : undefined;
 }
 
 /** Resolve a public/ asset path with Vite base (e.g. /EnjoyFootball/ on Pages). */
