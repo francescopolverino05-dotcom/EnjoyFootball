@@ -1,5 +1,7 @@
-import { Link, useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import {
+  getAdjacentPlayerSlugs,
   getPlayerBySlug,
   playerInitials,
   playerPhotoUrl,
@@ -14,6 +16,37 @@ export default function PlayerPage() {
   const { slug } = useParams<{ slug: string }>();
   const player = slug ? getPlayerBySlug(slug) : undefined;
   const { t } = useLanguage();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!player) return;
+    const currentSlug = player.slug;
+
+    function onKeyDown(e: KeyboardEvent) {
+      if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+      const target = e.target;
+      if (target instanceof HTMLElement) {
+        const tag = target.tagName;
+        if (
+          tag === 'INPUT' ||
+          tag === 'TEXTAREA' ||
+          tag === 'SELECT' ||
+          target.isContentEditable
+        ) {
+          return;
+        }
+      }
+
+      const { prev, next } = getAdjacentPlayerSlugs(currentSlug);
+      const dest = e.key === 'ArrowRight' ? next : prev;
+      if (!dest || dest === currentSlug) return;
+      e.preventDefault();
+      navigate(`/players/${dest}`);
+    }
+
+    window.addEventListener('keydown', onKeyDown);
+    return () => window.removeEventListener('keydown', onKeyDown);
+  }, [player, navigate]);
 
   if (!player) {
     return (

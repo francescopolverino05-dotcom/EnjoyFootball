@@ -99,6 +99,23 @@ export function getAllPlayers(): Player[] {
   );
 }
 
+/** Same order as the Players page (GK → DEF → MID → FWD, then name within group). */
+export function getPlayersInRosterOrder(): Player[] {
+  return groupPlayersByPosition(data.players).flatMap((g) => g.players);
+}
+
+export function getAdjacentPlayerSlugs(slug: string): {
+  prev: string | null;
+  next: string | null;
+} {
+  const ordered = getPlayersInRosterOrder();
+  const idx = ordered.findIndex((p) => p.slug === slug);
+  if (idx === -1 || ordered.length === 0) return { prev: null, next: null };
+  const prev = ordered[(idx - 1 + ordered.length) % ordered.length];
+  const next = ordered[(idx + 1) % ordered.length];
+  return { prev: prev.slug, next: next.slug };
+}
+
 export function getPlayerBySlug(slug: string): Player | undefined {
   return data.players.find((p) => p.slug === slug);
 }
