@@ -1,0 +1,84 @@
+{
+  "id": "2026-08-20_giovedi",
+  "slug": "2026-08-20_giovedi",
+  "date": "2026-08-20",
+  "title": {
+    "en": "Thursday training — Build-up",
+    "it": "Giovedì — Costruzione"
+  },
+  "focus": {
+    "en": "Build-up from the back / Chance creation",
+    "it": "Costruzione dal basso / Creazione occasioni"
+  },
+  "sessionType": "activation",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "location": {
+    "en": "Cercola",
+    "it": "Cercola"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Day 21 — Thu 20 Aug 2026. Activation session at Cercola (09:00).",
+    "it": "Giorno 21 — Gio 20 ago 2026. Seduta attivazione a Cercola (09:00)."
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1219883050/49688ae512",
+    "notes": {
+      "en": "Session recordings on Vimeo (2 videos).",
+      "it": "Registrazioni sessione su Vimeo (2 video)."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1219891083",
+        "title": {
+          "en": "Creazione Opportunitá",
+          "it": "Creazione Opportunitá"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1219891083/15d50ddad0",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1219883050",
+        "title": {
+          "en": "Costruzione dal Basso",
+          "it": "Costruzione dal Basso"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1219883050/49688ae512",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": [],
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30277838",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30277838",
+    "lastSyncedAt": "2026-08-20T14:36:26.599Z"
+  }
+}
