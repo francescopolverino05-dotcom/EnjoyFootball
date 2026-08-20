@@ -53,32 +53,6 @@
       "photoPath": "/players/candela-ivan-giovanni.png"
     },
     {
-      "slug": "capozzoli-emanuele",
-      "displayName": "Capozzoli Emanuele",
-      "positionShort": "RB",
-      "age": 18,
-      "birthDate": "01/02/2008",
-      "foot": "Right",
-      "heightCm": 186,
-      "weightKg": 68.6,
-      "bmi": 19.8,
-      "squad": "Primavera",
-      "photoPath": "/players/capozzoli-emanuele.png"
-    },
-    {
-      "slug": "castaldi-ciro-junior",
-      "displayName": "Castaldi Ciro Junior",
-      "positionShort": "CM",
-      "age": 17,
-      "birthDate": "15/09/2008",
-      "foot": "Left",
-      "heightCm": 173,
-      "weightKg": 66.3,
-      "bmi": 22.2,
-      "squad": "Primavera",
-      "photoPath": "/players/castaldi-ciro-junior.png"
-    },
-    {
       "slug": "chiaiese-riccardo",
       "displayName": "Chiaiese Riccardo",
       "positionShort": "LB",
@@ -144,19 +118,6 @@
       "photoPath": "/players/favicchio-elia.png"
     },
     {
-      "slug": "kebe-lamine",
-      "displayName": "Kebe Lamine",
-      "positionShort": "CB",
-      "age": null,
-      "birthDate": null,
-      "foot": null,
-      "heightCm": null,
-      "weightKg": null,
-      "bmi": null,
-      "squad": "Trialist",
-      "photoPath": "/players/kebe-lamine.png"
-    },
-    {
       "slug": "lepre-giuseppe",
       "displayName": "Lepre Giuseppe",
       "positionShort": "CB",
@@ -181,19 +142,6 @@
       "bmi": 22.1,
       "squad": "Primavera",
       "photoPath": "/players/lieto-claudio.png"
-    },
-    {
-      "slug": "maida-giuseppe",
-      "displayName": "Maida Giuseppe",
-      "positionShort": "CM",
-      "age": 18,
-      "birthDate": "08/02/2008",
-      "foot": "Right",
-      "heightCm": 177,
-      "weightKg": 76,
-      "bmi": 24.3,
-      "squad": "Primavera",
-      "photoPath": "/players/maida-giuseppe.png"
     },
     {
       "slug": "magliano-mattia",
