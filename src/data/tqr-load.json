@@ -1862,6 +1862,40 @@
         { "playerSlug": "chiaiese-riccardo",              "excelName": "Chiaiese Riccardo",              "tqr": 15 }
       ]
     }
+    ,
+    {
+      "date": "2026-08-20",
+      "kind": "training",
+      "trainingSlug": "2026-08-20_giovedi",
+      "matchSlug": null,
+      "playersPresent": 22,
+      "playersAnswered": 22,
+      "avgTqr": 14.09,
+      "players": [
+        { "playerSlug": "chiummariello-andrea",           "excelName": "Chiummariello Andrea",           "tqr": 16 },
+        { "playerSlug": "barido-francisco-martin",        "excelName": "Baridó Francisco Martin",        "tqr": 15 },
+        { "playerSlug": "branchizio-agostino",            "excelName": "Branchizio Agostino",            "tqr": 15 },
+        { "playerSlug": "lieto-claudio",                  "excelName": "Lieto Claudio",                  "tqr": 15 },
+        { "playerSlug": "melnyk-mykyta",                  "excelName": "Melnyk Mykyta",                  "tqr": 15 },
+        { "playerSlug": "pereyra-alvarez-milton-agustin", "excelName": "Pereyra Alvarez Milton Agustin", "tqr": 15 },
+        { "playerSlug": "riccio-luigi",                   "excelName": "Riccio Luigi",                   "tqr": 15 },
+        { "playerSlug": "zappala-andrea",                 "excelName": "Zappalà Andrea",                 "tqr": 15 },
+        { "playerSlug": "prisco-vincenzo",                "excelName": "Prisco Vincenzo",                "tqr": 15 },
+        { "playerSlug": "chiaiese-riccardo",              "excelName": "Chiaiese Riccardo",              "tqr": 15 },
+        { "playerSlug": "de-stefano-francesco",           "excelName": "De Stefano Francesco",           "tqr": 14 },
+        { "playerSlug": "esposito-luigi",                 "excelName": "Esposito Luigi",                 "tqr": 14 },
+        { "playerSlug": "favicchio-elia",                 "excelName": "Favicchio Elia",                 "tqr": 14 },
+        { "playerSlug": "lepre-giuseppe",                 "excelName": "Lepre Giuseppe",                 "tqr": 14 },
+        { "playerSlug": "natale-raffaele",                "excelName": "Natale Raffaele",                "tqr": 14 },
+        { "playerSlug": "anic-ivan",                      "excelName": "Anic Ivan",                      "tqr": 13 },
+        { "playerSlug": "capozzoli-emanuele",             "excelName": "Capozzoli Emanuele",             "tqr": 13 },
+        { "playerSlug": "castaldi-ciro-junior",           "excelName": "Castaldi Ciro Junior",           "tqr": 13 },
+        { "playerSlug": "mane-mohamed-seick",             "excelName": "Mane Mohamed Seick",             "tqr": 13 },
+        { "playerSlug": "saviano-raffaele-junior",        "excelName": "Saviano Raffaele",               "tqr": 13 },
+        { "playerSlug": "santella-alessandro",            "excelName": "Santella Alessandro",            "tqr": 12 },
+        { "playerSlug": "candela-ivan-giovanni",          "excelName": "Candela Ivan Giovanni",          "tqr": 12 }
+      ]
+    }
   ],
   "unmatchedNames": [
     "Garofalo Cristian",

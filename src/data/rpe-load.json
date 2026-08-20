@@ -2344,6 +2344,39 @@
         { "playerSlug": "chiaiese-riccardo",              "excelName": "Chiaiese Riccardo",              "min": 120, "rpe": 13, "sessionLoad": 1560 }
       ]
     }
+    ,
+    {
+      "date": "2026-08-20",
+      "kind": "training",
+      "trainingSlug": "2026-08-20_giovedi",
+      "matchSlug": null,
+      "playersPresent": 19,
+      "playersAnswered": 19,
+      "avgMin": 120.0,
+      "avgRpe": 11.68,
+      "avgSessionLoad": 1402.1,
+      "players": [
+        { "playerSlug": "saviano-raffaele-junior",        "excelName": "Saviano Raffaele",               "min": 120, "rpe": 15, "sessionLoad": 1800 },
+        { "playerSlug": "de-stefano-francesco",           "excelName": "De Stefano Francesco",           "min": 120, "rpe": 14, "sessionLoad": 1680 },
+        { "playerSlug": "mane-mohamed-seick",             "excelName": "Mane Mohamed Seick",             "min": 120, "rpe": 14, "sessionLoad": 1680 },
+        { "playerSlug": "lepre-giuseppe",                 "excelName": "Lepre Giuseppe",                 "min": 120, "rpe": 13, "sessionLoad": 1560 },
+        { "playerSlug": "melnyk-mykyta",                  "excelName": "Melnyk Mykyta",                  "min": 120, "rpe": 13, "sessionLoad": 1560 },
+        { "playerSlug": "candela-ivan-giovanni",          "excelName": "Candela Ivan Giovanni",          "min": 120, "rpe": 12, "sessionLoad": 1440 },
+        { "playerSlug": "castaldi-ciro-junior",           "excelName": "Castaldi Ciro Junior",           "min": 120, "rpe": 12, "sessionLoad": 1440 },
+        { "playerSlug": "chiummariello-andrea",           "excelName": "Chiummariello Andrea",           "min": 120, "rpe": 12, "sessionLoad": 1440 },
+        { "playerSlug": "lieto-claudio",                  "excelName": "Lieto Claudio",                  "min": 120, "rpe": 12, "sessionLoad": 1440 },
+        { "playerSlug": "zappala-andrea",                 "excelName": "Zappalà Andrea",                 "min": 120, "rpe": 12, "sessionLoad": 1440 },
+        { "playerSlug": "santella-alessandro",            "excelName": "Santella Alessandro",            "min": 120, "rpe": 11, "sessionLoad": 1320 },
+        { "playerSlug": "barido-francisco-martin",        "excelName": "Baridó Francisco Martin",        "min": 120, "rpe": 11, "sessionLoad": 1320 },
+        { "playerSlug": "esposito-luigi",                 "excelName": "Esposito Luigi",                 "min": 120, "rpe": 11, "sessionLoad": 1320 },
+        { "playerSlug": "favicchio-elia",                 "excelName": "Favicchio Elia",                 "min": 120, "rpe": 11, "sessionLoad": 1320 },
+        { "playerSlug": "natale-raffaele",                "excelName": "Natale Raffaele",                "min": 120, "rpe": 11, "sessionLoad": 1320 },
+        { "playerSlug": "pereyra-alvarez-milton-agustin", "excelName": "Pereyra Alvarez Milton Agustin", "min": 120, "rpe": 11, "sessionLoad": 1320 },
+        { "playerSlug": "riccio-luigi",                   "excelName": "Riccio Luigi",                   "min": 120, "rpe": 11, "sessionLoad": 1320 },
+        { "playerSlug": "chiaiese-riccardo",              "excelName": "Chiaiese Riccardo",              "min": 120, "rpe": 9, "sessionLoad": 1080 },
+        { "playerSlug": "branchizio-agostino",            "excelName": "Branchizio Agostino",            "min": 120, "rpe": 7, "sessionLoad": 840 }
+      ]
+    }
   ],
   "unmatchedNames": [
     "Garofalo Cristian",
