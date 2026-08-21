@@ -1,0 +1,152 @@
+{
+  "id": "2026-08-21_venerdi",
+  "slug": "2026-08-21_venerdi",
+  "date": "2026-08-21",
+  "title": {
+    "en": "Friday training — Mid block & high defence",
+    "it": "Venerdì — Blocco medio e difesa alta"
+  },
+  "focus": {
+    "en": "Defensive line / Mid block / High defence / Match practice",
+    "it": "Linea difensiva / Blocco medio / Difesa alta / Partitella"
+  },
+  "sessionType": "match-practice",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Day 22 — Fri 21 Aug 2026. Match-practice session at Cercola (09:00).",
+    "it": "Giorno 22 — Ven 21 ago 2026. Seduta partitella a Cercola (09:00)."
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1220213362/639782baab",
+    "notes": {
+      "en": "Session recordings on Vimeo (6 videos).",
+      "it": "Registrazioni sessione su Vimeo (6 video)."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1220218618",
+        "title": {
+          "en": "Linea difensiva",
+          "it": "Linea difensiva"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1220218618/fd02ad0f11",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1220213362",
+        "title": {
+          "en": "Partitella",
+          "it": "Partitella"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1220213362/639782baab",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1220208906",
+        "title": {
+          "en": "Blocco Medio Blú",
+          "it": "Blocco Medio Blú"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1220208906/a1722b362a",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1220208909",
+        "title": {
+          "en": "Difesa Alta Arancio",
+          "it": "Difesa Alta Arancio"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1220208909/a49d5ea29e",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1220208910",
+        "title": {
+          "en": "Difesa Alta Blú",
+          "it": "Difesa Alta Blú"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1220208910/a380a5c089",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1220208908",
+        "title": {
+          "en": "Blocco Medio Arancio",
+          "it": "Blocco Medio Arancio"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1220208908/7cec3b351b",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": [],
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30289880",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30289880",
+    "lastSyncedAt": "2026-08-21T15:30:39.358Z"
+  },
+  "location": {
+    "en": "Cercola",
+    "it": "Cercola"
+  }
+}
