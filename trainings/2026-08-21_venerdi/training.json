@@ -129,7 +129,77 @@
       }
     ]
   },
-  "clips": [],
+  "clips": [
+    {
+      "id": "vimeo-1220245622",
+      "title": {
+        "en": "Clip 1 Posizione Alta Lieto (Mané 1v1",
+        "it": "Clip 1 Posizione Alta Lieto (Mané 1v1"
+      },
+      "comments": {
+        "en": "Clip 1 Posizione Alta Lieto (Mané 1v1",
+        "it": "Clip 1 Posizione Alta Lieto (Mané 1v1"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220245622/6d26cd7b3c",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    },
+    {
+      "id": "vimeo-1220245623",
+      "title": {
+        "en": "Clip 2 Linea Difensiva Scomposta",
+        "it": "Clip 2 Linea Difensiva Scomposta"
+      },
+      "comments": {
+        "en": "Clip 2 Linea Difensiva Scomposta",
+        "it": "Clip 2 Linea Difensiva Scomposta"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220245623/ccdb62a274",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    },
+    {
+      "id": "vimeo-1220245624",
+      "title": {
+        "en": "Clip 3 Good Shuffle Bad Line Positioning",
+        "it": "Clip 3 Good Shuffle Bad Line Positioning"
+      },
+      "comments": {
+        "en": "Clip 3 Good Shuffle Bad Line Positioning",
+        "it": "Clip 3 Good Shuffle Bad Line Positioning"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220245624/3bf49bdc94",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    }
+  ],
   "analysisVideos": [],
   "trainingDesign": [],
   "goalkeepers": {
@@ -143,7 +213,7 @@
   "vimeo": {
     "folderId": "30289880",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30289880",
-    "lastSyncedAt": "2026-08-21T15:30:39.358Z"
+    "lastSyncedAt": "2026-08-21T16:39:39.590Z"
   },
   "location": {
     "en": "Cercola",
