@@ -37,7 +37,7 @@
     "logo": "logos/virtus-stabia.png"
   },
   "score": {
-    "home": 1,
+    "home": 2,
     "away": 0
   },
   "goals": [
@@ -112,7 +112,7 @@
         "en": "Goals",
         "it": "Gol"
       },
-      "home": "1",
+      "home": "2",
       "away": "0"
     },
     {
