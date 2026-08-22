@@ -37,15 +37,463 @@
     "logo": "logos/virtus-stabia.png"
   },
   "score": {
-    "home": 0,
+    "home": 1,
     "away": 0
   },
-  "goals": [],
-  "timeline": [],
+  "goals": [
+    {
+      "minute": 18,
+      "scorer": "Napoli",
+      "teamId": "u19"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Pugliese GK",
+        "it": "Pugliese GK"
+      },
+      "type": "gk-entry",
+      "teamId": "u19",
+      "positionPercent": 5,
+      "markerColor": "#0054a6"
+    },
+    {
+      "minute": 18,
+      "label": {
+        "en": "Napoli 1-0",
+        "it": "Napoli 1-0"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 20
+    },
+    {
+      "minute": 46,
+      "label": {
+        "en": "Spinelli GK",
+        "it": "Spinelli GK"
+      },
+      "type": "gk-entry",
+      "teamId": "u19",
+      "positionPercent": 52,
+      "markerColor": "#10b981"
+    }
+  ],
   "formations": [],
-  "dynamics": [],
-  "teamStats": [],
-  "goalkeepers": [],
+  "dynamics": [
+    {
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
+      "homeValue": 65.8,
+      "awayValue": 34.2,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Shot Accuracy %",
+        "it": "Precisione Tiri %"
+      },
+      "homeValue": 57.1,
+      "awayValue": 50.0,
+      "unit": "%"
+    }
+  ],
+  "teamStats": [
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Goals",
+        "it": "Gol"
+      },
+      "home": "1",
+      "away": "0"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
+      "home": "65.8%",
+      "away": "34.2%"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Active Possession Time",
+        "it": "Tempo di Possesso Attivo"
+      },
+      "home": "58m 13s",
+      "away": "30m 18s"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Total Shots",
+        "it": "Tiri Totali"
+      },
+      "home": "14",
+      "away": "6"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Shots on Target",
+        "it": "Tiri in Porta"
+      },
+      "home": "8",
+      "away": "3"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Shots off Target / Blocked",
+        "it": "Tiri Fuori / Bloccati"
+      },
+      "home": "6",
+      "away": "3"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Shot Accuracy %",
+        "it": "Precisione Tiri %"
+      },
+      "home": "57.1%",
+      "away": "50.0%"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Corners",
+        "it": "Calci d'Angolo"
+      },
+      "home": "7",
+      "away": "3"
+    },
+    {
+      "category": {
+        "en": "Discipline",
+        "it": "Disciplina"
+      },
+      "name": {
+        "en": "Fouls Committed",
+        "it": "Falli Commessi"
+      },
+      "home": "9",
+      "away": "13"
+    },
+    {
+      "category": {
+        "en": "Discipline",
+        "it": "Disciplina"
+      },
+      "name": {
+        "en": "Offsides",
+        "it": "Fuorigioco"
+      },
+      "home": "3",
+      "away": "2"
+    },
+    {
+      "category": {
+        "en": "1st Half",
+        "it": "1° Tempo"
+      },
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
+      "home": "68.6%",
+      "away": "31.4%"
+    },
+    {
+      "category": {
+        "en": "1st Half",
+        "it": "1° Tempo"
+      },
+      "name": {
+        "en": "Shots / on Target",
+        "it": "Tiri / in Porta"
+      },
+      "home": "5 / 3",
+      "away": "2 / 1"
+    },
+    {
+      "category": {
+        "en": "1st Half",
+        "it": "1° Tempo"
+      },
+      "name": {
+        "en": "Corners",
+        "it": "Calci d'Angolo"
+      },
+      "home": "4",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "1st Half",
+        "it": "1° Tempo"
+      },
+      "name": {
+        "en": "Fouls",
+        "it": "Falli"
+      },
+      "home": "4",
+      "away": "7"
+    },
+    {
+      "category": {
+        "en": "1st Half",
+        "it": "1° Tempo"
+      },
+      "name": {
+        "en": "Offsides",
+        "it": "Fuorigioco"
+      },
+      "home": "1",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "2nd Half",
+        "it": "2° Tempo"
+      },
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
+      "home": "62.8%",
+      "away": "37.2%"
+    },
+    {
+      "category": {
+        "en": "2nd Half",
+        "it": "2° Tempo"
+      },
+      "name": {
+        "en": "Shots / on Target",
+        "it": "Tiri / in Porta"
+      },
+      "home": "9 / 5",
+      "away": "4 / 2"
+    },
+    {
+      "category": {
+        "en": "2nd Half",
+        "it": "2° Tempo"
+      },
+      "name": {
+        "en": "Corners",
+        "it": "Calci d'Angolo"
+      },
+      "home": "3",
+      "away": "2"
+    },
+    {
+      "category": {
+        "en": "2nd Half",
+        "it": "2° Tempo"
+      },
+      "name": {
+        "en": "Fouls",
+        "it": "Falli"
+      },
+      "home": "5",
+      "away": "6"
+    },
+    {
+      "category": {
+        "en": "2nd Half",
+        "it": "2° Tempo"
+      },
+      "name": {
+        "en": "Offsides",
+        "it": "Fuorigioco"
+      },
+      "home": "2",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "Possession by Interval",
+        "it": "Possesso per Intervallo"
+      },
+      "name": {
+        "en": "00'–15'",
+        "it": "00'–15'"
+      },
+      "home": "83.2%",
+      "away": "16.8%"
+    },
+    {
+      "category": {
+        "en": "Possession by Interval",
+        "it": "Possesso per Intervallo"
+      },
+      "name": {
+        "en": "15'–30'",
+        "it": "15'–30'"
+      },
+      "home": "62.8%",
+      "away": "37.2%"
+    },
+    {
+      "category": {
+        "en": "Possession by Interval",
+        "it": "Possesso per Intervallo"
+      },
+      "name": {
+        "en": "30'–45+'",
+        "it": "30'–45+'"
+      },
+      "home": "60.1%",
+      "away": "39.9%"
+    },
+    {
+      "category": {
+        "en": "Possession by Interval",
+        "it": "Possesso per Intervallo"
+      },
+      "name": {
+        "en": "45'–60'",
+        "it": "45'–60'"
+      },
+      "home": "58.2%",
+      "away": "41.8%"
+    },
+    {
+      "category": {
+        "en": "Possession by Interval",
+        "it": "Possesso per Intervallo"
+      },
+      "name": {
+        "en": "60'–75'",
+        "it": "60'–75'"
+      },
+      "home": "64.6%",
+      "away": "35.4%"
+    },
+    {
+      "category": {
+        "en": "Possession by Interval",
+        "it": "Possesso per Intervallo"
+      },
+      "name": {
+        "en": "75'–90+'",
+        "it": "75'–90+'"
+      },
+      "home": "65.9%",
+      "away": "34.1%"
+    }
+  ],
+  "goalkeepers": [
+    {
+      "name": "Pugliese",
+      "minutes": 45,
+      "team": {
+        "en": "Napoli Primavera (First Half)",
+        "it": "Napoli Primavera (Primo Tempo)"
+      },
+      "period": {
+        "en": "1st Half",
+        "it": "1° Tempo"
+      },
+      "jerseyColor": {
+        "en": "Sky blue",
+        "it": "Azzurra"
+      },
+      "shotsFaced": 2,
+      "shotsOnTargetFaced": 1,
+      "saves": 1,
+      "goalsConceded": 0,
+      "savePercentage": {
+        "en": "100.0%",
+        "it": "100,0%"
+      },
+      "aerialDuels": {
+        "en": "1 / 1 (100%)",
+        "it": "1 / 1 (100%)"
+      },
+      "exits": 2,
+      "passes": {
+        "en": "13 / 12 (92.3%)",
+        "it": "13 / 12 (92,3%)"
+      },
+      "notes": {
+        "en": "Clean sheet — first half",
+        "it": "Clean sheet — primo tempo"
+      },
+      "colorClass": "blue"
+    },
+    {
+      "name": "Spinelli",
+      "minutes": 45,
+      "team": {
+        "en": "Napoli Primavera (Second Half)",
+        "it": "Napoli Primavera (Secondo Tempo)"
+      },
+      "period": {
+        "en": "2nd Half",
+        "it": "2° Tempo"
+      },
+      "jerseyColor": {
+        "en": "Green",
+        "it": "Verde"
+      },
+      "shotsFaced": 4,
+      "shotsOnTargetFaced": 2,
+      "saves": 2,
+      "goalsConceded": 0,
+      "savePercentage": {
+        "en": "100.0%",
+        "it": "100,0%"
+      },
+      "aerialDuels": {
+        "en": "2 / 2 (100%)",
+        "it": "2 / 2 (100%)"
+      },
+      "exits": 2,
+      "passes": {
+        "en": "11 / 10 (90.9%)",
+        "it": "11 / 10 (90,9%)"
+      },
+      "notes": {
+        "en": "Clean sheet — second half",
+        "it": "Clean sheet — secondo tempo"
+      },
+      "colorClass": "green"
+    }
+  ],
   "clips": [],
   "analysisVideos": [],
   "vimeo": {
