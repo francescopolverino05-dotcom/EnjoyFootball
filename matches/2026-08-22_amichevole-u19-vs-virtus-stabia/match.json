@@ -359,6 +359,138 @@
       },
       "home": "2",
       "away": "1"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Total passes / accurate",
+        "it": "Passaggi Totali / Riusciti"
+      },
+      "home": "465 / 398 (86%)",
+      "away": "238 / 171 (72%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Forward / accurate",
+        "it": "Passaggi in Avanti / Riusciti"
+      },
+      "home": "152 / 124 (82%)",
+      "away": "112 / 72 (64%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Back / accurate",
+        "it": "Passaggi all'Indietro / Riusciti"
+      },
+      "home": "118 / 112 (95%)",
+      "away": "48 / 42 (88%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Lateral / accurate",
+        "it": "Passaggi Laterali / Riusciti"
+      },
+      "home": "195 / 162 (83%)",
+      "away": "78 / 57 (73%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Progressive passes / accurate",
+        "it": "Passaggi Progressivi / Riusciti"
+      },
+      "home": "38 / 27 (71%)",
+      "away": "24 / 13 (54%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Long passes / accurate",
+        "it": "Lanci Lunghi / Riusciti"
+      },
+      "home": "32 / 21 (66%)",
+      "away": "41 / 22 (54%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "To final third / accurate",
+        "it": "Passaggi sulla Trequarti / Riusciti"
+      },
+      "home": "64 / 48 (75%)",
+      "away": "28 / 14 (50%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "To penalty area / accurate",
+        "it": "Passaggi in Area di Rigore / Riusciti"
+      },
+      "home": "22 / 12 (55%)",
+      "away": "9 / 3 (33%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Through passes / accurate",
+        "it": "Passaggi Filtranti / Riusciti"
+      },
+      "home": "7 / 4 (57%)",
+      "away": "3 / 1 (33%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Crosses / accurate (low / high / blocked)",
+        "it": "Cross / Riusciti (basso / alto / bloccato)"
+      },
+      "home": "16 / 6 (3 / 2 / 1)",
+      "away": "10 / 3 (1 / 1 / 1)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Inaccurate Pass %",
+        "it": "Percentuale Passaggi Sbagliati %"
+      },
+      "home": "14.4%",
+      "away": "28.2%"
     }
   ],
   "goalkeepers": [
