@@ -43,7 +43,14 @@
   "goals": [
     {
       "minute": 18,
-      "scorer": "Napoli",
+      "scorer": "Favicchio",
+      "assist": "Baridó",
+      "teamId": "u19"
+    },
+    {
+      "minute": 70,
+      "scorer": "Mané",
+      "assist": "Kenmogne",
       "teamId": "u19"
     }
   ],
@@ -62,8 +69,8 @@
     {
       "minute": 18,
       "label": {
-        "en": "Napoli 1-0",
-        "it": "Napoli 1-0"
+        "en": "Favicchio 1-0",
+        "it": "Favicchio 1-0"
       },
       "type": "goal",
       "teamId": "u19",
@@ -79,6 +86,16 @@
       "teamId": "u19",
       "positionPercent": 52,
       "markerColor": "#10b981"
+    },
+    {
+      "minute": 70,
+      "label": {
+        "en": "Mané 2-0",
+        "it": "Mané 2-0"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 78
     }
   ],
   "formations": [],
