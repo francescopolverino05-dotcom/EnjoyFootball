@@ -213,8 +213,20 @@
         "en": "Corners",
         "it": "Calci d'Angolo"
       },
-      "home": "7",
-      "away": "3"
+      "home": "8",
+      "away": "2"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Free Kicks",
+        "it": "Calci di Punizione"
+      },
+      "home": "1",
+      "away": "1"
     },
     {
       "category": {
@@ -333,8 +345,8 @@
         "en": "Corners",
         "it": "Calci d'Angolo"
       },
-      "home": "3",
-      "away": "2"
+      "home": "4",
+      "away": "1"
     },
     {
       "category": {
