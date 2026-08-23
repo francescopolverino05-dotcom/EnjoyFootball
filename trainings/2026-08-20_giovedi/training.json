@@ -70,7 +70,145 @@
   "trainingDesign": [],
   "goalkeepers": {
     "video": {
-      "parts": []
+      "parts": [
+        {
+          "id": "vimeo-1220624627",
+          "title": {
+            "en": "PODALICO USCITA DAL BASSO (1)",
+            "it": "PODALICO USCITA DAL BASSO (1)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220624627/c132ca2a5b",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220624621",
+          "title": {
+            "en": "PODALICO USCITA DAL BASSO (2)",
+            "it": "PODALICO USCITA DAL BASSO (2)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220624621/051cbb60ea",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220624330",
+          "title": {
+            "en": "PODALICO ATTACCO PALLA DIF (6)",
+            "it": "PODALICO ATTACCO PALLA DIF (6)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220624330/58bfd87fe0",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220624078",
+          "title": {
+            "en": "PODALICO ATTACCO PALLA DIF (7)",
+            "it": "PODALICO ATTACCO PALLA DIF (7)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220624078/1f0caaae0a",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220623610",
+          "title": {
+            "en": "PODALICO ATTACCO PALLA DIF (4)",
+            "it": "PODALICO ATTACCO PALLA DIF (4)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220623610/d4c8e1d09e",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220623609",
+          "title": {
+            "en": "PODALICO ATTACCO PALLA DIF (5)",
+            "it": "PODALICO ATTACCO PALLA DIF (5)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220623609/a472514f30",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220623612",
+          "title": {
+            "en": "PODALICO ATTACCO PALLA DIF (3)",
+            "it": "PODALICO ATTACCO PALLA DIF (3)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220623612/82fa1eded4",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220623611",
+          "title": {
+            "en": "PODALICO (8)",
+            "it": "PODALICO (8)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220623611/1f7332bed3",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        }
+      ],
+      "fullSession": "https://vimeo.com/1220624621/051cbb60ea"
     },
     "clips": [],
     "trainingDesign": [],
@@ -79,6 +217,7 @@
   "vimeo": {
     "folderId": "30277838",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30277838",
-    "lastSyncedAt": "2026-08-20T14:36:26.599Z"
+    "lastSyncedAt": "2026-08-23T19:17:56.016Z",
+    "gkFolderId": "30302912"
   }
 }
