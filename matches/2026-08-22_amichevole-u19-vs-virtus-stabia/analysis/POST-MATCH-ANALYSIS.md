@@ -48,8 +48,8 @@ Best friendly of the pre-season so far. Progressive, vertical passing and combin
 4. **2nd-half midfield tempo**  
    Ball circulation had good moments, but midfielders need more progressive risk: diagonal, or long over the top when the striker is 1v1 with a centre-back. Don’t always wait for the perfect pass — if it fails, win it back.
 
-5. **Cover behind Zappalà’s press (Branchizio)**  
-   When the ball goes wide and Zappalà presses, Branchizio must **hold cover** — not shuffle into man-to-man, which weakens the side and invites balls over the top. Same theme after turnovers: eagerness to chase (kids push more than delay) leaves the back line exposed and creates gaps — especially dangerous on that flank when Zappalà loses it and presses without the rest of the line staying connected.
+5. **Zappalà–Branchizio: delay and hold**  
+   Both need to **delay and hold**, not over-press. Zappalà is often over-eager to jump; when he presses, Branchizio must **delay and hold cover** (not shuffle into man-to-man) — otherwise space opens and balls go over the top. In **1v1**, Zappalà should delay rather than dive in for the ball; going straight for the press is how he gets beaten easily. Same after turnovers: chasing without connection leaves the back line exposed.
 
 ---
 
