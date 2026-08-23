@@ -115,7 +115,7 @@
         "it": "Precisione Tiri %"
       },
       "homeValue": 57.1,
-      "awayValue": 50.0,
+      "awayValue": 50,
       "unit": "%"
     }
   ],
@@ -131,6 +131,18 @@
       },
       "home": "2",
       "away": "0"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "home": "1.90",
+      "away": "—"
     },
     {
       "category": {
@@ -608,11 +620,29 @@
     }
   ],
   "clips": [],
-  "analysisVideos": [],
+  "analysisVideos": [
+    {
+      "id": "post-match-analysis-md",
+      "title": {
+        "en": "Post-match analysis",
+        "it": "Analisi post-partita"
+      },
+      "description": {
+        "en": "Staff consensus preview — strengths, development areas, and xG notes.",
+        "it": "Preview condivisa dallo staff — punti di forza, aree di miglioramento e note xG."
+      },
+      "videoFile": "analysis/POST-MATCH-ANALYSIS.md",
+      "kind": "markdown",
+      "tags": [
+        "analysis",
+        "reflection"
+      ]
+    }
+  ],
   "vimeo": {
     "folderId": "30240824",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30240824",
-    "lastSyncedAt": "2026-08-22T16:30:37.488Z"
+    "lastSyncedAt": "2026-08-23T14:00:44.724Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1220418763/bc31c77183",
@@ -620,5 +650,88 @@
       "en": "Full match hosted on Vimeo.",
       "it": "Partita intera su Vimeo."
     }
+  },
+  "reflection": {
+    "wentWell": [
+      {
+        "id": "wwb-01",
+        "text": {
+          "en": "Passing more vertical and progressive — better line-breaking, higher success rate, and progressions that led to goals.",
+          "it": "Passaggi più verticali e progressivi: più rotture di linea, più riuscita, e sviluppi che portano al gol."
+        }
+      },
+      {
+        "id": "wwb-02",
+        "text": {
+          "en": "Combination quality improved: 1H right side (Baridó–Melnyk); 2H left side (Kenmogne with Liccardo after the Chiaiese switch).",
+          "it": "Qualità delle combinazioni: 1°T lato destro (Baridó–Melnyk); 2°T lato sinistro (Kenmogne con Liccardo dopo lo scambio con Chiaiese)."
+        }
+      },
+      {
+        "id": "wwb-03",
+        "text": {
+          "en": "High defence strong despite limited training — aggressive, most recoveries in their half; likely high PPDA; fed counter-attacks.",
+          "it": "Blocco alto solido (poco allenato): aggressivi, tanti recuperi nella loro metà campo; PPDA probabilmente alto; ripartenze consecutive."
+        }
+      },
+      {
+        "id": "wwb-04",
+        "text": {
+          "en": "Clear growth in chance creation — high volume of opportunities.",
+          "it": "Miglioramento netto nella creazione di occasioni — alto volume di chance."
+        }
+      },
+      {
+        "id": "wwb-05",
+        "text": {
+          "en": "Good reading of when to dictate play vs when to counter; quicker reactions to win the ball back.",
+          "it": "Buona lettura tra gestire e ripartire; reazioni più rapide nel riconquistare palla."
+        }
+      },
+      {
+        "id": "wwb-06",
+        "text": {
+          "en": "Best friendly of the pre-season so far.",
+          "it": "Migliore amichevole del periodo finora."
+        }
+      }
+    ],
+    "evenBetterIf": [
+      {
+        "id": "ebi-01",
+        "text": {
+          "en": "Counter-press longevity: hold the press ~6–7s (now often ~4–5s); once they reorganise we stop — next week’s short-sprint quickness work should help.",
+          "it": "Longevità del contropressing: tenere ~6–7s (ora spesso ~4–5s); appena riorganizzano si ferma — il lavoro di rapidità (sprint brevi) della prossima settimana aiuterà."
+        }
+      },
+      {
+        "id": "ebi-02",
+        "text": {
+          "en": "Convert chances: 14 shots, 8 on target, xG ~1.90 — four 1v1s including a 1v0 / open goal miss; finishing must be better.",
+          "it": "Concretizzare: 14 tiri, 8 in porta, xG ~1,90 — quattro 1v1 di cui un 1v0 / porta vuota fallita; il tiro in porta deve migliorare."
+        }
+      },
+      {
+        "id": "ebi-03",
+        "text": {
+          "en": "Creative no. 10s more instinctive — take more shots from range.",
+          "it": "N.10 creativi più istintivi — più tiri da fuori area."
+        }
+      },
+      {
+        "id": "ebi-04",
+        "text": {
+          "en": "No. 10 positioning: stay wide; only come central when the ball is on your side. Don’t drift central when play is opposite — keep the midfield box.",
+          "it": "Posizionamento n.10: restare larghi; entrare solo quando la palla è dal proprio lato. Non centralizzarsi a gioco opposto — mantenere il rombo/box di centrocampo."
+        }
+      },
+      {
+        "id": "ebi-05",
+        "text": {
+          "en": "2H tempo: midfielders more progressive and risk-taking — forward / diagonal / long to the striker in 1v1; don’t always wait for the perfect pass.",
+          "it": "2°T: centrocampisti più progressivi e propensi al rischio — avanti / diagonale / lungo sulla punta in 1v1; non cercare sempre il passaggio perfetto."
+        }
+      }
+    ]
   }
 }
