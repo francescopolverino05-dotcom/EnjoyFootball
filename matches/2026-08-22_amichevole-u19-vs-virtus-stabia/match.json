@@ -117,6 +117,14 @@
       "homeValue": 57.1,
       "awayValue": 50,
       "unit": "%"
+    },
+    {
+      "name": {
+        "en": "PPDA",
+        "it": "PPDA"
+      },
+      "homeValue": 8.0,
+      "awayValue": 19.38
     }
   ],
   "teamStats": [
@@ -263,6 +271,84 @@
       },
       "home": "3",
       "away": "2"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "PPDA (global)",
+        "it": "PPDA (globale)"
+      },
+      "home": "8.00",
+      "away": "19.38"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Tactical approach",
+        "it": "Atteggiamento tattico"
+      },
+      "home": {
+        "en": "Ultra-high / aggressive press",
+        "it": "Pressing ultra-alto / aggressivo"
+      },
+      "away": {
+        "en": "Low block / waiting",
+        "it": "Blocco basso / d'attesa"
+      }
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Opponent passes allowed (def. 60%)",
+        "it": "Passaggi avversari concessi (60% difensivo)"
+      },
+      "home": "136",
+      "away": "310"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Defensive actions (opp. half)",
+        "it": "Azioni difensive (metà campo avversaria)"
+      },
+      "home": "17",
+      "away": "16"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "PPDA 1st Half",
+        "it": "PPDA 1° Tempo"
+      },
+      "home": "7.63",
+      "away": "20.13"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "PPDA 2nd Half",
+        "it": "PPDA 2° Tempo"
+      },
+      "home": "8.33",
+      "away": "18.63"
     },
     {
       "category": {
@@ -670,8 +756,8 @@
       {
         "id": "wwb-03",
         "text": {
-          "en": "High defence strong despite limited training — aggressive, most recoveries in their half; likely high PPDA; fed counter-attacks.",
-          "it": "Blocco alto solido (poco allenato): aggressivi, tanti recuperi nella loro metà campo; PPDA probabilmente alto; ripartenze consecutive."
+          "en": "High defence strong despite limited training — aggressive, PPDA 8.0 (ultra-high press); 1H 7.6 / 2H 8.3; most recoveries in their half; fed counters.",
+          "it": "Blocco alto solido (poco allenato): aggressivi, PPDA 8,0 (pressing ultra-alto); 1°T 7,6 / 2°T 8,3; tanti recuperi nella loro metà; ripartenze."
         }
       },
       {
@@ -730,6 +816,13 @@
         "text": {
           "en": "2H tempo: midfielders more progressive and risk-taking — forward / diagonal / long to the striker in 1v1; don’t always wait for the perfect pass.",
           "it": "2°T: centrocampisti più progressivi e propensi al rischio — avanti / diagonale / lungo sulla punta in 1v1; non cercare sempre il passaggio perfetto."
+        }
+      },
+      {
+        "id": "ebi-06",
+        "text": {
+          "en": "Cover when Zappalà presses: Branchizio must hold cover — not shuffle into man-to-man (opens the side for balls over the top). Same eagerness after turnovers: don’t chase and leave the back line exposed; delay / stay connected rather than over-pressing and creating gaps.",
+          "it": "Copertura quando Zappalà pressa: Branchizio deve restare in copertura — non scivolare a uomo (si apre il lato e arriva palla dietro). Stessa ansia dopo palla persa: non inseguire lasciando la linea scoperta; temporizzare e restare connessi invece di over-pressing che apre varchi."
         }
       }
     ]

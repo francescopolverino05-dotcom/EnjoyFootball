@@ -3,13 +3,14 @@
 **Match:** Amichevole · 22 August 2026  
 **Score:** 2–0 (Favicchio 18' — assist Baridó; Mané 70' — assist Kenmogne)  
 **Shots:** 14 (8 on target) · **xG:** ~1.90  
+**PPDA:** Napoli **8.00** (ultra-high) · Virtus Stabia **19.38** (low block)  
 **Analyst:** Francesco Polverino (staff consensus)
 
 ---
 
 ## Overall verdict
 
-Best friendly of the pre-season so far. Progressive, vertical passing and combination play created a high volume of chances; the high defence, though only briefly trained, recovered the ball high and fed counters. The gap is still finishing and final-third decision-making — we matched xG with two goals, but several higher-quality chances (including a 1v0) were missed.
+Best friendly of the pre-season so far. Progressive, vertical passing and combination play created a high volume of chances; the high defence, though only briefly trained, recovered the ball high (PPDA 8.0) and fed counters. The gap is still finishing, final-third decision-making, and disciplined cover when the wing-back presses.
 
 ---
 
@@ -22,8 +23,8 @@ Best friendly of the pre-season so far. Progressive, vertical passing and combin
    - **1st half — right:** Baridó–Melnyk  
    - **2nd half — left:** Kenmogne with Liccardo (after Liccardo swapped roles with Chiaiese)
 
-3. **High defence**  
-   Aggressive despite limited training. Majority of recoveries in their half; PPDA likely high. Produced counter-attacks. Strong signal that the high block is working.
+3. **High defence / PPDA**  
+   Aggressive despite limited training. Global PPDA **8.00** (1H 7.63 · 2H 8.33) vs Stabia **19.38** — ultra-high press vs low block. Opponent passes allowed in our defensive 60%: 136 vs 310. Defensive actions in their half: 17. Produced counter-attacks.
 
 4. **Chance creation**  
    Clear technical improvement — many chances created.
@@ -47,6 +48,9 @@ Best friendly of the pre-season so far. Progressive, vertical passing and combin
 4. **2nd-half midfield tempo**  
    Ball circulation had good moments, but midfielders need more progressive risk: diagonal, or long over the top when the striker is 1v1 with a centre-back. Don’t always wait for the perfect pass — if it fails, win it back.
 
+5. **Cover behind Zappalà’s press (Branchizio)**  
+   When the ball goes wide and Zappalà presses, Branchizio must **hold cover** — not shuffle into man-to-man, which weakens the side and invites balls over the top. Same theme after turnovers: eagerness to chase (kids push more than delay) leaves the back line exposed and creates gaps — especially dangerous on that flank when Zappalà loses it and presses without the rest of the line staying connected.
+
 ---
 
 ## Staff notes (Monteleone / De Santis) — aligned themes
@@ -55,9 +59,3 @@ Best friendly of the pre-season so far. Progressive, vertical passing and combin
 - Fill the box on wide balls / crosses; striker attacks the goal, not the wide player; opposite TQ / quinto inside the goal mouth.  
 - Zappalà now reaches the area — train how to attack, insert, and enter the box.  
 - Sagome + defenders → rondo → finalize.
-
----
-
-## Left aside (to reword)
-
-Defensive cover / decision-making on the left (1st half) and wing-back press-out decisions — flagged as a weakness; wording to refine before publishing.
