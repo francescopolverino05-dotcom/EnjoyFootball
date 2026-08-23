@@ -123,7 +123,7 @@
         "en": "PPDA",
         "it": "PPDA"
       },
-      "homeValue": 8.0,
+      "homeValue": 8,
       "awayValue": 19.38
     }
   ],
@@ -705,7 +705,613 @@
       "colorClass": "green"
     }
   ],
-  "clips": [],
+  "clips": [
+    {
+      "id": "vimeo-1220630837",
+      "title": {
+        "en": "Transition 2 Imortant to regroup behind the ball ASAP",
+        "it": "Transition 2 Imortant to regroup behind the ball ASAP"
+      },
+      "comments": {
+        "en": "Transition 2 Imortant to regroup behind the ball ASAP",
+        "it": "Transition 2 Imortant to regroup behind the ball ASAP"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220630837/a78ad866e6",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1220630838",
+      "title": {
+        "en": "Defence transition good reaction to counter press",
+        "it": "Defence transition good reaction to counter press"
+      },
+      "comments": {
+        "en": "Defence transition good reaction to counter press",
+        "it": "Defence transition good reaction to counter press"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220630838/0c57a6c82c",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "vimeo",
+        "actions",
+        "other"
+      ]
+    },
+    {
+      "id": "vimeo-1220629884",
+      "title": {
+        "en": "High defence 1 better communication needed",
+        "it": "High defence 1 better communication needed"
+      },
+      "comments": {
+        "en": "High defence 1 better communication needed",
+        "it": "High defence 1 better communication needed"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220629884/ace3e6e98e",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo",
+        "high-defence"
+      ]
+    },
+    {
+      "id": "vimeo-1220629845",
+      "title": {
+        "en": "Transition Good Shape hold",
+        "it": "Transition Good Shape hold"
+      },
+      "comments": {
+        "en": "Transition Good Shape hold",
+        "it": "Transition Good Shape hold"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220629845/57982e3908",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1220628725",
+      "title": {
+        "en": "Progress 1 Chance creation",
+        "it": "Progress 1 Chance creation"
+      },
+      "comments": {
+        "en": "Progress 1 Chance creation",
+        "it": "Progress 1 Chance creation"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220628725/7429fceb63",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "progress"
+      ]
+    },
+    {
+      "id": "vimeo-1220628690",
+      "title": {
+        "en": "Progress 2 Inbserimenti non fatti",
+        "it": "Progress 2 Inbserimenti non fatti"
+      },
+      "comments": {
+        "en": "Progress 2 Inbserimenti non fatti",
+        "it": "Progress 2 Inbserimenti non fatti"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220628690/9e9cf1be2a",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "progress"
+      ]
+    },
+    {
+      "id": "vimeo-1220628428",
+      "title": {
+        "en": "Build Ip 1 Good Ball circulation",
+        "it": "Build Ip 1 Good Ball circulation"
+      },
+      "comments": {
+        "en": "Build Ip 1 Good Ball circulation",
+        "it": "Build Ip 1 Good Ball circulation"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220628428/771ffef043",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1220628429",
+      "title": {
+        "en": "Build up 3 Midfielders too passive",
+        "it": "Build up 3 Midfielders too passive"
+      },
+      "comments": {
+        "en": "Build up 3 Midfielders too passive",
+        "it": "Build up 3 Midfielders too passive"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220628429/d604bd37e0",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "build-up"
+      ]
+    },
+    {
+      "id": "vimeo-1220628430",
+      "title": {
+        "en": "Build up 2 Too slow",
+        "it": "Build up 2 Too slow"
+      },
+      "comments": {
+        "en": "Build up 2 Too slow",
+        "it": "Build up 2 Too slow"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220628430/ddd82e8e8f",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "build-up"
+      ]
+    },
+    {
+      "id": "vimeo-1220627964",
+      "title": {
+        "en": "Gol Mané",
+        "it": "Gol Mané"
+      },
+      "comments": {
+        "en": "Gol Mané",
+        "it": "Gol Mané"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220627964/b6afb520c1",
+      "section": "goal",
+      "labels": [
+        "goal"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1220628269",
+      "title": {
+        "en": "`Corner Avversario 1 Tempo",
+        "it": "`Corner Avversario 1 Tempo"
+      },
+      "comments": {
+        "en": "`Corner Avversario 1 Tempo",
+        "it": "`Corner Avversario 1 Tempo"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220628269/e38a23b0aa",
+      "section": "defending-corners",
+      "labels": [
+        "defending-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1220627871",
+      "title": {
+        "en": "Transition Defence 1",
+        "it": "Transition Defence 1"
+      },
+      "comments": {
+        "en": "Transition Defence 1",
+        "it": "Transition Defence 1"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220627871/0c9dad844f",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1220627872",
+      "title": {
+        "en": "Transition Defence 2",
+        "it": "Transition Defence 2"
+      },
+      "comments": {
+        "en": "Transition Defence 2",
+        "it": "Transition Defence 2"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220627872/d098361847",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1220627827",
+      "title": {
+        "en": "Mid Block 1",
+        "it": "Mid Block 1"
+      },
+      "comments": {
+        "en": "Mid Block 1",
+        "it": "Mid Block 1"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220627827/a96b493f3f",
+      "section": "mid-block",
+      "labels": [
+        "mid-block"
+      ],
+      "tags": [
+        "vimeo",
+        "mid-block"
+      ]
+    },
+    {
+      "id": "vimeo-1220627812",
+      "title": {
+        "en": "High Defence 1",
+        "it": "High Defence 1"
+      },
+      "comments": {
+        "en": "High Defence 1",
+        "it": "High Defence 1"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220627812/69fadd473d",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo",
+        "high-defence"
+      ]
+    },
+    {
+      "id": "vimeo-1220627760",
+      "title": {
+        "en": "High Defence 3",
+        "it": "High Defence 3"
+      },
+      "comments": {
+        "en": "High Defence 3",
+        "it": "High Defence 3"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220627760/309c028b18",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo",
+        "high-defence"
+      ]
+    },
+    {
+      "id": "vimeo-1220627762",
+      "title": {
+        "en": "Hugh Defence 2",
+        "it": "Hugh Defence 2"
+      },
+      "comments": {
+        "en": "Hugh Defence 2",
+        "it": "Hugh Defence 2"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220627762/d5ebfafd13",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1220627763",
+      "title": {
+        "en": "Hugh Defence 5",
+        "it": "Hugh Defence 5"
+      },
+      "comments": {
+        "en": "Hugh Defence 5",
+        "it": "Hugh Defence 5"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220627763/f5c3f27d34",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1220627764",
+      "title": {
+        "en": "High Defence 4 Oportunitá concessa a sinistra",
+        "it": "High Defence 4 Oportunitá concessa a sinistra"
+      },
+      "comments": {
+        "en": "High Defence 4 Oportunitá concessa a sinistra",
+        "it": "High Defence 4 Oportunitá concessa a sinistra"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220627764/b62b529d16",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo",
+        "high-defence"
+      ]
+    },
+    {
+      "id": "vimeo-1220627382",
+      "title": {
+        "en": "Attack Transition 2 Consolidamp4",
+        "it": "Attack Transition 2 Consolidamp4"
+      },
+      "comments": {
+        "en": "Attack Transition 2 Consolidamp4",
+        "it": "Attack Transition 2 Consolidamp4"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220627382/0cf274ca0a",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1220627308",
+      "title": {
+        "en": "Attack Transition 1 CONVERT CHANCE",
+        "it": "Attack Transition 1 CONVERT CHANCE"
+      },
+      "comments": {
+        "en": "Attack Transition 1 CONVERT CHANCE",
+        "it": "Attack Transition 1 CONVERT CHANCE"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220627308/c7eb2b36d0",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1220627073",
+      "title": {
+        "en": "Progress 2",
+        "it": "Progress 2"
+      },
+      "comments": {
+        "en": "Progress 2",
+        "it": "Progress 2"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220627073/b3212e85fa",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "progress"
+      ]
+    },
+    {
+      "id": "vimeo-1220627064",
+      "title": {
+        "en": "Progress 1",
+        "it": "Progress 1"
+      },
+      "comments": {
+        "en": "Progress 1",
+        "it": "Progress 1"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220627064/c10ef5faa6",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "progress"
+      ]
+    },
+    {
+      "id": "vimeo-1220626999",
+      "title": {
+        "en": "Goll Favicchio",
+        "it": "Goll Favicchio"
+      },
+      "comments": {
+        "en": "Goll Favicchio",
+        "it": "Goll Favicchio"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220626999/43d828b91b",
+      "section": "goal",
+      "labels": [
+        "goal"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1220626939",
+      "title": {
+        "en": "Build up 1 Circolazione Palla,",
+        "it": "Build up 1 Circolazione Palla,"
+      },
+      "comments": {
+        "en": "Build up 1 Circolazione Palla,",
+        "it": "Build up 1 Circolazione Palla,"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220626939/2c9ba42dc8",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "build-up"
+      ]
+    },
+    {
+      "id": "vimeo-1220626941",
+      "title": {
+        "en": "Build up 4 Combinazione a destra",
+        "it": "Build up 4 Combinazione a destra"
+      },
+      "comments": {
+        "en": "Build up 4 Combinazione a destra",
+        "it": "Build up 4 Combinazione a destra"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220626941/5287b9db3e",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "build-up"
+      ]
+    },
+    {
+      "id": "vimeo-1220626942",
+      "title": {
+        "en": "Build Up 2 Lieto Conduce",
+        "it": "Build Up 2 Lieto Conduce"
+      },
+      "comments": {
+        "en": "Build Up 2 Lieto Conduce",
+        "it": "Build Up 2 Lieto Conduce"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220626942/91f7e0fb5d",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "build-up"
+      ]
+    },
+    {
+      "id": "vimeo-1220626940",
+      "title": {
+        "en": "Build Up 3 Posizionamento Favicchio",
+        "it": "Build Up 3 Posizionamento Favicchio"
+      },
+      "comments": {
+        "en": "Build Up 3 Posizionamento Favicchio",
+        "it": "Build Up 3 Posizionamento Favicchio"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1220626940/195cd94745",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "build-up"
+      ]
+    }
+  ],
   "analysisVideos": [
     {
       "id": "post-match-analysis-md",
@@ -728,7 +1334,7 @@
   "vimeo": {
     "folderId": "30240824",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30240824",
-    "lastSyncedAt": "2026-08-23T14:00:44.724Z"
+    "lastSyncedAt": "2026-08-23T19:13:21.503Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1220418763/bc31c77183",
@@ -826,5 +1432,6 @@
         }
       }
     ]
-  }
+  },
+  "goalkeeperAnalysisVideos": []
 }

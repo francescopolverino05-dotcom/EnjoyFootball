@@ -46,16 +46,20 @@ const SECTION_ALIASES = {
   build_up: 'build-up',
   'build-up': 'build-up',
   buildup: 'build-up',
+  build_ip: 'build-up', // common typo in titles
   progress: 'progress',
   progression: 'progress',
   transition_to_attack: 'offensive-transition',
   'transition-to-attack': 'offensive-transition',
   'offensive-transition': 'offensive-transition',
+  attack_transition: 'offensive-transition',
   mid_block: 'mid-block',
   'mid-block': 'mid-block',
   high_defence: 'high-defence',
   high_defense: 'high-defence',
   'high-defence': 'high-defence',
+  hugh_defence: 'high-defence', // typo in titles
+  hugh_defense: 'high-defence',
   final_third: 'final-third',
   'final-third': 'final-third',
   own_third: 'own-third',
@@ -64,7 +68,13 @@ const SECTION_ALIASES = {
   transition_to_defense: 'defensive-transition',
   'transition-to-defence': 'defensive-transition',
   'defensive-transition': 'defensive-transition',
+  transition_defence: 'defensive-transition',
+  transition_defense: 'defensive-transition',
+  defence_transition: 'defensive-transition',
+  defense_transition: 'defensive-transition',
   goal: 'goal',
+  gol: 'goal',
+  goll: 'goal',
   free_kick: 'set-piece',
   'free-kick': 'set-piece',
   opponent_free_kick: 'set-piece',
@@ -227,7 +237,8 @@ function isGoalkeeperMatchAnalysis(name, duration = 0) {
   const n = String(name || '');
   // Short/medium keeper review reels — not the full match tape.
   if (Number(duration) >= 1800) return false;
-  return /\b(spinelli|merone|magliano|maiano|lieto|napoletano)\b/i.test(n);
+  // Outfielders who share common surnames must not match here (e.g. Lieto).
+  return /\b(spinelli|merone|magliano|maiano|pugliese|napoletano)\b/i.test(n);
 }
 
 function classifyVideo(name, parentFolderName, duration = 0) {
@@ -275,7 +286,8 @@ function classifyVideo(name, parentFolderName, duration = 0) {
     }
   }
 
-  if (section === 'goal' || section === 'other') {
+  // Skip half markers / unused "other" export buckets — keep goal clips.
+  if (section === 'other') {
     return { kind: 'skip' };
   }
 
