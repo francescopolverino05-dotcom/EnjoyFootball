@@ -294,6 +294,18 @@
         "it": "1° Tempo"
       },
       "name": {
+        "en": "Free Kicks",
+        "it": "Calci di Punizione"
+      },
+      "home": "0",
+      "away": "0"
+    },
+    {
+      "category": {
+        "en": "1st Half",
+        "it": "1° Tempo"
+      },
+      "name": {
         "en": "Fouls",
         "it": "Falli"
       },
@@ -346,6 +358,18 @@
         "it": "Calci d'Angolo"
       },
       "home": "3",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "2nd Half",
+        "it": "2° Tempo"
+      },
+      "name": {
+        "en": "Free Kicks",
+        "it": "Calci di Punizione"
+      },
+      "home": "1",
       "away": "1"
     },
     {
