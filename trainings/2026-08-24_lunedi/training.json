@@ -1,0 +1,253 @@
+{
+  "id": "2026-08-24_lunedi",
+  "slug": "2026-08-24_lunedi",
+  "date": "2026-08-24",
+  "title": {
+    "en": "Monday training — Activation / Rondo",
+    "it": "Lunedì — Attivazione / Rondo"
+  },
+  "focus": {
+    "en": "Technical activation + rondo",
+    "it": "Attivazione tecnica + rondo"
+  },
+  "sessionType": "strength",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Day — Mon 24 Aug 2026. Outfield + Goalkeeper (Podalico) sessions on Vimeo.",
+    "it": "Giorno — Lun 24 ago 2026. Sedute Outfield + Portieri (Podalico) su Vimeo."
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1220850464/54c35d1dd4",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1220850464",
+        "title": {
+          "en": "5v5+2 Rondo",
+          "it": "5v5+2 Rondo"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1220850464/54c35d1dd4",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1220850466",
+        "title": {
+          "en": "Attivazione Tecnica",
+          "it": "Attivazione Tecnica"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1220850466/9595719925",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1220850467",
+        "title": {
+          "en": "10 v 10 + 4 Rondo",
+          "it": "10 v 10 + 4 Rondo"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1220850467/f2e32b426c",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": [
+        {
+          "id": "vimeo-1220903723",
+          "title": {
+            "en": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (9)",
+            "it": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (9)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220903723/a57982d603",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220902897",
+          "title": {
+            "en": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (7)",
+            "it": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (7)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220902897/c17a451f11",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220902898",
+          "title": {
+            "en": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (8)",
+            "it": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (8)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220902898/4a1f4da2d0",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220902894",
+          "title": {
+            "en": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (5)",
+            "it": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (5)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220902894/0b9ee8e9c3",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220902896",
+          "title": {
+            "en": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (6)",
+            "it": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (6)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220902896/07fade79c5",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220900226",
+          "title": {
+            "en": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (1)",
+            "it": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (1)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220900226/6aa491f339",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220900229",
+          "title": {
+            "en": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (2)",
+            "it": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (2)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220900229/e9f1c3e4a7",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220900227",
+          "title": {
+            "en": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (4)",
+            "it": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (4)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220900227/37a271aea4",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220900228",
+          "title": {
+            "en": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (3)",
+            "it": "PODALICO RIFERIMENTI TATTICI SPOSTAMENTI (3)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220900228/e4d9c5fd20",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        }
+      ],
+      "fullSession": "https://vimeo.com/1220902898/4a1f4da2d0"
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30308046",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30308046",
+    "gkFolderId": "30308095",
+    "lastSyncedAt": "2026-08-24T18:06:13.991Z"
+  }
+}
