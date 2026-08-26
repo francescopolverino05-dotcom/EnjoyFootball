@@ -1,0 +1,125 @@
+{
+  "season": "2026/27",
+  "updatedAt": "2026-08-26",
+  "sources": {
+    "primavera2": "https://www.transfermarkt.com/primavera-2b/startseite/wettbewerb/IJ2B/saison_id/2026",
+    "coppaItalia": "https://www.transfermarkt.com/coppa-italia-primavera/gesamtspielplan/pokalwettbewerb/CITP/saison_id/2026",
+    "uefaYouthLeague": null
+  },
+  "competitions": {
+    "primavera2": {
+      "id": "primavera2",
+      "code": "IJ2B",
+      "name": { "en": "Primavera 2 — B", "it": "Primavera 2 — B" },
+      "kind": "league",
+      "matchday": 0,
+      "nextMatchday": 1,
+      "nextMatchdayDate": "2026-09-05",
+      "rows": [
+        { "pos": 1, "teamId": "ascoli", "shortName": "Ascoli", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
+        { "pos": 2, "teamId": "avellino", "shortName": "Avellino", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
+        { "pos": 3, "teamId": "bari", "shortName": "Bari", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
+        { "pos": 4, "teamId": "benevento", "shortName": "Benevento", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
+        { "pos": 5, "teamId": "catanzaro", "shortName": "Catanzaro", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
+        { "pos": 6, "teamId": "cosenza", "shortName": "Cosenza", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
+        { "pos": 7, "teamId": "frosinone", "shortName": "Frosinone", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
+        { "pos": 8, "teamId": "latina", "shortName": "Latina", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
+        { "pos": 9, "teamId": "monopoli", "shortName": "Monopoli", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
+        { "pos": 10, "teamId": "napoli", "shortName": "Napoli", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0, "us": true },
+        { "pos": 11, "teamId": "palermo", "shortName": "Palermo", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
+        { "pos": 12, "teamId": "perugia", "shortName": "Perugia", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
+        { "pos": 13, "teamId": "pescara", "shortName": "Pescara", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
+        { "pos": 14, "teamId": "pisa", "shortName": "Pisa", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
+        { "pos": 15, "teamId": "salernitana", "shortName": "Salernitana", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
+        { "pos": 16, "teamId": "spezia", "shortName": "Spezia", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 }
+      ],
+      "matchdays": [
+        {
+          "number": 1,
+          "date": "2026-09-05",
+          "fixtures": [
+            { "homeId": "ascoli", "awayId": "spezia" },
+            { "homeId": "avellino", "awayId": "napoli" },
+            { "homeId": "benevento", "awayId": "frosinone" },
+            { "homeId": "catanzaro", "awayId": "latina" },
+            { "homeId": "monopoli", "awayId": "cosenza" },
+            { "homeId": "palermo", "awayId": "pescara" },
+            { "homeId": "pisa", "awayId": "perugia" },
+            { "homeId": "salernitana", "awayId": "bari" }
+          ]
+        },
+        {
+          "number": 2,
+          "date": "2026-09-12",
+          "fixtures": [
+            { "homeId": "bari", "awayId": "ascoli" },
+            { "homeId": "cosenza", "awayId": "avellino" },
+            { "homeId": "frosinone", "awayId": "pisa" },
+            { "homeId": "latina", "awayId": "salernitana" },
+            { "homeId": "napoli", "awayId": "catanzaro" },
+            { "homeId": "perugia", "awayId": "monopoli" },
+            { "homeId": "pescara", "awayId": "benevento" },
+            { "homeId": "spezia", "awayId": "palermo" }
+          ]
+        }
+      ]
+    },
+    "coppaItalia": {
+      "id": "coppaItalia",
+      "code": "CITP",
+      "name": { "en": "Coppa Italia Primavera", "it": "Coppa Italia Primavera" },
+      "kind": "cup",
+      "ourPath": {
+        "entryRound": "firstRound",
+        "next": {
+          "round": "First Round",
+          "date": "2026-10-28",
+          "homeId": "napoli",
+          "awayId": "spezia",
+          "score": null
+        }
+      },
+      "rounds": [
+        {
+          "id": "1VR",
+          "name": { "en": "First Preliminary Round", "it": "1ª Vorrunde" },
+          "dateFrom": "2026-08-21",
+          "fixtures": [
+            { "date": "2026-08-21", "home": "Südtirol", "away": "Cosenza", "score": "5-0", "ourClub": "cosenza" },
+            { "date": "2026-08-22", "home": "Udinese", "away": "Salernitana", "score": "3-0", "ourClub": "salernitana" },
+            { "date": "2026-08-22", "home": "Monopoli", "away": "Union Brescia", "score": "2-3", "ourClub": "monopoli" },
+            { "date": "2026-08-22", "home": "Ascoli", "away": "Latina", "score": "4-1", "ourClub": "ascoli" },
+            { "date": "2026-08-22", "home": "Cittadella", "away": "Venezia", "score": "0-4" },
+            { "date": "2026-08-29", "home": "Bari", "away": "Padova", "score": null, "ourClub": "bari" },
+            { "date": "2026-08-29", "home": "Renate", "away": "Mantova", "score": null },
+            { "date": "2026-08-29", "home": "Vicenza", "away": "Palermo", "score": null, "ourClub": "palermo" }
+          ]
+        },
+        {
+          "id": "1R",
+          "name": { "en": "First Round", "it": "Primo turno" },
+          "dateFrom": "2026-10-28",
+          "note": "Napoli enter here vs Spezia (both Primavera 2 B).",
+          "fixtures": [
+            { "date": "2026-10-28", "home": "Napoli", "away": "Spezia", "score": null, "ourClub": "napoli", "us": true },
+            { "date": "2026-10-28", "home": "AlbinoLeffe", "away": "Avellino", "score": null, "ourClub": "avellino" },
+            { "date": "2026-10-28", "home": "Milan", "away": "Catanzaro", "score": null, "ourClub": "catanzaro" },
+            { "date": "2026-10-28", "home": "Como", "away": "Pescara", "score": null, "ourClub": "pescara" },
+            { "date": "2026-10-28", "home": "Lecce", "away": "Pisa", "score": null, "ourClub": "pisa" },
+            { "date": "2026-10-28", "home": "Empoli", "away": "Perugia", "score": null, "ourClub": "perugia" },
+            { "date": "2026-10-28", "home": "Cremonese", "away": "Benevento", "score": null, "ourClub": "benevento" },
+            { "date": "2026-10-28", "home": "Frosinone", "away": "Virtus Entella", "score": null, "ourClub": "frosinone" }
+          ]
+        }
+      ]
+    },
+    "uefaYouthLeague": {
+      "id": "uefaYouthLeague",
+      "code": "UYL",
+      "name": { "en": "UEFA Youth League", "it": "UEFA Youth League" },
+      "kind": "cup",
+      "ourPath": null,
+      "rounds": []
+    }
+  }
+}

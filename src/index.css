@@ -1097,6 +1097,543 @@ button {
   letter-spacing: 0.02em;
 }
 
+/* —— Home portal (FM-style overview) —— */
+.home-portal {
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+.home-portal-layout {
+  display: block;
+}
+
+/* Left stack + table share one height */
+.home-portal-upper {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(200px, 260px);
+  gap: 14px;
+  align-items: stretch;
+}
+
+.home-portal-main-upper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+.home-portal-top {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  align-items: stretch;
+}
+
+.home-portal-side {
+  min-width: 0;
+  display: flex;
+}
+
+.home-tile {
+  background: #fff;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Equal-height top cards: pin CTA to bottom */
+.home-portal-top .home-tile {
+  height: 100%;
+}
+
+.home-portal-top .home-tile-body {
+  flex: 1 1 auto;
+}
+
+.home-portal-top .home-tile-link {
+  margin-top: auto;
+}
+
+.home-tile--table {
+  padding: 12px 14px;
+  flex: 1;
+  width: 100%;
+  height: auto;
+}
+
+.home-tile-header {
+  margin-bottom: 10px;
+}
+
+.home-tile-kicker {
+  display: block;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--napoli-blue);
+  margin-bottom: 4px;
+}
+
+.home-tile-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.home-tile-body {
+  flex: 0 1 auto;
+}
+
+.home-pulse-headline {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--napoli-blue-dark);
+  line-height: 1.25;
+}
+
+.home-tile--pulse .home-tile-text {
+  margin-bottom: 8px;
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.home-tile-text {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text-gray);
+}
+
+.home-tile-meta {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: var(--text-gray);
+}
+
+.home-tile-link {
+  display: inline-block;
+  margin-top: 4px;
+  padding-top: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--napoli-blue-dark);
+  text-decoration: none;
+}
+
+.home-tile-link:hover {
+  text-decoration: underline;
+}
+
+.home-fixture-list {
+  list-style: none;
+  margin: 0 0 8px;
+  padding: 0;
+}
+
+.home-fixture-row {
+  display: grid;
+  grid-template-columns: 72px 1fr auto;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-light);
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-fixture-list li:last-child .home-fixture-row {
+  border-bottom: none;
+}
+
+.home-fixture-date {
+  font-size: 11px;
+  color: var(--text-gray);
+}
+
+.home-fixture-opp {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.home-fixture-meta {
+  display: block;
+  font-size: 11px;
+  color: var(--text-light);
+}
+
+.home-fixture-score {
+  font-size: 13px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-gray);
+}
+
+.home-fixture-score--win {
+  color: var(--away-green);
+}
+
+.home-fixture-score--loss {
+  color: #dc2626;
+}
+
+.home-fixture-score--draw {
+  color: var(--text-dark);
+}
+
+.home-next-crest-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.home-next-crest {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.home-week-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 6px;
+  margin-bottom: 0;
+}
+
+.home-fortnight {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.home-fortnight-week {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.home-fortnight-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-gray);
+}
+
+.home-week-day {
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  padding: 8px 6px;
+  min-height: 64px;
+  background: #fafafa;
+}
+
+.home-week-day--training {
+  background: #f0f7ff;
+}
+
+.home-week-day--match {
+  background: rgba(0, 127, 255, 0.1);
+  border-color: rgba(0, 127, 255, 0.25);
+}
+
+.home-week-day--today {
+  outline: 2px solid var(--napoli-blue);
+  outline-offset: 1px;
+}
+
+.home-week-dow {
+  display: block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-gray);
+  margin-bottom: 4px;
+}
+
+.home-week-link {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--napoli-blue-dark);
+  text-decoration: none;
+}
+
+.home-week-link:hover {
+  text-decoration: underline;
+}
+
+.home-week-off {
+  font-size: 12px;
+  color: var(--text-light);
+}
+
+.home-standings-wrap {
+  margin: 0;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+}
+
+.home-standings-table th,
+.home-standings-table td {
+  padding: 4px 6px;
+  font-size: 12px;
+}
+
+.home-table-footer {
+  margin-top: auto;
+  padding-top: 8px;
+  flex: 0 0 auto;
+}
+
+.home-table-legend {
+  list-style: none;
+  margin: 0 0 6px;
+  padding: 8px 0 0;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.home-table-legend li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 11px;
+  line-height: 1.35;
+  color: var(--text-gray);
+}
+
+.home-table-legend strong {
+  color: var(--text-dark);
+  font-weight: 800;
+}
+
+.home-table-legend-swatch {
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  margin-top: 4px;
+  border-radius: 2px;
+}
+
+.home-table-legend-swatch--champions {
+  background: #16a34a;
+}
+
+.home-table-legend-swatch--playoff {
+  background: #ca8a04;
+}
+
+.home-table-legend-swatch--playout {
+  background: #ea580c;
+}
+
+.home-table-legend-swatch--relegated {
+  background: #dc2626;
+}
+
+.standings-page-legend {
+  margin: 0 0 20px;
+  padding: 12px 0 0;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+}
+
+.standings-row--champions td:first-child {
+  box-shadow: inset 3px 0 0 #16a34a;
+}
+
+.standings-row--playoff td:first-child {
+  box-shadow: inset 3px 0 0 #ca8a04;
+}
+
+.standings-row--playout td:first-child {
+  box-shadow: inset 3px 0 0 #ea580c;
+}
+
+.standings-row--relegated td:first-child {
+  box-shadow: inset 3px 0 0 #dc2626;
+}
+
+.standings-row--champions {
+  background: rgba(22, 163, 74, 0.06);
+}
+
+.standings-row--playoff {
+  background: rgba(202, 138, 4, 0.07);
+}
+
+.standings-row--playout {
+  background: rgba(234, 88, 12, 0.07);
+}
+
+.standings-row--relegated {
+  background: rgba(220, 38, 38, 0.07);
+}
+
+.standings-row--us {
+  outline: 1px solid rgba(0, 127, 255, 0.35);
+  outline-offset: -1px;
+}
+
+.home-tile--table .home-tile-header {
+  margin-bottom: 8px;
+}
+
+.home-tile--table .home-tile-title {
+  font-size: 14px;
+}
+
+.home-tile--week .home-tile-header {
+  margin-bottom: 10px;
+}
+
+.home-load-stats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 14px 20px;
+  margin-bottom: 4px;
+}
+
+.home-stat-value {
+  display: block;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--napoli-blue-dark);
+  font-variant-numeric: tabular-nums;
+}
+
+.home-stat-label {
+  display: block;
+  font-size: 12px;
+  color: var(--text-gray);
+  margin-top: 2px;
+}
+
+.home-cup-chip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+  margin-top: 14px;
+  padding: 12px 16px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  background: #fff;
+  font-size: 13px;
+  color: var(--text-dark);
+}
+
+.home-cup-chip-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--napoli-blue);
+}
+
+.home-cup-chip a {
+  margin-left: auto;
+  font-weight: 700;
+  color: var(--napoli-blue-dark);
+  text-decoration: none;
+}
+
+.home-cup-chip a:hover {
+  text-decoration: underline;
+}
+
+.home-credit-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 8px;
+  margin-top: 20px;
+  padding: 14px 4px 4px;
+  border-top: 1px solid var(--border-light);
+  font-size: 12px;
+  color: var(--text-gray);
+}
+
+.home-credit-strip-label {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.home-credit-strip-name {
+  font-weight: 800;
+  color: var(--napoli-blue-dark);
+  font-size: 13px;
+}
+
+.home-credit-strip-sep {
+  color: var(--text-light);
+}
+
+.home-credit-strip-brand {
+  font-weight: 600;
+  color: var(--text-gray);
+}
+
+@media (max-width: 1100px) {
+  .home-portal-upper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 960px) {
+  .home-portal-top {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-tile--load {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-portal-top {
+    grid-template-columns: 1fr;
+  }
+
+  .home-tile--load {
+    grid-column: auto;
+  }
+
+  .home-week-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-fixture-row {
+    grid-template-columns: 64px 1fr auto;
+  }
+
+  .home-load-stats {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
 .home-section {
   margin-top: 28px;
   margin-bottom: 12px;
@@ -3862,5 +4399,168 @@ a.gacon-ind-row:hover {
   .lang-btn,
   .app-nav-link {
     min-height: 44px;
+  }
+}
+
+/* —— Standings / Table page —— */
+.standings-table-wrap {
+  overflow-x: auto;
+  margin: 12px 0 20px;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.standings-table th,
+.standings-table td {
+  padding: 10px 12px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.standings-table th {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--text-gray);
+  background: #f9fafb;
+}
+
+.standings-table td.standings-team,
+.standings-table th:nth-child(2) {
+  text-align: left;
+}
+
+.standings-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.standings-row--us td {
+  font-weight: 700;
+  color: var(--napoli-blue-dark);
+}
+
+.standings-pos {
+  width: 40px;
+  color: var(--text-light);
+  font-variant-numeric: tabular-nums;
+}
+
+.standings-pts {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.standings-team-link,
+.standings-team-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.standings-team-link:hover {
+  color: var(--napoli-blue-dark);
+  text-decoration: underline;
+}
+
+.standings-crest {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.standings-matchday,
+.standings-cup-round,
+.standings-our-path {
+  margin-top: 20px;
+}
+
+.standings-matchday-title {
+  margin: 0 0 10px;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.standings-our-path-body {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.standings-fixture-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.standings-fixture {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 10px;
+  align-items: center;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border-light);
+  font-size: 13px;
+}
+
+.standings-fixture:last-child {
+  border-bottom: none;
+}
+
+.standings-cup-round .standings-fixture {
+  grid-template-columns: 90px 1fr auto 1fr;
+}
+
+.standings-fixture--us {
+  background: rgba(0, 127, 255, 0.08);
+  font-weight: 700;
+}
+
+.standings-fixture-home {
+  text-align: right;
+}
+
+.standings-fixture-away {
+  text-align: left;
+}
+
+.standings-fixture-sep {
+  color: var(--text-light);
+  font-variant-numeric: tabular-nums;
+  min-width: 28px;
+  text-align: center;
+}
+
+.standings-fixture-date {
+  color: var(--text-gray);
+  font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  .standings-table th,
+  .standings-table td {
+    padding: 8px 6px;
+    font-size: 12px;
+  }
+
+  .standings-cup-round .standings-fixture {
+    grid-template-columns: 72px 1fr auto 1fr;
+    gap: 6px;
+    padding: 10px;
   }
 }

@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import TablesPage from './pages/TablesPage';
 import AppNav from './components/AppNav';
 import LanguageToggle from './components/LanguageToggle';
 import PasswordGate from './components/PasswordGate';
@@ -31,6 +32,7 @@ export default function App() {
         <Route path="/training/:slug" element={<TrainingPage />} />
         <Route path="/players" element={<PlayersPage />} />
         <Route path="/players/:slug" element={<PlayerPage />} />
+        <Route path="/table" element={<TablesPage />} />
       </Routes>
     </PasswordGate>
   );
