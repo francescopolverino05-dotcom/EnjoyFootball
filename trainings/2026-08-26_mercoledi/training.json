@@ -1,0 +1,97 @@
+{
+  "id": "2026-08-26_mercoledi",
+  "slug": "2026-08-26_mercoledi",
+  "date": "2026-08-26",
+  "title": {
+    "en": "Wednesday training — Defence engaged / Practice match",
+    "it": "Mercoledì — Difesa impegnata / Partitella"
+  },
+  "focus": {
+    "en": "Defence engaged + practice match",
+    "it": "Difesa impegnata + partitella"
+  },
+  "sessionType": "activation",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Day — Wed 26 Aug 2026. Outfield session on Vimeo.",
+    "it": "Giorno — Mer 26 ago 2026. Seduta outfield su Vimeo."
+  },
+  "video": {
+    "parts": [
+      {
+        "id": "vimeo-1221519336",
+        "title": {
+          "en": "Practice Match",
+          "it": "Practice Match"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1221519336/e855fd15b8",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1221519335",
+        "title": {
+          "en": "Defence Engaged",
+          "it": "Defence Engaged"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1221519335/dc74066b64",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1221519337",
+        "title": {
+          "en": "Defence Engaged Second Team",
+          "it": "Defence Engaged Second Team"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1221519337/9ebb88a292",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "fullSession": "https://vimeo.com/1221519335/dc74066b64"
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30308090",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30308090",
+    "gkFolderId": "30308099",
+    "lastSyncedAt": "2026-08-26T16:25:36.080Z"
+  },
+  "trainingDesign": []
+}
