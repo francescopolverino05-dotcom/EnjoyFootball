@@ -124,7 +124,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-05",
+        "title": {
+          "en": "GK design — Strength, Footwork Space defence Low exits",
+          "it": "Scheda portieri — FORZA - PODALICO DIF. SPAZIO USCITA BASSA"
+        },
+        "description": {
+          "en": "All. N°9 — 5 Aug 2026. Strength, Footwork Space defence Low exits.",
+          "it": "All. N°9 — 5 ago 2026. FORZA - PODALICO DIF. SPAZIO USCITA BASSA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-05_FORZA_PODALICO_DIF_SPAZIO_USCITA_BASSA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "sessionType": "activation",

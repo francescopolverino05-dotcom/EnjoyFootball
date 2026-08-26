@@ -280,7 +280,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-06",
+        "title": {
+          "en": "GK design — Upper body, High exits +Goal recovery",
+          "it": "Scheda portieri — PARTE ALTA- USCITA ALTA +REC PORTA"
+        },
+        "description": {
+          "en": "All. N°10 — 6 Aug 2026. Upper body, High exits +Goal recovery.",
+          "it": "All. N°10 — 6 ago 2026. PARTE ALTA- USCITA ALTA +REC PORTA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-06_PARTE_ALTA_USCITA_ALTA_REC_PORTA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "sessionType": "activation",

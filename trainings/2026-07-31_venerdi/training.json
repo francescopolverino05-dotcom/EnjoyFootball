@@ -191,7 +191,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-07-31",
+        "title": {
+          "en": "GK design — Core, Strength CON Technical gesture, Global",
+          "it": "Scheda portieri — CORE-FORZA CON GESTO TEC- GLOBALE"
+        },
+        "description": {
+          "en": "All. N°5 — 31 Jul 2026. Core, Strength CON Technical gesture, Global.",
+          "it": "All. N°5 — 31 lug 2026. CORE-FORZA CON GESTO TEC- GLOBALE."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-07-31_CORE_FORZA_CON_GESTO_TEC_GLOBALE.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "sessionType": "match-practice",

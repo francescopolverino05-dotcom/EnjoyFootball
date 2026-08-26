@@ -207,7 +207,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-21",
+        "title": {
+          "en": "GK design — Proprioception, Psychokinetics, Reaction capacity",
+          "it": "Scheda portieri — PROPOCETTIVITA'-PSICOCINETICA-CAP.DI REAZIONE"
+        },
+        "description": {
+          "en": "All. N°22 — 21 Aug 2026. Proprioception, Psychokinetics, Reaction capacity.",
+          "it": "All. N°22 — 21 ago 2026. PROPOCETTIVITA'-PSICOCINETICA-CAP.DI REAZIONE."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-21_PROPOCETTIVITA_PSICOCINETICA_CAP_DI_REAZIONE.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "vimeo": {

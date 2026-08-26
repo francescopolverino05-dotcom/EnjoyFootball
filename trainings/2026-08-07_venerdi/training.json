@@ -141,7 +141,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-07",
+        "title": {
+          "en": "GK design — Psychokinetics, Reaction capacity",
+          "it": "Scheda portieri — PSICOCINETICA -CAPACITA' DI REAZIONE"
+        },
+        "description": {
+          "en": "All. N°11 — 7 Aug 2026. Psychokinetics, Reaction capacity.",
+          "it": "All. N°11 — 7 ago 2026. PSICOCINETICA -CAPACITA' DI REAZIONE."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-07_PSICOCINETICA_CAPACITA_DI_REAZIONE.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "sessionType": "match-practice",

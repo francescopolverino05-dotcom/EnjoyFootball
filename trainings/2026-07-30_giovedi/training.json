@@ -180,7 +180,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-07-30",
+        "title": {
+          "en": "GK design — Core, Plyometrics USCITE ALTA",
+          "it": "Scheda portieri — ADDOME-PLIOMETRIA USCITE ALTA"
+        },
+        "description": {
+          "en": "All. N°4 — 30 Jul 2026. Core, Plyometrics USCITE ALTA.",
+          "it": "All. N°4 — 30 lug 2026. ADDOME-PLIOMETRIA USCITE ALTA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-07-30_ADDOME_PLIOMETRIA_USCITE_ALTA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "sessionType": "activation",

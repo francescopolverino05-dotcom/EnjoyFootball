@@ -159,7 +159,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-07-27",
+        "title": {
+          "en": "GK design — Reconditioning, Footwork, GK technique",
+          "it": "Scheda portieri — RIATLETIZZAZIONE-PODALICO-TECNICA GK"
+        },
+        "description": {
+          "en": "All. N°1 — 27 Jul 2026. Reconditioning, Footwork, GK technique.",
+          "it": "All. N°1 — 27 lug 2026. RIATLETIZZAZIONE-PODALICO-TECNICA GK."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-07-27_RIATLETIZZAZIONE_PODALICO_TECNICA_GK.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "sessionType": "strength",

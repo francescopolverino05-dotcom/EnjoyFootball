@@ -183,7 +183,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-04",
+        "title": {
+          "en": "GK design — Upper limbs, Speed, Goal defence",
+          "it": "Scheda portieri — ART SUPER.-RAPIDITA' -DIF PORTA"
+        },
+        "description": {
+          "en": "All. N°8 — 4 Aug 2026. Upper limbs, Speed, Goal defence.",
+          "it": "All. N°8 — 4 ago 2026. ART SUPER.-RAPIDITA' -DIF PORTA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-04_ART_SUPER_RAPIDITA_DIF_PORTA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "sessionType": "metabolic",

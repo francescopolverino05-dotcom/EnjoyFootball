@@ -80,7 +80,26 @@
   },
   "clips": [],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-24",
+      "title": {
+        "en": "Session plan — Mon 24 Aug",
+        "it": "Piano seduta — Lun 24 ago"
+      },
+      "description": {
+        "en": "Monday activation / rondo session plan (CamScanner 24-08-2026).",
+        "it": "Piano seduta di lunedì attivazione / rondo (CamScanner 24-08-2026)."
+      },
+      "videoFile": "Session_Plan_2026-08-24.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "activation"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": [
@@ -241,7 +260,26 @@
       "fullSession": "https://vimeo.com/1220902898/4a1f4da2d0"
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-24",
+        "title": {
+          "en": "GK design — Upper body, Footwork, Positional shifts",
+          "it": "Scheda portieri — PARTE ALTA-PODALICA-SPOSTAMENTI"
+        },
+        "description": {
+          "en": "All. N°24 — 24 Aug 2026. Upper body, Footwork, Positional shifts.",
+          "it": "All. N°24 — 24 ago 2026. PARTE ALTA-PODALICA-SPOSTAMENTI."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-24_PARTE_ALTA_PODALICA_SPOSTAMENTI.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "vimeo": {

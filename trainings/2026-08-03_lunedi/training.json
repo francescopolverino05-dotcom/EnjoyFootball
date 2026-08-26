@@ -158,7 +158,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-03",
+        "title": {
+          "en": "GK design — Lower limbs, Footwork, Goal defence TECNICA",
+          "it": "Scheda portieri — ART.INF-PODALICO-DIF PORTA TECNICA"
+        },
+        "description": {
+          "en": "All. N°7 — 3 Aug 2026. Lower limbs, Footwork, Goal defence TECNICA.",
+          "it": "All. N°7 — 3 ago 2026. ART.INF-PODALICO-DIF PORTA TECNICA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-03_ART_INF_PODALICO_DIF_PORTA_TECNICA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "sessionType": "strength",

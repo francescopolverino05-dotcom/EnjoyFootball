@@ -211,7 +211,26 @@
       "fullSession": "https://vimeo.com/1220624621/051cbb60ea"
     },
     "clips": [],
-    "trainingDesign": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-20",
+        "title": {
+          "en": "GK design — Upper body, Attacking the ball, Space defence",
+          "it": "Scheda portieri — PARTE ALTA - ATTACCO PALLA- DIF SPAZIO"
+        },
+        "description": {
+          "en": "All. N°21 — 20 Aug 2026. Upper body, Attacking the ball, Space defence.",
+          "it": "All. N°21 — 20 ago 2026. PARTE ALTA - ATTACCO PALLA- DIF SPAZIO."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-20_PARTE_ALTA_ATTACCO_PALLA_DIF_SPAZIO.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "vimeo": {

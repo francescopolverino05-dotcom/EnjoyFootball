@@ -90,7 +90,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-07-29",
+        "title": {
+          "en": "GK design — Isometrics, Runs, Countermovement",
+          "it": "Scheda portieri — ISOMETRIA-CORSE-CONTROMOVIMENTO"
+        },
+        "description": {
+          "en": "All. N°3 — 29 Jul 2026. Isometrics, Runs, Countermovement.",
+          "it": "All. N°3 — 29 lug 2026. ISOMETRIA-CORSE-CONTROMOVIMENTO."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-07-29_ISOMETRIA_CORSE_CONTROMOVIMENTO.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "sessionType": "activation",

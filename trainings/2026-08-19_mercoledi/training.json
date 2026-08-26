@@ -90,7 +90,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-19",
+        "title": {
+          "en": "GK design — Plyometrics Internal friendly",
+          "it": "Scheda portieri — PLIOMETRIA AMICHEVOLE INTERNA"
+        },
+        "description": {
+          "en": "All. N°20 — 19 Aug 2026. Plyometrics Internal friendly.",
+          "it": "All. N°20 — 19 ago 2026. PLIOMETRIA AMICHEVOLE INTERNA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-19_PLIOMETRIA_AMICHEVOLE_INTERNA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "vimeo": {
