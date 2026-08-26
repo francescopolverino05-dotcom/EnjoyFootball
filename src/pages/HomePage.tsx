@@ -494,13 +494,7 @@ export default function HomePage() {
                     <li>
                       <span className="home-table-legend-swatch home-table-legend-swatch--playout" />
                       <span>
-                        <strong>14–15</strong> — {t('homeZonePlayout')}
-                      </span>
-                    </li>
-                    <li>
-                      <span className="home-table-legend-swatch home-table-legend-swatch--relegated" />
-                      <span>
-                        <strong>16</strong> — {t('homeZoneRelegated')}
+                        <strong>15–16</strong> — {t('homeZonePlayout')}
                       </span>
                     </li>
                   </ul>

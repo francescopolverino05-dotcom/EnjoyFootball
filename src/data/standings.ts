@@ -132,8 +132,8 @@ export type StandingZone = 'champions' | 'playoff' | 'playout' | 'relegated';
 export function primavera2Zone(rank: number): StandingZone | null {
   if (rank === 1) return 'champions';
   if (rank >= 2 && rank <= 5) return 'playoff';
-  if (rank === 14 || rank === 15) return 'playout';
-  if (rank >= 16) return 'relegated';
+  // Primavera 2 B: 15th–16th enter the relegation playoff (not 14th).
+  if (rank === 15 || rank === 16) return 'playout';
   return null;
 }
 
