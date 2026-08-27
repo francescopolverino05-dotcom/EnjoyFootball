@@ -281,7 +281,11 @@ export default function HomePage() {
                         </p>
                         <p className="home-tile-meta">
                           {t('homeNextSystem')}:{' '}
-                          {nextOpp.opponent.formationSystem}
+                          {[
+                            nextOpp.opponent.formationSystem,
+                            ...(nextOpp.opponent.alternateFormationSystems ??
+                              []),
+                          ].join(' · ')}
                         </p>
                       </div>
                       <Link

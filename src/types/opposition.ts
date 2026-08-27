@@ -96,7 +96,10 @@ export interface OppositionOpponent {
   shortName: string;
   logo: string;
   competitions: OppositionCompetitionId[];
+  /** Primary shape shown first (e.g. 1-4-3-3). */
   formationSystem: string;
+  /** Extra shapes when they rotate systems (e.g. 1-4-2-3-1). */
+  alternateFormationSystems?: string[];
   starters: PitchPlayer[];
   substitutes: OppositionSquadPlayer[];
   squad: OppositionSquadPlayer[];

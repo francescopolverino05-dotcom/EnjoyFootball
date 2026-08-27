@@ -13,7 +13,8 @@ import {
   getOurFixturesVsOpponent,
   isNapoliHomeVsOpponent,
   oppositionClipSectionLabel,
-  placeholder1433,
+  formationSystemsFor,
+  placeholderPlayersForSystem,
   todayIsoDate,
 } from '../data/opposition';
 import { MATCH_COMPETITION_LABELS } from '../data/matchCompetitions';
@@ -71,16 +72,19 @@ export default function OpponentPage() {
   }
 
   const pack = getFixturePack(opponent, selectedSlug);
-  const starters =
-    opponent.starters.length > 0
-      ? opponent.starters
-      : placeholder1433(opponent.id);
-  const formation: Formation = {
-    teamId: opponent.id,
-    label: opponent.name,
-    system: opponent.formationSystem,
-    players: starters,
-  };
+  const systems = formationSystemsFor(opponent);
+  const formations: Formation[] = systems.map((system, index) => {
+    const useScoutedStarters =
+      index === 0 && opponent.starters.length > 0;
+    return {
+      teamId: `${opponent.id}-${system}`,
+      label: opponent.name,
+      system,
+      players: useScoutedStarters
+        ? opponent.starters
+        : placeholderPlayersForSystem(system, opponent.id),
+    };
+  });
   const refs = pack.referenceMatches.slice(0, OPPOSITION_MAX_REFERENCE_MATCHES);
   const emptySlots = Math.max(0, OPPOSITION_MAX_REFERENCE_MATCHES - refs.length);
   const reports = pack.reportItems;
@@ -204,7 +208,7 @@ export default function OpponentPage() {
         {tab === 'formation' ? (
           <div className="tab-content active" role="tabpanel">
             <p className="video-hint">{t('oppositionFormationHint')}</p>
-            <Formations formations={[formation]} />
+            <Formations formations={formations} />
             <div className="section-title">{t('oppositionSubs')}</div>
             {opponent.substitutes.length === 0 ? (
               <p className="home-empty">{t('oppositionSubsEmpty')}</p>

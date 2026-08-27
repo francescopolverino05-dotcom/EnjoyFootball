@@ -35,11 +35,45 @@ export function placeholder1433(teamId: string): PitchPlayer[] {
   ];
 }
 
+/** Empty 1-4-2-3-1 slots (double pivot + attacking mid three). */
+export function placeholder14231(teamId: string): PitchPlayer[] {
+  return [
+    { number: 1, name: 'GK', teamId, isGk: true, top: '8%', left: '50%' },
+    { number: 2, name: 'RB', teamId, top: '22%', left: '18%' },
+    { number: 4, name: 'CB', teamId, top: '20%', left: '38%' },
+    { number: 5, name: 'CB', teamId, top: '20%', left: '62%' },
+    { number: 3, name: 'LB', teamId, top: '22%', left: '82%' },
+    { number: 6, name: 'CDM', teamId, top: '40%', left: '36%' },
+    { number: 8, name: 'CDM', teamId, top: '40%', left: '64%' },
+    { number: 7, name: 'RW', teamId, top: '60%', left: '20%' },
+    { number: 10, name: 'CAM', teamId, top: '58%', left: '50%' },
+    { number: 11, name: 'LW', teamId, top: '60%', left: '80%' },
+    { number: 9, name: 'ST', teamId, top: '78%', left: '50%' },
+  ];
+}
+
+export function placeholderPlayersForSystem(
+  system: string,
+  teamId: string
+): PitchPlayer[] {
+  const key = system.trim().replace(/–/g, '-');
+  if (key === '1-4-2-3-1' || key === '4-2-3-1') {
+    return placeholder14231(teamId);
+  }
+  return placeholder1433(teamId);
+}
+
+export function formationSystemsFor(opponent: OppositionOpponent): string[] {
+  const alts = opponent.alternateFormationSystems ?? [];
+  return [opponent.formationSystem, ...alts].filter(Boolean);
+}
+
 function club(
   id: string,
   shortName: string,
   competitions: OppositionCompetitionId[],
-  formationSystem = '1-4-3-3'
+  formationSystem = '1-4-3-3',
+  alternateFormationSystems?: string[]
 ): OppositionOpponent {
   return {
     id,
@@ -49,6 +83,9 @@ function club(
     logo: `logos/${id}.png`,
     competitions,
     formationSystem,
+    ...(alternateFormationSystems?.length
+      ? { alternateFormationSystems }
+      : {}),
     starters: [],
     substitutes: [],
     squad: [],
@@ -85,7 +122,7 @@ export function oppositionClipSectionLabel(id: OppositionClipSectionId) {
 /** Primavera 2 Girone B opponents + Coppa Italia Spezia. UYL empty until the draw. */
 const OPPONENTS: OppositionOpponent[] = [
   club('ascoli', 'Ascoli', ['primavera2']),
-  club('avellino', 'Avellino', ['primavera2']),
+  club('avellino', 'Avellino', ['primavera2'], '1-4-3-3', ['1-4-2-3-1']),
   club('bari', 'Bari', ['primavera2']),
   club('benevento', 'Benevento', ['primavera2']),
   club('catanzaro', 'Catanzaro', ['primavera2']),
