@@ -100,7 +100,111 @@
   "trainingDesign": [],
   "goalkeepers": {
     "video": {
-      "parts": []
+      "parts": [
+        {
+          "id": "vimeo-1221897027",
+          "title": {
+            "en": "USCITA ALTA (3)",
+            "it": "USCITA ALTA (3)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1221897027/7d58159e65",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1221897031",
+          "title": {
+            "en": "USCITA ALTA (5)",
+            "it": "USCITA ALTA (5)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1221897031/0989c83000",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1221895295",
+          "title": {
+            "en": "USCITA ALTA (4)",
+            "it": "USCITA ALTA (4)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1221895295/62c46e693d",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1221895296",
+          "title": {
+            "en": "USCITA ALTA",
+            "it": "USCITA ALTA"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1221895296/d69d4d7432",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1221895297",
+          "title": {
+            "en": "USCITA ALTA (2)",
+            "it": "USCITA ALTA (2)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1221895297/d183edc57e",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1221895298",
+          "title": {
+            "en": "USCITA ALTA (1)",
+            "it": "USCITA ALTA (1)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1221895298/ec8940146f",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        }
+      ],
+      "fullSession": "https://vimeo.com/1221897031/0989c83000"
     },
     "clips": [],
     "trainingDesign": null,
@@ -110,6 +214,6 @@
     "folderId": "30308091",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30308091",
     "gkFolderId": "30308101",
-    "lastSyncedAt": "2026-08-27T20:05:13.666Z"
+    "lastSyncedAt": "2026-08-27T20:21:36.370Z"
   }
 }
