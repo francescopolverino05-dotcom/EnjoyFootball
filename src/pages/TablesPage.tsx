@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import ReportHeader from '../components/ReportHeader';
 import {
   getCoppaItaliaStandings,
@@ -31,14 +31,33 @@ function formatDate(iso: string, locale: 'en' | 'it'): string {
   });
 }
 
+function competitionFromSearch(
+  value: string | null
+): StandingCompetitionId {
+  if (
+    value === 'primavera2' ||
+    value === 'coppaItalia' ||
+    value === 'uefaYouthLeague'
+  ) {
+    return value;
+  }
+  return 'primavera2';
+}
+
 export default function TablesPage() {
   const { t, L, locale } = useLanguage();
+  const [searchParams, setSearchParams] = useSearchParams();
   const dataset = getStandingsDataset();
   const league = getPrimavera2Standings();
   const coppa = getCoppaItaliaStandings();
   const uyl = getUefaYouthLeagueStandings();
-  const [selectedId, setSelectedId] =
-    useState<StandingCompetitionId>('primavera2');
+  const selectedId = competitionFromSearch(searchParams.get('c'));
+  const setSelectedId = (id: StandingCompetitionId) => {
+    setSearchParams(id === 'primavera2' ? {} : { c: id }, { replace: true });
+  };
+  const [matchdayNumber, setMatchdayNumber] = useState(
+    () => league.nextMatchday || league.matchdays[0]?.number || 1
+  );
 
   const nameById = useMemo(() => {
     const map = new Map<string, string>();
@@ -46,9 +65,14 @@ export default function TablesPage() {
     return map;
   }, [league.rows]);
 
-  const nextMd =
-    league.matchdays.find((md) => md.number === league.nextMatchday) ??
+  const selectedMd =
+    league.matchdays.find((md) => md.number === matchdayNumber) ??
     league.matchdays[0];
+  const mdIndex = league.matchdays.findIndex(
+    (md) => md.number === selectedMd?.number
+  );
+  const canPrev = mdIndex > 0;
+  const canNext = mdIndex >= 0 && mdIndex < league.matchdays.length - 1;
 
   return (
     <div className="app-shell">
@@ -101,13 +125,7 @@ export default function TablesPage() {
                   {dataset.sources.primavera2 ? (
                     <>
                       {' · '}
-                      <a
-                        href={dataset.sources.primavera2}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Transfermarkt
-                      </a>
+                      <span>{t('tableSourceLnpb')}</span>
                     </>
                   ) : null}
                 </p>
@@ -184,7 +202,10 @@ export default function TablesPage() {
                 </table>
               </div>
 
-              <ul className="home-table-legend standings-page-legend" aria-label={t('homeTableLegendAria')}>
+              <ul
+                className="home-table-legend standings-page-legend"
+                aria-label={t('homeTableLegendAria')}
+              >
                 <li>
                   <span className="home-table-legend-swatch home-table-legend-swatch--champions" />
                   <span>
@@ -205,22 +226,73 @@ export default function TablesPage() {
                 </li>
               </ul>
 
-              {nextMd ? (
+              {selectedMd ? (
                 <div className="standings-matchday">
-                  <h4 className="standings-matchday-title">
-                    {t('tableNextMatchday')
-                      .replace('{n}', String(nextMd.number))
-                      .replace('{date}', formatDate(nextMd.date, locale))}
-                  </h4>
+                  <div className="standings-matchday-nav">
+                    <button
+                      type="button"
+                      className="standings-matchday-btn"
+                      disabled={!canPrev}
+                      onClick={() =>
+                        setMatchdayNumber(league.matchdays[mdIndex - 1].number)
+                      }
+                      aria-label={t('tablePrevMatchday')}
+                    >
+                      ←
+                    </button>
+                    <div className="standings-matchday-heading">
+                      <h4 className="standings-matchday-title">
+                        {t('tableMatchdayResults')
+                          .replace('{n}', String(selectedMd.number))
+                          .replace(
+                            '{date}',
+                            formatDate(selectedMd.date, locale)
+                          )}
+                      </h4>
+                      <label className="standings-matchday-jump">
+                        <span className="visually-hidden">
+                          {t('tableJumpMatchday')}
+                        </span>
+                        <select
+                          value={selectedMd.number}
+                          onChange={(e) =>
+                            setMatchdayNumber(Number(e.target.value))
+                          }
+                        >
+                          {league.matchdays.map((md) => (
+                            <option key={md.number} value={md.number}>
+                              {t('tableMatchdayOption')
+                                .replace('{n}', String(md.number))
+                                .replace(
+                                  '{date}',
+                                  formatDate(md.date, locale)
+                                )}
+                            </option>
+                          ))}
+                        </select>
+                      </label>
+                    </div>
+                    <button
+                      type="button"
+                      className="standings-matchday-btn"
+                      disabled={!canNext}
+                      onClick={() =>
+                        setMatchdayNumber(league.matchdays[mdIndex + 1].number)
+                      }
+                      aria-label={t('tableNextMatchdayBtn')}
+                    >
+                      →
+                    </button>
+                  </div>
                   <ul className="standings-fixture-list">
-                    {nextMd.fixtures.map((fx) => {
+                    {selectedMd.fixtures.map((fx) => {
                       const home = nameById.get(fx.homeId) ?? fx.homeId;
                       const away = nameById.get(fx.awayId) ?? fx.awayId;
                       const ours =
                         fx.homeId === 'napoli' || fx.awayId === 'napoli';
                       return (
                         <li
-                          key={`${fx.homeId}-${fx.awayId}`}
+                          key={`${selectedMd.number}-${fx.homeId}-${fx.awayId}`}
                           className={
                             ours
                               ? 'standings-fixture standings-fixture--us'
@@ -228,7 +300,9 @@ export default function TablesPage() {
                           }
                         >
                           <span className="standings-fixture-home">{home}</span>
-                          <span className="standings-fixture-sep">–</span>
+                          <span className="standings-fixture-sep">
+                            {fx.score ?? '–'}
+                          </span>
                           <span className="standings-fixture-away">{away}</span>
                         </li>
                       );

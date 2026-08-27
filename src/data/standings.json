@@ -2,7 +2,7 @@
   "season": "2026/27",
   "updatedAt": "2026-08-26",
   "sources": {
-    "primavera2": "https://www.transfermarkt.com/primavera-2b/startseite/wettbewerb/IJ2B/saison_id/2026",
+    "primavera2": "C.U. LNPB n. 10 dell'11.08.2026 — Calendario Primavera 2 Cisalfa Sport 2026/27 Girone B",
     "coppaItalia": "https://www.transfermarkt.com/coppa-italia-primavera/gesamtspielplan/pokalwettbewerb/CITP/saison_id/2026",
     "uefaYouthLeague": null
   },
@@ -10,56 +10,1604 @@
     "primavera2": {
       "id": "primavera2",
       "code": "IJ2B",
-      "name": { "en": "Primavera 2 — B", "it": "Primavera 2 — B" },
+      "name": {
+        "en": "Primavera 2 — B",
+        "it": "Primavera 2 — B"
+      },
       "kind": "league",
       "matchday": 0,
       "nextMatchday": 1,
       "nextMatchdayDate": "2026-09-05",
       "rows": [
-        { "pos": 1, "teamId": "ascoli", "shortName": "Ascoli", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
-        { "pos": 2, "teamId": "avellino", "shortName": "Avellino", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
-        { "pos": 3, "teamId": "bari", "shortName": "Bari", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
-        { "pos": 4, "teamId": "benevento", "shortName": "Benevento", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
-        { "pos": 5, "teamId": "catanzaro", "shortName": "Catanzaro", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
-        { "pos": 6, "teamId": "cosenza", "shortName": "Cosenza", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
-        { "pos": 7, "teamId": "frosinone", "shortName": "Frosinone", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
-        { "pos": 8, "teamId": "latina", "shortName": "Latina", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
-        { "pos": 9, "teamId": "monopoli", "shortName": "Monopoli", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
-        { "pos": 10, "teamId": "napoli", "shortName": "Napoli", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0, "us": true },
-        { "pos": 11, "teamId": "palermo", "shortName": "Palermo", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
-        { "pos": 12, "teamId": "perugia", "shortName": "Perugia", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
-        { "pos": 13, "teamId": "pescara", "shortName": "Pescara", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
-        { "pos": 14, "teamId": "pisa", "shortName": "Pisa", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
-        { "pos": 15, "teamId": "salernitana", "shortName": "Salernitana", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 },
-        { "pos": 16, "teamId": "spezia", "shortName": "Spezia", "played": 0, "won": 0, "drawn": 0, "lost": 0, "gf": 0, "ga": 0, "gd": 0, "pts": 0 }
+        {
+          "pos": 1,
+          "teamId": "ascoli",
+          "shortName": "Ascoli",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "pos": 2,
+          "teamId": "avellino",
+          "shortName": "Avellino",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "pos": 3,
+          "teamId": "bari",
+          "shortName": "Bari",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "pos": 4,
+          "teamId": "benevento",
+          "shortName": "Benevento",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "pos": 5,
+          "teamId": "catanzaro",
+          "shortName": "Catanzaro",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "pos": 6,
+          "teamId": "cosenza",
+          "shortName": "Cosenza",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "pos": 7,
+          "teamId": "frosinone",
+          "shortName": "Frosinone",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "pos": 8,
+          "teamId": "latina",
+          "shortName": "Latina",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "pos": 9,
+          "teamId": "monopoli",
+          "shortName": "Monopoli",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "pos": 10,
+          "teamId": "napoli",
+          "shortName": "Napoli",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0,
+          "us": true
+        },
+        {
+          "pos": 11,
+          "teamId": "palermo",
+          "shortName": "Palermo",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "pos": 12,
+          "teamId": "perugia",
+          "shortName": "Perugia",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "pos": 13,
+          "teamId": "pescara",
+          "shortName": "Pescara",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "pos": 14,
+          "teamId": "pisa",
+          "shortName": "Pisa",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "pos": 15,
+          "teamId": "salernitana",
+          "shortName": "Salernitana",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        },
+        {
+          "pos": 16,
+          "teamId": "spezia",
+          "shortName": "Spezia",
+          "played": 0,
+          "won": 0,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 0,
+          "ga": 0,
+          "gd": 0,
+          "pts": 0
+        }
       ],
       "matchdays": [
         {
           "number": 1,
           "date": "2026-09-05",
           "fixtures": [
-            { "homeId": "ascoli", "awayId": "spezia" },
-            { "homeId": "avellino", "awayId": "napoli" },
-            { "homeId": "benevento", "awayId": "frosinone" },
-            { "homeId": "catanzaro", "awayId": "latina" },
-            { "homeId": "monopoli", "awayId": "cosenza" },
-            { "homeId": "palermo", "awayId": "pescara" },
-            { "homeId": "pisa", "awayId": "perugia" },
-            { "homeId": "salernitana", "awayId": "bari" }
+            {
+              "homeId": "ascoli",
+              "awayId": "spezia",
+              "score": null
+            },
+            {
+              "homeId": "avellino",
+              "awayId": "napoli",
+              "score": null
+            },
+            {
+              "homeId": "benevento",
+              "awayId": "frosinone",
+              "score": null
+            },
+            {
+              "homeId": "catanzaro",
+              "awayId": "latina",
+              "score": null
+            },
+            {
+              "homeId": "monopoli",
+              "awayId": "cosenza",
+              "score": null
+            },
+            {
+              "homeId": "palermo",
+              "awayId": "pescara",
+              "score": null
+            },
+            {
+              "homeId": "pisa",
+              "awayId": "perugia",
+              "score": null
+            },
+            {
+              "homeId": "salernitana",
+              "awayId": "bari",
+              "score": null
+            }
           ]
         },
         {
           "number": 2,
           "date": "2026-09-12",
           "fixtures": [
-            { "homeId": "bari", "awayId": "ascoli" },
-            { "homeId": "cosenza", "awayId": "avellino" },
-            { "homeId": "frosinone", "awayId": "pisa" },
-            { "homeId": "latina", "awayId": "salernitana" },
-            { "homeId": "napoli", "awayId": "catanzaro" },
-            { "homeId": "perugia", "awayId": "monopoli" },
-            { "homeId": "pescara", "awayId": "benevento" },
-            { "homeId": "spezia", "awayId": "palermo" }
+            {
+              "homeId": "bari",
+              "awayId": "ascoli",
+              "score": null
+            },
+            {
+              "homeId": "cosenza",
+              "awayId": "avellino",
+              "score": null
+            },
+            {
+              "homeId": "frosinone",
+              "awayId": "pisa",
+              "score": null
+            },
+            {
+              "homeId": "latina",
+              "awayId": "salernitana",
+              "score": null
+            },
+            {
+              "homeId": "napoli",
+              "awayId": "catanzaro",
+              "score": null
+            },
+            {
+              "homeId": "perugia",
+              "awayId": "monopoli",
+              "score": null
+            },
+            {
+              "homeId": "pescara",
+              "awayId": "benevento",
+              "score": null
+            },
+            {
+              "homeId": "spezia",
+              "awayId": "palermo",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "date": "2026-09-19",
+          "fixtures": [
+            {
+              "homeId": "ascoli",
+              "awayId": "napoli",
+              "score": null
+            },
+            {
+              "homeId": "avellino",
+              "awayId": "latina",
+              "score": null
+            },
+            {
+              "homeId": "benevento",
+              "awayId": "cosenza",
+              "score": null
+            },
+            {
+              "homeId": "catanzaro",
+              "awayId": "frosinone",
+              "score": null
+            },
+            {
+              "homeId": "monopoli",
+              "awayId": "pescara",
+              "score": null
+            },
+            {
+              "homeId": "palermo",
+              "awayId": "bari",
+              "score": null
+            },
+            {
+              "homeId": "pisa",
+              "awayId": "spezia",
+              "score": null
+            },
+            {
+              "homeId": "salernitana",
+              "awayId": "perugia",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 4,
+          "date": "2026-10-10",
+          "fixtures": [
+            {
+              "homeId": "cosenza",
+              "awayId": "catanzaro",
+              "score": null
+            },
+            {
+              "homeId": "frosinone",
+              "awayId": "palermo",
+              "score": null
+            },
+            {
+              "homeId": "latina",
+              "awayId": "bari",
+              "score": null
+            },
+            {
+              "homeId": "napoli",
+              "awayId": "pisa",
+              "score": null
+            },
+            {
+              "homeId": "perugia",
+              "awayId": "avellino",
+              "score": null
+            },
+            {
+              "homeId": "pescara",
+              "awayId": "ascoli",
+              "score": null
+            },
+            {
+              "homeId": "salernitana",
+              "awayId": "benevento",
+              "score": null
+            },
+            {
+              "homeId": "spezia",
+              "awayId": "monopoli",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 5,
+          "date": "2026-10-17",
+          "fixtures": [
+            {
+              "homeId": "avellino",
+              "awayId": "catanzaro",
+              "score": null
+            },
+            {
+              "homeId": "bari",
+              "awayId": "napoli",
+              "score": null
+            },
+            {
+              "homeId": "cosenza",
+              "awayId": "frosinone",
+              "score": null
+            },
+            {
+              "homeId": "monopoli",
+              "awayId": "benevento",
+              "score": null
+            },
+            {
+              "homeId": "palermo",
+              "awayId": "perugia",
+              "score": null
+            },
+            {
+              "homeId": "pescara",
+              "awayId": "salernitana",
+              "score": null
+            },
+            {
+              "homeId": "pisa",
+              "awayId": "ascoli",
+              "score": null
+            },
+            {
+              "homeId": "spezia",
+              "awayId": "latina",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 6,
+          "date": "2026-10-24",
+          "fixtures": [
+            {
+              "homeId": "ascoli",
+              "awayId": "monopoli",
+              "score": null
+            },
+            {
+              "homeId": "bari",
+              "awayId": "pescara",
+              "score": null
+            },
+            {
+              "homeId": "benevento",
+              "awayId": "avellino",
+              "score": null
+            },
+            {
+              "homeId": "catanzaro",
+              "awayId": "pisa",
+              "score": null
+            },
+            {
+              "homeId": "latina",
+              "awayId": "cosenza",
+              "score": null
+            },
+            {
+              "homeId": "napoli",
+              "awayId": "spezia",
+              "score": null
+            },
+            {
+              "homeId": "perugia",
+              "awayId": "frosinone",
+              "score": null
+            },
+            {
+              "homeId": "salernitana",
+              "awayId": "palermo",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 7,
+          "date": "2026-10-31",
+          "fixtures": [
+            {
+              "homeId": "ascoli",
+              "awayId": "avellino",
+              "score": null
+            },
+            {
+              "homeId": "benevento",
+              "awayId": "perugia",
+              "score": null
+            },
+            {
+              "homeId": "cosenza",
+              "awayId": "salernitana",
+              "score": null
+            },
+            {
+              "homeId": "frosinone",
+              "awayId": "latina",
+              "score": null
+            },
+            {
+              "homeId": "monopoli",
+              "awayId": "napoli",
+              "score": null
+            },
+            {
+              "homeId": "palermo",
+              "awayId": "catanzaro",
+              "score": null
+            },
+            {
+              "homeId": "pescara",
+              "awayId": "spezia",
+              "score": null
+            },
+            {
+              "homeId": "pisa",
+              "awayId": "bari",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 8,
+          "date": "2026-11-07",
+          "fixtures": [
+            {
+              "homeId": "avellino",
+              "awayId": "palermo",
+              "score": null
+            },
+            {
+              "homeId": "bari",
+              "awayId": "monopoli",
+              "score": null
+            },
+            {
+              "homeId": "catanzaro",
+              "awayId": "ascoli",
+              "score": null
+            },
+            {
+              "homeId": "latina",
+              "awayId": "benevento",
+              "score": null
+            },
+            {
+              "homeId": "napoli",
+              "awayId": "frosinone",
+              "score": null
+            },
+            {
+              "homeId": "perugia",
+              "awayId": "pescara",
+              "score": null
+            },
+            {
+              "homeId": "salernitana",
+              "awayId": "pisa",
+              "score": null
+            },
+            {
+              "homeId": "spezia",
+              "awayId": "cosenza",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 9,
+          "date": "2026-11-21",
+          "fixtures": [
+            {
+              "homeId": "ascoli",
+              "awayId": "benevento",
+              "score": null
+            },
+            {
+              "homeId": "bari",
+              "awayId": "catanzaro",
+              "score": null
+            },
+            {
+              "homeId": "frosinone",
+              "awayId": "avellino",
+              "score": null
+            },
+            {
+              "homeId": "latina",
+              "awayId": "monopoli",
+              "score": null
+            },
+            {
+              "homeId": "napoli",
+              "awayId": "perugia",
+              "score": null
+            },
+            {
+              "homeId": "pescara",
+              "awayId": "cosenza",
+              "score": null
+            },
+            {
+              "homeId": "pisa",
+              "awayId": "palermo",
+              "score": null
+            },
+            {
+              "homeId": "salernitana",
+              "awayId": "spezia",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 10,
+          "date": "2026-11-28",
+          "fixtures": [
+            {
+              "homeId": "avellino",
+              "awayId": "salernitana",
+              "score": null
+            },
+            {
+              "homeId": "benevento",
+              "awayId": "napoli",
+              "score": null
+            },
+            {
+              "homeId": "catanzaro",
+              "awayId": "perugia",
+              "score": null
+            },
+            {
+              "homeId": "cosenza",
+              "awayId": "ascoli",
+              "score": null
+            },
+            {
+              "homeId": "monopoli",
+              "awayId": "frosinone",
+              "score": null
+            },
+            {
+              "homeId": "palermo",
+              "awayId": "latina",
+              "score": null
+            },
+            {
+              "homeId": "pisa",
+              "awayId": "pescara",
+              "score": null
+            },
+            {
+              "homeId": "spezia",
+              "awayId": "bari",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 11,
+          "date": "2026-12-05",
+          "fixtures": [
+            {
+              "homeId": "bari",
+              "awayId": "avellino",
+              "score": null
+            },
+            {
+              "homeId": "catanzaro",
+              "awayId": "benevento",
+              "score": null
+            },
+            {
+              "homeId": "frosinone",
+              "awayId": "spezia",
+              "score": null
+            },
+            {
+              "homeId": "latina",
+              "awayId": "pisa",
+              "score": null
+            },
+            {
+              "homeId": "napoli",
+              "awayId": "pescara",
+              "score": null
+            },
+            {
+              "homeId": "palermo",
+              "awayId": "ascoli",
+              "score": null
+            },
+            {
+              "homeId": "perugia",
+              "awayId": "cosenza",
+              "score": null
+            },
+            {
+              "homeId": "salernitana",
+              "awayId": "monopoli",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 12,
+          "date": "2026-12-12",
+          "fixtures": [
+            {
+              "homeId": "ascoli",
+              "awayId": "perugia",
+              "score": null
+            },
+            {
+              "homeId": "benevento",
+              "awayId": "bari",
+              "score": null
+            },
+            {
+              "homeId": "cosenza",
+              "awayId": "pisa",
+              "score": null
+            },
+            {
+              "homeId": "frosinone",
+              "awayId": "salernitana",
+              "score": null
+            },
+            {
+              "homeId": "monopoli",
+              "awayId": "avellino",
+              "score": null
+            },
+            {
+              "homeId": "napoli",
+              "awayId": "palermo",
+              "score": null
+            },
+            {
+              "homeId": "pescara",
+              "awayId": "latina",
+              "score": null
+            },
+            {
+              "homeId": "spezia",
+              "awayId": "catanzaro",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 13,
+          "date": "2026-12-19",
+          "fixtures": [
+            {
+              "homeId": "avellino",
+              "awayId": "pescara",
+              "score": null
+            },
+            {
+              "homeId": "bari",
+              "awayId": "frosinone",
+              "score": null
+            },
+            {
+              "homeId": "catanzaro",
+              "awayId": "monopoli",
+              "score": null
+            },
+            {
+              "homeId": "latina",
+              "awayId": "napoli",
+              "score": null
+            },
+            {
+              "homeId": "palermo",
+              "awayId": "cosenza",
+              "score": null
+            },
+            {
+              "homeId": "perugia",
+              "awayId": "spezia",
+              "score": null
+            },
+            {
+              "homeId": "pisa",
+              "awayId": "benevento",
+              "score": null
+            },
+            {
+              "homeId": "salernitana",
+              "awayId": "ascoli",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 14,
+          "date": "2027-01-09",
+          "fixtures": [
+            {
+              "homeId": "ascoli",
+              "awayId": "latina",
+              "score": null
+            },
+            {
+              "homeId": "avellino",
+              "awayId": "spezia",
+              "score": null
+            },
+            {
+              "homeId": "benevento",
+              "awayId": "palermo",
+              "score": null
+            },
+            {
+              "homeId": "catanzaro",
+              "awayId": "salernitana",
+              "score": null
+            },
+            {
+              "homeId": "cosenza",
+              "awayId": "napoli",
+              "score": null
+            },
+            {
+              "homeId": "frosinone",
+              "awayId": "pescara",
+              "score": null
+            },
+            {
+              "homeId": "monopoli",
+              "awayId": "pisa",
+              "score": null
+            },
+            {
+              "homeId": "perugia",
+              "awayId": "bari",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 15,
+          "date": "2027-01-16",
+          "fixtures": [
+            {
+              "homeId": "bari",
+              "awayId": "cosenza",
+              "score": null
+            },
+            {
+              "homeId": "frosinone",
+              "awayId": "ascoli",
+              "score": null
+            },
+            {
+              "homeId": "latina",
+              "awayId": "perugia",
+              "score": null
+            },
+            {
+              "homeId": "napoli",
+              "awayId": "salernitana",
+              "score": null
+            },
+            {
+              "homeId": "palermo",
+              "awayId": "monopoli",
+              "score": null
+            },
+            {
+              "homeId": "pescara",
+              "awayId": "catanzaro",
+              "score": null
+            },
+            {
+              "homeId": "pisa",
+              "awayId": "avellino",
+              "score": null
+            },
+            {
+              "homeId": "spezia",
+              "awayId": "benevento",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 16,
+          "date": "2027-01-23",
+          "fixtures": [
+            {
+              "homeId": "ascoli",
+              "awayId": "pisa",
+              "score": null
+            },
+            {
+              "homeId": "avellino",
+              "awayId": "frosinone",
+              "score": null
+            },
+            {
+              "homeId": "benevento",
+              "awayId": "latina",
+              "score": null
+            },
+            {
+              "homeId": "catanzaro",
+              "awayId": "napoli",
+              "score": null
+            },
+            {
+              "homeId": "cosenza",
+              "awayId": "spezia",
+              "score": null
+            },
+            {
+              "homeId": "monopoli",
+              "awayId": "bari",
+              "score": null
+            },
+            {
+              "homeId": "perugia",
+              "awayId": "palermo",
+              "score": null
+            },
+            {
+              "homeId": "salernitana",
+              "awayId": "pescara",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 17,
+          "date": "2027-01-30",
+          "fixtures": [
+            {
+              "homeId": "bari",
+              "awayId": "pisa",
+              "score": null
+            },
+            {
+              "homeId": "cosenza",
+              "awayId": "benevento",
+              "score": null
+            },
+            {
+              "homeId": "frosinone",
+              "awayId": "perugia",
+              "score": null
+            },
+            {
+              "homeId": "latina",
+              "awayId": "catanzaro",
+              "score": null
+            },
+            {
+              "homeId": "napoli",
+              "awayId": "ascoli",
+              "score": null
+            },
+            {
+              "homeId": "palermo",
+              "awayId": "avellino",
+              "score": null
+            },
+            {
+              "homeId": "pescara",
+              "awayId": "monopoli",
+              "score": null
+            },
+            {
+              "homeId": "spezia",
+              "awayId": "salernitana",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 18,
+          "date": "2027-02-06",
+          "fixtures": [
+            {
+              "homeId": "ascoli",
+              "awayId": "palermo",
+              "score": null
+            },
+            {
+              "homeId": "avellino",
+              "awayId": "benevento",
+              "score": null
+            },
+            {
+              "homeId": "catanzaro",
+              "awayId": "cosenza",
+              "score": null
+            },
+            {
+              "homeId": "monopoli",
+              "awayId": "perugia",
+              "score": null
+            },
+            {
+              "homeId": "napoli",
+              "awayId": "bari",
+              "score": null
+            },
+            {
+              "homeId": "pisa",
+              "awayId": "frosinone",
+              "score": null
+            },
+            {
+              "homeId": "salernitana",
+              "awayId": "latina",
+              "score": null
+            },
+            {
+              "homeId": "spezia",
+              "awayId": "pescara",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 19,
+          "date": "2027-02-13",
+          "fixtures": [
+            {
+              "homeId": "ascoli",
+              "awayId": "catanzaro",
+              "score": null
+            },
+            {
+              "homeId": "benevento",
+              "awayId": "salernitana",
+              "score": null
+            },
+            {
+              "homeId": "frosinone",
+              "awayId": "cosenza",
+              "score": null
+            },
+            {
+              "homeId": "latina",
+              "awayId": "avellino",
+              "score": null
+            },
+            {
+              "homeId": "monopoli",
+              "awayId": "spezia",
+              "score": null
+            },
+            {
+              "homeId": "palermo",
+              "awayId": "napoli",
+              "score": null
+            },
+            {
+              "homeId": "perugia",
+              "awayId": "pisa",
+              "score": null
+            },
+            {
+              "homeId": "pescara",
+              "awayId": "bari",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 20,
+          "date": "2027-02-20",
+          "fixtures": [
+            {
+              "homeId": "avellino",
+              "awayId": "ascoli",
+              "score": null
+            },
+            {
+              "homeId": "bari",
+              "awayId": "benevento",
+              "score": null
+            },
+            {
+              "homeId": "cosenza",
+              "awayId": "latina",
+              "score": null
+            },
+            {
+              "homeId": "frosinone",
+              "awayId": "catanzaro",
+              "score": null
+            },
+            {
+              "homeId": "napoli",
+              "awayId": "monopoli",
+              "score": null
+            },
+            {
+              "homeId": "pescara",
+              "awayId": "palermo",
+              "score": null
+            },
+            {
+              "homeId": "pisa",
+              "awayId": "salernitana",
+              "score": null
+            },
+            {
+              "homeId": "spezia",
+              "awayId": "perugia",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 21,
+          "date": "2027-02-27",
+          "fixtures": [
+            {
+              "homeId": "ascoli",
+              "awayId": "pescara",
+              "score": null
+            },
+            {
+              "homeId": "avellino",
+              "awayId": "cosenza",
+              "score": null
+            },
+            {
+              "homeId": "benevento",
+              "awayId": "pisa",
+              "score": null
+            },
+            {
+              "homeId": "catanzaro",
+              "awayId": "bari",
+              "score": null
+            },
+            {
+              "homeId": "monopoli",
+              "awayId": "latina",
+              "score": null
+            },
+            {
+              "homeId": "palermo",
+              "awayId": "spezia",
+              "score": null
+            },
+            {
+              "homeId": "perugia",
+              "awayId": "napoli",
+              "score": null
+            },
+            {
+              "homeId": "salernitana",
+              "awayId": "frosinone",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 22,
+          "date": "2027-03-06",
+          "fixtures": [
+            {
+              "homeId": "bari",
+              "awayId": "perugia",
+              "score": null
+            },
+            {
+              "homeId": "benevento",
+              "awayId": "ascoli",
+              "score": null
+            },
+            {
+              "homeId": "cosenza",
+              "awayId": "pescara",
+              "score": null
+            },
+            {
+              "homeId": "latina",
+              "awayId": "palermo",
+              "score": null
+            },
+            {
+              "homeId": "napoli",
+              "awayId": "avellino",
+              "score": null
+            },
+            {
+              "homeId": "pisa",
+              "awayId": "monopoli",
+              "score": null
+            },
+            {
+              "homeId": "salernitana",
+              "awayId": "catanzaro",
+              "score": null
+            },
+            {
+              "homeId": "spezia",
+              "awayId": "frosinone",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 23,
+          "date": "2027-03-13",
+          "fixtures": [
+            {
+              "homeId": "ascoli",
+              "awayId": "cosenza",
+              "score": null
+            },
+            {
+              "homeId": "avellino",
+              "awayId": "pisa",
+              "score": null
+            },
+            {
+              "homeId": "catanzaro",
+              "awayId": "spezia",
+              "score": null
+            },
+            {
+              "homeId": "frosinone",
+              "awayId": "bari",
+              "score": null
+            },
+            {
+              "homeId": "monopoli",
+              "awayId": "salernitana",
+              "score": null
+            },
+            {
+              "homeId": "palermo",
+              "awayId": "benevento",
+              "score": null
+            },
+            {
+              "homeId": "perugia",
+              "awayId": "latina",
+              "score": null
+            },
+            {
+              "homeId": "pescara",
+              "awayId": "napoli",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 24,
+          "date": "2027-03-20",
+          "fixtures": [
+            {
+              "homeId": "bari",
+              "awayId": "palermo",
+              "score": null
+            },
+            {
+              "homeId": "benevento",
+              "awayId": "monopoli",
+              "score": null
+            },
+            {
+              "homeId": "cosenza",
+              "awayId": "perugia",
+              "score": null
+            },
+            {
+              "homeId": "latina",
+              "awayId": "ascoli",
+              "score": null
+            },
+            {
+              "homeId": "pescara",
+              "awayId": "frosinone",
+              "score": null
+            },
+            {
+              "homeId": "pisa",
+              "awayId": "catanzaro",
+              "score": null
+            },
+            {
+              "homeId": "salernitana",
+              "awayId": "avellino",
+              "score": null
+            },
+            {
+              "homeId": "spezia",
+              "awayId": "napoli",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 25,
+          "date": "2027-04-03",
+          "fixtures": [
+            {
+              "homeId": "ascoli",
+              "awayId": "salernitana",
+              "score": null
+            },
+            {
+              "homeId": "avellino",
+              "awayId": "monopoli",
+              "score": null
+            },
+            {
+              "homeId": "bari",
+              "awayId": "spezia",
+              "score": null
+            },
+            {
+              "homeId": "catanzaro",
+              "awayId": "pescara",
+              "score": null
+            },
+            {
+              "homeId": "latina",
+              "awayId": "frosinone",
+              "score": null
+            },
+            {
+              "homeId": "napoli",
+              "awayId": "cosenza",
+              "score": null
+            },
+            {
+              "homeId": "palermo",
+              "awayId": "pisa",
+              "score": null
+            },
+            {
+              "homeId": "perugia",
+              "awayId": "benevento",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 26,
+          "date": "2027-04-10",
+          "fixtures": [
+            {
+              "homeId": "benevento",
+              "awayId": "catanzaro",
+              "score": null
+            },
+            {
+              "homeId": "cosenza",
+              "awayId": "bari",
+              "score": null
+            },
+            {
+              "homeId": "frosinone",
+              "awayId": "napoli",
+              "score": null
+            },
+            {
+              "homeId": "monopoli",
+              "awayId": "ascoli",
+              "score": null
+            },
+            {
+              "homeId": "palermo",
+              "awayId": "salernitana",
+              "score": null
+            },
+            {
+              "homeId": "pescara",
+              "awayId": "perugia",
+              "score": null
+            },
+            {
+              "homeId": "pisa",
+              "awayId": "latina",
+              "score": null
+            },
+            {
+              "homeId": "spezia",
+              "awayId": "avellino",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 27,
+          "date": "2027-04-17",
+          "fixtures": [
+            {
+              "homeId": "ascoli",
+              "awayId": "frosinone",
+              "score": null
+            },
+            {
+              "homeId": "avellino",
+              "awayId": "bari",
+              "score": null
+            },
+            {
+              "homeId": "benevento",
+              "awayId": "spezia",
+              "score": null
+            },
+            {
+              "homeId": "latina",
+              "awayId": "pescara",
+              "score": null
+            },
+            {
+              "homeId": "monopoli",
+              "awayId": "palermo",
+              "score": null
+            },
+            {
+              "homeId": "perugia",
+              "awayId": "catanzaro",
+              "score": null
+            },
+            {
+              "homeId": "pisa",
+              "awayId": "cosenza",
+              "score": null
+            },
+            {
+              "homeId": "salernitana",
+              "awayId": "napoli",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 28,
+          "date": "2027-04-24",
+          "fixtures": [
+            {
+              "homeId": "bari",
+              "awayId": "salernitana",
+              "score": null
+            },
+            {
+              "homeId": "catanzaro",
+              "awayId": "palermo",
+              "score": null
+            },
+            {
+              "homeId": "cosenza",
+              "awayId": "monopoli",
+              "score": null
+            },
+            {
+              "homeId": "frosinone",
+              "awayId": "benevento",
+              "score": null
+            },
+            {
+              "homeId": "napoli",
+              "awayId": "latina",
+              "score": null
+            },
+            {
+              "homeId": "perugia",
+              "awayId": "ascoli",
+              "score": null
+            },
+            {
+              "homeId": "pescara",
+              "awayId": "avellino",
+              "score": null
+            },
+            {
+              "homeId": "spezia",
+              "awayId": "pisa",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 29,
+          "date": "2027-05-01",
+          "fixtures": [
+            {
+              "homeId": "ascoli",
+              "awayId": "bari",
+              "score": null
+            },
+            {
+              "homeId": "avellino",
+              "awayId": "perugia",
+              "score": null
+            },
+            {
+              "homeId": "benevento",
+              "awayId": "pescara",
+              "score": null
+            },
+            {
+              "homeId": "latina",
+              "awayId": "spezia",
+              "score": null
+            },
+            {
+              "homeId": "monopoli",
+              "awayId": "catanzaro",
+              "score": null
+            },
+            {
+              "homeId": "palermo",
+              "awayId": "frosinone",
+              "score": null
+            },
+            {
+              "homeId": "pisa",
+              "awayId": "napoli",
+              "score": null
+            },
+            {
+              "homeId": "salernitana",
+              "awayId": "cosenza",
+              "score": null
+            }
+          ]
+        },
+        {
+          "number": 30,
+          "date": "2027-05-08",
+          "fixtures": [
+            {
+              "homeId": "bari",
+              "awayId": "latina",
+              "score": null
+            },
+            {
+              "homeId": "catanzaro",
+              "awayId": "avellino",
+              "score": null
+            },
+            {
+              "homeId": "cosenza",
+              "awayId": "palermo",
+              "score": null
+            },
+            {
+              "homeId": "frosinone",
+              "awayId": "monopoli",
+              "score": null
+            },
+            {
+              "homeId": "napoli",
+              "awayId": "benevento",
+              "score": null
+            },
+            {
+              "homeId": "perugia",
+              "awayId": "salernitana",
+              "score": null
+            },
+            {
+              "homeId": "pescara",
+              "awayId": "pisa",
+              "score": null
+            },
+            {
+              "homeId": "spezia",
+              "awayId": "ascoli",
+              "score": null
+            }
           ]
         }
       ]
@@ -67,7 +1615,10 @@
     "coppaItalia": {
       "id": "coppaItalia",
       "code": "CITP",
-      "name": { "en": "Coppa Italia Primavera", "it": "Coppa Italia Primavera" },
+      "name": {
+        "en": "Coppa Italia Primavera",
+        "it": "Coppa Italia Primavera"
+      },
       "kind": "cup",
       "ourPath": {
         "entryRound": "firstRound",
@@ -82,33 +1633,134 @@
       "rounds": [
         {
           "id": "1VR",
-          "name": { "en": "First Preliminary Round", "it": "1ª Vorrunde" },
+          "name": {
+            "en": "First Preliminary Round",
+            "it": "1ª Vorrunde"
+          },
           "dateFrom": "2026-08-21",
           "fixtures": [
-            { "date": "2026-08-21", "home": "Südtirol", "away": "Cosenza", "score": "5-0", "ourClub": "cosenza" },
-            { "date": "2026-08-22", "home": "Udinese", "away": "Salernitana", "score": "3-0", "ourClub": "salernitana" },
-            { "date": "2026-08-22", "home": "Monopoli", "away": "Union Brescia", "score": "2-3", "ourClub": "monopoli" },
-            { "date": "2026-08-22", "home": "Ascoli", "away": "Latina", "score": "4-1", "ourClub": "ascoli" },
-            { "date": "2026-08-22", "home": "Cittadella", "away": "Venezia", "score": "0-4" },
-            { "date": "2026-08-29", "home": "Bari", "away": "Padova", "score": null, "ourClub": "bari" },
-            { "date": "2026-08-29", "home": "Renate", "away": "Mantova", "score": null },
-            { "date": "2026-08-29", "home": "Vicenza", "away": "Palermo", "score": null, "ourClub": "palermo" }
+            {
+              "date": "2026-08-21",
+              "home": "Südtirol",
+              "away": "Cosenza",
+              "score": "5-0",
+              "ourClub": "cosenza"
+            },
+            {
+              "date": "2026-08-22",
+              "home": "Udinese",
+              "away": "Salernitana",
+              "score": "3-0",
+              "ourClub": "salernitana"
+            },
+            {
+              "date": "2026-08-22",
+              "home": "Monopoli",
+              "away": "Union Brescia",
+              "score": "2-3",
+              "ourClub": "monopoli"
+            },
+            {
+              "date": "2026-08-22",
+              "home": "Ascoli",
+              "away": "Latina",
+              "score": "4-1",
+              "ourClub": "ascoli"
+            },
+            {
+              "date": "2026-08-22",
+              "home": "Cittadella",
+              "away": "Venezia",
+              "score": "0-4"
+            },
+            {
+              "date": "2026-08-29",
+              "home": "Bari",
+              "away": "Padova",
+              "score": null,
+              "ourClub": "bari"
+            },
+            {
+              "date": "2026-08-29",
+              "home": "Renate",
+              "away": "Mantova",
+              "score": null
+            },
+            {
+              "date": "2026-08-29",
+              "home": "Vicenza",
+              "away": "Palermo",
+              "score": null,
+              "ourClub": "palermo"
+            }
           ]
         },
         {
           "id": "1R",
-          "name": { "en": "First Round", "it": "Primo turno" },
+          "name": {
+            "en": "First Round",
+            "it": "Primo turno"
+          },
           "dateFrom": "2026-10-28",
           "note": "Napoli enter here vs Spezia (both Primavera 2 B).",
           "fixtures": [
-            { "date": "2026-10-28", "home": "Napoli", "away": "Spezia", "score": null, "ourClub": "napoli", "us": true },
-            { "date": "2026-10-28", "home": "AlbinoLeffe", "away": "Avellino", "score": null, "ourClub": "avellino" },
-            { "date": "2026-10-28", "home": "Milan", "away": "Catanzaro", "score": null, "ourClub": "catanzaro" },
-            { "date": "2026-10-28", "home": "Como", "away": "Pescara", "score": null, "ourClub": "pescara" },
-            { "date": "2026-10-28", "home": "Lecce", "away": "Pisa", "score": null, "ourClub": "pisa" },
-            { "date": "2026-10-28", "home": "Empoli", "away": "Perugia", "score": null, "ourClub": "perugia" },
-            { "date": "2026-10-28", "home": "Cremonese", "away": "Benevento", "score": null, "ourClub": "benevento" },
-            { "date": "2026-10-28", "home": "Frosinone", "away": "Virtus Entella", "score": null, "ourClub": "frosinone" }
+            {
+              "date": "2026-10-28",
+              "home": "Napoli",
+              "away": "Spezia",
+              "score": null,
+              "ourClub": "napoli",
+              "us": true
+            },
+            {
+              "date": "2026-10-28",
+              "home": "AlbinoLeffe",
+              "away": "Avellino",
+              "score": null,
+              "ourClub": "avellino"
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Milan",
+              "away": "Catanzaro",
+              "score": null,
+              "ourClub": "catanzaro"
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Como",
+              "away": "Pescara",
+              "score": null,
+              "ourClub": "pescara"
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Lecce",
+              "away": "Pisa",
+              "score": null,
+              "ourClub": "pisa"
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Empoli",
+              "away": "Perugia",
+              "score": null,
+              "ourClub": "perugia"
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Cremonese",
+              "away": "Benevento",
+              "score": null,
+              "ourClub": "benevento"
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Frosinone",
+              "away": "Virtus Entella",
+              "score": null,
+              "ourClub": "frosinone"
+            }
           ]
         }
       ]
@@ -116,7 +1768,10 @@
     "uefaYouthLeague": {
       "id": "uefaYouthLeague",
       "code": "UYL",
-      "name": { "en": "UEFA Youth League", "it": "UEFA Youth League" },
+      "name": {
+        "en": "UEFA Youth League",
+        "it": "UEFA Youth League"
+      },
       "kind": "cup",
       "ourPath": null,
       "rounds": []

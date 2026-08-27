@@ -6,7 +6,7 @@ import {
   weekDays,
   type CalendarEvent,
 } from '../data/calendarEvents';
-import { MATCH_COMPETITION_LABELS } from '../data/matchCompetitions';
+import { MATCH_COMPETITION_LABELS, MATCH_COMPETITION_TAB_KEYS } from '../data/matchCompetitions';
 import { getAllMatches, getMatchBySlug } from '../data/matches';
 import {
   getNextOppositionTarget,
@@ -19,8 +19,12 @@ import {
 import {
   getCoppaItaliaStandings,
   getPrimavera2Standings,
+  getUefaYouthLeagueStandings,
+  STANDING_COMPETITION_ORDER,
   standingRowClassName,
   teamNameById,
+  type CupStandings,
+  type StandingCompetitionId,
 } from '../data/standings';
 import { teamCrestUrl } from '../data/teamLogos';
 import { getWeekStartMonday } from '../data/trainingWeeks';
@@ -132,6 +136,37 @@ function fixtureStrip(matches: MatchSummary[], today: string): MatchSummary[] {
   return [...past, ...upcoming];
 }
 
+/** Focus table on the next competitive tournament (skip friendlies). */
+function homeFocusCompetition(
+  matches: MatchSummary[],
+  today: string
+): StandingCompetitionId {
+  const isStandingComp = (
+    id: MatchSummary['competitionId']
+  ): id is StandingCompetitionId =>
+    id === 'primavera2' || id === 'coppaItalia' || id === 'uefaYouthLeague';
+
+  const upcoming = matches
+    .filter((m) => m.date >= today)
+    .sort((a, b) => a.date.localeCompare(b.date));
+  for (const m of upcoming) {
+    if (isStandingComp(m.competitionId)) return m.competitionId;
+  }
+
+  const past = matches
+    .filter((m) => m.date < today)
+    .sort((a, b) => b.date.localeCompare(a.date));
+  for (const m of past) {
+    if (isStandingComp(m.competitionId)) return m.competitionId;
+  }
+
+  return 'primavera2';
+}
+
+function cupTitle(cup: CupStandings, locale: 'en' | 'it'): string {
+  return cup.name[locale] ?? cup.name.en;
+}
+
 export default function HomePage() {
   const { t, L, locale } = useLanguage();
   const today = todayIso();
@@ -141,6 +176,17 @@ export default function HomePage() {
   const nextOpp = getNextOppositionTarget(today);
   const league = getPrimavera2Standings();
   const coppa = getCoppaItaliaStandings();
+  const uyl = getUefaYouthLeagueStandings();
+  const focusCompetition = homeFocusCompetition(matches, today);
+  const otherCompetitions = STANDING_COMPETITION_ORDER.filter(
+    (id) => id !== focusCompetition
+  );
+  const focusTitle =
+    focusCompetition === 'primavera2'
+      ? L(league.name)
+      : focusCompetition === 'coppaItalia'
+        ? cupTitle(coppa, locale)
+        : cupTitle(uyl, locale);
   const rpeSessions = getAllRpeSessions();
   const latestRpe = [...rpeSessions].sort((a, b) =>
     b.date.localeCompare(a.date)
@@ -430,99 +476,200 @@ export default function HomePage() {
               </article>
             </div>
 
-            {/* Standings — aligns with full left column */}
+            {/* Standings — follows next competitive tournament */}
             <aside className="home-portal-side">
               <article className="home-tile home-tile--table">
                 <header className="home-tile-header">
                   <span className="home-tile-kicker">
                     {t('homeTableKicker')}
                   </span>
-                  <h2 className="home-tile-title">{L(league.name)}</h2>
+                  <h2 className="home-tile-title">{focusTitle}</h2>
                 </header>
-                <div className="standings-table-wrap home-standings-wrap">
-                  <table className="standings-table home-standings-table">
-                    <thead>
-                      <tr>
-                        <th scope="col">{t('tableColPos')}</th>
-                        <th scope="col">{t('tableColTeam')}</th>
-                        <th scope="col">{t('tableColPts')}</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {league.rows.map((row, index) => {
-                        const rank = row.pos || index + 1;
-                        return (
-                          <tr
-                            key={row.teamId}
-                            className={standingRowClassName(rank, row.us)}
-                          >
-                            <td className="standings-pos">{rank}</td>
-                            <td className="standings-team">
-                              {row.us ? (
-                                <span className="standings-team-inner">
-                                  {row.shortName}
-                                </span>
-                              ) : (
-                                <Link
-                                  to={`/opposition/${row.teamId}`}
-                                  className="standings-team-link"
+
+                <div className="home-standings-body">
+                  {focusCompetition === 'primavera2' ? (
+                    <>
+                      <div className="standings-table-wrap home-standings-wrap">
+                        <table className="standings-table home-standings-table">
+                          <thead>
+                            <tr>
+                              <th scope="col">{t('tableColPos')}</th>
+                              <th scope="col">{t('tableColTeam')}</th>
+                              <th scope="col">{t('tableColPts')}</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {league.rows.map((row, index) => {
+                              const rank = row.pos || index + 1;
+                              return (
+                                <tr
+                                  key={row.teamId}
+                                  className={standingRowClassName(
+                                    rank,
+                                    row.us
+                                  )}
                                 >
-                                  {row.shortName}
-                                </Link>
+                                  <td className="standings-pos">{rank}</td>
+                                  <td className="standings-team">
+                                    {row.us ? (
+                                      <span className="standings-team-inner">
+                                        {row.shortName}
+                                      </span>
+                                    ) : (
+                                      <Link
+                                        to={`/opposition/${row.teamId}`}
+                                        className="standings-team-link"
+                                      >
+                                        {row.shortName}
+                                      </Link>
+                                    )}
+                                  </td>
+                                  <td className="standings-pts">{row.pts}</td>
+                                </tr>
+                              );
+                            })}
+                          </tbody>
+                        </table>
+                      </div>
+                      <div className="home-table-footer">
+                        <ul
+                          className="home-table-legend"
+                          aria-label={t('homeTableLegendAria')}
+                        >
+                          <li>
+                            <span className="home-table-legend-swatch home-table-legend-swatch--champions" />
+                            <span>
+                              <strong>1</strong> — {t('homeZoneChampions')}
+                            </span>
+                          </li>
+                          <li>
+                            <span className="home-table-legend-swatch home-table-legend-swatch--playoff" />
+                            <span>
+                              <strong>2–5</strong> — {t('homeZonePlayoff')}
+                            </span>
+                          </li>
+                          <li>
+                            <span className="home-table-legend-swatch home-table-legend-swatch--playout" />
+                            <span>
+                              <strong>15–16</strong> — {t('homeZonePlayout')}
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </>
+                  ) : null}
+
+                  {focusCompetition === 'coppaItalia' ||
+                  focusCompetition === 'uefaYouthLeague' ? (
+                    <div className="home-cup-compact">
+                      {(() => {
+                        const cup =
+                          focusCompetition === 'coppaItalia' ? coppa : uyl;
+                        if (cup.ourPath?.next) {
+                          return (
+                            <p className="home-cup-next">
+                              <strong>{t('tableOurPath')}</strong>
+                              {': '}
+                              {cup.ourPath.next.round}
+                              {' · '}
+                              {shortDate(cup.ourPath.next.date)}
+                              {' · '}
+                              {teamNameById(
+                                league,
+                                cup.ourPath.next.homeId
                               )}
-                            </td>
-                            <td className="standings-pts">{row.pts}</td>
-                          </tr>
-                        );
-                      })}
-                    </tbody>
-                  </table>
+                              {' – '}
+                              {teamNameById(
+                                league,
+                                cup.ourPath.next.awayId
+                              )}
+                            </p>
+                          );
+                        }
+                        return null;
+                      })()}
+                      {(() => {
+                        const cup =
+                          focusCompetition === 'coppaItalia' ? coppa : uyl;
+                        if (cup.rounds.length === 0) {
+                          return (
+                            <p className="home-cup-empty">
+                              {focusCompetition === 'uefaYouthLeague'
+                                ? t('tableUylEmpty')
+                                : t('tableCupEmpty')}
+                            </p>
+                          );
+                        }
+                        return cup.rounds.map((round) => (
+                          <div key={round.id}>
+                            <h3 className="home-cup-round-title">
+                              {L(round.name)}
+                            </h3>
+                            <ul className="home-cup-fixture-list">
+                              {round.fixtures.map((fx, i) => (
+                                <li
+                                  key={`${round.id}-${i}`}
+                                  className={
+                                    fx.us
+                                      ? 'home-cup-fixture home-cup-fixture--us'
+                                      : 'home-cup-fixture'
+                                  }
+                                >
+                                  <span className="home-cup-fixture-home">
+                                    {fx.home}
+                                  </span>
+                                  <span className="home-cup-fixture-sep">
+                                    {fx.score ?? '–'}
+                                  </span>
+                                  <span className="home-cup-fixture-away">
+                                    {fx.away}
+                                  </span>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        ));
+                      })()}
+                    </div>
+                  ) : null}
                 </div>
-                <div className="home-table-footer">
-                  <ul
-                    className="home-table-legend"
-                    aria-label={t('homeTableLegendAria')}
+
+                <div className="home-table-other">
+                  <Link
+                    className="home-tile-link"
+                    to={`/table?c=${focusCompetition}`}
                   >
-                    <li>
-                      <span className="home-table-legend-swatch home-table-legend-swatch--champions" />
-                      <span>
-                        <strong>1</strong> — {t('homeZoneChampions')}
-                      </span>
-                    </li>
-                    <li>
-                      <span className="home-table-legend-swatch home-table-legend-swatch--playoff" />
-                      <span>
-                        <strong>2–5</strong> — {t('homeZonePlayoff')}
-                      </span>
-                    </li>
-                    <li>
-                      <span className="home-table-legend-swatch home-table-legend-swatch--playout" />
-                      <span>
-                        <strong>15–16</strong> — {t('homeZonePlayout')}
-                      </span>
-                    </li>
-                  </ul>
-                  <Link className="home-tile-link" to="/table">
                     {t('homeOpenTable')}
                   </Link>
+                  <span className="home-table-other-label">
+                    {t('homeOtherTablesTitle')}
+                  </span>
+                  <ul
+                    className="home-table-comp-list"
+                    aria-label={t('homeOtherTablesAria')}
+                  >
+                    {otherCompetitions.map((id) => (
+                      <li key={id}>
+                        <Link
+                          className="home-table-comp-link"
+                          to={`/table?c=${id}`}
+                        >
+                          <span>{t(MATCH_COMPETITION_TAB_KEYS[id])}</span>
+                          <span
+                            className="home-table-comp-link-arrow"
+                            aria-hidden
+                          >
+                            →
+                          </span>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </article>
             </aside>
           </div>
         </div>
-
-        {coppa.ourPath?.next ? (
-          <div className="home-cup-chip">
-            <span className="home-cup-chip-label">{t('homeCupChip')}</span>
-            <span>
-              {coppa.ourPath.next.round} ·{' '}
-              {shortDate(coppa.ourPath.next.date)} ·{' '}
-              {teamNameById(league, coppa.ourPath.next.homeId)} –{' '}
-              {teamNameById(league, coppa.ourPath.next.awayId)}
-            </span>
-            <Link to="/table">{t('homeOpenTable')}</Link>
-          </div>
-        ) : null}
 
         <footer className="home-credit-strip" aria-label={t('homeCreatedBy')}>
           <span className="home-credit-strip-label">{t('homeCreatedBy')}</span>
