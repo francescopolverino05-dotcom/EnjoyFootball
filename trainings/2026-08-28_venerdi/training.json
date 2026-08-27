@@ -1,0 +1,44 @@
+{
+  "id": "2026-08-28_venerdi",
+  "slug": "2026-08-28_venerdi",
+  "date": "2026-08-28",
+  "title": {
+    "en": "Venerdì",
+    "it": "Venerdì"
+  },
+  "focus": {
+    "en": "Training",
+    "it": "Training"
+  },
+  "sessionType": "match-practice",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — run npm run sync-vimeo -- --training 2026-08-28_venerdi",
+    "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-08-28_venerdi"
+  },
+  "video": {
+    "fullSession": "",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    }
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30308092",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30308092",
+    "gkFolderId": "30308103"
+  }
+}

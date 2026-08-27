@@ -1,0 +1,44 @@
+{
+  "id": "2026-08-27_giovedi",
+  "slug": "2026-08-27_giovedi",
+  "date": "2026-08-27",
+  "title": {
+    "en": "Giovedì",
+    "it": "Giovedì"
+  },
+  "focus": {
+    "en": "Training",
+    "it": "Training"
+  },
+  "sessionType": "activation",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — run npm run sync-vimeo -- --training 2026-08-27_giovedi",
+    "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-08-27_giovedi"
+  },
+  "video": {
+    "fullSession": "",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    }
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30308091",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30308091",
+    "gkFolderId": "30308101"
+  }
+}
