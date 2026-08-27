@@ -4591,6 +4591,51 @@ a.gacon-ind-row:hover {
   font-variant-numeric: tabular-nums;
 }
 
+.standings-form-cell {
+  min-width: 72px;
+  vertical-align: middle;
+}
+
+.standings-form {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  height: 24px;
+  min-width: 58px;
+}
+
+.standings-form--empty {
+  color: var(--text-light);
+  font-size: 12px;
+}
+
+.standings-form-pip {
+  display: inline-block;
+  width: 7px;
+  border-radius: 2px;
+  flex: 0 0 auto;
+}
+
+.standings-form-pip--w {
+  height: 12px;
+  background: #22c55e;
+  transform: translateY(-5px);
+}
+
+.standings-form-pip--l {
+  height: 12px;
+  background: #dc2626;
+  transform: translateY(5px);
+}
+
+.standings-form-pip--d {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: #9ca3af;
+}
+
 .standings-team-link,
 .standings-team-inner {
   display: inline-flex;

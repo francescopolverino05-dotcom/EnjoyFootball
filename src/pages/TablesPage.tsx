@@ -1,10 +1,12 @@
 import { useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import ReportHeader from '../components/ReportHeader';
+import StandingsForm from '../components/StandingsForm';
 import {
   getCoppaItaliaStandings,
   getPrimavera2Standings,
   getStandingsDataset,
+  getTeamForm,
   getUefaYouthLeagueStandings,
   STANDING_COMPETITION_ORDER,
   standingRowClassName,
@@ -141,8 +143,11 @@ export default function TablesPage() {
                       <th scope="col">{t('tableColWon')}</th>
                       <th scope="col">{t('tableColDrawn')}</th>
                       <th scope="col">{t('tableColLost')}</th>
+                      <th scope="col">{t('tableColGf')}</th>
+                      <th scope="col">{t('tableColGa')}</th>
                       <th scope="col">{t('tableColGd')}</th>
                       <th scope="col">{t('tableColPts')}</th>
+                      <th scope="col">{t('tableColForm')}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -193,8 +198,15 @@ export default function TablesPage() {
                           <td>{row.won}</td>
                           <td>{row.drawn}</td>
                           <td>{row.lost}</td>
+                          <td>{row.gf}</td>
+                          <td>{row.ga}</td>
                           <td>{formatGd(row.gd)}</td>
                           <td className="standings-pts">{row.pts}</td>
+                          <td className="standings-form-cell">
+                            <StandingsForm
+                              results={getTeamForm(league, row.teamId)}
+                            />
+                          </td>
                         </tr>
                       );
                     })}
@@ -394,7 +406,78 @@ export default function TablesPage() {
                   {L(uyl.name)}
                 </h3>
               </header>
-              <p className="home-empty">{t('tableUylEmpty')}</p>
+              {uyl.groupTable ? (
+                <div className="standings-table-wrap">
+                  <table className="standings-table">
+                    <thead>
+                      <tr>
+                        <th scope="col">{t('tableColPos')}</th>
+                        <th scope="col">{t('tableColTeam')}</th>
+                        <th scope="col">{t('tableColPlayed')}</th>
+                        <th scope="col">{t('tableColWon')}</th>
+                        <th scope="col">{t('tableColDrawn')}</th>
+                        <th scope="col">{t('tableColLost')}</th>
+                        <th scope="col">{t('tableColGf')}</th>
+                        <th scope="col">{t('tableColGa')}</th>
+                        <th scope="col">{t('tableColGd')}</th>
+                        <th scope="col">{t('tableColPts')}</th>
+                        <th scope="col">{t('tableColForm')}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {uyl.groupTable.rows.map((row) => {
+                        const crest = teamCrestUrl(
+                          {
+                            logo:
+                              row.teamId === 'napoli'
+                                ? 'napoli-logo.png'
+                                : `logos/${row.teamId}.png`,
+                          },
+                          'onLight'
+                        );
+                        const teamCell = (
+                          <span className="standings-team-inner">
+                            <img
+                              className="standings-crest"
+                              src={crest}
+                              alt=""
+                              width={22}
+                              height={22}
+                            />
+                            <span>{row.shortName}</span>
+                          </span>
+                        );
+                        return (
+                          <tr
+                            key={row.teamId}
+                            className={standingRowClassName(row.pos, row.us, {
+                              zones: false,
+                            })}
+                          >
+                            <td className="standings-pos">{row.pos}</td>
+                            <td className="standings-team">{teamCell}</td>
+                            <td>{row.played}</td>
+                            <td>{row.won}</td>
+                            <td>{row.drawn}</td>
+                            <td>{row.lost}</td>
+                            <td>{row.gf}</td>
+                            <td>{row.ga}</td>
+                            <td>{formatGd(row.gd)}</td>
+                            <td className="standings-pts">{row.pts}</td>
+                            <td className="standings-form-cell">
+                              <StandingsForm
+                                results={getTeamForm(uyl.groupTable!, row.teamId)}
+                              />
+                            </td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              ) : (
+                <p className="home-empty">{t('tableUylEmpty')}</p>
+              )}
             </section>
           ) : null}
         </div>

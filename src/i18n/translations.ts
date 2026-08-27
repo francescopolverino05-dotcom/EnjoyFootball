@@ -141,8 +141,11 @@ const dictionaries = {
     tableColWon: 'W',
     tableColDrawn: 'D',
     tableColLost: 'L',
+    tableColGf: 'GF',
+    tableColGa: 'GA',
     tableColGd: 'GD',
     tableColPts: 'Pts',
+    tableColForm: 'Form',
     tableNextMatchday: 'Matchday {n} · {date}',
     tableMatchdayResults: 'Matchday {n} · {date}',
     tableMatchdayOption: 'MD {n} · {date}',
@@ -152,7 +155,7 @@ const dictionaries = {
     tableOurPath: 'Our path',
     tableCupEmpty: 'No cup fixtures yet.',
     tableUylEmpty:
-      'UEFA Youth League fixtures are not out yet. This tab stays empty until the draw is published.',
+      'UEFA Youth League fixtures are not out yet. Participants are listed; the league-phase draw fills in later.',
     opposition: 'Opposition',
     oppositionPageTitle: 'OPPOSITION',
     oppositionHint:
@@ -553,8 +556,11 @@ const dictionaries = {
     tableColWon: 'V',
     tableColDrawn: 'N',
     tableColLost: 'P',
+    tableColGf: 'GF',
+    tableColGa: 'GS',
     tableColGd: 'DR',
     tableColPts: 'Pt',
+    tableColForm: 'Forma',
     tableNextMatchday: 'Giornata {n} · {date}',
     tableMatchdayResults: 'Giornata {n} · {date}',
     tableMatchdayOption: 'G{n} · {date}',
@@ -564,7 +570,7 @@ const dictionaries = {
     tableOurPath: 'Il nostro percorso',
     tableCupEmpty: 'Nessuna partita di coppa ancora.',
     tableUylEmpty:
-      'Le partite di UEFA Youth League non ci sono ancora: il sorteggio deve ancora uscire. La scheda resta vuota di proposito.',
+      'Le partite di UEFA Youth League non ci sono ancora. I partecipanti ci sono; il sorteggio della fase a gironi arriva dopo.',
     opposition: 'Avversari',
     oppositionPageTitle: 'AVVERSARI',
     oppositionHint:

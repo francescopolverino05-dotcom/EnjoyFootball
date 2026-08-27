@@ -83,6 +83,8 @@ export interface CupStandings {
     };
   } | null;
   rounds: CupRound[];
+  /** Optional group-stage league table (e.g. UEFA Youth League). */
+  groupTable?: LeagueStandings;
 }
 
 export interface StandingsDataset {
@@ -139,11 +141,50 @@ export function primavera2Zone(rank: number): StandingZone | null {
 
 export function standingRowClassName(
   rank: number,
-  us?: boolean
+  us?: boolean,
+  options?: { zones?: boolean }
 ): string | undefined {
-  const zone = primavera2Zone(rank);
   const parts: string[] = [];
-  if (zone) parts.push(`standings-row--${zone}`);
+  if (options?.zones !== false) {
+    const zone = primavera2Zone(rank);
+    if (zone) parts.push(`standings-row--${zone}`);
+  }
   if (us) parts.push('standings-row--us');
   return parts.length ? parts.join(' ') : undefined;
+}
+
+export type StandingFormResult = 'W' | 'D' | 'L';
+
+function parseFixtureScore(
+  score: string | null | undefined
+): { home: number; away: number } | null {
+  if (!score) return null;
+  const m = String(score).trim().match(/^(\d+)\s*[-–:]\s*(\d+)$/);
+  if (!m) return null;
+  return { home: Number(m[1]), away: Number(m[2]) };
+}
+
+/** Last N results for a team from scored league matchdays (oldest → newest). */
+export function getTeamForm(
+  league: LeagueStandings,
+  teamId: string,
+  lastN = 5
+): StandingFormResult[] {
+  const results: StandingFormResult[] = [];
+  const matchdays = [...league.matchdays].sort((a, b) => a.number - b.number);
+  for (const md of matchdays) {
+    for (const fx of md.fixtures) {
+      if (fx.homeId !== teamId && fx.awayId !== teamId) continue;
+      const parsed = parseFixtureScore(fx.score);
+      if (!parsed) continue;
+      const isHome = fx.homeId === teamId;
+      const forGoals = isHome ? parsed.home : parsed.away;
+      const againstGoals = isHome ? parsed.away : parsed.home;
+      if (forGoals > againstGoals) results.push('W');
+      else if (forGoals < againstGoals) results.push('L');
+      else results.push('D');
+    }
+  }
+  if (results.length <= lastN) return results;
+  return results.slice(-lastN);
 }
