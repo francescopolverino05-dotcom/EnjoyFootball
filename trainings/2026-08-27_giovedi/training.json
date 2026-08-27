@@ -19,11 +19,81 @@
     "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-08-27_giovedi"
   },
   "video": {
-    "fullSession": "",
+    "fullSession": "https://vimeo.com/1221820462/b191e644f6",
     "notes": {
       "en": "Synced from Vimeo after upload.",
       "it": "Sincronizzato da Vimeo dopo il caricamento."
-    }
+    },
+    "parts": [
+      {
+        "id": "vimeo-1221820461",
+        "title": {
+          "en": "Rondo a 3 quadrati",
+          "it": "Rondo a 3 quadrati"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1221820461/9f01b430fe",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1221820463",
+        "title": {
+          "en": "Partitella Blú v Rosa",
+          "it": "Partitella Blú v Rosa"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1221820463/c8be9d5af8",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1221820460",
+        "title": {
+          "en": "Chance Conversion",
+          "it": "Chance Conversion"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1221820460/640a2b8ed6",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1221820462",
+        "title": {
+          "en": "Chance Creation",
+          "it": "Chance Creation"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1221820462/b191e644f6",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
   },
   "clips": [],
   "analysisVideos": [],
@@ -39,6 +109,7 @@
   "vimeo": {
     "folderId": "30308091",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30308091",
-    "gkFolderId": "30308101"
+    "gkFolderId": "30308101",
+    "lastSyncedAt": "2026-08-27T20:05:13.666Z"
   }
 }
