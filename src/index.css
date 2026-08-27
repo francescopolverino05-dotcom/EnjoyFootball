@@ -1107,12 +1107,12 @@ button {
   display: block;
 }
 
-/* Left stack + table share one height */
+/* Left stack + table: table sized to content (no empty stretch) */
 .home-portal-upper {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(200px, 260px);
   gap: 14px;
-  align-items: stretch;
+  align-items: start;
 }
 
 .home-portal-main-upper {
@@ -1159,7 +1159,7 @@ button {
 
 .home-tile--table {
   padding: 12px 14px;
-  flex: 1;
+  flex: 0 0 auto;
   width: 100%;
   height: auto;
 }
@@ -1383,7 +1383,7 @@ button {
 
 .home-standings-wrap {
   margin: 0;
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   min-height: 0;
   overflow: auto;
 }
@@ -1395,7 +1395,7 @@ button {
 }
 
 .home-table-footer {
-  margin-top: auto;
+  margin-top: 4px;
   padding-top: 8px;
   flex: 0 0 auto;
 }
@@ -4485,11 +4485,70 @@ a.gacon-ind-row:hover {
   margin-top: 20px;
 }
 
+.standings-matchday-nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  align-items: start;
+  margin-bottom: 12px;
+}
+
+.standings-matchday-heading {
+  text-align: center;
+  min-width: 0;
+}
+
 .standings-matchday-title {
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   font-size: 14px;
   font-weight: 800;
   color: var(--text-dark);
+}
+
+.standings-matchday-jump select {
+  max-width: 100%;
+  padding: 6px 10px;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.standings-matchday-btn {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--napoli-blue-dark);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.standings-matchday-btn:hover:not(:disabled) {
+  border-color: var(--napoli-blue);
+  background: #f0f7ff;
+}
+
+.standings-matchday-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .standings-our-path-body {
