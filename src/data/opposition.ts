@@ -122,27 +122,15 @@ attachReferencePack('avellino', '2026-09-05_campionato-avellino-vs-u19', [
   {
     id: 'avellino-ref-canosa',
     title: {
-      en: 'Canosa vs Avellino (friendly)',
-      it: 'Canosa vs Avellino (amichevole)',
+      en: 'Canosa vs Avellino 7–1',
+      it: 'Canosa vs Avellino 7–1',
     },
     competition: {
       en: 'Friendly',
       it: 'Amichevole',
     },
+    score: '7–1',
     videoFile: 'https://vimeo.com/1221765516/20c5bc9e45',
-  },
-  {
-    id: 'avellino-ref-catanzaro',
-    title: {
-      en: 'Catanzaro vs Avellino 1–3',
-      it: 'Catanzaro vs Avellino 1–3',
-    },
-    competition: {
-      en: 'Primavera 2 · Matchday 24 (Girone C)',
-      it: 'Primavera 2 · Giornata 24 (Girone C)',
-    },
-    score: '1–3',
-    videoFile: 'https://vimeo.com/1218078567/7be6470e66',
   },
 ]);
 
