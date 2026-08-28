@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>David Osifo — export iMovie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #121212;
+        --panel: #181818;
+        --gold: #f3ae1a;
+        --white: #f2f2f2;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--bg);
+        font-family: Inter, system-ui, sans-serif;
+      }
+
+      body {
+        display: grid;
+        place-items: center;
+      }
+
+      .card {
+        width: 1700px;
+        background: var(--panel);
+        border: 1px solid #2a2a2a;
+        overflow: hidden;
+      }
+
+      .card-inner {
+        display: grid;
+        grid-template-columns: 520px 1fr;
+        min-height: 620px;
+      }
+
+      .portrait-wrap {
+        position: relative;
+        overflow: hidden;
+        background: #101010;
+        border-right: 4px solid var(--gold);
+        display: grid;
+        place-items: center;
+      }
+
+      .portrait {
+        display: block;
+        width: 100%;
+        height: 100%;
+        min-height: 620px;
+        object-fit: cover;
+        object-position: center center;
+      }
+
+      .info {
+        padding: 72px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 48px;
+      }
+
+      .name {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 132px;
+        line-height: 0.9;
+        letter-spacing: 0.04em;
+        color: var(--gold);
+        text-transform: uppercase;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 28px 64px;
+        max-width: 920px;
+      }
+
+      .stat--wide {
+        grid-column: 1 / -1;
+      }
+
+      .stat-label {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--white);
+      }
+
+      .stat-value {
+        margin-top: 8px;
+        font-size: 40px;
+        font-weight: 600;
+        color: var(--gold);
+      }
+
+      .stat-value--roles {
+        font-size: 32px;
+        line-height: 1.25;
+      }
+
+      .accent-bar {
+        height: 8px;
+        background: var(--gold);
+      }
+    </style>
+  </head>
+  <body>
+    <article class="card" aria-label="Profilo David Osifo">
+      <div class="card-inner">
+        <div class="portrait-wrap">
+          <img
+            class="portrait"
+            src="./david-osifo-portrait-clean.png"
+            alt="David Osifo"
+          />
+        </div>
+
+        <div class="info">
+          <h1 class="name">David Osifo</h1>
+          <dl class="stats">
+            <div class="stat">
+              <dt class="stat-label">Data di nascita</dt>
+              <dd class="stat-value">20/05/2008</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat-label">Altezza</dt>
+              <dd class="stat-value">179,0 cm</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat-label">Peso</dt>
+              <dd class="stat-value">77,6 kg</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat-label">Piede preferito</dt>
+              <dd class="stat-value">Sinistro</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat-label">Nazionalità</dt>
+              <dd class="stat-value">Austriaca</dd>
+            </div>
+            <div class="stat stat--wide">
+              <dt class="stat-label">Ruoli</dt>
+              <dd class="stat-value stat-value--roles">
+                Terzino / Terzino di fascia / Ala
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <div class="accent-bar" aria-hidden="true"></div>
+    </article>
+  </body>
+</html>

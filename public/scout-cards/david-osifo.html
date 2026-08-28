@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Osifo — Player profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #161616;
+        --gold: #f5b335;
+        --gold-dark: #c8941f;
+        --white: #f5f5f5;
+        --muted: #bdbdbd;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: var(--bg);
+        padding: 0;
+        margin: 0;
+        font-family: Inter, system-ui, sans-serif;
+      }
+
+      .card {
+        width: 1180px;
+        max-width: 100%;
+        background: var(--bg);
+        border: 3px solid #222;
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+        overflow: hidden;
+      }
+
+      .card-inner {
+        display: grid;
+        grid-template-columns: 340px 1fr;
+        min-height: 420px;
+      }
+
+      .portrait-wrap {
+        position: relative;
+        background: linear-gradient(145deg, #1f1f1f 0%, #101010 100%);
+        border-right: 4px solid var(--gold);
+        overflow: hidden;
+      }
+
+      .portrait-wrap::before {
+        content: 'W';
+        position: absolute;
+        inset: auto -40px -30px auto;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 280px;
+        line-height: 1;
+        color: rgba(245, 179, 53, 0.18);
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      .portrait {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        min-height: 420px;
+        object-fit: cover;
+        object-position: center center;
+        display: block;
+      }
+
+      .position-badge {
+        position: absolute;
+        left: 18px;
+        bottom: 22px;
+        z-index: 2;
+        padding: 4px 10px;
+        background: rgba(0, 0, 0, 0.45);
+        border-radius: 4px;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 34px;
+        letter-spacing: 0.06em;
+        color: var(--white);
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+      }
+
+      .flag {
+        position: absolute;
+        right: 18px;
+        bottom: 18px;
+        z-index: 2;
+        width: 54px;
+        height: 54px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid rgba(255, 255, 255, 0.85);
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
+      }
+
+      .flag svg {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .info {
+        padding: 42px 48px 42px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 28px;
+      }
+
+      .name {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: clamp(72px, 8vw, 96px);
+        line-height: 0.92;
+        letter-spacing: 0.03em;
+        color: var(--gold);
+        text-transform: uppercase;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px 36px;
+        max-width: 720px;
+      }
+
+      .stat {
+        display: grid;
+        gap: 4px;
+      }
+
+      .stat-label {
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--white);
+      }
+
+      .stat-value {
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        color: var(--gold);
+      }
+
+      .accent-bar {
+        height: 8px;
+        background: linear-gradient(
+          90deg,
+          var(--gold) 0%,
+          var(--gold-dark) 55%,
+          var(--gold) 100%
+        );
+      }
+
+      @media (max-width: 900px) {
+        .card-inner {
+          grid-template-columns: 1fr;
+        }
+
+        .portrait-wrap {
+          border-right: none;
+          border-bottom: 4px solid var(--gold);
+        }
+
+        .portrait {
+          min-height: 360px;
+        }
+
+        .info {
+          padding: 28px 24px 32px;
+        }
+
+        .stats {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article class="card" aria-label="David Osifo player profile">
+      <div class="card-inner">
+        <div class="portrait-wrap">
+          <img
+            class="portrait"
+            src="./david-osifo-portrait-clean.png"
+            alt="David Osifo"
+          />
+
+        <div class="info">
+          <h1 class="name">David Osifo</h1>
+          <dl class="stats">
+            <div class="stat">
+              <dt class="stat-label">Data di nascita</dt>
+              <dd class="stat-value">20/05/2008</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat-label">Altezza</dt>
+              <dd class="stat-value">179,0 cm</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat-label">Peso</dt>
+              <dd class="stat-value">77,6 kg</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat-label">Piede preferito</dt>
+              <dd class="stat-value">Sinistro</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat-label">Nazionalità</dt>
+              <dd class="stat-value">Austriaca</dd>
+            </div>
+            <div class="stat">
+              <dt class="stat-label">Ruoli</dt>
+              <dd class="stat-value">Terzino / Terzino di fascia / Ala</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+      <div class="accent-bar" aria-hidden="true"></div>
+    </article>
+  </body>
+</html>
