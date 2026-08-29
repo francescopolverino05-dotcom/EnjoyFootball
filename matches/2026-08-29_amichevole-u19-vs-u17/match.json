@@ -224,6 +224,15 @@
     },
     {
       "name": {
+        "en": "Pass Accuracy %",
+        "it": "Precisione Passaggi %"
+      },
+      "homeValue": 91,
+      "awayValue": 65,
+      "unit": "%"
+    },
+    {
+      "name": {
         "en": "Shot Accuracy %",
         "it": "Precisione Tiri %"
       },
@@ -235,201 +244,579 @@
   "teamStats": [
     {
       "category": {
-        "en": "General",
-        "it": "Generale"
+        "en": "Overview",
+        "it": "Riepilogo"
       },
       "name": {
         "en": "Goals",
         "it": "Gol"
       },
-      "home": {
-        "en": "8",
-        "it": "8"
-      },
-      "away": {
-        "en": "0",
-        "it": "0"
-      }
+      "home": "8",
+      "away": "0"
     },
     {
       "category": {
-        "en": "General",
-        "it": "Generale"
-      },
-      "name": {
-        "en": "Expected Goals (xG)",
-        "it": "Expected Goals (xG)"
-      },
-      "home": {
-        "en": "4.28",
-        "it": "4,28"
-      },
-      "away": {
-        "en": "0.26",
-        "it": "0,26"
-      }
-    },
-    {
-      "category": {
-        "en": "General",
-        "it": "Generale"
+        "en": "Overview",
+        "it": "Riepilogo"
       },
       "name": {
         "en": "Ball Possession",
         "it": "Possesso Palla"
       },
-      "home": {
-        "en": "86.2%",
-        "it": "86,2%"
-      },
-      "away": {
-        "en": "13.8%",
-        "it": "13,8%"
-      }
+      "home": "86.2%",
+      "away": "13.8%"
     },
     {
       "category": {
-        "en": "General",
-        "it": "Generale"
+        "en": "Overview",
+        "it": "Riepilogo"
       },
       "name": {
         "en": "Active Possession Time",
         "it": "Tempo di Possesso Attivo"
       },
-      "home": {
-        "en": "79m 00s",
-        "it": "79m 00s"
-      },
-      "away": {
-        "en": "12m 40s",
-        "it": "12m 40s"
-      }
+      "home": "79m 00s (4741s)",
+      "away": "12m 40s (759s)"
     },
     {
       "category": {
-        "en": "Attacking",
-        "it": "Attacco"
+        "en": "Overview",
+        "it": "Riepilogo"
       },
       "name": {
-        "en": "Shots",
-        "it": "Tiri"
+        "en": "Total Shots",
+        "it": "Tiri Totali"
       },
-      "home": {
-        "en": "26",
-        "it": "26"
-      },
-      "away": {
-        "en": "4",
-        "it": "4"
-      }
+      "home": "26",
+      "away": "4"
     },
     {
       "category": {
-        "en": "Attacking",
-        "it": "Attacco"
+        "en": "Overview",
+        "it": "Riepilogo"
       },
       "name": {
         "en": "Shots on Target",
         "it": "Tiri in Porta"
       },
-      "home": {
-        "en": "16",
-        "it": "16"
-      },
-      "away": {
-        "en": "1",
-        "it": "1"
-      }
+      "home": "16",
+      "away": "1"
     },
     {
       "category": {
-        "en": "Attacking",
-        "it": "Attacco"
+        "en": "Overview",
+        "it": "Riepilogo"
       },
       "name": {
         "en": "Shots off Target / Blocked",
         "it": "Tiri Fuori / Murati"
       },
-      "home": {
-        "en": "10",
-        "it": "10"
-      },
-      "away": {
-        "en": "3",
-        "it": "3"
-      }
+      "home": "10",
+      "away": "3"
     },
     {
       "category": {
-        "en": "Attacking",
-        "it": "Attacco"
+        "en": "Overview",
+        "it": "Riepilogo"
       },
       "name": {
         "en": "Shot Accuracy",
         "it": "Precisione Tiri"
       },
-      "home": {
-        "en": "61.5%",
-        "it": "61,5%"
-      },
-      "away": {
-        "en": "25.0%",
-        "it": "25,0%"
-      }
+      "home": "61.5%",
+      "away": "25.0%"
     },
     {
       "category": {
-        "en": "Attacking",
-        "it": "Attacco"
+        "en": "Overview",
+        "it": "Riepilogo"
       },
       "name": {
         "en": "Corner Kicks",
-        "it": "Calci d'Angolo"
+        "it": "Calci d’Angolo"
       },
-      "home": {
-        "en": "11",
-        "it": "11"
-      },
-      "away": {
-        "en": "2",
-        "it": "2"
-      }
+      "home": "11",
+      "away": "2"
     },
     {
       "category": {
-        "en": "Discipline",
-        "it": "Disciplina"
+        "en": "Overview",
+        "it": "Riepilogo"
       },
       "name": {
         "en": "Fouls Committed",
         "it": "Falli Commessi"
       },
-      "home": {
-        "en": "6",
-        "it": "6"
-      },
-      "away": {
-        "en": "14",
-        "it": "14"
-      }
+      "home": "6",
+      "away": "14"
     },
     {
       "category": {
-        "en": "Discipline",
-        "it": "Disciplina"
+        "en": "Overview",
+        "it": "Riepilogo"
       },
       "name": {
         "en": "Offsides",
         "it": "Fuorigioco"
       },
-      "home": {
-        "en": "4",
-        "it": "4"
+      "home": "4",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
       },
-      "away": {
-        "en": "1",
-        "it": "1"
-      }
+      "name": {
+        "en": "Ball Possession",
+        "it": "Possesso Palla"
+      },
+      "home": "86.2%",
+      "away": "13.8%"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "Active Possession Time",
+        "it": "Tempo di Possesso Attivo"
+      },
+      "home": "79m 00s",
+      "away": "12m 40s"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "1st Half Possession",
+        "it": "Possesso 1° Tempo"
+      },
+      "home": "83.9%",
+      "away": "16.1%"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "2nd Half Possession",
+        "it": "Possesso 2° Tempo"
+      },
+      "home": "88.3%",
+      "away": "11.7%"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "Time in Opp. Half / Final Third",
+        "it": "Tempo in Metà Campo / Trequarti Avv."
+      },
+      "home": "58m 20s (63.6%)",
+      "away": "—"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "00:00–15:00 Possession",
+        "it": "Possesso 00:00–15:00"
+      },
+      "home": "83.9%",
+      "away": "16.1%"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "15:00–30:00 Possession",
+        "it": "Possesso 15:00–30:00"
+      },
+      "home": "84.1%",
+      "away": "15.9%"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "30:00–45:00+ Possession",
+        "it": "Possesso 30:00–45:00+"
+      },
+      "home": "83.7%",
+      "away": "16.3%"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "45:00–60:00 Possession",
+        "it": "Possesso 45:00–60:00"
+      },
+      "home": "88.1%",
+      "away": "11.9%"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "60:00–75:00 Possession",
+        "it": "Possesso 60:00–75:00"
+      },
+      "home": "88.5%",
+      "away": "11.5%"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "75:00–90:00+ Possession",
+        "it": "Possesso 75:00–90:00+"
+      },
+      "home": "88.3%",
+      "away": "11.7%"
+    },
+    {
+      "category": {
+        "en": "Passing",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes Completed / Total",
+        "it": "Passaggi Riusciti / Totali"
+      },
+      "home": "624 / 685 (91%)",
+      "away": "118 / 182 (65%)"
+    },
+    {
+      "category": {
+        "en": "Passing",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Forward Passes",
+        "it": "Passaggi in Avanti"
+      },
+      "home": "206 / 235 (88%)",
+      "away": "46 / 84 (55%)"
+    },
+    {
+      "category": {
+        "en": "Passing",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Backward Passes",
+        "it": "Passaggi all’Indietro"
+      },
+      "home": "167 / 172 (97%)",
+      "away": "34 / 42 (81%)"
+    },
+    {
+      "category": {
+        "en": "Passing",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Lateral Passes",
+        "it": "Passaggi Laterali"
+      },
+      "home": "251 / 278 (90%)",
+      "away": "38 / 56 (68%)"
+    },
+    {
+      "category": {
+        "en": "Passing",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Progressive Passes",
+        "it": "Passaggi Progressivi"
+      },
+      "home": "51 / 62 (82%)",
+      "away": "7 / 16 (44%)"
+    },
+    {
+      "category": {
+        "en": "Passing",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Long Balls",
+        "it": "Lanci Lunghi"
+      },
+      "home": "34 / 45 (76%)",
+      "away": "18 / 38 (47%)"
+    },
+    {
+      "category": {
+        "en": "Passing",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes into Final Third",
+        "it": "Passaggi sulla Trequarti"
+      },
+      "home": "98 / 118 (83%)",
+      "away": "7 / 18 (39%)"
+    },
+    {
+      "category": {
+        "en": "Passing",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes into Penalty Area",
+        "it": "Passaggi in Area di Rigore"
+      },
+      "home": "26 / 38 (68%)",
+      "away": "1 / 5 (20%)"
+    },
+    {
+      "category": {
+        "en": "Passing",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Through Balls",
+        "it": "Passaggi Filtranti"
+      },
+      "home": "9 / 14 (64%)",
+      "away": "0 / 2 (0%)"
+    },
+    {
+      "category": {
+        "en": "Passing",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Crosses Completed / Total",
+        "it": "Cross Riusciti / Totali"
+      },
+      "home": "11 / 24 (6 low / 4 high / 1 blocked)",
+      "away": "1 / 6 (0 / 1 / 0)"
+    },
+    {
+      "category": {
+        "en": "Passing",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Misplaced Passes %",
+        "it": "Passaggi Sbagliati %"
+      },
+      "home": "8.9%",
+      "away": "35.2%"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "Goals",
+        "it": "Gol"
+      },
+      "home": "8",
+      "away": "0"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "Total xG",
+        "it": "xG Totali"
+      },
+      "home": "4.28",
+      "away": "0.26"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "Shots",
+        "it": "Tiri"
+      },
+      "home": "26",
+      "away": "4"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "Shots on Target",
+        "it": "Tiri in Porta"
+      },
+      "home": "16",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "Avg xG per Shot",
+        "it": "xG Medio per Tiro"
+      },
+      "home": "0.16",
+      "away": "0.06"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "xG 1st Half",
+        "it": "xG 1° Tempo"
+      },
+      "home": "2.02 (4 goals)",
+      "away": "0.07"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "xG 2nd Half",
+        "it": "xG 2° Tempo"
+      },
+      "home": "2.26 (4 goals)",
+      "away": "0.19"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "xG Diff (Goals − xG)",
+        "it": "Diff. xG (Gol − xG)"
+      },
+      "home": "+3.72",
+      "away": "−0.26"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "Goal 06′ xG",
+        "it": "Gol 06′ xG"
+      },
+      "home": "0.38",
+      "away": "—"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "Goal 14′ xG",
+        "it": "Gol 14′ xG"
+      },
+      "home": "0.31",
+      "away": "—"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "Goal 27′ xG",
+        "it": "Gol 27′ xG"
+      },
+      "home": "0.19",
+      "away": "—"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "Goal 38′ xG",
+        "it": "Gol 38′ xG"
+      },
+      "home": "0.44",
+      "away": "—"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "Goal 53′ xG",
+        "it": "Gol 53′ xG"
+      },
+      "home": "0.28",
+      "away": "—"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "Goal 65′ xG",
+        "it": "Gol 65′ xG"
+      },
+      "home": "0.58",
+      "away": "—"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "Goal 76′ pen xG",
+        "it": "Gol 76′ rigore xG"
+      },
+      "home": "0.76",
+      "away": "—"
+    },
+    {
+      "category": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "name": {
+        "en": "Goal 86′ xG",
+        "it": "Gol 86′ xG"
+      },
+      "home": "0.25",
+      "away": "—"
     },
     {
       "category": {
@@ -437,17 +824,11 @@
         "it": "1° Tempo"
       },
       "name": {
-        "en": "Goals (1st Half)",
-        "it": "Gol (1° Tempo)"
+        "en": "Goals",
+        "it": "Gol"
       },
-      "home": {
-        "en": "4",
-        "it": "4"
-      },
-      "away": {
-        "en": "0",
-        "it": "0"
-      }
+      "home": "4",
+      "away": "0"
     },
     {
       "category": {
@@ -455,17 +836,11 @@
         "it": "1° Tempo"
       },
       "name": {
-        "en": "Possession (1st Half)",
-        "it": "Possesso (1° Tempo)"
+        "en": "Possession",
+        "it": "Possesso"
       },
-      "home": {
-        "en": "83.9%",
-        "it": "83,9%"
-      },
-      "away": {
-        "en": "16.1%",
-        "it": "16,1%"
-      }
+      "home": "83.9%",
+      "away": "16.1%"
     },
     {
       "category": {
@@ -473,17 +848,47 @@
         "it": "1° Tempo"
       },
       "name": {
-        "en": "Shots (1st Half)",
-        "it": "Tiri (1° Tempo)"
+        "en": "Shots (on target)",
+        "it": "Tiri (in porta)"
       },
-      "home": {
-        "en": "12 (7 on target)",
-        "it": "12 (7 in porta)"
+      "home": "12 (7)",
+      "away": "1 (0)"
+    },
+    {
+      "category": {
+        "en": "1st Half",
+        "it": "1° Tempo"
       },
-      "away": {
-        "en": "1 (0 on target)",
-        "it": "1 (0 in porta)"
-      }
+      "name": {
+        "en": "Corners",
+        "it": "Angoli"
+      },
+      "home": "5",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "1st Half",
+        "it": "1° Tempo"
+      },
+      "name": {
+        "en": "Fouls",
+        "it": "Falli"
+      },
+      "home": "3",
+      "away": "7"
+    },
+    {
+      "category": {
+        "en": "1st Half",
+        "it": "1° Tempo"
+      },
+      "name": {
+        "en": "Offsides",
+        "it": "Fuorigioco"
+      },
+      "home": "2",
+      "away": "0"
     },
     {
       "category": {
@@ -491,17 +896,11 @@
         "it": "2° Tempo"
       },
       "name": {
-        "en": "Goals (2nd Half)",
-        "it": "Gol (2° Tempo)"
+        "en": "Goals",
+        "it": "Gol"
       },
-      "home": {
-        "en": "4",
-        "it": "4"
-      },
-      "away": {
-        "en": "0",
-        "it": "0"
-      }
+      "home": "4",
+      "away": "0"
     },
     {
       "category": {
@@ -509,17 +908,11 @@
         "it": "2° Tempo"
       },
       "name": {
-        "en": "Possession (2nd Half)",
-        "it": "Possesso (2° Tempo)"
+        "en": "Possession",
+        "it": "Possesso"
       },
-      "home": {
-        "en": "88.3%",
-        "it": "88,3%"
-      },
-      "away": {
-        "en": "11.7%",
-        "it": "11,7%"
-      }
+      "home": "88.3%",
+      "away": "11.7%"
     },
     {
       "category": {
@@ -527,17 +920,47 @@
         "it": "2° Tempo"
       },
       "name": {
-        "en": "Shots (2nd Half)",
-        "it": "Tiri (2° Tempo)"
+        "en": "Shots (on target)",
+        "it": "Tiri (in porta)"
       },
-      "home": {
-        "en": "14 (9 on target)",
-        "it": "14 (9 in porta)"
+      "home": "14 (9)",
+      "away": "3 (1)"
+    },
+    {
+      "category": {
+        "en": "2nd Half",
+        "it": "2° Tempo"
       },
-      "away": {
-        "en": "3 (1 on target)",
-        "it": "3 (1 in porta)"
-      }
+      "name": {
+        "en": "Corners",
+        "it": "Angoli"
+      },
+      "home": "6",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "2nd Half",
+        "it": "2° Tempo"
+      },
+      "name": {
+        "en": "Fouls",
+        "it": "Falli"
+      },
+      "home": "3",
+      "away": "7"
+    },
+    {
+      "category": {
+        "en": "2nd Half",
+        "it": "2° Tempo"
+      },
+      "name": {
+        "en": "Offsides",
+        "it": "Fuorigioco"
+      },
+      "home": "2",
+      "away": "1"
     }
   ],
   "goalkeepers": [
@@ -653,78 +1076,7 @@
     }
   ],
   "clips": [],
-  "analysisVideos": [
-    {
-      "id": "dataset-summary",
-      "title": {
-        "en": "Complete match dataset summary",
-        "it": "Riepilogo dataset completo"
-      },
-      "description": {
-        "en": "Overview metrics, goalkeeper logs, and 15-minute possession intervals from the match telemetry export.",
-        "it": "Metriche generali, schede portieri e intervalli di possesso ogni 15' dall’export di telemetria."
-      },
-      "videoFile": "analysis/complete_dataset_summary.md",
-      "kind": "markdown",
-      "createdAt": "2026-08-29",
-      "tags": [
-        "stats",
-        "dataset"
-      ]
-    },
-    {
-      "id": "match-stats-report",
-      "title": {
-        "en": "Full match statistics report",
-        "it": "Report statistico completo"
-      },
-      "description": {
-        "en": "Half-by-half breakdown and goal timeline (06', 14', 27', 38', 53', 65', 76' pen, 86').",
-        "it": "Dettaglio per tempo e timeline gol (06', 14', 27', 38', 53', 65', 76' rig, 86')."
-      },
-      "videoFile": "analysis/match_stats_report.md",
-      "kind": "markdown",
-      "createdAt": "2026-08-29",
-      "tags": [
-        "stats"
-      ]
-    },
-    {
-      "id": "gk-analysis",
-      "title": {
-        "en": "Goalkeeper analysis",
-        "it": "Analisi portieri"
-      },
-      "description": {
-        "en": "Spinelli (0'–70'), Merone (70'–90'), and U17 goalkeeper comparison.",
-        "it": "Confronto Spinelli (0'–70'), Merone (70'–90') e portiere U17."
-      },
-      "videoFile": "analysis/analisi_portieri.md",
-      "kind": "markdown",
-      "createdAt": "2026-08-29",
-      "tags": [
-        "goalkeeper"
-      ]
-    },
-    {
-      "id": "xg-analysis",
-      "title": {
-        "en": "Expected goals (xG) analysis",
-        "it": "Analisi expected goals (xG)"
-      },
-      "description": {
-        "en": "Napoli 4.28 xG vs U17 0.26 xG across 30 shots.",
-        "it": "Napoli 4,28 xG vs U17 0,26 xG su 30 tiri."
-      },
-      "videoFile": "analysis/analisi_xg.md",
-      "kind": "markdown",
-      "createdAt": "2026-08-29",
-      "tags": [
-        "xg",
-        "stats"
-      ]
-    }
-  ],
+  "analysisVideos": [],
   "vimeo": {
     "folderId": "30240832",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30240832",
