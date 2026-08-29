@@ -1,0 +1,51 @@
+{
+  "id": "2026-11-04_uyl-porto-vs-u19",
+  "slug": "2026-11-04_uyl-porto-vs-u19",
+  "title": {
+    "en": "Porto vs Napoli",
+    "it": "Porto vs Napoli"
+  },
+  "subtitle": {
+    "en": "UEFA Youth League · Matchday 4",
+    "it": "UEFA Youth League · Giornata 4"
+  },
+  "date": "2026-11-04",
+  "competitionId": "uefaYouthLeague",
+  "competition": {
+    "en": "UEFA Youth League",
+    "it": "UEFA Youth League"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "porto",
+    "name": {
+      "en": "Porto",
+      "it": "Porto"
+    },
+    "shortName": "Porto",
+    "colorClass": "opponent",
+    "logo": "logos/porto.png"
+  },
+  "awayTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "score": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}

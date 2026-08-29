@@ -155,14 +155,14 @@ const dictionaries = {
     tableOurPath: 'Our path',
     tableCupEmpty: 'No cup fixtures yet.',
     tableUylEmpty:
-      'UEFA Youth League fixtures are not out yet. Participants are listed; the league-phase draw fills in later.',
+      'UEFA Youth League league-phase fixtures are listed on the calendar and Matches tab.',
     opposition: 'Opposition',
     oppositionPageTitle: 'OPPOSITION',
     oppositionHint:
       'Select a competition, then a club. Use the fixture chips to switch which of our games you are preparing.',
     oppositionEmptyCompetition: 'No opponents listed in this competition yet.',
     oppositionUylEmpty:
-      'UEFA Youth League opponents are not listed yet — the draw is still to come. This tab is empty on purpose, not missing data.',
+      'No UEFA Youth League opponents listed yet.',
     backToOpposition: '← Back to opposition',
     opponentNotFound: 'Opponent not found.',
     tabOppositionFormation: 'Squad & Formation',
@@ -570,14 +570,14 @@ const dictionaries = {
     tableOurPath: 'Il nostro percorso',
     tableCupEmpty: 'Nessuna partita di coppa ancora.',
     tableUylEmpty:
-      'Le partite di UEFA Youth League non ci sono ancora. I partecipanti ci sono; il sorteggio della fase a gironi arriva dopo.',
+      'Le partite della fase a gironi UEFA Youth League sono in calendario e nella scheda Partite.',
     opposition: 'Avversari',
     oppositionPageTitle: 'AVVERSARI',
     oppositionHint:
       'Scegli una competizione, poi un club. Usa i chip per cambiare quale nostra partita stai preparando.',
     oppositionEmptyCompetition: 'Nessun avversario in questa competizione.',
     oppositionUylEmpty:
-      'Gli avversari di UEFA Youth League non ci sono ancora: il sorteggio deve ancora uscire. La scheda è vuota di proposito, non mancano dati.',
+      'Nessun avversario UEFA Youth League elencato ancora.',
     backToOpposition: '← Torna agli avversari',
     opponentNotFound: 'Avversario non trovato.',
     tabOppositionFormation: 'Rosa e formazione',

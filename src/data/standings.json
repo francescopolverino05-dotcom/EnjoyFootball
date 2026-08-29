@@ -1,10 +1,10 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-08-29",
   "sources": {
     "primavera2": "C.U. LNPB n. 10 dell'11.08.2026 — Calendario Primavera 2 Cisalfa Sport 2026/27 Girone B",
     "coppaItalia": "https://www.transfermarkt.com/coppa-italia-primavera/gesamtspielplan/pokalwettbewerb/CITP/saison_id/2026",
-    "uefaYouthLeague": "https://www.transfermarkt.com/uefa-youth-league/teilnehmer/pokalwettbewerb/19YL"
+    "uefaYouthLeague": "UEFA Youth League 2026/27 league-phase fixtures (Champions Path; Napoli path dates)"
   },
   "competitions": {
     "primavera2": {
@@ -1773,8 +1773,120 @@
         "it": "UEFA Youth League"
       },
       "kind": "cup",
-      "ourPath": null,
-      "rounds": [],
+      "ourPath": {
+        "entryRound": "leaguePhase",
+        "next": {
+          "round": "Matchday 1",
+          "date": "2026-09-09",
+          "homeId": "napoli",
+          "awayId": "arsenal",
+          "score": null
+        }
+      },
+      "rounds": [
+        {
+          "id": "md1",
+          "name": {
+            "en": "Matchday 1",
+            "it": "Giornata 1"
+          },
+          "dateFrom": "2026-09-09",
+          "fixtures": [
+            {
+              "date": "2026-09-09",
+              "home": "Napoli",
+              "away": "Arsenal",
+              "score": null,
+              "us": true
+            }
+          ]
+        },
+        {
+          "id": "md2",
+          "name": {
+            "en": "Matchday 2",
+            "it": "Giornata 2"
+          },
+          "dateFrom": "2026-10-13",
+          "fixtures": [
+            {
+              "date": "2026-10-13",
+              "home": "Villarreal",
+              "away": "Napoli",
+              "score": null,
+              "us": true
+            }
+          ]
+        },
+        {
+          "id": "md3",
+          "name": {
+            "en": "Matchday 3",
+            "it": "Giornata 3"
+          },
+          "dateFrom": "2026-10-20",
+          "fixtures": [
+            {
+              "date": "2026-10-20",
+              "home": "Napoli",
+              "away": "Bodø/Glimt",
+              "score": null,
+              "us": true
+            }
+          ]
+        },
+        {
+          "id": "md4",
+          "name": {
+            "en": "Matchday 4",
+            "it": "Giornata 4"
+          },
+          "dateFrom": "2026-11-04",
+          "fixtures": [
+            {
+              "date": "2026-11-04",
+              "home": "Porto",
+              "away": "Napoli",
+              "score": null,
+              "us": true
+            }
+          ]
+        },
+        {
+          "id": "md5",
+          "name": {
+            "en": "Matchday 5",
+            "it": "Giornata 5"
+          },
+          "dateFrom": "2026-11-24",
+          "fixtures": [
+            {
+              "date": "2026-11-24",
+              "home": "Manchester City",
+              "away": "Napoli",
+              "score": null,
+              "us": true
+            }
+          ]
+        },
+        {
+          "id": "md6",
+          "name": {
+            "en": "Matchday 6",
+            "it": "Giornata 6"
+          },
+          "dateFrom": "2026-12-08",
+          "fixtures": [
+            {
+              "date": "2026-12-08",
+              "home": "Napoli",
+              "away": "Club Brugge",
+              "score": null,
+              "us": true
+            }
+          ]
+        }
+      ],
       "groupTable": {
         "id": "uefaYouthLeague",
         "code": "UYL",
@@ -1785,7 +1897,7 @@
         "kind": "league",
         "matchday": 0,
         "nextMatchday": 1,
-        "nextMatchdayDate": "2026-09-16",
+        "nextMatchdayDate": "2026-09-09",
         "rows": [
           {
             "pos": 1,
@@ -2257,7 +2369,74 @@
             "pts": 0
           }
         ],
-        "matchdays": []
+        "matchdays": [
+          {
+            "number": 1,
+            "date": "2026-09-09",
+            "fixtures": [
+              {
+                "homeId": "napoli",
+                "awayId": "arsenal",
+                "score": null
+              }
+            ]
+          },
+          {
+            "number": 2,
+            "date": "2026-10-13",
+            "fixtures": [
+              {
+                "homeId": "villarreal",
+                "awayId": "napoli",
+                "score": null
+              }
+            ]
+          },
+          {
+            "number": 3,
+            "date": "2026-10-20",
+            "fixtures": [
+              {
+                "homeId": "napoli",
+                "awayId": "bodo-glimt",
+                "score": null
+              }
+            ]
+          },
+          {
+            "number": 4,
+            "date": "2026-11-04",
+            "fixtures": [
+              {
+                "homeId": "porto",
+                "awayId": "napoli",
+                "score": null
+              }
+            ]
+          },
+          {
+            "number": 5,
+            "date": "2026-11-24",
+            "fixtures": [
+              {
+                "homeId": "man-city",
+                "awayId": "napoli",
+                "score": null
+              }
+            ]
+          },
+          {
+            "number": 6,
+            "date": "2026-12-08",
+            "fixtures": [
+              {
+                "homeId": "napoli",
+                "awayId": "club-brugge",
+                "score": null
+              }
+            ]
+          }
+        ]
       }
     }
   }

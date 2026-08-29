@@ -1,0 +1,51 @@
+{
+  "id": "2026-10-20_uyl-u19-vs-bodo-glimt",
+  "slug": "2026-10-20_uyl-u19-vs-bodo-glimt",
+  "title": {
+    "en": "Napoli vs Bodø/Glimt",
+    "it": "Napoli vs Bodø/Glimt"
+  },
+  "subtitle": {
+    "en": "UEFA Youth League · Matchday 3",
+    "it": "UEFA Youth League · Giornata 3"
+  },
+  "date": "2026-10-20",
+  "competitionId": "uefaYouthLeague",
+  "competition": {
+    "en": "UEFA Youth League",
+    "it": "UEFA Youth League"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "bodo-glimt",
+    "name": {
+      "en": "Bodø/Glimt",
+      "it": "Bodø/Glimt"
+    },
+    "shortName": "Bodø/Glimt",
+    "colorClass": "opponent",
+    "logo": "logos/bodo-glimt.png"
+  },
+  "score": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}

@@ -1,0 +1,51 @@
+{
+  "id": "2026-12-08_uyl-u19-vs-club-brugge",
+  "slug": "2026-12-08_uyl-u19-vs-club-brugge",
+  "title": {
+    "en": "Napoli vs Club Brugge",
+    "it": "Napoli vs Club Brugge"
+  },
+  "subtitle": {
+    "en": "UEFA Youth League · Matchday 6",
+    "it": "UEFA Youth League · Giornata 6"
+  },
+  "date": "2026-12-08",
+  "competitionId": "uefaYouthLeague",
+  "competition": {
+    "en": "UEFA Youth League",
+    "it": "UEFA Youth League"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "club-brugge",
+    "name": {
+      "en": "Club Brugge",
+      "it": "Club Brugge"
+    },
+    "shortName": "Club Brugge",
+    "colorClass": "opponent",
+    "logo": "logos/club-brugge.png"
+  },
+  "score": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}

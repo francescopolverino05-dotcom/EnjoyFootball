@@ -119,7 +119,7 @@ export function oppositionClipSectionLabel(id: OppositionClipSectionId) {
   return OPPOSITION_CLIP_SECTION_LABELS[id];
 }
 
-/** Primavera 2 Girone B opponents + Coppa Italia Spezia. UYL empty until the draw. */
+/** Primavera 2 Girone B + Coppa Italia Spezia + UYL league-phase opponents. */
 const OPPONENTS: OppositionOpponent[] = [
   club('ascoli', 'Ascoli', ['primavera2']),
   club('avellino', 'Avellino', ['primavera2'], '1-4-3-3', ['1-4-2-3-1']),
@@ -136,6 +136,12 @@ const OPPONENTS: OppositionOpponent[] = [
   club('pisa', 'Pisa', ['primavera2']),
   club('salernitana', 'Salernitana', ['primavera2']),
   club('spezia', 'Spezia', ['primavera2', 'coppaItalia']),
+  club('arsenal', 'Arsenal', ['uefaYouthLeague']),
+  club('villarreal', 'Villarreal', ['uefaYouthLeague']),
+  club('bodo-glimt', 'Bodø/Glimt', ['uefaYouthLeague']),
+  club('porto', 'Porto', ['uefaYouthLeague']),
+  club('man-city', 'Manchester City', ['uefaYouthLeague']),
+  club('club-brugge', 'Club Brugge', ['uefaYouthLeague']),
 ];
 
 /** Reference tapes from Vimeo Avversari folders (synced manually from folder uploads). */

@@ -1,0 +1,51 @@
+{
+  "id": "2026-09-09_uyl-u19-vs-arsenal",
+  "slug": "2026-09-09_uyl-u19-vs-arsenal",
+  "title": {
+    "en": "Napoli vs Arsenal",
+    "it": "Napoli vs Arsenal"
+  },
+  "subtitle": {
+    "en": "UEFA Youth League · Matchday 1",
+    "it": "UEFA Youth League · Giornata 1"
+  },
+  "date": "2026-09-09",
+  "competitionId": "uefaYouthLeague",
+  "competition": {
+    "en": "UEFA Youth League",
+    "it": "UEFA Youth League"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "arsenal",
+    "name": {
+      "en": "Arsenal",
+      "it": "Arsenal"
+    },
+    "shortName": "Arsenal",
+    "colorClass": "opponent",
+    "logo": "logos/arsenal.png"
+  },
+  "score": {
+    "home": 0,
+    "away": 0
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}

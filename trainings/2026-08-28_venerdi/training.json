@@ -19,11 +19,47 @@
     "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-08-28_venerdi"
   },
   "video": {
-    "fullSession": "",
+    "fullSession": "https://vimeo.com/1222358451/78fc6c14dd",
     "notes": {
       "en": "Synced from Vimeo after upload.",
       "it": "Sincronizzato da Vimeo dopo il caricamento."
-    }
+    },
+    "parts": [
+      {
+        "id": "vimeo-1222358450",
+        "title": {
+          "en": "11v0 difesa",
+          "it": "11v0 difesa"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1222358450/21953f5314",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1222358451",
+        "title": {
+          "en": "Calci piazzati",
+          "it": "Calci piazzati"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1222358451/78fc6c14dd",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
   },
   "clips": [],
   "analysisVideos": [],
@@ -39,6 +75,7 @@
   "vimeo": {
     "folderId": "30308092",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30308092",
-    "gkFolderId": "30308103"
+    "gkFolderId": "30308103",
+    "lastSyncedAt": "2026-08-29T18:49:09.419Z"
   }
 }
