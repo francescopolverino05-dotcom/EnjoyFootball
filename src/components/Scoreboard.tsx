@@ -26,7 +26,9 @@ export default function Scoreboard({ match }: ScoreboardProps) {
           <div className="team-cover-name">{L(match.homeTeam.name)}</div>
         </div>
         <div className="score-display">
-          {match.score.home} – {match.score.away}
+          {match.score == null
+            ? '—'
+            : `${match.score.home} – ${match.score.away}`}
         </div>
         <div className="team-cover-card">
           <div className={`team-badge-circle ${match.awayTeam.colorClass}`}>

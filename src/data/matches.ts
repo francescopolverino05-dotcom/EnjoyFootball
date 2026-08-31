@@ -45,3 +45,19 @@ export function getMatchBySlug(slug: string): MatchData | undefined {
 export function matchAssetUrl(slug: string, relativePath: string): string {
   return sessionMediaUrl('matches', slug, relativePath);
 }
+
+/** True when a final score is recorded. */
+export function hasMatchScore(
+  score: { home: number; away: number } | null | undefined
+): score is { home: number; away: number } {
+  return score != null && Number.isFinite(score.home) && Number.isFinite(score.away);
+}
+
+/** Display scoreline, or an em dash when the fixture is still blank. */
+export function formatMatchScore(
+  score: { home: number; away: number } | null | undefined,
+  sep = '–'
+): string {
+  if (!hasMatchScore(score)) return '—';
+  return `${score.home}${sep}${score.away}`;
+}

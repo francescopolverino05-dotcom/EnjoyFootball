@@ -36,10 +36,7 @@
     "colorClass": "u19",
     "logo": "napoli-logo.png"
   },
-  "score": {
-    "home": 0,
-    "away": 0
-  },
+  "score": null,
   "goals": [],
   "timeline": [],
   "formations": [],

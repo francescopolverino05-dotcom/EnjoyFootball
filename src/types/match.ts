@@ -180,7 +180,8 @@ export interface MatchData {
   status: 'draft' | 'in-review' | 'published';
   homeTeam: TeamInfo;
   awayTeam: TeamInfo;
-  score: { home: number; away: number };
+  /** Final score, or null when the fixture has not been played yet. */
+  score: { home: number; away: number } | null;
   goals: Goal[];
   timeline: TimelineEvent[];
   formations: Formation[];
@@ -224,7 +225,8 @@ export interface MatchSummary {
   awayLogo?: string;
   homeColorClass: TeamInfo['colorClass'];
   awayColorClass: TeamInfo['colorClass'];
-  score: { home: number; away: number };
+  /** Final score, or null when the fixture has not been played yet. */
+  score: { home: number; away: number } | null;
   /** Pre-season microcycle label for friendlies (Day 1, Day 2, …). */
   microcycleDay?: number | null;
 }

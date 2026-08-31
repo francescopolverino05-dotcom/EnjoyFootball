@@ -52,6 +52,7 @@ function venueOf(match: MatchSummary): 'H' | 'A' {
 function resultTone(
   match: MatchSummary
 ): 'win' | 'loss' | 'draw' | undefined {
+  if (match.score == null) return undefined;
   const homeUs = isNapoliSide(match.homeTeam);
   const us = homeUs ? match.score.home : match.score.away;
   const them = homeUs ? match.score.away : match.score.home;
@@ -61,6 +62,7 @@ function resultTone(
 }
 
 function formatScore(match: MatchSummary): string {
+  if (match.score == null) return '—';
   return `${match.score.home}–${match.score.away}`;
 }
 

@@ -36,10 +36,7 @@
     "colorClass": "opponent",
     "logo": "logos/perugia.png"
   },
-  "score": {
-    "home": 0,
-    "away": 0
-  },
+  "score": null,
   "goals": [],
   "timeline": [],
   "formations": [],

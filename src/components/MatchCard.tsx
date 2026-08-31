@@ -31,7 +31,9 @@ export default function MatchCard({ match }: MatchCardProps) {
           <span>{match.homeTeam}</span>
         </div>
         <div className="match-card-score">
-          {match.score.home} – {match.score.away}
+          {match.score == null
+            ? '—'
+            : `${match.score.home} – ${match.score.away}`}
         </div>
         <div className={`match-card-team match-card-team-away ${match.awayColorClass}`}>
           <span>{match.awayTeam}</span>

@@ -36,10 +36,7 @@
     "colorClass": "opponent",
     "logo": "logos/cosenza.png"
   },
-  "score": {
-    "home": 0,
-    "away": 0
-  },
+  "score": null,
   "goals": [],
   "timeline": [],
   "formations": [],

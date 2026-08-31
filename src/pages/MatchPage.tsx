@@ -28,7 +28,10 @@ export default function MatchPage() {
     );
   }
 
-  const scoreLine = `${match.homeTeam.shortName} ${match.score.home} – ${match.score.away} ${match.awayTeam.shortName}`;
+  const scoreLine =
+    match.score == null
+      ? `${match.homeTeam.shortName} vs ${match.awayTeam.shortName}`
+      : `${match.homeTeam.shortName} ${match.score.home} – ${match.score.away} ${match.awayTeam.shortName}`;
   const microcycleDay = getMicrocycleDay(match.slug);
 
   return (
