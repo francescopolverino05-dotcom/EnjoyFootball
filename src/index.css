@@ -883,15 +883,14 @@ button {
 
 .gps-stats-panel {
   margin-top: 24px;
-  border-top: 2px solid var(--border-color);
+  padding-top: 8px;
+  border-top: 1px solid var(--border-color);
 }
 
-.gps-stats-title {
-  margin: 0;
-  padding: 16px 15px 8px;
-  font-size: 14px;
-  font-weight: 800;
-  color: var(--napoli-blue-dark);
+.rpe-panel > .gps-stats-panel:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
 }
 
 .gps-stats-section + .gps-stats-section {

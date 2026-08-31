@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { MatchData, AnalysisVideo, GoalkeeperLog, GpsHalfReport } from '../types/match';
+import { MatchData, AnalysisVideo, GoalkeeperLog } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
 import type { Localized, UiKey } from '../i18n/translations';
 import { getRpeSessionByMatchSlug } from '../data/rpeLoad';
@@ -39,7 +39,9 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
   const { t, L } = useLanguage();
   const rpeSession = getRpeSessionByMatchSlug(match.slug);
   const tqrSession = getTqrSessionByMatchSlug(match.slug);
-  const hasPhysicalLoad = Boolean(rpeSession || tqrSession);
+  const hasPhysicalLoad = Boolean(
+    rpeSession || tqrSession || match.gpsStats?.length
+  );
   const reflection = match.reflection ?? EMPTY_MATCH_REFLECTION;
 
   // Match-only tabs — never include training tabs (Full Session / Training Design).
@@ -112,14 +114,7 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
           </div>
         ) : null}
 
-        {activeTab === 'teamstats' ? (
-          <>
-            <TeamStatsPanel match={match} />
-            {match.gpsStats && match.gpsStats.length > 0 ? (
-              <GpsStatsPanel reports={match.gpsStats} />
-            ) : null}
-          </>
-        ) : null}
+        {activeTab === 'teamstats' ? <TeamStatsPanel match={match} /> : null}
         {activeTab === 'gkanalysis' ? (
           <GkAnalysisPanel
             matchSlug={match.slug}
@@ -155,6 +150,7 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
             session={rpeSession ?? null}
             tqrSession={tqrSession ?? null}
             gaconSession={null}
+            gpsStats={match.gpsStats}
           />
         ) : null}
       </div>
@@ -206,67 +202,6 @@ function TeamStatsPanel({ match }: { match: MatchData }) {
               <span className="stats-val-away">{L(stat.away)}</span>
             </div>
           ))}
-        </section>
-      ))}
-    </div>
-  );
-}
-
-function formatGpsNum(value: number, decimals = 0): string {
-  if (decimals === 0) return String(Math.round(value));
-  return value.toFixed(decimals);
-}
-
-function GpsStatsPanel({ reports }: { reports: GpsHalfReport[] }) {
-  const { t, L } = useLanguage();
-
-  const columns: { key: keyof GpsHalfReport['players'][number]; labelKey: UiKey; decimals?: number; suffix?: string }[] = [
-    { key: 'totalDistanceM', labelKey: 'gpsColTotalDist' },
-    { key: 'distancePerMin', labelKey: 'gpsColDistPerMin' },
-    { key: 'distanceOver16KmhM', labelKey: 'gpsColOver16' },
-    { key: 'distance20to24KmhM', labelKey: 'gpsCol20to24', decimals: 1 },
-    { key: 'distanceOver24KmhM', labelKey: 'gpsColOver24', decimals: 1 },
-    { key: 'metabolicPowerWkg', labelKey: 'gpsColMetPower', decimals: 1 },
-    { key: 'accelerationsOver3', labelKey: 'gpsColAcc' },
-    { key: 'decelerationsUnder3', labelKey: 'gpsColDec' },
-    { key: 'maxSpeedKmh', labelKey: 'gpsColMaxSpeed', decimals: 2 },
-    { key: 'recoveryPct', labelKey: 'gpsColRecovery', decimals: 2, suffix: '%' },
-  ];
-
-  return (
-    <div className="gps-stats-panel">
-      <h3 className="gps-stats-title">{t('gpsReportTitle')}</h3>
-      {reports.map((report) => (
-        <section className="gps-stats-section" key={L(report.half)}>
-          <h4 className="team-stats-section-title">{L(report.half)}</h4>
-          <div className="gps-table-wrap">
-            <table className="gps-table">
-              <thead>
-                <tr>
-                  <th>{t('gpsColPlayer')}</th>
-                  {columns.map((col) => (
-                    <th key={col.key}>{t(col.labelKey)}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {report.players.map((row) => (
-                  <tr key={row.player}>
-                    <th scope="row">{row.player}</th>
-                    {columns.map((col) => (
-                      <td key={col.key}>
-                        {formatGpsNum(row[col.key] as number, col.decimals)}
-                        {col.suffix ?? ''}
-                      </td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          {report.summary ? (
-            <p className="gps-stats-summary">{L(report.summary)}</p>
-          ) : null}
         </section>
       ))}
     </div>

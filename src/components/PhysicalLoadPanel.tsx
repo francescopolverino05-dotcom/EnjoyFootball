@@ -13,16 +13,20 @@ import type { TqrSession } from '../types/tqr';
 import { useLanguage } from '../i18n/LanguageContext';
 import BorgScaleLegend from './BorgScaleLegend';
 import GaconHistograms from './GaconHistograms';
+import GpsStatsPanel from './GpsStatsPanel';
 import TqrHistograms from './TqrHistograms';
+import type { GpsHalfReport } from '../types/match';
 
 export default function PhysicalLoadPanel({
   session,
   tqrSession,
   gaconSession,
+  gpsStats,
 }: {
   session: RpeSession | null;
   tqrSession: TqrSession | null;
   gaconSession: GaconSession | null;
+  gpsStats?: GpsHalfReport[];
 }) {
   const { t, L, formatDate } = useLanguage();
   const allSessions = getAllRpeSessions();
@@ -145,6 +149,10 @@ export default function PhysicalLoadPanel({
       {tqrSession ? <TqrHistograms session={tqrSession} /> : null}
 
       {gaconSession ? <GaconHistograms session={gaconSession} /> : null}
+
+      {gpsStats && gpsStats.length > 0 ? (
+        <GpsStatsPanel reports={gpsStats} />
+      ) : null}
     </div>
   );
 }
