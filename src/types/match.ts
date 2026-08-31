@@ -68,6 +68,27 @@ export interface TeamStat {
   away: Localized;
 }
 
+/** Individual player row from K-SPORT GPS match report. */
+export interface GpsPlayerRow {
+  player: string;
+  totalDistanceM: number;
+  distancePerMin: number;
+  distanceOver16KmhM: number;
+  distance20to24KmhM: number;
+  distanceOver24KmhM: number;
+  metabolicPowerWkg: number;
+  accelerationsOver3: number;
+  decelerationsUnder3: number;
+  maxSpeedKmh: number;
+  recoveryPct: number;
+}
+
+export interface GpsHalfReport {
+  half: Localized;
+  players: GpsPlayerRow[];
+  summary?: Localized;
+}
+
 export interface GoalkeeperLog {
   name: string;
   minutes: number;
@@ -187,6 +208,8 @@ export interface MatchData {
   formations: Formation[];
   dynamics: DynamicMetric[];
   teamStats: TeamStat[];
+  /** Optional K-SPORT GPS reports by half (fitness coach). */
+  gpsStats?: GpsHalfReport[];
   goalkeepers: GoalkeeperLog[];
   /**
    * Individual GK review videos (shown on the Goalkeeper Analysis tab).

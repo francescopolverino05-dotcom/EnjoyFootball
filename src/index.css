@@ -881,6 +881,76 @@ button {
   background: #fafafa;
 }
 
+.gps-stats-panel {
+  margin-top: 24px;
+  border-top: 2px solid var(--border-color);
+}
+
+.gps-stats-title {
+  margin: 0;
+  padding: 16px 15px 8px;
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--napoli-blue-dark);
+}
+
+.gps-stats-section + .gps-stats-section {
+  margin-top: 8px;
+}
+
+.gps-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gps-table {
+  width: 100%;
+  min-width: 920px;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.gps-table th,
+.gps-table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid var(--border-light);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.gps-table thead th {
+  background: #eef4fb;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--napoli-blue-dark);
+}
+
+.gps-table tbody th[scope='row'] {
+  text-align: left;
+  font-weight: 700;
+  position: sticky;
+  left: 0;
+  background: #fff;
+  z-index: 1;
+}
+
+.gps-table tbody tr:nth-child(even) td,
+.gps-table tbody tr:nth-child(even) th[scope='row'] {
+  background: #fafafa;
+}
+
+.gps-stats-summary {
+  margin: 0;
+  padding: 12px 15px 16px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #444;
+  border-top: 1px solid var(--border-light);
+  background: #fafcff;
+}
+
 .stats-comparison-row:nth-child(even) {
   background: #fafafa;
 }

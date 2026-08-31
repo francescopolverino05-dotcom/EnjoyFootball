@@ -963,6 +963,292 @@
       "away": "1"
     }
   ],
+  "gpsStats": [
+    {
+      "half": {
+        "en": "GPS — 1st Half",
+        "it": "GPS — 1° Tempo"
+      },
+      "summary": {
+        "en": "Melnyk led volume and intensity (6074 m, 139 m sprint). Chiummariello hit top speed (29.45 km/h). Pereyra led accelerations (22). Lieto lowest sprint volume (0 m >24 km/h).",
+        "it": "Melnyk domina volumi e intensità (6074 m, 139 m sprint). Chiummariello velocità massima (29,45 km/h). Pereyra leader nelle accelerazioni (22). Lieto minore volume sprint (0 m >24 km/h)."
+      },
+      "players": [
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 6074,
+          "distancePerMin": 117,
+          "distanceOver16KmhM": 1203,
+          "distance20to24KmhM": 460.9,
+          "distanceOver24KmhM": 139.2,
+          "metabolicPowerWkg": 10.8,
+          "accelerationsOver3": 20,
+          "decelerationsUnder3": 35,
+          "maxSpeedKmh": 27.84,
+          "recoveryPct": 67.32
+        },
+        {
+          "player": "Rovettini",
+          "totalDistanceM": 5799,
+          "distancePerMin": 112,
+          "distanceOver16KmhM": 838,
+          "distance20to24KmhM": 265.38,
+          "distanceOver24KmhM": 54.73,
+          "metabolicPowerWkg": 10.1,
+          "accelerationsOver3": 16,
+          "decelerationsUnder3": 24,
+          "maxSpeedKmh": 28.21,
+          "recoveryPct": 67.71
+        },
+        {
+          "player": "Testa / Zappalà",
+          "totalDistanceM": 5514,
+          "distancePerMin": 110,
+          "distanceOver16KmhM": 736,
+          "distance20to24KmhM": 198.81,
+          "distanceOver24KmhM": 77.94,
+          "metabolicPowerWkg": 10.0,
+          "accelerationsOver3": 16,
+          "decelerationsUnder3": 23,
+          "maxSpeedKmh": 28.38,
+          "recoveryPct": 66.83
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 5355,
+          "distancePerMin": 103,
+          "distanceOver16KmhM": 504,
+          "distance20to24KmhM": 108.82,
+          "distanceOver24KmhM": 8.8,
+          "metabolicPowerWkg": 9.4,
+          "accelerationsOver3": 20,
+          "decelerationsUnder3": 19,
+          "maxSpeedKmh": 24.82,
+          "recoveryPct": 69.45
+        },
+        {
+          "player": "Chiummariello",
+          "totalDistanceM": 5212,
+          "distancePerMin": 104,
+          "distanceOver16KmhM": 614,
+          "distance20to24KmhM": 110.31,
+          "distanceOver24KmhM": 51.6,
+          "metabolicPowerWkg": 9.3,
+          "accelerationsOver3": 17,
+          "decelerationsUnder3": 17,
+          "maxSpeedKmh": 29.45,
+          "recoveryPct": 69.97
+        },
+        {
+          "player": "Natale",
+          "totalDistanceM": 5169,
+          "distancePerMin": 100,
+          "distanceOver16KmhM": 445,
+          "distance20to24KmhM": 52.83,
+          "distanceOver24KmhM": 40.33,
+          "metabolicPowerWkg": 9.0,
+          "accelerationsOver3": 17,
+          "decelerationsUnder3": 12,
+          "maxSpeedKmh": 29.0,
+          "recoveryPct": 72.83
+        },
+        {
+          "player": "Branchizio",
+          "totalDistanceM": 5132,
+          "distancePerMin": 101,
+          "distanceOver16KmhM": 492,
+          "distance20to24KmhM": 47.76,
+          "distanceOver24KmhM": 18.72,
+          "metabolicPowerWkg": 9.0,
+          "accelerationsOver3": 15,
+          "decelerationsUnder3": 16,
+          "maxSpeedKmh": 27.28,
+          "recoveryPct": 72.91
+        },
+        {
+          "player": "Pereyra",
+          "totalDistanceM": 4981,
+          "distancePerMin": 95,
+          "distanceOver16KmhM": 633,
+          "distance20to24KmhM": 212.15,
+          "distanceOver24KmhM": 23.83,
+          "metabolicPowerWkg": 8.7,
+          "accelerationsOver3": 22,
+          "decelerationsUnder3": 17,
+          "maxSpeedKmh": 27.8,
+          "recoveryPct": 77.39
+        },
+        {
+          "player": "Lieto",
+          "totalDistanceM": 4979,
+          "distancePerMin": 97,
+          "distanceOver16KmhM": 250,
+          "distance20to24KmhM": 54.28,
+          "distanceOver24KmhM": 0,
+          "metabolicPowerWkg": 8.6,
+          "accelerationsOver3": 9,
+          "decelerationsUnder3": 6,
+          "maxSpeedKmh": 22.76,
+          "recoveryPct": 72.04
+        },
+        {
+          "player": "Baridò",
+          "totalDistanceM": 4900,
+          "distancePerMin": 98,
+          "distanceOver16KmhM": 565,
+          "distance20to24KmhM": 138.24,
+          "distanceOver24KmhM": 30.03,
+          "metabolicPowerWkg": 8.6,
+          "accelerationsOver3": 19,
+          "decelerationsUnder3": 17,
+          "maxSpeedKmh": 26.88,
+          "recoveryPct": 76.34
+        }
+      ]
+    },
+    {
+      "half": {
+        "en": "GPS — 2nd Half",
+        "it": "GPS — 2° Tempo"
+      },
+      "summary": {
+        "en": "Testa / Zappalà led distance (5411 m). Chiummariello top speed (30.70 km/h) and sprint volume (147.55 m >24 km/h). Melnyk highest intensity per minute (120 m/min) in reduced minutes.",
+        "it": "Testa / Zappalà leader distanza (5411 m). Chiummariello velocità massima (30,70 km/h) e sprint (147,55 m >24 km/h). Melnyk massima intensità al minuto (120 m/min) in minutaggio ridotto."
+      },
+      "players": [
+        {
+          "player": "Testa / Zappalà",
+          "totalDistanceM": 5411,
+          "distancePerMin": 107,
+          "distanceOver16KmhM": 735,
+          "distance20to24KmhM": 209.67,
+          "distanceOver24KmhM": 137.2,
+          "metabolicPowerWkg": 9.6,
+          "accelerationsOver3": 9,
+          "decelerationsUnder3": 24,
+          "maxSpeedKmh": 29.56,
+          "recoveryPct": 71.16
+        },
+        {
+          "player": "Chiummariello",
+          "totalDistanceM": 5114,
+          "distancePerMin": 96,
+          "distanceOver16KmhM": 398,
+          "distance20to24KmhM": 79.83,
+          "distanceOver24KmhM": 147.55,
+          "metabolicPowerWkg": 8.3,
+          "accelerationsOver3": 11,
+          "decelerationsUnder3": 8,
+          "maxSpeedKmh": 30.7,
+          "recoveryPct": 74.58
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 4211,
+          "distancePerMin": 105,
+          "distanceOver16KmhM": 270,
+          "distance20to24KmhM": 50.77,
+          "distanceOver24KmhM": 10.46,
+          "metabolicPowerWkg": 9.5,
+          "accelerationsOver3": 17,
+          "decelerationsUnder3": 10,
+          "maxSpeedKmh": 26.14,
+          "recoveryPct": 67.66
+        },
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 3116,
+          "distancePerMin": 120,
+          "distanceOver16KmhM": 600,
+          "distance20to24KmhM": 206.05,
+          "distanceOver24KmhM": 81.46,
+          "metabolicPowerWkg": 11.0,
+          "accelerationsOver3": 11,
+          "decelerationsUnder3": 21,
+          "maxSpeedKmh": 27.08,
+          "recoveryPct": 64.73
+        },
+        {
+          "player": "Rovettini",
+          "totalDistanceM": 2912,
+          "distancePerMin": 109,
+          "distanceOver16KmhM": 504,
+          "distance20to24KmhM": 161.17,
+          "distanceOver24KmhM": 46.37,
+          "metabolicPowerWkg": 9.6,
+          "accelerationsOver3": 6,
+          "decelerationsUnder3": 9,
+          "maxSpeedKmh": 26.71,
+          "recoveryPct": 71.48
+        },
+        {
+          "player": "Lieto",
+          "totalDistanceM": 2655,
+          "distancePerMin": 90,
+          "distanceOver16KmhM": 237,
+          "distance20to24KmhM": 71.24,
+          "distanceOver24KmhM": 34.94,
+          "metabolicPowerWkg": 8.0,
+          "accelerationsOver3": 5,
+          "decelerationsUnder3": 5,
+          "maxSpeedKmh": 28.96,
+          "recoveryPct": 75.0
+        },
+        {
+          "player": "Natale",
+          "totalDistanceM": 2643,
+          "distancePerMin": 99,
+          "distanceOver16KmhM": 238,
+          "distance20to24KmhM": 98.99,
+          "distanceOver24KmhM": 0,
+          "metabolicPowerWkg": 9.0,
+          "accelerationsOver3": 8,
+          "decelerationsUnder3": 5,
+          "maxSpeedKmh": 23.81,
+          "recoveryPct": 73.33
+        },
+        {
+          "player": "Pereyra",
+          "totalDistanceM": 2598,
+          "distancePerMin": 90,
+          "distanceOver16KmhM": 277,
+          "distance20to24KmhM": 82.8,
+          "distanceOver24KmhM": 33.14,
+          "metabolicPowerWkg": 8.0,
+          "accelerationsOver3": 7,
+          "decelerationsUnder3": 8,
+          "maxSpeedKmh": 27.52,
+          "recoveryPct": 80.41
+        },
+        {
+          "player": "Baridò",
+          "totalDistanceM": 2519,
+          "distancePerMin": 93,
+          "distanceOver16KmhM": 336,
+          "distance20to24KmhM": 89.28,
+          "distanceOver24KmhM": 21.06,
+          "metabolicPowerWkg": 8.3,
+          "accelerationsOver3": 10,
+          "decelerationsUnder3": 9,
+          "maxSpeedKmh": 27.07,
+          "recoveryPct": 78.79
+        },
+        {
+          "player": "Branchizio",
+          "totalDistanceM": 2488,
+          "distancePerMin": 95,
+          "distanceOver16KmhM": 233,
+          "distance20to24KmhM": 64.88,
+          "distanceOver24KmhM": 31.7,
+          "metabolicPowerWkg": 8.4,
+          "accelerationsOver3": 4,
+          "decelerationsUnder3": 9,
+          "maxSpeedKmh": 27.52,
+          "recoveryPct": 75.67
+        }
+      ]
+    }
+  ],
   "goalkeepers": [
     {
       "name": "Spinelli",
