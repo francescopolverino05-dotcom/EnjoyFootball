@@ -1007,7 +1007,7 @@
           "distanceOver16KmhM": 736,
           "distance20to24KmhM": 198.81,
           "distanceOver24KmhM": 77.94,
-          "metabolicPowerWkg": 10.0,
+          "metabolicPowerWkg": 10,
           "accelerationsOver3": 16,
           "decelerationsUnder3": 23,
           "maxSpeedKmh": 28.38,
@@ -1046,10 +1046,10 @@
           "distanceOver16KmhM": 445,
           "distance20to24KmhM": 52.83,
           "distanceOver24KmhM": 40.33,
-          "metabolicPowerWkg": 9.0,
+          "metabolicPowerWkg": 9,
           "accelerationsOver3": 17,
           "decelerationsUnder3": 12,
-          "maxSpeedKmh": 29.0,
+          "maxSpeedKmh": 29,
           "recoveryPct": 72.83
         },
         {
@@ -1059,7 +1059,7 @@
           "distanceOver16KmhM": 492,
           "distance20to24KmhM": 47.76,
           "distanceOver24KmhM": 18.72,
-          "metabolicPowerWkg": 9.0,
+          "metabolicPowerWkg": 9,
           "accelerationsOver3": 15,
           "decelerationsUnder3": 16,
           "maxSpeedKmh": 27.28,
@@ -1162,7 +1162,7 @@
           "distanceOver16KmhM": 600,
           "distance20to24KmhM": 206.05,
           "distanceOver24KmhM": 81.46,
-          "metabolicPowerWkg": 11.0,
+          "metabolicPowerWkg": 11,
           "accelerationsOver3": 11,
           "decelerationsUnder3": 21,
           "maxSpeedKmh": 27.08,
@@ -1188,11 +1188,11 @@
           "distanceOver16KmhM": 237,
           "distance20to24KmhM": 71.24,
           "distanceOver24KmhM": 34.94,
-          "metabolicPowerWkg": 8.0,
+          "metabolicPowerWkg": 8,
           "accelerationsOver3": 5,
           "decelerationsUnder3": 5,
           "maxSpeedKmh": 28.96,
-          "recoveryPct": 75.0
+          "recoveryPct": 75
         },
         {
           "player": "Natale",
@@ -1201,7 +1201,7 @@
           "distanceOver16KmhM": 238,
           "distance20to24KmhM": 98.99,
           "distanceOver24KmhM": 0,
-          "metabolicPowerWkg": 9.0,
+          "metabolicPowerWkg": 9,
           "accelerationsOver3": 8,
           "decelerationsUnder3": 5,
           "maxSpeedKmh": 23.81,
@@ -1214,7 +1214,7 @@
           "distanceOver16KmhM": 277,
           "distance20to24KmhM": 82.8,
           "distanceOver24KmhM": 33.14,
-          "metabolicPowerWkg": 8.0,
+          "metabolicPowerWkg": 8,
           "accelerationsOver3": 7,
           "decelerationsUnder3": 8,
           "maxSpeedKmh": 27.52,
@@ -1366,7 +1366,7 @@
   "vimeo": {
     "folderId": "30240832",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30240832",
-    "lastSyncedAt": "2026-08-29T18:49:04.250Z"
+    "lastSyncedAt": "2026-09-01T21:53:37.832Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1222357460/f2814ce595",

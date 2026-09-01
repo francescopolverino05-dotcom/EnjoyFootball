@@ -105,7 +105,7 @@
       },
       "minute": 1,
       "second": 0,
-      "videoFile": "https://vimeo.com/1216200471",
+      "videoFile": "https://vimeo.com/1216200471/d42662e567",
       "section": "other",
       "labels": [
         "other"
@@ -128,7 +128,7 @@
       },
       "minute": 2,
       "second": 0,
-      "videoFile": "https://vimeo.com/1216200473",
+      "videoFile": "https://vimeo.com/1216200473/6effe33868",
       "section": "other",
       "labels": [
         "other"
@@ -151,7 +151,7 @@
       },
       "minute": 3,
       "second": 0,
-      "videoFile": "https://vimeo.com/1216201238",
+      "videoFile": "https://vimeo.com/1216201238/8e00a0bda8",
       "section": "other",
       "labels": [
         "other"
@@ -174,7 +174,7 @@
       },
       "minute": 4,
       "second": 0,
-      "videoFile": "https://vimeo.com/1216201047",
+      "videoFile": "https://vimeo.com/1216201047/450e718afe",
       "section": "other",
       "labels": [
         "other"
@@ -197,7 +197,7 @@
       },
       "minute": 5,
       "second": 0,
-      "videoFile": "https://vimeo.com/1216200991",
+      "videoFile": "https://vimeo.com/1216200991/509cf96665",
       "section": "other",
       "labels": [
         "other"
@@ -220,7 +220,7 @@
       },
       "minute": 6,
       "second": 0,
-      "videoFile": "https://vimeo.com/1216200472",
+      "videoFile": "https://vimeo.com/1216200472/e7ce54e720",
       "section": "other",
       "labels": [
         "other"
@@ -240,10 +240,10 @@
         "it": "Final Third Clips"
       },
       "description": {
-        "en": "Compilation of clips 1–6 (final third).",
-        "it": "Compilazione delle clip 1–6 (ultimo terzo)."
+        "en": "Synced from Vimeo folder.",
+        "it": "Sincronizzato dalla cartella Vimeo."
       },
-      "videoFile": "https://vimeo.com/1216201323",
+      "videoFile": "https://vimeo.com/1216201323/f009b99d15",
       "tags": [
         "vimeo",
         "analysis"
@@ -273,7 +273,7 @@
   "vimeo": {
     "folderId": "30099306",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30099306",
-    "lastSyncedAt": "2026-08-06T18:27:40.749Z"
+    "lastSyncedAt": "2026-09-01T21:53:58.463Z"
   },
   "goalkeepers": {
     "video": {
