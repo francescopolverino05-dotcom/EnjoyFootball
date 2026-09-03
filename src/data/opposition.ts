@@ -136,7 +136,7 @@ const OPPONENTS: OppositionOpponent[] = [
   club('pisa', 'Pisa', ['primavera2']),
   club('salernitana', 'Salernitana', ['primavera2']),
   club('spezia', 'Spezia', ['primavera2', 'coppaItalia']),
-  club('arsenal', 'Arsenal', ['uefaYouthLeague']),
+  club('arsenal', 'Arsenal', ['uefaYouthLeague'], '1-4-2-3-1'),
   club('villarreal', 'Villarreal', ['uefaYouthLeague']),
   club('bodo-glimt', 'Bodø/Glimt', ['uefaYouthLeague']),
   club('porto', 'Porto', ['uefaYouthLeague']),
