@@ -144,6 +144,38 @@ const OPPONENTS: OppositionOpponent[] = [
   club('club-brugge', 'Club Brugge', ['uefaYouthLeague']),
 ];
 
+/** Arsenal UEFA U19 squad — Transfermarkt verein/41571 (season 26/27). */
+const arsenal = OPPONENTS.find((o) => o.id === 'arsenal');
+if (arsenal) {
+  arsenal.squad = [
+    { name: 'Jack Porter', position: 'GK', isGk: true },
+    { name: 'Jack Talbot', position: 'GK', isGk: true },
+    { name: 'Charlie Phillips', position: 'GK', isGk: true },
+    { name: 'Marli Salmon', position: 'CB' },
+    { name: 'Brayden Clarke', position: 'CB' },
+    { name: 'Marcell Washington', position: 'LB' },
+    { name: 'Josh Ogunnaike', position: 'LB' },
+    { name: 'Joshua Tahou', position: 'LB' },
+    { name: 'Callan Hamill', position: 'RB' },
+    { name: 'Abraham Owusu-Gyasi', position: 'RB' },
+    { name: 'Josiah King', position: 'RB' },
+    { name: 'Ife Ibrahim', position: 'CDM' },
+    { name: 'Teshaun Murisa', position: 'CDM' },
+    { number: 97, name: 'Mikael Yetna', position: 'CM' },
+    { name: 'Theo Julienne', position: 'CM' },
+    { name: 'Maalik Hashi', position: 'CM' },
+    { name: 'Demiane Agustien', position: 'CAM' },
+    { number: 98, name: 'Luis Muñoz', position: 'CAM' },
+    { name: 'Brando Bailey-Joseph', position: 'LW' },
+    { name: 'Max Dowman', position: 'RW' },
+    { name: 'Louis Zečević-John', position: 'RW' },
+    { name: 'Andre Harriman-Annous', position: 'ST' },
+    { name: "Ceadach O'Neill", position: 'ST' },
+    { name: 'Marley Frohock', position: 'ST' },
+    { number: 95, name: 'Jaden Maghoma', position: 'ST' },
+  ];
+}
+
 /** Reference tapes from Vimeo Avversari folders (synced manually from folder uploads). */
 function attachReferencePack(
   opponentId: string,
