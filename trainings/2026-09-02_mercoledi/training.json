@@ -1,0 +1,54 @@
+{
+  "id": "2026-09-02_mercoledi",
+  "slug": "2026-09-02_mercoledi",
+  "date": "2026-09-02",
+  "title": {
+    "en": "Wednesday training",
+    "it": "Mercoledì"
+  },
+  "focus": {
+    "en": "Training",
+    "it": "Allenamento"
+  },
+  "sessionType": "activation",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "GK All. N°32 attached (Upper body, Footwork, Goal defence).",
+    "it": "Scheda portieri All. N°32 allegata (ARTI SUPERIORI-PODALICO-DIF PORTA)."
+  },
+  "video": {
+    "parts": []
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-02",
+        "title": {
+          "en": "GK design — Upper body, Footwork, Goal defence",
+          "it": "Scheda portieri — ARTI SUPERIORI-PODALICO-DIF PORTA"
+        },
+        "description": {
+          "en": "All. N°32 — 02 Sep 2026. Upper body, Footwork, Goal defence.",
+          "it": "All. N°32 — 02 set 2026. ARTI SUPERIORI-PODALICO-DIF PORTA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-02_Arti_Superiori_Podalico_Dif_Porta.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
+    "analysisVideos": []
+  }
+}

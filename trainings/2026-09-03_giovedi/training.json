@@ -1,0 +1,54 @@
+{
+  "id": "2026-09-03_giovedi",
+  "slug": "2026-09-03_giovedi",
+  "date": "2026-09-03",
+  "title": {
+    "en": "Thursday training",
+    "it": "Giovedì"
+  },
+  "focus": {
+    "en": "Training",
+    "it": "Allenamento"
+  },
+  "sessionType": "activation",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "GK All. N°33 attached (Coordination, High exits).",
+    "it": "Scheda portieri All. N°33 allegata (COORDINATIVO- USCITE ALTE)."
+  },
+  "video": {
+    "parts": []
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-03",
+        "title": {
+          "en": "GK design — Coordination, High exits",
+          "it": "Scheda portieri — COORDINATIVO- USCITE ALTE"
+        },
+        "description": {
+          "en": "All. N°33 — 03 Sep 2026. Coordination, High exits.",
+          "it": "All. N°33 — 03 set 2026. COORDINATIVO- USCITE ALTE."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-03_Coordinativo_Uscite_Alte.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
+    "analysisVideos": []
+  }
+}

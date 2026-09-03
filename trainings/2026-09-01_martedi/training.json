@@ -1,0 +1,54 @@
+{
+  "id": "2026-09-01_martedi",
+  "slug": "2026-09-01_martedi",
+  "date": "2026-09-01",
+  "title": {
+    "en": "Tuesday training",
+    "it": "Martedì"
+  },
+  "focus": {
+    "en": "Training",
+    "it": "Allenamento"
+  },
+  "sessionType": "metabolic",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "GK All. N°31 attached (Lower body, Adaptation & low-exit situations).",
+    "it": "Scheda portieri All. N°31 allegata (ARTI INFERIORI-ADATTAMENTO E SIT. USCITA BASSA)."
+  },
+  "video": {
+    "parts": []
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-01",
+        "title": {
+          "en": "GK design — Lower body, Adaptation & low-exit situations",
+          "it": "Scheda portieri — ARTI INFERIORI-ADATTAMENTO E SIT. USCITA BASSA"
+        },
+        "description": {
+          "en": "All. N°31 — 01 Sep 2026. Lower body, Adaptation & low-exit situations.",
+          "it": "All. N°31 — 01 set 2026. ARTI INFERIORI-ADATTAMENTO E SIT. USCITA BASSA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-01_Arti_Inferiori_Adattamento_Uscita_Bassa.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
+    "analysisVideos": []
+  }
+}
