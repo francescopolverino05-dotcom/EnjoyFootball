@@ -147,6 +147,12 @@ const OPPONENTS: OppositionOpponent[] = [
 /** Arsenal UEFA U19 squad — Transfermarkt verein/41571 (season 26/27). */
 const arsenal = OPPONENTS.find((o) => o.id === 'arsenal');
 if (arsenal) {
+  arsenal.starters = placeholder14231('arsenal').map((p) =>
+    p.isGk ? { ...p, name: 'Porter', number: 1 } : p
+  );
+  arsenal.substitutes = [
+    { name: 'Jack Talbot', position: 'GK', isGk: true },
+  ];
   arsenal.squad = [
     { name: 'Jack Porter', position: 'GK', isGk: true },
     { name: 'Jack Talbot', position: 'GK', isGk: true },
