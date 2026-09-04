@@ -186,34 +186,56 @@ if (arsenal) {
 function attachReferencePack(
   opponentId: string,
   matchSlug: string,
-  references: OppositionOpponent['fixturePacks'][string]['referenceMatches']
+  references: OppositionOpponent['fixturePacks'][string]['referenceMatches'],
+  reportItems: OppositionOpponent['fixturePacks'][string]['reportItems'] = []
 ) {
   const opponent = OPPONENTS.find((o) => o.id === opponentId);
   if (!opponent) return;
+  const prev = opponent.fixturePacks[matchSlug];
   opponent.fixturePacks[matchSlug] = {
     referenceMatches: references,
-    reportItems: opponent.fixturePacks[matchSlug]?.reportItems ?? [],
+    reportItems: reportItems.length
+      ? reportItems
+      : prev?.reportItems ?? [],
     strengthsWeaknesses:
-      opponent.fixturePacks[matchSlug]?.strengthsWeaknesses ??
-      EMPTY_STRENGTHS_WEAKNESSES,
+      prev?.strengthsWeaknesses ?? EMPTY_STRENGTHS_WEAKNESSES,
   };
 }
 
-attachReferencePack('avellino', '2026-09-05_campionato-avellino-vs-u19', [
-  {
-    id: 'avellino-ref-canosa',
-    title: {
-      en: 'Canosa vs Avellino 7–1',
-      it: 'Canosa vs Avellino 7–1',
+attachReferencePack(
+  'avellino',
+  '2026-09-05_campionato-avellino-vs-u19',
+  [
+    {
+      id: 'avellino-ref-canosa',
+      title: {
+        en: 'Canosa vs Avellino 7–1',
+        it: 'Canosa vs Avellino 7–1',
+      },
+      competition: {
+        en: 'Friendly',
+        it: 'Amichevole',
+      },
+      score: '7–1',
+      videoFile: 'https://vimeo.com/1221765516/20c5bc9e45',
     },
-    competition: {
-      en: 'Friendly',
-      it: 'Amichevole',
+  ],
+  [
+    {
+      id: 'avellino-studio-report',
+      title: {
+        en: 'Studio Avellino SSCN',
+        it: 'Studio Avellino SSCN',
+      },
+      description: {
+        en: 'Opposition studio report (Avversari → Studio Report).',
+        it: 'Studio report avversario (Avversari → Studio Report).',
+      },
+      videoFile: 'https://vimeo.com/1223838077/5489bbf1a0',
+      tags: ['vimeo', 'opposition', 'studio-report'],
     },
-    score: '7–1',
-    videoFile: 'https://vimeo.com/1221765516/20c5bc9e45',
-  },
-]);
+  ]
+);
 
 attachReferencePack('catanzaro', '2026-09-12_campionato-u19-vs-catanzaro', [
   {
@@ -241,6 +263,35 @@ attachReferencePack('catanzaro', '2026-09-12_campionato-u19-vs-catanzaro', [
     },
     score: '1–3',
     videoFile: 'https://vimeo.com/1218078567/7be6470e66',
+  },
+]);
+
+attachReferencePack('arsenal', '2026-09-09_uyl-u19-vs-arsenal', [
+  {
+    id: 'arsenal-ref-barnet',
+    title: {
+      en: 'Barnet vs Arsenal 5–1',
+      it: 'Barnet vs Arsenal 5–1',
+    },
+    competition: {
+      en: 'Reference',
+      it: 'Riferimento',
+    },
+    score: '5–1',
+    videoFile: 'https://vimeo.com/1223839016/ff3b231d33',
+  },
+  {
+    id: 'arsenal-ref-bayern',
+    title: {
+      en: 'Arsenal vs Bayern 4–2',
+      it: 'Arsenal vs Bayern 4–2',
+    },
+    competition: {
+      en: 'Reference',
+      it: 'Riferimento',
+    },
+    score: '4–2',
+    videoFile: 'https://vimeo.com/1223838643/18bc3e6c10',
   },
 ]);
 

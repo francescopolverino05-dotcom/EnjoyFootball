@@ -19,14 +19,90 @@
     "it": "Scheda portieri All. N°31 allegata (ARTI INFERIORI-ADATTAMENTO E SIT. USCITA BASSA)."
   },
   "video": {
-    "parts": []
+    "parts": [
+      {
+        "id": "vimeo-1223159663",
+        "title": {
+          "en": "7v7+7",
+          "it": "7v7+7"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1223159663/ec5bb06ddc",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1223159664",
+        "title": {
+          "en": "Partitella",
+          "it": "Partitella"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1223159664/072416f35f",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1223159665",
+        "title": {
+          "en": "Transizioni",
+          "it": "Transizioni"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1223159665/95901617f3",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "fullSession": "https://vimeo.com/1223159663/ec5bb06ddc",
+    "notes": {
+      "en": "Session recordings on Vimeo (3 videos).",
+      "it": "Registrazioni sessione su Vimeo (3 video)."
+    }
   },
   "clips": [],
   "analysisVideos": [],
   "trainingDesign": [],
   "goalkeepers": {
     "video": {
-      "parts": []
+      "parts": [
+        {
+          "id": "vimeo-1223830435",
+          "title": {
+            "en": "POSIZIONI ZONA",
+            "it": "POSIZIONI ZONA"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1223830435/fafcb60deb",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        }
+      ],
+      "fullSession": "https://vimeo.com/1223830435/fafcb60deb"
     },
     "clips": [],
     "trainingDesign": [
@@ -50,5 +126,11 @@
       }
     ],
     "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30308134",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30308134",
+    "gkFolderId": "30308135",
+    "lastSyncedAt": "2026-09-04T00:05:17.620Z"
   }
 }

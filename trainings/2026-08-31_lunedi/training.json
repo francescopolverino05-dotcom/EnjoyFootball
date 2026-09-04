@@ -1,0 +1,64 @@
+{
+  "id": "2026-08-31_lunedi",
+  "slug": "2026-08-31_lunedi",
+  "date": "2026-08-31",
+  "title": {
+    "en": "Monday training",
+    "it": "Lunedì"
+  },
+  "focus": {
+    "en": "Prep. Avellino — internal friendly",
+    "it": "Prep. Avellino — amichevole interna"
+  },
+  "sessionType": "strength",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Prep. Avellino week — outfield + GK on Vimeo.",
+    "it": "Settimana Prep. Avellino — outfield + portieri su Vimeo."
+  },
+  "video": {
+    "parts": [
+      {
+        "id": "vimeo-1223159485",
+        "title": {
+          "en": "Amichevole tra di noi (2x30)",
+          "it": "Amichevole tra di noi (2x30)"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1223159485/58aa8a8e55",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "fullSession": "https://vimeo.com/1223159485/58aa8a8e55",
+    "notes": {
+      "en": "Session recordings on Vimeo (1 videos).",
+      "it": "Registrazioni sessione su Vimeo (1 video)."
+    }
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30308129",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30308129",
+    "gkFolderId": "30308130",
+    "lastSyncedAt": "2026-09-04T00:05:12.202Z"
+  }
+}

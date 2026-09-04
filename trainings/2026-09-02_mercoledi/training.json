@@ -19,14 +19,90 @@
     "it": "Scheda portieri All. N°32 allegata (ARTI SUPERIORI-PODALICO-DIF PORTA)."
   },
   "video": {
-    "parts": []
+    "parts": [
+      {
+        "id": "vimeo-1223837102",
+        "title": {
+          "en": "Fase Difensiva",
+          "it": "Fase Difensiva"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1223837102/839c8b692c",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1223837103",
+        "title": {
+          "en": "Partitella 1",
+          "it": "Partitella 1"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1223837103/d36ece156d",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1223837101",
+        "title": {
+          "en": "Possesso Palla",
+          "it": "Possesso Palla"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1223837101/1bae6a6651",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "fullSession": "https://vimeo.com/1223837102/839c8b692c",
+    "notes": {
+      "en": "Session recordings on Vimeo (3 videos).",
+      "it": "Registrazioni sessione su Vimeo (3 video)."
+    }
   },
   "clips": [],
   "analysisVideos": [],
   "trainingDesign": [],
   "goalkeepers": {
     "video": {
-      "parts": []
+      "parts": [
+        {
+          "id": "vimeo-1223830179",
+          "title": {
+            "en": "SPOSTAMENTI E PARATA IN TUFFO E CONTROM",
+            "it": "SPOSTAMENTI E PARATA IN TUFFO E CONTROM"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1223830179/dcf74174d4",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        }
+      ],
+      "fullSession": "https://vimeo.com/1223830179/dcf74174d4"
     },
     "clips": [],
     "trainingDesign": [
@@ -50,5 +126,11 @@
       }
     ],
     "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30308137",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30308137",
+    "gkFolderId": "30308138",
+    "lastSyncedAt": "2026-09-04T00:05:22.713Z"
   }
 }

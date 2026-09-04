@@ -19,14 +19,73 @@
     "it": "Scheda portieri All. N°33 allegata (COORDINATIVO- USCITE ALTE)."
   },
   "video": {
-    "parts": []
+    "parts": [
+      {
+        "id": "vimeo-1223837945",
+        "title": {
+          "en": "11v0 Chance Creatiobn",
+          "it": "11v0 Chance Creatiobn"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1223837945/924f4bf783",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1223837216",
+        "title": {
+          "en": "Fase Offensiva",
+          "it": "Fase Offensiva"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1223837216/c2f1427437",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "fullSession": "https://vimeo.com/1223837216/c2f1427437",
+    "notes": {
+      "en": "Session recordings on Vimeo (2 videos).",
+      "it": "Registrazioni sessione su Vimeo (2 video)."
+    }
   },
   "clips": [],
   "analysisVideos": [],
   "trainingDesign": [],
   "goalkeepers": {
     "video": {
-      "parts": []
+      "parts": [
+        {
+          "id": "vimeo-1223828597",
+          "title": {
+            "en": "USCITE ALTE",
+            "it": "USCITE ALTE"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1223828597/08a6470af2",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        }
+      ],
+      "fullSession": "https://vimeo.com/1223828597/08a6470af2"
     },
     "clips": [],
     "trainingDesign": [
@@ -50,5 +109,11 @@
       }
     ],
     "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30308139",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30308139",
+    "gkFolderId": "30308141",
+    "lastSyncedAt": "2026-09-04T00:05:28.271Z"
   }
 }
