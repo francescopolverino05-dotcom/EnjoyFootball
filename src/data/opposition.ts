@@ -268,6 +268,19 @@ attachReferencePack('catanzaro', '2026-09-12_campionato-u19-vs-catanzaro', [
 
 attachReferencePack('arsenal', '2026-09-09_uyl-u19-vs-arsenal', [
   {
+    id: 'arsenal-ref-palace',
+    title: {
+      en: 'Arsenal vs Crystal Palace 1–1',
+      it: 'Arsenal vs Crystal Palace 1–1',
+    },
+    competition: {
+      en: 'Premier League 2',
+      it: 'Premier League 2',
+    },
+    score: '1–1',
+    videoFile: 'https://vimeo.com/1224049897/cdb30b3351',
+  },
+  {
     id: 'arsenal-ref-barnet',
     title: {
       en: 'Barnet vs Arsenal 5–1',
