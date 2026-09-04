@@ -11,6 +11,7 @@ import {
   STANDING_COMPETITION_ORDER,
   standingRowClassName,
   teamNameById,
+  uylZone,
   type StandingCompetitionId,
 } from '../data/standings';
 import { teamCrestUrl } from '../data/teamLogos';
@@ -407,6 +408,7 @@ export default function TablesPage() {
                 </h3>
               </header>
               {uyl.groupTable ? (
+                <>
                 <div className="standings-table-wrap">
                   <table className="standings-table">
                     <thead>
@@ -451,7 +453,7 @@ export default function TablesPage() {
                           <tr
                             key={row.teamId}
                             className={standingRowClassName(row.pos, row.us, {
-                              zones: false,
+                              zoneForRank: uylZone,
                             })}
                           >
                             <td className="standings-pos">{row.pos}</td>
@@ -475,6 +477,19 @@ export default function TablesPage() {
                     </tbody>
                   </table>
                 </div>
+                <ul
+                  className="home-table-legend standings-page-legend"
+                  aria-label={t('homeTableLegendAria')}
+                >
+                  <li>
+                    <span className="home-table-legend-swatch home-table-legend-swatch--knockout" />
+                    <span>
+                      <strong>1–22</strong> — {t('homeZoneUylKnockout')}
+                    </span>
+                  </li>
+                </ul>
+                <p className="home-table-tiebreakers">{t('tableUylTiebreakersHint')}</p>
+                </>
               ) : (
                 <p className="home-empty">{t('tableUylEmpty')}</p>
               )}

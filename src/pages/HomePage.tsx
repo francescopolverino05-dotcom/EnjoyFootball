@@ -23,6 +23,7 @@ import {
   STANDING_COMPETITION_ORDER,
   standingRowClassName,
   teamNameById,
+  uylZone,
   type CupStandings,
   type StandingCompetitionId,
 } from '../data/standings';
@@ -562,38 +563,56 @@ export default function HomePage() {
                   ) : null}
 
                   {focusCompetition === 'uefaYouthLeague' && uyl.groupTable ? (
-                    <div className="standings-table-wrap home-standings-wrap">
-                      <table className="standings-table home-standings-table">
-                        <thead>
-                          <tr>
-                            <th scope="col">{t('tableColPos')}</th>
-                            <th scope="col">{t('tableColTeam')}</th>
-                            <th scope="col">{t('tableColPts')}</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {uyl.groupTable.rows.map((row, index) => {
-                            const rank = row.pos || index + 1;
-                            return (
-                              <tr
-                                key={row.teamId}
-                                className={standingRowClassName(rank, row.us, {
-                                  zones: false,
-                                })}
-                              >
-                                <td className="standings-pos">{rank}</td>
-                                <td className="standings-team">
-                                  <span className="standings-team-inner">
-                                    {row.shortName}
-                                  </span>
-                                </td>
-                                <td className="standings-pts">{row.pts}</td>
-                              </tr>
-                            );
-                          })}
-                        </tbody>
-                      </table>
-                    </div>
+                    <>
+                      <div className="standings-table-wrap home-standings-wrap">
+                        <table className="standings-table home-standings-table">
+                          <thead>
+                            <tr>
+                              <th scope="col">{t('tableColPos')}</th>
+                              <th scope="col">{t('tableColTeam')}</th>
+                              <th scope="col">{t('tableColPts')}</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {uyl.groupTable.rows.map((row, index) => {
+                              const rank = row.pos || index + 1;
+                              return (
+                                <tr
+                                  key={row.teamId}
+                                  className={standingRowClassName(rank, row.us, {
+                                    zoneForRank: uylZone,
+                                  })}
+                                >
+                                  <td className="standings-pos">{rank}</td>
+                                  <td className="standings-team">
+                                    <span className="standings-team-inner">
+                                      {row.shortName}
+                                    </span>
+                                  </td>
+                                  <td className="standings-pts">{row.pts}</td>
+                                </tr>
+                              );
+                            })}
+                          </tbody>
+                        </table>
+                      </div>
+                      <div className="home-table-footer">
+                        <ul
+                          className="home-table-legend"
+                          aria-label={t('homeTableLegendAria')}
+                        >
+                          <li>
+                            <span className="home-table-legend-swatch home-table-legend-swatch--knockout" />
+                            <span>
+                              <strong>1–22</strong> — {t('homeZoneUylKnockout')}
+                            </span>
+                          </li>
+                        </ul>
+                        <p className="home-table-tiebreakers">
+                          {t('tableUylTiebreakersHint')}
+                        </p>
+                      </div>
+                    </>
                   ) : null}
 
                   {focusCompetition === 'coppaItalia' ||

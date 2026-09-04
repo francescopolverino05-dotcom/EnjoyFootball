@@ -51,6 +51,10 @@ const dictionaries = {
     homeZonePlayoff: 'Promotion playoffs',
     homeZonePlayout: 'Relegation playout',
     homeZoneRelegated: 'Relegated',
+    homeZoneUylKnockout: 'Qualify for knockout stage (round of 32)',
+    homeZoneUylEliminated: 'Eliminated from Champions Path',
+    tableUylTiebreakersHint:
+      'Tiebreakers (UEFA Art. 16): GD → GF → away GF → wins → away wins; then opponent strength / discipline after all matches.',
     homeLoadKicker: 'Load',
     homeLoadTitle: 'Physical pulse',
     homeLoadAvgRpe: 'Avg RPE',
@@ -478,6 +482,10 @@ const dictionaries = {
     homeZonePlayoff: 'Playoff promozione',
     homeZonePlayout: 'Playout salvezza',
     homeZoneRelegated: 'Retrocessione',
+    homeZoneUylKnockout: 'Qualificazione alla fase a eliminazione (trentaduesimi)',
+    homeZoneUylEliminated: 'Eliminati dal percorso Champions',
+    tableUylTiebreakersHint:
+      'Spareggi (UEFA art. 16): DR → GF → gol fuori → vittorie → vittorie fuori; poi forza avversari / disciplina a fine fase.',
     homeLoadKicker: 'Carico',
     homeLoadTitle: 'Pulse fisico',
     homeLoadAvgRpe: 'RPE medio',
