@@ -1,0 +1,81 @@
+{
+  "id": "2026-09-04_venerdi",
+  "slug": "2026-09-04_venerdi",
+  "date": "2026-09-04",
+  "title": {
+    "en": "Friday training",
+    "it": "Venerdì"
+  },
+  "focus": {
+    "en": "Prep. Avellino week",
+    "it": "Prep. Avellino"
+  },
+  "sessionType": "match-practice",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Prep. Avellino week — outfield + GK on Vimeo.",
+    "it": "Settimana Prep. Avellino — outfield + portieri su Vimeo."
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1224078096/48abc1e7e9",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1224078095",
+        "title": {
+          "en": "Piazzati",
+          "it": "Piazzati"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1224078095/10c5ffb91e",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1224078096",
+        "title": {
+          "en": "11v0 Difesa",
+          "it": "11v0 Difesa"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1224078096/48abc1e7e9",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30308143",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30308143",
+    "gkFolderId": "30308144",
+    "lastSyncedAt": "2026-09-04T19:41:59.385Z"
+  }
+}
