@@ -1,9 +1,9 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-02",
+  "updatedAt": "2026-09-04",
   "sources": {
     "primavera2": "C.U. LNPB n. 10 dell'11.08.2026 — Calendario Primavera 2 Cisalfa Sport 2026/27 Girone B",
-    "coppaItalia": "https://www.transfermarkt.com/coppa-italia-primavera/gesamtspielplan/pokalwettbewerb/CITP/saison_id/2026",
+    "coppaItalia": "https://www.transfermarkt.co.uk/coppa-italia-primavera/gesamtspielplan/pokalwettbewerb/CITP/saison_id/2026",
     "uefaYouthLeague": "https://en.wikipedia.org/wiki/2026–27_UEFA_Youth_League_league_phase"
   },
   "competitions": {
@@ -1656,7 +1656,7 @@
             {
               "date": "2026-08-22",
               "home": "Monopoli",
-              "away": "Union Brescia",
+              "away": "Brescia",
               "score": "2-3",
               "ourClub": "monopoli"
             },
@@ -1677,21 +1677,57 @@
               "date": "2026-08-29",
               "home": "Bari",
               "away": "Padova",
-              "score": null,
+              "score": "1-0",
               "ourClub": "bari"
             },
             {
               "date": "2026-08-29",
               "home": "Renate",
               "away": "Mantova",
-              "score": null
+              "score": "3-1"
             },
             {
               "date": "2026-08-29",
               "home": "Vicenza",
               "away": "Palermo",
-              "score": null,
+              "score": "0-1",
               "ourClub": "palermo"
+            }
+          ]
+        },
+        {
+          "id": "2VR",
+          "name": {
+            "en": "Second Preliminary Round",
+            "it": "2ª Vorrunde"
+          },
+          "dateFrom": "2026-09-26",
+          "fixtures": [
+            {
+              "date": "2026-09-26",
+              "home": "Udinese",
+              "away": "Renate",
+              "score": null
+            },
+            {
+              "date": "2026-09-26",
+              "home": "Südtirol",
+              "away": "Ascoli",
+              "score": null,
+              "ourClub": "ascoli"
+            },
+            {
+              "date": "2026-09-26",
+              "home": "Bari",
+              "away": "Palermo",
+              "score": null,
+              "ourClub": "bari"
+            },
+            {
+              "date": "2026-09-26",
+              "home": "Brescia",
+              "away": "Venezia",
+              "score": null
             }
           ]
         },
@@ -1702,22 +1738,37 @@
             "it": "Primo turno"
           },
           "dateFrom": "2026-10-28",
-          "note": "Napoli enter here vs Spezia (both Primavera 2 B).",
           "fixtures": [
             {
               "date": "2026-10-28",
-              "home": "Napoli",
-              "away": "Spezia",
-              "score": null,
-              "ourClub": "napoli",
-              "us": true
+              "home": "Sassuolo",
+              "away": "TBD",
+              "score": null
             },
             {
               "date": "2026-10-28",
-              "home": "AlbinoLeffe",
-              "away": "Avellino",
+              "home": "Verona",
+              "away": "Pro Vercelli",
+              "score": null
+            },
+            {
+              "date": "2026-10-28",
+              "home": "TBD",
+              "away": "Torino",
+              "score": null
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Monza",
+              "away": "TBD",
+              "score": null
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Frosinone",
+              "away": "Virtus Entella",
               "score": null,
-              "ourClub": "avellino"
+              "ourClub": "frosinone"
             },
             {
               "date": "2026-10-28",
@@ -1735,10 +1786,49 @@
             },
             {
               "date": "2026-10-28",
+              "home": "TBD",
+              "away": "Lazio",
+              "score": null
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Modena",
+              "away": "Sampdoria",
+              "score": null
+            },
+            {
+              "date": "2026-10-28",
               "home": "Lecce",
               "away": "Pisa",
               "score": null,
               "ourClub": "pisa"
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Cagliari",
+              "away": "Lecco",
+              "score": null
+            },
+            {
+              "date": "2026-10-28",
+              "home": "AlbinoLeffe",
+              "away": "Avellino",
+              "score": null,
+              "ourClub": "avellino"
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Napoli",
+              "away": "Spezia",
+              "score": null,
+              "ourClub": "napoli",
+              "us": true
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Genoa",
+              "away": "Reggiana",
+              "score": null
             },
             {
               "date": "2026-10-28",
@@ -1753,13 +1843,195 @@
               "away": "Benevento",
               "score": null,
               "ourClub": "benevento"
+            }
+          ],
+          "note": "Napoli enter here vs Spezia (both Primavera 2 B)."
+        },
+        {
+          "id": "SZ",
+          "name": {
+            "en": "Round of 32",
+            "it": "Sedicesimi di finale"
+          },
+          "dateFrom": "2026-12-02",
+          "fixtures": [
+            {
+              "date": "2026-12-02",
+              "home": "TBD",
+              "away": "TBD",
+              "score": null
             },
             {
-              "date": "2026-10-28",
-              "home": "Frosinone",
-              "away": "Virtus Entella",
-              "score": null,
-              "ourClub": "frosinone"
+              "date": "2026-12-02",
+              "home": "TBD",
+              "away": "TBD",
+              "score": null
+            },
+            {
+              "date": "2026-12-02",
+              "home": "TBD",
+              "away": "TBD",
+              "score": null
+            },
+            {
+              "date": "2026-12-02",
+              "home": "TBD",
+              "away": "TBD",
+              "score": null
+            },
+            {
+              "date": "2026-12-02",
+              "home": "TBD",
+              "away": "TBD",
+              "score": null
+            },
+            {
+              "date": "2026-12-02",
+              "home": "TBD",
+              "away": "TBD",
+              "score": null
+            },
+            {
+              "date": "2026-12-02",
+              "home": "TBD",
+              "away": "TBD",
+              "score": null
+            },
+            {
+              "date": "2026-12-02",
+              "home": "TBD",
+              "away": "TBD",
+              "score": null
+            }
+          ]
+        },
+        {
+          "id": "AF",
+          "name": {
+            "en": "Round of 16",
+            "it": "Ottavi di finale"
+          },
+          "dateFrom": "2027-01-20",
+          "fixtures": [
+            {
+              "date": "2027-01-20",
+              "home": "Atalanta",
+              "away": "Winner Ro32 1",
+              "score": null
+            },
+            {
+              "date": "2027-01-20",
+              "home": "Juventus",
+              "away": "Winner Ro32 2",
+              "score": null
+            },
+            {
+              "date": "2027-01-20",
+              "home": "Winner Ro32 3",
+              "away": "Roma",
+              "score": null
+            },
+            {
+              "date": "2027-01-20",
+              "home": "Winner Ro32 4",
+              "away": "Cesena",
+              "score": null
+            },
+            {
+              "date": "2027-01-20",
+              "home": "Parma",
+              "away": "Winner Ro32 5",
+              "score": null
+            },
+            {
+              "date": "2027-01-20",
+              "home": "Bologna",
+              "away": "Winner Ro32 6",
+              "score": null
+            },
+            {
+              "date": "2027-01-20",
+              "home": "Winner Ro32 7",
+              "away": "Inter",
+              "score": null
+            },
+            {
+              "date": "2027-01-20",
+              "home": "Winner Ro32 8",
+              "away": "Fiorentina",
+              "score": null
+            }
+          ]
+        },
+        {
+          "id": "VF",
+          "name": {
+            "en": "Quarter-Finals",
+            "it": "Quarti di finale"
+          },
+          "dateFrom": "2027-02-10",
+          "fixtures": [
+            {
+              "date": "2027-02-10",
+              "home": "Winner Ro16 1",
+              "away": "Winner Ro16 2",
+              "score": null
+            },
+            {
+              "date": "2027-02-10",
+              "home": "Winner Ro16 3",
+              "away": "Winner Ro16 4",
+              "score": null
+            },
+            {
+              "date": "2027-02-10",
+              "home": "Winner Ro16 5",
+              "away": "Winner Ro16 6",
+              "score": null
+            },
+            {
+              "date": "2027-02-10",
+              "home": "Winner Ro16 7",
+              "away": "Winner Ro16 8",
+              "score": null
+            }
+          ]
+        },
+        {
+          "id": "HF",
+          "name": {
+            "en": "Semi-Finals",
+            "it": "Semifinali"
+          },
+          "dateFrom": "2027-04-07",
+          "fixtures": [
+            {
+              "date": "2027-04-07",
+              "home": "Winner QF 1",
+              "away": "Winner QF 2",
+              "score": null
+            },
+            {
+              "date": "2027-04-07",
+              "home": "Winner QF 3",
+              "away": "Winner QF 4",
+              "score": null
+            }
+          ]
+        },
+        {
+          "id": "FF",
+          "name": {
+            "en": "Final",
+            "it": "Finale"
+          },
+          "dateFrom": "2027-04-28",
+          "fixtures": [
+            {
+              "date": "2027-04-28",
+              "home": "Winner SF 1",
+              "away": "Winner SF 2",
+              "score": null
             }
           ]
         }
