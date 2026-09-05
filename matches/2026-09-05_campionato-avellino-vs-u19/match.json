@@ -409,7 +409,7 @@
         "en": "Shot Accuracy %",
         "it": "Precisione Tiri %"
       },
-      "homeValue": 50.0,
+      "homeValue": 50,
       "awayValue": 44.44,
       "unit": "%"
     },
@@ -665,6 +665,92 @@
   "goalkeepers": [],
   "clips": [
     {
+      "id": "vimeo-1224289733",
+      "title": {
+        "en": "Circolazione 2",
+        "it": "Circolazione 2"
+      },
+      "comments": {
+        "en": "Circolazione 2",
+        "it": "Circolazione 2"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1224289733/384b6b60e6",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1224289614",
+      "title": {
+        "en": "Build Up 2",
+        "it": "Build Up 2"
+      },
+      "comments": {
+        "en": "Build Up 2",
+        "it": "Build Up 2"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1224289614/1bd469fb51",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "build-up"
+      ]
+    },
+    {
+      "id": "vimeo-1224288831",
+      "title": {
+        "en": "Build Up",
+        "it": "Build Up"
+      },
+      "comments": {
+        "en": "Build Up",
+        "it": "Build Up"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1224288831/5fef2dea56",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "build-up"
+      ]
+    },
+    {
+      "id": "vimeo-1224288832",
+      "title": {
+        "en": "Costruzione",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Costruzione",
+        "it": "Costruzione"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1224288832/2e832371ab",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
       "id": "vimeo-1224287176",
       "title": {
         "en": "3-1 Angelino",
@@ -674,7 +760,7 @@
         "en": "3-1 Angelino",
         "it": "3-1 Angelino"
       },
-      "minute": 90,
+      "minute": 0,
       "second": 0,
       "videoFile": "https://vimeo.com/1224287176/0060d31e99",
       "section": "other",
@@ -695,7 +781,7 @@
         "en": "1-0 Caso",
         "it": "1-0 Caso"
       },
-      "minute": 8,
+      "minute": 0,
       "second": 0,
       "videoFile": "https://vimeo.com/1224287177/e9f714ddf8",
       "section": "other",
@@ -716,7 +802,7 @@
         "en": "2-0 D'Auria (pen)",
         "it": "2-0 D'Auria (rig.)"
       },
-      "minute": 51,
+      "minute": 0,
       "second": 0,
       "videoFile": "https://vimeo.com/1224287178/fbec17c384",
       "section": "other",
@@ -732,7 +818,7 @@
   "vimeo": {
     "folderId": "30443160",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30443160",
-    "lastSyncedAt": "2026-09-05T19:17:22.924Z"
+    "lastSyncedAt": "2026-09-05T19:40:04.951Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1224284211/64af24d7d7",
