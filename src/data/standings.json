@@ -20,6 +20,19 @@
       "nextMatchdayDate": "2026-09-05",
       "rows": [
         {
+          "teamId": "avellino",
+          "shortName": "Avellino",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 3,
+          "ga": 1,
+          "gd": 2,
+          "pts": 3,
+          "pos": 1
+        },
+        {
           "teamId": "perugia",
           "shortName": "Perugia",
           "played": 1,
@@ -30,24 +43,11 @@
           "ga": 2,
           "gd": 1,
           "pts": 3,
-          "pos": 1
+          "pos": 2
         },
         {
           "teamId": "ascoli",
           "shortName": "Ascoli",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "pos": 2
-        },
-        {
-          "teamId": "avellino",
-          "shortName": "Avellino",
           "played": 0,
           "won": 0,
           "drawn": 0,
@@ -150,20 +150,6 @@
           "pos": 10
         },
         {
-          "teamId": "napoli",
-          "shortName": "Napoli",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "us": true,
-          "pos": 11
-        },
-        {
           "teamId": "palermo",
           "shortName": "Palermo",
           "played": 0,
@@ -174,7 +160,7 @@
           "ga": 0,
           "gd": 0,
           "pts": 0,
-          "pos": 12
+          "pos": 11
         },
         {
           "teamId": "pescara",
@@ -187,7 +173,7 @@
           "ga": 0,
           "gd": 0,
           "pts": 0,
-          "pos": 13
+          "pos": 12
         },
         {
           "teamId": "salernitana",
@@ -200,7 +186,7 @@
           "ga": 0,
           "gd": 0,
           "pts": 0,
-          "pos": 14
+          "pos": 13
         },
         {
           "teamId": "spezia",
@@ -213,7 +199,7 @@
           "ga": 0,
           "gd": 0,
           "pts": 0,
-          "pos": 15
+          "pos": 14
         },
         {
           "teamId": "pisa",
@@ -226,6 +212,20 @@
           "ga": 3,
           "gd": -1,
           "pts": 0,
+          "pos": 15
+        },
+        {
+          "teamId": "napoli",
+          "shortName": "Napoli",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "gf": 1,
+          "ga": 3,
+          "gd": -2,
+          "pts": 0,
+          "us": true,
           "pos": 16
         }
       ],
@@ -242,7 +242,7 @@
             {
               "homeId": "avellino",
               "awayId": "napoli",
-              "score": null
+              "score": "3-1"
             },
             {
               "homeId": "benevento",

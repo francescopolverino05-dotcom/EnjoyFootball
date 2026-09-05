@@ -36,13 +36,1053 @@
     "colorClass": "u19",
     "logo": "napoli-logo.png"
   },
-  "score": null,
-  "goals": [],
-  "timeline": [],
-  "formations": [],
-  "dynamics": [],
-  "teamStats": [],
+  "score": {
+    "home": 3,
+    "away": 1
+  },
+  "goals": [
+    {
+      "minute": 8,
+      "scorer": "Caso",
+      "assist": null,
+      "teamId": "avellino"
+    },
+    {
+      "minute": 51,
+      "scorer": "D'Auria (pen)",
+      "assist": null,
+      "teamId": "avellino"
+    },
+    {
+      "minute": 61,
+      "scorer": "Pereira",
+      "assist": null,
+      "teamId": "u19"
+    },
+    {
+      "minute": 90,
+      "scorer": "Angelino",
+      "assist": null,
+      "teamId": "avellino"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "avellino",
+      "positionPercent": 2
+    },
+    {
+      "minute": 8,
+      "label": {
+        "en": "Caso 1-0",
+        "it": "Caso 1-0"
+      },
+      "type": "goal",
+      "teamId": "avellino",
+      "positionPercent": 9
+    },
+    {
+      "minute": 43,
+      "label": {
+        "en": "Napoli sub",
+        "it": "Sub Napoli"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 48
+    },
+    {
+      "minute": 45,
+      "label": {
+        "en": "Napoli sub",
+        "it": "Sub Napoli"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 50
+    },
+    {
+      "minute": 51,
+      "label": {
+        "en": "D'Auria (pen) 2-0",
+        "it": "D'Auria (rig.) 2-0"
+      },
+      "type": "goal",
+      "teamId": "avellino",
+      "positionPercent": 57
+    },
+    {
+      "minute": 58,
+      "label": {
+        "en": "Avellino subs",
+        "it": "Sub Avellino"
+      },
+      "type": "substitution",
+      "teamId": "avellino",
+      "positionPercent": 64
+    },
+    {
+      "minute": 60,
+      "label": {
+        "en": "Avellino sub",
+        "it": "Sub Avellino"
+      },
+      "type": "substitution",
+      "teamId": "avellino",
+      "positionPercent": 67
+    },
+    {
+      "minute": 61,
+      "label": {
+        "en": "Pereira 2-1",
+        "it": "Pereira 2-1"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 68
+    },
+    {
+      "minute": 69,
+      "label": {
+        "en": "Napoli subs",
+        "it": "Sub Napoli"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 77
+    },
+    {
+      "minute": 72,
+      "label": {
+        "en": "Avellino sub",
+        "it": "Sub Avellino"
+      },
+      "type": "substitution",
+      "teamId": "avellino",
+      "positionPercent": 80
+    },
+    {
+      "minute": 82,
+      "label": {
+        "en": "Napoli sub",
+        "it": "Sub Napoli"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 91
+    },
+    {
+      "minute": 90,
+      "label": {
+        "en": "Angelino 3-1",
+        "it": "Angelino 3-1"
+      },
+      "type": "goal",
+      "teamId": "avellino",
+      "positionPercent": 98
+    },
+    {
+      "minute": 90,
+      "label": {
+        "en": "Full time",
+        "it": "Fine partita"
+      },
+      "type": "other",
+      "teamId": "avellino",
+      "positionPercent": 98
+    }
+  ],
+  "formations": [
+    {
+      "teamId": "avellino",
+      "label": {
+        "en": "Avellino",
+        "it": "Avellino"
+      },
+      "system": "1-4-3-1-2",
+      "players": [
+        {
+          "number": 1,
+          "name": "Margiota",
+          "teamId": "avellino",
+          "isGk": true,
+          "bottom": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Frulio",
+          "teamId": "avellino",
+          "bottom": "22%",
+          "left": "18%"
+        },
+        {
+          "number": 5,
+          "name": "Di Vico",
+          "teamId": "avellino",
+          "bottom": "20%",
+          "left": "38%"
+        },
+        {
+          "number": 6,
+          "name": "Kébé",
+          "teamId": "avellino",
+          "bottom": "20%",
+          "left": "62%"
+        },
+        {
+          "number": 3,
+          "name": "Delisci",
+          "teamId": "avellino",
+          "bottom": "22%",
+          "left": "82%"
+        },
+        {
+          "number": 4,
+          "name": "Bianco",
+          "teamId": "avellino",
+          "bottom": "40%",
+          "left": "50%"
+        },
+        {
+          "number": 7,
+          "name": "Di Lauro",
+          "teamId": "avellino",
+          "bottom": "42%",
+          "left": "28%"
+        },
+        {
+          "number": 8,
+          "name": "Correnti",
+          "teamId": "avellino",
+          "bottom": "42%",
+          "left": "72%"
+        },
+        {
+          "number": 10,
+          "name": "D'Auria",
+          "teamId": "avellino",
+          "bottom": "58%",
+          "left": "50%"
+        },
+        {
+          "number": 9,
+          "name": "Caso",
+          "teamId": "avellino",
+          "bottom": "78%",
+          "left": "35%"
+        },
+        {
+          "number": 11,
+          "name": "Dezio",
+          "teamId": "avellino",
+          "bottom": "78%",
+          "left": "65%"
+        }
+      ]
+    },
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "system": "1-3-4-2-1",
+      "players": [
+        {
+          "number": 1,
+          "name": "Spinelli",
+          "teamId": "u19",
+          "isGk": true,
+          "top": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Natale",
+          "teamId": "u19",
+          "top": "22%",
+          "left": "22%"
+        },
+        {
+          "number": 6,
+          "name": "Lieto",
+          "teamId": "u19",
+          "top": "20%",
+          "left": "50%"
+        },
+        {
+          "number": 5,
+          "name": "Branchizio",
+          "teamId": "u19",
+          "top": "22%",
+          "left": "78%"
+        },
+        {
+          "number": 7,
+          "name": "Melnyk",
+          "teamId": "u19",
+          "top": "40%",
+          "left": "12%"
+        },
+        {
+          "number": 4,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "top": "42%",
+          "left": "38%"
+        },
+        {
+          "number": 8,
+          "name": "Cumariello",
+          "teamId": "u19",
+          "top": "42%",
+          "left": "62%"
+        },
+        {
+          "number": 3,
+          "name": "Zappalà",
+          "teamId": "u19",
+          "top": "40%",
+          "left": "88%"
+        },
+        {
+          "number": 11,
+          "name": "Rovettini",
+          "teamId": "u19",
+          "top": "68%",
+          "left": "28%"
+        },
+        {
+          "number": 10,
+          "name": "Baridó",
+          "teamId": "u19",
+          "top": "68%",
+          "left": "72%"
+        },
+        {
+          "number": 9,
+          "name": "Pereira",
+          "teamId": "u19",
+          "top": "78%",
+          "left": "50%"
+        }
+      ]
+    }
+  ],
+  "dynamics": [
+    {
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
+      "homeValue": 52.4,
+      "awayValue": 47.6,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Pass Accuracy %",
+        "it": "Precisione Passaggi %"
+      },
+      "homeValue": 84.47,
+      "awayValue": 81.82,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Duels Won %",
+        "it": "Duelli Vinti %"
+      },
+      "homeValue": 53.38,
+      "awayValue": 46.62,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Shot Accuracy %",
+        "it": "Precisione Tiri %"
+      },
+      "homeValue": 50.0,
+      "awayValue": 44.44,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Progressive Pass Accuracy %",
+        "it": "Precisione Passaggi Progressivi %"
+      },
+      "homeValue": 72.41,
+      "awayValue": 65.38,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Final-Third Pass Accuracy %",
+        "it": "Precisione Passaggi Ultimo Terzo %"
+      },
+      "homeValue": 67.39,
+      "awayValue": 60.53,
+      "unit": "%"
+    }
+  ],
+  "teamStats": [
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Formation",
+        "it": "Modulo"
+      },
+      "home": "4-2-3-1 (74.2%) / 5-3-2 (25.8%)",
+      "away": "3-4-2-1 (50.0%) / 3-4-1-2 (50.0%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Goals / xG",
+        "it": "Gol / xG"
+      },
+      "home": "3 (2.18 xG)",
+      "away": "1 (1.05 xG)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso %"
+      },
+      "home": "52.4%",
+      "away": "47.6%"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots (On Target / Accuracy %)",
+        "it": "Tiri (In Porta / Precisione %)"
+      },
+      "home": "14 (7 / 50.0%)",
+      "away": "9 (4 / 44.44%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Corners (With Shot / %)",
+        "it": "Calci d'angolo (Con Tiro / %)"
+      },
+      "home": "7 (2 / 28.57%)",
+      "away": "4 (1 / 25.0%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Fouls / Yellow Cards",
+        "it": "Falli / Cartellini Gialli"
+      },
+      "home": "13 / 2",
+      "away": "15 / 3"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Game Pace",
+        "it": "Ritmo di gioco"
+      },
+      "home": "14.85",
+      "away": "14.12"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Interceptions / Clearances",
+        "it": "Intercetti / Spazzate"
+      },
+      "home": "36 / 24",
+      "away": "42 / 28"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "PPDA",
+        "it": "PPDA"
+      },
+      "home": "8.75",
+      "away": "10.45"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Duels Total (Won / Win %)",
+        "it": "Duelli Totali (Vinti / %)"
+      },
+      "home": "148 (79 / 53.38%)",
+      "away": "148 (69 / 46.62%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Defensive Duels (Won / Win %)",
+        "it": "Duelli Difensivi (Vinti / %)"
+      },
+      "home": "62 (38 / 61.29%)",
+      "away": "62 (34 / 54.84%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Offensive Duels (Won / Win %)",
+        "it": "Duelli Offensivi (Vinti / %)"
+      },
+      "home": "62 (28 / 45.16%)",
+      "away": "62 (24 / 38.71%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Aerial Duels (Won / Win %)",
+        "it": "Duelli Aerei (Vinti / %)"
+      },
+      "home": "24 (13 / 54.17%)",
+      "away": "24 (11 / 45.83%)"
+    },
+    {
+      "category": {
+        "en": "Transitions",
+        "it": "Transizioni"
+      },
+      "name": {
+        "en": "Ball Recoveries (Low/Med/High)",
+        "it": "Recuperi (Basso/Medio/Alto)"
+      },
+      "home": "74 (31 / 31 / 12)",
+      "away": "69 (34 / 26 / 9)"
+    },
+    {
+      "category": {
+        "en": "Transitions",
+        "it": "Transizioni"
+      },
+      "name": {
+        "en": "Ball Losses (Low/Med/High)",
+        "it": "Perdite (Basso/Medio/Alto)"
+      },
+      "home": "108 (16 / 42 / 50)",
+      "away": "114 (22 / 48 / 44)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes (Accurate / Accuracy %)",
+        "it": "Passaggi (Precisi / Precisione %)"
+      },
+      "home": "412 (348 / 84.47%)",
+      "away": "374 (306 / 81.82%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Progressive Passes (Accurate / %)",
+        "it": "Passaggi Progressivi (Precisi / %)"
+      },
+      "home": "58 (42 / 72.41%)",
+      "away": "52 (34 / 65.38%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes into Final 3rd (Accurate / %)",
+        "it": "Passaggi Ultimo Terzo (Precisi / %)"
+      },
+      "home": "46 (31 / 67.39%)",
+      "away": "38 (23 / 60.53%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Crosses (Accurate / %)",
+        "it": "Cross (Precisi / %)"
+      },
+      "home": "16 (6 / 37.5%)",
+      "away": "12 (4 / 33.33%)"
+    }
+  ],
   "goalkeepers": [],
-  "clips": [],
-  "analysisVideos": []
+  "clips": [
+    {
+      "id": "vimeo-1224287176",
+      "title": {
+        "en": "3-1 Angelino",
+        "it": "3-1 Angelino"
+      },
+      "comments": {
+        "en": "3-1 Angelino",
+        "it": "3-1 Angelino"
+      },
+      "minute": 90,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1224287176/0060d31e99",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1224287177",
+      "title": {
+        "en": "1-0 Caso",
+        "it": "1-0 Caso"
+      },
+      "comments": {
+        "en": "1-0 Caso",
+        "it": "1-0 Caso"
+      },
+      "minute": 8,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1224287177/e9f714ddf8",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1224287178",
+      "title": {
+        "en": "2-0 D'Auria (pen)",
+        "it": "2-0 D'Auria (rig.)"
+      },
+      "comments": {
+        "en": "2-0 D'Auria (pen)",
+        "it": "2-0 D'Auria (rig.)"
+      },
+      "minute": 51,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1224287178/fbec17c384",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    }
+  ],
+  "analysisVideos": [],
+  "vimeo": {
+    "folderId": "30443160",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30443160",
+    "lastSyncedAt": "2026-09-05T19:17:22.924Z"
+  },
+  "video": {
+    "fullMatch": "https://vimeo.com/1224284211/64af24d7d7",
+    "notes": {
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
+    }
+  },
+  "appearances": {
+    "home": [
+      {
+        "name": "Margiota",
+        "teamId": "avellino",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Frulio",
+        "teamId": "avellino",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0,
+        "notes": {
+          "en": "Yellow card (minute unknown)",
+          "it": "Ammonito (minuto sconosciuto)"
+        }
+      },
+      {
+        "name": "Delisci",
+        "teamId": "avellino",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 60
+      },
+      {
+        "name": "Bianco",
+        "teamId": "avellino",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 58
+      },
+      {
+        "name": "Di Vico",
+        "teamId": "avellino",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Kébé",
+        "teamId": "avellino",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Di Lauro",
+        "teamId": "avellino",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Correnti",
+        "teamId": "avellino",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Caso",
+        "teamId": "avellino",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 58,
+        "goals": [
+          8
+        ]
+      },
+      {
+        "name": "D'Auria",
+        "teamId": "avellino",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 72,
+        "goals": [
+          51
+        ]
+      },
+      {
+        "name": "Dezio",
+        "teamId": "avellino",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Filigheddu",
+        "teamId": "avellino",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Tesicini",
+        "teamId": "avellino",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "De Cico",
+        "teamId": "avellino",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Olele",
+        "teamId": "avellino",
+        "number": 15,
+        "starter": false,
+        "onMinute": 72
+      },
+      {
+        "name": "Drudi",
+        "teamId": "avellino",
+        "number": 16,
+        "starter": false,
+        "onMinute": 60,
+        "notes": {
+          "en": "Yellow card (minute unknown)",
+          "it": "Ammonito (minuto sconosciuto)"
+        }
+      },
+      {
+        "name": "Sarcinella",
+        "teamId": "avellino",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "Angelino",
+        "teamId": "avellino",
+        "number": 18,
+        "starter": false,
+        "onMinute": 58,
+        "goals": [
+          90
+        ]
+      },
+      {
+        "name": "Pignateli",
+        "teamId": "avellino",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Minkov",
+        "teamId": "avellino",
+        "number": 20,
+        "starter": false,
+        "onMinute": 58
+      },
+      {
+        "name": "Raimondi",
+        "teamId": "avellino",
+        "number": 21,
+        "starter": false
+      },
+      {
+        "name": "Santoro",
+        "teamId": "avellino",
+        "number": 22,
+        "starter": false
+      }
+    ],
+    "away": [
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Natale",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 43
+      },
+      {
+        "name": "Zappalà",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 69
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Lieto",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "notes": {
+          "en": "Yellow card (minute unknown)",
+          "it": "Ammonito (minuto sconosciuto)"
+        }
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 69,
+        "notes": {
+          "en": "Yellow card (minute unknown)",
+          "it": "Ammonito (minuto sconosciuto)"
+        }
+      },
+      {
+        "name": "Cumariello",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 82,
+        "notes": {
+          "en": "Yellow card (minute unknown)",
+          "it": "Ammonito (minuto sconosciuto)"
+        }
+      },
+      {
+        "name": "Pereira",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          61
+        ]
+      },
+      {
+        "name": "Baridó",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Rovettini",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Merone",
+        "teamId": "u19",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Lepre",
+        "teamId": "u19",
+        "number": 13,
+        "starter": false,
+        "onMinute": 43,
+        "notes": {
+          "en": "Yellow card (minute unknown)",
+          "it": "Ammonito (minuto sconosciuto)"
+        }
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 14,
+        "starter": false,
+        "onMinute": 69
+      },
+      {
+        "name": "Chiaiese",
+        "teamId": "u19",
+        "number": 15,
+        "starter": false
+      },
+      {
+        "name": "Anich",
+        "teamId": "u19",
+        "number": 16,
+        "starter": false,
+        "onMinute": 69
+      },
+      {
+        "name": "Riccio",
+        "teamId": "u19",
+        "number": 17,
+        "starter": false,
+        "onMinute": 82
+      },
+      {
+        "name": "Mané",
+        "teamId": "u19",
+        "number": 18,
+        "starter": false,
+        "onMinute": 45
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Esposito",
+        "teamId": "u19",
+        "number": 20,
+        "starter": false
+      },
+      {
+        "name": "Amendola",
+        "teamId": "u19",
+        "number": 22,
+        "starter": false
+      }
+    ],
+    "notes": {
+      "en": "Yellow cards without recorded minutes: Avellino — Frulio, Drudi; Napoli — Lieto, Melnyk, Lepre, Cumariello. Delisci→Drudi minute approximate (after 58′, before 72′).",
+      "it": "Ammonizioni senza minuto registrato: Avellino — Frulio, Drudi; Napoli — Lieto, Melnyk, Lepre, Cumariello. Minuto Delisci→Drudi approssimato (dopo 58′, prima del 72′)."
+    }
+  }
 }
