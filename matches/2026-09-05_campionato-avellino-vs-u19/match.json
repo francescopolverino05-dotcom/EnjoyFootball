@@ -662,7 +662,46 @@
       "away": "12 (4 / 33.33%)"
     }
   ],
-  "goalkeepers": [],
+  "goalkeepers": [
+    {
+      "name": "Spinelli",
+      "minutes": 97,
+      "team": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "period": {
+        "en": "Full match",
+        "it": "Partita intera"
+      },
+      "jerseyColor": {
+        "en": "Green",
+        "it": "Verde"
+      },
+      "shotsFaced": 14,
+      "shotsOnTargetFaced": 7,
+      "saves": 4,
+      "goalsConceded": 3,
+      "savePercentage": {
+        "en": "57.1%",
+        "it": "57,1%"
+      },
+      "aerialDuels": {
+        "en": "3 / 2 (66.7%) exits & claims",
+        "it": "3 / 2 (66,7%) uscite e prese"
+      },
+      "exits": 3,
+      "passes": {
+        "en": "28 / 24 (85.7%)",
+        "it": "28 / 24 (85,7%)"
+      },
+      "notes": {
+        "en": "Wyscout — Goals: 3 (2 open play, 1 pen). xG conceded 2.18 → prevented goals −0.82. Penalties faced/saved 1/0. Short/medium passes 19/18 (94.7%); long 9/6 (66.7%). Goal kicks 9 (7 short build-up, 2 long). Exits/claims: 2/2 high claims, 0/1 sweeper. Ball recoveries/losses 8/4 (8 in box; 4 giveaways, 3 long).",
+        "it": "Wyscout — Gol subiti: 3 (2 gioco aperto, 1 rigore). xG concessi 2,18 → gol prevenuti −0,82. Rigori affrontati/parati 1/0. Passaggi corti/medi 19/18 (94,7%); lunghi 9/6 (66,7%). Calci di rinvio 9 (7 costruzione corta, 2 lunghi). Uscite/prese: 2/2 alte, 0/1 sweeper. Recuperi/perdite 8/4 (8 in area; 4 perdite, di cui 3 lunghe)."
+      },
+      "colorClass": "green"
+    }
+  ],
   "clips": [
     {
       "id": "vimeo-1224289733",
