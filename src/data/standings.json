@@ -15,10 +15,49 @@
         "it": "Primavera 2 — B"
       },
       "kind": "league",
-      "matchday": 0,
-      "nextMatchday": 1,
-      "nextMatchdayDate": "2026-09-05",
+      "matchday": 1,
+      "nextMatchday": 2,
+      "nextMatchdayDate": "2026-09-12",
       "rows": [
+        {
+          "teamId": "bari",
+          "shortName": "Bari",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 4,
+          "ga": 0,
+          "gd": 4,
+          "pts": 3,
+          "pos": 1
+        },
+        {
+          "teamId": "monopoli",
+          "shortName": "Monopoli",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 4,
+          "ga": 0,
+          "gd": 4,
+          "pts": 3,
+          "pos": 2
+        },
+        {
+          "teamId": "benevento",
+          "shortName": "Benevento",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 3,
+          "ga": 0,
+          "gd": 3,
+          "pts": 3,
+          "pos": 3
+        },
         {
           "teamId": "avellino",
           "shortName": "Avellino",
@@ -30,7 +69,20 @@
           "ga": 1,
           "gd": 2,
           "pts": 3,
-          "pos": 1
+          "pos": 4
+        },
+        {
+          "teamId": "catanzaro",
+          "shortName": "Catanzaro",
+          "played": 1,
+          "won": 1,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 2,
+          "ga": 0,
+          "gd": 2,
+          "pts": 3,
+          "pos": 5
         },
         {
           "teamId": "perugia",
@@ -43,111 +95,33 @@
           "ga": 2,
           "gd": 1,
           "pts": 3,
-          "pos": 2
+          "pos": 6
         },
         {
           "teamId": "ascoli",
           "shortName": "Ascoli",
-          "played": 0,
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 1,
+          "ga": 1,
           "gd": 0,
-          "pts": 0,
-          "pos": 3
-        },
-        {
-          "teamId": "bari",
-          "shortName": "Bari",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "pos": 4
-        },
-        {
-          "teamId": "benevento",
-          "shortName": "Benevento",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "pos": 5
-        },
-        {
-          "teamId": "catanzaro",
-          "shortName": "Catanzaro",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "pos": 6
-        },
-        {
-          "teamId": "cosenza",
-          "shortName": "Cosenza",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
+          "pts": 1,
           "pos": 7
         },
         {
-          "teamId": "frosinone",
-          "shortName": "Frosinone",
-          "played": 0,
+          "teamId": "spezia",
+          "shortName": "Spezia",
+          "played": 1,
           "won": 0,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 0,
-          "gf": 0,
-          "ga": 0,
+          "gf": 1,
+          "ga": 1,
           "gd": 0,
-          "pts": 0,
+          "pts": 1,
           "pos": 8
-        },
-        {
-          "teamId": "latina",
-          "shortName": "Latina",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "pos": 9
-        },
-        {
-          "teamId": "monopoli",
-          "shortName": "Monopoli",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "pos": 10
         },
         {
           "teamId": "palermo",
@@ -160,7 +134,7 @@
           "ga": 0,
           "gd": 0,
           "pts": 0,
-          "pos": 11
+          "pos": 9
         },
         {
           "teamId": "pescara",
@@ -173,33 +147,7 @@
           "ga": 0,
           "gd": 0,
           "pts": 0,
-          "pos": 12
-        },
-        {
-          "teamId": "salernitana",
-          "shortName": "Salernitana",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "pos": 13
-        },
-        {
-          "teamId": "spezia",
-          "shortName": "Spezia",
-          "played": 0,
-          "won": 0,
-          "drawn": 0,
-          "lost": 0,
-          "gf": 0,
-          "ga": 0,
-          "gd": 0,
-          "pts": 0,
-          "pos": 14
+          "pos": 10
         },
         {
           "teamId": "pisa",
@@ -212,7 +160,7 @@
           "ga": 3,
           "gd": -1,
           "pts": 0,
-          "pos": 15
+          "pos": 11
         },
         {
           "teamId": "napoli",
@@ -226,6 +174,58 @@
           "gd": -2,
           "pts": 0,
           "us": true,
+          "pos": 12
+        },
+        {
+          "teamId": "latina",
+          "shortName": "Latina",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "gf": 0,
+          "ga": 2,
+          "gd": -2,
+          "pts": 0,
+          "pos": 13
+        },
+        {
+          "teamId": "frosinone",
+          "shortName": "Frosinone",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "gf": 0,
+          "ga": 3,
+          "gd": -3,
+          "pts": 0,
+          "pos": 14
+        },
+        {
+          "teamId": "cosenza",
+          "shortName": "Cosenza",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "gf": 0,
+          "ga": 4,
+          "gd": -4,
+          "pts": 0,
+          "pos": 15
+        },
+        {
+          "teamId": "salernitana",
+          "shortName": "Salernitana",
+          "played": 1,
+          "won": 0,
+          "drawn": 0,
+          "lost": 1,
+          "gf": 0,
+          "ga": 4,
+          "gd": -4,
+          "pts": 0,
           "pos": 16
         }
       ],
@@ -237,7 +237,7 @@
             {
               "homeId": "ascoli",
               "awayId": "spezia",
-              "score": null
+              "score": "1-1"
             },
             {
               "homeId": "avellino",
@@ -247,17 +247,17 @@
             {
               "homeId": "benevento",
               "awayId": "frosinone",
-              "score": null
+              "score": "3-0"
             },
             {
               "homeId": "catanzaro",
               "awayId": "latina",
-              "score": null
+              "score": "2-0"
             },
             {
               "homeId": "monopoli",
               "awayId": "cosenza",
-              "score": null
+              "score": "4-0"
             },
             {
               "homeId": "palermo",
@@ -272,7 +272,7 @@
             {
               "homeId": "salernitana",
               "awayId": "bari",
-              "score": null
+              "score": "0-4"
             }
           ]
         },
