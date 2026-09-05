@@ -231,6 +231,8 @@ const dictionaries = {
     oppositionGkHasVideo: 'clip attached',
     oppositionRefMatchesHint:
       'Up to {n} tapes for the selected fixture: three recent games of theirs, plus a fourth slot later for how we played them last time (return fixture).',
+    oppositionRefMatchesHintThree:
+      'Up to {n} tapes for the selected fixture — recent games of theirs.',
     oppositionRefMatch: 'Reference match',
     oppositionRefSlot: 'Slot {n}',
     oppositionRefEmpty: 'Add one of their recent matches.',
@@ -662,6 +664,8 @@ const dictionaries = {
     oppositionGkHasVideo: 'clip allegata',
     oppositionRefMatchesHint:
       'Fino a {n} video per la partita selezionata: tre loro gare recenti, più uno slot dopo per come le abbiamo giocate noi l’andata (ritorno).',
+    oppositionRefMatchesHintThree:
+      'Fino a {n} video per la partita selezionata — loro gare recenti.',
     oppositionRefMatch: 'Partita di riferimento',
     oppositionRefSlot: 'Slot {n}',
     oppositionRefEmpty: 'Aggiungi una loro gara recente.',

@@ -5,6 +5,10 @@ import type {
   OppositionFixturePack,
   OppositionOpponent,
 } from '../types/opposition';
+import {
+  OPPOSITION_BASE_REFERENCE_MATCHES,
+  OPPOSITION_MAX_REFERENCE_MATCHES,
+} from '../types/opposition';
 import { EMPTY_STRENGTHS_WEAKNESSES } from '../types/scoutNotes';
 import { getAllMatches } from './matches';
 import {
@@ -266,6 +270,22 @@ attachReferencePack('catanzaro', '2026-09-12_campionato-u19-vs-catanzaro', [
   },
 ]);
 
+attachReferencePack('pisa', '2026-10-10_campionato-u19-vs-pisa', [
+  {
+    id: 'pisa-ref-perugia',
+    title: {
+      en: 'Pisa vs Perugia 2–3',
+      it: 'Pisa vs Perugia 2–3',
+    },
+    competition: {
+      en: 'Reference',
+      it: 'Riferimento',
+    },
+    score: '2–3',
+    videoFile: 'https://vimeo.com/1224195986/18554068c6',
+  },
+]);
+
 attachReferencePack('arsenal', '2026-09-09_uyl-u19-vs-arsenal', [
   {
     id: 'arsenal-ref-palace',
@@ -331,6 +351,31 @@ export function getOurFixturesVsOpponent(opponent: OppositionOpponent) {
         m.awayTeam.toLowerCase() === needle
     )
     .sort((a, b) => a.date.localeCompare(b.date));
+}
+
+/**
+ * How many reference-match slots to show for a fixture.
+ * UYL + first 15 Primavera 2 games: 3 (theirs only).
+ * Later Primavera 2 (return) / Coppa: 4 (includes “how we played them” slot).
+ */
+export function referenceMatchSlotLimit(
+  match: Pick<MatchSummary, 'competitionId' | 'slug'> | null
+): number {
+  if (!match) return OPPOSITION_BASE_REFERENCE_MATCHES;
+  if (match.competitionId === 'uefaYouthLeague') {
+    return OPPOSITION_BASE_REFERENCE_MATCHES;
+  }
+  if (match.competitionId === 'primavera2') {
+    const firstFifteen = getAllMatches()
+      .filter((m) => m.competitionId === 'primavera2')
+      .sort((a, b) => a.date.localeCompare(b.date) || a.slug.localeCompare(b.slug))
+      .slice(0, 15);
+    if (firstFifteen.some((m) => m.slug === match.slug)) {
+      return OPPOSITION_BASE_REFERENCE_MATCHES;
+    }
+    return OPPOSITION_MAX_REFERENCE_MATCHES;
+  }
+  return OPPOSITION_MAX_REFERENCE_MATCHES;
 }
 
 export function isNapoliHomeVsOpponent(

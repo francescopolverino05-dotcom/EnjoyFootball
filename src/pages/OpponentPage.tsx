@@ -15,6 +15,7 @@ import {
   oppositionClipSectionLabel,
   formationSystemsFor,
   placeholderPlayersForSystem,
+  referenceMatchSlotLimit,
   todayIsoDate,
 } from '../data/opposition';
 import { MATCH_COMPETITION_LABELS } from '../data/matchCompetitions';
@@ -72,6 +73,7 @@ export default function OpponentPage() {
   }
 
   const pack = getFixturePack(opponent, selectedSlug);
+  const refSlotLimit = referenceMatchSlotLimit(selectedMatch);
   const systems = formationSystemsFor(opponent);
   const formations: Formation[] = systems.map((system, index) => {
     const useScoutedStarters =
@@ -85,8 +87,8 @@ export default function OpponentPage() {
         : placeholderPlayersForSystem(system, opponent.id),
     };
   });
-  const refs = pack.referenceMatches.slice(0, OPPOSITION_MAX_REFERENCE_MATCHES);
-  const emptySlots = Math.max(0, OPPOSITION_MAX_REFERENCE_MATCHES - refs.length);
+  const refs = pack.referenceMatches.slice(0, refSlotLimit);
+  const emptySlots = Math.max(0, refSlotLimit - refs.length);
   const reports = pack.reportItems;
   const strengthsWeaknesses =
     pack.strengthsWeaknesses ?? EMPTY_STRENGTHS_WEAKNESSES;
@@ -352,10 +354,11 @@ export default function OpponentPage() {
         {tab === 'matches' ? (
           <div className="tab-content active" role="tabpanel">
             <p className="video-hint">
-              {t('oppositionRefMatchesHint').replace(
-                '{n}',
-                String(OPPOSITION_MAX_REFERENCE_MATCHES)
-              )}
+              {t(
+                refSlotLimit >= OPPOSITION_MAX_REFERENCE_MATCHES
+                  ? 'oppositionRefMatchesHint'
+                  : 'oppositionRefMatchesHintThree'
+              ).replace('{n}', String(refSlotLimit))}
             </p>
             <div className="match-grid">
               {refs.map((item) => (
@@ -381,7 +384,9 @@ export default function OpponentPage() {
               ))}
               {Array.from({ length: emptySlots }, (_, i) => {
                 const slot = refs.length + i + 1;
-                const isFourth = slot === 4;
+                const isFourth =
+                  slot === 4 &&
+                  refSlotLimit >= OPPOSITION_MAX_REFERENCE_MATCHES;
                 return (
                   <article
                     className="match-card opponent-slot-card"

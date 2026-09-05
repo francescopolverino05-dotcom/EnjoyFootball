@@ -10,8 +10,11 @@ export type OppositionCompetitionId = Extract<
   'primavera2' | 'coppaItalia' | 'uefaYouthLeague'
 >;
 
-/** 3 of theirs + optional 4th later = how we played them last time. */
+/** Max reference tapes when the return-fixture “how we played them” slot applies. */
 export const OPPOSITION_MAX_REFERENCE_MATCHES = 4;
+
+/** Default: three recent games of theirs (no 4th return-fixture slot). */
+export const OPPOSITION_BASE_REFERENCE_MATCHES = 3;
 
 export interface OppositionSquadPlayer {
   number?: number | null;
