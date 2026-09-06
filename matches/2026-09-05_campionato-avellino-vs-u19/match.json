@@ -1322,5 +1322,136 @@
         "goalkeeper"
       ]
     }
+  ],
+  "gpsStats": [
+    {
+      "half": {
+        "en": "GPS — Full Match",
+        "it": "GPS — Partita intera"
+      },
+      "summary": {
+        "en": "Zappalà led total distance (11601 m). Pereyra led sprint volume (377.58 m >24 km/h). Natale top speed (32.06 km/h). Pereyra most accelerations (51).",
+        "it": "Zappalà distanza totale (11601 m). Pereyra volume sprint (377.58 m >24 km/h). Natale velocità max (32.06 km/h). Pereyra più accelerazioni (51)."
+      },
+      "players": [
+        {
+          "player": "Zappalà",
+          "totalDistanceM": 11601,
+          "distancePerMin": 96,
+          "distanceOver16KmhM": 1680,
+          "distance20to24KmhM": 436.29,
+          "distanceOver24KmhM": 258.87,
+          "metabolicPowerWkg": 8.5,
+          "accelerationsOver3": 16,
+          "decelerationsUnder3": 46,
+          "maxSpeedKmh": 31.98,
+          "recoveryPct": 72.34
+        },
+        {
+          "player": "Chiummariello",
+          "totalDistanceM": 10351,
+          "distancePerMin": 94,
+          "distanceOver16KmhM": 1717,
+          "distance20to24KmhM": 477.62,
+          "distanceOver24KmhM": 220.99,
+          "metabolicPowerWkg": 8.4,
+          "accelerationsOver3": 30,
+          "decelerationsUnder3": 36,
+          "maxSpeedKmh": 29.21,
+          "recoveryPct": 74.14
+        },
+        {
+          "player": "Lieto",
+          "totalDistanceM": 10338,
+          "distancePerMin": 80,
+          "distanceOver16KmhM": 914,
+          "distance20to24KmhM": 218.73,
+          "distanceOver24KmhM": 66.37,
+          "metabolicPowerWkg": 7.1,
+          "accelerationsOver3": 22,
+          "decelerationsUnder3": 18,
+          "maxSpeedKmh": 30.54,
+          "recoveryPct": 80.53
+        },
+        {
+          "player": "Baridó",
+          "totalDistanceM": 10311,
+          "distancePerMin": 84,
+          "distanceOver16KmhM": 1012,
+          "distance20to24KmhM": 260.9,
+          "distanceOver24KmhM": 153.46,
+          "metabolicPowerWkg": 7.4,
+          "accelerationsOver3": 36,
+          "decelerationsUnder3": 32,
+          "maxSpeedKmh": 30.47,
+          "recoveryPct": 79.84
+        },
+        {
+          "player": "Pereyra",
+          "totalDistanceM": 10236,
+          "distancePerMin": 84,
+          "distanceOver16KmhM": 1598,
+          "distance20to24KmhM": 488.22,
+          "distanceOver24KmhM": 377.58,
+          "metabolicPowerWkg": 7.6,
+          "accelerationsOver3": 51,
+          "decelerationsUnder3": 35,
+          "maxSpeedKmh": 31.74,
+          "recoveryPct": 82.01
+        },
+        {
+          "player": "Branchizio",
+          "totalDistanceM": 9889,
+          "distancePerMin": 87,
+          "distanceOver16KmhM": 1225,
+          "distance20to24KmhM": 389.23,
+          "distanceOver24KmhM": 76.98,
+          "metabolicPowerWkg": 7.7,
+          "accelerationsOver3": 22,
+          "decelerationsUnder3": 49,
+          "maxSpeedKmh": 27.42,
+          "recoveryPct": 80.53
+        },
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 9580,
+          "distancePerMin": 100,
+          "distanceOver16KmhM": 1879,
+          "distance20to24KmhM": 612.03,
+          "distanceOver24KmhM": 166.67,
+          "metabolicPowerWkg": 9.1,
+          "accelerationsOver3": 40,
+          "decelerationsUnder3": 56,
+          "maxSpeedKmh": 28.56,
+          "recoveryPct": 72.45
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 8833,
+          "distancePerMin": 92,
+          "distanceOver16KmhM": 1266,
+          "distance20to24KmhM": 370.68,
+          "distanceOver24KmhM": 60.96,
+          "metabolicPowerWkg": 8.3,
+          "accelerationsOver3": 32,
+          "decelerationsUnder3": 36,
+          "maxSpeedKmh": 27.9,
+          "recoveryPct": 73.22
+        },
+        {
+          "player": "Natale",
+          "totalDistanceM": 4978,
+          "distancePerMin": 98,
+          "distanceOver16KmhM": 549,
+          "distance20to24KmhM": 106.82,
+          "distanceOver24KmhM": 74.09,
+          "metabolicPowerWkg": 8.8,
+          "accelerationsOver3": 12,
+          "decelerationsUnder3": 18,
+          "maxSpeedKmh": 32.06,
+          "recoveryPct": 74.44
+        }
+      ]
+    }
   ]
 }
