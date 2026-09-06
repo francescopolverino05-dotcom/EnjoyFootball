@@ -291,14 +291,23 @@ function classifyVideo(name, parentFolderName, duration = 0) {
     }
   }
 
-  // Scoreline / penalty clip titles (e.g. "1-0", "rigore 2-0", "3-1 Angelino")
+  // Scoreline / penalty clip titles (e.g. "1-0", "rigore 2-0", "3-1 Angelino").
+  // Do not treat clock times like "69:56" as scorelines.
   if (
     !section &&
     (/\brigor/i.test(n) ||
       /\bpen(?:alty)?\b/i.test(n) ||
-      /\b\d+\s*[-–:]\s*\d+\b/.test(n))
+      (/\b\d+\s*[-–]\s*\d+\b/.test(n) && !/\b\d{1,3}\s*:\s*\d{2}\b/.test(n)))
   ) {
     section = 'goal';
+  }
+
+  // Italian chance / cross titles when no section matched.
+  if (!section) {
+    if (/\boccasione\b/i.test(n) || /\bchance\b/i.test(n)) section = 'chance';
+    else if (/\btraversone\b|\bcross\b|\battaccare\s+spazio\b/i.test(n)) {
+      section = 'final-third';
+    }
   }
 
   // Skip half markers / unused "other" export buckets — keep goal clips.

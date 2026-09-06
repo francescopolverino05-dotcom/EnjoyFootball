@@ -704,6 +704,94 @@
   ],
   "clips": [
     {
+      "id": "vimeo-1224346179",
+      "title": {
+        "en": "Occasione (69:56)",
+        "it": "Occasione (69:56)"
+      },
+      "comments": {
+        "en": "Occasione (69:56)",
+        "it": "Occasione (69:56)"
+      },
+      "minute": 69,
+      "second": 56,
+      "videoFile": "https://vimeo.com/1224346179/ad0c64d38a",
+      "section": "chance",
+      "labels": [
+        "chance"
+      ],
+      "tags": [
+        "vimeo",
+        "chance"
+      ]
+    },
+    {
+      "id": "vimeo-1224346021",
+      "title": {
+        "en": "Traversone e Attaccare Spazio",
+        "it": "Traversone e Attaccare Spazio"
+      },
+      "comments": {
+        "en": "Traversone e Attaccare Spazio",
+        "it": "Traversone e Attaccare Spazio"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1224346021/8a7e12de9a",
+      "section": "final-third",
+      "labels": [
+        "final-third"
+      ],
+      "tags": [
+        "vimeo",
+        "final-third"
+      ]
+    },
+    {
+      "id": "vimeo-1224346018",
+      "title": {
+        "en": "Costruzione (7:10)",
+        "it": "Costruzione (7:10)"
+      },
+      "comments": {
+        "en": "Costruzione (7:10)",
+        "it": "Costruzione (7:10)"
+      },
+      "minute": 7,
+      "second": 10,
+      "videoFile": "https://vimeo.com/1224346018/4b76f29e95",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "build-up"
+      ]
+    },
+    {
+      "id": "vimeo-1224346019",
+      "title": {
+        "en": "Costruzione (12:08)",
+        "it": "Costruzione (12:08)"
+      },
+      "comments": {
+        "en": "Costruzione (12:08)",
+        "it": "Costruzione (12:08)"
+      },
+      "minute": 12,
+      "second": 8,
+      "videoFile": "https://vimeo.com/1224346019/e26137c1e8",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "build-up"
+      ]
+    },
+    {
       "id": "vimeo-1224289733",
       "title": {
         "en": "Costruzione 2",
@@ -862,7 +950,7 @@
   "vimeo": {
     "folderId": "30443160",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30443160",
-    "lastSyncedAt": "2026-09-06T05:53:41.458Z"
+    "lastSyncedAt": "2026-09-06T06:30:40.426Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1224284211/64af24d7d7",
@@ -1214,5 +1302,25 @@
       "en": "Yellow cards without recorded minutes: Avellino — Frulio, Drudi; Napoli — Lieto, Melnyk, Lepre, Cumariello. Delisci→Drudi minute approximate (after 58′, before 72′).",
       "it": "Ammonizioni senza minuto registrato: Avellino — Frulio, Drudi; Napoli — Lieto, Melnyk, Lepre, Cumariello. Minuto Delisci→Drudi approssimato (dopo 58′, prima del 72′)."
     }
-  }
+  },
+  "goalkeeperAnalysisVideos": [
+    {
+      "id": "vimeo-1224346020",
+      "title": {
+        "en": "Build Up (Spinelli)",
+        "it": "Build Up (Spinelli)"
+      },
+      "description": {
+        "en": "Goalkeeper analysis synced from Vimeo.",
+        "it": "Analisi portiere sincronizzata da Vimeo."
+      },
+      "videoFile": "https://vimeo.com/1224346020/0f94c9938b",
+      "kind": "video",
+      "tags": [
+        "vimeo",
+        "analysis",
+        "goalkeeper"
+      ]
+    }
+  ]
 }
