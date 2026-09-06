@@ -61,7 +61,6 @@ export default function PhaseClipsPanel({
     const map = new Map<ClipLabelId, VideoClip[]>();
     for (const clip of clips) {
       const key = (clip.section ?? clip.labels[0] ?? 'other') as ClipLabelId;
-      if (key === 'goal') continue;
       if (!includeOtherSection && HIDDEN_CLIP_SECTIONS.has(key)) continue;
       if (key === 'other' && !includeOtherSection) continue;
       const list = map.get(key) ?? [];

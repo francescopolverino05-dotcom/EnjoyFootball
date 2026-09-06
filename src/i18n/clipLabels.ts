@@ -79,9 +79,8 @@ export const CLIP_LABELS: Record<ClipLabelId, Localized> = {
   other: { en: 'Other', it: 'Altro' },
 };
 
-/** Sections never shown on the match Clips tab. */
+/** Sections never shown on the match Clips tab (unless includeOtherSection). */
 export const HIDDEN_CLIP_SECTIONS: ReadonlySet<ClipLabelId> = new Set([
-  'goal',
   'other',
 ]);
 
@@ -99,7 +98,7 @@ export const MATCH_CLIP_GROUP_IDS = [
 export type MatchClipGroupId = (typeof MATCH_CLIP_GROUP_IDS)[number];
 
 export const MATCH_CLIP_GROUPS: Record<MatchClipGroupId, ClipLabelId[]> = {
-  attack: ['build-up', 'progress'],
+  attack: ['build-up', 'progress', 'goal'],
   defence: ['high-defence', 'mid-block', 'own-third', 'pressing', 'gk-action'],
   transition: ['offensive-transition', 'defensive-transition'],
   setPieces: [
@@ -122,6 +121,7 @@ export const MATCH_CLIP_OPTIONAL_SECTIONS: ClipLabelId[] = [
   'tactical-pattern',
   'pressing',
   'gk-action',
+  'goal',
 ];
 
 /** Preferred display order for Clips sections (within groups). */

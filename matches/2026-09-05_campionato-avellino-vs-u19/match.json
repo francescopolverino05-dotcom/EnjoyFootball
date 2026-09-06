@@ -706,22 +706,23 @@
     {
       "id": "vimeo-1224289733",
       "title": {
-        "en": "Circolazione 2",
-        "it": "Circolazione 2"
+        "en": "Costruzione 2",
+        "it": "Costruzione 2"
       },
       "comments": {
-        "en": "Circolazione 2",
-        "it": "Circolazione 2"
+        "en": "Costruzione 2",
+        "it": "Costruzione 2"
       },
       "minute": 0,
       "second": 0,
       "videoFile": "https://vimeo.com/1224289733/384b6b60e6",
-      "section": "other",
+      "section": "build-up",
       "labels": [
-        "other"
+        "build-up"
       ],
       "tags": [
-        "vimeo"
+        "vimeo",
+        "build-up"
       ]
     },
     {
@@ -781,12 +782,13 @@
       "minute": 0,
       "second": 0,
       "videoFile": "https://vimeo.com/1224288832/2e832371ab",
-      "section": "other",
+      "section": "build-up",
       "labels": [
-        "other"
+        "build-up"
       ],
       "tags": [
-        "vimeo"
+        "vimeo",
+        "build-up"
       ]
     },
     {
@@ -802,12 +804,13 @@
       "minute": 90,
       "second": 0,
       "videoFile": "https://vimeo.com/1224287176/0060d31e99",
-      "section": "other",
+      "section": "goal",
       "labels": [
-        "other"
+        "goal"
       ],
       "tags": [
-        "vimeo"
+        "vimeo",
+        "goal"
       ]
     },
     {
@@ -823,12 +826,13 @@
       "minute": 8,
       "second": 0,
       "videoFile": "https://vimeo.com/1224287177/e9f714ddf8",
-      "section": "other",
+      "section": "goal",
       "labels": [
-        "other"
+        "goal"
       ],
       "tags": [
-        "vimeo"
+        "vimeo",
+        "goal"
       ]
     },
     {
@@ -844,12 +848,13 @@
       "minute": 51,
       "second": 0,
       "videoFile": "https://vimeo.com/1224287178/fbec17c384",
-      "section": "other",
+      "section": "goal",
       "labels": [
-        "other"
+        "goal"
       ],
       "tags": [
-        "vimeo"
+        "vimeo",
+        "goal"
       ]
     }
   ],
@@ -857,7 +862,7 @@
   "vimeo": {
     "folderId": "30443160",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30443160",
-    "lastSyncedAt": "2026-09-05T19:40:04.951Z"
+    "lastSyncedAt": "2026-09-06T05:53:41.458Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1224284211/64af24d7d7",

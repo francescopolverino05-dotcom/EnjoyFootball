@@ -47,8 +47,11 @@ const SECTION_ALIASES = {
   'build-up': 'build-up',
   buildup: 'build-up',
   build_ip: 'build-up', // common typo in titles
+  costruzione: 'build-up',
+  circolazione: 'build-up',
   progress: 'progress',
   progression: 'progress',
+  progressione: 'progress',
   transition_to_attack: 'offensive-transition',
   'transition-to-attack': 'offensive-transition',
   'offensive-transition': 'offensive-transition',
@@ -75,6 +78,8 @@ const SECTION_ALIASES = {
   goal: 'goal',
   gol: 'goal',
   goll: 'goal',
+  rigore: 'goal',
+  penalty: 'goal',
   free_kick: 'set-piece',
   'free-kick': 'set-piece',
   opponent_free_kick: 'set-piece',
@@ -284,6 +289,16 @@ function classifyVideo(name, parentFolderName, duration = 0) {
         break;
       }
     }
+  }
+
+  // Scoreline / penalty clip titles (e.g. "1-0", "rigore 2-0", "3-1 Angelino")
+  if (
+    !section &&
+    (/\brigor/i.test(n) ||
+      /\bpen(?:alty)?\b/i.test(n) ||
+      /\b\d+\s*[-–:]\s*\d+\b/.test(n))
+  ) {
+    section = 'goal';
   }
 
   // Skip half markers / unused "other" export buckets — keep goal clips.
@@ -661,10 +676,21 @@ Upload videos into the Vimeo folder, then re-run:
       if (!prev) return c;
       const merged = { ...c };
       if (prev.localFile) merged.localFile = prev.localFile;
-      // Keep hand-tuned titles / comments / tags (e.g. Actions / Azioni).
+      // Keep hand-tuned titles / comments / tags / section / minutes across re-syncs.
       if (prev.title) merged.title = prev.title;
       if (prev.comments) merged.comments = prev.comments;
       if (Array.isArray(prev.tags) && prev.tags.length) merged.tags = prev.tags;
+      if (prev.section && prev.section !== 'other') {
+        merged.section = prev.section;
+        merged.labels =
+          Array.isArray(prev.labels) && prev.labels.length
+            ? prev.labels
+            : [prev.section];
+      }
+      if (typeof prev.minute === 'number' && prev.minute > 0) {
+        merged.minute = prev.minute;
+      }
+      if (typeof prev.second === 'number') merged.second = prev.second;
       return merged;
     });
   }
