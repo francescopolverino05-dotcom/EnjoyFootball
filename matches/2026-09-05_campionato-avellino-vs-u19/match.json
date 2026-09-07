@@ -950,7 +950,7 @@
   "vimeo": {
     "folderId": "30443160",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30443160",
-    "lastSyncedAt": "2026-09-06T06:30:40.426Z"
+    "lastSyncedAt": "2026-09-07T00:58:58.582Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1224284211/64af24d7d7",
@@ -1304,6 +1304,24 @@
     }
   },
   "goalkeeperAnalysisVideos": [
+    {
+      "id": "vimeo-1224464245",
+      "title": {
+        "en": "TAGLI SPINELLI AVELLINO NAPOLI",
+        "it": "TAGLI SPINELLI AVELLINO NAPOLI"
+      },
+      "description": {
+        "en": "Goalkeeper analysis synced from Vimeo.",
+        "it": "Analisi portiere sincronizzata da Vimeo."
+      },
+      "videoFile": "https://vimeo.com/1224464245/776d914cf5",
+      "kind": "video",
+      "tags": [
+        "vimeo",
+        "analysis",
+        "goalkeeper"
+      ]
+    },
     {
       "id": "vimeo-1224346020",
       "title": {
