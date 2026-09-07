@@ -1,0 +1,573 @@
+{
+  "season": "2026/27",
+  "updatedAt": "2026-09-07",
+  "scope": {
+    "en": "Club rankings from logged match sheets within each competition. Napoli is highlighted. Values are averages from games with stats so far.",
+    "it": "Classifiche di club dai fogli partita per competizione. Napoli è evidenziato. Valori = medie delle gare con stats finora."
+  },
+  "categories": {
+    "general": {
+      "id": "general",
+      "label": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "metrics": [
+        {
+          "id": "goals",
+          "label": {
+            "en": "Goals",
+            "it": "Gol"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 3,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 1,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ]
+        },
+        {
+          "id": "xg",
+          "label": {
+            "en": "Expected Goals (xG)",
+            "it": "Expected Goals (xG)"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 2.18,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 1.05,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ]
+        },
+        {
+          "id": "shots",
+          "label": {
+            "en": "Shots",
+            "it": "Tiri"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 14,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 9,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ]
+        },
+        {
+          "id": "shots_on_target",
+          "label": {
+            "en": "Shots on Target",
+            "it": "Tiri in porta"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 7,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 4,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ]
+        },
+        {
+          "id": "fouls",
+          "label": {
+            "en": "Fouls",
+            "it": "Falli"
+          },
+          "higherIsBetter": false,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 13,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 15,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ]
+        },
+        {
+          "id": "ppda",
+          "label": {
+            "en": "PPDA",
+            "it": "PPDA"
+          },
+          "higherIsBetter": false,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 8.75,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 10.45,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ]
+        },
+        {
+          "id": "game_pace",
+          "label": {
+            "en": "Game Pace",
+            "it": "Ritmo di gioco"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 14.85,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 14.12,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ]
+        }
+      ]
+    },
+    "offensive": {
+      "id": "offensive",
+      "label": {
+        "en": "Offensive",
+        "it": "Offensiva"
+      },
+      "metrics": [
+        {
+          "id": "progressive_pass_pct",
+          "label": {
+            "en": "Progressive Pass Accuracy %",
+            "it": "Precisione passaggi progressivi %"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 72.41,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 65.38,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ],
+          "unit": "%"
+        },
+        {
+          "id": "final_third_passes",
+          "label": {
+            "en": "Passes into Final Third",
+            "it": "Passaggi ultimo terzo"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 46,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 38,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ]
+        },
+        {
+          "id": "final_third_pct",
+          "label": {
+            "en": "Final-Third Pass Accuracy %",
+            "it": "Precisione passaggi ultimo terzo %"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 67.39,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 60.53,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ],
+          "unit": "%"
+        },
+        {
+          "id": "cross_pct",
+          "label": {
+            "en": "Cross Accuracy %",
+            "it": "Precisione cross %"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 37.5,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 33.33,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ],
+          "unit": "%"
+        },
+        {
+          "id": "corners",
+          "label": {
+            "en": "Corners",
+            "it": "Calci d'angolo"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 7,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 4,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ]
+        },
+        {
+          "id": "corners_with_shot_pct",
+          "label": {
+            "en": "Corners with Shot %",
+            "it": "Angoli con tiro %"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 28.57,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 25,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ],
+          "unit": "%"
+        }
+      ]
+    },
+    "defensive": {
+      "id": "defensive",
+      "label": {
+        "en": "Defensive",
+        "it": "Difensiva"
+      },
+      "metrics": [
+        {
+          "id": "interceptions",
+          "label": {
+            "en": "Interceptions",
+            "it": "Intercetti"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 36,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 42,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ]
+        },
+        {
+          "id": "clearances",
+          "label": {
+            "en": "Clearances",
+            "it": "Spazzate"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 24,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 28,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ]
+        },
+        {
+          "id": "defensive_duels_pct",
+          "label": {
+            "en": "Defensive Duels Won %",
+            "it": "Duelli difensivi vinti %"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 61.29,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 54.84,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ],
+          "unit": "%"
+        },
+        {
+          "id": "recoveries",
+          "label": {
+            "en": "Ball Recoveries",
+            "it": "Recuperi"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 74,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 69,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ]
+        }
+      ]
+    },
+    "possession": {
+      "id": "possession",
+      "label": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "metrics": [
+        {
+          "id": "possession",
+          "label": {
+            "en": "Possession %",
+            "it": "Possesso %"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 52.4,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 47.6,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ],
+          "unit": "%"
+        },
+        {
+          "id": "pass_accuracy",
+          "label": {
+            "en": "Pass Accuracy %",
+            "it": "Precisione passaggi %"
+          },
+          "higherIsBetter": true,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 84.47,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 81.82,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ],
+          "unit": "%"
+        },
+        {
+          "id": "ball_losses",
+          "label": {
+            "en": "Ball Losses",
+            "it": "Perdite palla"
+          },
+          "higherIsBetter": false,
+          "rows": [
+            {
+              "teamId": "avellino",
+              "team": "Avellino",
+              "isUs": false,
+              "value": 108,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 114,
+              "played": 1,
+              "competitionId": "primavera2"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
