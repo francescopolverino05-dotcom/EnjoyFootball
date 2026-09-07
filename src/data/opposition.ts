@@ -300,47 +300,92 @@ attachReferencePack('pisa', '2026-10-10_campionato-u19-vs-pisa', [
   },
 ]);
 
-attachReferencePack('arsenal', '2026-09-09_uyl-u19-vs-arsenal', [
-  {
-    id: 'arsenal-ref-palace',
-    title: {
-      en: 'Arsenal vs Crystal Palace 1–1',
-      it: 'Arsenal vs Crystal Palace 1–1',
+attachReferencePack(
+  'arsenal',
+  '2026-09-09_uyl-u19-vs-arsenal',
+  [
+    {
+      id: 'arsenal-ref-palace',
+      title: {
+        en: 'Arsenal vs Crystal Palace 1–1',
+        it: 'Arsenal vs Crystal Palace 1–1',
+      },
+      competition: {
+        en: 'Premier League 2',
+        it: 'Premier League 2',
+      },
+      score: '1–1',
+      videoFile: 'https://vimeo.com/1224049897/cdb30b3351',
     },
-    competition: {
-      en: 'Premier League 2',
-      it: 'Premier League 2',
+    {
+      id: 'arsenal-ref-barnet',
+      title: {
+        en: 'Barnet vs Arsenal 5–1',
+        it: 'Barnet vs Arsenal 5–1',
+      },
+      competition: {
+        en: 'Reference',
+        it: 'Riferimento',
+      },
+      score: '5–1',
+      videoFile: 'https://vimeo.com/1223839016/ff3b231d33',
     },
-    score: '1–1',
-    videoFile: 'https://vimeo.com/1224049897/cdb30b3351',
-  },
-  {
-    id: 'arsenal-ref-barnet',
-    title: {
-      en: 'Barnet vs Arsenal 5–1',
-      it: 'Barnet vs Arsenal 5–1',
+    {
+      id: 'arsenal-ref-bayern',
+      title: {
+        en: 'Arsenal vs Bayern 4–2',
+        it: 'Arsenal vs Bayern 4–2',
+      },
+      competition: {
+        en: 'Reference',
+        it: 'Riferimento',
+      },
+      score: '4–2',
+      videoFile: 'https://vimeo.com/1223838643/18bc3e6c10',
     },
-    competition: {
-      en: 'Reference',
-      it: 'Riferimento',
+  ],
+  [
+    {
+      id: 'arsenal-studio-attacco-piazzati',
+      title: {
+        en: 'Arsenal Studio — Attack & Set Pieces',
+        it: 'Arsenal Studio — Attacco e Piazzati',
+      },
+      description: {
+        en: 'Opposition studio report: attacking phase and set pieces.',
+        it: 'Studio report avversario: fase offensiva e palle inattive.',
+      },
+      videoFile: 'https://vimeo.com/1224720517/d3719451c9',
+      tags: ['vimeo', 'opposition', 'studio-report'],
     },
-    score: '5–1',
-    videoFile: 'https://vimeo.com/1223839016/ff3b231d33',
-  },
-  {
-    id: 'arsenal-ref-bayern',
-    title: {
-      en: 'Arsenal vs Bayern 4–2',
-      it: 'Arsenal vs Bayern 4–2',
+    {
+      id: 'arsenal-studio-gk',
+      title: {
+        en: 'Team Studio Arsenal (GK)',
+        it: 'Team Studio Arsenal (GK)',
+      },
+      description: {
+        en: 'Goalkeeper opposition studio.',
+        it: 'Studio avversario portieri.',
+      },
+      videoFile: 'https://vimeo.com/1224464415/28961f4b09',
+      tags: ['vimeo', 'opposition', 'studio-report', 'goalkeeper'],
     },
-    competition: {
-      en: 'Reference',
-      it: 'Riferimento',
+    {
+      id: 'arsenal-annous-rigori',
+      title: {
+        en: 'Annous — Penalties',
+        it: 'Annous — Rigori',
+      },
+      description: {
+        en: 'Penalty clips (Annous).',
+        it: 'Clip sui rigori (Annous).',
+      },
+      videoFile: 'https://vimeo.com/1224464440/56bc805fef',
+      tags: ['vimeo', 'opposition', 'set-piece'],
     },
-    score: '4–2',
-    videoFile: 'https://vimeo.com/1223838643/18bc3e6c10',
-  },
-]);
+  ]
+);
 
 export function getAllOpponents(): OppositionOpponent[] {
   return [...OPPONENTS].sort((a, b) => a.shortName.localeCompare(b.shortName));
