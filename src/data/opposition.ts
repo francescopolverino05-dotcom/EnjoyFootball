@@ -243,6 +243,20 @@ attachReferencePack(
 
 attachReferencePack('catanzaro', '2026-09-12_campionato-u19-vs-catanzaro', [
   {
+    id: 'catanzaro-ref-latina',
+    title: {
+      en: 'Catanzaro vs Latina 2–0',
+      it: 'Catanzaro vs Latina 2–0',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 1',
+      it: 'Primavera 2 · Giornata 1',
+    },
+    score: '2–0',
+    date: '2026-09-05',
+    videoFile: 'https://vimeo.com/1224461888/2521a1a4f1',
+  },
+  {
     id: 'catanzaro-ref-salernitana',
     title: {
       en: 'Salernitana vs Catanzaro U19 3–0',
