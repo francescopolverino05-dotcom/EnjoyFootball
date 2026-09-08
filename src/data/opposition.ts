@@ -355,12 +355,11 @@ attachReferencePack(
         en: 'Opposition studio report: attacking phase and set pieces.',
         it: 'Studio report avversario: fase offensiva e palle inattive.',
       },
-      videoFile: 'https://vimeo.com/1224720517/d3719451c9',
+      videoFile: 'https://vimeo.com/1224890071/72edc06eb5',
       tags: ['vimeo', 'opposition', 'studio-report'],
     },
     {
-      id: 'arsenal-studio-gk',
-      title: {
+      id: 'arsenal-studio-gk',      title: {
         en: 'Team Studio Arsenal (GK)',
         it: 'Team Studio Arsenal (GK)',
       },
