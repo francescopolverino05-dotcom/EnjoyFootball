@@ -300,6 +300,37 @@ attachReferencePack('pisa', '2026-10-10_campionato-u19-vs-pisa', [
   },
 ]);
 
+attachReferencePack('ascoli', '2026-09-19_campionato-ascoli-vs-u19', [
+  {
+    id: 'ascoli-ref-spezia',
+    title: {
+      en: 'Ascoli vs Spezia',
+      it: 'Ascoli vs Spezia',
+    },
+    competition: {
+      en: 'Reference · First leg',
+      it: 'Riferimento · Andata',
+    },
+    videoFile: 'https://vimeo.com/1225049015/95b818e419',
+  },
+]);
+
+attachReferencePack('porto', '2026-11-04_uyl-porto-vs-u19', [
+  {
+    id: 'porto-ref-man-city',
+    title: {
+      en: 'Porto vs Manchester City 3–1',
+      it: 'Porto vs Manchester City 3–1',
+    },
+    competition: {
+      en: 'UEFA Youth League reference',
+      it: 'Riferimento UEFA Youth League',
+    },
+    score: '3–1',
+    videoFile: 'https://vimeo.com/1225051128/cd33c8c29e',
+  },
+]);
+
 attachReferencePack(
   'arsenal',
   '2026-09-09_uyl-u19-vs-arsenal',

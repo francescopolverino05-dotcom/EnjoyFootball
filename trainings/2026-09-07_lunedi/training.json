@@ -1,0 +1,80 @@
+{
+  "id": "2026-09-07_lunedi",
+  "slug": "2026-09-07_lunedi",
+  "date": "2026-09-07",
+  "title": {
+    "en": "Monday training",
+    "it": "Lunedì"
+  },
+  "focus": {
+    "en": "Outfield — attacking & dealing with crosses",
+    "it": "Outfield — attacco e gestione traversi"
+  },
+  "sessionType": "strength",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — run npm run sync-vimeo -- --training 2026-09-07_lunedi",
+    "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-09-07_lunedi"
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1225066789/9f19272832",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1225066789",
+        "title": {
+          "en": "Attacking",
+          "it": "Attacking"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1225066789/9f19272832",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1225065510",
+        "title": {
+          "en": "Dealing with Crosses",
+          "it": "Dealing with Crosses"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1225065510/39d7dcf5a3",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30474652",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30474652",
+    "lastSyncedAt": "2026-09-08T21:45:05.776Z"
+  }
+}

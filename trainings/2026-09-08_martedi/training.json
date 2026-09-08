@@ -1,0 +1,97 @@
+{
+  "id": "2026-09-08_martedi",
+  "slug": "2026-09-08_martedi",
+  "date": "2026-09-08",
+  "title": {
+    "en": "Tuesday training",
+    "it": "Martedì"
+  },
+  "focus": {
+    "en": "Set pieces, attack–defence movement, defence",
+    "it": "Piazzati, movimenti attacco–difesa, difesa"
+  },
+  "sessionType": "metabolic",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — run npm run sync-vimeo -- --training 2026-09-08_martedi",
+    "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-09-08_martedi"
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1225070599/3ee9a75524",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1225070599",
+        "title": {
+          "en": "Defence",
+          "it": "Defence"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1225070599/3ee9a75524",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1225068916",
+        "title": {
+          "en": "Attack and Defence Movement",
+          "it": "Attack and Defence Movement"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1225068916/361e008c9b",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1225068313",
+        "title": {
+          "en": "Set Pieces",
+          "it": "Set Pieces"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1225068313/1e791a5eb8",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30474740",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30474740",
+    "lastSyncedAt": "2026-09-08T21:45:06.708Z"
+  }
+}
