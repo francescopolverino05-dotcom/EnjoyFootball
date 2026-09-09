@@ -284,6 +284,44 @@ attachReferencePack('catanzaro', '2026-09-12_campionato-u19-vs-catanzaro', [
   },
 ]);
 
+{
+  const catanzaro = OPPONENTS.find((o) => o.id === 'catanzaro');
+  if (catanzaro) {
+    catanzaro.clips = [
+      {
+        id: 'catanzaro-pellegrini-attacco',
+        title: {
+          en: 'Pellegrini — Attack',
+          it: 'Pellegrini — Attacco',
+        },
+        videoFile: 'https://vimeo.com/1225440473/c8f92a4e75',
+        section: 'last-30m',
+        tags: ['vimeo', 'opposition', 'individual'],
+      },
+      {
+        id: 'catanzaro-pio-greco-attacco',
+        title: {
+          en: 'Pio Greco — Attack',
+          it: 'Pio Greco — Attacco',
+        },
+        videoFile: 'https://vimeo.com/1225440474/30b43e7036',
+        section: 'last-30m',
+        tags: ['vimeo', 'opposition', 'individual'],
+      },
+      {
+        id: 'catanzaro-cesnauskis-report',
+        title: {
+          en: 'Cesnauskis — Individual report',
+          it: 'Cesnauskis — Report individuale',
+        },
+        videoFile: 'https://vimeo.com/1225440475/eb642e5f69',
+        section: 'last-30m',
+        tags: ['vimeo', 'opposition', 'individual'],
+      },
+    ];
+  }
+}
+
 attachReferencePack('pisa', '2026-10-10_campionato-u19-vs-pisa', [
   {
     id: 'pisa-ref-perugia',

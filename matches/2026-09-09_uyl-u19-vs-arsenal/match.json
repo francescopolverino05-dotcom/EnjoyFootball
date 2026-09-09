@@ -36,7 +36,10 @@
     "colorClass": "opponent",
     "logo": "logos/arsenal.png"
   },
-  "score": null,
+  "score": {
+    "home": 1,
+    "away": 2
+  },
   "goals": [],
   "timeline": [],
   "formations": [],
@@ -44,5 +47,17 @@
   "teamStats": [],
   "goalkeepers": [],
   "clips": [],
-  "analysisVideos": []
+  "analysisVideos": [],
+  "vimeo": {
+    "folderId": "30489719",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30489719",
+    "lastSyncedAt": "2026-09-09T23:33:49.548Z"
+  },
+  "video": {
+    "fullMatch": "https://vimeo.com/1225441905/d312fd375f",
+    "notes": {
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
+    }
+  }
 }
