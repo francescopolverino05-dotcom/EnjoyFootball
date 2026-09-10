@@ -241,7 +241,10 @@ attachReferencePack(
   ]
 );
 
-attachReferencePack('catanzaro', '2026-09-12_campionato-u19-vs-catanzaro', [
+attachReferencePack(
+  'catanzaro',
+  '2026-09-12_campionato-u19-vs-catanzaro',
+  [
   {
     id: 'catanzaro-ref-latina',
     title: {
@@ -282,7 +285,23 @@ attachReferencePack('catanzaro', '2026-09-12_campionato-u19-vs-catanzaro', [
     score: '1–3',
     videoFile: 'https://vimeo.com/1218078567/7be6470e66',
   },
-]);
+  ],
+  [
+    {
+      id: 'catanzaro-studio-report',
+      title: {
+        en: 'Studio Catanzaro',
+        it: 'Studio Catanzaro',
+      },
+      description: {
+        en: 'Opposition studio report (Avversari → Studio Report).',
+        it: 'Studio report avversario (Avversari → Studio Report).',
+      },
+      videoFile: 'https://vimeo.com/1225651608/524a5457e3',
+      tags: ['vimeo', 'opposition', 'studio-report'],
+    },
+  ]
+);
 
 {
   const catanzaro = OPPONENTS.find((o) => o.id === 'catanzaro');
