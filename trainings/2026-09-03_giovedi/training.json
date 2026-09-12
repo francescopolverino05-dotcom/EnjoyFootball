@@ -63,7 +63,25 @@
   },
   "clips": [],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-09-03",
+      "title": {
+        "en": "Session plan — Thu 3 Sep",
+        "it": "Piano seduta — Gio 3 set"
+      },
+      "description": {
+        "en": "Thursday session plan (3 Sep 2026).",
+        "it": "Piano seduta di giovedì (3 set 2026)."
+      },
+      "videoFile": "Session_Plan_2026-09-03.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": [

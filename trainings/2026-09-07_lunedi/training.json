@@ -63,7 +63,25 @@
   },
   "clips": [],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-09-07",
+      "title": {
+        "en": "Session plan — Mon 7 Sep",
+        "it": "Piano seduta — Lun 7 set"
+      },
+      "description": {
+        "en": "Monday session plan (7 Sep 2026).",
+        "it": "Piano seduta di lunedì (7 set 2026)."
+      },
+      "videoFile": "Session_Plan_2026-09-07.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": []
