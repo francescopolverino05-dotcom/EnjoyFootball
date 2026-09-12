@@ -80,7 +80,25 @@
   },
   "clips": [],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-09-01",
+      "title": {
+        "en": "Session plan — Tue 1 Sep",
+        "it": "Piano seduta — Mar 1 set"
+      },
+      "description": {
+        "en": "Tuesday session plan (1 Sep 2026).",
+        "it": "Piano seduta di martedì (1 set 2026)."
+      },
+      "videoFile": "Session_Plan_2026-09-01.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": [

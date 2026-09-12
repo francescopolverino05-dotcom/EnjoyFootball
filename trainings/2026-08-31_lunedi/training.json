@@ -46,7 +46,25 @@
   },
   "clips": [],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-31",
+      "title": {
+        "en": "Session plan — Mon 31 Aug",
+        "it": "Piano seduta — Lun 31 ago"
+      },
+      "description": {
+        "en": "Monday session plan (31 Aug 2026).",
+        "it": "Piano seduta di lunedì (31 ago 2026)."
+      },
+      "videoFile": "Session_Plan_2026-08-31.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": []
