@@ -1,0 +1,77 @@
+{
+  "id": "2026-09-11_venerdi",
+  "slug": "2026-09-11_venerdi",
+  "date": "2026-09-11",
+  "title": {
+    "en": "Friday training — Cercola",
+    "it": "Venerdì — Cercola"
+  },
+  "focus": {
+    "en": "Tactical possession, out-of-possession phase, set pieces",
+    "it": "Possesso tattico, fase di non possesso, palle inattive"
+  },
+  "sessionType": "activation",
+  "startTime": "15:00",
+  "endTime": "16:30",
+  "location": {
+    "en": "Campo Cercola",
+    "it": "Campo Cercola"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Session plan from staff sheet (11 Sep 2026, 15:00 Cercola). Formation note 1-3-4-2-1.",
+    "it": "Piano seduta da foglio staff (11 set 2026, 15:00 Cercola). Modulo 1-3-4-2-1."
+  },
+  "video": {
+    "fullSession": null,
+    "parts": []
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-09-11",
+      "title": {
+        "en": "Session plan — Fri 11 Sep",
+        "it": "Piano seduta — Ven 11 set"
+      },
+      "description": {
+        "en": "Friday session plan at Cercola (11 Sep 2026, 15:00).",
+        "it": "Piano seduta di venerdì a Cercola (11 set 2026, ore 15:00)."
+      },
+      "videoFile": "Session_Plan_2026-09-11.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    },
+    {
+      "id": "session-boards-2026-09-11",
+      "title": {
+        "en": "Tactical boards — Fri 11 Sep",
+        "it": "Lavagne tattiche — Ven 11 set"
+      },
+      "description": {
+        "en": "Hand-annotated pitch boards for the Friday session.",
+        "it": "Lavagne campo annotate a mano per la seduta del venerdì."
+      },
+      "videoFile": "Session_Boards_2026-09-11.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "tactical"
+      ]
+    }
+  ],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {}
+}
