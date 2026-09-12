@@ -3,16 +3,16 @@
   "slug": "2026-09-02_mercoledi",
   "date": "2026-09-02",
   "title": {
-    "en": "Wednesday training",
-    "it": "Mercoledì"
+    "en": "Wednesday training — Cercola",
+    "it": "Mercoledì — Cercola"
   },
   "focus": {
-    "en": "Training",
-    "it": "Allenamento"
+    "en": "Tactical possession (re-aggression), out-of-possession, small-sided game",
+    "it": "Possesso tattico (riaggressione), fase di non possesso, partita campo ridotto"
   },
   "sessionType": "activation",
-  "startTime": "09:00",
-  "endTime": "11:00",
+  "startTime": "15:00",
+  "endTime": "16:30",
   "status": "published",
   "notes": {
     "en": "GK All. N°32 attached (Upper body, Footwork, Goal defence).",
@@ -80,7 +80,43 @@
   },
   "clips": [],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-09-02",
+      "title": {
+        "en": "Session plan — Wed 2 Sep",
+        "it": "Piano seduta — Mer 2 set"
+      },
+      "description": {
+        "en": "Wednesday session plan at Cercola (2 Sep 2026, 15:00).",
+        "it": "Piano seduta di mercoledì a Cercola (2 set 2026, ore 15:00)."
+      },
+      "videoFile": "Session_Plan_2026-09-02.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    },
+    {
+      "id": "session-boards-2026-09-02",
+      "title": {
+        "en": "Tactical boards — Wed 2 Sep",
+        "it": "Lavagne tattiche — Mer 2 set"
+      },
+      "description": {
+        "en": "TacticalPad boards: build-up variants and medium block vs 4-2-3-1 / 4-3-1-2.",
+        "it": "Lavagne TacticalPad: varianti di costruzione e blocco medio vs 4-2-3-1 / 4-3-1-2."
+      },
+      "videoFile": "Session_Boards_2026-09-02.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "tactical"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": [
@@ -132,5 +168,9 @@
     "folderUrl": "https://vimeo.com/user/170593333/folder/30308137",
     "gkFolderId": "30308138",
     "lastSyncedAt": "2026-09-04T11:23:11.441Z"
+  },
+  "location": {
+    "en": "Campo Cercola",
+    "it": "Campo Cercola"
   }
 }
