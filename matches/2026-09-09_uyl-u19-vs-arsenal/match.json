@@ -40,9 +40,366 @@
     "home": 1,
     "away": 2
   },
-  "goals": [],
-  "timeline": [],
-  "formations": [],
+  "goals": [
+    {
+      "minute": 28,
+      "scorer": "Harriman-Annous",
+      "assist": null,
+      "teamId": "arsenal"
+    },
+    {
+      "minute": 58,
+      "scorer": "Pereyra",
+      "assist": null,
+      "teamId": "u19"
+    },
+    {
+      "minute": 94,
+      "scorer": "Muñoz",
+      "assist": "Tyjon",
+      "teamId": "arsenal"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 2
+    },
+    {
+      "minute": 16,
+      "label": {
+        "en": "Chiummariello 🟨",
+        "it": "Chiummariello 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 17
+    },
+    {
+      "minute": 28,
+      "label": {
+        "en": "Harriman-Annous 0-1",
+        "it": "Harriman-Annous 0-1"
+      },
+      "type": "goal",
+      "teamId": "arsenal",
+      "positionPercent": 29
+    },
+    {
+      "minute": 46,
+      "label": {
+        "en": "Esposito on (Mane)",
+        "it": "Entra Esposito (Mane)"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 48
+    },
+    {
+      "minute": 46,
+      "label": {
+        "en": "Arsenal: Tyjon & Sampang on",
+        "it": "Arsenal: entrano Tyjon e Sampang"
+      },
+      "type": "substitution",
+      "teamId": "arsenal",
+      "positionPercent": 48
+    },
+    {
+      "minute": 53,
+      "label": {
+        "en": "De Stefano 🟨",
+        "it": "De Stefano 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 55
+    },
+    {
+      "minute": 55,
+      "label": {
+        "en": "Riccio on (Baridó)",
+        "it": "Entra Riccio (Baridó)"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 57
+    },
+    {
+      "minute": 58,
+      "label": {
+        "en": "Pereyra 1-1",
+        "it": "Pereyra 1-1"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 60
+    },
+    {
+      "minute": 63,
+      "label": {
+        "en": "Riccio 🟨",
+        "it": "Riccio 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 66
+    },
+    {
+      "minute": 67,
+      "label": {
+        "en": "Murisa on (Ibrahim)",
+        "it": "Entra Murisa (Ibrahim)"
+      },
+      "type": "substitution",
+      "teamId": "arsenal",
+      "positionPercent": 70
+    },
+    {
+      "minute": 77,
+      "label": {
+        "en": "Muñoz & Mbala on",
+        "it": "Entrano Muñoz e Mbala"
+      },
+      "type": "substitution",
+      "teamId": "arsenal",
+      "positionPercent": 80
+    },
+    {
+      "minute": 80,
+      "label": {
+        "en": "Favicchio on (De Stefano)",
+        "it": "Entra Favicchio (De Stefano)"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 83
+    },
+    {
+      "minute": 83,
+      "label": {
+        "en": "Rovetini & Chiaiese on",
+        "it": "Entrano Rovetini e Chiaiese"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 86
+    },
+    {
+      "minute": 88,
+      "label": {
+        "en": "Ogunnaike 🟨",
+        "it": "Ogunnaike 🟨"
+      },
+      "type": "other",
+      "teamId": "arsenal",
+      "positionPercent": 92
+    },
+    {
+      "minute": 92,
+      "label": {
+        "en": "Esposito 🟨",
+        "it": "Esposito 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 96
+    },
+    {
+      "minute": 94,
+      "label": {
+        "en": "Muñoz 1-2",
+        "it": "Muñoz 1-2"
+      },
+      "type": "goal",
+      "teamId": "arsenal",
+      "positionPercent": 98
+    }
+  ],
+  "formations": [
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "system": "3-4-1-2",
+      "players": [
+        {
+          "number": 1,
+          "name": "Pugliese",
+          "teamId": "u19",
+          "bottom": "8%",
+          "left": "50%",
+          "isGk": true
+        },
+        {
+          "number": 5,
+          "name": "Branchizio",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "22%"
+        },
+        {
+          "number": 6,
+          "name": "Lieto",
+          "teamId": "u19",
+          "bottom": "20%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Zappalà",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "78%"
+        },
+        {
+          "number": 7,
+          "name": "Melnyk",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "12%"
+        },
+        {
+          "number": 4,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "38%"
+        },
+        {
+          "number": 8,
+          "name": "Chiummariello",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "62%"
+        },
+        {
+          "number": 3,
+          "name": "Liccardo",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "88%"
+        },
+        {
+          "number": 10,
+          "name": "Baridó",
+          "teamId": "u19",
+          "bottom": "58%",
+          "left": "50%"
+        },
+        {
+          "number": 9,
+          "name": "Pereyra",
+          "teamId": "u19",
+          "bottom": "78%",
+          "left": "35%"
+        },
+        {
+          "number": 11,
+          "name": "Mané",
+          "teamId": "u19",
+          "bottom": "78%",
+          "left": "65%"
+        }
+      ]
+    },
+    {
+      "teamId": "arsenal",
+      "label": {
+        "en": "Arsenal",
+        "it": "Arsenal"
+      },
+      "system": "4-4-2",
+      "players": [
+        {
+          "number": 55,
+          "name": "Porter",
+          "teamId": "arsenal",
+          "top": "8%",
+          "left": "50%",
+          "isGk": true
+        },
+        {
+          "number": 52,
+          "name": "Ogunnaike",
+          "teamId": "arsenal",
+          "top": "22%",
+          "left": "18%"
+        },
+        {
+          "number": 38,
+          "name": "Clarke",
+          "teamId": "arsenal",
+          "top": "20%",
+          "left": "38%"
+        },
+        {
+          "number": 57,
+          "name": "Upson",
+          "teamId": "arsenal",
+          "top": "20%",
+          "left": "62%"
+        },
+        {
+          "number": 73,
+          "name": "Hamill",
+          "teamId": "arsenal",
+          "top": "22%",
+          "left": "82%"
+        },
+        {
+          "number": 45,
+          "name": "Julienne",
+          "teamId": "arsenal",
+          "top": "42%",
+          "left": "15%"
+        },
+        {
+          "number": 44,
+          "name": "Ibrahim",
+          "teamId": "arsenal",
+          "top": "40%",
+          "left": "38%"
+        },
+        {
+          "number": 74,
+          "name": "Hashi",
+          "teamId": "arsenal",
+          "top": "40%",
+          "left": "62%"
+        },
+        {
+          "number": 80,
+          "name": "Donczew",
+          "teamId": "arsenal",
+          "top": "42%",
+          "left": "85%"
+        },
+        {
+          "number": 90,
+          "name": "Nwaneri",
+          "teamId": "arsenal",
+          "top": "68%",
+          "left": "35%"
+        },
+        {
+          "number": 43,
+          "name": "Harriman-Annous",
+          "teamId": "arsenal",
+          "top": "68%",
+          "left": "65%"
+        }
+      ]
+    }
+  ],
   "dynamics": [
     {
       "name": {
