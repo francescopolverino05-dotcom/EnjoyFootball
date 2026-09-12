@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-09-07",
+  "updatedAt": "2026-09-12",
   "scope": {
     "en": "Club rankings from logged match sheets within each competition. Napoli is highlighted. Values are averages from games with stats so far.",
     "it": "Classifiche di club dai fogli partita per competizione. Napoli è evidenziato. Valori = medie delle gare con stats finora."
@@ -36,6 +36,54 @@
               "value": 1,
               "played": 1,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 3,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 0,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 2,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 0,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 2,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 3,
+              "played": 1,
+              "competitionId": "primavera2"
             }
           ]
         },
@@ -60,6 +108,54 @@
               "team": "Napoli",
               "isUs": true,
               "value": 1.05,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 2.34,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 0.72,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 1.86,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 0.58,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 1.92,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 2.15,
               "played": 1,
               "competitionId": "primavera2"
             }
@@ -88,6 +184,54 @@
               "value": 9,
               "played": 1,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 15,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 7,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 12,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 6,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 13,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 14,
+              "played": 1,
+              "competitionId": "primavera2"
             }
           ]
         },
@@ -112,6 +256,54 @@
               "team": "Napoli",
               "isUs": true,
               "value": 4,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 8,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 2,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 6,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 2,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 6,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 7,
               "played": 1,
               "competitionId": "primavera2"
             }
@@ -140,6 +332,54 @@
               "value": 15,
               "played": 1,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 11,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 14,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 10,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 12,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 12,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 14,
+              "played": 1,
+              "competitionId": "primavera2"
             }
           ]
         },
@@ -166,6 +406,54 @@
               "value": 10.45,
               "played": 1,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 8.2,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 12.1,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 7.95,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 13.2,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 9.1,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 8.85,
+              "played": 1,
+              "competitionId": "primavera2"
             }
           ]
         },
@@ -190,6 +478,54 @@
               "team": "Napoli",
               "isUs": true,
               "value": 14.12,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 15.12,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 13.85,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 15.45,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 13.5,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 14.65,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 14.25,
               "played": 1,
               "competitionId": "primavera2"
             }
@@ -227,6 +563,54 @@
               "value": 65.38,
               "played": 1,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 75.0,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 62.5,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 75.76,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 61.9,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 73.33,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 71.43,
+              "played": 1,
+              "competitionId": "primavera2"
             }
           ],
           "unit": "%"
@@ -252,6 +636,54 @@
               "team": "Napoli",
               "isUs": true,
               "value": 38,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 52,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 34,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 56,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 30,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 48,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 44,
               "played": 1,
               "competitionId": "primavera2"
             }
@@ -280,6 +712,54 @@
               "value": 60.53,
               "played": 1,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 73.08,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 58.82,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 75.0,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 56.67,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 68.75,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 68.18,
+              "played": 1,
+              "competitionId": "primavera2"
             }
           ],
           "unit": "%"
@@ -304,6 +784,54 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
+              "value": 33.33,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 38.89,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 38.89,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 35.71,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 35.71,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 33.33,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
               "value": 33.33,
               "played": 1,
               "competitionId": "primavera2"
@@ -334,6 +862,54 @@
               "value": 4,
               "played": 1,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 8,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 3,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 6,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 2,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 6,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 5,
+              "played": 1,
+              "competitionId": "primavera2"
             }
           ]
         },
@@ -358,6 +934,54 @@
               "team": "Napoli",
               "isUs": true,
               "value": 25,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 37.5,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 0.0,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 33.33,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 0.0,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 33.33,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 40.0,
               "played": 1,
               "competitionId": "primavera2"
             }
@@ -396,6 +1020,54 @@
               "value": 42,
               "played": 1,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 38,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 44,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 32,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 39,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 34,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 38,
+              "played": 1,
+              "competitionId": "primavera2"
             }
           ]
         },
@@ -420,6 +1092,54 @@
               "team": "Napoli",
               "isUs": true,
               "value": 28,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 22,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 32,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 18,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 30,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 20,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 24,
               "played": 1,
               "competitionId": "primavera2"
             }
@@ -448,6 +1168,54 @@
               "value": 54.84,
               "played": 1,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 65.63,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 51.52,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 62.5,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 51.72,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 55.0,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 54.69,
+              "played": 1,
+              "competitionId": "primavera2"
             }
           ],
           "unit": "%"
@@ -473,6 +1241,54 @@
               "team": "Napoli",
               "isUs": true,
               "value": 69,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 78,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 64,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 72,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 60,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 76,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 79,
               "played": 1,
               "competitionId": "primavera2"
             }
@@ -510,6 +1326,54 @@
               "value": 47.6,
               "played": 1,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 54.2,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 45.8,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 56.8,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 43.2,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 51.0,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 49.0,
+              "played": 1,
+              "competitionId": "primavera2"
             }
           ],
           "unit": "%"
@@ -537,6 +1401,54 @@
               "value": 81.82,
               "played": 1,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 85.84,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 80.85,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 85.9,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 80.34,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 83.64,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 83.01,
+              "played": 1,
+              "competitionId": "primavera2"
             }
           ],
           "unit": "%"
@@ -562,6 +1474,54 @@
               "team": "Napoli",
               "isUs": true,
               "value": 114,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "benevento",
+              "team": "Benevento",
+              "isUs": false,
+              "value": 98,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "frosinone",
+              "team": "Frosinone",
+              "isUs": false,
+              "value": 118,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "catanzaro",
+              "team": "Catanzaro",
+              "isUs": false,
+              "value": 92,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "latina",
+              "team": "Latina",
+              "isUs": false,
+              "value": 112,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "pisa",
+              "team": "Pisa",
+              "isUs": false,
+              "value": 106,
+              "played": 1,
+              "competitionId": "primavera2"
+            },
+            {
+              "teamId": "perugia",
+              "team": "Perugia",
+              "isUs": false,
+              "value": 102,
               "played": 1,
               "competitionId": "primavera2"
             }
