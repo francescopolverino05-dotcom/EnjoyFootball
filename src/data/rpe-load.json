@@ -1,5 +1,5 @@
 {
-  "source": "RPE 2.xlsx sheet CR-10 (Napoli Primavera ~28 Jul–7 Aug 2026); 2026-08-08 Portici matchday from RPE sheet photo (col 08); 2026-08-10 Monday training from RPE sheet photo (col 10, black ink); 2026-08-11 Tuesday metabolic from RPE sheet photo (black ink); 2026-08-12 Wednesday activation from RPE sheet photo (col 12, black ink); 2026-08-13 Thursday training from RPE sheet photo (col 13, black ink); 2026-08-14 Blu vs Verde friendly from RPE sheet photo (col 14); 2026-08-17 Monday strength from RPE sheet photo (col 17, black ink); 2026-08-18 Tuesday strength from RPE sheet photo (col 18, black ink); 2026-08-24 Monday activation from RPE sheet photo (col 24, black ink); 2026-08-25 Tuesday metabolic from RPE sheet photo (col 25, black ink); 2026-08-26 Wednesday training from RPE sheet photo (col 26, black ink; Prisco/Zappalà corrected from later sheet photo); 2026-08-27 Thursday training from RPE sheet photo (cols 26–27, black ink); 2026-08-26 Prisco/Zappalà corrected from same sheet; 2026-08-31→2026-09-05 RPE from sheet photos (31 / 1–5 sett PARTITA Avellino)",
+  "source": "RPE 2.xlsx sheet CR-10 (Napoli Primavera ~28 Jul–7 Aug 2026); 2026-08-08 Portici matchday from RPE sheet photo (col 08); 2026-08-10 Monday training from RPE sheet photo (col 10, black ink); 2026-08-11 Tuesday metabolic from RPE sheet photo (black ink); 2026-08-12 Wednesday activation from RPE sheet photo (col 12, black ink); 2026-08-13 Thursday training from RPE sheet photo (col 13, black ink); 2026-08-14 Blu vs Verde friendly from RPE sheet photo (col 14); 2026-08-17 Monday strength from RPE sheet photo (col 17, black ink); 2026-08-18 Tuesday strength from RPE sheet photo (col 18, black ink); 2026-08-24 Monday activation from RPE sheet photo (col 24, black ink); 2026-08-25 Tuesday metabolic from RPE sheet photo (col 25, black ink); 2026-08-26 Wednesday training from RPE sheet photo (col 26, black ink; Prisco/Zappalà corrected from later sheet photo); 2026-08-27 Thursday training from RPE sheet photo (cols 26–27, black ink); 2026-08-26 Prisco/Zappalà corrected from same sheet; 2026-08-31→2026-09-05 RPE from sheet photos (31 / 1–5 sett PARTITA Avellino); 2026-09-11 RPE from sheet photo (players who trained; date from staff brief, no header on sheet)",
   "scaleNote": {
     "en": "Values look Borg-like (approx. 6–20) despite the CR-10 sheet title. Shown as RPE and session load (min × RPE).",
     "it": "I valori sembrano in scala Borg (circa 6–20) nonostante il titolo foglio CR-10. Mostrati come RPE e carico di seduta (min × RPE)."
@@ -4278,6 +4278,68 @@
           "sessionLoad": 165
         }
       ]
+    },
+    {
+      "date": "2026-09-11",
+      "kind": "training",
+      "trainingSlug": null,
+      "matchSlug": null,
+      "playersPresent": 7,
+      "playersAnswered": 7,
+      "avgMin": null,
+      "avgRpe": 13.86,
+      "avgSessionLoad": null,
+      "players": [
+        {
+          "playerSlug": "favicchio-elia",
+          "excelName": "Favicchio Elia",
+          "min": null,
+          "rpe": 15,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "santella-alessandro",
+          "excelName": "Santella Alessandro",
+          "min": null,
+          "rpe": 15,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "candela-ivan-giovanni",
+          "excelName": "Candela Ivan Giovanni",
+          "min": null,
+          "rpe": 14,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "esposito-luigi",
+          "excelName": "Esposito Luigi",
+          "min": null,
+          "rpe": 14,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "chiaiese-riccardo",
+          "excelName": "Chiaiese",
+          "min": null,
+          "rpe": 13,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "lepre-giuseppe",
+          "excelName": "Lepre Giuseppe",
+          "min": null,
+          "rpe": 13,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "rovetini-alessandro",
+          "excelName": "Ruvetini Alessandro",
+          "min": null,
+          "rpe": 13,
+          "sessionLoad": null
+        }
+      ]
     }
   ],
   "unmatchedNames": [
@@ -4285,6 +4347,8 @@
     "Garofalo Cristian",
     "Liccardo",
     "Napolitano",
-    "Pignarosa"
+    "Pignarosa",
+    "D'Angelo",
+    "Pica"
   ]
 }

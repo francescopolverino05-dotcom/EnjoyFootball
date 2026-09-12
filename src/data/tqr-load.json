@@ -1,5 +1,5 @@
 {
-  "source": "-TQR SSC NAPOLI.xlsx sheets TQR 1 + TQR (2) (Napoli Primavera ~28 Jul–7 Aug 2026); 2026-08-08 Portici matchday from TQR sheet photo (col 08); 2026-08-10 Monday training from TQR sheet photo (col 10, black ink); 2026-08-11 Tuesday training from TQR sheet photo (col 11, black ink); 2026-08-12 Wednesday training from TQR sheet photo (circled today / col 12, black ink); 2026-08-13 Thursday training from TQR sheet photo (circled col 13, black ink); 2026-08-14 Blu vs Verde friendly from TQR sheet photo (circled col 14, blue ink); 2026-08-17 Monday training from TQR sheet photo (16 Aug sheet, black ink); 2026-08-18 Tuesday strength from TQR sheet photo (black ink); 2026-08-23 and 2026-08-27 TQR from sheet photos (black ink); 2026-08-29→2026-09-06 TQR from sheet photos (incl. post-match 6 sett)",
+  "source": "-TQR SSC NAPOLI.xlsx sheets TQR 1 + TQR (2) (Napoli Primavera ~28 Jul–7 Aug 2026); 2026-08-08 Portici matchday from TQR sheet photo (col 08); 2026-08-10 Monday training from TQR sheet photo (col 10, black ink); 2026-08-11 Tuesday training from TQR sheet photo (col 11, black ink); 2026-08-12 Wednesday training from TQR sheet photo (circled today / col 12, black ink); 2026-08-13 Thursday training from TQR sheet photo (circled col 13, black ink); 2026-08-14 Blu vs Verde friendly from TQR sheet photo (circled col 14, blue ink); 2026-08-17 Monday training from TQR sheet photo (16 Aug sheet, black ink); 2026-08-18 Tuesday strength from TQR sheet photo (black ink); 2026-08-23 and 2026-08-27 TQR from sheet photos (black ink); 2026-08-29→2026-09-06 TQR from sheet photos (incl. post-match 6 sett); 2026-08-28 TQR partial from sheet photo (upper rows only); 2026-09-10 TQR from 10 SETT sheet photo",
   "scaleNote": {
     "en": "TQR (Total Quality Recovery) values copied from the Excel as reported (typically ~6–20; higher = better perceived recovery).",
     "it": "Valori TQR (Total Quality Recovery) copiati dall’Excel così come riportati (tipicamente ~6–20; più alto = migliore recupero percepito)."
@@ -2548,6 +2548,52 @@
       ]
     },
     {
+      "date": "2026-08-28",
+      "kind": "training",
+      "trainingSlug": "2026-08-28_venerdi",
+      "matchSlug": null,
+      "playersPresent": 7,
+      "playersAnswered": 7,
+      "avgTqr": 14.57,
+      "players": [
+        {
+          "playerSlug": "anic-ivan",
+          "excelName": "Anic Ivan",
+          "tqr": 17
+        },
+        {
+          "playerSlug": "chiummariello-andrea",
+          "excelName": "Chiummariello Andrea",
+          "tqr": 17
+        },
+        {
+          "playerSlug": "branchizio-agostino",
+          "excelName": "Branchizio Agostino",
+          "tqr": 15
+        },
+        {
+          "playerSlug": "de-stefano-francesco",
+          "excelName": "De Stefano Francesco",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "esposito-luigi",
+          "excelName": "Esposito Luigi",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "barido-francisco-martin",
+          "excelName": "Baridó Francisco Martin",
+          "tqr": 13
+        },
+        {
+          "playerSlug": "santella-alessandro",
+          "excelName": "Santella Alessandro",
+          "tqr": 12
+        }
+      ]
+    },
+    {
       "date": "2026-08-29",
       "kind": "match",
       "trainingSlug": null,
@@ -3178,6 +3224,62 @@
           "tqr": 8
         }
       ]
+    },
+    {
+      "date": "2026-09-10",
+      "kind": "training",
+      "trainingSlug": null,
+      "matchSlug": null,
+      "playersPresent": 9,
+      "playersAnswered": 9,
+      "avgTqr": 12.67,
+      "players": [
+        {
+          "playerSlug": "pereyra-alvarez-milton-agustin",
+          "excelName": "Pereyra Alvarez Milton Agustin",
+          "tqr": 15
+        },
+        {
+          "playerSlug": "barido-francisco-martin",
+          "excelName": "Baridó Francisco Martin",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "chiummariello-andrea",
+          "excelName": "Chiummariello Andrea",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "mane-mohamed-seick",
+          "excelName": "Mane Mohamed Seick",
+          "tqr": 14
+        },
+        {
+          "playerSlug": "lieto-claudio",
+          "excelName": "Lieto Claudio",
+          "tqr": 13
+        },
+        {
+          "playerSlug": "branchizio-agostino",
+          "excelName": "Branchizio Agostino",
+          "tqr": 12
+        },
+        {
+          "playerSlug": "de-stefano-francesco",
+          "excelName": "De Stefano Francesco",
+          "tqr": 11
+        },
+        {
+          "playerSlug": "melnyk-mykyta",
+          "excelName": "Melnyk Mykyta",
+          "tqr": 11
+        },
+        {
+          "playerSlug": "zappala-andrea",
+          "excelName": "Zappalà Andrea",
+          "tqr": 10
+        }
+      ]
     }
   ],
   "unmatchedNames": [
@@ -3188,7 +3290,9 @@
     "Garofalo Cristian",
     "Liccardo",
     "Napolitano",
-    "Pignarosa"
+    "Pignarosa",
+    "D'Angelo",
+    "Pica"
   ],
   "unmatchedDates": []
 }
