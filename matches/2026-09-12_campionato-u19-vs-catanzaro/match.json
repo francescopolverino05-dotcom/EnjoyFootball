@@ -36,7 +36,10 @@
     "colorClass": "opponent",
     "logo": "logos/catanzaro.png"
   },
-  "score": null,
+  "score": {
+    "home": 2,
+    "away": 3
+  },
   "goals": [],
   "timeline": [],
   "formations": [],
@@ -44,5 +47,17 @@
   "teamStats": [],
   "goalkeepers": [],
   "clips": [],
-  "analysisVideos": []
+  "analysisVideos": [],
+  "vimeo": {
+    "folderId": "30520604",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30520604",
+    "lastSyncedAt": "2026-09-12T19:54:30.496Z"
+  },
+  "video": {
+    "fullMatch": "https://vimeo.com/1226236034/a5b5a0d3b9",
+    "notes": {
+      "en": "Full match from Vimeo (Napoli 2–3 Catanzaro).",
+      "it": "Partita intera da Vimeo (Napoli 2–3 Catanzaro)."
+    }
+  }
 }
