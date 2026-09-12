@@ -43,8 +43,484 @@
   "goals": [],
   "timeline": [],
   "formations": [],
-  "dynamics": [],
-  "teamStats": [],
+  "dynamics": [
+    {
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
+      "homeValue": 53.5,
+      "awayValue": 46.5,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Pass Accuracy %",
+        "it": "Precisione Passaggi %"
+      },
+      "homeValue": 83.26,
+      "awayValue": 81.25,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Duels Won %",
+        "it": "Duelli Vinti %"
+      },
+      "homeValue": 52.63,
+      "awayValue": 47.37,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Shot Accuracy %",
+        "it": "Precisione Tiri %"
+      },
+      "homeValue": 37.5,
+      "awayValue": 50.0,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Progressive Pass Accuracy %",
+        "it": "Precisione Passaggi Progressivi %"
+      },
+      "homeValue": 68.97,
+      "awayValue": 66.67,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Final-Third Pass Accuracy %",
+        "it": "Precisione Passaggi Ultimo Terzo %"
+      },
+      "homeValue": 66.67,
+      "awayValue": 63.16,
+      "unit": "%"
+    }
+  ],
+  "teamStats": [
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Formation",
+        "it": "Modulo"
+      },
+      "home": "3-4-1-2 (65.0%)",
+      "away": "4-4-2 (80.0%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Goals / xG",
+        "it": "Gol / xG"
+      },
+      "home": "1 (2.48 xG)",
+      "away": "2 (1.88 xG)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso %"
+      },
+      "home": "53.5%",
+      "away": "46.5%"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots (On Target / Accuracy %)",
+        "it": "Tiri (In Porta / Precisione %)"
+      },
+      "home": "16 (6 / 37.50%)",
+      "away": "10 (5 / 50.00%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Attempts off Target",
+        "it": "Tiri fuori"
+      },
+      "home": "7",
+      "away": "3"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Blocked Attempts",
+        "it": "Tiri bloccati"
+      },
+      "home": "3",
+      "away": "2"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Corners (With Shot / %)",
+        "it": "Calci d'angolo (Con Tiro / %)"
+      },
+      "home": "7 (3 / 42.86%)",
+      "away": "4 (1 / 25%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Fouls / Yellow Cards / Red Cards",
+        "it": "Falli / Cartellini Gialli / Rossi"
+      },
+      "home": "14 / 3 / 0",
+      "away": "13 / 2 / 0"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Game Pace",
+        "it": "Ritmo di gioco"
+      },
+      "home": "14.60",
+      "away": "14.20"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "PPDA",
+        "it": "PPDA"
+      },
+      "home": "8.85",
+      "away": "10.25"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Interceptions / Clearances",
+        "it": "Intercetti / Spazzate"
+      },
+      "home": "38 / 24",
+      "away": "42 / 26"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Sliding Tackles (Successful / %)",
+        "it": "Tackle scivolati (Riusciti / %)"
+      },
+      "home": "4 (3 / 75%)",
+      "away": "3 (2 / 66.67%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Duels Total (Won / Win %)",
+        "it": "Duelli Totali (Vinti / %)"
+      },
+      "home": "152 (80 / 52.63%)",
+      "away": "152 (72 / 47.37%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Defensive Duels (Won / Win %)",
+        "it": "Duelli Difensivi (Vinti / %)"
+      },
+      "home": "64 (39 / 60.94%)",
+      "away": "64 (36 / 56.25%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Offensive Duels (Won / Win %)",
+        "it": "Duelli Offensivi (Vinti / %)"
+      },
+      "home": "64 (28 / 43.75%)",
+      "away": "64 (25 / 39.06%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Aerial Duels (Won / Win %)",
+        "it": "Duelli Aerei (Vinti / %)"
+      },
+      "home": "24 (13 / 54.17%)",
+      "away": "24 (11 / 45.83%)"
+    },
+    {
+      "category": {
+        "en": "Transitions",
+        "it": "Transizioni"
+      },
+      "name": {
+        "en": "Ball Recoveries (Low/Med/High)",
+        "it": "Recuperi (Basso/Medio/Alto)"
+      },
+      "home": "74 (33 / 29 / 12)",
+      "away": "68 (32 / 26 / 10)"
+    },
+    {
+      "category": {
+        "en": "Transitions",
+        "it": "Transizioni"
+      },
+      "name": {
+        "en": "Ball Losses (Low/Med/High)",
+        "it": "Perdite (Basso/Medio/Alto)"
+      },
+      "home": "108 (18 / 44 / 46)",
+      "away": "112 (22 / 48 / 42)"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Positional Attacks (Shots / %)",
+        "it": "Attacchi di posizione (Tiri / %)"
+      },
+      "home": "30 (9 / 30.0%)",
+      "away": "22 (4 / 18.18%)"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Counterattacks (Shots / %)",
+        "it": "Contropiedi (Tiri / %)"
+      },
+      "home": "4 (2 / 50.0%)",
+      "away": "3 (2 / 66.67%)"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Avg Shot Distance (m)",
+        "it": "Distanza media di tiro (m)"
+      },
+      "home": "17.2",
+      "away": "18.0"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes (Accurate / Accuracy %)",
+        "it": "Passaggi (Precisi / Precisione %)"
+      },
+      "home": "442 (368 / 83.26%)",
+      "away": "384 (312 / 81.25%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Progressive Passes (Accurate / %)",
+        "it": "Passaggi Progressivi (Precisi / %)"
+      },
+      "home": "58 (40 / 68.97%)",
+      "away": "48 (32 / 66.67%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes into Final 3rd (Accurate / %)",
+        "it": "Passaggi Ultimo Terzo (Precisi / %)"
+      },
+      "home": "48 (32 / 66.67%)",
+      "away": "38 (24 / 63.16%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Crosses (Accurate / %)",
+        "it": "Cross (Precisi / %)"
+      },
+      "home": "16 (6 / 37.5%)",
+      "away": "12 (4 / 33.33%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Forward Passes (Accurate / %)",
+        "it": "Passaggi in avanti (Precisi / %)"
+      },
+      "home": "146 (112 / 76.71%)",
+      "away": "132 (98 / 74.24%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Back Passes (Accurate / %)",
+        "it": "Retropassaggi (Precisi / %)"
+      },
+      "home": "58 (56 / 96.55%)",
+      "away": "60 (56 / 93.33%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Lateral Passes (Accurate / %)",
+        "it": "Passaggi laterali (Precisi / %)"
+      },
+      "home": "180 (160 / 88.89%)",
+      "away": "154 (136 / 88.31%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Long Passes (Accurate / %)",
+        "it": "Lanci lunghi (Precisi / %)"
+      },
+      "home": "42 (22 / 52.38%)",
+      "away": "36 (18 / 50%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Through Passes (Accurate / %)",
+        "it": "Passaggi smarcanti (Precisi / %)"
+      },
+      "home": "3 (1 / 33.33%)",
+      "away": "2 (1 / 50%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Throw-ins (Accurate / %)",
+        "it": "Rimesse laterali (Precise / %)"
+      },
+      "home": "20 (16 / 80%)",
+      "away": "18 (14 / 77.78%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Goal Kicks",
+        "it": "Calci di rinvio"
+      },
+      "home": "8",
+      "away": "9"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes per Possession",
+        "it": "Media passaggi per possesso"
+      },
+      "home": "3.86",
+      "away": "3.50"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Long Pass %",
+        "it": "Lanci lunghi %"
+      },
+      "home": "9.50%",
+      "away": "9.10%"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Avg Pass Length (m)",
+        "it": "Lunghezza media passaggi (m)"
+      },
+      "home": "19.3",
+      "away": "19.7"
+    }
+  ],
   "goalkeepers": [],
   "clips": [],
   "analysisVideos": [],
