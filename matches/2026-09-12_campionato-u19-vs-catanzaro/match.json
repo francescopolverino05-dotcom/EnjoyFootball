@@ -49,8 +49,8 @@
         "en": "Possession %",
         "it": "Possesso Palla %"
       },
-      "homeValue": 52.0,
-      "awayValue": 48.0,
+      "homeValue": 52,
+      "awayValue": 48,
       "unit": "%"
     },
     {
@@ -499,11 +499,28 @@
   ],
   "goalkeepers": [],
   "clips": [],
-  "analysisVideos": [],
+  "analysisVideos": [
+    {
+      "id": "vimeo-1226363195",
+      "title": {
+        "en": "Post-match report",
+        "it": "Report post-partita"
+      },
+      "description": {
+        "en": "Synced from Vimeo folder.",
+        "it": "Sincronizzato dalla cartella Vimeo."
+      },
+      "videoFile": "https://vimeo.com/1226363195/89c786ff9f",
+      "tags": [
+        "vimeo",
+        "analysis"
+      ]
+    }
+  ],
   "vimeo": {
     "folderId": "30520604",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30520604",
-    "lastSyncedAt": "2026-09-12T19:54:30.496Z"
+    "lastSyncedAt": "2026-09-13T14:20:51.652Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1226236034/a5b5a0d3b9",
