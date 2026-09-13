@@ -370,6 +370,18 @@ attachReferencePack('ascoli', '2026-09-19_campionato-ascoli-vs-u19', [
     },
     videoFile: 'https://vimeo.com/1225049015/95b818e419',
   },
+  {
+    id: 'ascoli-ref-bari',
+    title: {
+      en: 'Bari vs Ascoli',
+      it: 'Bari vs Ascoli',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 2',
+      it: 'Primavera 2 · Giornata 2',
+    },
+    videoFile: 'https://vimeo.com/1226442948/3870ec7bac',
+  },
 ]);
 
 attachReferencePack('porto', '2026-11-04_uyl-porto-vs-u19', [
