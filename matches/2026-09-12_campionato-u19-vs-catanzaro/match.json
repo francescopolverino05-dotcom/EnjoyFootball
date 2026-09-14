@@ -528,5 +528,407 @@
       "en": "Full match from Vimeo (Napoli 2–3 Catanzaro).",
       "it": "Partita intera da Vimeo (Napoli 2–3 Catanzaro)."
     }
-  }
+  },
+  "gpsStats": [
+    {
+      "half": {
+        "en": "GPS — 1st Half",
+        "it": "GPS — 1° Tempo"
+      },
+      "summary": {
+        "en": "Anic led distance (6203 m). Melnyk led sprint (254.41 m >24 km/h). De Stefano top speed (34.08 km/h). Melnyk most accelerations (29).",
+        "it": "Anic distanza (6203 m). Melnyk sprint (254.41 m >24 km/h). De Stefano velocità max (34.08 km/h). Melnyk più accelerazioni (29)."
+      },
+      "players": [
+        {
+          "player": "Anic",
+          "totalDistanceM": 6203,
+          "distancePerMin": 120,
+          "distanceOver16KmhM": 1501,
+          "distance20to24KmhM": 367.56,
+          "distanceOver24KmhM": 11.52,
+          "metabolicPowerWkg": 11.0,
+          "accelerationsOver3": 14,
+          "decelerationsUnder3": 32,
+          "maxSpeedKmh": 25.0,
+          "recoveryPct": 63.32
+        },
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 6097,
+          "distancePerMin": 113,
+          "distanceOver16KmhM": 1273,
+          "distance20to24KmhM": 388.75,
+          "distanceOver24KmhM": 254.41,
+          "metabolicPowerWkg": 10.4,
+          "accelerationsOver3": 29,
+          "decelerationsUnder3": 30,
+          "maxSpeedKmh": 31.45,
+          "recoveryPct": 67.64
+        },
+        {
+          "player": "Liccardo",
+          "totalDistanceM": 5783,
+          "distancePerMin": 111,
+          "distanceOver16KmhM": 1157,
+          "distance20to24KmhM": 292.76,
+          "distanceOver24KmhM": 203.88,
+          "metabolicPowerWkg": 9.9,
+          "accelerationsOver3": 17,
+          "decelerationsUnder3": 13,
+          "maxSpeedKmh": 32.63,
+          "recoveryPct": 69.92
+        },
+        {
+          "player": "Favicchio",
+          "totalDistanceM": 5478,
+          "distancePerMin": 105,
+          "distanceOver16KmhM": 886,
+          "distance20to24KmhM": 254.6,
+          "distanceOver24KmhM": 159.65,
+          "metabolicPowerWkg": 9.6,
+          "accelerationsOver3": 19,
+          "decelerationsUnder3": 29,
+          "maxSpeedKmh": 31.43,
+          "recoveryPct": 72.16
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 5448,
+          "distancePerMin": 106,
+          "distanceOver16KmhM": 715,
+          "distance20to24KmhM": 192.56,
+          "distanceOver24KmhM": 92.16,
+          "metabolicPowerWkg": 9.8,
+          "accelerationsOver3": 20,
+          "decelerationsUnder3": 23,
+          "maxSpeedKmh": 34.08,
+          "recoveryPct": 67.89
+        },
+        {
+          "player": "Zappalà (Natale)",
+          "totalDistanceM": 5419,
+          "distancePerMin": 106,
+          "distanceOver16KmhM": 671,
+          "distance20to24KmhM": 214.35,
+          "distanceOver24KmhM": 81.03,
+          "metabolicPowerWkg": 9.5,
+          "accelerationsOver3": 12,
+          "decelerationsUnder3": 19,
+          "maxSpeedKmh": 27.19,
+          "recoveryPct": 67.58
+        },
+        {
+          "player": "Pereyra",
+          "totalDistanceM": 5094,
+          "distancePerMin": 99,
+          "distanceOver16KmhM": 682,
+          "distance20to24KmhM": 144.98,
+          "distanceOver24KmhM": 69.35,
+          "metabolicPowerWkg": 9.0,
+          "accelerationsOver3": 21,
+          "decelerationsUnder3": 24,
+          "maxSpeedKmh": 28.93,
+          "recoveryPct": 75.28
+        },
+        {
+          "player": "Lieto",
+          "totalDistanceM": 5056,
+          "distancePerMin": 99,
+          "distanceOver16KmhM": 587,
+          "distance20to24KmhM": 196.31,
+          "distanceOver24KmhM": 80.69,
+          "metabolicPowerWkg": 8.9,
+          "accelerationsOver3": 15,
+          "decelerationsUnder3": 10,
+          "maxSpeedKmh": 27.59,
+          "recoveryPct": 71.67
+        },
+        {
+          "player": "Baridò",
+          "totalDistanceM": 4806,
+          "distancePerMin": 76,
+          "distanceOver16KmhM": 319,
+          "distance20to24KmhM": 46.09,
+          "distanceOver24KmhM": 0.0,
+          "metabolicPowerWkg": 6.6,
+          "accelerationsOver3": 11,
+          "decelerationsUnder3": 12,
+          "maxSpeedKmh": 23.52,
+          "recoveryPct": 81.37
+        },
+        {
+          "player": "Branchizio",
+          "totalDistanceM": 3105,
+          "distancePerMin": 95,
+          "distanceOver16KmhM": 359,
+          "distance20to24KmhM": 66.51,
+          "distanceOver24KmhM": 70.91,
+          "metabolicPowerWkg": 8.5,
+          "accelerationsOver3": 11,
+          "decelerationsUnder3": 9,
+          "maxSpeedKmh": 31.7,
+          "recoveryPct": 73.77
+        }
+      ]
+    },
+    {
+      "half": {
+        "en": "GPS — 2nd Half",
+        "it": "GPS — 2° Tempo"
+      },
+      "summary": {
+        "en": "Melnyk led distance (6453 m). Melnyk led sprint (199.37 m >24 km/h). De Stefano top speed (30.86 km/h). De Stefano most accelerations (32).",
+        "it": "Melnyk distanza (6453 m). Melnyk sprint (199.37 m >24 km/h). De Stefano velocità max (30.86 km/h). De Stefano più accelerazioni (32)."
+      },
+      "players": [
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 6453,
+          "distancePerMin": 112,
+          "distanceOver16KmhM": 1310,
+          "distance20to24KmhM": 373.75,
+          "distanceOver24KmhM": 199.37,
+          "metabolicPowerWkg": 10.2,
+          "accelerationsOver3": 9,
+          "decelerationsUnder3": 28,
+          "maxSpeedKmh": 29.06,
+          "recoveryPct": 67.35
+        },
+        {
+          "player": "Anic",
+          "totalDistanceM": 5650,
+          "distancePerMin": 107,
+          "distanceOver16KmhM": 905,
+          "distance20to24KmhM": 208.76,
+          "distanceOver24KmhM": 14.43,
+          "metabolicPowerWkg": 9.6,
+          "accelerationsOver3": 10,
+          "decelerationsUnder3": 24,
+          "maxSpeedKmh": 26.36,
+          "recoveryPct": 68.06
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 5437,
+          "distancePerMin": 81,
+          "distanceOver16KmhM": 633,
+          "distance20to24KmhM": 196.33,
+          "distanceOver24KmhM": 107.24,
+          "metabolicPowerWkg": 7.4,
+          "accelerationsOver3": 32,
+          "decelerationsUnder3": 18,
+          "maxSpeedKmh": 30.86,
+          "recoveryPct": 78.61
+        },
+        {
+          "player": "Pereyra",
+          "totalDistanceM": 5133,
+          "distancePerMin": 98,
+          "distanceOver16KmhM": 700,
+          "distance20to24KmhM": 122.98,
+          "distanceOver24KmhM": 69.61,
+          "metabolicPowerWkg": 9.0,
+          "accelerationsOver3": 24,
+          "decelerationsUnder3": 26,
+          "maxSpeedKmh": 28.09,
+          "recoveryPct": 75.24
+        },
+        {
+          "player": "Zappalà (Natale)",
+          "totalDistanceM": 4948,
+          "distancePerMin": 90,
+          "distanceOver16KmhM": 664,
+          "distance20to24KmhM": 232.42,
+          "distanceOver24KmhM": 107.12,
+          "metabolicPowerWkg": 8.0,
+          "accelerationsOver3": 12,
+          "decelerationsUnder3": 22,
+          "maxSpeedKmh": 30.56,
+          "recoveryPct": 77.19
+        },
+        {
+          "player": "Lieto",
+          "totalDistanceM": 3502,
+          "distancePerMin": 91,
+          "distanceOver16KmhM": 397,
+          "distance20to24KmhM": 85.46,
+          "distanceOver24KmhM": 48.48,
+          "metabolicPowerWkg": 8.1,
+          "accelerationsOver3": 7,
+          "decelerationsUnder3": 5,
+          "maxSpeedKmh": 30.78,
+          "recoveryPct": 75.21
+        },
+        {
+          "player": "Liccardo",
+          "totalDistanceM": 2552,
+          "distancePerMin": 114,
+          "distanceOver16KmhM": 562,
+          "distance20to24KmhM": 205.17,
+          "distanceOver24KmhM": 76.63,
+          "metabolicPowerWkg": 10.2,
+          "accelerationsOver3": 6,
+          "decelerationsUnder3": 6,
+          "maxSpeedKmh": 27.74,
+          "recoveryPct": 67.73
+        },
+        {
+          "player": "Favicchio",
+          "totalDistanceM": 2233,
+          "distancePerMin": 90,
+          "distanceOver16KmhM": 338,
+          "distance20to24KmhM": 70.87,
+          "distanceOver24KmhM": 45.99,
+          "metabolicPowerWkg": 8.3,
+          "accelerationsOver3": 8,
+          "decelerationsUnder3": 10,
+          "maxSpeedKmh": 27.55,
+          "recoveryPct": 77.87
+        }
+      ]
+    },
+    {
+      "half": {
+        "en": "GPS — Full Match",
+        "it": "GPS — Partita intera"
+      },
+      "summary": {
+        "en": "Melnyk (12529 m) and Anic (11854 m) led total distance. De Stefano peak speed 34.08 km/h and most accelerations (52). Melnyk led high-speed and sprint volume (2583 m >16, 453.8 m >24). Eccentric load heaviest for Melnyk (58), Anic (56), Pereyra (50) decelerations.",
+        "it": "Melnyk (12529 m) e Anic (11854 m) distanze più alte. De Stefano velocità max 34,08 km/h e più accelerazioni (52). Melnyk guida alta intensità (2583 m >16, 453,8 m >24). Carico eccentrico: Melnyk (58), Anic (56), Pereyra (50) decelerazioni."
+      },
+      "players": [
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 12529,
+          "distancePerMin": 114,
+          "distanceOver16KmhM": 2583,
+          "distance20to24KmhM": 762.5,
+          "distanceOver24KmhM": 453.8,
+          "metabolicPowerWkg": 10.4,
+          "accelerationsOver3": 38,
+          "decelerationsUnder3": 58,
+          "maxSpeedKmh": 31.45,
+          "recoveryPct": 67.1
+        },
+        {
+          "player": "Anic",
+          "totalDistanceM": 11854,
+          "distancePerMin": 104,
+          "distanceOver16KmhM": 2431,
+          "distance20to24KmhM": 589.5,
+          "distanceOver24KmhM": 32.5,
+          "metabolicPowerWkg": 9.4,
+          "accelerationsOver3": 23,
+          "decelerationsUnder3": 56,
+          "maxSpeedKmh": 27.53,
+          "recoveryPct": 67.9
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 10674,
+          "distancePerMin": 99,
+          "distanceOver16KmhM": 1348,
+          "distance20to24KmhM": 388.9,
+          "distanceOver24KmhM": 199.4,
+          "metabolicPowerWkg": 9.1,
+          "accelerationsOver3": 52,
+          "decelerationsUnder3": 41,
+          "maxSpeedKmh": 34.08,
+          "recoveryPct": 71.3
+        },
+        {
+          "player": "Zappalà (Natale)",
+          "totalDistanceM": 10367,
+          "distancePerMin": 97,
+          "distanceOver16KmhM": 1334,
+          "distance20to24KmhM": 446.8,
+          "distanceOver24KmhM": 188.2,
+          "metabolicPowerWkg": 8.7,
+          "accelerationsOver3": 24,
+          "decelerationsUnder3": 41,
+          "maxSpeedKmh": 30.56,
+          "recoveryPct": 72.6
+        },
+        {
+          "player": "Pereyra",
+          "totalDistanceM": 10146,
+          "distancePerMin": 100,
+          "distanceOver16KmhM": 1381,
+          "distance20to24KmhM": 268.0,
+          "distanceOver24KmhM": 139.0,
+          "metabolicPowerWkg": 9.1,
+          "accelerationsOver3": 45,
+          "decelerationsUnder3": 50,
+          "maxSpeedKmh": 28.93,
+          "recoveryPct": 74.8
+        },
+        {
+          "player": "Lieto",
+          "totalDistanceM": 8558,
+          "distancePerMin": 96,
+          "distanceOver16KmhM": 983,
+          "distance20to24KmhM": 281.8,
+          "distanceOver24KmhM": 129.2,
+          "metabolicPowerWkg": 8.6,
+          "accelerationsOver3": 22,
+          "decelerationsUnder3": 15,
+          "maxSpeedKmh": 30.78,
+          "recoveryPct": 73.2
+        },
+        {
+          "player": "Liccardo",
+          "totalDistanceM": 8447,
+          "distancePerMin": 97,
+          "distanceOver16KmhM": 1719,
+          "distance20to24KmhM": 497.9,
+          "distanceOver24KmhM": 280.5,
+          "metabolicPowerWkg": 8.7,
+          "accelerationsOver3": 23,
+          "decelerationsUnder3": 19,
+          "maxSpeedKmh": 32.63,
+          "recoveryPct": 73.6
+        },
+        {
+          "player": "Favicchio",
+          "totalDistanceM": 7697,
+          "distancePerMin": 101,
+          "distanceOver16KmhM": 1224,
+          "distance20to24KmhM": 325.5,
+          "distanceOver24KmhM": 205.6,
+          "metabolicPowerWkg": 9.2,
+          "accelerationsOver3": 27,
+          "decelerationsUnder3": 39,
+          "maxSpeedKmh": 31.43,
+          "recoveryPct": 73.8
+        },
+        {
+          "player": "Baridò",
+          "totalDistanceM": 4806,
+          "distancePerMin": 76,
+          "distanceOver16KmhM": 319,
+          "distance20to24KmhM": 46.1,
+          "distanceOver24KmhM": 0.0,
+          "metabolicPowerWkg": 6.6,
+          "accelerationsOver3": 11,
+          "decelerationsUnder3": 12,
+          "maxSpeedKmh": 23.52,
+          "recoveryPct": 81.4
+        },
+        {
+          "player": "Branchizio",
+          "totalDistanceM": 3105,
+          "distancePerMin": 95,
+          "distanceOver16KmhM": 359,
+          "distance20to24KmhM": 66.5,
+          "distanceOver24KmhM": 70.9,
+          "metabolicPowerWkg": 8.5,
+          "accelerationsOver3": 11,
+          "decelerationsUnder3": 9,
+          "maxSpeedKmh": 31.7,
+          "recoveryPct": 73.8
+        }
+      ]
+    }
+  ]
 }
