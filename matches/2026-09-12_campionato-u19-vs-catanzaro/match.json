@@ -42,7 +42,184 @@
   },
   "goals": [],
   "timeline": [],
-  "formations": [],
+  "formations": [
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "system": "3-4-2-1",
+      "players": [
+        {
+          "number": 1,
+          "name": "Spinelli",
+          "teamId": "u19",
+          "isGk": true,
+          "bottom": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 5,
+          "name": "Branchizio",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "22%"
+        },
+        {
+          "number": 6,
+          "name": "Lieto",
+          "teamId": "u19",
+          "bottom": "20%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Zappalà",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "78%"
+        },
+        {
+          "number": 7,
+          "name": "Melnyk",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "12%"
+        },
+        {
+          "number": 4,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "38%"
+        },
+        {
+          "number": 8,
+          "name": "Anic",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "62%"
+        },
+        {
+          "number": 3,
+          "name": "Liccardo",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "88%"
+        },
+        {
+          "number": 10,
+          "name": "Baridò",
+          "teamId": "u19",
+          "bottom": "68%",
+          "left": "28%"
+        },
+        {
+          "number": 11,
+          "name": "Favicchio",
+          "teamId": "u19",
+          "bottom": "68%",
+          "left": "72%"
+        },
+        {
+          "number": 9,
+          "name": "Pereyra",
+          "teamId": "u19",
+          "bottom": "78%",
+          "left": "50%"
+        }
+      ]
+    },
+    {
+      "teamId": "catanzaro",
+      "label": {
+        "en": "Catanzaro",
+        "it": "Catanzaro"
+      },
+      "system": "5-3-2",
+      "players": [
+        {
+          "number": 1,
+          "name": "Martena",
+          "teamId": "catanzaro",
+          "isGk": true,
+          "top": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Curatelo",
+          "teamId": "catanzaro",
+          "top": "22%",
+          "left": "10%"
+        },
+        {
+          "number": 3,
+          "name": "Cesnauskis",
+          "teamId": "catanzaro",
+          "top": "20%",
+          "left": "30%"
+        },
+        {
+          "number": 4,
+          "name": "Panuccio",
+          "teamId": "catanzaro",
+          "top": "18%",
+          "left": "50%"
+        },
+        {
+          "number": 5,
+          "name": "Distante",
+          "teamId": "catanzaro",
+          "top": "20%",
+          "left": "70%"
+        },
+        {
+          "number": 6,
+          "name": "Salvano",
+          "teamId": "catanzaro",
+          "top": "22%",
+          "left": "90%"
+        },
+        {
+          "number": 7,
+          "name": "Aloiso",
+          "teamId": "catanzaro",
+          "top": "42%",
+          "left": "28%"
+        },
+        {
+          "number": 8,
+          "name": "Molon",
+          "teamId": "catanzaro",
+          "top": "40%",
+          "left": "50%"
+        },
+        {
+          "number": 10,
+          "name": "Greco",
+          "teamId": "catanzaro",
+          "top": "42%",
+          "left": "72%"
+        },
+        {
+          "number": 9,
+          "name": "Pellegrini",
+          "teamId": "catanzaro",
+          "top": "72%",
+          "left": "35%"
+        },
+        {
+          "number": 11,
+          "name": "Gjoka",
+          "teamId": "catanzaro",
+          "top": "72%",
+          "left": "65%"
+        }
+      ]
+    }
+  ],
   "dynamics": [
     {
       "name": {
@@ -110,7 +287,7 @@
         "it": "Modulo"
       },
       "home": "3-4-2-1 (29.6%) / 4-2-3-1 (70.4%)",
-      "away": "3-5-2 (100.0%)"
+      "away": "5-3-2 (100.0%)"
     },
     {
       "category": {
@@ -930,5 +1107,313 @@
         }
       ]
     }
-  ]
+  ],
+  "appearances": {
+    "home": [
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Zappalà",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Lieto",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Anic",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Pereyra",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Baridò",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Merone",
+        "teamId": "u19",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Lepre",
+        "teamId": "u19",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Picardi",
+        "teamId": "u19",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Chiaiese",
+        "teamId": "u19",
+        "number": 15,
+        "starter": false
+      },
+      {
+        "name": "Santella",
+        "teamId": "u19",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Candela",
+        "teamId": "u19",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "Rovetini",
+        "teamId": "u19",
+        "number": 18,
+        "starter": false
+      },
+      {
+        "name": "Chiummariello",
+        "teamId": "u19",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Esposito",
+        "teamId": "u19",
+        "number": 20,
+        "starter": false
+      },
+      {
+        "name": "Mané",
+        "teamId": "u19",
+        "number": 21,
+        "starter": false
+      },
+      {
+        "name": "Riccio",
+        "teamId": "u19",
+        "number": 22,
+        "starter": false
+      },
+      {
+        "name": "D'Angelo",
+        "teamId": "u19",
+        "number": 23,
+        "starter": false
+      }
+    ],
+    "away": [
+      {
+        "name": "Martena",
+        "teamId": "catanzaro",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Curatelo",
+        "teamId": "catanzaro",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Cesnauskis",
+        "teamId": "catanzaro",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Panuccio",
+        "teamId": "catanzaro",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Distante",
+        "teamId": "catanzaro",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Salvano",
+        "teamId": "catanzaro",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Aloiso",
+        "teamId": "catanzaro",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Molon",
+        "teamId": "catanzaro",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Pellegrini",
+        "teamId": "catanzaro",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Greco",
+        "teamId": "catanzaro",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Gjoka",
+        "teamId": "catanzaro",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Gisotti",
+        "teamId": "catanzaro",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Oberti",
+        "teamId": "catanzaro",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Ribellino",
+        "teamId": "catanzaro",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Saitta",
+        "teamId": "catanzaro",
+        "number": 15,
+        "starter": false
+      },
+      {
+        "name": "Fiorentino",
+        "teamId": "catanzaro",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Bruno",
+        "teamId": "catanzaro",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "Ciani",
+        "teamId": "catanzaro",
+        "number": 18,
+        "starter": false
+      },
+      {
+        "name": "Socco",
+        "teamId": "catanzaro",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Vella",
+        "teamId": "catanzaro",
+        "number": 20,
+        "starter": false
+      },
+      {
+        "name": "Castro",
+        "teamId": "catanzaro",
+        "number": 21,
+        "starter": false
+      },
+      {
+        "name": "Maiolino",
+        "teamId": "catanzaro",
+        "number": 22,
+        "starter": false
+      },
+      {
+        "name": "Drago",
+        "teamId": "catanzaro",
+        "number": 23,
+        "starter": false
+      }
+    ],
+    "notes": {
+      "en": "Starting XI from match sheet (Napoli 3-4-2-1; Catanzaro 5-3-2). Bench listed from convocati; substitution minutes not on sheet.",
+      "it": "Titolari dalla distinta (Napoli 3-4-2-1; Catanzaro 5-3-2). Panchina dai convocati; minuti sostituzioni non presenti sulla distinta."
+    }
+  }
 }
