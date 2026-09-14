@@ -501,16 +501,16 @@
   "clips": [],
   "analysisVideos": [
     {
-      "id": "vimeo-1226363195",
+      "id": "vimeo-1226544263",
       "title": {
         "en": "Post-match report",
         "it": "Report post-partita"
       },
       "description": {
-        "en": "Synced from Vimeo folder.",
-        "it": "Sincronizzato dalla cartella Vimeo."
+        "en": "Post-match video analysis — Napoli vs Catanzaro (12 Sep 2026).",
+        "it": "Video analisi post-partita — Napoli vs Catanzaro (12 set 2026)."
       },
-      "videoFile": "https://vimeo.com/1226363195/89c786ff9f",
+      "videoFile": "https://vimeo.com/1226544263/85682dbe6c",
       "tags": [
         "vimeo",
         "analysis"
@@ -520,7 +520,7 @@
   "vimeo": {
     "folderId": "30520604",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30520604",
-    "lastSyncedAt": "2026-09-13T14:20:51.652Z"
+    "lastSyncedAt": "2026-09-14T09:45:16.830Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1226236034/a5b5a0d3b9",
