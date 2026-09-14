@@ -40,8 +40,110 @@
     "home": 2,
     "away": 3
   },
-  "goals": [],
-  "timeline": [],
+  "goals": [
+    {
+      "minute": 19,
+      "scorer": "Pellegrini",
+      "assist": null,
+      "teamId": "catanzaro"
+    },
+    {
+      "minute": 24,
+      "scorer": "Gjoka",
+      "assist": null,
+      "teamId": "catanzaro"
+    },
+    {
+      "minute": 47,
+      "scorer": "Greco",
+      "assist": null,
+      "teamId": "catanzaro"
+    },
+    {
+      "minute": 58,
+      "scorer": "Pereyra",
+      "assist": null,
+      "teamId": "u19"
+    },
+    {
+      "minute": 77,
+      "scorer": "Mané",
+      "assist": null,
+      "teamId": "u19"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 2
+    },
+    {
+      "minute": 19,
+      "label": {
+        "en": "Pellegrini 0-1",
+        "it": "Pellegrini 0-1"
+      },
+      "type": "goal",
+      "teamId": "catanzaro",
+      "positionPercent": 20
+    },
+    {
+      "minute": 24,
+      "label": {
+        "en": "Gjoka 0-2",
+        "it": "Gjoka 0-2"
+      },
+      "type": "goal",
+      "teamId": "catanzaro",
+      "positionPercent": 25
+    },
+    {
+      "minute": 47,
+      "label": {
+        "en": "Greco 0-3",
+        "it": "Greco 0-3"
+      },
+      "type": "goal",
+      "teamId": "catanzaro",
+      "positionPercent": 49
+    },
+    {
+      "minute": 58,
+      "label": {
+        "en": "Pereyra 1-3",
+        "it": "Pereyra 1-3"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 61
+    },
+    {
+      "minute": 77,
+      "label": {
+        "en": "Mané 2-3",
+        "it": "Mané 2-3"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 81
+    },
+    {
+      "minute": 90,
+      "label": {
+        "en": "Full time 2-3",
+        "it": "Fine partita 2-3"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 98
+    }
+  ],
   "formations": [
     {
       "teamId": "u19",
@@ -1171,7 +1273,10 @@
         "teamId": "u19",
         "number": 9,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "goals": [
+          58
+        ]
       },
       {
         "name": "Baridò",
@@ -1245,7 +1350,10 @@
         "name": "Mané",
         "teamId": "u19",
         "number": 21,
-        "starter": false
+        "starter": false,
+        "goals": [
+          77
+        ]
       },
       {
         "name": "Riccio",
@@ -1322,21 +1430,30 @@
         "teamId": "catanzaro",
         "number": 9,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "goals": [
+          19
+        ]
       },
       {
         "name": "Greco",
         "teamId": "catanzaro",
         "number": 10,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "goals": [
+          47
+        ]
       },
       {
         "name": "Gjoka",
         "teamId": "catanzaro",
         "number": 11,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "goals": [
+          24
+        ]
       },
       {
         "name": "Gisotti",
