@@ -39,6 +39,23 @@ export function placeholder1433(teamId: string): PitchPlayer[] {
   ];
 }
 
+/** Empty 1-4-1-2-3 (4-3-3 with a holding midfielder). */
+export function placeholder14123(teamId: string): PitchPlayer[] {
+  return [
+    { number: 1, name: 'GK', teamId, isGk: true, top: '8%', left: '50%' },
+    { number: 2, name: 'LB', teamId, top: '22%', left: '18%' },
+    { number: 5, name: 'CB', teamId, top: '20%', left: '38%' },
+    { number: 6, name: 'CB', teamId, top: '20%', left: '62%' },
+    { number: 3, name: 'RB', teamId, top: '22%', left: '82%' },
+    { number: 4, name: 'CDM', teamId, top: '38%', left: '50%' },
+    { number: 10, name: 'CM', teamId, top: '50%', left: '32%' },
+    { number: 8, name: 'CM', teamId, top: '50%', left: '68%' },
+    { number: 7, name: 'LW', teamId, top: '68%', left: '18%' },
+    { number: 9, name: 'ST', teamId, top: '78%', left: '50%' },
+    { number: 11, name: 'RW', teamId, top: '68%', left: '82%' },
+  ];
+}
+
 /** Empty 1-4-2-3-1 slots (double pivot + attacking mid three). */
 export function placeholder14231(teamId: string): PitchPlayer[] {
   return [
@@ -63,6 +80,9 @@ export function placeholderPlayersForSystem(
   const key = system.trim().replace(/–/g, '-');
   if (key === '1-4-2-3-1' || key === '4-2-3-1') {
     return placeholder14231(teamId);
+  }
+  if (key === '1-4-1-2-3' || key === '4-1-2-3' || key === '4-3-3') {
+    return placeholder14123(teamId);
   }
   return placeholder1433(teamId);
 }
@@ -125,7 +145,7 @@ export function oppositionClipSectionLabel(id: OppositionClipSectionId) {
 
 /** Primavera 2 Girone B + Coppa Italia Spezia + UYL league-phase opponents. */
 const OPPONENTS: OppositionOpponent[] = [
-  club('ascoli', 'Ascoli', ['primavera2']),
+  club('ascoli', 'Ascoli', ['primavera2'], '1-4-1-2-3'),
   club('avellino', 'Avellino', ['primavera2'], '1-4-3-3', ['1-4-2-3-1']),
   club('bari', 'Bari', ['primavera2']),
   club('benevento', 'Benevento', ['primavera2']),
@@ -183,6 +203,76 @@ if (arsenal) {
     { name: "Ceadach O'Neill", position: 'ST' },
     { name: 'Marley Frohock', position: 'ST' },
     { number: 95, name: 'Jaden Maghoma', position: 'ST' },
+  ];
+}
+
+/** Ascoli scouted XI — 4-3-3 with holding mid (sheet 15 Sep 2026). */
+const ascoli = OPPONENTS.find((o) => o.id === 'ascoli');
+if (ascoli) {
+  ascoli.starters = [
+    {
+      number: 1,
+      name: 'Angeletti',
+      teamId: 'ascoli',
+      isGk: true,
+      top: '8%',
+      left: '50%',
+    },
+    { number: 2, name: 'Zampardi', teamId: 'ascoli', top: '22%', left: '18%' },
+    { number: 5, name: 'Tocchi', teamId: 'ascoli', top: '20%', left: '38%' },
+    { number: 6, name: 'Curzi', teamId: 'ascoli', top: '20%', left: '62%' },
+    { number: 3, name: 'Bruni', teamId: 'ascoli', top: '22%', left: '82%' },
+    { number: 4, name: 'Russo', teamId: 'ascoli', top: '38%', left: '50%' },
+    { number: 10, name: 'Angelino', teamId: 'ascoli', top: '50%', left: '32%' },
+    { number: 8, name: 'Dente', teamId: 'ascoli', top: '50%', left: '68%' },
+    { number: 7, name: 'Suzzi', teamId: 'ascoli', top: '68%', left: '18%' },
+    { number: 9, name: 'Raimondo', teamId: 'ascoli', top: '78%', left: '50%' },
+    { number: 11, name: 'Aloisi', teamId: 'ascoli', top: '68%', left: '82%' },
+  ];
+  ascoli.substitutes = [
+    { number: 12, name: 'Ferrazzoli', position: 'GK', isGk: true },
+    { number: 13, name: 'Diamanti', position: 'RB' },
+    { number: 14, name: 'Parente', position: 'CB' },
+    { number: 15, name: 'Cicchitti', position: 'CDM' },
+    { number: 16, name: 'Perrulli', position: 'ST' },
+    { number: 17, name: 'Leonori', position: 'CB' },
+    { number: 18, name: 'Balducci', position: 'ST' },
+    { number: 19, name: 'Boete', position: 'Winger' },
+    { number: 20, name: 'Martinelli' },
+    { number: 21, name: 'Di Mattia', position: 'CM' },
+    { number: 22, name: 'Cantini', position: 'Winger' },
+    { number: 23, name: 'Rossi', position: 'Winger' },
+    { name: 'Dente', position: 'GK', isGk: true },
+    { name: 'De Rossi', position: 'CM' },
+    { name: 'Mancini', position: 'CM' },
+  ];
+  ascoli.squad = [
+    { number: 1, name: 'Angeletti', position: 'GK', isGk: true },
+    { number: 2, name: 'Zampardi', position: 'LB' },
+    { number: 3, name: 'Bruni', position: 'RB' },
+    { number: 4, name: 'Russo', position: 'CDM' },
+    { number: 5, name: 'Tocchi', position: 'CB' },
+    { number: 6, name: 'Curzi', position: 'CB' },
+    { number: 7, name: 'Suzzi', position: 'LW' },
+    { number: 8, name: 'Dente', position: 'CM' },
+    { number: 9, name: 'Raimondo', position: 'ST' },
+    { number: 10, name: 'Angelino', position: 'CM' },
+    { number: 11, name: 'Aloisi', position: 'RW' },
+    { number: 12, name: 'Ferrazzoli', position: 'GK', isGk: true },
+    { number: 13, name: 'Diamanti', position: 'RB' },
+    { number: 14, name: 'Parente', position: 'CB' },
+    { number: 15, name: 'Cicchitti', position: 'CDM' },
+    { number: 16, name: 'Perrulli', position: 'ST' },
+    { number: 17, name: 'Leonori', position: 'CB' },
+    { number: 18, name: 'Balducci', position: 'ST' },
+    { number: 19, name: 'Boete', position: 'Winger' },
+    { number: 20, name: 'Martinelli' },
+    { number: 21, name: 'Di Mattia', position: 'CM' },
+    { number: 22, name: 'Cantini', position: 'Winger' },
+    { number: 23, name: 'Rossi', position: 'Winger' },
+    { name: 'Dente', position: 'GK', isGk: true },
+    { name: 'De Rossi', position: 'CM' },
+    { name: 'Mancini', position: 'CM' },
   ];
 }
 
