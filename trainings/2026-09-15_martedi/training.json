@@ -1,0 +1,113 @@
+{
+  "id": "2026-09-15_martedi",
+  "slug": "2026-09-15_martedi",
+  "date": "2026-09-15",
+  "title": {
+    "en": "Tuesday training",
+    "it": "Martedì"
+  },
+  "focus": {
+    "en": "Prep Ascoli — activation, fitness, 6v6+6, partitella",
+    "it": "Prep Ascoli — attivazione, fitness, 6v6+6, partitella"
+  },
+  "sessionType": "metabolic",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — run npm run sync-vimeo -- --training 2026-09-15_martedi",
+    "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-09-15_martedi"
+  },
+  "video": {
+    "parts": [
+      {
+        "id": "vimeo-1227015917",
+        "title": {
+          "en": "Fitness work 14 sep",
+          "it": "Fitness work 14 sep"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1227015917/29b9ea843e",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1227015918",
+        "title": {
+          "en": "Attivazione Tecnica 14 sep",
+          "it": "Attivazione Tecnica 14 sep"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1227015918/af8960d240",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1227015913",
+        "title": {
+          "en": "Partitella",
+          "it": "Partitella"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1227015913/6b46dc2917",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1227015914",
+        "title": {
+          "en": "6 v 6 + 6",
+          "it": "6 v 6 + 6"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1227015914/7064630a9b",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "fullSession": "https://vimeo.com/1227015914/7064630a9b",
+    "notes": {
+      "en": "Session recordings on Vimeo (4 videos).",
+      "it": "Registrazioni sessione su Vimeo (4 video)."
+    }
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30549950",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30549950",
+    "lastSyncedAt": "2026-09-16T11:11:03.546Z"
+  }
+}
