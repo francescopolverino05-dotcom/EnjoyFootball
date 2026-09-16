@@ -447,32 +447,51 @@ attachReferencePack('pisa', '2026-10-10_campionato-u19-vs-pisa', [
   },
 ]);
 
-attachReferencePack('ascoli', '2026-09-19_campionato-ascoli-vs-u19', [
-  {
-    id: 'ascoli-ref-spezia',
-    title: {
-      en: 'Ascoli vs Spezia',
-      it: 'Ascoli vs Spezia',
+attachReferencePack(
+  'ascoli',
+  '2026-09-19_campionato-ascoli-vs-u19',
+  [
+    {
+      id: 'ascoli-ref-spezia',
+      title: {
+        en: 'Ascoli vs Spezia',
+        it: 'Ascoli vs Spezia',
+      },
+      competition: {
+        en: 'Reference · First leg',
+        it: 'Riferimento · Andata',
+      },
+      videoFile: 'https://vimeo.com/1225049015/95b818e419',
     },
-    competition: {
-      en: 'Reference · First leg',
-      it: 'Riferimento · Andata',
+    {
+      id: 'ascoli-ref-bari',
+      title: {
+        en: 'Bari vs Ascoli',
+        it: 'Bari vs Ascoli',
+      },
+      competition: {
+        en: 'Primavera 2 · Matchday 2',
+        it: 'Primavera 2 · Giornata 2',
+      },
+      videoFile: 'https://vimeo.com/1226442948/3870ec7bac',
     },
-    videoFile: 'https://vimeo.com/1225049015/95b818e419',
-  },
-  {
-    id: 'ascoli-ref-bari',
-    title: {
-      en: 'Bari vs Ascoli',
-      it: 'Bari vs Ascoli',
+  ],
+  [
+    {
+      id: 'ascoli-studio-report',
+      title: {
+        en: 'Studio Ascoli',
+        it: 'Studio Ascoli',
+      },
+      description: {
+        en: 'Opposition studio report (Avversari → Studio Report).',
+        it: 'Studio report avversario (Avversari → Studio Report).',
+      },
+      videoFile: 'https://vimeo.com/1227532329/17e937e87f',
+      tags: ['vimeo', 'opposition', 'studio-report'],
     },
-    competition: {
-      en: 'Primavera 2 · Matchday 2',
-      it: 'Primavera 2 · Giornata 2',
-    },
-    videoFile: 'https://vimeo.com/1226442948/3870ec7bac',
-  },
-]);
+  ]
+);
 
 attachReferencePack('porto', '2026-11-04_uyl-porto-vs-u19', [
   {
