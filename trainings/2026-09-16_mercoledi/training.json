@@ -1,0 +1,130 @@
+{
+  "id": "2026-09-16_mercoledi",
+  "slug": "2026-09-16_mercoledi",
+  "date": "2026-09-16",
+  "title": {
+    "en": "Wednesday training",
+    "it": "Mercoledì"
+  },
+  "focus": {
+    "en": "Prep Ascoli — defence focus (rondo, line, underload, match-up, partitella)",
+    "it": "Prep Ascoli — focus difesa (rondo, linea, underload, match-up, partitella)"
+  },
+  "sessionType": "metabolic",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — run npm run sync-vimeo -- --training 2026-09-16_mercoledi",
+    "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-09-16_mercoledi"
+  },
+  "video": {
+    "parts": [
+      {
+        "id": "vimeo-1227704186",
+        "title": {
+          "en": "4v2 defencefocus rondo",
+          "it": "4v2 defencefocus rondo"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1227704186/f9e17e51f7",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1227699652",
+        "title": {
+          "en": "defemse line with focus on shut down",
+          "it": "defemse line with focus on shut down"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1227699652/0d617efc07",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1227699653",
+        "title": {
+          "en": "6v8 defense underload",
+          "it": "6v8 defense underload"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1227699653/081af5bca5",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1227699654",
+        "title": {
+          "en": "match up defence focus",
+          "it": "match up defence focus"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1227699654/6e26aed8c6",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1227699656",
+        "title": {
+          "en": "partitella",
+          "it": "partitella"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1227699656/ce1743d7b4",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "fullSession": "https://vimeo.com/1227699656/ce1743d7b4",
+    "notes": {
+      "en": "Session recordings on Vimeo (5 videos).",
+      "it": "Registrazioni sessione su Vimeo (5 video)."
+    }
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30575549",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30575549",
+    "lastSyncedAt": "2026-09-17T11:52:14.330Z"
+  }
+}
