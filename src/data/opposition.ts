@@ -445,6 +445,32 @@ attachReferencePack('pisa', '2026-10-10_campionato-u19-vs-pisa', [
     score: '2–3',
     videoFile: 'https://vimeo.com/1224195986/18554068c6',
   },
+  {
+    id: 'pisa-ref-frosinone',
+    title: {
+      en: 'Frosinone vs Pisa 2–3',
+      it: 'Frosinone vs Pisa 2–3',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 2',
+      it: 'Primavera 2 · Giornata 2',
+    },
+    score: '2–3',
+    videoFile: 'https://vimeo.com/1228617722/57b07ab4e9',
+  },
+  {
+    id: 'pisa-ref-spezia',
+    title: {
+      en: 'Pisa vs Spezia 0–3',
+      it: 'Pisa vs Spezia 0–3',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 3',
+      it: 'Primavera 2 · Giornata 3',
+    },
+    score: '0–3',
+    videoFile: 'https://vimeo.com/1228617723/8be1a3eb32',
+  },
 ]);
 
 attachReferencePack(
