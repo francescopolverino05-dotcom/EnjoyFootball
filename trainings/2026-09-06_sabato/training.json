@@ -1,0 +1,54 @@
+{
+  "id": "2026-09-06_sabato",
+  "slug": "2026-09-06_sabato",
+  "date": "2026-09-06",
+  "title": {
+    "en": "Saturday training",
+    "it": "Sabato"
+  },
+  "focus": {
+    "en": "Recovery — Movements & catches",
+    "it": "SCARICO - SPOSTAMENTI E PRESE"
+  },
+  "sessionType": "activation",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "GK session plan attached. Team video TBA.",
+    "it": "Scheda portieri allegata. Video squadra da sincronizzare."
+  },
+  "video": {
+    "parts": []
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "analysisVideos": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-06",
+        "title": {
+          "en": "GK design — Recovery — Movements & catches",
+          "it": "Scheda portieri — SCARICO - SPOSTAMENTI E PRESE"
+        },
+        "description": {
+          "en": "All. N°35 — 06 Sep 2026. Recovery — Movements & catches.",
+          "it": "All. N°35 — 06/09/2026. SCARICO - SPOSTAMENTI E PRESE."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-06_SCARICO_SPOSTAMENTI_E_PRESE.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ]
+  }
+}

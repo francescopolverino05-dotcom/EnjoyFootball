@@ -103,7 +103,27 @@
       "parts": []
     },
     "clips": [],
-    "analysisVideos": []
+    "analysisVideos": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-15",
+        "title": {
+          "en": "GK design — Lower body, Footwork, Goal defence",
+          "it": "Scheda portieri — ARTI INFERIORI-PODALICO-DIF PORTA"
+        },
+        "description": {
+          "en": "All. N°41 — 15 Sep 2026. Lower body, Footwork, Goal defence.",
+          "it": "All. N°41 — 15/09/2026. ARTI INFERIORI-PODALICO-DIF PORTA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-15_ARTI_INFERIORI_PODALICO_DIF_PORTA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ]
   },
   "vimeo": {
     "folderId": "30549950",

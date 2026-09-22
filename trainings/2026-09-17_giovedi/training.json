@@ -1,0 +1,54 @@
+{
+  "id": "2026-09-17_giovedi",
+  "slug": "2026-09-17_giovedi",
+  "date": "2026-09-17",
+  "title": {
+    "en": "Thursday training",
+    "it": "Giovedì"
+  },
+  "focus": {
+    "en": "Plyometrics, Footwork, High exit",
+    "it": "PLIOMETRIA-PODALICO-USCITA ALTA"
+  },
+  "sessionType": "metabolic",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "GK session plan attached. Team video TBA.",
+    "it": "Scheda portieri allegata. Video squadra da sincronizzare."
+  },
+  "video": {
+    "parts": []
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "analysisVideos": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-17",
+        "title": {
+          "en": "GK design — Plyometrics, Footwork, High exit",
+          "it": "Scheda portieri — PLIOMETRIA-PODALICO-USCITA ALTA"
+        },
+        "description": {
+          "en": "All. N°43 — 17 Sep 2026. Plyometrics, Footwork, High exit.",
+          "it": "All. N°43 — 17/09/2026. PLIOMETRIA-PODALICO-USCITA ALTA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-17_PLIOMETRIA_PODALICO_USCITA_ALTA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ]
+  }
+}

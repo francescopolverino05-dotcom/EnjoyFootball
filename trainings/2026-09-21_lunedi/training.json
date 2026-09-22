@@ -1,0 +1,54 @@
+{
+  "id": "2026-09-21_lunedi",
+  "slug": "2026-09-21_lunedi",
+  "date": "2026-09-21",
+  "title": {
+    "en": "Monday training",
+    "it": "Lunedì"
+  },
+  "focus": {
+    "en": "Lower body, Footwork, Catches various directions",
+    "it": "ARTI INFERIORI- PODALICO- PRESE VARIE DIREZIONI"
+  },
+  "sessionType": "metabolic",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "GK session plan attached. Team video TBA.",
+    "it": "Scheda portieri allegata. Video squadra da sincronizzare."
+  },
+  "video": {
+    "parts": []
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "analysisVideos": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-21",
+        "title": {
+          "en": "GK design — Lower body, Footwork, Catches various directions",
+          "it": "Scheda portieri — ARTI INFERIORI- PODALICO- PRESE VARIE DIREZIONI"
+        },
+        "description": {
+          "en": "All. N°45 — 21 Sep 2026. Lower body, Footwork, Catches various directions.",
+          "it": "All. N°45 — 21/09/2026. ARTI INFERIORI- PODALICO- PRESE VARIE DIREZIONI."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-21_ARTI_INFERIORI_PODALICO_PRESE_VARIE_DIREZIONI.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ]
+  }
+}

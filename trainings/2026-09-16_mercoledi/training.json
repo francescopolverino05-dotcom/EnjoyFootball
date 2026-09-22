@@ -120,7 +120,27 @@
       "parts": []
     },
     "clips": [],
-    "analysisVideos": []
+    "analysisVideos": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-16",
+        "title": {
+          "en": "GK design — Upper body, Coordination, Global work zones 4–5",
+          "it": "Scheda portieri — ARTI SUPERIORI-COORDINATIVO-LAVORO GLOBALE DA ZONA 4 E 5"
+        },
+        "description": {
+          "en": "All. N°42 — 16 Sep 2026. Upper body, Coordination, Global work zones 4–5.",
+          "it": "All. N°42 — 16/09/2026. ARTI SUPERIORI-COORDINATIVO-LAVORO GLOBALE DA ZONA 4 E 5."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-16_ARTI_SUPERIORI_COORDINATIVO_LAVORO_GLOBALE_DA_ZONA_4_E_5.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ]
   },
   "vimeo": {
     "folderId": "30575549",

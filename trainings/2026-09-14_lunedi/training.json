@@ -76,7 +76,27 @@
       "parts": []
     },
     "clips": [],
-    "analysisVideos": []
+    "analysisVideos": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-14",
+        "title": {
+          "en": "GK design — Coordination, Footwork, Low exit",
+          "it": "Scheda portieri — COORDINAZIONE-PODALICO-USCITA BASSA"
+        },
+        "description": {
+          "en": "All. N°40 — 14 Sep 2026. Coordination, Footwork, Low exit.",
+          "it": "All. N°40 — 14/09/2026. COORDINAZIONE-PODALICO-USCITA BASSA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-14_COORDINAZIONE_PODALICO_USCITA_BASSA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ]
   },
   "vimeo": {
     "folderId": "30536499",

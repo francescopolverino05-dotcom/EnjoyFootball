@@ -1,0 +1,54 @@
+{
+  "id": "2026-09-10_giovedi",
+  "slug": "2026-09-10_giovedi",
+  "date": "2026-09-10",
+  "title": {
+    "en": "Thursday training",
+    "it": "Giovedì"
+  },
+  "focus": {
+    "en": "Footwork, Catches, Small-sided games",
+    "it": "PODALICO-PRESE-PARTITELLE"
+  },
+  "sessionType": "metabolic",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "GK session plan attached. Team video TBA.",
+    "it": "Scheda portieri allegata. Video squadra da sincronizzare."
+  },
+  "video": {
+    "parts": []
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "analysisVideos": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-10",
+        "title": {
+          "en": "GK design — Footwork, Catches, Small-sided games",
+          "it": "Scheda portieri — PODALICO-PRESE-PARTITELLE"
+        },
+        "description": {
+          "en": "All. N°38 — 10 Sep 2026. Footwork, Catches, Small-sided games.",
+          "it": "All. N°38 — 10/09/2026. PODALICO-PRESE-PARTITELLE."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-10_PODALICO_PRESE_PARTITELLE.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ]
+  }
+}

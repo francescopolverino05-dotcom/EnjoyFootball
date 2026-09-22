@@ -69,7 +69,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-04",
+        "title": {
+          "en": "GK design — Proprioception, Psycho, Speed",
+          "it": "Scheda portieri — PROPOCETTIVITA'-PSICO- RAPIDITA'"
+        },
+        "description": {
+          "en": "All. N°34 — 04 Sep 2026. Proprioception, Psycho, Speed.",
+          "it": "All. N°34 — 04/09/2026. PROPOCETTIVITA'-PSICO- RAPIDITA'."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-04_PROPOCETTIVITA_PSICO_RAPIDITA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "vimeo": {

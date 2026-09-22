@@ -87,7 +87,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-07",
+        "title": {
+          "en": "GK design — Activation upper body, Speed, High exit",
+          "it": "Scheda portieri — ATTIVAZIONE ARTI SUPERIORI-RAPIDITA' - USCITA ALTA"
+        },
+        "description": {
+          "en": "All. N°36 — 07 Sep 2026. Activation upper body, Speed, High exit.",
+          "it": "All. N°36 — 07/09/2026. ATTIVAZIONE ARTI SUPERIORI-RAPIDITA' - USCITA ALTA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-07_ATTIVAZIONE_ARTI_SUPERIORI_RAPIDITA_USCITA_ALTA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "vimeo": {

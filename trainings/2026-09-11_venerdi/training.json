@@ -70,7 +70,26 @@
       "parts": []
     },
     "clips": [],
-    "trainingDesign": null,
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-11",
+        "title": {
+          "en": "GK design — Proprioception, Reaction capacity",
+          "it": "Scheda portieri — PROPOCETTIVITA' - CAPACITA' DI REAZIONE"
+        },
+        "description": {
+          "en": "All. N°39 — 11 Sep 2026. Proprioception, Reaction capacity.",
+          "it": "All. N°39 — 11/09/2026. PROPOCETTIVITA' - CAPACITA' DI REAZIONE."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-11_PROPOCETTIVITA_CAPACITA_DI_REAZIONE.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
     "analysisVideos": []
   },
   "vimeo": {}
