@@ -1,0 +1,97 @@
+{
+  "id": "2026-09-22_martedi",
+  "slug": "2026-09-22_martedi",
+  "date": "2026-09-22",
+  "title": {
+    "en": "Tuesday training",
+    "it": "Martedì"
+  },
+  "focus": {
+    "en": "Press focus 5v6+GK, 7v7+7, partitella",
+    "it": "Press focus 5v6+GK, 7v7+7, partitella"
+  },
+  "sessionType": "metabolic",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — run npm run sync-vimeo -- --training 2026-09-22_martedi",
+    "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-09-22_martedi"
+  },
+  "video": {
+    "parts": [
+      {
+        "id": "vimeo-1229265782",
+        "title": {
+          "en": "Partitella",
+          "it": "Partitella"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1229265782/88c3ccf9cc",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1229265781",
+        "title": {
+          "en": "7v7+7",
+          "it": "7v7+7"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1229265781/bbee783d6f",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1229214008",
+        "title": {
+          "en": "5v6+GK Press Focus",
+          "it": "5v6+GK Press Focus"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1229214008/b3be585da5",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "fullSession": "https://vimeo.com/1229265781/bbee783d6f",
+    "notes": {
+      "en": "Session recordings on Vimeo (3 videos).",
+      "it": "Registrazioni sessione su Vimeo (3 video)."
+    }
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "analysisVideos": [],
+    "trainingDesign": []
+  },
+  "vimeo": {
+    "folderId": "30631439",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30631439",
+    "lastSyncedAt": "2026-09-23T11:41:07.066Z"
+  }
+}
