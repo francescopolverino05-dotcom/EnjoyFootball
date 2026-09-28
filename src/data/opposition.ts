@@ -473,6 +473,22 @@ attachReferencePack('pisa', '2026-10-10_campionato-u19-vs-pisa', [
   },
 ]);
 
+attachReferencePack('spezia', '2026-10-24_campionato-u19-vs-spezia', [
+  {
+    id: 'spezia-ref-pisa',
+    title: {
+      en: 'Pisa vs Spezia 0–3',
+      it: 'Pisa vs Spezia 0–3',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 3',
+      it: 'Primavera 2 · Giornata 3',
+    },
+    score: '0–3',
+    videoFile: 'https://vimeo.com/1228617723/8be1a3eb32',
+  },
+]);
+
 attachReferencePack(
   'ascoli',
   '2026-09-19_campionato-ascoli-vs-u19',
