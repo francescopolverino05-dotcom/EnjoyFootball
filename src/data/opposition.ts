@@ -503,6 +503,19 @@ attachReferencePack('bari', '2026-10-17_campionato-bari-vs-u19', [
     score: '2–2',
     videoFile: 'https://vimeo.com/1230216777/1216012995',
   },
+  {
+    id: 'bari-ref-palermo-coppa',
+    title: {
+      en: 'Bari vs Palermo 3–2',
+      it: 'Bari vs Palermo 3–2',
+    },
+    competition: {
+      en: 'Coppa Italia Primavera',
+      it: 'Coppa Italia Primavera',
+    },
+    score: '3–2',
+    videoFile: 'https://vimeo.com/1230878196/46f5b3f40c',
+  },
 ]);
 
 attachReferencePack('villarreal', '2026-10-13_uyl-villarreal-vs-u19', [
