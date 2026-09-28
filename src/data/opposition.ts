@@ -73,6 +73,23 @@ export function placeholder14231(teamId: string): PitchPlayer[] {
   ];
 }
 
+/** Empty 4-4-2 slots. */
+export function placeholder442(teamId: string): PitchPlayer[] {
+  return [
+    { number: 1, name: 'GK', teamId, isGk: true, top: '8%', left: '50%' },
+    { number: 2, name: 'LB', teamId, top: '22%', left: '18%' },
+    { number: 4, name: 'CB', teamId, top: '20%', left: '38%' },
+    { number: 5, name: 'CB', teamId, top: '20%', left: '62%' },
+    { number: 3, name: 'RB', teamId, top: '22%', left: '82%' },
+    { number: 7, name: 'LM', teamId, top: '48%', left: '18%' },
+    { number: 6, name: 'CM', teamId, top: '45%', left: '38%' },
+    { number: 8, name: 'CM', teamId, top: '45%', left: '62%' },
+    { number: 11, name: 'RM', teamId, top: '48%', left: '82%' },
+    { number: 9, name: 'ST', teamId, top: '75%', left: '38%' },
+    { number: 10, name: 'ST', teamId, top: '75%', left: '62%' },
+  ];
+}
+
 export function placeholderPlayersForSystem(
   system: string,
   teamId: string
@@ -83,6 +100,9 @@ export function placeholderPlayersForSystem(
   }
   if (key === '1-4-1-2-3' || key === '4-1-2-3' || key === '4-3-3') {
     return placeholder14123(teamId);
+  }
+  if (key === '1-4-4-2' || key === '4-4-2') {
+    return placeholder442(teamId);
   }
   return placeholder1433(teamId);
 }
@@ -157,7 +177,7 @@ const OPPONENTS: OppositionOpponent[] = [
   club('palermo', 'Palermo', ['primavera2']),
   club('perugia', 'Perugia', ['primavera2']),
   club('pescara', 'Pescara', ['primavera2']),
-  club('pisa', 'Pisa', ['primavera2']),
+  club('pisa', 'Pisa', ['primavera2'], '4-4-2'),
   club('salernitana', 'Salernitana', ['primavera2']),
   club('spezia', 'Spezia', ['primavera2', 'coppaItalia']),
   club('arsenal', 'Arsenal', ['uefaYouthLeague'], '1-4-2-3-1'),
@@ -273,6 +293,291 @@ if (ascoli) {
     { name: 'Dente', position: 'GK', isGk: true },
     { name: 'De Rossi', position: 'CM' },
     { name: 'Mancini', position: 'CM' },
+  ];
+}
+
+/** Flat 4-4-2 named XI. Pitch attacks downward: team-left = screen-right. */
+function pisa442(names: {
+  gk: string;
+  lb: string;
+  lcb: string;
+  rcb: string;
+  rb: string;
+  lm: string;
+  lcm: string;
+  rcm: string;
+  rm: string;
+  lst: string;
+  rst: string;
+}): PitchPlayer[] {
+  const teamId = 'pisa';
+  return [
+    { number: 0, name: names.gk, teamId, isGk: true, top: '8%', left: '50%' },
+    { number: 0, name: names.lb, teamId, top: '22%', left: '82%' },
+    { number: 0, name: names.lcb, teamId, top: '20%', left: '62%' },
+    { number: 0, name: names.rcb, teamId, top: '20%', left: '38%' },
+    { number: 0, name: names.rb, teamId, top: '22%', left: '18%' },
+    { number: 0, name: names.lm, teamId, top: '48%', left: '82%' },
+    { number: 0, name: names.lcm, teamId, top: '45%', left: '62%' },
+    { number: 0, name: names.rcm, teamId, top: '45%', left: '38%' },
+    { number: 0, name: names.rm, teamId, top: '48%', left: '18%' },
+    { number: 0, name: names.lst, teamId, top: '75%', left: '62%' },
+    { number: 0, name: names.rst, teamId, top: '75%', left: '38%' },
+  ];
+}
+
+/**
+ * Pisa scout pack — notebook “Profili giocatori” + last 3 XIs + Combined XI.
+ * On the sheet, “//” = same starter as the previous match in that slot.
+ */
+const pisa = OPPONENTS.find((o) => o.id === 'pisa');
+if (pisa) {
+  const combined = pisa442({
+    gk: 'Paolini',
+    lb: 'Minisini',
+    lcb: 'Bendinelli',
+    rcb: 'Miglianti',
+    rb: 'Ietro',
+    lm: 'Landucci',
+    lcm: 'Lucarelli',
+    rcm: 'Saviozzi',
+    rm: 'Ribechini',
+    lst: 'Paoletti',
+    rst: 'Ghizzani',
+  });
+  // Combined mid stagger: wide mids higher, central pair slightly deeper.
+  combined[5] = { ...combined[5], top: '52%', left: '82%' }; // Landucci (LM)
+  combined[6] = { ...combined[6], top: '42%', left: '62%' }; // Lucarelli (LCM)
+  combined[7] = { ...combined[7], top: '42%', left: '38%' }; // Saviozzi (RCM)
+  combined[8] = { ...combined[8], top: '52%', left: '18%' }; // Ribechini (RM)
+
+  pisa.starters = combined;
+  pisa.scoutedFormations = [
+    {
+      id: 'pisa-vs-perugia',
+      label: { en: 'vs Perugia', it: 'vs Perugia' },
+      system: '4-4-2',
+      players: pisa442({
+        gk: 'Paolini',
+        lb: 'Serafini',
+        lcb: 'Bendinelli',
+        rcb: 'Lenzoni',
+        rb: 'Bernardini',
+        lm: 'Lucarelli',
+        lcm: 'Menicucci',
+        rcm: 'Saviozzi',
+        rm: 'Ribechini',
+        lst: 'Mocanu',
+        rst: 'Ghizzani',
+      }),
+      notes: {
+        en: 'Subs: Mainardi 57′ (Lucarelli), Landucci 57′ (Menicucci), Paoletti 71′ (Ghizzani), Masini 82′ (Lenzoni), Neri 82′ (Ribechini).',
+        it: 'Sub: Mainardi 57′ (Lucarelli), Landucci 57′ (Menicucci), Paoletti 71′ (Ghizzani), Masini 82′ (Lenzoni), Neri 82′ (Ribechini).',
+      },
+    },
+    {
+      id: 'pisa-vs-frosinone',
+      label: { en: 'vs Frosinone', it: 'vs Frosinone' },
+      system: '4-4-2',
+      players: pisa442({
+        gk: 'Paolini', // // from Perugia
+        lb: 'Minisini', // X (was Serafini)
+        lcb: 'Bendinelli', // //
+        rcb: 'Miglianti', // X (was Lenzoni)
+        rb: 'Ietro', // X (was Bernardini)
+        lm: 'Lucarelli', // //
+        lcm: 'Landucci', // X (was Menicucci)
+        rcm: 'Saviozzi', // //
+        rm: 'Ribechini', // //
+        lst: 'Paoletti', // X (was Mocanu)
+        rst: 'Ghizzani', // //
+      }),
+      notes: {
+        en: 'Subs: Menicucci 55′ (Paoletti), Mainardi ~53–55′ (Ribechini), Serafini 65′ (Minisini), Masini 65′ (Ghizzani), Haidara 75′ (Landucci).',
+        it: 'Sub: Menicucci 55′ (Paoletti), Mainardi ~53–55′ (Ribechini), Serafini 65′ (Minisini), Masini 65′ (Ghizzani), Haidara 75′ (Landucci).',
+      },
+    },
+    {
+      id: 'pisa-vs-spezia',
+      label: { en: 'vs Spezia', it: 'vs Spezia' },
+      system: '4-4-2',
+      players: pisa442({
+        gk: 'Paolini', // // from Frosinone
+        lb: 'Minisini', // //
+        lcb: 'Bendinelli', // //
+        rcb: 'Miglianti', // //
+        rb: 'Ietro', // //
+        lm: 'Ribechini', // X (was Lucarelli; Ribechini shifts left)
+        lcm: 'Landucci', // // (started Frosinone instead of Menicucci)
+        rcm: 'Saviozzi', // // (all three games)
+        rm: 'Mainardi', // X (was Ribechini on the right)
+        lst: 'Paoletti', // //
+        rst: 'Ghizzani', // //
+      }),
+      notes: {
+        en: 'Subs: Menicucci 46′ (Landucci), Haidara 56′ (Paoletti), ~58′ (Ribechini), Masini 72′ (Mainardi), Neri 75′ (Bendinelli).',
+        it: 'Sub: Menicucci 46′ (Landucci), Haidara 56′ (Paoletti), ~58′ (Ribechini), Masini 72′ (Mainardi), Neri 75′ (Bendinelli).',
+      },
+    },
+    {
+      id: 'pisa-combined-xi',
+      label: {
+        en: 'Combined XI (appearances)',
+        it: 'Combined XI (presenze)',
+      },
+      system: '4-4-2',
+      players: combined,
+      notes: {
+        en: 'Built from minutes / starts across Perugia, Frosinone, Spezia.',
+        it: 'Costruita su minuti / titolarità contro Perugia, Frosinone, Spezia.',
+      },
+    },
+  ];
+  pisa.substitutes = [
+    { name: 'Masini', position: 'Difensore / utilità' },
+    { name: 'Mainardi', position: 'Esterno', birthYear: 2008, preferredFoot: 'Destro', heightCm: 187 },
+    { name: 'Haidara', position: 'Attaccante', birthYear: 2009, preferredFoot: 'Destro' },
+    { name: 'Neri', position: 'Difensore', birthYear: 2009, preferredFoot: 'Destro', heightCm: 187 },
+  ];
+  pisa.squad = [
+    {
+      name: 'Marini',
+      position: 'Attaccante',
+      birthYear: 2009,
+      preferredFoot: 'Ambidestro',
+      heightCm: 192,
+    },
+    {
+      name: 'Mocanu',
+      position: 'Attaccante',
+      birthYear: 2008,
+      preferredFoot: 'Destro',
+      heightCm: 187,
+    },
+    {
+      name: 'Paolini',
+      position: 'Portiere',
+      birthYear: 2009,
+      preferredFoot: 'Destro',
+      heightCm: 184,
+      isGk: true,
+    },
+    {
+      name: 'Ietro',
+      position: 'Terzino Dx',
+      birthYear: 2009,
+      preferredFoot: 'Ambi',
+      heightCm: 178,
+    },
+    {
+      name: 'Bernardini',
+      position: 'Terzino Dx',
+      birthYear: 2009,
+      preferredFoot: 'Destro',
+    },
+    {
+      name: 'Miglianti',
+      position: 'Difensore',
+      birthYear: 2008,
+      preferredFoot: 'Destro',
+      heightCm: 181,
+    },
+    {
+      name: 'Lenzoni',
+      position: 'Difensore',
+      birthYear: 2008,
+      preferredFoot: 'Destro',
+      heightCm: 184,
+    },
+    {
+      name: 'Bendinelli',
+      position: 'Difensore',
+      birthYear: 2008,
+      preferredFoot: 'Destro',
+      heightCm: 187,
+    },
+    {
+      name: 'Neri',
+      position: 'Difensore',
+      birthYear: 2009,
+      preferredFoot: 'Destro',
+      heightCm: 187,
+    },
+    {
+      name: 'Serafini',
+      position: 'Terzino Sx',
+      birthYear: 2009,
+      preferredFoot: 'Sinistro',
+      heightCm: 182,
+    },
+    {
+      name: 'Minisini',
+      position: 'Terzino Sx',
+      birthYear: 2009,
+      preferredFoot: 'Sinistro',
+      heightCm: 182,
+    },
+    {
+      name: 'Menicucci',
+      position: 'Centrocampista',
+      birthYear: 2008,
+      preferredFoot: 'Destro',
+      heightCm: 174,
+    },
+    {
+      name: 'Landucci',
+      position: 'Centrocampista',
+      birthYear: 2008,
+      preferredFoot: 'Destro',
+      heightCm: 184,
+    },
+    {
+      name: 'Saviozzi',
+      position: 'Centrocampista',
+      birthYear: 2009,
+      preferredFoot: 'Destro',
+      heightCm: 180,
+    },
+    {
+      name: 'Lucarelli',
+      position: 'Esterno',
+      birthYear: 2009,
+      preferredFoot: 'Destro',
+    },
+    {
+      name: 'Ribechini',
+      position: 'Esterno',
+      birthYear: 2008,
+      preferredFoot: 'Destro',
+      heightCm: 170,
+    },
+    {
+      name: 'Mainardi',
+      position: 'Esterno',
+      birthYear: 2008,
+      preferredFoot: 'Destro',
+      heightCm: 187,
+    },
+    {
+      name: 'Haidara',
+      position: 'Attaccante',
+      birthYear: 2009,
+      preferredFoot: 'Destro',
+    },
+    {
+      name: 'Ghizzani',
+      position: 'Attaccante',
+      birthYear: 2009,
+      preferredFoot: 'Destro',
+      heightCm: 174,
+    },
+    {
+      name: 'Paoletti',
+      position: 'Attaccante',
+      birthYear: 2009,
+      preferredFoot: 'Destro',
+      heightCm: 181,
+    },
   ];
 }
 

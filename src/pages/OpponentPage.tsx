@@ -75,18 +75,28 @@ export default function OpponentPage() {
   const pack = getFixturePack(opponent, selectedSlug);
   const refSlotLimit = referenceMatchSlotLimit(selectedMatch);
   const systems = formationSystemsFor(opponent);
-  const formations: Formation[] = systems.map((system, index) => {
-    const useScoutedStarters =
-      index === 0 && opponent.starters.length > 0;
-    return {
-      teamId: `${opponent.id}-${system}`,
-      label: opponent.name,
-      system,
-      players: useScoutedStarters
-        ? opponent.starters
-        : placeholderPlayersForSystem(system, opponent.id),
-    };
-  });
+  const formations: Formation[] =
+    opponent.scoutedFormations && opponent.scoutedFormations.length > 0
+      ? opponent.scoutedFormations.map((f) => ({
+          teamId: `${opponent.id}-${f.id}`,
+          label: f.label,
+          system: f.system,
+          players: f.players,
+        }))
+      : systems.map((system, index) => {
+          const useScoutedStarters =
+            index === 0 && opponent.starters.length > 0;
+          return {
+            teamId: `${opponent.id}-${system}`,
+            label: opponent.name,
+            system,
+            players: useScoutedStarters
+              ? opponent.starters
+              : placeholderPlayersForSystem(system, opponent.id),
+          };
+        });
+  const formationNotes =
+    opponent.scoutedFormations?.filter((f) => f.notes) ?? [];
   const refs = pack.referenceMatches.slice(0, refSlotLimit);
   const emptySlots = Math.max(0, refSlotLimit - refs.length);
   const reports = pack.reportItems;
@@ -211,16 +221,33 @@ export default function OpponentPage() {
           <div className="tab-content active" role="tabpanel">
             <p className="video-hint">{t('oppositionFormationHint')}</p>
             <Formations formations={formations} />
+            {formationNotes.length > 0 ? (
+              <ul className="opponent-name-list opponent-formation-notes">
+                {formationNotes.map((f) => (
+                  <li key={`${f.id}-notes`}>
+                    <strong>{L(f.label)}</strong>
+                    {f.notes ? ` — ${L(f.notes)}` : ''}
+                  </li>
+                ))}
+              </ul>
+            ) : null}
             <div className="section-title">{t('oppositionSubs')}</div>
             {opponent.substitutes.length === 0 ? (
               <p className="home-empty">{t('oppositionSubsEmpty')}</p>
             ) : (
               <ul className="opponent-name-list">
                 {opponent.substitutes.map((p) => (
-                  <li key={`${p.number}-${p.name}`}>
-                    {p.number != null ? `${p.number} ` : ''}
-                    {p.name}
-                    {p.position ? ` · ${p.position}` : ''}
+                  <li key={`sub-${p.number ?? ''}-${p.name}`}>
+                    {[
+                      p.number != null ? String(p.number) : null,
+                      p.name,
+                      p.position,
+                      p.birthYear != null ? String(p.birthYear) : null,
+                      p.preferredFoot,
+                      p.heightCm != null ? `${p.heightCm} cm` : null,
+                    ]
+                      .filter(Boolean)
+                      .join(' · ')}
                   </li>
                 ))}
               </ul>
@@ -231,10 +258,17 @@ export default function OpponentPage() {
             ) : (
               <ul className="opponent-name-list">
                 {opponent.squad.map((p) => (
-                  <li key={`${p.number}-${p.name}`}>
-                    {p.number != null ? `${p.number} ` : ''}
-                    {p.name}
-                    {p.position ? ` · ${p.position}` : ''}
+                  <li key={`squad-${p.number ?? ''}-${p.name}`}>
+                    {[
+                      p.number != null ? String(p.number) : null,
+                      p.name,
+                      p.position,
+                      p.birthYear != null ? String(p.birthYear) : null,
+                      p.preferredFoot,
+                      p.heightCm != null ? `${p.heightCm} cm` : null,
+                    ]
+                      .filter(Boolean)
+                      .join(' · ')}
                   </li>
                 ))}
               </ul>

@@ -21,6 +21,21 @@ export interface OppositionSquadPlayer {
   name: string;
   position?: string;
   isGk?: boolean;
+  /** Birth year (e.g. 2008). */
+  birthYear?: number | null;
+  /** Preferred foot as written on scout sheet (Destro / Sinistro / Ambidestro). */
+  preferredFoot?: string;
+  /** Height in cm. */
+  heightCm?: number | null;
+}
+
+/** Named scouted XI (recent game or combined). */
+export interface OppositionScoutedFormation {
+  id: string;
+  label: Localized;
+  system: string;
+  players: PitchPlayer[];
+  notes?: Localized;
 }
 
 export interface OppositionReferenceMatch {
@@ -104,6 +119,8 @@ export interface OppositionOpponent {
   /** Extra shapes when they rotate systems (e.g. 1-4-2-3-1). */
   alternateFormationSystems?: string[];
   starters: PitchPlayer[];
+  /** Full named XIs for recent games / combined XI (shown on Formation tab). */
+  scoutedFormations?: OppositionScoutedFormation[];
   substitutes: OppositionSquadPlayer[];
   squad: OppositionSquadPlayer[];
   /** Club clip library (tactical phases). Not copied per fixture. */
