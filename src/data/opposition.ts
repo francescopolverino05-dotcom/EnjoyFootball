@@ -505,22 +505,6 @@ attachReferencePack('bari', '2026-10-17_campionato-bari-vs-u19', [
   },
 ]);
 
-attachReferencePack('palermo', '2026-12-12_campionato-u19-vs-palermo', [
-  {
-    id: 'palermo-ref-bari',
-    title: {
-      en: 'Palermo vs Bari 2–2',
-      it: 'Palermo vs Bari 2–2',
-    },
-    competition: {
-      en: 'Primavera 2',
-      it: 'Primavera 2',
-    },
-    score: '2–2',
-    videoFile: 'https://vimeo.com/1230216777/1216012995',
-  },
-]);
-
 attachReferencePack('villarreal', '2026-10-13_uyl-villarreal-vs-u19', [
   {
     id: 'villarreal-ref-murcia',
