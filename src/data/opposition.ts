@@ -776,6 +776,20 @@ attachReferencePack('pisa', '2026-10-10_campionato-u19-vs-pisa', [
     score: '0–3',
     videoFile: 'https://vimeo.com/1228617723/8be1a3eb32',
   },
+], [
+  {
+    id: 'pisa-studio-report',
+    title: {
+      en: 'Studio Pisa',
+      it: 'Studio Pisa',
+    },
+    description: {
+      en: 'Opposition studio report (Avversari → Studio Report).',
+      it: 'Studio report avversario (Avversari → Studio Report).',
+    },
+    videoFile: 'https://vimeo.com/1231284074/7daaf82f2a',
+    tags: ['vimeo', 'opposition', 'studio-report'],
+  },
 ]);
 
 attachReferencePack('spezia', '2026-10-24_campionato-u19-vs-spezia', [
