@@ -1,0 +1,114 @@
+{
+  "id": "2026-09-29_martedi",
+  "slug": "2026-09-29_martedi",
+  "date": "2026-09-29",
+  "title": {
+    "en": "Tuesday training",
+    "it": "Martedì"
+  },
+  "focus": {
+    "en": "Rondo activation, 11v0 sprint, 6v6, partitella reaggressione",
+    "it": "Rondo attivazione, 11v0 sprint, 6v6, partitella reaggressione"
+  },
+  "sessionType": "metabolic",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — Training Sessions / 28/09/2026 / Martedí",
+    "it": "Video su Vimeo — Training Sessions / 28/09/2026 / Martedí"
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1231334635/dd1e3b1c14",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1231341629",
+        "title": {
+          "en": "6v6 (1 goal switch)",
+          "it": "6v6 (1 goal switch)"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1231341629/ed80042c9c",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1231340916",
+        "title": {
+          "en": "11v0 + 5 sec. Sprint",
+          "it": "11v0 + 5 sec. Sprint"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1231340916/ef78f97c32",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1231335261",
+        "title": {
+          "en": "Rondo (Technical Activation)",
+          "it": "Rondo (Technical Activation)"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1231335261/e0f7a68fb0",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1231334635",
+        "title": {
+          "en": "Partitella con 5 rec. Riagressione",
+          "it": "Partitella con 5 rec. Riagressione"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1231334635/dd1e3b1c14",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30714134",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30714134",
+    "lastSyncedAt": "2026-09-29T15:56:04.725Z"
+  }
+}
