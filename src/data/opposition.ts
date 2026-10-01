@@ -357,7 +357,7 @@ if (villarreal) {
       left: '38%',
     },
     {
-      number: 0,
+      number: 24,
       name: 'Roman',
       teamId: 'villarreal',
       top: '20%',
@@ -386,7 +386,7 @@ if (villarreal) {
     },
     {
       number: 22,
-      name: 'Cone',
+      name: 'Koné',
       teamId: 'villarreal',
       top: '45%',
       left: '62%',
@@ -442,7 +442,7 @@ if (villarreal) {
     { number: 3, name: 'Pilili', position: 'LB' },
     { number: 4, name: 'Martin Vergun', position: 'CB' },
     { number: 5, name: 'Guillermo Anadon', position: 'LCB' },
-    { name: 'Roman', position: 'LCB' },
+    { number: 24, name: 'Roman', position: 'LCB' },
     { number: 6, name: 'Alvaro Alcaide', position: 'LCM' },
     { number: 6, name: 'Joan', position: 'RCM' },
     { number: 7, name: 'Vivo', position: 'RW' },
@@ -454,7 +454,7 @@ if (villarreal) {
     { number: 16, name: 'Seydou Llopis', position: 'LWB' },
     { number: 19, name: 'Iker', position: 'ST' },
     { number: 20, name: 'Yuri', position: 'ST' },
-    { number: 22, name: 'Cone', position: 'LCM' },
+    { number: 22, name: 'Koné', position: 'LCM' },
     { number: 28, name: 'Iker Pérez', position: 'RW' },
     { number: 28, name: 'Luengo', position: 'RB' },
   ];
