@@ -90,6 +90,26 @@ export function placeholder442(teamId: string): PitchPlayer[] {
   ];
 }
 
+/**
+ * Empty 1-3-4-2-1 (back three + wing-backs, double pivot, two 10s, 9).
+ * Pitch attacks downward: team-left = screen-right.
+ */
+export function placeholder13421(teamId: string): PitchPlayer[] {
+  return [
+    { number: 1, name: 'GK', teamId, isGk: true, top: '8%', left: '50%' },
+    { number: 2, name: 'RCB', teamId, top: '20%', left: '28%' },
+    { number: 4, name: 'CB', teamId, top: '18%', left: '50%' },
+    { number: 5, name: 'LCB', teamId, top: '20%', left: '72%' },
+    { number: 11, name: 'RWB', teamId, top: '38%', left: '12%' },
+    { number: 16, name: 'LWB', teamId, top: '38%', left: '88%' },
+    { number: 8, name: 'RCM', teamId, top: '42%', left: '38%' },
+    { number: 6, name: 'LCM', teamId, top: '42%', left: '62%' },
+    { number: 28, name: 'RW', teamId, top: '62%', left: '28%' },
+    { number: 15, name: 'LW', teamId, top: '62%', left: '72%' },
+    { number: 9, name: 'ST', teamId, top: '78%', left: '50%' },
+  ];
+}
+
 export function placeholderPlayersForSystem(
   system: string,
   teamId: string
@@ -103,6 +123,9 @@ export function placeholderPlayersForSystem(
   }
   if (key === '1-4-4-2' || key === '4-4-2') {
     return placeholder442(teamId);
+  }
+  if (key === '1-3-4-2-1' || key === '3-4-2-1') {
+    return placeholder13421(teamId);
   }
   return placeholder1433(teamId);
 }
@@ -181,7 +204,7 @@ const OPPONENTS: OppositionOpponent[] = [
   club('salernitana', 'Salernitana', ['primavera2']),
   club('spezia', 'Spezia', ['primavera2', 'coppaItalia']),
   club('arsenal', 'Arsenal', ['uefaYouthLeague'], '1-4-2-3-1'),
-  club('villarreal', 'Villarreal', ['uefaYouthLeague']),
+  club('villarreal', 'Villarreal', ['uefaYouthLeague'], '1-3-4-2-1'),
   club('bodo-glimt', 'Bodø/Glimt', ['uefaYouthLeague']),
   club('porto', 'Porto', ['uefaYouthLeague']),
   club('man-city', 'Manchester City', ['uefaYouthLeague']),
@@ -223,6 +246,116 @@ if (arsenal) {
     { name: "Ceadach O'Neill", position: 'ST' },
     { name: 'Marley Frohock', position: 'ST' },
     { number: 95, name: 'Jaden Maghoma', position: 'ST' },
+  ];
+}
+
+/** Villarreal scouted XI — 1-3-4-2-1 vs Borussia Dortmund. */
+const villarreal = OPPONENTS.find((o) => o.id === 'villarreal');
+if (villarreal) {
+  const dortmund = [
+    {
+      number: 1,
+      name: 'Pablo Polo',
+      teamId: 'villarreal',
+      isGk: true,
+      top: '8%',
+      left: '50%',
+    },
+    {
+      number: 2,
+      name: 'Falco Montanet',
+      teamId: 'villarreal',
+      top: '20%',
+      left: '28%',
+    },
+    {
+      number: 4,
+      name: 'Martin Vergun',
+      teamId: 'villarreal',
+      top: '18%',
+      left: '50%',
+    },
+    {
+      number: 5,
+      name: 'Guillermo Anadon',
+      teamId: 'villarreal',
+      top: '20%',
+      left: '72%',
+    },
+    {
+      number: 11,
+      name: 'Adrian Guelamon',
+      teamId: 'villarreal',
+      top: '38%',
+      left: '12%',
+    },
+    {
+      number: 16,
+      name: 'Seydou Llopis',
+      teamId: 'villarreal',
+      top: '38%',
+      left: '88%',
+    },
+    {
+      number: 8,
+      name: 'Moussa Traore',
+      teamId: 'villarreal',
+      top: '42%',
+      left: '38%',
+    },
+    {
+      number: 6,
+      name: 'Alvaro Alcaide',
+      teamId: 'villarreal',
+      top: '42%',
+      left: '62%',
+    },
+    {
+      number: 28,
+      name: 'Iker Pérez',
+      teamId: 'villarreal',
+      top: '62%',
+      left: '28%',
+    },
+    {
+      number: 15,
+      name: 'González García',
+      teamId: 'villarreal',
+      top: '62%',
+      left: '72%',
+    },
+    {
+      number: 9,
+      name: 'García Palomar',
+      teamId: 'villarreal',
+      top: '78%',
+      left: '50%',
+    },
+  ];
+  villarreal.starters = dortmund;
+  villarreal.scoutedFormations = [
+    {
+      id: 'villarreal-vs-dortmund',
+      label: {
+        en: 'vs Borussia Dortmund',
+        it: 'vs Borussia Dortmund',
+      },
+      system: '1-3-4-2-1',
+      players: dortmund,
+    },
+  ];
+  villarreal.squad = [
+    { number: 1, name: 'Pablo Polo', position: 'GK', isGk: true },
+    { number: 2, name: 'Falco Montanet', position: 'RCB' },
+    { number: 4, name: 'Martin Vergun', position: 'CB' },
+    { number: 5, name: 'Guillermo Anadon', position: 'LCB' },
+    { number: 11, name: 'Adrian Guelamon', position: 'RWB' },
+    { number: 16, name: 'Seydou Llopis', position: 'LWB' },
+    { number: 6, name: 'Alvaro Alcaide', position: 'LCM' },
+    { number: 8, name: 'Moussa Traore', position: 'RCM' },
+    { number: 28, name: 'Iker Pérez', position: 'RW' },
+    { number: 15, name: 'González García', position: 'LW' },
+    { number: 9, name: 'García Palomar', position: 'ST' },
   ];
 }
 
