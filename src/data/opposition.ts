@@ -333,6 +333,87 @@ if (villarreal) {
     },
   ];
   villarreal.starters = dortmund;
+  const elche = [
+    {
+      number: 1,
+      name: 'Ursu',
+      teamId: 'villarreal',
+      isGk: true,
+      top: '8%',
+      left: '50%',
+    },
+    {
+      number: 28,
+      name: 'Luengo',
+      teamId: 'villarreal',
+      top: '22%',
+      left: '18%',
+    },
+    {
+      number: 2,
+      name: 'Toni',
+      teamId: 'villarreal',
+      top: '20%',
+      left: '38%',
+    },
+    {
+      number: 0,
+      name: 'Roman',
+      teamId: 'villarreal',
+      top: '20%',
+      left: '62%',
+    },
+    {
+      number: 3,
+      name: 'Pilili',
+      teamId: 'villarreal',
+      top: '22%',
+      left: '82%',
+    },
+    {
+      number: 7,
+      name: 'Vivo',
+      teamId: 'villarreal',
+      top: '48%',
+      left: '18%',
+    },
+    {
+      number: 6,
+      name: 'Joan',
+      teamId: 'villarreal',
+      top: '45%',
+      left: '38%',
+    },
+    {
+      number: 22,
+      name: 'Cone',
+      teamId: 'villarreal',
+      top: '45%',
+      left: '62%',
+    },
+    {
+      number: 10,
+      name: 'Edu',
+      teamId: 'villarreal',
+      top: '48%',
+      left: '82%',
+    },
+    {
+      number: 19,
+      name: 'Iker',
+      teamId: 'villarreal',
+      top: '75%',
+      left: '38%',
+    },
+    {
+      number: 20,
+      name: 'Yuri',
+      teamId: 'villarreal',
+      top: '75%',
+      left: '62%',
+    },
+  ];
+  villarreal.alternateFormationSystems = ['1-4-4-2'];
   villarreal.scoutedFormations = [
     {
       id: 'villarreal-vs-dortmund',
@@ -343,19 +424,39 @@ if (villarreal) {
       system: '1-3-4-2-1',
       players: dortmund,
     },
+    {
+      id: 'villarreal-vs-elche',
+      label: {
+        en: 'vs Elche',
+        it: 'vs Elche',
+      },
+      system: '1-4-4-2',
+      players: elche,
+    },
   ];
   villarreal.squad = [
     { number: 1, name: 'Pablo Polo', position: 'GK', isGk: true },
+    { number: 1, name: 'Ursu', position: 'GK', isGk: true },
     { number: 2, name: 'Falco Montanet', position: 'RCB' },
+    { number: 2, name: 'Toni', position: 'RCB' },
+    { number: 3, name: 'Pilili', position: 'LB' },
     { number: 4, name: 'Martin Vergun', position: 'CB' },
     { number: 5, name: 'Guillermo Anadon', position: 'LCB' },
-    { number: 11, name: 'Adrian Guelamon', position: 'RWB' },
-    { number: 16, name: 'Seydou Llopis', position: 'LWB' },
+    { name: 'Roman', position: 'LCB' },
     { number: 6, name: 'Alvaro Alcaide', position: 'LCM' },
+    { number: 6, name: 'Joan', position: 'RCM' },
+    { number: 7, name: 'Vivo', position: 'RW' },
     { number: 8, name: 'Moussa Traore', position: 'RCM' },
-    { number: 28, name: 'Iker Pérez', position: 'RW' },
-    { number: 15, name: 'González García', position: 'LW' },
     { number: 9, name: 'García Palomar', position: 'ST' },
+    { number: 10, name: 'Edu', position: 'LW' },
+    { number: 11, name: 'Adrian Guelamon', position: 'RWB' },
+    { number: 15, name: 'González García', position: 'LW' },
+    { number: 16, name: 'Seydou Llopis', position: 'LWB' },
+    { number: 19, name: 'Iker', position: 'ST' },
+    { number: 20, name: 'Yuri', position: 'ST' },
+    { number: 22, name: 'Cone', position: 'LCM' },
+    { number: 28, name: 'Iker Pérez', position: 'RW' },
+    { number: 28, name: 'Luengo', position: 'RB' },
   ];
 }
 
