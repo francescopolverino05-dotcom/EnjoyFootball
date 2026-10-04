@@ -1,0 +1,50 @@
+stat,Pisa,Perugia
+Goals,2,3
+xG (estimated),1.3,1.91
+Shots (1H),4,14
+Shots (2H),9,12
+Shots (full match),13,26
+Shots on target,6,16
+Shot accuracy %,46.2,61.5
+Blocked shots,3,4
+Missed shots (off target),4,6
+Shots inside box,11,15
+Shots outside box,2,11
+Headed shots,3,6
+Possession estimate %,49.9,50.1
+Passes,559,574
+Passes completed,446,464
+Pass accuracy % (full match),79.8,80.8
+Pass accuracy % (1H),80,83
+Pass accuracy % (2H),80,78
+Key passes,7,11
+Progressive passes (completed / attempted),33 / 84,37 / 80
+Into final third (completed / attempted),24 / 50,29 / 52
+Into box (completed / attempted),5 / 17,6 / 13
+Crosses,18 (3 completed),10 (4 completed)
+Long balls,39 (10 completed),38 (10 completed)
+Through balls,7 (2 completed),10 (3 completed)
+Ground duels won,19,26
+Ground duels (won / total),19 / 45,26 / 45
+Aerial duels won,28,39
+Aerial duels (won / total),28 / 67,39 / 67
+Interceptions,60,57
+High recoveries,10,13
+Balls lost,23,16
+Blocks,7,12
+Clearances,29,33
+GK saves,9,2
+Fouls committed,17,21
+Fouls won,21,17
+Yellow cards,3,2
+Red cards,0,0
+Offsides,2,3
+Corners,3,6
+Free kicks,33,25
+Throw-ins,43,28
+PPDA 1H,9.6,8.2
+PPDA 1H numerator / denominator,259/27,254/31
+PPDA 2H,8.2,8.1
+PPDA 2H numerator / denominator,214/26,211/26
+PPDA full match,8.9,8.2
+PPDA full match numerator / denominator,473/53,465/57
