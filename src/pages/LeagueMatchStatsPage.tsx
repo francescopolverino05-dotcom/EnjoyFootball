@@ -181,13 +181,6 @@ export default function LeagueMatchStatsPage() {
   const match = buildMatchView(pack);
   const scoreLine = `${match.homeTeam.shortName} ${match.score!.home} – ${match.score!.away} ${match.awayTeam.shortName}`;
 
-  const homePlayers = pack.playerStats.filter(
-    (p) => p.team.toLowerCase() === pack.home.name.toLowerCase()
-  );
-  const awayPlayers = pack.playerStats.filter(
-    (p) => p.team.toLowerCase() === pack.away.name.toLowerCase()
-  );
-
   const missingFormationSide =
     match.formations.length === 0
       ? `${pack.home.name} & ${pack.away.name}`
@@ -232,72 +225,15 @@ export default function LeagueMatchStatsPage() {
           matchDate={match.date}
           competition={L(match.subtitle)}
         />
-        <StatsDashboard match={match} hideEmptyTabs />
-
-        {(
-          [
-            [pack.home.name, homePlayers],
-            [pack.away.name, awayPlayers],
-          ] as const
-        ).map(([teamName, rows]) => (
-          <div key={teamName}>
-            <div className="section-title">
-              {t('leagueMatchStatsPlayers')} — {teamName}
-            </div>
-            <div className="table-wrap">
-              <table className="standings-table league-match-player-table">
-                <thead>
-                  <tr>
-                    <th scope="col">{t('leagueMatchStatsPlayer')}</th>
-                    <th scope="col">Passes</th>
-                    <th scope="col">Pass %</th>
-                    <th scope="col">Prog</th>
-                    <th scope="col">Key</th>
-                    <th scope="col">Shots</th>
-                    <th scope="col">SoT</th>
-                    <th scope="col">G</th>
-                    <th scope="col">xG</th>
-                    <th scope="col">Int</th>
-                    <th scope="col">Rec</th>
-                    <th scope="col">Clr</th>
-                    <th scope="col">Blk</th>
-                    <th scope="col">Duels</th>
-                    <th scope="col">Fouls</th>
-                    <th scope="col">Lost</th>
-                    <th scope="col">Saves</th>
-                    <th scope="col">Y</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {rows.map((p) => (
-                    <tr key={`${p.team}-${p.player}`}>
-                      <th scope="row">{p.player}</th>
-                      <td>{p.passes}</td>
-                      <td>{p.passAccPct}%</td>
-                      <td>{p.progPasses}</td>
-                      <td>{p.keyPasses}</td>
-                      <td>{p.shots}</td>
-                      <td>{p.onTarget}</td>
-                      <td>{p.goals}</td>
-                      <td>{p.xg}</td>
-                      <td>{p.interceptions}</td>
-                      <td>{p.recoveries}</td>
-                      <td>{p.clearances}</td>
-                      <td>{p.blocks}</td>
-                      <td>
-                        {p.duelsWon}/{p.duels}
-                      </td>
-                      <td>{p.fouls}</td>
-                      <td>{p.ballsLost}</td>
-                      <td>{p.saves}</td>
-                      <td>{p.yellow}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        ))}
+        <StatsDashboard
+          match={match}
+          hideEmptyTabs
+          playerStats={{
+            homeName: pack.home.name,
+            awayName: pack.away.name,
+            players: pack.playerStats,
+          }}
+        />
 
         {pack.note ? (
           <p className="home-section-hint league-match-note">{L(pack.note)}</p>

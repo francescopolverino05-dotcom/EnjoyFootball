@@ -4907,6 +4907,18 @@ a.gacon-ind-row:hover {
   font-weight: 700;
 }
 
+.player-stats-panel {
+  width: 100%;
+}
+
+.player-stats-section {
+  margin: 0 0 20px;
+}
+
+.player-stats-section:last-child {
+  margin-bottom: 0;
+}
+
 .league-match-player-table {
   font-size: 12px;
   min-width: 960px;

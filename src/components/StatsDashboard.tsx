@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { MatchData, AnalysisVideo, GoalkeeperLog } from '../types/match';
+import type { LeagueMatchPlayerStatRow } from '../types/leagueMatchStats';
 import { useLanguage } from '../i18n/LanguageContext';
 import type { Localized, UiKey } from '../i18n/translations';
 import { getRpeSessionByMatchSlug } from '../data/rpeLoad';
@@ -10,15 +11,24 @@ import PhysicalLoadPanel from './PhysicalLoadPanel';
 import TwoColumnNotesPanel from './TwoColumnNotesPanel';
 import { EMPTY_MATCH_REFLECTION } from '../types/scoutNotes';
 
+export interface PlayerStatsTabData {
+  homeName: string;
+  awayName: string;
+  players: LeagueMatchPlayerStatRow[];
+}
+
 interface StatsDashboardProps {
   match: MatchData;
   /** Omit tabs with no content (used for league opposition packs). */
   hideEmptyTabs?: boolean;
+  /** Optional individual player stats (league opposition packs). */
+  playerStats?: PlayerStatsTabData;
 }
 
 type TabId =
   | 'dynamics'
   | 'teamstats'
+  | 'playerstats'
   | 'gkanalysis'
   | 'fullmatch'
   | 'clips'
@@ -29,6 +39,7 @@ type TabId =
 type TabLabelKey =
   | 'tabDynamics'
   | 'tabTeamStats'
+  | 'tabPlayerStats'
   | 'tabGk'
   | 'tabFullMatch'
   | 'tabClips'
@@ -39,6 +50,7 @@ type TabLabelKey =
 export default function StatsDashboard({
   match,
   hideEmptyTabs = false,
+  playerStats,
 }: StatsDashboardProps) {
   const { t, L } = useLanguage();
   const rpeSession = getRpeSessionByMatchSlug(match.slug);
@@ -50,11 +62,15 @@ export default function StatsDashboard({
   const hasGk =
     match.goalkeepers.length > 0 ||
     Boolean(match.goalkeeperAnalysisVideos?.length);
+  const hasPlayerStats = Boolean(playerStats?.players.length);
 
   // Match-only tabs — never include training tabs (Full Session / Training Design).
   const allTabs: [TabId, TabLabelKey][] = [
     ['dynamics', 'tabDynamics'],
     ['teamstats', 'tabTeamStats'],
+    ...(hasPlayerStats
+      ? ([['playerstats', 'tabPlayerStats']] as [TabId, TabLabelKey][])
+      : []),
     ['gkanalysis', 'tabGk'],
     ['fullmatch', 'tabFullMatch'],
     ['clips', 'tabClips'],
@@ -69,6 +85,7 @@ export default function StatsDashboard({
     ? allTabs.filter(([id]) => {
         if (id === 'dynamics') return match.dynamics.length > 0;
         if (id === 'teamstats') return match.teamStats.length > 0;
+        if (id === 'playerstats') return hasPlayerStats;
         if (id === 'gkanalysis') return hasGk;
         if (id === 'fullmatch') return Boolean(match.video?.fullMatch);
         if (id === 'clips') return match.clips.length > 0;
@@ -149,6 +166,9 @@ export default function StatsDashboard({
         ) : null}
 
         {visibleActive === 'teamstats' ? <TeamStatsPanel match={match} /> : null}
+        {visibleActive === 'playerstats' && playerStats ? (
+          <PlayerStatsPanel data={playerStats} />
+        ) : null}
         {visibleActive === 'gkanalysis' ? (
           <GkAnalysisPanel
             matchSlug={match.slug}
@@ -236,6 +256,81 @@ function TeamStatsPanel({ match }: { match: MatchData }) {
               <span className="stats-val-away">{L(stat.away)}</span>
             </div>
           ))}
+        </section>
+      ))}
+    </div>
+  );
+}
+
+function PlayerStatsPanel({ data }: { data: PlayerStatsTabData }) {
+  const { t } = useLanguage();
+  const groups = useMemo(() => {
+    const teamNames = [data.homeName, data.awayName];
+    return teamNames.map((teamName) => ({
+      teamName,
+      rows: data.players.filter(
+        (p) => p.team.toLowerCase() === teamName.toLowerCase()
+      ),
+    }));
+  }, [data]);
+
+  return (
+    <div className="player-stats-panel">
+      {groups.map(({ teamName, rows }) => (
+        <section className="player-stats-section" key={teamName}>
+          <h3 className="team-stats-section-title">{teamName}</h3>
+          <div className="table-wrap">
+            <table className="standings-table league-match-player-table">
+              <thead>
+                <tr>
+                  <th scope="col">{t('leagueMatchStatsPlayer')}</th>
+                  <th scope="col">Passes</th>
+                  <th scope="col">Pass %</th>
+                  <th scope="col">Prog</th>
+                  <th scope="col">Key</th>
+                  <th scope="col">Shots</th>
+                  <th scope="col">SoT</th>
+                  <th scope="col">G</th>
+                  <th scope="col">xG</th>
+                  <th scope="col">Int</th>
+                  <th scope="col">Rec</th>
+                  <th scope="col">Clr</th>
+                  <th scope="col">Blk</th>
+                  <th scope="col">Duels</th>
+                  <th scope="col">Fouls</th>
+                  <th scope="col">Lost</th>
+                  <th scope="col">Saves</th>
+                  <th scope="col">Y</th>
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((p) => (
+                  <tr key={`${p.team}-${p.player}`}>
+                    <th scope="row">{p.player}</th>
+                    <td>{p.passes}</td>
+                    <td>{p.passAccPct}%</td>
+                    <td>{p.progPasses}</td>
+                    <td>{p.keyPasses}</td>
+                    <td>{p.shots}</td>
+                    <td>{p.onTarget}</td>
+                    <td>{p.goals}</td>
+                    <td>{p.xg}</td>
+                    <td>{p.interceptions}</td>
+                    <td>{p.recoveries}</td>
+                    <td>{p.clearances}</td>
+                    <td>{p.blocks}</td>
+                    <td>
+                      {p.duelsWon}/{p.duels}
+                    </td>
+                    <td>{p.fouls}</td>
+                    <td>{p.ballsLost}</td>
+                    <td>{p.saves}</td>
+                    <td>{p.yellow}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </section>
       ))}
     </div>
