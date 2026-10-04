@@ -12,6 +12,8 @@ import { EMPTY_MATCH_REFLECTION } from '../types/scoutNotes';
 
 interface StatsDashboardProps {
   match: MatchData;
+  /** Omit tabs with no content (used for league opposition packs). */
+  hideEmptyTabs?: boolean;
 }
 
 type TabId =
@@ -34,8 +36,10 @@ type TabLabelKey =
   | 'tabWwbEbi'
   | 'tabPhysicalLoad';
 
-export default function StatsDashboard({ match }: StatsDashboardProps) {
-  const [activeTab, setActiveTab] = useState<TabId>('dynamics');
+export default function StatsDashboard({
+  match,
+  hideEmptyTabs = false,
+}: StatsDashboardProps) {
   const { t, L } = useLanguage();
   const rpeSession = getRpeSessionByMatchSlug(match.slug);
   const tqrSession = getTqrSessionByMatchSlug(match.slug);
@@ -43,9 +47,12 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
     rpeSession || tqrSession || match.gpsStats?.length
   );
   const reflection = match.reflection ?? EMPTY_MATCH_REFLECTION;
+  const hasGk =
+    match.goalkeepers.length > 0 ||
+    Boolean(match.goalkeeperAnalysisVideos?.length);
 
   // Match-only tabs — never include training tabs (Full Session / Training Design).
-  const tabs: [TabId, TabLabelKey][] = [
+  const allTabs: [TabId, TabLabelKey][] = [
     ['dynamics', 'tabDynamics'],
     ['teamstats', 'tabTeamStats'],
     ['gkanalysis', 'tabGk'],
@@ -58,6 +65,33 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
       : []),
   ];
 
+  const tabs = hideEmptyTabs
+    ? allTabs.filter(([id]) => {
+        if (id === 'dynamics') return match.dynamics.length > 0;
+        if (id === 'teamstats') return match.teamStats.length > 0;
+        if (id === 'gkanalysis') return hasGk;
+        if (id === 'fullmatch') return Boolean(match.video?.fullMatch);
+        if (id === 'clips') return match.clips.length > 0;
+        if (id === 'videoanalysis') return match.analysisVideos.length > 0;
+        if (id === 'reflection') {
+          return (
+            reflection.wentWell.length > 0 ||
+            reflection.evenBetterIf.length > 0
+          );
+        }
+        if (id === 'physicalload') return hasPhysicalLoad;
+        return true;
+      })
+    : allTabs;
+
+  const [activeTab, setActiveTab] = useState<TabId>(
+    () => tabs[0]?.[0] ?? 'dynamics'
+  );
+  const visibleActive: TabId =
+    tabs.some(([id]) => id === activeTab)
+      ? activeTab
+      : (tabs[0]?.[0] ?? 'dynamics');
+
   return (
     <>
       <div className="tabs-header" role="tablist">
@@ -66,8 +100,8 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
             key={id}
             type="button"
             role="tab"
-            aria-selected={activeTab === id}
-            className={`tab-button ${activeTab === id ? 'active' : ''}`}
+            aria-selected={visibleActive === id}
+            className={`tab-button ${visibleActive === id ? 'active' : ''}`}
             onClick={() => setActiveTab(id)}
           >
             {t(labelKey)}
@@ -81,7 +115,7 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
         embeds black or stuck on mobile.
       */}
       <div className="tab-content active" role="tabpanel">
-        {activeTab === 'dynamics' ? (
+        {visibleActive === 'dynamics' ? (
           <div className="dynamics-panel">
             {match.dynamics.map((metric) => (
               <div
@@ -114,16 +148,16 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
           </div>
         ) : null}
 
-        {activeTab === 'teamstats' ? <TeamStatsPanel match={match} /> : null}
-        {activeTab === 'gkanalysis' ? (
+        {visibleActive === 'teamstats' ? <TeamStatsPanel match={match} /> : null}
+        {visibleActive === 'gkanalysis' ? (
           <GkAnalysisPanel
             matchSlug={match.slug}
             goalkeepers={match.goalkeepers}
             analysisVideos={match.goalkeeperAnalysisVideos}
           />
         ) : null}
-        {activeTab === 'fullmatch' ? <FullMatchPanel match={match} /> : null}
-        {activeTab === 'clips' ? (
+        {visibleActive === 'fullmatch' ? <FullMatchPanel match={match} /> : null}
+        {visibleActive === 'clips' ? (
           <PhaseClipsPanel
             slug={match.slug}
             clips={match.clips}
@@ -131,10 +165,10 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
             emptyMessage={t('noClips').replace(/\{slug\}/g, match.slug)}
           />
         ) : null}
-        {activeTab === 'videoanalysis' ? (
+        {visibleActive === 'videoanalysis' ? (
           <VideoAnalysisPanel match={match} />
         ) : null}
-        {activeTab === 'reflection' ? (
+        {visibleActive === 'reflection' ? (
           <TwoColumnNotesPanel
             hint={t('reflectionHint')}
             leftTitle={t('reflectionWentWell')}
@@ -145,7 +179,7 @@ export default function StatsDashboard({ match }: StatsDashboardProps) {
             rightNotes={reflection.evenBetterIf}
           />
         ) : null}
-        {activeTab === 'physicalload' && hasPhysicalLoad ? (
+        {visibleActive === 'physicalload' && hasPhysicalLoad ? (
           <PhysicalLoadPanel
             session={rpeSession ?? null}
             tqrSession={tqrSession ?? null}

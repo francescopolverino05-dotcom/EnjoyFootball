@@ -2,11 +2,17 @@ import { Link, useParams } from 'react-router-dom';
 import Formations from '../components/Formations';
 import ReportHeader from '../components/ReportHeader';
 import Scoreboard from '../components/Scoreboard';
+import StatsDashboard from '../components/StatsDashboard';
 import Timeline from '../components/Timeline';
 import {
   getLeagueMatchStats,
   isLeagueMatchCompetitionId,
 } from '../data/leagueMatchStats';
+import {
+  mapLeagueDynamics,
+  mapLeagueGoalkeepers,
+  mapLeagueTeamStats,
+} from '../data/leagueMatchStatsMap';
 import { getOpponentBySlug } from '../data/opposition';
 import { useLanguage } from '../i18n/LanguageContext';
 import { localize, type Localized } from '../i18n/translations';
@@ -139,9 +145,9 @@ function buildMatchView(pack: NonNullable<ReturnType<typeof getLeagueMatchStats>
     goals,
     timeline,
     formations,
-    dynamics: [],
-    teamStats: [],
-    goalkeepers: [],
+    dynamics: mapLeagueDynamics(pack),
+    teamStats: mapLeagueTeamStats(pack),
+    goalkeepers: mapLeagueGoalkeepers(pack),
     clips: [],
     analysisVideos: [],
   };
@@ -221,33 +227,12 @@ export default function LeagueMatchStatsPage() {
 
       <div className="report-page">
         <ReportHeader
-          pageTitle={t('statsPageTitle')}
+          pageTitle={t('tacticalDashboard')}
           matchTitle={scoreLine}
           matchDate={match.date}
           competition={L(match.subtitle)}
         />
-
-        <div className="section-title">{t('leagueMatchStatsTeam')}</div>
-        <div className="table-wrap">
-          <table className="standings-table stats-rankings-table">
-            <thead>
-              <tr>
-                <th scope="col">{t('leagueMatchStatsMetric')}</th>
-                <th scope="col">{pack.home.name}</th>
-                <th scope="col">{pack.away.name}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {pack.teamStats.map((row) => (
-                <tr key={row.stat}>
-                  <th scope="row">{row.stat}</th>
-                  <td className="stats-value-cell">{row.home}</td>
-                  <td className="stats-value-cell">{row.away}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <StatsDashboard match={match} hideEmptyTabs />
 
         {(
           [
