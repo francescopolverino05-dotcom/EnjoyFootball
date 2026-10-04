@@ -560,6 +560,36 @@ function pisa442(names: {
   ];
 }
 
+/** 4-1-4-1 named XI. Pitch attacks downward: team-left = screen-right. */
+function perugia4141(names: {
+  gk: string;
+  lb: string;
+  lcb: string;
+  rcb: string;
+  rb: string;
+  cdm: string;
+  lm: string;
+  lcm: string;
+  rcm: string;
+  rm: string;
+  st: string;
+}): PitchPlayer[] {
+  const teamId = 'perugia';
+  return [
+    { number: 0, name: names.gk, teamId, isGk: true, top: '8%', left: '50%' },
+    { number: 0, name: names.lb, teamId, top: '22%', left: '82%' },
+    { number: 0, name: names.lcb, teamId, top: '20%', left: '62%' },
+    { number: 0, name: names.rcb, teamId, top: '20%', left: '38%' },
+    { number: 0, name: names.rb, teamId, top: '22%', left: '18%' },
+    { number: 0, name: names.cdm, teamId, top: '38%', left: '50%' },
+    { number: 0, name: names.lm, teamId, top: '58%', left: '82%' },
+    { number: 0, name: names.lcm, teamId, top: '52%', left: '62%' },
+    { number: 0, name: names.rcm, teamId, top: '52%', left: '38%' },
+    { number: 0, name: names.rm, teamId, top: '58%', left: '18%' },
+    { number: 0, name: names.st, teamId, top: '78%', left: '50%' },
+  ];
+}
+
 /**
  * Pisa scout pack — notebook “Profili giocatori” + last 3 XIs + Combined XI.
  * On the sheet, “//” = same starter as the previous match in that slot.
@@ -812,6 +842,63 @@ if (pisa) {
       preferredFoot: 'Destro',
       heightCm: 181,
     },
+  ];
+}
+
+/** Perugia XI vs Pisa — team sheet 04.09.2026 (Alfredo Pagni). */
+const perugia = OPPONENTS.find((o) => o.id === 'perugia');
+if (perugia) {
+  const vsPisa = perugia4141({
+    gk: 'Strappini',
+    lb: 'Bevanati',
+    lcb: 'Peruzzi',
+    rcb: 'Cesarini',
+    rb: 'Buonafede',
+    cdm: 'Malfatti',
+    lm: 'Ciani',
+    lcm: 'Perugini',
+    rcm: 'Vanni',
+    rm: 'Merico',
+    st: 'Sheji',
+  });
+  perugia.formationSystem = '1-4-1-4-1';
+  perugia.starters = vsPisa;
+  perugia.scoutedFormations = [
+    {
+      id: 'perugia-vs-pisa',
+      label: { en: 'vs Pisa', it: 'vs Pisa' },
+      system: '4-1-4-1',
+      players: vsPisa,
+      notes: {
+        en: 'Subs: Raffaelli 65′ (Merico), Ximenez 65′ (Vanni), Giambarveri 74′ (Buonafede), Calva 89′ (Sheji), Pierangelini 89′ (Perugini).',
+        it: 'Sub: Raffaelli 65′ (Merico), Ximenez 65′ (Vanni), Giambarveri 74′ (Buonafede), Calva 89′ (Sheji), Pierangelini 89′ (Perugini).',
+      },
+    },
+  ];
+  perugia.squad = [
+    { number: 1, name: 'Strappini', position: 'GK', isGk: true, birthYear: 2008 },
+    { number: 2, name: 'Buonafede', position: 'RB', birthYear: 2008 },
+    { number: 3, name: 'Bevanati', position: 'LB', birthYear: 2008 },
+    { number: 4, name: 'Malfatti', position: 'CDM', birthYear: 2008 },
+    { number: 5, name: 'Peruzzi', position: 'CB', birthYear: 2008 },
+    { number: 6, name: 'Cesarini', position: 'CB', birthYear: 2008 },
+    { number: 7, name: 'Merico', position: 'RW', birthYear: 2008 },
+    { number: 8, name: 'Perugini', position: 'CM', birthYear: 2008 },
+    { number: 9, name: 'Sheji', position: 'ST', birthYear: 2008 },
+    { number: 10, name: 'Vanni', position: 'CM', birthYear: 2008 },
+    { number: 11, name: 'Ciani', position: 'LW', birthYear: 2008 },
+    { number: 12, name: 'Piccini', position: 'GK', isGk: true, birthYear: 2009 },
+    { number: 13, name: 'Ragni', birthYear: 2009 },
+    { number: 14, name: 'Olimpieri', birthYear: 2009 },
+    { number: 15, name: 'Pierangelini', birthYear: 2009 },
+    { number: 16, name: 'Iachini', birthYear: 2009 },
+    { number: 17, name: 'Giambarveri', birthYear: 2008 },
+    { number: 18, name: 'Ximenez', birthYear: 2008 },
+    { number: 19, name: 'Raffaelli', birthYear: 2009 },
+    { number: 20, name: 'Calva', birthYear: 2009 },
+    { number: 21, name: 'Di Salvatore', birthYear: 2008 },
+    { number: 22, name: 'Organai', position: 'GK', isGk: true, birthYear: 2010 },
+    { number: 23, name: 'Ciarapica', birthYear: 2009 },
   ];
 }
 
