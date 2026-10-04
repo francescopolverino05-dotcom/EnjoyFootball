@@ -166,6 +166,8 @@ const dictionaries = {
     leagueMatchStatsPlayers: 'Player stats',
     leagueMatchStatsMetric: 'Stat',
     leagueMatchStatsPlayer: 'Player',
+    leagueMatchStatsFormationMissing:
+      'Formation still needed for: {teams}. Send the XI when you have it.',
     tableMatchday: 'Matchday',
     tableUpdated: 'Updated {date}',
     tableSourceLnpb: 'LNPB calendar (CU n. 10)',
@@ -629,6 +631,8 @@ const dictionaries = {
     leagueMatchStatsPlayers: 'Statistiche giocatori',
     leagueMatchStatsMetric: 'Statistica',
     leagueMatchStatsPlayer: 'Giocatore',
+    leagueMatchStatsFormationMissing:
+      'Formazione ancora mancante per: {teams}. Invia l’XI quando ce l’hai.',
     tableMatchday: 'Giornata',
     tableUpdated: 'Aggiornato {date}',
     tableSourceLnpb: 'Calendario LNPB (CU n. 10)',
