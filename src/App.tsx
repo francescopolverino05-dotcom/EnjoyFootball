@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import TablesPage from './pages/TablesPage';
 import StatsPage from './pages/StatsPage';
+import LeagueMatchStatsPage from './pages/LeagueMatchStatsPage';
 import AppNav from './components/AppNav';
 import LanguageToggle from './components/LanguageToggle';
 import PasswordGate from './components/PasswordGate';
@@ -35,6 +36,10 @@ export default function App() {
         <Route path="/players/:slug" element={<PlayerPage />} />
         <Route path="/table" element={<TablesPage />} />
         <Route path="/stats" element={<StatsPage />} />
+        <Route
+          path="/stats/:competitionId/:slug"
+          element={<LeagueMatchStatsPage />}
+        />
       </Routes>
     </PasswordGate>
   );

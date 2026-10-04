@@ -303,20 +303,39 @@ export default function TablesPage() {
                       const away = nameById.get(fx.awayId) ?? fx.awayId;
                       const ours =
                         fx.homeId === 'napoli' || fx.awayId === 'napoli';
-                      return (
-                        <li
-                          key={`${selectedMd.number}-${fx.homeId}-${fx.awayId}`}
-                          className={
-                            ours
-                              ? 'standings-fixture standings-fixture--us'
-                              : 'standings-fixture'
-                          }
-                        >
+                      const className = [
+                        'standings-fixture',
+                        ours ? 'standings-fixture--us' : '',
+                        fx.statsSlug && fx.score
+                          ? 'standings-fixture--has-stats'
+                          : '',
+                      ]
+                        .filter(Boolean)
+                        .join(' ');
+                      const body = (
+                        <>
                           <span className="standings-fixture-home">{home}</span>
                           <span className="standings-fixture-sep">
                             {fx.score ?? '–'}
                           </span>
                           <span className="standings-fixture-away">{away}</span>
+                        </>
+                      );
+                      return (
+                        <li
+                          key={`${selectedMd.number}-${fx.homeId}-${fx.awayId}`}
+                          className={className}
+                        >
+                          {fx.statsSlug && fx.score ? (
+                            <Link
+                              className="standings-fixture-link"
+                              to={`/stats/primavera2/${fx.statsSlug}`}
+                            >
+                              {body}
+                            </Link>
+                          ) : (
+                            body
+                          )}
                         </li>
                       );
                     })}

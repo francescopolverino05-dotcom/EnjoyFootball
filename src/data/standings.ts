@@ -39,6 +39,8 @@ export interface StandingFixture {
   homeId: string;
   awayId: string;
   score?: string | null;
+  /** Slug under /stats/{competitionId}/{statsSlug} when a match sheet exists. */
+  statsSlug?: string;
 }
 
 export interface StandingMatchday {

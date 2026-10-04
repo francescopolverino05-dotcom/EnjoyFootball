@@ -266,7 +266,8 @@
             {
               "homeId": "pisa",
               "awayId": "perugia",
-              "score": "2-3"
+              "score": "2-3",
+              "statsSlug": "pisa-perugia"
             },
             {
               "homeId": "salernitana",
