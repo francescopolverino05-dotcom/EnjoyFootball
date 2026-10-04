@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-04",
+  "updatedAt": "2026-10-05",
   "sources": {
     "primavera2": "https://www.transfermarkt.com/primavera-2b/tabelle/wettbewerb/IJ2B/saison_id/2026",
     "coppaItalia": "https://www.transfermarkt.co.uk/coppa-italia-primavera/gesamtspielplan/pokalwettbewerb/CITP/saison_id/2026",
@@ -330,7 +330,8 @@
             {
               "homeId": "ascoli",
               "awayId": "napoli",
-              "score": "2-2"
+              "score": "2-2",
+              "matchSlug": "2026-09-19_campionato-ascoli-vs-u19"
             },
             {
               "homeId": "avellino",

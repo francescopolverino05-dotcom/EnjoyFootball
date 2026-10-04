@@ -303,12 +303,16 @@ export default function TablesPage() {
                       const away = nameById.get(fx.awayId) ?? fx.awayId;
                       const ours =
                         fx.homeId === 'napoli' || fx.awayId === 'napoli';
+                      const statsHref =
+                        fx.score && fx.matchSlug
+                          ? `/match/${fx.matchSlug}`
+                          : fx.score && fx.statsSlug
+                            ? `/stats/primavera2/${fx.statsSlug}`
+                            : null;
                       const className = [
                         'standings-fixture',
                         ours ? 'standings-fixture--us' : '',
-                        fx.statsSlug && fx.score
-                          ? 'standings-fixture--has-stats'
-                          : '',
+                        statsHref ? 'standings-fixture--has-stats' : '',
                       ]
                         .filter(Boolean)
                         .join(' ');
@@ -326,10 +330,10 @@ export default function TablesPage() {
                           key={`${selectedMd.number}-${fx.homeId}-${fx.awayId}`}
                           className={className}
                         >
-                          {fx.statsSlug && fx.score ? (
+                          {statsHref ? (
                             <Link
                               className="standings-fixture-link"
-                              to={`/stats/primavera2/${fx.statsSlug}`}
+                              to={statsHref}
                             >
                               {body}
                             </Link>

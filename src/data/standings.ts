@@ -41,6 +41,8 @@ export interface StandingFixture {
   score?: string | null;
   /** Slug under /stats/{competitionId}/{statsSlug} when a match sheet exists. */
   statsSlug?: string;
+  /** Napoli match report slug under /match/{matchSlug}. */
+  matchSlug?: string;
 }
 
 export interface StandingMatchday {

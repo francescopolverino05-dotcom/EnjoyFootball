@@ -40,12 +40,449 @@
     "home": 2,
     "away": 2
   },
-  "goals": [],
-  "timeline": [],
+  "goals": [
+    {
+      "minute": 18,
+      "scorer": "Barido' (pen)",
+      "assist": null,
+      "teamId": "u19"
+    },
+    {
+      "minute": 30,
+      "scorer": "Raimondo",
+      "assist": null,
+      "teamId": "ascoli"
+    },
+    {
+      "minute": 50,
+      "scorer": "Berete",
+      "assist": null,
+      "teamId": "ascoli"
+    },
+    {
+      "minute": 53,
+      "scorer": "Pereyra (pen)",
+      "assist": null,
+      "teamId": "u19"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "ascoli",
+      "positionPercent": 2
+    },
+    {
+      "minute": 14,
+      "label": {
+        "en": "Branchizio on / Zappala' off",
+        "it": "Branchizio on / Zappala' off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 16
+    },
+    {
+      "minute": 18,
+      "label": {
+        "en": "Barido' (pen) 0-1",
+        "it": "Barido' (pen) 0-1"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 20
+    },
+    {
+      "minute": 30,
+      "label": {
+        "en": "Raimondo 1-1",
+        "it": "Raimondo 1-1"
+      },
+      "type": "goal",
+      "teamId": "ascoli",
+      "positionPercent": 33
+    },
+    {
+      "minute": 50,
+      "label": {
+        "en": "Berete 2-1",
+        "it": "Berete 2-1"
+      },
+      "type": "goal",
+      "teamId": "ascoli",
+      "positionPercent": 56
+    },
+    {
+      "minute": 53,
+      "label": {
+        "en": "Pereyra (pen) 2-2",
+        "it": "Pereyra (pen) 2-2"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 59
+    },
+    {
+      "minute": 54,
+      "label": {
+        "en": "Esposito & Riccio on",
+        "it": "Esposito & Riccio on"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 60
+    },
+    {
+      "minute": 61,
+      "label": {
+        "en": "Sulli on / Aloisi off",
+        "it": "Sulli on / Aloisi off"
+      },
+      "type": "substitution",
+      "teamId": "ascoli",
+      "positionPercent": 68
+    },
+    {
+      "minute": 69,
+      "label": {
+        "en": "Di Mattia on / Dente G. off",
+        "it": "Di Mattia on / Dente G. off"
+      },
+      "type": "substitution",
+      "teamId": "ascoli",
+      "positionPercent": 77
+    },
+    {
+      "minute": 90,
+      "label": {
+        "en": "Full time 2-2",
+        "it": "Fine partita 2-2"
+      },
+      "type": "other",
+      "teamId": "ascoli",
+      "positionPercent": 98
+    }
+  ],
   "formations": [],
-  "dynamics": [],
-  "teamStats": [],
-  "goalkeepers": [],
+  "dynamics": [
+    {
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
+      "homeValue": 48.0,
+      "awayValue": 52.0,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Pass Accuracy %",
+        "it": "Precisione Passaggi %"
+      },
+      "homeValue": 77.0,
+      "awayValue": 77.6,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Ground Duels Won %",
+        "it": "Duelli a Terra Vinti %"
+      },
+      "homeValue": 56.9,
+      "awayValue": 43.1,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Shot Accuracy %",
+        "it": "Precisione Tiri %"
+      },
+      "homeValue": 20.0,
+      "awayValue": 20.0,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Progressive Pass Accuracy %",
+        "it": "Precisione Passaggi Progressivi %"
+      },
+      "homeValue": 28.0,
+      "awayValue": 28.87,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Final-Third Pass Accuracy %",
+        "it": "Precisione Passaggi Ultimo Terzo %"
+      },
+      "homeValue": 46.75,
+      "awayValue": 39.34,
+      "unit": "%"
+    }
+  ],
+  "teamStats": [
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Goals / xG",
+        "it": "Gol / xG"
+      },
+      "home": "2 (1.18 xG)",
+      "away": "2 (1.82 xG)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso %"
+      },
+      "home": "48.0%",
+      "away": "52.0%"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots (On Target / Accuracy %)",
+        "it": "Tiri (In Porta / Precisione %)"
+      },
+      "home": "15 (3 / 20.0%)",
+      "away": "10 (2 / 20.0%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Penalties (Scored / Taken)",
+        "it": "Rigori (Segnati / Calciati)"
+      },
+      "home": "0/0",
+      "away": "2/2"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Corners",
+        "it": "Calci d'angolo"
+      },
+      "home": "7",
+      "away": "10"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Fouls / Yellow Cards / Red Cards",
+        "it": "Falli / Cartellini Gialli / Rossi"
+      },
+      "home": "27 / 0 / 0",
+      "away": "25 / 0 / 0"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "PPDA",
+        "it": "PPDA"
+      },
+      "home": "7.18",
+      "away": "12.84"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Interceptions / Clearances",
+        "it": "Intercetti / Spazzate"
+      },
+      "home": "89 / 92",
+      "away": "61 / 81"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Blocks / GK Saves",
+        "it": "Blocchi / Parate"
+      },
+      "home": "13 / 0",
+      "away": "8 / 1"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Ground Duels (Won / Win %)",
+        "it": "Duelli a Terra (Vinti / %)"
+      },
+      "home": "33 / 58 (56.9%)",
+      "away": "25 / 58 (43.1%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Aerial Duels (Won / Total)",
+        "it": "Duelli Aerei (Vinti / Totali)"
+      },
+      "home": "37 / 67",
+      "away": "30 / 67"
+    },
+    {
+      "category": {
+        "en": "Transitions",
+        "it": "Transizioni"
+      },
+      "name": {
+        "en": "Recoveries / High Recoveries",
+        "it": "Recuperi / Recuperi alti"
+      },
+      "home": "63 / 16",
+      "away": "87 / 15"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Key Passes",
+        "it": "Passaggi chiave"
+      },
+      "home": "6",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Shots Inside / Outside Box",
+        "it": "Tiri dentro / fuori area"
+      },
+      "home": "6 / 9",
+      "away": "3 / 7"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes (Completed / Accuracy %)",
+        "it": "Passaggi (Completati / Precisione %)"
+      },
+      "home": "740 (570 / 77.0%)",
+      "away": "795 (616 / 77.6%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Progressive Passes (Accurate / %)",
+        "it": "Passaggi Progressivi (Precisi / %)"
+      },
+      "home": "35 / 125 (28.0%)",
+      "away": "28 / 97 (28.87%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes into Final 3rd (Accurate / %)",
+        "it": "Passaggi Ultimo Terzo (Precisi / %)"
+      },
+      "home": "36 / 77 (46.75%)",
+      "away": "24 / 61 (39.34%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Crosses (Accurate / %)",
+        "it": "Cross (Precisi / %)"
+      },
+      "home": "31 (1 completed) (3.23%)",
+      "away": "25 (1 completed) (4.0%)"
+    }
+  ],
+  "goalkeepers": [
+    {
+      "name": "Dente R.",
+      "minutes": 96,
+      "team": {
+        "en": "Ascoli",
+        "it": "Ascoli"
+      },
+      "jerseyColor": {
+        "en": "—",
+        "it": "—"
+      },
+      "shotsFaced": 2,
+      "shotsOnTargetFaced": 2,
+      "saves": 0,
+      "goalsConceded": 2,
+      "savePercentage": "0.0%",
+      "passes": "35 (77%)",
+      "colorClass": "orange"
+    },
+    {
+      "name": "Spinelli",
+      "minutes": 96,
+      "team": {
+        "en": "Napoli",
+        "it": "Napoli"
+      },
+      "jerseyColor": {
+        "en": "—",
+        "it": "—"
+      },
+      "shotsFaced": 3,
+      "shotsOnTargetFaced": 3,
+      "saves": 1,
+      "goalsConceded": 2,
+      "savePercentage": "33.3%",
+      "passes": "39 (92%)",
+      "colorClass": "blue"
+    }
+  ],
   "clips": [],
   "analysisVideos": [],
   "vimeo": {
