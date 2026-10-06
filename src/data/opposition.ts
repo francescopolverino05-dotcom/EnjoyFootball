@@ -1204,7 +1204,7 @@ attachReferencePack('pisa', '2026-10-10_campionato-u19-vs-pisa', [
       en: 'Opposition studio report (Avversari → Studio Report).',
       it: 'Studio report avversario (Avversari → Studio Report).',
     },
-    videoFile: 'https://vimeo.com/1231284074/7daaf82f2a',
+    videoFile: 'https://vimeo.com/1232980818/ef638d2e1a',
     tags: ['vimeo', 'opposition', 'studio-report'],
   },
 ]);
@@ -1293,6 +1293,36 @@ attachReferencePack('villarreal', '2026-10-13_uyl-villarreal-vs-u19', [
     },
     score: '2–3',
     videoFile: 'https://vimeo.com/1230868736/4cb23ac504',
+  },
+], [
+  {
+    id: 'villarreal-studio-report',
+    title: {
+      en: 'Studio Villarreal',
+      it: 'Studio Villarreal',
+    },
+    description: {
+      en: 'Opposition studio report (Avversari → Studio Report).',
+      it: 'Studio report avversario (Avversari → Studio Report).',
+    },
+    videoFile: 'https://vimeo.com/1233336120/b492dd8e01',
+    tags: ['vimeo', 'opposition', 'studio-report'],
+  },
+]);
+
+attachReferencePack('bodo-glimt', '2026-10-20_uyl-u19-vs-bodo-glimt', [
+  {
+    id: 'bodo-ref-bayern',
+    title: {
+      en: 'Bayern Munich vs Bodø/Glimt 5–1',
+      it: 'Bayern Monaco vs Bodø/Glimt 5–1',
+    },
+    competition: {
+      en: 'Reference',
+      it: 'Riferimento',
+    },
+    score: '5–1',
+    videoFile: 'https://vimeo.com/1233037991/104b28fbfe',
   },
 ]);
 

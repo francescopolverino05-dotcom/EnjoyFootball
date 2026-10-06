@@ -1,0 +1,63 @@
+{
+  "id": "2026-10-05_monday",
+  "slug": "2026-10-05_monday",
+  "date": "2026-10-05",
+  "title": {
+    "en": "Monday training",
+    "it": "Lunedì"
+  },
+  "focus": {
+    "en": "Possesso 5v9+2",
+    "it": "Possesso 5v9+2"
+  },
+  "sessionType": "strength",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — Training Sessions / 05/10/2026 / Lunedí",
+    "it": "Video su Vimeo — Training Sessions / 05/10/2026 / Lunedí"
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1233032282/f1049b7c0f",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1233032282",
+        "title": {
+          "en": "possesso (5v9+2)",
+          "it": "possesso (5v9+2)"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1233032282/f1049b7c0f",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30714159",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30714159",
+    "lastSyncedAt": "2026-10-06T11:20:35.206Z"
+  }
+}
