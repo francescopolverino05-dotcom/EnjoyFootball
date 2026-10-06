@@ -576,23 +576,72 @@ if (villarreal) {
   ];
 }
 
-/** Bari scouted shape — 4-3-1-2 vs Palermo (named XI still to fill). */
+/**
+ * Bari XI — Coppa Italia Primavera vs Palermo (3–2), 4-3-1-2 rombo.
+ * Source: Transfermarkt spielbericht 4913072.
+ */
 const bari = OPPONENTS.find((o) => o.id === 'bari');
 if (bari) {
-  const vsPalermo = placeholder4312('bari');
+  const vsPalermo: PitchPlayer[] = [
+    {
+      number: 1,
+      name: 'Mezzapesa',
+      teamId: 'bari',
+      isGk: true,
+      top: '8%',
+      left: '50%',
+    },
+    { number: 3, name: 'Legrottaglie', teamId: 'bari', top: '22%', left: '18%' },
+    { number: 6, name: 'De Lucia', teamId: 'bari', top: '20%', left: '38%' },
+    { number: 5, name: 'Dimonte', teamId: 'bari', top: '20%', left: '62%' },
+    { number: 2, name: 'Emiliano', teamId: 'bari', top: '22%', left: '82%' },
+    { number: 7, name: 'Vitale', teamId: 'bari', top: '42%', left: '28%' },
+    { number: 4, name: 'Mundo', teamId: 'bari', top: '38%', left: '50%' },
+    { number: 8, name: 'Grimaldi', teamId: 'bari', top: '42%', left: '72%' },
+    { number: 10, name: 'Alonso Cam.', teamId: 'bari', top: '58%', left: '50%' },
+    { number: 11, name: 'Keita', teamId: 'bari', top: '75%', left: '38%' },
+    { number: 9, name: 'Leone', teamId: 'bari', top: '75%', left: '62%' },
+  ];
   bari.formationSystem = '1-4-3-1-2';
   bari.starters = vsPalermo;
   bari.scoutedFormations = [
     {
       id: 'bari-vs-palermo',
-      label: { en: 'vs Palermo', it: 'vs Palermo' },
+      label: {
+        en: 'vs Palermo (Coppa 3–2)',
+        it: 'vs Palermo (Coppa 3–2)',
+      },
       system: '4-3-1-2',
       players: vsPalermo,
       notes: {
-        en: 'Shape from Palermo reference; player names still to add.',
-        it: 'Modulo dal riferimento vs Palermo; nomi ancora da inserire.',
+        en: 'Coppa Italia Primavera, 26 Sep 2026. Diamond midfield: Mundo at the base, Alonso Cam. as 10. Subs: Scarano (Grimaldi), Felice (Leone), Italia (Keita), Valoroso (Vitale), Caputo (Alonso Cam.).',
+        it: 'Coppa Italia Primavera, 26 set 2026. Centrocampo a rombo: Mundo in base, Alonso Cam. trequartista. Sub: Scarano (Grimaldi), Felice (Leone), Italia (Keita), Valoroso (Vitale), Caputo (Alonso Cam.).',
       },
     },
+  ];
+  bari.squad = [
+    { number: 1, name: 'Mezzapesa', position: 'GK', isGk: true },
+    { number: 2, name: 'Emiliano', position: 'RB' },
+    { number: 3, name: 'Legrottaglie', position: 'LB' },
+    { number: 4, name: 'Mundo', position: 'CDM' },
+    { number: 5, name: 'Dimonte', position: 'CB' },
+    { number: 6, name: 'De Lucia', position: 'CB' },
+    { number: 7, name: 'Vitale', position: 'CM' },
+    { number: 8, name: 'Grimaldi', position: 'CM' },
+    { number: 9, name: 'Leone', position: 'ST' },
+    { number: 10, name: 'Alonso Campagna', position: 'CAM' },
+    { number: 11, name: 'Keita', position: 'ST' },
+    { number: 12, name: 'Falbo', position: 'GK', isGk: true },
+    { number: 13, name: 'Caputo', position: 'CB' },
+    { number: 14, name: 'Napoleone', position: 'CB' },
+    { number: 15, name: 'Vilums', position: 'CB' },
+    { number: 16, name: 'Valoroso', position: 'LM' },
+    { number: 17, name: 'Pietraniello', position: 'CM' },
+    { number: 18, name: 'Scifoni', position: 'RW' },
+    { number: 19, name: 'Pizzo', position: 'CM' },
+    { number: 20, name: 'Scarano' },
+    { number: 21, name: 'Italia', position: 'ST' },
+    { number: 22, name: 'Felice', position: 'ST' },
   ];
 }
 
