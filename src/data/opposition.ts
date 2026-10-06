@@ -90,6 +90,23 @@ export function placeholder442(teamId: string): PitchPlayer[] {
   ];
 }
 
+/** Empty 4-3-1-2 slots (back four, mid three, 10, two strikers). */
+export function placeholder4312(teamId: string): PitchPlayer[] {
+  return [
+    { number: 1, name: 'GK', teamId, isGk: true, top: '8%', left: '50%' },
+    { number: 2, name: 'LB', teamId, top: '22%', left: '18%' },
+    { number: 4, name: 'CB', teamId, top: '20%', left: '38%' },
+    { number: 5, name: 'CB', teamId, top: '20%', left: '62%' },
+    { number: 3, name: 'RB', teamId, top: '22%', left: '82%' },
+    { number: 6, name: 'LCM', teamId, top: '42%', left: '28%' },
+    { number: 8, name: 'CM', teamId, top: '40%', left: '50%' },
+    { number: 10, name: 'RCM', teamId, top: '42%', left: '72%' },
+    { number: 7, name: 'CAM', teamId, top: '58%', left: '50%' },
+    { number: 9, name: 'ST', teamId, top: '75%', left: '38%' },
+    { number: 11, name: 'ST', teamId, top: '75%', left: '62%' },
+  ];
+}
+
 /**
  * Empty 1-3-4-2-1 (back three + wing-backs, double pivot, two 10s, 9).
  * Pitch attacks downward: team-left = screen-right.
@@ -120,6 +137,9 @@ export function placeholderPlayersForSystem(
   }
   if (key === '1-4-1-2-3' || key === '4-1-2-3' || key === '4-3-3') {
     return placeholder14123(teamId);
+  }
+  if (key === '1-4-3-1-2' || key === '4-3-1-2') {
+    return placeholder4312(teamId);
   }
   if (key === '1-4-4-2' || key === '4-4-2') {
     return placeholder442(teamId);
@@ -190,7 +210,7 @@ export function oppositionClipSectionLabel(id: OppositionClipSectionId) {
 const OPPONENTS: OppositionOpponent[] = [
   club('ascoli', 'Ascoli', ['primavera2'], '1-4-1-2-3'),
   club('avellino', 'Avellino', ['primavera2'], '1-4-3-3', ['1-4-2-3-1']),
-  club('bari', 'Bari', ['primavera2']),
+  club('bari', 'Bari', ['primavera2'], '1-4-3-1-2'),
   club('benevento', 'Benevento', ['primavera2']),
   club('catanzaro', 'Catanzaro', ['primavera2']),
   club('cosenza', 'Cosenza', ['primavera2']),
@@ -553,6 +573,26 @@ if (villarreal) {
     { number: 22, name: 'Koné', position: 'LCM' },
     { number: 28, name: 'Iker Pérez', position: 'RW' },
     { number: 28, name: 'Luengo', position: 'RB' },
+  ];
+}
+
+/** Bari scouted shape — 4-3-1-2 vs Palermo (named XI still to fill). */
+const bari = OPPONENTS.find((o) => o.id === 'bari');
+if (bari) {
+  const vsPalermo = placeholder4312('bari');
+  bari.formationSystem = '1-4-3-1-2';
+  bari.starters = vsPalermo;
+  bari.scoutedFormations = [
+    {
+      id: 'bari-vs-palermo',
+      label: { en: 'vs Palermo', it: 'vs Palermo' },
+      system: '4-3-1-2',
+      players: vsPalermo,
+      notes: {
+        en: 'Shape from Palermo reference; player names still to add.',
+        it: 'Modulo dal riferimento vs Palermo; nomi ancora da inserire.',
+      },
+    },
   ];
 }
 
