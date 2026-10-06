@@ -1227,6 +1227,19 @@ attachReferencePack('spezia', '2026-10-24_campionato-u19-vs-spezia', [
 
 attachReferencePack('bari', '2026-10-17_campionato-bari-vs-u19', [
   {
+    id: 'bari-ref-ascoli',
+    title: {
+      en: 'Bari vs Ascoli 2–1',
+      it: 'Bari vs Ascoli 2–1',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 2',
+      it: 'Primavera 2 · Giornata 2',
+    },
+    score: '2–1',
+    videoFile: 'https://vimeo.com/1226442948/3870ec7bac',
+  },
+  {
     id: 'bari-ref-palermo',
     title: {
       en: 'Palermo vs Bari 2–2',
