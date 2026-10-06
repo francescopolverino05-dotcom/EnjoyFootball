@@ -1215,6 +1215,19 @@ attachReferencePack(
       score: '7–1',
       videoFile: 'https://vimeo.com/1221765516/20c5bc9e45',
     },
+    {
+      id: 'avellino-ref-napoli-first-team',
+      title: {
+        en: 'Napoli vs Avellino 0–2',
+        it: 'Napoli vs Avellino 0–2',
+      },
+      competition: {
+        en: 'First-team friendly',
+        it: 'Amichevole prima squadra',
+      },
+      score: '0–2',
+      videoFile: 'https://vimeo.com/1232592955/7d4705db6b',
+    },
   ],
   [
     {
@@ -1498,7 +1511,7 @@ attachReferencePack('villarreal', '2026-10-13_uyl-villarreal-vs-u19', [
       en: 'Opposition studio report (Avversari → Studio Report).',
       it: 'Studio report avversario (Avversari → Studio Report).',
     },
-    videoFile: 'https://vimeo.com/1233336120/b492dd8e01',
+    videoFile: 'https://vimeo.com/1233496077/a257bfd1f1',
     tags: ['vimeo', 'opposition', 'studio-report'],
   },
 ]);
