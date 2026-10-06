@@ -100,9 +100,9 @@ export function placeholder4312(teamId: string): PitchPlayer[] {
     { number: 5, name: 'RCB', teamId, top: '20%', left: '38%' },
     { number: 6, name: 'LCB', teamId, top: '20%', left: '62%' },
     { number: 3, name: 'LB', teamId, top: '22%', left: '82%' },
-    { number: 8, name: 'RCM', teamId, top: '42%', left: '28%' },
+    { number: 7, name: 'RCM', teamId, top: '42%', left: '28%' },
     { number: 4, name: 'CDM', teamId, top: '38%', left: '50%' },
-    { number: 7, name: 'LCM', teamId, top: '42%', left: '72%' },
+    { number: 8, name: 'LCM', teamId, top: '42%', left: '72%' },
     { number: 10, name: 'CAM', teamId, top: '58%', left: '50%' },
     { number: 9, name: 'RST', teamId, top: '75%', left: '38%' },
     { number: 11, name: 'LST', teamId, top: '75%', left: '62%' },
@@ -586,7 +586,7 @@ const bari = OPPONENTS.find((o) => o.id === 'bari');
 if (bari) {
   /**
    * Shared 4-3-1-2 slots. Pitch attacks downward: team-left = screen-right.
-   * #2 RB (screen-left), #3 LB (screen-right); #4 CDM; #7 LCM / #8 RCM; #11 LST / #9 RST.
+   * #2 RB (screen-left), #3 LB (screen-right); #4 CDM; #8 left / #7 right of diamond; #11 LST / #9 RST.
    */
   const bari4312 = (
     names: {
@@ -640,9 +640,10 @@ if (bari) {
     { number: nums.rcb, name: names.rcb, teamId: 'bari', top: '20%', left: '38%' },
     { number: nums.lcb, name: names.lcb, teamId: 'bari', top: '20%', left: '62%' },
     { number: nums.lb, name: names.lb, teamId: 'bari', top: '22%', left: '82%' },
-    { number: nums.rcm, name: names.rcm, teamId: 'bari', top: '42%', left: '28%' },
+    // Diamond: #8 (Scarano side) team-left, #7 team-right
+    { number: nums.lcm, name: names.lcm, teamId: 'bari', top: '42%', left: '28%' },
     { number: nums.cdm, name: names.cdm, teamId: 'bari', top: '38%', left: '50%' },
-    { number: nums.lcm, name: names.lcm, teamId: 'bari', top: '42%', left: '72%' },
+    { number: nums.rcm, name: names.rcm, teamId: 'bari', top: '42%', left: '72%' },
     { number: nums.cam, name: names.cam, teamId: 'bari', top: '58%', left: '50%' },
     { number: nums.rst, name: names.rst, teamId: 'bari', top: '75%', left: '38%' },
     { number: nums.lst, name: names.lst, teamId: 'bari', top: '75%', left: '62%' },
