@@ -577,34 +577,116 @@ if (villarreal) {
 }
 
 /**
- * Bari XI — Coppa Italia Primavera vs Palermo (3–2), 4-3-1-2 rombo.
- * Source: Transfermarkt spielbericht 4913072.
+ * Bari XI — 4-3-1-2 rombo (same shirt slots both matches: #4 Mundo CDM).
+ * Sources: TM 5014172 (vs Ascoli, TM mislabels 4-4-1-1) · TM 4913072 (vs Palermo Coppa).
  */
 const bari = OPPONENTS.find((o) => o.id === 'bari');
 if (bari) {
-  const vsPalermo: PitchPlayer[] = [
+  /** Shared 4-3-1-2 slots: #3 LB, #6/#5 CB, #2 RB, #7/#4/#8 mid, #10, #11/#9 ST. */
+  const bari4312 = (
+    names: {
+      gk: string;
+      lb: string;
+      lcb: string;
+      rcb: string;
+      rb: string;
+      lcm: string;
+      cdm: string;
+      rcm: string;
+      cam: string;
+      lst: string;
+      rst: string;
+    },
+    nums: {
+      gk: number;
+      lb: number;
+      lcb: number;
+      rcb: number;
+      rb: number;
+      lcm: number;
+      cdm: number;
+      rcm: number;
+      cam: number;
+      lst: number;
+      rst: number;
+    } = {
+      gk: 1,
+      lb: 3,
+      lcb: 6,
+      rcb: 5,
+      rb: 2,
+      lcm: 7,
+      cdm: 4,
+      rcm: 8,
+      cam: 10,
+      lst: 11,
+      rst: 9,
+    }
+  ): PitchPlayer[] => [
     {
-      number: 1,
-      name: 'Mezzapesa',
+      number: nums.gk,
+      name: names.gk,
       teamId: 'bari',
       isGk: true,
       top: '8%',
       left: '50%',
     },
-    { number: 3, name: 'Legrottaglie', teamId: 'bari', top: '22%', left: '18%' },
-    { number: 6, name: 'De Lucia', teamId: 'bari', top: '20%', left: '38%' },
-    { number: 5, name: 'Dimonte', teamId: 'bari', top: '20%', left: '62%' },
-    { number: 2, name: 'Emiliano', teamId: 'bari', top: '22%', left: '82%' },
-    { number: 7, name: 'Vitale', teamId: 'bari', top: '42%', left: '28%' },
-    { number: 4, name: 'Mundo', teamId: 'bari', top: '38%', left: '50%' },
-    { number: 8, name: 'Grimaldi', teamId: 'bari', top: '42%', left: '72%' },
-    { number: 10, name: 'Alonso Cam.', teamId: 'bari', top: '58%', left: '50%' },
-    { number: 11, name: 'Keita', teamId: 'bari', top: '75%', left: '38%' },
-    { number: 9, name: 'Leone', teamId: 'bari', top: '75%', left: '62%' },
+    { number: nums.lb, name: names.lb, teamId: 'bari', top: '22%', left: '18%' },
+    { number: nums.lcb, name: names.lcb, teamId: 'bari', top: '20%', left: '38%' },
+    { number: nums.rcb, name: names.rcb, teamId: 'bari', top: '20%', left: '62%' },
+    { number: nums.rb, name: names.rb, teamId: 'bari', top: '22%', left: '82%' },
+    { number: nums.lcm, name: names.lcm, teamId: 'bari', top: '42%', left: '28%' },
+    { number: nums.cdm, name: names.cdm, teamId: 'bari', top: '38%', left: '50%' },
+    { number: nums.rcm, name: names.rcm, teamId: 'bari', top: '42%', left: '72%' },
+    { number: nums.cam, name: names.cam, teamId: 'bari', top: '58%', left: '50%' },
+    { number: nums.lst, name: names.lst, teamId: 'bari', top: '75%', left: '38%' },
+    { number: nums.rst, name: names.rst, teamId: 'bari', top: '75%', left: '62%' },
   ];
+
+  const vsAscoli = bari4312({
+    gk: 'Mezzapesa',
+    lb: 'Spadavecchia',
+    lcb: 'De Lucia',
+    rcb: 'Dimonte',
+    rb: 'Emiliano',
+    lcm: 'Valoroso',
+    cdm: 'Mundo',
+    rcm: 'Scarano',
+    cam: 'Alonso Cam.',
+    lst: 'Italia',
+    rst: 'Scifoni',
+  });
+
+  const vsPalermo = bari4312({
+    gk: 'Mezzapesa',
+    lb: 'Legrottaglie',
+    lcb: 'De Lucia',
+    rcb: 'Dimonte',
+    rb: 'Emiliano',
+    lcm: 'Vitale',
+    cdm: 'Mundo',
+    rcm: 'Grimaldi',
+    cam: 'Alonso Cam.',
+    lst: 'Keita',
+    rst: 'Leone',
+  });
+
   bari.formationSystem = '1-4-3-1-2';
-  bari.starters = vsPalermo;
+  bari.starters = vsAscoli;
   bari.scoutedFormations = [
+    {
+      id: 'bari-vs-ascoli',
+      label: {
+        en: 'vs Ascoli (2–1)',
+        it: 'vs Ascoli (2–1)',
+      },
+      system: '4-3-1-2',
+      players: vsAscoli,
+      notes: {
+        en: 'Primavera 2 MD2, 12 Sep 2026 (TM 5014172). Same diamond slots as Coppa: Mundo (#4) CDM, Alonso Cam. as 10. TM lists 4-4-1-1 in error. Subs: Vitale (Valoroso), Felice (Scifoni), Leone (Italia), Grimaldi (Scarano).',
+        it: 'Primavera 2 gior. 2, 12 set 2026 (TM 5014172). Stessi slot a rombo della Coppa: Mundo (#4) CDM, Alonso Cam. trequartista. TM riporta 4-4-1-1 per errore. Sub: Vitale (Valoroso), Felice (Scifoni), Leone (Italia), Grimaldi (Scarano).',
+      },
+    },
     {
       id: 'bari-vs-palermo',
       label: {
@@ -622,26 +704,29 @@ if (bari) {
   bari.squad = [
     { number: 1, name: 'Mezzapesa', position: 'GK', isGk: true },
     { number: 2, name: 'Emiliano', position: 'RB' },
-    { number: 3, name: 'Legrottaglie', position: 'LB' },
+    { number: 3, name: 'Spadavecchia', position: 'LB' },
     { number: 4, name: 'Mundo', position: 'CDM' },
     { number: 5, name: 'Dimonte', position: 'CB' },
     { number: 6, name: 'De Lucia', position: 'CB' },
-    { number: 7, name: 'Vitale', position: 'CM' },
-    { number: 8, name: 'Grimaldi', position: 'CM' },
-    { number: 9, name: 'Leone', position: 'ST' },
+    { number: 7, name: 'Valoroso', position: 'CM' },
+    { number: 8, name: 'Scarano', position: 'CM' },
+    { number: 9, name: 'Scifoni', position: 'ST' },
     { number: 10, name: 'Alonso Campagna', position: 'CAM' },
-    { number: 11, name: 'Keita', position: 'ST' },
-    { number: 12, name: 'Falbo', position: 'GK', isGk: true },
+    { number: 11, name: 'Italia', position: 'ST' },
+    { number: 12, name: 'Scattarelli', position: 'GK', isGk: true },
     { number: 13, name: 'Caputo', position: 'CB' },
     { number: 14, name: 'Napoleone', position: 'CB' },
     { number: 15, name: 'Vilums', position: 'CB' },
-    { number: 16, name: 'Valoroso', position: 'LM' },
+    { number: 16, name: 'Grimaldi', position: 'CM' },
     { number: 17, name: 'Pietraniello', position: 'CM' },
-    { number: 18, name: 'Scifoni', position: 'RW' },
+    { number: 18, name: 'Vitale', position: 'CAM' },
     { number: 19, name: 'Pizzo', position: 'CM' },
-    { number: 20, name: 'Scarano' },
-    { number: 21, name: 'Italia', position: 'ST' },
-    { number: 22, name: 'Felice', position: 'ST' },
+    { number: 20, name: 'Leone', position: 'ST' },
+    { number: 21, name: 'Barbera', position: 'CM' },
+    { number: 22, name: 'Falbo', position: 'GK', isGk: true },
+    { number: 23, name: 'Felice', position: 'ST' },
+    { name: 'Legrottaglie', position: 'LB' },
+    { name: 'Keita', position: 'ST' },
   ];
 }
 
