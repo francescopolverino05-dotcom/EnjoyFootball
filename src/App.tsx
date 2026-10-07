@@ -3,6 +3,7 @@ import TablesPage from './pages/TablesPage';
 import StatsPage from './pages/StatsPage';
 import LeagueMatchStatsPage from './pages/LeagueMatchStatsPage';
 import AppNav from './components/AppNav';
+import GlobalSearch from './components/GlobalSearch';
 import LanguageToggle from './components/LanguageToggle';
 import PasswordGate from './components/PasswordGate';
 import CalendarPage from './pages/CalendarPage';
@@ -21,7 +22,10 @@ export default function App() {
     <PasswordGate>
       <div className="app-topbar">
         <AppNav />
-        <LanguageToggle />
+        <div className="app-topbar-actions">
+          <GlobalSearch />
+          <LanguageToggle />
+        </div>
       </div>
       <Routes>
         <Route path="/" element={<HomePage />} />

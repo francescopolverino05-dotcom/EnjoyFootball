@@ -1397,7 +1397,7 @@ attachReferencePack('pisa', '2026-10-10_campionato-u19-vs-pisa', [
       en: 'Opposition studio report (Avversari → Studio Report).',
       it: 'Studio report avversario (Avversari → Studio Report).',
     },
-    videoFile: 'https://vimeo.com/1232980818/ef638d2e1a',
+    videoFile: 'https://vimeo.com/1233725684/232bbbd0f3',
     tags: ['vimeo', 'opposition', 'studio-report'],
   },
 ]);
@@ -1511,7 +1511,7 @@ attachReferencePack('villarreal', '2026-10-13_uyl-villarreal-vs-u19', [
       en: 'Opposition studio report (Avversari → Studio Report).',
       it: 'Studio report avversario (Avversari → Studio Report).',
     },
-    videoFile: 'https://vimeo.com/1233496077/a257bfd1f1',
+    videoFile: 'https://vimeo.com/1233725906/ab0da297fb',
     tags: ['vimeo', 'opposition', 'studio-report'],
   },
 ]);
