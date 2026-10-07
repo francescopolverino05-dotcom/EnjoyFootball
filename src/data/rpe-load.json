@@ -1,5 +1,5 @@
 {
-  "source": "RPE 2.xlsx sheet CR-10 (Napoli Primavera ~28 Jul–7 Aug 2026); 2026-08-08 Portici matchday from RPE sheet photo (col 08); 2026-08-10 Monday training from RPE sheet photo (col 10, black ink); 2026-08-11 Tuesday metabolic from RPE sheet photo (black ink); 2026-08-12 Wednesday activation from RPE sheet photo (col 12, black ink); 2026-08-13 Thursday training from RPE sheet photo (col 13, black ink); 2026-08-14 Blu vs Verde friendly from RPE sheet photo (col 14); 2026-08-17 Monday strength from RPE sheet photo (col 17, black ink); 2026-08-18 Tuesday strength from RPE sheet photo (col 18, black ink); 2026-08-24 Monday activation from RPE sheet photo (col 24, black ink); 2026-08-25 Tuesday metabolic from RPE sheet photo (col 25, black ink); 2026-08-26 Wednesday training from RPE sheet photo (col 26, black ink; Prisco/Zappalà corrected from later sheet photo); 2026-08-27 Thursday training from RPE sheet photo (cols 26–27, black ink); 2026-08-26 Prisco/Zappalà corrected from same sheet; 2026-08-31→2026-09-05 RPE from sheet photos (31 / 1–5 sett PARTITA Avellino); 2026-09-11 RPE from sheet photo (players who trained; date from staff brief, no header on sheet)",
+  "source": "RPE 2.xlsx sheet CR-10 (Napoli Primavera ~28 Jul–7 Aug 2026); 2026-08-08 Portici matchday from RPE sheet photo (col 08); 2026-08-10 Monday training from RPE sheet photo (col 10, black ink); 2026-08-11 Tuesday metabolic from RPE sheet photo (black ink); 2026-08-12 Wednesday activation from RPE sheet photo (col 12, black ink); 2026-08-13 Thursday training from RPE sheet photo (col 13, black ink); 2026-08-14 Blu vs Verde friendly from RPE sheet photo (col 14); 2026-08-17 Monday strength from RPE sheet photo (col 17, black ink); 2026-08-18 Tuesday strength from RPE sheet photo (col 18, black ink); 2026-08-24 Monday activation from RPE sheet photo (col 24, black ink); 2026-08-25 Tuesday metabolic from RPE sheet photo (col 25, black ink); 2026-08-26 Wednesday training from RPE sheet photo (col 26, black ink; Prisco/Zappalà corrected from later sheet photo); 2026-08-27 Thursday training from RPE sheet photo (cols 26–27, black ink); 2026-08-26 Prisco/Zappalà corrected from same sheet; 2026-08-31→2026-09-05 RPE from sheet photos (31 / 1–5 sett PARTITA Avellino); 2026-09-11 RPE from sheet photo (players who trained; date from staff brief, no header on sheet); Sep–Oct 2026 sheets from matchday GPS maps (12 Catanzaro TQR via companion; 19 Ascoli RPE) + RPE week 22–28 Sep consensus photos",
   "scaleNote": {
     "en": "Values look Borg-like (approx. 6–20) despite the CR-10 sheet title. Shown as RPE and session load (min × RPE).",
     "it": "I valori sembrano in scala Borg (circa 6–20) nonostante il titolo foglio CR-10. Mostrati come RPE e carico di seduta (min × RPE)."
@@ -4340,6 +4340,560 @@
           "sessionLoad": null
         }
       ]
+    },
+    {
+      "date": "2026-09-19",
+      "kind": "match",
+      "trainingSlug": null,
+      "matchSlug": "2026-09-19_campionato-ascoli-vs-u19",
+      "playersPresent": 7,
+      "playersAnswered": 7,
+      "avgMin": null,
+      "avgRpe": 17.57,
+      "avgSessionLoad": null,
+      "players": [
+        {
+          "playerSlug": "favicchio-elia",
+          "excelName": "Favicchio Elia",
+          "min": null,
+          "rpe": 19,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "melnyk-mykyta",
+          "excelName": "Melnyk Mykyta",
+          "min": null,
+          "rpe": 19,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "barido-francisco-martin",
+          "excelName": "Baridó Francisco Martin",
+          "min": null,
+          "rpe": 18,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "de-stefano-francesco",
+          "excelName": "De Stefano Francesco",
+          "min": null,
+          "rpe": 18,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "branchizio-agostino",
+          "excelName": "Branchizio Agostino",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "chiummariello-andrea",
+          "excelName": "Chiummariello Andrea",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "mane-mohamed-seick",
+          "excelName": "Mane Mohamed Seick",
+          "min": null,
+          "rpe": 15,
+          "sessionLoad": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-22",
+      "kind": "training",
+      "trainingSlug": null,
+      "matchSlug": null,
+      "playersPresent": 14,
+      "playersAnswered": 14,
+      "avgMin": null,
+      "avgRpe": 16.29,
+      "avgSessionLoad": null,
+      "players": [
+        {
+          "playerSlug": "chiummariello-andrea",
+          "excelName": "Chiummariello Andrea",
+          "min": null,
+          "rpe": 18,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "favicchio-elia",
+          "excelName": "Favicchio Elia",
+          "min": null,
+          "rpe": 18,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "lepre-giuseppe",
+          "excelName": "Lepre Giuseppe",
+          "min": null,
+          "rpe": 18,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "lieto-claudio",
+          "excelName": "Lieto Claudio",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "melnyk-mykyta",
+          "excelName": "Melnyk Mykyta",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "santella-alessandro",
+          "excelName": "Santella Alessandro",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "candela-ivan-giovanni",
+          "excelName": "Candela Ivan Giovanni",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "mane-mohamed-seick",
+          "excelName": "Mane Mohamed Seick",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "riccio-luigi",
+          "excelName": "Riccio Luigi",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "barido-francisco-martin",
+          "excelName": "Baridó Francisco Martin",
+          "min": null,
+          "rpe": 15,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "branchizio-agostino",
+          "excelName": "Branchizio Agostino",
+          "min": null,
+          "rpe": 15,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "chiaiese-riccardo",
+          "excelName": "Chiaiese",
+          "min": null,
+          "rpe": 15,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "de-stefano-francesco",
+          "excelName": "De Stefano Francesco",
+          "min": null,
+          "rpe": 15,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "pereyra-alvarez-milton-agustin",
+          "excelName": "Pereyra Alvarez Milton Agustin",
+          "min": null,
+          "rpe": 15,
+          "sessionLoad": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "kind": "training",
+      "trainingSlug": null,
+      "matchSlug": null,
+      "playersPresent": 10,
+      "playersAnswered": 10,
+      "avgMin": null,
+      "avgRpe": 18.2,
+      "avgSessionLoad": null,
+      "players": [
+        {
+          "playerSlug": "chiummariello-andrea",
+          "excelName": "Chiummariello Andrea",
+          "min": null,
+          "rpe": 19,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "favicchio-elia",
+          "excelName": "Favicchio Elia",
+          "min": null,
+          "rpe": 19,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "lepre-giuseppe",
+          "excelName": "Lepre Giuseppe",
+          "min": null,
+          "rpe": 19,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "santella-alessandro",
+          "excelName": "Santella Alessandro",
+          "min": null,
+          "rpe": 19,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "de-stefano-francesco",
+          "excelName": "De Stefano Francesco",
+          "min": null,
+          "rpe": 18,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "lieto-claudio",
+          "excelName": "Lieto Claudio",
+          "min": null,
+          "rpe": 18,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "mane-mohamed-seick",
+          "excelName": "Mane Mohamed Seick",
+          "min": null,
+          "rpe": 18,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "melnyk-mykyta",
+          "excelName": "Melnyk Mykyta",
+          "min": null,
+          "rpe": 18,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "branchizio-agostino",
+          "excelName": "Branchizio Agostino",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "riccio-luigi",
+          "excelName": "Riccio Luigi",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-24",
+      "kind": "training",
+      "trainingSlug": null,
+      "matchSlug": null,
+      "playersPresent": 12,
+      "playersAnswered": 12,
+      "avgMin": null,
+      "avgRpe": 15.92,
+      "avgSessionLoad": null,
+      "players": [
+        {
+          "playerSlug": "favicchio-elia",
+          "excelName": "Favicchio Elia",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "candela-ivan-giovanni",
+          "excelName": "Candela Ivan Giovanni",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "chiummariello-andrea",
+          "excelName": "Chiummariello Andrea",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "de-stefano-francesco",
+          "excelName": "De Stefano Francesco",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "lepre-giuseppe",
+          "excelName": "Lepre Giuseppe",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "lieto-claudio",
+          "excelName": "Lieto Claudio",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "mane-mohamed-seick",
+          "excelName": "Mane Mohamed Seick",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "melnyk-mykyta",
+          "excelName": "Melnyk Mykyta",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "riccio-luigi",
+          "excelName": "Riccio Luigi",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "santella-alessandro",
+          "excelName": "Santella Alessandro",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "barido-francisco-martin",
+          "excelName": "Baridó Francisco Martin",
+          "min": null,
+          "rpe": 15,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "branchizio-agostino",
+          "excelName": "Branchizio Agostino",
+          "min": null,
+          "rpe": 15,
+          "sessionLoad": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-25",
+      "kind": "training",
+      "trainingSlug": null,
+      "matchSlug": null,
+      "playersPresent": 13,
+      "playersAnswered": 13,
+      "avgMin": null,
+      "avgRpe": 16.92,
+      "avgSessionLoad": null,
+      "players": [
+        {
+          "playerSlug": "lepre-giuseppe",
+          "excelName": "Lepre Giuseppe",
+          "min": null,
+          "rpe": 18,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "candela-ivan-giovanni",
+          "excelName": "Candela Ivan Giovanni",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "chiummariello-andrea",
+          "excelName": "Chiummariello Andrea",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "de-stefano-francesco",
+          "excelName": "De Stefano Francesco",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "favicchio-elia",
+          "excelName": "Favicchio Elia",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "lieto-claudio",
+          "excelName": "Lieto Claudio",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "mane-mohamed-seick",
+          "excelName": "Mane Mohamed Seick",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "melnyk-mykyta",
+          "excelName": "Melnyk Mykyta",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "pengue-salvatore",
+          "excelName": "Pengue Salvatore",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "riccio-luigi",
+          "excelName": "Riccio Luigi",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "santella-alessandro",
+          "excelName": "Santella Alessandro",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "branchizio-agostino",
+          "excelName": "Branchizio Agostino",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "chiaiese-riccardo",
+          "excelName": "Chiaiese",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        }
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "kind": "training",
+      "trainingSlug": null,
+      "matchSlug": null,
+      "playersPresent": 12,
+      "playersAnswered": 12,
+      "avgMin": null,
+      "avgRpe": 15.83,
+      "avgSessionLoad": null,
+      "players": [
+        {
+          "playerSlug": "chiummariello-andrea",
+          "excelName": "Chiummariello Andrea",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "melnyk-mykyta",
+          "excelName": "Melnyk Mykyta",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "pengue-salvatore",
+          "excelName": "Pengue Salvatore",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "riccio-luigi",
+          "excelName": "Riccio Luigi",
+          "min": null,
+          "rpe": 17,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "de-stefano-francesco",
+          "excelName": "De Stefano Francesco",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "favicchio-elia",
+          "excelName": "Favicchio Elia",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "lepre-giuseppe",
+          "excelName": "Lepre Giuseppe",
+          "min": null,
+          "rpe": 16,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "branchizio-agostino",
+          "excelName": "Branchizio Agostino",
+          "min": null,
+          "rpe": 15,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "candela-ivan-giovanni",
+          "excelName": "Candela Ivan Giovanni",
+          "min": null,
+          "rpe": 15,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "lieto-claudio",
+          "excelName": "Lieto Claudio",
+          "min": null,
+          "rpe": 15,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "santella-alessandro",
+          "excelName": "Santella Alessandro",
+          "min": null,
+          "rpe": 15,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "chiaiese-riccardo",
+          "excelName": "Chiaiese",
+          "min": null,
+          "rpe": 14,
+          "sessionLoad": null
+        }
+      ]
     }
   ],
   "unmatchedNames": [
@@ -4349,6 +4903,9 @@
     "Napolitano",
     "Pignarosa",
     "D'Angelo",
-    "Pica"
+    "Pica",
+    "Picardi",
+    "Piccardi",
+    "Pepe"
   ]
 }
