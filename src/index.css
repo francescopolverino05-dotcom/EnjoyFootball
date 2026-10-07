@@ -5113,6 +5113,147 @@ a.gacon-ind-row:hover {
   grid-template-columns: 90px 1fr auto 1fr;
 }
 
+/* Coppa Italia — Transfermarkt-style knockout bracket */
+.cup-bracket {
+  margin-top: 16px;
+}
+
+.cup-bracket-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 8px;
+}
+
+.cup-bracket-track {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  min-width: min-content;
+  padding: 4px 2px 12px;
+}
+
+.cup-bracket-round {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  width: 168px;
+}
+
+.cup-bracket-round-title {
+  margin: 0 0 12px;
+  padding: 0 4px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--text-gray);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.cup-bracket-matches {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-around;
+  gap: 8px;
+  min-height: 520px;
+}
+
+.cup-bracket-matches--16 {
+  min-height: 980px;
+  gap: 6px;
+}
+
+.cup-bracket-matches--8 {
+  min-height: 980px;
+}
+
+.cup-bracket-matches--4 {
+  min-height: 980px;
+}
+
+.cup-bracket-matches--2 {
+  min-height: 980px;
+}
+
+.cup-bracket-matches--1 {
+  min-height: 980px;
+  justify-content: center;
+}
+
+.cup-bracket-match {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid var(--border-light);
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(10, 22, 40, 0.04);
+}
+
+.cup-bracket-match--us {
+  border-color: var(--napoli-blue);
+  box-shadow: 0 0 0 1px rgba(0, 127, 255, 0.25);
+}
+
+.cup-bracket-team {
+  padding: 7px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.25;
+  min-height: 34px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: center;
+}
+
+.cup-bracket-team--away {
+  border-top: 1px solid var(--border-light);
+}
+
+.cup-bracket-team--us {
+  background: rgba(0, 127, 255, 0.1);
+  font-weight: 800;
+  color: var(--napoli-blue-dark);
+}
+
+.cup-bracket-team-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.cup-bracket-team-score {
+  font-size: 12px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-gray);
+  min-width: 1.25em;
+  text-align: right;
+}
+
+.cup-bracket-team--us .cup-bracket-team-score {
+  color: var(--napoli-blue-dark);
+}
+
+@media (max-width: 640px) {
+  .cup-bracket-round {
+    width: 148px;
+  }
+
+  .cup-bracket-matches--16,
+  .cup-bracket-matches--8,
+  .cup-bracket-matches--4,
+  .cup-bracket-matches--2,
+  .cup-bracket-matches--1 {
+    min-height: 860px;
+  }
+}
+
 .standings-fixture--us {
   background: rgba(0, 127, 255, 0.08);
   font-weight: 700;

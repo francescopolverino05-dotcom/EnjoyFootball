@@ -1,10 +1,10 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-05",
+  "updatedAt": "2026-10-07",
   "sources": {
     "primavera2": "https://www.transfermarkt.com/primavera-2b/tabelle/wettbewerb/IJ2B/saison_id/2026",
-    "coppaItalia": "https://www.transfermarkt.co.uk/coppa-italia-primavera/gesamtspielplan/pokalwettbewerb/CITP/saison_id/2026",
-    "uefaYouthLeague": "https://en.wikipedia.org/wiki/2026–27_UEFA_Youth_League_league_phase"
+    "coppaItalia": "https://www.transfermarkt.it/coppa-italia-primavera/turnierbaum/pokalwettbewerb/CITP/saison_id/2026",
+    "uefaYouthLeague": "https://www.transfermarkt.com/uefa-youth-league/gesamtspielplan/pokalwettbewerb/19YL/saison_id/2026"
   },
   "competitions": {
     "primavera2": {
@@ -1637,7 +1637,7 @@
           "id": "1VR",
           "name": {
             "en": "First Preliminary Round",
-            "it": "1ª Vorrunde"
+            "it": "Primo turno preliminare"
           },
           "dateFrom": "2026-08-21",
           "fixtures": [
@@ -1701,7 +1701,7 @@
           "id": "2VR",
           "name": {
             "en": "Second Preliminary Round",
-            "it": "2ª Vorrunde"
+            "it": "2° turno preliminare"
           },
           "dateFrom": "2026-09-26",
           "fixtures": [
@@ -1709,27 +1709,27 @@
               "date": "2026-09-26",
               "home": "Udinese",
               "away": "Renate",
-              "score": null
+              "score": "0-2"
             },
             {
               "date": "2026-09-26",
               "home": "Südtirol",
               "away": "Ascoli",
-              "score": null,
+              "score": "4-2",
               "ourClub": "ascoli"
             },
             {
               "date": "2026-09-26",
               "home": "Bari",
               "away": "Palermo",
-              "score": null,
+              "score": "3-2",
               "ourClub": "bari"
             },
             {
               "date": "2026-09-26",
               "home": "Brescia",
               "away": "Venezia",
-              "score": null
+              "score": "3-2"
             }
           ]
         },
@@ -1737,32 +1737,46 @@
           "id": "1R",
           "name": {
             "en": "First Round",
-            "it": "Primo turno"
+            "it": "1° Turno"
           },
-          "dateFrom": "2026-10-28",
+          "dateFrom": "2026-10-27",
           "fixtures": [
             {
-              "date": "2026-10-28",
+              "date": "2026-10-27",
               "home": "Sassuolo",
-              "away": "TBD",
+              "away": "Renate",
               "score": null
             },
             {
-              "date": "2026-10-28",
-              "home": "Verona",
-              "away": "Pro Vercelli",
-              "score": null
+              "date": "2026-10-27",
+              "home": "Torino",
+              "away": "Bari",
+              "score": null,
+              "ourClub": "bari"
             },
             {
-              "date": "2026-10-28",
-              "home": "TBD",
-              "away": "Torino",
-              "score": null
-            },
-            {
-              "date": "2026-10-28",
+              "date": "2026-10-27",
               "home": "Monza",
-              "away": "TBD",
+              "away": "Brescia",
+              "score": null
+            },
+            {
+              "date": "2026-10-27",
+              "home": "Genoa",
+              "away": "Reggiana",
+              "score": null
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Milan",
+              "away": "Catanzaro",
+              "score": null,
+              "ourClub": "catanzaro"
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Lazio",
+              "away": "Südtirol",
               "score": null
             },
             {
@@ -1774,13 +1788,6 @@
             },
             {
               "date": "2026-10-28",
-              "home": "Milan",
-              "away": "Catanzaro",
-              "score": null,
-              "ourClub": "catanzaro"
-            },
-            {
-              "date": "2026-10-28",
               "home": "Como",
               "away": "Pescara",
               "score": null,
@@ -1788,15 +1795,10 @@
             },
             {
               "date": "2026-10-28",
-              "home": "TBD",
-              "away": "Lazio",
-              "score": null
-            },
-            {
-              "date": "2026-10-28",
-              "home": "Modena",
-              "away": "Sampdoria",
-              "score": null
+              "home": "Cremonese",
+              "away": "Benevento",
+              "score": null,
+              "ourClub": "benevento"
             },
             {
               "date": "2026-10-28",
@@ -1813,10 +1815,15 @@
             },
             {
               "date": "2026-10-28",
-              "home": "AlbinoLeffe",
-              "away": "Avellino",
-              "score": null,
-              "ourClub": "avellino"
+              "home": "Modena",
+              "away": "Sampdoria",
+              "score": null
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Verona",
+              "away": "Pro Vercelli",
+              "score": null
             },
             {
               "date": "2026-10-28",
@@ -1828,12 +1835,6 @@
             },
             {
               "date": "2026-10-28",
-              "home": "Genoa",
-              "away": "Reggiana",
-              "score": null
-            },
-            {
-              "date": "2026-10-28",
               "home": "Empoli",
               "away": "Perugia",
               "score": null,
@@ -1841,13 +1842,13 @@
             },
             {
               "date": "2026-10-28",
-              "home": "Cremonese",
-              "away": "Benevento",
+              "home": "AlbinoLeffe",
+              "away": "Avellino",
               "score": null,
-              "ourClub": "benevento"
+              "ourClub": "avellino"
             }
           ],
-          "note": "Napoli enter here vs Spezia (both Primavera 2 B)."
+          "note": "Napoli enter here vs Spezia (both Primavera 2 B). TM draw updated after preliminary rounds."
         },
         {
           "id": "SZ",
@@ -1911,7 +1912,7 @@
           "id": "AF",
           "name": {
             "en": "Round of 16",
-            "it": "Ottavi di finale"
+            "it": "Ottavi"
           },
           "dateFrom": "2027-01-20",
           "fixtures": [
@@ -1969,7 +1970,7 @@
           "id": "VF",
           "name": {
             "en": "Quarter-Finals",
-            "it": "Quarti di finale"
+            "it": "Quarti"
           },
           "dateFrom": "2027-02-10",
           "fixtures": [
@@ -2050,10 +2051,10 @@
       "ourPath": {
         "entryRound": "leaguePhase",
         "next": {
-          "round": "Matchday 1",
-          "date": "2026-09-09",
-          "homeId": "napoli",
-          "awayId": "arsenal",
+          "round": "Matchday 2",
+          "date": "2026-10-13",
+          "homeId": "villarreal",
+          "awayId": "napoli",
           "score": null
         }
       },
@@ -2064,14 +2065,117 @@
             "en": "Matchday 1",
             "it": "Giornata 1"
           },
-          "dateFrom": "2026-09-09",
+          "dateFrom": "2026-09-08",
           "fixtures": [
+            {
+              "date": "2026-09-08",
+              "home": "AEK Athens",
+              "away": "LASK",
+              "score": "0-0"
+            },
+            {
+              "date": "2026-09-08",
+              "home": "Porto",
+              "away": "Man City",
+              "score": "3-1"
+            },
+            {
+              "date": "2026-09-08",
+              "home": "Club Brugge",
+              "away": "Aston Villa",
+              "score": "5-3"
+            },
+            {
+              "date": "2026-09-08",
+              "home": "Lille",
+              "away": "Real Betis",
+              "score": "0-0"
+            },
+            {
+              "date": "2026-09-08",
+              "home": "Dortmund",
+              "away": "Villarreal",
+              "score": "2-3"
+            },
+            {
+              "date": "2026-09-08",
+              "home": "Real Madrid",
+              "away": "Inter",
+              "score": "3-0"
+            },
+            {
+              "date": "2026-09-09",
+              "home": "Stuttgart",
+              "away": "Viking",
+              "score": "5-0"
+            },
             {
               "date": "2026-09-09",
               "home": "Napoli",
               "away": "Arsenal",
-              "score": null,
-              "us": true
+              "score": "1-2",
+              "us": true,
+              "ourClub": "napoli"
+            },
+            {
+              "date": "2026-09-09",
+              "home": "PSG",
+              "away": "Slovan Bratislava",
+              "score": "6-1"
+            },
+            {
+              "date": "2026-09-09",
+              "home": "Sporting",
+              "away": "Galatasaray",
+              "score": "2-2"
+            },
+            {
+              "date": "2026-09-09",
+              "home": "Liverpool",
+              "away": "Atlético",
+              "score": "2-2"
+            },
+            {
+              "date": "2026-09-10",
+              "home": "Barcelona",
+              "away": "Feyenoord",
+              "score": "1-2"
+            },
+            {
+              "date": "2026-09-10",
+              "home": "Fenerbahçe",
+              "away": "Roma",
+              "score": "2-4"
+            },
+            {
+              "date": "2026-09-10",
+              "home": "PSV",
+              "away": "Shakhtar",
+              "score": "1-0"
+            },
+            {
+              "date": "2026-09-10",
+              "home": "Slavia Prague",
+              "away": "Lens",
+              "score": "2-1"
+            },
+            {
+              "date": "2026-09-10",
+              "home": "Como",
+              "away": "Leipzig",
+              "score": "1-1"
+            },
+            {
+              "date": "2026-09-10",
+              "home": "Man United",
+              "away": "Sabah",
+              "score": "5-0"
+            },
+            {
+              "date": "2026-09-10",
+              "home": "Bayern",
+              "away": "Bodø/Glimt",
+              "score": "6-1"
             }
           ]
         },
@@ -2085,10 +2189,113 @@
           "fixtures": [
             {
               "date": "2026-10-13",
+              "home": "Lens",
+              "away": "Sporting",
+              "score": null
+            },
+            {
+              "date": "2026-10-13",
+              "home": "Sabah",
+              "away": "Slavia Prague",
+              "score": null
+            },
+            {
+              "date": "2026-10-13",
+              "home": "Viking",
+              "away": "Bayern",
+              "score": null
+            },
+            {
+              "date": "2026-10-13",
+              "home": "Arsenal",
+              "away": "Lille",
+              "score": null
+            },
+            {
+              "date": "2026-10-13",
+              "home": "Galatasaray",
+              "away": "Barcelona",
+              "score": null
+            },
+            {
+              "date": "2026-10-13",
+              "home": "Leipzig",
+              "away": "PSV",
+              "score": null
+            },
+            {
+              "date": "2026-10-13",
+              "home": "Inter",
+              "away": "Club Brugge",
+              "score": null
+            },
+            {
+              "date": "2026-10-13",
+              "home": "Atlético",
+              "away": "Man United",
+              "score": null
+            },
+            {
+              "date": "2026-10-13",
               "home": "Villarreal",
               "away": "Napoli",
               "score": null,
-              "us": true
+              "us": true,
+              "ourClub": "napoli"
+            },
+            {
+              "date": "2026-10-14",
+              "home": "Bodø/Glimt",
+              "away": "Dortmund",
+              "score": null
+            },
+            {
+              "date": "2026-10-14",
+              "home": "LASK",
+              "away": "Liverpool",
+              "score": null
+            },
+            {
+              "date": "2026-10-14",
+              "home": "Feyenoord",
+              "away": "Como",
+              "score": null
+            },
+            {
+              "date": "2026-10-14",
+              "home": "Shakhtar",
+              "away": "AEK Athens",
+              "score": null
+            },
+            {
+              "date": "2026-10-14",
+              "home": "Roma",
+              "away": "Real Madrid",
+              "score": null
+            },
+            {
+              "date": "2026-10-14",
+              "home": "Slovan Bratislava",
+              "away": "Stuttgart",
+              "score": null
+            },
+            {
+              "date": "2026-10-14",
+              "home": "Aston Villa",
+              "away": "Fenerbahçe",
+              "score": null
+            },
+            {
+              "date": "2026-10-14",
+              "home": "Man City",
+              "away": "PSG",
+              "score": null
+            },
+            {
+              "date": "2026-10-14",
+              "home": "Real Betis",
+              "away": "Porto",
+              "score": null
             }
           ]
         },
@@ -2102,10 +2309,113 @@
           "fixtures": [
             {
               "date": "2026-10-20",
+              "home": "Fenerbahçe",
+              "away": "Slavia Prague",
+              "score": null
+            },
+            {
+              "date": "2026-10-20",
+              "home": "Sabah",
+              "away": "Dortmund",
+              "score": null
+            },
+            {
+              "date": "2026-10-20",
+              "home": "Porto",
+              "away": "PSV",
+              "score": null
+            },
+            {
+              "date": "2026-10-20",
+              "home": "Roma",
+              "away": "Slovan Bratislava",
+              "score": null
+            },
+            {
+              "date": "2026-10-20",
+              "home": "PSG",
+              "away": "Barcelona",
+              "score": null
+            },
+            {
+              "date": "2026-10-20",
               "home": "Napoli",
               "away": "Bodø/Glimt",
               "score": null,
-              "us": true
+              "us": true,
+              "ourClub": "napoli"
+            },
+            {
+              "date": "2026-10-20",
+              "home": "Stuttgart",
+              "away": "Atlético",
+              "score": null
+            },
+            {
+              "date": "2026-10-20",
+              "home": "Liverpool",
+              "away": "Villarreal",
+              "score": null
+            },
+            {
+              "date": "2026-10-20",
+              "home": "Man City",
+              "away": "AEK Athens",
+              "score": null
+            },
+            {
+              "date": "2026-10-21",
+              "home": "Como",
+              "away": "Man United",
+              "score": null
+            },
+            {
+              "date": "2026-10-21",
+              "home": "Lille",
+              "away": "Galatasaray",
+              "score": null
+            },
+            {
+              "date": "2026-10-21",
+              "home": "Aston Villa",
+              "away": "Viking",
+              "score": null
+            },
+            {
+              "date": "2026-10-21",
+              "home": "Club Brugge",
+              "away": "Lens",
+              "score": null
+            },
+            {
+              "date": "2026-10-21",
+              "home": "Sporting",
+              "away": "LASK",
+              "score": null
+            },
+            {
+              "date": "2026-10-21",
+              "home": "Bayern",
+              "away": "Arsenal",
+              "score": null
+            },
+            {
+              "date": "2026-10-21",
+              "home": "Inter",
+              "away": "Shakhtar",
+              "score": null
+            },
+            {
+              "date": "2026-10-21",
+              "home": "Real Madrid",
+              "away": "Leipzig",
+              "score": null
+            },
+            {
+              "date": "2026-10-21",
+              "home": "Real Betis",
+              "away": "Feyenoord",
+              "score": null
             }
           ]
         },
@@ -2115,14 +2425,117 @@
             "en": "Matchday 4",
             "it": "Giornata 4"
           },
-          "dateFrom": "2026-11-04",
+          "dateFrom": "2026-11-03",
           "fixtures": [
+            {
+              "date": "2026-11-03",
+              "home": "Galatasaray",
+              "away": "Stuttgart",
+              "score": null
+            },
+            {
+              "date": "2026-11-03",
+              "home": "Bodø/Glimt",
+              "away": "Lille",
+              "score": null
+            },
+            {
+              "date": "2026-11-03",
+              "home": "Shakhtar",
+              "away": "Sporting",
+              "score": null
+            },
+            {
+              "date": "2026-11-03",
+              "home": "Villarreal",
+              "away": "PSG",
+              "score": null
+            },
+            {
+              "date": "2026-11-03",
+              "home": "Feyenoord",
+              "away": "Inter",
+              "score": null
+            },
+            {
+              "date": "2026-11-03",
+              "home": "Man United",
+              "away": "Roma",
+              "score": null
+            },
+            {
+              "date": "2026-11-03",
+              "home": "LASK",
+              "away": "Slovan Bratislava",
+              "score": null
+            },
+            {
+              "date": "2026-11-03",
+              "home": "Atlético",
+              "away": "Bayern",
+              "score": null
+            },
+            {
+              "date": "2026-11-03",
+              "home": "Barcelona",
+              "away": "Aston Villa",
+              "score": null
+            },
+            {
+              "date": "2026-11-04",
+              "home": "AEK Athens",
+              "away": "Real Madrid",
+              "score": null
+            },
+            {
+              "date": "2026-11-04",
+              "home": "Fenerbahçe",
+              "away": "Liverpool",
+              "score": null
+            },
             {
               "date": "2026-11-04",
               "home": "Porto",
               "away": "Napoli",
               "score": null,
-              "us": true
+              "us": true,
+              "ourClub": "napoli"
+            },
+            {
+              "date": "2026-11-04",
+              "home": "Viking",
+              "away": "Sabah",
+              "score": null
+            },
+            {
+              "date": "2026-11-04",
+              "home": "PSV",
+              "away": "Club Brugge",
+              "score": null
+            },
+            {
+              "date": "2026-11-04",
+              "home": "Lens",
+              "away": "Como",
+              "score": null
+            },
+            {
+              "date": "2026-11-04",
+              "home": "Slavia Prague",
+              "away": "Arsenal",
+              "score": null
+            },
+            {
+              "date": "2026-11-04",
+              "home": "Leipzig",
+              "away": "Man City",
+              "score": null
+            },
+            {
+              "date": "2026-11-04",
+              "home": "Dortmund",
+              "away": "Real Betis",
+              "score": null
             }
           ]
         },
@@ -2136,10 +2549,113 @@
           "fixtures": [
             {
               "date": "2026-11-24",
-              "home": "Manchester City",
+              "home": "Bodø/Glimt",
+              "away": "LASK",
+              "score": null
+            },
+            {
+              "date": "2026-11-24",
+              "home": "Galatasaray",
+              "away": "Aston Villa",
+              "score": null
+            },
+            {
+              "date": "2026-11-24",
+              "home": "Arsenal",
+              "away": "Dortmund",
+              "score": null
+            },
+            {
+              "date": "2026-11-24",
+              "home": "Feyenoord",
+              "away": "Porto",
+              "score": null
+            },
+            {
+              "date": "2026-11-24",
+              "home": "Slovan Bratislava",
+              "away": "Real Betis",
+              "score": null
+            },
+            {
+              "date": "2026-11-24",
+              "home": "Como",
+              "away": "AEK Athens",
+              "score": null
+            },
+            {
+              "date": "2026-11-24",
+              "home": "Man City",
               "away": "Napoli",
               "score": null,
-              "us": true
+              "us": true,
+              "ourClub": "napoli"
+            },
+            {
+              "date": "2026-11-24",
+              "home": "Leipzig",
+              "away": "Lens",
+              "score": null
+            },
+            {
+              "date": "2026-11-24",
+              "home": "Real Madrid",
+              "away": "PSV",
+              "score": null
+            },
+            {
+              "date": "2026-11-25",
+              "home": "Sabah",
+              "away": "Barcelona",
+              "score": null
+            },
+            {
+              "date": "2026-11-25",
+              "home": "Slavia Prague",
+              "away": "Villarreal",
+              "score": null
+            },
+            {
+              "date": "2026-11-25",
+              "home": "Shakhtar",
+              "away": "Fenerbahçe",
+              "score": null
+            },
+            {
+              "date": "2026-11-25",
+              "home": "PSG",
+              "away": "Roma",
+              "score": null
+            },
+            {
+              "date": "2026-11-25",
+              "home": "Club Brugge",
+              "away": "Liverpool",
+              "score": null
+            },
+            {
+              "date": "2026-11-25",
+              "home": "Inter",
+              "away": "Stuttgart",
+              "score": null
+            },
+            {
+              "date": "2026-11-25",
+              "home": "Lille",
+              "away": "Bayern",
+              "score": null
+            },
+            {
+              "date": "2026-11-25",
+              "home": "Sporting",
+              "away": "Man United",
+              "score": null
+            },
+            {
+              "date": "2026-11-25",
+              "home": "Atlético",
+              "away": "Viking",
+              "score": null
             }
           ]
         },
@@ -2153,10 +2669,113 @@
           "fixtures": [
             {
               "date": "2026-12-08",
+              "home": "Viking",
+              "away": "Feyenoord",
+              "score": null
+            },
+            {
+              "date": "2026-12-08",
+              "home": "Villarreal",
+              "away": "Sabah",
+              "score": null
+            },
+            {
+              "date": "2026-12-08",
+              "home": "AEK Athens",
+              "away": "Galatasaray",
+              "score": null
+            },
+            {
+              "date": "2026-12-08",
+              "home": "Roma",
+              "away": "Sporting",
+              "score": null
+            },
+            {
+              "date": "2026-12-08",
+              "home": "Man United",
+              "away": "Leipzig",
+              "score": null
+            },
+            {
+              "date": "2026-12-08",
               "home": "Napoli",
               "away": "Club Brugge",
               "score": null,
-              "us": true
+              "us": true,
+              "ourClub": "napoli"
+            },
+            {
+              "date": "2026-12-08",
+              "home": "Aston Villa",
+              "away": "PSG",
+              "score": null
+            },
+            {
+              "date": "2026-12-08",
+              "home": "Barcelona",
+              "away": "Man City",
+              "score": null
+            },
+            {
+              "date": "2026-12-08",
+              "home": "Bayern",
+              "away": "Slavia Prague",
+              "score": null
+            },
+            {
+              "date": "2026-12-09",
+              "home": "Real Betis",
+              "away": "Como",
+              "score": null
+            },
+            {
+              "date": "2026-12-09",
+              "home": "Slovan Bratislava",
+              "away": "Shakhtar",
+              "score": null
+            },
+            {
+              "date": "2026-12-09",
+              "home": "Arsenal",
+              "away": "Real Madrid",
+              "score": null
+            },
+            {
+              "date": "2026-12-09",
+              "home": "PSV",
+              "away": "Atlético",
+              "score": null
+            },
+            {
+              "date": "2026-12-09",
+              "home": "Lens",
+              "away": "Bodø/Glimt",
+              "score": null
+            },
+            {
+              "date": "2026-12-09",
+              "home": "LASK",
+              "away": "Fenerbahçe",
+              "score": null
+            },
+            {
+              "date": "2026-12-09",
+              "home": "Stuttgart",
+              "away": "Lille",
+              "score": null
+            },
+            {
+              "date": "2026-12-09",
+              "home": "Dortmund",
+              "away": "Inter",
+              "score": null
+            },
+            {
+              "date": "2026-12-09",
+              "home": "Liverpool",
+              "away": "Porto",
+              "score": null
             }
           ]
         }
@@ -2169,9 +2788,9 @@
           "it": "UEFA Youth League — Fase a gironi"
         },
         "kind": "league",
-        "matchday": 0,
-        "nextMatchday": 1,
-        "nextMatchdayDate": "2026-09-09",
+        "matchday": 1,
+        "nextMatchday": 2,
+        "nextMatchdayDate": "2026-10-13",
         "rows": [
           {
             "pos": 1,
@@ -2344,8 +2963,8 @@
           },
           {
             "pos": 14,
-            "teamId": "hoffenheim",
-            "shortName": "Hoffenheim",
+            "teamId": "shakhtar",
+            "shortName": "Shakhtar Donetsk",
             "played": 0,
             "won": 0,
             "drawn": 0,
@@ -2631,8 +3250,8 @@
           },
           {
             "pos": 36,
-            "teamId": "zurich",
-            "shortName": "Zürich",
+            "teamId": "viking",
+            "shortName": "Viking",
             "played": 0,
             "won": 0,
             "drawn": 0,
@@ -2646,12 +3265,98 @@
         "matchdays": [
           {
             "number": 1,
-            "date": "2026-09-09",
+            "date": "2026-09-08",
             "fixtures": [
+              {
+                "homeId": "aek",
+                "awayId": "lask",
+                "score": "0-0"
+              },
+              {
+                "homeId": "porto",
+                "awayId": "man-city",
+                "score": "3-1"
+              },
+              {
+                "homeId": "club-brugge",
+                "awayId": "aston-villa",
+                "score": "5-3"
+              },
+              {
+                "homeId": "lille",
+                "awayId": "betis",
+                "score": "0-0"
+              },
+              {
+                "homeId": "dortmund",
+                "awayId": "villarreal",
+                "score": "2-3"
+              },
+              {
+                "homeId": "real-madrid",
+                "awayId": "inter",
+                "score": "3-0"
+              },
+              {
+                "homeId": "stuttgart",
+                "awayId": "viking",
+                "score": "5-0"
+              },
               {
                 "homeId": "napoli",
                 "awayId": "arsenal",
-                "score": null
+                "score": "1-2",
+                "matchSlug": "2026-09-09_uyl-u19-vs-arsenal"
+              },
+              {
+                "homeId": "psg",
+                "awayId": "slovan-bratislava",
+                "score": "6-1"
+              },
+              {
+                "homeId": "sporting",
+                "awayId": "galatasaray",
+                "score": "2-2"
+              },
+              {
+                "homeId": "liverpool",
+                "awayId": "atletico",
+                "score": "2-2"
+              },
+              {
+                "homeId": "barcelona",
+                "awayId": "feyenoord",
+                "score": "1-2"
+              },
+              {
+                "homeId": "fenerbahce",
+                "awayId": "roma",
+                "score": "2-4"
+              },
+              {
+                "homeId": "psv",
+                "awayId": "shakhtar",
+                "score": "1-0"
+              },
+              {
+                "homeId": "slavia-prague",
+                "awayId": "lens",
+                "score": "2-1"
+              },
+              {
+                "homeId": "como",
+                "awayId": "leipzig",
+                "score": "1-1"
+              },
+              {
+                "homeId": "man-utd",
+                "awayId": "sabah",
+                "score": "5-0"
+              },
+              {
+                "homeId": "bayern",
+                "awayId": "bodo-glimt",
+                "score": "6-1"
               }
             ]
           },
@@ -2660,8 +3365,94 @@
             "date": "2026-10-13",
             "fixtures": [
               {
+                "homeId": "lens",
+                "awayId": "sporting",
+                "score": null
+              },
+              {
+                "homeId": "sabah",
+                "awayId": "slavia-prague",
+                "score": null
+              },
+              {
+                "homeId": "viking",
+                "awayId": "bayern",
+                "score": null
+              },
+              {
+                "homeId": "arsenal",
+                "awayId": "lille",
+                "score": null
+              },
+              {
+                "homeId": "galatasaray",
+                "awayId": "barcelona",
+                "score": null
+              },
+              {
+                "homeId": "leipzig",
+                "awayId": "psv",
+                "score": null
+              },
+              {
+                "homeId": "inter",
+                "awayId": "club-brugge",
+                "score": null
+              },
+              {
+                "homeId": "atletico",
+                "awayId": "man-utd",
+                "score": null
+              },
+              {
                 "homeId": "villarreal",
                 "awayId": "napoli",
+                "score": null,
+                "matchSlug": "2026-10-13_uyl-villarreal-vs-u19"
+              },
+              {
+                "homeId": "bodo-glimt",
+                "awayId": "dortmund",
+                "score": null
+              },
+              {
+                "homeId": "lask",
+                "awayId": "liverpool",
+                "score": null
+              },
+              {
+                "homeId": "feyenoord",
+                "awayId": "como",
+                "score": null
+              },
+              {
+                "homeId": "shakhtar",
+                "awayId": "aek",
+                "score": null
+              },
+              {
+                "homeId": "roma",
+                "awayId": "real-madrid",
+                "score": null
+              },
+              {
+                "homeId": "slovan-bratislava",
+                "awayId": "stuttgart",
+                "score": null
+              },
+              {
+                "homeId": "aston-villa",
+                "awayId": "fenerbahce",
+                "score": null
+              },
+              {
+                "homeId": "man-city",
+                "awayId": "psg",
+                "score": null
+              },
+              {
+                "homeId": "betis",
+                "awayId": "porto",
                 "score": null
               }
             ]
@@ -2671,19 +3462,191 @@
             "date": "2026-10-20",
             "fixtures": [
               {
+                "homeId": "fenerbahce",
+                "awayId": "slavia-prague",
+                "score": null
+              },
+              {
+                "homeId": "sabah",
+                "awayId": "dortmund",
+                "score": null
+              },
+              {
+                "homeId": "porto",
+                "awayId": "psv",
+                "score": null
+              },
+              {
+                "homeId": "roma",
+                "awayId": "slovan-bratislava",
+                "score": null
+              },
+              {
+                "homeId": "psg",
+                "awayId": "barcelona",
+                "score": null
+              },
+              {
                 "homeId": "napoli",
                 "awayId": "bodo-glimt",
+                "score": null,
+                "matchSlug": "2026-10-20_uyl-u19-vs-bodo-glimt"
+              },
+              {
+                "homeId": "stuttgart",
+                "awayId": "atletico",
+                "score": null
+              },
+              {
+                "homeId": "liverpool",
+                "awayId": "villarreal",
+                "score": null
+              },
+              {
+                "homeId": "man-city",
+                "awayId": "aek",
+                "score": null
+              },
+              {
+                "homeId": "como",
+                "awayId": "man-utd",
+                "score": null
+              },
+              {
+                "homeId": "lille",
+                "awayId": "galatasaray",
+                "score": null
+              },
+              {
+                "homeId": "aston-villa",
+                "awayId": "viking",
+                "score": null
+              },
+              {
+                "homeId": "club-brugge",
+                "awayId": "lens",
+                "score": null
+              },
+              {
+                "homeId": "sporting",
+                "awayId": "lask",
+                "score": null
+              },
+              {
+                "homeId": "bayern",
+                "awayId": "arsenal",
+                "score": null
+              },
+              {
+                "homeId": "inter",
+                "awayId": "shakhtar",
+                "score": null
+              },
+              {
+                "homeId": "real-madrid",
+                "awayId": "leipzig",
+                "score": null
+              },
+              {
+                "homeId": "betis",
+                "awayId": "feyenoord",
                 "score": null
               }
             ]
           },
           {
             "number": 4,
-            "date": "2026-11-04",
+            "date": "2026-11-03",
             "fixtures": [
+              {
+                "homeId": "galatasaray",
+                "awayId": "stuttgart",
+                "score": null
+              },
+              {
+                "homeId": "bodo-glimt",
+                "awayId": "lille",
+                "score": null
+              },
+              {
+                "homeId": "shakhtar",
+                "awayId": "sporting",
+                "score": null
+              },
+              {
+                "homeId": "villarreal",
+                "awayId": "psg",
+                "score": null
+              },
+              {
+                "homeId": "feyenoord",
+                "awayId": "inter",
+                "score": null
+              },
+              {
+                "homeId": "man-utd",
+                "awayId": "roma",
+                "score": null
+              },
+              {
+                "homeId": "lask",
+                "awayId": "slovan-bratislava",
+                "score": null
+              },
+              {
+                "homeId": "atletico",
+                "awayId": "bayern",
+                "score": null
+              },
+              {
+                "homeId": "barcelona",
+                "awayId": "aston-villa",
+                "score": null
+              },
+              {
+                "homeId": "aek",
+                "awayId": "real-madrid",
+                "score": null
+              },
+              {
+                "homeId": "fenerbahce",
+                "awayId": "liverpool",
+                "score": null
+              },
               {
                 "homeId": "porto",
                 "awayId": "napoli",
+                "score": null,
+                "matchSlug": "2026-11-04_uyl-porto-vs-u19"
+              },
+              {
+                "homeId": "viking",
+                "awayId": "sabah",
+                "score": null
+              },
+              {
+                "homeId": "psv",
+                "awayId": "club-brugge",
+                "score": null
+              },
+              {
+                "homeId": "lens",
+                "awayId": "como",
+                "score": null
+              },
+              {
+                "homeId": "slavia-prague",
+                "awayId": "arsenal",
+                "score": null
+              },
+              {
+                "homeId": "leipzig",
+                "awayId": "man-city",
+                "score": null
+              },
+              {
+                "homeId": "dortmund",
+                "awayId": "betis",
                 "score": null
               }
             ]
@@ -2693,8 +3656,94 @@
             "date": "2026-11-24",
             "fixtures": [
               {
+                "homeId": "bodo-glimt",
+                "awayId": "lask",
+                "score": null
+              },
+              {
+                "homeId": "galatasaray",
+                "awayId": "aston-villa",
+                "score": null
+              },
+              {
+                "homeId": "arsenal",
+                "awayId": "dortmund",
+                "score": null
+              },
+              {
+                "homeId": "feyenoord",
+                "awayId": "porto",
+                "score": null
+              },
+              {
+                "homeId": "slovan-bratislava",
+                "awayId": "betis",
+                "score": null
+              },
+              {
+                "homeId": "como",
+                "awayId": "aek",
+                "score": null
+              },
+              {
                 "homeId": "man-city",
                 "awayId": "napoli",
+                "score": null,
+                "matchSlug": "2026-11-24_uyl-man-city-vs-u19"
+              },
+              {
+                "homeId": "leipzig",
+                "awayId": "lens",
+                "score": null
+              },
+              {
+                "homeId": "real-madrid",
+                "awayId": "psv",
+                "score": null
+              },
+              {
+                "homeId": "sabah",
+                "awayId": "barcelona",
+                "score": null
+              },
+              {
+                "homeId": "slavia-prague",
+                "awayId": "villarreal",
+                "score": null
+              },
+              {
+                "homeId": "shakhtar",
+                "awayId": "fenerbahce",
+                "score": null
+              },
+              {
+                "homeId": "psg",
+                "awayId": "roma",
+                "score": null
+              },
+              {
+                "homeId": "club-brugge",
+                "awayId": "liverpool",
+                "score": null
+              },
+              {
+                "homeId": "inter",
+                "awayId": "stuttgart",
+                "score": null
+              },
+              {
+                "homeId": "lille",
+                "awayId": "bayern",
+                "score": null
+              },
+              {
+                "homeId": "sporting",
+                "awayId": "man-utd",
+                "score": null
+              },
+              {
+                "homeId": "atletico",
+                "awayId": "viking",
                 "score": null
               }
             ]
@@ -2704,8 +3753,94 @@
             "date": "2026-12-08",
             "fixtures": [
               {
+                "homeId": "viking",
+                "awayId": "feyenoord",
+                "score": null
+              },
+              {
+                "homeId": "villarreal",
+                "awayId": "sabah",
+                "score": null
+              },
+              {
+                "homeId": "aek",
+                "awayId": "galatasaray",
+                "score": null
+              },
+              {
+                "homeId": "roma",
+                "awayId": "sporting",
+                "score": null
+              },
+              {
+                "homeId": "man-utd",
+                "awayId": "leipzig",
+                "score": null
+              },
+              {
                 "homeId": "napoli",
                 "awayId": "club-brugge",
+                "score": null,
+                "matchSlug": "2026-12-08_uyl-u19-vs-club-brugge"
+              },
+              {
+                "homeId": "aston-villa",
+                "awayId": "psg",
+                "score": null
+              },
+              {
+                "homeId": "barcelona",
+                "awayId": "man-city",
+                "score": null
+              },
+              {
+                "homeId": "bayern",
+                "awayId": "slavia-prague",
+                "score": null
+              },
+              {
+                "homeId": "betis",
+                "awayId": "como",
+                "score": null
+              },
+              {
+                "homeId": "slovan-bratislava",
+                "awayId": "shakhtar",
+                "score": null
+              },
+              {
+                "homeId": "arsenal",
+                "awayId": "real-madrid",
+                "score": null
+              },
+              {
+                "homeId": "psv",
+                "awayId": "atletico",
+                "score": null
+              },
+              {
+                "homeId": "lens",
+                "awayId": "bodo-glimt",
+                "score": null
+              },
+              {
+                "homeId": "lask",
+                "awayId": "fenerbahce",
+                "score": null
+              },
+              {
+                "homeId": "stuttgart",
+                "awayId": "lille",
+                "score": null
+              },
+              {
+                "homeId": "dortmund",
+                "awayId": "inter",
+                "score": null
+              },
+              {
+                "homeId": "liverpool",
+                "awayId": "porto",
                 "score": null
               }
             ]

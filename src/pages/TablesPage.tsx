@@ -1,5 +1,9 @@
 import { useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
+import CupKnockoutBracket, {
+  cupHasKnockoutBracket,
+  cupPreliminaryRounds,
+} from '../components/CupKnockoutBracket';
 import ReportHeader from '../components/ReportHeader';
 import StandingsForm from '../components/StandingsForm';
 import {
@@ -61,12 +65,22 @@ export default function TablesPage() {
   const [matchdayNumber, setMatchdayNumber] = useState(
     () => league.nextMatchday || league.matchdays[0]?.number || 1
   );
+  const uylTable = uyl.groupTable;
+  const [uylMatchdayNumber, setUylMatchdayNumber] = useState(
+    () => uylTable?.nextMatchday || uylTable?.matchdays[0]?.number || 1
+  );
 
   const nameById = useMemo(() => {
     const map = new Map<string, string>();
     for (const row of league.rows) map.set(row.teamId, row.shortName);
     return map;
   }, [league.rows]);
+
+  const uylNameById = useMemo(() => {
+    const map = new Map<string, string>();
+    for (const row of uylTable?.rows ?? []) map.set(row.teamId, row.shortName);
+    return map;
+  }, [uylTable?.rows]);
 
   const selectedMd =
     league.matchdays.find((md) => md.number === matchdayNumber) ??
@@ -76,6 +90,17 @@ export default function TablesPage() {
   );
   const canPrev = mdIndex > 0;
   const canNext = mdIndex >= 0 && mdIndex < league.matchdays.length - 1;
+
+  const uylMatchdays = uylTable?.matchdays ?? [];
+  const selectedUylMd =
+    uylMatchdays.find((md) => md.number === uylMatchdayNumber) ??
+    uylMatchdays[0];
+  const uylMdIndex = uylMatchdays.findIndex(
+    (md) => md.number === selectedUylMd?.number
+  );
+  const uylCanPrev = uylMdIndex > 0;
+  const uylCanNext =
+    uylMdIndex >= 0 && uylMdIndex < uylMatchdays.length - 1;
 
   return (
     <div className="app-shell">
@@ -390,35 +415,49 @@ export default function TablesPage() {
               {coppa.rounds.length === 0 ? (
                 <p className="home-empty">{t('tableCupEmpty')}</p>
               ) : (
-                coppa.rounds.map((round) => (
-                  <div key={round.id} className="standings-cup-round">
-                    <h4 className="standings-matchday-title">{L(round.name)}</h4>
-                    {round.note ? (
-                      <p className="home-section-hint">{round.note}</p>
-                    ) : null}
-                    <ul className="standings-fixture-list">
-                      {round.fixtures.map((fx, i) => (
-                        <li
-                          key={`${round.id}-${i}`}
-                          className={
-                            fx.us
-                              ? 'standings-fixture standings-fixture--us'
-                              : 'standings-fixture'
-                          }
-                        >
-                          <span className="standings-fixture-date">
-                            {formatDate(fx.date, locale)}
-                          </span>
-                          <span className="standings-fixture-home">{fx.home}</span>
-                          <span className="standings-fixture-sep">
-                            {fx.score ?? '–'}
-                          </span>
-                          <span className="standings-fixture-away">{fx.away}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))
+                <>
+                  {cupPreliminaryRounds(coppa.rounds).map((round) => (
+                    <div key={round.id} className="standings-cup-round">
+                      <h4 className="standings-matchday-title">
+                        {L(round.name)}
+                      </h4>
+                      <ul className="standings-fixture-list">
+                        {round.fixtures.map((fx, i) => (
+                          <li
+                            key={`${round.id}-${i}`}
+                            className={
+                              fx.us
+                                ? 'standings-fixture standings-fixture--us'
+                                : 'standings-fixture'
+                            }
+                          >
+                            <span className="standings-fixture-date">
+                              {formatDate(fx.date, locale)}
+                            </span>
+                            <span className="standings-fixture-home">
+                              {fx.home}
+                            </span>
+                            <span className="standings-fixture-sep">
+                              {fx.score?.replace(/-/g, ':') ?? '–'}
+                            </span>
+                            <span className="standings-fixture-away">
+                              {fx.away}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+
+                  {cupHasKnockoutBracket(coppa.rounds) ? (
+                    <div className="standings-cup-round">
+                      <h4 className="standings-matchday-title">
+                        {t('tableCupKnockout')}
+                      </h4>
+                      <CupKnockoutBracket rounds={coppa.rounds} />
+                    </div>
+                  ) : null}
+                </>
               )}
             </section>
           ) : null}
@@ -429,89 +468,239 @@ export default function TablesPage() {
                 <h3 className="match-competition-title" id="table-uyl">
                   {L(uyl.name)}
                 </h3>
+                <p className="home-section-hint">
+                  {t('tableUpdated').replace('{date}', dataset.updatedAt)}
+                  {dataset.sources.uefaYouthLeague ? (
+                    <>
+                      {' · '}
+                      <a
+                        href={dataset.sources.uefaYouthLeague}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Transfermarkt
+                      </a>
+                    </>
+                  ) : null}
+                </p>
               </header>
-              {uyl.groupTable ? (
-                <>
-                <div className="standings-table-wrap">
-                  <table className="standings-table">
-                    <thead>
-                      <tr>
-                        <th scope="col">{t('tableColPos')}</th>
-                        <th scope="col">{t('tableColTeam')}</th>
-                        <th scope="col">{t('tableColPlayed')}</th>
-                        <th scope="col">{t('tableColWon')}</th>
-                        <th scope="col">{t('tableColDrawn')}</th>
-                        <th scope="col">{t('tableColLost')}</th>
-                        <th scope="col">{t('tableColGf')}</th>
-                        <th scope="col">{t('tableColGa')}</th>
-                        <th scope="col">{t('tableColGd')}</th>
-                        <th scope="col">{t('tableColPts')}</th>
-                        <th scope="col">{t('tableColForm')}</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {uyl.groupTable.rows.map((row) => {
-                        const crest = teamCrestUrl(
-                          {
-                            logo:
-                              row.teamId === 'napoli'
-                                ? 'napoli-logo.png'
-                                : `logos/${row.teamId}.png`,
-                          },
-                          'onLight'
-                        );
-                        const teamCell = (
-                          <span className="standings-team-inner">
-                            <img
-                              className="standings-crest"
-                              src={crest}
-                              alt=""
-                              width={22}
-                              height={22}
-                            />
-                            <span>{row.shortName}</span>
-                          </span>
-                        );
-                        return (
-                          <tr
-                            key={row.teamId}
-                            className={standingRowClassName(row.pos, row.us, {
-                              zoneForRank: uylZone,
-                            })}
-                          >
-                            <td className="standings-pos">{row.pos}</td>
-                            <td className="standings-team">{teamCell}</td>
-                            <td>{row.played}</td>
-                            <td>{row.won}</td>
-                            <td>{row.drawn}</td>
-                            <td>{row.lost}</td>
-                            <td>{row.gf}</td>
-                            <td>{row.ga}</td>
-                            <td>{formatGd(row.gd)}</td>
-                            <td className="standings-pts">{row.pts}</td>
-                            <td className="standings-form-cell">
-                              <StandingsForm
-                                results={getTeamForm(uyl.groupTable!, row.teamId)}
-                              />
-                            </td>
-                          </tr>
-                        );
-                      })}
-                    </tbody>
-                  </table>
+
+              {uyl.ourPath?.next ? (
+                <div className="standings-our-path">
+                  <div className="section-title">{t('tableOurPath')}</div>
+                  <p className="standings-our-path-body">
+                    <strong>{uyl.ourPath.next.round}</strong>
+                    {' · '}
+                    {formatDate(uyl.ourPath.next.date, locale)}
+                    {' · '}
+                    {uylNameById.get(uyl.ourPath.next.homeId) ??
+                      uyl.ourPath.next.homeId}
+                    {' – '}
+                    {uylNameById.get(uyl.ourPath.next.awayId) ??
+                      uyl.ourPath.next.awayId}
+                  </p>
                 </div>
-                <ul
-                  className="home-table-legend standings-page-legend"
-                  aria-label={t('homeTableLegendAria')}
-                >
-                  <li>
-                    <span className="home-table-legend-swatch home-table-legend-swatch--knockout" />
-                    <span>
-                      <strong>1–22</strong> — {t('homeZoneUylKnockout')}
-                    </span>
-                  </li>
-                </ul>
-                <p className="home-table-tiebreakers">{t('tableUylTiebreakersHint')}</p>
+              ) : null}
+
+              {uylTable ? (
+                <>
+                  <div className="standings-table-wrap">
+                    <table className="standings-table">
+                      <thead>
+                        <tr>
+                          <th scope="col">{t('tableColPos')}</th>
+                          <th scope="col">{t('tableColTeam')}</th>
+                          <th scope="col">{t('tableColPlayed')}</th>
+                          <th scope="col">{t('tableColWon')}</th>
+                          <th scope="col">{t('tableColDrawn')}</th>
+                          <th scope="col">{t('tableColLost')}</th>
+                          <th scope="col">{t('tableColGf')}</th>
+                          <th scope="col">{t('tableColGa')}</th>
+                          <th scope="col">{t('tableColGd')}</th>
+                          <th scope="col">{t('tableColPts')}</th>
+                          <th scope="col">{t('tableColForm')}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {uylTable.rows.map((row) => {
+                          const crest = teamCrestUrl(
+                            {
+                              logo:
+                                row.teamId === 'napoli'
+                                  ? 'napoli-logo.png'
+                                  : `logos/${row.teamId}.png`,
+                            },
+                            'onLight'
+                          );
+                          const teamCell = (
+                            <span className="standings-team-inner">
+                              <img
+                                className="standings-crest"
+                                src={crest}
+                                alt=""
+                                width={22}
+                                height={22}
+                              />
+                              <span>{row.shortName}</span>
+                            </span>
+                          );
+                          return (
+                            <tr
+                              key={row.teamId}
+                              className={standingRowClassName(row.pos, row.us, {
+                                zoneForRank: uylZone,
+                              })}
+                            >
+                              <td className="standings-pos">{row.pos}</td>
+                              <td className="standings-team">{teamCell}</td>
+                              <td>{row.played}</td>
+                              <td>{row.won}</td>
+                              <td>{row.drawn}</td>
+                              <td>{row.lost}</td>
+                              <td>{row.gf}</td>
+                              <td>{row.ga}</td>
+                              <td>{formatGd(row.gd)}</td>
+                              <td className="standings-pts">{row.pts}</td>
+                              <td className="standings-form-cell">
+                                <StandingsForm
+                                  results={getTeamForm(uylTable, row.teamId)}
+                                />
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  </div>
+                  <ul
+                    className="home-table-legend standings-page-legend"
+                    aria-label={t('homeTableLegendAria')}
+                  >
+                    <li>
+                      <span className="home-table-legend-swatch home-table-legend-swatch--knockout" />
+                      <span>
+                        <strong>1–22</strong> — {t('homeZoneUylKnockout')}
+                      </span>
+                    </li>
+                  </ul>
+                  <p className="home-table-tiebreakers">
+                    {t('tableUylTiebreakersHint')}
+                  </p>
+
+                  {selectedUylMd ? (
+                    <div className="standings-matchday">
+                      <div className="standings-matchday-nav">
+                        <button
+                          type="button"
+                          className="standings-matchday-btn"
+                          disabled={!uylCanPrev}
+                          onClick={() =>
+                            setUylMatchdayNumber(
+                              uylMatchdays[uylMdIndex - 1].number
+                            )
+                          }
+                          aria-label={t('tablePrevMatchday')}
+                        >
+                          ←
+                        </button>
+                        <div className="standings-matchday-heading">
+                          <h4 className="standings-matchday-title">
+                            {t('tableMatchdayResults')
+                              .replace('{n}', String(selectedUylMd.number))
+                              .replace(
+                                '{date}',
+                                formatDate(selectedUylMd.date, locale)
+                              )}
+                          </h4>
+                          <label className="standings-matchday-jump">
+                            <span className="visually-hidden">
+                              {t('tableJumpMatchday')}
+                            </span>
+                            <select
+                              value={selectedUylMd.number}
+                              onChange={(e) =>
+                                setUylMatchdayNumber(Number(e.target.value))
+                              }
+                            >
+                              {uylMatchdays.map((md) => (
+                                <option key={md.number} value={md.number}>
+                                  {t('tableMatchdayOption')
+                                    .replace('{n}', String(md.number))
+                                    .replace(
+                                      '{date}',
+                                      formatDate(md.date, locale)
+                                    )}
+                                </option>
+                              ))}
+                            </select>
+                          </label>
+                        </div>
+                        <button
+                          type="button"
+                          className="standings-matchday-btn"
+                          disabled={!uylCanNext}
+                          onClick={() =>
+                            setUylMatchdayNumber(
+                              uylMatchdays[uylMdIndex + 1].number
+                            )
+                          }
+                          aria-label={t('tableNextMatchdayBtn')}
+                        >
+                          →
+                        </button>
+                      </div>
+                      <ul className="standings-fixture-list">
+                        {selectedUylMd.fixtures.map((fx) => {
+                          const home =
+                            uylNameById.get(fx.homeId) ?? fx.homeId;
+                          const away =
+                            uylNameById.get(fx.awayId) ?? fx.awayId;
+                          const ours =
+                            fx.homeId === 'napoli' || fx.awayId === 'napoli';
+                          const statsHref = fx.matchSlug
+                            ? `/match/${fx.matchSlug}`
+                            : null;
+                          const className = [
+                            'standings-fixture',
+                            ours ? 'standings-fixture--us' : '',
+                            statsHref ? 'standings-fixture--has-stats' : '',
+                          ]
+                            .filter(Boolean)
+                            .join(' ');
+                          const body = (
+                            <>
+                              <span className="standings-fixture-home">
+                                {home}
+                              </span>
+                              <span className="standings-fixture-sep">
+                                {fx.score ?? '–'}
+                              </span>
+                              <span className="standings-fixture-away">
+                                {away}
+                              </span>
+                            </>
+                          );
+                          return (
+                            <li
+                              key={`${selectedUylMd.number}-${fx.homeId}-${fx.awayId}`}
+                              className={className}
+                            >
+                              {statsHref ? (
+                                <Link
+                                  className="standings-fixture-link"
+                                  to={statsHref}
+                                >
+                                  {body}
+                                </Link>
+                              ) : (
+                                body
+                              )}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  ) : null}
                 </>
               ) : (
                 <p className="home-empty">{t('tableUylEmpty')}</p>
