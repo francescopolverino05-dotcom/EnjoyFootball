@@ -1,0 +1,131 @@
+{
+  "id": "2026-10-06_martedi",
+  "slug": "2026-10-06_martedi",
+  "date": "2026-10-06",
+  "title": {
+    "en": "Tuesday training",
+    "it": "Martedì"
+  },
+  "focus": {
+    "en": "Defence/Attack without ball + 7v7+7",
+    "it": "Defence/Attack without ball + 7v7+7"
+  },
+  "sessionType": "metabolic",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — run npm run sync-vimeo -- --training 2026-10-06_martedi",
+    "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-10-06_martedi"
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1233765638/9ec9b89857",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1233766430",
+        "title": {
+          "en": "Partitella 10v10",
+          "it": "Partitella 10v10"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1233766430/be0c22e502",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1233765638",
+        "title": {
+          "en": "7v7+7",
+          "it": "7v7+7"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1233765638/9ec9b89857",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1233765639",
+        "title": {
+          "en": "Attiazione Tecnica (3 4 2)",
+          "it": "Attiazione Tecnica (3 4 2)"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1233765639/a57d6a2873",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1233765637",
+        "title": {
+          "en": "Difesa Senza Palla (4 4 2) + Attacco Senza Palla (3 4 2 1) P.1",
+          "it": "Difesa Senza Palla (4 4 2) + Attacco Senza Palla (3 4 2 1) P.1"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1233765637/70233cf915",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1233765641",
+        "title": {
+          "en": "Difesa Senza Palla (4 4 2) + Attacco Senza Palla (3 4 2 1) P.2",
+          "it": "Difesa Senza Palla (4 4 2) + Attacco Senza Palla (3 4 2 1) P.2"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1233765641/b8f72e4602",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30714160",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30714160",
+    "lastSyncedAt": "2026-10-08T09:26:37.755Z"
+  }
+}

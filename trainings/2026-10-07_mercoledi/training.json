@@ -1,0 +1,131 @@
+{
+  "id": "2026-10-07_mercoledi",
+  "slug": "2026-10-07_mercoledi",
+  "date": "2026-10-07",
+  "title": {
+    "en": "Wednesday training",
+    "it": "Mercoledì"
+  },
+  "focus": {
+    "en": "Build-up + overload + partitella",
+    "it": "Build-up + overload + partitella"
+  },
+  "sessionType": "activation",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — run npm run sync-vimeo -- --training 2026-10-07_mercoledi",
+    "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-10-07_mercoledi"
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1233769392/9eea292928",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1233770559",
+        "title": {
+          "en": "Partitella 5v5+1",
+          "it": "Partitella 5v5+1"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1233770559/3a5a7cfefe",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1233770097",
+        "title": {
+          "en": "Build Up focus 4v4+3",
+          "it": "Build Up focus 4v4+3"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1233770097/97785f0368",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1233769617",
+        "title": {
+          "en": "Attivazione Tecnica",
+          "it": "Attivazione Tecnica"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1233769617/d083c18417",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1233769392",
+        "title": {
+          "en": "3v2 Overload",
+          "it": "3v2 Overload"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1233769392/9eea292928",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1233769325",
+        "title": {
+          "en": "1v1 > Transition 2v3",
+          "it": "1v1 > Transition 2v3"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1233769325/634bcdcf16",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30714161",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30714161",
+    "lastSyncedAt": "2026-10-08T09:26:38.853Z"
+  }
+}
