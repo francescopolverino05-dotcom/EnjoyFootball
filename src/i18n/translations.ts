@@ -245,6 +245,11 @@ const dictionaries = {
     oppositionSubsEmpty: 'No substitutes listed yet.',
     oppositionSquad: 'Full squad',
     oppositionSquadEmpty: 'Full squad to follow — Transfermarkt / staff list when ready.',
+    oppositionSquadColNumber: '#',
+    oppositionSquadColPlayer: 'Player',
+    oppositionSquadColRole: 'Role',
+    oppositionSquadColHeight: 'Height',
+    oppositionSquadColFoot: 'Foot',
     oppositionClipsHint:
       'Tactical clip library by phase. Start on Attack, then add Defence, Transition or Set pieces (including kickoffs).',
     oppositionClipSectionEmpty: 'No clips in this phase yet.',
@@ -730,6 +735,11 @@ const dictionaries = {
     oppositionSubsEmpty: 'Nessun sostituto ancora.',
     oppositionSquad: 'Rosa completa',
     oppositionSquadEmpty: 'Rosa in arrivo — Transfermarkt / lista staff quando pronta.',
+    oppositionSquadColNumber: '#',
+    oppositionSquadColPlayer: 'Giocatore',
+    oppositionSquadColRole: 'Ruolo',
+    oppositionSquadColHeight: 'Altezza',
+    oppositionSquadColFoot: 'Piede',
     oppositionClipsHint:
       'Libreria tattica per fase. Parti da Attacco, poi aggiungi Difesa, Transizione o Piazzati (calci d’inizio compresi).',
     oppositionClipSectionEmpty: 'Nessuna clip in questa fase.',

@@ -4,6 +4,7 @@ import Formations from '../components/Formations';
 import GkStrikerScout from '../components/GkStrikerScout';
 import MatchMedia from '../components/MatchMedia';
 import ReportHeader from '../components/ReportHeader';
+import OppositionSquadTable from '../components/OppositionSquadTable';
 import SquadDepthPanel from '../components/SquadDepthPanel';
 import TwoColumnNotesPanel from '../components/TwoColumnNotesPanel';
 import { strikersForGkTab } from '../data/gkStrikerSample';
@@ -263,22 +264,7 @@ export default function OpponentPage() {
             {opponent.squad.length === 0 ? (
               <p className="home-empty">{t('oppositionSquadEmpty')}</p>
             ) : (
-              <ul className="opponent-name-list">
-                {opponent.squad.map((p) => (
-                  <li key={`squad-${p.number ?? ''}-${p.name}`}>
-                    {[
-                      p.number != null ? String(p.number) : null,
-                      p.name,
-                      p.position,
-                      p.birthYear != null ? String(p.birthYear) : null,
-                      p.preferredFoot,
-                      p.heightCm != null ? `${p.heightCm} cm` : null,
-                    ]
-                      .filter(Boolean)
-                      .join(' · ')}
-                  </li>
-                ))}
-              </ul>
+              <OppositionSquadTable players={opponent.squad} />
             )}
           </div>
         ) : null}
