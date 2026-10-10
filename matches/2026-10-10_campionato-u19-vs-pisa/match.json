@@ -91,78 +91,78 @@
       "players": [
         {
           "number": 1,
-          "name": "GK",
+          "name": "Pugliese",
           "teamId": "u19",
           "isGk": true,
           "bottom": "8%",
           "left": "50%"
         },
         {
-          "number": 2,
-          "name": "RCB",
+          "number": 5,
+          "name": "Branchizio",
           "teamId": "u19",
           "bottom": "22%",
           "left": "22%"
         },
         {
-          "number": 4,
-          "name": "CB",
+          "number": 6,
+          "name": "Lieto",
           "teamId": "u19",
           "bottom": "20%",
           "left": "50%"
         },
         {
-          "number": 5,
-          "name": "LCB",
+          "number": 3,
+          "name": "Zappalà",
           "teamId": "u19",
           "bottom": "22%",
           "left": "78%"
         },
         {
-          "number": 7,
-          "name": "RWB",
+          "number": 2,
+          "name": "Melnyk",
           "teamId": "u19",
           "bottom": "40%",
           "left": "12%"
         },
         {
-          "number": 6,
-          "name": "RCM",
+          "number": 4,
+          "name": "De Stefano",
           "teamId": "u19",
           "bottom": "42%",
           "left": "38%"
         },
         {
-          "number": 8,
-          "name": "LCM",
+          "number": 7,
+          "name": "Anic",
           "teamId": "u19",
           "bottom": "42%",
           "left": "62%"
         },
         {
-          "number": 3,
-          "name": "LWB",
+          "number": 8,
+          "name": "D'Angelo",
           "teamId": "u19",
           "bottom": "40%",
           "left": "88%"
         },
         {
           "number": 10,
-          "name": "RAM",
+          "name": "Baridò",
           "teamId": "u19",
           "bottom": "68%",
           "left": "28%"
         },
         {
           "number": 11,
-          "name": "LAM",
+          "name": "Santella",
           "teamId": "u19",
           "bottom": "68%",
           "left": "72%"
         },
         {
           "number": 9,
-          "name": "ST",
+          "name": "Pengue",
           "teamId": "u19",
           "bottom": "78%",
           "left": "50%"
@@ -179,7 +179,7 @@
       "players": [
         {
           "number": 1,
-          "name": "GK",
+          "name": "Sebastiano",
           "teamId": "pisa",
           "isGk": true,
           "top": "8%",
@@ -187,70 +187,70 @@
         },
         {
           "number": 2,
-          "name": "RB",
+          "name": "Bernardini",
           "teamId": "pisa",
           "top": "22%",
           "left": "18%"
         },
         {
-          "number": 4,
-          "name": "RCB",
+          "number": 3,
+          "name": "Neri",
           "teamId": "pisa",
           "top": "20%",
           "left": "38%"
         },
         {
-          "number": 5,
-          "name": "LCB",
+          "number": 4,
+          "name": "Bendinelli",
           "teamId": "pisa",
           "top": "20%",
           "left": "62%"
         },
         {
-          "number": 3,
-          "name": "LB",
+          "number": 5,
+          "name": "Serafini",
           "teamId": "pisa",
           "top": "22%",
           "left": "82%"
         },
         {
-          "number": 7,
-          "name": "RM",
+          "number": 6,
+          "name": "Rocca",
           "teamId": "pisa",
           "top": "48%",
           "left": "18%"
         },
         {
-          "number": 6,
-          "name": "RCM",
+          "number": 7,
+          "name": "Landucci",
           "teamId": "pisa",
           "top": "45%",
           "left": "38%"
         },
         {
           "number": 8,
-          "name": "LCM",
+          "name": "Lucarelli",
           "teamId": "pisa",
           "top": "45%",
           "left": "62%"
         },
         {
-          "number": 11,
-          "name": "LM",
+          "number": 9,
+          "name": "Mocanu",
           "teamId": "pisa",
           "top": "48%",
           "left": "82%"
         },
         {
-          "number": 9,
-          "name": "ST",
+          "number": 10,
+          "name": "Mainardi",
           "teamId": "pisa",
           "top": "75%",
           "left": "38%"
         },
         {
-          "number": 10,
-          "name": "ST",
+          "number": 11,
+          "name": "Masini",
           "teamId": "pisa",
           "top": "75%",
           "left": "62%"
@@ -263,6 +263,309 @@
   "goalkeepers": [],
   "clips": [],
   "analysisVideos": [],
+  "appearances": {
+    "home": [
+      {
+        "name": "Pugliese",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Zappalà",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Lieto",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Anic",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "D'Angelo",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Pengue",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Baridò",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Santella",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Lepre",
+        "teamId": "u19",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Marotta",
+        "teamId": "u19",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Natale",
+        "teamId": "u19",
+        "number": 15,
+        "starter": false
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Candela",
+        "teamId": "u19",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "De Michele",
+        "teamId": "u19",
+        "number": 18,
+        "starter": false
+      },
+      {
+        "name": "Pepe",
+        "teamId": "u19",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "number": 20,
+        "starter": false
+      },
+      {
+        "name": "Mané",
+        "teamId": "u19",
+        "number": 21,
+        "starter": false,
+        "goals": [74]
+      },
+      {
+        "name": "Russo",
+        "teamId": "u19",
+        "number": 22,
+        "starter": false
+      }
+    ],
+    "away": [
+      {
+        "name": "Sebastiano",
+        "teamId": "pisa",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Bernardini",
+        "teamId": "pisa",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Neri",
+        "teamId": "pisa",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Bendinelli",
+        "teamId": "pisa",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Serafini",
+        "teamId": "pisa",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Rocca",
+        "teamId": "pisa",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Landucci",
+        "teamId": "pisa",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Lucarelli",
+        "teamId": "pisa",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Mocanu",
+        "teamId": "pisa",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Mainardi",
+        "teamId": "pisa",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Masini",
+        "teamId": "pisa",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Paolini",
+        "teamId": "pisa",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Bertacca",
+        "teamId": "pisa",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Lenzoni",
+        "teamId": "pisa",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Bolognini",
+        "teamId": "pisa",
+        "number": 15,
+        "starter": false
+      },
+      {
+        "name": "Minisini",
+        "teamId": "pisa",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Ietro",
+        "teamId": "pisa",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "Menicucci",
+        "teamId": "pisa",
+        "number": 18,
+        "starter": false
+      },
+      {
+        "name": "Saviozzi",
+        "teamId": "pisa",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Tuon",
+        "teamId": "pisa",
+        "number": 20,
+        "starter": false
+      },
+      {
+        "name": "Ribechini",
+        "teamId": "pisa",
+        "number": 21,
+        "starter": false
+      },
+      {
+        "name": "Ghizzani",
+        "teamId": "pisa",
+        "number": 22,
+        "starter": false
+      },
+      {
+        "name": "Miglianti",
+        "teamId": "pisa",
+        "number": 23,
+        "starter": false
+      }
+    ],
+    "notes": {
+      "en": "Starting XI = shirt numbers 1–11 on the official match sheet. Mané (#21) scored the winner at 74'.",
+      "it": "Titolari = numeri 1–11 sulla lista gara ufficiale. Mané (#21) ha segnato il gol della vittoria al 74'."
+    }
+  },
   "vimeo": {
     "folderId": "30848720",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30848720",
