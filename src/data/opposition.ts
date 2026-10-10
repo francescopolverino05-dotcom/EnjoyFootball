@@ -768,6 +768,7 @@ if (villarreal) {
       number: 2,
       name: 'Antoni Falcó Montanet',
       position: 'RCB',
+      preferredFoot: 'Destro',
     },
     {
       name: 'Lucas Pilili Rodríguez',
