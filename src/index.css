@@ -953,17 +953,20 @@ button {
 
 .squad-depth-slot.is-gk {
   z-index: 3;
-  flex-direction: row-reverse;
-  align-items: center;
-  max-width: none;
+  /* Slot = the dot only; names hang off to the left so the circle stays on centre. */
+  width: 22px;
+  max-width: 22px;
 }
 
 .squad-depth-slot.is-gk .squad-depth-stack {
+  position: absolute;
+  right: calc(100% + 8px);
+  top: 50%;
+  transform: translateY(-50%);
   margin-top: 0;
-  margin-right: 8px;
-  margin-left: 0;
   align-items: flex-end;
   text-align: right;
+  white-space: nowrap;
 }
 
 .squad-depth-stack {
