@@ -36,10 +36,228 @@
     "colorClass": "opponent",
     "logo": "logos/pisa.png"
   },
-  "score": null,
-  "goals": [],
-  "timeline": [],
-  "formations": [],
+  "score": {
+    "home": 1,
+    "away": 0
+  },
+  "goals": [
+    {
+      "minute": 74,
+      "scorer": "Mané",
+      "assist": null,
+      "teamId": "u19"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 2
+    },
+    {
+      "minute": 74,
+      "label": {
+        "en": "Mané 1-0",
+        "it": "Mané 1-0"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 78
+    },
+    {
+      "minute": 90,
+      "label": {
+        "en": "Full time 1-0",
+        "it": "Fine partita 1-0"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 98
+    }
+  ],
+  "formations": [
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "system": "3-4-2-1",
+      "players": [
+        {
+          "number": 1,
+          "name": "GK",
+          "teamId": "u19",
+          "isGk": true,
+          "bottom": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "RCB",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "22%"
+        },
+        {
+          "number": 4,
+          "name": "CB",
+          "teamId": "u19",
+          "bottom": "20%",
+          "left": "50%"
+        },
+        {
+          "number": 5,
+          "name": "LCB",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "78%"
+        },
+        {
+          "number": 7,
+          "name": "RWB",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "12%"
+        },
+        {
+          "number": 6,
+          "name": "RCM",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "38%"
+        },
+        {
+          "number": 8,
+          "name": "LCM",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "62%"
+        },
+        {
+          "number": 3,
+          "name": "LWB",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "88%"
+        },
+        {
+          "number": 10,
+          "name": "RAM",
+          "teamId": "u19",
+          "bottom": "68%",
+          "left": "28%"
+        },
+        {
+          "number": 11,
+          "name": "LAM",
+          "teamId": "u19",
+          "bottom": "68%",
+          "left": "72%"
+        },
+        {
+          "number": 9,
+          "name": "ST",
+          "teamId": "u19",
+          "bottom": "78%",
+          "left": "50%"
+        }
+      ]
+    },
+    {
+      "teamId": "pisa",
+      "label": {
+        "en": "Pisa",
+        "it": "Pisa"
+      },
+      "system": "4-4-2",
+      "players": [
+        {
+          "number": 1,
+          "name": "GK",
+          "teamId": "pisa",
+          "isGk": true,
+          "top": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "RB",
+          "teamId": "pisa",
+          "top": "22%",
+          "left": "18%"
+        },
+        {
+          "number": 4,
+          "name": "RCB",
+          "teamId": "pisa",
+          "top": "20%",
+          "left": "38%"
+        },
+        {
+          "number": 5,
+          "name": "LCB",
+          "teamId": "pisa",
+          "top": "20%",
+          "left": "62%"
+        },
+        {
+          "number": 3,
+          "name": "LB",
+          "teamId": "pisa",
+          "top": "22%",
+          "left": "82%"
+        },
+        {
+          "number": 7,
+          "name": "RM",
+          "teamId": "pisa",
+          "top": "48%",
+          "left": "18%"
+        },
+        {
+          "number": 6,
+          "name": "RCM",
+          "teamId": "pisa",
+          "top": "45%",
+          "left": "38%"
+        },
+        {
+          "number": 8,
+          "name": "LCM",
+          "teamId": "pisa",
+          "top": "45%",
+          "left": "62%"
+        },
+        {
+          "number": 11,
+          "name": "LM",
+          "teamId": "pisa",
+          "top": "48%",
+          "left": "82%"
+        },
+        {
+          "number": 9,
+          "name": "ST",
+          "teamId": "pisa",
+          "top": "75%",
+          "left": "38%"
+        },
+        {
+          "number": 10,
+          "name": "ST",
+          "teamId": "pisa",
+          "top": "75%",
+          "left": "62%"
+        }
+      ]
+    }
+  ],
   "dynamics": [],
   "teamStats": [],
   "goalkeepers": [],
