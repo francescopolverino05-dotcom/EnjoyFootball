@@ -953,8 +953,16 @@ button {
 
 .squad-depth-slot.is-gk {
   z-index: 3;
-  /* Keep GK depth clear of the central CB stack. */
-  max-width: 108px;
+  flex-direction: row;
+  align-items: center;
+  max-width: none;
+}
+
+.squad-depth-slot.is-gk .squad-depth-stack {
+  margin-top: 0;
+  margin-left: 8px;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .squad-depth-stack {

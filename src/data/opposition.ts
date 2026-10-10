@@ -526,8 +526,8 @@ if (villarreal) {
     slots: [
       {
         role: 'GK',
-        top: '12%',
-        left: '14%',
+        top: '10%',
+        left: '50%',
         players: [
           { name: 'Ursu', starts: 2 },
           { name: 'Pablo Polo', starts: 1 },
@@ -541,7 +541,7 @@ if (villarreal) {
       },
       {
         role: 'CB',
-        top: '22%',
+        top: '24%',
         left: '50%',
         players: [{ name: 'Martin Vergun', starts: 1 }],
       },
