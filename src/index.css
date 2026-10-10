@@ -953,16 +953,17 @@ button {
 
 .squad-depth-slot.is-gk {
   z-index: 3;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   max-width: none;
 }
 
 .squad-depth-slot.is-gk .squad-depth-stack {
   margin-top: 0;
-  margin-left: 8px;
-  align-items: flex-start;
-  text-align: left;
+  margin-right: 8px;
+  margin-left: 0;
+  align-items: flex-end;
+  text-align: right;
 }
 
 .squad-depth-stack {
