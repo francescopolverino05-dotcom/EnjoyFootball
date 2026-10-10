@@ -4,6 +4,7 @@ import Formations from '../components/Formations';
 import GkStrikerScout from '../components/GkStrikerScout';
 import MatchMedia from '../components/MatchMedia';
 import ReportHeader from '../components/ReportHeader';
+import SquadDepthPanel from '../components/SquadDepthPanel';
 import TwoColumnNotesPanel from '../components/TwoColumnNotesPanel';
 import { strikersForGkTab } from '../data/gkStrikerSample';
 import { teamCrestUrl } from '../data/teamLogos';
@@ -230,6 +231,12 @@ export default function OpponentPage() {
                   </li>
                 ))}
               </ul>
+            ) : null}
+            {opponent.squadDepth ? (
+              <SquadDepthPanel
+                depth={opponent.squadDepth}
+                teamId={opponent.id}
+              />
             ) : null}
             <div className="section-title">{t('oppositionSubs')}</div>
             {opponent.substitutes.length === 0 ? (

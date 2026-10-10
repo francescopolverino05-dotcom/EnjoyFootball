@@ -306,7 +306,7 @@ if (villarreal) {
     },
     {
       number: 11,
-      name: 'Adrian Guelamon',
+      name: 'Adrian Guillamon',
       teamId: 'villarreal',
       top: '38%',
       left: '12%',
@@ -373,7 +373,7 @@ if (villarreal) {
     },
     {
       number: 2,
-      name: 'Toni',
+      name: 'Falco Montanet',
       teamId: 'villarreal',
       top: '20%',
       left: '38%',
@@ -401,7 +401,7 @@ if (villarreal) {
     },
     {
       number: 6,
-      name: 'Joan',
+      name: 'Ioan',
       teamId: 'villarreal',
       top: '45%',
       left: '38%',
@@ -422,7 +422,7 @@ if (villarreal) {
     },
     {
       number: 19,
-      name: 'Iker',
+      name: 'Iker Pérez',
       teamId: 'villarreal',
       top: '75%',
       left: '38%',
@@ -454,7 +454,7 @@ if (villarreal) {
     },
     {
       number: 2,
-      name: 'Toni',
+      name: 'Falco Montanet',
       teamId: 'villarreal',
       top: '20%',
       left: '38%',
@@ -503,7 +503,7 @@ if (villarreal) {
     },
     {
       number: 9,
-      name: 'Raul (c)',
+      name: 'García Palomar',
       teamId: 'villarreal',
       top: '75%',
       left: '38%',
@@ -517,6 +517,113 @@ if (villarreal) {
     },
   ];
   villarreal.alternateFormationSystems = ['1-4-4-2'];
+  villarreal.squadDepth = {
+    system: '1-3-4-2-1',
+    note: {
+      en: 'Last 3 starting XIs (Dortmund 3-4-2-1, Elche & Murcia 4-4-2) mapped onto 3-4-2-1. Order = most starts in that slot. Iker Pérez counted on right wing (RAM), not ST. Toni = Falco Montanet; Raul = García Palomar; Joan = Ioan.',
+      it: 'Ultime 3 formazioni titolari (Dortmund 3-4-2-1, Elche e Murcia 4-4-2) mappate sul 3-4-2-1. Ordine = più partite in quel ruolo. Iker Pérez contato sull’ala destra (RAM), non in ST. Toni = Falco Montanet; Raul = García Palomar; Joan = Ioan.',
+    },
+    slots: [
+      {
+        role: 'GK',
+        top: '10%',
+        left: '50%',
+        players: [
+          { name: 'Ursu', starts: 2 },
+          { name: 'Pablo Polo', starts: 1 },
+        ],
+      },
+      {
+        role: 'RCB',
+        top: '26%',
+        left: '28%',
+        players: [{ name: 'Falco Montanet', starts: 3 }],
+      },
+      {
+        role: 'CB',
+        top: '24%',
+        left: '50%',
+        players: [{ name: 'Martin Vergun', starts: 1 }],
+      },
+      {
+        role: 'LCB',
+        top: '26%',
+        left: '72%',
+        players: [
+          { name: 'Guillermo Anadon', starts: 1 },
+          { name: 'Roman', starts: 1 },
+          { name: 'Juanma', starts: 1 },
+        ],
+      },
+      {
+        role: 'RWB',
+        top: '44%',
+        left: '14%',
+        players: [
+          { name: 'Luengo', starts: 2 },
+          { name: 'Adrian Guillamon', starts: 1 },
+        ],
+      },
+      {
+        role: 'LWB',
+        top: '44%',
+        left: '86%',
+        players: [
+          { name: 'Seydou Llopis', starts: 1 },
+          { name: 'Pilili', starts: 1 },
+          { name: 'Iván', starts: 1 },
+        ],
+      },
+      {
+        role: 'RCM',
+        top: '46%',
+        left: '38%',
+        players: [
+          { name: 'Moussa Traore', starts: 1 },
+          { name: 'Ioan', starts: 1 },
+          { name: 'Jairo', starts: 1 },
+        ],
+      },
+      {
+        role: 'LCM',
+        top: '46%',
+        left: '62%',
+        players: [
+          { name: 'Alvaro Alcaide', starts: 1 },
+          { name: 'Koné', starts: 1 },
+          { name: 'Ioan', starts: 1 },
+        ],
+      },
+      {
+        role: 'RAM',
+        top: '66%',
+        left: '30%',
+        players: [
+          { name: 'Vivo', starts: 2 },
+          { name: 'Iker Pérez', starts: 2 },
+        ],
+      },
+      {
+        role: 'LAM',
+        top: '66%',
+        left: '70%',
+        players: [
+          { name: 'Edu', starts: 2 },
+          { name: 'González García', starts: 1 },
+        ],
+      },
+      {
+        role: 'ST',
+        top: '82%',
+        left: '50%',
+        players: [
+          { name: 'García Palomar', starts: 2 },
+          { name: 'Yuri', starts: 1 },
+          { name: 'Fode', starts: 1 },
+        ],
+      },
+    ],
+  };
   villarreal.scoutedFormations = [
     {
       id: 'villarreal-vs-dortmund',
@@ -550,7 +657,6 @@ if (villarreal) {
     { number: 1, name: 'Pablo Polo', position: 'GK', isGk: true },
     { number: 1, name: 'Ursu', position: 'GK', isGk: true },
     { number: 2, name: 'Falco Montanet', position: 'RCB' },
-    { number: 2, name: 'Toni', position: 'RCB' },
     { number: 3, name: 'Pilili', position: 'LB' },
     { number: 4, name: 'Martin Vergun', position: 'CB' },
     { number: 5, name: 'Guillermo Anadon', position: 'LCB' },
@@ -558,22 +664,19 @@ if (villarreal) {
     { number: 24, name: 'Roman', position: 'LCB' },
     { number: 24, name: 'Iván', position: 'LB' },
     { number: 6, name: 'Alvaro Alcaide', position: 'LCM' },
-    { number: 6, name: 'Joan', position: 'RCM' },
-    { number: 6, name: 'Ioan', position: 'LCM' },
+    { number: 6, name: 'Ioan', position: 'CM' },
     { number: 7, name: 'Vivo', position: 'RW' },
     { number: 8, name: 'Moussa Traore', position: 'RCM' },
     { number: 8, name: 'Jairo', position: 'RCM' },
     { number: 9, name: 'García Palomar', position: 'ST' },
-    { number: 9, name: 'Raul', position: 'ST' },
     { number: 10, name: 'Edu', position: 'LW' },
-    { number: 11, name: 'Adrian Guelamon', position: 'RWB' },
+    { number: 11, name: 'Adrian Guillamon', position: 'RWB' },
     { number: 15, name: 'González García', position: 'LW' },
     { number: 16, name: 'Seydou Llopis', position: 'LWB' },
     { number: 17, name: 'Fode', position: 'ST' },
-    { number: 19, name: 'Iker', position: 'ST' },
+    { number: 19, name: 'Iker Pérez', position: 'RW' },
     { number: 20, name: 'Yuri', position: 'ST' },
     { number: 22, name: 'Koné', position: 'LCM' },
-    { number: 28, name: 'Iker Pérez', position: 'RW' },
     { number: 28, name: 'Luengo', position: 'RB' },
   ];
 }

@@ -38,6 +38,28 @@ export interface OppositionScoutedFormation {
   notes?: Localized;
 }
 
+/** One player in a depth slot, ordered by starts in that role. */
+export interface OppositionDepthPlayer {
+  name: string;
+  /** Starts in this mapped slot across the scouted recent XIs. */
+  starts: number;
+}
+
+/** Positional depth for a mapped system (e.g. combined last-3 XI into 3-4-2-1). */
+export interface OppositionSquadDepthSlot {
+  role: string;
+  /** Pitch position (same coordinate system as PitchPlayer). */
+  top: string;
+  left: string;
+  players: OppositionDepthPlayer[];
+}
+
+export interface OppositionSquadDepth {
+  system: string;
+  note?: Localized;
+  slots: OppositionSquadDepthSlot[];
+}
+
 export interface OppositionReferenceMatch {
   id: string;
   date?: string;
@@ -121,6 +143,8 @@ export interface OppositionOpponent {
   starters: PitchPlayer[];
   /** Full named XIs for recent games / combined XI (shown on Formation tab). */
   scoutedFormations?: OppositionScoutedFormation[];
+  /** Depth chart from recent XIs mapped onto the primary system. */
+  squadDepth?: OppositionSquadDepth;
   substitutes: OppositionSquadPlayer[];
   squad: OppositionSquadPlayer[];
   /** Club clip library (tactical phases). Not copied per fixture. */

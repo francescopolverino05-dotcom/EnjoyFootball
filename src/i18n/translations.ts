@@ -236,6 +236,11 @@ const dictionaries = {
     reflectionEvenBetterIfEmpty: 'No EBI notes yet for this match.',
     oppositionFormationHint:
       'Probable starting XI on the pitch, including the goalkeeper (1-4-3-3). Names stay as positions until the scouted lineup is added. Substitutes and full squad sit below. Squad is shared; update it before the selected fixture.',
+    oppositionSquadDepth: 'Squad depth (last 3 XIs)',
+    oppositionSquadDepthHint:
+      'Players mapped onto the studio shape. First name in each slot is the most used starter.',
+    oppositionSquadDepthFirstXi: 'Depth on pitch',
+    oppositionSquadDepthList: 'Depth by position',
     oppositionSubs: 'Substitutes',
     oppositionSubsEmpty: 'No substitutes listed yet.',
     oppositionSquad: 'Full squad',
@@ -716,6 +721,11 @@ const dictionaries = {
     reflectionEvenBetterIfEmpty: 'Nessuna nota AMS ancora per questa partita.',
     oppositionFormationHint:
       'XI probabile sul campo, portiere compreso (1-4-3-3). I nomi restano i ruoli finché non si inserisce la formazione. Panchina e rosa sotto. La rosa è condivisa: aggiornala prima della partita selezionata.',
+    oppositionSquadDepth: 'Profondità rosa (ultime 3 formazioni)',
+    oppositionSquadDepthHint:
+      'Giocatori mappati sulla forma studio. Il primo nome in ogni ruolo è il titolare più usato.',
+    oppositionSquadDepthFirstXi: 'Profondità sul campo',
+    oppositionSquadDepthList: 'Profondità per ruolo',
     oppositionSubs: 'Panchina',
     oppositionSubsEmpty: 'Nessun sostituto ancora.',
     oppositionSquad: 'Rosa completa',
