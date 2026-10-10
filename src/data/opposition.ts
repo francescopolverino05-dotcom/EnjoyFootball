@@ -435,6 +435,91 @@ if (villarreal) {
       left: '62%',
     },
   ];
+  /**
+   * Latest DH starting XI (broadcast graphic). 4-4-2 —
+   * pitch attacks downward; team-right = screen-left.
+   * Toni = Falco Montanet; Raul = García Palomar; Carrasco = Jorge Carrasco.
+   */
+  const latest = [
+    {
+      number: 1,
+      name: 'Ursu',
+      teamId: 'villarreal',
+      isGk: true,
+      top: '8%',
+      left: '50%',
+    },
+    {
+      number: 28,
+      name: 'Luengo',
+      teamId: 'villarreal',
+      top: '22%',
+      left: '18%',
+    },
+    {
+      number: 2,
+      name: 'Falco Montanet',
+      teamId: 'villarreal',
+      top: '20%',
+      left: '38%',
+    },
+    {
+      number: 5,
+      name: 'Juanma',
+      teamId: 'villarreal',
+      top: '20%',
+      left: '62%',
+    },
+    {
+      number: 23,
+      name: 'Iván',
+      teamId: 'villarreal',
+      top: '22%',
+      left: '82%',
+    },
+    {
+      number: 7,
+      name: 'Vivo',
+      teamId: 'villarreal',
+      top: '48%',
+      left: '18%',
+    },
+    {
+      number: 6,
+      name: 'Ioan',
+      teamId: 'villarreal',
+      top: '45%',
+      left: '38%',
+    },
+    {
+      number: 22,
+      name: 'Koné',
+      teamId: 'villarreal',
+      top: '45%',
+      left: '62%',
+    },
+    {
+      number: 11,
+      name: 'Carrasco',
+      teamId: 'villarreal',
+      top: '48%',
+      left: '82%',
+    },
+    {
+      number: 9,
+      name: 'García Palomar',
+      teamId: 'villarreal',
+      top: '75%',
+      left: '38%',
+    },
+    {
+      number: 17,
+      name: 'Fode',
+      teamId: 'villarreal',
+      top: '75%',
+      left: '62%',
+    },
+  ];
   /** 4-4-2 vs Murcia — pitch attacks downward; team-right = screen-left. */
   const murcia = [
     {
@@ -517,11 +602,13 @@ if (villarreal) {
     },
   ];
   villarreal.alternateFormationSystems = ['1-4-4-2'];
+  villarreal.starters = latest;
+  /** Depth = latest DH XI + Dortmund + Murcia (drop Elche). */
   villarreal.squadDepth = {
     system: '1-3-4-2-1',
     note: {
-      en: 'Last 3 starting XIs (Dortmund 3-4-2-1, Elche & Murcia 4-4-2) mapped onto 3-4-2-1. Order = most starts in that slot. Iker Pérez counted on right wing (RAM), not ST. Toni = Falco Montanet; Raul = García Palomar; Joan = Ioan.',
-      it: 'Ultime 3 formazioni titolari (Dortmund 3-4-2-1, Elche e Murcia 4-4-2) mappate sul 3-4-2-1. Ordine = più partite in quel ruolo. Iker Pérez contato sull’ala destra (RAM), non in ST. Toni = Falco Montanet; Raul = García Palomar; Joan = Ioan.',
+      en: 'Last 3 starting XIs (latest DH 4-4-2, Dortmund 3-4-2-1, Murcia 4-4-2) mapped onto 3-4-2-1. Order = most starts in that slot. Iker Pérez counted on right wing (RAM). Toni = Falco Montanet; Raul = García Palomar; Carrasco = Jorge Carrasco.',
+      it: 'Ultime 3 formazioni (ultima DH 4-4-2, Dortmund 3-4-2-1, Murcia 4-4-2) mappate sul 3-4-2-1. Ordine = più partite in quel ruolo. Iker Pérez contato sull’ala destra (RAM). Toni = Falco Montanet; Raul = García Palomar; Carrasco = Jorge Carrasco.',
     },
     slots: [
       {
@@ -550,9 +637,8 @@ if (villarreal) {
         top: '26%',
         left: '72%',
         players: [
+          { name: 'Juanma', starts: 2 },
           { name: 'Guillermo Anadon', starts: 1 },
-          { name: 'Roman', starts: 1 },
-          { name: 'Juanma', starts: 1 },
         ],
       },
       {
@@ -569,9 +655,8 @@ if (villarreal) {
         top: '44%',
         left: '86%',
         players: [
+          { name: 'Iván', starts: 2 },
           { name: 'Seydou Llopis', starts: 1 },
-          { name: 'Pilili', starts: 1 },
-          { name: 'Iván', starts: 1 },
         ],
       },
       {
@@ -580,8 +665,8 @@ if (villarreal) {
         left: '38%',
         players: [
           { name: 'Moussa Traore', starts: 1 },
-          { name: 'Ioan', starts: 1 },
           { name: 'Jairo', starts: 1 },
+          { name: 'Ioan', starts: 1 },
         ],
       },
       {
@@ -590,8 +675,8 @@ if (villarreal) {
         left: '62%',
         players: [
           { name: 'Alvaro Alcaide', starts: 1 },
-          { name: 'Koné', starts: 1 },
           { name: 'Ioan', starts: 1 },
+          { name: 'Koné', starts: 1 },
         ],
       },
       {
@@ -600,7 +685,7 @@ if (villarreal) {
         left: '30%',
         players: [
           { name: 'Vivo', starts: 2 },
-          { name: 'Iker Pérez', starts: 2 },
+          { name: 'Iker Pérez', starts: 1 },
         ],
       },
       {
@@ -608,7 +693,8 @@ if (villarreal) {
         top: '66%',
         left: '70%',
         players: [
-          { name: 'Edu', starts: 2 },
+          { name: 'Edu', starts: 1 },
+          { name: 'Carrasco', starts: 1 },
           { name: 'González García', starts: 1 },
         ],
       },
@@ -617,14 +703,22 @@ if (villarreal) {
         top: '82%',
         left: '50%',
         players: [
-          { name: 'García Palomar', starts: 2 },
-          { name: 'Yuri', starts: 1 },
-          { name: 'Fode', starts: 1 },
+          { name: 'García Palomar', starts: 3 },
+          { name: 'Fode', starts: 2 },
         ],
       },
     ],
   };
   villarreal.scoutedFormations = [
+    {
+      id: 'villarreal-latest',
+      label: {
+        en: 'Latest XI (DH)',
+        it: 'Ultima formazione (DH)',
+      },
+      system: '1-4-4-2',
+      players: latest,
+    },
     {
       id: 'villarreal-vs-dortmund',
       label: {
@@ -662,7 +756,7 @@ if (villarreal) {
     { number: 5, name: 'Guillermo Anadon', position: 'LCB' },
     { number: 5, name: 'Juanma', position: 'LCB' },
     { number: 24, name: 'Roman', position: 'LCB' },
-    { number: 24, name: 'Iván', position: 'LB' },
+    { number: 23, name: 'Iván', position: 'LB' },
     { number: 6, name: 'Alvaro Alcaide', position: 'LCM' },
     { number: 6, name: 'Ioan', position: 'CM' },
     { number: 7, name: 'Vivo', position: 'RW' },
@@ -670,6 +764,7 @@ if (villarreal) {
     { number: 8, name: 'Jairo', position: 'RCM' },
     { number: 9, name: 'García Palomar', position: 'ST' },
     { number: 10, name: 'Edu', position: 'LW' },
+    { number: 11, name: 'Carrasco', position: 'LW' },
     { number: 11, name: 'Adrian Guillamon', position: 'RWB' },
     { number: 15, name: 'González García', position: 'LW' },
     { number: 16, name: 'Seydou Llopis', position: 'LWB' },
