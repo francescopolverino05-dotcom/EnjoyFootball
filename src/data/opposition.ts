@@ -834,6 +834,7 @@ if (villarreal) {
       number: 9,
       name: 'Raúl García Palomar',
       position: 'ST',
+      preferredFoot: 'Destro',
     },
     {
       number: 15,
@@ -873,6 +874,7 @@ if (villarreal) {
       number: 28,
       name: 'Rubén Luengo Cordero',
       position: 'RB',
+      preferredFoot: 'Destro',
     },
   ];
 }
