@@ -811,7 +811,6 @@ if (villarreal) {
       preferredFoot: 'Destro',
     },
     {
-      number: 11,
       name: 'Adrián Vivó Guillamón',
       position: 'RW',
       heightCm: 175,
@@ -842,7 +841,6 @@ if (villarreal) {
       position: 'LW',
     },
     {
-      number: 11,
       name: 'Seydou Llopis Gandia',
       position: 'LWB',
       heightCm: 177,
