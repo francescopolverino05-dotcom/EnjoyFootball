@@ -621,6 +621,27 @@
           "en": "In the first half they only had one shot, and not even a corner.",
           "it": "Nel primo tempo loro hanno tirato una sola volta, nemmeno un angolo"
         }
+      },
+      {
+        "id": "wwb-07",
+        "text": {
+          "en": "Excellent high defensive phase: Pengue and Baridò forced mistakes from their goalkeeper and defenders.",
+          "it": "Ottima fase difensiva alta: Pengue e Baridò hanno forzato l'errore di portiere e difensori"
+        }
+      },
+      {
+        "id": "wwb-08",
+        "text": {
+          "en": "Won the aerial duels against their strikers.",
+          "it": "Vinti i duelli aerei contro i loro attaccanti"
+        }
+      },
+      {
+        "id": "wwb-09",
+        "text": {
+          "en": "Good at stepping out hard onto the man and in duels, with a midfielder dropping to screen the zone and create the free man.",
+          "it": "Bene nell'uscire forte sull'uomo e nei duelli, con un centrocampista che si abbassava a schermare la zona per creare l'uomo in più"
+        }
       }
     ],
     "evenBetterIf": [
