@@ -18,9 +18,11 @@ export default function PlayerCard({ player }: PlayerCardProps) {
       ? 'u18'
       : player.squad === 'Primavera'
         ? 'primavera'
-        : player.squad === 'Trialist'
-          ? 'trialist'
-          : '';
+        : player.squad === 'Prima Squadra'
+          ? 'prima-squadra'
+          : player.squad === 'Trialist'
+            ? 'trialist'
+            : '';
   const squadLabel =
     player.squad == null
       ? t('playerValueTbd')
@@ -28,9 +30,11 @@ export default function PlayerCard({ player }: PlayerCardProps) {
         ? t('squadU18')
         : player.squad === 'Primavera'
           ? t('squadPrimavera')
-          : player.squad === 'Trialist'
-            ? t('squadTrialist')
-            : player.squad;
+          : player.squad === 'Prima Squadra'
+            ? t('squadPrimaSquadra')
+            : player.squad === 'Trialist'
+              ? t('squadTrialist')
+              : player.squad;
 
   return (
     <Link to={`/players/${player.slug}`} className="match-card player-card">

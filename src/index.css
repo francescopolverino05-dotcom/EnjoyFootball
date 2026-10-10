@@ -3211,6 +3211,11 @@ button {
   color: #1e40af;
 }
 
+.squad-badge.prima-squadra {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
 .squad-badge.u18 {
   background: #d1fae5;
   color: #065f46;
