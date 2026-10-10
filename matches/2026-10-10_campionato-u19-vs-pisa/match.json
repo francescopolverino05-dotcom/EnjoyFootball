@@ -714,6 +714,13 @@
           "en": "On one dead ball we didn’t pick up our man.",
           "it": "Su una palla inattiva non abbiamo preso l'uomo"
         }
+      },
+      {
+        "id": "ebi-11",
+        "text": {
+          "en": "Midfielders often too deep in build-up.",
+          "it": "Centrocampisti spesso troppo bassi in costruzione"
+        }
       }
     ]
   }
