@@ -577,5 +577,123 @@
       "en": "Full match hosted on Vimeo.",
       "it": "Partita intera su Vimeo."
     }
+  },
+  "reflection": {
+    "wentWell": [
+      {
+        "id": "wwb-01",
+        "text": {
+          "en": "Compact team that helped each other and stayed concentrated behind the ball.",
+          "it": "Squadra compatta, che si aiutava e concentrata dietro"
+        }
+      },
+      {
+        "id": "wwb-02",
+        "text": {
+          "en": "Goalkeeper a big help.",
+          "it": "Portiere di grande aiuto"
+        }
+      },
+      {
+        "id": "wwb-03",
+        "text": {
+          "en": "Anic good, mostly playing as a wide player.",
+          "it": "Anic bene, giocando per lo più da esterno"
+        }
+      },
+      {
+        "id": "wwb-04",
+        "text": {
+          "en": "Good attitude from those who started and those who came on.",
+          "it": "Buon atteggiamento di chi ha giocato e di chi è subentrato"
+        }
+      },
+      {
+        "id": "wwb-05",
+        "text": {
+          "en": "Baridò more involved in the second half — always creates something.",
+          "it": "Baridò più coinvolto nel secondo tempo, crea sempre qualcosa"
+        }
+      },
+      {
+        "id": "wwb-06",
+        "text": {
+          "en": "In the first half they only had one shot, and not even a corner.",
+          "it": "Nel primo tempo loro hanno tirato una sola volta, nemmeno un angolo"
+        }
+      }
+    ],
+    "evenBetterIf": [
+      {
+        "id": "ebi-01",
+        "text": {
+          "en": "Too predictable and too wide in build-up: we built 4+2 instead of 3+2, with the wide centre-backs behaving like full-backs.",
+          "it": "Prevedibili e troppo larghi in costruzione: costruivamo a 4+2 invece che a 3+2, con i braccetti che si comportavano da terzini"
+        }
+      },
+      {
+        "id": "ebi-02",
+        "text": {
+          "en": "Keep the 3v2 tighter. If they stretch wide, the wide centre-back must play inside, not go out immediately.",
+          "it": "Tenere il 3 contro 2 più stretto. Se si allargano, il braccetto deve giocare dentro, non andare subito fuori"
+        }
+      },
+      {
+        "id": "ebi-03",
+        "text": {
+          "en": "Slow circulation — passing lanes not found.",
+          "it": "Giro palla lento, linee di passaggio non trovate"
+        }
+      },
+      {
+        "id": "ebi-04",
+        "text": {
+          "en": "More line-breaking passes into midfielders, instead of going back or sideways.",
+          "it": "Più imbucate verso i centrocampisti, invece di tornare indietro o andare in laterale"
+        }
+      },
+      {
+        "id": "ebi-05",
+        "text": {
+          "en": "More personality on the ball, including the wing-backs (Melnyk).",
+          "it": "Più personalità con la palla, anche con i quinti (Melnyk)"
+        }
+      },
+      {
+        "id": "ebi-06",
+        "text": {
+          "en": "Receive on the preferred foot even with the opponent half a metre away.",
+          "it": "Ricevere palla sul piede anche con l'avversario a mezzo metro"
+        }
+      },
+      {
+        "id": "ebi-07",
+        "text": {
+          "en": "Baridò needs to touch more balls and look for space.",
+          "it": "Baridò deve toccare più palloni e cercarsi lo spazio"
+        }
+      },
+      {
+        "id": "ebi-08",
+        "text": {
+          "en": "Lieto too predictable on the ball: doesn’t risk and doesn’t circulate quickly.",
+          "it": "Lieto troppo prevedibile col pallone: non rischia e non gira la palla veloce"
+        }
+      },
+      {
+        "id": "ebi-09",
+        "text": {
+          "en": "When Santella dropped deep, build-up became 4-2 and they marked us man-to-man.",
+          "it": "Santella che si abbassava trasformava la costruzione in 4-2 e ci prendevano a uomo"
+        }
+      },
+      {
+        "id": "ebi-10",
+        "text": {
+          "en": "On one dead ball we didn’t pick up our man.",
+          "it": "Su una palla inattiva non abbiamo preso l'uomo"
+        }
+      }
+    ]
   }
 }
