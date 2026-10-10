@@ -607,8 +607,8 @@ if (villarreal) {
   villarreal.squadDepth = {
     system: '1-3-4-2-1',
     note: {
-      en: 'Last 3 starting XIs (latest DH 4-4-2, Dortmund 3-4-2-1, Murcia 4-4-2) mapped onto 3-4-2-1. Order = most starts in that slot. Iker Pérez counted on right wing (RAM). Toni = Falco Montanet; Raul = García Palomar; Carrasco = Jorge Carrasco.',
-      it: 'Ultime 3 formazioni (ultima DH 4-4-2, Dortmund 3-4-2-1, Murcia 4-4-2) mappate sul 3-4-2-1. Ordine = più partite in quel ruolo. Iker Pérez contato sull’ala destra (RAM). Toni = Falco Montanet; Raul = García Palomar; Carrasco = Jorge Carrasco.',
+      en: 'Last 3 starting XIs (Castellón 4-4-2, Dortmund 3-4-2-1, Murcia 4-4-2) mapped onto 3-4-2-1. Order = most starts in that slot. Iker Pérez counted on right wing (RAM). Toni = Falco Montanet; Raul = García Palomar; Carrasco = Jorge Carrasco.',
+      it: 'Ultime 3 formazioni (Castellón 4-4-2, Dortmund 3-4-2-1, Murcia 4-4-2) mappate sul 3-4-2-1. Ordine = più partite in quel ruolo. Iker Pérez contato sull’ala destra (RAM). Toni = Falco Montanet; Raul = García Palomar; Carrasco = Jorge Carrasco.',
     },
     slots: [
       {
@@ -711,10 +711,10 @@ if (villarreal) {
   };
   villarreal.scoutedFormations = [
     {
-      id: 'villarreal-latest',
+      id: 'villarreal-vs-castellon',
       label: {
-        en: 'Latest XI (DH)',
-        it: 'Ultima formazione (DH)',
+        en: 'vs Castellón',
+        it: 'vs Castellón',
       },
       system: '1-4-4-2',
       players: latest,
