@@ -52,8 +52,13 @@ function buildMatchView(pack: NonNullable<ReturnType<typeof getLeagueMatchStats>
     id: pack.home.teamId,
     name: { en: pack.home.name, it: pack.home.name },
     shortName: pack.home.name,
-    colorClass: 'opponent' as const,
-    logo: homeOpp?.logo ?? `logos/${pack.home.teamId}.png`,
+    colorClass:
+      pack.home.teamId === 'napoli' ? ('u19' as const) : ('opponent' as const),
+    logo:
+      homeOpp?.logo ??
+      (pack.home.teamId === 'napoli'
+        ? 'napoli-logo.png'
+        : `logos/${pack.home.teamId}.png`),
   };
   const awayTeam = {
     id: pack.away.teamId,

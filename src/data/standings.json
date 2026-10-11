@@ -393,7 +393,8 @@
               "homeId": "napoli",
               "awayId": "pisa",
               "score": "1-0",
-              "matchSlug": "2026-10-10_campionato-u19-vs-pisa"
+              "matchSlug": "2026-10-10_campionato-u19-vs-pisa",
+              "statsSlug": "napoli-pisa"
             },
             {
               "homeId": "perugia",

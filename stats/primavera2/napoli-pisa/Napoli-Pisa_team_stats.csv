@@ -1,0 +1,57 @@
+stat,Napoli,Pisa
+Goals,1,0
+"xG (estimated, distance/angle model)",1.77,0.81
+"xG (taggers’ own estimate, for reference)",1.81,0.71
+Shots (1H),16,4
+Shots (2H),13,8
+Shots (full match),29,12
+Shots on target,2,4
+Shot accuracy %,6.9,33.3
+Blocked shots,14,2
+Missed shots (off target),13,6
+Shots inside box,13,5
+Shots outside box,16,7
+Headed shots,3,3
+Possession estimate % (full match),66.8,33.2
+Possession estimate % (1H),69.1,30.9
+Possession estimate % (2H),64.4,35.6
+Share of passes %,68.3,31.7
+Passes,1142,531
+Passes completed,941,386
+Pass accuracy % (full match),82.8,73.1
+Pass accuracy % (1H),81.7,72.2
+Pass accuracy % (2H),84.0,74.0
+Key passes,14,6
+Progressive passes (completed / attempted),71/164,39/87
+Into final third (completed / attempted),69/125,29/56
+Into box (completed / attempted),14/47,11/25
+Crosses (completed / total),6/44,3/15
+Long balls (completed / total),4/15,5/18
+Through balls (completed / total),2/5,2/3
+Ground duels (won / total),26/41,15/41
+Aerial duels (won / total),38/62,24/62
+Interceptions,97,106
+Recoveries,110,53
+High recoveries (final third),50,13
+Balls lost,6,4
+Blocks,8,32
+Clearances,53,100
+GK saves,3,2
+Fouls committed,13,19
+Fouls won,19,13
+Yellow cards,0,0
+Red cards,0,0
+Offsides (1H / 2H / total),0 / 0 / 0,0 / 1 / 1
+Corners (1H / 2H / total),11 / 9 / 20,1 / 4 / 5
+Free kicks (excl. goal kicks),20,11
+Goal kicks,9,12
+Throw-ins,59,61
+PPDA 1H,6.03,16.11
+PPDA 1H numerator / denominator,223 / 37,451 / 28
+PPDA 1H defensive actions breakdown,interceptions=29; fouls=4; def_duels_won=4,interceptions=19; fouls=6; def_duels_won=3
+PPDA 2H,5.08,10.95
+PPDA 2H numerator / denominator,188 / 37,405 / 37
+PPDA 2H defensive actions breakdown,interceptions=23; def_duels_won=7; fouls=7,interceptions=27; fouls=9; def_duels_won=1
+PPDA full match,5.55,13.17
+PPDA full match numerator / denominator,411 / 74,856 / 65
+PPDA full match defensive actions breakdown,interceptions=52; fouls=11; def_duels_won=11,interceptions=46; fouls=15; def_duels_won=4

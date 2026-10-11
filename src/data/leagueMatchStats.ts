@@ -1,9 +1,11 @@
 import type { LeagueMatchStats } from '../types/leagueMatchStats';
 import type { StatsCompetitionId } from '../types/statsRankings';
+import napoliPisa from './leagueMatchStats/napoli-pisa.json';
 import pisaPerugia from './leagueMatchStats/pisa-perugia.json';
 
 const BY_KEY: Record<string, LeagueMatchStats> = {
   'primavera2/pisa-perugia': pisaPerugia as LeagueMatchStats,
+  'primavera2/napoli-pisa': napoliPisa as LeagueMatchStats,
 };
 
 export function getLeagueMatchStats(
