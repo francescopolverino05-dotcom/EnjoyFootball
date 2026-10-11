@@ -260,6 +260,150 @@
   ],
   "dynamics": [],
   "teamStats": [],
+  "gpsStats": [
+    {
+      "half": {
+        "en": "GPS — Full Match",
+        "it": "GPS — Partita intera"
+      },
+      "summary": {
+        "en": "D'Angelo led distance (12658 m). Melnyk led sprint (380.03 m >24 km/h). Pengue top speed (32.87 km/h). Melnyk most accelerations (56).",
+        "it": "D'Angelo distanza (12658 m). Melnyk sprint (380.03 m >24 km/h). Pengue velocità max (32.87 km/h). Melnyk più accelerazioni (56)."
+      },
+      "players": [
+        {
+          "player": "D'Angelo",
+          "totalDistanceM": 12658,
+          "distancePerMin": 121,
+          "distanceOver16KmhM": 2748,
+          "distance20to24KmhM": 744.82,
+          "distanceOver24KmhM": 346.27,
+          "metabolicPowerWkg": 11,
+          "accelerationsOver3": 36,
+          "decelerationsUnder3": 62,
+          "maxSpeedKmh": 29.33,
+          "recoveryPct": 63.6
+        },
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 12000,
+          "distancePerMin": 117,
+          "distanceOver16KmhM": 2429,
+          "distance20to24KmhM": 732.47,
+          "distanceOver24KmhM": 380.03,
+          "metabolicPowerWkg": 10.9,
+          "accelerationsOver3": 56,
+          "decelerationsUnder3": 85,
+          "maxSpeedKmh": 30.13,
+          "recoveryPct": 65.73
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 11391,
+          "distancePerMin": 115,
+          "distanceOver16KmhM": 1712,
+          "distance20to24KmhM": 519.57,
+          "distanceOver24KmhM": 172.1,
+          "metabolicPowerWkg": 10.4,
+          "accelerationsOver3": 43,
+          "decelerationsUnder3": 39,
+          "maxSpeedKmh": 30.1,
+          "recoveryPct": 64.36
+        },
+        {
+          "player": "Zappalà",
+          "totalDistanceM": 10617,
+          "distancePerMin": 102,
+          "distanceOver16KmhM": 1394,
+          "distance20to24KmhM": 390.51,
+          "distanceOver24KmhM": 108.74,
+          "metabolicPowerWkg": 9.5,
+          "accelerationsOver3": 40,
+          "decelerationsUnder3": 58,
+          "maxSpeedKmh": 29.35,
+          "recoveryPct": 69.64
+        },
+        {
+          "player": "Branchizio",
+          "totalDistanceM": 10273,
+          "distancePerMin": 104,
+          "distanceOver16KmhM": 1080,
+          "distance20to24KmhM": 229.21,
+          "distanceOver24KmhM": 162.68,
+          "metabolicPowerWkg": 9.3,
+          "accelerationsOver3": 22,
+          "decelerationsUnder3": 31,
+          "maxSpeedKmh": 30.91,
+          "recoveryPct": 69.97
+        },
+        {
+          "player": "Baridò",
+          "totalDistanceM": 9290,
+          "distancePerMin": 100,
+          "distanceOver16KmhM": 1008,
+          "distance20to24KmhM": 192.79,
+          "distanceOver24KmhM": 61.76,
+          "metabolicPowerWkg": 8.8,
+          "accelerationsOver3": 33,
+          "decelerationsUnder3": 33,
+          "maxSpeedKmh": 31.16,
+          "recoveryPct": 71.93
+        },
+        {
+          "player": "Lieto",
+          "totalDistanceM": 8674,
+          "distancePerMin": 105,
+          "distanceOver16KmhM": 966,
+          "distance20to24KmhM": 210.33,
+          "distanceOver24KmhM": 96.65,
+          "metabolicPowerWkg": 9.5,
+          "accelerationsOver3": 24,
+          "decelerationsUnder3": 23,
+          "maxSpeedKmh": 28.76,
+          "recoveryPct": 67.73
+        },
+        {
+          "player": "Pengue",
+          "totalDistanceM": 8431,
+          "distancePerMin": 99,
+          "distanceOver16KmhM": 1342,
+          "distance20to24KmhM": 432.37,
+          "distanceOver24KmhM": 299.24,
+          "metabolicPowerWkg": 9.1,
+          "accelerationsOver3": 39,
+          "decelerationsUnder3": 32,
+          "maxSpeedKmh": 32.87,
+          "recoveryPct": 73.27
+        },
+        {
+          "player": "Anic",
+          "totalDistanceM": 7470,
+          "distancePerMin": 117,
+          "distanceOver16KmhM": 1341,
+          "distance20to24KmhM": 321.25,
+          "distanceOver24KmhM": 121.54,
+          "metabolicPowerWkg": 10.8,
+          "accelerationsOver3": 14,
+          "decelerationsUnder3": 38,
+          "maxSpeedKmh": 27.19,
+          "recoveryPct": 64.81
+        },
+        {
+          "player": "Santella",
+          "totalDistanceM": 3795,
+          "distancePerMin": 110,
+          "distanceOver16KmhM": 606,
+          "distance20to24KmhM": 158.21,
+          "distanceOver24KmhM": 80.54,
+          "metabolicPowerWkg": 10.1,
+          "accelerationsOver3": 6,
+          "decelerationsUnder3": 22,
+          "maxSpeedKmh": 31.4,
+          "recoveryPct": 67.97
+        }
+      ]
+    }
+  ],
   "goalkeepers": [],
   "clips": [],
   "analysisVideos": [],
