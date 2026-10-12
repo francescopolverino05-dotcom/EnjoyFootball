@@ -2,6 +2,10 @@ import type {
   OppositionSquadDepth,
   OppositionSquadPlayer,
 } from '../types/opposition';
+import {
+  localizePosition,
+  localizePreferredFoot,
+} from '../i18n/positions';
 import type { Locale } from '../i18n/translations';
 import { withGoalkeeperInSystem } from './formationSystem';
 
@@ -11,11 +15,6 @@ function esc(value: string): string {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
-}
-
-function cell(value: string | number | null | undefined): string {
-  if (value == null || value === '') return '—';
-  return esc(String(value));
 }
 
 export interface OppositionSquadPdfLabels {
@@ -115,9 +114,9 @@ export function openOppositionSquadPdf(
       return `<tr>
         <td class="num">${p.number != null ? esc(String(p.number)) : '—'}</td>
         <td class="name">${esc(p.name)}</td>
-        <td>${cell(p.position)}</td>
+        <td>${esc(localizePosition(p.position, locale))}</td>
         <td class="meta">${esc(height)}</td>
-        <td class="meta">${cell(p.preferredFoot)}</td>
+        <td class="meta">${esc(localizePreferredFoot(p.preferredFoot, locale))}</td>
       </tr>`;
     })
     .join('\n');
