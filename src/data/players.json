@@ -42,7 +42,7 @@
     {
       "slug": "candela-ivan-giovanni",
       "displayName": "Candela Ivan Giovanni",
-      "positionShort": "LB",
+      "positionShort": "LWB",
       "age": 18,
       "birthDate": "28/03/2008",
       "foot": "Left",
@@ -55,14 +55,14 @@
     {
       "slug": "chiaiese-riccardo",
       "displayName": "Chiaiese Riccardo",
-      "positionShort": "LB",
+      "positionShort": "LWB",
       "age": 16,
       "birthDate": "25/08/2009",
       "foot": "Left",
       "heightCm": null,
       "weightKg": null,
       "bmi": null,
-      "squad": "Primavera",
+      "squad": "U18",
       "photoPath": "/players/chiaiese-riccardo.jpg"
     },
     {
@@ -77,6 +77,32 @@
       "bmi": 24,
       "squad": "Primavera",
       "photoPath": "/players/chiummariello-andrea.png"
+    },
+    {
+      "slug": "d-angelo-adrian",
+      "displayName": "D'Angelo Adrian",
+      "positionShort": "CM",
+      "age": null,
+      "birthDate": null,
+      "foot": "Right",
+      "heightCm": null,
+      "weightKg": null,
+      "bmi": null,
+      "squad": "Primavera",
+      "photoPath": "/players/d-angelo-adrian.jpg"
+    },
+    {
+      "slug": "de-michele-marco",
+      "displayName": "De Michele Marco",
+      "positionShort": "CM",
+      "age": null,
+      "birthDate": null,
+      "foot": null,
+      "heightCm": null,
+      "weightKg": null,
+      "bmi": null,
+      "squad": "Primavera",
+      "photoPath": "/players/de-michele-marco.jpg"
     },
     {
       "slug": "de-stefano-francesco",
@@ -131,6 +157,19 @@
       "photoPath": "/players/lepre-giuseppe.png"
     },
     {
+      "slug": "liccardo",
+      "displayName": "Liccardo Christian",
+      "positionShort": "RWB",
+      "age": null,
+      "birthDate": null,
+      "foot": "Right",
+      "heightCm": null,
+      "weightKg": null,
+      "bmi": null,
+      "squad": "Primavera",
+      "photoPath": "/players/liccardo.jpg"
+    },
+    {
       "slug": "lieto-claudio",
       "displayName": "Lieto Claudio",
       "positionShort": "CB",
@@ -153,7 +192,7 @@
       "heightCm": 179,
       "weightKg": 86,
       "bmi": 26.8,
-      "squad": "Primavera",
+      "squad": "U18",
       "photoPath": "/players/magliano-mattia.png"
     },
     {
@@ -185,7 +224,7 @@
     {
       "slug": "melnyk-mykyta",
       "displayName": "Melnyk Mykyta",
-      "positionShort": "RB",
+      "positionShort": "RWB",
       "age": 18,
       "birthDate": "08/01/2008",
       "foot": "Right",
@@ -222,19 +261,6 @@
       "photoPath": "/players/natale-raffaele.png"
     },
     {
-      "slug": "pereyra-alvarez-milton-agustin",
-      "displayName": "Pereyra Alvarez Milton Agustin",
-      "positionShort": "CF",
-      "age": 18,
-      "birthDate": "13/05/2008",
-      "foot": "Right",
-      "heightCm": 176,
-      "weightKg": null,
-      "bmi": null,
-      "squad": "Prima Squadra",
-      "photoPath": "/players/pereyra-alvarez-milton-agustin.png"
-    },
-    {
       "slug": "pengue-salvatore",
       "displayName": "Pengue Salvatore",
       "positionShort": "CF",
@@ -246,6 +272,19 @@
       "bmi": null,
       "squad": "Primavera",
       "photoPath": "/players/pengue-salvatore.png"
+    },
+    {
+      "slug": "pereyra-alvarez-milton-agustin",
+      "displayName": "Pereyra Alvarez Milton Agustin",
+      "positionShort": "CF",
+      "age": 18,
+      "birthDate": "13/05/2008",
+      "foot": "Right",
+      "heightCm": 176,
+      "weightKg": null,
+      "bmi": null,
+      "squad": "Prima Squadra",
+      "photoPath": "/players/pereyra-alvarez-milton-agustin.png"
     },
     {
       "slug": "pugliese-claudio",
@@ -263,14 +302,14 @@
     {
       "slug": "riccio-luigi",
       "displayName": "Riccio Luigi",
-      "positionShort": "CM",
+      "positionShort": "AM",
       "age": 17,
       "birthDate": "20/03/2009",
       "foot": "Right",
       "heightCm": 175,
       "weightKg": 71,
       "bmi": 23.2,
-      "squad": "Primavera",
+      "squad": "U18",
       "photoPath": "/players/riccio-luigi.png"
     },
     {
@@ -287,9 +326,22 @@
       "photoPath": "/players/rovetini-alessandro.png"
     },
     {
+      "slug": "russo-giorgio",
+      "displayName": "Russo Giorgio",
+      "positionShort": "CM",
+      "age": null,
+      "birthDate": null,
+      "foot": null,
+      "heightCm": null,
+      "weightKg": null,
+      "bmi": null,
+      "squad": "Primavera",
+      "photoPath": "/players/russo-giorgio.jpg"
+    },
+    {
       "slug": "santella-alessandro",
       "displayName": "Santella Alessandro",
-      "positionShort": "LB",
+      "positionShort": "LWB",
       "age": 18,
       "birthDate": "25/01/2008",
       "foot": "Left",
@@ -328,7 +380,7 @@
     {
       "slug": "zappala-andrea",
       "displayName": "Zappalá Andrea",
-      "positionShort": "RB",
+      "positionShort": "CB",
       "age": 17,
       "birthDate": "13/01/2009",
       "foot": "Right",

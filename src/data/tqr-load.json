@@ -3985,14 +3985,19 @@
       "kind": "match",
       "trainingSlug": null,
       "matchSlug": "2026-10-10_campionato-u19-vs-pisa",
-      "playersPresent": 15,
-      "playersAnswered": 15,
-      "avgTqr": 16.07,
+      "playersPresent": 16,
+      "playersAnswered": 16,
+      "avgTqr": 16.19,
       "players": [
         {
           "playerSlug": "anic-ivan",
           "excelName": "Anic Ivan",
           "tqr": 19
+        },
+        {
+          "playerSlug": "d-angelo-adrian",
+          "excelName": "D'Angelo",
+          "tqr": 18
         },
         {
           "playerSlug": "lepre-giuseppe",
@@ -4198,21 +4203,16 @@
     "Alessandro Napolitano",
     "Bediako Christian",
     "Borzillo Eleonthion",
-    "D'Angelo Adrian",
     "Garofalo Cristian",
-    "Liccardo",
     "Napolitano",
     "Pignarosa",
-    "D'Angelo",
     "Pica",
     "Picardi",
     "Piccardi",
     "Pepe",
     "Angelo",
     "Sinardi",
-    "Riccardi",
-    "De Michele",
-    "Russo"
+    "Riccardi"
   ],
   "unmatchedDates": []
 }

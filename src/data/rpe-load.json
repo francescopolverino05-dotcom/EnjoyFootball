@@ -5677,10 +5677,10 @@
       "kind": "match",
       "trainingSlug": null,
       "matchSlug": "2026-10-10_campionato-u19-vs-pisa",
-      "playersPresent": 9,
-      "playersAnswered": 9,
+      "playersPresent": 10,
+      "playersAnswered": 10,
       "avgMin": null,
-      "avgRpe": 16.67,
+      "avgRpe": 16.5,
       "avgSessionLoad": null,
       "players": [
         {
@@ -5728,6 +5728,13 @@
         {
           "playerSlug": "anic-ivan",
           "excelName": "Anic Ivan",
+          "min": null,
+          "rpe": 15,
+          "sessionLoad": null
+        },
+        {
+          "playerSlug": "d-angelo-adrian",
+          "excelName": "D'Angelo",
           "min": null,
           "rpe": 15,
           "sessionLoad": null
@@ -5861,20 +5868,15 @@
     }
   ],
   "unmatchedNames": [
-    "Adrian D'Angelo",
     "Garofalo Cristian",
-    "Liccardo",
     "Napolitano",
     "Pignarosa",
-    "D'Angelo",
     "Pica",
     "Picardi",
     "Piccardi",
     "Pepe",
     "Angelo",
     "Sinardi",
-    "Riccardi",
-    "De Michele",
-    "Russo"
+    "Riccardi"
   ]
 }
