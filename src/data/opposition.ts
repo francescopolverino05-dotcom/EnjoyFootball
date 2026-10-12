@@ -1066,6 +1066,97 @@ if (bari) {
       },
     },
   ];
+  /** Depth = Ascoli + Palermo Coppa onto 4-3-1-2 diamond (2 XIs). */
+  bari.squadDepth = {
+    system: '1-4-3-1-2',
+    note: {
+      en: 'Last 2 scouted XIs (vs Ascoli Primavera 2, vs Palermo Coppa) mapped onto 4-3-1-2. Order = most starts in that slot.',
+      it: 'Ultime 2 formazioni scoutate (vs Ascoli Primavera 2, vs Palermo Coppa) mappate sul 4-3-1-2. Ordine = più partite in quel ruolo.',
+    },
+    slots: [
+      {
+        role: 'GK',
+        top: '10%',
+        left: '50%',
+        players: [{ name: 'Mezzapesa', starts: 2 }],
+      },
+      {
+        role: 'RB',
+        top: '26%',
+        left: '18%',
+        players: [{ name: 'Emiliano', starts: 2 }],
+      },
+      {
+        role: 'RCB',
+        top: '24%',
+        left: '38%',
+        players: [{ name: 'Dimonte', starts: 2 }],
+      },
+      {
+        role: 'LCB',
+        top: '24%',
+        left: '62%',
+        players: [{ name: 'De Lucia', starts: 2 }],
+      },
+      {
+        role: 'LB',
+        top: '26%',
+        left: '82%',
+        players: [
+          { name: 'Spadavecchia', starts: 1 },
+          { name: 'Legrottaglie', starts: 1 },
+        ],
+      },
+      {
+        role: 'LCM',
+        top: '45%',
+        left: '28%',
+        players: [
+          { name: 'Valoroso', starts: 1 },
+          { name: 'Vitale', starts: 1 },
+        ],
+      },
+      {
+        role: 'CDM',
+        top: '42%',
+        left: '50%',
+        players: [{ name: 'Mundo', starts: 2 }],
+      },
+      {
+        role: 'RCM',
+        top: '45%',
+        left: '72%',
+        players: [
+          { name: 'Scarano', starts: 1 },
+          { name: 'Grimaldi', starts: 1 },
+        ],
+      },
+      {
+        role: 'CAM',
+        top: '60%',
+        left: '50%',
+        players: [{ name: 'Alonso Cam.', starts: 2 }],
+      },
+      {
+        role: 'RST',
+        top: '75%',
+        left: '38%',
+        players: [
+          { name: 'Scifoni', starts: 1 },
+          { name: 'Leone', starts: 1 },
+        ],
+      },
+      {
+        role: 'LST',
+        top: '75%',
+        left: '62%',
+        players: [
+          { name: 'Italia', starts: 1 },
+          { name: 'Keita', starts: 1 },
+        ],
+      },
+    ],
+  };
   bari.squad = [
     { number: 1, name: 'Mezzapesa', position: 'GK', isGk: true },
     { number: 2, name: 'Emiliano', position: 'RB' },
