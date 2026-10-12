@@ -613,8 +613,8 @@ if (villarreal) {
   villarreal.squadDepth = {
     system: '1-4-4-2',
     note: {
-      en: 'Last 4 starting XIs (Castellón 4-4-2, Dortmund 3-4-2-1 / defensive 5-3-2, Elche 4-4-2, Murcia 4-4-2) mapped onto 4-4-2. vs BVB Toni stayed RCB in the back five; when Vivo stepped into midfield Toni covered RB — Vivo’s Dortmund start counted at RM, one Toni start at RB. Order = most starts in that slot. Nicknames on pitch; full names in the squad table.',
-      it: 'Ultime 4 formazioni (Castellón 4-4-2, Dortmund 3-4-2-1 / 5-3-2 in non possesso, Elche 4-4-2, Murcia 4-4-2) mappate sul 4-4-2. vs BVB Toni restava RCB nel 5; quando Vivo saliva Toni copriva da RB — la partenza Dortmund di Vivo è contata da RM, una di Toni da RB. Ordine = più partite in quel ruolo. Soprannomi sul campo; nomi completi in tabella rosa.',
+      en: 'Last 4 starting XIs (Castellón 4-4-2, Dortmund 3-4-2-1 / defensive 5-3-2, Elche 4-4-2, Murcia 4-4-2) mapped onto 4-4-2. vs BVB Toni stayed RCB in the back five; when Vivo stepped into midfield Toni covered RB — Vivo’s Dortmund start counted at RM, one Toni start at RB. Order = most starts in that slot. Short display names on pitch; full names in the squad table.',
+      it: 'Ultime 4 formazioni (Castellón 4-4-2, Dortmund 3-4-2-1 / 5-3-2 in non possesso, Elche 4-4-2, Murcia 4-4-2) mappate sul 4-4-2. vs BVB Toni restava RCB nel 5; quando Vivo saliva Toni copriva da RB — la partenza Dortmund di Vivo è contata da RM, una di Toni da RB. Ordine = più partite in quel ruolo. Nomi corti sul campo; nomi completi in tabella rosa.',
     },
     slots: [
       {
@@ -623,7 +623,7 @@ if (villarreal) {
         left: '50%',
         players: [
           { name: 'Ursu', starts: 3 },
-          { name: 'Polo', starts: 1 },
+          { name: 'Pablo Polo', starts: 1 },
         ],
       },
       {
@@ -632,7 +632,7 @@ if (villarreal) {
         left: '18%',
         players: [
           { name: 'Luengo', starts: 3 },
-          { name: 'Toni', starts: 1 },
+          { name: 'Falcó Montanet', starts: 1 },
         ],
       },
       {
@@ -640,8 +640,8 @@ if (villarreal) {
         top: '24%',
         left: '38%',
         players: [
-          { name: 'Toni', starts: 3 },
-          { name: 'Vergun', starts: 1 },
+          { name: 'Falcó Montanet', starts: 3 },
+          { name: 'Vergún', starts: 1 },
         ],
       },
       {
@@ -649,9 +649,9 @@ if (villarreal) {
         top: '24%',
         left: '62%',
         players: [
-          { name: 'Juanma', starts: 2 },
-          { name: 'Vergun', starts: 1 },
-          { name: 'Anadon', starts: 1 },
+          { name: 'Juanma Barrios', starts: 2 },
+          { name: 'Vergún', starts: 1 },
+          { name: 'Anadón', starts: 1 },
         ],
       },
       {
@@ -669,8 +669,8 @@ if (villarreal) {
         top: '48%',
         left: '18%',
         players: [
-          { name: 'Vivo', starts: 4 },
-          { name: 'Iker', starts: 1 },
+          { name: 'Vivó Guillamón', starts: 4 },
+          { name: 'Iker Pérez', starts: 1 },
         ],
       },
       {
@@ -678,8 +678,8 @@ if (villarreal) {
         top: '45%',
         left: '38%',
         players: [
-          { name: 'Ioan', starts: 2 },
-          { name: 'Traore', starts: 1 },
+          { name: 'Ioan Precup', starts: 2 },
+          { name: 'Moussa Traoré', starts: 1 },
           { name: 'Jairo', starts: 1 },
         ],
       },
@@ -688,9 +688,9 @@ if (villarreal) {
         top: '45%',
         left: '62%',
         players: [
-          { name: 'Koné', starts: 2 },
-          { name: 'Alcaide', starts: 1 },
-          { name: 'Ioan', starts: 1 },
+          { name: 'Moussa Koné', starts: 2 },
+          { name: 'Álvaro Alcaide', starts: 1 },
+          { name: 'Ioan Precup', starts: 1 },
         ],
       },
       {
@@ -698,8 +698,8 @@ if (villarreal) {
         top: '48%',
         left: '82%',
         players: [
-          { name: 'Edu', starts: 3 },
-          { name: 'Carrasco', starts: 1 },
+          { name: 'González García', starts: 3 },
+          { name: 'Jorge Carrasco', starts: 1 },
         ],
       },
       {
@@ -707,8 +707,8 @@ if (villarreal) {
         top: '75%',
         left: '38%',
         players: [
-          { name: 'Raul', starts: 3 },
-          { name: 'Iker', starts: 1 },
+          { name: 'García Palomar (c)', starts: 3 },
+          { name: 'Iker Pérez', starts: 1 },
         ],
       },
       {
@@ -717,7 +717,7 @@ if (villarreal) {
         left: '62%',
         players: [
           { name: 'Fode', starts: 2 },
-          { name: 'Yuri', starts: 1 },
+          { name: 'Yurii Kisak', starts: 1 },
         ],
       },
     ],

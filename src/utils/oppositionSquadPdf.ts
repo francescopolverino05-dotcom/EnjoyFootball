@@ -226,7 +226,7 @@ export function openOppositionSquadPdf(
       flex-direction: column;
       align-items: center;
       width: max-content;
-      max-width: 108px;
+      max-width: 132px;
       z-index: 2;
     }
     .depth-slot.is-gk {
@@ -242,38 +242,41 @@ export function openOppositionSquadPdf(
       margin-top: 0;
       align-items: flex-end;
       text-align: right;
-      white-space: nowrap;
+      width: max-content;
+      max-width: 150px;
     }
     .depth-stack {
       margin-top: 4px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1px;
+      gap: 2px;
       text-align: center;
-      padding: 2px 4px 3px;
+      padding: 3px 5px 4px;
       border-radius: 3px;
       background: rgba(255,255,255,0.94);
       border: 1px solid rgba(0,0,0,0.08);
-      font-size: 7.5pt;
+      font-size: 7pt;
       line-height: 1.2;
     }
     .depth-name {
-      display: inline-flex;
+      display: flex;
       align-items: baseline;
+      justify-content: center;
       gap: 3px;
       color: #475569;
-      white-space: nowrap;
+      width: 100%;
     }
     .depth-name.primary {
       font-weight: 700;
       color: #0f172a;
-      font-size: 8pt;
+      font-size: 7.5pt;
     }
     .depth-label {
-      max-width: 92px;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      max-width: 124px;
+      white-space: normal;
+      overflow-wrap: break-word;
+      hyphens: manual;
     }
     .depth-starts {
       font-size: 7pt;
