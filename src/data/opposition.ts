@@ -306,7 +306,7 @@ if (villarreal) {
     },
     {
       number: 11,
-      name: 'Adrian Guillamon',
+      name: 'Vivo',
       teamId: 'villarreal',
       top: '38%',
       left: '12%',
@@ -380,7 +380,7 @@ if (villarreal) {
     },
     {
       number: 24,
-      name: 'Roman',
+      name: 'Martin Vergun',
       teamId: 'villarreal',
       top: '20%',
       left: '62%',
@@ -415,7 +415,7 @@ if (villarreal) {
     },
     {
       number: 10,
-      name: 'Edu',
+      name: 'González García',
       teamId: 'villarreal',
       top: '48%',
       left: '82%',
@@ -429,7 +429,7 @@ if (villarreal) {
     },
     {
       number: 20,
-      name: 'Yuri',
+      name: 'Yurii Kisak',
       teamId: 'villarreal',
       top: '75%',
       left: '62%',
@@ -581,7 +581,7 @@ if (villarreal) {
     },
     {
       number: 10,
-      name: 'Edu',
+      name: 'González García',
       teamId: 'villarreal',
       top: '48%',
       left: '82%',
@@ -603,12 +603,17 @@ if (villarreal) {
   ];
   villarreal.alternateFormationSystems = ['1-4-4-2'];
   villarreal.starters = latest;
-  /** Depth = latest DH XI + Dortmund + Murcia (drop Elche). */
+  /**
+   * Depth = Castellón + Dortmund (mapped) + Elche + Murcia onto 4-4-2.
+   * Aliases collapsed: Guillamon→Vivo, Roman→Vergun, Edu→González García, Yuri→Yurii Kisak.
+   * Elche ST: Iker Pérez (RST), Yurii Kisak (LST). Dortmund ST: Palomar only (RST).
+   * Vivo: 3× RM (DH) + 1× RB (Dortmund RWB). Vergun: 1× RCB (Dortmund) + 1× LCB (Elche).
+   */
   villarreal.squadDepth = {
-    system: '1-3-4-2-1',
+    system: '1-4-4-2',
     note: {
-      en: 'Last 3 starting XIs (Castellón 4-4-2, Dortmund 3-4-2-1, Murcia 4-4-2) mapped onto 3-4-2-1. Order = most starts in that slot. Iker Pérez counted on right wing (RAM). Toni = Falco Montanet; Raul = García Palomar; Carrasco = Jorge Carrasco.',
-      it: 'Ultime 3 formazioni (Castellón 4-4-2, Dortmund 3-4-2-1, Murcia 4-4-2) mappate sul 3-4-2-1. Ordine = più partite in quel ruolo. Iker Pérez contato sull’ala destra (RAM). Toni = Falco Montanet; Raul = García Palomar; Carrasco = Jorge Carrasco.',
+      en: 'Last 4 starting XIs (Castellón 4-4-2, Dortmund 3-4-2-1, Elche 4-4-2, Murcia 4-4-2) mapped onto 4-4-2. Dortmund: RWB→RB, LWB→LB, RAM→RM, LAM→LM, centre CB→RCB. Order = most starts in that slot. Toni = Falco Montanet; Raul = García Palomar; Carrasco = Jorge Carrasco; Vivo = Adrián Vivó Guillamón; González García = Edu González.',
+      it: 'Ultime 4 formazioni (Castellón 4-4-2, Dortmund 3-4-2-1, Elche 4-4-2, Murcia 4-4-2) mappate sul 4-4-2. Dortmund: RWB→RB, LWB→LB, RAM→RM, LAM→LM, CB centrale→RCB. Ordine = più partite in quel ruolo. Toni = Falco Montanet; Raul = García Palomar; Carrasco = Jorge Carrasco; Vivo = Adrián Vivó Guillamón; González García = Edu González.',
     },
     slots: [
       {
@@ -616,95 +621,102 @@ if (villarreal) {
         top: '10%',
         left: '50%',
         players: [
-          { name: 'Ursu', starts: 2 },
+          { name: 'Ursu', starts: 3 },
           { name: 'Pablo Polo', starts: 1 },
         ],
       },
       {
-        role: 'RCB',
+        role: 'RB',
         top: '26%',
-        left: '28%',
-        players: [{ name: 'Falco Montanet', starts: 3 }],
+        left: '18%',
+        players: [
+          { name: 'Luengo', starts: 3 },
+          { name: 'Vivo', starts: 1 },
+        ],
       },
       {
-        role: 'CB',
+        role: 'RCB',
         top: '24%',
-        left: '50%',
-        players: [{ name: 'Martin Vergun', starts: 1 }],
+        left: '38%',
+        players: [
+          { name: 'Falco Montanet', starts: 4 },
+          { name: 'Martin Vergun', starts: 1 },
+        ],
       },
       {
         role: 'LCB',
-        top: '26%',
-        left: '72%',
+        top: '24%',
+        left: '62%',
         players: [
           { name: 'Juanma', starts: 2 },
+          { name: 'Martin Vergun', starts: 1 },
           { name: 'Guillermo Anadon', starts: 1 },
         ],
       },
       {
-        role: 'RWB',
-        top: '44%',
-        left: '14%',
-        players: [
-          { name: 'Luengo', starts: 2 },
-          { name: 'Adrian Guillamon', starts: 1 },
-        ],
-      },
-      {
-        role: 'LWB',
-        top: '44%',
-        left: '86%',
+        role: 'LB',
+        top: '26%',
+        left: '82%',
         players: [
           { name: 'Iván', starts: 2 },
+          { name: 'Pilili', starts: 1 },
           { name: 'Seydou Llopis', starts: 1 },
         ],
       },
       {
-        role: 'RCM',
-        top: '46%',
-        left: '38%',
+        role: 'RM',
+        top: '48%',
+        left: '18%',
         players: [
-          { name: 'Moussa Traore', starts: 1 },
-          { name: 'Jairo', starts: 1 },
-          { name: 'Ioan', starts: 1 },
-        ],
-      },
-      {
-        role: 'LCM',
-        top: '46%',
-        left: '62%',
-        players: [
-          { name: 'Alvaro Alcaide', starts: 1 },
-          { name: 'Ioan', starts: 1 },
-          { name: 'Koné', starts: 1 },
-        ],
-      },
-      {
-        role: 'RAM',
-        top: '66%',
-        left: '30%',
-        players: [
-          { name: 'Vivo', starts: 2 },
+          { name: 'Vivo', starts: 3 },
           { name: 'Iker Pérez', starts: 1 },
         ],
       },
       {
-        role: 'LAM',
-        top: '66%',
-        left: '70%',
+        role: 'RCM',
+        top: '45%',
+        left: '38%',
         players: [
-          { name: 'Edu', starts: 1 },
-          { name: 'Carrasco', starts: 1 },
-          { name: 'González García', starts: 1 },
+          { name: 'Ioan', starts: 2 },
+          { name: 'Moussa Traore', starts: 1 },
+          { name: 'Jairo', starts: 1 },
         ],
       },
       {
-        role: 'ST',
-        top: '82%',
-        left: '50%',
+        role: 'LCM',
+        top: '45%',
+        left: '62%',
+        players: [
+          { name: 'Koné', starts: 2 },
+          { name: 'Alvaro Alcaide', starts: 1 },
+          { name: 'Ioan', starts: 1 },
+        ],
+      },
+      {
+        role: 'LM',
+        top: '48%',
+        left: '82%',
+        players: [
+          { name: 'González García', starts: 3 },
+          { name: 'Carrasco', starts: 1 },
+        ],
+      },
+      {
+        role: 'RST',
+        top: '75%',
+        left: '38%',
         players: [
           { name: 'García Palomar', starts: 3 },
+          { name: 'Iker Pérez', starts: 1 },
+        ],
+      },
+      {
+        role: 'LST',
+        top: '75%',
+        left: '62%',
+        players: [
           { name: 'Fode', starts: 2 },
+          { name: 'Yurii Kisak', starts: 1 },
         ],
       },
     ],
@@ -750,7 +762,7 @@ if (villarreal) {
   villarreal.squad = [
     {
       number: 1,
-      name: 'Pablo Polo Ortiz',
+      name: 'Pablo Polo Ortiz (Polo)',
       position: 'GK',
       isGk: true,
       heightCm: 194,
@@ -758,7 +770,7 @@ if (villarreal) {
     },
     {
       number: 13,
-      name: 'Eduard Ursu',
+      name: 'Eduard Ursu (Ursu)',
       position: 'GK',
       isGk: true,
       heightCm: 192,
@@ -766,113 +778,155 @@ if (villarreal) {
     },
     {
       number: 2,
-      name: 'Antoni Falcó Montanet',
+      name: 'Antoni Falcó Montanet (Toni)',
       position: 'RCB',
       preferredFoot: 'Destro',
     },
     {
-      name: 'Lucas Pilili Rodríguez',
+      name: 'Lucas Pilili Rodríguez (Pilili)',
       position: 'LB',
       heightCm: 183,
       preferredFoot: 'Sinistro',
     },
     {
       number: 4,
-      name: 'Román Martín Vergún',
+      name: 'Román Martín Vergún (Roman)',
       position: 'CB',
       heightCm: 196,
       preferredFoot: 'Destro',
     },
     {
       number: 5,
-      name: 'Guillermo Anadón Angulo',
+      name: 'Guillermo Anadón Angulo (Anadon)',
       position: 'LCB',
       heightCm: 179,
       preferredFoot: 'Destro',
     },
     {
-      name: 'Juan Manuel Borrero Barrios',
+      name: 'Juan Manuel Borrero Barrios (Juanma)',
       position: 'LCB',
+      preferredFoot: 'Destro',
     },
     {
-      name: 'Iván Jiménez Soriano',
+      name: 'Iván Jiménez Soriano (Iván)',
       position: 'LB',
+      preferredFoot: 'Destro',
     },
     {
       number: 20,
-      name: 'Álvaro Alcaide Valls',
+      name: 'Álvaro Alcaide Valls (Alcaide)',
       position: 'LCM',
       heightCm: 183,
       preferredFoot: 'Destro',
     },
     {
-      name: 'Ioan Precup',
+      name: 'Ioan Precup (Ioan)',
       position: 'CM',
       heightCm: 180,
       preferredFoot: 'Destro',
     },
     {
-      name: 'Adrián Vivó Guillamón',
+      name: 'Adrián Vivó Guillamón (Vivo)',
       position: 'RW',
       heightCm: 175,
       preferredFoot: 'Destro',
     },
     {
       number: 21,
-      name: 'Moussa Traoré Camara',
+      name: 'Moussa Traoré Camara (Traore)',
       position: 'RCM',
       heightCm: 165,
       preferredFoot: 'Destro',
     },
     {
-      name: 'Jairo Trujillo Molina',
+      name: 'Jairo Trujillo Molina (Jairo)',
       position: 'RCM',
       heightCm: 182,
       preferredFoot: 'Destro',
     },
     {
       number: 9,
-      name: 'Raúl García Palomar',
+      name: 'Raúl García Palomar (Raul)',
       position: 'ST',
       preferredFoot: 'Destro',
     },
     {
       number: 15,
-      name: 'Eduardo González García',
+      name: 'Eduardo González García (Edu)',
       position: 'LW',
+      preferredFoot: 'Sinistro',
     },
     {
-      name: 'Seydou Llopis Gandia',
+      name: 'Seydou Llopis Gandia (Llopis)',
       position: 'LWB',
       heightCm: 177,
       preferredFoot: 'Destro',
     },
     {
       number: 27,
-      name: 'Fode Minite Sabater',
+      name: 'Fode Minite Sabater (Fode)',
       position: 'ST / RW',
       heightCm: 185,
       preferredFoot: 'Destro',
     },
     {
       number: 19,
-      name: 'Iker Pérez Espinosa',
+      name: 'Iker Pérez Espinosa (Iker)',
+      position: 'AM',
       preferredFoot: 'Sinistro',
     },
     {
       number: 29,
-      name: 'Yurii Kisak',
+      name: 'Yurii Kisak (Yuri)',
       position: 'ST',
       preferredFoot: 'Sinistro',
     },
     {
-      name: 'Moussa Koné Diabate',
+      name: 'Moussa Koné Diabate (Koné)',
       position: 'LCM',
+      preferredFoot: 'Destro',
     },
     {
       number: 28,
-      name: 'Rubén Luengo Cordero',
+      name: 'Rubén Luengo Cordero (Luengo)',
       position: 'RB',
+      preferredFoot: 'Destro',
+    },
+    /**
+     * Appeared in Castellón XI (#11 mediapunta) + Elche/SF benches.
+     * Foot: “juego a dos pies” (esportbase). Height not listed on BeSoccer/TM.
+     */
+    {
+      number: 11,
+      name: 'Jorge Carrasco González (Carrasco)',
+      position: 'AM',
+      preferredFoot: 'Ambidestro',
+    },
+    /**
+     * Bench vs Elche + Castellón window (SF sub for Fode).
+     * Height/foot from FM database only (BeSoccer/TM blank).
+     */
+    {
+      name: 'Mario Barella Jiménez (Barella)',
+      position: 'AM',
+      heightCm: 174,
+      preferredFoot: 'Destro',
+    },
+    /**
+     * Bench vs Castellón + Elche; SF sub for Iván Jiménez (LB).
+     * Full name as reported; height/foot not found.
+     */
+    {
+      name: 'Alejandro A. Chavero (Chavero)',
+      position: 'LB',
+      preferredFoot: 'Destro',
+    },
+    /**
+     * Bench vs Castellón (assist for Kisak). BeSoccer: ST, no height/foot.
+     */
+    {
+      name: 'Sergio Serrano Acosta (Serrano)',
+      position: 'ST',
       preferredFoot: 'Destro',
     },
   ];
