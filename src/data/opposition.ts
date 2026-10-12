@@ -1762,6 +1762,19 @@ attachReferencePack('bari', '2026-10-17_campionato-bari-vs-u19', [
 
 attachReferencePack('villarreal', '2026-10-13_uyl-villarreal-vs-u19', [
   {
+    id: 'villarreal-ref-castellon',
+    title: {
+      en: 'Villarreal vs Castellón 4–1',
+      it: 'Villarreal vs Castellón 4–1',
+    },
+    competition: {
+      en: 'Reference',
+      it: 'Riferimento',
+    },
+    score: '4–1',
+    videoFile: 'https://vimeo.com/1234860406/e1b875d5e4',
+  },
+  {
     id: 'villarreal-ref-murcia',
     title: {
       en: 'Villarreal vs Murcia 2–1',

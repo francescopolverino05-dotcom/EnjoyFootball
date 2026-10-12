@@ -545,7 +545,9 @@
         "teamId": "u19",
         "number": 21,
         "starter": false,
-        "goals": [74]
+        "goals": [
+          74
+        ]
       },
       {
         "name": "Russo",
@@ -713,7 +715,7 @@
   "vimeo": {
     "folderId": "30848720",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30848720",
-    "lastSyncedAt": "2026-10-10T15:04:29.314Z"
+    "lastSyncedAt": "2026-10-12T04:49:21.106Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1234647994/41d1d6a011",
