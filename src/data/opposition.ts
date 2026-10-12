@@ -1974,7 +1974,7 @@ attachReferencePack('villarreal', '2026-10-13_uyl-villarreal-vs-u19', [
       en: 'Opposition studio report (Avversari → Studio Report).',
       it: 'Studio report avversario (Avversari → Studio Report).',
     },
-    videoFile: 'https://vimeo.com/1233725906/ab0da297fb',
+    videoFile: 'https://vimeo.com/1235111245/81b9fadd69',
     tags: ['vimeo', 'opposition', 'studio-report'],
   },
 ]);
