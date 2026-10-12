@@ -1,5 +1,11 @@
 import { Link, useParams } from 'react-router-dom';
 import { getMatchBySlug } from '../data/matches';
+import { getLeagueMatchStatsForMatchSlug } from '../data/leagueMatchStats';
+import {
+  mapLeagueDynamics,
+  mapLeagueGoalkeepers,
+  mapLeagueTeamStats,
+} from '../data/leagueMatchStatsMap';
 import { getMicrocycleDay } from '../data/microcycleDays';
 import ReportHeader from '../components/ReportHeader';
 import Scoreboard from '../components/Scoreboard';
@@ -33,6 +39,22 @@ export default function MatchPage() {
       ? `${match.homeTeam.shortName} vs ${match.awayTeam.shortName}`
       : `${match.homeTeam.shortName} ${match.score.home} – ${match.score.away} ${match.awayTeam.shortName}`;
   const microcycleDay = getMicrocycleDay(match.slug);
+  const leagueSheet = getLeagueMatchStatsForMatchSlug(match.slug);
+  const statsMatch =
+    leagueSheet && match.teamStats.length === 0
+      ? {
+          ...match,
+          teamStats: mapLeagueTeamStats(leagueSheet.pack),
+          dynamics:
+            match.dynamics.length > 0
+              ? match.dynamics
+              : mapLeagueDynamics(leagueSheet.pack),
+          goalkeepers:
+            match.goalkeepers.length > 0
+              ? match.goalkeepers
+              : mapLeagueGoalkeepers(leagueSheet.pack),
+        }
+      : match;
 
   return (
     <div className="app-shell">
@@ -71,7 +93,25 @@ export default function MatchPage() {
           matchDate={match.date}
           competition={L(match.subtitle)}
         />
-        <StatsDashboard match={match} />
+        {leagueSheet ? (
+          <p className="home-section-hint">
+            <Link to={`/stats/${leagueSheet.competitionId}/${leagueSheet.slug}`}>
+              {t('matchOpenLeagueStats')}
+            </Link>
+          </p>
+        ) : null}
+        <StatsDashboard
+          match={statsMatch}
+          playerStats={
+            leagueSheet
+              ? {
+                  homeName: leagueSheet.pack.home.name,
+                  awayName: leagueSheet.pack.away.name,
+                  players: leagueSheet.pack.playerStats,
+                }
+              : undefined
+          }
+        />
       </div>
     </div>
   );

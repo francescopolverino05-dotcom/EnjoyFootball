@@ -35,11 +35,6 @@
       "away": "0.81"
     },
     {
-      "stat": "xG (taggers’ own estimate, for reference)",
-      "home": "1.81",
-      "away": "0.71"
-    },
-    {
       "stat": "Shots (1H)",
       "home": "16",
       "away": "4"
@@ -90,22 +85,17 @@
       "away": "3"
     },
     {
-      "stat": "Possession estimate %",
+      "stat": "Possession % (full match)",
       "home": "66.8",
       "away": "33.2"
     },
     {
-      "stat": "Possession estimate % (full match)",
-      "home": "66.8",
-      "away": "33.2"
-    },
-    {
-      "stat": "Possession estimate % (1H)",
+      "stat": "Possession % (1H)",
       "home": "69.1",
       "away": "30.9"
     },
     {
-      "stat": "Possession estimate % (2H)",
+      "stat": "Possession % (2H)",
       "home": "64.4",
       "away": "35.6"
     },

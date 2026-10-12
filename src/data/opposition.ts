@@ -271,13 +271,13 @@ if (arsenal) {
   ];
 }
 
-/** Villarreal scouted XI — 1-3-4-2-1 vs Borussia Dortmund. */
+/** Villarreal scouted XI — 3-4-2-1 / out-of-possession 5-3-2 vs Borussia Dortmund. */
 const villarreal = OPPONENTS.find((o) => o.id === 'villarreal');
 if (villarreal) {
   const dortmund = [
     {
       number: 1,
-      name: 'Pablo Polo',
+      name: 'Polo',
       teamId: 'villarreal',
       isGk: true,
       top: '8%',
@@ -285,21 +285,21 @@ if (villarreal) {
     },
     {
       number: 2,
-      name: 'Falco Montanet',
+      name: 'Toni',
       teamId: 'villarreal',
       top: '20%',
       left: '28%',
     },
     {
       number: 4,
-      name: 'Martin Vergun',
+      name: 'Vergun',
       teamId: 'villarreal',
       top: '18%',
       left: '50%',
     },
     {
       number: 5,
-      name: 'Guillermo Anadon',
+      name: 'Anadon',
       teamId: 'villarreal',
       top: '20%',
       left: '72%',
@@ -313,42 +313,42 @@ if (villarreal) {
     },
     {
       number: 16,
-      name: 'Seydou Llopis',
+      name: 'Llopis',
       teamId: 'villarreal',
       top: '38%',
       left: '88%',
     },
     {
       number: 8,
-      name: 'Moussa Traore',
+      name: 'Traore',
       teamId: 'villarreal',
       top: '42%',
       left: '38%',
     },
     {
       number: 6,
-      name: 'Alvaro Alcaide',
+      name: 'Alcaide',
       teamId: 'villarreal',
       top: '42%',
       left: '62%',
     },
     {
       number: 28,
-      name: 'Iker Pérez',
+      name: 'Iker',
       teamId: 'villarreal',
       top: '62%',
       left: '28%',
     },
     {
       number: 15,
-      name: 'González García',
+      name: 'Edu',
       teamId: 'villarreal',
       top: '62%',
       left: '72%',
     },
     {
       number: 9,
-      name: 'García Palomar',
+      name: 'Raul',
       teamId: 'villarreal',
       top: '78%',
       left: '50%',
@@ -373,14 +373,14 @@ if (villarreal) {
     },
     {
       number: 2,
-      name: 'Falco Montanet',
+      name: 'Toni',
       teamId: 'villarreal',
       top: '20%',
       left: '38%',
     },
     {
       number: 24,
-      name: 'Martin Vergun',
+      name: 'Vergun',
       teamId: 'villarreal',
       top: '20%',
       left: '62%',
@@ -415,21 +415,21 @@ if (villarreal) {
     },
     {
       number: 10,
-      name: 'González García',
+      name: 'Edu',
       teamId: 'villarreal',
       top: '48%',
       left: '82%',
     },
     {
       number: 19,
-      name: 'Iker Pérez',
+      name: 'Iker',
       teamId: 'villarreal',
       top: '75%',
       left: '38%',
     },
     {
       number: 20,
-      name: 'Yurii Kisak',
+      name: 'Yuri',
       teamId: 'villarreal',
       top: '75%',
       left: '62%',
@@ -438,7 +438,7 @@ if (villarreal) {
   /**
    * Latest DH starting XI (broadcast graphic). 4-4-2 —
    * pitch attacks downward; team-right = screen-left.
-   * Toni = Falco Montanet; Raul = García Palomar; Carrasco = Jorge Carrasco.
+   * Nicknames on pitch; full names in squad table.
    */
   const latest = [
     {
@@ -458,7 +458,7 @@ if (villarreal) {
     },
     {
       number: 2,
-      name: 'Falco Montanet',
+      name: 'Toni',
       teamId: 'villarreal',
       top: '20%',
       left: '38%',
@@ -507,7 +507,7 @@ if (villarreal) {
     },
     {
       number: 9,
-      name: 'García Palomar',
+      name: 'Raul',
       teamId: 'villarreal',
       top: '75%',
       left: '38%',
@@ -539,7 +539,7 @@ if (villarreal) {
     },
     {
       number: 2,
-      name: 'Falco Montanet',
+      name: 'Toni',
       teamId: 'villarreal',
       top: '20%',
       left: '38%',
@@ -581,14 +581,14 @@ if (villarreal) {
     },
     {
       number: 10,
-      name: 'González García',
+      name: 'Edu',
       teamId: 'villarreal',
       top: '48%',
       left: '82%',
     },
     {
       number: 9,
-      name: 'García Palomar',
+      name: 'Raul',
       teamId: 'villarreal',
       top: '75%',
       left: '38%',
@@ -605,15 +605,16 @@ if (villarreal) {
   villarreal.starters = latest;
   /**
    * Depth = Castellón + Dortmund (mapped) + Elche + Murcia onto 4-4-2.
-   * Aliases collapsed: Guillamon→Vivo, Roman→Vergun, Edu→González García, Yuri→Yurii Kisak.
-   * Elche ST: Iker Pérez (RST), Yurii Kisak (LST). Dortmund ST: Palomar only (RST).
-   * Vivo: 3× RM (DH) + 1× RB (Dortmund RWB). Vergun: 1× RCB (Dortmund) + 1× LCB (Elche).
+   * vs BVB: out-of-possession 5-3-2 (Toni RCB); when Vivo stepped up Toni slid to RB —
+   * so Vivo’s Dortmund app counted at RM, and 1 of Toni’s 4 RCB apps moved to RB.
+   * Elche ST: Iker (RST), Yuri (LST). Dortmund ST: Raul only (RST).
+   * Vergun: 1× RCB (Dortmund CB) + 1× LCB (Elche).
    */
   villarreal.squadDepth = {
     system: '1-4-4-2',
     note: {
-      en: 'Last 4 starting XIs (Castellón 4-4-2, Dortmund 3-4-2-1, Elche 4-4-2, Murcia 4-4-2) mapped onto 4-4-2. Dortmund: RWB→RB, LWB→LB, RAM→RM, LAM→LM, centre CB→RCB. Order = most starts in that slot. Toni = Falco Montanet; Raul = García Palomar; Carrasco = Jorge Carrasco; Vivo = Adrián Vivó Guillamón; González García = Edu González.',
-      it: 'Ultime 4 formazioni (Castellón 4-4-2, Dortmund 3-4-2-1, Elche 4-4-2, Murcia 4-4-2) mappate sul 4-4-2. Dortmund: RWB→RB, LWB→LB, RAM→RM, LAM→LM, CB centrale→RCB. Ordine = più partite in quel ruolo. Toni = Falco Montanet; Raul = García Palomar; Carrasco = Jorge Carrasco; Vivo = Adrián Vivó Guillamón; González García = Edu González.',
+      en: 'Last 4 starting XIs (Castellón 4-4-2, Dortmund 3-4-2-1 / defensive 5-3-2, Elche 4-4-2, Murcia 4-4-2) mapped onto 4-4-2. vs BVB Toni stayed RCB in the back five; when Vivo stepped into midfield Toni covered RB — Vivo’s Dortmund start counted at RM, one Toni start at RB. Order = most starts in that slot. Nicknames on pitch; full names in the squad table.',
+      it: 'Ultime 4 formazioni (Castellón 4-4-2, Dortmund 3-4-2-1 / 5-3-2 in non possesso, Elche 4-4-2, Murcia 4-4-2) mappate sul 4-4-2. vs BVB Toni restava RCB nel 5; quando Vivo saliva Toni copriva da RB — la partenza Dortmund di Vivo è contata da RM, una di Toni da RB. Ordine = più partite in quel ruolo. Soprannomi sul campo; nomi completi in tabella rosa.',
     },
     slots: [
       {
@@ -622,7 +623,7 @@ if (villarreal) {
         left: '50%',
         players: [
           { name: 'Ursu', starts: 3 },
-          { name: 'Pablo Polo', starts: 1 },
+          { name: 'Polo', starts: 1 },
         ],
       },
       {
@@ -631,7 +632,7 @@ if (villarreal) {
         left: '18%',
         players: [
           { name: 'Luengo', starts: 3 },
-          { name: 'Vivo', starts: 1 },
+          { name: 'Toni', starts: 1 },
         ],
       },
       {
@@ -639,8 +640,8 @@ if (villarreal) {
         top: '24%',
         left: '38%',
         players: [
-          { name: 'Falco Montanet', starts: 4 },
-          { name: 'Martin Vergun', starts: 1 },
+          { name: 'Toni', starts: 3 },
+          { name: 'Vergun', starts: 1 },
         ],
       },
       {
@@ -649,8 +650,8 @@ if (villarreal) {
         left: '62%',
         players: [
           { name: 'Juanma', starts: 2 },
-          { name: 'Martin Vergun', starts: 1 },
-          { name: 'Guillermo Anadon', starts: 1 },
+          { name: 'Vergun', starts: 1 },
+          { name: 'Anadon', starts: 1 },
         ],
       },
       {
@@ -660,7 +661,7 @@ if (villarreal) {
         players: [
           { name: 'Iván', starts: 2 },
           { name: 'Pilili', starts: 1 },
-          { name: 'Seydou Llopis', starts: 1 },
+          { name: 'Llopis', starts: 1 },
         ],
       },
       {
@@ -668,8 +669,8 @@ if (villarreal) {
         top: '48%',
         left: '18%',
         players: [
-          { name: 'Vivo', starts: 3 },
-          { name: 'Iker Pérez', starts: 1 },
+          { name: 'Vivo', starts: 4 },
+          { name: 'Iker', starts: 1 },
         ],
       },
       {
@@ -678,7 +679,7 @@ if (villarreal) {
         left: '38%',
         players: [
           { name: 'Ioan', starts: 2 },
-          { name: 'Moussa Traore', starts: 1 },
+          { name: 'Traore', starts: 1 },
           { name: 'Jairo', starts: 1 },
         ],
       },
@@ -688,7 +689,7 @@ if (villarreal) {
         left: '62%',
         players: [
           { name: 'Koné', starts: 2 },
-          { name: 'Alvaro Alcaide', starts: 1 },
+          { name: 'Alcaide', starts: 1 },
           { name: 'Ioan', starts: 1 },
         ],
       },
@@ -697,7 +698,7 @@ if (villarreal) {
         top: '48%',
         left: '82%',
         players: [
-          { name: 'González García', starts: 3 },
+          { name: 'Edu', starts: 3 },
           { name: 'Carrasco', starts: 1 },
         ],
       },
@@ -706,8 +707,8 @@ if (villarreal) {
         top: '75%',
         left: '38%',
         players: [
-          { name: 'García Palomar', starts: 3 },
-          { name: 'Iker Pérez', starts: 1 },
+          { name: 'Raul', starts: 3 },
+          { name: 'Iker', starts: 1 },
         ],
       },
       {
@@ -716,7 +717,7 @@ if (villarreal) {
         left: '62%',
         players: [
           { name: 'Fode', starts: 2 },
-          { name: 'Yurii Kisak', starts: 1 },
+          { name: 'Yuri', starts: 1 },
         ],
       },
     ],
@@ -738,6 +739,10 @@ if (villarreal) {
         it: 'vs Borussia Dortmund',
       },
       system: '1-3-4-2-1',
+      notes: {
+        en: 'Out of possession often 5-3-2: Toni as RCB; when Vivo stepped up Toni slid across to RB.',
+        it: 'In non possesso spesso 5-3-2: Toni da RCB; quando Vivo saliva Toni scivolava a RB.',
+      },
       players: dortmund,
     },
     {
@@ -790,7 +795,7 @@ if (villarreal) {
     },
     {
       number: 4,
-      name: 'Román Martín Vergún (Roman)',
+      name: 'Román Martín Vergún (Vergun)',
       position: 'CB',
       heightCm: 196,
       preferredFoot: 'Destro',

@@ -5,10 +5,18 @@ import { withGoalkeeperInSystem } from '../utils/formationSystem';
 interface SquadDepthPanelProps {
   depth: OppositionSquadDepth;
   teamId: string;
+  /** Shown as “{team} Squad” on the pitch card. */
+  teamName: string;
 }
 
-export default function SquadDepthPanel({ depth, teamId }: SquadDepthPanelProps) {
-  const { t, L } = useLanguage();
+export default function SquadDepthPanel({
+  depth,
+  teamId,
+  teamName,
+}: SquadDepthPanelProps) {
+  const { t, L, locale } = useLanguage();
+  const pitchTitle =
+    locale === 'it' ? `Rosa ${teamName}` : `${teamName} Squad`;
 
   return (
     <div className="squad-depth-panel">
@@ -19,8 +27,7 @@ export default function SquadDepthPanel({ depth, teamId }: SquadDepthPanelProps)
 
       <div className="tactical-pitch-card squad-depth-pitch-card">
         <div className="pitch-header">
-          {t('oppositionSquadDepthFirstXi')} (
-          {withGoalkeeperInSystem(depth.system)})
+          {pitchTitle} ({withGoalkeeperInSystem(depth.system)})
         </div>
         <div className="pitch-canvas squad-depth-canvas">
           <div className="pitch-center-line" />

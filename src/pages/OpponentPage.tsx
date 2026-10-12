@@ -237,6 +237,7 @@ export default function OpponentPage() {
               <SquadDepthPanel
                 depth={opponent.squadDepth}
                 teamId={opponent.id}
+                teamName={L(opponent.name)}
               />
             ) : null}
             <div className="section-title">{t('oppositionSubs')}</div>
@@ -264,7 +265,12 @@ export default function OpponentPage() {
             {opponent.squad.length === 0 ? (
               <p className="home-empty">{t('oppositionSquadEmpty')}</p>
             ) : (
-              <OppositionSquadTable players={opponent.squad} />
+              <OppositionSquadTable
+                players={opponent.squad}
+                teamName={L(opponent.name)}
+                teamId={opponent.id}
+                depth={opponent.squadDepth}
+              />
             )}
           </div>
         ) : null}

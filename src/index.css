@@ -2715,6 +2715,31 @@ button {
   color: var(--text-dark);
 }
 
+.opposition-squad-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 10px;
+}
+
+.opposition-squad-pdf-btn {
+  appearance: none;
+  border: 1px solid var(--border-light);
+  background: #fff;
+  color: var(--napoli-blue, #0054a6);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 7px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.opposition-squad-pdf-btn:hover {
+  border-color: var(--napoli-blue, #0054a6);
+  background: rgba(0, 84, 166, 0.04);
+}
+
 .opposition-squad-table-wrap {
   margin: 0 0 24px;
   overflow-x: auto;

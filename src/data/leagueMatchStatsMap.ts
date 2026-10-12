@@ -110,7 +110,10 @@ function parseRatioPct(raw: string): number | null {
 export function mapLeagueDynamics(pack: LeagueMatchStats): DynamicMetric[] {
   const out: DynamicMetric[] = [];
 
-  const possession = findRow(pack, 'Possession estimate %');
+  const possession =
+    findRow(pack, 'Possession % (full match)') ??
+    findRow(pack, 'Possession %') ??
+    findRow(pack, 'Possession estimate %');
   if (possession) {
     const home = parseNumber(possession.home);
     const away = parseNumber(possession.away);

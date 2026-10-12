@@ -4,6 +4,7 @@ import ReportHeader from '../components/ReportHeader';
 import Scoreboard from '../components/Scoreboard';
 import StatsDashboard from '../components/StatsDashboard';
 import Timeline from '../components/Timeline';
+import { getMatchBySlug } from '../data/matches';
 import {
   getLeagueMatchStats,
   isLeagueMatchCompetitionId,
@@ -14,6 +15,7 @@ import {
   mapLeagueTeamStats,
 } from '../data/leagueMatchStatsMap';
 import { getOpponentBySlug } from '../data/opposition';
+import { getPrimavera2Standings } from '../data/standings';
 import { useLanguage } from '../i18n/LanguageContext';
 import { localize, type Localized } from '../i18n/translations';
 import type { Formation, MatchData, TimelineEvent } from '../types/match';
@@ -74,7 +76,7 @@ function buildMatchView(pack: NonNullable<ReturnType<typeof getLeagueMatchStats>
     teamId: g.teamId,
   }));
 
-  const timeline: TimelineEvent[] = pack.goals.map((g) => {
+  let timeline: TimelineEvent[] = pack.goals.map((g) => {
     const side =
       g.teamId === pack.home.teamId ? pack.home.name : pack.away.name;
     return {
@@ -88,6 +90,20 @@ function buildMatchView(pack: NonNullable<ReturnType<typeof getLeagueMatchStats>
       },
     };
   });
+
+  // Prefer full match-report timeline (subs + goals) when fixture is linked.
+  if (pack.competitionId === 'primavera2') {
+    for (const md of getPrimavera2Standings().matchdays) {
+      const fx = md.fixtures.find((f) => f.statsSlug === pack.id);
+      if (fx?.matchSlug) {
+        const report = getMatchBySlug(fx.matchSlug);
+        if (report?.timeline?.length) {
+          timeline = report.timeline;
+        }
+        break;
+      }
+    }
+  }
 
   const formations: Formation[] = [];
   const homeScout = homeOpp?.scoutedFormations?.find((f) =>
