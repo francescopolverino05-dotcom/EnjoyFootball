@@ -2,6 +2,7 @@ import type {
   OppositionSquadDepth,
   OppositionSquadPlayer,
 } from '../types/opposition';
+import type { Locale } from '../i18n/translations';
 import { withGoalkeeperInSystem } from './formationSystem';
 
 function esc(value: string): string {
@@ -103,8 +104,10 @@ export function openOppositionSquadPdf(
   options?: {
     depth?: OppositionSquadDepth;
     teamId?: string;
+    locale?: Locale;
   }
 ): void {
+  const locale = options?.locale ?? 'en';
   const rows = players
     .map((p) => {
       const height =
@@ -119,11 +122,14 @@ export function openOppositionSquadPdf(
     })
     .join('\n');
 
-  const dateLine = new Date().toLocaleDateString(undefined, {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  });
+  const dateLine = new Date().toLocaleDateString(
+    locale === 'it' ? 'it-IT' : 'en-GB',
+    {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+    }
+  );
 
   const depthHtml =
     options?.depth && options.teamId
@@ -131,7 +137,7 @@ export function openOppositionSquadPdf(
       : '';
 
   const html = `<!DOCTYPE html>
-<html lang="en">
+<html lang="${locale === 'it' ? 'it' : 'en'}">
 <head>
   <meta charset="utf-8" />
   <title>${esc(teamName)} — ${esc(labels.title)}</title>

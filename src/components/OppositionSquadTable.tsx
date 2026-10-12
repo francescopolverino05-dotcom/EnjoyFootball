@@ -3,6 +3,11 @@ import type {
   OppositionSquadPlayer,
 } from '../types/opposition';
 import { useLanguage } from '../i18n/LanguageContext';
+import {
+  localize,
+  ui,
+  type Locale,
+} from '../i18n/translations';
 import { openOppositionSquadPdf } from '../utils/oppositionSquadPdf';
 
 interface OppositionSquadTableProps {
@@ -19,49 +24,68 @@ function cell(value: string | number | null | undefined): string {
   return String(value);
 }
 
+function pdfLabelsFor(locale: Locale, teamName: string, depth?: OppositionSquadDepth) {
+  const pitchTitle =
+    locale === 'it' ? `Rosa ${teamName}` : `${teamName} Squad`;
+  return {
+    title: ui(locale, 'oppositionSquad'),
+    depthTitle: ui(locale, 'oppositionSquadDepth'),
+    depthPitchTitle: pitchTitle,
+    depthNote: depth?.note
+      ? localize(depth.note, locale)
+      : depth
+        ? ui(locale, 'oppositionSquadDepthHint')
+        : undefined,
+    colNumber: ui(locale, 'oppositionSquadColNumber'),
+    colPlayer: ui(locale, 'oppositionSquadColPlayer'),
+    colRole: ui(locale, 'oppositionSquadColRole'),
+    colHeight: ui(locale, 'oppositionSquadColHeight'),
+    colFoot: ui(locale, 'oppositionSquadColFoot'),
+    heightUnit: 'cm',
+    generatedLabel: ui(locale, 'oppositionSquadPdfGenerated'),
+  };
+}
+
 export default function OppositionSquadTable({
   players,
   teamName,
   teamId,
   depth,
 }: OppositionSquadTableProps) {
-  const { t, L, locale } = useLanguage();
-  const pitchTitle =
-    locale === 'it' ? `Rosa ${teamName}` : `${teamName} Squad`;
+  const { t } = useLanguage();
+
+  const downloadPdf = (locale: Locale) => {
+    openOppositionSquadPdf(
+      teamName,
+      players,
+      pdfLabelsFor(locale, teamName, depth),
+      {
+        locale,
+        ...(depth && teamId ? { depth, teamId } : {}),
+      }
+    );
+  };
 
   return (
     <div className="opposition-squad-table-wrap">
       <div className="opposition-squad-toolbar">
-        <button
-          type="button"
-          className="opposition-squad-pdf-btn"
-          onClick={() =>
-            openOppositionSquadPdf(
-              teamName,
-              players,
-              {
-                title: t('oppositionSquad'),
-                depthTitle: t('oppositionSquadDepth'),
-                depthPitchTitle: pitchTitle,
-                depthNote: depth?.note
-                  ? L(depth.note)
-                  : depth
-                    ? t('oppositionSquadDepthHint')
-                    : undefined,
-                colNumber: t('oppositionSquadColNumber'),
-                colPlayer: t('oppositionSquadColPlayer'),
-                colRole: t('oppositionSquadColRole'),
-                colHeight: t('oppositionSquadColHeight'),
-                colFoot: t('oppositionSquadColFoot'),
-                heightUnit: 'cm',
-                generatedLabel: t('oppositionSquadPdfGenerated'),
-              },
-              depth && teamId ? { depth, teamId } : undefined
-            )
-          }
-        >
-          {t('oppositionSquadPdf')}
-        </button>
+        <span className="opposition-squad-pdf-label">{t('oppositionSquadPdf')}</span>
+        <div className="opposition-squad-pdf-langs" role="group" aria-label={t('oppositionSquadPdf')}>
+          <button
+            type="button"
+            className="opposition-squad-pdf-btn"
+            onClick={() => downloadPdf('en')}
+          >
+            {t('oppositionSquadPdfEn')}
+          </button>
+          <button
+            type="button"
+            className="opposition-squad-pdf-btn"
+            onClick={() => downloadPdf('it')}
+          >
+            {t('oppositionSquadPdfIt')}
+          </button>
+        </div>
       </div>
       <table className="opposition-squad-table">
         <thead>
