@@ -5,6 +5,7 @@ import type {
 import {
   localizePosition,
   localizePreferredFoot,
+  sortOppositionSquadByDepth,
 } from '../i18n/positions';
 import type { Locale } from '../i18n/translations';
 import { withGoalkeeperInSystem } from './formationSystem';
@@ -107,7 +108,7 @@ export function openOppositionSquadPdf(
   }
 ): void {
   const locale = options?.locale ?? 'en';
-  const rows = players
+  const rows = sortOppositionSquadByDepth(players)
     .map((p) => {
       const height =
         p.heightCm != null ? `${p.heightCm} ${labels.heightUnit}` : '—';

@@ -4,6 +4,10 @@ import type {
 } from '../types/opposition';
 import { useLanguage } from '../i18n/LanguageContext';
 import {
+  localizePosition,
+  sortOppositionSquadByDepth,
+} from '../i18n/positions';
+import {
   localize,
   ui,
   type Locale,
@@ -52,15 +56,16 @@ export default function OppositionSquadTable({
   teamId,
   depth,
 }: OppositionSquadTableProps) {
-  const { t } = useLanguage();
+  const { t, locale } = useLanguage();
+  const ordered = sortOppositionSquadByDepth(players);
 
-  const downloadPdf = (locale: Locale) => {
+  const downloadPdf = (pdfLocale: Locale) => {
     openOppositionSquadPdf(
       teamName,
       players,
-      pdfLabelsFor(locale, teamName, depth),
+      pdfLabelsFor(pdfLocale, teamName, depth),
       {
-        locale,
+        locale: pdfLocale,
         ...(depth && teamId ? { depth, teamId } : {}),
       }
     );
@@ -98,13 +103,13 @@ export default function OppositionSquadTable({
           </tr>
         </thead>
         <tbody>
-          {players.map((p) => (
+          {ordered.map((p) => (
             <tr key={`squad-${p.number ?? 'x'}-${p.name}`}>
               <td className="opposition-squad-num">
                 {p.number != null ? p.number : '—'}
               </td>
               <td className="opposition-squad-name">{p.name}</td>
-              <td>{cell(p.position)}</td>
+              <td>{localizePosition(p.position, locale)}</td>
               <td className="opposition-squad-meta">
                 {p.heightCm != null ? `${p.heightCm} cm` : '—'}
               </td>
