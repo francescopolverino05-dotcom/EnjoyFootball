@@ -168,7 +168,8 @@ export function openOppositionSquadPdf(
       font-size: 9pt;
       color: #64748b;
     }
-    .depth-section { margin-bottom: 18px; }
+    .page-1 { margin-bottom: 0; }
+    .depth-section { margin-bottom: 0; }
     .depth-note {
       margin: 0 0 10px;
       font-size: 9pt;
@@ -190,7 +191,7 @@ export function openOppositionSquadPdf(
     }
     .pitch {
       position: relative;
-      height: 460px;
+      height: 520px;
       background: linear-gradient(180deg, #1f7a3a 0%, #176530 100%);
       overflow: hidden;
     }
@@ -279,7 +280,11 @@ export function openOppositionSquadPdf(
       font-weight: 700;
       color: #64748b;
     }
-    .squad-section { page-break-before: auto; }
+    .squad-section.page-break {
+      page-break-before: always;
+      break-before: page;
+    }
+    .squad-section header { margin-bottom: 12px; }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -312,20 +317,40 @@ export function openOppositionSquadPdf(
     tr:nth-child(even) td { background: #f8fafc; }
     @media print {
       body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-      .depth-section { break-inside: avoid; page-break-inside: avoid; }
+      .page-1, .depth-section { break-inside: avoid; page-break-inside: avoid; }
+      .squad-section.page-break {
+        page-break-before: always;
+        break-before: page;
+      }
     }
   </style>
 </head>
 <body>
+  ${
+    depthHtml
+      ? `<div class="page-1">
   <header>
     <p class="eyebrow">Enjoy Football</p>
     <h1>${esc(teamName)}</h1>
     <p class="meta-line">${esc(labels.generatedLabel)} ${esc(dateLine)}</p>
   </header>
   ${depthHtml}
+</div>
+  <section class="squad-section page-break">
+    <header>
+      <p class="eyebrow">Enjoy Football</p>
+      <h1>${esc(teamName)} — ${esc(labels.title)}</h1>
+      <p class="meta-line">${esc(labels.generatedLabel)} ${esc(dateLine)}</p>
+    </header>
+    <table>`
+      : `<header>
+    <p class="eyebrow">Enjoy Football</p>
+    <h1>${esc(teamName)} — ${esc(labels.title)}</h1>
+    <p class="meta-line">${esc(labels.generatedLabel)} ${esc(dateLine)}</p>
+  </header>
   <section class="squad-section">
-    <h2>${esc(labels.title)}</h2>
-    <table>
+    <table>`
+  }
       <thead>
         <tr>
           <th>${esc(labels.colNumber)}</th>
