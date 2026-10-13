@@ -1870,30 +1870,29 @@ attachReferencePack('spezia', '2026-10-24_campionato-u19-vs-spezia', [
 
 attachReferencePack('bari', '2026-10-17_campionato-bari-vs-u19', [
   {
-    id: 'bari-ref-ascoli',
+    id: 'bari-ref-salernitana',
     title: {
-      en: 'Bari vs Ascoli 2–1',
-      it: 'Bari vs Ascoli 2–1',
+      en: 'Salernitana vs Bari 0–4',
+      it: 'Salernitana vs Bari 0–4',
     },
     competition: {
-      en: 'Primavera 2 · Matchday 2',
-      it: 'Primavera 2 · Giornata 2',
+      en: 'Reference',
+      it: 'Riferimento',
     },
-    score: '2–1',
-    videoFile: 'https://vimeo.com/1226442948/3870ec7bac',
+    score: '0–4',
+    videoFile: 'https://vimeo.com/1235611592/1c16123127',
   },
   {
     id: 'bari-ref-palermo',
     title: {
-      en: 'Palermo vs Bari 2–2',
-      it: 'Palermo vs Bari 2–2',
+      en: 'Palermo vs Bari',
+      it: 'Palermo vs Bari',
     },
     competition: {
-      en: 'Primavera 2',
-      it: 'Primavera 2',
+      en: 'Primavera 2 · Matchday 3',
+      it: 'Primavera 2 · Giornata 3',
     },
-    score: '2–2',
-    videoFile: 'https://vimeo.com/1230216777/1216012995',
+    videoFile: 'https://vimeo.com/1235614846/7346b8ba76',
   },
   {
     id: 'bari-ref-palermo-coppa',
@@ -1907,6 +1906,19 @@ attachReferencePack('bari', '2026-10-17_campionato-bari-vs-u19', [
     },
     score: '3–2',
     videoFile: 'https://vimeo.com/1230878196/46f5b3f40c',
+  },
+  {
+    id: 'bari-ref-ascoli',
+    title: {
+      en: 'Bari vs Ascoli 2–1',
+      it: 'Bari vs Ascoli 2–1',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 2',
+      it: 'Primavera 2 · Giornata 2',
+    },
+    score: '2–1',
+    videoFile: 'https://vimeo.com/1226442948/3870ec7bac',
   },
 ]);
 
