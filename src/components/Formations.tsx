@@ -44,11 +44,7 @@ export default function Formations({ formations, matchSlug }: FormationsProps) {
                     left: player.left,
                   }}
                 >
-                  <span className="pitch-player-name">
-                    {player.number != null && player.number > 0
-                      ? `${player.name} (${player.number})`
-                      : player.name}
-                  </span>
+                  <span className="pitch-player-name">{player.name}</span>
                   {player.number != null && player.number > 0 ? player.number : ''}
                 </div>
               ))}
