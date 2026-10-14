@@ -938,14 +938,15 @@ if (villarreal) {
 }
 
 /**
- * Bari XI — 4-3-1-2 rombo (same shirt slots both matches: #4 Mundo CDM).
- * Sources: TM 5014172 (vs Ascoli, TM mislabels 4-4-1-1) · TM 4913072 (vs Palermo Coppa).
+ * Bari XI — 4-3-1-2 rombo (shirt slots RTL: 1; 2-5-6-3; 7-4-8; 10; 9-11).
+ * Sources: Salernitana tabellino · Latina distinta · TM 5014172 Ascoli · TM 4913072 Palermo Coppa.
+ * (LCB is #6 De Lucia on sheets; CDM is #4 Mundo — not a second #4 in the back.)
  */
 const bari = OPPONENTS.find((o) => o.id === 'bari');
 if (bari) {
   /**
-   * Shared 4-3-1-2 slots. Pitch attacks downward: team-left = screen-right.
-   * #2 RB (screen-left), #3 LB (screen-right); #4 CDM; #8 left / #7 right of diamond; #11 LST / #9 RST.
+   * Shared 4-3-1-2 slots. Pitch attacks downward: team-right = screen-left.
+   * Back RTL: #2 RB, #5 RCB, #6 LCB, #3 LB. Mid RTL: #7 RCM, #4 CDM, #8 LCM.
    */
   const bari4312 = (
     names: {
@@ -954,9 +955,9 @@ if (bari) {
       lcb: string;
       rcb: string;
       rb: string;
-      lcm: string;
-      cdm: string;
       rcm: string;
+      cdm: string;
+      lcm: string;
       cam: string;
       lst: string;
       rst: string;
@@ -967,24 +968,24 @@ if (bari) {
       lcb: number;
       rcb: number;
       rb: number;
-      lcm: number;
-      cdm: number;
       rcm: number;
+      cdm: number;
+      lcm: number;
       cam: number;
       lst: number;
       rst: number;
     } = {
       gk: 1,
-      lb: 3,
-      lcb: 6,
-      rcb: 5,
       rb: 2,
-      lcm: 7,
+      rcb: 5,
+      lcb: 6,
+      lb: 3,
+      rcm: 7,
       cdm: 4,
-      rcm: 8,
+      lcm: 8,
       cam: 10,
-      lst: 11,
       rst: 9,
+      lst: 11,
     }
   ): PitchPlayer[] => [
     {
@@ -999,46 +1000,86 @@ if (bari) {
     { number: nums.rcb, name: names.rcb, teamId: 'bari', top: '20%', left: '38%' },
     { number: nums.lcb, name: names.lcb, teamId: 'bari', top: '20%', left: '62%' },
     { number: nums.lb, name: names.lb, teamId: 'bari', top: '22%', left: '82%' },
-    // Diamond: #8 (Scarano side) team-left, #7 team-right
-    { number: nums.lcm, name: names.lcm, teamId: 'bari', top: '42%', left: '28%' },
+    { number: nums.rcm, name: names.rcm, teamId: 'bari', top: '42%', left: '28%' },
     { number: nums.cdm, name: names.cdm, teamId: 'bari', top: '38%', left: '50%' },
-    { number: nums.rcm, name: names.rcm, teamId: 'bari', top: '42%', left: '72%' },
+    { number: nums.lcm, name: names.lcm, teamId: 'bari', top: '42%', left: '72%' },
     { number: nums.cam, name: names.cam, teamId: 'bari', top: '58%', left: '50%' },
     { number: nums.rst, name: names.rst, teamId: 'bari', top: '75%', left: '38%' },
     { number: nums.lst, name: names.lst, teamId: 'bari', top: '75%', left: '62%' },
   ];
 
-  const vsAscoli = bari4312({
-    gk: 'Mezzapesa',
-    lb: 'Spadavecchia',
-    lcb: 'De Lucia',
-    rcb: 'Dimonte',
+  const vsSalernitana = bari4312({
+    gk: 'Cipolla',
     rb: 'Emiliano',
-    lcm: 'Valoroso',
+    rcb: 'Dimonte',
+    lcb: 'De Lucia',
+    lb: 'Legrottaglie',
+    rcm: 'Valoroso',
     cdm: 'Mundo',
-    rcm: 'Scarano',
+    lcm: 'Scarano',
     cam: 'Alonso Cam.',
-    lst: 'Italia',
     rst: 'Scifoni',
+    lst: 'Italia',
   });
 
-  const vsPalermo = bari4312({
+  const vsAscoli = bari4312({
     gk: 'Mezzapesa',
-    lb: 'Legrottaglie',
-    lcb: 'De Lucia',
-    rcb: 'Dimonte',
     rb: 'Emiliano',
-    lcm: 'Vitale',
+    rcb: 'Dimonte',
+    lcb: 'De Lucia',
+    lb: 'Spadavecchia',
+    rcm: 'Valoroso',
     cdm: 'Mundo',
-    rcm: 'Grimaldi',
+    lcm: 'Scarano',
     cam: 'Alonso Cam.',
-    lst: 'Keita',
+    rst: 'Scifoni',
+    lst: 'Italia',
+  });
+
+  const vsPalermoCoppa = bari4312({
+    gk: 'Mezzapesa',
+    rb: 'Emiliano',
+    rcb: 'Dimonte',
+    lcb: 'De Lucia',
+    lb: 'Legrottaglie',
+    rcm: 'Vitale',
+    cdm: 'Mundo',
+    lcm: 'Grimaldi',
+    cam: 'Alonso Cam.',
     rst: 'Leone',
+    lst: 'Keita',
+  });
+
+  const vsLatina = bari4312({
+    gk: 'Falbo',
+    rb: 'Emiliano',
+    rcb: 'Dimonte',
+    lcb: 'De Lucia',
+    lb: 'Legrottaglie',
+    rcm: 'Vitale',
+    cdm: 'Mundo',
+    lcm: 'Scarano',
+    cam: 'Alonso Cam.',
+    rst: 'Leone',
+    lst: 'Felice',
   });
 
   bari.formationSystem = '1-4-3-1-2';
-  bari.starters = vsAscoli;
+  bari.starters = vsLatina;
   bari.scoutedFormations = [
+    {
+      id: 'bari-vs-salernitana',
+      label: {
+        en: 'vs Salernitana (4–0)',
+        it: 'vs Salernitana (4–0)',
+      },
+      system: '4-3-1-2',
+      players: vsSalernitana,
+      notes: {
+        en: 'Primavera 2 MD1, 5 Sep 2026 (tabellino). Cipolla in goal; Legrottaglie at LB. Goals: Dimonte, Italia, Campagna, Grimaldi. Subs: Grimaldi, Leone, Pietraniello, Felice, Vitale.',
+        it: 'Primavera 2 gior. 1, 5 set 2026 (tabellino). Cipolla in porta; Legrottaglie terzino sinistro. Gol: Dimonte, Italia, Campagna, Grimaldi. Sub: Grimaldi, Leone, Pietraniello, Felice, Vitale.',
+      },
+    },
     {
       id: 'bari-vs-ascoli',
       label: {
@@ -1048,86 +1089,103 @@ if (bari) {
       system: '4-3-1-2',
       players: vsAscoli,
       notes: {
-        en: 'Primavera 2 MD2, 12 Sep 2026 (TM 5014172). Same diamond slots as Coppa: Mundo (#4) CDM, Alonso Cam. as 10. TM lists 4-4-1-1 in error. Subs: Vitale (Valoroso), Felice (Scifoni), Leone (Italia), Grimaldi (Scarano).',
-        it: 'Primavera 2 gior. 2, 12 set 2026 (TM 5014172). Stessi slot a rombo della Coppa: Mundo (#4) CDM, Alonso Cam. trequartista. TM riporta 4-4-1-1 per errore. Sub: Vitale (Valoroso), Felice (Scifoni), Leone (Italia), Grimaldi (Scarano).',
+        en: 'Primavera 2 MD2, 12 Sep 2026 (TM 5014172). Spadavecchia at LB. TM lists 4-4-1-1 in error — same diamond shirts as other games. Subs: Vitale, Felice, Leone, Grimaldi.',
+        it: 'Primavera 2 gior. 2, 12 set 2026 (TM 5014172). Spadavecchia terzino sinistro. TM riporta 4-4-1-1 per errore — stessi numeri a rombo. Sub: Vitale, Felice, Leone, Grimaldi.',
       },
     },
     {
-      id: 'bari-vs-palermo',
+      id: 'bari-vs-palermo-coppa',
       label: {
         en: 'vs Palermo (Coppa 3–2)',
         it: 'vs Palermo (Coppa 3–2)',
       },
       system: '4-3-1-2',
-      players: vsPalermo,
+      players: vsPalermoCoppa,
       notes: {
-        en: 'Coppa Italia Primavera, 26 Sep 2026. Diamond midfield: Mundo at the base, Alonso Cam. as 10. Subs: Scarano (Grimaldi), Felice (Leone), Italia (Keita), Valoroso (Vitale), Caputo (Alonso Cam.).',
-        it: 'Coppa Italia Primavera, 26 set 2026. Centrocampo a rombo: Mundo in base, Alonso Cam. trequartista. Sub: Scarano (Grimaldi), Felice (Leone), Italia (Keita), Valoroso (Vitale), Caputo (Alonso Cam.).',
+        en: 'Coppa Italia Primavera, 26 Sep 2026 (TM 4913072). Vitale (#7) / Grimaldi (#8) diamond sides; Leone–Keita up top. Subs: Scarano, Felice, Italia, Valoroso, Caputo.',
+        it: 'Coppa Italia Primavera, 26 set 2026 (TM 4913072). Vitale (#7) / Grimaldi (#8) ai lati del rombo; Leone–Keita davanti. Sub: Scarano, Felice, Italia, Valoroso, Caputo.',
+      },
+    },
+    {
+      id: 'bari-vs-latina',
+      label: {
+        en: 'vs Latina (0–0)',
+        it: 'vs Latina (0–0)',
+      },
+      system: '4-3-1-2',
+      players: vsLatina,
+      notes: {
+        en: 'Primavera 2 MD4, 10 Oct 2026 (distinta). Falbo in goal; Vitale (#7), Scarano (#8), Leone–Felice. Most recent scouted XI.',
+        it: 'Primavera 2 gior. 4, 10 ott 2026 (distinta). Falbo in porta; Vitale (#7), Scarano (#8), Leone–Felice. XI scoutata più recente.',
       },
     },
   ];
-  /** Depth = Ascoli + Palermo Coppa onto 4-3-1-2 diamond (2 XIs). */
+  /** Depth = last 4 scouted XIs onto 4-3-1-2 diamond. */
   bari.squadDepth = {
     system: '1-4-3-1-2',
     note: {
-      en: 'Last 2 scouted XIs (vs Ascoli Primavera 2, vs Palermo Coppa) mapped onto 4-3-1-2. Order = most starts in that slot.',
-      it: 'Ultime 2 formazioni scoutate (vs Ascoli Primavera 2, vs Palermo Coppa) mappate sul 4-3-1-2. Ordine = più partite in quel ruolo.',
+      en: 'Last 4 scouted XIs (Salernitana, Ascoli, Palermo Coppa, Latina) mapped onto 4-3-1-2. Order = most starts in that slot.',
+      it: 'Ultime 4 formazioni scoutate (Salernitana, Ascoli, Palermo Coppa, Latina) mappate sul 4-3-1-2. Ordine = più partite in quel ruolo.',
     },
     slots: [
       {
         role: 'GK',
         top: '10%',
         left: '50%',
-        players: [{ name: 'Mezzapesa', starts: 2 }],
+        players: [
+          { name: 'Mezzapesa', starts: 2 },
+          { name: 'Cipolla', starts: 1 },
+          { name: 'Falbo', starts: 1 },
+        ],
       },
       {
         role: 'RB',
         top: '26%',
         left: '18%',
-        players: [{ name: 'Emiliano', starts: 2 }],
+        players: [{ name: 'Emiliano', starts: 4 }],
       },
       {
         role: 'RCB',
         top: '24%',
         left: '38%',
-        players: [{ name: 'Dimonte', starts: 2 }],
+        players: [{ name: 'Dimonte', starts: 4 }],
       },
       {
         role: 'LCB',
         top: '24%',
         left: '62%',
-        players: [{ name: 'De Lucia', starts: 2 }],
+        players: [{ name: 'De Lucia', starts: 4 }],
       },
       {
         role: 'LB',
         top: '26%',
         left: '82%',
         players: [
+          { name: 'Legrottaglie', starts: 3 },
           { name: 'Spadavecchia', starts: 1 },
-          { name: 'Legrottaglie', starts: 1 },
         ],
       },
       {
-        role: 'LCM',
+        role: 'RCM',
         top: '45%',
         left: '28%',
         players: [
-          { name: 'Valoroso', starts: 1 },
-          { name: 'Vitale', starts: 1 },
+          { name: 'Valoroso', starts: 2 },
+          { name: 'Vitale', starts: 2 },
         ],
       },
       {
         role: 'CDM',
         top: '42%',
         left: '50%',
-        players: [{ name: 'Mundo', starts: 2 }],
+        players: [{ name: 'Mundo', starts: 4 }],
       },
       {
-        role: 'RCM',
+        role: 'LCM',
         top: '45%',
         left: '72%',
         players: [
-          { name: 'Scarano', starts: 1 },
+          { name: 'Scarano', starts: 3 },
           { name: 'Grimaldi', starts: 1 },
         ],
       },
@@ -1135,15 +1193,15 @@ if (bari) {
         role: 'CAM',
         top: '60%',
         left: '50%',
-        players: [{ name: 'Alonso Cam.', starts: 2 }],
+        players: [{ name: 'Alonso Cam.', starts: 4 }],
       },
       {
         role: 'RST',
         top: '75%',
         left: '38%',
         players: [
-          { name: 'Scifoni', starts: 1 },
-          { name: 'Leone', starts: 1 },
+          { name: 'Scifoni', starts: 2 },
+          { name: 'Leone', starts: 2 },
         ],
       },
       {
@@ -1151,38 +1209,209 @@ if (bari) {
         top: '75%',
         left: '62%',
         players: [
-          { name: 'Italia', starts: 1 },
+          { name: 'Italia', starts: 2 },
+          { name: 'Felice', starts: 1 },
           { name: 'Keita', starts: 1 },
         ],
       },
     ],
   };
+  /** Squad bios from staff list; shirt numbers from Salernitana tabellino (primary). */
   bari.squad = [
-    { number: 1, name: 'Mezzapesa', position: 'GK', isGk: true },
-    { number: 2, name: 'Emiliano', position: 'RB' },
-    { number: 3, name: 'Spadavecchia', position: 'LB' },
-    { number: 4, name: 'Mundo', position: 'CDM' },
-    { number: 5, name: 'Dimonte', position: 'CB' },
-    { number: 6, name: 'De Lucia', position: 'CB' },
-    { number: 7, name: 'Valoroso', position: 'CM' },
-    { number: 8, name: 'Scarano', position: 'CM' },
-    { number: 9, name: 'Scifoni', position: 'ST' },
-    { number: 10, name: 'Alonso Campagna', position: 'CAM' },
-    { number: 11, name: 'Italia', position: 'ST' },
-    { number: 12, name: 'Scattarelli', position: 'GK', isGk: true },
-    { number: 13, name: 'Caputo', position: 'CB' },
-    { number: 14, name: 'Napoleone', position: 'CB' },
-    { number: 15, name: 'Vilums', position: 'CB' },
-    { number: 16, name: 'Grimaldi', position: 'CM' },
-    { number: 17, name: 'Pietraniello', position: 'CM' },
-    { number: 18, name: 'Vitale', position: 'CAM' },
-    { number: 19, name: 'Pizzo', position: 'CM' },
-    { number: 20, name: 'Leone', position: 'ST' },
-    { number: 21, name: 'Barbera', position: 'CM' },
-    { number: 22, name: 'Falbo', position: 'GK', isGk: true },
-    { number: 23, name: 'Felice', position: 'ST' },
-    { name: 'Legrottaglie', position: 'LB' },
-    { name: 'Keita', position: 'ST' },
+    {
+      number: 1,
+      name: 'Francesco Cipolla',
+      position: 'GK',
+      isGk: true,
+      birthYear: 2009,
+      heightCm: 182,
+      preferredFoot: 'Destro',
+    },
+    {
+      number: 22,
+      name: 'Francesco Falbo',
+      position: 'GK',
+      isGk: true,
+      birthYear: 2009,
+    },
+    {
+      name: 'Alessandro Mezzapesa',
+      position: 'GK',
+      isGk: true,
+      birthYear: 2008,
+      heightCm: 190,
+      preferredFoot: 'Destro',
+    },
+    {
+      number: 12,
+      name: 'Giovanni Scattarelli',
+      position: 'GK',
+      isGk: true,
+      birthYear: 2009,
+      heightCm: 183,
+      preferredFoot: 'Sinistro',
+    },
+    {
+      number: 13,
+      name: 'Leonardo Caputo',
+      position: 'CB',
+      birthYear: 2009,
+      heightCm: 181,
+      preferredFoot: 'Sinistro',
+    },
+    {
+      number: 6,
+      name: 'Mattia De Lucia',
+      position: 'CB',
+      birthYear: 2008,
+    },
+    {
+      number: 5,
+      name: 'Paolo Dimonte',
+      position: 'CB',
+      birthYear: 2008,
+    },
+    {
+      number: 14,
+      name: 'Francesco Napoleone',
+      position: 'CB',
+      birthYear: 2009,
+      preferredFoot: 'Destro',
+    },
+    {
+      number: 15,
+      name: 'Karlis Vilums',
+      position: 'CB',
+      birthYear: 2009,
+      heightCm: 194,
+      preferredFoot: 'Sinistro',
+    },
+    {
+      name: 'Pantaleo Spadavecchia',
+      position: 'RB',
+      birthYear: 2007,
+      heightCm: 180,
+      preferredFoot: 'Destro',
+    },
+    {
+      number: 2,
+      name: 'Gianmarco Emiliano',
+      position: 'RB',
+      birthYear: 2008,
+    },
+    {
+      number: 7,
+      name: 'Cristian Valoroso',
+      position: 'LB',
+      birthYear: 2009,
+      preferredFoot: 'Sinistro',
+    },
+    {
+      name: 'Nicola Barbera',
+      position: 'CM',
+      birthYear: 2009,
+    },
+    {
+      number: 10,
+      name: 'Leonardo Alonso Campagna',
+      position: 'CM',
+      birthYear: 2008,
+      heightCm: 176,
+      preferredFoot: 'Destro',
+    },
+    {
+      number: 16,
+      name: 'Vincenzo Grimaldi',
+      position: 'CDM',
+      birthYear: 2009,
+      preferredFoot: 'Destro',
+    },
+    {
+      number: 3,
+      name: 'Umberto Legrottaglie',
+      position: 'LM',
+      birthYear: 2008,
+      heightCm: 175,
+      preferredFoot: 'Sinistro',
+    },
+    {
+      number: 4,
+      name: 'Nicolò Mundo',
+      position: 'CM',
+      birthYear: 2008,
+      preferredFoot: 'Sinistro',
+    },
+    {
+      number: 17,
+      name: 'Alessandro Pietraniello',
+      position: 'CM',
+      birthYear: 2009,
+      heightCm: 178,
+      preferredFoot: 'Ambidestro',
+    },
+    {
+      number: 19,
+      name: 'Benedetto Pizzo',
+      position: 'CM',
+      birthYear: 2008,
+      heightCm: 186,
+      preferredFoot: 'Destro',
+    },
+    {
+      number: 8,
+      name: 'Giuseppe Scarano',
+      position: 'CM',
+      birthYear: 2008,
+      preferredFoot: 'Destro',
+    },
+    {
+      number: 18,
+      name: 'Riccardo Vitale',
+      position: 'CAM',
+      birthYear: 2009,
+      preferredFoot: 'Destro',
+    },
+    {
+      name: 'Sakoba Keita',
+      position: 'LW',
+      birthYear: 2008,
+      preferredFoot: 'Destro',
+    },
+    {
+      number: 9,
+      name: 'Cristian Scifoni',
+      position: 'RW',
+      birthYear: 2008,
+      preferredFoot: 'Destro',
+    },
+    {
+      number: 21,
+      name: 'Giuseppe Felice',
+      position: 'ST',
+      birthYear: 2009,
+      heightCm: 180,
+      preferredFoot: 'Destro',
+    },
+    {
+      number: 11,
+      name: 'Matteo Italia',
+      position: 'ST',
+      birthYear: 2008,
+      heightCm: 175,
+      preferredFoot: 'Destro',
+    },
+    {
+      number: 20,
+      name: 'Gaetano Leone',
+      position: 'ST',
+      birthYear: 2009,
+    },
+    {
+      number: 23,
+      name: 'Amara Kader Sanogo',
+      position: 'ST',
+      birthYear: 2010,
+    },
   ];
 }
 
