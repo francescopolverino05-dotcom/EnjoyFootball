@@ -939,7 +939,7 @@ if (villarreal) {
 
 /**
  * Bari XI — 4-3-1-2 rombo (shirt slots RTL: 1; 2-5-6-3; 7-4-8; 10; 9-11).
- * Sources: Salernitana tabellino · Latina distinta · TM 5014172 Ascoli · TM 4913072 Palermo Coppa.
+ * Sources: Salernitana tabellino · Latina distinta · TM 5014172 Ascoli · TM 5014185 Palermo MD3 · TM 4913072 Palermo Coppa.
  * (LCB is #6 De Lucia on sheets; CDM is #4 Mundo — not a second #4 in the back.)
  */
 const bari = OPPONENTS.find((o) => o.id === 'bari');
@@ -1036,6 +1036,21 @@ if (bari) {
     lst: 'Italia',
   });
 
+  /** Official shirts 1–11 map cleanly onto 4-3-1-2; TM labels 3-4-2-1. */
+  const vsPalermo = bari4312({
+    gk: 'Mezzapesa',
+    rb: 'Emiliano',
+    rcb: 'Dimonte',
+    lcb: 'De Lucia',
+    lb: 'Caputo',
+    rcm: 'Vitale',
+    cdm: 'Mundo',
+    lcm: 'Scarano',
+    cam: 'Alonso Cam.',
+    rst: 'Leone',
+    lst: 'Italia',
+  });
+
   const vsPalermoCoppa = bari4312({
     gk: 'Mezzapesa',
     rb: 'Emiliano',
@@ -1094,6 +1109,19 @@ if (bari) {
       },
     },
     {
+      id: 'bari-vs-palermo',
+      label: {
+        en: 'vs Palermo (2–2)',
+        it: 'vs Palermo (2–2)',
+      },
+      system: '4-3-1-2',
+      players: vsPalermo,
+      notes: {
+        en: 'Primavera 2 MD3, 19 Sep 2026 (TM 5014185). Official shirts = diamond: Caputo (#3) LB, Vitale (#7) / Scarano (#8), Leone–Italia. TM lists 3-4-2-1. Goals: Leone, Scarano. Subs: Felice, Barbera, Valoroso, Scifoni, Napoleone.',
+        it: 'Primavera 2 gior. 3, 19 set 2026 (TM 5014185). Numeri ufficiali = rombo: Caputo (#3) TS, Vitale (#7) / Scarano (#8), Leone–Italia. TM riporta 3-4-2-1. Gol: Leone, Scarano. Sub: Felice, Barbera, Valoroso, Scifoni, Napoleone.',
+      },
+    },
+    {
       id: 'bari-vs-palermo-coppa',
       label: {
         en: 'vs Palermo (Coppa 3–2)',
@@ -1120,12 +1148,12 @@ if (bari) {
       },
     },
   ];
-  /** Depth = last 4 scouted XIs onto 4-3-1-2 diamond. */
+  /** Depth = all 5 scouted XIs onto 4-3-1-2 diamond. */
   bari.squadDepth = {
     system: '1-4-3-1-2',
     note: {
-      en: 'Last 4 scouted XIs (Salernitana, Ascoli, Palermo Coppa, Latina) mapped onto 4-3-1-2. Order = most starts in that slot.',
-      it: 'Ultime 4 formazioni scoutate (Salernitana, Ascoli, Palermo Coppa, Latina) mappate sul 4-3-1-2. Ordine = più partite in quel ruolo.',
+      en: 'Last 5 scouted XIs (Salernitana, Ascoli, Palermo MD3, Palermo Coppa, Latina) mapped onto 4-3-1-2. Order = most starts in that slot.',
+      it: 'Ultime 5 formazioni scoutate (Salernitana, Ascoli, Palermo gior. 3, Palermo Coppa, Latina) mappate sul 4-3-1-2. Ordine = più partite in quel ruolo.',
     },
     slots: [
       {
@@ -1133,7 +1161,7 @@ if (bari) {
         top: '10%',
         left: '50%',
         players: [
-          { name: 'Mezzapesa', starts: 2 },
+          { name: 'Mezzapesa', starts: 3 },
           { name: 'Cipolla', starts: 1 },
           { name: 'Falbo', starts: 1 },
         ],
@@ -1142,19 +1170,19 @@ if (bari) {
         role: 'RB',
         top: '26%',
         left: '18%',
-        players: [{ name: 'Emiliano', starts: 4 }],
+        players: [{ name: 'Emiliano', starts: 5 }],
       },
       {
         role: 'RCB',
         top: '24%',
         left: '38%',
-        players: [{ name: 'Dimonte', starts: 4 }],
+        players: [{ name: 'Dimonte', starts: 5 }],
       },
       {
         role: 'LCB',
         top: '24%',
         left: '62%',
-        players: [{ name: 'De Lucia', starts: 4 }],
+        players: [{ name: 'De Lucia', starts: 5 }],
       },
       {
         role: 'LB',
@@ -1163,6 +1191,7 @@ if (bari) {
         players: [
           { name: 'Legrottaglie', starts: 3 },
           { name: 'Spadavecchia', starts: 1 },
+          { name: 'Caputo', starts: 1 },
         ],
       },
       {
@@ -1170,22 +1199,22 @@ if (bari) {
         top: '45%',
         left: '28%',
         players: [
+          { name: 'Vitale', starts: 3 },
           { name: 'Valoroso', starts: 2 },
-          { name: 'Vitale', starts: 2 },
         ],
       },
       {
         role: 'CDM',
         top: '42%',
         left: '50%',
-        players: [{ name: 'Mundo', starts: 4 }],
+        players: [{ name: 'Mundo', starts: 5 }],
       },
       {
         role: 'LCM',
         top: '45%',
         left: '72%',
         players: [
-          { name: 'Scarano', starts: 3 },
+          { name: 'Scarano', starts: 4 },
           { name: 'Grimaldi', starts: 1 },
         ],
       },
@@ -1193,15 +1222,15 @@ if (bari) {
         role: 'CAM',
         top: '60%',
         left: '50%',
-        players: [{ name: 'Alonso Cam.', starts: 4 }],
+        players: [{ name: 'Alonso Cam.', starts: 5 }],
       },
       {
         role: 'RST',
         top: '75%',
         left: '38%',
         players: [
+          { name: 'Leone', starts: 3 },
           { name: 'Scifoni', starts: 2 },
-          { name: 'Leone', starts: 2 },
         ],
       },
       {
@@ -1209,7 +1238,7 @@ if (bari) {
         top: '75%',
         left: '62%',
         players: [
-          { name: 'Italia', starts: 2 },
+          { name: 'Italia', starts: 3 },
           { name: 'Felice', starts: 1 },
           { name: 'Keita', starts: 1 },
         ],
@@ -2114,13 +2143,14 @@ attachReferencePack('bari', '2026-10-17_campionato-bari-vs-u19', [
   {
     id: 'bari-ref-palermo',
     title: {
-      en: 'Palermo vs Bari',
-      it: 'Palermo vs Bari',
+      en: 'Palermo vs Bari 2–2',
+      it: 'Palermo vs Bari 2–2',
     },
     competition: {
       en: 'Primavera 2 · Matchday 3',
       it: 'Primavera 2 · Giornata 3',
     },
+    score: '2–2',
     videoFile: 'https://vimeo.com/1235614846/7346b8ba76',
   },
   {
