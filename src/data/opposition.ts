@@ -1245,10 +1245,9 @@ if (bari) {
       },
     ],
   };
-  /** Squad bios from staff list; shirt numbers from Salernitana tabellino (primary). */
+  /** Squad bios from staff list (no shirt numbers — pitch uses role slots only). */
   bari.squad = [
     {
-      number: 1,
       name: 'Francesco Cipolla',
       position: 'GK',
       isGk: true,
@@ -1257,7 +1256,6 @@ if (bari) {
       preferredFoot: 'Destro',
     },
     {
-      number: 22,
       name: 'Francesco Falbo',
       position: 'GK',
       isGk: true,
@@ -1272,7 +1270,6 @@ if (bari) {
       preferredFoot: 'Destro',
     },
     {
-      number: 12,
       name: 'Giovanni Scattarelli',
       position: 'GK',
       isGk: true,
@@ -1281,7 +1278,6 @@ if (bari) {
       preferredFoot: 'Sinistro',
     },
     {
-      number: 13,
       name: 'Leonardo Caputo',
       position: 'CB',
       birthYear: 2009,
@@ -1289,26 +1285,22 @@ if (bari) {
       preferredFoot: 'Sinistro',
     },
     {
-      number: 6,
       name: 'Mattia De Lucia',
       position: 'CB',
       birthYear: 2008,
     },
     {
-      number: 5,
       name: 'Paolo Dimonte',
       position: 'CB',
       birthYear: 2008,
     },
     {
-      number: 14,
       name: 'Francesco Napoleone',
       position: 'CB',
       birthYear: 2009,
       preferredFoot: 'Destro',
     },
     {
-      number: 15,
       name: 'Karlis Vilums',
       position: 'CB',
       birthYear: 2009,
@@ -1323,13 +1315,11 @@ if (bari) {
       preferredFoot: 'Destro',
     },
     {
-      number: 2,
       name: 'Gianmarco Emiliano',
       position: 'RB',
       birthYear: 2008,
     },
     {
-      number: 7,
       name: 'Cristian Valoroso',
       position: 'LB',
       birthYear: 2009,
@@ -1341,7 +1331,6 @@ if (bari) {
       birthYear: 2009,
     },
     {
-      number: 10,
       name: 'Leonardo Alonso Campagna',
       position: 'CM',
       birthYear: 2008,
@@ -1349,14 +1338,12 @@ if (bari) {
       preferredFoot: 'Destro',
     },
     {
-      number: 16,
       name: 'Vincenzo Grimaldi',
       position: 'CDM',
       birthYear: 2009,
       preferredFoot: 'Destro',
     },
     {
-      number: 3,
       name: 'Umberto Legrottaglie',
       position: 'LM',
       birthYear: 2008,
@@ -1364,14 +1351,12 @@ if (bari) {
       preferredFoot: 'Sinistro',
     },
     {
-      number: 4,
       name: 'Nicolò Mundo',
       position: 'CM',
       birthYear: 2008,
       preferredFoot: 'Sinistro',
     },
     {
-      number: 17,
       name: 'Alessandro Pietraniello',
       position: 'CM',
       birthYear: 2009,
@@ -1379,7 +1364,6 @@ if (bari) {
       preferredFoot: 'Ambidestro',
     },
     {
-      number: 19,
       name: 'Benedetto Pizzo',
       position: 'CM',
       birthYear: 2008,
@@ -1387,14 +1371,12 @@ if (bari) {
       preferredFoot: 'Destro',
     },
     {
-      number: 8,
       name: 'Giuseppe Scarano',
       position: 'CM',
       birthYear: 2008,
       preferredFoot: 'Destro',
     },
     {
-      number: 18,
       name: 'Riccardo Vitale',
       position: 'CAM',
       birthYear: 2009,
@@ -1407,14 +1389,12 @@ if (bari) {
       preferredFoot: 'Destro',
     },
     {
-      number: 9,
       name: 'Cristian Scifoni',
       position: 'RW',
       birthYear: 2008,
       preferredFoot: 'Destro',
     },
     {
-      number: 21,
       name: 'Giuseppe Felice',
       position: 'ST',
       birthYear: 2009,
@@ -1422,7 +1402,6 @@ if (bari) {
       preferredFoot: 'Destro',
     },
     {
-      number: 11,
       name: 'Matteo Italia',
       position: 'ST',
       birthYear: 2008,
@@ -1430,13 +1409,11 @@ if (bari) {
       preferredFoot: 'Destro',
     },
     {
-      number: 20,
       name: 'Gaetano Leone',
       position: 'ST',
       birthYear: 2009,
     },
     {
-      number: 23,
       name: 'Amara Kader Sanogo',
       position: 'ST',
       birthYear: 2010,
