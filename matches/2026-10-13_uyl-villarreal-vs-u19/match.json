@@ -934,6 +934,13 @@
       }
     ]
   },
+  "video": {
+    "fullMatch": "https://vimeo.com/1235913496/d060781749",
+    "notes": {
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
+    }
+  },
   "clips": [],
   "analysisVideos": []
 }
