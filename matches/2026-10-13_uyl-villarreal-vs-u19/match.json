@@ -462,172 +462,8 @@
       ]
     }
   ],
-  "dynamics": [
-    {
-      "name": {
-        "en": "Possession %",
-        "it": "Possesso Palla %"
-      },
-      "homeValue": 59,
-      "awayValue": 41,
-      "unit": "%"
-    },
-    {
-      "name": {
-        "en": "Shot Accuracy %",
-        "it": "Precisione Tiri %"
-      },
-      "homeValue": 36,
-      "awayValue": 0,
-      "unit": "%"
-    }
-  ],
-  "teamStats": [
-    {
-      "category": {
-        "en": "General",
-        "it": "Generale"
-      },
-      "name": {
-        "en": "Formation",
-        "it": "Modulo"
-      },
-      "home": {
-        "en": "4-3-3",
-        "it": "4-3-3"
-      },
-      "away": {
-        "en": "3-4-2-1",
-        "it": "3-4-2-1"
-      }
-    },
-    {
-      "category": {
-        "en": "General",
-        "it": "Generale"
-      },
-      "name": {
-        "en": "Possession %",
-        "it": "Possesso %"
-      },
-      "home": {
-        "en": "59%",
-        "it": "59%"
-      },
-      "away": {
-        "en": "41%",
-        "it": "41%"
-      }
-    },
-    {
-      "category": {
-        "en": "General",
-        "it": "Generale"
-      },
-      "name": {
-        "en": "Shots (On Target)",
-        "it": "Tiri (In Porta)"
-      },
-      "home": {
-        "en": "25 (9)",
-        "it": "25 (9)"
-      },
-      "away": {
-        "en": "4 (0)",
-        "it": "4 (0)"
-      }
-    },
-    {
-      "category": {
-        "en": "General",
-        "it": "Generale"
-      },
-      "name": {
-        "en": "Blocked Shots",
-        "it": "Tiri bloccati"
-      },
-      "home": {
-        "en": "7",
-        "it": "7"
-      },
-      "away": {
-        "en": "—",
-        "it": "—"
-      }
-    },
-    {
-      "category": {
-        "en": "General",
-        "it": "Generale"
-      },
-      "name": {
-        "en": "Woodwork",
-        "it": "Pali / Traverse"
-      },
-      "home": {
-        "en": "10",
-        "it": "10"
-      },
-      "away": {
-        "en": "—",
-        "it": "—"
-      }
-    },
-    {
-      "category": {
-        "en": "General",
-        "it": "Generale"
-      },
-      "name": {
-        "en": "Corners",
-        "it": "Calci d'angolo"
-      },
-      "home": {
-        "en": "4",
-        "it": "4"
-      },
-      "away": {
-        "en": "6",
-        "it": "6"
-      }
-    },
-    {
-      "category": {
-        "en": "General",
-        "it": "Generale"
-      },
-      "name": {
-        "en": "Penalties",
-        "it": "Rigori"
-      },
-      "home": {
-        "en": "0",
-        "it": "0"
-      },
-      "away": {
-        "en": "0",
-        "it": "0"
-      }
-    },
-    {
-      "category": {
-        "en": "General",
-        "it": "Generale"
-      },
-      "name": {
-        "en": "Yellow Cards / Red Cards",
-        "it": "Cartellini Gialli / Rossi"
-      },
-      "home": {
-        "en": "0 / 0",
-        "it": "0 / 0"
-      },
-      "away": {
-        "en": "2 / 1",
-        "it": "2 / 1"
-      }
-    }
-  ],
+  "dynamics": [],
+  "teamStats": [],
   "goalkeepers": [],
   "appearances": {
     "home": [
@@ -666,7 +502,9 @@
         "number": 10,
         "starter": true,
         "onMinute": 0,
-        "goals": [5]
+        "goals": [
+          5
+        ]
       },
       {
         "name": "Koné",
@@ -709,7 +547,12 @@
         "number": 9,
         "starter": true,
         "onMinute": 0,
-        "goals": [15, 60, 70, 87],
+        "goals": [
+          15,
+          60,
+          70,
+          87
+        ],
         "notes": {
           "en": "Captain",
           "it": "Capitano"
@@ -805,7 +648,9 @@
         "number": 3,
         "starter": true,
         "onMinute": 0,
-        "yellowCards": [11]
+        "yellowCards": [
+          11
+        ]
       },
       {
         "name": "De Stefano",
@@ -821,7 +666,9 @@
         "number": 5,
         "starter": true,
         "onMinute": 0,
-        "redCards": [46]
+        "redCards": [
+          46
+        ]
       },
       {
         "name": "Natale",
@@ -897,7 +744,9 @@
         "number": 15,
         "starter": false,
         "onMinute": 71,
-        "yellowCards": [75]
+        "yellowCards": [
+          75
+        ]
       },
       {
         "name": "Melnyk",

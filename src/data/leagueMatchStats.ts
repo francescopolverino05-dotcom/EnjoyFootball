@@ -2,11 +2,17 @@ import type { LeagueMatchStats } from '../types/leagueMatchStats';
 import type { StatsCompetitionId } from '../types/statsRankings';
 import napoliPisa from './leagueMatchStats/napoli-pisa.json';
 import pisaPerugia from './leagueMatchStats/pisa-perugia.json';
-import { getPrimavera2Standings } from './standings';
+import villarrealNapoli from './leagueMatchStats/villarreal-napoli.json';
+import {
+  getPrimavera2Standings,
+  getUefaYouthLeagueStandings,
+} from './standings';
 
 const BY_KEY: Record<string, LeagueMatchStats> = {
   'primavera2/pisa-perugia': pisaPerugia as LeagueMatchStats,
   'primavera2/napoli-pisa': napoliPisa as LeagueMatchStats,
+  'uefaYouthLeague/villarreal-napoli':
+    villarrealNapoli as LeagueMatchStats,
 };
 
 export function getLeagueMatchStats(
@@ -19,7 +25,13 @@ export function getLeagueMatchStats(
 /** Resolve tagged league sheet for a Napoli match report slug (via standings fixture). */
 export function getLeagueMatchStatsForMatchSlug(
   matchSlug: string
-): { competitionId: 'primavera2'; slug: string; pack: LeagueMatchStats } | undefined {
+):
+  | {
+      competitionId: StatsCompetitionId;
+      slug: string;
+      pack: LeagueMatchStats;
+    }
+  | undefined {
   for (const md of getPrimavera2Standings().matchdays) {
     for (const fx of md.fixtures) {
       if (fx.matchSlug === matchSlug && fx.statsSlug) {
@@ -30,6 +42,25 @@ export function getLeagueMatchStatsForMatchSlug(
       }
     }
   }
+
+  const uylTable = getUefaYouthLeagueStandings().groupTable;
+  if (uylTable) {
+    for (const md of uylTable.matchdays) {
+      for (const fx of md.fixtures) {
+        if (fx.matchSlug === matchSlug && fx.statsSlug) {
+          const pack = getLeagueMatchStats('uefaYouthLeague', fx.statsSlug);
+          if (pack) {
+            return {
+              competitionId: 'uefaYouthLeague',
+              slug: fx.statsSlug,
+              pack,
+            };
+          }
+        }
+      }
+    }
+  }
+
   return undefined;
 }
 
