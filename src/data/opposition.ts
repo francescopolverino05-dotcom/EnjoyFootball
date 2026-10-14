@@ -2087,33 +2087,51 @@ attachReferencePack('pisa', '2026-10-10_campionato-u19-vs-pisa', [
   },
 ]);
 
-const speziaReferenceMatches: OppositionOpponent['fixturePacks'][string]['referenceMatches'] =
-  [
-    {
-      id: 'spezia-ref-pisa',
-      title: {
-        en: 'Pisa vs Spezia 0–3',
-        it: 'Pisa vs Spezia 0–3',
-      },
-      competition: {
-        en: 'Primavera 2 · Matchday 3',
-        it: 'Primavera 2 · Giornata 3',
-      },
-      score: '0–3',
-      videoFile: 'https://vimeo.com/1228617723/8be1a3eb32',
+/** First-leg (campionato) Spezia pack only — not Coppa / return. */
+attachReferencePack('spezia', '2026-10-24_campionato-u19-vs-spezia', [
+  {
+    id: 'spezia-ref-pisa',
+    title: {
+      en: 'Pisa vs Spezia 0–3',
+      it: 'Pisa vs Spezia 0–3',
     },
-  ];
+    competition: {
+      en: 'Primavera 2 · Matchday 3',
+      it: 'Primavera 2 · Giornata 3',
+    },
+    score: '0–3',
+    videoFile: 'https://vimeo.com/1228617723/8be1a3eb32',
+  },
+  {
+    id: 'spezia-ref-monopoli',
+    title: {
+      en: 'Spezia vs Monopoli 0–2',
+      it: 'Spezia vs Monopoli 0–2',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 4',
+      it: 'Primavera 2 · Giornata 4',
+    },
+    score: '0–2',
+    videoFile: 'https://vimeo.com/1235994929/30860268db',
+  },
+]);
 
-attachReferencePack(
-  'spezia',
-  '2026-10-24_campionato-u19-vs-spezia',
-  speziaReferenceMatches
-);
-attachReferencePack(
-  'spezia',
-  '2026-10-28_coppa-italia-u19-vs-spezia',
-  speziaReferenceMatches
-);
+attachReferencePack('monopoli', '2026-10-31_campionato-monopoli-vs-u19', [
+  {
+    id: 'monopoli-ref-spezia',
+    title: {
+      en: 'Spezia vs Monopoli 0–2',
+      it: 'Spezia vs Monopoli 0–2',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 4',
+      it: 'Primavera 2 · Giornata 4',
+    },
+    score: '0–2',
+    videoFile: 'https://vimeo.com/1235994929/30860268db',
+  },
+]);
 
 attachReferencePack(
   'bari',
@@ -2333,6 +2351,35 @@ attachReferencePack('porto', '2026-11-04_uyl-porto-vs-u19', [
     },
     score: '3–1',
     videoFile: 'https://vimeo.com/1225051128/cd33c8c29e',
+  },
+  {
+    id: 'porto-ref-braga',
+    title: {
+      en: 'SC Braga vs Porto 2–4',
+      it: 'SC Braga vs Porto 2–4',
+    },
+    competition: {
+      en: 'UEFA Youth League reference',
+      it: 'Riferimento UEFA Youth League',
+    },
+    score: '2–4',
+    videoFile: 'https://vimeo.com/1235987474/ada586d7c0',
+  },
+]);
+
+attachReferencePack('club-brugge', '2026-12-08_uyl-u19-vs-club-brugge', [
+  {
+    id: 'brugge-ref-inter',
+    title: {
+      en: 'Inter vs Club Brugge 1–1',
+      it: 'Inter vs Club Brugge 1–1',
+    },
+    competition: {
+      en: 'UEFA Youth League reference',
+      it: 'Riferimento UEFA Youth League',
+    },
+    score: '1–1',
+    videoFile: 'https://vimeo.com/1235985370/b1003a19f9',
   },
 ]);
 
