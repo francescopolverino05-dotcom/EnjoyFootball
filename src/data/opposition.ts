@@ -2201,7 +2201,7 @@ attachReferencePack(
         en: 'Opposition studio report (Avversari → Studio Report).',
         it: 'Studio report avversario (Avversari → Studio Report).',
       },
-      videoFile: 'https://vimeo.com/1235892445/a9696f3f35',
+      videoFile: 'https://vimeo.com/1236012474/33361e5a9b',
       tags: ['vimeo', 'opposition', 'studio-report'],
     },
   ]
@@ -2289,6 +2289,19 @@ attachReferencePack('bodo-glimt', '2026-10-20_uyl-u19-vs-bodo-glimt', [
     },
     score: '5–1',
     videoFile: 'https://vimeo.com/1233037991/104b28fbfe',
+  },
+  {
+    id: 'bodo-ref-bvb',
+    title: {
+      en: 'Bodø/Glimt vs Borussia Dortmund 0–5',
+      it: 'Bodø/Glimt vs Borussia Dortmund 0–5',
+    },
+    competition: {
+      en: 'Reference',
+      it: 'Riferimento',
+    },
+    score: '0–5',
+    videoFile: 'https://vimeo.com/1236007680/e9ec2c549c',
   },
 ]);
 

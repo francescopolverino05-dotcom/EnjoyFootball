@@ -791,5 +791,20 @@
     }
   },
   "clips": [],
-  "analysisVideos": []
+  "analysisVideos": [
+    {
+      "id": "vimeo-1236012222",
+      "title": {
+        "en": "Goals conceded — Villarreal vs Napoli",
+        "it": "Gol concessi — Villarreal vs Napoli"
+      },
+      "description": {
+        "en": "Post-match goals-conceded review (VIL–NAP).",
+        "it": "Review post-partita dei gol concessi (VIL–NAP)."
+      },
+      "videoFile": "https://vimeo.com/1236012222/35518f53bf",
+      "tags": ["vimeo", "analysis", "post-match"],
+      "kind": "video"
+    }
+  ]
 }
