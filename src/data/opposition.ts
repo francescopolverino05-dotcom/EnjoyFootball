@@ -2204,7 +2204,7 @@ attachReferencePack(
         en: 'Opposition studio report (Avversari → Studio Report).',
         it: 'Studio report avversario (Avversari → Studio Report).',
       },
-      videoFile: 'https://vimeo.com/1236012474/33361e5a9b',
+      videoFile: 'https://vimeo.com/1236350398/bbbe7d7a75',
       tags: ['vimeo', 'opposition', 'studio-report'],
     },
   ]
