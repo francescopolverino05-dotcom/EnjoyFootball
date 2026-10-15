@@ -1289,11 +1289,13 @@ if (bari) {
       name: 'Mattia De Lucia',
       position: 'CB',
       birthYear: 2008,
+      preferredFoot: 'Ambidestro',
     },
     {
       name: 'Paolo Dimonte',
       position: 'CB',
       birthYear: 2008,
+      preferredFoot: 'Destro',
     },
     {
       name: 'Francesco Napoleone',
