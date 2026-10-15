@@ -946,7 +946,8 @@ const bari = OPPONENTS.find((o) => o.id === 'bari');
 if (bari) {
   /**
    * Shared 4-3-1-2 slots. Pitch attacks downward: team-right = screen-left.
-   * Back RTL: #2 RB, #5 RCB, #6 LCB, #3 LB. Mid RTL: #7 RCM, #4 CDM, #8 LCM.
+   * Back RTL: #2 RB, #5 RCB, #6 LCB, #3 LB. Mid RTL: #7 RCM, #4 CDM, #10 LCM.
+   * #8 Scarano = CAM; #10 Campagna = LCM.
    */
   const bari4312 = (
     names: {
@@ -982,8 +983,8 @@ if (bari) {
       lb: 3,
       rcm: 7,
       cdm: 4,
-      lcm: 8,
-      cam: 10,
+      lcm: 10,
+      cam: 8,
       rst: 9,
       lst: 11,
     }
@@ -1016,8 +1017,8 @@ if (bari) {
     lb: 'Legrottaglie',
     rcm: 'Valoroso',
     cdm: 'Mundo',
-    lcm: 'Scarano',
-    cam: 'Alonso Cam.',
+    lcm: 'Alonso Cam.',
+    cam: 'Scarano',
     rst: 'Scifoni',
     lst: 'Italia',
   });
@@ -1030,8 +1031,8 @@ if (bari) {
     lb: 'Spadavecchia',
     rcm: 'Valoroso',
     cdm: 'Mundo',
-    lcm: 'Scarano',
-    cam: 'Alonso Cam.',
+    lcm: 'Alonso Cam.',
+    cam: 'Scarano',
     rst: 'Scifoni',
     lst: 'Italia',
   });
@@ -1045,8 +1046,8 @@ if (bari) {
     lb: 'Caputo',
     rcm: 'Vitale',
     cdm: 'Mundo',
-    lcm: 'Scarano',
-    cam: 'Alonso Cam.',
+    lcm: 'Alonso Cam.',
+    cam: 'Scarano',
     rst: 'Leone',
     lst: 'Italia',
   });
@@ -1059,8 +1060,8 @@ if (bari) {
     lb: 'Legrottaglie',
     rcm: 'Vitale',
     cdm: 'Mundo',
-    lcm: 'Grimaldi',
-    cam: 'Alonso Cam.',
+    lcm: 'Alonso Cam.',
+    cam: 'Grimaldi',
     rst: 'Leone',
     lst: 'Keita',
   });
@@ -1073,8 +1074,8 @@ if (bari) {
     lb: 'Legrottaglie',
     rcm: 'Vitale',
     cdm: 'Mundo',
-    lcm: 'Scarano',
-    cam: 'Alonso Cam.',
+    lcm: 'Alonso Cam.',
+    cam: 'Scarano',
     rst: 'Leone',
     lst: 'Felice',
   });
@@ -1117,8 +1118,8 @@ if (bari) {
       system: '4-3-1-2',
       players: vsPalermo,
       notes: {
-        en: 'Primavera 2 MD3, 19 Sep 2026 (TM 5014185). Official shirts = diamond: Caputo (#3) LB, Vitale (#7) / Scarano (#8), Leone–Italia. TM lists 3-4-2-1. Goals: Leone, Scarano. Subs: Felice, Barbera, Valoroso, Scifoni, Napoleone.',
-        it: 'Primavera 2 gior. 3, 19 set 2026 (TM 5014185). Numeri ufficiali = rombo: Caputo (#3) TS, Vitale (#7) / Scarano (#8), Leone–Italia. TM riporta 3-4-2-1. Gol: Leone, Scarano. Sub: Felice, Barbera, Valoroso, Scifoni, Napoleone.',
+        en: 'Primavera 2 MD3, 19 Sep 2026 (TM 5014185). Official shirts = diamond: Caputo (#3) LB, Vitale (#7) RCM, Campagna (#10) LCM, Scarano (#8) CAM; Leone–Italia. TM lists 3-4-2-1. Goals: Leone, Scarano. Subs: Felice, Barbera, Valoroso, Scifoni, Napoleone.',
+        it: 'Primavera 2 gior. 3, 19 set 2026 (TM 5014185). Numeri ufficiali = rombo: Caputo (#3) TS, Vitale (#7) CC destro, Campagna (#10) CC sinistro, Scarano (#8) trequartista; Leone–Italia. TM riporta 3-4-2-1. Gol: Leone, Scarano. Sub: Felice, Barbera, Valoroso, Scifoni, Napoleone.',
       },
     },
     {
@@ -1130,8 +1131,8 @@ if (bari) {
       system: '4-3-1-2',
       players: vsPalermoCoppa,
       notes: {
-        en: 'Coppa Italia Primavera, 26 Sep 2026 (TM 4913072). Vitale (#7) / Grimaldi (#8) diamond sides; Leone–Keita up top. Subs: Scarano, Felice, Italia, Valoroso, Caputo.',
-        it: 'Coppa Italia Primavera, 26 set 2026 (TM 4913072). Vitale (#7) / Grimaldi (#8) ai lati del rombo; Leone–Keita davanti. Sub: Scarano, Felice, Italia, Valoroso, Caputo.',
+        en: 'Coppa Italia Primavera, 26 Sep 2026 (TM 4913072). Vitale (#7) RCM / Campagna (#10) LCM; Grimaldi at CAM; Leone–Keita up top. Subs: Scarano, Felice, Italia, Valoroso, Caputo.',
+        it: 'Coppa Italia Primavera, 26 set 2026 (TM 4913072). Vitale (#7) CC destro / Campagna (#10) CC sinistro; Grimaldi trequartista; Leone–Keita davanti. Sub: Scarano, Felice, Italia, Valoroso, Caputo.',
       },
     },
     {
@@ -1143,8 +1144,8 @@ if (bari) {
       system: '4-3-1-2',
       players: vsLatina,
       notes: {
-        en: 'Primavera 2 MD4, 10 Oct 2026 (distinta). Falbo in goal; Vitale (#7), Scarano (#8), Leone–Felice. Most recent scouted XI.',
-        it: 'Primavera 2 gior. 4, 10 ott 2026 (distinta). Falbo in porta; Vitale (#7), Scarano (#8), Leone–Felice. XI scoutata più recente.',
+        en: 'Primavera 2 MD4, 10 Oct 2026 (distinta). Falbo in goal; Vitale (#7) RCM, Campagna (#10) LCM, Scarano (#8) CAM; Leone–Felice. Most recent scouted XI.',
+        it: 'Primavera 2 gior. 4, 10 ott 2026 (distinta). Falbo in porta; Vitale (#7) CC destro, Campagna (#10) CC sinistro, Scarano (#8) trequartista; Leone–Felice. XI scoutata più recente.',
       },
     },
   ];
@@ -1152,8 +1153,8 @@ if (bari) {
   bari.squadDepth = {
     system: '1-4-3-1-2',
     note: {
-      en: 'Last 5 scouted XIs (Salernitana, Ascoli, Palermo MD3, Palermo Coppa, Latina) mapped onto 4-3-1-2. Order = most starts in that slot.',
-      it: 'Ultime 5 formazioni scoutate (Salernitana, Ascoli, Palermo gior. 3, Palermo Coppa, Latina) mappate sul 4-3-1-2. Ordine = più partite in quel ruolo.',
+      en: 'Last 5 scouted XIs (Salernitana, Ascoli, Palermo MD3, Palermo Coppa, Latina) mapped onto 4-3-1-2. Scarano (#8) at CAM; Campagna (#10) at LCM. Order = most starts in that slot.',
+      it: 'Ultime 5 formazioni scoutate (Salernitana, Ascoli, Palermo gior. 3, Palermo Coppa, Latina) mappate sul 4-3-1-2. Scarano (#8) trequartista; Campagna (#10) CC sinistro. Ordine = più partite in quel ruolo.',
     },
     slots: [
       {
@@ -1213,16 +1214,16 @@ if (bari) {
         role: 'LCM',
         top: '45%',
         left: '72%',
-        players: [
-          { name: 'Scarano', starts: 4 },
-          { name: 'Grimaldi', starts: 1 },
-        ],
+        players: [{ name: 'Alonso Cam.', starts: 5 }],
       },
       {
         role: 'CAM',
         top: '60%',
         left: '50%',
-        players: [{ name: 'Alonso Cam.', starts: 5 }],
+        players: [
+          { name: 'Scarano', starts: 4 },
+          { name: 'Grimaldi', starts: 1 },
+        ],
       },
       {
         role: 'RST',
@@ -1372,7 +1373,7 @@ if (bari) {
     },
     {
       name: 'Giuseppe Scarano',
-      position: 'CM',
+      position: 'CAM',
       birthYear: 2008,
       preferredFoot: 'Destro',
     },
