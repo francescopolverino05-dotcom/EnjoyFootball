@@ -2118,6 +2118,19 @@ attachReferencePack('spezia', '2026-10-24_campionato-u19-vs-spezia', [
     score: '0–2',
     videoFile: 'https://vimeo.com/1235994929/30860268db',
   },
+  {
+    id: 'spezia-ref-latina',
+    title: {
+      en: 'Spezia vs Latina 1–5',
+      it: 'Spezia vs Latina 1–5',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 5',
+      it: 'Primavera 2 · Giornata 5',
+    },
+    score: '1–5',
+    videoFile: 'https://vimeo.com/1236863969/e056daf97a',
+  },
 ]);
 
 attachReferencePack('monopoli', '2026-10-31_campionato-monopoli-vs-u19', [
