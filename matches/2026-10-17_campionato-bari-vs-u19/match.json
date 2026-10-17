@@ -36,7 +36,7 @@
     "colorClass": "u19",
     "logo": "napoli-logo.png"
   },
-  "score": null,
+  "score": "1-1",
   "goals": [],
   "timeline": [],
   "formations": [],
@@ -44,5 +44,17 @@
   "teamStats": [],
   "goalkeepers": [],
   "clips": [],
-  "analysisVideos": []
+  "analysisVideos": [],
+  "vimeo": {
+    "folderId": "30937004",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30937004",
+    "lastSyncedAt": "2026-10-17T20:04:49.377Z"
+  },
+  "video": {
+    "fullMatch": "https://vimeo.com/1236877598/37d5947b29",
+    "notes": {
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
+    }
+  }
 }

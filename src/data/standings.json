@@ -430,7 +430,8 @@
             {
               "homeId": "bari",
               "awayId": "napoli",
-              "score": null
+              "score": "1-1",
+              "matchSlug": "2026-10-17_campionato-bari-vs-u19"
             },
             {
               "homeId": "cosenza",
