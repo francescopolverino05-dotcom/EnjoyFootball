@@ -39,23 +39,58 @@ function playerDotColor(teamId: string): { fill: string; border: string; text: s
   return { fill: '#1e3a8a', border: '#0f172a', text: '#ffffff' };
 }
 
+/** Match depth short name (e.g. "Strand") to a squad shirt number. */
+function shirtNumberForDepthName(
+  shortName: string,
+  squad: OppositionSquadPlayer[]
+): number | null {
+  const needle = shortName.trim().toLowerCase();
+  if (!needle) return null;
+
+  const scored = squad
+    .map((p) => {
+      const full = p.name.toLowerCase();
+      const parts = full.split(/[\s-]+/).filter(Boolean);
+      const last = parts[parts.length - 1] ?? '';
+      let score = 0;
+      if (last === needle) score = 3;
+      else if (parts.some((part) => part === needle)) score = 2;
+      else if (full.includes(needle)) score = 1;
+      return { number: p.number ?? null, score };
+    })
+    .filter((x) => x.score > 0 && x.number != null)
+    .sort((a, b) => b.score - a.score);
+
+  return scored[0]?.number ?? null;
+}
+
+function formatDepthPlayerLabel(
+  name: string,
+  starts: number,
+  number: number | null
+): string {
+  const prefix = number != null ? `${number}. ` : '';
+  return `${prefix}${name} - ${starts}`;
+}
+
 function renderDepthSection(
   depth: OppositionSquadDepth,
   teamId: string,
-  labels: OppositionSquadPdfLabels
+  labels: OppositionSquadPdfLabels,
+  squad: OppositionSquadPlayer[]
 ): string {
   const colors = playerDotColor(teamId);
   const slots = depth.slots
     .map((slot) => {
       const isGk = slot.role === 'GK';
       const names = slot.players
-        .map(
-          (p, index) =>
-            `<div class="depth-name ${index === 0 ? 'primary' : ''}">
-              <span class="depth-label">${esc(p.name)}</span>
-              <span class="depth-starts">${p.starts}</span>
-            </div>`
-        )
+        .map((p, index) => {
+          const number = shirtNumberForDepthName(p.name, squad);
+          const label = formatDepthPlayerLabel(p.name, p.starts, number);
+          return `<div class="depth-name ${index === 0 ? 'primary' : ''}">
+              <span class="depth-label">${esc(label)}</span>
+            </div>`;
+        })
         .join('');
       return `<div class="depth-slot ${isGk ? 'is-gk' : ''}" style="top:${esc(slot.top)};left:${esc(slot.left)}">
         <div class="depth-dot" title="${esc(slot.role)}"></div>
@@ -85,11 +120,11 @@ function renderDepthSection(
   </section>
   <style>
     .depth-dot {
-      width: 14px;
-      height: 14px;
+      width: 22px;
+      height: 22px;
       border-radius: 50%;
       background: ${colors.fill};
-      border: 1.5px solid ${colors.border};
+      border: 2px solid ${colors.border};
       color: ${colors.text};
       flex-shrink: 0;
     }
@@ -133,7 +168,7 @@ export function openOppositionSquadPdf(
 
   const depthHtml =
     options?.depth && options.teamId
-      ? renderDepthSection(options.depth, options.teamId, labels)
+      ? renderDepthSection(options.depth, options.teamId, labels, players)
       : '';
 
   const html = `<!DOCTYPE html>
@@ -227,67 +262,61 @@ export function openOppositionSquadPdf(
     .pitch-box.bottom { bottom: 0; border-bottom: none; }
     .depth-slot {
       position: absolute;
-      transform: translate(-50%, -8px);
+      transform: translate(-50%, -10px);
       display: flex;
       flex-direction: column;
       align-items: center;
       width: max-content;
-      max-width: 132px;
+      max-width: 168px;
       z-index: 2;
     }
     .depth-slot.is-gk {
       z-index: 3;
-      width: 14px;
-      max-width: 14px;
+      width: 22px;
+      max-width: 22px;
     }
     .depth-slot.is-gk .depth-stack {
       position: absolute;
-      right: calc(100% + 6px);
+      right: calc(100% + 8px);
       top: 50%;
       transform: translateY(-50%);
       margin-top: 0;
       align-items: flex-end;
       text-align: right;
       width: max-content;
-      max-width: 150px;
+      max-width: 180px;
     }
     .depth-stack {
-      margin-top: 4px;
+      margin-top: 5px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 2px;
+      gap: 3px;
       text-align: center;
-      padding: 3px 5px 4px;
-      border-radius: 3px;
-      background: rgba(255,255,255,0.94);
+      padding: 4px 7px 5px;
+      border-radius: 4px;
+      background: rgba(255,255,255,0.95);
       border: 1px solid rgba(0,0,0,0.08);
-      font-size: 7pt;
-      line-height: 1.2;
+      font-size: 9pt;
+      line-height: 1.25;
     }
     .depth-name {
       display: flex;
       align-items: baseline;
       justify-content: center;
-      gap: 3px;
       color: #475569;
       width: 100%;
     }
     .depth-name.primary {
       font-weight: 700;
       color: #0f172a;
-      font-size: 7.5pt;
+      font-size: 9.5pt;
     }
     .depth-label {
-      max-width: 124px;
-      white-space: normal;
-      overflow-wrap: break-word;
-      hyphens: manual;
-    }
-    .depth-starts {
-      font-size: 7pt;
-      font-weight: 700;
-      color: #64748b;
+      max-width: 160px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     .squad-section.page-break {
       page-break-before: always;

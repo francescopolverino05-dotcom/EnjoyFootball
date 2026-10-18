@@ -15,8 +15,8 @@
   "endTime": "11:00",
   "status": "published",
   "notes": {
-    "en": "Videos hosted on Vimeo — Training Sessions / 12/10/2026 / Giovedí. Three more parts still uploading on Vimeo; re-sync when ready.",
-    "it": "Video su Vimeo — Training Sessions / 12/10/2026 / Giovedí. Altre tre parti ancora in upload su Vimeo; ri-sincronizzare quando pronte."
+    "en": "Videos hosted on Vimeo — Training Sessions / 12/10/2026 / Giovedí.",
+    "it": "Video su Vimeo — Training Sessions / 12/10/2026 / Giovedí."
   },
   "video": {
     "fullSession": "https://vimeo.com/1236267625/a1da99d1cc",
@@ -41,6 +41,57 @@
           "training",
           "session"
         ]
+      },
+      {
+        "id": "vimeo-1236267626",
+        "title": {
+          "en": "15:38:20.161",
+          "it": "15:38:20.161"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1236267626/b66d20bd6b",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1236267627",
+        "title": {
+          "en": "15:48:00.246",
+          "it": "15:48:00.246"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1236267627/a5d6685523",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1236267629",
+        "title": {
+          "en": "16:20:44.319",
+          "it": "16:20:44.319"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1236267629/128359eb4c",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
       }
     ]
   },
@@ -58,6 +109,6 @@
   "vimeo": {
     "folderId": "30714171",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30714171",
-    "lastSyncedAt": "2026-10-15T21:11:39.602Z"
+    "lastSyncedAt": "2026-10-18T11:57:18.609Z"
   }
 }
