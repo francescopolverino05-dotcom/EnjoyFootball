@@ -2010,8 +2010,8 @@ if (bodo) {
   bodo.squadDepth = {
     system: '1-4-3-3',
     note: {
-      en: 'Last 2 UYL XIs (Bayern MD1, Dortmund MD2) mapped onto 4-3-3. Order = most starts in that slot. Short names on pitch; full names in the squad table. Heights/feet filled where published (TM Strand 199 cm; BeSoccer Chooly 169 cm / right; Offside Andersen right; SoccerWiki Ingilæ & Blix Olsen right); most U19s still blank on TM.',
-      it: 'Ultime 2 formazioni UYL (Bayern gior. 1, Dortmund gior. 2) mappate sul 4-3-3. Ordine = più partite in quel ruolo. Nomi corti sul campo; nomi completi in tabella. Altezze/piede dove pubblicati (TM Strand 199 cm; BeSoccer Chooly 169 cm / destro; Offside Andersen destro; SoccerWiki Ingilæ e Blix Olsen destro); la maggior parte degli U19 resta vuota su TM.',
+      en: 'Last 2 UYL XIs (Bayern MD1, Dortmund MD2) mapped onto 4-3-3. Order = most starts in that slot. Short names on pitch; full names in the squad table. Heights/feet: published sources first (TM Strand 199; BeSoccer Chooly 169 / right; Offside Andersen right); otherwise FM26 estimates (Kolstad 177, Jenssen 186, Solbakken 179, Blix Olsen 185, Ingilæ 170, Alvsen 171 — all right). Gaps = not in FM/public DBs.',
+      it: 'Ultime 2 formazioni UYL (Bayern gior. 1, Dortmund gior. 2) mappate sul 4-3-3. Ordine = più partite in quel ruolo. Nomi corti sul campo; nomi completi in tabella. Altezze/piede: fonti pubblicate prima (TM Strand 199; BeSoccer Chooly 169 / destro; Offside Andersen destro); altrimenti stime FM26 (Kolstad 177, Jenssen 186, Solbakken 179, Blix Olsen 185, Ingilæ 170, Alvsen 171 — tutti destri). Vuoti = assenti da FM/DB pubblici.',
     },
     slots: [
       {
@@ -2087,8 +2087,8 @@ if (bodo) {
   };
   /**
    * UEFA Youth League club squad (it.uefa.com/…/2611772) + TM match sheets.
-   * Bios: club glimt.no + TM II / player pages + Offside Scores / BeSoccer / SoccerWiki
-   * where height/foot are published. Most U19s still have blank TM height/foot.
+   * Bios: TM/club/BeSoccer/Offside where published; otherwise FM26 (FMInside) /
+   * SoccerWiki estimates for height/foot. Remaining blanks = not in those DBs.
    */
   bodo.squad = [
     {
@@ -2111,12 +2111,16 @@ if (bodo) {
       name: 'Sivert Kolstad',
       position: 'RB',
       birthYear: 2007,
+      heightCm: 177,
+      preferredFoot: 'Destro',
     },
     {
       number: 3,
       name: 'Johannes Linaker Jenssen',
       position: 'CB',
       birthYear: 2009,
+      heightCm: 186,
+      preferredFoot: 'Destro',
     },
     {
       number: 4,
@@ -2129,12 +2133,15 @@ if (bodo) {
       name: 'Tobias Solbakken',
       position: 'LB',
       birthYear: 2009,
+      heightCm: 179,
+      preferredFoot: 'Destro',
     },
     {
       number: 15,
       name: 'Mathias Blix Olsen',
       position: 'CB',
       birthYear: 2007,
+      heightCm: 185,
       preferredFoot: 'Destro',
     },
     {
@@ -2166,6 +2173,7 @@ if (bodo) {
       name: 'Teo Ingilæ',
       position: 'CM',
       birthYear: 2007,
+      heightCm: 170,
       preferredFoot: 'Destro',
     },
     {
@@ -2215,6 +2223,8 @@ if (bodo) {
       name: 'Isak Erlend Alvsen',
       position: 'RW',
       birthYear: 2008,
+      heightCm: 171,
+      preferredFoot: 'Destro',
     },
     {
       number: 20,
