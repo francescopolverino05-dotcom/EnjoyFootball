@@ -12,10 +12,31 @@
     "name": "Cosenza"
   },
   "score": "4–0",
-  "goals": [],
+  "goals": [
+    {
+      "minute": 11,
+      "scorer": "L. Casillo",
+      "teamId": "monopoli"
+    },
+    {
+      "minute": 55,
+      "scorer": "L. Casillo",
+      "teamId": "monopoli"
+    },
+    {
+      "minute": 58,
+      "scorer": "F. Illuzzi",
+      "teamId": "monopoli"
+    },
+    {
+      "minute": 64,
+      "scorer": "D. Tumminelli",
+      "teamId": "monopoli"
+    }
+  ],
   "note": {
-    "en": "Estimated match figures from video tagging. Team stats only; player-level rows not included in this import.",
-    "it": "Dati stimati da tagging video. Solo statistiche di squadra; nessuna riga giocatore in questo import."
+    "en": "Estimated match figures from video tagging. Score and scorers from Tuttocampo official report. Player-level stats not available for this match.",
+    "it": "Dati stimati da tagging video. Risultato e marcatori dal referto Tuttocampo. Statistiche individuali non disponibili per questa partita."
   },
   "teamStats": [
     {

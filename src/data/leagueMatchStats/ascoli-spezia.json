@@ -12,10 +12,21 @@
     "name": "Spezia"
   },
   "score": "1–1",
-  "goals": [],
+  "goals": [
+    {
+      "minute": 84,
+      "scorer": "D. Ghetti",
+      "teamId": "spezia"
+    },
+    {
+      "minute": 89,
+      "scorer": "M. Curzi",
+      "teamId": "ascoli"
+    }
+  ],
   "note": {
-    "en": "Estimated match figures from video tagging. Team stats only; player-level rows not included in this import.",
-    "it": "Dati stimati da tagging video. Solo statistiche di squadra; nessuna riga giocatore in questo import."
+    "en": "Estimated match figures from video tagging. Score and scorers from Tuttocampo official report. Player-level stats not available for this match.",
+    "it": "Dati stimati da tagging video. Risultato e marcatori dal referto Tuttocampo. Statistiche individuali non disponibili per questa partita."
   },
   "teamStats": [
     {

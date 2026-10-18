@@ -12,10 +12,31 @@
     "name": "Pescara"
   },
   "score": "3–1",
-  "goals": [],
+  "goals": [
+    {
+      "minute": 17,
+      "scorer": "L. Bacalini",
+      "teamId": "pescara"
+    },
+    {
+      "minute": 46,
+      "scorer": "P. Bertolino",
+      "teamId": "palermo"
+    },
+    {
+      "minute": 65,
+      "scorer": "M. Schirliu",
+      "teamId": "palermo"
+    },
+    {
+      "minute": 94,
+      "scorer": "Autogol",
+      "teamId": "palermo"
+    }
+  ],
   "note": {
-    "en": "Estimated match figures from video tagging. Team stats only; player-level rows not included in this import.",
-    "it": "Dati stimati da tagging video. Solo statistiche di squadra; nessuna riga giocatore in questo import."
+    "en": "Estimated match figures from video tagging. Score and scorers from Tuttocampo official report. Player-level stats not available for this match.",
+    "it": "Dati stimati da tagging video. Risultato e marcatori dal referto Tuttocampo. Statistiche individuali non disponibili per questa partita."
   },
   "teamStats": [
     {
