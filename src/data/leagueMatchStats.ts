@@ -1,8 +1,15 @@
 import type { LeagueMatchStats } from '../types/leagueMatchStats';
 import type { StatsCompetitionId } from '../types/statsRankings';
+import ascoliSpezia from './leagueMatchStats/ascoli-spezia.json';
 import bariNapoli from './leagueMatchStats/bari-napoli.json';
+import beneventoFrosinone from './leagueMatchStats/benevento-frosinone.json';
+import catanzaroLatina from './leagueMatchStats/catanzaro-latina.json';
+import frosinonePisa from './leagueMatchStats/frosinone-pisa.json';
+import monopoliCosenza from './leagueMatchStats/monopoli-cosenza.json';
 import napoliPisa from './leagueMatchStats/napoli-pisa.json';
+import palermoPescara from './leagueMatchStats/palermo-pescara.json';
 import pisaPerugia from './leagueMatchStats/pisa-perugia.json';
+import salernitanaBari from './leagueMatchStats/salernitana-bari.json';
 import villarrealNapoli from './leagueMatchStats/villarreal-napoli.json';
 import {
   getPrimavera2Standings,
@@ -13,6 +20,14 @@ const BY_KEY: Record<string, LeagueMatchStats> = {
   'primavera2/pisa-perugia': pisaPerugia as LeagueMatchStats,
   'primavera2/napoli-pisa': napoliPisa as LeagueMatchStats,
   'primavera2/bari-napoli': bariNapoli as LeagueMatchStats,
+  'primavera2/salernitana-bari': salernitanaBari as LeagueMatchStats,
+  'primavera2/palermo-pescara': palermoPescara as LeagueMatchStats,
+  'primavera2/benevento-frosinone':
+    beneventoFrosinone as LeagueMatchStats,
+  'primavera2/ascoli-spezia': ascoliSpezia as LeagueMatchStats,
+  'primavera2/catanzaro-latina': catanzaroLatina as LeagueMatchStats,
+  'primavera2/monopoli-cosenza': monopoliCosenza as LeagueMatchStats,
+  'primavera2/frosinone-pisa': frosinonePisa as LeagueMatchStats,
   'uefaYouthLeague/villarreal-napoli':
     villarrealNapoli as LeagueMatchStats,
 };

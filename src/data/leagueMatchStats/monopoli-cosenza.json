@@ -1,0 +1,313 @@
+{
+  "id": "monopoli-cosenza",
+  "competitionId": "primavera2",
+  "date": "2026-09-05",
+  "matchday": 1,
+  "home": {
+    "teamId": "monopoli",
+    "name": "Monopoli"
+  },
+  "away": {
+    "teamId": "cosenza",
+    "name": "Cosenza"
+  },
+  "score": "4–0",
+  "goals": [],
+  "note": {
+    "en": "Estimated match figures from video tagging. Team stats only; player-level rows not included in this import.",
+    "it": "Dati stimati da tagging video. Solo statistiche di squadra; nessuna riga giocatore in questo import."
+  },
+  "teamStats": [
+    {
+      "stat": "Goals",
+      "home": "4",
+      "away": "0"
+    },
+    {
+      "stat": "xG (estimated, distance/angle model)",
+      "home": "2.45",
+      "away": "0.38"
+    },
+    {
+      "stat": "xG (taggers’ own estimate, for reference)",
+      "home": "2.60",
+      "away": "0.42"
+    },
+    {
+      "stat": "Shots (1H)",
+      "home": "8",
+      "away": "2"
+    },
+    {
+      "stat": "Shots (2H)",
+      "home": "9",
+      "away": "3"
+    },
+    {
+      "stat": "Shots (full match)",
+      "home": "17",
+      "away": "5"
+    },
+    {
+      "stat": "Shots on target",
+      "home": "9",
+      "away": "1"
+    },
+    {
+      "stat": "Shot accuracy %",
+      "home": "52.9",
+      "away": "20.0"
+    },
+    {
+      "stat": "Blocked shots",
+      "home": "3",
+      "away": "1"
+    },
+    {
+      "stat": "Missed shots (off target, incl. woodwork)",
+      "home": "5",
+      "away": "3"
+    },
+    {
+      "stat": "Woodwork",
+      "home": "1",
+      "away": "0"
+    },
+    {
+      "stat": "Shots inside box",
+      "home": "12",
+      "away": "2"
+    },
+    {
+      "stat": "Shots outside box",
+      "home": "5",
+      "away": "3"
+    },
+    {
+      "stat": "Headed shots",
+      "home": "4",
+      "away": "1"
+    },
+    {
+      "stat": "Possession estimate % (full match)",
+      "home": "58.1",
+      "away": "41.9"
+    },
+    {
+      "stat": "Possession estimate % (1H)",
+      "home": "56.5",
+      "away": "43.5"
+    },
+    {
+      "stat": "Possession estimate % (2H)",
+      "home": "59.6",
+      "away": "40.4"
+    },
+    {
+      "stat": "Share of passes %",
+      "home": "58.0",
+      "away": "42.0"
+    },
+    {
+      "stat": "Passes",
+      "home": "512",
+      "away": "370"
+    },
+    {
+      "stat": "Passes completed",
+      "home": "438",
+      "away": "288"
+    },
+    {
+      "stat": "Pass accuracy % (full match)",
+      "home": "85.5",
+      "away": "77.8"
+    },
+    {
+      "stat": "Pass accuracy % (1H)",
+      "home": "86.1",
+      "away": "78.4"
+    },
+    {
+      "stat": "Pass accuracy % (2H)",
+      "home": "85.0",
+      "away": "77.2"
+    },
+    {
+      "stat": "Key passes",
+      "home": "13",
+      "away": "3"
+    },
+    {
+      "stat": "Assists (official)",
+      "home": "3",
+      "away": "0"
+    },
+    {
+      "stat": "Progressive passes (completed / attempted)",
+      "home": "49/74",
+      "away": "22/50"
+    },
+    {
+      "stat": "Into final third (completed / attempted)",
+      "home": "48/70",
+      "away": "20/44"
+    },
+    {
+      "stat": "Into box (completed / attempted)",
+      "home": "18/31",
+      "away": "3/12"
+    },
+    {
+      "stat": "Crosses (completed / total)",
+      "home": "7/21",
+      "away": "1/10"
+    },
+    {
+      "stat": "Long balls (completed / total)",
+      "home": "16/32",
+      "away": "20/48"
+    },
+    {
+      "stat": "Through balls (completed / total)",
+      "home": "4/6",
+      "away": "0/1"
+    },
+    {
+      "stat": "Ground duels (won / total)",
+      "home": "48/86",
+      "away": "38/86"
+    },
+    {
+      "stat": "Aerial duels (won / total)",
+      "home": "17/28",
+      "away": "11/28"
+    },
+    {
+      "stat": "Interceptions",
+      "home": "38",
+      "away": "46"
+    },
+    {
+      "stat": "Recoveries",
+      "home": "61",
+      "away": "44"
+    },
+    {
+      "stat": "High recoveries (final third)",
+      "home": "23",
+      "away": "8"
+    },
+    {
+      "stat": "Balls lost",
+      "home": "15",
+      "away": "24"
+    },
+    {
+      "stat": "Blocks",
+      "home": "4",
+      "away": "8"
+    },
+    {
+      "stat": "Clearances",
+      "home": "12",
+      "away": "31"
+    },
+    {
+      "stat": "GK saves",
+      "home": "1",
+      "away": "5"
+    },
+    {
+      "stat": "Fouls committed",
+      "home": "13",
+      "away": "17"
+    },
+    {
+      "stat": "Fouls won",
+      "home": "17",
+      "away": "13"
+    },
+    {
+      "stat": "Yellow cards (official)",
+      "home": "1",
+      "away": "3"
+    },
+    {
+      "stat": "Red cards",
+      "home": "0",
+      "away": "0"
+    },
+    {
+      "stat": "Offsides (1H / 2H / total)",
+      "home": "1 / 2 / 3",
+      "away": "1 / 1 / 2"
+    },
+    {
+      "stat": "Corners (1H / 2H / total)",
+      "home": "4 / 4 / 8",
+      "away": "1 / 1 / 2"
+    },
+    {
+      "stat": "Free kicks (excl. goal kicks)",
+      "home": "18",
+      "away": "14"
+    },
+    {
+      "stat": "Goal kicks",
+      "home": "3",
+      "away": "9"
+    },
+    {
+      "stat": "Throw-ins",
+      "home": "23",
+      "away": "19"
+    },
+    {
+      "stat": "PPDA 1H",
+      "home": "7.40",
+      "away": "13.53"
+    },
+    {
+      "stat": "PPDA 1H numerator / denominator",
+      "home": "185 / 25",
+      "away": "257 / 19"
+    },
+    {
+      "stat": "PPDA 1H defensive actions breakdown",
+      "home": "def_duels_won=7; fouls=6; interceptions=12",
+      "away": "def_duels_won=3; fouls=8; interceptions=8"
+    },
+    {
+      "stat": "PPDA 2H",
+      "home": "7.71",
+      "away": "14.17"
+    },
+    {
+      "stat": "PPDA 2H numerator / denominator",
+      "home": "185 / 24",
+      "away": "255 / 18"
+    },
+    {
+      "stat": "PPDA 2H defensive actions breakdown",
+      "home": "def_duels_won=6; fouls=7; interceptions=11",
+      "away": "def_duels_won=3; fouls=9; interceptions=6"
+    },
+    {
+      "stat": "PPDA full match",
+      "home": "7.55",
+      "away": "13.84"
+    },
+    {
+      "stat": "PPDA full match numerator / denominator",
+      "home": "370 / 49",
+      "away": "512 / 37"
+    },
+    {
+      "stat": "PPDA full match defensive actions breakdown",
+      "home": "def_duels_won=13; fouls=13; interceptions=23",
+      "away": "def_duels_won=6; fouls=17; interceptions=14"
+    }
+  ],
+  "playerStats": []
+}
