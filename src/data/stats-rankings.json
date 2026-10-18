@@ -2,8 +2,8 @@
   "season": "2026/27",
   "updatedAt": "2026-10-18",
   "scope": {
-    "en": "Club rankings from logged match sheets within each competition. Napoli is highlighted. Values are averages from games with stats so far.",
-    "it": "Classifiche di club dai fogli partita per competizione. Napoli è evidenziato. Valori = medie delle gare con stats finora."
+    "en": "Club rankings from logged match sheets within each competition (league packs + Napoli match reports). Values are averages from games with stats so far.",
+    "it": "Classifiche di club dai fogli partita per competizione (pack di lega + report Napoli). Valori = medie delle gare con stats finora."
   },
   "categories": {
     "general": {
@@ -25,8 +25,8 @@
               "teamId": "ascoli",
               "team": "Ascoli",
               "isUs": false,
-              "value": 1.25,
-              "played": 4,
+              "value": 1.4,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -41,8 +41,8 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 1.5,
-              "played": 4,
+              "value": 1.8,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -50,7 +50,7 @@
               "team": "Catanzaro",
               "isUs": false,
               "value": 3.0,
-              "played": 4,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -73,8 +73,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 1.0,
-              "played": 2,
+              "value": 1.4,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -161,7 +161,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 0.0,
+              "value": 0.5,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 2.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -179,8 +187,8 @@
               "teamId": "ascoli",
               "team": "Ascoli",
               "isUs": false,
-              "value": 1.33,
-              "played": 4,
+              "value": 1.3,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -195,16 +203,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 1.32,
-              "played": 4,
+              "value": 1.49,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 2.14,
-              "played": 4,
+              "value": 2.13,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -227,8 +235,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 1.31,
-              "played": 2,
+              "value": 1.47,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -315,7 +323,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 0.97,
+              "value": 1.73,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 1.88,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -333,8 +349,8 @@
               "teamId": "ascoli",
               "team": "Ascoli",
               "isUs": false,
-              "value": 10.0,
-              "played": 4,
+              "value": 11.0,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -349,16 +365,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 10.5,
-              "played": 4,
+              "value": 11.2,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 15.0,
-              "played": 4,
+              "value": 14.2,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -381,8 +397,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 22.0,
-              "played": 2,
+              "value": 15.2,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -469,7 +485,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 14.0,
+              "value": 15.0,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 10.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -487,8 +511,8 @@
               "teamId": "ascoli",
               "team": "Ascoli",
               "isUs": false,
-              "value": 4.25,
-              "played": 4,
+              "value": 4.0,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -503,16 +527,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 4.0,
-              "played": 4,
+              "value": 4.6,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 7.25,
-              "played": 4,
+              "value": 7.0,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -535,8 +559,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 3.0,
-              "played": 2,
+              "value": 3.4,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -623,7 +647,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 7.0,
+              "value": 6.5,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 5.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -641,8 +673,8 @@
               "teamId": "ascoli",
               "team": "Ascoli",
               "isUs": false,
-              "value": 17.0,
-              "played": 4,
+              "value": 19.0,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -657,8 +689,8 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 16.25,
-              "played": 4,
+              "value": 15.6,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -666,7 +698,7 @@
               "team": "Catanzaro",
               "isUs": false,
               "value": 14.0,
-              "played": 4,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -689,8 +721,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 18.5,
-              "played": 2,
+              "value": 17.8,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -777,7 +809,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 21.0,
+              "value": 17.5,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 13.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -795,8 +835,8 @@
               "teamId": "ascoli",
               "team": "Ascoli",
               "isUs": false,
-              "value": 10.72,
-              "played": 4,
+              "value": 10.01,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -811,16 +851,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 9.79,
-              "played": 4,
+              "value": 9.58,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 8.29,
-              "played": 4,
+              "value": 8.6,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -843,8 +883,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 7.58,
-              "played": 2,
+              "value": 9.51,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -931,7 +971,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 24.53,
+              "value": 16.69,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 10.25,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -975,16 +1023,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 55.08,
-              "played": 4,
+              "value": 58.55,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 62.28,
-              "played": 4,
+              "value": 63.16,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1007,8 +1055,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 40.48,
-              "played": 2,
+              "value": 54.18,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -1095,7 +1143,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 37.93,
+              "value": 53.45,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 66.67,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -1113,8 +1169,8 @@
               "teamId": "ascoli",
               "team": "Ascoli",
               "isUs": false,
-              "value": 30.0,
-              "played": 4,
+              "value": 33.2,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1129,16 +1185,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 32.5,
-              "played": 4,
+              "value": 32.2,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 43.0,
-              "played": 4,
+              "value": 38.8,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1161,8 +1217,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 48.5,
-              "played": 2,
+              "value": 37.8,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1249,7 +1305,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 28.0,
+              "value": 30.0,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 24.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -1284,16 +1348,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 56.25,
-              "played": 4,
+              "value": 58.48,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 64.11,
-              "played": 4,
+              "value": 63.51,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1316,8 +1380,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 52.6,
-              "played": 2,
+              "value": 57.74,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -1404,7 +1468,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 53.85,
+              "value": 60.26,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 63.16,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -1439,16 +1511,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 23.88,
-              "played": 4,
+              "value": 26.6,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 29.16,
-              "played": 4,
+              "value": 30.0,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1471,8 +1543,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 9.94,
-              "played": 2,
+              "value": 21.64,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -1559,7 +1631,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 21.43,
+              "value": 29.46,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 33.33,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -1577,8 +1657,8 @@
               "teamId": "ascoli",
               "team": "Ascoli",
               "isUs": false,
-              "value": 4.5,
-              "played": 4,
+              "value": 5.0,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1593,16 +1673,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 5.5,
-              "played": 4,
+              "value": 5.8,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 7.25,
-              "played": 4,
+              "value": 6.8,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1625,8 +1705,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 12.5,
-              "played": 2,
+              "value": 9.0,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1713,7 +1793,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 5.0,
+              "value": 6.0,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 4.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -1740,8 +1828,8 @@
               "teamId": "ascoli",
               "team": "Ascoli",
               "isUs": false,
-              "value": 44.75,
-              "played": 4,
+              "value": 53.6,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1756,16 +1844,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 42.25,
-              "played": 4,
+              "value": 41.0,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 38.75,
-              "played": 4,
+              "value": 38.6,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1788,8 +1876,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 76.5,
-              "played": 2,
+              "value": 58.4,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1876,7 +1964,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 43.0,
+              "value": 40.5,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 42.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -1894,8 +1990,8 @@
               "teamId": "ascoli",
               "team": "Ascoli",
               "isUs": false,
-              "value": 24.5,
-              "played": 4,
+              "value": 38.0,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1910,16 +2006,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 20.5,
-              "played": 4,
+              "value": 21.2,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 14.75,
-              "played": 4,
+              "value": 16.8,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1942,8 +2038,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 47.5,
-              "played": 2,
+              "value": 45.2,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -2030,7 +2126,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 34.0,
+              "value": 29.0,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 26.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -2065,16 +2169,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 50.0,
-              "played": 4,
+              "value": 52.26,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 53.08,
-              "played": 4,
+              "value": 54.08,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -2097,8 +2201,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 58.56,
-              "played": 2,
+              "value": 58.31,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -2185,7 +2289,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 36.0,
+              "value": 48.47,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 56.25,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -2219,16 +2331,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 53.75,
-              "played": 4,
+              "value": 57.8,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 58.25,
-              "played": 4,
+              "value": 60.2,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -2251,8 +2363,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 88.5,
-              "played": 2,
+              "value": 79.5,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -2339,7 +2451,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 23.0,
+              "value": 48.5,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 68.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -2367,8 +2487,8 @@
               "teamId": "ascoli",
               "team": "Ascoli",
               "isUs": false,
-              "value": 47.1,
-              "played": 4,
+              "value": 47.28,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -2383,16 +2503,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 50.38,
-              "played": 4,
+              "value": 50.78,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 56.23,
-              "played": 4,
+              "value": 54.58,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -2415,8 +2535,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 61.25,
-              "played": 2,
+              "value": 54.82,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -2503,7 +2623,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 41.9,
+              "value": 47.7,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 46.5,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -2538,16 +2666,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 81.03,
-              "played": 4,
+              "value": 81.71,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 84.43,
-              "played": 4,
+              "value": 83.97,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -2570,8 +2698,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 84.9,
-              "played": 2,
+              "value": 83.61,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -2658,7 +2786,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 88.9,
+              "value": 86.08,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 81.25,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -2692,16 +2828,16 @@
               "teamId": "avellino",
               "team": "Avellino",
               "isUs": false,
-              "value": 18.5,
-              "played": 4,
+              "value": 36.4,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
               "teamId": "catanzaro",
               "team": "Catanzaro",
               "isUs": false,
-              "value": 15.75,
-              "played": 4,
+              "value": 34.6,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -2724,8 +2860,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 9.5,
-              "played": 2,
+              "value": 59.5,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -2812,7 +2948,15 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 6.0,
+              "value": 57.0,
+              "played": 2,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "arsenal",
+              "team": "Arsenal",
+              "isUs": false,
+              "value": 112.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
