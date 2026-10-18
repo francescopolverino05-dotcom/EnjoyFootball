@@ -2675,34 +2675,53 @@ attachReferencePack('villarreal', '2026-10-13_uyl-villarreal-vs-u19', [
   },
 ]);
 
-attachReferencePack('bodo-glimt', '2026-10-20_uyl-u19-vs-bodo-glimt', [
-  {
-    id: 'bodo-ref-bayern',
-    title: {
-      en: 'Bayern Munich vs Bodø/Glimt 5–1',
-      it: 'Bayern Monaco vs Bodø/Glimt 5–1',
+attachReferencePack(
+  'bodo-glimt',
+  '2026-10-20_uyl-u19-vs-bodo-glimt',
+  [
+    {
+      id: 'bodo-ref-bayern',
+      title: {
+        en: 'Bayern Munich vs Bodø/Glimt 5–1',
+        it: 'Bayern Monaco vs Bodø/Glimt 5–1',
+      },
+      competition: {
+        en: 'Reference',
+        it: 'Riferimento',
+      },
+      score: '5–1',
+      videoFile: 'https://vimeo.com/1233037991/104b28fbfe',
     },
-    competition: {
-      en: 'Reference',
-      it: 'Riferimento',
+    {
+      id: 'bodo-ref-bvb',
+      title: {
+        en: 'Bodø/Glimt vs Borussia Dortmund 0–5',
+        it: 'Bodø/Glimt vs Borussia Dortmund 0–5',
+      },
+      competition: {
+        en: 'Reference',
+        it: 'Riferimento',
+      },
+      score: '0–5',
+      videoFile: 'https://vimeo.com/1236007680/e9ec2c549c',
     },
-    score: '5–1',
-    videoFile: 'https://vimeo.com/1233037991/104b28fbfe',
-  },
-  {
-    id: 'bodo-ref-bvb',
-    title: {
-      en: 'Bodø/Glimt vs Borussia Dortmund 0–5',
-      it: 'Bodø/Glimt vs Borussia Dortmund 0–5',
+  ],
+  [
+    {
+      id: 'bodo-studio-report',
+      title: {
+        en: 'Studio Bodø/Glimt',
+        it: 'Studio Bodø/Glimt',
+      },
+      description: {
+        en: 'Opposition studio report (Avversari → Studio Report).',
+        it: 'Studio report avversario (Avversari → Studio Report).',
+      },
+      videoFile: 'https://vimeo.com/1237025088/0349a32ae5',
+      tags: ['vimeo', 'opposition', 'studio-report'],
     },
-    competition: {
-      en: 'Reference',
-      it: 'Riferimento',
-    },
-    score: '0–5',
-    videoFile: 'https://vimeo.com/1236007680/e9ec2c549c',
-  },
-]);
+  ]
+);
 
 attachReferencePack(
   'ascoli',
