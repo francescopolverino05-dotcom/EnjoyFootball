@@ -2010,8 +2010,8 @@ if (bodo) {
   bodo.squadDepth = {
     system: '1-4-3-3',
     note: {
-      en: 'Last 2 UYL XIs (Bayern MD1, Dortmund MD2) mapped onto 4-3-3. Order = most starts in that slot. Short names on pitch; full names in the squad table. Heights / preferred feet not listed on UEFA or Transfermarkt for this group.',
-      it: 'Ultime 2 formazioni UYL (Bayern gior. 1, Dortmund gior. 2) mappate sul 4-3-3. Ordine = più partite in quel ruolo. Nomi corti sul campo; nomi completi in tabella. Altezze / piede preferito non pubblicati su UEFA o Transfermarkt per questo gruppo.',
+      en: 'Last 2 UYL XIs (Bayern MD1, Dortmund MD2) mapped onto 4-3-3. Order = most starts in that slot. Short names on pitch; full names in the squad table. Heights/feet filled where published (TM Strand 199 cm; BeSoccer Chooly 169 cm / right; Offside Andersen right; SoccerWiki Ingilæ & Blix Olsen right); most U19s still blank on TM.',
+      it: 'Ultime 2 formazioni UYL (Bayern gior. 1, Dortmund gior. 2) mappate sul 4-3-3. Ordine = più partite in quel ruolo. Nomi corti sul campo; nomi completi in tabella. Altezze/piede dove pubblicati (TM Strand 199 cm; BeSoccer Chooly 169 cm / destro; Offside Andersen destro; SoccerWiki Ingilæ e Blix Olsen destro); la maggior parte degli U19 resta vuota su TM.',
     },
     slots: [
       {
@@ -2085,7 +2085,11 @@ if (bodo) {
       },
     ],
   };
-  /** UEFA Youth League club squad (it.uefa.com/…/2611772) + TM match sheets. */
+  /**
+   * UEFA Youth League club squad (it.uefa.com/…/2611772) + TM match sheets.
+   * Bios: club glimt.no + TM II / player pages + Offside Scores / BeSoccer / SoccerWiki
+   * where height/foot are published. Most U19s still have blank TM height/foot.
+   */
   bodo.squad = [
     {
       number: 1,
@@ -2093,13 +2097,14 @@ if (bodo) {
       position: 'GK',
       isGk: true,
       birthYear: 2008,
+      preferredFoot: 'Destro',
     },
     {
       number: 12,
       name: 'Petter Østensen Griegel',
       position: 'GK',
       isGk: true,
-      birthYear: 2010,
+      birthYear: 2009,
     },
     {
       number: 2,
@@ -2130,6 +2135,7 @@ if (bodo) {
       name: 'Mathias Blix Olsen',
       position: 'CB',
       birthYear: 2007,
+      preferredFoot: 'Destro',
     },
     {
       number: 25,
@@ -2153,25 +2159,26 @@ if (bodo) {
       number: 10,
       name: 'Milton Käld',
       position: 'RW',
-      birthYear: 2009,
+      birthYear: 2010,
     },
     {
       number: 11,
       name: 'Teo Ingilæ',
       position: 'CM',
-      birthYear: 2009,
+      birthYear: 2007,
+      preferredFoot: 'Destro',
     },
     {
       number: 16,
       name: 'Martin Dobloug Rasen',
-      position: 'CM',
-      birthYear: 2009,
+      position: 'ST',
+      birthYear: 2008,
     },
     {
       number: 18,
       name: 'Erling Eliassen',
       position: 'CM',
-      birthYear: 2008,
+      birthYear: 2009,
     },
     {
       number: 34,
@@ -2195,6 +2202,7 @@ if (bodo) {
       name: 'Jakob Strand',
       position: 'ST',
       birthYear: 2009,
+      heightCm: 199,
     },
     {
       number: 17,
@@ -2206,7 +2214,7 @@ if (bodo) {
       number: 19,
       name: 'Isak Erlend Alvsen',
       position: 'RW',
-      birthYear: 2009,
+      birthYear: 2008,
     },
     {
       number: 20,
@@ -2219,12 +2227,14 @@ if (bodo) {
       name: 'Hindrin Najah Chooly',
       position: 'LW',
       birthYear: 2008,
+      heightCm: 169,
+      preferredFoot: 'Destro',
     },
     {
       number: 30,
       name: 'Matheo Martins',
       position: 'ST',
-      birthYear: 2010,
+      birthYear: 2009,
     },
   ];
 }
