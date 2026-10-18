@@ -476,5 +476,149 @@
       "en": "Full match hosted on Vimeo.",
       "it": "Partita intera su Vimeo."
     }
-  }
+  },
+  "gpsStats": [
+    {
+      "half": {
+        "en": "GPS — Full Match",
+        "it": "GPS — Partita intera"
+      },
+      "summary": {
+        "en": "Melnyk led distance (12102 m). Melnyk led sprint (324.10 m >24 km/h). Liccardo top speed (32.14 km/h). Pereyra most accelerations (54).",
+        "it": "Melnyk distanza (12102 m). Melnyk sprint (324.10 m >24 km/h). Liccardo velocità max (32.14 km/h). Pereyra più accelerazioni (54)."
+      },
+      "players": [
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 12102,
+          "distancePerMin": 103,
+          "distanceOver16KmhM": 2265,
+          "distance20to24KmhM": 684.96,
+          "distanceOver24KmhM": 324.1,
+          "metabolicPowerWkg": 9.4,
+          "accelerationsOver3": 36,
+          "decelerationsUnder3": 59,
+          "maxSpeedKmh": 31.12,
+          "recoveryPct": 70.85
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 11523,
+          "distancePerMin": 97,
+          "distanceOver16KmhM": 1586,
+          "distance20to24KmhM": 391.75,
+          "distanceOver24KmhM": 165.59,
+          "metabolicPowerWkg": 8.9,
+          "accelerationsOver3": 35,
+          "decelerationsUnder3": 46,
+          "maxSpeedKmh": 31.6,
+          "recoveryPct": 71.75
+        },
+        {
+          "player": "Chiummariello",
+          "totalDistanceM": 10710,
+          "distancePerMin": 100,
+          "distanceOver16KmhM": 1605,
+          "distance20to24KmhM": 377.42,
+          "distanceOver24KmhM": 73.01,
+          "metabolicPowerWkg": 8.9,
+          "accelerationsOver3": 19,
+          "decelerationsUnder3": 42,
+          "maxSpeedKmh": 26.44,
+          "recoveryPct": 70.5
+        },
+        {
+          "player": "Zappalà",
+          "totalDistanceM": 10688,
+          "distancePerMin": 91,
+          "distanceOver16KmhM": 1363,
+          "distance20to24KmhM": 402.16,
+          "distanceOver24KmhM": 114.53,
+          "metabolicPowerWkg": 8.2,
+          "accelerationsOver3": 32,
+          "decelerationsUnder3": 47,
+          "maxSpeedKmh": 27.73,
+          "recoveryPct": 74.8
+        },
+        {
+          "player": "Branchizio",
+          "totalDistanceM": 10431,
+          "distancePerMin": 88,
+          "distanceOver16KmhM": 1328,
+          "distance20to24KmhM": 380.62,
+          "distanceOver24KmhM": 93.63,
+          "metabolicPowerWkg": 7.8,
+          "accelerationsOver3": 17,
+          "decelerationsUnder3": 25,
+          "maxSpeedKmh": 28.6,
+          "recoveryPct": 77.99
+        },
+        {
+          "player": "Pereyra",
+          "totalDistanceM": 10257,
+          "distancePerMin": 83,
+          "distanceOver16KmhM": 1499,
+          "distance20to24KmhM": 385.56,
+          "distanceOver24KmhM": 100.71,
+          "metabolicPowerWkg": 7.6,
+          "accelerationsOver3": 54,
+          "decelerationsUnder3": 44,
+          "maxSpeedKmh": 27.9,
+          "recoveryPct": 80.94
+        },
+        {
+          "player": "Liccardo",
+          "totalDistanceM": 9539,
+          "distancePerMin": 107,
+          "distanceOver16KmhM": 2216,
+          "distance20to24KmhM": 658.62,
+          "distanceOver24KmhM": 294.17,
+          "metabolicPowerWkg": 9.7,
+          "accelerationsOver3": 29,
+          "decelerationsUnder3": 47,
+          "maxSpeedKmh": 32.14,
+          "recoveryPct": 69.93
+        },
+        {
+          "player": "Riccio",
+          "totalDistanceM": 8071,
+          "distancePerMin": 103,
+          "distanceOver16KmhM": 1478,
+          "distance20to24KmhM": 366.63,
+          "distanceOver24KmhM": 161.37,
+          "metabolicPowerWkg": 9.4,
+          "accelerationsOver3": 22,
+          "decelerationsUnder3": 37,
+          "maxSpeedKmh": 27.94,
+          "recoveryPct": 68.36
+        },
+        {
+          "player": "Mane",
+          "totalDistanceM": 6053,
+          "distancePerMin": 79,
+          "distanceOver16KmhM": 617,
+          "distance20to24KmhM": 141.27,
+          "distanceOver24KmhM": 122.1,
+          "metabolicPowerWkg": 7.1,
+          "accelerationsOver3": 16,
+          "decelerationsUnder3": 32,
+          "maxSpeedKmh": 31.01,
+          "recoveryPct": 82.29
+        },
+        {
+          "player": "Marotta",
+          "totalDistanceM": 5340,
+          "distancePerMin": 115,
+          "distanceOver16KmhM": 752,
+          "distance20to24KmhM": 199.46,
+          "distanceOver24KmhM": 28.08,
+          "metabolicPowerWkg": 10.4,
+          "accelerationsOver3": 14,
+          "decelerationsUnder3": 19,
+          "maxSpeedKmh": 29.16,
+          "recoveryPct": 66.41
+        }
+      ]
+    }
+  ]
 }
