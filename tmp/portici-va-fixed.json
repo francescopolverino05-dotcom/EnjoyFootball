@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Post Match v Portici",
+    "desc": "Post-match video analysis — Napoli Primavera vs Portici (8 Aug 2026).",
+    "titleAbove": true,
+    "hasPlayButton": true,
+    "hasIframe": false,
+    "iframeSrc": null,
+    "hasPdf": false
+  },
+  {
+    "title": "Session / matchday plan — Sat 8 Aug",
+    "desc": "Primavera training / matchday plan for the friendly vs Portici (8 Aug 2026).",
+    "titleAbove": true,
+    "hasPlayButton": false,
+    "hasIframe": true,
+    "iframeSrc": "https://francescopolverino05-dotcom.github.io/EnjoyFootball/matches/2026-08-08_amichevole-u19-vs-portici/analysis/Session_Plan_2026-08-08.pdf",
+    "hasPdf": true
+  }
+]

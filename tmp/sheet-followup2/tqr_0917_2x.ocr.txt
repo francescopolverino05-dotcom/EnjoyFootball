@@ -1,0 +1,33 @@
+0.30	0.448	0.721	1oSarT
+1.00	0.630	0.730	TOR
+0.30	0.651	0.725	O SO8T7
+0.50	0.734	0.728	16 sen
+1.00	0.299	0.717	Anic Ivan
+1.00	0.255	0.699	Santella Alessandro
+1.00	0.237	0.682	Baridó Francisco Martin
+1.00	0.252	0.665	Branchizio Agostino
+1.00	0.242	0.649	Candela Ivan Giovanni
+0.50	0.250	0.634	CaderbiAnatueS E
+0.30	0.250	0.618	Castadi CroA R.D d
+1.00	0.235	0.604	Chiummariello Andrea
+1.00	0.237	0.588	De Stefano Francesco
+1.00	0.268	0.573	Esposito Luigi
+1.00	0.268	0.558	Favicchio Elia
+1.00	0.266	0.542	Lieto Claudio
+1.00	0.252	0.524	Lepre Giuseppe
+1.00	0.247	0.508	Maida Giuseppe
+1.00	0.224	0.492	Mane Mohamed Seick
+1.00	0.242	0.476	Marotta Gabriele
+1.00	0.244	0.458	Melnyk Mykyta
+1.00	0.240	0.439	Gerofete-Gristian D'Al-do
+1.00	0.245	0.430	Natale Raffaele
+1.00	0.175	0.408	Pereyra Alvarez Milton Agustin
+1.00	0.234	0.395	Saviano Raffaele
+1.00	0.229	0.378	Pengue Salvatore
+1.00	0.249	0.360	Riccio Luigi
+1.00	0.232	0.342	Zappalà Andrea
+1.00	0.208	0.324	Ruvetini Alessandro
+1.00	0.209	0.298	PICA
+1.00	0.194	0.267	BENGOE
+1.00	0.757	0.283	13
+1.00	0.762	0.260	15

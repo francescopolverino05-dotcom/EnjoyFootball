@@ -1,0 +1,30 @@
+1.00	0.721	0.735	RPE
+0.30	0.655	0.725	15Sơt
+1.00	0.362	0.718	Anic Ivan
+1.00	0.316	0.700	Santella Alessandro
+1.00	0.298	0.682	Baridó Francisco Martin
+1.00	0.311	0.667	Branchizio Agostino
+1.00	0.301	0.652	Candela Ivan Giovanni
+0.50	0.305	0.630	CasttebiAmblociSE
+1.00	0.305	0.614	Lastadi CirAvvhioto
+1.00	0.293	0.602	Chiummariello Andrea
+1.00	0.293	0.585	De Stefano Francesco
+1.00	0.324	0.568	Esposito Luigi
+1.00	0.321	0.552	Favicchio Elia
+1.00	0.322	0.536	Lieto Claudio
+1.00	0.308	0.516	Lepre Giuseppe
+1.00	0.301	0.492	Maida GiusappeD'AU(ELS 13
+1.00	0.275	0.483	Mane Mohamed Seick
+1.00	0.296	0.469	Marotta Gabriele
+1.00	0.299	0.451	Melnyk Mykyta
+1.00	0.291	0.430	Garofalo Cristian PICA
+1.00	0.514	0.429	12
+1.00	0.296	0.415	Natale Raffaele
+1.00	0.226	0.397	Pereyra Alvarez Milton Agustin
+1.00	0.283	0.380	Saviano Raffaele
+1.00	0.281	0.364	Pengue Salvatore
+1.00	0.304	0.345	Riccio Luigi
+1.00	0.281	0.326	Zappalà Andrea
+1.00	0.260	0.306	Ruvetini Alessandro
+1.00	0.496	0.299	13
+1.00	0.023	0.179	21

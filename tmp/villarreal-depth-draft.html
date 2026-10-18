@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Villarreal depth draft — 3-4-2-1</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #111827;
+      --line: rgba(255, 255, 255, 0.28);
+      --muted: #94a3b8;
+      --text: #e2e8f0;
+      --accent: #facc15;
+      --grass-a: #1f6b3a;
+      --grass-b: #245f36;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 20px 16px 40px;
+    }
+    .page { max-width: 720px; margin: 0 auto; }
+    .draft-tag {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: rgba(250, 204, 21, 0.15);
+      color: #fde68a;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    h1 { margin: 0 0 6px; font-size: 1.35rem; }
+    .sub {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.45;
+    }
+    .card {
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 16px;
+    }
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* Clean formation graphic with short labels only */
+    .xi-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      padding: 8px 4px 4px;
+    }
+    .xi-line {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: nowrap;
+    }
+    .xi-slot {
+      min-width: 0;
+      flex: 1 1 0;
+      text-align: center;
+    }
+    .xi-line.narrow .xi-slot { max-width: 150px; }
+    .xi-line.pair .xi-slot { max-width: 160px; }
+    .xi-line.single .xi-slot { max-width: 180px; }
+    .xi-slot .role {
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+    .xi-slot .name {
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(250, 204, 21, 0.4);
+      border-radius: 10px;
+      padding: 8px 6px;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .pitch-bg {
+      border-radius: 12px;
+      padding: 16px 10px;
+      background:
+        repeating-linear-gradient(
+          180deg,
+          var(--grass-a) 0 28px,
+          var(--grass-b) 28px 56px
+        );
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .rows { display: grid; gap: 8px; }
+    .row {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 10px;
+      align-items: start;
+      padding: 9px 10px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .row .role {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--accent);
+      padding-top: 1px;
+    }
+    .names { display: flex; flex-direction: column; gap: 5px; }
+    .name-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13.5px;
+      line-height: 1.3;
+    }
+    .name-line.primary { color: #f8fafc; font-weight: 700; }
+    .name-line.secondary { color: #cbd5e1; font-weight: 500; }
+    .name-line .count {
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+    }
+    .note {
+      margin: 12px 0 0;
+      font-size: 0.78rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="draft-tag">Draft · not pushed</div>
+    <h1>Villarreal squad depth — 3-4-2-1</h1>
+    <p class="sub">
+      Last 3 XIs mapped to 3-4-2-1. Merged: Guillamon · Ioan (=Joan) ·
+      García Palomar (=Raul) · Iker Pérez (=Iker) · Falco Montanet (=Toni).
+    </p>
+
+    <section class="card">
+      <h2>First choice XI</h2>
+      <div class="pitch-bg">
+        <div class="xi-grid">
+          <div class="xi-line single">
+            <div class="xi-slot"><div class="role">GK</div><div class="name">Ursu</div></div>
+          </div>
+          <div class="xi-line narrow">
+            <div class="xi-slot"><div class="role">RCB</div><div class="name">Falco Montanet</div></div>
+            <div class="xi-slot"><div class="role">CB</div><div class="name">Martin Vergun</div></div>
+            <div class="xi-slot"><div class="role">LCB</div><div class="name">Guillermo Anadon</div></div>
+          </div>
+          <div class="xi-line">
+            <div class="xi-slot"><div class="role">RWB</div><div class="name">Luengo</div></div>
+            <div class="xi-slot"><div class="role">RCM</div><div class="name">Moussa Traore</div></div>
+            <div class="xi-slot"><div class="role">LCM</div><div class="name">Alvaro Alcaide</div></div>
+            <div class="xi-slot"><div class="role">LWB</div><div class="name">Seydou Llopis</div></div>
+          </div>
+          <div class="xi-line pair">
+            <div class="xi-slot"><div class="role">RAM</div><div class="name">Vivo</div></div>
+            <div class="xi-slot"><div class="role">LAM</div><div class="name">Edu</div></div>
+          </div>
+          <div class="xi-line single">
+            <div class="xi-slot"><div class="role">ST</div><div class="name">García Palomar</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Full depth (starts in slot)</h2>
+      <div class="rows">
+        <div class="row">
+          <div class="role">GK</div>
+          <div class="names">
+            <div class="name-line primary"><span>Ursu</span><span class="count">2</span></div>
+            <div class="name-line secondary"><span>Pablo Polo</span><span class="count">1</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="role">RCB</div>
+          <div class="names">
+            <div class="name-line primary"><span>Falco Montanet</span><span class="count">3</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="role">CB</div>
+          <div class="names">
+            <div class="name-line primary"><span>Martin Vergun</span><span class="count">1</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="role">LCB</div>
+          <div class="names">
+            <div class="name-line primary"><span>Guillermo Anadon</span><span class="count">1</span></div>
+            <div class="name-line secondary"><span>Roman</span><span class="count">1</span></div>
+            <div class="name-line secondary"><span>Juanma</span><span class="count">1</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="role">RWB</div>
+          <div class="names">
+            <div class="name-line primary"><span>Luengo</span><span class="count">2</span></div>
+            <div class="name-line secondary"><span>Adrian Guillamon</span><span class="count">1</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="role">LWB</div>
+          <div class="names">
+            <div class="name-line primary"><span>Seydou Llopis</span><span class="count">1</span></div>
+            <div class="name-line secondary"><span>Pilili</span><span class="count">1</span></div>
+            <div class="name-line secondary"><span>Iván</span><span class="count">1</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="role">RCM</div>
+          <div class="names">
+            <div class="name-line primary"><span>Moussa Traore</span><span class="count">1</span></div>
+            <div class="name-line secondary"><span>Ioan</span><span class="count">1</span></div>
+            <div class="name-line secondary"><span>Jairo</span><span class="count">1</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="role">LCM</div>
+          <div class="names">
+            <div class="name-line primary"><span>Alvaro Alcaide</span><span class="count">1</span></div>
+            <div class="name-line secondary"><span>Koné</span><span class="count">1</span></div>
+            <div class="name-line secondary"><span>Ioan</span><span class="count">1</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="role">RAM</div>
+          <div class="names">
+            <div class="name-line primary"><span>Vivo</span><span class="count">2</span></div>
+            <div class="name-line secondary"><span>Iker Pérez</span><span class="count">1</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="role">LAM</div>
+          <div class="names">
+            <div class="name-line primary"><span>Edu</span><span class="count">2</span></div>
+            <div class="name-line secondary"><span>González García</span><span class="count">1</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="role">ST</div>
+          <div class="names">
+            <div class="name-line primary"><span>García Palomar</span><span class="count">2</span></div>
+            <div class="name-line secondary"><span>Iker Pérez</span><span class="count">1</span></div>
+            <div class="name-line secondary"><span>Yuri</span><span class="count">1</span></div>
+            <div class="name-line secondary"><span>Fode</span><span class="count">1</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="note">
+        Falco Montanet (= Toni) started all 3 at RCB. Ioan and Iker Pérez listed in each slot they started.
+      </p>
+    </section>
+  </div>
+</body>
+</html>

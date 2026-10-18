@@ -1,0 +1,35 @@
+0.507	0.701	0.132	0.020	0.30	12 3~7
+0.434	0.662	0.038	0.012	0.50	OIT
+0.483	0.654	0.035	0.012	1.00	OTT.
+0.549	0.639	0.056	0.018	1.00	RPE
+0.576	0.627	0.028	0.016	1.00	2
+0.660	0.637	0.035	0.010	1.00	877
+0.721	0.619	0.137	0.032	0.30	T OTT on bii
+0.788	0.609	0.073	0.014	1.00	19 12
+0.275	0.645	0.068	0.017	1.00	Anic Ivan
+0.237	0.628	0.131	0.027	1.00	Santella Alessandro
+0.219	0.614	0.159	0.031	1.00	Barido Francisco Martin
+0.223	0.604	0.138	0.028	1.00	Branchizio Agostino
+0.215	0.591	0.145	0.030	1.00	Condola Ivan Glovanni
+0.215	0.581	0.142	0.027	1.00	EIANGELO
+0.216	0.566	0.160	0.031	0.30	cualidicieaRDi
+0.195	0.554	0.152	0.029	1.00	Chiummariello Andrea
+0.191	0.542	0.149	0.030	1.00	De Stefano Francesco
+0.212	0.532	0.100	0.023	1.00	Esposito Luigi
+0.206	0.522	0.096	0.021	1.00	Favicchio Elia
+0.202	0.508	0.097	0.023	1.00	Lieto Claudio
+0.187	0.494	0.111	0.025	1.00	Lepre Giuseppe
+0.177	0.475	0.157	0.036	0.30	MOGNELELE SỮ
+0.157	0.466	0.155	0.030	1.00	Mane Mohamed Seick
+0.164	0.455	0.127	0.027	1.00	Marotta Gabriele
+0.163	0.442	0.114	0.027	1.00	Meinyk Mykyta
+0.152	0.421	0.177	0.039	0.50	Gonstato Cmofil CCAR Di
+0.153	0.416	0.115	0.027	1.00	Natale Raffaele
+0.097	0.398	0.212	0.036	1.00	Pereyra Alvarez Milton Agustin
+0.135	0.390	0.124	0.026	1.00	Saviano Raffacle
+0.128	0.376	0.125	0.026	1.00	Pengue Salvatore
+0.139	0.366	0.086	0.021	1.00	Riccio Luigi
+0.114	0.348	0.119	0.026	1.00	Zappalà Andrea
+0.097	0.332	0.143	0.029	1.00	Ruvetini Alessandro
+0.092	0.323	0.098	0.022	1.00	PEPE-
+0.278	0.307	0.042	0.018	1.00	17

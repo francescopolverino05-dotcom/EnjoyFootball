@@ -1,0 +1,37 @@
+0.30	0.282	0.651	Zo SAT
+0.30	0.345	0.659	AEA LSA TQR
+0.30	0.783	0.683	cntt
+0.50	0.563	0.650	175SeT.
+1.00	0.659	0.666	Rsors
+1.00	0.160	0.643	Anic Ivan
+1.00	0.127	0.631	Santella Alessandro
+1.00	0.114	0.618	Baridó Francisco Martin
+1.00	0.127	0.604	Branchizio Agostino
+1.00	0.119	0.593	Condela Ivan Giovanni
+0.50	0.126	0.578	CartetebiAentaieS E
+0.30	0.127	0.565	Lastrdi CiroterR D d 12
+1.00	0.119	0.555	Chiummariello Andrea
+1.00	0.119	0.542	De Stefano Francesco
+1.00	0.145	0.529	Esposito Luigi
+1.00	0.145	0.517	Favicchio Elia
+1.00	0.147	0.504	Lieto Claudio
+1.00	0.137	0.491	Lepre Gluseppe
+1.00	0.134	0.478	Malda Giuseppe
+1.00	0.116	0.467	Mane Mohamed Seick
+1.00	0.132	0.453	Marotta Gabriele
+1.00	0.137	0.440	Melnyk Mykyta
+1.00	0.132	0.424	Gerofete-Gristian D'AUl-S0
+1.00	0.137	0.414	Natale Raffaele
+1.00	0.088	0.401	Pereyra Alvarez Milton Agustin
+1.00	0.295	0.398	15
+1.00	0.132	0.388	Saviano Raffaele
+1.00	0.129	0.375	Pengue Salvatore
+1.00	0.147	0.362	Riccio Luigi
+1.00	0.132	0.347	Zappalà Andrea
+1.00	0.289	0.344	20
+1.00	0.119	0.334	Ruvetini Alessandro
+1.00	0.119	0.310	PICA
+1.00	0.111	0.287	BENGOE
+1.00	0.349	0.362	15
+1.00	0.346	0.347	13
+1.00	0.548	0.297	15

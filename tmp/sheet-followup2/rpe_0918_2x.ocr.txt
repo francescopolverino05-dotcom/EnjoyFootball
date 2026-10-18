@@ -1,0 +1,32 @@
+1.00	0.474	0.670	R. PARTICA
+1.00	0.553	0.666	RPE
+0.30	0.573	0.644	1650T
+1.00	0.685	0.647	173am/ 18.S8tr
+1.00	0.203	0.649	Anic Ivan
+1.00	0.169	0.633	Santella Alessandro
+1.00	0.149	0.616	Baridó Francisco Martin
+1.00	0.159	0.598	Branchizio Agostino
+1.00	0.151	0.585	Candela Ivan Giovanni
+0.30	0.155	0.565	EttbiAnbiSE
+0.30	0.153	0.550	Lestadi CArRiaD o
+1.00	0.138	0.536	Chiummariello Andrea
+1.00	0.138	0.520	De Stefano Francesco
+1.00	0.169	0.505	Esposito Luigi
+1.00	0.167	0.490	Favicchio Elia
+1.00	0.165	0.475	Lieto Claudio
+1.00	0.154	0.458	Lepre Giuseppe
+1.00	0.146	0.437	Moida Giuseppe) Au(ELo
+1.00	0.120	0.424	Mane Mohamed Seick
+1.00	0.136	0.408	Marotta Gabriele
+1.00	0.141	0.392	Melnyk Mykyta
+1.00	0.133	0.373	Garefalo Cristian PICA
+1.00	0.136	0.359	Natale Raffaele
+1.00	0.071	0.341	Pereyra Alvarez Milton Agustin
+1.00	0.123	0.326	Saviano Raffaele
+1.00	0.117	0.309	Pengue Salvatore
+1.00	0.138	0.293	Riccio Luigi
+1.00	0.115	0.274	Zappalà Andrea
+1.00	0.096	0.255	Ruvetini Alessandro
+0.50	0.093	0.240	BBOS
+1.00	0.357	0.487	15
+1.00	0.344	0.371	12

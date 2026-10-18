@@ -1,0 +1,1275 @@
+{
+  "duration_s": 3180.5,
+  "coarse_changes": [
+    {
+      "video_sec": 570.0,
+      "clock": "09:30",
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 09:30 Blu 1 - 0 Verdi",
+      "from": [
+        0,
+        0
+      ]
+    },
+    {
+      "video_sec": 1770.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        2,
+        0
+      ],
+      "raw": "Amichevole 29.29 Blu 2 - 0 Verdi",
+      "from": [
+        1,
+        0
+      ]
+    },
+    {
+      "video_sec": 1920.0,
+      "clock": "02:00",
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 02:00 Blu 2 - 1 Verdi",
+      "from": [
+        2,
+        0
+      ]
+    },
+    {
+      "video_sec": 2670.0,
+      "clock": null,
+      "half": "2H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Game 02.27 Home Team 0 - 0 Blu",
+      "from": [
+        2,
+        1
+      ]
+    },
+    {
+      "video_sec": 2730.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        0
+      ],
+      "raw": "Amichevole 03.27 Blu 3 - 0 Verdi",
+      "from": [
+        0,
+        0
+      ]
+    },
+    {
+      "video_sec": 2760.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 03.57 Blu 3 -1 Verdi",
+      "from": [
+        3,
+        0
+      ]
+    }
+  ],
+  "refined_score_timeline": [
+    {
+      "video_sec": 480.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 08.00 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 550.0,
+      "clock": "09:10",
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 09:10 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1680.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 27.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1760.0,
+      "clock": "29:19",
+      "half": "1H",
+      "score": [
+        2,
+        0
+      ],
+      "raw": "Amichevole 29:19 Blu 2 - 0 Verdi"
+    },
+    {
+      "video_sec": 1865.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        2,
+        0
+      ],
+      "raw": "Amichevole 01.05 Blu 2 - 0 Verdi"
+    },
+    {
+      "video_sec": 1895.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 01.35 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2660.0,
+      "clock": "02:17",
+      "half": "2H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Game 02:17 Rosa 0 - 0 Blu"
+    },
+    {
+      "video_sec": 2660.0,
+      "clock": "02:17",
+      "half": "2H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Game 02:17 Rosa 0 - 0 Blu"
+    },
+    {
+      "video_sec": 2730.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        0
+      ],
+      "raw": "Amichevole 03.27 Blu 3 - 0 Verdi"
+    },
+    {
+      "video_sec": 2735.0,
+      "clock": "03:32",
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 03:32 Blu 3 -1 Verdi"
+    },
+    {
+      "video_sec": 2670.0,
+      "clock": null,
+      "half": "2H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Game 02.27 Home Team 0 - 0 Blu"
+    },
+    {
+      "video_sec": 2730.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        0
+      ],
+      "raw": "Amichevole 03.27 Blu 3 - 0 Verdi"
+    },
+    {
+      "video_sec": 2735.0,
+      "clock": "03:32",
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 03:32 Blu 3 -1 Verdi"
+    }
+  ],
+  "samples_30s": [
+    {
+      "video_sec": 0.0,
+      "clock": "00:00",
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 00:00 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 30.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 00.29 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 60.0,
+      "clock": "00:59",
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 00:59 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 90.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 01.29 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 120.0,
+      "clock": "02:00",
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 02:00 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 150.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 02.30 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 180.0,
+      "clock": "03:00",
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 03:00 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 210.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 03.30 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 240.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 04.00 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 270.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 04.30 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 300.0,
+      "clock": "05:00",
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 05:00 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 330.0,
+      "clock": "05:30",
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 05:30 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 360.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 06.00 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 390.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 06.30 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 420.0,
+      "clock": "07:00",
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 07:00 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 450.0,
+      "clock": "07:30",
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 07:30 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 480.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 08.00 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 510.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 08.30 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 540.0,
+      "clock": "09:00",
+      "half": "1H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Amichevole 09:00 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 570.0,
+      "clock": "09:30",
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 09:30 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 600.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 10.00 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 630.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 10.30 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 660.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 11.00 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 690.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 11330 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 720.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 11.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 750.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 12.29 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 780.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 12.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 810.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 13.29 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 840.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 13.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 870.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 14.29 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 900.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 14.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 930.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 15.29 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 960.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 15.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 990.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 16.29 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1020.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 17.00 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1050.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 17.30 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1080.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 17.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1110.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 18.30 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1140.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 19.00 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1170.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 19.30 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1200.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 19.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1230.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 20.29 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1260.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 20.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1290.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 21.29 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1320.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 21.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1350.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 22.29 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1380.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 22.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1410.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 23.29 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1440.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 23.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1470.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 24.29 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1500.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 24.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1530.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 25.29 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1560.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 25.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1590.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 26.29 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1620.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 26.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1650.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 27.29 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1680.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 27.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1710.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 28.29 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1740.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        1,
+        0
+      ],
+      "raw": "Amichevole 28.59 Blu 1 - 0 Verdi"
+    },
+    {
+      "video_sec": 1770.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        2,
+        0
+      ],
+      "raw": "Amichevole 29.29 Blu 2 - 0 Verdi"
+    },
+    {
+      "video_sec": 1800.0,
+      "clock": "00:00",
+      "half": "1H",
+      "score": [
+        2,
+        0
+      ],
+      "raw": "Amichevole 00:00 Blu 2 - 0 Verdi"
+    },
+    {
+      "video_sec": 1830.0,
+      "clock": null,
+      "half": "1H",
+      "score": null,
+      "raw": ""
+    },
+    {
+      "video_sec": 1860.0,
+      "clock": null,
+      "half": "1H",
+      "score": null,
+      "raw": ""
+    },
+    {
+      "video_sec": 1890.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        2,
+        0
+      ],
+      "raw": "Amichevole 01;30 Blu 2 - 0 Verdi"
+    },
+    {
+      "video_sec": 1920.0,
+      "clock": "02:00",
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 02:00 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 1950.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 02.30 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 1980.0,
+      "clock": "03:00",
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 03:00 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2010.0,
+      "clock": "03:30",
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 03:30 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2040.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 04.00 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2070.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 04.30 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2100.0,
+      "clock": "05:00",
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 05:00 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2130.0,
+      "clock": "05:30",
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 05:30 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2160.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 06.00 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2190.0,
+      "clock": "06:30",
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 06:30 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2220.0,
+      "clock": "07:00",
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 07:00 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2250.0,
+      "clock": "07:30",
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 07:30 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2280.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 08.00 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2310.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 08.30 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2340.0,
+      "clock": "09:00",
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 09:00 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2370.0,
+      "clock": "09:30",
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 09:30 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2400.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 10.00 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2430.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 10.30 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2460.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 11.00 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2490.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 11.30 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2520.0,
+      "clock": "12:00",
+      "half": "1H",
+      "score": [
+        2,
+        1
+      ],
+      "raw": "Amichevole 12:00 Blu 2 - 1 Verdi"
+    },
+    {
+      "video_sec": 2550.0,
+      "clock": null,
+      "half": "1H",
+      "score": null,
+      "raw": ""
+    },
+    {
+      "video_sec": 2580.0,
+      "clock": null,
+      "half": "1H",
+      "score": null,
+      "raw": ""
+    },
+    {
+      "video_sec": 2610.0,
+      "clock": null,
+      "half": "1H",
+      "score": null,
+      "raw": ""
+    },
+    {
+      "video_sec": 2640.0,
+      "clock": null,
+      "half": "1H",
+      "score": null,
+      "raw": ""
+    },
+    {
+      "video_sec": 2670.0,
+      "clock": null,
+      "half": "2H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Game 02.27 Home Team 0 - 0 Blu"
+    },
+    {
+      "video_sec": 2700.0,
+      "clock": null,
+      "half": "2H",
+      "score": [
+        0,
+        0
+      ],
+      "raw": "Game 02.57 Blu 0 - 0 Verdi"
+    },
+    {
+      "video_sec": 2730.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        0
+      ],
+      "raw": "Amichevole 03.27 Blu 3 - 0 Verdi"
+    },
+    {
+      "video_sec": 2760.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 03.57 Blu 3 -1 Verdi"
+    },
+    {
+      "video_sec": 2790.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 04.27 Blu 3 -1 Verdi"
+    },
+    {
+      "video_sec": 2820.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 04.57 Blu 3 -1 Verdi"
+    },
+    {
+      "video_sec": 2850.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 05.27 Blu 3 -1 Verdi"
+    },
+    {
+      "video_sec": 2880.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 05.57 Blu 3 -1 Verdi"
+    },
+    {
+      "video_sec": 2910.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 06.27 Blu 3 -1 Verdi"
+    },
+    {
+      "video_sec": 2940.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 06.57 Blu 3 -1 Verdi"
+    },
+    {
+      "video_sec": 2970.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 07.27 Blu 3 -1 Verdi"
+    },
+    {
+      "video_sec": 3000.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 07.57 Blu 3 -1 Verdi"
+    },
+    {
+      "video_sec": 3030.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 08.27 Blu 3 -1 Verdi"
+    },
+    {
+      "video_sec": 3060.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 08.57 Blu 3 -1 Verdi"
+    },
+    {
+      "video_sec": 3090.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 09.27 Blu 3 -1 Verdi"
+    },
+    {
+      "video_sec": 3120.0,
+      "clock": "09:57",
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 09:57 Blu 3 -1 Verdi"
+    },
+    {
+      "video_sec": 3150.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 10.27 Blu 3 -1 Verdi"
+    },
+    {
+      "video_sec": 3180.0,
+      "clock": null,
+      "half": "1H",
+      "score": [
+        3,
+        1
+      ],
+      "raw": "Amichevole 10.57 Blu 3 -1 Verdi"
+    }
+  ]
+}

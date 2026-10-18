@@ -1,0 +1,37 @@
+{
+  "steps": [
+    "loaded"
+  ],
+  "tabs": [
+    "Match Dynamics",
+    "Team Statistics",
+    "Goalkeeper Analysis",
+    "Full Match",
+    "Clips",
+    "Video Analysis",
+    "Physical Load"
+  ],
+  "activeText": "Full analyst video breakdowns for the coaching staff.\n\nPost Match v Portici\nSynced from Vimeo folder.\nvimeo\nanalysis\nOpen PDF\nDownload\nSession / matchday plan — Sat 8 Aug\nPrimavera training / matchday plan for the friendly vs Portici (8 Aug 2026).\npdf\nsession-plan\nmatchday",
+  "cards": [
+    {
+      "title": "Post Match v Portici",
+      "desc": "Synced from Vimeo folder.",
+      "hasIframe": true,
+      "iframeSrc": "https://player.vimeo.com/video/1217074924?h=ad5c37b7df&autoplay=1",
+      "hasVideo": false,
+      "hasPdfFrame": false,
+      "wrapClass": "video-player-wrap video-player-wrap--vimeo "
+    },
+    {
+      "title": "Session / matchday plan — Sat 8 Aug",
+      "desc": "Primavera training / matchday plan for the friendly vs Portici (8 Aug 2026).",
+      "hasIframe": true,
+      "iframeSrc": "/EnjoyFootball/matches/2026-08-08_amichevole-u19-vs-portici/analysis/Session_Plan_2026-08-08.pdf",
+      "hasVideo": false,
+      "hasPdfFrame": true,
+      "wrapClass": "video-player-wrap video-player-wrap--pdf "
+    }
+  ],
+  "hasPostMatch": true,
+  "screenshot": "tmp/portici-video-analysis.png"
+}

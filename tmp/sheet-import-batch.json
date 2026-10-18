@@ -1,0 +1,72 @@
+{
+  "rpe": {
+    "2026-09-11": [
+      { "name": "Santella Alessandro", "rpe": 15 },
+      { "name": "Candela Ivan Giovanni", "rpe": 14 },
+      { "name": "Chiaiese", "rpe": 13 },
+      { "name": "Esposito Luigi", "rpe": 14 },
+      { "name": "Favicchio Elia", "rpe": 15 },
+      { "name": "Lepre Giuseppe", "rpe": 13 },
+      { "name": "D'Angelo", "rpe": 13 },
+      { "name": "Ruvetini Alessandro", "rpe": 13 },
+      { "name": "Pica", "rpe": 12 }
+    ]
+  },
+  "tqr": {
+    "2026-08-28": [
+      { "name": "Anic Ivan", "tqr": 17 },
+      { "name": "Santella Alessandro", "tqr": 12 },
+      { "name": "Baridó Francisco Martin", "tqr": 13 },
+      { "name": "Branchizio Agostino", "tqr": 15 },
+      { "name": "Chiummariello Andrea", "tqr": 17 },
+      { "name": "De Stefano Francesco", "tqr": 14 },
+      { "name": "Esposito Luigi", "tqr": 14 }
+    ],
+    "2026-08-29": [
+      { "name": "Anic Ivan", "tqr": 20 },
+      { "name": "Santella Alessandro", "tqr": 15 },
+      { "name": "Baridó Francisco Martin", "tqr": 15 },
+      { "name": "Branchizio Agostino", "tqr": 17 },
+      { "name": "Chiummariello Andrea", "tqr": 15 },
+      { "name": "De Stefano Francesco", "tqr": 13 },
+      { "name": "Esposito Luigi", "tqr": 15 },
+      { "name": "Favicchio Elia", "tqr": 13 },
+      { "name": "Lieto Claudio", "tqr": 15 },
+      { "name": "Lepre Giuseppe", "tqr": 15 },
+      { "name": "Natale Raffaele", "tqr": 15 },
+      { "name": "Pereyra Alvarez Milton Agustin", "tqr": 17 },
+      { "name": "Zappalà Andrea", "tqr": 14 },
+      { "name": "Ruvetini Alessandro", "tqr": 15 }
+    ],
+    "2026-09-10": [
+      { "name": "Baridó Francisco Martin", "tqr": 14 },
+      { "name": "Branchizio Agostino", "tqr": 12 },
+      { "name": "Liccardo", "tqr": 12 },
+      { "name": "Chiummariello Andrea", "tqr": 14 },
+      { "name": "De Stefano Francesco", "tqr": 11 },
+      { "name": "Lieto Claudio", "tqr": 13 },
+      { "name": "Mane Mohamed Seick", "tqr": 14 },
+      { "name": "Melnyk Mykyta", "tqr": 11 },
+      { "name": "Pereyra Alvarez Milton Agustin", "tqr": 15 },
+      { "name": "Zappalà Andrea", "tqr": 10 }
+    ]
+  },
+  "notes": [
+    "SOURCE RESOLUTION: every photo is natively 576x1024, not downscaled on read. On the dense 7-8 column sheets each cell is roughly 30x16 px, which is below what can be transcribed reliably. Only columns that survived validation are emitted below; nothing here is a guess.",
+    "VALIDATION METHOD: existing src/data/tqr-load.json and rpe-load.json were used as ground truth for already-imported columns. A column was only accepted when its neighbour column reproduced the imported values row-for-row, which pins both the column-to-date mapping and the row alignment.",
+    "TQR 2026-09-10 (image 10, '10 sett') - HIGH confidence. Clean single column, well-spaced, no overwriting. 'Liccardo' is the handwritten name over the struck-out 'Castaldi Ciro Junior' row; 'Chiaiese' is written over the 'Capozzoli Emanuele' row and has no value.",
+    "TQR 2026-08-29 (image 6, unlabeled single TQR column) - HIGH confidence, but ALREADY IMPORTED. All 14 values match the existing 2026-08-29 session exactly, which both confirms the user's guess that this column is 29 Aug and validates the read method. Included only for verification; it is a no-op merge.",
+    "TQR 2026-08-28 (image 1, rightmost column, arrow-labelled '28 AGOSTO') - PARTIAL. The adjacent column reproduced the imported 2026-08-27 values exactly for Anic/Santella/Barido/Branchizio, the three blanks at Candela/Capozzoli/Castaldi, and Chiummariello/De Stefano/Esposito, so those rows are anchored and emitted. From Favicchio downward every 27 Aug anchor value is 13, so the anchor stops discriminating; the handwritten rows also drift progressively below the printed rows there, leaving 4 visible 28 Aug entries spanning 5 players (De Stefano..Lepre). Those rows are NOT emitted. A re-shoot of the lower half of this sheet would close it out.",
+    "RPE 2026-09-11 (image 11) - values HIGH confidence, DATE ASSUMED. The sheet has no visible date header; 11 Sep comes from the user's brief, not the paper. Handwritten roster edits: 'Chiaiese' over Capozzoli Emanuele, 'D'Angelo' over the struck 'Maida Giuseppe', 'Pica' added at the bottom, and a struck-out name over 'Castaldi Ciro Junior' that is illegible. Esposito's 14 is written over an earlier digit; the final visible value is used. The bottom '13' sits between Zappala and Ruvetini and is read as Ruvetini - worth a second look.",
+    "NOT EXTRACTED - TQR 2026-08-24, 2026-08-25, 2026-08-26: these columns do not exist on any sheet in this batch. The Aug TQR sheet (images 1 and 5) carries only 20, 21, 22, one undated column, 23, 27 and 28 Agosto. A different TQR sheet would be needed.",
+    "NOT EXTRACTED - TQR 2026-08-31: no 31 Agosto column appears on any TQR sheet in this batch. The Sett TQR sheet (image 8) starts at 29 Agosto and then jumps to 01 Sett.",
+    "UNDATED TQR COLUMN: the Aug TQR sheet has a 4th column, between 22 and 23 Agosto, whose header is scribbled out and illegible in both photos of that sheet (images 1 and 5). It holds real values for most players. Anchoring is certain: Prisco reads 15/14/15/-/11 across columns 1-5, matching the imported 20, 21, 22 and 23 Agosto values, so the undated column sits between 22 and 23 Agosto. It cannot be dated from the paper.",
+    "NOT EXTRACTED - TQR 2026-09-07 (image 8, rightmost '7 Sett' column): the column is legible in isolation but its date-anchoring neighbour, '6 Sett', is a sparse 8-value blue-ink column. Those 8 values do match the imported 2026-09-06 session exactly (Barido 8, Branchizio 11, Chiummariello 9, De Stefano 9, Lepre 12, Melnyk 13, Pereyra 11, Zappala 10), which confirms the column layout, but 8 anchors across 25 rows leave the 7 Sett rows between anchors unresolved, and several of its digits are overwritten. Re-shoot needed.",
+    "NOT EXTRACTED - RPE 2026-09-06 and 2026-09-07 (images 7 and 9, same sheet): column layout is confirmed as 31, 1 Sett, 2 Sett, 3 Sett, 4 Sett, 5 Sett PARTITA, 6 Sett, 7 Sett, and the 5 Sett PARTITA column matches the imported 2026-09-05 values for Anic 14, Santella 17, De Stefano 16, Lieto 19 and Lepre 17. However the handwritten rows drift against the printed rows down the sheet and the anchor column has repeated values, so individual 6/7 Sett rows could not be attributed safely.",
+    "NOT EXTRACTED - RPE 2026-08-28: the Aug RPE sheet (images 2 and 3) is the hardest of the batch. Its header reads 20, 21, 22, a scribbled-over column behind the circled 'RPE' title, then 25, 26, 27, 28 Agosto, but the body contains more number columns than there are header labels, and repeated attempts to line the rightmost columns up against the imported 2026-08-27 session gave contradictory row offsets in the upper and lower thirds. No values emitted.",
+    "RPE PARTITA (image 3): the arrow labelled 'RPE PARTITA' points up into the rightmost column, whose own header reads '28 AGOSTO' with a heavy scribble over the header box. Per the stated rule this would be 2026-08-28 training RPE rather than the 29 Aug U17 match, but note the imported data already has TQR for the 29 Aug match and no RPE for it, so this column may in fact be the match sheet. Worth confirming against the paper before merging.",
+    "NOT EXTRACTED - RPE 2026-08-23 and 2026-08-29: no column for either date appears anywhere in this batch.",
+    "NOT EXTRACTED - RPE 2026-09-08: image 9 is the same sheet as image 7 photographed with one extra rightmost column headed with what looks like 'GS' rather than a date. It is very sparse and cannot be tied to 8 Sept from the paper.",
+    "DUPLICATE INPUT: images 3 and 4 are byte-identical (same md5), so the batch contains 10 distinct photos, not 11. Images 7 and 9 are two shots of the same RPE Sett sheet, and images 1 and 5 are two shots of the same Aug TQR sheet at different stages of filling."
+  ]
+}

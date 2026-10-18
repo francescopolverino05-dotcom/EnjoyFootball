@@ -1,0 +1,627 @@
+[
+  {
+    "t": 0,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_00m00s.jpg"
+  },
+  {
+    "t": 45,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_00m45s.jpg"
+  },
+  {
+    "t": 90,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_01m30s.jpg"
+  },
+  {
+    "t": 135,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_02m15s.jpg"
+  },
+  {
+    "t": 180,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_03m00s.jpg"
+  },
+  {
+    "t": 225,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_03m45s.jpg"
+  },
+  {
+    "t": 270,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_04m30s.jpg"
+  },
+  {
+    "t": 315,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_05m15s.jpg"
+  },
+  {
+    "t": 360,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_06m00s.jpg"
+  },
+  {
+    "t": 405,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_06m45s.jpg"
+  },
+  {
+    "t": 450,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_07m30s.jpg"
+  },
+  {
+    "t": 495,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_08m15s.jpg"
+  },
+  {
+    "t": 540,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_09m00s.jpg"
+  },
+  {
+    "t": 585,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_09m45s.jpg"
+  },
+  {
+    "t": 630,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_10m30s.jpg"
+  },
+  {
+    "t": 675,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_11m15s.jpg"
+  },
+  {
+    "t": 720,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_12m00s.jpg"
+  },
+  {
+    "t": 765,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_12m45s.jpg"
+  },
+  {
+    "t": 810,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_13m30s.jpg"
+  },
+  {
+    "t": 855,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_14m15s.jpg"
+  },
+  {
+    "t": 900,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_15m00s.jpg"
+  },
+  {
+    "t": 945,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_15m45s.jpg"
+  },
+  {
+    "t": 990,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_16m30s.jpg"
+  },
+  {
+    "t": 1035,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_17m15s.jpg"
+  },
+  {
+    "t": 1080,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_18m00s.jpg"
+  },
+  {
+    "t": 1125,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_18m45s.jpg"
+  },
+  {
+    "t": 1170,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_19m30s.jpg"
+  },
+  {
+    "t": 1215,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_20m15s.jpg"
+  },
+  {
+    "t": 1260,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_21m00s.jpg"
+  },
+  {
+    "t": 1305,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_21m45s.jpg"
+  },
+  {
+    "t": 1350,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_22m30s.jpg"
+  },
+  {
+    "t": 1395,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_23m15s.jpg"
+  },
+  {
+    "t": 1440,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_24m00s.jpg"
+  },
+  {
+    "t": 1485,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_24m45s.jpg"
+  },
+  {
+    "t": 1530,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_25m30s.jpg"
+  },
+  {
+    "t": 1575,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_26m15s.jpg"
+  },
+  {
+    "t": 1620,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_27m00s.jpg"
+  },
+  {
+    "t": 1665,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_27m45s.jpg"
+  },
+  {
+    "t": 1710,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_28m30s.jpg"
+  },
+  {
+    "t": 1755,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_29m15s.jpg"
+  },
+  {
+    "t": 1800,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_30m00s.jpg"
+  },
+  {
+    "t": 1845,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_30m45s.jpg"
+  },
+  {
+    "t": 1890,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_31m30s.jpg"
+  },
+  {
+    "t": 1935,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_32m15s.jpg"
+  },
+  {
+    "t": 1980,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_33m00s.jpg"
+  },
+  {
+    "t": 2025,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_33m45s.jpg"
+  },
+  {
+    "t": 2070,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_34m30s.jpg"
+  },
+  {
+    "t": 2115,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_35m15s.jpg"
+  },
+  {
+    "t": 2160,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_36m00s.jpg"
+  },
+  {
+    "t": 2205,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_36m45s.jpg"
+  },
+  {
+    "t": 2250,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_37m30s.jpg"
+  },
+  {
+    "t": 2295,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_38m15s.jpg"
+  },
+  {
+    "t": 2340,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_39m00s.jpg"
+  },
+  {
+    "t": 2385,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_39m45s.jpg"
+  },
+  {
+    "t": 2430,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_40m30s.jpg"
+  },
+  {
+    "t": 2475,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_41m15s.jpg"
+  },
+  {
+    "t": 2520,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_42m00s.jpg"
+  },
+  {
+    "t": 2565,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_42m45s.jpg"
+  },
+  {
+    "t": 2610,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_43m30s.jpg"
+  },
+  {
+    "t": 2655,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_44m15s.jpg"
+  },
+  {
+    "t": 2700,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_45m00s.jpg"
+  },
+  {
+    "t": 2745,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_45m45s.jpg"
+  },
+  {
+    "t": 2790,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_46m30s.jpg"
+  },
+  {
+    "t": 2835,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_47m15s.jpg"
+  },
+  {
+    "t": 2880,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_48m00s.jpg"
+  },
+  {
+    "t": 2925,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_48m45s.jpg"
+  },
+  {
+    "t": 2970,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_49m30s.jpg"
+  },
+  {
+    "t": 3015,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_50m15s.jpg"
+  },
+  {
+    "t": 3060,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_51m00s.jpg"
+  },
+  {
+    "t": 3105,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_51m45s.jpg"
+  },
+  {
+    "t": 3150,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_52m30s.jpg"
+  },
+  {
+    "t": 3195,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_53m15s.jpg"
+  },
+  {
+    "t": 3240,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_54m00s.jpg"
+  },
+  {
+    "t": 3285,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_54m45s.jpg"
+  },
+  {
+    "t": 3330,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_55m30s.jpg"
+  },
+  {
+    "t": 3375,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_56m15s.jpg"
+  },
+  {
+    "t": 3420,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_57m00s.jpg"
+  },
+  {
+    "t": 3465,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_57m45s.jpg"
+  },
+  {
+    "t": 3510,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_58m30s.jpg"
+  },
+  {
+    "t": 3555,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_59m15s.jpg"
+  },
+  {
+    "t": 3600,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_60m00s.jpg"
+  },
+  {
+    "t": 3645,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_60m45s.jpg"
+  },
+  {
+    "t": 3690,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_61m30s.jpg"
+  },
+  {
+    "t": 3735,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_62m15s.jpg"
+  },
+  {
+    "t": 3780,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_63m00s.jpg"
+  },
+  {
+    "t": 3825,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_63m45s.jpg"
+  },
+  {
+    "t": 3870,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_64m30s.jpg"
+  },
+  {
+    "t": 3915,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_65m15s.jpg"
+  },
+  {
+    "t": 3960,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_66m00s.jpg"
+  },
+  {
+    "t": 4005,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_66m45s.jpg"
+  },
+  {
+    "t": 4050,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_67m30s.jpg"
+  },
+  {
+    "t": 4095,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_68m15s.jpg"
+  },
+  {
+    "t": 4140,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_69m00s.jpg"
+  },
+  {
+    "t": 4185,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_69m45s.jpg"
+  },
+  {
+    "t": 4230,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_70m30s.jpg"
+  },
+  {
+    "t": 4275,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_71m15s.jpg"
+  },
+  {
+    "t": 4320,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_72m00s.jpg"
+  },
+  {
+    "t": 4365,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_72m45s.jpg"
+  },
+  {
+    "t": 4410,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_73m30s.jpg"
+  },
+  {
+    "t": 4455,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_74m15s.jpg"
+  },
+  {
+    "t": 4500,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_75m00s.jpg"
+  },
+  {
+    "t": 4545,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_75m45s.jpg"
+  },
+  {
+    "t": 4590,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_76m30s.jpg"
+  },
+  {
+    "t": 4635,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_77m15s.jpg"
+  },
+  {
+    "t": 4680,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_78m00s.jpg"
+  },
+  {
+    "t": 4725,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_78m45s.jpg"
+  },
+  {
+    "t": 4770,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_79m30s.jpg"
+  },
+  {
+    "t": 4815,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_80m15s.jpg"
+  },
+  {
+    "t": 4860,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_81m00s.jpg"
+  },
+  {
+    "t": 4905,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_81m45s.jpg"
+  },
+  {
+    "t": 4950,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_82m30s.jpg"
+  },
+  {
+    "t": 4995,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_83m15s.jpg"
+  },
+  {
+    "t": 5040,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_84m00s.jpg"
+  },
+  {
+    "t": 5085,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_84m45s.jpg"
+  },
+  {
+    "t": 5130,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_85m30s.jpg"
+  },
+  {
+    "t": 5175,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_86m15s.jpg"
+  },
+  {
+    "t": 5220,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_87m00s.jpg"
+  },
+  {
+    "t": 5265,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_87m45s.jpg"
+  },
+  {
+    "t": 5310,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_88m30s.jpg"
+  },
+  {
+    "t": 5355,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_89m15s.jpg"
+  },
+  {
+    "t": 5400,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_90m00s.jpg"
+  },
+  {
+    "t": 5445,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_90m45s.jpg"
+  },
+  {
+    "t": 5490,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_91m30s.jpg"
+  },
+  {
+    "t": 5535,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_92m15s.jpg"
+  },
+  {
+    "t": 5580,
+    "text": "",
+    "file": "/Users/francopolv/SSCN-Primavera/tmp/portici-sb/sb_93m00s.jpg"
+  }
+]

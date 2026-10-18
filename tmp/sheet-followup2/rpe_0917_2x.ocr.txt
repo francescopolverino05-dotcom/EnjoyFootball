@@ -1,0 +1,31 @@
+1.00	0.473	0.739	AISTTE. PARTITA
+1.00	0.602	0.760	RPE
+1.00	0.542	0.747	15SoH 1650TT
+1.00	0.248	0.734	Anic Ivan
+1.00	0.199	0.715	Santella Alessandro
+1.00	0.183	0.699	Baridó Francisco Martin
+1.00	0.201	0.683	Branchizio Agostino
+1.00	0.188	0.665	Candela Ivan Giovanni
+0.30	0.202	0.648	CutitebivembroeSE
+0.30	0.204	0.631	Lastaddi cinovifhiao
+1.00	0.191	0.618	Chiummariello Andrea
+1.00	0.196	0.600	De Stefano Francesco
+1.00	0.230	0.581	Esposito Luigi
+1.00	0.230	0.564	Favicchio Elia
+1.00	0.235	0.548	Lieto Claudio
+1.00	0.224	0.529	Lepre Giuseppe
+1.00	0.217	0.512	Maida
+1.00	0.276	0.510	GiusoppeD'ANGt
+1.00	0.193	0.495	Mane Mohamed Seick •
+1.00	0.217	0.477	Marotta Gabriele
+1.00	0.222	0.458	Melnyk Mykyta
+1.00	0.219	0.440	Garofalo Cristian PICA
+1.00	0.224	0.422	Natale Raffaele
+1.00	0.152	0.402	Pereyra Alvarez Milton Agustin
+1.00	0.222	0.387	Saviano Raffaele
+1.00	0.216	0.366	Pengue Salvatore
+1.00	0.245	0.350	Riccio Luigi
+1.00	0.222	0.327	Zappalà Andrea
+1.00	0.206	0.307	Ruvetini Alessandro
+0.30	0.217	0.281	1802
+1.00	0.452	0.443	12

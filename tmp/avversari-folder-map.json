@@ -1,0 +1,241 @@
+{
+  "competitions": {
+    "primavera2": {
+      "name": "Primavera 2",
+      "folderId": "30426895",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30426895"
+    },
+    "uefaYouthLeague": {
+      "name": "Youth League",
+      "folderId": "30426904",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30426904"
+    },
+    "coppaItalia": {
+      "name": "Coppa Italia",
+      "folderId": "30426905",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30426905"
+    }
+  },
+  "opponents": {
+    "primavera2:ascoli": {
+      "competitionId": "primavera2",
+      "opponentId": "ascoli",
+      "name": "Ascoli",
+      "color": "#1a1a1a",
+      "folderId": "30426967",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30426967",
+      "studioReportFolderId": "30426968",
+      "referenceMatchesFolderId": "30426969"
+    },
+    "primavera2:avellino": {
+      "competitionId": "primavera2",
+      "opponentId": "avellino",
+      "name": "Avellino",
+      "color": "#028c00",
+      "folderId": "30211881",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30211881",
+      "studioReportFolderId": "30426885",
+      "referenceMatchesFolderId": "30426889"
+    },
+    "primavera2:bari": {
+      "competitionId": "primavera2",
+      "opponentId": "bari",
+      "name": "Bari",
+      "color": "#c8102e",
+      "folderId": "30426970",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30426970",
+      "studioReportFolderId": "30426971",
+      "referenceMatchesFolderId": "30426972"
+    },
+    "primavera2:benevento": {
+      "competitionId": "primavera2",
+      "opponentId": "benevento",
+      "name": "Benevento",
+      "color": "#ffcc00",
+      "folderId": "30426973",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30426973",
+      "studioReportFolderId": "30426974",
+      "referenceMatchesFolderId": "30426975"
+    },
+    "primavera2:catanzaro": {
+      "competitionId": "primavera2",
+      "opponentId": "catanzaro",
+      "name": "Catanzaro",
+      "color": "#eeff00",
+      "folderId": "30211887",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30211887",
+      "studioReportFolderId": "30426977",
+      "referenceMatchesFolderId": "30426978"
+    },
+    "primavera2:cosenza": {
+      "competitionId": "primavera2",
+      "opponentId": "cosenza",
+      "name": "Cosenza",
+      "color": "#e30613",
+      "folderId": "30426979",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30426979",
+      "studioReportFolderId": "30426980",
+      "referenceMatchesFolderId": "30426981"
+    },
+    "primavera2:frosinone": {
+      "competitionId": "primavera2",
+      "opponentId": "frosinone",
+      "name": "Frosinone",
+      "color": "#ffcc00",
+      "folderId": "30426982",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30426982",
+      "studioReportFolderId": "30426983",
+      "referenceMatchesFolderId": "30426984"
+    },
+    "primavera2:latina": {
+      "competitionId": "primavera2",
+      "opponentId": "latina",
+      "name": "Latina",
+      "color": "#0033a0",
+      "folderId": "30426985",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30426985",
+      "studioReportFolderId": "30426986",
+      "referenceMatchesFolderId": "30426988"
+    },
+    "primavera2:monopoli": {
+      "competitionId": "primavera2",
+      "opponentId": "monopoli",
+      "name": "Monopoli",
+      "color": "#006633",
+      "folderId": "30426989",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30426989",
+      "studioReportFolderId": "30426990",
+      "referenceMatchesFolderId": "30426991"
+    },
+    "primavera2:palermo": {
+      "competitionId": "primavera2",
+      "opponentId": "palermo",
+      "name": "Palermo",
+      "color": "#e6007e",
+      "folderId": "30426992",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30426992",
+      "studioReportFolderId": "30426994",
+      "referenceMatchesFolderId": "30426995"
+    },
+    "primavera2:perugia": {
+      "competitionId": "primavera2",
+      "opponentId": "perugia",
+      "name": "Perugia",
+      "color": "#ed1c24",
+      "folderId": "30426996",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30426996",
+      "studioReportFolderId": "30426997",
+      "referenceMatchesFolderId": "30426999"
+    },
+    "primavera2:pescara": {
+      "competitionId": "primavera2",
+      "opponentId": "pescara",
+      "name": "Pescara",
+      "color": "#0099cc",
+      "folderId": "30427000",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30427000",
+      "studioReportFolderId": "30427001",
+      "referenceMatchesFolderId": "30427002"
+    },
+    "primavera2:pisa": {
+      "competitionId": "primavera2",
+      "opponentId": "pisa",
+      "name": "Pisa",
+      "color": "#003399",
+      "folderId": "30427003",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30427003",
+      "studioReportFolderId": "30427004",
+      "referenceMatchesFolderId": "30427005"
+    },
+    "primavera2:salernitana": {
+      "competitionId": "primavera2",
+      "opponentId": "salernitana",
+      "name": "Salernitana",
+      "color": "#6d071a",
+      "folderId": "30427006",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30427006",
+      "studioReportFolderId": "30427007",
+      "referenceMatchesFolderId": "30427008"
+    },
+    "primavera2:spezia": {
+      "competitionId": "primavera2",
+      "opponentId": "spezia",
+      "name": "Spezia",
+      "color": "#111111",
+      "folderId": "30427009",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30427009",
+      "studioReportFolderId": "30427010",
+      "referenceMatchesFolderId": "30427011"
+    },
+    "uefaYouthLeague:arsenal": {
+      "competitionId": "uefaYouthLeague",
+      "opponentId": "arsenal",
+      "name": "Arsenal",
+      "color": "#ff0000",
+      "folderId": "30426908",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30426908",
+      "studioReportFolderId": "30427012",
+      "referenceMatchesFolderId": "30427013"
+    },
+    "uefaYouthLeague:villarreal": {
+      "competitionId": "uefaYouthLeague",
+      "opponentId": "villarreal",
+      "name": "Villarreal",
+      "color": "#ffe014",
+      "folderId": "30427015",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30427015",
+      "studioReportFolderId": "30427016",
+      "referenceMatchesFolderId": "30427017"
+    },
+    "uefaYouthLeague:bodo-glimt": {
+      "competitionId": "uefaYouthLeague",
+      "opponentId": "bodo-glimt",
+      "name": "Bodø/Glimt",
+      "color": "#ffed00",
+      "folderId": "30427018",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30427018",
+      "studioReportFolderId": "30427019",
+      "referenceMatchesFolderId": "30427034"
+    },
+    "uefaYouthLeague:porto": {
+      "competitionId": "uefaYouthLeague",
+      "opponentId": "porto",
+      "name": "Porto",
+      "color": "#003893",
+      "folderId": "30427035",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30427035",
+      "studioReportFolderId": "30427036",
+      "referenceMatchesFolderId": "30427037"
+    },
+    "uefaYouthLeague:man-city": {
+      "competitionId": "uefaYouthLeague",
+      "opponentId": "man-city",
+      "name": "Manchester City",
+      "color": "#6cabdd",
+      "folderId": "30427038",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30427038",
+      "studioReportFolderId": "30427039",
+      "referenceMatchesFolderId": "30427040"
+    },
+    "uefaYouthLeague:club-brugge": {
+      "competitionId": "uefaYouthLeague",
+      "opponentId": "club-brugge",
+      "name": "Club Brugge",
+      "color": "#0054a3",
+      "folderId": "30427041",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30427041",
+      "studioReportFolderId": "30427043",
+      "referenceMatchesFolderId": "30427044"
+    },
+    "coppaItalia:spezia": {
+      "competitionId": "coppaItalia",
+      "opponentId": "spezia",
+      "name": "Spezia",
+      "color": "#111111",
+      "folderId": "30427045",
+      "folderUrl": "https://vimeo.com/user/170593333/folder/30427045",
+      "studioReportFolderId": "30427046",
+      "referenceMatchesFolderId": "30427047"
+    }
+  }
+}

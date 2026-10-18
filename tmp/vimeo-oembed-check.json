@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://vimeo.com/api/oembed.json?url=https://vimeo.com/1217074924/ad5c37b7df",
+    "ok": false,
+    "err": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://vimeo.com/api/oembed.json?url=https://vimeo.com/1215225205/18a5915920",
+    "ok": false,
+    "err": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]
