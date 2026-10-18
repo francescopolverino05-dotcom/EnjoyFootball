@@ -289,12 +289,14 @@
             {
               "homeId": "bari",
               "awayId": "ascoli",
-              "score": "2-1"
+              "score": "2-1",
+              "statsSlug": "bari-ascoli"
             },
             {
               "homeId": "cosenza",
               "awayId": "avellino",
-              "score": "1-2"
+              "score": "1-2",
+              "statsSlug": "cosenza-avellino"
             },
             {
               "homeId": "frosinone",
@@ -304,7 +306,8 @@
             {
               "homeId": "latina",
               "awayId": "salernitana",
-              "score": "4-1"
+              "score": "4-1",
+              "statsSlug": "latina-salernitana"
             },
             {
               "homeId": "napoli",
@@ -314,17 +317,20 @@
             {
               "homeId": "perugia",
               "awayId": "monopoli",
-              "score": "3-0"
+              "score": "3-0",
+              "statsSlug": "perugia-monopoli"
             },
             {
               "homeId": "pescara",
               "awayId": "benevento",
-              "score": "3-1"
+              "score": "3-1",
+              "statsSlug": "pescara-benevento"
             },
             {
               "homeId": "spezia",
               "awayId": "palermo",
-              "score": "2-3"
+              "score": "2-3",
+              "statsSlug": "spezia-palermo"
             }
           ]
         },
@@ -341,37 +347,44 @@
             {
               "homeId": "avellino",
               "awayId": "latina",
-              "score": "3-1"
+              "score": "3-1",
+              "statsSlug": "avellino-latina"
             },
             {
               "homeId": "benevento",
               "awayId": "cosenza",
-              "score": "5-0"
+              "score": "5-0",
+              "statsSlug": "benevento-cosenza"
             },
             {
               "homeId": "catanzaro",
               "awayId": "frosinone",
-              "score": "6-0"
+              "score": "6-0",
+              "statsSlug": "catanzaro-frosinone"
             },
             {
               "homeId": "monopoli",
               "awayId": "pescara",
-              "score": "2-2"
+              "score": "2-2",
+              "statsSlug": "monopoli-pescara"
             },
             {
               "homeId": "palermo",
               "awayId": "bari",
-              "score": "2-2"
+              "score": "2-2",
+              "statsSlug": "palermo-bari"
             },
             {
               "homeId": "pisa",
               "awayId": "spezia",
-              "score": "0-3"
+              "score": "0-3",
+              "statsSlug": "pisa-spezia"
             },
             {
               "homeId": "salernitana",
               "awayId": "perugia",
-              "score": "0-6"
+              "score": "0-6",
+              "statsSlug": "salernitana-perugia"
             }
           ]
         },
@@ -382,17 +395,20 @@
             {
               "homeId": "cosenza",
               "awayId": "catanzaro",
-              "score": "0-2"
+              "score": "0-2",
+              "statsSlug": "cosenza-catanzaro"
             },
             {
               "homeId": "frosinone",
               "awayId": "palermo",
-              "score": "0-0"
+              "score": "0-0",
+              "statsSlug": "frosinone-palermo"
             },
             {
               "homeId": "latina",
               "awayId": "bari",
-              "score": "0-0"
+              "score": "0-0",
+              "statsSlug": "latina-bari"
             },
             {
               "homeId": "napoli",
@@ -404,22 +420,26 @@
             {
               "homeId": "perugia",
               "awayId": "avellino",
-              "score": "1-0"
+              "score": "1-0",
+              "statsSlug": "perugia-avellino"
             },
             {
               "homeId": "pescara",
               "awayId": "ascoli",
-              "score": "5-2"
+              "score": "5-2",
+              "statsSlug": "pescara-ascoli"
             },
             {
               "homeId": "salernitana",
               "awayId": "benevento",
-              "score": "0-3"
+              "score": "0-3",
+              "statsSlug": "salernitana-benevento"
             },
             {
               "homeId": "spezia",
               "awayId": "monopoli",
-              "score": "0-2"
+              "score": "0-2",
+              "statsSlug": "spezia-monopoli"
             }
           ]
         },
@@ -430,7 +450,8 @@
             {
               "homeId": "avellino",
               "awayId": "catanzaro",
-              "score": "1-2"
+              "score": "1-2",
+              "statsSlug": "avellino-catanzaro"
             },
             {
               "homeId": "bari",
@@ -447,7 +468,8 @@
             {
               "homeId": "monopoli",
               "awayId": "benevento",
-              "score": "2-2"
+              "score": "2-2",
+              "statsSlug": "monopoli-benevento"
             },
             {
               "homeId": "palermo",
@@ -457,12 +479,14 @@
             {
               "homeId": "pescara",
               "awayId": "salernitana",
-              "score": "3-3"
+              "score": "3-3",
+              "statsSlug": "pescara-salernitana"
             },
             {
               "homeId": "pisa",
               "awayId": "ascoli",
-              "score": "4-1"
+              "score": "4-1",
+              "statsSlug": "pisa-ascoli"
             },
             {
               "homeId": "spezia",

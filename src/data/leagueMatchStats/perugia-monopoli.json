@@ -1,0 +1,329 @@
+{
+  "id": "perugia-monopoli",
+  "competitionId": "primavera2",
+  "date": "2026-09-12",
+  "matchday": 2,
+  "home": {
+    "teamId": "perugia",
+    "name": "Perugia"
+  },
+  "away": {
+    "teamId": "monopoli",
+    "name": "Monopoli"
+  },
+  "score": "3–0",
+  "goals": [
+    {
+      "minute": 19,
+      "scorer": "M. Bevanati",
+      "teamId": "perugia"
+    },
+    {
+      "minute": 37,
+      "scorer": "M. Perugini",
+      "teamId": "perugia"
+    },
+    {
+      "minute": 57,
+      "scorer": "D. Vanni",
+      "teamId": "perugia"
+    }
+  ],
+  "note": {
+    "en": "Estimated match figures from video tagging. Score and scorers from Tuttocampo official report. Player-level stats not available for this match.",
+    "it": "Dati stimati da tagging video. Risultato e marcatori dal referto Tuttocampo. Statistiche individuali non disponibili per questa partita."
+  },
+  "teamStats": [
+    {
+      "stat": "Goals",
+      "home": "3",
+      "away": "0"
+    },
+    {
+      "stat": "xG (estimated, distance/angle model)",
+      "home": "1.52",
+      "away": "0.98"
+    },
+    {
+      "stat": "xG (taggers’ own estimate, for reference)",
+      "home": "1.60",
+      "away": "1.05"
+    },
+    {
+      "stat": "Shots (1H)",
+      "home": "6",
+      "away": "4"
+    },
+    {
+      "stat": "Shots (2H)",
+      "home": "7",
+      "away": "5"
+    },
+    {
+      "stat": "Shots (full match)",
+      "home": "13",
+      "away": "9"
+    },
+    {
+      "stat": "Shots on target",
+      "home": "5",
+      "away": "3"
+    },
+    {
+      "stat": "Shot accuracy %",
+      "home": "38.5",
+      "away": "33.3"
+    },
+    {
+      "stat": "Blocked shots",
+      "home": "3",
+      "away": "2"
+    },
+    {
+      "stat": "Missed shots (off target, incl. woodwork)",
+      "home": "5",
+      "away": "4"
+    },
+    {
+      "stat": "Woodwork",
+      "home": "0",
+      "away": "0"
+    },
+    {
+      "stat": "Shots inside box",
+      "home": "8",
+      "away": "5"
+    },
+    {
+      "stat": "Shots outside box",
+      "home": "5",
+      "away": "4"
+    },
+    {
+      "stat": "Headed shots",
+      "home": "2",
+      "away": "1"
+    },
+    {
+      "stat": "Possession estimate % (full match)",
+      "home": "52.8",
+      "away": "47.2"
+    },
+    {
+      "stat": "Possession estimate % (1H)",
+      "home": "54.5",
+      "away": "45.5"
+    },
+    {
+      "stat": "Possession estimate % (2H)",
+      "home": "51.0",
+      "away": "49.0"
+    },
+    {
+      "stat": "Share of passes %",
+      "home": "53.0",
+      "away": "47.0"
+    },
+    {
+      "stat": "Passes",
+      "home": "455",
+      "away": "404"
+    },
+    {
+      "stat": "Passes completed",
+      "home": "372",
+      "away": "320"
+    },
+    {
+      "stat": "Pass accuracy % (full match)",
+      "home": "81.8",
+      "away": "79.2"
+    },
+    {
+      "stat": "Pass accuracy % (1H)",
+      "home": "83.0",
+      "away": "78.5"
+    },
+    {
+      "stat": "Pass accuracy % (2H)",
+      "home": "80.5",
+      "away": "80.0"
+    },
+    {
+      "stat": "Key passes",
+      "home": "9",
+      "away": "6"
+    },
+    {
+      "stat": "Assists (official)",
+      "home": "2",
+      "away": "1"
+    },
+    {
+      "stat": "Progressive passes (completed / attempted)",
+      "home": "39/65",
+      "away": "30/60"
+    },
+    {
+      "stat": "Into final third (completed / attempted)",
+      "home": "36/59",
+      "away": "28/54"
+    },
+    {
+      "stat": "Into box (completed / attempted)",
+      "home": "11/24",
+      "away": "7/20"
+    },
+    {
+      "stat": "Crosses (completed / total)",
+      "home": "4/17",
+      "away": "3/15"
+    },
+    {
+      "stat": "Long balls (completed / total)",
+      "home": "18/40",
+      "away": "19/43"
+    },
+    {
+      "stat": "Through balls (completed / total)",
+      "home": "2/4",
+      "away": "1/3"
+    },
+    {
+      "stat": "Ground duels (won / total)",
+      "home": "46/92",
+      "away": "46/92"
+    },
+    {
+      "stat": "Aerial duels (won / total)",
+      "home": "15/31",
+      "away": "16/31"
+    },
+    {
+      "stat": "Interceptions",
+      "home": "43",
+      "away": "44"
+    },
+    {
+      "stat": "Recoveries",
+      "home": "55",
+      "away": "52"
+    },
+    {
+      "stat": "High recoveries (final third)",
+      "home": "16",
+      "away": "13"
+    },
+    {
+      "stat": "Balls lost",
+      "home": "18",
+      "away": "19"
+    },
+    {
+      "stat": "Blocks",
+      "home": "5",
+      "away": "6"
+    },
+    {
+      "stat": "Clearances",
+      "home": "20",
+      "away": "23"
+    },
+    {
+      "stat": "GK saves",
+      "home": "2",
+      "away": "3"
+    },
+    {
+      "stat": "Fouls committed",
+      "home": "16",
+      "away": "17"
+    },
+    {
+      "stat": "Fouls won",
+      "home": "17",
+      "away": "16"
+    },
+    {
+      "stat": "Yellow cards (official)",
+      "home": "2",
+      "away": "2"
+    },
+    {
+      "stat": "Red cards",
+      "home": "0",
+      "away": "0"
+    },
+    {
+      "stat": "Offsides (1H / 2H / total)",
+      "home": "2 / 1 / 3",
+      "away": "1 / 1 / 2"
+    },
+    {
+      "stat": "Corners (1H / 2H / total)",
+      "home": "3 / 3 / 6",
+      "away": "2 / 2 / 4"
+    },
+    {
+      "stat": "Free kicks (excl. goal kicks)",
+      "home": "19",
+      "away": "18"
+    },
+    {
+      "stat": "Goal kicks",
+      "home": "5",
+      "away": "6"
+    },
+    {
+      "stat": "Throw-ins",
+      "home": "23",
+      "away": "22"
+    },
+    {
+      "stat": "PPDA 1H",
+      "home": "9.32",
+      "away": "10.39"
+    },
+    {
+      "stat": "PPDA 1H numerator / denominator",
+      "home": "191 / 21",
+      "away": "239 / 23"
+    },
+    {
+      "stat": "PPDA 1H defensive actions breakdown",
+      "home": "def_duels_won=5; fouls=8; interceptions=8",
+      "away": "def_duels_won=6; fouls=8; interceptions=9"
+    },
+    {
+      "stat": "PPDA 2H",
+      "home": "9.68",
+      "away": "9.82"
+    },
+    {
+      "stat": "PPDA 2H numerator / denominator",
+      "home": "213 / 22",
+      "away": "216 / 22"
+    },
+    {
+      "stat": "PPDA 2H defensive actions breakdown",
+      "home": "def_duels_won=6; fouls=8; interceptions=8",
+      "away": "def_duels_won=5; fouls=9; interceptions=8"
+    },
+    {
+      "stat": "PPDA full match",
+      "home": "9.40",
+      "away": "10.11"
+    },
+    {
+      "stat": "PPDA full match numerator / denominator",
+      "home": "404 / 43",
+      "away": "455 / 45"
+    },
+    {
+      "stat": "PPDA full match defensive actions breakdown",
+      "home": "def_duels_won=11; fouls=16; interceptions=16",
+      "away": "def_duels_won=11; fouls=17; interceptions=17"
+    }
+  ],
+  "playerStats": []
+}
