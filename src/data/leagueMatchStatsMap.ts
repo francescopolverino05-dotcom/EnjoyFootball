@@ -33,6 +33,7 @@ function categoryKeyForStat(stat: string): CatKey {
   if (
     s.includes('shot') ||
     s.includes('xg') ||
+    s.includes('woodwork') ||
     s.includes('headed') ||
     s.includes('key pass') ||
     s.includes('into final') ||
@@ -113,7 +114,8 @@ export function mapLeagueDynamics(pack: LeagueMatchStats): DynamicMetric[] {
   const possession =
     findRow(pack, 'Possession % (full match)') ??
     findRow(pack, 'Possession %') ??
-    findRow(pack, 'Possession estimate %');
+    findRow(pack, 'Possession estimate %') ??
+    findRow(pack, 'Possession estimate % (full match)');
   if (possession) {
     const home = parseNumber(possession.home);
     const away = parseNumber(possession.away);

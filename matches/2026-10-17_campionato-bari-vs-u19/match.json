@@ -36,13 +36,433 @@
     "colorClass": "u19",
     "logo": "napoli-logo.png"
   },
-  "score": "1-1",
-  "goals": [],
-  "timeline": [],
+  "score": {
+    "home": 1,
+    "away": 1
+  },
+  "goals": [
+    {
+      "minute": 25,
+      "scorer": "Pereyra",
+      "assist": "Melnyk",
+      "teamId": "u19"
+    },
+    {
+      "minute": 38,
+      "scorer": "De Lucia",
+      "assist": "Grimaldi",
+      "teamId": "bari"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "bari",
+      "positionPercent": 2
+    },
+    {
+      "minute": 25,
+      "label": {
+        "en": "Pereyra 0-1",
+        "it": "Pereyra 0-1"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 28
+    },
+    {
+      "minute": 36,
+      "label": {
+        "en": "Marotta yellow",
+        "it": "Marotta ammonito"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 40
+    },
+    {
+      "minute": 38,
+      "label": {
+        "en": "De Lucia 1-1",
+        "it": "De Lucia 1-1"
+      },
+      "type": "goal",
+      "teamId": "bari",
+      "positionPercent": 42
+    },
+    {
+      "minute": 46,
+      "label": {
+        "en": "Natale on / Marotta off",
+        "it": "Natale on / Marotta off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 52
+    },
+    {
+      "minute": 52,
+      "label": {
+        "en": "Scarano on / Grimaldi off",
+        "it": "Scarano on / Grimaldi off"
+      },
+      "type": "substitution",
+      "teamId": "bari",
+      "positionPercent": 58
+    },
+    {
+      "minute": 56,
+      "label": {
+        "en": "Pengue on / Riccio off",
+        "it": "Pengue on / Riccio off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 62
+    },
+    {
+      "minute": 56,
+      "label": {
+        "en": "Favicchio on / Mane off",
+        "it": "Favicchio on / Mane off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 62
+    },
+    {
+      "minute": 61,
+      "label": {
+        "en": "Leone on / Scifoni off",
+        "it": "Leone on / Scifoni off"
+      },
+      "type": "substitution",
+      "teamId": "bari",
+      "positionPercent": 68
+    },
+    {
+      "minute": 61,
+      "label": {
+        "en": "Valoroso on / Vitale off",
+        "it": "Valoroso on / Vitale off"
+      },
+      "type": "substitution",
+      "teamId": "bari",
+      "positionPercent": 68
+    },
+    {
+      "minute": 70,
+      "label": {
+        "en": "Barido' on / Liccardo off",
+        "it": "Barido' on / Liccardo off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 78
+    },
+    {
+      "minute": 73,
+      "label": {
+        "en": "Favicchio yellow",
+        "it": "Favicchio ammonito"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 81
+    },
+    {
+      "minute": 77,
+      "label": {
+        "en": "Caputo on / Keita off",
+        "it": "Caputo on / Keita off"
+      },
+      "type": "substitution",
+      "teamId": "bari",
+      "positionPercent": 86
+    },
+    {
+      "minute": 85,
+      "label": {
+        "en": "De Michele on / Chiummariello off",
+        "it": "De Michele on / Chiummariello off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 94
+    },
+    {
+      "minute": 92,
+      "label": {
+        "en": "Leone yellow",
+        "it": "Leone ammonito"
+      },
+      "type": "other",
+      "teamId": "bari",
+      "positionPercent": 98
+    }
+  ],
   "formations": [],
   "dynamics": [],
   "teamStats": [],
   "goalkeepers": [],
+  "appearances": {
+    "home": [
+      {
+        "name": "Mezzapesa",
+        "teamId": "bari",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Emiliano",
+        "teamId": "bari",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Legrottaglie",
+        "teamId": "bari",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Mundo",
+        "teamId": "bari",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Dimonte",
+        "teamId": "bari",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "De Lucia",
+        "teamId": "bari",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          38
+        ]
+      },
+      {
+        "name": "Vitale",
+        "teamId": "bari",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 61
+      },
+      {
+        "name": "Grimaldi",
+        "teamId": "bari",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 52,
+        "assists": [
+          38
+        ]
+      },
+      {
+        "name": "Scifoni",
+        "teamId": "bari",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 61
+      },
+      {
+        "name": "Campagna",
+        "teamId": "bari",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Keita",
+        "teamId": "bari",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 77
+      },
+      {
+        "name": "Caputo",
+        "teamId": "bari",
+        "number": 14,
+        "starter": false,
+        "onMinute": 77
+      },
+      {
+        "name": "Scarano",
+        "teamId": "bari",
+        "number": 16,
+        "starter": false,
+        "onMinute": 52
+      },
+      {
+        "name": "Leone",
+        "teamId": "bari",
+        "number": 18,
+        "starter": false,
+        "onMinute": 61,
+        "yellowCards": [
+          92
+        ]
+      },
+      {
+        "name": "Valoroso",
+        "teamId": "bari",
+        "number": 19,
+        "starter": false,
+        "onMinute": 61
+      }
+    ],
+    "away": [
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Zappala'",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0,
+        "assists": [
+          25
+        ]
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Marotta",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 46,
+        "yellowCards": [
+          36
+        ]
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 70
+      },
+      {
+        "name": "Chiummariello",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 85
+      },
+      {
+        "name": "Pereyra",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          25
+        ]
+      },
+      {
+        "name": "Riccio",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 56
+      },
+      {
+        "name": "Mane",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 56
+      },
+      {
+        "name": "Natale",
+        "teamId": "u19",
+        "number": 14,
+        "starter": false,
+        "onMinute": 46
+      },
+      {
+        "name": "De Michele",
+        "teamId": "u19",
+        "number": 16,
+        "starter": false,
+        "onMinute": 85
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "number": 17,
+        "starter": false,
+        "onMinute": 56,
+        "yellowCards": [
+          73
+        ]
+      },
+      {
+        "name": "Pengue",
+        "teamId": "u19",
+        "number": 18,
+        "starter": false,
+        "onMinute": 56
+      },
+      {
+        "name": "Barido'",
+        "teamId": "u19",
+        "number": 19,
+        "starter": false,
+        "onMinute": 70
+      }
+    ]
+  },
   "clips": [],
   "analysisVideos": [],
   "vimeo": {
