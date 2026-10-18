@@ -227,7 +227,7 @@ const OPPONENTS: OppositionOpponent[] = [
   club('spezia', 'Spezia', ['primavera2', 'coppaItalia']),
   club('arsenal', 'Arsenal', ['uefaYouthLeague'], '1-4-2-3-1'),
   club('villarreal', 'Villarreal', ['uefaYouthLeague'], '1-3-4-2-1'),
-  club('bodo-glimt', 'Bodø/Glimt', ['uefaYouthLeague']),
+  club('bodo-glimt', 'Bodø/Glimt', ['uefaYouthLeague'], '1-4-3-3'),
   club('porto', 'Porto', ['uefaYouthLeague']),
   club('man-city', 'Manchester City', ['uefaYouthLeague']),
   club('club-brugge', 'Club Brugge', ['uefaYouthLeague']),
@@ -1863,6 +1863,369 @@ if (perugia) {
     { number: 21, name: 'Di Salvatore', birthYear: 2008 },
     { number: 22, name: 'Organai', position: 'GK', isGk: true, birthYear: 2010 },
     { number: 23, name: 'Ciarapica', birthYear: 2009 },
+  ];
+}
+
+/**
+ * Bodø/Glimt UEFA U19 — UEFA club squad + UYL MD1 Bayern / MD2 Dortmund XIs.
+ * System 4-3-3; pitch attacks downward (team-right = screen-left).
+ * Heights / preferred feet: not published on UEFA or Transfermarkt for this U19 group.
+ */
+const bodo = OPPONENTS.find((o) => o.id === 'bodo-glimt');
+if (bodo) {
+  const bodo433 = (names: {
+    gk: string;
+    rb: string;
+    rcb: string;
+    lcb: string;
+    lb: string;
+    rcm: string;
+    cm: string;
+    lcm: string;
+    rw: string;
+    st: string;
+    lw: string;
+  }, nums: {
+    gk: number;
+    rb: number;
+    rcb: number;
+    lcb: number;
+    lb: number;
+    rcm: number;
+    cm: number;
+    lcm: number;
+    rw: number;
+    st: number;
+    lw: number;
+  }): PitchPlayer[] => [
+    {
+      number: nums.gk,
+      name: names.gk,
+      teamId: 'bodo-glimt',
+      isGk: true,
+      top: '8%',
+      left: '50%',
+    },
+    { number: nums.rb, name: names.rb, teamId: 'bodo-glimt', top: '22%', left: '18%' },
+    { number: nums.rcb, name: names.rcb, teamId: 'bodo-glimt', top: '20%', left: '38%' },
+    { number: nums.lcb, name: names.lcb, teamId: 'bodo-glimt', top: '20%', left: '62%' },
+    { number: nums.lb, name: names.lb, teamId: 'bodo-glimt', top: '22%', left: '82%' },
+    { number: nums.rcm, name: names.rcm, teamId: 'bodo-glimt', top: '42%', left: '28%' },
+    { number: nums.cm, name: names.cm, teamId: 'bodo-glimt', top: '40%', left: '50%' },
+    { number: nums.lcm, name: names.lcm, teamId: 'bodo-glimt', top: '42%', left: '72%' },
+    { number: nums.rw, name: names.rw, teamId: 'bodo-glimt', top: '68%', left: '18%' },
+    { number: nums.st, name: names.st, teamId: 'bodo-glimt', top: '78%', left: '50%' },
+    { number: nums.lw, name: names.lw, teamId: 'bodo-glimt', top: '68%', left: '82%' },
+  ];
+
+  const vsBayern = bodo433(
+    {
+      gk: 'Andersen',
+      rb: 'Kolstad',
+      rcb: 'Jenssen',
+      lcb: 'Jaiteh',
+      lb: 'Solbakken',
+      rcm: 'Eliassen',
+      cm: 'Yeboah',
+      lcm: 'Ingilæ',
+      rw: 'Leirvik',
+      st: 'Strand',
+      lw: 'Chooly',
+    },
+    {
+      gk: 1,
+      rb: 2,
+      rcb: 3,
+      lcb: 4,
+      lb: 5,
+      rcm: 18,
+      cm: 7,
+      lcm: 11,
+      rw: 17,
+      st: 9,
+      lw: 21,
+    }
+  );
+
+  /** MD2 Aspmyra — Käld at RW instead of Leirvik. */
+  const vsDortmund = bodo433(
+    {
+      gk: 'Andersen',
+      rb: 'Kolstad',
+      rcb: 'Jenssen',
+      lcb: 'Jaiteh',
+      lb: 'Solbakken',
+      rcm: 'Eliassen',
+      cm: 'Yeboah',
+      lcm: 'Ingilæ',
+      rw: 'Käld',
+      st: 'Strand',
+      lw: 'Chooly',
+    },
+    {
+      gk: 1,
+      rb: 2,
+      rcb: 3,
+      lcb: 4,
+      lb: 5,
+      rcm: 18,
+      cm: 7,
+      lcm: 11,
+      rw: 10,
+      st: 9,
+      lw: 21,
+    }
+  );
+
+  bodo.formationSystem = '1-4-3-3';
+  bodo.starters = vsDortmund;
+  bodo.scoutedFormations = [
+    {
+      id: 'bodo-vs-bayern',
+      label: {
+        en: 'vs Bayern Munich (1–6)',
+        it: 'vs Bayern Monaco (1–6)',
+      },
+      system: '4-3-3',
+      players: vsBayern,
+      notes: {
+        en: 'UYL MD1, 10 Sep 2026 (UEFA 2049817 / TM 5047588). 4-3-3; Leirvik at RW. Goal: Chooly. Subs used: Alvsen, Setvik, Blix Olsen, Rasen, Remmen.',
+        it: 'UYL gior. 1, 10 set 2026 (UEFA 2049817 / TM 5047588). 4-3-3; Leirvik a destra. Gol: Chooly. Sub: Alvsen, Setvik, Blix Olsen, Rasen, Remmen.',
+      },
+    },
+    {
+      id: 'bodo-vs-dortmund',
+      label: {
+        en: 'vs Borussia Dortmund (0–5)',
+        it: 'vs Borussia Dortmund (0–5)',
+      },
+      system: '4-3-3',
+      players: vsDortmund,
+      notes: {
+        en: 'UYL MD2, 14 Oct 2026 (UEFA 2049837 / TM 5047627). Same back five + mid three; Käld (#10) at RW. Most recent scouted XI.',
+        it: 'UYL gior. 2, 14 ott 2026 (UEFA 2049837 / TM 5047627). Stessa difesa e mediani; Käld (#10) a destra. XI scoutata più recente.',
+      },
+    },
+  ];
+  bodo.squadDepth = {
+    system: '1-4-3-3',
+    note: {
+      en: 'Last 2 UYL XIs (Bayern MD1, Dortmund MD2) mapped onto 4-3-3. Order = most starts in that slot. Short names on pitch; full names in the squad table. Heights / preferred feet not listed on UEFA or Transfermarkt for this group.',
+      it: 'Ultime 2 formazioni UYL (Bayern gior. 1, Dortmund gior. 2) mappate sul 4-3-3. Ordine = più partite in quel ruolo. Nomi corti sul campo; nomi completi in tabella. Altezze / piede preferito non pubblicati su UEFA o Transfermarkt per questo gruppo.',
+    },
+    slots: [
+      {
+        role: 'GK',
+        top: '10%',
+        left: '50%',
+        players: [{ name: 'Andersen', starts: 2 }],
+      },
+      {
+        role: 'RB',
+        top: '26%',
+        left: '18%',
+        players: [{ name: 'Kolstad', starts: 2 }],
+      },
+      {
+        role: 'RCB',
+        top: '24%',
+        left: '38%',
+        players: [{ name: 'Jenssen', starts: 2 }],
+      },
+      {
+        role: 'LCB',
+        top: '24%',
+        left: '62%',
+        players: [{ name: 'Jaiteh', starts: 2 }],
+      },
+      {
+        role: 'LB',
+        top: '26%',
+        left: '82%',
+        players: [{ name: 'Solbakken', starts: 2 }],
+      },
+      {
+        role: 'RCM',
+        top: '45%',
+        left: '28%',
+        players: [{ name: 'Eliassen', starts: 2 }],
+      },
+      {
+        role: 'CM',
+        top: '42%',
+        left: '50%',
+        players: [{ name: 'Yeboah', starts: 2 }],
+      },
+      {
+        role: 'LCM',
+        top: '45%',
+        left: '72%',
+        players: [{ name: 'Ingilæ', starts: 2 }],
+      },
+      {
+        role: 'RW',
+        top: '70%',
+        left: '18%',
+        players: [
+          { name: 'Leirvik', starts: 1 },
+          { name: 'Käld', starts: 1 },
+        ],
+      },
+      {
+        role: 'ST',
+        top: '78%',
+        left: '50%',
+        players: [{ name: 'Strand', starts: 2 }],
+      },
+      {
+        role: 'LW',
+        top: '70%',
+        left: '82%',
+        players: [{ name: 'Chooly', starts: 2 }],
+      },
+    ],
+  };
+  /** UEFA Youth League club squad (it.uefa.com/…/2611772) + TM match sheets. */
+  bodo.squad = [
+    {
+      number: 1,
+      name: 'Martin Lund Andersen',
+      position: 'GK',
+      isGk: true,
+      birthYear: 2008,
+    },
+    {
+      number: 12,
+      name: 'Petter Østensen Griegel',
+      position: 'GK',
+      isGk: true,
+      birthYear: 2010,
+    },
+    {
+      number: 2,
+      name: 'Sivert Kolstad',
+      position: 'RB',
+      birthYear: 2007,
+    },
+    {
+      number: 3,
+      name: 'Johannes Linaker Jenssen',
+      position: 'CB',
+      birthYear: 2009,
+    },
+    {
+      number: 4,
+      name: 'Matias Bobo Høgsæt Jaiteh',
+      position: 'CB',
+      birthYear: 2008,
+    },
+    {
+      number: 5,
+      name: 'Tobias Solbakken',
+      position: 'LB',
+      birthYear: 2009,
+    },
+    {
+      number: 15,
+      name: 'Mathias Blix Olsen',
+      position: 'CB',
+      birthYear: 2007,
+    },
+    {
+      number: 25,
+      name: 'Isak Bakke Gusjås',
+      position: 'CB',
+      birthYear: 2010,
+    },
+    {
+      number: 24,
+      name: 'Jonathan Karlsen Almås',
+      position: 'DF',
+      birthYear: 2010,
+    },
+    {
+      number: 7,
+      name: 'Levi Monsen Yeboah',
+      position: 'CM',
+      birthYear: 2010,
+    },
+    {
+      number: 10,
+      name: 'Milton Käld',
+      position: 'RW',
+      birthYear: 2009,
+    },
+    {
+      number: 11,
+      name: 'Teo Ingilæ',
+      position: 'CM',
+      birthYear: 2009,
+    },
+    {
+      number: 16,
+      name: 'Martin Dobloug Rasen',
+      position: 'CM',
+      birthYear: 2009,
+    },
+    {
+      number: 18,
+      name: 'Erling Eliassen',
+      position: 'CM',
+      birthYear: 2008,
+    },
+    {
+      number: 34,
+      name: 'Sahad Sami Salih',
+      position: 'CM',
+    },
+    {
+      number: 23,
+      name: 'Romario Franco Remmen',
+      position: 'CM',
+      birthYear: 2010,
+    },
+    {
+      number: 36,
+      name: 'William Myre Theting',
+      position: 'CM',
+      birthYear: 2010,
+    },
+    {
+      number: 9,
+      name: 'Jakob Strand',
+      position: 'ST',
+      birthYear: 2009,
+    },
+    {
+      number: 17,
+      name: 'Lucas Leirvik',
+      position: 'RW',
+      birthYear: 2009,
+    },
+    {
+      number: 19,
+      name: 'Isak Erlend Alvsen',
+      position: 'RW',
+      birthYear: 2009,
+    },
+    {
+      number: 20,
+      name: 'Mathias Nikolai Setvik',
+      position: 'ST',
+      birthYear: 2010,
+    },
+    {
+      number: 21,
+      name: 'Hindrin Najah Chooly',
+      position: 'LW',
+      birthYear: 2008,
+    },
+    {
+      number: 30,
+      name: 'Matheo Martins',
+      position: 'ST',
+      birthYear: 2010,
+    },
   ];
 }
 
