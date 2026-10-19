@@ -790,7 +790,30 @@
       "it": "Partita intera su Vimeo."
     }
   },
-  "clips": [],
+  "clips": [
+    {
+      "id": "vimeo-1236012222",
+      "title": {
+        "en": "Gol Concessi VIL NAP",
+        "it": "Gol Concessi VIL NAP"
+      },
+      "comments": {
+        "en": "Gol Concessi VIL NAP",
+        "it": "Gol Concessi VIL NAP"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1236012222/35518f53bf",
+      "section": "goal",
+      "labels": [
+        "goal"
+      ],
+      "tags": [
+        "vimeo",
+        "goal"
+      ]
+    }
+  ],
   "analysisVideos": [
     {
       "id": "vimeo-1236012222",
@@ -814,6 +837,6 @@
   "vimeo": {
     "folderId": "30901428",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30901428",
-    "lastSyncedAt": "2026-10-18T16:46:29.945Z"
+    "lastSyncedAt": "2026-10-19T11:45:04.397Z"
   }
 }
