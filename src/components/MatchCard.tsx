@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
+import { formatMatchScore, getMatchBySlug } from '../data/matches';
 import { teamCrestUrl } from '../data/teamLogos';
 import { MatchSummary } from '../types/match';
 import MicrocycleDayBadge from './MicrocycleDayBadge';
@@ -10,6 +11,9 @@ interface MatchCardProps {
 
 export default function MatchCard({ match }: MatchCardProps) {
   const { t, L, formatDate } = useLanguage();
+  const firstLeg = match.firstLegSlug
+    ? getMatchBySlug(match.firstLegSlug)
+    : undefined;
 
   return (
     <Link to={`/match/${match.slug}`} className="match-card">
@@ -52,6 +56,14 @@ export default function MatchCard({ match }: MatchCardProps) {
           {statusLabel(match.status, t)}
         </span>
       </div>
+      {firstLeg ? (
+        <div className="match-card-first-leg">
+          {t('firstLegCard')}
+          {' · '}
+          {firstLeg.homeTeam.shortName} {formatMatchScore(firstLeg.score)}{' '}
+          {firstLeg.awayTeam.shortName}
+        </div>
+      ) : null}
     </Link>
   );
 }

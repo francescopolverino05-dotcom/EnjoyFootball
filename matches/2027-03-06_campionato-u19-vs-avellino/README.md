@@ -9,3 +9,5 @@ matches/2027-03-06_campionato-u19-vs-avellino/
 ```
 
 Scheduled Primavera 2 fixture (Girone B). Fill analysis after the match; set kickoff when known.
+
+First leg (andata) is `matches/2026-09-05_campionato-avellino-vs-u19/`, linked by `firstLegSlug`. That report is not copied here.

@@ -192,6 +192,11 @@ export interface MatchData {
   subtitle: Localized;
   date: string;
   /**
+   * Slug of the first-phase match against the same opponent.
+   * A pointer only — the return fixture reads that report, it does not copy it.
+   */
+  firstLegSlug?: string;
+  /**
    * Machine-readable competition bucket for /matches tabs.
    * Prefer setting this explicitly; otherwise inferred from competition/slug.
    */
@@ -252,4 +257,6 @@ export interface MatchSummary {
   score: { home: number; away: number } | null;
   /** Pre-season microcycle label for friendlies (Day 1, Day 2, …). */
   microcycleDay?: number | null;
+  /** First-phase match slug, when this fixture reuses that report. */
+  firstLegSlug?: string;
 }

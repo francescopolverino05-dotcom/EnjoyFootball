@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
-import { getMatchBySlug } from '../data/matches';
+import FirstLegReference from '../components/FirstLegReference';
+import { getFirstLegMatch, getMatchBySlug } from '../data/matches';
 import { getLeagueMatchStatsForMatchSlug } from '../data/leagueMatchStats';
 import {
   mapLeagueDynamics,
@@ -40,6 +41,14 @@ export default function MatchPage() {
       : `${match.homeTeam.shortName} ${match.score.home} – ${match.score.away} ${match.awayTeam.shortName}`;
   const microcycleDay = getMicrocycleDay(match.slug);
   const leagueSheet = getLeagueMatchStatsForMatchSlug(match.slug);
+  const firstLeg = getFirstLegMatch(match);
+  const bareFixture =
+    match.score == null &&
+    match.timeline.length === 0 &&
+    match.formations.length === 0 &&
+    match.teamStats.length === 0 &&
+    !match.appearances &&
+    !leagueSheet;
   const statsMatch =
     leagueSheet && match.teamStats.length === 0
       ? {
@@ -75,17 +84,23 @@ export default function MatchPage() {
           </div>
         ) : null}
         <Scoreboard match={match} />
-        <Timeline events={match.timeline} />
-        <Formations formations={match.formations} matchSlug={match.slug} />
-        {match.appearances ? (
-          <AppearancesPanel
-            appearances={match.appearances}
-            homeTeam={match.homeTeam}
-            awayTeam={match.awayTeam}
-          />
-        ) : null}
+        {bareFixture && firstLeg ? <FirstLegReference match={firstLeg} /> : null}
+        {bareFixture ? null : (
+          <>
+            <Timeline events={match.timeline} />
+            <Formations formations={match.formations} matchSlug={match.slug} />
+            {match.appearances ? (
+              <AppearancesPanel
+                appearances={match.appearances}
+                homeTeam={match.homeTeam}
+                awayTeam={match.awayTeam}
+              />
+            ) : null}
+          </>
+        )}
       </div>
 
+      {bareFixture ? null : (
       <div className="report-page">
         <ReportHeader
           pageTitle={t('tacticalDashboard')}
@@ -113,6 +128,12 @@ export default function MatchPage() {
           }
         />
       </div>
+      )}
+      {!bareFixture && firstLeg ? (
+        <div className="report-page">
+          <FirstLegReference match={firstLeg} />
+        </div>
+      ) : null}
     </div>
   );
 }

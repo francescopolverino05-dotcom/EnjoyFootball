@@ -2821,6 +2821,115 @@ button {
   color: var(--text-gray);
 }
 
+.first-leg-reference {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 2px solid var(--napoli-blue);
+}
+
+.first-leg-kicker {
+  margin: 0 0 4px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--napoli-blue);
+}
+
+.first-leg-panel,
+.first-leg-slot-card {
+  background: #fff;
+}
+
+.first-leg-slot-card {
+  border-color: var(--napoli-blue);
+  grid-column: 1 / -1;
+}
+
+.first-leg-scorers {
+  margin: 4px 0 12px;
+  font-size: 13px;
+}
+
+.first-leg-scorers-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-gray);
+  margin-bottom: 4px;
+}
+
+.first-leg-scorers-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 700;
+}
+
+.first-leg-scorers-line span:last-child {
+  text-align: right;
+}
+
+.first-leg-formation {
+  margin: 0 0 12px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text-dark);
+}
+
+.first-leg-block {
+  margin-top: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.first-leg-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 14px 0;
+}
+
+.first-leg-links a {
+  color: var(--napoli-blue-dark);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.first-leg-player-list {
+  margin: 0;
+  padding: 12px 16px 12px 32px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.first-leg-player-list li + li {
+  margin-top: 6px;
+}
+
+.first-leg-table {
+  min-width: 560px;
+}
+
+.first-leg-table th:nth-child(2),
+.first-leg-table td:nth-child(2) {
+  text-align: left;
+}
+
+.first-leg-block .stats-val-home,
+.first-leg-block .stats-val-away {
+  width: 148px;
+}
+
+.match-card-first-leg {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--napoli-blue-dark);
+}
+
 .opponent-card {
   position: relative;
 }

@@ -9,3 +9,5 @@ matches/2027-02-06_campionato-u19-vs-bari/
 ```
 
 Scheduled Primavera 2 fixture (Girone B). Fill analysis after the match; set kickoff when known.
+
+First leg (andata) is `matches/2026-10-17_campionato-bari-vs-u19/`, linked by `firstLegSlug`. That report is not copied here.

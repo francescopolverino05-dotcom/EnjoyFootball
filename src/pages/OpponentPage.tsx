@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import FirstLegReference from '../components/FirstLegReference';
 import Formations from '../components/Formations';
 import GkStrikerScout from '../components/GkStrikerScout';
 import MatchMedia from '../components/MatchMedia';
@@ -8,6 +9,7 @@ import OppositionSquadTable from '../components/OppositionSquadTable';
 import SquadDepthPanel from '../components/SquadDepthPanel';
 import TwoColumnNotesPanel from '../components/TwoColumnNotesPanel';
 import { strikersForGkTab } from '../data/gkStrikerSample';
+import { getMatchBySlug } from '../data/matches';
 import { teamCrestUrl } from '../data/teamLogos';
 import {
   getFixturePack,
@@ -99,8 +101,14 @@ export default function OpponentPage() {
         });
   const formationNotes =
     opponent.scoutedFormations?.filter((f) => f.notes) ?? [];
-  const refs = pack.referenceMatches.slice(0, refSlotLimit);
-  const emptySlots = Math.max(0, refSlotLimit - refs.length);
+  const firstLeg = selectedMatch?.firstLegSlug
+    ? getMatchBySlug(selectedMatch.firstLegSlug)
+    : undefined;
+  const reserveFourth =
+    Boolean(firstLeg) && refSlotLimit >= OPPOSITION_MAX_REFERENCE_MATCHES;
+  const refCap = refSlotLimit - (reserveFourth ? 1 : 0);
+  const refs = pack.referenceMatches.slice(0, refCap);
+  const emptySlots = Math.max(0, refCap - refs.length);
   const reports = pack.reportItems;
   const strengthsWeaknesses =
     pack.strengthsWeaknesses ?? EMPTY_STRENGTHS_WEAKNESSES;
@@ -417,9 +425,6 @@ export default function OpponentPage() {
               ))}
               {Array.from({ length: emptySlots }, (_, i) => {
                 const slot = refs.length + i + 1;
-                const isFourth =
-                  slot === 4 &&
-                  refSlotLimit >= OPPOSITION_MAX_REFERENCE_MATCHES;
                 return (
                   <article
                     className="match-card opponent-slot-card"
@@ -428,14 +433,15 @@ export default function OpponentPage() {
                     <div className="match-card-date">
                       {t('oppositionRefSlot').replace('{n}', String(slot))}
                     </div>
-                    <div className="match-card-title">
-                      {isFourth
-                        ? t('oppositionRefSlotFour')
-                        : t('oppositionRefEmpty')}
-                    </div>
+                    <div className="match-card-title">{t('oppositionRefEmpty')}</div>
                   </article>
                 );
               })}
+              {reserveFourth && firstLeg ? (
+                <article className="match-card first-leg-slot-card" key={firstLeg.slug}>
+                  <FirstLegReference match={firstLeg} variant="slot" />
+                </article>
+              ) : null}
             </div>
           </div>
         ) : null}
