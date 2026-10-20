@@ -1869,7 +1869,7 @@ if (perugia) {
 /**
  * Bodø/Glimt UEFA U19 — UEFA club squad + UYL MD1 Bayern / MD2 Dortmund XIs.
  * System 4-3-3; pitch attacks downward (team-right = screen-left).
- * Heights / preferred feet: not published on UEFA or Transfermarkt for this U19 group.
+ * Heights / preferred feet: video scouting (Bayern / BVB) + user notes where published.
  */
 const bodo = OPPONENTS.find((o) => o.id === 'bodo-glimt');
 if (bodo) {
@@ -2010,8 +2010,8 @@ if (bodo) {
   bodo.squadDepth = {
     system: '1-4-3-3',
     note: {
-      en: 'Last 2 UYL XIs (Bayern MD1, Dortmund MD2) mapped onto 4-3-3. Order = most starts in that slot. Short names on pitch; full names in the squad table. Heights/feet: published sources first (TM Strand 199; BeSoccer Chooly 169 / right; Offside Andersen right); otherwise FM26 estimates (Kolstad 177, Jenssen 186, Solbakken 179, Blix Olsen 185, Ingilæ 170, Alvsen 171 — all right). Gaps = not in FM/public DBs.',
-      it: 'Ultime 2 formazioni UYL (Bayern gior. 1, Dortmund gior. 2) mappate sul 4-3-3. Ordine = più partite in quel ruolo. Nomi corti sul campo; nomi completi in tabella. Altezze/piede: fonti pubblicate prima (TM Strand 199; BeSoccer Chooly 169 / destro; Offside Andersen destro); altrimenti stime FM26 (Kolstad 177, Jenssen 186, Solbakken 179, Blix Olsen 185, Ingilæ 170, Alvsen 171 — tutti destri). Vuoti = assenti da FM/DB pubblici.',
+      en: 'Last 2 UYL XIs (Bayern MD1, Dortmund MD2) mapped onto 4-3-3. Order = most starts in that slot. Short names on pitch; full names in the squad table. Heights/feet from video scouting (Bayern–Bodø / BVB) and confirmed notes — see squad table.',
+      it: 'Ultime 2 formazioni UYL (Bayern gior. 1, Dortmund gior. 2) mappate sul 4-3-3. Ordine = più partite in quel ruolo. Nomi corti sul campo; nomi completi in tabella. Altezze/piede da scouting video (Bayern–Bodø / BVB) e note confermate — vedi tabella rosa.',
     },
     slots: [
       {
@@ -2087,8 +2087,7 @@ if (bodo) {
   };
   /**
    * UEFA Youth League club squad (it.uefa.com/…/2611772) + TM match sheets.
-   * Bios: TM/club/BeSoccer/Offside where published; otherwise FM26 (FMInside) /
-   * SoccerWiki estimates for height/foot. Remaining blanks = not in those DBs.
+   * Heights / preferred feet: rosa_piede_video.csv (video Bayern–Bodø / BVB + notes).
    */
   bodo.squad = [
     {
@@ -2127,6 +2126,7 @@ if (bodo) {
       name: 'Matias Bobo Høgsæt Jaiteh',
       position: 'CB',
       birthYear: 2008,
+      preferredFoot: 'Ambidestro',
     },
     {
       number: 5,
@@ -2149,6 +2149,7 @@ if (bodo) {
       name: 'Isak Bakke Gusjås',
       position: 'CB',
       birthYear: 2010,
+      preferredFoot: 'Destro',
     },
     {
       number: 24,
@@ -2161,12 +2162,14 @@ if (bodo) {
       name: 'Levi Monsen Yeboah',
       position: 'CM',
       birthYear: 2010,
+      preferredFoot: 'Destro',
     },
     {
       number: 10,
       name: 'Milton Käld',
       position: 'RW',
       birthYear: 2010,
+      preferredFoot: 'Destro',
     },
     {
       number: 11,
@@ -2174,19 +2177,21 @@ if (bodo) {
       position: 'CM',
       birthYear: 2007,
       heightCm: 170,
-      preferredFoot: 'Destro',
+      preferredFoot: 'Ambidestro',
     },
     {
       number: 16,
       name: 'Martin Dobloug Rasen',
       position: 'ST',
       birthYear: 2008,
+      preferredFoot: 'Destro',
     },
     {
       number: 18,
       name: 'Erling Eliassen',
       position: 'CM',
       birthYear: 2009,
+      preferredFoot: 'Destro',
     },
     {
       number: 34,
@@ -2198,6 +2203,7 @@ if (bodo) {
       name: 'Romario Franco Remmen',
       position: 'CM',
       birthYear: 2010,
+      preferredFoot: 'Destro',
     },
     {
       number: 36,
@@ -2211,12 +2217,14 @@ if (bodo) {
       position: 'ST',
       birthYear: 2009,
       heightCm: 199,
+      preferredFoot: 'Destro',
     },
     {
       number: 17,
       name: 'Lucas Leirvik',
       position: 'RW',
       birthYear: 2009,
+      preferredFoot: 'Destro',
     },
     {
       number: 19,
@@ -2231,6 +2239,7 @@ if (bodo) {
       name: 'Mathias Nikolai Setvik',
       position: 'ST',
       birthYear: 2010,
+      preferredFoot: 'Destro',
     },
     {
       number: 21,
