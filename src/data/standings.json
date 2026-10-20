@@ -2088,7 +2088,7 @@
           "date": "2026-10-20",
           "homeId": "napoli",
           "awayId": "bodo-glimt",
-          "score": null
+          "score": "1-0"
         }
       },
       "rounds": [
@@ -2374,7 +2374,7 @@
               "date": "2026-10-20",
               "home": "Napoli",
               "away": "Bodø/Glimt",
-              "score": null,
+              "score": "1-0",
               "us": true,
               "ourClub": "napoli"
             },
@@ -3595,7 +3595,7 @@
               {
                 "homeId": "napoli",
                 "awayId": "bodo-glimt",
-                "score": null,
+                "score": "1-0",
                 "matchSlug": "2026-10-20_uyl-u19-vs-bodo-glimt"
               },
               {
