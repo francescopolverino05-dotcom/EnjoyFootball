@@ -36,9 +36,30 @@
     "colorClass": "opponent",
     "logo": "logos/bodo-glimt.png"
   },
-  "score": null,
-  "goals": [],
-  "timeline": [],
+  "score": {
+    "home": 1,
+    "away": 0
+  },
+  "goals": [
+    {
+      "minute": 31,
+      "scorer": "Riccio",
+      "assist": "Pereyra",
+      "teamId": "u19"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 31,
+      "label": {
+        "en": "Riccio 1-0",
+        "it": "Riccio 1-0"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 34
+    }
+  ],
   "formations": [],
   "dynamics": [],
   "teamStats": [],
