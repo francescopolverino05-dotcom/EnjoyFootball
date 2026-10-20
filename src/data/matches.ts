@@ -26,6 +26,7 @@ function toSummary(match: MatchData): MatchSummary {
     awayColorClass: match.awayTeam.colorClass,
     score: match.score,
     microcycleDay: getMicrocycleDay(match.slug),
+    firstLegSlug: match.firstLegSlug,
   };
 }
 
@@ -40,6 +41,16 @@ export function getMatchBySlug(slug: string): MatchData | undefined {
     path.includes(`/${slug}/`)
   );
   return entry?.[1].default;
+}
+
+/** First-phase report linked from a return fixture. Undefined when the pointer is missing or broken. */
+export function getFirstLegMatch(match: {
+  slug: string;
+  firstLegSlug?: string;
+}): MatchData | undefined {
+  const slug = match.firstLegSlug?.trim();
+  if (!slug || slug === match.slug) return undefined;
+  return getMatchBySlug(slug);
 }
 
 export function matchAssetUrl(slug: string, relativePath: string): string {
