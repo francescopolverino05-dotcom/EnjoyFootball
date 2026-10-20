@@ -44,5 +44,17 @@
   "teamStats": [],
   "goalkeepers": [],
   "clips": [],
-  "analysisVideos": []
+  "analysisVideos": [],
+  "vimeo": {
+    "folderId": "30966018",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30966018",
+    "lastSyncedAt": "2026-10-20T17:34:24.953Z"
+  },
+  "video": {
+    "fullMatch": "https://vimeo.com/1237634793/5355d0cb7f",
+    "notes": {
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
+    }
+  }
 }
