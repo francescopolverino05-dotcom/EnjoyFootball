@@ -117,6 +117,7 @@ export default function MatchPage() {
         ) : null}
         <StatsDashboard
           match={statsMatch}
+          hideEmptyTabs
           playerStats={
             leagueSheet
               ? {
