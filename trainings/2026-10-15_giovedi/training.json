@@ -19,65 +19,14 @@
     "it": "Video su Vimeo — Training Sessions / 12/10/2026 / Giovedí."
   },
   "video": {
-    "fullSession": "https://vimeo.com/1236267625/a1da99d1cc",
+    "fullSession": "https://vimeo.com/1237480087/484df67188",
     "notes": {
       "en": "Synced from Vimeo after upload.",
       "it": "Sincronizzato da Vimeo dopo il caricamento."
     },
     "parts": [
       {
-        "id": "vimeo-1236267625",
-        "title": {
-          "en": "Session part (16:42)",
-          "it": "Parte sessione (16:42)"
-        },
-        "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
-        },
-        "videoFile": "https://vimeo.com/1236267625/a1da99d1cc",
-        "tags": [
-          "vimeo",
-          "training",
-          "session"
-        ]
-      },
-      {
-        "id": "vimeo-1236267626",
-        "title": {
-          "en": "15:38:20.161",
-          "it": "15:38:20.161"
-        },
-        "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
-        },
-        "videoFile": "https://vimeo.com/1236267626/b66d20bd6b",
-        "tags": [
-          "vimeo",
-          "training",
-          "session"
-        ]
-      },
-      {
-        "id": "vimeo-1236267627",
-        "title": {
-          "en": "15:48:00.246",
-          "it": "15:48:00.246"
-        },
-        "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
-        },
-        "videoFile": "https://vimeo.com/1236267627/a5d6685523",
-        "tags": [
-          "vimeo",
-          "training",
-          "session"
-        ]
-      },
-      {
-        "id": "vimeo-1236267629",
+        "id": "vimeo-1237480089",
         "title": {
           "en": "16:20:44.319",
           "it": "16:20:44.319"
@@ -86,7 +35,58 @@
           "en": "Training session recording.",
           "it": "Registrazione della sessione di allenamento."
         },
-        "videoFile": "https://vimeo.com/1236267629/128359eb4c",
+        "videoFile": "https://vimeo.com/1237480089/f10be47bd9",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1237480088",
+        "title": {
+          "en": "15:38:20.161",
+          "it": "15:38:20.161"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1237480088/c7a8bcf2de",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1237480087",
+        "title": {
+          "en": "15:48:00.246",
+          "it": "15:48:00.246"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1237480087/484df67188",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1237480090",
+        "title": {
+          "en": "16:42:44.221",
+          "it": "16:42:44.221"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1237480090/4cf04e8ccc",
         "tags": [
           "vimeo",
           "training",
@@ -109,6 +109,6 @@
   "vimeo": {
     "folderId": "30714171",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30714171",
-    "lastSyncedAt": "2026-10-19T11:45:07.805Z"
+    "lastSyncedAt": "2026-10-20T17:31:57.935Z"
   }
 }
