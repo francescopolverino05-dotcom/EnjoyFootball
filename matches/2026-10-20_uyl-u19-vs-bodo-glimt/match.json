@@ -272,7 +272,7 @@
           "name": "Natale",
           "teamId": "u19",
           "bottom": "22%",
-          "left": "22%"
+          "left": "78%"
         },
         {
           "number": 6,
@@ -286,49 +286,49 @@
           "name": "Branchizio",
           "teamId": "u19",
           "bottom": "22%",
-          "left": "78%"
+          "left": "22%"
         },
         {
           "number": 7,
           "name": "Santella",
           "teamId": "u19",
           "bottom": "40%",
-          "left": "12%"
+          "left": "88%"
         },
         {
           "number": 8,
           "name": "Chiummariello",
           "teamId": "u19",
           "bottom": "42%",
-          "left": "38%"
+          "left": "62%"
         },
         {
           "number": 4,
           "name": "De Stefano",
           "teamId": "u19",
           "bottom": "42%",
-          "left": "62%"
+          "left": "38%"
         },
         {
           "number": 2,
           "name": "Melnyk",
           "teamId": "u19",
           "bottom": "40%",
-          "left": "88%"
+          "left": "12%"
         },
         {
           "number": 10,
           "name": "Riccio",
           "teamId": "u19",
           "bottom": "68%",
-          "left": "28%"
+          "left": "72%"
         },
         {
           "number": 11,
           "name": "Favicchio",
           "teamId": "u19",
           "bottom": "68%",
-          "left": "72%"
+          "left": "28%"
         },
         {
           "number": 9,
@@ -360,7 +360,7 @@
           "name": "Melnyk",
           "teamId": "u19",
           "bottom": "22%",
-          "left": "22%"
+          "left": "78%"
         },
         {
           "number": 6,
@@ -374,35 +374,35 @@
           "name": "Branchizio",
           "teamId": "u19",
           "bottom": "22%",
-          "left": "78%"
+          "left": "22%"
         },
         {
           "number": 7,
           "name": "Santella",
           "teamId": "u19",
           "bottom": "40%",
-          "left": "12%"
+          "left": "88%"
         },
         {
           "number": 8,
           "name": "Chiummariello",
           "teamId": "u19",
           "bottom": "42%",
-          "left": "38%"
+          "left": "62%"
         },
         {
           "number": 4,
           "name": "De Stefano",
           "teamId": "u19",
           "bottom": "42%",
-          "left": "62%"
+          "left": "38%"
         },
         {
           "number": 16,
           "name": "Liccardo",
           "teamId": "u19",
           "bottom": "40%",
-          "left": "88%"
+          "left": "12%"
         },
         {
           "number": 10,
@@ -416,14 +416,14 @@
           "name": "Pereyra",
           "teamId": "u19",
           "bottom": "78%",
-          "left": "38%"
+          "left": "62%"
         },
         {
           "number": 20,
           "name": "Mané",
           "teamId": "u19",
           "bottom": "78%",
-          "left": "62%"
+          "left": "38%"
         }
       ]
     },
