@@ -2539,6 +2539,67 @@ attachReferencePack('monopoli', '2026-10-31_campionato-monopoli-vs-u19', [
     score: '0–2',
     videoFile: 'https://vimeo.com/1235994929/30860268db',
   },
+  {
+    id: 'monopoli-ref-benevento',
+    title: {
+      en: 'Monopoli vs Benevento 2–2',
+      it: 'Monopoli vs Benevento 2–2',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 5',
+      it: 'Primavera 2 · Giornata 5',
+    },
+    score: '2–2',
+    videoFile: 'https://vimeo.com/1237874247/1c2787edc8',
+  },
+]);
+
+attachReferencePack('frosinone', '2026-11-07_campionato-u19-vs-frosinone', [
+  {
+    id: 'frosinone-ref-cosenza',
+    title: {
+      en: 'Cosenza vs Frosinone 1–2',
+      it: 'Cosenza vs Frosinone 1–2',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 5',
+      it: 'Primavera 2 · Giornata 5',
+    },
+    score: '1–2',
+    videoFile: 'https://vimeo.com/1237876189/9c9f91db5c',
+  },
+]);
+
+attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [
+  {
+    id: 'benevento-ref-monopoli',
+    title: {
+      en: 'Monopoli vs Benevento 2–2',
+      it: 'Monopoli vs Benevento 2–2',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 5',
+      it: 'Primavera 2 · Giornata 5',
+    },
+    score: '2–2',
+    videoFile: 'https://vimeo.com/1237874247/1c2787edc8',
+  },
+]);
+
+attachReferencePack('cosenza', '2027-01-09_campionato-cosenza-vs-u19', [
+  {
+    id: 'cosenza-ref-frosinone',
+    title: {
+      en: 'Cosenza vs Frosinone 1–2',
+      it: 'Cosenza vs Frosinone 1–2',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 5',
+      it: 'Primavera 2 · Giornata 5',
+    },
+    score: '1–2',
+    videoFile: 'https://vimeo.com/1237876189/9c9f91db5c',
+  },
 ]);
 
 attachReferencePack(
