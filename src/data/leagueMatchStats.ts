@@ -17,6 +17,7 @@ import latinaSalernitana from './leagueMatchStats/latina-salernitana.json';
 import monopoliBenevento from './leagueMatchStats/monopoli-benevento.json';
 import monopoliCosenza from './leagueMatchStats/monopoli-cosenza.json';
 import monopoliPescara from './leagueMatchStats/monopoli-pescara.json';
+import napoliBodoGlimt from './leagueMatchStats/napoli-bodo-glimt.json';
 import napoliPisa from './leagueMatchStats/napoli-pisa.json';
 import palermoBari from './leagueMatchStats/palermo-bari.json';
 import palermoPescara from './leagueMatchStats/palermo-pescara.json';
@@ -73,6 +74,7 @@ const BY_KEY: Record<string, LeagueMatchStats> = {
   'primavera2/salernitana-perugia': salernitanaPerugia as LeagueMatchStats,
   'primavera2/spezia-monopoli': speziaMonopoli as LeagueMatchStats,
   'primavera2/spezia-palermo': speziaPalermo as LeagueMatchStats,
+  'uefaYouthLeague/napoli-bodo-glimt': napoliBodoGlimt as LeagueMatchStats,
   'uefaYouthLeague/villarreal-napoli':
     villarrealNapoli as LeagueMatchStats,
 };

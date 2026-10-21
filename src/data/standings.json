@@ -3596,7 +3596,8 @@
                 "homeId": "napoli",
                 "awayId": "bodo-glimt",
                 "score": "1-0",
-                "matchSlug": "2026-10-20_uyl-u19-vs-bodo-glimt"
+                "matchSlug": "2026-10-20_uyl-u19-vs-bodo-glimt",
+                "statsSlug": "napoli-bodo-glimt"
               },
               {
                 "homeId": "stuttgart",
