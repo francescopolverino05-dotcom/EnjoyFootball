@@ -867,6 +867,13 @@
           "en": "Still underperforming in expected goals. Taking many shots but not converting into many goals.",
           "it": "Ancora sotto rispetto agli expected goals. Tanti tiri ma pochi convertiti in gol."
         }
+      },
+      {
+        "id": "ebi-02",
+        "text": {
+          "en": "Keep switching play for the full 90. In the first half it shifted their block, pushed back their high line and won us second balls, but we stopped doing it after the break.",
+          "it": "Continuare a cambiare gioco per tutti i 90 minuti. Nel primo tempo spostava il loro blocco, faceva abbassare la loro linea alta e ci faceva vincere le seconde palle, ma nella ripresa abbiamo smesso."
+        }
       }
     ]
   }
