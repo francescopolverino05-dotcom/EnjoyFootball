@@ -849,5 +849,25 @@
       "en": "Line-ups, substitutions and cards from the UEFA match centre (match 2049846); sub minutes cross-checked against UEFA minutes played. Coaches' yellows (Jacobsen 9', Nocerino 90+1') not listed. At 54' Napoli switched to 3-4-1-2 (Melnyk to RCB, Liccardo LWB); at 59' Chiaiese LWB, Liccardo to RWB. Käld moved to LB at 46'.",
       "it": "Formazioni, cambi e cartellini dal match centre UEFA (match 2049846); minuti dei cambi verificati con i minuti giocati UEFA. Gialli agli allenatori (Jacobsen 9', Nocerino 90+1') non inclusi. Al 54' Napoli passa al 3-4-1-2 (Melnyk braccetto destro, Liccardo esterno sinistro); al 59' Chiaiese esterno sinistro, Liccardo a destra. Käld terzino sinistro dal 46'."
     }
+  },
+  "reflection": {
+    "wentWell": [
+      {
+        "id": "wwb-01",
+        "text": {
+          "en": "Very good pressing contributed to a good chunk of our opportunities, especially in the first half, and it contributed to our goal.",
+          "it": "Ottimo pressing: ha generato buona parte delle nostre occasioni, soprattutto nel primo tempo, e ha contribuito al nostro gol."
+        }
+      }
+    ],
+    "evenBetterIf": [
+      {
+        "id": "ebi-01",
+        "text": {
+          "en": "Still underperforming in expected goals. Taking many shots but not converting into many goals.",
+          "it": "Ancora sotto rispetto agli expected goals. Tanti tiri ma pochi convertiti in gol."
+        }
+      }
+    ]
   }
 }
