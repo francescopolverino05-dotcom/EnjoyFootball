@@ -20,8 +20,8 @@
     }
   ],
   "note": {
-    "en": "UEFA official figures where available; other figures are low-confidence estimates from video tagging.",
-    "it": "Dati ufficiali UEFA dove disponibili; gli altri sono stime a bassa confidenza da tagging video."
+    "en": "UEFA official figures (goals, shots, on target, blocked/off target, fouls, cards, corners, offsides, blocks, saves) where available; all other figures are low-confidence estimates from video tagging. Shots by half not available; aerial duels not tagged.",
+    "it": "Dati ufficiali UEFA (gol, tiri, nello specchio, respinti/fuori, falli, cartellini, angoli, fuorigioco, respinte, parate) dove disponibili; tutti gli altri sono stime a bassa confidenza da tagging video. Tiri per tempo non disponibili; duelli aerei non taggati."
   },
   "teamStats": [
     {
@@ -30,9 +30,184 @@
       "away": "0"
     },
     {
-      "stat": "Possession % (estimated)",
-      "home": "60.0 (1H 69.6 / 2H 48.7)",
-      "away": "40.0 (1H 30.4 / 2H 51.3)"
+      "stat": "xG (estimated)",
+      "home": "2.16",
+      "away": "0.16"
+    },
+    {
+      "stat": "Shots (1H)",
+      "home": "—",
+      "away": "—"
+    },
+    {
+      "stat": "Shots (2H)",
+      "home": "—",
+      "away": "—"
+    },
+    {
+      "stat": "Shots (full match)",
+      "home": "17",
+      "away": "4"
+    },
+    {
+      "stat": "Shots on target",
+      "home": "7",
+      "away": "1"
+    },
+    {
+      "stat": "Shot accuracy %",
+      "home": "41.2",
+      "away": "25.0"
+    },
+    {
+      "stat": "Blocked shots",
+      "home": "3",
+      "away": "1"
+    },
+    {
+      "stat": "Missed shots (off target)",
+      "home": "7",
+      "away": "2"
+    },
+    {
+      "stat": "Shots inside box",
+      "home": "5 (of 11 located)",
+      "away": "1 (of 4 located)"
+    },
+    {
+      "stat": "Shots outside box",
+      "home": "6 (of 11 located)",
+      "away": "3 (of 4 located)"
+    },
+    {
+      "stat": "Headed shots",
+      "home": "2",
+      "away": "0"
+    },
+    {
+      "stat": "Possession % (full match)",
+      "home": "60.0",
+      "away": "40.0"
+    },
+    {
+      "stat": "Possession % (1H)",
+      "home": "69.6",
+      "away": "30.4"
+    },
+    {
+      "stat": "Possession % (2H)",
+      "home": "48.7",
+      "away": "51.3"
+    },
+    {
+      "stat": "Share of passes %",
+      "home": "60.0",
+      "away": "40.0"
+    },
+    {
+      "stat": "Passes",
+      "home": "966",
+      "away": "644"
+    },
+    {
+      "stat": "Passes completed",
+      "home": "873",
+      "away": "557"
+    },
+    {
+      "stat": "Pass accuracy % (full match)",
+      "home": "90.4",
+      "away": "86.5"
+    },
+    {
+      "stat": "Pass accuracy % (1H)",
+      "home": "91.7",
+      "away": "86.0"
+    },
+    {
+      "stat": "Pass accuracy % (2H)",
+      "home": "88.1",
+      "away": "86.8"
+    },
+    {
+      "stat": "Key passes",
+      "home": "4",
+      "away": "2"
+    },
+    {
+      "stat": "Progressive passes (completed / attempted)",
+      "home": "64/122",
+      "away": "28/75"
+    },
+    {
+      "stat": "Into final third (completed / attempted)",
+      "home": "35/62",
+      "away": "10/27"
+    },
+    {
+      "stat": "Into box (completed / attempted)",
+      "home": "8/28",
+      "away": "5/19"
+    },
+    {
+      "stat": "Crosses (completed / total)",
+      "home": "2/20",
+      "away": "3/11"
+    },
+    {
+      "stat": "Long balls (completed / total)",
+      "home": "62/94",
+      "away": "21/43"
+    },
+    {
+      "stat": "Through balls (completed / total)",
+      "home": "0/1",
+      "away": "1/4"
+    },
+    {
+      "stat": "Ground duels (won / total)",
+      "home": "17/49",
+      "away": "30/46"
+    },
+    {
+      "stat": "Aerial duels (won / total)",
+      "home": "—",
+      "away": "—"
+    },
+    {
+      "stat": "Interceptions",
+      "home": "67",
+      "away": "65"
+    },
+    {
+      "stat": "Recoveries",
+      "home": "83",
+      "away": "27"
+    },
+    {
+      "stat": "High recoveries (final third)",
+      "home": "35",
+      "away": "19"
+    },
+    {
+      "stat": "Balls lost",
+      "home": "91",
+      "away": "103"
+    },
+    {
+      "stat": "Blocks",
+      "home": "1",
+      "away": "3"
+    },
+    {
+      "stat": "Clearances",
+      "home": "17",
+      "away": "31"
+    },
+    {
+      "stat": "GK saves",
+      "home": "1",
+      "away": "6"
     },
     {
       "stat": "Fouls committed",
@@ -55,204 +230,74 @@
       "away": "0"
     },
     {
-      "stat": "Offsides (1H / 2H / tot)",
+      "stat": "Offsides (1H / 2H / total)",
       "home": "0 / 0 / 0",
       "away": "0 / 2 / 2"
     },
     {
-      "stat": "Corners (1H / 2H / tot)",
+      "stat": "Corners (1H / 2H / total)",
       "home": "1–4 / 7–10 / 11",
       "away": "0 / 3 / 3"
     },
     {
-      "stat": "Free kicks",
+      "stat": "Free kicks (excl. goal kicks)",
       "home": "12",
       "away": "24"
     },
     {
-      "stat": "Goal kicks (estimated)",
+      "stat": "Goal kicks",
       "home": "3",
       "away": "5"
     },
     {
-      "stat": "Throw-ins (estimated)",
+      "stat": "Throw-ins",
       "home": "16",
       "away": "5"
     },
     {
-      "stat": "xG (estimated)",
-      "home": "2.16",
-      "away": "0.16"
+      "stat": "PPDA 1H",
+      "home": "7.21",
+      "away": "17.67"
     },
     {
-      "stat": "Shots",
-      "home": "17",
-      "away": "4"
+      "stat": "PPDA 1H numerator / denominator",
+      "home": "245 / 34",
+      "away": "530 / 30"
     },
     {
-      "stat": "Shots on target",
-      "home": "7",
-      "away": "1"
+      "stat": "PPDA 1H defensive actions breakdown",
+      "home": "int 26, tackle 4, foul 3, duel won 1",
+      "away": "int 17, tackle 5, foul 5, duel won 3"
     },
     {
-      "stat": "Shot accuracy %",
-      "home": "41.2",
-      "away": "25.0"
+      "stat": "PPDA 2H",
+      "home": "12.48",
+      "away": "12.62"
     },
     {
-      "stat": "Blocked shots",
-      "home": "3",
-      "away": "1"
+      "stat": "PPDA 2H numerator / denominator",
+      "home": "337 / 27",
+      "away": "303 / 24"
     },
     {
-      "stat": "Missed shots",
-      "home": "7",
-      "away": "2"
+      "stat": "PPDA 2H defensive actions breakdown",
+      "home": "int 17, tackle 2, foul 5, duel won 3",
+      "away": "tackle 4, int 13, duel won 4, foul 3"
     },
     {
-      "stat": "Shots inside box (estimated)",
-      "home": "5 (of 11 located)",
-      "away": "1 (of 4 located)"
+      "stat": "PPDA full match",
+      "home": "9.54",
+      "away": "15.43"
     },
     {
-      "stat": "Shots outside box (estimated)",
-      "home": "6 (of 11 located)",
-      "away": "3 (of 4 located)"
+      "stat": "PPDA full match numerator / denominator",
+      "home": "582 / 61",
+      "away": "833 / 54"
     },
     {
-      "stat": "Headed shots (estimated)",
-      "home": "2",
-      "away": "0"
-    },
-    {
-      "stat": "Key passes (estimated)",
-      "home": "4",
-      "away": "2"
-    },
-    {
-      "stat": "Into final third (c / a) (estimated)",
-      "home": "35 / 62",
-      "away": "10 / 27"
-    },
-    {
-      "stat": "Into box (c / a) (estimated)",
-      "home": "8 / 28",
-      "away": "5 / 19"
-    },
-    {
-      "stat": "Passes (estimated)",
-      "home": "966",
-      "away": "644"
-    },
-    {
-      "stat": "Passes completed (estimated)",
-      "home": "873",
-      "away": "557"
-    },
-    {
-      "stat": "Pass accuracy % (estimated)",
-      "home": "90.4 (1H 91.7 / 2H 88.1)",
-      "away": "86.5 (1H 86.0 / 2H 86.8)"
-    },
-    {
-      "stat": "Progressive (c / a) (estimated)",
-      "home": "64 / 122",
-      "away": "28 / 75"
-    },
-    {
-      "stat": "Crosses (c / tot) (estimated)",
-      "home": "2 / 20",
-      "away": "3 / 11"
-    },
-    {
-      "stat": "Long balls (c / tot) (estimated)",
-      "home": "62 / 94",
-      "away": "21 / 43"
-    },
-    {
-      "stat": "Through balls (c / tot) (estimated)",
-      "home": "0 / 1",
-      "away": "1 / 4"
-    },
-    {
-      "stat": "Tackles (estimated)",
-      "home": "12",
-      "away": "20"
-    },
-    {
-      "stat": "Interceptions (estimated)",
-      "home": "67",
-      "away": "65"
-    },
-    {
-      "stat": "Recoveries (estimated)",
-      "home": "83",
-      "away": "27"
-    },
-    {
-      "stat": "High recoveries (estimated)",
-      "home": "35",
-      "away": "19"
-    },
-    {
-      "stat": "Balls lost (estimated)",
-      "home": "91",
-      "away": "103"
-    },
-    {
-      "stat": "Blocks",
-      "home": "1",
-      "away": "3"
-    },
-    {
-      "stat": "Clearances (estimated)",
-      "home": "17",
-      "away": "31"
-    },
-    {
-      "stat": "Ground duels (w / tot) (estimated)",
-      "home": "17 / 49",
-      "away": "30 / 46"
-    },
-    {
-      "stat": "Aerial duels (w / tot)",
-      "home": "—",
-      "away": "—"
-    },
-    {
-      "stat": "PPDA (estimated)",
-      "home": "9.54 (1H 7.21 / 2H 12.48)",
-      "away": "15.43 (1H 17.67 / 2H 12.62)"
-    },
-    {
-      "stat": "Shots faced",
-      "home": "4",
-      "away": "17"
-    },
-    {
-      "stat": "Shots on target faced",
-      "home": "1",
-      "away": "7"
-    },
-    {
-      "stat": "Goals conceded",
-      "home": "0",
-      "away": "1"
-    },
-    {
-      "stat": "Saves",
-      "home": "1",
-      "away": "6"
-    },
-    {
-      "stat": "Save %",
-      "home": "100.0",
-      "away": "85.7"
-    },
-    {
-      "stat": "Passes / accurate (estimated)",
-      "home": "55 / 53",
-      "away": "24 / 22"
+      "stat": "PPDA full match defensive actions breakdown",
+      "home": "int 43, tackle 6, foul 8, duel won 4",
+      "away": "int 30, tackle 9, foul 8, duel won 7"
     }
   ],
   "playerStats": [

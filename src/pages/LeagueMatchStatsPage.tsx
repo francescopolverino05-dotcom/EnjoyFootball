@@ -1,4 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
+import AppearancesPanel from '../components/AppearancesPanel';
 import Formations from '../components/Formations';
 import ReportHeader from '../components/ReportHeader';
 import Scoreboard from '../components/Scoreboard';
@@ -15,7 +16,10 @@ import {
   mapLeagueTeamStats,
 } from '../data/leagueMatchStatsMap';
 import { getOpponentBySlug } from '../data/opposition';
-import { getPrimavera2Standings } from '../data/standings';
+import {
+  getPrimavera2Standings,
+  getUefaYouthLeagueStandings,
+} from '../data/standings';
 import { useLanguage } from '../i18n/LanguageContext';
 import { localize, type Localized } from '../i18n/translations';
 import type { Formation, MatchData, TimelineEvent } from '../types/match';
@@ -105,11 +109,26 @@ function buildMatchView(pack: NonNullable<ReturnType<typeof getLeagueMatchStats>
     }
   }
 
+  let uylReport: MatchData | undefined;
+  if (pack.competitionId === 'uefaYouthLeague') {
+    for (const md of getUefaYouthLeagueStandings().groupTable?.matchdays ?? []) {
+      const fx = md.fixtures.find((f) => f.statsSlug === pack.id);
+      if (fx?.matchSlug) {
+        uylReport = getMatchBySlug(fx.matchSlug);
+        if (uylReport?.timeline?.length) {
+          timeline = uylReport.timeline;
+        }
+        break;
+      }
+    }
+  }
+
   const formations: Formation[] = [];
+  if (uylReport?.formations?.length) formations.push(...uylReport.formations);
   const homeScout = homeOpp?.scoutedFormations?.find((f) =>
     formationMatchesOpponent(f.id, f.label, pack.away.teamId, pack.away.name)
   );
-  if (homeScout) {
+  if (homeScout && formations.length === 0) {
     formations.push({
       teamId: `${pack.home.teamId}-xi`,
       label: { en: pack.home.name, it: pack.home.name },
@@ -124,7 +143,7 @@ function buildMatchView(pack: NonNullable<ReturnType<typeof getLeagueMatchStats>
   const awayScout = awayOpp?.scoutedFormations?.find((f) =>
     formationMatchesOpponent(f.id, f.label, pack.home.teamId, pack.home.name)
   );
-  if (awayScout) {
+  if (awayScout && !uylReport?.formations?.length) {
     formations.push({
       teamId: `${pack.away.teamId}-xi`,
       label: { en: pack.away.name, it: pack.away.name },
@@ -136,6 +155,9 @@ function buildMatchView(pack: NonNullable<ReturnType<typeof getLeagueMatchStats>
     });
   }
 
+  const compName =
+    pack.competitionId === 'uefaYouthLeague' ? 'UEFA Youth League' : 'Primavera 2';
+
   return {
     id: pack.id,
     slug: pack.id,
@@ -146,16 +168,16 @@ function buildMatchView(pack: NonNullable<ReturnType<typeof getLeagueMatchStats>
     subtitle: {
       en:
         pack.matchday != null
-          ? `Primavera 2 · Matchday ${pack.matchday}`
-          : 'Primavera 2',
+          ? `${compName} · Matchday ${pack.matchday}`
+          : compName,
       it:
         pack.matchday != null
-          ? `Primavera 2 · Giornata ${pack.matchday}`
-          : 'Primavera 2',
+          ? `${compName} · Giornata ${pack.matchday}`
+          : compName,
     },
     date: pack.date,
     competitionId: pack.competitionId,
-    competition: { en: 'Primavera 2', it: 'Primavera 2' },
+    competition: { en: compName, it: compName },
     status: 'published',
     homeTeam,
     awayTeam,
@@ -171,6 +193,7 @@ function buildMatchView(pack: NonNullable<ReturnType<typeof getLeagueMatchStats>
     goalkeepers: mapLeagueGoalkeepers(pack),
     clips: [],
     analysisVideos: [],
+    appearances: uylReport?.appearances,
   };
 }
 
@@ -228,6 +251,13 @@ export default function LeagueMatchStatsPage() {
         <Timeline events={match.timeline} />
         {match.formations.length > 0 ? (
           <Formations formations={match.formations} />
+        ) : null}
+        {match.appearances ? (
+          <AppearancesPanel
+            appearances={match.appearances}
+            homeTeam={match.homeTeam}
+            awayTeam={match.awayTeam}
+          />
         ) : null}
         {missingFormationSide ? (
           <p className="home-section-hint">

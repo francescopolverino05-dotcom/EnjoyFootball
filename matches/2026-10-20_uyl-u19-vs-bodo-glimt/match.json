@@ -50,17 +50,472 @@
   ],
   "timeline": [
     {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 2
+    },
+    {
+      "minute": 8,
+      "label": {
+        "en": "Natale 🟨",
+        "it": "Natale 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 9
+    },
+    {
+      "minute": 19,
+      "label": {
+        "en": "Setvik 🟨",
+        "it": "Setvik 🟨"
+      },
+      "type": "other",
+      "teamId": "bodo-glimt",
+      "positionPercent": 21
+    },
+    {
       "minute": 31,
       "label": {
-        "en": "Riccio 1-0",
-        "it": "Riccio 1-0"
+        "en": "Riccio 1-0 (ass. Pereyra)",
+        "it": "Riccio 1-0 (ass. Pereyra)"
       },
       "type": "goal",
       "teamId": "u19",
       "positionPercent": 34
+    },
+    {
+      "minute": 45,
+      "label": {
+        "en": "Half time 1-0",
+        "it": "Fine primo tempo 1-0"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 48
+    },
+    {
+      "minute": 46,
+      "label": {
+        "en": "Chooly on / Solbakken off",
+        "it": "Chooly on / Solbakken off"
+      },
+      "type": "substitution",
+      "teamId": "bodo-glimt",
+      "positionPercent": 51
+    },
+    {
+      "minute": 54,
+      "label": {
+        "en": "Liccardo on / Natale off",
+        "it": "Liccardo on / Natale off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 60
+    },
+    {
+      "minute": 54,
+      "label": {
+        "en": "Mané on / Favicchio off",
+        "it": "Mané on / Favicchio off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 60
+    },
+    {
+      "minute": 59,
+      "label": {
+        "en": "Chiaiese on / Santella off",
+        "it": "Chiaiese on / Santella off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 66
+    },
+    {
+      "minute": 63,
+      "label": {
+        "en": "Branchizio 🟨",
+        "it": "Branchizio 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 70
+    },
+    {
+      "minute": 63,
+      "label": {
+        "en": "Solhaug 🟨",
+        "it": "Solhaug 🟨"
+      },
+      "type": "other",
+      "teamId": "bodo-glimt",
+      "positionPercent": 70
+    },
+    {
+      "minute": 64,
+      "label": {
+        "en": "Pereyra 🟨",
+        "it": "Pereyra 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 71
+    },
+    {
+      "minute": 66,
+      "label": {
+        "en": "Chiummariello 🟨",
+        "it": "Chiummariello 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 73
+    },
+    {
+      "minute": 69,
+      "label": {
+        "en": "Baridò on / Riccio off",
+        "it": "Baridò on / Riccio off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 77
+    },
+    {
+      "minute": 69,
+      "label": {
+        "en": "Marotta on / Branchizio off",
+        "it": "Marotta on / Branchizio off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 77
+    },
+    {
+      "minute": 72,
+      "label": {
+        "en": "Ingilæ on / Rasen off",
+        "it": "Ingilæ on / Rasen off"
+      },
+      "type": "substitution",
+      "teamId": "bodo-glimt",
+      "positionPercent": 80
+    },
+    {
+      "minute": 76,
+      "label": {
+        "en": "Strand on / Setvik off",
+        "it": "Strand on / Setvik off"
+      },
+      "type": "substitution",
+      "teamId": "bodo-glimt",
+      "positionPercent": 84
+    },
+    {
+      "minute": 76,
+      "label": {
+        "en": "Eliassen on / Alvsen off",
+        "it": "Eliassen on / Alvsen off"
+      },
+      "type": "substitution",
+      "teamId": "bodo-glimt",
+      "positionPercent": 84
+    },
+    {
+      "minute": 88,
+      "label": {
+        "en": "Jaiteh 🟨",
+        "it": "Jaiteh 🟨"
+      },
+      "type": "other",
+      "teamId": "bodo-glimt",
+      "positionPercent": 98
+    },
+    {
+      "minute": 90,
+      "label": {
+        "en": "Full time 1-0",
+        "it": "Fine partita 1-0"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 98
     }
   ],
-  "formations": [],
+  "formations": [
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "system": "3-4-2-1",
+      "players": [
+        {
+          "number": 1,
+          "name": "Spinelli",
+          "teamId": "u19",
+          "isGk": true,
+          "bottom": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 5,
+          "name": "Natale",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "22%"
+        },
+        {
+          "number": 6,
+          "name": "Lieto",
+          "teamId": "u19",
+          "bottom": "20%",
+          "left": "50%"
+        },
+        {
+          "number": 3,
+          "name": "Branchizio",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "78%"
+        },
+        {
+          "number": 7,
+          "name": "Santella",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "12%"
+        },
+        {
+          "number": 8,
+          "name": "Chiummariello",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "38%"
+        },
+        {
+          "number": 4,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "62%"
+        },
+        {
+          "number": 2,
+          "name": "Melnyk",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "88%"
+        },
+        {
+          "number": 10,
+          "name": "Riccio",
+          "teamId": "u19",
+          "bottom": "68%",
+          "left": "28%"
+        },
+        {
+          "number": 11,
+          "name": "Favicchio",
+          "teamId": "u19",
+          "bottom": "68%",
+          "left": "72%"
+        },
+        {
+          "number": 9,
+          "name": "Pereyra",
+          "teamId": "u19",
+          "bottom": "78%",
+          "left": "50%"
+        }
+      ]
+    },
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli Primavera (from 54')",
+        "it": "Napoli Primavera (dal 54')"
+      },
+      "system": "3-4-1-2",
+      "players": [
+        {
+          "number": 1,
+          "name": "Spinelli",
+          "teamId": "u19",
+          "isGk": true,
+          "bottom": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Melnyk",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "22%"
+        },
+        {
+          "number": 6,
+          "name": "Lieto",
+          "teamId": "u19",
+          "bottom": "20%",
+          "left": "50%"
+        },
+        {
+          "number": 3,
+          "name": "Branchizio",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "78%"
+        },
+        {
+          "number": 7,
+          "name": "Santella",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "12%"
+        },
+        {
+          "number": 8,
+          "name": "Chiummariello",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "38%"
+        },
+        {
+          "number": 4,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "62%"
+        },
+        {
+          "number": 16,
+          "name": "Liccardo",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "88%"
+        },
+        {
+          "number": 10,
+          "name": "Riccio",
+          "teamId": "u19",
+          "bottom": "62%",
+          "left": "50%"
+        },
+        {
+          "number": 9,
+          "name": "Pereyra",
+          "teamId": "u19",
+          "bottom": "78%",
+          "left": "38%"
+        },
+        {
+          "number": 20,
+          "name": "Mané",
+          "teamId": "u19",
+          "bottom": "78%",
+          "left": "62%"
+        }
+      ]
+    },
+    {
+      "teamId": "bodo-glimt",
+      "label": {
+        "en": "Bodø/Glimt",
+        "it": "Bodø/Glimt"
+      },
+      "system": "4-3-3",
+      "players": [
+        {
+          "number": 1,
+          "name": "Andersen",
+          "teamId": "bodo-glimt",
+          "isGk": true,
+          "top": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 6,
+          "name": "Solhaug",
+          "teamId": "bodo-glimt",
+          "top": "22%",
+          "left": "18%"
+        },
+        {
+          "number": 2,
+          "name": "Linaker Jenssen",
+          "teamId": "bodo-glimt",
+          "top": "20%",
+          "left": "38%"
+        },
+        {
+          "number": 4,
+          "name": "Jaiteh",
+          "teamId": "bodo-glimt",
+          "top": "20%",
+          "left": "62%"
+        },
+        {
+          "number": 5,
+          "name": "Solbakken",
+          "teamId": "bodo-glimt",
+          "top": "22%",
+          "left": "82%"
+        },
+        {
+          "number": 7,
+          "name": "Yeboah",
+          "teamId": "bodo-glimt",
+          "top": "38%",
+          "left": "50%"
+        },
+        {
+          "number": 16,
+          "name": "Rasen",
+          "teamId": "bodo-glimt",
+          "top": "48%",
+          "left": "30%"
+        },
+        {
+          "number": 8,
+          "name": "Sanyang",
+          "teamId": "bodo-glimt",
+          "top": "48%",
+          "left": "70%"
+        },
+        {
+          "number": 19,
+          "name": "Alvsen",
+          "teamId": "bodo-glimt",
+          "top": "72%",
+          "left": "18%"
+        },
+        {
+          "number": 20,
+          "name": "Setvik",
+          "teamId": "bodo-glimt",
+          "top": "78%",
+          "left": "50%"
+        },
+        {
+          "number": 10,
+          "name": "Käld",
+          "teamId": "bodo-glimt",
+          "top": "72%",
+          "left": "82%"
+        }
+      ]
+    }
+  ],
   "dynamics": [],
   "teamStats": [],
   "goalkeepers": [],
@@ -76,6 +531,323 @@
     "notes": {
       "en": "Full match hosted on Vimeo.",
       "it": "Partita intera su Vimeo."
+    }
+  },
+  "appearances": {
+    "home": [
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 69,
+        "yellowCards": [
+          63
+        ]
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Natale",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 54,
+        "yellowCards": [
+          8
+        ]
+      },
+      {
+        "name": "Lieto",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Santella",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 59
+      },
+      {
+        "name": "Chiummariello",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [
+          66
+        ]
+      },
+      {
+        "name": "Pereyra",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "assists": [
+          31
+        ],
+        "yellowCards": [
+          64
+        ]
+      },
+      {
+        "name": "Riccio",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 69,
+        "goals": [
+          31
+        ]
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 54
+      },
+      {
+        "name": "Merone",
+        "teamId": "u19",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Chiaiese",
+        "teamId": "u19",
+        "number": 13,
+        "starter": false,
+        "onMinute": 59
+      },
+      {
+        "name": "Marotta",
+        "teamId": "u19",
+        "number": 14,
+        "starter": false,
+        "onMinute": 69
+      },
+      {
+        "name": "Candela",
+        "teamId": "u19",
+        "number": 15,
+        "starter": false
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 16,
+        "starter": false,
+        "onMinute": 54
+      },
+      {
+        "name": "De Michele",
+        "teamId": "u19",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "Baridò",
+        "teamId": "u19",
+        "number": 18,
+        "starter": false,
+        "onMinute": 69
+      },
+      {
+        "name": "Pengue",
+        "teamId": "u19",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Mané",
+        "teamId": "u19",
+        "number": 20,
+        "starter": false,
+        "onMinute": 54
+      }
+    ],
+    "away": [
+      {
+        "name": "Andersen",
+        "teamId": "bodo-glimt",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Solhaug",
+        "teamId": "bodo-glimt",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [
+          63
+        ]
+      },
+      {
+        "name": "Linaker Jenssen",
+        "teamId": "bodo-glimt",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Jaiteh",
+        "teamId": "bodo-glimt",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [
+          88
+        ]
+      },
+      {
+        "name": "Solbakken",
+        "teamId": "bodo-glimt",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 46
+      },
+      {
+        "name": "Yeboah",
+        "teamId": "bodo-glimt",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Sanyang",
+        "teamId": "bodo-glimt",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Rasen",
+        "teamId": "bodo-glimt",
+        "number": 16,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 72
+      },
+      {
+        "name": "Käld",
+        "teamId": "bodo-glimt",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Setvik",
+        "teamId": "bodo-glimt",
+        "number": 20,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 76,
+        "yellowCards": [
+          19
+        ]
+      },
+      {
+        "name": "Alvsen",
+        "teamId": "bodo-glimt",
+        "number": 19,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 76
+      },
+      {
+        "name": "Griegel",
+        "teamId": "bodo-glimt",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Strand",
+        "teamId": "bodo-glimt",
+        "number": 9,
+        "starter": false,
+        "onMinute": 76
+      },
+      {
+        "name": "Ingilæ",
+        "teamId": "bodo-glimt",
+        "number": 11,
+        "starter": false,
+        "onMinute": 72
+      },
+      {
+        "name": "Eliassen",
+        "teamId": "bodo-glimt",
+        "number": 18,
+        "starter": false,
+        "onMinute": 76
+      },
+      {
+        "name": "Chooly",
+        "teamId": "bodo-glimt",
+        "number": 21,
+        "starter": false,
+        "onMinute": 46
+      },
+      {
+        "name": "Remmen",
+        "teamId": "bodo-glimt",
+        "number": 23,
+        "starter": false
+      },
+      {
+        "name": "Gusjås",
+        "teamId": "bodo-glimt",
+        "number": 25,
+        "starter": false
+      },
+      {
+        "name": "Eriksen",
+        "teamId": "bodo-glimt",
+        "number": 28,
+        "starter": false
+      },
+      {
+        "name": "Martins",
+        "teamId": "bodo-glimt",
+        "number": 30,
+        "starter": false
+      }
+    ],
+    "notes": {
+      "en": "Line-ups, substitutions and cards from the UEFA match centre (match 2049846); sub minutes cross-checked against UEFA minutes played. Coaches' yellows (Jacobsen 9', Nocerino 90+1') not listed. At 54' Napoli switched to 3-4-1-2 (Melnyk to RCB, Liccardo LWB); at 59' Chiaiese LWB, Liccardo to RWB. Käld moved to LB at 46'.",
+      "it": "Formazioni, cambi e cartellini dal match centre UEFA (match 2049846); minuti dei cambi verificati con i minuti giocati UEFA. Gialli agli allenatori (Jacobsen 9', Nocerino 90+1') non inclusi. Al 54' Napoli passa al 3-4-1-2 (Melnyk braccetto destro, Liccardo esterno sinistro); al 59' Chiaiese esterno sinistro, Liccardo a destra. Käld terzino sinistro dal 46'."
     }
   }
 }
