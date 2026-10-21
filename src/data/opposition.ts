@@ -2258,6 +2258,170 @@ if (bodo) {
   ];
 }
 
+/**
+ * Spezia Primavera 2 — 4-3-3 with a single holding midfielder.
+ * Shirt → role (starters 1–11): 1 GK; 2 RB, 5 RCB, 6 LCB, 3 LB; 4 CDM, 8 RCM, 10 LCM; 7 RW, 9 ST, 11 LW.
+ * Sources: Ascoli–Spezia distinta (MD1) · Pisa–Spezia distinta (MD3) · Spezia–Latina distinta (MD5).
+ */
+const spezia = OPPONENTS.find((o) => o.id === 'spezia');
+if (spezia) {
+  const spezia433 = (names: {
+    gk: string;
+    rb: string;
+    rcb: string;
+    lcb: string;
+    lb: string;
+    cdm: string;
+    rcm: string;
+    lcm: string;
+    rw: string;
+    st: string;
+    lw: string;
+  }): PitchPlayer[] => [
+    { number: 1, name: names.gk, teamId: 'spezia', isGk: true, top: '8%', left: '50%' },
+    { number: 2, name: names.rb, teamId: 'spezia', top: '22%', left: '18%' },
+    { number: 5, name: names.rcb, teamId: 'spezia', top: '20%', left: '38%' },
+    { number: 6, name: names.lcb, teamId: 'spezia', top: '20%', left: '62%' },
+    { number: 3, name: names.lb, teamId: 'spezia', top: '22%', left: '82%' },
+    { number: 4, name: names.cdm, teamId: 'spezia', top: '38%', left: '50%' },
+    { number: 8, name: names.rcm, teamId: 'spezia', top: '50%', left: '32%' },
+    { number: 10, name: names.lcm, teamId: 'spezia', top: '50%', left: '68%' },
+    { number: 7, name: names.rw, teamId: 'spezia', top: '68%', left: '18%' },
+    { number: 9, name: names.st, teamId: 'spezia', top: '78%', left: '50%' },
+    { number: 11, name: names.lw, teamId: 'spezia', top: '68%', left: '82%' },
+  ];
+
+  const vsAscoli = spezia433({
+    gk: 'Doretti',
+    rb: 'Mazzanti',
+    rcb: 'Francini',
+    lcb: 'Gafuri',
+    lb: 'Michelotti',
+    cdm: 'Longhi',
+    rcm: 'Vannucci',
+    lcm: 'Carbone',
+    rw: "D'Ambrosio",
+    st: 'Camara',
+    lw: 'Trentinella',
+  });
+
+  const vsPisa = spezia433({
+    gk: 'Doretti',
+    rb: 'Mazzanti',
+    rcb: 'Vignali',
+    lcb: 'Gafuri',
+    lb: 'Michelotti',
+    cdm: 'Vannucci',
+    rcm: 'Berti',
+    lcm: 'Carbone',
+    rw: 'Cassano',
+    st: 'Trentinella',
+    lw: 'Maggiore',
+  });
+
+  const vsLatina = spezia433({
+    gk: 'Guidi',
+    rb: 'Mazzanti',
+    rcb: 'Vignali',
+    lcb: 'Francini',
+    lb: 'Michelotti',
+    cdm: 'Vannucci',
+    rcm: 'Berti',
+    lcm: 'Sartori',
+    rw: 'Cassano',
+    st: 'Trentinella',
+    lw: 'Del Sante',
+  });
+
+  spezia.formationSystem = '1-4-3-3';
+  spezia.starters = vsLatina;
+  spezia.scoutedFormations = [
+    {
+      id: 'spezia-vs-ascoli',
+      label: { en: 'vs Ascoli (1–1)', it: 'vs Ascoli (1–1)' },
+      system: '4-3-3',
+      players: vsAscoli,
+      notes: {
+        en: "Primavera 2 MD1, 5 Sep 2026, away (distinta). Vannucci (C) at RCM, Longhi at CDM. Goal: Ghetti 84'. Subs: Ghetti for D'Ambrosio 52', Ceccarelli for Camara 63', Berti for Longhi 63', D'Auria for Vannucci 77'.",
+        it: "Primavera 2 gior. 1, 5 set 2026, trasferta (distinta). Vannucci (C) CC destro, Longhi play. Gol: Ghetti 84'. Sub: Ghetti per D'Ambrosio 52', Ceccarelli per Camara 63', Berti per Longhi 63', D'Auria per Vannucci 77'.",
+      },
+    },
+    {
+      id: 'spezia-vs-pisa',
+      label: { en: 'vs Pisa (3–0)', it: 'vs Pisa (3–0)' },
+      system: '4-3-3',
+      players: vsPisa,
+      notes: {
+        en: "Primavera 2 MD3, 19 Sep 2026, away at Peccioli (distinta). Vignali (C). Goals: Michelotti 9', Maggiore 25', Vannucci 76'. Subs: Ghetti for Mazzanti HT, Longhi for Berti 57', Camara for Trentinella 61', Sartori for Carbone 61', Di Emidio for Vannucci 81'.",
+        it: "Primavera 2 gior. 3, 19 set 2026, trasferta a Peccioli (distinta). Vignali (C). Gol: Michelotti 9', Maggiore 25', Vannucci 76'. Sub: Ghetti per Mazzanti INT, Longhi per Berti 57', Camara per Trentinella 61', Sartori per Carbone 61', Di Emidio per Vannucci 81'.",
+      },
+    },
+    {
+      id: 'spezia-vs-latina',
+      label: { en: 'vs Latina (1–5)', it: 'vs Latina (1–5)' },
+      system: '4-3-3',
+      players: vsLatina,
+      notes: {
+        en: "Primavera 2 MD5, 17 Oct 2026, home (distinta). HT 1–3. Guidi in goal; Vignali (C). Goal: Trentinella 9'. Subs: Di Emidio for Berti HT, Trocino for Del Sante 64', Camara for Sartori 71', Corallo for Francini 80'. Most recent scouted XI.",
+        it: "Primavera 2 gior. 5, 17 ott 2026, casa (distinta). Primo tempo 1–3. Guidi in porta; Vignali (C). Gol: Trentinella 9'. Sub: Di Emidio per Berti INT, Trocino per Del Sante 19'st, Camara per Sartori 26'st, Corallo per Francini 35'st. XI scoutata più recente.",
+      },
+    },
+  ];
+  /** Depth = scouted XIs mapped by shirt number onto 4-3-3 (single CDM). */
+  spezia.squadDepth = {
+    system: '1-4-3-3',
+    note: {
+      en: 'Scouted XIs so far (Ascoli MD1, Pisa MD3, Latina MD5) mapped by shirt onto 4-3-3: 4 = CDM, 8 = RCM, 10 = LCM. Order = most starts in that slot.',
+      it: 'Formazioni scoutate finora (Ascoli gior. 1, Pisa gior. 3, Latina gior. 5) mappate per numero sul 4-3-3: 4 = play, 8 = CC destro, 10 = CC sinistro. Ordine = più partite in quel ruolo.',
+    },
+    slots: [
+      { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Doretti', starts: 2 }, { name: 'Guidi', starts: 1 }] },
+      { role: 'RB', top: '26%', left: '18%', players: [{ name: 'Mazzanti', starts: 3 }] },
+      { role: 'RCB', top: '24%', left: '38%', players: [{ name: 'Vignali', starts: 2 }, { name: 'Francini', starts: 1 }] },
+      { role: 'LCB', top: '24%', left: '62%', players: [{ name: 'Gafuri', starts: 2 }, { name: 'Francini', starts: 1 }] },
+      { role: 'LB', top: '26%', left: '82%', players: [{ name: 'Michelotti', starts: 3 }] },
+      { role: 'CDM', top: '40%', left: '50%', players: [{ name: 'Vannucci', starts: 2 }, { name: 'Longhi', starts: 1 }] },
+      { role: 'RCM', top: '52%', left: '32%', players: [{ name: 'Berti', starts: 2 }, { name: 'Vannucci', starts: 1 }] },
+      { role: 'LCM', top: '52%', left: '68%', players: [{ name: 'Carbone', starts: 2 }, { name: 'Sartori', starts: 1 }] },
+      { role: 'RW', top: '70%', left: '18%', players: [{ name: 'Cassano', starts: 2 }, { name: "D'Ambrosio", starts: 1 }] },
+      { role: 'ST', top: '78%', left: '50%', players: [{ name: 'Trentinella', starts: 2 }, { name: 'Camara', starts: 1 }] },
+      { role: 'LW', top: '70%', left: '82%', players: [{ name: 'Trentinella', starts: 1 }, { name: 'Maggiore', starts: 1 }, { name: 'Del Sante', starts: 1 }] },
+    ],
+  };
+  /** Squad from distinte (no shirt numbers). Role = roles started in scouted XIs; bench-only players left blank. Foot/height to be added. */
+  spezia.squad = [
+    { name: 'Gabriele Doretti', position: 'GK', isGk: true, birthYear: 2010 },
+    { name: 'Enrico Sasha Guidi', position: 'GK', isGk: true, birthYear: 2008 },
+    { name: 'Matteo Azzoni', birthYear: 2009 },
+    { name: 'De Vita', birthYear: 2009 },
+    { name: 'Tommaso Mazzanti', position: 'RB', birthYear: 2009 },
+    { name: 'Diego Vignali', position: 'RCB', birthYear: 2008 },
+    { name: 'Orlando Francini', position: 'RCB / LCB', birthYear: 2010 },
+    { name: 'Alen Gafuri', position: 'LCB', birthYear: 2008 },
+    { name: 'Tommaso Michelotti', position: 'LB', birthYear: 2009 },
+    { name: 'Tommaso Vannucci', position: 'CDM / RCM', birthYear: 2008 },
+    { name: 'Tommaso Longhi', position: 'CDM', birthYear: 2009 },
+    { name: 'Federico Berti', position: 'RCM', birthYear: 2009 },
+    { name: 'Christian Carbone', position: 'LCM', birthYear: 2009 },
+    { name: 'Giovanni Sartori', position: 'LCM', birthYear: 2008 },
+    { name: 'Armando Cassano', position: 'RW', birthYear: 2008 },
+    { name: "Christian D'Ambrosio", position: 'RW', birthYear: 2009 },
+    { name: 'Marco Trentinella', position: 'ST / LW', birthYear: 2009 },
+    { name: 'Kabine Camara', position: 'ST', birthYear: 2007 },
+    { name: 'Antonino Maggiore', position: 'LW', birthYear: 2009 },
+    { name: 'Davide Del Sante', position: 'LW', birthYear: 2008 },
+    { name: 'Davide Ghetti', birthYear: 2009 },
+    { name: 'Gianmarco Di Emidio', birthYear: 2009 },
+    { name: 'Nicolò Corallo', birthYear: 2009 },
+    { name: "Alessio D'Auria", birthYear: 2009 },
+    { name: 'Luca Trocino', birthYear: 2008 },
+    { name: 'Mathias Liguori', birthYear: 2010 },
+    { name: 'Thomas Ceccarelli', birthYear: 2009 },
+    { name: 'Bertolone', birthYear: 2010 },
+    { name: 'Bellacci', birthYear: 2009 },
+  ];
+}
+
 /** Reference tapes from Vimeo Avversari folders (synced manually from folder uploads). */
 function attachReferencePack(
   opponentId: string,
