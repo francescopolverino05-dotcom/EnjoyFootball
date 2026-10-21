@@ -114,7 +114,25 @@
   },
   "clips": [],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-10-07",
+      "title": {
+        "en": "Session plan — Wed 7 Oct",
+        "it": "Piano seduta — Mer 7 ott"
+      },
+      "description": {
+        "en": "Wednesday session plan at Cercola (7 Oct 2026, 15:00).",
+        "it": "Piano seduta di mercoledì a Cercola (7 ott 2026, ore 15:00)."
+      },
+      "videoFile": "Session_Plan_2026-10-07.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": []

@@ -70,7 +70,25 @@
     }
   ],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-09-14",
+      "title": {
+        "en": "Session plan — Mon 14 Sep",
+        "it": "Piano seduta — Lun 14 set"
+      },
+      "description": {
+        "en": "Monday session plan at Cercola (14 Sep 2026, 15:00).",
+        "it": "Piano seduta di lunedì a Cercola (14 set 2026, ore 15:00)."
+      },
+      "videoFile": "Session_Plan_2026-09-14.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": []

@@ -80,7 +80,25 @@
   },
   "clips": [],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-09-22",
+      "title": {
+        "en": "Session plan — Tue 22 Sep",
+        "it": "Piano seduta — Mar 22 set"
+      },
+      "description": {
+        "en": "Tuesday session plan at Cercola (22 Sep 2026, 15:00).",
+        "it": "Piano seduta di martedì a Cercola (22 set 2026, ore 15:00)."
+      },
+      "videoFile": "Session_Plan_2026-09-22.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": []

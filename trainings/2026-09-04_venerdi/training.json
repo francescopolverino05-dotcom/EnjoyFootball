@@ -63,7 +63,25 @@
   },
   "clips": [],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-09-04",
+      "title": {
+        "en": "Session plan — Fri 4 Sep",
+        "it": "Piano seduta — Ven 4 set"
+      },
+      "description": {
+        "en": "Friday session plan at Cercola (4 Sep 2026, 15:00).",
+        "it": "Piano seduta di venerdì a Cercola (4 set 2026, ore 15:00)."
+      },
+      "videoFile": "Session_Plan_2026-09-04.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": []

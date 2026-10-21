@@ -201,7 +201,25 @@
     }
   ],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-21",
+      "title": {
+        "en": "Session plan — Fri 21 Aug",
+        "it": "Piano seduta — Ven 21 ago"
+      },
+      "description": {
+        "en": "Friday session plan at Cercola (21 Aug 2026, 15:00).",
+        "it": "Piano seduta di venerdì a Cercola (21 ago 2026, ore 15:00)."
+      },
+      "videoFile": "Session_Plan_2026-08-21.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": []

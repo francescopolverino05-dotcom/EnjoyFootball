@@ -23,7 +23,25 @@
   },
   "clips": [],
   "analysisVideos": [],
-  "trainingDesign": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-09-10",
+      "title": {
+        "en": "Session plan — Thu 10 Sep",
+        "it": "Piano seduta — Gio 10 set"
+      },
+      "description": {
+        "en": "Thursday session plan at Cercola (10 Sep 2026, 15:00).",
+        "it": "Piano seduta di giovedì a Cercola (10 set 2026, ore 15:00)."
+      },
+      "videoFile": "Session_Plan_2026-09-10.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    }
+  ],
   "goalkeepers": {
     "video": {
       "parts": []
