@@ -2388,12 +2388,12 @@ if (spezia) {
       { role: 'LW', top: '70%', left: '82%', players: [{ name: 'Trentinella', starts: 1 }, { name: 'Maggiore', starts: 1 }, { name: 'Del Sante', starts: 1 }] },
     ],
   };
-  /** Squad from distinte (no shirt numbers). Role = roles started in scouted XIs; bench-only players left blank. Foot/height to be added. */
+  /** Squad from distinte (no shirt numbers). Role = roles started in scouted XIs; bench-only = Transfermarkt profile position. Foot/height from Transfermarkt where listed (Tuttocampo roster empty); blanks = not published. */
   spezia.squad = [
     { name: 'Gabriele Doretti', position: 'GK', isGk: true, birthYear: 2010 },
-    { name: 'Enrico Sasha Guidi', position: 'GK', isGk: true, birthYear: 2008 },
-    { name: 'Matteo Azzoni', birthYear: 2009 },
-    { name: 'De Vita', birthYear: 2009 },
+    { name: 'Enrico Sasha Guidi', position: 'GK', isGk: true, birthYear: 2008, heightCm: 191 },
+    { name: 'Matteo Azzoni', position: 'GK (profile)', isGk: true, birthYear: 2009, heightCm: 182, preferredFoot: 'Destro' },
+    { name: 'Nicolò De Vita', position: 'GK (profile)', isGk: true, birthYear: 2009 },
     { name: 'Tommaso Mazzanti', position: 'RB', birthYear: 2009 },
     { name: 'Diego Vignali', position: 'RCB', birthYear: 2008 },
     { name: 'Orlando Francini', position: 'RCB / LCB', birthYear: 2010 },
@@ -2407,18 +2407,18 @@ if (spezia) {
     { name: 'Armando Cassano', position: 'RW', birthYear: 2008 },
     { name: "Christian D'Ambrosio", position: 'RW', birthYear: 2009 },
     { name: 'Marco Trentinella', position: 'ST / LW', birthYear: 2009 },
-    { name: 'Kabine Camara', position: 'ST', birthYear: 2007 },
+    { name: 'Kabine Camara', position: 'ST', birthYear: 2007, heightCm: 197 },
     { name: 'Antonino Maggiore', position: 'LW', birthYear: 2009 },
-    { name: 'Davide Del Sante', position: 'LW', birthYear: 2008 },
-    { name: 'Davide Ghetti', birthYear: 2009 },
-    { name: 'Gianmarco Di Emidio', birthYear: 2009 },
-    { name: 'Nicolò Corallo', birthYear: 2009 },
-    { name: "Alessio D'Auria", birthYear: 2009 },
-    { name: 'Luca Trocino', birthYear: 2008 },
+    { name: 'Davide Del Sante', position: 'LW', birthYear: 2008, heightCm: 175, preferredFoot: 'Sinistro' },
+    { name: 'Davide Ghetti', position: 'CM (profile)', birthYear: 2009 },
+    { name: 'Gianmarco Di Emidio', position: 'CM (profile)', birthYear: 2009 },
+    { name: 'Nicolò Corallo', position: 'RB (profile)', birthYear: 2009 },
+    { name: "Alessio D'Auria", position: 'CM (profile)', birthYear: 2009 },
+    { name: 'Luca Trocino', position: 'CM (profile)', birthYear: 2008 },
     { name: 'Mathias Liguori', birthYear: 2010 },
-    { name: 'Thomas Ceccarelli', birthYear: 2009 },
+    { name: 'Thomas Ceccarelli', position: 'ST (profile)', birthYear: 2009 },
     { name: 'Bertolone', birthYear: 2010 },
-    { name: 'Bellacci', birthYear: 2009 },
+    { name: 'Giulio Bellacci', position: 'LW (profile)', birthYear: 2009 },
   ];
 }
 
