@@ -1,0 +1,154 @@
+{
+  "id": "2026-09-01_martedi",
+  "slug": "2026-09-01_martedi",
+  "date": "2026-09-01",
+  "title": {
+    "en": "Tuesday training",
+    "it": "Martedì"
+  },
+  "focus": {
+    "en": "Training",
+    "it": "Allenamento"
+  },
+  "sessionType": "metabolic",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "GK All. N°31 attached (Lower body, Adaptation & low-exit situations).",
+    "it": "Scheda portieri All. N°31 allegata (ARTI INFERIORI-ADATTAMENTO E SIT. USCITA BASSA)."
+  },
+  "video": {
+    "parts": [
+      {
+        "id": "vimeo-1223159663",
+        "title": {
+          "en": "7v7+7",
+          "it": "7v7+7"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1223159663/ec5bb06ddc",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1223159664",
+        "title": {
+          "en": "Partitella",
+          "it": "Partitella"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1223159664/072416f35f",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1223159665",
+        "title": {
+          "en": "Transizioni",
+          "it": "Transizioni"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1223159665/95901617f3",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "fullSession": "https://vimeo.com/1223159663/ec5bb06ddc",
+    "notes": {
+      "en": "Session recordings on Vimeo (3 videos).",
+      "it": "Registrazioni sessione su Vimeo (3 video)."
+    }
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-09-01",
+      "title": {
+        "en": "Session plan — Tue 1 Sep",
+        "it": "Piano seduta — Mar 1 set"
+      },
+      "description": {
+        "en": "Tuesday session plan (1 Sep 2026).",
+        "it": "Piano seduta di martedì (1 set 2026)."
+      },
+      "videoFile": "Session_Plan_2026-09-01.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    }
+  ],
+  "goalkeepers": {
+    "video": {
+      "parts": [
+        {
+          "id": "vimeo-1223830435",
+          "title": {
+            "en": "POSIZIONI ZONA",
+            "it": "POSIZIONI ZONA"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1223830435/fafcb60deb",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        }
+      ],
+      "fullSession": "https://vimeo.com/1223830435/fafcb60deb"
+    },
+    "clips": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-01",
+        "title": {
+          "en": "GK design — Lower body, Adaptation & low-exit situations",
+          "it": "Scheda portieri — ARTI INFERIORI-ADATTAMENTO E SIT. USCITA BASSA"
+        },
+        "description": {
+          "en": "All. N°31 — 01 Sep 2026. Lower body, Adaptation & low-exit situations.",
+          "it": "All. N°31 — 01/09/2026. ARTI INFERIORI-ADATTAMENTO E SIT. USCITA BASSA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-01_ARTI_INFERIORI_ADATTAMENTO_E_SIT_USCITA_BASSA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30308134",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30308134",
+    "gkFolderId": "30308135",
+    "lastSyncedAt": "2026-10-07T15:58:28.767Z"
+  }
+}

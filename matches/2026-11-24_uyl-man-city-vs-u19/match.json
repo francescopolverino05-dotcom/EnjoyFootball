@@ -1,0 +1,48 @@
+{
+  "id": "2026-11-24_uyl-man-city-vs-u19",
+  "slug": "2026-11-24_uyl-man-city-vs-u19",
+  "title": {
+    "en": "Manchester City vs Napoli",
+    "it": "Manchester City vs Napoli"
+  },
+  "subtitle": {
+    "en": "UEFA Youth League · Matchday 5 · KO 15:00 (local time)",
+    "it": "UEFA Youth League · Giornata 5 · KO 15:00 (orario locale)"
+  },
+  "date": "2026-11-24",
+  "competitionId": "uefaYouthLeague",
+  "competition": {
+    "en": "UEFA Youth League",
+    "it": "UEFA Youth League"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "man-city",
+    "name": {
+      "en": "Manchester City",
+      "it": "Manchester City"
+    },
+    "shortName": "Manchester City",
+    "colorClass": "opponent",
+    "logo": "logos/man-city.png"
+  },
+  "awayTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "score": null,
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}

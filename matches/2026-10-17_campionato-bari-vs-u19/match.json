@@ -1,0 +1,624 @@
+{
+  "id": "2026-10-17_campionato-bari-vs-u19",
+  "slug": "2026-10-17_campionato-bari-vs-u19",
+  "title": {
+    "en": "Bari vs Napoli",
+    "it": "Bari vs Napoli"
+  },
+  "subtitle": {
+    "en": "Primavera 2 · Matchday 5",
+    "it": "Primavera 2 · Giornata 5"
+  },
+  "date": "2026-10-17",
+  "competitionId": "primavera2",
+  "competition": {
+    "en": "Primavera 2",
+    "it": "Primavera 2"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "bari",
+    "name": {
+      "en": "Bari",
+      "it": "Bari"
+    },
+    "shortName": "Bari",
+    "colorClass": "opponent",
+    "logo": "logos/bari.png"
+  },
+  "awayTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "score": {
+    "home": 1,
+    "away": 1
+  },
+  "goals": [
+    {
+      "minute": 25,
+      "scorer": "Pereyra",
+      "assist": "Melnyk",
+      "teamId": "u19"
+    },
+    {
+      "minute": 38,
+      "scorer": "De Lucia",
+      "assist": "Grimaldi",
+      "teamId": "bari"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "bari",
+      "positionPercent": 2
+    },
+    {
+      "minute": 25,
+      "label": {
+        "en": "Pereyra 0-1",
+        "it": "Pereyra 0-1"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 28
+    },
+    {
+      "minute": 36,
+      "label": {
+        "en": "Marotta yellow",
+        "it": "Marotta ammonito"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 40
+    },
+    {
+      "minute": 38,
+      "label": {
+        "en": "De Lucia 1-1",
+        "it": "De Lucia 1-1"
+      },
+      "type": "goal",
+      "teamId": "bari",
+      "positionPercent": 42
+    },
+    {
+      "minute": 46,
+      "label": {
+        "en": "Natale on / Marotta off",
+        "it": "Natale on / Marotta off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 52
+    },
+    {
+      "minute": 52,
+      "label": {
+        "en": "Scarano on / Grimaldi off",
+        "it": "Scarano on / Grimaldi off"
+      },
+      "type": "substitution",
+      "teamId": "bari",
+      "positionPercent": 58
+    },
+    {
+      "minute": 56,
+      "label": {
+        "en": "Pengue on / Riccio off",
+        "it": "Pengue on / Riccio off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 62
+    },
+    {
+      "minute": 56,
+      "label": {
+        "en": "Favicchio on / Mane off",
+        "it": "Favicchio on / Mane off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 62
+    },
+    {
+      "minute": 61,
+      "label": {
+        "en": "Leone on / Scifoni off",
+        "it": "Leone on / Scifoni off"
+      },
+      "type": "substitution",
+      "teamId": "bari",
+      "positionPercent": 68
+    },
+    {
+      "minute": 61,
+      "label": {
+        "en": "Valoroso on / Vitale off",
+        "it": "Valoroso on / Vitale off"
+      },
+      "type": "substitution",
+      "teamId": "bari",
+      "positionPercent": 68
+    },
+    {
+      "minute": 70,
+      "label": {
+        "en": "Barido' on / Liccardo off",
+        "it": "Barido' on / Liccardo off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 78
+    },
+    {
+      "minute": 73,
+      "label": {
+        "en": "Favicchio yellow",
+        "it": "Favicchio ammonito"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 81
+    },
+    {
+      "minute": 77,
+      "label": {
+        "en": "Caputo on / Keita off",
+        "it": "Caputo on / Keita off"
+      },
+      "type": "substitution",
+      "teamId": "bari",
+      "positionPercent": 86
+    },
+    {
+      "minute": 85,
+      "label": {
+        "en": "De Michele on / Chiummariello off",
+        "it": "De Michele on / Chiummariello off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 94
+    },
+    {
+      "minute": 92,
+      "label": {
+        "en": "Leone yellow",
+        "it": "Leone ammonito"
+      },
+      "type": "other",
+      "teamId": "bari",
+      "positionPercent": 98
+    }
+  ],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "appearances": {
+    "home": [
+      {
+        "name": "Mezzapesa",
+        "teamId": "bari",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Emiliano",
+        "teamId": "bari",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Legrottaglie",
+        "teamId": "bari",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Mundo",
+        "teamId": "bari",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Dimonte",
+        "teamId": "bari",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "De Lucia",
+        "teamId": "bari",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          38
+        ]
+      },
+      {
+        "name": "Vitale",
+        "teamId": "bari",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 61
+      },
+      {
+        "name": "Grimaldi",
+        "teamId": "bari",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 52,
+        "assists": [
+          38
+        ]
+      },
+      {
+        "name": "Scifoni",
+        "teamId": "bari",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 61
+      },
+      {
+        "name": "Campagna",
+        "teamId": "bari",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Keita",
+        "teamId": "bari",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 77
+      },
+      {
+        "name": "Caputo",
+        "teamId": "bari",
+        "number": 14,
+        "starter": false,
+        "onMinute": 77
+      },
+      {
+        "name": "Scarano",
+        "teamId": "bari",
+        "number": 16,
+        "starter": false,
+        "onMinute": 52
+      },
+      {
+        "name": "Leone",
+        "teamId": "bari",
+        "number": 18,
+        "starter": false,
+        "onMinute": 61,
+        "yellowCards": [
+          92
+        ]
+      },
+      {
+        "name": "Valoroso",
+        "teamId": "bari",
+        "number": 19,
+        "starter": false,
+        "onMinute": 61
+      }
+    ],
+    "away": [
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Zappala'",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0,
+        "assists": [
+          25
+        ]
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Marotta",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 46,
+        "yellowCards": [
+          36
+        ]
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 70
+      },
+      {
+        "name": "Chiummariello",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 85
+      },
+      {
+        "name": "Pereyra",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          25
+        ]
+      },
+      {
+        "name": "Riccio",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 56
+      },
+      {
+        "name": "Mane",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 56
+      },
+      {
+        "name": "Natale",
+        "teamId": "u19",
+        "number": 14,
+        "starter": false,
+        "onMinute": 46
+      },
+      {
+        "name": "De Michele",
+        "teamId": "u19",
+        "number": 16,
+        "starter": false,
+        "onMinute": 85
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "number": 17,
+        "starter": false,
+        "onMinute": 56,
+        "yellowCards": [
+          73
+        ]
+      },
+      {
+        "name": "Pengue",
+        "teamId": "u19",
+        "number": 18,
+        "starter": false,
+        "onMinute": 56
+      },
+      {
+        "name": "Barido'",
+        "teamId": "u19",
+        "number": 19,
+        "starter": false,
+        "onMinute": 70
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "vimeo": {
+    "folderId": "30937004",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30937004",
+    "lastSyncedAt": "2026-10-20T17:31:50.061Z"
+  },
+  "video": {
+    "fullMatch": "https://vimeo.com/1236877598/37d5947b29",
+    "notes": {
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
+    }
+  },
+  "gpsStats": [
+    {
+      "half": {
+        "en": "GPS — Full Match",
+        "it": "GPS — Partita intera"
+      },
+      "summary": {
+        "en": "Melnyk led distance (12102 m). Melnyk led sprint (324.10 m >24 km/h). Liccardo top speed (32.14 km/h). Pereyra most accelerations (54).",
+        "it": "Melnyk distanza (12102 m). Melnyk sprint (324.10 m >24 km/h). Liccardo velocità max (32.14 km/h). Pereyra più accelerazioni (54)."
+      },
+      "players": [
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 12102,
+          "distancePerMin": 103,
+          "distanceOver16KmhM": 2265,
+          "distance20to24KmhM": 684.96,
+          "distanceOver24KmhM": 324.1,
+          "metabolicPowerWkg": 9.4,
+          "accelerationsOver3": 36,
+          "decelerationsUnder3": 59,
+          "maxSpeedKmh": 31.12,
+          "recoveryPct": 70.85
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 11523,
+          "distancePerMin": 97,
+          "distanceOver16KmhM": 1586,
+          "distance20to24KmhM": 391.75,
+          "distanceOver24KmhM": 165.59,
+          "metabolicPowerWkg": 8.9,
+          "accelerationsOver3": 35,
+          "decelerationsUnder3": 46,
+          "maxSpeedKmh": 31.6,
+          "recoveryPct": 71.75
+        },
+        {
+          "player": "Chiummariello",
+          "totalDistanceM": 10710,
+          "distancePerMin": 100,
+          "distanceOver16KmhM": 1605,
+          "distance20to24KmhM": 377.42,
+          "distanceOver24KmhM": 73.01,
+          "metabolicPowerWkg": 8.9,
+          "accelerationsOver3": 19,
+          "decelerationsUnder3": 42,
+          "maxSpeedKmh": 26.44,
+          "recoveryPct": 70.5
+        },
+        {
+          "player": "Zappalà",
+          "totalDistanceM": 10688,
+          "distancePerMin": 91,
+          "distanceOver16KmhM": 1363,
+          "distance20to24KmhM": 402.16,
+          "distanceOver24KmhM": 114.53,
+          "metabolicPowerWkg": 8.2,
+          "accelerationsOver3": 32,
+          "decelerationsUnder3": 47,
+          "maxSpeedKmh": 27.73,
+          "recoveryPct": 74.8
+        },
+        {
+          "player": "Branchizio",
+          "totalDistanceM": 10431,
+          "distancePerMin": 88,
+          "distanceOver16KmhM": 1328,
+          "distance20to24KmhM": 380.62,
+          "distanceOver24KmhM": 93.63,
+          "metabolicPowerWkg": 7.8,
+          "accelerationsOver3": 17,
+          "decelerationsUnder3": 25,
+          "maxSpeedKmh": 28.6,
+          "recoveryPct": 77.99
+        },
+        {
+          "player": "Pereyra",
+          "totalDistanceM": 10257,
+          "distancePerMin": 83,
+          "distanceOver16KmhM": 1499,
+          "distance20to24KmhM": 385.56,
+          "distanceOver24KmhM": 100.71,
+          "metabolicPowerWkg": 7.6,
+          "accelerationsOver3": 54,
+          "decelerationsUnder3": 44,
+          "maxSpeedKmh": 27.9,
+          "recoveryPct": 80.94
+        },
+        {
+          "player": "Liccardo",
+          "totalDistanceM": 9539,
+          "distancePerMin": 107,
+          "distanceOver16KmhM": 2216,
+          "distance20to24KmhM": 658.62,
+          "distanceOver24KmhM": 294.17,
+          "metabolicPowerWkg": 9.7,
+          "accelerationsOver3": 29,
+          "decelerationsUnder3": 47,
+          "maxSpeedKmh": 32.14,
+          "recoveryPct": 69.93
+        },
+        {
+          "player": "Riccio",
+          "totalDistanceM": 8071,
+          "distancePerMin": 103,
+          "distanceOver16KmhM": 1478,
+          "distance20to24KmhM": 366.63,
+          "distanceOver24KmhM": 161.37,
+          "metabolicPowerWkg": 9.4,
+          "accelerationsOver3": 22,
+          "decelerationsUnder3": 37,
+          "maxSpeedKmh": 27.94,
+          "recoveryPct": 68.36
+        },
+        {
+          "player": "Mane",
+          "totalDistanceM": 6053,
+          "distancePerMin": 79,
+          "distanceOver16KmhM": 617,
+          "distance20to24KmhM": 141.27,
+          "distanceOver24KmhM": 122.1,
+          "metabolicPowerWkg": 7.1,
+          "accelerationsOver3": 16,
+          "decelerationsUnder3": 32,
+          "maxSpeedKmh": 31.01,
+          "recoveryPct": 82.29
+        },
+        {
+          "player": "Marotta",
+          "totalDistanceM": 5340,
+          "distancePerMin": 115,
+          "distanceOver16KmhM": 752,
+          "distance20to24KmhM": 199.46,
+          "distanceOver24KmhM": 28.08,
+          "metabolicPowerWkg": 10.4,
+          "accelerationsOver3": 14,
+          "decelerationsUnder3": 19,
+          "maxSpeedKmh": 29.16,
+          "recoveryPct": 66.41
+        }
+      ]
+    }
+  ]
+}

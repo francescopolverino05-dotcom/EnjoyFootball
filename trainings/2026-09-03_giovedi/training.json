@@ -1,0 +1,137 @@
+{
+  "id": "2026-09-03_giovedi",
+  "slug": "2026-09-03_giovedi",
+  "date": "2026-09-03",
+  "title": {
+    "en": "Thursday training",
+    "it": "Giovedì"
+  },
+  "focus": {
+    "en": "Training",
+    "it": "Allenamento"
+  },
+  "sessionType": "activation",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "GK All. N°33 attached (Coordination, High exits).",
+    "it": "Scheda portieri All. N°33 allegata (COORDINATIVO- USCITE ALTE)."
+  },
+  "video": {
+    "parts": [
+      {
+        "id": "vimeo-1223837945",
+        "title": {
+          "en": "11v0 Chance Creatiobn",
+          "it": "11v0 Chance Creatiobn"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1223837945/924f4bf783",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1223837216",
+        "title": {
+          "en": "Fase Offensiva",
+          "it": "Fase Offensiva"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1223837216/c2f1427437",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "fullSession": "https://vimeo.com/1223837216/c2f1427437",
+    "notes": {
+      "en": "Session recordings on Vimeo (2 videos).",
+      "it": "Registrazioni sessione su Vimeo (2 video)."
+    }
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-09-03",
+      "title": {
+        "en": "Session plan — Thu 3 Sep",
+        "it": "Piano seduta — Gio 3 set"
+      },
+      "description": {
+        "en": "Thursday session plan (3 Sep 2026).",
+        "it": "Piano seduta di giovedì (3 set 2026)."
+      },
+      "videoFile": "Session_Plan_2026-09-03.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    }
+  ],
+  "goalkeepers": {
+    "video": {
+      "parts": [
+        {
+          "id": "vimeo-1223828597",
+          "title": {
+            "en": "USCITE ALTE",
+            "it": "USCITE ALTE"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1223828597/08a6470af2",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        }
+      ],
+      "fullSession": "https://vimeo.com/1223828597/08a6470af2"
+    },
+    "clips": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-03",
+        "title": {
+          "en": "GK design — Coordination, High exits",
+          "it": "Scheda portieri — COORDINATIVO- USCITE ALTE"
+        },
+        "description": {
+          "en": "All. N°33 — 03 Sep 2026. Coordination, High exits.",
+          "it": "All. N°33 — 03/09/2026. COORDINATIVO- USCITE ALTE."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-03_COORDINATIVO_USCITE_ALTE.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30308139",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30308139",
+    "gkFolderId": "30308141",
+    "lastSyncedAt": "2026-10-07T15:58:35.581Z"
+  }
+}

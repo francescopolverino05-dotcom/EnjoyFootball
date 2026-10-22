@@ -1,0 +1,993 @@
+{
+  "id": "2026-10-10_campionato-u19-vs-pisa",
+  "slug": "2026-10-10_campionato-u19-vs-pisa",
+  "title": {
+    "en": "Napoli vs Pisa",
+    "it": "Napoli vs Pisa"
+  },
+  "subtitle": {
+    "en": "Primavera 2 · Matchday 4",
+    "it": "Primavera 2 · Giornata 4"
+  },
+  "date": "2026-10-10",
+  "competitionId": "primavera2",
+  "competition": {
+    "en": "Primavera 2",
+    "it": "Primavera 2"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "pisa",
+    "name": {
+      "en": "Pisa",
+      "it": "Pisa"
+    },
+    "shortName": "Pisa",
+    "colorClass": "opponent",
+    "logo": "logos/pisa.png"
+  },
+  "score": {
+    "home": 1,
+    "away": 0
+  },
+  "goals": [
+    {
+      "minute": 74,
+      "scorer": "Mané",
+      "assist": null,
+      "teamId": "u19"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 2
+    },
+    {
+      "minute": 45,
+      "label": {
+        "en": "Ghizzani on / Mocanu off",
+        "it": "Ghizzani on / Mocanu off"
+      },
+      "type": "substitution",
+      "teamId": "pisa",
+      "positionPercent": 48
+    },
+    {
+      "minute": 55,
+      "label": {
+        "en": "Favicchio on / Anic off",
+        "it": "Favicchio on / Anic off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 61
+    },
+    {
+      "minute": 55,
+      "label": {
+        "en": "Liccardo on / Santella off",
+        "it": "Liccardo on / Santella off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 61
+    },
+    {
+      "minute": 66,
+      "label": {
+        "en": "Lenzoni on / Neri off",
+        "it": "Lenzoni on / Neri off"
+      },
+      "type": "substitution",
+      "teamId": "pisa",
+      "positionPercent": 73
+    },
+    {
+      "minute": 66,
+      "label": {
+        "en": "Saviozzi on / Rocca off",
+        "it": "Saviozzi on / Rocca off"
+      },
+      "type": "substitution",
+      "teamId": "pisa",
+      "positionPercent": 73
+    },
+    {
+      "minute": 70,
+      "label": {
+        "en": "Natale on / Lieto off",
+        "it": "Natale on / Lieto off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 78
+    },
+    {
+      "minute": 70,
+      "label": {
+        "en": "Mané on / Pengue off",
+        "it": "Mané on / Pengue off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 78
+    },
+    {
+      "minute": 74,
+      "label": {
+        "en": "Mané 1-0",
+        "it": "Mané 1-0"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 82
+    },
+    {
+      "minute": 77,
+      "label": {
+        "en": "Ribechini on / Landucci off",
+        "it": "Ribechini on / Landucci off"
+      },
+      "type": "substitution",
+      "teamId": "pisa",
+      "positionPercent": 86
+    },
+    {
+      "minute": 81,
+      "label": {
+        "en": "Menicucci on / Lucarelli off",
+        "it": "Menicucci on / Lucarelli off"
+      },
+      "type": "substitution",
+      "teamId": "pisa",
+      "positionPercent": 90
+    },
+    {
+      "minute": 83,
+      "label": {
+        "en": "De Michele on / Baridò off",
+        "it": "De Michele on / Baridò off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 92
+    },
+    {
+      "minute": 90,
+      "label": {
+        "en": "Full time 1-0",
+        "it": "Fine partita 1-0"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 98
+    }
+  ],
+  "formations": [
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "system": "3-4-2-1",
+      "players": [
+        {
+          "number": 1,
+          "name": "Pugliese",
+          "teamId": "u19",
+          "isGk": true,
+          "bottom": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 5,
+          "name": "Branchizio",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "22%"
+        },
+        {
+          "number": 6,
+          "name": "Lieto",
+          "teamId": "u19",
+          "bottom": "20%",
+          "left": "50%"
+        },
+        {
+          "number": 3,
+          "name": "Zappalà",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "78%"
+        },
+        {
+          "number": 11,
+          "name": "Santella",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "12%"
+        },
+        {
+          "number": 4,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "38%"
+        },
+        {
+          "number": 8,
+          "name": "D'Angelo",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "62%"
+        },
+        {
+          "number": 2,
+          "name": "Melnyk",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "88%"
+        },
+        {
+          "number": 7,
+          "name": "Anic",
+          "teamId": "u19",
+          "bottom": "68%",
+          "left": "28%"
+        },
+        {
+          "number": 10,
+          "name": "Baridò",
+          "teamId": "u19",
+          "bottom": "68%",
+          "left": "72%"
+        },
+        {
+          "number": 9,
+          "name": "Pengue",
+          "teamId": "u19",
+          "bottom": "78%",
+          "left": "50%"
+        }
+      ]
+    },
+    {
+      "teamId": "pisa",
+      "label": {
+        "en": "Pisa",
+        "it": "Pisa"
+      },
+      "system": "4-4-2",
+      "players": [
+        {
+          "number": 1,
+          "name": "Sebastiano",
+          "teamId": "pisa",
+          "isGk": true,
+          "top": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Bernardini",
+          "teamId": "pisa",
+          "top": "22%",
+          "left": "18%"
+        },
+        {
+          "number": 3,
+          "name": "Neri",
+          "teamId": "pisa",
+          "top": "20%",
+          "left": "38%"
+        },
+        {
+          "number": 4,
+          "name": "Bendinelli",
+          "teamId": "pisa",
+          "top": "20%",
+          "left": "62%"
+        },
+        {
+          "number": 5,
+          "name": "Serafini",
+          "teamId": "pisa",
+          "top": "22%",
+          "left": "82%"
+        },
+        {
+          "number": 8,
+          "name": "Lucarelli",
+          "teamId": "pisa",
+          "top": "48%",
+          "left": "18%"
+        },
+        {
+          "number": 7,
+          "name": "Landucci",
+          "teamId": "pisa",
+          "top": "45%",
+          "left": "38%"
+        },
+        {
+          "number": 6,
+          "name": "Rocca",
+          "teamId": "pisa",
+          "top": "45%",
+          "left": "62%"
+        },
+        {
+          "number": 11,
+          "name": "Masini",
+          "teamId": "pisa",
+          "top": "48%",
+          "left": "82%"
+        },
+        {
+          "number": 10,
+          "name": "Mainardi",
+          "teamId": "pisa",
+          "top": "75%",
+          "left": "38%"
+        },
+        {
+          "number": 9,
+          "name": "Mocanu",
+          "teamId": "pisa",
+          "top": "75%",
+          "left": "62%"
+        }
+      ]
+    }
+  ],
+  "dynamics": [],
+  "teamStats": [],
+  "gpsStats": [
+    {
+      "half": {
+        "en": "GPS — Full Match",
+        "it": "GPS — Partita intera"
+      },
+      "summary": {
+        "en": "D'Angelo led distance (12658 m). Melnyk led sprint (380.03 m >24 km/h). Pengue top speed (32.87 km/h). Melnyk most accelerations (56).",
+        "it": "D'Angelo distanza (12658 m). Melnyk sprint (380.03 m >24 km/h). Pengue velocità max (32.87 km/h). Melnyk più accelerazioni (56)."
+      },
+      "players": [
+        {
+          "player": "D'Angelo",
+          "totalDistanceM": 12658,
+          "distancePerMin": 121,
+          "distanceOver16KmhM": 2748,
+          "distance20to24KmhM": 744.82,
+          "distanceOver24KmhM": 346.27,
+          "metabolicPowerWkg": 11,
+          "accelerationsOver3": 36,
+          "decelerationsUnder3": 62,
+          "maxSpeedKmh": 29.33,
+          "recoveryPct": 63.6
+        },
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 12000,
+          "distancePerMin": 117,
+          "distanceOver16KmhM": 2429,
+          "distance20to24KmhM": 732.47,
+          "distanceOver24KmhM": 380.03,
+          "metabolicPowerWkg": 10.9,
+          "accelerationsOver3": 56,
+          "decelerationsUnder3": 85,
+          "maxSpeedKmh": 30.13,
+          "recoveryPct": 65.73
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 11391,
+          "distancePerMin": 115,
+          "distanceOver16KmhM": 1712,
+          "distance20to24KmhM": 519.57,
+          "distanceOver24KmhM": 172.1,
+          "metabolicPowerWkg": 10.4,
+          "accelerationsOver3": 43,
+          "decelerationsUnder3": 39,
+          "maxSpeedKmh": 30.1,
+          "recoveryPct": 64.36
+        },
+        {
+          "player": "Zappalà",
+          "totalDistanceM": 10617,
+          "distancePerMin": 102,
+          "distanceOver16KmhM": 1394,
+          "distance20to24KmhM": 390.51,
+          "distanceOver24KmhM": 108.74,
+          "metabolicPowerWkg": 9.5,
+          "accelerationsOver3": 40,
+          "decelerationsUnder3": 58,
+          "maxSpeedKmh": 29.35,
+          "recoveryPct": 69.64
+        },
+        {
+          "player": "Branchizio",
+          "totalDistanceM": 10273,
+          "distancePerMin": 104,
+          "distanceOver16KmhM": 1080,
+          "distance20to24KmhM": 229.21,
+          "distanceOver24KmhM": 162.68,
+          "metabolicPowerWkg": 9.3,
+          "accelerationsOver3": 22,
+          "decelerationsUnder3": 31,
+          "maxSpeedKmh": 30.91,
+          "recoveryPct": 69.97
+        },
+        {
+          "player": "Baridò",
+          "totalDistanceM": 9290,
+          "distancePerMin": 100,
+          "distanceOver16KmhM": 1008,
+          "distance20to24KmhM": 192.79,
+          "distanceOver24KmhM": 61.76,
+          "metabolicPowerWkg": 8.8,
+          "accelerationsOver3": 33,
+          "decelerationsUnder3": 33,
+          "maxSpeedKmh": 31.16,
+          "recoveryPct": 71.93
+        },
+        {
+          "player": "Lieto",
+          "totalDistanceM": 8674,
+          "distancePerMin": 105,
+          "distanceOver16KmhM": 966,
+          "distance20to24KmhM": 210.33,
+          "distanceOver24KmhM": 96.65,
+          "metabolicPowerWkg": 9.5,
+          "accelerationsOver3": 24,
+          "decelerationsUnder3": 23,
+          "maxSpeedKmh": 28.76,
+          "recoveryPct": 67.73
+        },
+        {
+          "player": "Pengue",
+          "totalDistanceM": 8431,
+          "distancePerMin": 99,
+          "distanceOver16KmhM": 1342,
+          "distance20to24KmhM": 432.37,
+          "distanceOver24KmhM": 299.24,
+          "metabolicPowerWkg": 9.1,
+          "accelerationsOver3": 39,
+          "decelerationsUnder3": 32,
+          "maxSpeedKmh": 32.87,
+          "recoveryPct": 73.27
+        },
+        {
+          "player": "Anic",
+          "totalDistanceM": 7470,
+          "distancePerMin": 117,
+          "distanceOver16KmhM": 1341,
+          "distance20to24KmhM": 321.25,
+          "distanceOver24KmhM": 121.54,
+          "metabolicPowerWkg": 10.8,
+          "accelerationsOver3": 14,
+          "decelerationsUnder3": 38,
+          "maxSpeedKmh": 27.19,
+          "recoveryPct": 64.81
+        },
+        {
+          "player": "Santella",
+          "totalDistanceM": 3795,
+          "distancePerMin": 110,
+          "distanceOver16KmhM": 606,
+          "distance20to24KmhM": 158.21,
+          "distanceOver24KmhM": 80.54,
+          "metabolicPowerWkg": 10.1,
+          "accelerationsOver3": 6,
+          "decelerationsUnder3": 22,
+          "maxSpeedKmh": 31.4,
+          "recoveryPct": 67.97
+        }
+      ]
+    }
+  ],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": [],
+  "appearances": {
+    "home": [
+      {
+        "name": "Pugliese",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Zappalà",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Lieto",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 70
+      },
+      {
+        "name": "Anic",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 55
+      },
+      {
+        "name": "D'Angelo",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Pengue",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 70
+      },
+      {
+        "name": "Baridò",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 83
+      },
+      {
+        "name": "Santella",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 55
+      },
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Lepre",
+        "teamId": "u19",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Marotta",
+        "teamId": "u19",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Natale",
+        "teamId": "u19",
+        "number": 15,
+        "starter": false,
+        "onMinute": 70
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 16,
+        "starter": false,
+        "onMinute": 55
+      },
+      {
+        "name": "Candela",
+        "teamId": "u19",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "De Michele",
+        "teamId": "u19",
+        "number": 18,
+        "starter": false,
+        "onMinute": 83
+      },
+      {
+        "name": "Pepe",
+        "teamId": "u19",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "number": 20,
+        "starter": false,
+        "onMinute": 55
+      },
+      {
+        "name": "Mané",
+        "teamId": "u19",
+        "number": 21,
+        "starter": false,
+        "goals": [
+          74
+        ],
+        "onMinute": 70
+      },
+      {
+        "name": "Russo",
+        "teamId": "u19",
+        "number": 22,
+        "starter": false
+      }
+    ],
+    "away": [
+      {
+        "name": "Sebastiano",
+        "teamId": "pisa",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Bernardini",
+        "teamId": "pisa",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Neri",
+        "teamId": "pisa",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 66
+      },
+      {
+        "name": "Bendinelli",
+        "teamId": "pisa",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Serafini",
+        "teamId": "pisa",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Rocca",
+        "teamId": "pisa",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 66
+      },
+      {
+        "name": "Landucci",
+        "teamId": "pisa",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 77
+      },
+      {
+        "name": "Lucarelli",
+        "teamId": "pisa",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 81
+      },
+      {
+        "name": "Mocanu",
+        "teamId": "pisa",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Mainardi",
+        "teamId": "pisa",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Masini",
+        "teamId": "pisa",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Paolini",
+        "teamId": "pisa",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Bertacca",
+        "teamId": "pisa",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Lenzoni",
+        "teamId": "pisa",
+        "number": 14,
+        "starter": false,
+        "onMinute": 66
+      },
+      {
+        "name": "Bolognini",
+        "teamId": "pisa",
+        "number": 15,
+        "starter": false
+      },
+      {
+        "name": "Minisini",
+        "teamId": "pisa",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Ietro",
+        "teamId": "pisa",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "Menicucci",
+        "teamId": "pisa",
+        "number": 18,
+        "starter": false,
+        "onMinute": 81
+      },
+      {
+        "name": "Saviozzi",
+        "teamId": "pisa",
+        "number": 19,
+        "starter": false,
+        "onMinute": 66
+      },
+      {
+        "name": "Tuon",
+        "teamId": "pisa",
+        "number": 20,
+        "starter": false
+      },
+      {
+        "name": "Ribechini",
+        "teamId": "pisa",
+        "number": 21,
+        "starter": false,
+        "onMinute": 77
+      },
+      {
+        "name": "Ghizzani",
+        "teamId": "pisa",
+        "number": 22,
+        "starter": false,
+        "onMinute": 45
+      },
+      {
+        "name": "Miglianti",
+        "teamId": "pisa",
+        "number": 23,
+        "starter": false
+      }
+    ],
+    "notes": {
+      "en": "Starting XI = shirts 1–11 on the match sheet. Sub minutes from tagged player stats (CSV). Mané (#21) on 70' for Pengue, scored 74'.",
+      "it": "Titolari = numeri 1–11 sulla lista gara. Minuti sub dalle player stats taggate (CSV). Mané (#21) entra al 70' per Pengue, gol al 74'."
+    }
+  },
+  "vimeo": {
+    "folderId": "30848720",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30848720",
+    "lastSyncedAt": "2026-10-20T17:31:47.462Z"
+  },
+  "video": {
+    "fullMatch": "https://vimeo.com/1234647994/41d1d6a011",
+    "notes": {
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
+    }
+  },
+  "reflection": {
+    "wentWell": [
+      {
+        "id": "wwb-01",
+        "text": {
+          "en": "Compact team that helped each other and stayed concentrated behind the ball.",
+          "it": "Squadra compatta, che si aiutava e concentrata dietro"
+        }
+      },
+      {
+        "id": "wwb-02",
+        "text": {
+          "en": "Goalkeeper a big help.",
+          "it": "Portiere di grande aiuto"
+        }
+      },
+      {
+        "id": "wwb-03",
+        "text": {
+          "en": "Anic good, mostly playing as a wide player.",
+          "it": "Anic bene, giocando per lo più da esterno"
+        }
+      },
+      {
+        "id": "wwb-04",
+        "text": {
+          "en": "Good attitude from those who started and those who came on.",
+          "it": "Buon atteggiamento di chi ha giocato e di chi è subentrato"
+        }
+      },
+      {
+        "id": "wwb-05",
+        "text": {
+          "en": "Baridò more involved in the second half — always creates something.",
+          "it": "Baridò più coinvolto nel secondo tempo, crea sempre qualcosa"
+        }
+      },
+      {
+        "id": "wwb-06",
+        "text": {
+          "en": "In the first half they only had one shot, and not even a corner.",
+          "it": "Nel primo tempo loro hanno tirato una sola volta, nemmeno un angolo"
+        }
+      },
+      {
+        "id": "wwb-07",
+        "text": {
+          "en": "Excellent high defensive phase: Pengue and Baridò forced mistakes from their goalkeeper and defenders.",
+          "it": "Ottima fase difensiva alta: Pengue e Baridò hanno forzato l'errore di portiere e difensori"
+        }
+      },
+      {
+        "id": "wwb-08",
+        "text": {
+          "en": "Won the aerial duels against their strikers.",
+          "it": "Vinti i duelli aerei contro i loro attaccanti"
+        }
+      },
+      {
+        "id": "wwb-09",
+        "text": {
+          "en": "Good at stepping out hard onto the man and in duels, with a midfielder dropping to screen the zone and create the free man.",
+          "it": "Bene nell'uscire forte sull'uomo e nei duelli, con un centrocampista che si abbassava a schermare la zona per creare l'uomo in più"
+        }
+      }
+    ],
+    "evenBetterIf": [
+      {
+        "id": "ebi-01",
+        "text": {
+          "en": "Too predictable and too wide in build-up: we built 4+2 instead of 3+2, with the wide centre-backs behaving like full-backs.",
+          "it": "Prevedibili e troppo larghi in costruzione: costruivamo a 4+2 invece che a 3+2, con i braccetti che si comportavano da terzini"
+        }
+      },
+      {
+        "id": "ebi-02",
+        "text": {
+          "en": "Keep the 3v2 tighter. If they stretch wide, the wide centre-back must play inside, not go out immediately.",
+          "it": "Tenere il 3 contro 2 più stretto. Se si allargano, il braccetto deve giocare dentro, non andare subito fuori"
+        }
+      },
+      {
+        "id": "ebi-03",
+        "text": {
+          "en": "Slow circulation — passing lanes not found.",
+          "it": "Giro palla lento, linee di passaggio non trovate"
+        }
+      },
+      {
+        "id": "ebi-04",
+        "text": {
+          "en": "More line-breaking passes into midfielders, instead of going back or sideways.",
+          "it": "Più imbucate verso i centrocampisti, invece di tornare indietro o andare in laterale"
+        }
+      },
+      {
+        "id": "ebi-05",
+        "text": {
+          "en": "More personality on the ball, including the wing-backs (Melnyk).",
+          "it": "Più personalità con la palla, anche con i quinti (Melnyk)"
+        }
+      },
+      {
+        "id": "ebi-06",
+        "text": {
+          "en": "Receive on the preferred foot even with the opponent half a metre away.",
+          "it": "Ricevere palla sul piede anche con l'avversario a mezzo metro"
+        }
+      },
+      {
+        "id": "ebi-07",
+        "text": {
+          "en": "Baridò needs to touch more balls and look for space.",
+          "it": "Baridò deve toccare più palloni e cercarsi lo spazio"
+        }
+      },
+      {
+        "id": "ebi-08",
+        "text": {
+          "en": "Lieto too predictable on the ball: doesn’t risk and doesn’t circulate quickly.",
+          "it": "Lieto troppo prevedibile col pallone: non rischia e non gira la palla veloce"
+        }
+      },
+      {
+        "id": "ebi-09",
+        "text": {
+          "en": "When Santella dropped deep, build-up became 4-2 and they marked us man-to-man.",
+          "it": "Santella che si abbassava trasformava la costruzione in 4-2 e ci prendevano a uomo"
+        }
+      },
+      {
+        "id": "ebi-10",
+        "text": {
+          "en": "On one dead ball we didn’t pick up our man.",
+          "it": "Su una palla inattiva non abbiamo preso l'uomo"
+        }
+      },
+      {
+        "id": "ebi-11",
+        "text": {
+          "en": "Midfielders often too deep in build-up.",
+          "it": "Centrocampisti spesso troppo bassi in costruzione"
+        }
+      }
+    ]
+  }
+}

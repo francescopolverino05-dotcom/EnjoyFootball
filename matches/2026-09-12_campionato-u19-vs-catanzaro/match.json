@@ -1,0 +1,1537 @@
+{
+  "id": "2026-09-12_campionato-u19-vs-catanzaro",
+  "slug": "2026-09-12_campionato-u19-vs-catanzaro",
+  "title": {
+    "en": "Napoli vs Catanzaro",
+    "it": "Napoli vs Catanzaro"
+  },
+  "subtitle": {
+    "en": "Primavera 2 · Matchday 2",
+    "it": "Primavera 2 · Giornata 2"
+  },
+  "date": "2026-09-12",
+  "competitionId": "primavera2",
+  "competition": {
+    "en": "Primavera 2",
+    "it": "Primavera 2"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "catanzaro",
+    "name": {
+      "en": "Catanzaro",
+      "it": "Catanzaro"
+    },
+    "shortName": "Catanzaro",
+    "colorClass": "opponent",
+    "logo": "logos/catanzaro.png"
+  },
+  "score": {
+    "home": 2,
+    "away": 3
+  },
+  "goals": [
+    {
+      "minute": 19,
+      "scorer": "Pellegrini",
+      "assist": null,
+      "teamId": "catanzaro"
+    },
+    {
+      "minute": 24,
+      "scorer": "Gjoka",
+      "assist": null,
+      "teamId": "catanzaro"
+    },
+    {
+      "minute": 47,
+      "scorer": "Greco",
+      "assist": null,
+      "teamId": "catanzaro"
+    },
+    {
+      "minute": 58,
+      "scorer": "Pereyra",
+      "assist": null,
+      "teamId": "u19"
+    },
+    {
+      "minute": 77,
+      "scorer": "Mané",
+      "assist": null,
+      "teamId": "u19"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 2
+    },
+    {
+      "minute": 19,
+      "label": {
+        "en": "Pellegrini 0-1",
+        "it": "Pellegrini 0-1"
+      },
+      "type": "goal",
+      "teamId": "catanzaro",
+      "positionPercent": 20
+    },
+    {
+      "minute": 24,
+      "label": {
+        "en": "Gjoka 0-2",
+        "it": "Gjoka 0-2"
+      },
+      "type": "goal",
+      "teamId": "catanzaro",
+      "positionPercent": 25
+    },
+    {
+      "minute": 47,
+      "label": {
+        "en": "Greco 0-3",
+        "it": "Greco 0-3"
+      },
+      "type": "goal",
+      "teamId": "catanzaro",
+      "positionPercent": 49
+    },
+    {
+      "minute": 58,
+      "label": {
+        "en": "Pereyra 1-3",
+        "it": "Pereyra 1-3"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 61
+    },
+    {
+      "minute": 77,
+      "label": {
+        "en": "Mané 2-3",
+        "it": "Mané 2-3"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 81
+    },
+    {
+      "minute": 90,
+      "label": {
+        "en": "Full time 2-3",
+        "it": "Fine partita 2-3"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 98
+    }
+  ],
+  "formations": [
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "system": "3-4-2-1",
+      "players": [
+        {
+          "number": 1,
+          "name": "Spinelli",
+          "teamId": "u19",
+          "isGk": true,
+          "bottom": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 5,
+          "name": "Branchizio",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "22%"
+        },
+        {
+          "number": 6,
+          "name": "Lieto",
+          "teamId": "u19",
+          "bottom": "20%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Zappalà",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "78%"
+        },
+        {
+          "number": 7,
+          "name": "Melnyk",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "12%"
+        },
+        {
+          "number": 4,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "38%"
+        },
+        {
+          "number": 8,
+          "name": "Anic",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "62%"
+        },
+        {
+          "number": 3,
+          "name": "Liccardo",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "88%"
+        },
+        {
+          "number": 10,
+          "name": "Baridò",
+          "teamId": "u19",
+          "bottom": "68%",
+          "left": "28%"
+        },
+        {
+          "number": 11,
+          "name": "Favicchio",
+          "teamId": "u19",
+          "bottom": "68%",
+          "left": "72%"
+        },
+        {
+          "number": 9,
+          "name": "Pereyra",
+          "teamId": "u19",
+          "bottom": "78%",
+          "left": "50%"
+        }
+      ]
+    },
+    {
+      "teamId": "catanzaro",
+      "label": {
+        "en": "Catanzaro",
+        "it": "Catanzaro"
+      },
+      "system": "5-3-2",
+      "players": [
+        {
+          "number": 1,
+          "name": "Martena",
+          "teamId": "catanzaro",
+          "isGk": true,
+          "top": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Curatelo",
+          "teamId": "catanzaro",
+          "top": "22%",
+          "left": "90%"
+        },
+        {
+          "number": 3,
+          "name": "Cesnauskis",
+          "teamId": "catanzaro",
+          "top": "22%",
+          "left": "10%"
+        },
+        {
+          "number": 4,
+          "name": "Panuccio",
+          "teamId": "catanzaro",
+          "top": "18%",
+          "left": "50%"
+        },
+        {
+          "number": 5,
+          "name": "Distante",
+          "teamId": "catanzaro",
+          "top": "20%",
+          "left": "70%"
+        },
+        {
+          "number": 6,
+          "name": "Salvano",
+          "teamId": "catanzaro",
+          "top": "20%",
+          "left": "30%"
+        },
+        {
+          "number": 7,
+          "name": "Aloiso",
+          "teamId": "catanzaro",
+          "top": "42%",
+          "left": "28%"
+        },
+        {
+          "number": 8,
+          "name": "Molon",
+          "teamId": "catanzaro",
+          "top": "40%",
+          "left": "50%"
+        },
+        {
+          "number": 10,
+          "name": "Greco",
+          "teamId": "catanzaro",
+          "top": "42%",
+          "left": "72%"
+        },
+        {
+          "number": 9,
+          "name": "Pellegrini",
+          "teamId": "catanzaro",
+          "top": "72%",
+          "left": "35%"
+        },
+        {
+          "number": 11,
+          "name": "Gjoka",
+          "teamId": "catanzaro",
+          "top": "72%",
+          "left": "65%"
+        }
+      ]
+    }
+  ],
+  "dynamics": [
+    {
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
+      "homeValue": 52,
+      "awayValue": 48,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Pass Accuracy %",
+        "it": "Precisione Passaggi %"
+      },
+      "homeValue": 82.82,
+      "awayValue": 82.14,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Duels Won %",
+        "it": "Duelli Vinti %"
+      },
+      "homeValue": 51.35,
+      "awayValue": 48.65,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Shot Accuracy %",
+        "it": "Precisione Tiri %"
+      },
+      "homeValue": 38.46,
+      "awayValue": 54.55,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Progressive Pass Accuracy %",
+        "it": "Precisione Passaggi Progressivi %"
+      },
+      "homeValue": 70.37,
+      "awayValue": 66.67,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Final-Third Pass Accuracy %",
+        "it": "Precisione Passaggi Ultimo Terzo %"
+      },
+      "homeValue": 65.22,
+      "awayValue": 61.11,
+      "unit": "%"
+    }
+  ],
+  "teamStats": [
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Formation",
+        "it": "Modulo"
+      },
+      "home": "3-4-2-1 (29.6%) / 4-2-3-1 (70.4%)",
+      "away": "5-3-2 (100.0%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Goals / xG",
+        "it": "Gol / xG"
+      },
+      "home": "2 (1.85 xG)",
+      "away": "3 (2.12 xG)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso %"
+      },
+      "home": "52.0%",
+      "away": "48.0%"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots (On Target / Accuracy %)",
+        "it": "Tiri (In Porta / Precisione %)"
+      },
+      "home": "13 (5 / 38.46%)",
+      "away": "11 (6 / 54.55%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Corners (With Shot / %)",
+        "it": "Calci d'angolo (Con Tiro / %)"
+      },
+      "home": "6 (2 / 33.33%)",
+      "away": "5 (2 / 40.0%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Fouls / Yellow Cards / Red Cards",
+        "it": "Falli / Cartellini Gialli / Rossi"
+      },
+      "home": "12 / 2 / 0",
+      "away": "14 / 3 / 0"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Game Pace",
+        "it": "Ritmo di gioco"
+      },
+      "home": "14.50",
+      "away": "14.10"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "PPDA",
+        "it": "PPDA"
+      },
+      "home": "9.10",
+      "away": "9.85"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Interceptions / Clearances",
+        "it": "Intercetti / Spazzate"
+      },
+      "home": "36 / 22",
+      "away": "38 / 25"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Sliding Tackles (Successful / %)",
+        "it": "Tackle scivolati (Riusciti / %)"
+      },
+      "home": "4 (3 / 75.00%)",
+      "away": "3 (2 / 66.67%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Duels Total (Won / Win %)",
+        "it": "Duelli Totali (Vinti / %)"
+      },
+      "home": "148 (76 / 51.35%)",
+      "away": "148 (72 / 48.65%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Defensive Duels (Won / Win %)",
+        "it": "Duelli Difensivi (Vinti / %)"
+      },
+      "home": "62 (38 / 61.29%)",
+      "away": "62 (36 / 58.06%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Offensive Duels (Won / Win %)",
+        "it": "Duelli Offensivi (Vinti / %)"
+      },
+      "home": "62 (26 / 41.94%)",
+      "away": "62 (24 / 38.71%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Aerial Duels (Won / Win %)",
+        "it": "Duelli Aerei (Vinti / %)"
+      },
+      "home": "24 (12 / 50.0%)",
+      "away": "24 (12 / 50.0%)"
+    },
+    {
+      "category": {
+        "en": "Transitions",
+        "it": "Transizioni"
+      },
+      "name": {
+        "en": "Ball Recoveries (Low/Med/High)",
+        "it": "Recuperi (Basso/Medio/Alto)"
+      },
+      "home": "72 (32 / 28 / 12)",
+      "away": "68 (30 / 26 / 12)"
+    },
+    {
+      "category": {
+        "en": "Transitions",
+        "it": "Transizioni"
+      },
+      "name": {
+        "en": "Ball Losses (Low/Med/High)",
+        "it": "Perdite (Basso/Medio/Alto)"
+      },
+      "home": "105 (18 / 42 / 45)",
+      "away": "110 (20 / 46 / 44)"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Positional Attacks (Shots / %)",
+        "it": "Attacchi di posizione (Tiri / %)"
+      },
+      "home": "28 (7 / 25.00%)",
+      "away": "24 (5 / 20.83%)"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Counterattacks (Shots / %)",
+        "it": "Contropiedi (Tiri / %)"
+      },
+      "home": "3 (1 / 33.33%)",
+      "away": "4 (2 / 50.00%)"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Avg Shot Distance (m)",
+        "it": "Distanza media di tiro (m)"
+      },
+      "home": "17.4",
+      "away": "17.8"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes (Accurate / Accuracy %)",
+        "it": "Passaggi (Precisi / Precisione %)"
+      },
+      "home": "425 (352 / 82.82%)",
+      "away": "392 (322 / 82.14%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Progressive Passes (Accurate / %)",
+        "it": "Passaggi Progressivi (Precisi / %)"
+      },
+      "home": "54 (38 / 70.37%)",
+      "away": "48 (32 / 66.67%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes into Final 3rd (Accurate / %)",
+        "it": "Passaggi Ultimo Terzo (Precisi / %)"
+      },
+      "home": "46 (30 / 65.22%)",
+      "away": "36 (22 / 61.11%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Crosses (Accurate / %)",
+        "it": "Cross (Precisi / %)"
+      },
+      "home": "15 (5 / 33.33%)",
+      "away": "12 (4 / 33.33%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Forward Passes (Accurate / %)",
+        "it": "Passaggi in avanti (Precisi / %)"
+      },
+      "home": "142 (108 / 76.06%)",
+      "away": "134 (98 / 73.13%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Back Passes (Accurate / %)",
+        "it": "Retropassaggi (Precisi / %)"
+      },
+      "home": "54 (52 / 96.30%)",
+      "away": "58 (54 / 93.10%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Lateral Passes (Accurate / %)",
+        "it": "Passaggi laterali (Precisi / %)"
+      },
+      "home": "178 (158 / 88.76%)",
+      "away": "160 (140 / 87.50%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Long Passes (Accurate / %)",
+        "it": "Lanci lunghi (Precisi / %)"
+      },
+      "home": "40 (20 / 50.00%)",
+      "away": "38 (19 / 50.00%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Through Passes (Accurate / %)",
+        "it": "Passaggi smarcanti (Precisi / %)"
+      },
+      "home": "3 (1 / 33.33%)",
+      "away": "2 (1 / 50.00%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Throw-ins (Accurate / %)",
+        "it": "Rimesse laterali (Precise / %)"
+      },
+      "home": "19 (15 / 78.95%)",
+      "away": "18 (14 / 77.78%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Goal Kicks",
+        "it": "Calci di rinvio"
+      },
+      "home": "7",
+      "away": "8"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes per Possession",
+        "it": "Media passaggi per possesso"
+      },
+      "home": "3.80",
+      "away": "3.55"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Long Pass %",
+        "it": "Lanci lunghi %"
+      },
+      "home": "9.41%",
+      "away": "9.69%"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Avg Pass Length (m)",
+        "it": "Lunghezza media passaggi (m)"
+      },
+      "home": "19.2",
+      "away": "19.6"
+    }
+  ],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": [
+    {
+      "id": "vimeo-1226544263",
+      "title": {
+        "en": "Post-match report",
+        "it": "Report post-partita"
+      },
+      "description": {
+        "en": "Post-match video analysis — Napoli vs Catanzaro (12 Sep 2026).",
+        "it": "Video analisi post-partita — Napoli vs Catanzaro (12 set 2026)."
+      },
+      "videoFile": "https://vimeo.com/1226544263/85682dbe6c",
+      "tags": [
+        "vimeo",
+        "analysis"
+      ],
+      "kind": "video"
+    }
+  ],
+  "vimeo": {
+    "folderId": "30520604",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30520604",
+    "lastSyncedAt": "2026-10-10T15:04:32.996Z"
+  },
+  "video": {
+    "fullMatch": "https://vimeo.com/1226236034/a5b5a0d3b9",
+    "notes": {
+      "en": "Full match from Vimeo (Napoli 2–3 Catanzaro).",
+      "it": "Partita intera da Vimeo (Napoli 2–3 Catanzaro)."
+    }
+  },
+  "gpsStats": [
+    {
+      "half": {
+        "en": "GPS — 1st Half",
+        "it": "GPS — 1° Tempo"
+      },
+      "summary": {
+        "en": "Anic led distance (6203 m). Melnyk led sprint (254.41 m >24 km/h). De Stefano top speed (34.08 km/h). Melnyk most accelerations (29).",
+        "it": "Anic distanza (6203 m). Melnyk sprint (254.41 m >24 km/h). De Stefano velocità max (34.08 km/h). Melnyk più accelerazioni (29)."
+      },
+      "players": [
+        {
+          "player": "Anic",
+          "totalDistanceM": 6203,
+          "distancePerMin": 120,
+          "distanceOver16KmhM": 1501,
+          "distance20to24KmhM": 367.56,
+          "distanceOver24KmhM": 11.52,
+          "metabolicPowerWkg": 11,
+          "accelerationsOver3": 14,
+          "decelerationsUnder3": 32,
+          "maxSpeedKmh": 25,
+          "recoveryPct": 63.32
+        },
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 6097,
+          "distancePerMin": 113,
+          "distanceOver16KmhM": 1273,
+          "distance20to24KmhM": 388.75,
+          "distanceOver24KmhM": 254.41,
+          "metabolicPowerWkg": 10.4,
+          "accelerationsOver3": 29,
+          "decelerationsUnder3": 30,
+          "maxSpeedKmh": 31.45,
+          "recoveryPct": 67.64
+        },
+        {
+          "player": "Liccardo",
+          "totalDistanceM": 5783,
+          "distancePerMin": 111,
+          "distanceOver16KmhM": 1157,
+          "distance20to24KmhM": 292.76,
+          "distanceOver24KmhM": 203.88,
+          "metabolicPowerWkg": 9.9,
+          "accelerationsOver3": 17,
+          "decelerationsUnder3": 13,
+          "maxSpeedKmh": 32.63,
+          "recoveryPct": 69.92
+        },
+        {
+          "player": "Favicchio",
+          "totalDistanceM": 5478,
+          "distancePerMin": 105,
+          "distanceOver16KmhM": 886,
+          "distance20to24KmhM": 254.6,
+          "distanceOver24KmhM": 159.65,
+          "metabolicPowerWkg": 9.6,
+          "accelerationsOver3": 19,
+          "decelerationsUnder3": 29,
+          "maxSpeedKmh": 31.43,
+          "recoveryPct": 72.16
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 5448,
+          "distancePerMin": 106,
+          "distanceOver16KmhM": 715,
+          "distance20to24KmhM": 192.56,
+          "distanceOver24KmhM": 92.16,
+          "metabolicPowerWkg": 9.8,
+          "accelerationsOver3": 20,
+          "decelerationsUnder3": 23,
+          "maxSpeedKmh": 34.08,
+          "recoveryPct": 67.89
+        },
+        {
+          "player": "Zappalà (Natale)",
+          "totalDistanceM": 5419,
+          "distancePerMin": 106,
+          "distanceOver16KmhM": 671,
+          "distance20to24KmhM": 214.35,
+          "distanceOver24KmhM": 81.03,
+          "metabolicPowerWkg": 9.5,
+          "accelerationsOver3": 12,
+          "decelerationsUnder3": 19,
+          "maxSpeedKmh": 27.19,
+          "recoveryPct": 67.58
+        },
+        {
+          "player": "Pereyra",
+          "totalDistanceM": 5094,
+          "distancePerMin": 99,
+          "distanceOver16KmhM": 682,
+          "distance20to24KmhM": 144.98,
+          "distanceOver24KmhM": 69.35,
+          "metabolicPowerWkg": 9,
+          "accelerationsOver3": 21,
+          "decelerationsUnder3": 24,
+          "maxSpeedKmh": 28.93,
+          "recoveryPct": 75.28
+        },
+        {
+          "player": "Lieto",
+          "totalDistanceM": 5056,
+          "distancePerMin": 99,
+          "distanceOver16KmhM": 587,
+          "distance20to24KmhM": 196.31,
+          "distanceOver24KmhM": 80.69,
+          "metabolicPowerWkg": 8.9,
+          "accelerationsOver3": 15,
+          "decelerationsUnder3": 10,
+          "maxSpeedKmh": 27.59,
+          "recoveryPct": 71.67
+        },
+        {
+          "player": "Baridò",
+          "totalDistanceM": 4806,
+          "distancePerMin": 76,
+          "distanceOver16KmhM": 319,
+          "distance20to24KmhM": 46.09,
+          "distanceOver24KmhM": 0,
+          "metabolicPowerWkg": 6.6,
+          "accelerationsOver3": 11,
+          "decelerationsUnder3": 12,
+          "maxSpeedKmh": 23.52,
+          "recoveryPct": 81.37
+        },
+        {
+          "player": "Branchizio",
+          "totalDistanceM": 3105,
+          "distancePerMin": 95,
+          "distanceOver16KmhM": 359,
+          "distance20to24KmhM": 66.51,
+          "distanceOver24KmhM": 70.91,
+          "metabolicPowerWkg": 8.5,
+          "accelerationsOver3": 11,
+          "decelerationsUnder3": 9,
+          "maxSpeedKmh": 31.7,
+          "recoveryPct": 73.77
+        }
+      ]
+    },
+    {
+      "half": {
+        "en": "GPS — 2nd Half",
+        "it": "GPS — 2° Tempo"
+      },
+      "summary": {
+        "en": "Melnyk led distance (6453 m). Melnyk led sprint (199.37 m >24 km/h). De Stefano top speed (30.86 km/h). De Stefano most accelerations (32).",
+        "it": "Melnyk distanza (6453 m). Melnyk sprint (199.37 m >24 km/h). De Stefano velocità max (30.86 km/h). De Stefano più accelerazioni (32)."
+      },
+      "players": [
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 6453,
+          "distancePerMin": 112,
+          "distanceOver16KmhM": 1310,
+          "distance20to24KmhM": 373.75,
+          "distanceOver24KmhM": 199.37,
+          "metabolicPowerWkg": 10.2,
+          "accelerationsOver3": 9,
+          "decelerationsUnder3": 28,
+          "maxSpeedKmh": 29.06,
+          "recoveryPct": 67.35
+        },
+        {
+          "player": "Anic",
+          "totalDistanceM": 5650,
+          "distancePerMin": 107,
+          "distanceOver16KmhM": 905,
+          "distance20to24KmhM": 208.76,
+          "distanceOver24KmhM": 14.43,
+          "metabolicPowerWkg": 9.6,
+          "accelerationsOver3": 10,
+          "decelerationsUnder3": 24,
+          "maxSpeedKmh": 26.36,
+          "recoveryPct": 68.06
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 5437,
+          "distancePerMin": 81,
+          "distanceOver16KmhM": 633,
+          "distance20to24KmhM": 196.33,
+          "distanceOver24KmhM": 107.24,
+          "metabolicPowerWkg": 7.4,
+          "accelerationsOver3": 32,
+          "decelerationsUnder3": 18,
+          "maxSpeedKmh": 30.86,
+          "recoveryPct": 78.61
+        },
+        {
+          "player": "Pereyra",
+          "totalDistanceM": 5133,
+          "distancePerMin": 98,
+          "distanceOver16KmhM": 700,
+          "distance20to24KmhM": 122.98,
+          "distanceOver24KmhM": 69.61,
+          "metabolicPowerWkg": 9,
+          "accelerationsOver3": 24,
+          "decelerationsUnder3": 26,
+          "maxSpeedKmh": 28.09,
+          "recoveryPct": 75.24
+        },
+        {
+          "player": "Zappalà (Natale)",
+          "totalDistanceM": 4948,
+          "distancePerMin": 90,
+          "distanceOver16KmhM": 664,
+          "distance20to24KmhM": 232.42,
+          "distanceOver24KmhM": 107.12,
+          "metabolicPowerWkg": 8,
+          "accelerationsOver3": 12,
+          "decelerationsUnder3": 22,
+          "maxSpeedKmh": 30.56,
+          "recoveryPct": 77.19
+        },
+        {
+          "player": "Lieto",
+          "totalDistanceM": 3502,
+          "distancePerMin": 91,
+          "distanceOver16KmhM": 397,
+          "distance20to24KmhM": 85.46,
+          "distanceOver24KmhM": 48.48,
+          "metabolicPowerWkg": 8.1,
+          "accelerationsOver3": 7,
+          "decelerationsUnder3": 5,
+          "maxSpeedKmh": 30.78,
+          "recoveryPct": 75.21
+        },
+        {
+          "player": "Liccardo",
+          "totalDistanceM": 2552,
+          "distancePerMin": 114,
+          "distanceOver16KmhM": 562,
+          "distance20to24KmhM": 205.17,
+          "distanceOver24KmhM": 76.63,
+          "metabolicPowerWkg": 10.2,
+          "accelerationsOver3": 6,
+          "decelerationsUnder3": 6,
+          "maxSpeedKmh": 27.74,
+          "recoveryPct": 67.73
+        },
+        {
+          "player": "Favicchio",
+          "totalDistanceM": 2233,
+          "distancePerMin": 90,
+          "distanceOver16KmhM": 338,
+          "distance20to24KmhM": 70.87,
+          "distanceOver24KmhM": 45.99,
+          "metabolicPowerWkg": 8.3,
+          "accelerationsOver3": 8,
+          "decelerationsUnder3": 10,
+          "maxSpeedKmh": 27.55,
+          "recoveryPct": 77.87
+        }
+      ]
+    },
+    {
+      "half": {
+        "en": "GPS — Full Match",
+        "it": "GPS — Partita intera"
+      },
+      "summary": {
+        "en": "Melnyk (12529 m) and Anic (11854 m) led total distance. De Stefano peak speed 34.08 km/h and most accelerations (52). Melnyk led high-speed and sprint volume (2583 m >16, 453.8 m >24). Eccentric load heaviest for Melnyk (58), Anic (56), Pereyra (50) decelerations.",
+        "it": "Melnyk (12529 m) e Anic (11854 m) distanze più alte. De Stefano velocità max 34,08 km/h e più accelerazioni (52). Melnyk guida alta intensità (2583 m >16, 453,8 m >24). Carico eccentrico: Melnyk (58), Anic (56), Pereyra (50) decelerazioni."
+      },
+      "players": [
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 12529,
+          "distancePerMin": 114,
+          "distanceOver16KmhM": 2583,
+          "distance20to24KmhM": 762.5,
+          "distanceOver24KmhM": 453.8,
+          "metabolicPowerWkg": 10.4,
+          "accelerationsOver3": 38,
+          "decelerationsUnder3": 58,
+          "maxSpeedKmh": 31.45,
+          "recoveryPct": 67.1
+        },
+        {
+          "player": "Anic",
+          "totalDistanceM": 11854,
+          "distancePerMin": 104,
+          "distanceOver16KmhM": 2431,
+          "distance20to24KmhM": 589.5,
+          "distanceOver24KmhM": 32.5,
+          "metabolicPowerWkg": 9.4,
+          "accelerationsOver3": 23,
+          "decelerationsUnder3": 56,
+          "maxSpeedKmh": 27.53,
+          "recoveryPct": 67.9
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 10674,
+          "distancePerMin": 99,
+          "distanceOver16KmhM": 1348,
+          "distance20to24KmhM": 388.9,
+          "distanceOver24KmhM": 199.4,
+          "metabolicPowerWkg": 9.1,
+          "accelerationsOver3": 52,
+          "decelerationsUnder3": 41,
+          "maxSpeedKmh": 34.08,
+          "recoveryPct": 71.3
+        },
+        {
+          "player": "Zappalà (Natale)",
+          "totalDistanceM": 10367,
+          "distancePerMin": 97,
+          "distanceOver16KmhM": 1334,
+          "distance20to24KmhM": 446.8,
+          "distanceOver24KmhM": 188.2,
+          "metabolicPowerWkg": 8.7,
+          "accelerationsOver3": 24,
+          "decelerationsUnder3": 41,
+          "maxSpeedKmh": 30.56,
+          "recoveryPct": 72.6
+        },
+        {
+          "player": "Pereyra",
+          "totalDistanceM": 10146,
+          "distancePerMin": 100,
+          "distanceOver16KmhM": 1381,
+          "distance20to24KmhM": 268,
+          "distanceOver24KmhM": 139,
+          "metabolicPowerWkg": 9.1,
+          "accelerationsOver3": 45,
+          "decelerationsUnder3": 50,
+          "maxSpeedKmh": 28.93,
+          "recoveryPct": 74.8
+        },
+        {
+          "player": "Lieto",
+          "totalDistanceM": 8558,
+          "distancePerMin": 96,
+          "distanceOver16KmhM": 983,
+          "distance20to24KmhM": 281.8,
+          "distanceOver24KmhM": 129.2,
+          "metabolicPowerWkg": 8.6,
+          "accelerationsOver3": 22,
+          "decelerationsUnder3": 15,
+          "maxSpeedKmh": 30.78,
+          "recoveryPct": 73.2
+        },
+        {
+          "player": "Liccardo",
+          "totalDistanceM": 8447,
+          "distancePerMin": 97,
+          "distanceOver16KmhM": 1719,
+          "distance20to24KmhM": 497.9,
+          "distanceOver24KmhM": 280.5,
+          "metabolicPowerWkg": 8.7,
+          "accelerationsOver3": 23,
+          "decelerationsUnder3": 19,
+          "maxSpeedKmh": 32.63,
+          "recoveryPct": 73.6
+        },
+        {
+          "player": "Favicchio",
+          "totalDistanceM": 7697,
+          "distancePerMin": 101,
+          "distanceOver16KmhM": 1224,
+          "distance20to24KmhM": 325.5,
+          "distanceOver24KmhM": 205.6,
+          "metabolicPowerWkg": 9.2,
+          "accelerationsOver3": 27,
+          "decelerationsUnder3": 39,
+          "maxSpeedKmh": 31.43,
+          "recoveryPct": 73.8
+        },
+        {
+          "player": "Baridò",
+          "totalDistanceM": 4806,
+          "distancePerMin": 76,
+          "distanceOver16KmhM": 319,
+          "distance20to24KmhM": 46.1,
+          "distanceOver24KmhM": 0,
+          "metabolicPowerWkg": 6.6,
+          "accelerationsOver3": 11,
+          "decelerationsUnder3": 12,
+          "maxSpeedKmh": 23.52,
+          "recoveryPct": 81.4
+        },
+        {
+          "player": "Branchizio",
+          "totalDistanceM": 3105,
+          "distancePerMin": 95,
+          "distanceOver16KmhM": 359,
+          "distance20to24KmhM": 66.5,
+          "distanceOver24KmhM": 70.9,
+          "metabolicPowerWkg": 8.5,
+          "accelerationsOver3": 11,
+          "decelerationsUnder3": 9,
+          "maxSpeedKmh": 31.7,
+          "recoveryPct": 73.8
+        }
+      ]
+    }
+  ],
+  "appearances": {
+    "home": [
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Zappalà",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Lieto",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Anic",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Pereyra",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          58
+        ]
+      },
+      {
+        "name": "Baridò",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Merone",
+        "teamId": "u19",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Lepre",
+        "teamId": "u19",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Picardi",
+        "teamId": "u19",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Chiaiese",
+        "teamId": "u19",
+        "number": 15,
+        "starter": false
+      },
+      {
+        "name": "Santella",
+        "teamId": "u19",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Candela",
+        "teamId": "u19",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "Rovetini",
+        "teamId": "u19",
+        "number": 18,
+        "starter": false
+      },
+      {
+        "name": "Chiummariello",
+        "teamId": "u19",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Esposito",
+        "teamId": "u19",
+        "number": 20,
+        "starter": false
+      },
+      {
+        "name": "Mané",
+        "teamId": "u19",
+        "number": 21,
+        "starter": false,
+        "goals": [
+          77
+        ]
+      },
+      {
+        "name": "Riccio",
+        "teamId": "u19",
+        "number": 22,
+        "starter": false
+      },
+      {
+        "name": "D'Angelo",
+        "teamId": "u19",
+        "number": 23,
+        "starter": false
+      }
+    ],
+    "away": [
+      {
+        "name": "Martena",
+        "teamId": "catanzaro",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Curatelo",
+        "teamId": "catanzaro",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Cesnauskis",
+        "teamId": "catanzaro",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Panuccio",
+        "teamId": "catanzaro",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Distante",
+        "teamId": "catanzaro",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Salvano",
+        "teamId": "catanzaro",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Aloiso",
+        "teamId": "catanzaro",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Molon",
+        "teamId": "catanzaro",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Pellegrini",
+        "teamId": "catanzaro",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          19
+        ]
+      },
+      {
+        "name": "Greco",
+        "teamId": "catanzaro",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          47
+        ]
+      },
+      {
+        "name": "Gjoka",
+        "teamId": "catanzaro",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          24
+        ]
+      },
+      {
+        "name": "Gisotti",
+        "teamId": "catanzaro",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Oberti",
+        "teamId": "catanzaro",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Ribellino",
+        "teamId": "catanzaro",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Saitta",
+        "teamId": "catanzaro",
+        "number": 15,
+        "starter": false
+      },
+      {
+        "name": "Fiorentino",
+        "teamId": "catanzaro",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Bruno",
+        "teamId": "catanzaro",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "Ciani",
+        "teamId": "catanzaro",
+        "number": 18,
+        "starter": false
+      },
+      {
+        "name": "Socco",
+        "teamId": "catanzaro",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Vella",
+        "teamId": "catanzaro",
+        "number": 20,
+        "starter": false
+      },
+      {
+        "name": "Castro",
+        "teamId": "catanzaro",
+        "number": 21,
+        "starter": false
+      },
+      {
+        "name": "Maiolino",
+        "teamId": "catanzaro",
+        "number": 22,
+        "starter": false
+      },
+      {
+        "name": "Drago",
+        "teamId": "catanzaro",
+        "number": 23,
+        "starter": false
+      }
+    ],
+    "notes": {
+      "en": "Starting XI from match sheet (Napoli 3-4-2-1; Catanzaro 5-3-2). Bench listed from convocati; substitution minutes not on sheet.",
+      "it": "Titolari dalla distinta (Napoli 3-4-2-1; Catanzaro 5-3-2). Panchina dai convocati; minuti sostituzioni non presenti sulla distinta."
+    }
+  }
+}

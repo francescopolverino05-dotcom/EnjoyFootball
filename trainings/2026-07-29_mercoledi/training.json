@@ -1,0 +1,118 @@
+{
+  "id": "2026-07-29_mercoledi",
+  "slug": "2026-07-29_mercoledi",
+  "date": "2026-07-29",
+  "title": {
+    "en": "Wednesday — High defence, mid block & final third",
+    "it": "Mercoledì — Difesa alta, mid block e final third"
+  },
+  "focus": {
+    "en": "High defence / Mid block / Final third",
+    "it": "High defence / Mid block / Final third"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Week 1 (Sett. 1 29/07) — Mercoledì. Local Desktop media restored; Vimeo folder mapped for upload.",
+    "it": "Settimana 1 (Sett. 1 29/07) — Mercoledì. Media locali ripristinati; cartella Vimeo collegata per upload."
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1215196383/def5cc2eb9",
+    "notes": {
+      "en": "Largest session video linked when available.",
+      "it": "Collegato il video più lungo quando disponibile."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1215200555",
+        "title": {
+          "en": "Final Third (Dealing With Crosses)",
+          "it": "Final Third (Dealing With Crosses)"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215200555/87c1f12e79",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1215196383",
+        "title": {
+          "en": "High Defence Mid Block",
+          "it": "High Defence Mid Block"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215196383/def5cc2eb9",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "vimeo": {
+    "folderId": "30099282",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30099282",
+    "lastSyncedAt": "2026-09-04T00:02:35.181Z"
+  },
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-07-29",
+      "title": {
+        "en": "Session plan — Wed 29 Jul",
+        "it": "Piano seduta — Mer 29 lug"
+      },
+      "description": {
+        "en": "Attivazione tecnica, movimenti fase di non possesso, Test di Gacon.",
+        "it": "Attivazione tecnica, movimenti fase di non possesso, Test di Gacon."
+      },
+      "videoFile": "Session_Plan_2026-07-29.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-1"
+      ]
+    }
+  ],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-07-29",
+        "title": {
+          "en": "GK design — Isometrics, Runs, Countermovement",
+          "it": "Scheda portieri — ISOMETRIA-CORSE-CONTROMOVIMENTO"
+        },
+        "description": {
+          "en": "All. N°3 — 29 Jul 2026. Isometrics, Runs, Countermovement.",
+          "it": "All. N°3 — 29 lug 2026. ISOMETRIA-CORSE-CONTROMOVIMENTO."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-07-29_ISOMETRIA_CORSE_CONTROMOVIMENTO.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
+    "analysisVideos": []
+  },
+  "sessionType": "activation",
+  "startTime": "09:00",
+  "endTime": "11:00"
+}

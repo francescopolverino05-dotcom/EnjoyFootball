@@ -1,0 +1,117 @@
+{
+  "id": "2026-09-07_lunedi",
+  "slug": "2026-09-07_lunedi",
+  "date": "2026-09-07",
+  "title": {
+    "en": "Monday training",
+    "it": "Lunedì"
+  },
+  "focus": {
+    "en": "Outfield — attacking & dealing with crosses",
+    "it": "Outfield — attacco e gestione traversi"
+  },
+  "sessionType": "strength",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — run npm run sync-vimeo -- --training 2026-09-07_lunedi",
+    "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-09-07_lunedi"
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1225066789/9f19272832",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1225066789",
+        "title": {
+          "en": "Attacking",
+          "it": "Attacking"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1225066789/9f19272832",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1225065510",
+        "title": {
+          "en": "Dealing with Crosses",
+          "it": "Dealing with Crosses"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1225065510/39d7dcf5a3",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-09-07",
+      "title": {
+        "en": "Session plan — Mon 7 Sep",
+        "it": "Piano seduta — Lun 7 set"
+      },
+      "description": {
+        "en": "Monday session plan (7 Sep 2026).",
+        "it": "Piano seduta di lunedì (7 set 2026)."
+      },
+      "videoFile": "Session_Plan_2026-09-07.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    }
+  ],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-07",
+        "title": {
+          "en": "GK design — Activation upper body, Speed, High exit",
+          "it": "Scheda portieri — ATTIVAZIONE ARTI SUPERIORI-RAPIDITA' - USCITA ALTA"
+        },
+        "description": {
+          "en": "All. N°36 — 07 Sep 2026. Activation upper body, Speed, High exit.",
+          "it": "All. N°36 — 07/09/2026. ATTIVAZIONE ARTI SUPERIORI-RAPIDITA' - USCITA ALTA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-07_ATTIVAZIONE_ARTI_SUPERIORI_RAPIDITA_USCITA_ALTA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30474652",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30474652",
+    "lastSyncedAt": "2026-10-07T15:58:40.276Z"
+  }
+}

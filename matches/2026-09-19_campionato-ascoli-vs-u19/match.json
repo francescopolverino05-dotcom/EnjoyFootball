@@ -1,0 +1,760 @@
+{
+  "id": "2026-09-19_campionato-ascoli-vs-u19",
+  "slug": "2026-09-19_campionato-ascoli-vs-u19",
+  "title": {
+    "en": "Ascoli vs Napoli",
+    "it": "Ascoli vs Napoli"
+  },
+  "subtitle": {
+    "en": "Primavera 2 · Matchday 3",
+    "it": "Primavera 2 · Giornata 3"
+  },
+  "date": "2026-09-19",
+  "competitionId": "primavera2",
+  "competition": {
+    "en": "Primavera 2",
+    "it": "Primavera 2"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "ascoli",
+    "name": {
+      "en": "Ascoli",
+      "it": "Ascoli"
+    },
+    "shortName": "Ascoli",
+    "colorClass": "opponent",
+    "logo": "logos/ascoli.png"
+  },
+  "awayTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "score": {
+    "home": 2,
+    "away": 2
+  },
+  "goals": [
+    {
+      "minute": 18,
+      "scorer": "Barido' (pen)",
+      "assist": null,
+      "teamId": "u19"
+    },
+    {
+      "minute": 30,
+      "scorer": "Raimondo",
+      "assist": null,
+      "teamId": "ascoli"
+    },
+    {
+      "minute": 50,
+      "scorer": "Berete",
+      "assist": null,
+      "teamId": "ascoli"
+    },
+    {
+      "minute": 53,
+      "scorer": "Pereyra (pen)",
+      "assist": null,
+      "teamId": "u19"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "ascoli",
+      "positionPercent": 2
+    },
+    {
+      "minute": 14,
+      "label": {
+        "en": "Branchizio on / Zappala' off",
+        "it": "Branchizio on / Zappala' off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 16
+    },
+    {
+      "minute": 18,
+      "label": {
+        "en": "Barido' (pen) 0-1",
+        "it": "Barido' (pen) 0-1"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 20
+    },
+    {
+      "minute": 30,
+      "label": {
+        "en": "Raimondo 1-1",
+        "it": "Raimondo 1-1"
+      },
+      "type": "goal",
+      "teamId": "ascoli",
+      "positionPercent": 33
+    },
+    {
+      "minute": 50,
+      "label": {
+        "en": "Berete 2-1",
+        "it": "Berete 2-1"
+      },
+      "type": "goal",
+      "teamId": "ascoli",
+      "positionPercent": 56
+    },
+    {
+      "minute": 53,
+      "label": {
+        "en": "Pereyra (pen) 2-2",
+        "it": "Pereyra (pen) 2-2"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 59
+    },
+    {
+      "minute": 54,
+      "label": {
+        "en": "Esposito & Riccio on",
+        "it": "Esposito & Riccio on"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 60
+    },
+    {
+      "minute": 61,
+      "label": {
+        "en": "Sulli on / Aloisi off",
+        "it": "Sulli on / Aloisi off"
+      },
+      "type": "substitution",
+      "teamId": "ascoli",
+      "positionPercent": 68
+    },
+    {
+      "minute": 69,
+      "label": {
+        "en": "Di Mattia on / Dente G. off",
+        "it": "Di Mattia on / Dente G. off"
+      },
+      "type": "substitution",
+      "teamId": "ascoli",
+      "positionPercent": 77
+    },
+    {
+      "minute": 90,
+      "label": {
+        "en": "Full time 2-2",
+        "it": "Fine partita 2-2"
+      },
+      "type": "other",
+      "teamId": "ascoli",
+      "positionPercent": 98
+    }
+  ],
+  "formations": [],
+  "dynamics": [
+    {
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
+      "homeValue": 48,
+      "awayValue": 52,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Pass Accuracy %",
+        "it": "Precisione Passaggi %"
+      },
+      "homeValue": 77,
+      "awayValue": 77.6,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Ground Duels Won %",
+        "it": "Duelli a Terra Vinti %"
+      },
+      "homeValue": 56.9,
+      "awayValue": 43.1,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Shot Accuracy %",
+        "it": "Precisione Tiri %"
+      },
+      "homeValue": 20,
+      "awayValue": 20,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Progressive Pass Accuracy %",
+        "it": "Precisione Passaggi Progressivi %"
+      },
+      "homeValue": 28,
+      "awayValue": 28.87,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Final-Third Pass Accuracy %",
+        "it": "Precisione Passaggi Ultimo Terzo %"
+      },
+      "homeValue": 46.75,
+      "awayValue": 39.34,
+      "unit": "%"
+    }
+  ],
+  "teamStats": [
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Goals / xG",
+        "it": "Gol / xG"
+      },
+      "home": "2 (1.18 xG)",
+      "away": "2 (1.82 xG)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso %"
+      },
+      "home": "48.0%",
+      "away": "52.0%"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots (On Target / Accuracy %)",
+        "it": "Tiri (In Porta / Precisione %)"
+      },
+      "home": "15 (3 / 20.0%)",
+      "away": "10 (2 / 20.0%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Penalties (Scored / Taken)",
+        "it": "Rigori (Segnati / Calciati)"
+      },
+      "home": "0/0",
+      "away": "2/2"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Corners",
+        "it": "Calci d'angolo"
+      },
+      "home": "7",
+      "away": "10"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Fouls / Yellow Cards / Red Cards",
+        "it": "Falli / Cartellini Gialli / Rossi"
+      },
+      "home": "27 / 0 / 0",
+      "away": "25 / 0 / 0"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "PPDA",
+        "it": "PPDA"
+      },
+      "home": "7.18",
+      "away": "12.84"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Interceptions / Clearances",
+        "it": "Intercetti / Spazzate"
+      },
+      "home": "89 / 92",
+      "away": "61 / 81"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Blocks / GK Saves",
+        "it": "Blocchi / Parate"
+      },
+      "home": "13 / 0",
+      "away": "8 / 1"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Ground Duels (Won / Win %)",
+        "it": "Duelli a Terra (Vinti / %)"
+      },
+      "home": "33 / 58 (56.9%)",
+      "away": "25 / 58 (43.1%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Aerial Duels (Won / Total)",
+        "it": "Duelli Aerei (Vinti / Totali)"
+      },
+      "home": "37 / 67",
+      "away": "30 / 67"
+    },
+    {
+      "category": {
+        "en": "Transitions",
+        "it": "Transizioni"
+      },
+      "name": {
+        "en": "Recoveries / High Recoveries",
+        "it": "Recuperi / Recuperi alti"
+      },
+      "home": "63 / 16",
+      "away": "87 / 15"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Key Passes",
+        "it": "Passaggi chiave"
+      },
+      "home": "6",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "Attack",
+        "it": "Attacco"
+      },
+      "name": {
+        "en": "Shots Inside / Outside Box",
+        "it": "Tiri dentro / fuori area"
+      },
+      "home": "6 / 9",
+      "away": "3 / 7"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes (Completed / Accuracy %)",
+        "it": "Passaggi (Completati / Precisione %)"
+      },
+      "home": "740 (570 / 77.0%)",
+      "away": "795 (616 / 77.6%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Progressive Passes (Accurate / %)",
+        "it": "Passaggi Progressivi (Precisi / %)"
+      },
+      "home": "35 / 125 (28.0%)",
+      "away": "28 / 97 (28.87%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes into Final 3rd (Accurate / %)",
+        "it": "Passaggi Ultimo Terzo (Precisi / %)"
+      },
+      "home": "36 / 77 (46.75%)",
+      "away": "24 / 61 (39.34%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Crosses (Accurate / %)",
+        "it": "Cross (Precisi / %)"
+      },
+      "home": "31 (1 completed) (3.23%)",
+      "away": "25 (1 completed) (4.0%)"
+    }
+  ],
+  "goalkeepers": [
+    {
+      "name": "Dente R.",
+      "minutes": 96,
+      "team": {
+        "en": "Ascoli",
+        "it": "Ascoli"
+      },
+      "jerseyColor": {
+        "en": "—",
+        "it": "—"
+      },
+      "shotsFaced": 2,
+      "shotsOnTargetFaced": 2,
+      "saves": 0,
+      "goalsConceded": 2,
+      "savePercentage": "0.0%",
+      "passes": "35 (77%)",
+      "colorClass": "orange"
+    },
+    {
+      "name": "Spinelli",
+      "minutes": 96,
+      "team": {
+        "en": "Napoli",
+        "it": "Napoli"
+      },
+      "jerseyColor": {
+        "en": "—",
+        "it": "—"
+      },
+      "shotsFaced": 3,
+      "shotsOnTargetFaced": 3,
+      "saves": 1,
+      "goalsConceded": 2,
+      "savePercentage": "33.3%",
+      "passes": "39 (92%)",
+      "colorClass": "blue"
+    }
+  ],
+  "clips": [],
+  "analysisVideos": [],
+  "vimeo": {
+    "folderId": "30607100",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30607100",
+    "lastSyncedAt": "2026-10-10T15:04:30.681Z"
+  },
+  "video": {
+    "fullMatch": "https://vimeo.com/1228616794/c09474bdce",
+    "notes": {
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
+    }
+  },
+  "gpsStats": [
+    {
+      "half": {
+        "en": "GPS — 1st Half",
+        "it": "GPS — 1° Tempo"
+      },
+      "summary": {
+        "en": "Melnyk led distance (5620 m). Favicchio led sprint (182.30 m >24 km/h). Liccardo top speed (31.39 km/h). Melnyk most accelerations (27).",
+        "it": "Melnyk distanza (5620 m). Favicchio sprint (182.30 m >24 km/h). Liccardo velocità max (31.39 km/h). Melnyk più accelerazioni (27)."
+      },
+      "players": [
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 5620,
+          "distancePerMin": 96,
+          "distanceOver16KmhM": 645,
+          "distance20to24KmhM": 142.5,
+          "distanceOver24KmhM": 78.1,
+          "metabolicPowerWkg": 8.8,
+          "accelerationsOver3": 27,
+          "decelerationsUnder3": 34,
+          "maxSpeedKmh": 29.98,
+          "recoveryPct": 73.2
+        },
+        {
+          "player": "Pereyra",
+          "totalDistanceM": 5380,
+          "distancePerMin": 91,
+          "distanceOver16KmhM": 760,
+          "distance20to24KmhM": 201.2,
+          "distanceOver24KmhM": 98.4,
+          "metabolicPowerWkg": 8.4,
+          "accelerationsOver3": 26,
+          "decelerationsUnder3": 29,
+          "maxSpeedKmh": 29.71,
+          "recoveryPct": 75.8
+        },
+        {
+          "player": "Favicchio",
+          "totalDistanceM": 5010,
+          "distancePerMin": 86,
+          "distanceOver16KmhM": 912,
+          "distance20to24KmhM": 310.5,
+          "distanceOver24KmhM": 182.3,
+          "metabolicPowerWkg": 8.1,
+          "accelerationsOver3": 24,
+          "decelerationsUnder3": 30,
+          "maxSpeedKmh": 30.97,
+          "recoveryPct": 79.1
+        },
+        {
+          "player": "Picardi / Natale",
+          "totalDistanceM": 4980,
+          "distancePerMin": 93,
+          "distanceOver16KmhM": 340,
+          "distance20to24KmhM": 72.1,
+          "distanceOver24KmhM": 9.8,
+          "metabolicPowerWkg": 8.5,
+          "accelerationsOver3": 20,
+          "decelerationsUnder3": 19,
+          "maxSpeedKmh": 25.61,
+          "recoveryPct": 72.9
+        },
+        {
+          "player": "Baridò",
+          "totalDistanceM": 4920,
+          "distancePerMin": 89,
+          "distanceOver16KmhM": 530,
+          "distance20to24KmhM": 128.4,
+          "distanceOver24KmhM": 38.2,
+          "metabolicPowerWkg": 8,
+          "accelerationsOver3": 21,
+          "decelerationsUnder3": 27,
+          "maxSpeedKmh": 27.14,
+          "recoveryPct": 76.4
+        },
+        {
+          "player": "Liccardo",
+          "totalDistanceM": 4890,
+          "distancePerMin": 84,
+          "distanceOver16KmhM": 460,
+          "distance20to24KmhM": 112.3,
+          "distanceOver24KmhM": 65.1,
+          "metabolicPowerWkg": 7.4,
+          "accelerationsOver3": 12,
+          "decelerationsUnder3": 14,
+          "maxSpeedKmh": 31.39,
+          "recoveryPct": 78.9
+        },
+        {
+          "player": "Chiummariello",
+          "totalDistanceM": 4550,
+          "distancePerMin": 98,
+          "distanceOver16KmhM": 610,
+          "distance20to24KmhM": 110.2,
+          "distanceOver24KmhM": 22.5,
+          "metabolicPowerWkg": 8.9,
+          "accelerationsOver3": 18,
+          "decelerationsUnder3": 22,
+          "maxSpeedKmh": 26.89,
+          "recoveryPct": 69.5
+        },
+        {
+          "player": "Mané",
+          "totalDistanceM": 4339,
+          "distancePerMin": 78,
+          "distanceOver16KmhM": 321,
+          "distance20to24KmhM": 67.1,
+          "distanceOver24KmhM": 5.4,
+          "metabolicPowerWkg": 7,
+          "accelerationsOver3": 12,
+          "decelerationsUnder3": 27,
+          "maxSpeedKmh": 24.67,
+          "recoveryPct": 79.85
+        },
+        {
+          "player": "Branchizio",
+          "totalDistanceM": 3210,
+          "distancePerMin": 81,
+          "distanceOver16KmhM": 215,
+          "distance20to24KmhM": 45.2,
+          "distanceOver24KmhM": 3.2,
+          "metabolicPowerWkg": 7.2,
+          "accelerationsOver3": 8,
+          "decelerationsUnder3": 18,
+          "maxSpeedKmh": 23.8,
+          "recoveryPct": 80.2
+        }
+      ]
+    },
+    {
+      "half": {
+        "en": "GPS — Full Match",
+        "it": "GPS — Partita intera"
+      },
+      "summary": {
+        "en": "Melnyk led distance (10833 m). Favicchio led sprint (316.24 m >24 km/h). Liccardo top speed (31.39 km/h). Melnyk/Pereyra most accelerations (49).",
+        "it": "Melnyk distanza (10833 m). Favicchio sprint (316.24 m >24 km/h). Liccardo velocità max (31.39 km/h). Melnyk/Pereyra più accelerazioni (49)."
+      },
+      "players": [
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 10833,
+          "distancePerMin": 93,
+          "distanceOver16KmhM": 1183,
+          "distance20to24KmhM": 257.98,
+          "distanceOver24KmhM": 136.21,
+          "metabolicPowerWkg": 8.5,
+          "accelerationsOver3": 49,
+          "decelerationsUnder3": 62,
+          "maxSpeedKmh": 29.98,
+          "recoveryPct": 75.07
+        },
+        {
+          "player": "Pereyra",
+          "totalDistanceM": 10314,
+          "distancePerMin": 88,
+          "distanceOver16KmhM": 1405,
+          "distance20to24KmhM": 371.69,
+          "distanceOver24KmhM": 181.45,
+          "metabolicPowerWkg": 8.1,
+          "accelerationsOver3": 49,
+          "decelerationsUnder3": 52,
+          "maxSpeedKmh": 29.71,
+          "recoveryPct": 77.74
+        },
+        {
+          "player": "Favicchio",
+          "totalDistanceM": 9578,
+          "distancePerMin": 83,
+          "distanceOver16KmhM": 1615,
+          "distance20to24KmhM": 548.8,
+          "distanceOver24KmhM": 316.24,
+          "metabolicPowerWkg": 7.8,
+          "accelerationsOver3": 44,
+          "decelerationsUnder3": 56,
+          "maxSpeedKmh": 30.97,
+          "recoveryPct": 81.05
+        },
+        {
+          "player": "Picardi / Natale",
+          "totalDistanceM": 9526,
+          "distancePerMin": 91,
+          "distanceOver16KmhM": 642,
+          "distance20to24KmhM": 134.81,
+          "distanceOver24KmhM": 17.09,
+          "metabolicPowerWkg": 8.2,
+          "accelerationsOver3": 36,
+          "decelerationsUnder3": 36,
+          "maxSpeedKmh": 25.61,
+          "recoveryPct": 74.88
+        },
+        {
+          "player": "Baridò",
+          "totalDistanceM": 9398,
+          "distancePerMin": 86,
+          "distanceOver16KmhM": 997,
+          "distance20to24KmhM": 231.55,
+          "distanceOver24KmhM": 64.81,
+          "metabolicPowerWkg": 7.7,
+          "accelerationsOver3": 38,
+          "decelerationsUnder3": 50,
+          "maxSpeedKmh": 27.14,
+          "recoveryPct": 78.5
+        },
+        {
+          "player": "Liccardo",
+          "totalDistanceM": 9363,
+          "distancePerMin": 81,
+          "distanceOver16KmhM": 855,
+          "distance20to24KmhM": 204.12,
+          "distanceOver24KmhM": 116.52,
+          "metabolicPowerWkg": 7.1,
+          "accelerationsOver3": 21,
+          "decelerationsUnder3": 26,
+          "maxSpeedKmh": 31.39,
+          "recoveryPct": 80.9
+        },
+        {
+          "player": "Chiummariello",
+          "totalDistanceM": 7021,
+          "distancePerMin": 94,
+          "distanceOver16KmhM": 939,
+          "distance20to24KmhM": 169.89,
+          "distanceOver24KmhM": 34.85,
+          "metabolicPowerWkg": 8.4,
+          "accelerationsOver3": 26,
+          "decelerationsUnder3": 33,
+          "maxSpeedKmh": 26.89,
+          "recoveryPct": 71.36
+        },
+        {
+          "player": "Mané",
+          "totalDistanceM": 6265,
+          "distancePerMin": 85,
+          "distanceOver16KmhM": 727,
+          "distance20to24KmhM": 192.68,
+          "distanceOver24KmhM": 83.38,
+          "metabolicPowerWkg": 7.7,
+          "accelerationsOver3": 13,
+          "decelerationsUnder3": 40,
+          "maxSpeedKmh": 30.77,
+          "recoveryPct": 80.72
+        },
+        {
+          "player": "Branchizio",
+          "totalDistanceM": 4339,
+          "distancePerMin": 78,
+          "distanceOver16KmhM": 321,
+          "distance20to24KmhM": 67.1,
+          "distanceOver24KmhM": 5.4,
+          "metabolicPowerWkg": 7,
+          "accelerationsOver3": 12,
+          "decelerationsUnder3": 27,
+          "maxSpeedKmh": 24.67,
+          "recoveryPct": 79.85
+        }
+      ]
+    }
+  ]
+}

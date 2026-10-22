@@ -1,0 +1,308 @@
+{
+  "id": "2026-08-06_giovedi",
+  "slug": "2026-08-06_giovedi",
+  "date": "2026-08-06",
+  "title": {
+    "en": "Thursday training — Build-up, defence focus & match-ups",
+    "it": "Giovedì — Costruzione, focus difensivo e match-up"
+  },
+  "focus": {
+    "en": "Build-up from the back / 8v7 defence / Final third / Partitella",
+    "it": "Costruzione dal basso / 8v7 difesa / Ultimo terzo / Partitella"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Week 2 (Sett. 2 03/08) — Giovedì. Videos hosted on Vimeo (folder Giovedi).",
+    "it": "Settimana 2 (Sett. 2 03/08) — Giovedì. Video su Vimeo (cartella Giovedi)."
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1216062910/71c255cc83",
+    "notes": {
+      "en": "Full session (longest clip): Ful Match Up - Build Up from the Back (Vimeo).",
+      "it": "Sessione (clip più lunga): Ful Match Up - Build Up from the Back (Vimeo)."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1216063541",
+        "title": {
+          "en": "Partitella",
+          "it": "Partitella"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1216063541/83a480bea6",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1216062909",
+        "title": {
+          "en": "8v7 Defence Focus",
+          "it": "8v7 Defence Focus"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1216062909/6903a910ed",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1216062910",
+        "title": {
+          "en": "Ful Match Up - Build Up from the Back",
+          "it": "Ful Match Up - Build Up from the Back"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1216062910/71c255cc83",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1216062911",
+        "title": {
+          "en": "Full Match Up - Final Third Attack",
+          "it": "Full Match Up - Final Third Attack"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1216062911/46b13c1747",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [
+    {
+      "id": "vimeo-1216200471",
+      "title": {
+        "en": "clip 1",
+        "it": "clip 1"
+      },
+      "comments": {
+        "en": "clip 1",
+        "it": "clip 1"
+      },
+      "minute": 1,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1216200471/d42662e567",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    },
+    {
+      "id": "vimeo-1216200473",
+      "title": {
+        "en": "clip 2",
+        "it": "clip 2"
+      },
+      "comments": {
+        "en": "clip 2",
+        "it": "clip 2"
+      },
+      "minute": 2,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1216200473/6effe33868",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    },
+    {
+      "id": "vimeo-1216201238",
+      "title": {
+        "en": "clip 3",
+        "it": "clip 3"
+      },
+      "comments": {
+        "en": "clip 3",
+        "it": "clip 3"
+      },
+      "minute": 3,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1216201238/8e00a0bda8",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    },
+    {
+      "id": "vimeo-1216201047",
+      "title": {
+        "en": "clip 4",
+        "it": "clip 4"
+      },
+      "comments": {
+        "en": "clip 4",
+        "it": "clip 4"
+      },
+      "minute": 4,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1216201047/450e718afe",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    },
+    {
+      "id": "vimeo-1216200991",
+      "title": {
+        "en": "Clip 5",
+        "it": "Clip 5"
+      },
+      "comments": {
+        "en": "Clip 5",
+        "it": "Clip 5"
+      },
+      "minute": 5,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1216200991/509cf96665",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    },
+    {
+      "id": "vimeo-1216200472",
+      "title": {
+        "en": "clip 6",
+        "it": "clip 6"
+      },
+      "comments": {
+        "en": "clip 6",
+        "it": "clip 6"
+      },
+      "minute": 6,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1216200472/e7ce54e720",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip"
+      ]
+    }
+  ],
+  "analysisVideos": [
+    {
+      "id": "vimeo-1216201323",
+      "title": {
+        "en": "Final Third Clips",
+        "it": "Final Third Clips"
+      },
+      "description": {
+        "en": "Synced from Vimeo folder.",
+        "it": "Sincronizzato dalla cartella Vimeo."
+      },
+      "videoFile": "https://vimeo.com/1216201323/f009b99d15",
+      "tags": [
+        "vimeo",
+        "analysis"
+      ]
+    }
+  ],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-06",
+      "title": {
+        "en": "Session plan — Thu 6 Aug",
+        "it": "Piano seduta — Gio 6 ago"
+      },
+      "description": {
+        "en": "CamScanner session plan for Thursday 6 August.",
+        "it": "Piano seduta CamScanner — Giovedì 6 agosto."
+      },
+      "videoFile": "Session_Plan_2026-08-06.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-2"
+      ]
+    }
+  ],
+  "vimeo": {
+    "folderId": "30099306",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30099306",
+    "lastSyncedAt": "2026-09-04T00:03:02.063Z"
+  },
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-06",
+        "title": {
+          "en": "GK design — Upper body, High exits +Goal recovery",
+          "it": "Scheda portieri — PARTE ALTA- USCITA ALTA +REC PORTA"
+        },
+        "description": {
+          "en": "All. N°10 — 6 Aug 2026. Upper body, High exits +Goal recovery.",
+          "it": "All. N°10 — 6 ago 2026. PARTE ALTA- USCITA ALTA +REC PORTA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-06_PARTE_ALTA_USCITA_ALTA_REC_PORTA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
+    "analysisVideos": []
+  },
+  "sessionType": "activation",
+  "startTime": "09:00",
+  "endTime": "11:00"
+}

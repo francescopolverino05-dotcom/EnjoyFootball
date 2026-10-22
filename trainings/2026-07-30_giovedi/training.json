@@ -1,0 +1,208 @@
+{
+  "id": "2026-07-30_giovedi",
+  "slug": "2026-07-30_giovedi",
+  "date": "2026-07-30",
+  "title": {
+    "en": "Thursday — Build-up from the back",
+    "it": "Giovedì — Costruzione dal basso"
+  },
+  "focus": {
+    "en": "Costruzione dal basso",
+    "it": "Costruzione dal basso"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Week 1 (Sett. 1 30/07) — Giovedì. Local Desktop media restored; Vimeo folder mapped for upload.",
+    "it": "Settimana 1 (Sett. 1 30/07) — Giovedì. Media locali ripristinati; cartella Vimeo collegata per upload."
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1215193040/9f3195f00b",
+    "notes": {
+      "en": "Largest session video linked when available.",
+      "it": "Collegato il video più lungo quando disponibile."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1215194111",
+        "title": {
+          "en": "Construizone Progressione (Blú)",
+          "it": "Construizone Progressione (Blú)"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215194111/b12db4b3f1",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1215193036",
+        "title": {
+          "en": "Progressione Medio (Orange)",
+          "it": "Progressione Medio (Orange)"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215193036/0cb85146c7",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1215193037",
+        "title": {
+          "en": "Practice Match (1T)",
+          "it": "Practice Match (1T)"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215193037/98b67d7b3c",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1215193038",
+        "title": {
+          "en": "Practice Match (2T)",
+          "it": "Practice Match (2T)"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215193038/cc39b1c32b",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1215193040",
+        "title": {
+          "en": "Costruzione dal Basso IOrange)",
+          "it": "Costruzione dal Basso IOrange)"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1215193040/9f3195f00b",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "2026-07-30_giovedi-4",
+        "title": {
+          "en": "Construizone - Progressione (Blú)",
+          "it": "Construizone - Progressione (Blú)"
+        },
+        "videoFile": "Build_up/Construizone - Progressione (Blú).MP4",
+        "description": {
+          "en": "Training analysis — Costruzione dal basso",
+          "it": "Analisi allenamento — Costruzione dal basso"
+        },
+        "tags": [
+          "build-up",
+          "week-1"
+        ]
+      }
+    ]
+  },
+  "clips": [
+    {
+      "id": "2026-07-30_giovedi-5",
+      "title": {
+        "en": "Progressione Medio (Orange)",
+        "it": "Progressione Medio (Orange)"
+      },
+      "videoFile": "Build_up/Progressione Medio (Orange).MP4",
+      "comments": {
+        "en": "Progressione Medio (Orange)",
+        "it": "Progressione Medio (Orange)"
+      },
+      "minute": 0,
+      "second": 0,
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "week-1"
+      ],
+      "localFile": "Build_up/Progressione Medio (Orange).MP4"
+    }
+  ],
+  "analysisVideos": [],
+  "vimeo": {
+    "folderId": "30099283",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30099283",
+    "lastSyncedAt": "2026-09-04T00:02:39.497Z"
+  },
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-07-30",
+      "title": {
+        "en": "Session plan — Thu 30 Jul",
+        "it": "Piano seduta — Gio 30 lug"
+      },
+      "description": {
+        "en": "Forza, torello 8v2, costruzione bassa/media, partita 10v10.",
+        "it": "Forza, torello 8v2, costruzione bassa/media, partita 10v10."
+      },
+      "videoFile": "Session_Plan_2026-07-30.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-1"
+      ]
+    }
+  ],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-07-30",
+        "title": {
+          "en": "GK design — Core, Plyometrics USCITE ALTA",
+          "it": "Scheda portieri — ADDOME-PLIOMETRIA USCITE ALTA"
+        },
+        "description": {
+          "en": "All. N°4 — 30 Jul 2026. Core, Plyometrics USCITE ALTA.",
+          "it": "All. N°4 — 30 lug 2026. ADDOME-PLIOMETRIA USCITE ALTA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-07-30_ADDOME_PLIOMETRIA_USCITE_ALTA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
+    "analysisVideos": []
+  },
+  "sessionType": "activation",
+  "startTime": "09:00",
+  "endTime": "11:00"
+}

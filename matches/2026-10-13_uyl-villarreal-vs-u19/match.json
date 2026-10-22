@@ -1,0 +1,842 @@
+{
+  "id": "2026-10-13_uyl-villarreal-vs-u19",
+  "slug": "2026-10-13_uyl-villarreal-vs-u19",
+  "title": {
+    "en": "Villarreal vs Napoli",
+    "it": "Villarreal vs Napoli"
+  },
+  "subtitle": {
+    "en": "UEFA Youth League · Matchday 2 · KO 16:00 · UEFA TV",
+    "it": "UEFA Youth League · Giornata 2 · KO 16:00 · UEFA TV"
+  },
+  "date": "2026-10-13",
+  "competitionId": "uefaYouthLeague",
+  "competition": {
+    "en": "UEFA Youth League",
+    "it": "UEFA Youth League"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "villarreal",
+    "name": {
+      "en": "Villarreal",
+      "it": "Villarreal"
+    },
+    "shortName": "Villarreal",
+    "colorClass": "opponent",
+    "logo": "logos/villarreal.png"
+  },
+  "awayTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "score": {
+    "home": 5,
+    "away": 0
+  },
+  "goals": [
+    {
+      "minute": 5,
+      "scorer": "Roca",
+      "assist": null,
+      "teamId": "villarreal"
+    },
+    {
+      "minute": 15,
+      "scorer": "Raúl García",
+      "assist": null,
+      "teamId": "villarreal"
+    },
+    {
+      "minute": 60,
+      "scorer": "Raúl García",
+      "assist": null,
+      "teamId": "villarreal"
+    },
+    {
+      "minute": 70,
+      "scorer": "Raúl García",
+      "assist": null,
+      "teamId": "villarreal"
+    },
+    {
+      "minute": 87,
+      "scorer": "Raúl García",
+      "assist": null,
+      "teamId": "villarreal"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "villarreal",
+      "positionPercent": 2
+    },
+    {
+      "minute": 5,
+      "label": {
+        "en": "Roca 1-0",
+        "it": "Roca 1-0"
+      },
+      "type": "goal",
+      "teamId": "villarreal",
+      "positionPercent": 6
+    },
+    {
+      "minute": 11,
+      "label": {
+        "en": "Branchizio 🟨",
+        "it": "Branchizio 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 12
+    },
+    {
+      "minute": 15,
+      "label": {
+        "en": "Raúl García 2-0",
+        "it": "Raúl García 2-0"
+      },
+      "type": "goal",
+      "teamId": "villarreal",
+      "positionPercent": 17
+    },
+    {
+      "minute": 36,
+      "label": {
+        "en": "N'Diaye on / Koné off (injury)",
+        "it": "Entra N'Diaye (Koné, infortunio)"
+      },
+      "type": "substitution",
+      "teamId": "villarreal",
+      "positionPercent": 40
+    },
+    {
+      "minute": 45,
+      "label": {
+        "en": "Half time 2-0",
+        "it": "Intervallo 2-0"
+      },
+      "type": "other",
+      "teamId": "villarreal",
+      "positionPercent": 48
+    },
+    {
+      "minute": 46,
+      "label": {
+        "en": "Zappalà 🟥",
+        "it": "Zappalà 🟥"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 50
+    },
+    {
+      "minute": 46,
+      "label": {
+        "en": "Marotta on / Liccardo off",
+        "it": "Entra Marotta (Liccardo)"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 51
+    },
+    {
+      "minute": 46,
+      "label": {
+        "en": "Kisak on / Barrera off",
+        "it": "Entra Kisak (Barrera)"
+      },
+      "type": "substitution",
+      "teamId": "villarreal",
+      "positionPercent": 52
+    },
+    {
+      "minute": 59,
+      "label": {
+        "en": "De Michele on / De Stefano off",
+        "it": "Entra De Michele (De Stefano)"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 64
+    },
+    {
+      "minute": 60,
+      "label": {
+        "en": "Raúl García 3-0",
+        "it": "Raúl García 3-0"
+      },
+      "type": "goal",
+      "teamId": "villarreal",
+      "positionPercent": 65
+    },
+    {
+      "minute": 68,
+      "label": {
+        "en": "Traoré on / Alcaide off",
+        "it": "Entra Traoré (Alcaide)"
+      },
+      "type": "substitution",
+      "teamId": "villarreal",
+      "positionPercent": 73
+    },
+    {
+      "minute": 68,
+      "label": {
+        "en": "Iker Pérez on / González García off",
+        "it": "Entra Iker Pérez (González García)"
+      },
+      "type": "substitution",
+      "teamId": "villarreal",
+      "positionPercent": 74
+    },
+    {
+      "minute": 70,
+      "label": {
+        "en": "Raúl García 4-0",
+        "it": "Raúl García 4-0"
+      },
+      "type": "goal",
+      "teamId": "villarreal",
+      "positionPercent": 76
+    },
+    {
+      "minute": 71,
+      "label": {
+        "en": "Candela on / Santella off",
+        "it": "Entra Candela (Santella)"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 77
+    },
+    {
+      "minute": 71,
+      "label": {
+        "en": "Pengue on / Baridò off",
+        "it": "Entra Pengue (Baridò)"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 78
+    },
+    {
+      "minute": 75,
+      "label": {
+        "en": "Candela 🟨",
+        "it": "Candela 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 82
+    },
+    {
+      "minute": 79,
+      "label": {
+        "en": "Riccio on / D'Angelo off",
+        "it": "Entra Riccio (D'Angelo)"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 86
+    },
+    {
+      "minute": 82,
+      "label": {
+        "en": "Guillamón on / Vidal off",
+        "it": "Entra Guillamón (Vidal)"
+      },
+      "type": "substitution",
+      "teamId": "villarreal",
+      "positionPercent": 89
+    },
+    {
+      "minute": 87,
+      "label": {
+        "en": "Raúl García 5-0",
+        "it": "Raúl García 5-0"
+      },
+      "type": "goal",
+      "teamId": "villarreal",
+      "positionPercent": 94
+    },
+    {
+      "minute": 90,
+      "label": {
+        "en": "Full time 5-0",
+        "it": "Fine partita 5-0"
+      },
+      "type": "other",
+      "teamId": "villarreal",
+      "positionPercent": 98
+    }
+  ],
+  "formations": [
+    {
+      "teamId": "villarreal",
+      "label": {
+        "en": "Villarreal",
+        "it": "Villarreal"
+      },
+      "system": "4-3-3",
+      "players": [
+        {
+          "number": 1,
+          "name": "Polo",
+          "teamId": "villarreal",
+          "isGk": true,
+          "bottom": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 22,
+          "name": "Vidal",
+          "teamId": "villarreal",
+          "bottom": "22%",
+          "left": "82%"
+        },
+        {
+          "number": 4,
+          "name": "Vergun",
+          "teamId": "villarreal",
+          "bottom": "20%",
+          "left": "62%"
+        },
+        {
+          "number": 5,
+          "name": "Anadón",
+          "teamId": "villarreal",
+          "bottom": "20%",
+          "left": "38%"
+        },
+        {
+          "number": 10,
+          "name": "Roca",
+          "teamId": "villarreal",
+          "bottom": "22%",
+          "left": "18%"
+        },
+        {
+          "number": 17,
+          "name": "Saul",
+          "teamId": "villarreal",
+          "bottom": "42%",
+          "left": "72%"
+        },
+        {
+          "number": 34,
+          "name": "Koné",
+          "teamId": "villarreal",
+          "bottom": "38%",
+          "left": "50%"
+        },
+        {
+          "number": 6,
+          "name": "Alcaide",
+          "teamId": "villarreal",
+          "bottom": "42%",
+          "left": "28%"
+        },
+        {
+          "number": 14,
+          "name": "Barrera",
+          "teamId": "villarreal",
+          "bottom": "68%",
+          "left": "82%"
+        },
+        {
+          "number": 9,
+          "name": "Raúl García",
+          "teamId": "villarreal",
+          "bottom": "78%",
+          "left": "50%"
+        },
+        {
+          "number": 15,
+          "name": "González García",
+          "teamId": "villarreal",
+          "bottom": "68%",
+          "left": "18%"
+        }
+      ]
+    },
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "system": "3-4-2-1",
+      "players": [
+        {
+          "number": 1,
+          "name": "Pugliese",
+          "teamId": "u19",
+          "isGk": true,
+          "top": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 5,
+          "name": "Zappalà",
+          "teamId": "u19",
+          "top": "20%",
+          "left": "28%"
+        },
+        {
+          "number": 6,
+          "name": "Natale",
+          "teamId": "u19",
+          "top": "18%",
+          "left": "50%"
+        },
+        {
+          "number": 3,
+          "name": "Branchizio",
+          "teamId": "u19",
+          "top": "20%",
+          "left": "72%"
+        },
+        {
+          "number": 2,
+          "name": "Liccardo",
+          "teamId": "u19",
+          "top": "38%",
+          "left": "12%"
+        },
+        {
+          "number": 8,
+          "name": "D'Angelo",
+          "teamId": "u19",
+          "top": "42%",
+          "left": "38%"
+        },
+        {
+          "number": 4,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "top": "42%",
+          "left": "62%"
+        },
+        {
+          "number": 7,
+          "name": "Santella",
+          "teamId": "u19",
+          "top": "38%",
+          "left": "88%"
+        },
+        {
+          "number": 10,
+          "name": "Baridò",
+          "teamId": "u19",
+          "top": "62%",
+          "left": "28%"
+        },
+        {
+          "number": 11,
+          "name": "Favicchio",
+          "teamId": "u19",
+          "top": "62%",
+          "left": "72%"
+        },
+        {
+          "number": 9,
+          "name": "Pereyra",
+          "teamId": "u19",
+          "top": "78%",
+          "left": "50%"
+        }
+      ]
+    }
+  ],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "appearances": {
+    "home": [
+      {
+        "name": "Polo",
+        "teamId": "villarreal",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Vidal",
+        "teamId": "villarreal",
+        "number": 22,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 82
+      },
+      {
+        "name": "Vergun",
+        "teamId": "villarreal",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Anadón",
+        "teamId": "villarreal",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Roca",
+        "teamId": "villarreal",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          5
+        ]
+      },
+      {
+        "name": "Koné",
+        "teamId": "villarreal",
+        "number": 34,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 36,
+        "notes": {
+          "en": "Off injured",
+          "it": "Esce per infortunio"
+        }
+      },
+      {
+        "name": "Alcaide",
+        "teamId": "villarreal",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 68
+      },
+      {
+        "name": "Saul",
+        "teamId": "villarreal",
+        "number": 17,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Barrera",
+        "teamId": "villarreal",
+        "number": 14,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 46
+      },
+      {
+        "name": "Raúl García",
+        "teamId": "villarreal",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          15,
+          60,
+          70,
+          87
+        ],
+        "notes": {
+          "en": "Captain",
+          "it": "Capitano"
+        }
+      },
+      {
+        "name": "González García",
+        "teamId": "villarreal",
+        "number": 15,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 68
+      },
+      {
+        "name": "Ursu",
+        "teamId": "villarreal",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Falcó",
+        "teamId": "villarreal",
+        "number": 2,
+        "starter": false
+      },
+      {
+        "name": "Pilili",
+        "teamId": "villarreal",
+        "number": 3,
+        "starter": false
+      },
+      {
+        "name": "Traoré",
+        "teamId": "villarreal",
+        "number": 8,
+        "starter": false,
+        "onMinute": 68
+      },
+      {
+        "name": "Guillamón",
+        "teamId": "villarreal",
+        "number": 11,
+        "starter": false,
+        "onMinute": 82
+      },
+      {
+        "name": "Llopis",
+        "teamId": "villarreal",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "N'Diaye",
+        "teamId": "villarreal",
+        "number": 20,
+        "starter": false,
+        "onMinute": 36
+      },
+      {
+        "name": "Iker Pérez",
+        "teamId": "villarreal",
+        "number": 28,
+        "starter": false,
+        "onMinute": 68
+      },
+      {
+        "name": "Kisak",
+        "teamId": "villarreal",
+        "number": 29,
+        "starter": false,
+        "onMinute": 46
+      }
+    ],
+    "away": [
+      {
+        "name": "Pugliese",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 46
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [
+          11
+        ]
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 59
+      },
+      {
+        "name": "Zappalà",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0,
+        "redCards": [
+          46
+        ]
+      },
+      {
+        "name": "Natale",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Santella",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 71
+      },
+      {
+        "name": "D'Angelo",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 79
+      },
+      {
+        "name": "Pereyra",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "notes": {
+          "en": "Captain",
+          "it": "Capitano"
+        }
+      },
+      {
+        "name": "Baridò",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 71
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Lieto",
+        "teamId": "u19",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Marotta",
+        "teamId": "u19",
+        "number": 14,
+        "starter": false,
+        "onMinute": 46
+      },
+      {
+        "name": "Candela",
+        "teamId": "u19",
+        "number": 15,
+        "starter": false,
+        "onMinute": 71,
+        "yellowCards": [
+          75
+        ]
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Riccio",
+        "teamId": "u19",
+        "number": 17,
+        "starter": false,
+        "onMinute": 79
+      },
+      {
+        "name": "De Michele",
+        "teamId": "u19",
+        "number": 18,
+        "starter": false,
+        "onMinute": 59
+      },
+      {
+        "name": "Pengue",
+        "teamId": "u19",
+        "number": 19,
+        "starter": false,
+        "onMinute": 71
+      },
+      {
+        "name": "Mané",
+        "teamId": "u19",
+        "number": 20,
+        "starter": false
+      }
+    ]
+  },
+  "video": {
+    "fullMatch": "https://vimeo.com/1235913496/d060781749",
+    "notes": {
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
+    }
+  },
+  "clips": [
+    {
+      "id": "vimeo-1236012222",
+      "title": {
+        "en": "Gol Concessi VIL NAP",
+        "it": "Gol Concessi VIL NAP"
+      },
+      "comments": {
+        "en": "Gol Concessi VIL NAP",
+        "it": "Gol Concessi VIL NAP"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1236012222/35518f53bf",
+      "section": "goal",
+      "labels": [
+        "goal"
+      ],
+      "tags": [
+        "vimeo",
+        "goal"
+      ]
+    }
+  ],
+  "analysisVideos": [
+    {
+      "id": "vimeo-1236012222",
+      "title": {
+        "en": "Goals conceded — Villarreal vs Napoli",
+        "it": "Gol concessi — Villarreal vs Napoli"
+      },
+      "description": {
+        "en": "Post-match goals-conceded review (VIL–NAP).",
+        "it": "Review post-partita dei gol concessi (VIL–NAP)."
+      },
+      "videoFile": "https://vimeo.com/1236012222/35518f53bf",
+      "tags": [
+        "vimeo",
+        "analysis",
+        "post-match"
+      ],
+      "kind": "video"
+    }
+  ],
+  "vimeo": {
+    "folderId": "30901428",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30901428",
+    "lastSyncedAt": "2026-10-20T17:31:48.909Z"
+  }
+}

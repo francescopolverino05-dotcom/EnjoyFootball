@@ -1,0 +1,101 @@
+{
+  "id": "2026-10-02_amichevole-u19-vs-avellino",
+  "slug": "2026-10-02_amichevole-u19-vs-avellino",
+  "title": {
+    "en": "Napoli Primavera vs Avellino",
+    "it": "Napoli Primavera vs Avellino"
+  },
+  "subtitle": {
+    "en": "Friendly Match",
+    "it": "Partita Amichevole"
+  },
+  "date": "2026-10-02",
+  "competitionId": "friendlies",
+  "competition": {
+    "en": "Friendlies",
+    "it": "Amichevoli"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "U19",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "avellino",
+    "name": {
+      "en": "Avellino",
+      "it": "Avellino"
+    },
+    "shortName": "Avellino",
+    "colorClass": "opponent",
+    "logo": "logos/avellino.png"
+  },
+  "score": null,
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": [],
+  "gpsStats": [
+    {
+      "half": {
+        "en": "GPS — Full Match",
+        "it": "GPS — Partita intera"
+      },
+      "summary": {
+        "en": "Melnyk led distance (12098 m). Melnyk led sprint (468.13 m >24 km/h). Melnyk top speed (32.17 km/h). Melnyk most accelerations (48).",
+        "it": "Melnyk distanza (12098 m). Melnyk sprint (468.13 m >24 km/h). Melnyk velocità max (32.17 km/h). Melnyk più accelerazioni (48)."
+      },
+      "players": [
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 12098,
+          "distancePerMin": 118,
+          "distanceOver16KmhM": 2567,
+          "distance20to24KmhM": 739.56,
+          "distanceOver24KmhM": 468.13,
+          "metabolicPowerWkg": 10.8,
+          "accelerationsOver3": 48,
+          "decelerationsUnder3": 64,
+          "maxSpeedKmh": 32.17,
+          "recoveryPct": 66.1
+        },
+        {
+          "player": "Anic",
+          "totalDistanceM": 12062,
+          "distancePerMin": 119,
+          "distanceOver16KmhM": 2001,
+          "distance20to24KmhM": 404.04,
+          "distanceOver24KmhM": 74.98,
+          "metabolicPowerWkg": 10.9,
+          "accelerationsOver3": 29,
+          "decelerationsUnder3": 51,
+          "maxSpeedKmh": 28.86,
+          "recoveryPct": 61.72
+        },
+        {
+          "player": "Chiummariello",
+          "totalDistanceM": 9605,
+          "distancePerMin": 114,
+          "distanceOver16KmhM": 1429,
+          "distance20to24KmhM": 509.22,
+          "distanceOver24KmhM": 76.44,
+          "metabolicPowerWkg": 10.4,
+          "accelerationsOver3": 31,
+          "decelerationsUnder3": 42,
+          "maxSpeedKmh": 28.48,
+          "recoveryPct": 63.26
+        }
+      ]
+    }
+  ]
+}

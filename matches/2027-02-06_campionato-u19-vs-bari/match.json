@@ -1,0 +1,49 @@
+{
+  "id": "2027-02-06_campionato-u19-vs-bari",
+  "slug": "2027-02-06_campionato-u19-vs-bari",
+  "title": {
+    "en": "Napoli vs Bari",
+    "it": "Napoli vs Bari"
+  },
+  "subtitle": {
+    "en": "Primavera 2 · Matchday 18",
+    "it": "Primavera 2 · Giornata 18"
+  },
+  "date": "2027-02-06",
+  "firstLegSlug": "2026-10-17_campionato-bari-vs-u19",
+  "competitionId": "primavera2",
+  "competition": {
+    "en": "Primavera 2",
+    "it": "Primavera 2"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "bari",
+    "name": {
+      "en": "Bari",
+      "it": "Bari"
+    },
+    "shortName": "Bari",
+    "colorClass": "opponent",
+    "logo": "logos/bari.png"
+  },
+  "score": null,
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "clips": [],
+  "analysisVideos": []
+}

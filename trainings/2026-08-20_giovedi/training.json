@@ -1,0 +1,242 @@
+{
+  "id": "2026-08-20_giovedi",
+  "slug": "2026-08-20_giovedi",
+  "date": "2026-08-20",
+  "title": {
+    "en": "Thursday training — Build-up",
+    "it": "Giovedì — Costruzione"
+  },
+  "focus": {
+    "en": "Build-up from the back / Chance creation",
+    "it": "Costruzione dal basso / Creazione occasioni"
+  },
+  "sessionType": "activation",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "location": {
+    "en": "Cercola",
+    "it": "Cercola"
+  },
+  "status": "published",
+  "notes": {
+    "en": "Day 21 — Thu 20 Aug 2026. Activation session at Cercola (09:00).",
+    "it": "Giorno 21 — Gio 20 ago 2026. Seduta attivazione a Cercola (09:00)."
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1219883050/49688ae512",
+    "notes": {
+      "en": "Session recordings on Vimeo (2 videos).",
+      "it": "Registrazioni sessione su Vimeo (2 video)."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1219891083",
+        "title": {
+          "en": "Creazione Opportunitá",
+          "it": "Creazione Opportunitá"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1219891083/15d50ddad0",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1219883050",
+        "title": {
+          "en": "Costruzione dal Basso",
+          "it": "Costruzione dal Basso"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1219883050/49688ae512",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": [
+        {
+          "id": "vimeo-1220624627",
+          "title": {
+            "en": "PODALICO USCITA DAL BASSO (1)",
+            "it": "PODALICO USCITA DAL BASSO (1)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220624627/c132ca2a5b",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220624621",
+          "title": {
+            "en": "PODALICO USCITA DAL BASSO (2)",
+            "it": "PODALICO USCITA DAL BASSO (2)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220624621/051cbb60ea",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220624330",
+          "title": {
+            "en": "PODALICO ATTACCO PALLA DIF (6)",
+            "it": "PODALICO ATTACCO PALLA DIF (6)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220624330/58bfd87fe0",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220624078",
+          "title": {
+            "en": "PODALICO ATTACCO PALLA DIF (7)",
+            "it": "PODALICO ATTACCO PALLA DIF (7)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220624078/1f0caaae0a",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220623610",
+          "title": {
+            "en": "PODALICO ATTACCO PALLA DIF (4)",
+            "it": "PODALICO ATTACCO PALLA DIF (4)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220623610/d4c8e1d09e",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220623609",
+          "title": {
+            "en": "PODALICO ATTACCO PALLA DIF (5)",
+            "it": "PODALICO ATTACCO PALLA DIF (5)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220623609/a472514f30",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220623612",
+          "title": {
+            "en": "PODALICO ATTACCO PALLA DIF (3)",
+            "it": "PODALICO ATTACCO PALLA DIF (3)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220623612/82fa1eded4",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1220623611",
+          "title": {
+            "en": "PODALICO (8)",
+            "it": "PODALICO (8)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1220623611/1f7332bed3",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        }
+      ],
+      "fullSession": "https://vimeo.com/1220624621/051cbb60ea"
+    },
+    "clips": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-20",
+        "title": {
+          "en": "GK design — Upper body, Attacking the ball, Space defence",
+          "it": "Scheda portieri — PARTE ALTA - ATTACCO PALLA- DIF SPAZIO"
+        },
+        "description": {
+          "en": "All. N°21 — 20 Aug 2026. Upper body, Attacking the ball, Space defence.",
+          "it": "All. N°21 — 20 ago 2026. PARTE ALTA - ATTACCO PALLA- DIF SPAZIO."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-20_PARTE_ALTA_ATTACCO_PALLA_DIF_SPAZIO.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30277838",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30277838",
+    "lastSyncedAt": "2026-09-04T00:03:58.451Z",
+    "gkFolderId": "30302912"
+  }
+}

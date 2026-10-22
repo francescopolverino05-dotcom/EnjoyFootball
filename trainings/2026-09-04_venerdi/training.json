@@ -1,0 +1,118 @@
+{
+  "id": "2026-09-04_venerdi",
+  "slug": "2026-09-04_venerdi",
+  "date": "2026-09-04",
+  "title": {
+    "en": "Friday training",
+    "it": "Venerdì"
+  },
+  "focus": {
+    "en": "Prep. Avellino week",
+    "it": "Prep. Avellino"
+  },
+  "sessionType": "match-practice",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Prep. Avellino week — outfield + GK on Vimeo.",
+    "it": "Settimana Prep. Avellino — outfield + portieri su Vimeo."
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1224078096/48abc1e7e9",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1224078095",
+        "title": {
+          "en": "Piazzati",
+          "it": "Piazzati"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1224078095/10c5ffb91e",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1224078096",
+        "title": {
+          "en": "11v0 Difesa",
+          "it": "11v0 Difesa"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1224078096/48abc1e7e9",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-09-04",
+      "title": {
+        "en": "Session plan — Fri 4 Sep",
+        "it": "Piano seduta — Ven 4 set"
+      },
+      "description": {
+        "en": "Friday session plan at Cercola (4 Sep 2026, 15:00).",
+        "it": "Piano seduta di venerdì a Cercola (4 set 2026, ore 15:00)."
+      },
+      "videoFile": "Session_Plan_2026-09-04.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    }
+  ],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-09-04",
+        "title": {
+          "en": "GK design — Proprioception, Psycho, Speed",
+          "it": "Scheda portieri — PROPOCETTIVITA'-PSICO- RAPIDITA'"
+        },
+        "description": {
+          "en": "All. N°34 — 04 Sep 2026. Proprioception, Psycho, Speed.",
+          "it": "All. N°34 — 04/09/2026. PROPOCETTIVITA'-PSICO- RAPIDITA'."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-09-04_PROPOCETTIVITA_PSICO_RAPIDITA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30308143",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30308143",
+    "gkFolderId": "30308144",
+    "lastSyncedAt": "2026-10-07T15:58:38.405Z"
+  }
+}

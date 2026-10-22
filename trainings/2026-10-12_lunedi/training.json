@@ -1,0 +1,98 @@
+{
+  "id": "2026-10-12_lunedi",
+  "slug": "2026-10-12_lunedi",
+  "date": "2026-10-12",
+  "title": {
+    "en": "Monday training",
+    "it": "Lunedì"
+  },
+  "focus": {
+    "en": "Rifinitura — offensive/defensive phase + set pieces",
+    "it": "Rifinitura — fase offensiva/difensiva + piazzati"
+  },
+  "sessionType": "strength",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — Training Sessions / 12/10/2026 / Lunedí",
+    "it": "Video su Vimeo — Training Sessions / 12/10/2026 / Lunedí"
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1236192204/07d0c3c1c8",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1236192229",
+        "title": {
+          "en": "Rifinitura — Set pieces",
+          "it": "Rifinitura — Piazzati"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1236192229/b6a367096d",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1236192204",
+        "title": {
+          "en": "Rifinitura — Offensive and defensive phase",
+          "it": "Rifinitura — Fase offensiva e difensiva"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1236192204/07d0c3c1c8",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-10-12",
+      "title": {
+        "en": "Session plan — Mon 12 Oct",
+        "it": "Piano seduta — Lun 12 ott"
+      },
+      "description": {
+        "en": "Monday session plan at Cercola (12 Oct 2026, 09:00).",
+        "it": "Piano seduta di lunedì a Cercola (12 ott 2026, ore 09:00)."
+      },
+      "videoFile": "Session_Plan_2026-10-12.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan"
+      ]
+    }
+  ],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30714166",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30714166",
+    "lastSyncedAt": "2026-10-20T17:31:55.903Z"
+  }
+}

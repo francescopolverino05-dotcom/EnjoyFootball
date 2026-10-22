@@ -1,0 +1,206 @@
+{
+  "id": "2026-08-25_martedi",
+  "slug": "2026-08-25_martedi",
+  "date": "2026-08-25",
+  "title": {
+    "en": "Tuesday training — Metabolic",
+    "it": "Martedì — Metabolico"
+  },
+  "focus": {
+    "en": "Metabolic session — see session plan",
+    "it": "Seduta metabolica — vedi piano seduta"
+  },
+  "sessionType": "metabolic",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Day — Tue 25 Aug 2026. Outfield + Goalkeeper sessions on Vimeo. Session plan attached.",
+    "it": "Giorno — Mar 25 ago 2026. Sedute Outfield + Portieri su Vimeo. Piano seduta allegato."
+  },
+  "video": {
+    "parts": [
+      {
+        "id": "vimeo-1221189533",
+        "title": {
+          "en": "PArtitella a 5",
+          "it": "PArtitella a 5"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1221189533/0017cfeec6",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1221189536",
+        "title": {
+          "en": "11v0 attacco primo XI",
+          "it": "11v0 attacco primo XI"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1221189536/84a2120793",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1221189535",
+        "title": {
+          "en": "Partitella",
+          "it": "Partitella"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1221189535/54ec47326c",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1221189534",
+        "title": {
+          "en": "11v0 attacco secondo XI",
+          "it": "11v0 attacco secondo XI"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1221189534/9d1663936d",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "fullSession": "https://vimeo.com/1221189533/0017cfeec6"
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-25",
+      "title": {
+        "en": "Session plan — Tue 25 Aug",
+        "it": "Piano seduta — Mar 25 ago"
+      },
+      "description": {
+        "en": "Tuesday metabolic session plan (CamScanner 25-08-2026).",
+        "it": "Piano seduta di martedì metabolico (CamScanner 25-08-2026)."
+      },
+      "videoFile": "Session_Plan_2026-08-25.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "metabolic"
+      ]
+    }
+  ],
+  "goalkeepers": {
+    "video": {
+      "parts": [
+        {
+          "id": "vimeo-1221436314",
+          "title": {
+            "en": "SPOSTAMENTI E DIFESA PORTA",
+            "it": "SPOSTAMENTI E DIFESA PORTA"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1221436314/69d12aac61",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1221436294",
+          "title": {
+            "en": "COORDINATIVO PODALICO E SPOSTAMENTI",
+            "it": "COORDINATIVO PODALICO E SPOSTAMENTI"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1221436294/40b2d1104f",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1221212435",
+          "title": {
+            "en": "SPOSTAMENTO E ADATTAMENTO",
+            "it": "SPOSTAMENTO E ADATTAMENTO"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1221212435/b2c3636ba0",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        }
+      ],
+      "fullSession": "https://vimeo.com/1221436314/69d12aac61"
+    },
+    "clips": [],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-25",
+        "title": {
+          "en": "GK design — Lower body, Coordination, Goal defence",
+          "it": "Scheda portieri — PARTE BASSA-COORDINAZIONE- DIF. PORTA"
+        },
+        "description": {
+          "en": "All. N°25 — 25 Aug 2026. Lower body, Coordination, Goal defence.",
+          "it": "All. N°25 — 25 ago 2026. PARTE BASSA-COORDINAZIONE- DIF. PORTA."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-25_PARTE_BASSA_COORDINAZIONE_DIF_PORTA.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30308048",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30308048",
+    "gkFolderId": "30308097",
+    "lastSyncedAt": "2026-09-04T00:04:17.355Z"
+  }
+}

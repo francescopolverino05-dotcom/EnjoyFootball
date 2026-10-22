@@ -1,0 +1,2003 @@
+{
+  "id": "2026-08-08_amichevole-u19-vs-portici",
+  "slug": "2026-08-08_amichevole-u19-vs-portici",
+  "title": {
+    "en": "Napoli Primavera vs Portici",
+    "it": "Napoli Primavera vs Portici"
+  },
+  "subtitle": {
+    "en": "Friendly Match",
+    "it": "Partita Amichevole"
+  },
+  "date": "2026-08-08",
+  "competitionId": "friendlies",
+  "competition": {
+    "en": "Friendlies",
+    "it": "Amichevoli"
+  },
+  "status": "published",
+  "homeTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "portici",
+    "name": {
+      "en": "Portici 1906",
+      "it": "Portici 1906"
+    },
+    "shortName": "Portici",
+    "colorClass": "opponent",
+    "logo": "logos/portici.png"
+  },
+  "score": {
+    "home": 1,
+    "away": 3
+  },
+  "goals": [
+    {
+      "minute": 26,
+      "scorer": "Amelio",
+      "teamId": "portici"
+    },
+    {
+      "minute": 52,
+      "scorer": "Pinzolo",
+      "teamId": "portici"
+    },
+    {
+      "minute": 66,
+      "scorer": "Pengue",
+      "position": "CF",
+      "assist": null,
+      "teamId": "u19"
+    },
+    {
+      "minute": 78,
+      "scorer": "Zulli",
+      "teamId": "portici"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 2
+    },
+    {
+      "minute": 26,
+      "label": {
+        "en": "Amelio 0-1",
+        "it": "Amelio 0-1"
+      },
+      "type": "goal",
+      "teamId": "portici",
+      "positionPercent": 28
+    },
+    {
+      "minute": 45,
+      "label": {
+        "en": "Napoli subs",
+        "it": "Sub Napoli"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 48
+    },
+    {
+      "minute": 52,
+      "label": {
+        "en": "Pinzolo 0-2",
+        "it": "Pinzolo 0-2"
+      },
+      "type": "goal",
+      "teamId": "portici",
+      "positionPercent": 57
+    },
+    {
+      "minute": 58,
+      "label": {
+        "en": "Napoli subs",
+        "it": "Sub Napoli"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 63
+    },
+    {
+      "minute": 66,
+      "label": {
+        "en": "Pengue 1-2",
+        "it": "Pengue 1-2"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 72
+    },
+    {
+      "minute": 78,
+      "label": {
+        "en": "Zulli 1-3",
+        "it": "Zulli 1-3"
+      },
+      "type": "goal",
+      "teamId": "portici",
+      "positionPercent": 84
+    },
+    {
+      "minute": 90,
+      "label": {
+        "en": "Full time",
+        "it": "Fine partita"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 98
+    }
+  ],
+  "formations": [
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "system": "1-3-4-3",
+      "players": [
+        {
+          "number": 1,
+          "name": "Spinelli",
+          "teamId": "u19",
+          "isGk": true,
+          "bottom": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 3,
+          "name": "Branchizio",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "22%"
+        },
+        {
+          "number": 15,
+          "name": "Lieto",
+          "teamId": "u19",
+          "bottom": "20%",
+          "left": "50%"
+        },
+        {
+          "number": 4,
+          "name": "Natale",
+          "teamId": "u19",
+          "bottom": "22%",
+          "left": "78%"
+        },
+        {
+          "number": 2,
+          "name": "Zappalá",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "12%"
+        },
+        {
+          "number": 29,
+          "name": "Chiummariello",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "38%"
+        },
+        {
+          "number": 19,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "bottom": "42%",
+          "left": "62%"
+        },
+        {
+          "number": 16,
+          "name": "Melnyk",
+          "teamId": "u19",
+          "bottom": "40%",
+          "left": "88%"
+        },
+        {
+          "number": 27,
+          "name": "Rovetini",
+          "teamId": "u19",
+          "bottom": "68%",
+          "left": "22%"
+        },
+        {
+          "number": 9,
+          "name": "Mané",
+          "teamId": "u19",
+          "bottom": "78%",
+          "left": "50%"
+        },
+        {
+          "number": 18,
+          "name": "Esposito",
+          "teamId": "u19",
+          "bottom": "68%",
+          "left": "78%"
+        }
+      ]
+    },
+    {
+      "teamId": "portici",
+      "label": {
+        "en": "Portici 1906",
+        "it": "Portici 1906"
+      },
+      "system": "1-4-3-3",
+      "players": [
+        {
+          "number": 1,
+          "name": "GK",
+          "teamId": "portici",
+          "isGk": true,
+          "top": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "RB",
+          "teamId": "portici",
+          "top": "22%",
+          "left": "18%"
+        },
+        {
+          "number": 4,
+          "name": "CB",
+          "teamId": "portici",
+          "top": "20%",
+          "left": "38%"
+        },
+        {
+          "number": 5,
+          "name": "CB",
+          "teamId": "portici",
+          "top": "20%",
+          "left": "62%"
+        },
+        {
+          "number": 3,
+          "name": "LB",
+          "teamId": "portici",
+          "top": "22%",
+          "left": "82%"
+        },
+        {
+          "number": 6,
+          "name": "CM",
+          "teamId": "portici",
+          "top": "42%",
+          "left": "28%"
+        },
+        {
+          "number": 8,
+          "name": "CM",
+          "teamId": "portici",
+          "top": "40%",
+          "left": "50%"
+        },
+        {
+          "number": 10,
+          "name": "CM",
+          "teamId": "portici",
+          "top": "42%",
+          "left": "72%"
+        },
+        {
+          "number": 7,
+          "name": "RW",
+          "teamId": "portici",
+          "top": "68%",
+          "left": "22%"
+        },
+        {
+          "number": 9,
+          "name": "ST",
+          "teamId": "portici",
+          "top": "78%",
+          "left": "50%"
+        },
+        {
+          "number": 11,
+          "name": "LW",
+          "teamId": "portici",
+          "top": "68%",
+          "left": "78%"
+        }
+      ]
+    }
+  ],
+  "dynamics": [
+    {
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
+      "homeValue": 51,
+      "awayValue": 49,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Pass Accuracy %",
+        "it": "Precisione Passaggi %"
+      },
+      "homeValue": 78,
+      "awayValue": 74,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Duels Won %",
+        "it": "Duelli Vinti %"
+      },
+      "homeValue": 48,
+      "awayValue": 52,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Compact Defence %",
+        "it": "Difesa Compatta %"
+      },
+      "homeValue": 62,
+      "awayValue": 48,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Stretched Defence %",
+        "it": "Difesa Disunita %"
+      },
+      "homeValue": 38,
+      "awayValue": 52,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Progressive Pass Accuracy %",
+        "it": "Precisione Passaggi Progressivi %"
+      },
+      "homeValue": 63,
+      "awayValue": 67,
+      "unit": "%"
+    }
+  ],
+  "teamStats": [
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Goals",
+        "it": "Gol"
+      },
+      "home": "1",
+      "away": "3"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "home": "1.05",
+      "away": "2.15"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots",
+        "it": "Tiri"
+      },
+      "home": "11",
+      "away": "14"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots on Target",
+        "it": "Tiri in Porta"
+      },
+      "home": "4",
+      "away": "7"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots on Post",
+        "it": "Pali / Traverse"
+      },
+      "home": "0",
+      "away": "0"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots Blocked",
+        "it": "Tiri Respinti"
+      },
+      "home": "3",
+      "away": "3"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots Wide",
+        "it": "Tiri Fuori"
+      },
+      "home": "4",
+      "away": "4"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "From Penalty Area / on target",
+        "it": "Da Dentro l'Area / in Porta"
+      },
+      "home": "6 / 3 (50%)",
+      "away": "9 / 5 (56%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Outside Penalty Area / on target",
+        "it": "Da Fuori Area / in Porta"
+      },
+      "home": "5 / 1 (20%)",
+      "away": "5 / 2 (40%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Corners",
+        "it": "Calci d'Angolo"
+      },
+      "home": "4",
+      "away": "5"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Free Kicks (all)",
+        "it": "Calci di Punizione (totali)"
+      },
+      "home": "12",
+      "away": "13"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Offsides",
+        "it": "Fuorigioco"
+      },
+      "home": "2",
+      "away": "3"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Fouls / Suffered",
+        "it": "Falli Commessi / Subiti"
+      },
+      "home": "11 / 12",
+      "away": "12 / 11"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Yellow / Red Cards",
+        "it": "Cartellini Gialli / Rossi"
+      },
+      "home": "n/c",
+      "away": "n/c"
+    },
+    {
+      "category": {
+        "en": "Attacks",
+        "it": "Attacchi"
+      },
+      "name": {
+        "en": "Total attacks / with shots",
+        "it": "Attacchi Totali / con Tiri"
+      },
+      "home": "52 / 10 (19%)",
+      "away": "58 / 13 (22%)"
+    },
+    {
+      "category": {
+        "en": "Attacks",
+        "it": "Attacchi"
+      },
+      "name": {
+        "en": "Counterattacks / with shots",
+        "it": "Contropiedi / con Tiri"
+      },
+      "home": "7 / 1 (14%)",
+      "away": "12 / 4 (33%)"
+    },
+    {
+      "category": {
+        "en": "Attacks",
+        "it": "Attacchi"
+      },
+      "name": {
+        "en": "Free-kick attacks / with shots",
+        "it": "Punizioni Offensive / con Tiri"
+      },
+      "home": "4 / 1",
+      "away": "3 / 1"
+    },
+    {
+      "category": {
+        "en": "Attacks",
+        "it": "Attacchi"
+      },
+      "name": {
+        "en": "Corner attacks / with shots",
+        "it": "Angoli Offensivi / con Tiri"
+      },
+      "home": "4 / 1",
+      "away": "5 / 1"
+    },
+    {
+      "category": {
+        "en": "Attacks",
+        "it": "Attacchi"
+      },
+      "name": {
+        "en": "Left flank attacks (xG)",
+        "it": "Attacchi Fascia Sinistra (xG)"
+      },
+      "home": "16 (0.28)",
+      "away": "18 (0.55)"
+    },
+    {
+      "category": {
+        "en": "Attacks",
+        "it": "Attacchi"
+      },
+      "name": {
+        "en": "Central attacks (xG)",
+        "it": "Attacchi Centrali (xG)"
+      },
+      "home": "20 (0.52)",
+      "away": "22 (1.05)"
+    },
+    {
+      "category": {
+        "en": "Attacks",
+        "it": "Attacchi"
+      },
+      "name": {
+        "en": "Right flank attacks (xG)",
+        "it": "Attacchi Fascia Destra (xG)"
+      },
+      "home": "16 (0.25)",
+      "away": "18 (0.55)"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Sliding tackles",
+        "it": "Scivolate"
+      },
+      "home": "9",
+      "away": "8"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Interceptions",
+        "it": "Intercettazioni"
+      },
+      "home": "11",
+      "away": "13"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Clearances",
+        "it": "Spazzate"
+      },
+      "home": "22",
+      "away": "16"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "PPDA",
+        "it": "PPDA"
+      },
+      "home": "12.5",
+      "away": "11.2"
+    },
+    {
+      "category": {
+        "en": "Transitions",
+        "it": "Transizioni"
+      },
+      "name": {
+        "en": "Losses (total)",
+        "it": "Palle Perse Totali"
+      },
+      "home": "82",
+      "away": "76"
+    },
+    {
+      "category": {
+        "en": "Transitions",
+        "it": "Transizioni"
+      },
+      "name": {
+        "en": "Losses low / mid / high",
+        "it": "Palle Perse Basso / Medio / Alto"
+      },
+      "home": "18 / 34 / 30",
+      "away": "20 / 32 / 24"
+    },
+    {
+      "category": {
+        "en": "Transitions",
+        "it": "Transizioni"
+      },
+      "name": {
+        "en": "Losses leading to shot against",
+        "it": "Palle Perse con Tiro Subito"
+      },
+      "home": "6",
+      "away": "3"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Duels / won",
+        "it": "Duelli Totali / Vinti"
+      },
+      "home": "110 / 53 (48%)",
+      "away": "110 / 57 (52%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Offensive duels / won",
+        "it": "Duelli Offensivi / Vinti"
+      },
+      "home": "44 / 20 (45%)",
+      "away": "48 / 26 (54%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Defensive duels / won",
+        "it": "Duelli Difensivi / Vinti"
+      },
+      "home": "48 / 24 (50%)",
+      "away": "44 / 22 (50%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Loose-ball duels / won",
+        "it": "Contrasti su Palla Persa / Vinti"
+      },
+      "home": "18 / 9 (50%)",
+      "away": "18 / 9 (50%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Aerial duels / won",
+        "it": "Duelli Aerei / Vinti"
+      },
+      "home": "24 / 11 (46%)",
+      "away": "24 / 13 (54%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Dribbles / successful",
+        "it": "Dribbling / Riusciti"
+      },
+      "home": "14 / 7 (50%)",
+      "away": "16 / 9 (56%)"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
+      "home": "51%",
+      "away": "49%"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Total passes / accurate",
+        "it": "Passaggi Totali / Riusciti"
+      },
+      "home": "420 / 328 (78%)",
+      "away": "390 / 289 (74%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Forward / accurate",
+        "it": "Passaggi in Avanti / Riusciti"
+      },
+      "home": "145 / 95 (66%)",
+      "away": "140 / 92 (66%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Back / accurate",
+        "it": "Passaggi all'Indietro / Riusciti"
+      },
+      "home": "85 / 78 (92%)",
+      "away": "78 / 70 (90%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Lateral / accurate",
+        "it": "Passaggi Laterali / Riusciti"
+      },
+      "home": "190 / 155 (82%)",
+      "away": "172 / 127 (74%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Progressive passes / accurate",
+        "it": "Passaggi Progressivi / Riusciti"
+      },
+      "home": "32 / 20 (63%)",
+      "away": "36 / 24 (67%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Long passes / accurate",
+        "it": "Lanci Lunghi / Riusciti"
+      },
+      "home": "38 / 20 (53%)",
+      "away": "42 / 22 (52%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "To final third / accurate",
+        "it": "Passaggi sulla Trequarti / Riusciti"
+      },
+      "home": "48 / 30 (63%)",
+      "away": "55 / 36 (65%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "To penalty area / accurate",
+        "it": "Passaggi in Area di Rigore / Riusciti"
+      },
+      "home": "14 / 6 (43%)",
+      "away": "20 / 10 (50%)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Through passes / accurate",
+        "it": "Passaggi Filtranti / Riusciti"
+      },
+      "home": "3 / 1",
+      "away": "5 / 3"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Crosses / accurate (low/high/blocked)",
+        "it": "Cross / Riusciti (basso/alto/bloccato)"
+      },
+      "home": "15 / 4 (6/5/4)",
+      "away": "18 / 6 (7/6/5)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Inaccurate Pass %",
+        "it": "Percentuale Passaggi Sbagliati %"
+      },
+      "home": "22%",
+      "away": "26%"
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Assists (goal)",
+        "it": "Assist (gol)"
+      },
+      "home": "0",
+      "away": "2"
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Opportunity Score",
+        "it": "Indice Opportunità"
+      },
+      "home": "42",
+      "away": "68"
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Offensive Triangles",
+        "it": "Triangoli Offensivi"
+      },
+      "home": "11",
+      "away": "17"
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Defensive Triangles",
+        "it": "Triangoli Difensivi"
+      },
+      "home": "14",
+      "away": "12"
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Compact Defense %",
+        "it": "Difesa Compatta %"
+      },
+      "home": "62%",
+      "away": "48%"
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Stretched Defense %",
+        "it": "Difesa Disunita %"
+      },
+      "home": "38%",
+      "away": "52%"
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Compact or Stretched",
+        "it": "Stato di Compattezza"
+      },
+      "home": {
+        "en": "More compact (late)",
+        "it": "Più compatta (nel finale)"
+      },
+      "away": {
+        "en": "More stretched (press)",
+        "it": "Più allungata (in pressing)"
+      }
+    },
+    {
+      "category": {
+        "en": "Soft scores",
+        "it": "Indici soft"
+      },
+      "name": {
+        "en": "Pressing Shape",
+        "it": "Sistema di Pressing"
+      },
+      "home": {
+        "en": "Mid-block / reactive",
+        "it": "Blocco medio / reattivo"
+      },
+      "away": {
+        "en": "Higher / aggressive",
+        "it": "Più alto / aggressivo"
+      }
+    }
+  ],
+  "goalkeepers": [
+    {
+      "name": "Spinelli",
+      "minutes": 45,
+      "team": {
+        "en": "Napoli Primavera (First Half)",
+        "it": "Napoli Primavera (Primo Tempo)"
+      },
+      "period": {
+        "en": "1st Half",
+        "it": "1° Tempo"
+      },
+      "jerseyColor": {
+        "en": "Green",
+        "it": "Verde"
+      },
+      "shotsFaced": 5,
+      "shotsOnTargetFaced": 2,
+      "saves": 1,
+      "reflexSaves": 1,
+      "goalsConceded": 1,
+      "savePercentage": {
+        "en": "50.0%",
+        "it": "50,0%"
+      },
+      "aerialDuels": {
+        "en": "1 / 1 (100%)",
+        "it": "1 / 1 (100%)"
+      },
+      "exits": 2,
+      "passes": {
+        "en": "10 / 7 (70%)",
+        "it": "10 / 7 (70%)"
+      },
+      "colorClass": "green"
+    },
+    {
+      "name": "Magliano",
+      "minutes": 45,
+      "team": {
+        "en": "Napoli Primavera (Second Half)",
+        "it": "Napoli Primavera (Secondo Tempo)"
+      },
+      "period": {
+        "en": "2nd Half",
+        "it": "2° Tempo"
+      },
+      "jerseyColor": {
+        "en": "Sky blue",
+        "it": "Azzurra"
+      },
+      "shotsFaced": 9,
+      "shotsOnTargetFaced": 5,
+      "saves": 3,
+      "reflexSaves": 2,
+      "goalsConceded": 2,
+      "savePercentage": {
+        "en": "60.0%",
+        "it": "60,0%"
+      },
+      "aerialDuels": {
+        "en": "2 / 1 (50%)",
+        "it": "2 / 1 (50%)"
+      },
+      "exits": 3,
+      "passes": {
+        "en": "12 / 9 (75%)",
+        "it": "12 / 9 (75%)"
+      },
+      "colorClass": "blue"
+    }
+  ],
+  "clips": [
+    {
+      "id": "vimeo-1216749400",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 40,
+      "second": 25,
+      "videoFile": "https://vimeo.com/1216749400/188000a71e",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216747585",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 81,
+      "second": 48,
+      "videoFile": "https://vimeo.com/1216747585/39a15112c1",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216747488",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 63,
+      "second": 38,
+      "videoFile": "https://vimeo.com/1216747488/3aa716a32d",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216747443",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 61,
+      "second": 50,
+      "videoFile": "https://vimeo.com/1216747443/e2c8fcf2d7",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216747309",
+      "title": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "comments": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "minute": 56,
+      "second": 57,
+      "videoFile": "https://vimeo.com/1216747309/4799eceddf",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216747291",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 56,
+      "second": 32,
+      "videoFile": "https://vimeo.com/1216747291/f907bae6f8",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216747126",
+      "title": {
+        "en": "Set piece",
+        "it": "Palla inattiva"
+      },
+      "comments": {
+        "en": "Set piece",
+        "it": "Palla inattiva"
+      },
+      "minute": 5,
+      "second": 42,
+      "videoFile": "https://vimeo.com/1216747126/22729dfd80",
+      "section": "set-piece",
+      "labels": [
+        "set-piece"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1216747127",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 2,
+      "second": 17,
+      "videoFile": "https://vimeo.com/1216747127/5df94cf42a",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216747128",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 0,
+      "second": 57,
+      "videoFile": "https://vimeo.com/1216747128/11f1150a5d",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216747129",
+      "title": {
+        "en": "Transition to defence",
+        "it": "Transizione difensiva"
+      },
+      "comments": {
+        "en": "Transition to defence",
+        "it": "Transizione difensiva"
+      },
+      "minute": 2,
+      "second": 43,
+      "videoFile": "https://vimeo.com/1216747129/df71cf30e3",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "vimeo",
+        "good",
+        "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216680545",
+      "title": {
+        "en": "Mid block",
+        "it": "Blocco medio"
+      },
+      "comments": {
+        "en": "Mid block",
+        "it": "Blocco medio"
+      },
+      "minute": 76,
+      "second": 20,
+      "videoFile": "https://vimeo.com/1216680545/9d6b808cbc",
+      "section": "mid-block",
+      "labels": [
+        "mid-block"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216680471",
+      "title": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "comments": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "minute": 65,
+      "second": 21,
+      "videoFile": "https://vimeo.com/1216680471/2849a247cb",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216680465",
+      "title": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "comments": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "minute": 50,
+      "second": 37,
+      "videoFile": "https://vimeo.com/1216680465/44d453baad",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216680191",
+      "title": {
+        "en": "Mid block",
+        "it": "Blocco medio"
+      },
+      "comments": {
+        "en": "Mid block",
+        "it": "Blocco medio"
+      },
+      "minute": 36,
+      "second": 59,
+      "videoFile": "https://vimeo.com/1216680191/795dddab3a",
+      "section": "mid-block",
+      "labels": [
+        "mid-block"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216680176",
+      "title": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "comments": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "minute": 34,
+      "second": 53,
+      "videoFile": "https://vimeo.com/1216680176/5a0adce546",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216679970",
+      "title": {
+        "en": "Set piece",
+        "it": "Palla inattiva"
+      },
+      "comments": {
+        "en": "Set piece",
+        "it": "Palla inattiva"
+      },
+      "minute": 31,
+      "second": 3,
+      "videoFile": "https://vimeo.com/1216679970/4ef71953de",
+      "section": "set-piece",
+      "labels": [
+        "set-piece"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1216679889",
+      "title": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "comments": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "minute": 28,
+      "second": 7,
+      "videoFile": "https://vimeo.com/1216679889/19c033de55",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
+      ],
+      "tags": [
+        "vimeo",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216679767",
+      "title": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "comments": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "minute": 18,
+      "second": 13,
+      "videoFile": "https://vimeo.com/1216679767/b933017137",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
+      ],
+      "tags": [
+        "vimeo",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216679753",
+      "title": {
+        "en": "Transition to defence",
+        "it": "Transizione difensiva"
+      },
+      "comments": {
+        "en": "Transition to defence",
+        "it": "Transizione difensiva"
+      },
+      "minute": 16,
+      "second": 38,
+      "videoFile": "https://vimeo.com/1216679753/a78c5875ba",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216679653",
+      "title": {
+        "en": "Final third",
+        "it": "Ultimo terzo"
+      },
+      "comments": {
+        "en": "Final third",
+        "it": "Ultimo terzo"
+      },
+      "minute": 16,
+      "second": 22,
+      "videoFile": "https://vimeo.com/1216679653/6b5c5927ed",
+      "section": "final-third",
+      "labels": [
+        "final-third"
+      ],
+      "tags": [
+        "vimeo",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216679581",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 15,
+      "second": 55,
+      "videoFile": "https://vimeo.com/1216679581/88ade834d2",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216679451",
+      "title": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "comments": {
+        "en": "Build-up",
+        "it": "Costruzione"
+      },
+      "minute": 14,
+      "second": 11,
+      "videoFile": "https://vimeo.com/1216679451/1c182153d8",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216679312",
+      "title": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "comments": {
+        "en": "High defence",
+        "it": "Difesa alta"
+      },
+      "minute": 11,
+      "second": 50,
+      "videoFile": "https://vimeo.com/1216679312/e197edd100",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    },
+    {
+      "id": "vimeo-1216679273",
+      "title": {
+        "en": "Actions",
+        "it": "Azioni"
+      },
+      "comments": {
+        "en": "Actions",
+        "it": "Azioni"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1216679273/64252443c5",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo",
+        "actions",
+        "other"
+      ]
+    },
+    {
+      "id": "vimeo-1216679262",
+      "title": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "comments": {
+        "en": "Progression",
+        "it": "Progressione"
+      },
+      "minute": 7,
+      "second": 37,
+      "videoFile": "https://vimeo.com/1216679262/3b6f819a5d",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216679263",
+      "title": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "comments": {
+        "en": "Transition to attack",
+        "it": "Transizione offensiva"
+      },
+      "minute": 10,
+      "second": 22,
+      "videoFile": "https://vimeo.com/1216679263/df4327ce64",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
+      ],
+      "tags": [
+        "vimeo",
+        "attacking"
+      ]
+    },
+    {
+      "id": "vimeo-1216679264",
+      "title": {
+        "en": "Transition to defence",
+        "it": "Transizione difensiva"
+      },
+      "comments": {
+        "en": "Transition to defence",
+        "it": "Transizione difensiva"
+      },
+      "minute": 7,
+      "second": 42,
+      "videoFile": "https://vimeo.com/1216679264/d2f3215015",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "vimeo",
+        "defending"
+      ]
+    }
+  ],
+  "analysisVideos": [
+    {
+      "id": "vimeo-1217074924",
+      "title": {
+        "en": "Post Match v Portici",
+        "it": "Post Match v Portici"
+      },
+      "description": {
+        "en": "Post-match video analysis — Napoli Primavera vs Portici (8 Aug 2026).",
+        "it": "Video analisi post-partita — Napoli Primavera vs Portici (8 ago 2026)."
+      },
+      "videoFile": "https://vimeo.com/1217074924/ad5c37b7df",
+      "tags": [
+        "vimeo",
+        "analysis",
+        "post-match"
+      ],
+      "kind": "video"
+    },
+    {
+      "id": "session-plan-2026-08-08",
+      "title": {
+        "en": "Session / matchday plan — Sat 8 Aug",
+        "it": "Piano seduta / matchday — Sab 8 ago"
+      },
+      "description": {
+        "en": "Primavera training / matchday plan for the friendly vs Portici (8 Aug 2026).",
+        "it": "Piano allenamento / matchday Primavera per l’amichevole vs Portici (8 ago 2026)."
+      },
+      "videoFile": "Session_Plan_2026-08-08.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "matchday"
+      ]
+    }
+  ],
+  "video": {
+    "fullMatch": "https://vimeo.com/1216625977/6a54a6aca1",
+    "notes": {
+      "en": "Full match on Vimeo. Team/GK stats are approximate / video-coded (not official Opta/Wyscout).",
+      "it": "Partita intera su Vimeo. Statistiche squadra/portieri approssimative / da video (non ufficiali Opta/Wyscout)."
+    }
+  },
+  "vimeo": {
+    "videoId": "1216625977",
+    "lastSyncedAt": "2026-09-04T00:01:55.402Z",
+    "folderId": "30162360",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30162360"
+  },
+  "appearances": {
+    "home": [
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Lieto",
+        "teamId": "u19",
+        "number": 15,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Natale",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Zappalá",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 58
+      },
+      {
+        "name": "Chiummariello",
+        "teamId": "u19",
+        "number": 29,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 58
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 19,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 58
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 16,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 58
+      },
+      {
+        "name": "Rovetini",
+        "teamId": "u19",
+        "number": 27,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Mané",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Esposito",
+        "teamId": "u19",
+        "number": 18,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 45
+      },
+      {
+        "name": "Magliano",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 45
+      },
+      {
+        "name": "Kebe",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 45
+      },
+      {
+        "name": "Chiaiese",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 45
+      },
+      {
+        "name": "Lepre",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 45
+      },
+      {
+        "name": "Anic",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 45
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 45
+      },
+      {
+        "name": "Pengue",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 45,
+        "goals": [
+          66
+        ],
+        "assists": []
+      },
+      {
+        "name": "Capozzoli",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 58
+      },
+      {
+        "name": "Castaldi",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 58
+      },
+      {
+        "name": "Maida",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 58
+      },
+      {
+        "name": "Candela",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 58
+      }
+    ],
+    "away": [
+      {
+        "name": "Amelio",
+        "teamId": "portici",
+        "goals": [
+          26
+        ]
+      },
+      {
+        "name": "Pinzolo",
+        "teamId": "portici",
+        "goals": [
+          52
+        ]
+      },
+      {
+        "name": "Zulli",
+        "teamId": "portici",
+        "goals": [
+          78
+        ]
+      }
+    ],
+    "notes": {
+      "en": "Napoli XI/subs from video + staff ON lists. Portici XI/subs/cards unknown — scorers only.",
+      "it": "XI/sub Napoli da video + liste ON staff. XI/sub/cartellini Portici sconosciuti — solo marcatori."
+    }
+  },
+  "goalkeeperAnalysisVideos": [
+    {
+      "id": "vimeo-1218070444",
+      "title": {
+        "en": "MAGLIANO NAPOLI-PORTICI",
+        "it": "MAGLIANO NAPOLI-PORTICI"
+      },
+      "description": {
+        "en": "Goalkeeper analysis synced from Vimeo.",
+        "it": "Analisi portiere sincronizzata da Vimeo."
+      },
+      "videoFile": "https://vimeo.com/1218070444/87706eb97d",
+      "kind": "video",
+      "tags": [
+        "vimeo",
+        "analysis",
+        "goalkeeper"
+      ]
+    },
+    {
+      "id": "vimeo-1218069462",
+      "title": {
+        "en": "SPINELLI NAPOLI-PORTICI",
+        "it": "SPINELLI NAPOLI-PORTICI"
+      },
+      "description": {
+        "en": "Goalkeeper analysis synced from Vimeo.",
+        "it": "Analisi portiere sincronizzata da Vimeo."
+      },
+      "videoFile": "https://vimeo.com/1218069462/faf1c8d73d",
+      "kind": "video",
+      "tags": [
+        "vimeo",
+        "analysis",
+        "goalkeeper"
+      ]
+    }
+  ],
+  "reflection": {
+    "wentWell": [],
+    "evenBetterIf": []
+  }
+}

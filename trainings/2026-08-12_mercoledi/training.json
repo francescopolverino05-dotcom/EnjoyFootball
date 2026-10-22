@@ -1,0 +1,465 @@
+{
+  "id": "2026-08-12_mercoledi",
+  "slug": "2026-08-12_mercoledi",
+  "date": "2026-08-12",
+  "title": {
+    "en": "Wednesday — Strength, tactical work & 11v11",
+    "it": "Mercoledì — Forza, lavoro tattico e 11vs11"
+  },
+  "focus": {
+    "en": "Mobility / Technical activation / Strength (def line + finishing) / Tactical / 11v11",
+    "it": "Mobilità / Attivazione tecnica / Forza (linea + conclusioni) / Tattico / 11vs11"
+  },
+  "sessionType": "activation",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Week 3 (Sett. 3 10/08) — Mercoledì. Campo Cercola 09:00. Session plan attached; videos pending.",
+    "it": "Settimana 3 (Sett. 3 10/08) — Mercoledì. Campo Cercola 09:00. Piano seduta allegato; video in attesa."
+  },
+  "video": {
+    "parts": [
+      {
+        "id": "vimeo-1217633457",
+        "title": {
+          "en": "Finalizzazione",
+          "it": "Finalizzazione"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1217633457/ded39d829e",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1217631326",
+        "title": {
+          "en": "Creazione Occasioni",
+          "it": "Creazione Occasioni"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1217631326/3eb1f740d1",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1217605287",
+        "title": {
+          "en": "Defence Shadow Play",
+          "it": "Defence Shadow Play"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1217605287/7613e357a2",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1217570349",
+        "title": {
+          "en": "Linea Difensiva",
+          "it": "Linea Difensiva"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1217570349/8c636a96f9",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "fullSession": "https://vimeo.com/1217633457/ded39d829e",
+    "notes": {
+      "en": "Session recordings on Vimeo (4 videos).",
+      "it": "Registrazioni sessione su Vimeo (4 video)."
+    }
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-12",
+      "title": {
+        "en": "Session plan — Wed 12 Aug (Week 3)",
+        "it": "Piano seduta — Mer 12 ago (Sett. 3)"
+      },
+      "description": {
+        "en": "Cercola 09:00 — roster, mobility, technical activation, strength split (defensive line / finishing), out-of-possession & in-possession tactical work, 11v11 reduced pitch (1-3-4-2-1). From 3 MERCOLEDI.docx.",
+        "it": "Cercola 09:00 — convocati, mobilità, attivazione tecnica, forza a gruppi (linea difensiva / conclusioni), lavoro tattico non possesso e possesso, 11vs11 campo ridotto (1-3-4-2-1). Da 3 MERCOLEDI.docx."
+      },
+      "videoFile": "Session_Plan_2026-08-12.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "week-3",
+        "activation"
+      ]
+    }
+  ],
+  "goalkeepers": {
+    "video": {
+      "parts": [
+        {
+          "id": "vimeo-1218067947",
+          "title": {
+            "en": "prese + dif porta (7)",
+            "it": "prese + dif porta (7)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218067947/12524a10b1",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218067581",
+          "title": {
+            "en": "prese + dif porta (10)",
+            "it": "prese + dif porta (10)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218067581/d7c644f16c",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218065850",
+          "title": {
+            "en": "prese + dif porta (11)",
+            "it": "prese + dif porta (11)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218065850/5217aa93ad",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218065473",
+          "title": {
+            "en": "prese + dif porta (5)",
+            "it": "prese + dif porta (5)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218065473/feb78f7ee6",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218061997",
+          "title": {
+            "en": "prese + dif porta (9)",
+            "it": "prese + dif porta (9)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218061997/49077738e2",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218060460",
+          "title": {
+            "en": "prese + dif porta (12)",
+            "it": "prese + dif porta (12)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218060460/88b20db1f2",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218059086",
+          "title": {
+            "en": "prese + dif porta (8)",
+            "it": "prese + dif porta (8)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218059086/72bd700ca3",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218057747",
+          "title": {
+            "en": "RECUPERO PORTA + ATTACCO PALLA",
+            "it": "RECUPERO PORTA + ATTACCO PALLA"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218057747/9de26e167c",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218057480",
+          "title": {
+            "en": "TransferNow ALLEMENTO GK 12 8 26",
+            "it": "TransferNow ALLEMENTO GK 12 8 26"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218057480/81c2a0d39c",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1218057433",
+          "title": {
+            "en": "prese + dif porta (6)",
+            "it": "prese + dif porta (6)"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1218057433/178290c906",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        }
+      ],
+      "fullSession": "https://vimeo.com/1218060460/88b20db1f2"
+    },
+    "clips": [
+      {
+        "id": "vimeo-1218066889",
+        "title": {
+          "en": "0 41 nd SPSOTAMENTO + PRESA 1 18 Other 5",
+          "it": "0 41 nd SPSOTAMENTO + PRESA 1 18 Other 5"
+        },
+        "comments": {
+          "en": "0 41 nd SPSOTAMENTO + PRESA 1 18 Other 5",
+          "it": "0 41 nd SPSOTAMENTO + PRESA 1 18 Other 5"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1218066889/ed2620d10d",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1218057432",
+        "title": {
+          "en": "1 23 nd SPOSTAMENTO+ PRESA 1 43 Other 2",
+          "it": "1 23 nd SPOSTAMENTO+ PRESA 1 43 Other 2"
+        },
+        "comments": {
+          "en": "1 23 nd SPOSTAMENTO+ PRESA 1 43 Other 2",
+          "it": "1 23 nd SPOSTAMENTO+ PRESA 1 43 Other 2"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1218057432/d8d9471516",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1218064613",
+        "title": {
+          "en": "2 18 nd SPOSTAMENTO + RACCOLTA 3 24 Other 0",
+          "it": "2 18 nd SPOSTAMENTO + RACCOLTA 3 24 Other 0"
+        },
+        "comments": {
+          "en": "2 18 nd SPOSTAMENTO + RACCOLTA 3 24 Other 0",
+          "it": "2 18 nd SPOSTAMENTO + RACCOLTA 3 24 Other 0"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1218064613/27d53e993a",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1218067357",
+        "title": {
+          "en": "3 41 nd SPOSTAMENTO+RACCOLTA 4 17 Other 4",
+          "it": "3 41 nd SPOSTAMENTO+RACCOLTA 4 17 Other 4"
+        },
+        "comments": {
+          "en": "3 41 nd SPOSTAMENTO+RACCOLTA 4 17 Other 4",
+          "it": "3 41 nd SPOSTAMENTO+RACCOLTA 4 17 Other 4"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1218067357/704f4a54e3",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1218057434",
+        "title": {
+          "en": "5 29 nd SPOSTAMENTO+ADATTAMENTO 6 23 Other 3",
+          "it": "5 29 nd SPOSTAMENTO+ADATTAMENTO 6 23 Other 3"
+        },
+        "comments": {
+          "en": "5 29 nd SPOSTAMENTO+ADATTAMENTO 6 23 Other 3",
+          "it": "5 29 nd SPOSTAMENTO+ADATTAMENTO 6 23 Other 3"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1218057434/b09ca1b770",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1218067389",
+        "title": {
+          "en": "7 25 nd SPOSTAMENTO+ ADATTAMENTO 8 21 Other 1",
+          "it": "7 25 nd SPOSTAMENTO+ ADATTAMENTO 8 21 Other 1"
+        },
+        "comments": {
+          "en": "7 25 nd SPOSTAMENTO+ ADATTAMENTO 8 21 Other 1",
+          "it": "7 25 nd SPOSTAMENTO+ ADATTAMENTO 8 21 Other 1"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1218067389/dbf10a5e5e",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      }
+    ],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-12",
+        "title": {
+          "en": "GK design — Lower limbs & goal defence",
+          "it": "Scheda portieri — Arti inferiori e difesa della porta"
+        },
+        "description": {
+          "en": "All. N°15 — 12 Aug 2026 (Week 3 Wednesday). Lower-limb work and defending the goal.",
+          "it": "All. N°15 — 12 ago 2026 (Sett. 3 Mercoledì). Lavoro arti inferiori e difesa della porta."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-12_Arti_Inferiori_Difesa_Porta.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers",
+          "week-3"
+        ]
+      }
+    ],
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30195121",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30195121",
+    "lastSyncedAt": "2026-09-04T00:03:28.505Z"
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "id": "2026-08-17_lunedi",
+  "slug": "2026-08-17_lunedi",
+  "date": "2026-08-17",
+  "title": {
+    "en": "Monday training — Strength",
+    "it": "Lunedì — Forza"
+  },
+  "focus": {
+    "en": "Strength",
+    "it": "Forza"
+  },
+  "sessionType": "strength",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Day 18 — Week of 17 Aug 2026. Strength session (09:00–11:00). Session plan attached.",
+    "it": "Giorno 18 — Settimana del 17 ago 2026. Seduta Forza (09:00–11:00). Piano seduta allegato."
+  },
+  "video": {
+    "parts": [
+      {
+        "id": "vimeo-1218930604",
+        "title": {
+          "en": "Possesso con limitazioni",
+          "it": "Possesso con limitazioni"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1218930604/2a071f8579",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1218930598",
+        "title": {
+          "en": "Partitella",
+          "it": "Partitella"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1218930598/4be1346895",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ],
+    "fullSession": "https://vimeo.com/1218930598/4be1346895",
+    "notes": {
+      "en": "Session recordings on Vimeo (2 videos).",
+      "it": "Registrazioni sessione su Vimeo (2 video)."
+    }
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [
+    {
+      "id": "session-plan-2026-08-17",
+      "title": {
+        "en": "Session plan — Mon 17 Aug",
+        "it": "Piano seduta — Lun 17 ago"
+      },
+      "description": {
+        "en": "Monday strength session plan (CamScanner 17-08-2026).",
+        "it": "Piano seduta di lunedì forza (CamScanner 17-08-2026)."
+      },
+      "videoFile": "Session_Plan_2026-08-17.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "session-plan",
+        "strength"
+      ]
+    }
+  ],
+  "goalkeepers": {
+    "video": {
+      "parts": [
+        {
+          "id": "vimeo-1219681644",
+          "title": {
+            "en": "REC20260604 013831 0",
+            "it": "REC20260604 013831 0"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1219681644/de163f1a27",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1219681083",
+          "title": {
+            "en": "REC20260604 020832 4",
+            "it": "REC20260604 020832 4"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1219681083/40bfa3bb68",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1219678083",
+          "title": {
+            "en": "REC20260604 014216 1",
+            "it": "REC20260604 014216 1"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1219678083/4b17dd54e1",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        },
+        {
+          "id": "vimeo-1219678082",
+          "title": {
+            "en": "REC20260604 015217 2",
+            "it": "REC20260604 015217 2"
+          },
+          "description": {
+            "en": "Training session recording.",
+            "it": "Registrazione della sessione di allenamento."
+          },
+          "videoFile": "https://vimeo.com/1219678082/4226cf19fd",
+          "tags": [
+            "vimeo",
+            "training",
+            "session"
+          ]
+        }
+      ],
+      "fullSession": "https://vimeo.com/1219678083/4b17dd54e1"
+    },
+    "clips": [
+      {
+        "id": "vimeo-1219678080",
+        "title": {
+          "en": "0 05 nd SPOSTAMENTI 1 03 Other 1",
+          "it": "0 05 nd SPOSTAMENTI 1 03 Other 1"
+        },
+        "comments": {
+          "en": "0 05 nd SPOSTAMENTI 1 03 Other 1",
+          "it": "0 05 nd SPOSTAMENTI 1 03 Other 1"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1219678080/c0ab728474",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1219681552",
+        "title": {
+          "en": "1 15 nd SPOSTAMENTI E POSIZIONI 3 15 Other 2",
+          "it": "1 15 nd SPOSTAMENTI E POSIZIONI 3 15 Other 2"
+        },
+        "comments": {
+          "en": "1 15 nd SPOSTAMENTI E POSIZIONI 3 15 Other 2",
+          "it": "1 15 nd SPOSTAMENTI E POSIZIONI 3 15 Other 2"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1219681552/996fdeaa35",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1219681598",
+        "title": {
+          "en": "3 22 nd SPOSTAMENTI E POSIZIONI 8 23 Other 3",
+          "it": "3 22 nd SPOSTAMENTI E POSIZIONI 8 23 Other 3"
+        },
+        "comments": {
+          "en": "3 22 nd SPOSTAMENTI E POSIZIONI 8 23 Other 3",
+          "it": "3 22 nd SPOSTAMENTI E POSIZIONI 8 23 Other 3"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1219681598/3f33022d61",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      },
+      {
+        "id": "vimeo-1219678081",
+        "title": {
+          "en": "3 38 nd Azione senza nome 8 40 Other 0",
+          "it": "3 38 nd Azione senza nome 8 40 Other 0"
+        },
+        "comments": {
+          "en": "3 38 nd Azione senza nome 8 40 Other 0",
+          "it": "3 38 nd Azione senza nome 8 40 Other 0"
+        },
+        "minute": 0,
+        "second": 0,
+        "videoFile": "https://vimeo.com/1219678081/5bdc0a4ba3",
+        "section": "gk-action",
+        "labels": [
+          "gk-action"
+        ],
+        "tags": [
+          "vimeo",
+          "training",
+          "clip"
+        ]
+      }
+    ],
+    "trainingDesign": [
+      {
+        "id": "gk-design-2026-08-17",
+        "title": {
+          "en": "GK design — Plyometrics, footwork & positional shifts",
+          "it": "Scheda portieri — Pliometria, podalico e spostamenti su posizioni"
+        },
+        "description": {
+          "en": "All. N°18 — 17 Aug 2026. Plyometrics, footwork (podalico), shifts onto positions. Updated sheet from the GK coach.",
+          "it": "All. N°18 — 17 ago 2026. Pliometria, podalico, spostamenti su posizioni. Scheda aggiornata dal preparatore portieri."
+        },
+        "videoFile": "goalkeepers/GK_Training_Design_2026-08-17_Pliometria_Podalico_Spostamenti_Su_Posizioni.pdf",
+        "kind": "pdf",
+        "tags": [
+          "pdf",
+          "session-plan",
+          "goalkeepers"
+        ]
+      }
+    ],
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30244997",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30244997",
+    "lastSyncedAt": "2026-09-04T00:03:44.546Z"
+  }
+}
