@@ -2450,10 +2450,10 @@ if (spezia) {
     { name: 'Tommaso Vannucci', position: 'CDM / RCM', birthYear: 2008 },
     { name: 'Tommaso Longhi', position: 'CDM', birthYear: 2009 },
     { name: 'Federico Berti', position: 'RCM', birthYear: 2009 },
-    { name: 'Christian Carbone', position: 'LCM', birthYear: 2009 },
+    { name: 'Christian Carbone', position: 'LCM', birthYear: 2009, preferredFoot: 'Sinistro' },
     { name: 'Giovanni Sartori', position: 'LCM', birthYear: 2008 },
     { name: 'Armando Cassano', position: 'RW', birthYear: 2008 },
-    { name: "Christian D'Ambrosio", position: 'RW', birthYear: 2009 },
+    { name: "Christian D'Ambrosio", position: 'RW', birthYear: 2009, heightCm: 175, preferredFoot: 'Sinistro' },
     { name: 'Marco Trentinella', position: 'ST / LW', birthYear: 2009 },
     { name: 'Kabine Camara', position: 'ST', birthYear: 2007, heightCm: 197 },
     { name: 'Antonino Maggiore', position: 'LW', birthYear: 2009 },
@@ -2462,11 +2462,11 @@ if (spezia) {
     { name: 'Gianmarco Di Emidio', position: 'CM (profile)', birthYear: 2009 },
     { name: 'Nicolò Corallo', position: 'RB (profile)', birthYear: 2009 },
     { name: "Alessio D'Auria", position: 'CM (profile)', birthYear: 2009 },
-    { name: 'Luca Trocino', position: 'CM (profile)', birthYear: 2008 },
+    { name: 'Luca Trocino', position: 'CM (profile)', birthYear: 2008, preferredFoot: 'Destro' },
     { name: 'Mathias Liguori', birthYear: 2010 },
     { name: 'Thomas Ceccarelli', position: 'ST (profile)', birthYear: 2009 },
     { name: 'Bertolone', birthYear: 2010 },
-    { name: 'Giulio Bellacci', position: 'LW (profile)', birthYear: 2009 },
+    { name: 'Giulio Bellacci', position: 'LW (profile)', birthYear: 2009, heightCm: 178, preferredFoot: 'Destro' },
   ];
 }
 
