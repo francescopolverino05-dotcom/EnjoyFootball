@@ -2735,6 +2735,20 @@ attachReferencePack('spezia', '2026-10-24_campionato-u19-vs-spezia', [
     score: '1–5',
     videoFile: 'https://vimeo.com/1236863969/e056daf97a',
   },
+], [
+  {
+    id: 'spezia-studio-report',
+    title: {
+      en: 'Studio Spezia',
+      it: 'Studio Spezia',
+    },
+    description: {
+      en: 'Opposition studio report (Avversari → Studio Report).',
+      it: 'Studio report avversario (Avversari → Studio Report).',
+    },
+    videoFile: 'https://vimeo.com/1238398265/616ecc21e9',
+    tags: ['vimeo', 'opposition', 'studio-report'],
+  },
 ]);
 
 attachReferencePack('monopoli', '2026-10-31_campionato-monopoli-vs-u19', [
