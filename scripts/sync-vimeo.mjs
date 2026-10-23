@@ -32,6 +32,7 @@
  *   - non-Vimeo PDF/markdown in analysisVideos are preserved
  *   - trainingDesign (session-plan PDFs) is left untouched
  *   - optional training.json → vimeo.skipNameRegex skips matching video names
+ *   - optional training.json → vimeo.skipVideoIds (array of Vimeo ids) skips exact videos
  */
 
 import { existsSync, readFileSync, writeFileSync } from 'fs';
@@ -812,8 +813,16 @@ Upload videos into the Vimeo folder, then re-run:
   let gkFullSessionName = '';
   let gkNamedFullSession = false;
 
+  const skipVideoIds = new Set(
+    (Array.isArray(training.vimeo?.skipVideoIds) ? training.vimeo.skipVideoIds : []).map(String)
+  );
+
   for (const { video, parentFolderName } of listed) {
     const name = video.name || 'Untitled';
+    if (skipVideoIds.size && skipVideoIds.has(String(videoNumericId(video)))) {
+      console.log(`  skip (skipVideoIds) ← ${name} (${videoNumericId(video)})`);
+      continue;
+    }
     const isGk = isGoalkeeperTrainingVideo(name, parentFolderName);
     // skipNameRegex is for true omissions; GK-titled videos are routed to goalkeepers instead.
     if (!isGk && skipNameRegex && skipNameRegex.test(name)) {

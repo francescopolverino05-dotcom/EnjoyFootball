@@ -3,12 +3,12 @@
   "slug": "2026-10-23_venerdi",
   "date": "2026-10-23",
   "title": {
-    "en": "Friday training",
-    "it": "Friday training"
+    "en": "Rifinitura (-1 Spezia)",
+    "it": "Rifinitura (-1 Spezia)"
   },
   "focus": {
-    "en": "General session",
-    "it": "Sessione generale"
+    "en": "Rifinitura — final pre-match session (day before Spezia)",
+    "it": "Rifinitura — ultima seduta pre-partita (vigilia Spezia)"
   },
   "sessionType": "match-practice",
   "startTime": "09:00",
@@ -92,23 +92,6 @@
           "training",
           "session"
         ]
-      },
-      {
-        "id": "vimeo-1238833260",
-        "title": {
-          "en": "Fase Difensiva",
-          "it": "Fase Difensiva"
-        },
-        "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
-        },
-        "videoFile": "https://vimeo.com/1238833260/ce64ed4474",
-        "tags": [
-          "vimeo",
-          "training",
-          "session"
-        ]
       }
     ]
   },
@@ -126,6 +109,9 @@
   "vimeo": {
     "folderId": "30714176",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30714176",
-    "lastSyncedAt": "2026-10-23T15:19:46.831Z"
+    "lastSyncedAt": "2026-10-23T15:29:55.109Z",
+    "skipVideoIds": [
+      "1238833260"
+    ]
   }
 }
