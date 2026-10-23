@@ -1,0 +1,131 @@
+{
+  "id": "2026-10-23_venerdi",
+  "slug": "2026-10-23_venerdi",
+  "date": "2026-10-23",
+  "title": {
+    "en": "Friday training",
+    "it": "Friday training"
+  },
+  "focus": {
+    "en": "General session",
+    "it": "Sessione generale"
+  },
+  "sessionType": "match-practice",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — run npm run sync-vimeo -- --training 2026-10-23_venerdi",
+    "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-10-23_venerdi"
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1238836665/1aa64a89bb",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1238836665",
+        "title": {
+          "en": "Angoli Offensivi",
+          "it": "Angoli Offensivi"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1238836665/1aa64a89bb",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1238836668",
+        "title": {
+          "en": "Fase Difensiva",
+          "it": "Fase Difensiva"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1238836668/abf099b9c4",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1238833258",
+        "title": {
+          "en": "Angoli Difensivi",
+          "it": "Angoli Difensivi"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1238833258/d50901e9ff",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1238833259",
+        "title": {
+          "en": "Falli Laterali Offensivi",
+          "it": "Falli Laterali Offensivi"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1238833259/c2216f4961",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1238833260",
+        "title": {
+          "en": "Fase Difensiva",
+          "it": "Fase Difensiva"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1238833260/ce64ed4474",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30714176",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30714176",
+    "lastSyncedAt": "2026-10-23T15:19:46.831Z"
+  }
+}
