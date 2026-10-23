@@ -2449,7 +2449,7 @@ if (spezia) {
     { name: 'Tommaso Michelotti', position: 'LB', birthYear: 2009, preferredFoot: 'Destro' },
     { name: 'Tommaso Vannucci', position: 'CDM / RCM', birthYear: 2008, heightCm: 169, preferredFoot: 'Destro' },
     { name: 'Tommaso Longhi', position: 'CDM', birthYear: 2009 },
-    { name: 'Federico Berti', position: 'RCM', birthYear: 2009 },
+    { name: 'Federico Berti', position: 'RCM', birthYear: 2009, preferredFoot: 'Destro' },
     { name: 'Christian Carbone', position: 'LCM', birthYear: 2009, heightCm: 179, preferredFoot: 'Sinistro' },
     { name: 'Giovanni Sartori', position: 'LCM', birthYear: 2008 },
     { name: 'Armando Cassano', position: 'RW', birthYear: 2008, heightCm: 184, preferredFoot: 'Sinistro' },
