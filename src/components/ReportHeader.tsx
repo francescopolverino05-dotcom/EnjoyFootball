@@ -1,7 +1,7 @@
 import { useLanguage } from '../i18n/LanguageContext';
 
-/** Local SSC Napoli crest (transparent background) */
-const NAPOLI_LOGO = `${import.meta.env.BASE_URL}napoli-logo.png`;
+/** EnjoyFootball site brand logo */
+const BRAND_LOGO = `${import.meta.env.BASE_URL}enjoyfootball-logo.png`;
 
 interface ReportHeaderProps {
   pageTitle: string;
@@ -21,7 +21,7 @@ export default function ReportHeader({
   return (
     <div className="header-container">
       <div className="brand-group">
-        <img src={NAPOLI_LOGO} alt="Enjoy Football" className="napoli-logo" />
+        <img src={BRAND_LOGO} alt="Enjoy Football" className="napoli-logo" />
         <div className="brand-block">
           <div className="brand-title-text">Enjoy Football</div>
           <div className="brand-sub-text">Primavera</div>
