@@ -2454,7 +2454,7 @@ if (spezia) {
     { name: 'Giovanni Sartori', position: 'LCM', birthYear: 2008 },
     { name: 'Armando Cassano', position: 'RW', birthYear: 2008, heightCm: 184, preferredFoot: 'Sinistro' },
     { name: "Christian D'Ambrosio", position: 'RW', birthYear: 2009, heightCm: 175, preferredFoot: 'Sinistro' },
-    { name: 'Marco Trentinella', position: 'ST / LW', birthYear: 2009 },
+    { name: 'Marco Trentinella', position: 'ST / LW', birthYear: 2009, preferredFoot: 'Destro' },
     { name: 'Kabine Camara', position: 'ST', birthYear: 2007, heightCm: 197, preferredFoot: 'Destro' },
     { name: 'Antonino Maggiore', position: 'LW', birthYear: 2009 },
     { name: 'Davide Del Sante', position: 'LW', birthYear: 2008, heightCm: 175, preferredFoot: 'Sinistro' },
