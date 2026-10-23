@@ -2438,7 +2438,7 @@ if (spezia) {
   };
   /** Squad from distinte (no shirt numbers). Role = roles started in scouted XIs; bench-only = Transfermarkt profile position. Foot/height from Transfermarkt where listed (Tuttocampo roster empty); blanks = not published. */
   spezia.squad = [
-    { name: 'Gabriele Doretti', position: 'GK', isGk: true, birthYear: 2010, heightCm: 184 },
+    { name: 'Gabriele Doretti', position: 'GK', isGk: true, birthYear: 2010, heightCm: 184, preferredFoot: 'Destro' },
     { name: 'Enrico Sasha Guidi', position: 'GK', isGk: true, birthYear: 2008, heightCm: 191, preferredFoot: 'Destro' },
     { name: 'Matteo Azzoni', position: 'GK (profile)', isGk: true, birthYear: 2009, heightCm: 182, preferredFoot: 'Destro' },
     { name: 'Nicolò De Vita', position: 'GK (profile)', isGk: true, birthYear: 2009 },
