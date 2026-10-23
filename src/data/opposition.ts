@@ -2746,7 +2746,7 @@ attachReferencePack('spezia', '2026-10-24_campionato-u19-vs-spezia', [
       en: 'Opposition studio report (Avversari → Studio Report).',
       it: 'Studio report avversario (Avversari → Studio Report).',
     },
-    videoFile: 'https://vimeo.com/1238398265/616ecc21e9',
+    videoFile: 'https://vimeo.com/1238418484/eeb265e0bd',
     tags: ['vimeo', 'opposition', 'studio-report'],
   },
 ]);
