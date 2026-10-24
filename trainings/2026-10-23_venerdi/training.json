@@ -19,7 +19,7 @@
     "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-10-23_venerdi"
   },
   "video": {
-    "fullSession": "https://vimeo.com/1238836665/1aa64a89bb",
+    "fullSession": "https://vimeo.com/1239022009/8f77cf1d3e",
     "notes": {
       "en": "Synced from Vimeo after upload.",
       "it": "Sincronizzato da Vimeo dopo il caricamento."
@@ -92,6 +92,23 @@
           "training",
           "session"
         ]
+      },
+      {
+        "id": "vimeo-1239022009",
+        "title": {
+          "en": "Fase Offensiva",
+          "it": "Fase Offensiva"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1239022009/8f77cf1d3e",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
       }
     ]
   },
@@ -109,6 +126,6 @@
   "vimeo": {
     "folderId": "30714176",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30714176",
-    "lastSyncedAt": "2026-10-24T06:32:04.104Z"
+    "lastSyncedAt": "2026-10-24T06:49:08.791Z"
   }
 }
