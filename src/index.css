@@ -5625,3 +5625,4 @@ a.gacon-ind-row:hover {
     padding: 10px;
   }
 }
+.pitch-unplaced { font-size: 0.8rem; opacity: 0.8; padding: 0.5rem 0.75rem; }

@@ -41,6 +41,10 @@ export interface PitchPlayer {
   name: string;
   teamId: string;
   isGk?: boolean;
+  /** Optional role label, e.g. "RCB". */
+  role?: string;
+  /** Starter whose pitch position is not known: listed under the pitch instead of placed. */
+  positionUnknown?: boolean;
   top?: string;
   bottom?: string;
   left: string;

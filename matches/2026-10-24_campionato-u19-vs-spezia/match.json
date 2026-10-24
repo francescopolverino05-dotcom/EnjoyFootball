@@ -196,7 +196,206 @@
       "positionPercent": 89
     }
   ],
-  "formations": [],
+  "formations": [
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "system": "3-4-1-2",
+      "players": [
+        {
+          "number": 1,
+          "name": "Spinelli",
+          "teamId": "u19",
+          "role": "GK",
+          "bottom": "10%",
+          "left": "50%",
+          "isGk": true
+        },
+        {
+          "number": 2,
+          "name": "Zappalà",
+          "teamId": "u19",
+          "role": "RCB",
+          "bottom": "24%",
+          "left": "25%"
+        },
+        {
+          "number": 6,
+          "name": "Lieto",
+          "teamId": "u19",
+          "role": "CB",
+          "bottom": "22%",
+          "left": "50%"
+        },
+        {
+          "number": 5,
+          "name": "Branchizio",
+          "teamId": "u19",
+          "role": "LCB",
+          "bottom": "24%",
+          "left": "75%"
+        },
+        {
+          "number": 3,
+          "name": "Santella",
+          "teamId": "u19",
+          "role": "RWB",
+          "bottom": "44%",
+          "left": "10%"
+        },
+        {
+          "number": 8,
+          "name": "Chiummariello",
+          "teamId": "u19",
+          "role": "RCM",
+          "bottom": "40%",
+          "left": "37%"
+        },
+        {
+          "number": 4,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "role": "LCM",
+          "bottom": "40%",
+          "left": "63%"
+        },
+        {
+          "number": 7,
+          "name": "Melnyk",
+          "teamId": "u19",
+          "role": "LWB",
+          "bottom": "44%",
+          "left": "90%"
+        },
+        {
+          "number": 10,
+          "name": "Riccio",
+          "teamId": "u19",
+          "role": "CAM",
+          "bottom": "58%",
+          "left": "50%"
+        },
+        {
+          "number": 11,
+          "name": "Mané",
+          "teamId": "u19",
+          "role": "RS",
+          "bottom": "76%",
+          "left": "35%"
+        },
+        {
+          "number": 9,
+          "name": "Pereyra",
+          "teamId": "u19",
+          "role": "LS",
+          "bottom": "76%",
+          "left": "65%"
+        }
+      ]
+    },
+    {
+      "teamId": "spezia",
+      "label": {
+        "en": "Spezia",
+        "it": "Spezia"
+      },
+      "system": "4-3-3",
+      "players": [
+        {
+          "number": 1,
+          "name": "Azzoni",
+          "teamId": "spezia",
+          "role": "GK",
+          "top": "10%",
+          "left": "50%",
+          "isGk": true
+        },
+        {
+          "number": 2,
+          "name": "Mazzanti",
+          "teamId": "spezia",
+          "role": "RB",
+          "top": "25%",
+          "left": "85%"
+        },
+        {
+          "number": 6,
+          "name": "Francini",
+          "teamId": "spezia",
+          "role": "RCB",
+          "top": "22%",
+          "left": "62%"
+        },
+        {
+          "number": 5,
+          "name": "Vignali",
+          "teamId": "spezia",
+          "role": "LCB",
+          "top": "22%",
+          "left": "38%"
+        },
+        {
+          "number": 3,
+          "name": "Del Sante",
+          "teamId": "spezia",
+          "role": "LB",
+          "top": "25%",
+          "left": "15%"
+        },
+        {
+          "number": 4,
+          "name": "Longhi",
+          "teamId": "spezia",
+          "role": "CM",
+          "top": "42%",
+          "left": "50%"
+        },
+        {
+          "number": 7,
+          "name": "D'Ambrosio",
+          "teamId": "spezia",
+          "role": "RW",
+          "top": "70%",
+          "left": "85%"
+        },
+        {
+          "number": 9,
+          "name": "Trentinella",
+          "teamId": "spezia",
+          "role": "ST",
+          "top": "76%",
+          "left": "50%"
+        },
+        {
+          "number": 8,
+          "name": "Vannucci",
+          "teamId": "spezia",
+          "positionUnknown": true,
+          "top": "50%",
+          "left": "50%"
+        },
+        {
+          "number": 10,
+          "name": "Carbone",
+          "teamId": "spezia",
+          "positionUnknown": true,
+          "top": "50%",
+          "left": "50%"
+        },
+        {
+          "number": 11,
+          "name": "Maggiore",
+          "teamId": "spezia",
+          "positionUnknown": true,
+          "top": "50%",
+          "left": "50%"
+        }
+      ]
+    }
+  ],
   "dynamics": [],
   "teamStats": [],
   "goalkeepers": [],
@@ -536,8 +735,8 @@
       }
     ],
     "notes": {
-      "en": "Starters and bench from the official distinta (Napoli: Pereyra captain, Zappalà vice; coach Nocerino Antonio. Spezia: Vignali captain, Vannucci vice; coach Lupoli Arturo). Referee: Picciuco Daniele (Campobasso); assistants Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Goals (except the first), assists and substitutions from the mondoprimavera.com report; the report gives no cards. The first Napoli goal is credited to Pereyra per staff; the report credits Riccio (18', assist Pereyra), so its minute is left blank pending confirmation. Triple Napoli sub at 59' per tabellino (60' in the live commentary).",
-      "it": "Titolari e panchina dalla distinta ufficiale (Napoli: capitano Pereyra, vice Zappalà; all. Nocerino Antonio. Spezia: capitano Vignali, vice Vannucci; all. Lupoli Arturo). Arbitro: Picciuco Daniele (Campobasso); assistenti Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Gol (tranne il primo), assist e cambi dalla cronaca di mondoprimavera.com; nessun cartellino riportato. Primo gol attribuito a Pereyra dallo staff; la cronaca indica Riccio (18', assist Pereyra): minuto lasciato vuoto in attesa di conferma. Triplo cambio Napoli al 59' da tabellino (60' nella diretta)."
+      "en": "Starters and bench from the official distinta (Napoli: Pereyra captain, Zappalà vice; coach Nocerino Antonio. Spezia: Vignali captain, Vannucci vice; coach Lupoli Arturo). Referee: Piciucco Daniele (Campobasso); assistants Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Goals (except the first), assists and substitutions from the mondoprimavera.com report; the report gives no cards. The first Napoli goal is credited to Pereyra per staff; the report credits Riccio (18', assist Pereyra), so its minute is left blank pending confirmation. Triple Napoli sub at 59' per tabellino (60' in the live commentary). Formations from staff (Napoli 3-4-1-2; Spezia 4-3-3). Spezia LCB Vignali by elimination (staff recalled \"Migli…\"); RCM, LCM and LW (Vannucci, Carbone, Maggiore) not assigned: the report lists starters by shirt number only.",
+      "it": "Titolari e panchina dalla distinta ufficiale (Napoli: capitano Pereyra, vice Zappalà; all. Nocerino Antonio. Spezia: capitano Vignali, vice Vannucci; all. Lupoli Arturo). Arbitro: Piciucco Daniele (Campobasso); assistenti Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Gol (tranne il primo), assist e cambi dalla cronaca di mondoprimavera.com; nessun cartellino riportato. Primo gol attribuito a Pereyra dallo staff; la cronaca indica Riccio (18', assist Pereyra): minuto lasciato vuoto in attesa di conferma. Triplo cambio Napoli al 59' da tabellino (60' nella diretta). Moduli dallo staff (Napoli 3-4-1-2; Spezia 4-3-3). Difensore centrale sinistro Spezia Vignali per esclusione (lo staff ricordava \"Migli…\"); mezzala destra, mezzala sinistra e ala sinistra (Vannucci, Carbone, Maggiore) non assegnate: la cronaca elenca i titolari solo per numero di maglia."
     }
   }
 }

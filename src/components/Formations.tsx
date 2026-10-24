@@ -34,7 +34,7 @@ export default function Formations({ formations, matchSlug }: FormationsProps) {
               <div className="pitch-center-circle" />
               <div className="pitch-penalty-area bottom" />
               <div className="pitch-penalty-area top" />
-              {formation.players.map((player) => (
+              {formation.players.filter((player) => !player.positionUnknown).map((player) => (
                 <div
                   key={`${player.number}-${player.name}-${player.left}`}
                   className={`pitch-player ${player.isGk ? 'gk' : player.teamId}`}
@@ -49,6 +49,15 @@ export default function Formations({ formations, matchSlug }: FormationsProps) {
                 </div>
               ))}
             </div>
+            {formation.players.some((player) => player.positionUnknown) ? (
+              <div className="pitch-unplaced">
+                {t('positionUnknown')}:{' '}
+                {formation.players
+                  .filter((player) => player.positionUnknown)
+                  .map((player) => (player.number ? `${player.number} ${player.name}` : player.name))
+                  .join(', ')}
+              </div>
+            ) : null}
           </div>
         ))}
       </div>
