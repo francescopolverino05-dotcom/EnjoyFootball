@@ -948,7 +948,44 @@
     }
   ],
   "dynamics": [],
-  "teamStats": [],
+  "teamStats": [
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Corners",
+        "it": "Calci d'Angolo"
+      },
+      "home": "2",
+      "away": "5"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Free Kicks (all)",
+        "it": "Calci di Punizione (totali)"
+      },
+      "home": "3",
+      "away": "6"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Throw-ins",
+        "it": "Rimesse Laterali"
+      },
+      "home": "4",
+      "away": "3"
+    }
+  ],
   "goalkeepers": [],
   "clips": [],
   "analysisVideos": [],
