@@ -43,23 +43,6 @@
         ]
       },
       {
-        "id": "vimeo-1238836668",
-        "title": {
-          "en": "Fase Difensiva",
-          "it": "Fase Difensiva"
-        },
-        "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
-        },
-        "videoFile": "https://vimeo.com/1238836668/abf099b9c4",
-        "tags": [
-          "vimeo",
-          "training",
-          "session"
-        ]
-      },
-      {
         "id": "vimeo-1238833258",
         "title": {
           "en": "Angoli Difensivi",
@@ -92,6 +75,23 @@
           "training",
           "session"
         ]
+      },
+      {
+        "id": "vimeo-1238833260",
+        "title": {
+          "en": "Fase Difensiva",
+          "it": "Fase Difensiva"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1238833260/ce64ed4474",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
       }
     ]
   },
@@ -109,9 +109,6 @@
   "vimeo": {
     "folderId": "30714176",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30714176",
-    "lastSyncedAt": "2026-10-23T15:29:55.109Z",
-    "skipVideoIds": [
-      "1238833260"
-    ]
+    "lastSyncedAt": "2026-10-24T06:32:04.104Z"
   }
 }
