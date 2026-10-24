@@ -46,19 +46,156 @@
       "teamId": "u19"
     },
     {
+      "minute": 34,
       "scorer": "Mané",
+      "assist": "Chiummariello",
       "teamId": "u19"
     },
     {
+      "minute": 70,
       "scorer": "Esposito",
+      "assist": "Baridò",
       "teamId": "u19"
     },
     {
+      "minute": 72,
       "scorer": "Longhi",
+      "assist": "Vannucci",
       "teamId": "spezia"
     }
   ],
-  "timeline": [],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 2
+    },
+    {
+      "minute": 34,
+      "label": {
+        "en": "Mané 2-0",
+        "it": "Mané 2-0"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 38
+    },
+    {
+      "minute": 46,
+      "label": {
+        "en": "Liccardo on / Santella off",
+        "it": "Liccardo on / Santella off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 52
+    },
+    {
+      "minute": 51,
+      "label": {
+        "en": "Ghetti on / Maggiore off",
+        "it": "Ghetti on / Maggiore off"
+      },
+      "type": "substitution",
+      "teamId": "spezia",
+      "positionPercent": 57
+    },
+    {
+      "minute": 59,
+      "label": {
+        "en": "Esposito on / Lieto off",
+        "it": "Esposito on / Lieto off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 66
+    },
+    {
+      "minute": 59,
+      "label": {
+        "en": "Barido' on / Pereyra off",
+        "it": "Barido' on / Pereyra off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 66
+    },
+    {
+      "minute": 59,
+      "label": {
+        "en": "Favicchio on / Riccio off",
+        "it": "Favicchio on / Riccio off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 66
+    },
+    {
+      "minute": 64,
+      "label": {
+        "en": "Rovetini on / Mane off",
+        "it": "Rovetini on / Mane off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 71
+    },
+    {
+      "minute": 69,
+      "label": {
+        "en": "D'Auria on / D'Ambrosio off",
+        "it": "D'Auria on / D'Ambrosio off"
+      },
+      "type": "substitution",
+      "teamId": "spezia",
+      "positionPercent": 77
+    },
+    {
+      "minute": 69,
+      "label": {
+        "en": "Sartori on / Carbone off",
+        "it": "Sartori on / Carbone off"
+      },
+      "type": "substitution",
+      "teamId": "spezia",
+      "positionPercent": 77
+    },
+    {
+      "minute": 70,
+      "label": {
+        "en": "Esposito 3-0",
+        "it": "Esposito 3-0"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 78
+    },
+    {
+      "minute": 72,
+      "label": {
+        "en": "Longhi 3-1",
+        "it": "Longhi 3-1"
+      },
+      "type": "goal",
+      "teamId": "spezia",
+      "positionPercent": 80
+    },
+    {
+      "minute": 80,
+      "label": {
+        "en": "Camara on / Vannucci off",
+        "it": "Camara on / Vannucci off"
+      },
+      "type": "substitution",
+      "teamId": "spezia",
+      "positionPercent": 89
+    }
+  ],
   "formations": [],
   "dynamics": [],
   "teamStats": [],
@@ -98,7 +235,8 @@
         "teamId": "u19",
         "number": 3,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 46
       },
       {
         "name": "De Stefano",
@@ -119,7 +257,8 @@
         "teamId": "u19",
         "number": 6,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 59
       },
       {
         "name": "Melnyk",
@@ -133,28 +272,37 @@
         "teamId": "u19",
         "number": 8,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "assists": [
+          34
+        ]
       },
       {
         "name": "Pereyra",
         "teamId": "u19",
         "number": 9,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 59
       },
       {
         "name": "Riccio",
         "teamId": "u19",
         "number": 10,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 59
       },
       {
         "name": "Mane",
         "teamId": "u19",
         "number": 11,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 64,
+        "goals": [
+          34
+        ]
       },
       {
         "name": "Merone",
@@ -178,7 +326,8 @@
         "name": "Liccardo",
         "teamId": "u19",
         "number": 15,
-        "starter": false
+        "starter": false,
+        "onMinute": 46
       },
       {
         "name": "Anic",
@@ -208,25 +357,35 @@
         "name": "Barido'",
         "teamId": "u19",
         "number": 20,
-        "starter": false
+        "starter": false,
+        "onMinute": 59,
+        "assists": [
+          70
+        ]
       },
       {
         "name": "Rovetini",
         "teamId": "u19",
         "number": 21,
-        "starter": false
+        "starter": false,
+        "onMinute": 64
       },
       {
         "name": "Esposito",
         "teamId": "u19",
         "number": 22,
-        "starter": false
+        "starter": false,
+        "onMinute": 59,
+        "goals": [
+          70
+        ]
       },
       {
         "name": "Favicchio",
         "teamId": "u19",
         "number": 23,
-        "starter": false
+        "starter": false,
+        "onMinute": 59
       }
     ],
     "away": [
@@ -256,7 +415,10 @@
         "teamId": "spezia",
         "number": 4,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "goals": [
+          72
+        ]
       },
       {
         "name": "Vignali",
@@ -277,14 +439,19 @@
         "teamId": "spezia",
         "number": 7,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 69
       },
       {
         "name": "Vannucci",
         "teamId": "spezia",
         "number": 8,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 80,
+        "assists": [
+          72
+        ]
       },
       {
         "name": "Trentinella",
@@ -298,64 +465,79 @@
         "teamId": "spezia",
         "number": 10,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 69
       },
       {
         "name": "Maggiore",
         "teamId": "spezia",
         "number": 11,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 51
       },
       {
         "name": "Guidi",
         "teamId": "spezia",
-        "starter": false
+        "starter": false,
+        "number": 12
       },
       {
         "name": "Michelotti",
         "teamId": "spezia",
-        "starter": false
+        "starter": false,
+        "number": 13
       },
       {
         "name": "Corallo",
         "teamId": "spezia",
-        "starter": false
+        "starter": false,
+        "number": 14
       },
       {
         "name": "Berti",
         "teamId": "spezia",
-        "starter": false
+        "starter": false,
+        "number": 15
       },
       {
         "name": "D'Auria",
         "teamId": "spezia",
-        "starter": false
+        "starter": false,
+        "onMinute": 69,
+        "number": 16
       },
       {
         "name": "Ghetti",
         "teamId": "spezia",
-        "starter": false
+        "starter": false,
+        "onMinute": 51,
+        "number": 17
       },
       {
         "name": "Sartori",
         "teamId": "spezia",
-        "starter": false
+        "starter": false,
+        "onMinute": 69,
+        "number": 18
       },
       {
         "name": "Ceccarelli",
         "teamId": "spezia",
-        "starter": false
+        "starter": false,
+        "number": 19
       },
       {
         "name": "Camara",
         "teamId": "spezia",
-        "starter": false
+        "starter": false,
+        "onMinute": 80,
+        "number": 20
       }
     ],
     "notes": {
-      "en": "Starters and bench from the official distinta (Napoli: Pereyra captain, Zappalà vice; coach Nocerino Antonio. Spezia: Vignali captain, Vannucci vice; coach Lupoli Arturo). Referee: Picciuco Daniele (Campobasso); assistants Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Esposito (#22) came off the bench and scored; substitution minutes and goal minutes not recorded. Spezia bench numbers not on the brief.",
-      "it": "Titolari e panchina dalla distinta ufficiale (Napoli: capitano Pereyra, vice Zappalà; all. Nocerino Antonio. Spezia: capitano Vignali, vice Vannucci; all. Lupoli Arturo). Arbitro: Picciuco Daniele (Campobasso); assistenti Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Esposito (#22) entrato dalla panchina e a segno; minuti di sostituzioni e gol non registrati. Numeri panchina Spezia non disponibili."
+      "en": "Starters and bench from the official distinta (Napoli: Pereyra captain, Zappalà vice; coach Nocerino Antonio. Spezia: Vignali captain, Vannucci vice; coach Lupoli Arturo). Referee: Picciuco Daniele (Campobasso); assistants Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Goals (except the first), assists and substitutions from the mondoprimavera.com report; the report gives no cards. The first Napoli goal is credited to Pereyra per staff; the report credits Riccio (18', assist Pereyra), so its minute is left blank pending confirmation. Triple Napoli sub at 59' per tabellino (60' in the live commentary).",
+      "it": "Titolari e panchina dalla distinta ufficiale (Napoli: capitano Pereyra, vice Zappalà; all. Nocerino Antonio. Spezia: capitano Vignali, vice Vannucci; all. Lupoli Arturo). Arbitro: Picciuco Daniele (Campobasso); assistenti Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Gol (tranne il primo), assist e cambi dalla cronaca di mondoprimavera.com; nessun cartellino riportato. Primo gol attribuito a Pereyra dallo staff; la cronaca indica Riccio (18', assist Pereyra): minuto lasciato vuoto in attesa di conferma. Triplo cambio Napoli al 59' da tabellino (60' nella diretta)."
     }
   }
 }
