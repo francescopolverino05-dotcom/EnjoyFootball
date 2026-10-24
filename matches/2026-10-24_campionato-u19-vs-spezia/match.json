@@ -306,6 +306,206 @@
           "bottom": "76%",
           "left": "65%"
         }
+      ],
+      "changes": [
+        {
+          "minute": 59,
+          "system": "4-2-3-1",
+          "players": [
+            {
+              "number": 1,
+              "name": "Spinelli",
+              "teamId": "u19",
+              "role": "GK",
+              "bottom": "10%",
+              "left": "50%",
+              "isGk": true
+            },
+            {
+              "number": 15,
+              "name": "Liccardo",
+              "teamId": "u19",
+              "role": "RB",
+              "bottom": "26%",
+              "left": "12%"
+            },
+            {
+              "number": 2,
+              "name": "Zappalà",
+              "teamId": "u19",
+              "role": "RCB",
+              "bottom": "22%",
+              "left": "37%"
+            },
+            {
+              "number": 5,
+              "name": "Branchizio",
+              "teamId": "u19",
+              "role": "LCB",
+              "bottom": "22%",
+              "left": "63%"
+            },
+            {
+              "number": 7,
+              "name": "Melnyk",
+              "teamId": "u19",
+              "role": "LB",
+              "bottom": "26%",
+              "left": "88%"
+            },
+            {
+              "number": 8,
+              "name": "Chiummariello",
+              "teamId": "u19",
+              "role": "RCM",
+              "bottom": "40%",
+              "left": "37%"
+            },
+            {
+              "number": 4,
+              "name": "De Stefano",
+              "teamId": "u19",
+              "role": "LCM",
+              "bottom": "40%",
+              "left": "63%"
+            },
+            {
+              "number": 22,
+              "name": "Esposito",
+              "teamId": "u19",
+              "role": "RW",
+              "bottom": "60%",
+              "left": "15%"
+            },
+            {
+              "number": 20,
+              "name": "Baridò",
+              "teamId": "u19",
+              "role": "CAM",
+              "bottom": "58%",
+              "left": "50%"
+            },
+            {
+              "number": 23,
+              "name": "Favicchio",
+              "teamId": "u19",
+              "role": "LW",
+              "bottom": "60%",
+              "left": "85%"
+            },
+            {
+              "number": 11,
+              "name": "Mané",
+              "teamId": "u19",
+              "role": "ST",
+              "bottom": "78%",
+              "left": "50%"
+            }
+          ],
+          "note": {
+            "en": "Esposito, Baridò, Favicchio on",
+            "it": "Entrano Esposito, Baridò, Favicchio"
+          }
+        },
+        {
+          "minute": 64,
+          "system": "4-2-3-1",
+          "players": [
+            {
+              "number": 1,
+              "name": "Spinelli",
+              "teamId": "u19",
+              "role": "GK",
+              "bottom": "10%",
+              "left": "50%",
+              "isGk": true
+            },
+            {
+              "number": 15,
+              "name": "Liccardo",
+              "teamId": "u19",
+              "role": "RB",
+              "bottom": "26%",
+              "left": "12%"
+            },
+            {
+              "number": 2,
+              "name": "Zappalà",
+              "teamId": "u19",
+              "role": "RCB",
+              "bottom": "22%",
+              "left": "37%"
+            },
+            {
+              "number": 5,
+              "name": "Branchizio",
+              "teamId": "u19",
+              "role": "LCB",
+              "bottom": "22%",
+              "left": "63%"
+            },
+            {
+              "number": 7,
+              "name": "Melnyk",
+              "teamId": "u19",
+              "role": "LB",
+              "bottom": "26%",
+              "left": "88%"
+            },
+            {
+              "number": 8,
+              "name": "Chiummariello",
+              "teamId": "u19",
+              "role": "RCM",
+              "bottom": "40%",
+              "left": "37%"
+            },
+            {
+              "number": 4,
+              "name": "De Stefano",
+              "teamId": "u19",
+              "role": "LCM",
+              "bottom": "40%",
+              "left": "63%"
+            },
+            {
+              "number": 22,
+              "name": "Esposito",
+              "teamId": "u19",
+              "role": "RW",
+              "bottom": "60%",
+              "left": "15%"
+            },
+            {
+              "number": 20,
+              "name": "Baridò",
+              "teamId": "u19",
+              "role": "CAM",
+              "bottom": "58%",
+              "left": "50%"
+            },
+            {
+              "number": 23,
+              "name": "Favicchio",
+              "teamId": "u19",
+              "role": "LW",
+              "bottom": "60%",
+              "left": "85%"
+            },
+            {
+              "number": 21,
+              "name": "Rovetini",
+              "teamId": "u19",
+              "role": "ST",
+              "bottom": "78%",
+              "left": "50%"
+            }
+          ],
+          "note": {
+            "en": "Rovetini for Mané at ST",
+            "it": "Rovetini per Mané punta"
+          }
+        }
       ]
     },
     {
@@ -366,6 +566,22 @@
           "left": "50%"
         },
         {
+          "number": 8,
+          "name": "Vannucci",
+          "teamId": "spezia",
+          "role": "RCM",
+          "top": "45%",
+          "left": "72%"
+        },
+        {
+          "number": 10,
+          "name": "Carbone",
+          "teamId": "spezia",
+          "role": "LCM",
+          "top": "45%",
+          "left": "28%"
+        },
+        {
           "number": 7,
           "name": "D'Ambrosio",
           "teamId": "spezia",
@@ -382,28 +598,311 @@
           "left": "50%"
         },
         {
-          "number": 8,
-          "name": "Vannucci",
-          "teamId": "spezia",
-          "positionUnknown": true,
-          "top": "50%",
-          "left": "50%"
-        },
-        {
-          "number": 10,
-          "name": "Carbone",
-          "teamId": "spezia",
-          "positionUnknown": true,
-          "top": "50%",
-          "left": "50%"
-        },
-        {
           "number": 11,
           "name": "Maggiore",
           "teamId": "spezia",
-          "positionUnknown": true,
-          "top": "50%",
-          "left": "50%"
+          "role": "LW",
+          "top": "70%",
+          "left": "15%"
+        }
+      ],
+      "changes": [
+        {
+          "minute": 51,
+          "system": "4-3-3",
+          "players": [
+            {
+              "number": 1,
+              "name": "Azzoni",
+              "teamId": "spezia",
+              "role": "GK",
+              "top": "10%",
+              "left": "50%",
+              "isGk": true
+            },
+            {
+              "number": 2,
+              "name": "Mazzanti",
+              "teamId": "spezia",
+              "role": "RB",
+              "top": "25%",
+              "left": "85%"
+            },
+            {
+              "number": 6,
+              "name": "Francini",
+              "teamId": "spezia",
+              "role": "RCB",
+              "top": "22%",
+              "left": "62%"
+            },
+            {
+              "number": 5,
+              "name": "Vignali",
+              "teamId": "spezia",
+              "role": "LCB",
+              "top": "22%",
+              "left": "38%"
+            },
+            {
+              "number": 3,
+              "name": "Del Sante",
+              "teamId": "spezia",
+              "role": "LB",
+              "top": "25%",
+              "left": "15%"
+            },
+            {
+              "number": 4,
+              "name": "Longhi",
+              "teamId": "spezia",
+              "role": "CM",
+              "top": "42%",
+              "left": "50%"
+            },
+            {
+              "number": 8,
+              "name": "Vannucci",
+              "teamId": "spezia",
+              "role": "RCM",
+              "top": "45%",
+              "left": "72%"
+            },
+            {
+              "number": 10,
+              "name": "Carbone",
+              "teamId": "spezia",
+              "role": "LCM",
+              "top": "45%",
+              "left": "28%"
+            },
+            {
+              "number": 7,
+              "name": "D'Ambrosio",
+              "teamId": "spezia",
+              "role": "RW",
+              "top": "70%",
+              "left": "85%"
+            },
+            {
+              "number": 9,
+              "name": "Trentinella",
+              "teamId": "spezia",
+              "role": "ST",
+              "top": "76%",
+              "left": "50%"
+            },
+            {
+              "number": 17,
+              "name": "Ghetti",
+              "teamId": "spezia",
+              "role": "LW",
+              "top": "70%",
+              "left": "15%"
+            }
+          ],
+          "note": {
+            "en": "Ghetti for Maggiore (LW)",
+            "it": "Ghetti per Maggiore (ala sinistra)"
+          }
+        },
+        {
+          "minute": 69,
+          "system": "4-3-3",
+          "players": [
+            {
+              "number": 1,
+              "name": "Azzoni",
+              "teamId": "spezia",
+              "role": "GK",
+              "top": "10%",
+              "left": "50%",
+              "isGk": true
+            },
+            {
+              "number": 2,
+              "name": "Mazzanti",
+              "teamId": "spezia",
+              "role": "RB",
+              "top": "25%",
+              "left": "85%"
+            },
+            {
+              "number": 6,
+              "name": "Francini",
+              "teamId": "spezia",
+              "role": "RCB",
+              "top": "22%",
+              "left": "62%"
+            },
+            {
+              "number": 5,
+              "name": "Vignali",
+              "teamId": "spezia",
+              "role": "LCB",
+              "top": "22%",
+              "left": "38%"
+            },
+            {
+              "number": 3,
+              "name": "Del Sante",
+              "teamId": "spezia",
+              "role": "LB",
+              "top": "25%",
+              "left": "15%"
+            },
+            {
+              "number": 4,
+              "name": "Longhi",
+              "teamId": "spezia",
+              "role": "CM",
+              "top": "42%",
+              "left": "50%"
+            },
+            {
+              "number": 8,
+              "name": "Vannucci",
+              "teamId": "spezia",
+              "role": "RCM",
+              "top": "45%",
+              "left": "72%"
+            },
+            {
+              "number": 18,
+              "name": "Sartori",
+              "teamId": "spezia",
+              "role": "LCM",
+              "top": "45%",
+              "left": "28%"
+            },
+            {
+              "number": 16,
+              "name": "D'Auria",
+              "teamId": "spezia",
+              "role": "RW",
+              "top": "70%",
+              "left": "85%"
+            },
+            {
+              "number": 9,
+              "name": "Trentinella",
+              "teamId": "spezia",
+              "role": "ST",
+              "top": "76%",
+              "left": "50%"
+            },
+            {
+              "number": 17,
+              "name": "Ghetti",
+              "teamId": "spezia",
+              "role": "LW",
+              "top": "70%",
+              "left": "15%"
+            }
+          ],
+          "note": {
+            "en": "D'Auria for D'Ambrosio (RW), Sartori for Carbone (LCM)",
+            "it": "D'Auria per D'Ambrosio (ala destra), Sartori per Carbone (mezzala sinistra)"
+          }
+        },
+        {
+          "minute": 80,
+          "system": "4-4-2",
+          "players": [
+            {
+              "number": 1,
+              "name": "Azzoni",
+              "teamId": "spezia",
+              "role": "GK",
+              "top": "10%",
+              "left": "50%",
+              "isGk": true
+            },
+            {
+              "number": 2,
+              "name": "Mazzanti",
+              "teamId": "spezia",
+              "role": "RB",
+              "top": "25%",
+              "left": "85%"
+            },
+            {
+              "number": 6,
+              "name": "Francini",
+              "teamId": "spezia",
+              "role": "RCB",
+              "top": "22%",
+              "left": "62%"
+            },
+            {
+              "number": 5,
+              "name": "Vignali",
+              "teamId": "spezia",
+              "role": "LCB",
+              "top": "22%",
+              "left": "38%"
+            },
+            {
+              "number": 3,
+              "name": "Del Sante",
+              "teamId": "spezia",
+              "role": "LB",
+              "top": "25%",
+              "left": "15%"
+            },
+            {
+              "number": 16,
+              "name": "D'Auria",
+              "teamId": "spezia",
+              "role": "RM",
+              "top": "48%",
+              "left": "88%"
+            },
+            {
+              "number": 4,
+              "name": "Longhi",
+              "teamId": "spezia",
+              "role": "RCM",
+              "top": "44%",
+              "left": "62%"
+            },
+            {
+              "number": 18,
+              "name": "Sartori",
+              "teamId": "spezia",
+              "role": "LCM",
+              "top": "44%",
+              "left": "38%"
+            },
+            {
+              "number": 17,
+              "name": "Ghetti",
+              "teamId": "spezia",
+              "role": "LM",
+              "top": "48%",
+              "left": "12%"
+            },
+            {
+              "number": 9,
+              "name": "Trentinella",
+              "teamId": "spezia",
+              "role": "ST",
+              "top": "76%",
+              "left": "40%"
+            },
+            {
+              "number": 20,
+              "name": "Camara",
+              "teamId": "spezia",
+              "role": "ST",
+              "top": "76%",
+              "left": "60%"
+            }
+          ],
+          "note": {
+            "en": "Camara for Vannucci; Longhi to RCM",
+            "it": "Camara per Vannucci; Longhi mezzala destra"
+          }
         }
       ]
     }
@@ -753,8 +1252,8 @@
       }
     ],
     "notes": {
-      "en": "Starters and bench from the official distinta (Napoli: Pereyra captain, Zappalà vice; coach Nocerino Antonio. Spezia: Vignali captain, Vannucci vice; coach Lupoli Arturo). Referee: Piciucco Daniele (Campobasso); assistants Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Goals, assists and substitutions from the mondoprimavera.com report; the report gives no cards. Triple Napoli sub at 59' per tabellino (60' in the live commentary). Formations from staff (Napoli 3-4-1-2; Spezia 4-3-3). Spezia LCB Vignali by elimination (staff recalled \"Migli…\"); RCM, LCM and LW (Vannucci, Carbone, Maggiore) not assigned: the report lists starters by shirt number only.",
-      "it": "Titolari e panchina dalla distinta ufficiale (Napoli: capitano Pereyra, vice Zappalà; all. Nocerino Antonio. Spezia: capitano Vignali, vice Vannucci; all. Lupoli Arturo). Arbitro: Piciucco Daniele (Campobasso); assistenti Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Gol, assist e cambi dalla cronaca di mondoprimavera.com; nessun cartellino riportato. Triplo cambio Napoli al 59' da tabellino (60' nella diretta). Moduli dallo staff (Napoli 3-4-1-2; Spezia 4-3-3). Difensore centrale sinistro Spezia Vignali per esclusione (lo staff ricordava \"Migli…\"); mezzala destra, mezzala sinistra e ala sinistra (Vannucci, Carbone, Maggiore) non assegnate: la cronaca elenca i titolari solo per numero di maglia."
+      "en": "Starters and bench from the official distinta (Napoli: Pereyra captain, Zappalà vice; coach Nocerino Antonio. Spezia: Vignali captain, Vannucci vice; coach Lupoli Arturo). Referee: Piciucco Daniele (Campobasso); assistants Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Goals, assists and substitutions from the mondoprimavera.com report; the report gives no cards. Triple Napoli sub at 59' per tabellino (60' in the live commentary). Formations and in-game changes from staff (Napoli 3-4-1-2, 4-2-3-1 from 59'; Spezia 4-3-3, 4-4-2 from 80'). Spezia LCB Vignali by elimination (staff recalled \"Migli…\"); midfield and wing roles from distinta shirt numbers per staff. At 80' Longhi moves to RCM, inferred as the only remaining central midfielder.",
+      "it": "Titolari e panchina dalla distinta ufficiale (Napoli: capitano Pereyra, vice Zappalà; all. Nocerino Antonio. Spezia: capitano Vignali, vice Vannucci; all. Lupoli Arturo). Arbitro: Piciucco Daniele (Campobasso); assistenti Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Gol, assist e cambi dalla cronaca di mondoprimavera.com; nessun cartellino riportato. Triplo cambio Napoli al 59' da tabellino (60' nella diretta). Moduli e variazioni dallo staff (Napoli 3-4-1-2, 4-2-3-1 dal 59'; Spezia 4-3-3, 4-4-2 dall'80'). Difensore centrale sinistro Spezia Vignali per esclusione (lo staff ricordava \"Migli…\"); ruoli di centrocampo e ali dai numeri di maglia della distinta, secondo lo staff. All'80' Longhi mezzala destra, dedotto come unico centrocampista centrale rimasto."
     }
   }
 }

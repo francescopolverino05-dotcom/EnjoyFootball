@@ -57,6 +57,15 @@ export interface Formation {
   players: PitchPlayer[];
   /** Optional pitch diagram under matches/<slug>/ (e.g. assets/formation-napoli.png). */
   image?: string;
+  /** Optional in-game shape changes, ordered by minute. */
+  changes?: FormationChange[];
+}
+
+export interface FormationChange {
+  minute: number;
+  system: string;
+  players: PitchPlayer[];
+  note?: Localized;
 }
 
 export interface DynamicMetric {

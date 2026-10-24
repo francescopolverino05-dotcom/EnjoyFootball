@@ -1,4 +1,4 @@
-import { Formation } from '../types/match';
+import { Formation, PitchPlayer } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
 import { mediaUrl } from '../utils/mediaUrl';
 import { withGoalkeeperInSystem } from '../utils/formationSystem';
@@ -10,6 +10,40 @@ interface FormationsProps {
 
 export default function Formations({ formations, matchSlug }: FormationsProps) {
   const { t, L } = useLanguage();
+
+  const renderPitch = (players: PitchPlayer[]) => (
+    <>
+            <div className="pitch-canvas">
+              <div className="pitch-center-line" />
+              <div className="pitch-center-circle" />
+              <div className="pitch-penalty-area bottom" />
+              <div className="pitch-penalty-area top" />
+              {players.filter((player) => !player.positionUnknown).map((player) => (
+                <div
+                  key={`${player.number}-${player.name}-${player.left}`}
+                  className={`pitch-player ${player.isGk ? 'gk' : player.teamId}`}
+                  style={{
+                    top: player.top,
+                    bottom: player.bottom,
+                    left: player.left,
+                  }}
+                >
+                  <span className="pitch-player-name">{player.name}</span>
+                  {player.number != null && player.number > 0 ? player.number : ''}
+                </div>
+              ))}
+            </div>
+            {players.some((player) => player.positionUnknown) ? (
+              <div className="pitch-unplaced">
+                {t('positionUnknown')}:{' '}
+                {players
+                  .filter((player) => player.positionUnknown)
+                  .map((player) => (player.number ? `${player.number} ${player.name}` : player.name))
+                  .join(', ')}
+              </div>
+            ) : null}
+    </>
+  );
 
   return (
     <>
@@ -29,35 +63,16 @@ export default function Formations({ formations, matchSlug }: FormationsProps) {
                 />
               </div>
             ) : null}
-            <div className="pitch-canvas">
-              <div className="pitch-center-line" />
-              <div className="pitch-center-circle" />
-              <div className="pitch-penalty-area bottom" />
-              <div className="pitch-penalty-area top" />
-              {formation.players.filter((player) => !player.positionUnknown).map((player) => (
-                <div
-                  key={`${player.number}-${player.name}-${player.left}`}
-                  className={`pitch-player ${player.isGk ? 'gk' : player.teamId}`}
-                  style={{
-                    top: player.top,
-                    bottom: player.bottom,
-                    left: player.left,
-                  }}
-                >
-                  <span className="pitch-player-name">{player.name}</span>
-                  {player.number != null && player.number > 0 ? player.number : ''}
+            {renderPitch(formation.players)}
+            {(formation.changes ?? []).map((change) => (
+              <div className="formation-change" key={`${formation.teamId}-${change.minute}`}>
+                <div className="pitch-header">
+                  {change.minute}' · {withGoalkeeperInSystem(change.system)}
+                  {change.note ? ` · ${L(change.note)}` : ''}
                 </div>
-              ))}
-            </div>
-            {formation.players.some((player) => player.positionUnknown) ? (
-              <div className="pitch-unplaced">
-                {t('positionUnknown')}:{' '}
-                {formation.players
-                  .filter((player) => player.positionUnknown)
-                  .map((player) => (player.number ? `${player.number} ${player.name}` : player.name))
-                  .join(', ')}
+                {renderPitch(change.players)}
               </div>
-            ) : null}
+            ))}
           </div>
         ))}
       </div>
