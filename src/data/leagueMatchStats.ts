@@ -19,6 +19,7 @@ import monopoliCosenza from './leagueMatchStats/monopoli-cosenza.json';
 import monopoliPescara from './leagueMatchStats/monopoli-pescara.json';
 import napoliBodoGlimt from './leagueMatchStats/napoli-bodo-glimt.json';
 import napoliPisa from './leagueMatchStats/napoli-pisa.json';
+import napoliSpezia from './leagueMatchStats/napoli-spezia.json';
 import palermoBari from './leagueMatchStats/palermo-bari.json';
 import palermoPescara from './leagueMatchStats/palermo-pescara.json';
 import perugiaAvellino from './leagueMatchStats/perugia-avellino.json';
@@ -59,6 +60,7 @@ const BY_KEY: Record<string, LeagueMatchStats> = {
   'primavera2/monopoli-cosenza': monopoliCosenza as LeagueMatchStats,
   'primavera2/monopoli-pescara': monopoliPescara as LeagueMatchStats,
   'primavera2/napoli-pisa': napoliPisa as LeagueMatchStats,
+  'primavera2/napoli-spezia': napoliSpezia as LeagueMatchStats,
   'primavera2/palermo-bari': palermoBari as LeagueMatchStats,
   'primavera2/palermo-pescara': palermoPescara as LeagueMatchStats,
   'primavera2/perugia-avellino': perugiaAvellino as LeagueMatchStats,

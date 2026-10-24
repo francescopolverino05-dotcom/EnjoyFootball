@@ -527,7 +527,9 @@
             {
               "homeId": "napoli",
               "awayId": "spezia",
-              "score": null
+              "score": "3-1",
+              "matchSlug": "2026-10-24_campionato-u19-vs-spezia",
+              "statsSlug": "napoli-spezia"
             },
             {
               "homeId": "perugia",
