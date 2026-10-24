@@ -118,6 +118,16 @@
       "positionPercent": 57
     },
     {
+      "minute": 55,
+      "label": {
+        "en": "Vignali yellow",
+        "it": "Vignali ammonito"
+      },
+      "type": "other",
+      "teamId": "spezia",
+      "positionPercent": 61
+    },
+    {
       "minute": 59,
       "label": {
         "en": "Esposito on / Lieto off",
@@ -206,6 +216,36 @@
       "type": "substitution",
       "teamId": "spezia",
       "positionPercent": 89
+    },
+    {
+      "minute": 84,
+      "label": {
+        "en": "Ghetti yellow",
+        "it": "Ghetti ammonito"
+      },
+      "type": "other",
+      "teamId": "spezia",
+      "positionPercent": 93
+    },
+    {
+      "minute": 84,
+      "label": {
+        "en": "Esposito yellow",
+        "it": "Esposito ammonito"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 93
+    },
+    {
+      "minute": 93,
+      "label": {
+        "en": "Sartori yellow",
+        "it": "Sartori ammonito"
+      },
+      "type": "other",
+      "teamId": "spezia",
+      "positionPercent": 99
     }
   ],
   "formations": [
@@ -1094,6 +1134,9 @@
         "onMinute": 59,
         "goals": [
           70
+        ],
+        "yellowCards": [
+          84
         ]
       },
       {
@@ -1141,7 +1184,10 @@
         "teamId": "spezia",
         "number": 5,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "yellowCards": [
+          55
+        ]
       },
       {
         "name": "Francini",
@@ -1228,14 +1274,20 @@
         "teamId": "spezia",
         "starter": false,
         "onMinute": 51,
-        "number": 17
+        "number": 17,
+        "yellowCards": [
+          84
+        ]
       },
       {
         "name": "Sartori",
         "teamId": "spezia",
         "starter": false,
         "onMinute": 69,
-        "number": 18
+        "number": 18,
+        "yellowCards": [
+          93
+        ]
       },
       {
         "name": "Ceccarelli",
@@ -1252,8 +1304,8 @@
       }
     ],
     "notes": {
-      "en": "Starters and bench from the official distinta (Napoli: Pereyra captain, Zappalà vice; coach Nocerino Antonio. Spezia: Vignali captain, Vannucci vice; coach Lupoli Arturo). Referee: Piciucco Daniele (Campobasso); assistants Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Goals, assists and substitutions from the mondoprimavera.com report; the report gives no cards. Triple Napoli sub at 59' per tabellino (60' in the live commentary). Formations and in-game changes from staff (Napoli 3-4-1-2, 4-2-3-1 from 59'; Spezia 4-3-3, 4-4-2 from 80'). Spezia LCB Vignali by elimination (staff recalled \"Migli…\"); midfield and wing roles from distinta shirt numbers per staff. At 80' Longhi moves to RCM, inferred as the only remaining central midfielder.",
-      "it": "Titolari e panchina dalla distinta ufficiale (Napoli: capitano Pereyra, vice Zappalà; all. Nocerino Antonio. Spezia: capitano Vignali, vice Vannucci; all. Lupoli Arturo). Arbitro: Piciucco Daniele (Campobasso); assistenti Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Gol, assist e cambi dalla cronaca di mondoprimavera.com; nessun cartellino riportato. Triplo cambio Napoli al 59' da tabellino (60' nella diretta). Moduli e variazioni dallo staff (Napoli 3-4-1-2, 4-2-3-1 dal 59'; Spezia 4-3-3, 4-4-2 dall'80'). Difensore centrale sinistro Spezia Vignali per esclusione (lo staff ricordava \"Migli…\"); ruoli di centrocampo e ali dai numeri di maglia della distinta, secondo lo staff. All'80' Longhi mezzala destra, dedotto come unico centrocampista centrale rimasto."
+      "en": "Starters and bench from the official distinta (Napoli: Pereyra captain, Zappalà vice; coach Nocerino Antonio. Spezia: Vignali captain, Vannucci vice; coach Lupoli Arturo). Referee: Piciucco Daniele (Campobasso); assistants Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Goals, assists and substitutions from the mondoprimavera.com report (no cards in the report). Yellow cards confirmed by staff: Vignali 55', Ghetti 84', Esposito 84', Sartori 93' (90+3'). Triple Napoli sub at 59' per tabellino (60' in the live commentary). Formations and in-game changes from staff (Napoli 3-4-1-2, 4-2-3-1 from 59'; Spezia 4-3-3, 4-4-2 from 80'). Spezia LCB Vignali confirmed by staff; midfield and wing roles from distinta shirt numbers per staff. At 80' Longhi moves to RCM, inferred as the only remaining central midfielder.",
+      "it": "Titolari e panchina dalla distinta ufficiale (Napoli: capitano Pereyra, vice Zappalà; all. Nocerino Antonio. Spezia: capitano Vignali, vice Vannucci; all. Lupoli Arturo). Arbitro: Piciucco Daniele (Campobasso); assistenti Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Gol, assist e cambi dalla cronaca di mondoprimavera.com (nessun cartellino nella cronaca). Ammonizioni confermate dallo staff: Vignali 55', Ghetti 84', Esposito 84', Sartori 93' (90+3'). Triplo cambio Napoli al 59' da tabellino (60' nella diretta). Moduli e variazioni dallo staff (Napoli 3-4-1-2, 4-2-3-1 dal 59'; Spezia 4-3-3, 4-4-2 dall'80'). Difensore centrale sinistro Spezia Vignali confermato dallo staff; ruoli di centrocampo e ali dai numeri di maglia della distinta, secondo lo staff. All'80' Longhi mezzala destra, dedotto come unico centrocampista centrale rimasto."
     }
   }
 }
