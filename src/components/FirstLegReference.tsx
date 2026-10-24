@@ -57,12 +57,12 @@ export default function FirstLegReference({
           <div className="first-leg-scorers-line">
             <span>
               {homeGoals
-                .map((goal) => `${goal.minute}' ${goal.scorer}`)
+                .map((goal) => (goal.minute != null ? `${goal.minute}' ` : '') + goal.scorer)
                 .join(', ') || '—'}
             </span>
             <span>
               {awayGoals
-                .map((goal) => `${goal.minute}' ${goal.scorer}`)
+                .map((goal) => (goal.minute != null ? `${goal.minute}' ` : '') + goal.scorer)
                 .join(', ') || '—'}
             </span>
           </div>

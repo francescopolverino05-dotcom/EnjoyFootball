@@ -36,13 +36,326 @@
     "colorClass": "opponent",
     "logo": "logos/spezia.png"
   },
-  "score": null,
-  "goals": [],
+  "score": {
+    "home": 3,
+    "away": 1
+  },
+  "goals": [
+    {
+      "scorer": "Pereyra",
+      "teamId": "u19"
+    },
+    {
+      "scorer": "Mané",
+      "teamId": "u19"
+    },
+    {
+      "scorer": "Esposito",
+      "teamId": "u19"
+    },
+    {
+      "scorer": "Longhi",
+      "teamId": "spezia"
+    }
+  ],
   "timeline": [],
   "formations": [],
   "dynamics": [],
   "teamStats": [],
   "goalkeepers": [],
   "clips": [],
-  "analysisVideos": []
+  "analysisVideos": [],
+  "vimeo": {
+    "folderId": "31021645",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/31021645",
+    "lastSyncedAt": "2026-10-24T11:10:33.888Z"
+  },
+  "video": {
+    "fullMatch": "https://vimeo.com/1239052703/bf23781345",
+    "notes": {
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
+    }
+  },
+  "appearances": {
+    "home": [
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Zappala'",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Santella",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Lieto",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Chiummariello",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Pereyra",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Riccio",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Mane",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Merone",
+        "teamId": "u19",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Marotta",
+        "teamId": "u19",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Natale",
+        "teamId": "u19",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 15,
+        "starter": false
+      },
+      {
+        "name": "Anic",
+        "teamId": "u19",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "De Michele",
+        "teamId": "u19",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "D'Angelo",
+        "teamId": "u19",
+        "number": 18,
+        "starter": false
+      },
+      {
+        "name": "Saviano",
+        "teamId": "u19",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Barido'",
+        "teamId": "u19",
+        "number": 20,
+        "starter": false
+      },
+      {
+        "name": "Rovetini",
+        "teamId": "u19",
+        "number": 21,
+        "starter": false
+      },
+      {
+        "name": "Esposito",
+        "teamId": "u19",
+        "number": 22,
+        "starter": false
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "number": 23,
+        "starter": false
+      }
+    ],
+    "away": [
+      {
+        "name": "Azzoni",
+        "teamId": "spezia",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Mazzanti",
+        "teamId": "spezia",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Del Sante",
+        "teamId": "spezia",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Longhi",
+        "teamId": "spezia",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Vignali",
+        "teamId": "spezia",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Francini",
+        "teamId": "spezia",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "D'Ambrosio",
+        "teamId": "spezia",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Vannucci",
+        "teamId": "spezia",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Trentinella",
+        "teamId": "spezia",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Carbone",
+        "teamId": "spezia",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Maggiore",
+        "teamId": "spezia",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Guidi",
+        "teamId": "spezia",
+        "starter": false
+      },
+      {
+        "name": "Michelotti",
+        "teamId": "spezia",
+        "starter": false
+      },
+      {
+        "name": "Corallo",
+        "teamId": "spezia",
+        "starter": false
+      },
+      {
+        "name": "Berti",
+        "teamId": "spezia",
+        "starter": false
+      },
+      {
+        "name": "D'Auria",
+        "teamId": "spezia",
+        "starter": false
+      },
+      {
+        "name": "Ghetti",
+        "teamId": "spezia",
+        "starter": false
+      },
+      {
+        "name": "Sartori",
+        "teamId": "spezia",
+        "starter": false
+      },
+      {
+        "name": "Ceccarelli",
+        "teamId": "spezia",
+        "starter": false
+      },
+      {
+        "name": "Camara",
+        "teamId": "spezia",
+        "starter": false
+      }
+    ],
+    "notes": {
+      "en": "Starters and bench from the official distinta (Napoli: Pereyra captain, Zappalà vice; coach Nocerino Antonio. Spezia: Vignali captain, Vannucci vice; coach Lupoli Arturo). Referee: Picciuco Daniele (Campobasso); assistants Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Esposito (#22) came off the bench and scored; substitution minutes and goal minutes not recorded. Spezia bench numbers not on the brief.",
+      "it": "Titolari e panchina dalla distinta ufficiale (Napoli: capitano Pereyra, vice Zappalà; all. Nocerino Antonio. Spezia: capitano Vignali, vice Vannucci; all. Lupoli Arturo). Arbitro: Picciuco Daniele (Campobasso); assistenti Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Esposito (#22) entrato dalla panchina e a segno; minuti di sostituzioni e gol non registrati. Numeri panchina Spezia non disponibili."
+    }
+  }
 }

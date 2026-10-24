@@ -18,7 +18,8 @@ export interface TeamInfo {
 }
 
 export interface Goal {
-  minute: number;
+  /** Omit / null when the minute is unknown. */
+  minute?: number | null;
   scorer: string;
   position?: string;
   /** Null/omitted = no assist recorded. */

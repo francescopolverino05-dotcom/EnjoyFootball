@@ -45,19 +45,19 @@ export default function Scoreboard({ match }: ScoreboardProps) {
 
       <div className="scorers-container">
         <div>
-          {homeGoals.map((g) => (
-            <div className="scorer-item" key={`${g.minute}-${g.scorer}`}>
-              ⚽ {g.minute}&apos; {g.scorer}
+          {homeGoals.map((g, i) => (
+            <div className="scorer-item" key={`${g.minute ?? 'x'}-${g.scorer}-${i}`}>
+              ⚽ {g.minute != null ? `${g.minute}' ` : ''}{g.scorer}
               {g.position ? ` (${g.position})` : ''}
               {g.assist ? ` · ${g.assist}` : ''}
             </div>
           ))}
         </div>
         <div className="scorers-away">
-          {awayGoals.map((g) => (
-            <div className="scorer-item scorer-item-away" key={`${g.minute}-${g.scorer}`}>
+          {awayGoals.map((g, i) => (
+            <div className="scorer-item scorer-item-away" key={`${g.minute ?? 'x'}-${g.scorer}-${i}`}>
               {g.assist ? `${g.assist} · ` : ''}
-              {g.minute}&apos; {g.scorer}
+              {g.minute != null ? `${g.minute}' ` : ''}{g.scorer}
               {g.position ? ` (${g.position})` : ''} ⚽
             </div>
           ))}
