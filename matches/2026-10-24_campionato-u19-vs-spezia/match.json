@@ -42,7 +42,9 @@
   },
   "goals": [
     {
-      "scorer": "Pereyra",
+      "minute": 18,
+      "scorer": "Riccio",
+      "assist": "Pereyra",
       "teamId": "u19"
     },
     {
@@ -74,6 +76,16 @@
       "type": "other",
       "teamId": "u19",
       "positionPercent": 2
+    },
+    {
+      "minute": 18,
+      "label": {
+        "en": "Riccio 1-0",
+        "it": "Riccio 1-0"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 20
     },
     {
       "minute": 34,
@@ -482,7 +494,10 @@
         "number": 9,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 59
+        "offMinute": 59,
+        "assists": [
+          18
+        ]
       },
       {
         "name": "Riccio",
@@ -490,7 +505,10 @@
         "number": 10,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 59
+        "offMinute": 59,
+        "goals": [
+          18
+        ]
       },
       {
         "name": "Mane",
@@ -735,8 +753,8 @@
       }
     ],
     "notes": {
-      "en": "Starters and bench from the official distinta (Napoli: Pereyra captain, Zappalà vice; coach Nocerino Antonio. Spezia: Vignali captain, Vannucci vice; coach Lupoli Arturo). Referee: Piciucco Daniele (Campobasso); assistants Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Goals (except the first), assists and substitutions from the mondoprimavera.com report; the report gives no cards. The first Napoli goal is credited to Pereyra per staff; the report credits Riccio (18', assist Pereyra), so its minute is left blank pending confirmation. Triple Napoli sub at 59' per tabellino (60' in the live commentary). Formations from staff (Napoli 3-4-1-2; Spezia 4-3-3). Spezia LCB Vignali by elimination (staff recalled \"Migli…\"); RCM, LCM and LW (Vannucci, Carbone, Maggiore) not assigned: the report lists starters by shirt number only.",
-      "it": "Titolari e panchina dalla distinta ufficiale (Napoli: capitano Pereyra, vice Zappalà; all. Nocerino Antonio. Spezia: capitano Vignali, vice Vannucci; all. Lupoli Arturo). Arbitro: Piciucco Daniele (Campobasso); assistenti Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Gol (tranne il primo), assist e cambi dalla cronaca di mondoprimavera.com; nessun cartellino riportato. Primo gol attribuito a Pereyra dallo staff; la cronaca indica Riccio (18', assist Pereyra): minuto lasciato vuoto in attesa di conferma. Triplo cambio Napoli al 59' da tabellino (60' nella diretta). Moduli dallo staff (Napoli 3-4-1-2; Spezia 4-3-3). Difensore centrale sinistro Spezia Vignali per esclusione (lo staff ricordava \"Migli…\"); mezzala destra, mezzala sinistra e ala sinistra (Vannucci, Carbone, Maggiore) non assegnate: la cronaca elenca i titolari solo per numero di maglia."
+      "en": "Starters and bench from the official distinta (Napoli: Pereyra captain, Zappalà vice; coach Nocerino Antonio. Spezia: Vignali captain, Vannucci vice; coach Lupoli Arturo). Referee: Piciucco Daniele (Campobasso); assistants Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Goals, assists and substitutions from the mondoprimavera.com report; the report gives no cards. Triple Napoli sub at 59' per tabellino (60' in the live commentary). Formations from staff (Napoli 3-4-1-2; Spezia 4-3-3). Spezia LCB Vignali by elimination (staff recalled \"Migli…\"); RCM, LCM and LW (Vannucci, Carbone, Maggiore) not assigned: the report lists starters by shirt number only.",
+      "it": "Titolari e panchina dalla distinta ufficiale (Napoli: capitano Pereyra, vice Zappalà; all. Nocerino Antonio. Spezia: capitano Vignali, vice Vannucci; all. Lupoli Arturo). Arbitro: Piciucco Daniele (Campobasso); assistenti Chiricallo Roberto (Bari), Garofalo Giuseppe (Bari). Distinta PDF: assets/distinta-2026-10-24.pdf. Gol, assist e cambi dalla cronaca di mondoprimavera.com; nessun cartellino riportato. Triplo cambio Napoli al 59' da tabellino (60' nella diretta). Moduli dallo staff (Napoli 3-4-1-2; Spezia 4-3-3). Difensore centrale sinistro Spezia Vignali per esclusione (lo staff ricordava \"Migli…\"); mezzala destra, mezzala sinistra e ala sinistra (Vannucci, Carbone, Maggiore) non assegnate: la cronaca elenca i titolari solo per numero di maglia."
     }
   }
 }
