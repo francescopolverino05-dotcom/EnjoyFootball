@@ -46,319 +46,281 @@
   "goalkeepers": [],
   "clips": [],
   "analysisVideos": [],
-  "clipReferences": {
+  "clipTabs": {
     "hint": {
       "it": "Clip di riferimento dall'andata (Napoli 3-1 Spezia, 24 ott 2026)",
       "en": "Reference clips from the first meeting (Napoli 3-1 Spezia, 24 Oct 2026)"
     },
-    "sections": [
+    "tabs": [
       {
         "id": "piazzati-napoli",
-        "title": {
+        "label": {
           "it": "Piazzati Napoli",
           "en": "Piazzati Napoli"
         },
-        "clips": [
+        "groups": [
           {
-            "id": "ref-napoli-sp-corner-1239268988",
+            "id": "corners",
             "title": {
-              "it": "Angolo Napoli 1",
-              "en": "Angolo Napoli 1"
+              "it": "Angoli",
+              "en": "Angoli"
             },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268988/db76ba0b80"
+            "clips": [
+              {
+                "id": "napoli-corners-1-1239268988",
+                "title": {
+                  "it": "Angolo Napoli 1",
+                  "en": "Angolo Napoli 1"
+                },
+                "videoFile": "https://vimeo.com/1239268988/db76ba0b80"
+              },
+              {
+                "id": "napoli-corners-2-1239268987",
+                "title": {
+                  "it": "Angolo Napoli 2",
+                  "en": "Angolo Napoli 2"
+                },
+                "videoFile": "https://vimeo.com/1239268987/f2d4e06367"
+              }
+            ]
           },
           {
-            "id": "ref-napoli-sp-corner-1239268987",
+            "id": "free-kicks",
             "title": {
-              "it": "Angolo Napoli 2",
-              "en": "Angolo Napoli 2"
+              "it": "Punizioni",
+              "en": "Punizioni"
             },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268987/f2d4e06367"
+            "clips": [
+              {
+                "id": "napoli-free-kicks-1-1239268908",
+                "title": {
+                  "it": "Punizione Napoli 1",
+                  "en": "Punizione Napoli 1"
+                },
+                "videoFile": "https://vimeo.com/1239268908/fc2ad14e8a",
+                "minute": 63
+              },
+              {
+                "id": "napoli-free-kicks-2-1239268907",
+                "title": {
+                  "it": "Punizione Napoli 2",
+                  "en": "Punizione Napoli 2"
+                },
+                "videoFile": "https://vimeo.com/1239268907/b5aa6fa8df",
+                "minute": 74
+              },
+              {
+                "id": "napoli-free-kicks-3-1239268909",
+                "title": {
+                  "it": "Punizione Napoli 3",
+                  "en": "Punizione Napoli 3"
+                },
+                "videoFile": "https://vimeo.com/1239268909/02e8dd52f4",
+                "minute": 89
+              }
+            ]
           },
           {
-            "id": "ref-napoli-sp-throw-1239268851",
+            "id": "throw-ins",
             "title": {
-              "it": "Laterale Napoli 1",
-              "en": "Laterale Napoli 1"
+              "it": "Falli laterali",
+              "en": "Falli laterali"
             },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268851/14792e999f",
-            "minute": 22
-          },
-          {
-            "id": "ref-napoli-sp-throw-1239268852",
-            "title": {
-              "it": "Laterale Napoli 2",
-              "en": "Laterale Napoli 2"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268852/dcd136449d",
-            "minute": 29
-          },
-          {
-            "id": "ref-napoli-sp-throw-1239268850",
-            "title": {
-              "it": "Laterale Napoli 3",
-              "en": "Laterale Napoli 3"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268850/69c3657edf",
-            "minute": 40
-          },
-          {
-            "id": "ref-napoli-sp-throw-1239268849",
-            "title": {
-              "it": "Laterale Napoli 4",
-              "en": "Laterale Napoli 4"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268849/ec8380ac65",
-            "minute": 54
-          },
-          {
-            "id": "ref-napoli-sp-fk-1239268908",
-            "title": {
-              "it": "Punizione Napoli 1",
-              "en": "Punizione Napoli 1"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268908/fc2ad14e8a",
-            "minute": 63
-          },
-          {
-            "id": "ref-napoli-sp-fk-1239268907",
-            "title": {
-              "it": "Punizione Napoli 2",
-              "en": "Punizione Napoli 2"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268907/b5aa6fa8df",
-            "minute": 74
-          },
-          {
-            "id": "ref-napoli-sp-fk-1239268909",
-            "title": {
-              "it": "Punizione Napoli 3",
-              "en": "Punizione Napoli 3"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268909/02e8dd52f4",
-            "minute": 89
+            "clips": [
+              {
+                "id": "napoli-throw-ins-1-1239268851",
+                "title": {
+                  "it": "Fallo laterale Napoli 1",
+                  "en": "Fallo laterale Napoli 1"
+                },
+                "videoFile": "https://vimeo.com/1239268851/14792e999f",
+                "minute": 22
+              },
+              {
+                "id": "napoli-throw-ins-2-1239268852",
+                "title": {
+                  "it": "Fallo laterale Napoli 2",
+                  "en": "Fallo laterale Napoli 2"
+                },
+                "videoFile": "https://vimeo.com/1239268852/dcd136449d",
+                "minute": 29
+              },
+              {
+                "id": "napoli-throw-ins-3-1239268850",
+                "title": {
+                  "it": "Fallo laterale Napoli 3",
+                  "en": "Fallo laterale Napoli 3"
+                },
+                "videoFile": "https://vimeo.com/1239268850/69c3657edf",
+                "minute": 40
+              },
+              {
+                "id": "napoli-throw-ins-4-1239268849",
+                "title": {
+                  "it": "Fallo laterale Napoli 4",
+                  "en": "Fallo laterale Napoli 4"
+                },
+                "videoFile": "https://vimeo.com/1239268849/ec8380ac65",
+                "minute": 54
+              }
+            ]
           }
         ]
       },
       {
         "id": "piazzati-spezia",
-        "title": {
+        "label": {
           "it": "Piazzati Spezia",
           "en": "Piazzati Spezia"
         },
-        "clips": [
+        "groups": [
           {
-            "id": "ref-spezia-sp-corner-1239267842",
+            "id": "corners",
             "title": {
-              "it": "Angolo Spezia 1",
-              "en": "Angolo Spezia 1"
+              "it": "Angoli",
+              "en": "Angoli"
             },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239267842/31ff3b9af6"
+            "clips": [
+              {
+                "id": "spezia-corners-1-1239267842",
+                "title": {
+                  "it": "Angolo Spezia 1",
+                  "en": "Angolo Spezia 1"
+                },
+                "videoFile": "https://vimeo.com/1239267842/31ff3b9af6"
+              },
+              {
+                "id": "spezia-corners-2-1239267966",
+                "title": {
+                  "it": "Angolo Spezia 2",
+                  "en": "Angolo Spezia 2"
+                },
+                "videoFile": "https://vimeo.com/1239267966/41d83a566f"
+              },
+              {
+                "id": "spezia-corners-3-1239267844",
+                "title": {
+                  "it": "Angolo Spezia 3",
+                  "en": "Angolo Spezia 3"
+                },
+                "videoFile": "https://vimeo.com/1239267844/5bbfb662b6"
+              },
+              {
+                "id": "spezia-corners-4-1239267841",
+                "title": {
+                  "it": "Angolo Spezia 4",
+                  "en": "Angolo Spezia 4"
+                },
+                "videoFile": "https://vimeo.com/1239267841/c860dbce6e"
+              },
+              {
+                "id": "spezia-corners-5-1239267843",
+                "title": {
+                  "it": "Angolo Spezia 5",
+                  "en": "Angolo Spezia 5"
+                },
+                "videoFile": "https://vimeo.com/1239267843/0526e30b75"
+              }
+            ]
           },
           {
-            "id": "ref-spezia-sp-corner-1239267966",
+            "id": "free-kicks",
             "title": {
-              "it": "Angolo Spezia 2",
-              "en": "Angolo Spezia 2"
+              "it": "Punizioni",
+              "en": "Punizioni"
             },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239267966/41d83a566f"
+            "clips": [
+              {
+                "id": "spezia-free-kicks-1-1239268732",
+                "title": {
+                  "it": "Punizione Spezia 1",
+                  "en": "Punizione Spezia 1"
+                },
+                "videoFile": "https://vimeo.com/1239268732/d66830c1c5",
+                "minute": 9
+              },
+              {
+                "id": "spezia-free-kicks-2-1239268774",
+                "title": {
+                  "it": "Punizione Spezia 2",
+                  "en": "Punizione Spezia 2"
+                },
+                "videoFile": "https://vimeo.com/1239268774/b42862bb69",
+                "minute": 26
+              },
+              {
+                "id": "spezia-free-kicks-3-1239268729",
+                "title": {
+                  "it": "Punizione Spezia 3",
+                  "en": "Punizione Spezia 3"
+                },
+                "videoFile": "https://vimeo.com/1239268729/677f287e32",
+                "minute": 34
+              },
+              {
+                "id": "spezia-free-kicks-4-1239268731",
+                "title": {
+                  "it": "Punizione Spezia 4",
+                  "en": "Punizione Spezia 4"
+                },
+                "videoFile": "https://vimeo.com/1239268731/74279e1f57",
+                "minute": 44
+              },
+              {
+                "id": "spezia-free-kicks-5-1239268730",
+                "title": {
+                  "it": "Punizione Spezia 5",
+                  "en": "Punizione Spezia 5"
+                },
+                "videoFile": "https://vimeo.com/1239268730/038607b5eb",
+                "minute": 47
+              },
+              {
+                "id": "spezia-free-kicks-6-1239268776",
+                "title": {
+                  "it": "Punizione Spezia 6",
+                  "en": "Punizione Spezia 6"
+                },
+                "videoFile": "https://vimeo.com/1239268776/9e811f891a",
+                "minute": 48
+              }
+            ]
           },
           {
-            "id": "ref-spezia-sp-corner-1239267844",
+            "id": "throw-ins",
             "title": {
-              "it": "Angolo Spezia 3",
-              "en": "Angolo Spezia 3"
+              "it": "Falli laterali",
+              "en": "Falli laterali"
             },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239267844/5bbfb662b6"
-          },
-          {
-            "id": "ref-spezia-sp-corner-1239267841",
-            "title": {
-              "it": "Angolo Spezia 4",
-              "en": "Angolo Spezia 4"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239267841/c860dbce6e"
-          },
-          {
-            "id": "ref-spezia-sp-corner-1239267843",
-            "title": {
-              "it": "Angolo Spezia 5",
-              "en": "Angolo Spezia 5"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239267843/0526e30b75"
-          },
-          {
-            "id": "ref-spezia-sp-fk-1239268732",
-            "title": {
-              "it": "Punizione Spezia 1",
-              "en": "Punizione Spezia 1"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268732/d66830c1c5",
-            "minute": 9
-          },
-          {
-            "id": "ref-spezia-sp-fk-1239268774",
-            "title": {
-              "it": "Punizione Spezia 2",
-              "en": "Punizione Spezia 2"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268774/b42862bb69",
-            "minute": 26
-          },
-          {
-            "id": "ref-spezia-sp-fk-1239268729",
-            "title": {
-              "it": "Punizione Spezia 3",
-              "en": "Punizione Spezia 3"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268729/677f287e32",
-            "minute": 34
-          },
-          {
-            "id": "ref-spezia-sp-fk-1239268731",
-            "title": {
-              "it": "Punizione Spezia 4",
-              "en": "Punizione Spezia 4"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268731/74279e1f57",
-            "minute": 44
-          },
-          {
-            "id": "ref-spezia-sp-fk-1239268730",
-            "title": {
-              "it": "Punizione Spezia 5",
-              "en": "Punizione Spezia 5"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268730/038607b5eb",
-            "minute": 47
-          },
-          {
-            "id": "ref-spezia-sp-fk-1239268776",
-            "title": {
-              "it": "Punizione Spezia 6",
-              "en": "Punizione Spezia 6"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268776/9e811f891a",
-            "minute": 48
-          },
-          {
-            "id": "ref-spezia-sp-throw-1239268811",
-            "title": {
-              "it": "Laterali Spezia 1",
-              "en": "Laterali Spezia 1"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268811/db0c10d810",
-            "minute": 49
-          },
-          {
-            "id": "ref-spezia-sp-throw-1239268800",
-            "title": {
-              "it": "Laterali Spezia 2",
-              "en": "Laterali Spezia 2"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268800/d70ed2a3fb",
-            "minute": 60
-          },
-          {
-            "id": "ref-spezia-sp-throw-1239268799",
-            "title": {
-              "it": "Laterali Spezia 3",
-              "en": "Laterali Spezia 3"
-            },
-            "comments": {
-              "it": "Napoli vs Spezia, 24 ott 2026",
-              "en": "Napoli vs Spezia, 24 Oct 2026"
-            },
-            "videoFile": "https://vimeo.com/1239268799/badf1844ba",
-            "minute": 61
+            "clips": [
+              {
+                "id": "spezia-throw-ins-1-1239268811",
+                "title": {
+                  "it": "Fallo laterale Spezia 1",
+                  "en": "Fallo laterale Spezia 1"
+                },
+                "videoFile": "https://vimeo.com/1239268811/db0c10d810",
+                "minute": 49
+              },
+              {
+                "id": "spezia-throw-ins-2-1239268800",
+                "title": {
+                  "it": "Fallo laterale Spezia 2",
+                  "en": "Fallo laterale Spezia 2"
+                },
+                "videoFile": "https://vimeo.com/1239268800/d70ed2a3fb",
+                "minute": 60
+              },
+              {
+                "id": "spezia-throw-ins-3-1239268799",
+                "title": {
+                  "it": "Fallo laterale Spezia 3",
+                  "en": "Fallo laterale Spezia 3"
+                },
+                "videoFile": "https://vimeo.com/1239268799/badf1844ba",
+                "minute": 61
+              }
+            ]
           }
         ]
       }

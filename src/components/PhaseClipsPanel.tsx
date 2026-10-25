@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import type { VideoClip } from '../types/match';
+import type { MatchClipTabs, VideoClip } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
 import {
   ANALYSIS_SECTION_ORDER,
@@ -30,7 +30,10 @@ export default function PhaseClipsPanel({
   library = 'matches',
   emptyMessage,
   includeOtherSection = false,
+  clipTabs,
 }: {
+  /** Per-match tab override (match.json `clipTabs`); replaces the phase tabs. */
+  clipTabs?: MatchClipTabs;
   slug: string;
   clips: VideoClip[];
   library?: MediaLibrary;
@@ -104,6 +107,10 @@ export default function PhaseClipsPanel({
     });
   }
 
+  if (clipTabs && clipTabs.tabs.length > 0) {
+    return <CustomClipTabs slug={slug} library={library} data={clipTabs} />;
+  }
+
   if (!hasAnyClips) {
     return <div className="empty-clips">{emptyMessage}</div>;
   }
@@ -166,6 +173,73 @@ export default function PhaseClipsPanel({
           </div>
         ))
       )}
+    </div>
+  );
+}
+
+function CustomClipTabs({
+  slug,
+  library,
+  data,
+}: {
+  slug: string;
+  library: MediaLibrary;
+  data: MatchClipTabs;
+}) {
+  const { t, L } = useLanguage();
+  const [active, setActive] = useState(data.tabs[0].id);
+  const tab = data.tabs.find((x) => x.id === active) ?? data.tabs[0];
+  return (
+    <div className="video-section clip-tabs-custom">
+      {data.hint ? <p className="video-hint">{L(data.hint)}</p> : null}
+      <div className="opposition-clip-toggles" role="tablist">
+        {data.tabs.map((x) => {
+          const on = x.id === tab.id;
+          const count = x.groups.reduce((n, g) => n + g.clips.length, 0);
+          return (
+            <button
+              key={x.id}
+              type="button"
+              role="tab"
+              aria-selected={on}
+              className={`opposition-clip-toggle ${on ? 'active' : ''}`}
+              onClick={() => setActive(x.id)}
+            >
+              {L(x.label)} ({count})
+            </button>
+          );
+        })}
+      </div>
+      {tab.groups
+        .filter((g) => g.clips.length > 0)
+        .map((g) => (
+          <div className="opposition-clip-section" key={g.id}>
+            <div className="section-title">
+              {L(g.title)} ({g.clips.length})
+            </div>
+            <div className="analysis-grid">
+              {g.clips.map((clip) => (
+                <article className="analysis-card" key={clip.id}>
+                  <MatchMedia
+                    library={library}
+                    slug={slug}
+                    src={clip.videoFile}
+                    kind="clips"
+                    unsupportedLabel={t('videoUnsupported')}
+                    playLabel={t('playVideo')}
+                    title={L(clip.title)}
+                  />
+                  <div className="clip-card-body">
+                    <div className="clip-card-title">
+                      {L(clip.title)}
+                      {clip.minute != null ? ` · ${clip.minute}'` : ''}
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        ))}
     </div>
   );
 }

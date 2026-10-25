@@ -251,6 +251,8 @@ export interface MatchData {
   analysisVideos: AnalysisVideo[];
   /** Optional curated clip-reference area (e.g. set pieces from a previous meeting). */
   clipReferences?: MatchClipReferences;
+  /** Per-match override of the Clips section tabs (replaces the default phase tabs). */
+  clipTabs?: MatchClipTabs;
   /** Post-match WWB/EBI (CAB/AMS) reflection notes. */
   reflection?: MatchReflection;
 }
@@ -296,4 +298,21 @@ export interface MatchClipReferences {
   title?: Localized;
   hint?: Localized;
   sections: MatchClipReferenceSection[];
+}
+
+export interface MatchClipTabGroup {
+  id: string;
+  title: Localized;
+  clips: MatchClipReference[];
+}
+
+export interface MatchClipTab {
+  id: string;
+  label: Localized;
+  groups: MatchClipTabGroup[];
+}
+
+export interface MatchClipTabs {
+  hint?: Localized;
+  tabs: MatchClipTab[];
 }

@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import FirstLegReference from '../components/FirstLegReference';
 import ClipReferences from '../components/ClipReferences';
+import PhaseClipsPanel from '../components/PhaseClipsPanel';
 import { getFirstLegMatch, getMatchBySlug } from '../data/matches';
 import { getLeagueMatchStatsForMatchSlug } from '../data/leagueMatchStats';
 import {
@@ -88,6 +89,18 @@ export default function MatchPage() {
         {bareFixture && firstLeg ? <FirstLegReference match={firstLeg} /> : null}
         {match.clipReferences ? (
           <ClipReferences slug={match.slug} data={match.clipReferences} />
+        ) : null}
+        {bareFixture && match.clipTabs ? (
+          <section className="first-leg-reference match-clip-tabs">
+            <h2 className="section-title">Clip</h2>
+            <PhaseClipsPanel
+              slug={match.slug}
+              clips={match.clips}
+              clipTabs={match.clipTabs}
+              library="matches"
+              emptyMessage=""
+            />
+          </section>
         ) : null}
         {bareFixture ? null : (
           <>

@@ -181,6 +181,7 @@ export default function StatsDashboard({
           <PhaseClipsPanel
             slug={match.slug}
             clips={match.clips}
+            clipTabs={match.clipTabs}
             library="matches"
             emptyMessage={t('noClips').replace(/\{slug\}/g, match.slug)}
           />
