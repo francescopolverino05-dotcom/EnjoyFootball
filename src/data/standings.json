@@ -2,7 +2,7 @@
   "season": "2026/27",
   "updatedAt": "2026-10-25",
   "sources": {
-    "primavera2": "https://www.transfermarkt.it/primavera-2-b/startseite/wettbewerb/IJ2B",
+    "primavera2": "https://www.tuttocampo.it/Italia/Primavera/Girone2B/Risultati",
     "coppaItalia": "https://www.transfermarkt.it/coppa-italia-primavera/turnierbaum/pokalwettbewerb/CITP/saison_id/2026",
     "uefaYouthLeague": "https://www.transfermarkt.com/uefa-youth-league/gesamtspielplan/pokalwettbewerb/19YL/saison_id/2026"
   },
@@ -20,6 +20,19 @@
       "nextMatchdayDate": "2026-10-31",
       "rows": [
         {
+          "teamId": "catanzaro",
+          "shortName": "Catanzaro",
+          "played": 6,
+          "won": 6,
+          "drawn": 0,
+          "lost": 0,
+          "gf": 17,
+          "ga": 4,
+          "gd": 13,
+          "pts": 18,
+          "pos": 1
+        },
+        {
           "teamId": "perugia",
           "shortName": "Perugia",
           "played": 6,
@@ -29,19 +42,6 @@
           "gf": 18,
           "ga": 3,
           "gd": 15,
-          "pts": 15,
-          "pos": 1
-        },
-        {
-          "teamId": "catanzaro",
-          "shortName": "Catanzaro",
-          "played": 6,
-          "won": 5,
-          "drawn": 0,
-          "lost": 1,
-          "gf": 16,
-          "ga": 5,
-          "gd": 11,
           "pts": 15,
           "pos": 2
         },
@@ -72,19 +72,6 @@
           "pos": 4
         },
         {
-          "teamId": "avellino",
-          "shortName": "Avellino",
-          "played": 6,
-          "won": 4,
-          "drawn": 0,
-          "lost": 2,
-          "gf": 12,
-          "ga": 10,
-          "gd": 2,
-          "pts": 12,
-          "pos": 5
-        },
-        {
           "teamId": "monopoli",
           "shortName": "Monopoli",
           "played": 6,
@@ -95,7 +82,7 @@
           "ga": 7,
           "gd": 5,
           "pts": 11,
-          "pos": 6
+          "pos": 5
         },
         {
           "teamId": "pescara",
@@ -108,7 +95,7 @@
           "ga": 11,
           "gd": 4,
           "pts": 11,
-          "pos": 7
+          "pos": 6
         },
         {
           "teamId": "bari",
@@ -120,6 +107,19 @@
           "gf": 9,
           "ga": 5,
           "gd": 4,
+          "pts": 9,
+          "pos": 7
+        },
+        {
+          "teamId": "avellino",
+          "shortName": "Avellino",
+          "played": 6,
+          "won": 3,
+          "drawn": 0,
+          "lost": 3,
+          "gf": 11,
+          "ga": 11,
+          "gd": 0,
           "pts": 9,
           "pos": 8
         },
@@ -450,7 +450,7 @@
             {
               "homeId": "avellino",
               "awayId": "catanzaro",
-              "score": "2-1",
+              "score": "1-2",
               "statsSlug": "avellino-catanzaro"
             },
             {
