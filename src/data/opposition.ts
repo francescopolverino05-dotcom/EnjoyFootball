@@ -2361,9 +2361,33 @@ if (spezia) {
     lw: 'Del Sante',
   });
 
+  const vsNapoli = spezia433({
+    gk: 'Azzoni',
+    rb: 'Mazzanti',
+    lcb: 'Vignali',
+    rcb: 'Francini',
+    lb: 'Del Sante',
+    cdm: 'Longhi',
+    rcm: 'Vannucci',
+    lcm: 'Carbone',
+    rw: "D'Ambrosio",
+    st: 'Trentinella',
+    lw: 'Maggiore',
+  });
+
   spezia.formationSystem = '1-4-3-3';
-  spezia.starters = vsLatina;
+  spezia.starters = vsNapoli;
   spezia.scoutedFormations = [
+    {
+      id: 'spezia-vs-napoli',
+      label: { en: 'Starting XI vs Napoli (24 Oct, 3–1)', it: 'Formazione iniziale vs Napoli (24 ott, 3–1)' },
+      system: '4-3-3',
+      players: vsNapoli,
+      notes: {
+        en: "Primavera 2 MD6, 24 Oct 2026, Napoli 3–1 Spezia (our match). Azzoni in goal; Del Sante (#3) at LB, Vannucci (#8) RCM, Carbone (#10) LCM, Maggiore (#11) LW. Goal: Longhi 72'. Subs: Ghetti for Maggiore 51', D'Auria for D'Ambrosio 69', Sartori for Carbone 69', Camara for Vannucci 80' (switch to 4-4-2 at 80'). Reference XI for the Coppa Italia tie (28 Oct).",
+        it: "Primavera 2 gior. 6, 24 ott 2026, Napoli 3–1 Spezia (nostra partita). Azzoni in porta; Del Sante (#3) terzino sinistro, Vannucci (#8) CC destro, Carbone (#10) CC sinistro, Maggiore (#11) ala sinistra. Gol: Longhi 72'. Sub: Ghetti per Maggiore 51', D'Auria per D'Ambrosio 69', Sartori per Carbone 69', Camara per Vannucci 80' (passaggio al 4-4-2 all'80'). XI di riferimento per la Coppa Italia (28 ott).",
+      },
+    },
     {
       id: 'spezia-vs-ascoli',
       label: { en: 'vs Ascoli (1–1)', it: 'vs Ascoli (1–1)' },
@@ -2419,28 +2443,28 @@ if (spezia) {
   spezia.squadDepth = {
     system: '1-4-3-3',
     note: {
-      en: 'Scouted XIs so far (Ascoli MD1, Palermo MD2, Pisa MD3, Monopoli MD4, Latina MD5) mapped by shirt onto 4-3-3: 4 = CDM, 8 = RCM, 10 = LCM. Order = most starts in that slot.',
-      it: 'Formazioni scoutate finora (Ascoli gior. 1, Palermo gior. 2, Pisa gior. 3, Monopoli gior. 4, Latina gior. 5) mappate per numero sul 4-3-3: 4 = play, 8 = CC destro, 10 = CC sinistro. Ordine = più partite in quel ruolo.',
+      en: 'Scouted XIs so far (Ascoli MD1, Palermo MD2, Pisa MD3, Monopoli MD4, Latina MD5, Napoli MD6) mapped by shirt onto 4-3-3: 4 = CDM, 8 = RCM, 10 = LCM. Order = most starts in that slot.',
+      it: 'Formazioni scoutate finora (Ascoli gior. 1, Palermo gior. 2, Pisa gior. 3, Monopoli gior. 4, Latina gior. 5, Napoli gior. 6) mappate per numero sul 4-3-3: 4 = play, 8 = CC destro, 10 = CC sinistro. Ordine = più partite in quel ruolo.',
     },
     slots: [
-      { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Doretti', starts: 3 }, { name: 'Guidi', starts: 2 }] },
-      { role: 'RB', top: '26%', left: '18%', players: [{ name: 'Mazzanti', starts: 5 }] },
-      { role: 'RCB', top: '24%', left: '38%', players: [{ name: 'Gafuri', starts: 4 }, { name: 'Francini', starts: 1 }] },
-      { role: 'LCB', top: '24%', left: '62%', players: [{ name: 'Vignali', starts: 3 }, { name: 'Francini', starts: 2 }] },
-      { role: 'LB', top: '26%', left: '82%', players: [{ name: 'Michelotti', starts: 4 }, { name: 'Ghetti', starts: 1 }] },
-      { role: 'CDM', top: '40%', left: '50%', players: [{ name: 'Longhi', starts: 3 }, { name: 'Vannucci', starts: 2 }] },
-      { role: 'RCM', top: '52%', left: '32%', players: [{ name: 'Berti', starts: 3 }, { name: 'Vannucci', starts: 1 }, { name: 'Ghetti', starts: 1 }] },
-      { role: 'LCM', top: '52%', left: '68%', players: [{ name: 'Carbone', starts: 4 }, { name: 'Sartori', starts: 1 }] },
-      { role: 'RW', top: '70%', left: '18%', players: [{ name: 'Cassano', starts: 4 }, { name: "D'Ambrosio", starts: 1 }] },
-      { role: 'ST', top: '78%', left: '50%', players: [{ name: 'Camara', starts: 3 }, { name: 'Trentinella', starts: 2 }] },
-      { role: 'LW', top: '70%', left: '82%', players: [{ name: 'Trentinella', starts: 2 }, { name: 'Del Sante', starts: 2 }, { name: 'Maggiore', starts: 1 }] },
+      { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Doretti', starts: 3 }, { name: 'Guidi', starts: 2 }, { name: 'Azzoni', starts: 1 }] },
+      { role: 'RB', top: '26%', left: '18%', players: [{ name: 'Mazzanti', starts: 6 }] },
+      { role: 'RCB', top: '24%', left: '38%', players: [{ name: 'Gafuri', starts: 4 }, { name: 'Francini', starts: 2 }] },
+      { role: 'LCB', top: '24%', left: '62%', players: [{ name: 'Vignali', starts: 4 }, { name: 'Francini', starts: 2 }] },
+      { role: 'LB', top: '26%', left: '82%', players: [{ name: 'Michelotti', starts: 4 }, { name: 'Ghetti', starts: 1 }, { name: 'Del Sante', starts: 1 }] },
+      { role: 'CDM', top: '40%', left: '50%', players: [{ name: 'Longhi', starts: 4 }, { name: 'Vannucci', starts: 2 }] },
+      { role: 'RCM', top: '52%', left: '32%', players: [{ name: 'Berti', starts: 3 }, { name: 'Vannucci', starts: 2 }, { name: 'Ghetti', starts: 1 }] },
+      { role: 'LCM', top: '52%', left: '68%', players: [{ name: 'Carbone', starts: 5 }, { name: 'Sartori', starts: 1 }] },
+      { role: 'RW', top: '70%', left: '18%', players: [{ name: 'Cassano', starts: 4 }, { name: "D'Ambrosio", starts: 2 }] },
+      { role: 'ST', top: '78%', left: '50%', players: [{ name: 'Camara', starts: 3 }, { name: 'Trentinella', starts: 3 }] },
+      { role: 'LW', top: '70%', left: '82%', players: [{ name: 'Trentinella', starts: 2 }, { name: 'Del Sante', starts: 2 }, { name: 'Maggiore', starts: 2 }] },
     ],
   };
   /** Squad from distinte (no shirt numbers). Role = roles started in scouted XIs; bench-only = Transfermarkt profile position. Foot/height from Transfermarkt where listed (Tuttocampo roster empty); blanks = not published. */
   spezia.squad = [
     { name: 'Gabriele Doretti', position: 'GK', isGk: true, birthYear: 2010, heightCm: 184, preferredFoot: 'Destro' },
     { name: 'Enrico Sasha Guidi', position: 'GK', isGk: true, birthYear: 2008, heightCm: 191, preferredFoot: 'Destro' },
-    { name: 'Matteo Azzoni', position: 'GK (profile)', isGk: true, birthYear: 2009, heightCm: 182, preferredFoot: 'Destro' },
+    { name: 'Matteo Azzoni', position: 'GK', isGk: true, birthYear: 2009, heightCm: 182, preferredFoot: 'Destro' },
     { name: 'Nicolò De Vita', position: 'GK (profile)', isGk: true, birthYear: 2009 },
     { name: 'Tommaso Mazzanti', position: 'RB', birthYear: 2009, preferredFoot: 'Destro' },
     { name: 'Diego Vignali', position: 'LCB', birthYear: 2008, heightCm: 184, preferredFoot: 'Sinistro' },
@@ -2457,8 +2481,8 @@ if (spezia) {
     { name: 'Marco Trentinella', position: 'ST / LW', birthYear: 2009, preferredFoot: 'Destro' },
     { name: 'Kabine Camara', position: 'ST', birthYear: 2007, heightCm: 197, preferredFoot: 'Destro' },
     { name: 'Antonino Maggiore', position: 'LW', birthYear: 2009 },
-    { name: 'Davide Del Sante', position: 'LW', birthYear: 2008, heightCm: 175, preferredFoot: 'Sinistro' },
-    { name: 'Davide Ghetti', position: 'LB / RCM', birthYear: 2009 },
+    { name: 'Davide Del Sante', position: 'LW / LB', birthYear: 2008, heightCm: 175, preferredFoot: 'Sinistro' },
+    { name: 'Davide Ghetti', position: 'LB / RCM', birthYear: 2009, preferredFoot: 'Destro' },
     { name: 'Gianmarco Di Emidio', position: 'CM (profile)', birthYear: 2009 },
     { name: 'Nicolò Corallo', position: 'RB (profile)', birthYear: 2009 },
     { name: "Alessio D'Auria", position: 'CM (profile)', birthYear: 2009 },
