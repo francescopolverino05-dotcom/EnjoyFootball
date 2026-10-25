@@ -132,6 +132,22 @@ export default function OpponentPage() {
     clips: opponent.clips.filter((c) => c.section === id),
   }));
 
+  const mostSubs = (() => {
+    const m = new Map<string, { name: string; count: number; roles: Record<string, number> }>();
+    for (const f of formations) {
+      for (const sub of f.subs ?? []) {
+        const k = sub.name.trim().toLowerCase();
+        const e = m.get(k) ?? { name: sub.name.trim(), count: 0, roles: {} };
+        e.count += 1;
+        if (sub.role) e.roles[sub.role] = (e.roles[sub.role] ?? 0) + 1;
+        m.set(k, e);
+      }
+    }
+    return [...m.values()]
+      .map((e) => ({ name: e.name, count: e.count, role: Object.entries(e.roles).sort((a, b) => b[1] - a[1])[0]?.[0] }))
+      .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
+  })();
+
   const tabs: [
     OpponentTab,
     | 'tabOppositionFormation'
@@ -249,26 +265,28 @@ export default function OpponentPage() {
                 teamName={L(opponent.name)}
               />
             ) : null}
-            <div className="section-title">{t('oppositionSubs')}</div>
-            {opponent.substitutes.length === 0 ? (
+            <div className="section-title">{t('oppositionMostSubbedOn')}</div>
+            {mostSubs.length === 0 ? (
               <p className="home-empty">{t('oppositionSubsEmpty')}</p>
             ) : (
-              <ul className="opponent-name-list">
-                {opponent.substitutes.map((p) => (
-                  <li key={`sub-${p.number ?? ''}-${p.name}`}>
-                    {[
-                      p.number != null ? String(p.number) : null,
-                      p.name,
-                      p.position,
-                      p.birthYear != null ? String(p.birthYear) : null,
-                      p.preferredFoot,
-                      p.heightCm != null ? `${p.heightCm} cm` : null,
-                    ]
-                      .filter(Boolean)
-                      .join(' · ')}
-                  </li>
-                ))}
-              </ul>
+              <table className="standings-table most-subs-table">
+                <thead>
+                  <tr>
+                    <th scope="col">{t('statsColPlayer')}</th>
+                    <th scope="col">{t('oppositionUsualRole')}</th>
+                    <th scope="col">{t('oppositionSubApps')}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {mostSubs.map((r) => (
+                    <tr key={r.name}>
+                      <td className="standings-team">{r.name}</td>
+                      <td>{r.role ?? '—'}</td>
+                      <td className="stats-value-cell">{r.count}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             )}
             <div className="section-title">{t('oppositionSquad')}</div>
             {opponent.squad.length === 0 ? (
