@@ -63,7 +63,7 @@
             "id": "ref-napoli-sp-corner-1239268988",
             "title": {
               "it": "Angolo Napoli 1",
-              "en": "Corner Napoli 1"
+              "en": "Angolo Napoli 1"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -75,7 +75,7 @@
             "id": "ref-napoli-sp-corner-1239268987",
             "title": {
               "it": "Angolo Napoli 2",
-              "en": "Corner Napoli 2"
+              "en": "Angolo Napoli 2"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -86,8 +86,8 @@
           {
             "id": "ref-napoli-sp-throw-1239268851",
             "title": {
-              "it": "Fallo laterale Napoli 1",
-              "en": "Throw-in Napoli 1"
+              "it": "Laterale Napoli 1",
+              "en": "Laterale Napoli 1"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -99,8 +99,8 @@
           {
             "id": "ref-napoli-sp-throw-1239268852",
             "title": {
-              "it": "Fallo laterale Napoli 2",
-              "en": "Throw-in Napoli 2"
+              "it": "Laterale Napoli 2",
+              "en": "Laterale Napoli 2"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -112,8 +112,8 @@
           {
             "id": "ref-napoli-sp-throw-1239268850",
             "title": {
-              "it": "Fallo laterale Napoli 3",
-              "en": "Throw-in Napoli 3"
+              "it": "Laterale Napoli 3",
+              "en": "Laterale Napoli 3"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -125,8 +125,8 @@
           {
             "id": "ref-napoli-sp-throw-1239268849",
             "title": {
-              "it": "Fallo laterale Napoli 4",
-              "en": "Throw-in Napoli 4"
+              "it": "Laterale Napoli 4",
+              "en": "Laterale Napoli 4"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -139,7 +139,7 @@
             "id": "ref-napoli-sp-fk-1239268908",
             "title": {
               "it": "Punizione Napoli 1",
-              "en": "Free kick Napoli 1"
+              "en": "Punizione Napoli 1"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -152,7 +152,7 @@
             "id": "ref-napoli-sp-fk-1239268907",
             "title": {
               "it": "Punizione Napoli 2",
-              "en": "Free kick Napoli 2"
+              "en": "Punizione Napoli 2"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -164,8 +164,8 @@
           {
             "id": "ref-napoli-sp-fk-1239268909",
             "title": {
-              "it": "Punizione Napoli 3",
-              "en": "Free kick Napoli 3"
+              "it": "Punizione Napol 3",
+              "en": "Punizione Napol 3"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -187,7 +187,7 @@
             "id": "ref-spezia-sp-corner-1239267842",
             "title": {
               "it": "Angolo Spezia 1",
-              "en": "Corner Spezia 1"
+              "en": "Angolo Spezia 1"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -199,7 +199,7 @@
             "id": "ref-spezia-sp-corner-1239267966",
             "title": {
               "it": "Angolo Spezia 2",
-              "en": "Corner Spezia 2"
+              "en": "Angolo Spezia 2"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -211,7 +211,7 @@
             "id": "ref-spezia-sp-corner-1239267844",
             "title": {
               "it": "Angolo Spezia 3",
-              "en": "Corner Spezia 3"
+              "en": "Angolo Spezia 3"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -223,7 +223,7 @@
             "id": "ref-spezia-sp-corner-1239267841",
             "title": {
               "it": "Angolo Spezia 4",
-              "en": "Corner Spezia 4"
+              "en": "Angolo Spezia 4"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -235,7 +235,7 @@
             "id": "ref-spezia-sp-corner-1239267843",
             "title": {
               "it": "Angolo Spezia 5",
-              "en": "Corner Spezia 5"
+              "en": "Angolo Spezia 5"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -246,8 +246,8 @@
           {
             "id": "ref-spezia-sp-fk-1239268732",
             "title": {
-              "it": "Punizione Spezia 1",
-              "en": "Free kick Spezia 1"
+              "it": "Punizioni Spezia 1",
+              "en": "Punizioni Spezia 1"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -260,7 +260,7 @@
             "id": "ref-spezia-sp-fk-1239268774",
             "title": {
               "it": "Punizione Spezia 2",
-              "en": "Free kick Spezia 2"
+              "en": "Punizione Spezia 2"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -273,7 +273,7 @@
             "id": "ref-spezia-sp-fk-1239268729",
             "title": {
               "it": "Punizione Spezia 3",
-              "en": "Free kick Spezia 3"
+              "en": "Punizione Spezia 3"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -286,7 +286,7 @@
             "id": "ref-spezia-sp-fk-1239268731",
             "title": {
               "it": "Punizione Spezia 4",
-              "en": "Free kick Spezia 4"
+              "en": "Punizione Spezia 4"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -299,7 +299,7 @@
             "id": "ref-spezia-sp-fk-1239268730",
             "title": {
               "it": "Punizione Spezia 5",
-              "en": "Free kick Spezia 5"
+              "en": "Punizione Spezia 5"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -312,7 +312,7 @@
             "id": "ref-spezia-sp-fk-1239268776",
             "title": {
               "it": "Punizione Spezia 6",
-              "en": "Free kick Spezia 6"
+              "en": "Punizione Spezia 6"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -324,8 +324,8 @@
           {
             "id": "ref-spezia-sp-throw-1239268811",
             "title": {
-              "it": "Fallo laterale Spezia 1",
-              "en": "Throw-in Spezia 1"
+              "it": "Laterali Spezia 1",
+              "en": "Laterali Spezia 1"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -337,8 +337,8 @@
           {
             "id": "ref-spezia-sp-throw-1239268800",
             "title": {
-              "it": "Fallo laterale Spezia 2",
-              "en": "Throw-in Spezia 2"
+              "it": "Laterali Spezia 2",
+              "en": "Laterali Spezia 2"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
@@ -350,8 +350,8 @@
           {
             "id": "ref-spezia-sp-throw-1239268799",
             "title": {
-              "it": "Fallo laterale Spezia 3",
-              "en": "Throw-in Spezia 3"
+              "it": "Laterali Spezia 3",
+              "en": "Laterali Spezia 3"
             },
             "comments": {
               "it": "Napoli vs Spezia, 24 ott 2026",
