@@ -2390,5 +2390,81 @@
         ]
       }
     ]
+  },
+  "reflection": {
+    "wentWell": [
+      {
+        "id": "wwb-01",
+        "text": {
+          "en": "The goalkeeper's direct passes beat their man-to-man pressure: at 21' a direct ball sent Pereyra through on goal; at 49' he found Pereyra, who held it up and released Melnyk.",
+          "it": "I lanci diretti del portiere hanno battuto la loro pressione a uomo: al 21' un pallone diretto ha mandato Pereyra in porta; al 49' ha trovato Pereyra, che ha protetto palla e servito Melnyk."
+        }
+      },
+      {
+        "id": "wwb-02",
+        "text": {
+          "en": "We scored more than one goal, converting our chances even with a modest xG after a long run of struggling to convert.",
+          "it": "Abbiamo segnato più di un gol, concretizzando le occasioni anche con un xG modesto, dopo un lungo periodo in cui facevamo fatica a finalizzare."
+        }
+      },
+      {
+        "id": "wwb-03",
+        "text": {
+          "en": "Midfield connection between the two and the three has improved since the Bodø/Glimt game: the pivots shifted with the ball to create angles and Riccio dropped into the pockets.",
+          "it": "Il collegamento a centrocampo tra i due e i tre è migliorato dalla partita con il Bodø/Glimt: i mediani si sono mossi con la palla per creare angoli e Riccio è venuto a ricevere tra le linee."
+        }
+      },
+      {
+        "id": "wwb-04",
+        "text": {
+          "en": "Our press in their half forced Spezia to go long.",
+          "it": "Il nostro pressing nella loro metà campo ha costretto lo Spezia a lanciare lungo."
+        }
+      },
+      {
+        "id": "wwb-05",
+        "text": {
+          "en": "Solid defending of crosses; we conceded few dangerous chances.",
+          "it": "Solidi nella difesa sui cross; abbiamo concesso poche occasioni pericolose."
+        }
+      }
+    ],
+    "evenBetterIf": [
+      {
+        "id": "ebi-01",
+        "text": {
+          "en": "The goalkeeper scans more before going long: when unpressed, play short to attract pressure, or hold and scan left/right, since the wing-backs were free against a narrow Spezia.",
+          "it": "Il portiere osservi di più prima di lanciare lungo: se non pressato, giocare corto per attirare la pressione, oppure temporeggiare e guardare a destra e sinistra, perché gli esterni erano liberi contro uno Spezia stretto."
+        }
+      },
+      {
+        "id": "ebi-02",
+        "text": {
+          "en": "Everyone raises the tempo instead of slow circulation among the defenders.",
+          "it": "Tutti alzano il ritmo invece di una circolazione lenta tra i difensori."
+        }
+      },
+      {
+        "id": "ebi-03",
+        "text": {
+          "en": "Lieto plays out wide more often, not just switching left-right, making it a habit rather than a one-off.",
+          "it": "Lieto giochi più spesso sull'esterno, non solo cambiando gioco da sinistra a destra, facendolo diventare un'abitudine e non un episodio."
+        }
+      },
+      {
+        "id": "ebi-04",
+        "text": {
+          "en": "Midfield holds the man-marking on runners: losing a runner at 72' directly cost us the goal conceded.",
+          "it": "Il centrocampo tenga la marcatura a uomo sugli inserimenti: perdere un inserimento al 72' ci è costato direttamente il gol subito."
+        }
+      },
+      {
+        "id": "ebi-05",
+        "text": {
+          "en": "Lieto takes riskier progressive passes when open — we play a game of risk.",
+          "it": "Lieto tenti passaggi progressivi più rischiosi quando è libero: il nostro è un gioco di rischio."
+        }
+      }
+    ]
   }
 }
