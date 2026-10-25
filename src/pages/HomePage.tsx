@@ -173,7 +173,7 @@ function cupTitle(cup: CupStandings, locale: 'en' | 'it'): string {
 export default function HomePage() {
   const { t, L, locale } = useLanguage();
   const today = todayIso();
-  const matches = getAllMatches().filter((m) => m.status === 'published');
+  const matches = getAllMatches();
   const pulse = pickLatestPulse(matches, today);
   const fixtures = fixtureStrip(matches, today);
   const nextOpp = getNextOppositionTarget(today);
