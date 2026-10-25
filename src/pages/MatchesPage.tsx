@@ -44,7 +44,6 @@ export default function MatchesPage() {
             ? ` (${selectedCompetition.matches.length})`
             : ` (${matches.length})`}
         </div>
-        <p className="home-section-hint">{t('matchesHint')}</p>
         {!selectedCompetition ? (
           <p className="home-empty">{t('noMatchesYet')}</p>
         ) : (

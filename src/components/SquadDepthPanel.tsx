@@ -22,7 +22,7 @@ export default function SquadDepthPanel({
     <div className="squad-depth-panel">
       <div className="section-title">{t('oppositionSquadDepth')}</div>
       <p className="video-hint">
-        {depth.note ? L(depth.note) : t('oppositionSquadDepthHint')}
+        {depth.note ? L(depth.note) : null}
       </p>
 
       <div className="tactical-pitch-card squad-depth-pitch-card">

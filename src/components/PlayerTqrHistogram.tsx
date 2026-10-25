@@ -43,7 +43,6 @@ export default function PlayerTqrHistogram({
   return (
     <div className="tqr-panel player-tqr">
       <div className="section-title">{t('playerTqrTitle')}</div>
-      <p className="video-hint">{t('playerTqrHint')}</p>
       <BorgScaleLegend kind="tqr" />
 
       <div

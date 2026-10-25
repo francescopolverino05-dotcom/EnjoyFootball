@@ -241,7 +241,6 @@ export default function OpponentPage() {
 
         {tab === 'formation' ? (
           <div className="tab-content active" role="tabpanel">
-            <p className="video-hint">{t('oppositionFormationHint')}</p>
             <Formations formations={formations} />
             {formationNotes.length > 0 ? (
               <ul className="opponent-name-list opponent-formation-notes">
@@ -309,7 +308,6 @@ export default function OpponentPage() {
               </div>
             ) : null}
             {fixtureClipTabs ? null : (<>
-            <p className="video-hint">{t('oppositionClipsHint')}</p>
 
             <div
               className="opposition-clip-toggles"
@@ -384,7 +382,6 @@ export default function OpponentPage() {
 
         {tab === 'gk' ? (
           <div className="tab-content active" role="tabpanel">
-            <p className="video-hint">{t('oppositionGkAreaHint')}</p>
             <div
               className="gk-striker-picker"
               role="tablist"
@@ -419,13 +416,6 @@ export default function OpponentPage() {
 
         {tab === 'matches' ? (
           <div className="tab-content active" role="tabpanel">
-            <p className="video-hint">
-              {t(
-                refSlotLimit >= OPPOSITION_MAX_REFERENCE_MATCHES
-                  ? 'oppositionRefMatchesHint'
-                  : 'oppositionRefMatchesHintThree'
-              ).replace('{n}', String(refSlotLimit))}
-            </p>
             <div className="match-grid">
               {refs.map((item) => (
                 <article className="match-card" key={item.id}>
@@ -479,7 +469,6 @@ export default function OpponentPage() {
 
         {tab === 'report' ? (
           <div className="tab-content active" role="tabpanel">
-            <p className="video-hint">{t('oppositionReportHint')}</p>
             <div className="opposition-report-shell">
               <div className="section-title">{t('oppositionReportWritten')}</div>
               <p className="home-empty">{t('oppositionReportWrittenEmpty')}</p>

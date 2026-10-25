@@ -27,7 +27,6 @@ export default function PlayersPage() {
         <div className="section-title" id="players-list-heading">
           {t('players')} ({players.length})
         </div>
-        <p className="home-section-hint">{t('playersHint')}</p>
         <PlayersGroupedList players={players} />
       </section>
     </div>

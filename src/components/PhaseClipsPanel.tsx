@@ -117,7 +117,6 @@ export default function PhaseClipsPanel({
 
   return (
     <div className="video-section">
-      <p className="video-hint">{t('clipsHint')}</p>
 
       <div
         className="opposition-clip-toggles"
@@ -191,7 +190,6 @@ function CustomClipTabs({
   const tab = data.tabs.find((x) => x.id === active) ?? data.tabs[0];
   return (
     <div className="video-section clip-tabs-custom">
-      {data.hint ? <p className="video-hint">{L(data.hint)}</p> : null}
       <div className="opposition-clip-toggles" role="tablist">
         {data.tabs.map((x) => {
           const on = x.id === tab.id;

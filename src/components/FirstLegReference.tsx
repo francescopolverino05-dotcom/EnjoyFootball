@@ -171,7 +171,6 @@ export default function FirstLegReference({
       <h2 className="section-title" id="first-leg-title">
         {t('firstLegTitle')}
       </h2>
-      <p className="video-hint">{t('firstLegHint')}</p>
       <div className="first-leg-panel">{body}</div>
     </section>
   );

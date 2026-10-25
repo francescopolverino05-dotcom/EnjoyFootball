@@ -23,7 +23,6 @@ export default function TqrHistograms({ session }: { session: TqrSession }) {
   return (
     <div className="tqr-panel">
       <div className="section-title">{t('tqrTitle')}</div>
-      <p className="video-hint">{t('tqrHint')}</p>
       <BorgScaleLegend kind="tqr" />
 
       <div className="rpe-chart-block">

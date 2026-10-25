@@ -13,7 +13,6 @@ export default function ClipReferences({ slug, data }: ClipReferencesProps) {
   return (
     <section className="first-leg-reference clip-references">
       {data.title ? <h2 className="section-title">{L(data.title)}</h2> : null}
-      {data.hint ? <p className="video-hint">{L(data.hint)}</p> : null}
       {data.sections.map((section) => (
         <div className="first-leg-block" key={section.id}>
           <h2 className="section-title">

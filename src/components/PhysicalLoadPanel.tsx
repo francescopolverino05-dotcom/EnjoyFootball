@@ -42,7 +42,6 @@ export default function PhysicalLoadPanel({
       {session ? (
         <>
           <div className="section-title">{t('physicalLoad')}</div>
-          <p className="video-hint">{t('physicalLoadHint')}</p>
           <BorgScaleLegend kind="rpe" />
 
           <div className="rpe-kpis">

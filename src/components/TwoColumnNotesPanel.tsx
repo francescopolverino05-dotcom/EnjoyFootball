@@ -38,7 +38,7 @@ function NotesColumn({
 }
 
 export default function TwoColumnNotesPanel({
-  hint,
+  hint: _hint,
   leftTitle,
   rightTitle,
   leftEmpty,
@@ -48,7 +48,6 @@ export default function TwoColumnNotesPanel({
 }: TwoColumnNotesPanelProps) {
   return (
     <div className="two-column-notes">
-      <p className="video-hint">{hint}</p>
       <div className="notes-columns">
         <NotesColumn title={leftTitle} empty={leftEmpty} notes={leftNotes} />
         <NotesColumn title={rightTitle} empty={rightEmpty} notes={rightNotes} />

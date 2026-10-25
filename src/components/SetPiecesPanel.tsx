@@ -28,7 +28,6 @@ function Section({ title, kind, data }: { title: string; kind: string; data?: Sp
   return (
     <section style={{ marginTop: 24 }}>
       <div className="section-title">{title}</div>
-      {kind === 'Corners' && data?.left?.zones?.length ? <p className="home-section-hint">Shaded zones = delivery areas</p> : null}
       <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
         <Panel title={`LEFT ${title.toUpperCase()}`} panel={data?.left} />
         <Panel title={`RIGHT ${title.toUpperCase()}`} panel={data?.right} />
@@ -52,7 +51,7 @@ function Section({ title, kind, data }: { title: string; kind: string; data?: Sp
 export default function SetPiecesPanel({ data }: { data?: OppositionSetPieces }) {
   return (
     <div className="set-pieces-panel">
-      <p className="video-hint">{data?.source ?? 'Set-piece data not filled in yet.'}</p>
+      {data?.source ? <p className="video-hint">{data.source}</p> : null}
       <Section title="Corners" kind="Corners" data={data?.corners} />
       <Section title="Free kicks" kind="Free kicks" data={data?.freeKicks} />
     </div>

@@ -121,7 +121,6 @@ export default function TablesPage() {
         <div className="section-title" id="table-heading">
           {t('table')}
         </div>
-        <p className="home-section-hint">{t('tableHint')}</p>
 
         <div className="match-competitions">
           <div className="tabs-header" role="tablist">

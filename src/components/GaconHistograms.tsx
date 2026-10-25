@@ -22,7 +22,6 @@ export default function GaconHistograms({ session }: { session: GaconSession }) 
   return (
     <div className="tqr-panel gacon-panel">
       <div className="section-title">{t('gaconTitle')}</div>
-      <p className="video-hint">{t('gaconHint')}</p>
 
       <div className="rpe-kpis">
         <div className="rpe-kpi">

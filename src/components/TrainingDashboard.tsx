@@ -228,7 +228,6 @@ function FullSessionPanel({
     return (
       <div className="video-section">
         <div className="section-title">{t('fullSessionVideo')}</div>
-        <p className="video-hint">{t('fullSessionHint')}</p>
         <div className="analysis-grid">
           {parts.map((item) => {
             const src = item.videoFile || '';
@@ -265,9 +264,6 @@ function FullSessionPanel({
   return (
     <div className="video-section">
       <div className="section-title">{t('fullSessionVideo')}</div>
-      {emptyKey === 'noGkContent' ? null : (
-        <p className="video-hint">{t('fullSessionHint')}</p>
-      )}
       {src ? (
         <MatchMedia
           library="trainings"
@@ -292,7 +288,7 @@ function FullSessionPanel({
 function DocMediaGrid({
   slug,
   items,
-  hintKey,
+  hintKey: _hintKey,
   emptyKey,
 }: {
   slug: string;
@@ -312,7 +308,6 @@ function DocMediaGrid({
 
   return (
     <div className="video-section">
-      <p className="video-hint">{t(hintKey)}</p>
       <div className="analysis-grid">
         {items.map((item: AnalysisVideo) => (
           <article className="analysis-card" key={item.id}>

@@ -37,7 +37,6 @@ export default function PlayerGaconHistogram({
   return (
     <div className="tqr-panel player-tqr player-gacon">
       <div className="section-title">{t('playerGaconTitle')}</div>
-      <p className="video-hint">{t('playerGaconHint')}</p>
 
       <div
         className="rpe-bars tqr-player-bars"

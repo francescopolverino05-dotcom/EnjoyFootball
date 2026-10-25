@@ -186,7 +186,6 @@ export default function AppearancesPanel({
   return (
     <div className="appearances-panel">
       <div className="section-title">{t('appearancesTitle')}</div>
-      <p className="appearances-hint">{t('appearancesHint')}</p>
       <div className="appearances-grid">
         <TeamAppearanceTable team={homeTeam} players={appearances.home} />
         <TeamAppearanceTable team={awayTeam} players={appearances.away} />

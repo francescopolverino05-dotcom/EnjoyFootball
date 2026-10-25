@@ -39,7 +39,6 @@ export default function TrainingsPage() {
             ? ` (${selectedWeek.sessions.length})`
             : ` (${trainings.length})`}
         </div>
-        <p className="home-section-hint">{t('trainingsHint')}</p>
         {trainings.length === 0 || !selectedWeek ? (
           <p className="home-empty">{t('noTrainingsYet')}</p>
         ) : (

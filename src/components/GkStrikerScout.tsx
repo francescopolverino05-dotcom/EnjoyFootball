@@ -266,7 +266,6 @@ export default function GkStrikerScout({
 
       <div className="gk-striker-clips">
         <div className="gk-graphic-title">{t('oppositionGkStrikerClips')}</div>
-        <p className="video-hint">{t('oppositionGkStrikerClipsHint')}</p>
         {striker.clips.length === 0 ? (
           <p className="home-empty">{t('oppositionGkStrikerClipsEmpty')}</p>
         ) : (

@@ -228,7 +228,6 @@ export default function CalendarPage() {
           {t('calendar')}
           {` (${filtered.length})`}
         </div>
-        <p className="home-section-hint">{t('calendarHint')}</p>
 
         <div className="calendar-legend" aria-hidden="true">
           <span className="calendar-legend-item">

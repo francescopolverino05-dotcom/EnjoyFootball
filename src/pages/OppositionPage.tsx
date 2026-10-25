@@ -38,7 +38,6 @@ export default function OppositionPage() {
           {t('opposition')}
           {` (${opponents.length})`}
         </div>
-        <p className="home-section-hint">{t('oppositionHint')}</p>
 
         <div className="match-competitions">
           <div className="tabs-header" role="tablist">

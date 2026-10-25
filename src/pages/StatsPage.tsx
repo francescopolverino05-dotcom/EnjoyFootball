@@ -77,7 +77,6 @@ export default function StatsPage() {
         <div className="section-title" id="stats-heading">
           {t('stats')}
         </div>
-        <p className="home-section-hint">{t('statsHint')}</p>
         <p className="home-section-hint stats-scope-hint">{L(dataset.scope)}</p>
 
         <div className="match-competitions">

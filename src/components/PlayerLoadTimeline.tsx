@@ -139,7 +139,6 @@ export default function PlayerLoadTimeline({
   return (
     <div className="rpe-panel player-rpe">
       <div className="section-title">{t('playerPhysicalLoad')}</div>
-      <p className="video-hint">{t('playerPhysicalLoadHint')}</p>
       <BorgScaleLegend kind="rpe" />
 
       <div className="rpe-line-toolbar">

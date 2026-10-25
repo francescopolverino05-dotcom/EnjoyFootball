@@ -505,7 +505,6 @@ function GkAnalysisPanel({
       {videos.length > 0 ? (
         <div className="video-section gk-analysis-videos">
           <div className="section-title">{t('gkAnalysisVideos')}</div>
-          <p className="video-hint">{t('gkAnalysisVideosHint')}</p>
           <div className="analysis-grid">
             {videos.map((item) => (
               <article className="analysis-card" key={item.id}>
@@ -537,7 +536,6 @@ function FullMatchPanel({ match }: { match: MatchData }) {
   return (
     <div className="video-section">
       <div className="section-title">{t('fullMatchVideo')}</div>
-      <p className="video-hint">{t('fullMatchHint')}</p>
       {src ? (
         <MatchMedia
           slug={match.slug}
@@ -585,7 +583,6 @@ function VideoAnalysisPanel({ match }: { match: MatchData }) {
 
   return (
     <div className="video-section">
-      <p className="video-hint">{t('videoAnalysisHint')}</p>
       <div className="analysis-grid">
         {videos.map((item: AnalysisVideo) => (
           <article className="analysis-card" key={item.id}>
