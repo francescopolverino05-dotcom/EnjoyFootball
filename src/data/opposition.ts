@@ -2265,32 +2265,48 @@ if (bodo) {
  */
 const spezia = OPPONENTS.find((o) => o.id === 'spezia');
 if (spezia) {
-  // Free kicks only (Francesco's notes). No Spezia corner data yet.
+  // Francesco's set-piece notes (5 corners, 3 Longhi free kicks).
   spezia.setPieces = {
-    freeKicks: {
-      left: { note: 'Maggiore (right foot) ×2 · Del Sante (left foot) ×1' },
+    corners: {
+      left: {
+        arrows: [
+          { x1: 12, y1: 8, x2: 205, y2: 22 },
+          { x1: 12, y1: 8, x2: 212, y2: 26 },
+          { x1: 12, y1: 8, x2: 200, y2: 20 },
+        ],
+        note: 'Maggiore (right foot) ×2 · Del Sante (left foot) ×1',
+        orderedNotesTitle: 'Delivery:',
+        orderedNotes: ['4 of 5 to the far post, 1 into the box'],
+      },
       right: {
         arrows: [
-          { x1: 235, y1: 125, x2: 150, y2: 30, n: 1 },
-          { x1: 292, y1: 140, x2: 118, y2: 20, n: 2 },
-          { x1: 278, y1: 104, x2: 124, y2: 26, n: 3 },
-          { x1: 245, y1: 112, x2: 175, y2: 94, n: 4 },
-          { x1: 225, y1: 135, x2: 160, y2: 48, n: 5 },
+          { x1: 308, y1: 8, x2: 110, y2: 22 },
+          { x1: 308, y1: 8, x2: 160, y2: 45 },
         ],
-        orderedNotesTitle: 'Right side, in order (yellow numbers on the pitch):',
-        orderedNotes: [
-          'Del Sante (left foot), the first free kick',
-          'Longhi (right foot), deep right at about 30 yards, to the far post',
-          'Longhi (right foot), taken short, to the far post',
-          'Longhi (right foot), taken near free kicks 1 and 5 at the edge of the box, finishing at the D (penalty arc). Poorly taken.',
-          'Last free kick, played to the centre into the penalty box (taker not given)',
-        ],
+        note: 'Del Sante (left foot) ×2',
+        orderedNotesTitle: 'Delivery:',
+        orderedNotes: ['4 of 5 to the far post, 1 into the box'],
       },
       takers: [
         { player: 'Del Sante', foot: 'Left', total: 3, fromLeft: 1, fromRight: 2 },
-        { player: 'Longhi', foot: 'Right', total: 3, fromLeft: 0, fromRight: 3 },
         { player: 'Maggiore', foot: 'Right', total: 2, fromLeft: 2, fromRight: 0 },
       ],
+    },
+    freeKicks: {
+      right: {
+        arrows: [
+          { x1: 292, y1: 140, x2: 118, y2: 20, n: 1 },
+          { x1: 278, y1: 104, x2: 124, y2: 26, n: 2 },
+          { x1: 245, y1: 112, x2: 175, y2: 94, n: 3 },
+        ],
+        orderedNotesTitle: 'Right side, in order (yellow numbers on the pitch):',
+        orderedNotes: [
+          'Longhi (right foot), deep right at about 30 yards, to the far post',
+          'Longhi (right foot), taken short, to the far post',
+          'Longhi (right foot), taken near the edge of the box, finishing at the D (penalty arc). Poorly taken.',
+        ],
+      },
+      takers: [{ player: 'Longhi', foot: 'Right', total: 3, fromLeft: 0, fromRight: 3 }],
     },
   };
   const spezia433 = (names: {
