@@ -8,7 +8,16 @@ const matchModules = import.meta.glob<{ default: MatchData }>(
   { eager: true }
 );
 
-function toSummary(match: MatchData): MatchSummary {
+/** A match counts as published only when it has a recorded result. */
+function withEffectiveStatus(match: MatchData): MatchData {
+  if (match.status === 'published' && !hasMatchScore(match.score)) {
+    return { ...match, status: 'draft' };
+  }
+  return match;
+}
+
+function toSummary(raw: MatchData): MatchSummary {
+  const match = withEffectiveStatus(raw);
   const competitionId = resolveMatchCompetitionId(match);
   return {
     id: match.id,
@@ -40,7 +49,7 @@ export function getMatchBySlug(slug: string): MatchData | undefined {
   const entry = Object.entries(matchModules).find(([path]) =>
     path.includes(`/${slug}/`)
   );
-  return entry?.[1].default;
+  return entry ? withEffectiveStatus(entry[1].default) : undefined;
 }
 
 /** First-phase report linked from a return fixture. Undefined when the pointer is missing or broken. */

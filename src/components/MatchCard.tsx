@@ -70,7 +70,7 @@ export default function MatchCard({ match }: MatchCardProps) {
 
 function statusLabel(
   status: MatchSummary['status'],
-  t: (key: 'statusPublished' | 'statusInReview' | 'statusDraft') => string
+  t: (key: 'statusPublished' | 'statusInReview' | 'statusUnpublished') => string
 ): string {
   switch (status) {
     case 'published':
@@ -78,6 +78,6 @@ function statusLabel(
     case 'in-review':
       return t('statusInReview');
     case 'draft':
-      return t('statusDraft');
+      return t('statusUnpublished');
   }
 }
