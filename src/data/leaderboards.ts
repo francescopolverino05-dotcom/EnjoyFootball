@@ -1,3 +1,4 @@
+import tmScorersP2 from './tmScorersPrimavera2.json';
 /**
  * Stats leaderboards computed from data recorded on the site:
  * tagged match sheets (src/data/leagueMatchStats/*.json) + our match reports
@@ -178,7 +179,15 @@ export function getLeaderboards(competitionId: StatsCompetitionId): Record<Leade
   };
 
   const general: Leaderboard[] = [
-    playerBoard('scorers', { en: 'Top scorers', it: 'Capocannonieri' }, goals),
+    competitionId === 'primavera2'
+      ? {
+          id: 'scorers', label: { en: 'Top scorers', it: 'Capocannonieri' }, unit: 'total',
+          rows: tmScorersP2.scorers.map((x) => {
+            const team = x.club.replace(/\s*Primavera$/, '');
+            return { key: `${x.teamId}|${x.player}`, name: x.player, team, teamId: x.teamId, value: x.goals, played: x.apps, isUs: x.teamId === US };
+          }),
+        }
+      : playerBoard('scorers', { en: 'Top scorers', it: 'Capocannonieri' }, goals),
     playerBoard('assists', { en: 'Top assists (our match reports)', it: 'Assist (nostri report partita)' }, assists),
     { id: 'goalsfor', label: { en: 'Goals scored', it: 'Gol segnati' }, unit: 'total', rows: teamTotals((t) => t.gf) },
     { id: 'cleansheets', label: { en: 'Clean sheets', it: 'Porta inviolata' }, unit: 'total', rows: teamTotals((t) => (t.ga === 0 ? 1 : 0)) },
