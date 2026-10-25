@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import PhaseClipsPanel from '../components/PhaseClipsPanel';
 import FirstLegReference from '../components/FirstLegReference';
 import Formations from '../components/Formations';
 import GkStrikerScout from '../components/GkStrikerScout';
@@ -76,6 +77,9 @@ export default function OpponentPage() {
     );
   }
 
+  const fixtureClipTabs = selectedSlug
+    ? getMatchBySlug(selectedSlug)?.clipTabs
+    : undefined;
   const pack = getFixturePack(opponent, selectedSlug);
   const refSlotLimit = referenceMatchSlotLimit(selectedMatch);
   const systems = formationSystemsFor(opponent);
@@ -285,6 +289,18 @@ export default function OpponentPage() {
 
         {tab === 'clips' ? (
           <div className="tab-content active" role="tabpanel">
+            {fixtureClipTabs && selectedSlug ? (
+              <div className="match-clip-tabs">
+                <PhaseClipsPanel
+                  slug={selectedSlug}
+                  clips={[]}
+                  clipTabs={fixtureClipTabs}
+                  library="matches"
+                  emptyMessage=""
+                />
+              </div>
+            ) : null}
+            {fixtureClipTabs ? null : (<>
             <p className="video-hint">{t('oppositionClipsHint')}</p>
 
             <div
@@ -340,6 +356,7 @@ export default function OpponentPage() {
                 </div>
               ))
             )}
+            </>)}
           </div>
         ) : null}
 

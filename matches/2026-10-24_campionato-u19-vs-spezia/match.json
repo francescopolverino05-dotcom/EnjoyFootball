@@ -2110,5 +2110,285 @@
         }
       ]
     }
-  ]
+  ],
+  "clipTabs": {
+    "hint": {
+      "it": "Piazzati della partita (Napoli 3-1 Spezia, 24 ott 2026)",
+      "en": "Set pieces from the match (Napoli 3-1 Spezia, 24 Oct 2026)"
+    },
+    "tabs": [
+      {
+        "id": "piazzati-napoli",
+        "label": {
+          "it": "Piazzati Napoli",
+          "en": "Piazzati Napoli"
+        },
+        "groups": [
+          {
+            "id": "corners",
+            "title": {
+              "it": "Angoli",
+              "en": "Angoli"
+            },
+            "clips": [
+              {
+                "id": "napoli-corners-1-1239268988",
+                "title": {
+                  "it": "Angolo Napoli 1",
+                  "en": "Angolo Napoli 1"
+                },
+                "videoFile": "https://vimeo.com/1239268988/db76ba0b80"
+              },
+              {
+                "id": "napoli-corners-2-1239268987",
+                "title": {
+                  "it": "Angolo Napoli 2",
+                  "en": "Angolo Napoli 2"
+                },
+                "videoFile": "https://vimeo.com/1239268987/f2d4e06367"
+              }
+            ]
+          },
+          {
+            "id": "free-kicks",
+            "title": {
+              "it": "Punizioni",
+              "en": "Punizioni"
+            },
+            "clips": [
+              {
+                "id": "napoli-free-kicks-1-1239268908",
+                "title": {
+                  "it": "Punizione Napoli 1",
+                  "en": "Punizione Napoli 1"
+                },
+                "videoFile": "https://vimeo.com/1239268908/fc2ad14e8a",
+                "minute": 63
+              },
+              {
+                "id": "napoli-free-kicks-2-1239268907",
+                "title": {
+                  "it": "Punizione Napoli 2",
+                  "en": "Punizione Napoli 2"
+                },
+                "videoFile": "https://vimeo.com/1239268907/b5aa6fa8df",
+                "minute": 74
+              },
+              {
+                "id": "napoli-free-kicks-3-1239268909",
+                "title": {
+                  "it": "Punizione Napoli 3",
+                  "en": "Punizione Napoli 3"
+                },
+                "videoFile": "https://vimeo.com/1239268909/02e8dd52f4",
+                "minute": 89
+              }
+            ]
+          },
+          {
+            "id": "throw-ins",
+            "title": {
+              "it": "Falli laterali",
+              "en": "Falli laterali"
+            },
+            "clips": [
+              {
+                "id": "napoli-throw-ins-1-1239268851",
+                "title": {
+                  "it": "Fallo laterale Napoli 1",
+                  "en": "Fallo laterale Napoli 1"
+                },
+                "videoFile": "https://vimeo.com/1239268851/14792e999f",
+                "minute": 22
+              },
+              {
+                "id": "napoli-throw-ins-2-1239268852",
+                "title": {
+                  "it": "Fallo laterale Napoli 2",
+                  "en": "Fallo laterale Napoli 2"
+                },
+                "videoFile": "https://vimeo.com/1239268852/dcd136449d",
+                "minute": 29
+              },
+              {
+                "id": "napoli-throw-ins-3-1239268850",
+                "title": {
+                  "it": "Fallo laterale Napoli 3",
+                  "en": "Fallo laterale Napoli 3"
+                },
+                "videoFile": "https://vimeo.com/1239268850/69c3657edf",
+                "minute": 40
+              },
+              {
+                "id": "napoli-throw-ins-4-1239268849",
+                "title": {
+                  "it": "Fallo laterale Napoli 4",
+                  "en": "Fallo laterale Napoli 4"
+                },
+                "videoFile": "https://vimeo.com/1239268849/ec8380ac65",
+                "minute": 54
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "piazzati-spezia",
+        "label": {
+          "it": "Piazzati Spezia",
+          "en": "Piazzati Spezia"
+        },
+        "groups": [
+          {
+            "id": "corners",
+            "title": {
+              "it": "Angoli",
+              "en": "Angoli"
+            },
+            "clips": [
+              {
+                "id": "spezia-corners-1-1239267842",
+                "title": {
+                  "it": "Angolo Spezia 1",
+                  "en": "Angolo Spezia 1"
+                },
+                "videoFile": "https://vimeo.com/1239267842/31ff3b9af6"
+              },
+              {
+                "id": "spezia-corners-2-1239267966",
+                "title": {
+                  "it": "Angolo Spezia 2",
+                  "en": "Angolo Spezia 2"
+                },
+                "videoFile": "https://vimeo.com/1239267966/41d83a566f"
+              },
+              {
+                "id": "spezia-corners-3-1239267844",
+                "title": {
+                  "it": "Angolo Spezia 3",
+                  "en": "Angolo Spezia 3"
+                },
+                "videoFile": "https://vimeo.com/1239267844/5bbfb662b6"
+              },
+              {
+                "id": "spezia-corners-4-1239267841",
+                "title": {
+                  "it": "Angolo Spezia 4",
+                  "en": "Angolo Spezia 4"
+                },
+                "videoFile": "https://vimeo.com/1239267841/c860dbce6e"
+              },
+              {
+                "id": "spezia-corners-5-1239267843",
+                "title": {
+                  "it": "Angolo Spezia 5",
+                  "en": "Angolo Spezia 5"
+                },
+                "videoFile": "https://vimeo.com/1239267843/0526e30b75"
+              }
+            ]
+          },
+          {
+            "id": "free-kicks",
+            "title": {
+              "it": "Punizioni",
+              "en": "Punizioni"
+            },
+            "clips": [
+              {
+                "id": "spezia-free-kicks-1-1239268732",
+                "title": {
+                  "it": "Punizione Spezia 1",
+                  "en": "Punizione Spezia 1"
+                },
+                "videoFile": "https://vimeo.com/1239268732/d66830c1c5",
+                "minute": 9
+              },
+              {
+                "id": "spezia-free-kicks-2-1239268774",
+                "title": {
+                  "it": "Punizione Spezia 2",
+                  "en": "Punizione Spezia 2"
+                },
+                "videoFile": "https://vimeo.com/1239268774/b42862bb69",
+                "minute": 26
+              },
+              {
+                "id": "spezia-free-kicks-3-1239268729",
+                "title": {
+                  "it": "Punizione Spezia 3",
+                  "en": "Punizione Spezia 3"
+                },
+                "videoFile": "https://vimeo.com/1239268729/677f287e32",
+                "minute": 34
+              },
+              {
+                "id": "spezia-free-kicks-4-1239268731",
+                "title": {
+                  "it": "Punizione Spezia 4",
+                  "en": "Punizione Spezia 4"
+                },
+                "videoFile": "https://vimeo.com/1239268731/74279e1f57",
+                "minute": 44
+              },
+              {
+                "id": "spezia-free-kicks-5-1239268730",
+                "title": {
+                  "it": "Punizione Spezia 5",
+                  "en": "Punizione Spezia 5"
+                },
+                "videoFile": "https://vimeo.com/1239268730/038607b5eb",
+                "minute": 47
+              },
+              {
+                "id": "spezia-free-kicks-6-1239268776",
+                "title": {
+                  "it": "Punizione Spezia 6",
+                  "en": "Punizione Spezia 6"
+                },
+                "videoFile": "https://vimeo.com/1239268776/9e811f891a",
+                "minute": 48
+              }
+            ]
+          },
+          {
+            "id": "throw-ins",
+            "title": {
+              "it": "Falli laterali",
+              "en": "Falli laterali"
+            },
+            "clips": [
+              {
+                "id": "spezia-throw-ins-1-1239268811",
+                "title": {
+                  "it": "Fallo laterale Spezia 1",
+                  "en": "Fallo laterale Spezia 1"
+                },
+                "videoFile": "https://vimeo.com/1239268811/db0c10d810",
+                "minute": 49
+              },
+              {
+                "id": "spezia-throw-ins-2-1239268800",
+                "title": {
+                  "it": "Fallo laterale Spezia 2",
+                  "en": "Fallo laterale Spezia 2"
+                },
+                "videoFile": "https://vimeo.com/1239268800/d70ed2a3fb",
+                "minute": 60
+              },
+              {
+                "id": "spezia-throw-ins-3-1239268799",
+                "title": {
+                  "it": "Fallo laterale Spezia 3",
+                  "en": "Fallo laterale Spezia 3"
+                },
+                "videoFile": "https://vimeo.com/1239268799/badf1844ba",
+                "minute": 61
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
