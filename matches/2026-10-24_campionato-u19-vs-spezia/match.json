@@ -1382,7 +1382,215 @@
       "colorClass": "green"
     }
   ],
-  "clips": [],
+  "clips": [
+    {
+      "id": "napoli-sp-corner-1239268988",
+      "title": {
+        "en": "Corner Napoli 1",
+        "it": "Angolo Napoli 1"
+      },
+      "comments": {
+        "en": "Napoli vs Spezia, 24 Oct 2026",
+        "it": "Napoli vs Spezia, 24 ott 2026"
+      },
+      "minute": 0,
+      "second": 1,
+      "videoFile": "https://vimeo.com/1239268988/db76ba0b80",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners",
+        "set-piece"
+      ],
+      "tags": [
+        "vimeo",
+        "set-piece"
+      ]
+    },
+    {
+      "id": "napoli-sp-corner-1239268987",
+      "title": {
+        "en": "Corner Napoli 2",
+        "it": "Angolo Napoli 2"
+      },
+      "comments": {
+        "en": "Napoli vs Spezia, 24 Oct 2026",
+        "it": "Napoli vs Spezia, 24 ott 2026"
+      },
+      "minute": 0,
+      "second": 2,
+      "videoFile": "https://vimeo.com/1239268987/f2d4e06367",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners",
+        "set-piece"
+      ],
+      "tags": [
+        "vimeo",
+        "set-piece"
+      ]
+    },
+    {
+      "id": "napoli-sp-fk-1239268908",
+      "title": {
+        "en": "Free kick Napoli 1",
+        "it": "Punizione Napoli 1"
+      },
+      "comments": {
+        "en": "63' · Napoli vs Spezia, 24 Oct 2026",
+        "it": "63' · Napoli vs Spezia, 24 ott 2026"
+      },
+      "minute": 63,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1239268908/fc2ad14e8a",
+      "section": "attacking-free-kicks",
+      "labels": [
+        "attacking-free-kicks",
+        "set-piece"
+      ],
+      "tags": [
+        "vimeo",
+        "set-piece"
+      ]
+    },
+    {
+      "id": "napoli-sp-fk-1239268907",
+      "title": {
+        "en": "Free kick Napoli 2",
+        "it": "Punizione Napoli 2"
+      },
+      "comments": {
+        "en": "74' · Napoli vs Spezia, 24 Oct 2026",
+        "it": "74' · Napoli vs Spezia, 24 ott 2026"
+      },
+      "minute": 74,
+      "second": 41,
+      "videoFile": "https://vimeo.com/1239268907/b5aa6fa8df",
+      "section": "attacking-free-kicks",
+      "labels": [
+        "attacking-free-kicks",
+        "set-piece"
+      ],
+      "tags": [
+        "vimeo",
+        "set-piece"
+      ]
+    },
+    {
+      "id": "napoli-sp-fk-1239268909",
+      "title": {
+        "en": "Free kick Napoli 3",
+        "it": "Punizione Napoli 3"
+      },
+      "comments": {
+        "en": "89' · Napoli vs Spezia, 24 Oct 2026",
+        "it": "89' · Napoli vs Spezia, 24 ott 2026"
+      },
+      "minute": 89,
+      "second": 57,
+      "videoFile": "https://vimeo.com/1239268909/02e8dd52f4",
+      "section": "attacking-free-kicks",
+      "labels": [
+        "attacking-free-kicks",
+        "set-piece"
+      ],
+      "tags": [
+        "vimeo",
+        "set-piece"
+      ]
+    },
+    {
+      "id": "napoli-sp-throw-1239268851",
+      "title": {
+        "en": "Throw-in Napoli 1",
+        "it": "Fallo laterale Napoli 1"
+      },
+      "comments": {
+        "en": "22' · Napoli vs Spezia, 24 Oct 2026",
+        "it": "22' · Napoli vs Spezia, 24 ott 2026"
+      },
+      "minute": 22,
+      "second": 25,
+      "videoFile": "https://vimeo.com/1239268851/14792e999f",
+      "section": "attacking-throw-ins",
+      "labels": [
+        "attacking-throw-ins",
+        "set-piece"
+      ],
+      "tags": [
+        "vimeo",
+        "set-piece"
+      ]
+    },
+    {
+      "id": "napoli-sp-throw-1239268852",
+      "title": {
+        "en": "Throw-in Napoli 2",
+        "it": "Fallo laterale Napoli 2"
+      },
+      "comments": {
+        "en": "29' · Napoli vs Spezia, 24 Oct 2026",
+        "it": "29' · Napoli vs Spezia, 24 ott 2026"
+      },
+      "minute": 29,
+      "second": 17,
+      "videoFile": "https://vimeo.com/1239268852/dcd136449d",
+      "section": "attacking-throw-ins",
+      "labels": [
+        "attacking-throw-ins",
+        "set-piece"
+      ],
+      "tags": [
+        "vimeo",
+        "set-piece"
+      ]
+    },
+    {
+      "id": "napoli-sp-throw-1239268850",
+      "title": {
+        "en": "Throw-in Napoli 3",
+        "it": "Fallo laterale Napoli 3"
+      },
+      "comments": {
+        "en": "40' · Napoli vs Spezia, 24 Oct 2026",
+        "it": "40' · Napoli vs Spezia, 24 ott 2026"
+      },
+      "minute": 40,
+      "second": 16,
+      "videoFile": "https://vimeo.com/1239268850/69c3657edf",
+      "section": "attacking-throw-ins",
+      "labels": [
+        "attacking-throw-ins",
+        "set-piece"
+      ],
+      "tags": [
+        "vimeo",
+        "set-piece"
+      ]
+    },
+    {
+      "id": "napoli-sp-throw-1239268849",
+      "title": {
+        "en": "Throw-in Napoli 4",
+        "it": "Fallo laterale Napoli 4"
+      },
+      "comments": {
+        "en": "54' · Napoli vs Spezia, 24 Oct 2026",
+        "it": "54' · Napoli vs Spezia, 24 ott 2026"
+      },
+      "minute": 54,
+      "second": 20,
+      "videoFile": "https://vimeo.com/1239268849/ec8380ac65",
+      "section": "attacking-throw-ins",
+      "labels": [
+        "attacking-throw-ins",
+        "set-piece"
+      ],
+      "tags": [
+        "vimeo",
+        "set-piece"
+      ]
+    }
+  ],
   "analysisVideos": [
     {
       "id": "gps-report-full-match",
