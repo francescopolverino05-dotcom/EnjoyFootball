@@ -2293,6 +2293,11 @@ if (spezia) {
       ],
     },
     freeKicks: {
+      left: {
+        arrows: [{ x1: 30, y1: 150, x2: 205, y2: 22, n: 1 }],
+        orderedNotesTitle: 'Left side:',
+        orderedNotes: ['Del Sante (left foot), deep left, to the far post'],
+      },
       right: {
         arrows: [
           { x1: 292, y1: 140, x2: 118, y2: 20, n: 1 },
@@ -2306,7 +2311,10 @@ if (spezia) {
           'Longhi (right foot), taken near the edge of the box, finishing at the D (penalty arc). Poorly taken.',
         ],
       },
-      takers: [{ player: 'Longhi', foot: 'Right', total: 3, fromLeft: 0, fromRight: 3 }],
+      takers: [
+        { player: 'Longhi', foot: 'Right', total: 3, fromLeft: 0, fromRight: 3 },
+        { player: 'Del Sante', foot: 'Left', total: 1, fromLeft: 1, fromRight: 0 },
+      ],
     },
   };
   const spezia433 = (names: {

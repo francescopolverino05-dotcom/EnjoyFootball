@@ -9,7 +9,7 @@ export default function SetPiecePitch({ panel, label }: { panel?: SpPanel; label
     <svg viewBox="0 0 320 190" role="img" aria-label={label} style={{ width: '100%', display: 'block', borderRadius: 8 }}>
       <defs>
         <marker id={mid} markerWidth={6} markerHeight={6} refX={5} refY={3} orient="auto">
-          <path d="M0 0L6 3L0 6Z" fill="#fff" />
+          <path d="M0 0L6 3L0 6Z" fill="#000" />
         </marker>
       </defs>
       {[0, 1, 2, 3, 4, 5].map((i) => (
@@ -27,7 +27,7 @@ export default function SetPiecePitch({ panel, label }: { panel?: SpPanel; label
       <text x={160} y={187} fill="#fff" fontSize={8} textAnchor="middle" fontWeight="bold">FINAL THIRD</text>
       {panel?.arrows?.map((a, i) => (
         <g key={i}>
-          <line x1={a.x1} y1={a.y1} x2={a.x2} y2={a.y2} stroke="#fff" strokeWidth={1.3} markerEnd={`url(#${mid})`} />
+          <line x1={a.x1} y1={a.y1} x2={a.x2} y2={a.y2} stroke="#000" strokeWidth={1.6} markerEnd={`url(#${mid})`} />
           {a.n != null && (
             <>
               <circle cx={a.x1} cy={a.y1} r={6} fill="#ffd34d" stroke="#000" />
