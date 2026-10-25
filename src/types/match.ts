@@ -292,7 +292,8 @@ export interface MatchClipReferenceSection {
 }
 
 export interface MatchClipReferences {
-  title: Localized;
+  /** Optional wrapper title; omit to show section boxes only. */
+  title?: Localized;
   hint?: Localized;
   sections: MatchClipReferenceSection[];
 }

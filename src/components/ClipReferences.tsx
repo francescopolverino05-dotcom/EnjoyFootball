@@ -11,16 +11,14 @@ interface ClipReferencesProps {
 export default function ClipReferences({ slug, data }: ClipReferencesProps) {
   const { t, L } = useLanguage();
   return (
-    <section className="first-leg-reference clip-references" aria-labelledby="clip-references-title">
-      <h2 className="section-title" id="clip-references-title">
-        {L(data.title)}
-      </h2>
+    <section className="first-leg-reference clip-references">
+      {data.title ? <h2 className="section-title">{L(data.title)}</h2> : null}
       {data.hint ? <p className="video-hint">{L(data.hint)}</p> : null}
       {data.sections.map((section) => (
         <div className="first-leg-block" key={section.id}>
-          <h3 className="team-stats-section-title">
+          <h2 className="section-title">
             {L(section.title)} ({section.clips.length})
-          </h3>
+          </h2>
           <div className="clip-grid">
             {section.clips.map((clip) => (
               <div className="clip-card" key={clip.id}>
