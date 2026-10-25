@@ -3029,6 +3029,34 @@ attachReferencePack(
       date: '2026-10-24',
       videoFile: 'https://vimeo.com/1239270820/7b70199d35',
     },
+    {
+      id: 'monopoli-ref-benevento',
+      title: {
+        en: 'Monopoli vs Benevento 2–2',
+        it: 'Monopoli vs Benevento 2–2',
+      },
+      competition: {
+        en: 'Primavera 2 · Matchday 5',
+        it: 'Primavera 2 · Giornata 5',
+      },
+      score: '2–2',
+      date: '2026-10-17',
+      videoFile: 'https://vimeo.com/1237874247/1c2787edc8',
+    },
+    {
+      id: 'monopoli-ref-spezia',
+      title: {
+        en: 'Spezia vs Monopoli 0–2',
+        it: 'Spezia vs Monopoli 0–2',
+      },
+      competition: {
+        en: 'Primavera 2 · Matchday 4',
+        it: 'Primavera 2 · Giornata 4',
+      },
+      score: '0–2',
+      date: '2026-10-10',
+      videoFile: 'https://vimeo.com/1235994929/30860268db',
+    },
   ]
 );
 
