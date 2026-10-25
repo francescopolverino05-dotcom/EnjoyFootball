@@ -5626,3 +5626,9 @@ a.gacon-ind-row:hover {
   }
 }
 .pitch-unplaced { font-size: 0.8rem; opacity: 0.8; padding: 0.5rem 0.75rem; }
+
+.clip-references .clip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}

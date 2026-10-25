@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import FirstLegReference from '../components/FirstLegReference';
+import ClipReferences from '../components/ClipReferences';
 import { getFirstLegMatch, getMatchBySlug } from '../data/matches';
 import { getLeagueMatchStatsForMatchSlug } from '../data/leagueMatchStats';
 import {
@@ -85,6 +86,9 @@ export default function MatchPage() {
         ) : null}
         <Scoreboard match={match} />
         {bareFixture && firstLeg ? <FirstLegReference match={firstLeg} /> : null}
+        {match.clipReferences ? (
+          <ClipReferences slug={match.slug} data={match.clipReferences} />
+        ) : null}
         {bareFixture ? null : (
           <>
             <Timeline events={match.timeline} />

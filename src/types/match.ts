@@ -249,6 +249,8 @@ export interface MatchData {
   };
   clips: VideoClip[];
   analysisVideos: AnalysisVideo[];
+  /** Optional curated clip-reference area (e.g. set pieces from a previous meeting). */
+  clipReferences?: MatchClipReferences;
   /** Post-match WWB/EBI (CAB/AMS) reflection notes. */
   reflection?: MatchReflection;
 }
@@ -273,4 +275,24 @@ export interface MatchSummary {
   microcycleDay?: number | null;
   /** First-phase match slug, when this fixture reuses that report. */
   firstLegSlug?: string;
+}
+
+export interface MatchClipReference {
+  id: string;
+  title: Localized;
+  comments?: Localized;
+  minute?: number;
+  videoFile: string;
+}
+
+export interface MatchClipReferenceSection {
+  id: string;
+  title: Localized;
+  clips: MatchClipReference[];
+}
+
+export interface MatchClipReferences {
+  title: Localized;
+  hint?: Localized;
+  sections: MatchClipReferenceSection[];
 }
