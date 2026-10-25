@@ -5640,3 +5640,7 @@ a.gacon-ind-row:hover {
 .formation-subs-role { min-width: 38px; font-weight: 700; font-size: 11px; opacity: .85; }
 .formation-subs-name { flex: 1; }
 .formation-subs-min { opacity: .7; font-variant-numeric: tabular-nums; }
+
+.leaderboard-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 16px; margin-top: 12px; }
+.leaderboard-card { border: 1px solid rgba(127,127,127,0.25); border-radius: 10px; padding: 10px 12px; overflow-x: auto; }
+.leaderboard-title { font-weight: 700; font-size: 13px; letter-spacing: .4px; text-transform: uppercase; margin-bottom: 6px; }

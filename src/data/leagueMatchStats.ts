@@ -139,3 +139,8 @@ export function isLeagueMatchCompetitionId(
     value === 'uefaYouthLeague'
   );
 }
+
+/** Every tagged match sheet (all competitions). */
+export function getAllLeagueMatchStats(): LeagueMatchStats[] {
+  return Object.values(BY_KEY);
+}

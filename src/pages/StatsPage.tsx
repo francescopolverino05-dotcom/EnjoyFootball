@@ -2,32 +2,29 @@ import { Link, useSearchParams } from 'react-router-dom';
 import ReportHeader from '../components/ReportHeader';
 import { MATCH_COMPETITION_TAB_KEYS } from '../data/matchCompetitions';
 import {
-  formatStatsValue,
-  getStatsCategoryForCompetition,
   getStatsRankings,
-  isStatsCategoryId,
   isStatsCompetitionId,
-  metricUsValue,
-  sortMetricRows,
-  STATS_CATEGORY_ORDER,
   STATS_COMPETITION_ORDER,
 } from '../data/statsRankings';
-import type {
-  StatsCategoryId,
-  StatsCompetitionId,
-} from '../types/statsRankings';
+import type { StatsCompetitionId } from '../types/statsRankings';
+import {
+  getLeaderboards,
+  LEADERBOARD_CATEGORIES,
+  type LeaderboardCategory,
+} from '../data/leaderboards';
 import { useLanguage } from '../i18n/LanguageContext';
 import type { UiKey } from '../i18n/translations';
 
-const CATEGORY_TAB_KEYS: Record<StatsCategoryId, UiKey> = {
+const CATEGORY_TAB_KEYS: Record<LeaderboardCategory, UiKey> = {
   general: 'statsTabGeneral',
-  offensive: 'statsTabOffensive',
+  attacking: 'statsTabAttacking',
   defensive: 'statsTabDefensive',
-  possession: 'statsTabPossession',
+  passing: 'statsTabPassing',
+  setPieces: 'statsTabSetPieces',
 };
 
-function categoryFromSearch(value: string | null): StatsCategoryId {
-  if (value && isStatsCategoryId(value)) return value;
+function categoryFromSearch(value: string | null): LeaderboardCategory {
+  if (value && (LEADERBOARD_CATEGORIES as string[]).includes(value)) return value as LeaderboardCategory;
   return 'general';
 }
 
@@ -42,7 +39,7 @@ export default function StatsPage() {
   const dataset = getStatsRankings();
   const competitionId = competitionFromSearch(searchParams.get('c'));
   const categoryId = categoryFromSearch(searchParams.get('tab'));
-  const category = getStatsCategoryForCompetition(categoryId, competitionId);
+  const boards = getLeaderboards(competitionId)[categoryId];
 
   const setCompetitionId = (id: StatsCompetitionId) => {
     const next: Record<string, string> = {};
@@ -51,7 +48,7 @@ export default function StatsPage() {
     setSearchParams(next, { replace: true });
   };
 
-  const setCategoryId = (id: StatsCategoryId) => {
+  const setCategoryId = (id: LeaderboardCategory) => {
     const next: Record<string, string> = {};
     if (competitionId !== 'primavera2') next.c = competitionId;
     if (id !== 'general') next.tab = id;
@@ -77,7 +74,6 @@ export default function StatsPage() {
         <div className="section-title" id="stats-heading">
           {t('stats')}
         </div>
-        <p className="home-section-hint stats-scope-hint">{L(dataset.scope)}</p>
 
         <div className="match-competitions">
           <div
@@ -107,7 +103,7 @@ export default function StatsPage() {
             role="tablist"
             aria-label={t('statsCategoryAria')}
           >
-            {STATS_CATEGORY_ORDER.map((id) => {
+            {LEADERBOARD_CATEGORIES.map((id) => {
               const active = id === categoryId;
               return (
                 <button
@@ -124,61 +120,42 @@ export default function StatsPage() {
             })}
           </div>
 
-          {!category || category.metrics.length === 0 ? (
+          {boards.length === 0 ? (
             <p className="home-empty">{t('statsEmptyCompetition')}</p>
           ) : (
-            category.metrics.map((metric) => {
-              const ranked = sortMetricRows(
-                metric.rows,
-                metric.higherIsBetter
-              );
-              const usValue = metricUsValue(metric);
-              return (
-                <div className="stats-metric-block" key={metric.id}>
-                  <div className="section-title stats-metric-title">
-                    {L(metric.label)}
-                    {metric.unit === '%' ? ' (%)' : ''}
-                  </div>
-                  {usValue != null ? (
-                    <p className="stats-metric-avg">
-                      {t('statsUsValue').replace(
-                        '{value}',
-                        formatStatsValue(usValue, metric.unit)
-                      )}
-                    </p>
-                  ) : null}
-                  <div className="standings-table-wrap">
+            <div className="leaderboard-grid">
+              {boards.map((board) => {
+                const isPlayer = board.rows.some((r) => r.team);
+                return (
+                  <div className="leaderboard-card" key={board.id}>
+                    <div className="leaderboard-title">{L(board.label)}</div>
                     <table className="standings-table stats-rankings-table">
                       <thead>
                         <tr>
                           <th scope="col">{t('statsColRank')}</th>
-                          <th scope="col">{t('statsColTeam')}</th>
-                          <th scope="col">{t('statsColPlayed')}</th>
+                          <th scope="col">{isPlayer ? t('statsColPlayer') : t('statsColTeam')}</th>
+                          {isPlayer ? <th scope="col">{t('statsColTeam')}</th> : <th scope="col">{t('statsColPlayed')}</th>}
                           <th scope="col">{t('statsColValue')}</th>
                         </tr>
                       </thead>
                       <tbody>
-                        {ranked.map((row, index) => (
-                          <tr
-                            className={
-                              row.isUs ? 'standings-row--us' : undefined
-                            }
-                            key={`${metric.id}-${row.teamId}`}
-                          >
+                        {board.rows.slice(0, 10).map((row, index) => (
+                          <tr className={row.isUs ? 'standings-row--us' : undefined} key={row.key}>
                             <td className="standings-pos">{index + 1}</td>
-                            <td className="standings-team">{row.team}</td>
-                            <td>{row.played}</td>
+                            <td className="standings-team">{row.name}</td>
+                            <td>{isPlayer ? row.team : row.played}</td>
                             <td className="stats-value-cell">
-                              {formatStatsValue(row.value, metric.unit)}
+                              {board.unit === 'total' ? row.value : row.value.toFixed(board.unit === '%' ? 1 : 2).replace(/\.?0+$/, '')}
+                              {board.unit === '%' ? '%' : ''}
                             </td>
                           </tr>
                         ))}
                       </tbody>
                     </table>
                   </div>
-                </div>
-              );
-            })
+                );
+              })}
+            </div>
           )}
         </div>
       </section>
