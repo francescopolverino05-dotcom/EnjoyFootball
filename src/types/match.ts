@@ -59,6 +59,8 @@ export interface Formation {
   image?: string;
   /** Optional in-game shape changes, ordered by minute. */
   changes?: FormationChange[];
+  /** Substitutes who came on (opposition setups). */
+  subs?: { name: string; role?: string; minute?: string }[];
 }
 
 export interface FormationChange {

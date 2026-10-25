@@ -1,3 +1,4 @@
+import { parseSubs } from '../utils/parseSubs';
 import SetPiecesPanel from '../components/SetPiecesPanel';
 import { useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
@@ -96,6 +97,7 @@ export default function OpponentPage() {
           label: f.label,
           system: f.system,
           players: f.players,
+          subs: parseSubs(typeof f.notes === 'string' ? f.notes : f.notes?.en, f.players, opponent.squad),
         }))
       : systems.map((system, index) => {
           const useScoutedStarters =
@@ -109,8 +111,6 @@ export default function OpponentPage() {
               : placeholderPlayersForSystem(system, opponent.id),
           };
         });
-  const formationNotes =
-    opponent.scoutedFormations?.filter((f) => f.notes) ?? [];
   const firstLeg = selectedMatch?.firstLegSlug
     ? getMatchBySlug(selectedMatch.firstLegSlug)
     : undefined;
@@ -242,16 +242,6 @@ export default function OpponentPage() {
         {tab === 'formation' ? (
           <div className="tab-content active" role="tabpanel">
             <Formations formations={formations} />
-            {formationNotes.length > 0 ? (
-              <ul className="opponent-name-list opponent-formation-notes">
-                {formationNotes.map((f) => (
-                  <li key={`${f.id}-notes`}>
-                    <strong>{L(f.label)}</strong>
-                    {f.notes ? ` — ${L(f.notes)}` : ''}
-                  </li>
-                ))}
-              </ul>
-            ) : null}
             {opponent.squadDepth ? (
               <SquadDepthPanel
                 depth={opponent.squadDepth}

@@ -73,6 +73,24 @@ export default function Formations({ formations, matchSlug }: FormationsProps) {
                 {renderPitch(change.players)}
               </div>
             ))}
+            {formation.subs ? (
+              <div className="formation-subs">
+                <div className="formation-subs-title">{t('oppositionSubsCameOn')}</div>
+                {formation.subs.length === 0 ? (
+                  <div className="formation-subs-empty">—</div>
+                ) : (
+                  <ul>
+                    {formation.subs.map((s, i) => (
+                      <li key={`${s.name}-${i}`}>
+                        <span className="formation-subs-role">{s.role ?? '–'}</span>
+                        <span className="formation-subs-name">{s.name}</span>
+                        {s.minute ? <span className="formation-subs-min">{s.minute}</span> : null}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ) : null}
           </div>
         ))}
       </div>
