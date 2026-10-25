@@ -2988,6 +2988,27 @@ attachReferencePack(
 );
 
 attachReferencePack(
+  'monopoli',
+  '2026-10-31_campionato-monopoli-vs-u19',
+  [
+    {
+      id: 'monopoli-ref-ascoli',
+      title: {
+        en: 'Ascoli vs Monopoli 0–2',
+        it: 'Ascoli vs Monopoli 0–2',
+      },
+      competition: {
+        en: 'Primavera 2 · Matchday 6',
+        it: 'Primavera 2 · Giornata 6',
+      },
+      score: '0–2',
+      date: '2026-10-24',
+      videoFile: 'https://vimeo.com/1239270820/7b70199d35',
+    },
+  ]
+);
+
+attachReferencePack(
   'ascoli',
   '2026-09-19_campionato-ascoli-vs-u19',
   [
