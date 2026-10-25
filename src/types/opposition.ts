@@ -1,3 +1,4 @@
+import type { OppositionSetPieces } from '../data/setPieces';
 import type { OppositionClipSectionId } from '../i18n/oppositionClipSections';
 import type { Localized } from '../i18n/translations';
 import type { AnalysisVideo, PitchPlayer } from './match';
@@ -130,6 +131,8 @@ export interface OppositionFixturePack {
 }
 
 export interface OppositionOpponent {
+  /** Corners + free kicks diagrams (Area Piazzati tab). Omit = empty layout. */
+  setPieces?: OppositionSetPieces;
   id: string;
   slug: string;
   name: Localized;

@@ -1,6 +1,5 @@
-import { Link, useNavigate, useParams } from 'react-router-dom';
 import SetPiecePitch from '../components/SetPiecePitch';
-import { SET_PIECES, type SpPanel, type SpSection } from '../data/setPieces';
+import type { OppositionSetPieces, SpPanel, SpSection } from '../data/setPieces';
 
 const card: React.CSSProperties = { flex: 1, minWidth: 300, background: 'var(--card-bg, rgba(255,255,255,0.04))', border: '1px solid rgba(127,127,127,0.25)', borderRadius: 10, padding: 14 };
 const noteStyle: React.CSSProperties = { marginTop: 8, padding: 8, borderLeft: '3px solid #2e9e5b', background: 'rgba(46,158,91,0.1)', fontSize: 13 };
@@ -50,30 +49,12 @@ function Section({ title, kind, data }: { title: string; kind: string; data?: Sp
   );
 }
 
-export default function SetPiecesPage() {
-  const { team } = useParams();
-  const navigate = useNavigate();
-  const current = SET_PIECES.find((s) => s.id === team) ?? SET_PIECES[0];
-
+export default function SetPiecesPanel({ data }: { data?: OppositionSetPieces }) {
   return (
-    <div className="app-shell">
-      <Link to="/opposition" className="back-link">← Opposition</Link>
-      <section className="home-section set-pieces-page">
-        <div className="section-title">Set Pieces · Corners &amp; Free Kicks</div>
-        <div className="tabs-header" role="tablist">
-          {SET_PIECES.map((s) => (
-            <button key={s.id} type="button" role="tab" aria-selected={s.id === current.id}
-              className={`tab-button ${s.id === current.id ? 'active' : ''}`}
-              onClick={() => navigate(`/opposition/set-pieces/${s.id}`)}>
-              {s.name}
-            </button>
-          ))}
-        </div>
-        <h3 className="match-competition-title" style={{ marginTop: 16 }}>{current.name}</h3>
-        <p className="home-section-hint">{current.source ?? 'Set-piece data not filled in yet.'}</p>
-        <Section title="Corners" kind="Corners" data={current.corners} />
-        <Section title="Free kicks" kind="Free kicks" data={current.freeKicks} />
-      </section>
+    <div className="set-pieces-panel">
+      <p className="video-hint">{data?.source ?? 'Set-piece data not filled in yet.'}</p>
+      <Section title="Corners" kind="Corners" data={data?.corners} />
+      <Section title="Free kicks" kind="Free kicks" data={data?.freeKicks} />
     </div>
   );
 }

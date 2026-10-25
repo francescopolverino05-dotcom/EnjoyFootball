@@ -1,3 +1,4 @@
+import SetPiecesPanel from '../components/SetPiecesPanel';
 import { useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import PhaseClipsPanel from '../components/PhaseClipsPanel';
@@ -42,13 +43,18 @@ type OpponentTab =
   | 'strengths'
   | 'matches'
   | 'report'
-  | 'gk';
+  | 'gk'
+  | 'setPieces';
 
 export default function OpponentPage() {
   const { slug } = useParams<{ slug: string }>();
   const opponent = slug ? getOpponentBySlug(slug) : undefined;
   const { t, L, formatDate } = useLanguage();
-  const [tab, setTab] = useState<OpponentTab>('formation');
+  const [tab, setTab] = useState<OpponentTab>(
+    typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('tab') === 'setPieces'
+      ? 'setPieces'
+      : 'formation',
+  );
   const [activeGroups, setActiveGroups] = useState<Set<OppositionClipGroupId>>(
     () => new Set<OppositionClipGroupId>(['attack'])
   );
@@ -133,7 +139,8 @@ export default function OpponentPage() {
     | 'tabOppositionStrengthsWeaknesses'
     | 'tabOppositionMatches'
     | 'tabOppositionReport'
-    | 'tabOppositionGk',
+    | 'tabOppositionGk'
+    | 'tabOppositionSetPieces',
   ][] = [
     ['formation', 'tabOppositionFormation'],
     ['clips', 'tabOppositionClips'],
@@ -141,6 +148,7 @@ export default function OpponentPage() {
     ['matches', 'tabOppositionMatches'],
     ['report', 'tabOppositionReport'],
     ['gk', 'tabOppositionGk'],
+    ['setPieces', 'tabOppositionSetPieces'],
   ];
 
   function toggleClipGroup(groupId: OppositionClipGroupId) {
@@ -460,6 +468,12 @@ export default function OpponentPage() {
                 </article>
               ) : null}
             </div>
+          </div>
+        ) : null}
+
+        {tab === 'setPieces' ? (
+          <div className="tab-content active" role="tabpanel">
+            <SetPiecesPanel data={opponent.setPieces} />
           </div>
         ) : null}
 

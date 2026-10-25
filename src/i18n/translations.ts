@@ -235,6 +235,7 @@ const dictionaries = {
     tabOppositionClips: 'Clips',
     tabOppositionStrengthsWeaknesses: 'Strengths & Weaknesses',
     tabOppositionGk: 'Goalkeeper area',
+    tabOppositionSetPieces: 'Set Pieces',
     tabOppositionMatches: 'Reference matches',
     tabOppositionReport: 'Report',
     oppositionStrengthsWeaknessesHint:
@@ -745,6 +746,7 @@ const dictionaries = {
     tabOppositionClips: 'Clip',
     tabOppositionStrengthsWeaknesses: 'Punti di forza e debolezze',
     tabOppositionGk: 'Area portieri',
+    tabOppositionSetPieces: 'Area Piazzati',
     tabOppositionMatches: 'Partite di riferimento',
     tabOppositionReport: 'Report',
     oppositionStrengthsWeaknessesHint:
