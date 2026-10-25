@@ -1,0 +1,79 @@
+import { Link, useNavigate, useParams } from 'react-router-dom';
+import SetPiecePitch from '../components/SetPiecePitch';
+import { SET_PIECES, type SpPanel, type SpSection } from '../data/setPieces';
+
+const card: React.CSSProperties = { flex: 1, minWidth: 300, background: 'var(--card-bg, rgba(255,255,255,0.04))', border: '1px solid rgba(127,127,127,0.25)', borderRadius: 10, padding: 14 };
+const noteStyle: React.CSSProperties = { marginTop: 8, padding: 8, borderLeft: '3px solid #2e9e5b', background: 'rgba(46,158,91,0.1)', fontSize: 13 };
+const cell: React.CSSProperties = { padding: 5, borderBottom: '1px solid rgba(127,127,127,0.25)', textAlign: 'right' };
+const first: React.CSSProperties = { ...cell, textAlign: 'left' };
+
+function Panel({ title, panel }: { title: string; panel?: SpPanel }) {
+  return (
+    <div style={card}>
+      <h4 style={{ margin: '0 0 8px', fontSize: 12, letterSpacing: 1, opacity: 0.7 }}>{title}</h4>
+      <SetPiecePitch panel={panel} label={title} />
+      {panel?.note && <div style={noteStyle}><b>Takers:</b> {panel.note}</div>}
+      {panel?.orderedNotes?.length ? (
+        <div style={noteStyle}>
+          <b>{panel.orderedNotesTitle}</b>
+          <ol style={{ margin: '4px 0 0 18px', padding: 0 }}>
+            {panel.orderedNotes.map((n, i) => <li key={i}>{n}</li>)}
+          </ol>
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+function Section({ title, kind, data }: { title: string; kind: string; data?: SpSection }) {
+  return (
+    <section style={{ marginTop: 24 }}>
+      <div className="section-title">{title}</div>
+      {kind === 'Corners' && data?.left?.zones?.length ? <p className="home-section-hint">Shaded zones = delivery areas</p> : null}
+      <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
+        <Panel title={`LEFT ${title.toUpperCase()}`} panel={data?.left} />
+        <Panel title={`RIGHT ${title.toUpperCase()}`} panel={data?.right} />
+      </div>
+      <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13, marginTop: 12 }}>
+        <thead>
+          <tr><th style={first}>{title} takers</th><th style={cell}>Foot</th><th style={cell}>{kind}</th><th style={cell}>From left</th><th style={cell}>From right</th></tr>
+        </thead>
+        <tbody>
+          {data?.takers?.length ? data.takers.map((t) => (
+            <tr key={t.player}><td style={first}>{t.player}</td><td style={cell}>{t.foot}</td><td style={cell}>{t.total}</td><td style={cell}>{t.fromLeft}</td><td style={cell}>{t.fromRight}</td></tr>
+          )) : (
+            <tr><td style={{ ...first, opacity: 0.6 }} colSpan={5}>Not filled in yet</td></tr>
+          )}
+        </tbody>
+      </table>
+    </section>
+  );
+}
+
+export default function SetPiecesPage() {
+  const { team } = useParams();
+  const navigate = useNavigate();
+  const current = SET_PIECES.find((s) => s.id === team) ?? SET_PIECES[0];
+
+  return (
+    <div className="app-shell">
+      <Link to="/opposition" className="back-link">← Opposition</Link>
+      <section className="home-section set-pieces-page">
+        <div className="section-title">Set Pieces · Corners &amp; Free Kicks</div>
+        <div className="tabs-header" role="tablist">
+          {SET_PIECES.map((s) => (
+            <button key={s.id} type="button" role="tab" aria-selected={s.id === current.id}
+              className={`tab-button ${s.id === current.id ? 'active' : ''}`}
+              onClick={() => navigate(`/opposition/set-pieces/${s.id}`)}>
+              {s.name}
+            </button>
+          ))}
+        </div>
+        <h3 className="match-competition-title" style={{ marginTop: 16 }}>{current.name}</h3>
+        <p className="home-section-hint">{current.source ?? 'Set-piece data not filled in yet.'}</p>
+        <Section title="Corners" kind="Corners" data={current.corners} />
+        <Section title="Free kicks" kind="Free kicks" data={current.freeKicks} />
+      </section>
+    </div>
+  );
+}

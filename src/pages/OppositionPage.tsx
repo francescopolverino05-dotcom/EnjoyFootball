@@ -39,6 +39,11 @@ export default function OppositionPage() {
           {` (${opponents.length})`}
         </div>
         <p className="home-section-hint">{t('oppositionHint')}</p>
+        <p>
+          <Link to="/opposition/set-pieces" className="tab-button active" style={{ display: 'inline-block', textDecoration: 'none', marginBottom: 12 }}>
+            Set Pieces (corners &amp; free kicks) →
+          </Link>
+        </p>
 
         <div className="match-competitions">
           <div className="tabs-header" role="tablist">
