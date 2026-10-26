@@ -1,7 +1,7 @@
 import { useEffect, useState, type FormEvent } from 'react';
 import { useLanguage } from '../i18n/LanguageContext';
 
-const PASSWORD = '01081926';
+const PASSWORD = 'napoli1926';
 const STORAGE_KEY = 'sscn-primavera-auth';
 
 interface PasswordGateProps {
