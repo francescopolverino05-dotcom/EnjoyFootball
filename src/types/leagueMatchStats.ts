@@ -1,3 +1,4 @@
+import type { GpsHalfReport } from './match';
 import type { Localized } from '../i18n/translations';
 import type { StatsCompetitionId } from './statsRankings';
 
@@ -46,6 +47,7 @@ export interface LeagueMatchStats {
   score: string;
   goals: LeagueMatchGoal[];
   note?: Localized;
+  gpsStats?: GpsHalfReport[];
   teamStats: LeagueMatchTeamStatRow[];
   playerStats: LeagueMatchPlayerStatRow[];
 }

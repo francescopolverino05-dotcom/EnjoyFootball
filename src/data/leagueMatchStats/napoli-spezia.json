@@ -878,5 +878,149 @@
       "saves": 0,
       "yellow": 0
     }
+  ],
+  "gpsStats": [
+    {
+      "half": {
+        "en": "Full match",
+        "it": "Partita intera"
+      },
+      "players": [
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 11908,
+          "distancePerMin": 110,
+          "distanceOver16KmhM": 2215,
+          "distance20to24KmhM": 631.44,
+          "distanceOver24KmhM": 415.75,
+          "metabolicPowerWkg": 10.2,
+          "accelerationsOver3": 44,
+          "decelerationsUnder3": 58,
+          "maxSpeedKmh": 32.33,
+          "recoveryPct": 67.94
+        },
+        {
+          "player": "Chiummariello",
+          "totalDistanceM": 11542,
+          "distancePerMin": 111,
+          "distanceOver16KmhM": 1738,
+          "distance20to24KmhM": 381.63,
+          "distanceOver24KmhM": 132.59,
+          "metabolicPowerWkg": 9.8,
+          "accelerationsOver3": 26,
+          "decelerationsUnder3": 40,
+          "maxSpeedKmh": 30.04,
+          "recoveryPct": 65.71
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 11492,
+          "distancePerMin": 112,
+          "distanceOver16KmhM": 1442,
+          "distance20to24KmhM": 391.81,
+          "distanceOver24KmhM": 129.55,
+          "metabolicPowerWkg": 10.3,
+          "accelerationsOver3": 41,
+          "decelerationsUnder3": 53,
+          "maxSpeedKmh": 29.1,
+          "recoveryPct": 65.77
+        },
+        {
+          "player": "Zappalà",
+          "totalDistanceM": 10744,
+          "distancePerMin": 104,
+          "distanceOver16KmhM": 1242,
+          "distance20to24KmhM": 270.95,
+          "distanceOver24KmhM": 151.79,
+          "metabolicPowerWkg": 9.3,
+          "accelerationsOver3": 36,
+          "decelerationsUnder3": 45,
+          "maxSpeedKmh": 32.75,
+          "recoveryPct": 69.3
+        },
+        {
+          "player": "Pereyra",
+          "totalDistanceM": 10467,
+          "distancePerMin": 102,
+          "distanceOver16KmhM": 1060,
+          "distance20to24KmhM": 229.21,
+          "distanceOver24KmhM": 162.68,
+          "metabolicPowerWkg": 9.1,
+          "accelerationsOver3": 22,
+          "decelerationsUnder3": 31,
+          "maxSpeedKmh": 30.91,
+          "recoveryPct": 70.93
+        },
+        {
+          "player": "Branchizio",
+          "totalDistanceM": 10073,
+          "distancePerMin": 97,
+          "distanceOver16KmhM": 1104,
+          "distance20to24KmhM": 297.34,
+          "distanceOver24KmhM": 56.33,
+          "metabolicPowerWkg": 8.6,
+          "accelerationsOver3": 26,
+          "decelerationsUnder3": 36,
+          "maxSpeedKmh": 26.05,
+          "recoveryPct": 73.99
+        },
+        {
+          "player": "Riccio",
+          "totalDistanceM": 8575,
+          "distancePerMin": 127,
+          "distanceOver16KmhM": 1701,
+          "distance20to24KmhM": 445.23,
+          "distanceOver24KmhM": 378.01,
+          "metabolicPowerWkg": 11.5,
+          "accelerationsOver3": 17,
+          "decelerationsUnder3": 34,
+          "maxSpeedKmh": 30.85,
+          "recoveryPct": 60.14
+        },
+        {
+          "player": "Manè",
+          "totalDistanceM": 8338,
+          "distancePerMin": 94,
+          "distanceOver16KmhM": 1263,
+          "distance20to24KmhM": 368.0,
+          "distanceOver24KmhM": 231.37,
+          "metabolicPowerWkg": 8.5,
+          "accelerationsOver3": 26,
+          "decelerationsUnder3": 48,
+          "maxSpeedKmh": 32.75,
+          "recoveryPct": 78.27
+        },
+        {
+          "player": "Lieto",
+          "totalDistanceM": 6826,
+          "distancePerMin": 102,
+          "distanceOver16KmhM": 799,
+          "distance20to24KmhM": 126.18,
+          "distanceOver24KmhM": 65.9,
+          "metabolicPowerWkg": 9.2,
+          "accelerationsOver3": 11,
+          "decelerationsUnder3": 15,
+          "maxSpeedKmh": 29.16,
+          "recoveryPct": 69.48
+        },
+        {
+          "player": "Santella",
+          "totalDistanceM": 5662,
+          "distancePerMin": 117,
+          "distanceOver16KmhM": 1138,
+          "distance20to24KmhM": 325.49,
+          "distanceOver24KmhM": 133.6,
+          "metabolicPowerWkg": 10.6,
+          "accelerationsOver3": 18,
+          "decelerationsUnder3": 19,
+          "maxSpeedKmh": 31.1,
+          "recoveryPct": 66.88
+        }
+      ],
+      "summary": {
+        "it": "Top Performer Volume: Melnyk guida il gruppo per distanza complessiva (11.908 m), volume ad alta intensità (>16 km/h: 2.215 m) e sforzo sprint (>24 km/h: 415,75 m), oltre ad aver registrato il massimo numero di accelerazioni e decelerazioni brusche. Top Performer Densità & Picchi: Riccio registra la massima potenza metabolica (11,5 W/kg) e la maggior densità di corsa (127 m/min). Zappalà e Manè condividono il picco assoluto di velocità della gara con 32,75 km/h. Pereyra mostra un profilo bilanciato con 10.467 m totali e un ottimo tempo di recupero (70,93%).",
+        "en": "Top volume performer: Melnyk leads the group for total distance (11,908 m), high-intensity volume (>16 km/h: 2,215 m) and sprint effort (>24 km/h: 415.75 m), and also recorded the most sharp accelerations and decelerations. Top density & peaks: Riccio records the highest metabolic power (11.5 W/kg) and the highest running density (127 m/min). Zappalà and Manè share the match's absolute top speed of 32.75 km/h. Pereyra shows a balanced profile with 10,467 m total and a very good recovery time (70.93%)."
+      }
+    }
   ]
 }

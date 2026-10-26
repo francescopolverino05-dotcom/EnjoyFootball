@@ -190,6 +190,7 @@ function buildMatchView(pack: NonNullable<ReturnType<typeof getLeagueMatchStats>
     formations,
     dynamics: mapLeagueDynamics(pack),
     teamStats: mapLeagueTeamStats(pack),
+    gpsStats: pack.gpsStats,
     goalkeepers: mapLeagueGoalkeepers(pack),
     clips: [],
     analysisVideos: [],
