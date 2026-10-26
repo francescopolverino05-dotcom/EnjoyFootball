@@ -2258,6 +2258,115 @@ if (bodo) {
   ];
 }
 
+/** Porto UEFA U19 — UEFA Youth League club squad (it.uefa.com/…/2605454). */
+const porto = OPPONENTS.find((o) => o.id === 'porto');
+if (porto) {
+  porto.squad = [
+    {
+      name: 'Francisco Mendes',
+      position: 'GK',
+      isGk: true,
+      birthYear: 2009,
+    },
+    {
+      name: 'Antoni Nikolov',
+      position: 'GK',
+      isGk: true,
+      birthYear: 2008,
+    },
+    {
+      name: 'Hjalte Froholdt',
+      position: 'DF',
+      birthYear: 2008,
+    },
+    {
+      name: 'Rodrigo Teixeira',
+      position: 'DF',
+      birthYear: 2009,
+    },
+    {
+      name: 'José Domingues',
+      position: 'DF',
+      birthYear: 2008,
+    },
+    {
+      name: 'Rodrigo Morais',
+      position: 'DF',
+      birthYear: 2009,
+    },
+    {
+      name: 'Salvador Gomes',
+      position: 'DF',
+      birthYear: 2008,
+    },
+    {
+      name: 'Martim Cunha',
+      position: 'DF',
+      birthYear: 2007,
+    },
+    {
+      name: 'Eirik Granaas',
+      position: 'MF',
+      birthYear: 2010,
+    },
+    {
+      name: 'Tiago Silva',
+      position: 'MF',
+      birthYear: 2007,
+    },
+    {
+      name: 'Bernardo Lima',
+      position: 'MF',
+      birthYear: 2008,
+    },
+    {
+      name: 'João Abreu',
+      position: 'MF',
+      birthYear: 2008,
+    },
+    {
+      name: 'Gonçalo Oliveira',
+      position: 'MF',
+      birthYear: 2008,
+    },
+    {
+      name: 'Duarte Cunha',
+      position: 'FW',
+      birthYear: 2008,
+    },
+    {
+      name: 'Eduardo Ferreira',
+      position: 'FW',
+      birthYear: 2008,
+    },
+    {
+      name: 'Cardoso Varela',
+      position: 'FW',
+      birthYear: 2008,
+    },
+    {
+      name: 'André Miranda',
+      position: 'FW',
+      birthYear: 2007,
+    },
+    {
+      name: 'Tcherno Jamanca',
+      position: 'FW',
+      birthYear: 2009,
+    },
+    {
+      name: 'Gabriel Ferreira De Carvalho',
+      position: 'FW',
+      birthYear: 2008,
+    },
+    {
+      name: 'Mateus Mide',
+      position: 'FW',
+      birthYear: 2008,
+    },
+  ];
+}
+
 /**
  * Spezia Primavera 2 — 4-3-3 with a single holding midfielder.
  * Shirt → role (starters 1–11): 1 GK; 2 RB, 5 LCB, 6 RCB, 3 LB; 4 CDM, 8 RCM, 10 LCM; 7 RW, 9 ST, 11 LW.
