@@ -1614,7 +1614,7 @@
   "vimeo": {
     "folderId": "31021645",
     "folderUrl": "https://vimeo.com/user/170593333/folder/31021645",
-    "lastSyncedAt": "2026-10-24T11:10:33.888Z"
+    "lastSyncedAt": "2026-10-26T22:03:10.377Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1239052703/bf23781345",
@@ -2074,7 +2074,7 @@
           "totalDistanceM": 8338,
           "distancePerMin": 94,
           "distanceOver16KmhM": 1263,
-          "distance20to24KmhM": 368.0,
+          "distance20to24KmhM": 368,
           "distanceOver24KmhM": 231.37,
           "metabolicPowerWkg": 8.5,
           "accelerationsOver3": 26,
