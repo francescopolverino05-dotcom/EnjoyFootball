@@ -2936,6 +2936,31 @@ attachReferencePack('spezia', '2026-10-24_campionato-u19-vs-spezia', [
   },
 ]);
 
+{
+  const sp = OPPONENTS.find((o) => o.id === 'spezia');
+  const leaguePack = sp?.fixturePacks['2026-10-24_campionato-u19-vs-spezia'];
+  attachReferencePack(
+    'spezia',
+    '2026-10-28_coppa-italia-u19-vs-spezia',
+    leaguePack?.referenceMatches ?? [],
+    [
+      {
+        id: 'spezia-coppa-studio-report',
+        title: {
+          en: 'Studio Spezia (Coppa Italia)',
+          it: 'Studio Spezia (Coppa Italia)',
+        },
+        description: {
+          en: 'Opposition studio report (Avversari → Coppa Italia → Spezia → Studio Report).',
+          it: 'Studio report avversario (Avversari → Coppa Italia → Spezia → Studio Report).',
+        },
+        videoFile: 'https://vimeo.com/1239647055/2e68ba2908',
+        tags: ['vimeo', 'opposition', 'studio-report'],
+      },
+    ]
+  );
+}
+
 attachReferencePack('monopoli', '2026-10-31_campionato-monopoli-vs-u19', [
   {
     id: 'monopoli-ref-spezia',
