@@ -13,6 +13,7 @@ import {
   type Locale,
 } from '../i18n/translations';
 import { openOppositionSquadPdf } from '../utils/oppositionSquadPdf';
+import type { MostSubRow } from '../utils/mostSubs';
 
 interface OppositionSquadTableProps {
   players: OppositionSquadPlayer[];
@@ -21,6 +22,8 @@ interface OppositionSquadTableProps {
   teamId?: string;
   /** When set, PDF also includes the last-4-XIs depth pitch. */
   depth?: OppositionSquadDepth;
+  /** Most frequent substitutes (shown as a PDF section). */
+  mostSubs?: MostSubRow[];
 }
 
 function cell(value: string | number | null | undefined): string {
@@ -47,6 +50,10 @@ function pdfLabelsFor(locale: Locale, teamName: string, depth?: OppositionSquadD
     colFoot: ui(locale, 'oppositionSquadColFoot'),
     heightUnit: 'cm',
     generatedLabel: ui(locale, 'oppositionSquadPdfGenerated'),
+    subsTitle: ui(locale, 'oppositionMostSubbedOn'),
+    subsColPlayer: ui(locale, 'statsColPlayer'),
+    subsColRole: ui(locale, 'oppositionUsualRole'),
+    subsColApps: ui(locale, 'oppositionSubApps'),
   };
 }
 
@@ -55,6 +62,7 @@ export default function OppositionSquadTable({
   teamName,
   teamId,
   depth,
+  mostSubs,
 }: OppositionSquadTableProps) {
   const { t, locale } = useLanguage();
   const ordered = sortOppositionSquadByDepth(players);
@@ -67,6 +75,7 @@ export default function OppositionSquadTable({
       {
         locale: pdfLocale,
         ...(depth && teamId ? { depth, teamId } : {}),
+        mostSubs,
       }
     );
   };

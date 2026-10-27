@@ -1,3 +1,4 @@
+import { computeMostSubs } from '../utils/mostSubs';
 import { parseSubs } from '../utils/parseSubs';
 import SetPiecesPanel from '../components/SetPiecesPanel';
 import { useMemo, useState } from 'react';
@@ -132,21 +133,7 @@ export default function OpponentPage() {
     clips: opponent.clips.filter((c) => c.section === id),
   }));
 
-  const mostSubs = (() => {
-    const m = new Map<string, { name: string; count: number; roles: Record<string, number> }>();
-    for (const f of formations) {
-      for (const sub of f.subs ?? []) {
-        const k = sub.name.trim().toLowerCase();
-        const e = m.get(k) ?? { name: sub.name.trim(), count: 0, roles: {} };
-        e.count += 1;
-        if (sub.role) e.roles[sub.role] = (e.roles[sub.role] ?? 0) + 1;
-        m.set(k, e);
-      }
-    }
-    return [...m.values()]
-      .map((e) => ({ name: e.name, count: e.count, role: Object.entries(e.roles).sort((a, b) => b[1] - a[1])[0]?.[0] }))
-      .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
-  })();
+  const mostSubs = computeMostSubs(formations);
 
   const tabs: [
     OpponentTab,
@@ -297,6 +284,7 @@ export default function OpponentPage() {
                 teamName={L(opponent.name)}
                 teamId={opponent.id}
                 depth={opponent.squadDepth}
+                mostSubs={mostSubs}
               />
             )}
           </div>

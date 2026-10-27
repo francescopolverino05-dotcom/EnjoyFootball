@@ -9,6 +9,7 @@ import {
 } from '../i18n/positions';
 import type { Locale } from '../i18n/translations';
 import { withGoalkeeperInSystem } from './formationSystem';
+import type { MostSubRow } from './mostSubs';
 
 function esc(value: string): string {
   return value
@@ -30,6 +31,10 @@ export interface OppositionSquadPdfLabels {
   colFoot: string;
   heightUnit: string;
   generatedLabel: string;
+  subsTitle?: string;
+  subsColPlayer?: string;
+  subsColRole?: string;
+  subsColApps?: string;
 }
 
 function playerDotColor(teamId: string): { fill: string; border: string; text: string } {
@@ -131,17 +136,63 @@ function renderDepthSection(
   </style>`;
 }
 
+function renderSubsSection(rows: MostSubRow[], labels: OppositionSquadPdfLabels): string {
+  if (!rows.length || !labels.subsTitle) return '';
+  const body = rows
+    .map(
+      (r) => `<tr>
+        <td class="name">${esc(r.name)}</td>
+        <td>${esc(r.role ?? '—')}</td>
+        <td class="meta apps">${esc(String(r.count))}</td>
+      </tr>`
+    )
+    .join('\n');
+  return `
+  <section class="subs-section">
+    <h2>${esc(labels.subsTitle)}</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>${esc(labels.subsColPlayer ?? labels.colPlayer)}</th>
+          <th>${esc(labels.subsColRole ?? labels.colRole)}</th>
+          <th class="apps">${esc(labels.subsColApps ?? '')}</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${body}
+      </tbody>
+    </table>
+  </section>`;
+}
+
+export interface OppositionSquadPdfOptions {
+  depth?: OppositionSquadDepth;
+  teamId?: string;
+  locale?: Locale;
+  mostSubs?: MostSubRow[];
+}
+
 /** Opens a print-ready squad sheet (browser “Save as PDF”). */
 export function openOppositionSquadPdf(
   teamName: string,
   players: OppositionSquadPlayer[],
   labels: OppositionSquadPdfLabels,
-  options?: {
-    depth?: OppositionSquadDepth;
-    teamId?: string;
-    locale?: Locale;
-  }
+  options?: OppositionSquadPdfOptions
 ): void {
+  const html = buildOppositionSquadPdfHtml(teamName, players, labels, options);
+  const win = window.open('', '_blank');
+  if (!win) return;
+  win.document.open();
+  win.document.write(html);
+  win.document.close();
+}
+
+export function buildOppositionSquadPdfHtml(
+  teamName: string,
+  players: OppositionSquadPlayer[],
+  labels: OppositionSquadPdfLabels,
+  options?: OppositionSquadPdfOptions
+): string {
   const locale = options?.locale ?? 'en';
   const rows = sortOppositionSquadByDepth(players)
     .map((p) => {
@@ -171,7 +222,9 @@ export function openOppositionSquadPdf(
       ? renderDepthSection(options.depth, options.teamId, labels, players)
       : '';
 
-  const html = `<!DOCTYPE html>
+  const subsHtml = renderSubsSection((options?.mostSubs ?? []).slice(0, 6), labels);
+
+  return `<!DOCTYPE html>
 <html lang="${locale === 'it' ? 'it' : 'en'}">
 <head>
   <meta charset="utf-8" />
@@ -353,6 +406,10 @@ export function openOppositionSquadPdf(
       font-variant-numeric: tabular-nums;
     }
     tr:nth-child(even) td { background: #f8fafc; }
+    .subs-section { margin-top: 10px; break-inside: avoid; page-break-inside: avoid; }
+    .subs-section .apps { width: 80px; text-align: right; }
+    .subs-section h2 { font-size: 11pt; margin-bottom: 2px; }
+    .subs-section th, .subs-section td { padding: 3px 7px; font-size: 9.5pt; }
     @media print {
       body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
       .page-1, .depth-section { break-inside: avoid; page-break-inside: avoid; }
@@ -373,6 +430,7 @@ export function openOppositionSquadPdf(
     <p class="meta-line">${esc(labels.generatedLabel)} ${esc(dateLine)}</p>
   </header>
   ${depthHtml}
+  ${subsHtml}
 </div>
   <section class="squad-section page-break">
     <header>
@@ -386,6 +444,7 @@ export function openOppositionSquadPdf(
     <h1>${esc(teamName)} — ${esc(labels.title)}</h1>
     <p class="meta-line">${esc(labels.generatedLabel)} ${esc(dateLine)}</p>
   </header>
+  ${subsHtml}
   <section class="squad-section">
     <table>`
   }
@@ -410,10 +469,4 @@ export function openOppositionSquadPdf(
   </script>
 </body>
 </html>`;
-
-  const win = window.open('', '_blank');
-  if (!win) return;
-  win.document.open();
-  win.document.write(html);
-  win.document.close();
 }
