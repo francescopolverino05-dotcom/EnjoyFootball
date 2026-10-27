@@ -148,6 +148,25 @@ export function placeholder532(teamId: string): PitchPlayer[] {
   ];
 }
 
+/** Empty 1-3-5-2 slots (back three, wing-backs, mid three, two strikers).
+ * Pitch attacks downward: team-left = screen-right.
+ */
+export function placeholder352(teamId: string): PitchPlayer[] {
+  return [
+    { number: 1, name: 'GK', role: 'GK', teamId, isGk: true, top: '8%', left: '50%' },
+    { number: 5, name: 'RCB', role: 'RCB', teamId, top: '20%', left: '30%' },
+    { number: 6, name: 'CB', role: 'CB', teamId, top: '18%', left: '50%' },
+    { number: 4, name: 'LCB', role: 'LCB', teamId, top: '20%', left: '70%' },
+    { number: 2, name: 'RWB', role: 'RWB', teamId, top: '44%', left: '10%' },
+    { number: 3, name: 'LWB', role: 'LWB', teamId, top: '44%', left: '90%' },
+    { number: 8, name: 'RCM', role: 'RCM', teamId, top: '50%', left: '32%' },
+    { number: 7, name: 'CM', role: 'CM', teamId, top: '40%', left: '50%' },
+    { number: 10, name: 'LCM', role: 'LCM', teamId, top: '50%', left: '68%' },
+    { number: 9, name: 'RS', role: 'RS', teamId, top: '74%', left: '40%' },
+    { number: 11, name: 'LS', role: 'LS', teamId, top: '74%', left: '60%' },
+  ];
+}
+
 export function placeholderPlayersForSystem(
   system: string,
   teamId: string
@@ -167,6 +186,9 @@ export function placeholderPlayersForSystem(
   }
   if (key === '1-5-3-2' || key === '5-3-2') {
     return placeholder532(teamId);
+  }
+  if (key === '1-3-5-2' || key === '3-5-2') {
+    return placeholder352(teamId);
   }
   if (key === '1-3-4-2-1' || key === '3-4-2-1') {
     return placeholder13421(teamId);
@@ -238,7 +260,7 @@ const OPPONENTS: OppositionOpponent[] = [
   club('benevento', 'Benevento', ['primavera2']),
   club('catanzaro', 'Catanzaro', ['primavera2']),
   club('cosenza', 'Cosenza', ['primavera2']),
-  club('frosinone', 'Frosinone', ['primavera2']),
+  club('frosinone', 'Frosinone', ['primavera2'], '1-3-5-2'),
   club('latina', 'Latina', ['primavera2']),
   club('monopoli', 'Monopoli', ['primavera2'], '1-5-3-2'),
   club('palermo', 'Palermo', ['primavera2']),
@@ -2980,181 +3002,123 @@ if (monopoli) {
 
 const frosinone = OPPONENTS.find((o) => o.id === 'frosinone');
 if (frosinone) {
-  /** Shirt-to-role mapping pending: pitch hidden; raw XIs kept by shirt number. Squad: Transfermarkt verein/17664 + distinte. */
-  frosinone.formationPending = true;
-  frosinone.recentMatches = [
+  /** XIs by shirt onto 3-5-2: 1 GK, 5 RCB, 6 CB, 4 LCB, 2 RWB, 3 LWB, 8 RCM, 7 CM, 10 LCM, 9 RS, 11 LS. */
+  const frosinone352 = (byShirt: string[]): PitchPlayer[] =>
+    placeholder352('frosinone').map((p) => ({ ...p, name: byShirt[p.number - 1] }));
+  const vs_perugia = frosinone352(["Capanna", "Mirenzi", "Colafrancesco", "Esposito", "Reali", "Bosi", "Taddei", "Millozzi", "Carpentieri", "Menghini", "Marchetti"]);
+  const vs_cosenza = frosinone352(["Capanna", "Mirenzi", "Colafrancesco", "Esposito", "Reali", "Bosi", "Taddei", "Millozzi", "Carpentieri", "Menghini", "Marchetti"]);
+  const vs_palermo = frosinone352(["Capanna", "Mirenzi", "Colafrancesco", "Esposito", "Grande", "Bosi", "Taddei", "Marchetti", "Carpentieri", "Menghini", "Castroreale"]);
+  const vs_catanzaro = frosinone352(["Amato", "Anzidei", "Colafrancesco", "Esposito", "Reali", "Grande", "Mirenzi", "Marchetti", "Carpentieri", "Menghini", "Castroreale"]);
+  const vs_pisa = frosinone352(["Amato", "Bosi", "Colafrancesco", "Esposito", "Reali", "Grande", "Mirenzi", "Marchetti", "Carpentieri", "Menghini", "Castroreale"]);
+  const vs_benevento = frosinone352(["Amato", "Mirenzi", "Colafrancesco", "Esposito", "Grande", "Bosi", "Taddei", "Millozzi", "Carpentieri", "Menghini", "Carfagna"]);
+  frosinone.formationSystem = '1-3-5-2';
+  frosinone.starters = frosinone352(["Capanna", "Mirenzi", "Colafrancesco", "Esposito", "Reali", "Bosi", "Taddei", "Millozzi", "Carpentieri", "Menghini", "Castroreale"]);
+  frosinone.scoutedFormations = [
+    {
+      id: 'frosinone-probable-xi',
+      label: { en: 'Probable XI', it: 'Probabile XI' },
+      system: '3-5-2',
+      players: frosinone.starters,
+      notes: {
+        en: 'Most frequent starter per role, Primavera 2 MD1–MD6.',
+        it: 'Titolare più frequente per ruolo, Primavera 2 gior. 1–6.',
+      },
+    },
     {
       id: 'frosinone-vs-perugia',
-      date: '2026-10-24',
-      matchday: 6,
       label: { en: "vs Perugia (0–5)", it: "vs Perugia (0–5)" },
-      score: "Perugia 5–0 Frosinone",
+      system: '3-5-2',
+      players: vs_perugia,
       notes: {
         en: "Primavera 2 MD6, 24 Oct 2026, away, Perugia 5–0 Frosinone (Transfermarkt). Perugia goals: Dottori 38' (pen.), Agnissan 69', Agnissan 73', Agnissan 82', Agnissan 90+3'. Subs: Ndao for Marchetti 58', Casagrande for Taddei 58', Polinari for Carpentieri 84', Castellani for Millozzi 84', Pantano for Bosi 84'.",
         it: "Primavera 2 gior. 6, 24 ott 2026, trasferta, Perugia 5–0 Frosinone (Transfermarkt). Gol Perugia: Dottori 38' (pen.), Agnissan 69', Agnissan 73', Agnissan 82', Agnissan 90+3'. Sub: Ndao per Marchetti 58', Casagrande per Taddei 58', Polinari per Carpentieri 84', Castellani per Millozzi 84', Pantano per Bosi 84'.",
       },
-      lineup: [
-        { shirt: 1, name: "Tommaso Capanna", starter: true },
-        { shirt: 2, name: "Andrea Mirenzi", starter: true },
-        { shirt: 3, name: "Filippo Colafrancesco", starter: true },
-        { shirt: 4, name: "Valerio Esposito", starter: true },
-        { shirt: 5, name: "Tommaso Reali", starter: true },
-        { shirt: 6, name: "Giorgio Bosi", starter: true },
-        { shirt: 7, name: "Leonardo Taddei", starter: true },
-        { shirt: 8, name: "Francesco Millozzi", starter: true },
-        { shirt: 9, name: "Christian Carpentieri", starter: true },
-        { shirt: 10, name: "Lorenzo Menghini", starter: true },
-        { shirt: 11, name: "Matteo Marchetti", starter: true },
-        { shirt: 14, name: "Cristian Pantano", starter: false },
-        { shirt: 13, name: "Yankhoba Ndao", starter: false },
-        { shirt: 15, name: "Andrea Castellani", starter: false },
-        { shirt: 18, name: "Gianfilippo Casagrande", starter: false },
-        { shirt: 21, name: "Fabio Polinari", starter: false },
-      ],
     },
     {
       id: 'frosinone-vs-cosenza',
-      date: '2026-10-17',
-      matchday: 5,
       label: { en: "vs Cosenza (2–1)", it: "vs Cosenza (2–1)" },
-      score: "Cosenza 1–2 Frosinone",
+      system: '3-5-2',
+      players: vs_cosenza,
       notes: {
         en: "Primavera 2 MD5, 17 Oct 2026, away, Cosenza 1–2 Frosinone (distinta + Transfermarkt). Frosinone goals: Bosi 65', Carpentieri 69'. Cosenza goals: Mazzulla 38'. Subs: Castroreale for Marchetti 62', Casagrande for Taddei 62', Ndao for Colafrancesco 84', Pantano for Carpentieri 90', Castellani for Millozzi 90'.",
         it: "Primavera 2 gior. 5, 17 ott 2026, trasferta, Cosenza 1–2 Frosinone (distinta + Transfermarkt). Gol Frosinone: Bosi 65', Carpentieri 69'. Gol Cosenza: Mazzulla 38'. Sub: Castroreale per Marchetti 62', Casagrande per Taddei 62', Ndao per Colafrancesco 84', Pantano per Carpentieri 90', Castellani per Millozzi 90'.",
       },
-      lineup: [
-        { shirt: 1, name: "Tommaso Capanna", starter: true },
-        { shirt: 2, name: "Andrea Mirenzi", starter: true },
-        { shirt: 3, name: "Filippo Colafrancesco", starter: true },
-        { shirt: 4, name: "Valerio Esposito", starter: true },
-        { shirt: 5, name: "Tommaso Reali", starter: true },
-        { shirt: 6, name: "Giorgio Bosi", starter: true },
-        { shirt: 7, name: "Leonardo Taddei", starter: true },
-        { shirt: 8, name: "Francesco Millozzi", starter: true },
-        { shirt: 9, name: "Christian Carpentieri", starter: true },
-        { shirt: 10, name: "Lorenzo Menghini", starter: true },
-        { shirt: 11, name: "Matteo Marchetti", starter: true },
-        { shirt: 13, name: "Cristian Pantano", starter: false },
-        { shirt: 15, name: "Yankhoba Ndao", starter: false },
-        { shirt: 16, name: "Andrea Castellani", starter: false },
-        { shirt: 17, name: "Gianfilippo Casagrande", starter: false },
-        { shirt: 21, name: "Alessandro Castroreale", starter: false },
-      ],
     },
     {
       id: 'frosinone-vs-palermo',
-      date: '2026-10-10',
-      matchday: 4,
       label: { en: "vs Palermo (0–0)", it: "vs Palermo (0–0)" },
-      score: "Frosinone 0–0 Palermo",
+      system: '3-5-2',
+      players: vs_palermo,
       notes: {
         en: "Primavera 2 MD4, 10 Oct 2026, home, Frosinone 0–0 Palermo (distinta + Transfermarkt). Subs: Millozzi for Marchetti 65', Casagrande for Castroreale 65', Reali for Grande 65', Polinari for Carpentieri 84'. Cards: Yellow: Grande 55'.",
         it: "Primavera 2 gior. 4, 10 ott 2026, casa, Frosinone 0–0 Palermo (distinta + Transfermarkt). Sub: Millozzi per Marchetti 65', Casagrande per Castroreale 65', Reali per Grande 65', Polinari per Carpentieri 84'. Cartellini: Gialli: Grande 55'.",
       },
-      lineup: [
-        { shirt: 1, name: "Tommaso Capanna", starter: true },
-        { shirt: 2, name: "Andrea Mirenzi", starter: true },
-        { shirt: 3, name: "Filippo Colafrancesco", starter: true },
-        { shirt: 4, name: "Valerio Esposito", starter: true },
-        { shirt: 5, name: "Alessandro Grande", starter: true },
-        { shirt: 6, name: "Giorgio Bosi", starter: true },
-        { shirt: 7, name: "Leonardo Taddei", starter: true },
-        { shirt: 8, name: "Matteo Marchetti", starter: true },
-        { shirt: 9, name: "Christian Carpentieri", starter: true },
-        { shirt: 10, name: "Lorenzo Menghini", starter: true },
-        { shirt: 11, name: "Alessandro Castroreale", starter: true },
-        { shirt: 14, name: "Tommaso Reali", starter: false },
-        { shirt: 16, name: "Francesco Millozzi", starter: false },
-        { shirt: 18, name: "Gianfilippo Casagrande", starter: false },
-        { shirt: 22, name: "Fabio Polinari", starter: false },
-      ],
     },
     {
       id: 'frosinone-vs-catanzaro',
-      date: '2026-09-19',
-      matchday: 3,
       label: { en: "vs Catanzaro (0–6)", it: "vs Catanzaro (0–6)" },
-      score: "Catanzaro 6–0 Frosinone",
+      system: '3-5-2',
+      players: vs_catanzaro,
       notes: {
         en: "Primavera 2 MD3, 19 Sep 2026, away, Catanzaro 6–0 Frosinone (distinta + Transfermarkt). Catanzaro goals: Pellegrini 4', Pellegrini 14', Gjoka 38', Greco 60', Ciani 84', Vella 86'. Subs: Millozzi for Carpentieri 30', Taddei for Colafrancesco 45', Danieli for Anzidei 45', Polinari for Castroreale 61', Castellani for Esposito 66'. Cards: Yellow: Millozzi 31'.",
         it: "Primavera 2 gior. 3, 19 set 2026, trasferta, Catanzaro 6–0 Frosinone (distinta + Transfermarkt). Gol Catanzaro: Pellegrini 4', Pellegrini 14', Gjoka 38', Greco 60', Ciani 84', Vella 86'. Sub: Millozzi per Carpentieri 30', Taddei per Colafrancesco 45', Danieli per Anzidei 45', Polinari per Castroreale 61', Castellani per Esposito 66'. Cartellini: Gialli: Millozzi 31'.",
       },
-      lineup: [
-        { shirt: 1, name: "Luca Amato", starter: true },
-        { shirt: 2, name: "Massimo Anzidei", starter: true },
-        { shirt: 3, name: "Filippo Colafrancesco", starter: true },
-        { shirt: 4, name: "Valerio Esposito", starter: true },
-        { shirt: 5, name: "Tommaso Reali", starter: true },
-        { shirt: 6, name: "Alessandro Grande", starter: true },
-        { shirt: 7, name: "Andrea Mirenzi", starter: true },
-        { shirt: 8, name: "Matteo Marchetti", starter: true },
-        { shirt: 9, name: "Christian Carpentieri", starter: true },
-        { shirt: 10, name: "Lorenzo Menghini", starter: true },
-        { shirt: 11, name: "Alessandro Castroreale", starter: true },
-        { shirt: 16, name: "Fabio Polinari", starter: false },
-        { shirt: 17, name: "Andrea Castellani", starter: false },
-        { shirt: 18, name: "Alessio Danieli", starter: false },
-        { shirt: 19, name: "Francesco Millozzi", starter: false },
-        { shirt: 21, name: "Leonardo Taddei", starter: false },
-      ],
     },
     {
       id: 'frosinone-vs-pisa',
-      date: '2026-09-12',
-      matchday: 2,
       label: { en: "vs Pisa (2–3)", it: "vs Pisa (2–3)" },
-      score: "Frosinone 2–3 Pisa",
+      system: '3-5-2',
+      players: vs_pisa,
       notes: {
         en: "Primavera 2 MD2, 12 Sep 2026, home, Frosinone 2–3 Pisa (distinta + Transfermarkt). Frosinone goals: Marchetti 70', Carpentieri 90+5'. Pisa goals: Ghizzani 6', Ghizzani 52', Ghizzani 60'. Subs: Anzidei for Bosi 66', Polinari for Castroreale 66', Valente for Marchetti 70', Ndao for Colafrancesco 86'. Cards: Yellow: Bosi.",
         it: "Primavera 2 gior. 2, 12 set 2026, casa, Frosinone 2–3 Pisa (distinta + Transfermarkt). Gol Frosinone: Marchetti 70', Carpentieri 90+5'. Gol Pisa: Ghizzani 6', Ghizzani 52', Ghizzani 60'. Sub: Anzidei per Bosi 66', Polinari per Castroreale 66', Valente per Marchetti 70', Ndao per Colafrancesco 86'. Cartellini: Gialli: Bosi.",
       },
-      lineup: [
-        { shirt: 1, name: "Luca Amato", starter: true },
-        { shirt: 2, name: "Giorgio Bosi", starter: true },
-        { shirt: 3, name: "Filippo Colafrancesco", starter: true },
-        { shirt: 4, name: "Valerio Esposito", starter: true },
-        { shirt: 5, name: "Tommaso Reali", starter: true },
-        { shirt: 6, name: "Alessandro Grande", starter: true },
-        { shirt: 7, name: "Andrea Mirenzi", starter: true },
-        { shirt: 8, name: "Matteo Marchetti", starter: true },
-        { shirt: 9, name: "Christian Carpentieri", starter: true },
-        { shirt: 10, name: "Lorenzo Menghini", starter: true },
-        { shirt: 11, name: "Alessandro Castroreale", starter: true },
-        { shirt: 16, name: "Yankhoba Ndao", starter: false },
-        { shirt: 17, name: "Gabriele Valente", starter: false },
-        { shirt: 20, name: "Massimo Anzidei", starter: false },
-        { shirt: 21, name: "Fabio Polinari", starter: false },
-      ],
     },
     {
       id: 'frosinone-vs-benevento',
-      date: '2026-09-05',
-      matchday: 1,
       label: { en: "vs Benevento (0–3)", it: "vs Benevento (0–3)" },
-      score: "Benevento 3–0 Frosinone",
+      system: '3-5-2',
+      players: vs_benevento,
       notes: {
         en: "Primavera 2 MD1, 5 Sep 2026, away, Benevento 3–0 Frosinone (distinta + Transfermarkt). Benevento goals: Giugliano 5', Lo Russo 30', Giugliano 64' (free kick). Subs: Castroreale for Millozzi 67', Reali for Grande 67', Marchetti for Colafrancesco 72', Valente for Carpentieri 72', Anzidei for Bosi 77'. Cards: Yellow: Mirenzi, Grande, Valente; Red (2nd yellow): Carfagna 79'.",
         it: "Primavera 2 gior. 1, 5 set 2026, trasferta, Benevento 3–0 Frosinone (distinta + Transfermarkt). Gol Benevento: Giugliano 5', Lo Russo 30', Giugliano 64' (punizione). Sub: Castroreale per Millozzi 67', Reali per Grande 67', Marchetti per Colafrancesco 72', Valente per Carpentieri 72', Anzidei per Bosi 77'. Cartellini: Gialli: Mirenzi, Grande, Valente; Rosso (doppio giallo): Carfagna 79'.",
       },
-      lineup: [
-        { shirt: 1, name: "Luca Amato", starter: true },
-        { shirt: 2, name: "Andrea Mirenzi", starter: true },
-        { shirt: 3, name: "Filippo Colafrancesco", starter: true },
-        { shirt: 4, name: "Valerio Esposito", starter: true },
-        { shirt: 5, name: "Alessandro Grande", starter: true },
-        { shirt: 6, name: "Giorgio Bosi", starter: true },
-        { shirt: 7, name: "Leonardo Taddei", starter: true },
-        { shirt: 8, name: "Francesco Millozzi", starter: true },
-        { shirt: 9, name: "Christian Carpentieri", starter: true },
-        { shirt: 10, name: "Lorenzo Menghini", starter: true },
-        { shirt: 11, name: "Matteo Carfagna", starter: true },
-        { shirt: 14, name: "Tommaso Reali", starter: false },
-        { shirt: 15, name: "Massimo Anzidei", starter: false },
-        { shirt: 16, name: "Matteo Marchetti", starter: false },
-        { shirt: 17, name: "Gabriele Valente", starter: false },
-        { shirt: 19, name: "Alessandro Castroreale", starter: false },
-      ],
     },
+  ];
+  frosinone.squadDepth = {
+    system: '1-3-5-2',
+    note: {
+      en: 'Primavera 2 MD1–MD6 (Benevento, Pisa, Catanzaro, Palermo, Cosenza, Perugia).',
+      it: 'Primavera 2 gior. 1–6 (Benevento, Pisa, Catanzaro, Palermo, Cosenza, Perugia).',
+    },
+    slots: [
+      { role: 'GK', top: '10%', left: '50%', players: [{ name: "Capanna", starts: 3 }, { name: "Amato", starts: 3 }] },
+      { role: 'RCB', top: '24%', left: '30%', players: [{ name: "Reali", starts: 4 }, { name: "Grande", starts: 2 }] },
+      { role: 'CB', top: '22%', left: '50%', players: [{ name: "Bosi", starts: 4 }, { name: "Grande", starts: 2 }] },
+      { role: 'LCB', top: '24%', left: '70%', players: [{ name: "Esposito", starts: 6 }] },
+      { role: 'RWB', top: '46%', left: '10%', players: [{ name: "Mirenzi", starts: 4 }, { name: "Bosi", starts: 1 }, { name: "Anzidei", starts: 1 }] },
+      { role: 'LWB', top: '46%', left: '90%', players: [{ name: "Colafrancesco", starts: 6 }] },
+      { role: 'RCM', top: '52%', left: '32%', players: [{ name: "Millozzi", starts: 3 }, { name: "Marchetti", starts: 3 }] },
+      { role: 'CM', top: '42%', left: '50%', players: [{ name: "Taddei", starts: 4 }, { name: "Mirenzi", starts: 2 }] },
+      { role: 'LCM', top: '52%', left: '68%', players: [{ name: "Menghini", starts: 6 }] },
+      { role: 'RS', top: '74%', left: '40%', players: [{ name: "Carpentieri", starts: 6 }] },
+      { role: 'LS', top: '74%', left: '60%', players: [{ name: "Castroreale", starts: 3 }, { name: "Marchetti", starts: 2 }, { name: "Carfagna", starts: 1 }] },
+    ],
+  };
+  frosinone.substitutes = [
+    { name: 'Fabio Polinari', position: 'LS / RS' },
+    { name: 'Gianfilippo Casagrande', position: 'CM / LS' },
+    { name: 'Andrea Castellani', position: 'RCM / LCB' },
+    { name: 'Yankhoba Ndao', position: 'LWB / LS' },
+    { name: 'Massimo Anzidei', position: 'CB' },
+    { name: 'Alessandro Castroreale', position: 'RCM' },
+    { name: 'Francesco Millozzi', position: 'RS / RCM' },
+    { name: 'Cristian Pantano', position: 'RS / CB' },
+    { name: 'Tommaso Reali', position: 'RCB' },
+    { name: 'Gabriele Valente', position: 'RS / RCM' },
+    { name: 'Alessio Danieli', position: 'RWB' },
+    { name: 'Matteo Marchetti', position: 'LWB' },
+    { name: 'Leonardo Taddei', position: 'LWB' },
   ];
   frosinone.squad = [
     { name: "Tommaso Capanna", position: 'GK', isGk: true, birthYear: 2008, preferredFoot: 'Destro' },
@@ -3163,36 +3127,36 @@ if (frosinone) {
     { name: "Matias Monaldi", position: 'GK', isGk: true, birthYear: 2009 },
     { name: "Valerio Spirito", position: 'GK', isGk: true, birthYear: 2010 },
     { name: "Andrea Leonardi", position: 'GK', isGk: true, birthYear: 2010 },
-    { name: "Cristian Pantano", position: 'CB', birthYear: 2008, heightCm: 191, preferredFoot: 'Destro' },
-    { name: "Alessandro Grande", position: 'CB', birthYear: 2009, preferredFoot: 'Destro' },
-    { name: "Massimo Anzidei", position: 'CB', birthYear: 2009, preferredFoot: 'Destro' },
-    { name: "Giorgio Bosi", position: 'CB', birthYear: 2009 },
-    { name: "Francesco Molina", position: 'CB', birthYear: 2008, preferredFoot: 'Sinistro' },
-    { name: "Tommaso Reali", position: 'CB', birthYear: 2008 },
+    { name: "Cristian Pantano", position: 'RS / CB', birthYear: 2008, heightCm: 191, preferredFoot: 'Destro' },
+    { name: "Alessandro Grande", position: 'RCB / CB', birthYear: 2009, preferredFoot: 'Destro' },
+    { name: "Massimo Anzidei", position: 'RWB / CB', birthYear: 2009, preferredFoot: 'Destro' },
+    { name: "Giorgio Bosi", position: 'CB / RWB', birthYear: 2009 },
+    { name: "Francesco Molina", birthYear: 2008, preferredFoot: 'Sinistro' },
+    { name: "Tommaso Reali", position: 'RCB', birthYear: 2008 },
     { name: "Cristian Di Battista", birthYear: 2008 },
-    { name: "Filippo Colafrancesco", position: 'LB', birthYear: 2008, preferredFoot: 'Sinistro' },
-    { name: "Yankhoba Ndao", position: 'LB', birthYear: 2009, heightCm: 182, preferredFoot: 'Sinistro' },
-    { name: "Gabriele Valente", position: 'LB', birthYear: 2009 },
-    { name: "Jacopo Couto Rissone", position: 'LB', birthYear: 2009, preferredFoot: 'Sinistro' },
-    { name: "Andrea Mirenzi", position: 'RB', birthYear: 2008, preferredFoot: 'Destro' },
-    { name: "Andrea Castellani", position: 'DM', birthYear: 2008, preferredFoot: 'Destro' },
-    { name: "Domenico Agostini", position: 'DM', birthYear: 2009, preferredFoot: 'Destro' },
-    { name: "Francesco Millozzi", position: 'CM', birthYear: 2008, preferredFoot: 'Destro' },
-    { name: "Lorenzo Menghini", position: 'CM', birthYear: 2008, preferredFoot: 'Destro' },
-    { name: "Valerio Esposito", position: 'CM', birthYear: 2009, heightCm: 170, preferredFoot: 'Sinistro' },
-    { name: "Matteo Marchetti", position: 'CM', birthYear: 2009 },
-    { name: "Federico Montesano", position: 'CM', birthYear: 2009, preferredFoot: 'Ambidestro' },
-    { name: "Matteo Carfagna", position: 'CM', birthYear: 2008, preferredFoot: 'Destro' },
-    { name: "Lorenzo Trulli", position: 'RM', birthYear: 2009 },
-    { name: "Leonardo Taddei", position: 'AM', birthYear: 2009 },
-    { name: "Gianfilippo Casagrande", position: 'LW', birthYear: 2009, heightCm: 172, preferredFoot: 'Ambidestro' },
-    { name: "Lorenzo Giurdanella", position: 'LW', birthYear: 2009 },
-    { name: "Alessio Danieli", position: 'RW', birthYear: 2008, preferredFoot: 'Sinistro' },
-    { name: "Christian Carpentieri", position: 'ST', birthYear: 2008, preferredFoot: 'Ambidestro' },
-    { name: "Fabio Polinari", position: 'ST', birthYear: 2008, preferredFoot: 'Destro' },
-    { name: "Manuel Silvestri", position: 'ST', birthYear: 2009 },
-    { name: "Alessandro Castroreale", position: 'ST', birthYear: 2009, heightCm: 184 },
-    { name: "Roberto Morra", position: 'FW', birthYear: 2009 },
+    { name: "Filippo Colafrancesco", position: 'LWB', birthYear: 2008, preferredFoot: 'Sinistro' },
+    { name: "Yankhoba Ndao", position: 'LWB / LS', birthYear: 2009, heightCm: 182, preferredFoot: 'Sinistro' },
+    { name: "Gabriele Valente", position: 'RS / RCM', birthYear: 2009 },
+    { name: "Jacopo Couto Rissone", birthYear: 2009, preferredFoot: 'Sinistro' },
+    { name: "Andrea Mirenzi", position: 'RWB / CM', birthYear: 2008, preferredFoot: 'Destro' },
+    { name: "Andrea Castellani", position: 'RCM / LCB', birthYear: 2008, preferredFoot: 'Destro' },
+    { name: "Domenico Agostini", birthYear: 2009, preferredFoot: 'Destro' },
+    { name: "Francesco Millozzi", position: 'RCM / RS', birthYear: 2008, preferredFoot: 'Destro' },
+    { name: "Lorenzo Menghini", position: 'LCM', birthYear: 2008, preferredFoot: 'Destro' },
+    { name: "Valerio Esposito", position: 'LCB', birthYear: 2009, heightCm: 170, preferredFoot: 'Sinistro' },
+    { name: "Matteo Marchetti", position: 'RCM / LS / LWB', birthYear: 2009 },
+    { name: "Federico Montesano", birthYear: 2009, preferredFoot: 'Ambidestro' },
+    { name: "Matteo Carfagna", position: 'LS', birthYear: 2008, preferredFoot: 'Destro' },
+    { name: "Lorenzo Trulli", birthYear: 2009 },
+    { name: "Leonardo Taddei", position: 'CM / LWB', birthYear: 2009 },
+    { name: "Gianfilippo Casagrande", position: 'CM / LS', birthYear: 2009, heightCm: 172, preferredFoot: 'Ambidestro' },
+    { name: "Lorenzo Giurdanella", birthYear: 2009 },
+    { name: "Alessio Danieli", position: 'RWB', birthYear: 2008, preferredFoot: 'Sinistro' },
+    { name: "Christian Carpentieri", position: 'RS', birthYear: 2008, preferredFoot: 'Ambidestro' },
+    { name: "Fabio Polinari", position: 'LS / RS', birthYear: 2008, preferredFoot: 'Destro' },
+    { name: "Manuel Silvestri", birthYear: 2009 },
+    { name: "Alessandro Castroreale", position: 'LS / RCM', birthYear: 2009, heightCm: 184 },
+    { name: "Roberto Morra", birthYear: 2009 },
   ];
 }
 
