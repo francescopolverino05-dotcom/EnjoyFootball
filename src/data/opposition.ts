@@ -3132,7 +3132,7 @@ if (frosinone) {
     { name: "Massimo Anzidei", position: 'RWB / CB', birthYear: 2009, preferredFoot: 'Destro' },
     { name: "Giorgio Bosi", position: 'CB / RWB', birthYear: 2009 },
     { name: "Francesco Molina", birthYear: 2008, preferredFoot: 'Sinistro' },
-    { name: "Tommaso Reali", position: 'RCB', birthYear: 2008 },
+    { name: "Tommaso Reali", position: 'RCB', birthYear: 2008, heightCm: 186, preferredFoot: 'Destro' },
     { name: "Cristian Di Battista", birthYear: 2008 },
     { name: "Filippo Colafrancesco", position: 'LWB', birthYear: 2008, preferredFoot: 'Sinistro' },
     { name: "Yankhoba Ndao", position: 'LWB / LS', birthYear: 2009, heightCm: 182, preferredFoot: 'Sinistro' },
@@ -3153,9 +3153,9 @@ if (frosinone) {
     { name: "Lorenzo Giurdanella", birthYear: 2009 },
     { name: "Alessio Danieli", position: 'RWB', birthYear: 2008, preferredFoot: 'Sinistro' },
     { name: "Christian Carpentieri", position: 'RS', birthYear: 2008, preferredFoot: 'Ambidestro' },
-    { name: "Fabio Polinari", position: 'LS / RS', birthYear: 2008, preferredFoot: 'Destro' },
+    { name: "Fabio Polinari", position: 'LS / RS', birthYear: 2008, heightCm: 175, preferredFoot: 'Destro' },
     { name: "Manuel Silvestri", birthYear: 2009 },
-    { name: "Alessandro Castroreale", position: 'LS / RCM', birthYear: 2009, heightCm: 184 },
+    { name: "Alessandro Castroreale", position: 'LS / RCM', birthYear: 2009, heightCm: 184, preferredFoot: 'Destro' },
     { name: "Roberto Morra", birthYear: 2009 },
   ];
 }
