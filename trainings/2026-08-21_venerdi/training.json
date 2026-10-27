@@ -250,10 +250,13 @@
   "vimeo": {
     "folderId": "30289880",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30289880",
-    "lastSyncedAt": "2026-09-04T00:04:04.447Z"
+    "lastSyncedAt": "2026-10-27T16:31:39.109Z"
   },
   "location": {
     "en": "Cercola",
     "it": "Cercola"
+  },
+  "setPieces": {
+    "parts": []
   }
 }

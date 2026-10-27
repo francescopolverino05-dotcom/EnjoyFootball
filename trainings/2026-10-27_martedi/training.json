@@ -1,0 +1,131 @@
+{
+  "id": "2026-10-27_martedi",
+  "slug": "2026-10-27_martedi",
+  "date": "2026-10-27",
+  "title": {
+    "en": "Rifinitura (-1 Spezia)",
+    "it": "Rifinitura (-1 Spezia)"
+  },
+  "focus": {
+    "en": "Rifinitura — day before Spezia (Coppa Italia)",
+    "it": "Rifinitura — vigilia Spezia (Coppa Italia)"
+  },
+  "sessionType": "match-practice",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — run npm run sync-vimeo -- --training 2026-10-27_martedi",
+    "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-10-27_martedi"
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1239908610/7a5422e9d3",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1239908610",
+        "title": {
+          "en": "7v5 Attacco (focus Imbucata difensori)",
+          "it": "7v5 Attacco (focus Imbucata difensori)"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1239908610/7a5422e9d3",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1239906896",
+        "title": {
+          "en": "Fase Difensiva",
+          "it": "Fase Difensiva"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1239906896/df4adbf0e9",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1239906897",
+        "title": {
+          "en": "11v0 attacco (4 3 3)",
+          "it": "11v0 attacco (4 3 3)"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1239906897/9f69114011",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1239906898",
+        "title": {
+          "en": "Fase Offensiva",
+          "it": "Fase Offensiva"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1239906898/2826e91a0c",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30714181",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30714181",
+    "lastSyncedAt": "2026-10-27T16:31:20.856Z"
+  },
+  "setPieces": {
+    "parts": [
+      {
+        "id": "vimeo-1239906900",
+        "title": {
+          "en": "Piazzati",
+          "it": "Piazzati"
+        },
+        "videoFile": "https://vimeo.com/1239906900/d878f78a71",
+        "tags": [
+          "vimeo",
+          "training",
+          "set-pieces"
+        ]
+      }
+    ]
+  }
+}

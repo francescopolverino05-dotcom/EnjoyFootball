@@ -35,7 +35,7 @@
  *   - optional training.json → vimeo.skipVideoIds (array of Vimeo ids) skips exact videos
  */
 
-import { existsSync, readFileSync, writeFileSync } from 'fs';
+import { existsSync, readFileSync, readdirSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 import { resolveVimeoToken } from './load-env.mjs';
@@ -719,6 +719,25 @@ Updated ${matchPath}
 `);
 }
 
+/** Set-piece videos (Piazzati / Set Pieces / Palle inattive), by title or parent folder. */
+function isSetPieceTrainingVideo(name, parentFolderName = '') {
+  const re = /(piazzat|set[\s_-]*pieces?|palle\s+inattive|palla\s+inattiva)/i;
+  return re.test(String(name || '')) || re.test(String(parentFolderName || ''));
+}
+
+/** Rifinitura = labelled "Rifinitura" or the day before a match in matches/. */
+function isRifinituraTraining(training) {
+  const text = JSON.stringify([training.title, training.focus] ?? '');
+  if (/rifinitura/i.test(text)) return true;
+  if (!training.date) return false;
+  const d = new Date(`${training.date}T12:00:00Z`);
+  d.setUTCDate(d.getUTCDate() + 1);
+  const next = d.toISOString().slice(0, 10);
+  const dir = join(root, 'matches');
+  if (!existsSync(dir)) return false;
+  return readdirSync(dir).some((m) => m.startsWith(`${next}_`));
+}
+
 async function syncTraining(token, slug, folderOverride) {
   const trainingPath = join(root, 'trainings', slug, 'training.json');
   if (!existsSync(trainingPath)) {
@@ -817,8 +836,27 @@ Upload videos into the Vimeo folder, then re-run:
     (Array.isArray(training.vimeo?.skipVideoIds) ? training.vimeo.skipVideoIds : []).map(String)
   );
 
+  const rifinitura = isRifinituraTraining(training);
+  const prevSetPieces = training.setPieces?.parts || [];
+  const setPieceParts = [];
+
   for (const { video, parentFolderName } of listed) {
     const name = video.name || 'Untitled';
+    if (rifinitura && isSetPieceTrainingVideo(name, parentFolderName)) {
+      if (skipVideoIds.has(String(videoNumericId(video)))) continue;
+      const link = videoLink(video);
+      const prev = prevSetPieces.find(
+        (a) => normalizeVideoUrl(a.videoFile) === normalizeVideoUrl(link)
+      );
+      setPieceParts.push({
+        id: prev?.id || `vimeo-${videoNumericId(video)}`,
+        title: prev?.title || humanizeTrainingTitle(name),
+        videoFile: link,
+        tags: prev?.tags || ['vimeo', 'training', 'set-pieces'],
+      });
+      console.log(`  set pieces ← ${name}`);
+      continue;
+    }
     if (skipVideoIds.size && skipVideoIds.has(String(videoNumericId(video)))) {
       console.log(`  skip (skipVideoIds) ← ${name} (${videoNumericId(video)})`);
       continue;
@@ -1084,6 +1122,18 @@ Upload videos into the Vimeo folder, then re-run:
   const gkPreservedDocs = preserveNonVimeoAnalysis(gkPrevAnalysis);
   const gkAnalysisById = new Map();
   for (const a of [...gkAnalysisEntries, ...gkPreservedDocs]) gkAnalysisById.set(a.id, a);
+
+  if (rifinitura) {
+    const setPieceUrls = new Set(setPieceParts.map((a) => normalizeVideoUrl(a.videoFile)));
+    const notSp = (a) => !a?.videoFile || !setPieceUrls.has(normalizeVideoUrl(a.videoFile));
+    training.video = { ...(training.video || {}), parts: (training.video?.parts || []).filter(notSp) };
+    if (training.video.fullSession && setPieceUrls.has(normalizeVideoUrl(training.video.fullSession))) {
+      training.video.fullSession = training.video.parts[0]?.videoFile;
+    }
+    training.clips = (training.clips || []).filter(notSp);
+    training.analysisVideos = (training.analysisVideos || []).filter(notSp);
+    training.setPieces = { parts: setPieceParts };
+  }
 
   training.goalkeepers = {
     ...gkBlock,

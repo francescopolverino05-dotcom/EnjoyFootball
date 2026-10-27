@@ -26,23 +26,6 @@
     },
     "parts": [
       {
-        "id": "vimeo-1236192229",
-        "title": {
-          "en": "Rifinitura — Set pieces",
-          "it": "Rifinitura — Piazzati"
-        },
-        "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
-        },
-        "videoFile": "https://vimeo.com/1236192229/b6a367096d",
-        "tags": [
-          "vimeo",
-          "training",
-          "session"
-        ]
-      },
-      {
         "id": "vimeo-1236192204",
         "title": {
           "en": "Rifinitura — Offensive and defensive phase",
@@ -93,6 +76,23 @@
   "vimeo": {
     "folderId": "30714166",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30714166",
-    "lastSyncedAt": "2026-10-20T17:31:55.903Z"
+    "lastSyncedAt": "2026-10-27T16:31:43.635Z"
+  },
+  "setPieces": {
+    "parts": [
+      {
+        "id": "vimeo-1236192229",
+        "title": {
+          "en": "Rifinitura Piazzati",
+          "it": "Rifinitura Piazzati"
+        },
+        "videoFile": "https://vimeo.com/1236192229/b6a367096d",
+        "tags": [
+          "vimeo",
+          "training",
+          "set-pieces"
+        ]
+      }
+    ]
   }
 }

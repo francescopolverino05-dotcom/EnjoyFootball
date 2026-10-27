@@ -65,6 +65,8 @@ export interface TrainingSession {
    * No Physical Load — that stays Team-only.
    */
   goalkeepers?: TrainingGoalkeepersBlock;
+  /** Rifinitura only: set-piece (Piazzati) videos for the Set Pieces sub-tab */
+  setPieces?: { parts?: AnalysisVideo[] };
   vimeo?: {
     folderId?: string;
     folderUrl?: string;

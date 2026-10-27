@@ -58,23 +58,6 @@
           "training",
           "session"
         ]
-      },
-      {
-        "id": "vimeo-1225068313",
-        "title": {
-          "en": "Set Pieces",
-          "it": "Set Pieces"
-        },
-        "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
-        },
-        "videoFile": "https://vimeo.com/1225068313/1e791a5eb8",
-        "tags": [
-          "vimeo",
-          "training",
-          "session"
-        ]
       }
     ]
   },
@@ -129,6 +112,23 @@
   "vimeo": {
     "folderId": "30474740",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30474740",
-    "lastSyncedAt": "2026-10-07T15:58:42.148Z"
+    "lastSyncedAt": "2026-10-27T16:31:42.931Z"
+  },
+  "setPieces": {
+    "parts": [
+      {
+        "id": "vimeo-1225068313",
+        "title": {
+          "en": "Set Pieces",
+          "it": "Set Pieces"
+        },
+        "videoFile": "https://vimeo.com/1225068313/1e791a5eb8",
+        "tags": [
+          "vimeo",
+          "training",
+          "set-pieces"
+        ]
+      }
+    ]
   }
 }

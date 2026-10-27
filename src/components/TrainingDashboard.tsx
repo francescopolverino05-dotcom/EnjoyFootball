@@ -11,11 +11,22 @@ import { useLanguage } from '../i18n/LanguageContext';
 import { getGaconSessionByTrainingSlug } from '../data/gaconLoad';
 import { getRpeSessionByTrainingSlug } from '../data/rpeLoad';
 import { getTqrSessionByTrainingSlug } from '../data/tqrLoad';
+import { getAllMatches } from '../data/matches';
 import MatchMedia from './MatchMedia';
 import PhaseClipsPanel from './PhaseClipsPanel';
 import PhysicalLoadPanel from './PhysicalLoadPanel';
 
-type RoleView = 'team' | 'gk';
+type RoleView = 'team' | 'gk' | 'sp';
+
+/** Rifinitura = labelled "Rifinitura" or the day before a scheduled match. */
+function isRifinitura(session: TrainingSession): boolean {
+  if (/rifinitura/i.test(JSON.stringify([session.title, session.focus]))) return true;
+  const d = new Date(`${session.date}T12:00:00Z`);
+  if (Number.isNaN(d.getTime())) return false;
+  d.setUTCDate(d.getUTCDate() + 1);
+  const next = d.toISOString().slice(0, 10);
+  return getAllMatches().some((m) => m.date === next);
+}
 
 type TabId =
   | 'fullsession'
@@ -72,7 +83,10 @@ export default function TrainingDashboard({
   session: TrainingSession;
 }) {
   const [searchParams, setSearchParams] = useSearchParams();
-  const role: RoleView = searchParams.get('view') === 'gk' ? 'gk' : 'team';
+  const rifinitura = isRifinitura(session);
+  const viewParam = searchParams.get('view');
+  const role: RoleView =
+    viewParam === 'gk' ? 'gk' : viewParam === 'sp' && rifinitura ? 'sp' : 'team';
   const [activeTab, setActiveTab] = useState<TabId>('fullsession');
   const { t } = useLanguage();
   const rpeSession = getRpeSessionByTrainingSlug(session.slug);
@@ -88,7 +102,7 @@ export default function TrainingDashboard({
     setSearchParams(
       (prev) => {
         const params = new URLSearchParams(prev);
-        if (next === 'gk') params.set('view', 'gk');
+        if (next !== 'team') params.set('view', next);
         else params.delete('view');
         return params;
       },
@@ -97,7 +111,7 @@ export default function TrainingDashboard({
   };
 
   useEffect(() => {
-    if (role === 'gk' && activeTab === 'physicalload') {
+    if (role !== 'team' && activeTab === 'physicalload') {
       setActiveTab('fullsession');
     }
   }, [role, activeTab]);
@@ -137,7 +151,23 @@ export default function TrainingDashboard({
         >
           {t('trainingViewGoalkeepers')}
         </button>
+        {rifinitura ? (
+          <button
+            type="button"
+            role="tab"
+            aria-selected={role === 'sp'}
+            className={`tab-button ${role === 'sp' ? 'active' : ''}`}
+            onClick={() => setRole('sp')}
+          >
+            {t('trainingViewSetPieces')}
+          </button>
+        ) : null}
       </div>
+
+      {role === 'sp' ? (
+        <SetPiecesPanel slug={session.slug} parts={session.setPieces?.parts ?? []} />
+      ) : (
+      <>
 
       <div
         className="tabs-header"
@@ -207,7 +237,37 @@ export default function TrainingDashboard({
           />
         </div>
       ) : null}
+      </>
+      )}
     </>
+  );
+}
+
+function SetPiecesPanel({ slug, parts }: { slug: string; parts: AnalysisVideo[] }) {
+  const { t, L } = useLanguage();
+  if (parts.length === 0) return null;
+  return (
+    <div className="video-section">
+      <div className="analysis-grid">
+        {parts.map((item) => (
+          <article className="analysis-card" key={item.id}>
+            <MatchMedia
+              library="trainings"
+              slug={slug}
+              src={item.videoFile || ''}
+              kind={null}
+              unsupportedLabel={t('videoUnsupported')}
+              playLabel={t('playVideo')}
+              title={L(item.title)}
+              autoload
+            />
+            <div className="clip-card-body">
+              <div className="clip-card-title">{L(item.title)}</div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
   );
 }
 
