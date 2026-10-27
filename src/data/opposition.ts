@@ -2297,7 +2297,6 @@ if (porto) {
       position: 'GK',
       isGk: true,
       birthYear: 2008,
-      heightCm: 196,
       preferredFoot: 'Destro',
     },
     {
