@@ -129,6 +129,25 @@ export function placeholder13421(teamId: string): PitchPlayer[] {
   ];
 }
 
+/** Empty 1-5-3-2 slots (wing-backs, back three, mid three, two strikers).
+ * Pitch attacks downward: team-left = screen-right.
+ */
+export function placeholder532(teamId: string): PitchPlayer[] {
+  return [
+    { number: 1, name: 'GK', role: 'GK', teamId, isGk: true, top: '8%', left: '50%' },
+    { number: 2, name: 'RWB', role: 'RWB', teamId, top: '32%', left: '10%' },
+    { number: 5, name: 'RCB', role: 'RCB', teamId, top: '20%', left: '30%' },
+    { number: 6, name: 'CB', role: 'CB', teamId, top: '18%', left: '50%' },
+    { number: 4, name: 'LCB', role: 'LCB', teamId, top: '20%', left: '70%' },
+    { number: 3, name: 'LWB', role: 'LWB', teamId, top: '32%', left: '90%' },
+    { number: 8, name: 'RCM', role: 'RCM', teamId, top: '48%', left: '30%' },
+    { number: 7, name: 'CM', role: 'CM', teamId, top: '44%', left: '50%' },
+    { number: 10, name: 'LCM', role: 'LCM', teamId, top: '48%', left: '70%' },
+    { number: 9, name: 'RS', role: 'RS', teamId, top: '74%', left: '40%' },
+    { number: 11, name: 'LS', role: 'LS', teamId, top: '74%', left: '60%' },
+  ];
+}
+
 export function placeholderPlayersForSystem(
   system: string,
   teamId: string
@@ -145,6 +164,9 @@ export function placeholderPlayersForSystem(
   }
   if (key === '1-4-4-2' || key === '4-4-2') {
     return placeholder442(teamId);
+  }
+  if (key === '1-5-3-2' || key === '5-3-2') {
+    return placeholder532(teamId);
   }
   if (key === '1-3-4-2-1' || key === '3-4-2-1') {
     return placeholder13421(teamId);
@@ -218,7 +240,7 @@ const OPPONENTS: OppositionOpponent[] = [
   club('cosenza', 'Cosenza', ['primavera2']),
   club('frosinone', 'Frosinone', ['primavera2']),
   club('latina', 'Latina', ['primavera2']),
-  club('monopoli', 'Monopoli', ['primavera2']),
+  club('monopoli', 'Monopoli', ['primavera2'], '1-5-3-2'),
   club('palermo', 'Palermo', ['primavera2']),
   club('perugia', 'Perugia', ['primavera2']),
   club('pescara', 'Pescara', ['primavera2']),
@@ -2652,6 +2674,145 @@ if (spezia) {
     { name: 'Thomas Ceccarelli', position: 'ST (profile)', birthYear: 2009 },
     { name: 'Bertolone', birthYear: 2010 },
     { name: 'Giulio Bellacci', position: 'LW (profile)', birthYear: 2009, heightCm: 178, preferredFoot: 'Destro' },
+  ];
+}
+
+const monopoli = OPPONENTS.find((o) => o.id === 'monopoli');
+if (monopoli) {
+  /** XIs by shirt onto 5-3-2: 1 GK, 2 RWB, 5 RCB, 6 CB, 4 LCB, 3 LWB, 8 RCM, 7 CM, 10 LCM, 9 RS, 11 LS. */
+  const monopoli532 = (byShirt: string[]): PitchPlayer[] =>
+    placeholder532('monopoli').map((p) => ({ ...p, name: byShirt[p.number - 1] }));
+  const vs_cosenza = monopoli532(['De Michele', 'Paparella', 'Lanza', 'Di Bari', 'Turčinskas', 'Margheri', 'Ziedelis', 'Casillo', 'Tumminelli', 'Bennet', 'Illuzzi']);
+  const vs_perugia = monopoli532(['De Michele', 'Paparella', 'Lanza', 'Montrone', 'Turčinskas', 'Margheri', 'Ziedelis', 'Casillo', 'Tumminelli', 'Bennet', 'Illuzzi']);
+  const vs_pescara = monopoli532(['De Michele', 'Šedvartas', 'Lanza', 'Di Bari', 'Turčinskas', 'Margheri', 'Ziedelis', 'Casillo', 'Tumminelli', 'Positano', 'Illuzzi']);
+  const vs_spezia = monopoli532(['De Michele', 'Šedvartas', 'Lanza', 'Di Bari', 'Turčinskas', 'Margheri', 'Ziedelis', 'Casillo', 'Tumminelli', 'Positano', 'Illuzzi']);
+  const vs_benevento = monopoli532(['De Michele', 'Šedvartas', 'Lanza', 'Di Bari', 'Turčinskas', 'Cardinale', 'Ziedelis', 'Casillo', 'Tumminelli', 'Positano', 'Illuzzi']);
+  const vs_ascoli = monopoli532(['De Michele', 'Šedvartas', 'Lanza', 'Di Bari', 'Turčinskas', 'Ziedelis', 'Errico', 'Casillo', 'Tumminelli', 'Positano', 'Illuzzi']);
+  monopoli.formationSystem = '1-5-3-2';
+  monopoli.starters = vs_ascoli;
+  monopoli.scoutedFormations = [
+    {
+      id: 'monopoli-vs-ascoli',
+      label: { en: 'vs Ascoli (2–0)', it: 'vs Ascoli (2–0)' },
+      system: '5-3-2',
+      players: vs_ascoli,
+      notes: {
+        en: 'Primavera 2 MD6, 24 Oct 2026, away at Picchio Village, Ascoli 0–2 Monopoli (distinta). Goals: Positano 38\', Bottalico 90+1\'. Subs: Bottalico for Tumminelli 68\', Manzari for Illuzzi 68\', Paparella for Errico 85\', Sette for Lanza 90+3\'.',
+        it: 'Primavera 2 gior. 6, 24 ott 2026, trasferta al Picchio Village, Ascoli 0–2 Monopoli (distinta). Gol: Positano 38\', Bottalico 90+1\'. Sub: Bottalico per Tumminelli 23\'st, Manzari per Illuzzi 23\'st, Paparella per Errico 40\'st, Sette per Lanza 48\'st.',
+      },
+    },
+    {
+      id: 'monopoli-vs-benevento',
+      label: { en: 'vs Benevento (2–2)', it: 'vs Benevento (2–2)' },
+      system: '5-3-2',
+      players: vs_benevento,
+      notes: {
+        en: 'Primavera 2 MD5, 17 Oct 2026, home at Gioia del Colle, Monopoli 2–2 Benevento (distinta; score and subs Transfermarkt). Goals: Casillo, Manzari. Subs: Bennet for Cardinale HT, Manzari for Positano 56\', Morrone for Illuzzi 72\', Bottalico for Tumminelli 72\'.',
+        it: 'Primavera 2 gior. 5, 17 ott 2026, casa a Gioia del Colle, Monopoli 2–2 Benevento (distinta; risultato e cambi Transfermarkt). Gol: Casillo, Manzari. Sub: Bennet per Cardinale INT, Manzari per Positano 56\', Morrone per Illuzzi 72\', Bottalico per Tumminelli 72\'.',
+      },
+    },
+    {
+      id: 'monopoli-vs-spezia',
+      label: { en: 'vs Spezia (2–0)', it: 'vs Spezia (2–0)' },
+      system: '5-3-2',
+      players: vs_spezia,
+      notes: {
+        en: 'Primavera 2 MD4, 10 Oct 2026, away at Ferdeghini, Spezia 0–2 Monopoli (Transfermarkt). Goals: Illuzzi 12\', Bottalico 90+2\'. Subs: Bottalico for Tumminelli 64\', Cardinale for Lanza 64\', Morrone for Illuzzi 73\', Bennet for Positano 73\'.',
+        it: 'Primavera 2 gior. 4, 10 ott 2026, trasferta al Ferdeghini, Spezia 0–2 Monopoli (Transfermarkt). Gol: Illuzzi 12\', Bottalico 90+2\'. Sub: Bottalico per Tumminelli 64\', Cardinale per Lanza 64\', Morrone per Illuzzi 73\', Bennet per Positano 73\'.',
+      },
+    },
+    {
+      id: 'monopoli-vs-pescara',
+      label: { en: 'vs Pescara (2–2)', it: 'vs Pescara (2–2)' },
+      system: '5-3-2',
+      players: vs_pescara,
+      notes: {
+        en: 'Primavera 2 MD3, 19 Sep 2026, home at Gioia del Colle, Monopoli 2–2 Pescara (distinta). Goals: Ziedelis 5\', Casillo 14\'. Subs: Morrone for Tumminelli 63\', Bennet for Positano 63\', Manzari for Illuzzi 76\', Ettorre for Casillo 85\'.',
+        it: 'Primavera 2 gior. 3, 19 set 2026, casa a Gioia del Colle, Monopoli 2–2 Pescara (distinta). Gol: Ziedelis 5\', Casillo 14\'. Sub: Morrone per Tumminelli 18\'st, Bennet per Positano 18\'st, Manzari per Illuzzi 31\'st, Ettorre per Casillo 40\'st.',
+      },
+    },
+    {
+      id: 'monopoli-vs-perugia',
+      label: { en: 'vs Perugia (0–3)', it: 'vs Perugia (0–3)' },
+      system: '5-3-2',
+      players: vs_perugia,
+      notes: {
+        en: 'Primavera 2 MD2, 12 Sep 2026, away at Perugia, Perugia 3–0 Monopoli (distinta). Subs: Manzari for Montrone HT, Šedvartas for Paparella HT, Positano for Bennet HT, Morrone for Casillo 70\', Bottalico for Tumminelli 75\'.',
+        it: 'Primavera 2 gior. 2, 12 set 2026, trasferta a Perugia, Perugia 3–0 Monopoli (distinta). Sub: Manzari per Montrone INT, Šedvartas per Paparella INT, Positano per Bennet INT, Morrone per Casillo 25\'st, Bottalico per Tumminelli 30\'st.',
+      },
+    },
+    {
+      id: 'monopoli-vs-cosenza',
+      label: { en: 'vs Cosenza (4–0)', it: 'vs Cosenza (4–0)' },
+      system: '5-3-2',
+      players: vs_cosenza,
+      notes: {
+        en: 'Primavera 2 MD1, 5 Sep 2026, home at Gioia del Colle, Monopoli 4–0 Cosenza (distinta; score and subs Transfermarkt). Goals: Casillo (pen.), Casillo, Illuzzi, Tumminelli. Subs: Positano for Bennet 59\', Morrone for Illuzzi 65\', Montrone for Tumminelli 65\', Bottalico for Tumminelli 78\', Ettorre for Casillo 78\'.',
+        it: 'Primavera 2 gior. 1, 5 set 2026, casa a Gioia del Colle, Monopoli 4–0 Cosenza (distinta; risultato e cambi Transfermarkt). Gol: Casillo (rig.), Casillo, Illuzzi, Tumminelli. Sub: Positano per Bennet 59\', Morrone per Illuzzi 65\', Montrone per Tumminelli 65\', Bottalico per Tumminelli 78\', Ettorre per Casillo 78\'.',
+      },
+    },
+  ];
+  monopoli.squadDepth = {
+    system: '1-5-3-2',
+    note: {
+      en: 'Primavera 2 MD1–MD6 (Cosenza, Perugia, Pescara, Spezia, Benevento, Ascoli).',
+      it: 'Primavera 2 gior. 1–6 (Cosenza, Perugia, Pescara, Spezia, Benevento, Ascoli).',
+    },
+    slots: [
+      { role: 'GK', top: '10%', left: '50%', players: [{ name: 'De Michele', starts: 6 }] },
+      { role: 'RWB', top: '34%', left: '10%', players: [{ name: 'Šedvartas', starts: 4 }, { name: 'Paparella', starts: 2 }] },
+      { role: 'RCB', top: '24%', left: '30%', players: [{ name: 'Turčinskas', starts: 6 }] },
+      { role: 'CB', top: '22%', left: '50%', players: [{ name: 'Margheri', starts: 4 }, { name: 'Cardinale', starts: 1 }, { name: 'Ziedelis', starts: 1 }] },
+      { role: 'LCB', top: '24%', left: '70%', players: [{ name: 'Di Bari', starts: 5 }, { name: 'Montrone', starts: 1 }] },
+      { role: 'LWB', top: '34%', left: '90%', players: [{ name: 'Lanza', starts: 6 }] },
+      { role: 'RCM', top: '50%', left: '30%', players: [{ name: 'Casillo', starts: 6 }] },
+      { role: 'CM', top: '46%', left: '50%', players: [{ name: 'Ziedelis', starts: 5 }, { name: 'Errico', starts: 1 }] },
+      { role: 'LCM', top: '50%', left: '70%', players: [{ name: 'Positano', starts: 4 }, { name: 'Bennet', starts: 2 }] },
+      { role: 'RS', top: '74%', left: '40%', players: [{ name: 'Tumminelli', starts: 6 }] },
+      { role: 'LS', top: '74%', left: '60%', players: [{ name: 'Illuzzi', starts: 6 }] },
+    ],
+  };
+  monopoli.substitutes = [
+    { name: 'Giuseppe Positano', position: 'LCM' },
+    { name: 'Christian Morrone', position: 'LS / RS / RCM' },
+    { name: 'Marco Antonio Bottalico', position: 'RS' },
+    { name: 'Antonio Manzari', position: 'LS / LCB / LCM' },
+    { name: 'Jesse Jay Bennet', position: 'LCM / CB' },
+    { name: 'Angelo Ettorre', position: 'RCM' },
+    { name: 'Gabrielius Šedvartas', position: 'RWB' },
+    { name: 'Giuseppe Montrone', position: 'RS' },
+    { name: 'Lorenzo Giuseppe Cardinale', position: 'LWB' },
+    { name: 'Marco Paparella', position: 'CM' },
+    { name: 'Gabriele Sette', position: 'LWB' },
+  ];
+  monopoli.squad = [
+    { name: 'Angelo Michele De Michele', position: 'GK', isGk: true, birthYear: 2009 },
+    { name: 'Francesco Soldano', position: 'GK', isGk: true, birthYear: 2010 },
+    { name: 'Alessandro Palazzo', position: 'GK', isGk: true, birthYear: 2009 },
+    { name: 'Salvatore Filolungo', position: 'GK', isGk: true, birthYear: 2008 },
+    { name: 'Gabrielius Šedvartas', position: 'RWB', birthYear: 2008 },
+    { name: 'Marco Paparella', position: 'RWB', birthYear: 2008 },
+    { name: 'Jugas Turčinskas', position: 'RCB', birthYear: 2008 },
+    { name: 'Emanuele Margheri', position: 'CB', birthYear: 2008 },
+    { name: 'Lorenzo Giuseppe Cardinale', position: 'CB', birthYear: 2009 },
+    { name: 'Andrea Di Bari', position: 'LCB', birthYear: 2007 },
+    { name: 'Giuseppe Montrone', position: 'LCB', birthYear: 2009 },
+    { name: 'Manuel Lanza', position: 'LWB', birthYear: 2009 },
+    { name: 'Luigi Casillo', position: 'RCM', birthYear: 2008 },
+    { name: 'Jokubas Ziedelis', position: 'CM / CB', birthYear: 2008 },
+    { name: 'Claudio Maria Errico', position: 'CM', birthYear: 2009 },
+    { name: 'Giuseppe Positano', position: 'LCM', birthYear: 2008 },
+    { name: 'Jesse Jay Bennet', position: 'LCM', birthYear: 2008 },
+    { name: 'Daniel Tumminelli', position: 'RS', birthYear: 2008 },
+    { name: 'Francesco Illuzzi', position: 'LS', birthYear: 2009 },
+    { name: 'Marco Antonio Bottalico', position: 'RS', birthYear: 2009 },
+    { name: 'Christian Morrone', birthYear: 2009 },
+    { name: 'Antonio Manzari', birthYear: 2008 },
+    { name: 'Angelo Ettorre', birthYear: 2009 },
+    { name: 'Gabriele Sette', birthYear: 2009 },
+    { name: 'Nicola Albergo', birthYear: 2008 },
+    { name: 'Gabriele Guerra', birthYear: 2009 },
+    { name: 'Nicolò Gora', birthYear: 2009 },
   ];
 }
 
