@@ -2394,7 +2394,7 @@ if (porto) {
       name: 'Cardoso Varela',
       position: 'FW',
       birthYear: 2008,
-      heightCm: 176,
+      heightCm: 183,
       preferredFoot: 'Destro',
     },
     {
