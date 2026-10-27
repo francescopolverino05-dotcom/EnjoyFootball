@@ -26,40 +26,6 @@
     },
     "parts": [
       {
-        "id": "vimeo-1238836665",
-        "title": {
-          "en": "Angoli Offensivi",
-          "it": "Angoli Offensivi"
-        },
-        "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
-        },
-        "videoFile": "https://vimeo.com/1238836665/1aa64a89bb",
-        "tags": [
-          "vimeo",
-          "training",
-          "session"
-        ]
-      },
-      {
-        "id": "vimeo-1238833258",
-        "title": {
-          "en": "Angoli Difensivi",
-          "it": "Angoli Difensivi"
-        },
-        "description": {
-          "en": "Training session recording.",
-          "it": "Registrazione della sessione di allenamento."
-        },
-        "videoFile": "https://vimeo.com/1238833258/d50901e9ff",
-        "tags": [
-          "vimeo",
-          "training",
-          "session"
-        ]
-      },
-      {
         "id": "vimeo-1238833259",
         "title": {
           "en": "Falli Laterali Offensivi",
@@ -126,9 +92,36 @@
   "vimeo": {
     "folderId": "30714176",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30714176",
-    "lastSyncedAt": "2026-10-27T16:31:44.631Z"
+    "lastSyncedAt": "2026-10-27T16:39:00.380Z"
   },
   "setPieces": {
-    "parts": []
+    "parts": [
+      {
+        "id": "vimeo-1238836665",
+        "title": {
+          "en": "Angoli Offensivi",
+          "it": "Angoli Offensivi"
+        },
+        "videoFile": "https://vimeo.com/1238836665/1aa64a89bb",
+        "tags": [
+          "vimeo",
+          "training",
+          "set-pieces"
+        ]
+      },
+      {
+        "id": "vimeo-1238833258",
+        "title": {
+          "en": "Angoli Difensivi",
+          "it": "Angoli Difensivi"
+        },
+        "videoFile": "https://vimeo.com/1238833258/d50901e9ff",
+        "tags": [
+          "vimeo",
+          "training",
+          "set-pieces"
+        ]
+      }
+    ]
   }
 }
