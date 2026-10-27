@@ -27,7 +27,7 @@ export function inferRole(p: PitchPlayer): string | undefined {
 function findRole(name: string | undefined, pools: { name: string; role?: string; position?: string }[]) {
   if (!name) return undefined;
   const n = norm(name);
-  const hit = pools.find((p) => {
+  const hit = pools.find((p) => norm(p.name) === n) ?? pools.find((p) => {
     const pn = norm(p.name);
     return pn === n || pn.endsWith(` ${n}`) || n.endsWith(` ${pn}`) || pn.split(' ').pop() === n.split(' ').pop();
   });
