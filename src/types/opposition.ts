@@ -130,6 +130,24 @@ export interface OppositionFixturePack {
   strengthsWeaknesses?: StrengthsWeaknesses;
 }
 
+/** One player on a raw match sheet, keyed by shirt number (role mapping pending). */
+export interface OppositionLineupEntry {
+  shirt: number;
+  name: string;
+  starter: boolean;
+}
+
+/** Recent game of theirs with raw line-up (before formation mapping). */
+export interface OppositionRecentMatch {
+  id: string;
+  date: string;
+  matchday?: number;
+  label: Localized;
+  score: string;
+  notes: Localized;
+  lineup: OppositionLineupEntry[];
+}
+
 export interface OppositionOpponent {
   /** Corners + free kicks diagrams (Area Piazzati tab). Omit = empty layout. */
   setPieces?: OppositionSetPieces;
@@ -146,6 +164,10 @@ export interface OppositionOpponent {
   starters: PitchPlayer[];
   /** Full named XIs for recent games / combined XI (shown on Formation tab). */
   scoutedFormations?: OppositionScoutedFormation[];
+  /** Hide the pitch until the shirt-to-role mapping is known. */
+  formationPending?: boolean;
+  /** Recent games with raw XIs by shirt number. */
+  recentMatches?: OppositionRecentMatch[];
   /** Depth chart from recent XIs mapped onto the primary system. */
   squadDepth?: OppositionSquadDepth;
   substitutes: OppositionSquadPlayer[];

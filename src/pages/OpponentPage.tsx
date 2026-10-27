@@ -244,7 +244,26 @@ export default function OpponentPage() {
 
         {tab === 'formation' ? (
           <div className="tab-content active" role="tabpanel">
-            <Formations formations={formations} />
+            {opponent.formationPending ? null : (
+              <Formations formations={formations} />
+            )}
+            {opponent.recentMatches?.length ? (
+              <>
+                <div className="section-title">{t('oppositionRecentMatches')}</div>
+                <table className="standings-table">
+                  <tbody>
+                    {opponent.recentMatches.map((m) => (
+                      <tr key={m.id}>
+                        <td>{m.date}</td>
+                        <td className="standings-team">{L(m.label)}</td>
+                        <td className="stats-value-cell">{m.score}</td>
+                        <td>{L(m.notes)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </>
+            ) : null}
             {opponent.squadDepth ? (
               <SquadDepthPanel
                 depth={opponent.squadDepth}
