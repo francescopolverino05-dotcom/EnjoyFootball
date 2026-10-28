@@ -1868,7 +1868,9 @@
               "away": "Spezia",
               "score": "2-1",
               "ourClub": "napoli",
-              "us": true
+              "us": true,
+              "matchSlug": "2026-10-28_coppa-italia-u19-vs-spezia",
+              "statsSlug": "napoli-spezia-coppa"
             },
             {
               "date": "2026-10-28",

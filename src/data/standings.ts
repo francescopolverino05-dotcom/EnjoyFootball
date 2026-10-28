@@ -72,6 +72,10 @@ export interface CupFixture {
   penalties?: string;
   ourClub?: string;
   us?: boolean;
+  /** Napoli match report slug under /match/{matchSlug}. */
+  matchSlug?: string;
+  /** Slug under /stats/{competitionId}/{statsSlug} when a match sheet exists. */
+  statsSlug?: string;
 }
 
 export interface CupRound {

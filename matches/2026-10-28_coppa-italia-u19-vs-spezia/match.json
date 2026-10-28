@@ -451,8 +451,427 @@
     }
   ],
   "dynamics": [],
-  "teamStats": [],
-  "goalkeepers": [],
+  "teamStats": [
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Goals",
+        "it": "Gol"
+      },
+      "home": "2 (incl. 1 own goal by Ghetti)",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots",
+        "it": "Tiri"
+      },
+      "home": "18",
+      "away": "12"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots on Target (goals + saved)",
+        "it": "Tiri in Porta (gol + parati)"
+      },
+      "home": "3",
+      "away": "5"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots off Target (missed + blocked)",
+        "it": "Tiri non in Porta (fuori + respinti)"
+      },
+      "home": "15 (10 missed, 5 blocked)",
+      "away": "7 (3 missed, 4 blocked)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shot accuracy %",
+        "it": "Precisione Tiri %"
+      },
+      "home": "16.7",
+      "away": "41.7"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots inside box",
+        "it": "Tiri da Dentro l'Area"
+      },
+      "home": "9",
+      "away": "6"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots outside box",
+        "it": "Tiri da Fuori Area"
+      },
+      "home": "9",
+      "away": "5"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Corners",
+        "it": "Calci d'Angolo"
+      },
+      "home": "5",
+      "away": "3"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Free kicks within ~30 m (tagged FK, x ≥ 70)",
+        "it": "Calci di Punizione entro ~30 m (FK taggati, x ≥ 70)"
+      },
+      "home": "4",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Fouls committed (tagged)",
+        "it": "Falli Commessi (taggati)"
+      },
+      "home": "7",
+      "away": "14"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Yellow cards",
+        "it": "Cartellini Gialli"
+      },
+      "home": "1",
+      "away": "0"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Red cards",
+        "it": "Cartellini Rossi"
+      },
+      "home": "0",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "Possession % (share of passes attempted)",
+        "it": "Possesso Palla % (quota passaggi tentati)"
+      },
+      "home": "63.0",
+      "away": "37.0"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes",
+        "it": "Passaggi Totali"
+      },
+      "home": "1016",
+      "away": "596"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes completed",
+        "it": "Passaggi Riusciti"
+      },
+      "home": "909",
+      "away": "497"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Pass accuracy %",
+        "it": "Precisione Passaggi %"
+      },
+      "home": "89.5",
+      "away": "83.4"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Progressive passes (attempted / completed / %)",
+        "it": "Passaggi Progressivi (tentati / riusciti / %)"
+      },
+      "home": "173 / 96 / 55.5%",
+      "away": "132 / 66 / 50.0%"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Key passes (incl. assists)",
+        "it": "Passaggi Chiave (incl. assist)"
+      },
+      "home": "16",
+      "away": "7"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Crosses (completed / attempted)",
+        "it": "Cross (riusciti / tentati)"
+      },
+      "home": "6 / 32",
+      "away": "3 / 15"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Tackles (won / logged)",
+        "it": "Contrasti (vinti / registrati)"
+      },
+      "home": "25 / 27",
+      "away": "30 / 33"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Interceptions",
+        "it": "Intercettazioni"
+      },
+      "home": "78",
+      "away": "81"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "PPDA (opp. passes+crosses at x ≤ 60 / def. actions at x ≥ 40)",
+        "it": "PPDA (passaggi+cross avv. a x ≤ 60 / azioni dif. a x ≥ 40)"
+      },
+      "home": "8.5 (468 / 55)",
+      "away": "12.7 (803 / 63)"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Clearances",
+        "it": "Rinvii di Liberazione"
+      },
+      "home": "29",
+      "away": "55"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Recoveries",
+        "it": "Recuperi"
+      },
+      "home": "52",
+      "away": "21"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Aerial duels won / total",
+        "it": "Duelli Aerei Vinti / Totali"
+      },
+      "home": "11 / 18",
+      "away": "17 / 27"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Dribbles (completed / attempted)",
+        "it": "Dribbling (riusciti / tentati)"
+      },
+      "home": "29 / 38",
+      "away": "10 / 20"
+    },
+    {
+      "category": {
+        "en": "Goalkeeping",
+        "it": "Portieri"
+      },
+      "name": {
+        "en": "GK saves",
+        "it": "Parate Portiere"
+      },
+      "home": "4",
+      "away": "6"
+    },
+    {
+      "category": {
+        "en": "Goalkeeping",
+        "it": "Portieri"
+      },
+      "name": {
+        "en": "GK goals conceded",
+        "it": "Gol Subiti Portiere"
+      },
+      "home": "1",
+      "away": "2 (1 + own goal)"
+    },
+    {
+      "category": {
+        "en": "Goalkeeping",
+        "it": "Portieri"
+      },
+      "name": {
+        "en": "GK save %",
+        "it": "Percentuale Parate Portiere %"
+      },
+      "home": "80.0",
+      "away": "85.7"
+    },
+    {
+      "category": {
+        "en": "Goalkeeping",
+        "it": "Portieri"
+      },
+      "name": {
+        "en": "GK passes (completed / tagged)",
+        "it": "Passaggi Portiere (riusciti / taggati)"
+      },
+      "home": "37 / 39",
+      "away": "23 / 23"
+    }
+  ],
+  "goalkeepers": [
+    {
+      "name": "Merone",
+      "minutes": 94,
+      "team": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "jerseyColor": {
+        "en": "—",
+        "it": "—"
+      },
+      "shotsFaced": 5,
+      "shotsOnTargetFaced": 5,
+      "saves": 4,
+      "goalsConceded": 1,
+      "savePercentage": {
+        "en": "80.0%",
+        "it": "80,0%"
+      },
+      "aerialDuels": {
+        "en": "0 / 0",
+        "it": "0 / 0"
+      },
+      "passes": {
+        "en": "42 / 41 (98%)",
+        "it": "42 / 41 (98%)"
+      },
+      "colorClass": "blue"
+    },
+    {
+      "name": "Guidi",
+      "minutes": 94,
+      "team": {
+        "en": "Spezia Primavera",
+        "it": "Spezia Primavera"
+      },
+      "jerseyColor": {
+        "en": "—",
+        "it": "—"
+      },
+      "shotsFaced": 7,
+      "saves": 6,
+      "goalsConceded": 2,
+      "savePercentage": {
+        "en": "85.7%",
+        "it": "85,7%"
+      },
+      "aerialDuels": {
+        "en": "0 / 0",
+        "it": "0 / 0"
+      },
+      "passes": {
+        "en": "24 / 23 (96%)",
+        "it": "24 / 23 (96%)"
+      },
+      "colorClass": "green"
+    }
+  ],
   "clips": [],
   "analysisVideos": [],
   "clipTabs": {

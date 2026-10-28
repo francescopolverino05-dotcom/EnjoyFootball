@@ -20,6 +20,7 @@ import monopoliPescara from './leagueMatchStats/monopoli-pescara.json';
 import napoliBodoGlimt from './leagueMatchStats/napoli-bodo-glimt.json';
 import napoliPisa from './leagueMatchStats/napoli-pisa.json';
 import napoliSpezia from './leagueMatchStats/napoli-spezia.json';
+import napoliSpeziaCoppa from './leagueMatchStats/napoli-spezia-coppa.json';
 import palermoBari from './leagueMatchStats/palermo-bari.json';
 import palermoPescara from './leagueMatchStats/palermo-pescara.json';
 import perugiaAvellino from './leagueMatchStats/perugia-avellino.json';
@@ -37,6 +38,7 @@ import speziaMonopoli from './leagueMatchStats/spezia-monopoli.json';
 import speziaPalermo from './leagueMatchStats/spezia-palermo.json';
 import villarrealNapoli from './leagueMatchStats/villarreal-napoli.json';
 import {
+  getCoppaItaliaStandings,
   getPrimavera2Standings,
   getUefaYouthLeagueStandings,
 } from './standings';
@@ -76,6 +78,7 @@ const BY_KEY: Record<string, LeagueMatchStats> = {
   'primavera2/salernitana-perugia': salernitanaPerugia as LeagueMatchStats,
   'primavera2/spezia-monopoli': speziaMonopoli as LeagueMatchStats,
   'primavera2/spezia-palermo': speziaPalermo as LeagueMatchStats,
+  'coppaItalia/napoli-spezia-coppa': napoliSpeziaCoppa as LeagueMatchStats,
   'uefaYouthLeague/napoli-bodo-glimt': napoliBodoGlimt as LeagueMatchStats,
   'uefaYouthLeague/villarreal-napoli':
     villarrealNapoli as LeagueMatchStats,
@@ -104,6 +107,17 @@ export function getLeagueMatchStatsForMatchSlug(
         const pack = getLeagueMatchStats('primavera2', fx.statsSlug);
         if (pack) {
           return { competitionId: 'primavera2', slug: fx.statsSlug, pack };
+        }
+      }
+    }
+  }
+
+  for (const round of getCoppaItaliaStandings().rounds) {
+    for (const fx of round.fixtures) {
+      if (fx.matchSlug === matchSlug && fx.statsSlug) {
+        const pack = getLeagueMatchStats('coppaItalia', fx.statsSlug);
+        if (pack) {
+          return { competitionId: 'coppaItalia', slug: fx.statsSlug, pack };
         }
       }
     }

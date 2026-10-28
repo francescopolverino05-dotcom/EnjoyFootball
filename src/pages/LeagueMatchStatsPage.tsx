@@ -17,6 +17,7 @@ import {
 } from '../data/leagueMatchStatsMap';
 import { getOpponentBySlug } from '../data/opposition';
 import {
+  getCoppaItaliaStandings,
   getPrimavera2Standings,
   getUefaYouthLeagueStandings,
 } from '../data/standings';
@@ -110,6 +111,18 @@ function buildMatchView(pack: NonNullable<ReturnType<typeof getLeagueMatchStats>
   }
 
   let uylReport: MatchData | undefined;
+  if (pack.competitionId === 'coppaItalia') {
+    for (const round of getCoppaItaliaStandings().rounds) {
+      const fx = round.fixtures.find((f) => f.statsSlug === pack.id);
+      if (fx?.matchSlug) {
+        uylReport = getMatchBySlug(fx.matchSlug);
+        if (uylReport?.timeline?.length) {
+          timeline = uylReport.timeline;
+        }
+        break;
+      }
+    }
+  }
   if (pack.competitionId === 'uefaYouthLeague') {
     for (const md of getUefaYouthLeagueStandings().groupTable?.matchdays ?? []) {
       const fx = md.fixtures.find((f) => f.statsSlug === pack.id);
@@ -156,7 +169,11 @@ function buildMatchView(pack: NonNullable<ReturnType<typeof getLeagueMatchStats>
   }
 
   const compName =
-    pack.competitionId === 'uefaYouthLeague' ? 'UEFA Youth League' : 'Primavera 2';
+    pack.competitionId === 'uefaYouthLeague'
+      ? 'UEFA Youth League'
+      : pack.competitionId === 'coppaItalia'
+        ? 'Coppa Italia'
+        : 'Primavera 2';
 
   return {
     id: pack.id,
