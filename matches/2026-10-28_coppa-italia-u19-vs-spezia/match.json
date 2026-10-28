@@ -41,8 +41,205 @@
     "home": 2,
     "away": 1
   },
-  "goals": [],
-  "timeline": [],
+  "goals": [
+    {
+      "minute": 13,
+      "scorer": "Ghetti (own goal)",
+      "teamId": "u19"
+    },
+    {
+      "minute": 14,
+      "scorer": "Camara",
+      "teamId": "spezia"
+    },
+    {
+      "minute": 90,
+      "scorer": "Ascione",
+      "teamId": "u19"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 2
+    },
+    {
+      "minute": 10,
+      "label": {
+        "en": "D'Angelo hits the post",
+        "it": "Palo di D'Angelo"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 11
+    },
+    {
+      "minute": 13,
+      "label": {
+        "en": "Ghetti own goal 1-0",
+        "it": "Autogol Ghetti 1-0"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 14
+    },
+    {
+      "minute": 14,
+      "label": {
+        "en": "Camara 1-1",
+        "it": "Camara 1-1"
+      },
+      "type": "goal",
+      "teamId": "spezia",
+      "positionPercent": 16
+    },
+    {
+      "minute": 25,
+      "label": {
+        "en": "De Michele shot over the bar",
+        "it": "De Michele tiro sopra la traversa"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 28
+    },
+    {
+      "minute": 35,
+      "label": {
+        "en": "Favicchio chance, keeper closes him down",
+        "it": "Occasione Favicchio, il portiere chiude in uscita"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 39
+    },
+    {
+      "minute": 45,
+      "label": {
+        "en": "Rovetini on / Favicchio off",
+        "it": "Rovetini on / Favicchio off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 50
+    },
+    {
+      "minute": 45,
+      "label": {
+        "en": "Francini on / Vignali off",
+        "it": "Francini on / Vignali off"
+      },
+      "type": "substitution",
+      "teamId": "spezia",
+      "positionPercent": 50
+    },
+    {
+      "minute": 57,
+      "label": {
+        "en": "Rovetini shot saved by the keeper",
+        "it": "Tiro di Rovetini, respinto dal portiere"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 63
+    },
+    {
+      "minute": 60,
+      "label": {
+        "en": "Chiaiese on / Anic off",
+        "it": "Chiaiese on / Anic off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 67
+    },
+    {
+      "minute": 67,
+      "label": {
+        "en": "Liguori on / Sartori off",
+        "it": "Liguori on / Sartori off"
+      },
+      "type": "substitution",
+      "teamId": "spezia",
+      "positionPercent": 74
+    },
+    {
+      "minute": 68,
+      "label": {
+        "en": "Baridò on / Esposito off",
+        "it": "Baridò on / Esposito off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 76
+    },
+    {
+      "minute": 68,
+      "label": {
+        "en": "Pengue on / Saviano off",
+        "it": "Pengue on / Saviano off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 76
+    },
+    {
+      "minute": 77,
+      "label": {
+        "en": "Natale yellow",
+        "it": "Natale ammonito"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 86
+    },
+    {
+      "minute": 81,
+      "label": {
+        "en": "Ascione on / Liccardo off",
+        "it": "Ascione on / Liccardo off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 90
+    },
+    {
+      "minute": 90,
+      "label": {
+        "en": "Ascione 2-1",
+        "it": "Ascione 2-1"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 99
+    },
+    {
+      "minute": 92,
+      "label": {
+        "en": "Del Sante red",
+        "it": "Del Sante espulso"
+      },
+      "type": "other",
+      "teamId": "spezia",
+      "positionPercent": 99
+    },
+    {
+      "minute": 94,
+      "label": {
+        "en": "Full time",
+        "it": "Fine partita"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 99
+    }
+  ],
   "formations": [
     {
       "teamId": "u19",
@@ -542,7 +739,8 @@
         "teamId": "u19",
         "number": 2,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 81
       },
       {
         "name": "Candela",
@@ -563,7 +761,10 @@
         "teamId": "u19",
         "number": 5,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "yellowCards": [
+          77
+        ]
       },
       {
         "name": "Marotta",
@@ -577,7 +778,8 @@
         "teamId": "u19",
         "number": 7,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 68
       },
       {
         "name": "D'Angelo",
@@ -591,21 +793,24 @@
         "teamId": "u19",
         "number": 9,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 68
       },
       {
         "name": "Anic",
         "teamId": "u19",
         "number": 10,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 60
       },
       {
         "name": "Favicchio",
         "teamId": "u19",
         "number": 11,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 45
       },
       {
         "name": "Spinelli",
@@ -635,7 +840,8 @@
         "name": "Chiaiese",
         "teamId": "u19",
         "number": 16,
-        "starter": false
+        "starter": false,
+        "onMinute": 60
       },
       {
         "name": "Pepe",
@@ -647,25 +853,32 @@
         "name": "Ascione",
         "teamId": "u19",
         "number": 18,
-        "starter": false
+        "starter": false,
+        "onMinute": 81,
+        "goals": [
+          90
+        ]
       },
       {
         "name": "Rovetini",
         "teamId": "u19",
         "number": 19,
-        "starter": false
+        "starter": false,
+        "onMinute": 45
       },
       {
         "name": "Baridò",
         "teamId": "u19",
         "number": 20,
-        "starter": false
+        "starter": false,
+        "onMinute": 68
       },
       {
         "name": "Pengue",
         "teamId": "u19",
         "number": 21,
-        "starter": false
+        "starter": false,
+        "onMinute": 68
       }
     ],
     "away": [
@@ -702,7 +915,8 @@
         "teamId": "spezia",
         "number": 5,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 45
       },
       {
         "name": "Corallo",
@@ -730,14 +944,18 @@
         "teamId": "spezia",
         "number": 9,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "goals": [
+          14
+        ]
       },
       {
         "name": "Sartori",
         "teamId": "spezia",
         "number": 10,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 67
       },
       {
         "name": "Trocino",
@@ -768,19 +986,24 @@
         "name": "Francini",
         "teamId": "spezia",
         "number": 15,
-        "starter": false
+        "starter": false,
+        "onMinute": 45
       },
       {
         "name": "Liguori",
         "teamId": "spezia",
         "number": 16,
-        "starter": false
+        "starter": false,
+        "onMinute": 67
       },
       {
         "name": "Del Sante",
         "teamId": "spezia",
         "number": 17,
-        "starter": false
+        "starter": false,
+        "redCards": [
+          92
+        ]
       },
       {
         "name": "Enriquez Gonzalez",
