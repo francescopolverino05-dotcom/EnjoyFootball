@@ -3763,6 +3763,21 @@ attachReferencePack(
       date: '2026-10-10',
       videoFile: 'https://vimeo.com/1235994929/30860268db',
     },
+  ],
+  [
+    {
+      id: 'monopoli-studio-report',
+      title: {
+        en: 'Studio Monopoli',
+        it: 'Studio Monopoli',
+      },
+      description: {
+        en: 'Opposition studio report (Avversari → Studio Report).',
+        it: 'Studio report avversario (Avversari → Studio Report).',
+      },
+      videoFile: 'https://vimeo.com/1240476372/f2e0345617',
+      tags: ['vimeo', 'opposition', 'studio-report'],
+    },
   ]
 );
 
