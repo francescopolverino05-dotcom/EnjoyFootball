@@ -6,8 +6,8 @@
     "it": "Napoli vs Spezia"
   },
   "subtitle": {
-    "en": "Coppa Italia Primavera · First Round · KO 14:00",
-    "it": "Coppa Italia Primavera · Primo turno · KO 14:00"
+    "en": "Coppa Italia Primavera · First Round · KO 15:00",
+    "it": "Coppa Italia Primavera · Primo turno · KO 15:00"
   },
   "date": "2026-10-28",
   "firstLegSlug": "2026-10-24_campionato-u19-vs-spezia",
@@ -40,7 +40,206 @@
   "score": null,
   "goals": [],
   "timeline": [],
-  "formations": [],
+  "formations": [
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "system": "4-3-3",
+      "players": [
+        {
+          "number": 1,
+          "name": "Merone",
+          "teamId": "u19",
+          "role": "GK",
+          "isGk": true,
+          "bottom": "10%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Liccardo",
+          "teamId": "u19",
+          "role": "RB",
+          "bottom": "26%",
+          "left": "12%"
+        },
+        {
+          "number": 6,
+          "name": "Marotta",
+          "teamId": "u19",
+          "role": "RCB",
+          "bottom": "22%",
+          "left": "37%"
+        },
+        {
+          "number": 5,
+          "name": "Natale",
+          "teamId": "u19",
+          "role": "LCB",
+          "bottom": "22%",
+          "left": "63%"
+        },
+        {
+          "number": 3,
+          "name": "Candela",
+          "teamId": "u19",
+          "role": "LB",
+          "bottom": "26%",
+          "left": "88%"
+        },
+        {
+          "number": 4,
+          "name": "De Michele",
+          "teamId": "u19",
+          "role": "CDM",
+          "bottom": "38%",
+          "left": "50%"
+        },
+        {
+          "number": 8,
+          "name": "D'Angelo",
+          "teamId": "u19",
+          "role": "RCM",
+          "bottom": "48%",
+          "left": "32%"
+        },
+        {
+          "number": 10,
+          "name": "Anic",
+          "teamId": "u19",
+          "role": "LCM",
+          "bottom": "48%",
+          "left": "68%"
+        },
+        {
+          "number": 7,
+          "name": "Esposito",
+          "teamId": "u19",
+          "role": "RW",
+          "bottom": "66%",
+          "left": "15%"
+        },
+        {
+          "number": 9,
+          "name": "Saviano",
+          "teamId": "u19",
+          "role": "ST",
+          "bottom": "78%",
+          "left": "50%"
+        },
+        {
+          "number": 11,
+          "name": "Favicchio",
+          "teamId": "u19",
+          "role": "LW",
+          "bottom": "66%",
+          "left": "85%"
+        }
+      ]
+    },
+    {
+      "teamId": "spezia",
+      "label": {
+        "en": "Spezia",
+        "it": "Spezia"
+      },
+      "system": "4-3-3",
+      "players": [
+        {
+          "number": 1,
+          "name": "Guidi",
+          "teamId": "spezia",
+          "role": "GK",
+          "isGk": true,
+          "top": "10%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Michelotti",
+          "teamId": "spezia",
+          "role": "RB",
+          "top": "25%",
+          "left": "85%"
+        },
+        {
+          "number": 6,
+          "name": "Corallo",
+          "teamId": "spezia",
+          "role": "RCB",
+          "top": "22%",
+          "left": "62%"
+        },
+        {
+          "number": 5,
+          "name": "Vignali",
+          "teamId": "spezia",
+          "role": "LCB",
+          "top": "22%",
+          "left": "38%"
+        },
+        {
+          "number": 3,
+          "name": "Ghetti",
+          "teamId": "spezia",
+          "role": "LB",
+          "top": "25%",
+          "left": "15%"
+        },
+        {
+          "number": 4,
+          "name": "D'Auria",
+          "teamId": "spezia",
+          "role": "CDM",
+          "top": "40%",
+          "left": "50%"
+        },
+        {
+          "number": 8,
+          "name": "Di Emidio",
+          "teamId": "spezia",
+          "role": "RCM",
+          "top": "46%",
+          "left": "72%"
+        },
+        {
+          "number": 10,
+          "name": "Sartori",
+          "teamId": "spezia",
+          "role": "LCM",
+          "top": "46%",
+          "left": "28%"
+        },
+        {
+          "number": 7,
+          "name": "D'Ambrosio",
+          "teamId": "spezia",
+          "role": "RW",
+          "top": "70%",
+          "left": "85%"
+        },
+        {
+          "number": 9,
+          "name": "Camara",
+          "teamId": "spezia",
+          "role": "ST",
+          "top": "76%",
+          "left": "50%"
+        },
+        {
+          "number": 11,
+          "name": "Trocino",
+          "teamId": "spezia",
+          "role": "LW",
+          "top": "70%",
+          "left": "15%"
+        }
+      ]
+    }
+  ],
   "dynamics": [],
   "teamStats": [],
   "goalkeepers": [],
@@ -325,5 +524,283 @@
         ]
       }
     ]
+  },
+  "appearances": {
+    "home": [
+      {
+        "name": "Merone",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Candela",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "De Michele",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Natale",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Marotta",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Esposito",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "D'Angelo",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Saviano",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Anic",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Lepre",
+        "teamId": "u19",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Russo",
+        "teamId": "u19",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Napoletano",
+        "teamId": "u19",
+        "number": 15,
+        "starter": false
+      },
+      {
+        "name": "Chiaiese",
+        "teamId": "u19",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Pepe",
+        "teamId": "u19",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "Ascione",
+        "teamId": "u19",
+        "number": 18,
+        "starter": false
+      },
+      {
+        "name": "Rovetini",
+        "teamId": "u19",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Baridò",
+        "teamId": "u19",
+        "number": 20,
+        "starter": false
+      },
+      {
+        "name": "Pengue",
+        "teamId": "u19",
+        "number": 21,
+        "starter": false
+      }
+    ],
+    "away": [
+      {
+        "name": "Guidi",
+        "teamId": "spezia",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Michelotti",
+        "teamId": "spezia",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Ghetti",
+        "teamId": "spezia",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "D'Auria",
+        "teamId": "spezia",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Vignali",
+        "teamId": "spezia",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Corallo",
+        "teamId": "spezia",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "D'Ambrosio",
+        "teamId": "spezia",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Di Emidio",
+        "teamId": "spezia",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Camara",
+        "teamId": "spezia",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Sartori",
+        "teamId": "spezia",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Trocino",
+        "teamId": "spezia",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Azzoni",
+        "teamId": "spezia",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Bertolone",
+        "teamId": "spezia",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Gafuri",
+        "teamId": "spezia",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Francini",
+        "teamId": "spezia",
+        "number": 15,
+        "starter": false
+      },
+      {
+        "name": "Liguori",
+        "teamId": "spezia",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Del Sante",
+        "teamId": "spezia",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "Enriquez Gonzalez",
+        "teamId": "spezia",
+        "number": 18,
+        "starter": false
+      },
+      {
+        "name": "Bellacci",
+        "teamId": "spezia",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Ceccarelli",
+        "teamId": "spezia",
+        "number": 20,
+        "starter": false
+      }
+    ],
+    "notes": {
+      "en": "Starters and bench from the official team sheet (Napoli: Marotta captain, Anic vice; coach Nocerino Antonio. Spezia: Vignali captain, Guidi vice; coach Lupoli Arturo). Referee: Liotta Antonio (Castellammare di Stabia); assistants La Regina Steven (Battipaglia), Valcaccia Nicola (Castellammare di Stabia). Stadio G. Piccolo, Cercola (NA), 15:00. Both teams 4-3-3.",
+      "it": "Titolari e panchina dalla distinta ufficiale (Napoli: Marotta capitano, Anic vice; allenatore Nocerino Antonio. Spezia: Vignali capitano, Guidi vice; allenatore Lupoli Arturo). Arbitro: Liotta Antonio (Castellammare di Stabia); assistenti La Regina Steven (Battipaglia), Valcaccia Nicola (Castellammare di Stabia). Stadio G. Piccolo, Cercola (NA), ore 15:00. Entrambe le squadre 4-3-3."
+    }
   }
 }
