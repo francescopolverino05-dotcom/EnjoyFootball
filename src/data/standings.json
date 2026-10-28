@@ -1664,7 +1664,7 @@
           "date": "2026-10-28",
           "homeId": "napoli",
           "awayId": "spezia",
-          "score": null
+          "score": "2-1"
         }
       },
       "rounds": [
@@ -1866,7 +1866,7 @@
               "date": "2026-10-28",
               "home": "Napoli",
               "away": "Spezia",
-              "score": null,
+              "score": "2-1",
               "ourClub": "napoli",
               "us": true
             },
