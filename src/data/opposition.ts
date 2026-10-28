@@ -3839,6 +3839,32 @@ attachReferencePack('porto', '2026-11-04_uyl-porto-vs-u19', [
     score: '2–4',
     videoFile: 'https://vimeo.com/1235987474/ada586d7c0',
   },
+  {
+    id: 'porto-ref-psv',
+    title: {
+      en: 'Porto vs PSV 3–1',
+      it: 'Porto vs PSV 3–1',
+    },
+    competition: {
+      en: 'UEFA Youth League reference',
+      it: 'Riferimento UEFA Youth League',
+    },
+    score: '3–1',
+    videoFile: 'https://vimeo.com/1239477870/8e604367d7',
+  },
+  {
+    id: 'porto-ref-real-betis',
+    title: {
+      en: 'Real Betis vs Porto 5–0',
+      it: 'Real Betis vs Porto 5–0',
+    },
+    competition: {
+      en: 'UEFA Youth League reference',
+      it: 'Riferimento UEFA Youth League',
+    },
+    score: '5–0',
+    videoFile: 'https://vimeo.com/1239477871/7ce8b1b173',
+  },
 ]);
 
 attachReferencePack('club-brugge', '2026-12-08_uyl-u19-vs-club-brugge', [
