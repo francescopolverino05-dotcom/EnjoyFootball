@@ -68,6 +68,8 @@ export interface CupFixture {
   home: string;
   away: string;
   score: string | null;
+  /** Shoot-out score after a drawn tie, e.g. "9-10". */
+  penalties?: string;
   ourClub?: string;
   us?: boolean;
 }

@@ -677,6 +677,9 @@ export default function HomePage() {
                                   </span>
                                   <span className="home-cup-fixture-sep">
                                     {fx.score ?? '–'}
+                                    {fx.penalties
+                                      ? ` (${fx.penalties} pen.)`
+                                      : ''}
                                   </span>
                                   <span className="home-cup-fixture-away">
                                     {fx.away}

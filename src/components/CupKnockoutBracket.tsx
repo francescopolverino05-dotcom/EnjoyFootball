@@ -62,6 +62,11 @@ function MatchCard({ fx }: { fx: CupFixture }) {
           {awayGoals ?? displayScore(null)}
         </span>
       </div>
+      {fx.penalties ? (
+        <div className="cup-bracket-pens">
+          pen. {displayScore(fx.penalties)}
+        </div>
+      ) : null}
     </article>
   );
 }
