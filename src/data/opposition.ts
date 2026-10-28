@@ -2875,13 +2875,13 @@ if (spezia) {
     { name: 'Davide Del Sante', position: 'LW / LB', birthYear: 2008, heightCm: 175, preferredFoot: 'Sinistro' },
     { name: 'Davide Ghetti', position: 'LB / RCM', birthYear: 2009, preferredFoot: 'Destro' },
     { name: 'Gianmarco Di Emidio', position: 'CM (profile)', birthYear: 2009 },
-    { name: 'Nicolò Corallo', position: 'RB (profile)', birthYear: 2009 },
+    { name: 'Nicolò Corallo', position: 'RB', birthYear: 2009 },
     { name: "Alessio D'Auria", position: 'CM (profile)', birthYear: 2009 },
     { name: 'Luca Trocino', position: 'CM (profile)', birthYear: 2008, heightCm: 188, preferredFoot: 'Destro' },
-    { name: 'Mathias Liguori', birthYear: 2010 },
+    { name: 'Mathias Liguori', position: 'CM', birthYear: 2010, heightCm: 176, preferredFoot: 'Ambidestro' },
     { name: 'Thomas Ceccarelli', position: 'ST (profile)', birthYear: 2009 },
-    { name: 'Bertolone', birthYear: 2010 },
-    { name: 'Enriquez Gonzalez', birthYear: 2009 },
+    { name: 'Bertolone', position: 'CB', birthYear: 2010 },
+    { name: 'Enriquez Gonzalez', position: 'ST', birthYear: 2009, preferredFoot: 'Destro' },
     { name: 'Giulio Bellacci', position: 'LW (profile)', birthYear: 2009, heightCm: 178, preferredFoot: 'Destro' },
   ];
 }
