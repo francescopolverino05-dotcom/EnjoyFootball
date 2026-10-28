@@ -2745,8 +2745,8 @@ if (spezia) {
     lw: 'Maggiore',
   });
 
-  spezia.formationSystem = '1-5-3-2';
-  spezia.alternateFormationSystems = ['1-4-3-3'];
+  spezia.formationSystem = '1-4-3-3';
+  spezia.alternateFormationSystems = ['1-5-3-2'];
   spezia.starters = vsNapoliCoppa;
   spezia.scoutedFormations = [
     {
@@ -2820,25 +2820,25 @@ if (spezia) {
       },
     },
   ];
-  /** Depth = scouted XIs mapped by shirt number onto 5-3-2. */
+  /** Depth = scouted XIs mapped by shirt number onto 4-3-3 (single CDM). */
   spezia.squadDepth = {
-    system: '1-5-3-2',
+    system: '1-4-3-3',
     note: {
-      en: 'Scouted XIs so far (Ascoli MD1, Palermo MD2, Pisa MD3, Monopoli MD4, Latina MD5, Napoli MD6, Napoli Coppa) mapped by shirt onto 5-3-2: 2 = RWB, 5 = RCB, 6 = CB, 4 = LCB, 3 = LWB, 8 = RCM, 7 = CM, 10 = LCM, 9 = RS, 11 = LS. Order = most starts in that slot.',
-      it: 'Formazioni scoutate finora (Ascoli gior. 1, Palermo gior. 2, Pisa gior. 3, Monopoli gior. 4, Latina gior. 5, Napoli gior. 6, Napoli Coppa) mappate per numero sul 5-3-2: 2 = esterno destro, 5 = centrale destro, 6 = centrale, 4 = centrale sinistro, 3 = esterno sinistro, 8 = CC destro, 7 = CC, 10 = CC sinistro, 9 = punta destra, 11 = punta sinistra. Ordine = più partite in quel ruolo.',
+      en: 'Scouted 4-3-3 XIs so far (Ascoli MD1, Palermo MD2, Pisa MD3, Monopoli MD4, Latina MD5, Napoli MD6) mapped by shirt onto 4-3-3: 4 = CDM, 8 = RCM, 10 = LCM. Order = most starts in that slot. The 28 Oct Coppa XI (5-3-2) is not counted.',
+      it: 'Formazioni 4-3-3 scoutate finora (Ascoli gior. 1, Palermo gior. 2, Pisa gior. 3, Monopoli gior. 4, Latina gior. 5, Napoli gior. 6) mappate per numero sul 4-3-3: 4 = play, 8 = CC destro, 10 = CC sinistro. Ordine = più partite in quel ruolo. La formazione di Coppa del 28 ott (5-3-2) non è conteggiata.',
     },
     slots: [
-      { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Guidi', starts: 3 }, { name: 'Doretti', starts: 3 }, { name: 'Azzoni', starts: 1 }] },
-      { role: 'RWB', top: '34%', left: '10%', players: [{ name: 'Mazzanti', starts: 6 }, { name: 'Michelotti', starts: 1 }] },
-      { role: 'RCB', top: '24%', left: '30%', players: [{ name: 'Vignali', starts: 5 }, { name: 'Francini', starts: 2 }] },
-      { role: 'CB', top: '22%', left: '50%', players: [{ name: 'Gafuri', starts: 4 }, { name: 'Francini', starts: 2 }, { name: 'Corallo', starts: 1 }] },
-      { role: 'LCB', top: '24%', left: '70%', players: [{ name: 'Longhi', starts: 4 }, { name: 'Vannucci', starts: 2 }, { name: "D'Auria", starts: 1 }] },
-      { role: 'LWB', top: '34%', left: '90%', players: [{ name: 'Michelotti', starts: 4 }, { name: 'Ghetti', starts: 2 }, { name: 'Del Sante', starts: 1 }] },
-      { role: 'RCM', top: '50%', left: '30%', players: [{ name: 'Berti', starts: 3 }, { name: 'Vannucci', starts: 2 }, { name: 'Di Emidio', starts: 1 }, { name: 'Ghetti', starts: 1 }] },
-      { role: 'CM', top: '46%', left: '50%', players: [{ name: 'Cassano', starts: 4 }, { name: "D'Ambrosio", starts: 3 }] },
-      { role: 'LCM', top: '50%', left: '70%', players: [{ name: 'Carbone', starts: 5 }, { name: 'Sartori', starts: 2 }] },
-      { role: 'RS', top: '74%', left: '40%', players: [{ name: 'Camara', starts: 4 }, { name: 'Trentinella', starts: 3 }] },
-      { role: 'LS', top: '74%', left: '60%', players: [{ name: 'Maggiore', starts: 2 }, { name: 'Del Sante', starts: 2 }, { name: 'Trentinella', starts: 2 }, { name: 'Trocino', starts: 1 }] },
+      { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Doretti', starts: 3 }, { name: 'Guidi', starts: 2 }, { name: 'Azzoni', starts: 1 }] },
+      { role: 'RB', top: '26%', left: '18%', players: [{ name: 'Mazzanti', starts: 6 }] },
+      { role: 'RCB', top: '24%', left: '38%', players: [{ name: 'Gafuri', starts: 4 }, { name: 'Francini', starts: 2 }] },
+      { role: 'LCB', top: '24%', left: '62%', players: [{ name: 'Vignali', starts: 4 }, { name: 'Francini', starts: 2 }] },
+      { role: 'LB', top: '26%', left: '82%', players: [{ name: 'Michelotti', starts: 4 }, { name: 'Ghetti', starts: 1 }, { name: 'Del Sante', starts: 1 }] },
+      { role: 'CDM', top: '40%', left: '50%', players: [{ name: 'Longhi', starts: 4 }, { name: 'Vannucci', starts: 2 }] },
+      { role: 'RCM', top: '52%', left: '32%', players: [{ name: 'Berti', starts: 3 }, { name: 'Vannucci', starts: 2 }, { name: 'Ghetti', starts: 1 }] },
+      { role: 'LCM', top: '52%', left: '68%', players: [{ name: 'Carbone', starts: 5 }, { name: 'Sartori', starts: 1 }] },
+      { role: 'RW', top: '70%', left: '18%', players: [{ name: 'Cassano', starts: 4 }, { name: "D'Ambrosio", starts: 2 }] },
+      { role: 'ST', top: '78%', left: '50%', players: [{ name: 'Camara', starts: 3 }, { name: 'Trentinella', starts: 3 }] },
+      { role: 'LW', top: '70%', left: '82%', players: [{ name: 'Trentinella', starts: 2 }, { name: 'Del Sante', starts: 2 }, { name: 'Maggiore', starts: 2 }] },
     ],
   };
   /** Squad from distinte (no shirt numbers). Role = roles started in scouted XIs; bench-only = Transfermarkt profile position. Foot/height from Transfermarkt where listed (Tuttocampo roster empty); blanks = not published. */
