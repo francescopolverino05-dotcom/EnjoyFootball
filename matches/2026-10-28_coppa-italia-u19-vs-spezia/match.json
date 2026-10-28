@@ -192,6 +192,16 @@
     {
       "minute": 77,
       "label": {
+        "en": "Del Sante on",
+        "it": "Del Sante on"
+      },
+      "type": "substitution",
+      "teamId": "spezia",
+      "positionPercent": 86
+    },
+    {
+      "minute": 77,
+      "label": {
         "en": "Natale yellow",
         "it": "Natale ammonito"
       },
@@ -1001,6 +1011,7 @@
         "teamId": "spezia",
         "number": 17,
         "starter": false,
+        "onMinute": 77,
         "redCards": [
           92
         ]
