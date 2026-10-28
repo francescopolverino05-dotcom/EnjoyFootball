@@ -3,7 +3,7 @@
   "updatedAt": "2026-10-28",
   "sources": {
     "primavera2": "https://www.tuttocampo.it/Italia/Primavera/Girone2B/Risultati",
-    "coppaItalia": "https://www.transfermarkt.it/coppa-italia-primavera/gesamtspielplan/pokalwettbewerb/CITP/saison_id/2026",
+    "coppaItalia": "https://www.transfermarkt.it/coppa-italia-primavera/turnierbaum/pokalwettbewerb/CITP/saison_id/2026",
     "uefaYouthLeague": "https://www.transfermarkt.com/uefa-youth-league/gesamtspielplan/pokalwettbewerb/19YL/saison_id/2026"
   },
   "competitions": {
@@ -1778,36 +1778,41 @@
           "fixtures": [
             {
               "date": "2026-10-27",
-              "home": "Lazio",
-              "away": "Südtirol",
-              "score": "2-0"
-            },
-            {
-              "date": "2026-10-27",
               "home": "Sassuolo",
               "away": "Renate",
-              "score": "1-1",
-              "penalties": "9-10"
+              "score": null
             },
             {
               "date": "2026-10-27",
               "home": "Torino",
               "away": "Bari",
-              "score": "1-1",
-              "penalties": "4-5",
+              "score": null,
               "ourClub": "bari"
             },
             {
               "date": "2026-10-27",
               "home": "Monza",
               "away": "Brescia",
-              "score": "5-1"
+              "score": null
             },
             {
               "date": "2026-10-27",
               "home": "Genoa",
               "away": "Reggiana",
-              "score": "3-0"
+              "score": null
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Milan",
+              "away": "Catanzaro",
+              "score": null,
+              "ourClub": "catanzaro"
+            },
+            {
+              "date": "2026-10-28",
+              "home": "Lazio",
+              "away": "Südtirol",
+              "score": null
             },
             {
               "date": "2026-10-28",
@@ -1845,13 +1850,6 @@
             },
             {
               "date": "2026-10-28",
-              "home": "Empoli",
-              "away": "Perugia",
-              "score": null,
-              "ourClub": "perugia"
-            },
-            {
-              "date": "2026-10-28",
               "home": "Modena",
               "away": "Sampdoria",
               "score": null
@@ -1872,10 +1870,10 @@
             },
             {
               "date": "2026-10-28",
-              "home": "Milan",
-              "away": "Catanzaro",
+              "home": "Empoli",
+              "away": "Perugia",
               "score": null,
-              "ourClub": "catanzaro"
+              "ourClub": "perugia"
             },
             {
               "date": "2026-10-28",
