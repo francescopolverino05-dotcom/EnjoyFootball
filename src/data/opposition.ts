@@ -2728,19 +2728,8 @@ if (spezia) {
     lw: 'Del Sante',
   });
 
-  const vsNapoliCoppa = spezia433({
-    gk: 'Guidi',
-    rb: 'Michelotti',
-    lcb: 'Vignali',
-    rcb: 'Corallo',
-    lb: 'Ghetti',
-    cdm: "D'Auria",
-    rcm: 'Di Emidio',
-    lcm: 'Sartori',
-    rw: "D'Ambrosio",
-    st: 'Camara',
-    lw: 'Trocino',
-  });
+  /** Coppa XI by shirt onto 5-3-2: 1 GK, 2 RWB, 5 RCB, 6 CB, 4 LCB, 3 LWB, 8 RCM, 7 CM, 10 LCM, 9 RS, 11 LS. */
+  const vsNapoliCoppa = placeholder532('spezia').map((p) => ({ ...p, name: ['Guidi', 'Michelotti', 'Ghetti', "D'Auria", 'Vignali', 'Corallo', "D'Ambrosio", 'Di Emidio', 'Camara', 'Sartori', 'Trocino'][p.number - 1] }));
 
   const vsNapoli = spezia433({
     gk: 'Azzoni',
@@ -2756,17 +2745,18 @@ if (spezia) {
     lw: 'Maggiore',
   });
 
-  spezia.formationSystem = '1-4-3-3';
+  spezia.formationSystem = '1-5-3-2';
+  spezia.alternateFormationSystems = ['1-4-3-3'];
   spezia.starters = vsNapoliCoppa;
   spezia.scoutedFormations = [
     {
       id: 'spezia-vs-napoli-coppa',
       label: { en: 'Starting XI vs Napoli (28 Oct, Coppa Italia)', it: 'Formazione iniziale vs Napoli (28 ott, Coppa Italia)' },
-      system: '4-3-3',
+      system: '5-3-2',
       players: vsNapoliCoppa,
       notes: {
-        en: 'Coppa Italia Primavera First Round, 28 Oct 2026, 15:00, Stadio G. Piccolo, Cercola (official team sheet). Guidi (VK) in goal; Vignali (K) at LCB. Mapped by shirt onto 4-3-3: 2 RB, 5 LCB, 6 RCB, 3 LB, 4 CDM, 8 RCM, 10 LCM, 7 RW, 11 LW, 9 ST. Bench: Azzoni, Bertolone, Gafuri, Francini, Liguori, Del Sante, Enriquez Gonzalez, Bellacci, Ceccarelli. Coach Lupoli. No subs yet.',
-        it: "Coppa Italia Primavera primo turno, 28 ott 2026, ore 15:00, Stadio G. Piccolo, Cercola (distinta ufficiale). Guidi (VK) in porta; Vignali (K) centrale sinistro. Mappata per numero sul 4-3-3: 2 terzino destro, 5 centrale sinistro, 6 centrale destro, 3 terzino sinistro, 4 play, 8 CC destro, 10 CC sinistro, 7 ala destra, 11 ala sinistra, 9 punta. Panchina: Azzoni, Bertolone, Gafuri, Francini, Liguori, Del Sante, Enriquez Gonzalez, Bellacci, Ceccarelli. Allenatore Lupoli. Nessun cambio finora.",
+        en: 'Coppa Italia Primavera First Round, 28 Oct 2026, 15:00, Stadio G. Piccolo, Cercola (official team sheet). Guidi (VK) in goal; Vignali (K) at RCB. Mapped by shirt onto 5-3-2: 2 RWB, 5 RCB, 6 CB, 4 LCB, 3 LWB, 8 RCM, 7 CM, 10 LCM, 9 RS, 11 LS. Bench: Azzoni, Bertolone, Gafuri, Francini, Liguori, Del Sante, Enriquez Gonzalez, Bellacci, Ceccarelli. Coach Lupoli. No subs yet.',
+        it: "Coppa Italia Primavera primo turno, 28 ott 2026, ore 15:00, Stadio G. Piccolo, Cercola (distinta ufficiale). Guidi (VK) in porta; Vignali (K) centrale destro. Mappata per numero sul 5-3-2: 2 esterno destro, 5 centrale destro, 6 centrale, 4 centrale sinistro, 3 esterno sinistro, 8 CC destro, 7 CC, 10 CC sinistro, 9 punta destra, 11 punta sinistra. Panchina: Azzoni, Bertolone, Gafuri, Francini, Liguori, Del Sante, Enriquez Gonzalez, Bellacci, Ceccarelli. Allenatore Lupoli. Nessun cambio finora.",
       },
     },
     {
@@ -2830,25 +2820,25 @@ if (spezia) {
       },
     },
   ];
-  /** Depth = scouted XIs mapped by shirt number onto 4-3-3 (single CDM). */
+  /** Depth = scouted XIs mapped by shirt number onto 5-3-2. */
   spezia.squadDepth = {
-    system: '1-4-3-3',
+    system: '1-5-3-2',
     note: {
-      en: 'Scouted XIs so far (Ascoli MD1, Palermo MD2, Pisa MD3, Monopoli MD4, Latina MD5, Napoli MD6, Napoli Coppa) mapped by shirt onto 4-3-3: 4 = CDM, 8 = RCM, 10 = LCM. Order = most starts in that slot.',
-      it: 'Formazioni scoutate finora (Ascoli gior. 1, Palermo gior. 2, Pisa gior. 3, Monopoli gior. 4, Latina gior. 5, Napoli gior. 6, Napoli Coppa) mappate per numero sul 4-3-3: 4 = play, 8 = CC destro, 10 = CC sinistro. Ordine = più partite in quel ruolo.',
+      en: 'Scouted XIs so far (Ascoli MD1, Palermo MD2, Pisa MD3, Monopoli MD4, Latina MD5, Napoli MD6, Napoli Coppa) mapped by shirt onto 5-3-2: 2 = RWB, 5 = RCB, 6 = CB, 4 = LCB, 3 = LWB, 8 = RCM, 7 = CM, 10 = LCM, 9 = RS, 11 = LS. Order = most starts in that slot.',
+      it: 'Formazioni scoutate finora (Ascoli gior. 1, Palermo gior. 2, Pisa gior. 3, Monopoli gior. 4, Latina gior. 5, Napoli gior. 6, Napoli Coppa) mappate per numero sul 5-3-2: 2 = esterno destro, 5 = centrale destro, 6 = centrale, 4 = centrale sinistro, 3 = esterno sinistro, 8 = CC destro, 7 = CC, 10 = CC sinistro, 9 = punta destra, 11 = punta sinistra. Ordine = più partite in quel ruolo.',
     },
     slots: [
-      { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Doretti', starts: 3 }, { name: 'Guidi', starts: 3 }, { name: 'Azzoni', starts: 1 }] },
-      { role: 'RB', top: '26%', left: '18%', players: [{ name: 'Mazzanti', starts: 6 }, { name: 'Michelotti', starts: 1 }] },
-      { role: 'RCB', top: '24%', left: '38%', players: [{ name: 'Gafuri', starts: 4 }, { name: 'Francini', starts: 2 }, { name: 'Corallo', starts: 1 }] },
-      { role: 'LCB', top: '24%', left: '62%', players: [{ name: 'Vignali', starts: 5 }, { name: 'Francini', starts: 2 }] },
-      { role: 'LB', top: '26%', left: '82%', players: [{ name: 'Michelotti', starts: 4 }, { name: 'Ghetti', starts: 2 }, { name: 'Del Sante', starts: 1 }] },
-      { role: 'CDM', top: '40%', left: '50%', players: [{ name: 'Longhi', starts: 4 }, { name: 'Vannucci', starts: 2 }, { name: "D'Auria", starts: 1 }] },
-      { role: 'RCM', top: '52%', left: '32%', players: [{ name: 'Berti', starts: 3 }, { name: 'Vannucci', starts: 2 }, { name: 'Ghetti', starts: 1 }, { name: 'Di Emidio', starts: 1 }] },
-      { role: 'LCM', top: '52%', left: '68%', players: [{ name: 'Carbone', starts: 5 }, { name: 'Sartori', starts: 2 }] },
-      { role: 'RW', top: '70%', left: '18%', players: [{ name: 'Cassano', starts: 4 }, { name: "D'Ambrosio", starts: 3 }] },
-      { role: 'ST', top: '78%', left: '50%', players: [{ name: 'Camara', starts: 4 }, { name: 'Trentinella', starts: 3 }] },
-      { role: 'LW', top: '70%', left: '82%', players: [{ name: 'Trentinella', starts: 2 }, { name: 'Del Sante', starts: 2 }, { name: 'Maggiore', starts: 2 }, { name: 'Trocino', starts: 1 }] },
+      { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Guidi', starts: 3 }, { name: 'Doretti', starts: 3 }, { name: 'Azzoni', starts: 1 }] },
+      { role: 'RWB', top: '34%', left: '10%', players: [{ name: 'Mazzanti', starts: 6 }, { name: 'Michelotti', starts: 1 }] },
+      { role: 'RCB', top: '24%', left: '30%', players: [{ name: 'Vignali', starts: 5 }, { name: 'Francini', starts: 2 }] },
+      { role: 'CB', top: '22%', left: '50%', players: [{ name: 'Gafuri', starts: 4 }, { name: 'Francini', starts: 2 }, { name: 'Corallo', starts: 1 }] },
+      { role: 'LCB', top: '24%', left: '70%', players: [{ name: 'Longhi', starts: 4 }, { name: 'Vannucci', starts: 2 }, { name: "D'Auria", starts: 1 }] },
+      { role: 'LWB', top: '34%', left: '90%', players: [{ name: 'Michelotti', starts: 4 }, { name: 'Ghetti', starts: 2 }, { name: 'Del Sante', starts: 1 }] },
+      { role: 'RCM', top: '50%', left: '30%', players: [{ name: 'Berti', starts: 3 }, { name: 'Vannucci', starts: 2 }, { name: 'Di Emidio', starts: 1 }, { name: 'Ghetti', starts: 1 }] },
+      { role: 'CM', top: '46%', left: '50%', players: [{ name: 'Cassano', starts: 4 }, { name: "D'Ambrosio", starts: 3 }] },
+      { role: 'LCM', top: '50%', left: '70%', players: [{ name: 'Carbone', starts: 5 }, { name: 'Sartori', starts: 2 }] },
+      { role: 'RS', top: '74%', left: '40%', players: [{ name: 'Camara', starts: 4 }, { name: 'Trentinella', starts: 3 }] },
+      { role: 'LS', top: '74%', left: '60%', players: [{ name: 'Maggiore', starts: 2 }, { name: 'Del Sante', starts: 2 }, { name: 'Trentinella', starts: 2 }, { name: 'Trocino', starts: 1 }] },
     ],
   };
   /** Squad from distinte (no shirt numbers). Role = roles started in scouted XIs; bench-only = Transfermarkt profile position. Foot/height from Transfermarkt where listed (Tuttocampo roster empty); blanks = not published. */

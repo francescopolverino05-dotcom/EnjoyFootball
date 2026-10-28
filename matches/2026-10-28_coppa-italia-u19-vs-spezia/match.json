@@ -146,7 +146,7 @@
         "en": "Spezia",
         "it": "Spezia"
       },
-      "system": "4-3-3",
+      "system": "5-3-2",
       "players": [
         {
           "number": 1,
@@ -161,81 +161,81 @@
           "number": 2,
           "name": "Michelotti",
           "teamId": "spezia",
-          "role": "RB",
-          "top": "25%",
-          "left": "85%"
-        },
-        {
-          "number": 6,
-          "name": "Corallo",
-          "teamId": "spezia",
-          "role": "RCB",
-          "top": "22%",
-          "left": "62%"
+          "role": "RWB",
+          "top": "34%",
+          "left": "90%"
         },
         {
           "number": 5,
           "name": "Vignali",
           "teamId": "spezia",
-          "role": "LCB",
-          "top": "22%",
-          "left": "38%"
+          "role": "RCB",
+          "top": "24%",
+          "left": "70%"
         },
         {
-          "number": 3,
-          "name": "Ghetti",
+          "number": 6,
+          "name": "Corallo",
           "teamId": "spezia",
-          "role": "LB",
-          "top": "25%",
-          "left": "15%"
+          "role": "CB",
+          "top": "22%",
+          "left": "50%"
         },
         {
           "number": 4,
           "name": "D'Auria",
           "teamId": "spezia",
-          "role": "CDM",
-          "top": "40%",
-          "left": "50%"
+          "role": "LCB",
+          "top": "24%",
+          "left": "30%"
+        },
+        {
+          "number": 3,
+          "name": "Ghetti",
+          "teamId": "spezia",
+          "role": "LWB",
+          "top": "34%",
+          "left": "10%"
         },
         {
           "number": 8,
           "name": "Di Emidio",
           "teamId": "spezia",
           "role": "RCM",
+          "top": "50%",
+          "left": "70%"
+        },
+        {
+          "number": 7,
+          "name": "D'Ambrosio",
+          "teamId": "spezia",
+          "role": "CM",
           "top": "46%",
-          "left": "72%"
+          "left": "50%"
         },
         {
           "number": 10,
           "name": "Sartori",
           "teamId": "spezia",
           "role": "LCM",
-          "top": "46%",
-          "left": "28%"
-        },
-        {
-          "number": 7,
-          "name": "D'Ambrosio",
-          "teamId": "spezia",
-          "role": "RW",
-          "top": "70%",
-          "left": "85%"
+          "top": "50%",
+          "left": "30%"
         },
         {
           "number": 9,
           "name": "Camara",
           "teamId": "spezia",
-          "role": "ST",
-          "top": "76%",
-          "left": "50%"
+          "role": "RS",
+          "top": "74%",
+          "left": "60%"
         },
         {
           "number": 11,
           "name": "Trocino",
           "teamId": "spezia",
-          "role": "LW",
-          "top": "70%",
-          "left": "15%"
+          "role": "LS",
+          "top": "74%",
+          "left": "40%"
         }
       ]
     }
@@ -799,8 +799,8 @@
       }
     ],
     "notes": {
-      "en": "Starters and bench from the official team sheet (Napoli: Marotta captain, Anic vice; coach Nocerino Antonio. Spezia: Vignali captain, Guidi vice; coach Lupoli Arturo). Referee: Liotta Antonio (Castellammare di Stabia); assistants La Regina Steven (Battipaglia), Valcaccia Nicola (Castellammare di Stabia). Stadio G. Piccolo, Cercola (NA), 15:00. Both teams 4-3-3.",
-      "it": "Titolari e panchina dalla distinta ufficiale (Napoli: Marotta capitano, Anic vice; allenatore Nocerino Antonio. Spezia: Vignali capitano, Guidi vice; allenatore Lupoli Arturo). Arbitro: Liotta Antonio (Castellammare di Stabia); assistenti La Regina Steven (Battipaglia), Valcaccia Nicola (Castellammare di Stabia). Stadio G. Piccolo, Cercola (NA), ore 15:00. Entrambe le squadre 4-3-3."
+      "en": "Starters and bench from the official team sheet (Napoli: Marotta captain, Anic vice; coach Nocerino Antonio. Spezia: Vignali captain, Guidi vice; coach Lupoli Arturo). Referee: Liotta Antonio (Castellammare di Stabia); assistants La Regina Steven (Battipaglia), Valcaccia Nicola (Castellammare di Stabia). Stadio G. Piccolo, Cercola (NA), 15:00. Napoli 4-3-3, Spezia 5-3-2.",
+      "it": "Titolari e panchina dalla distinta ufficiale (Napoli: Marotta capitano, Anic vice; allenatore Nocerino Antonio. Spezia: Vignali capitano, Guidi vice; allenatore Lupoli Arturo). Arbitro: Liotta Antonio (Castellammare di Stabia); assistenti La Regina Steven (Battipaglia), Valcaccia Nicola (Castellammare di Stabia). Stadio G. Piccolo, Cercola (NA), ore 15:00. Napoli 4-3-3, Spezia 5-3-2."
     }
   }
 }
