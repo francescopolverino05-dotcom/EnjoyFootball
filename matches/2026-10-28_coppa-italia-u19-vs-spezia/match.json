@@ -1610,7 +1610,7 @@
     }
   ],
   "video": {
-    "fullMatch": "https://vimeo.com/1240362797/037bf47ae3",
+    "fullMatch": "https://vimeo.com/1240399517/90e32b8b41",
     "notes": {
       "en": "Full match hosted on Vimeo.",
       "it": "Partita intera su Vimeo."
@@ -1619,6 +1619,6 @@
   "vimeo": {
     "folderId": "31074076",
     "folderUrl": "https://vimeo.com/user/170593333/folder/31074076",
-    "lastSyncedAt": "2026-10-28T18:10:00.000Z"
+    "lastSyncedAt": "2026-10-29T12:50:00.000Z"
   }
 }

@@ -3474,7 +3474,7 @@ attachReferencePack('spezia', '2026-10-24_campionato-u19-vs-spezia', [
           en: 'Opposition studio report (Avversari → Coppa Italia → Spezia → Studio Report).',
           it: 'Studio report avversario (Avversari → Coppa Italia → Spezia → Studio Report).',
         },
-        videoFile: 'https://vimeo.com/1239647055/2e68ba2908',
+        videoFile: 'https://vimeo.com/1239813926/4d206b34a3',
         tags: ['vimeo', 'opposition', 'studio-report'],
       },
     ]
@@ -3895,6 +3895,32 @@ attachReferencePack('man-city', '2026-11-24_uyl-man-city-vs-u19', [
     },
     score: '3–1',
     videoFile: 'https://vimeo.com/1225051128/cd33c8c29e',
+  },
+  {
+    id: 'man-city-ref-psg',
+    title: {
+      en: 'Manchester City vs PSG 0–2',
+      it: 'Manchester City vs PSG 0–2',
+    },
+    competition: {
+      en: 'UEFA Youth League reference',
+      it: 'Riferimento UEFA Youth League',
+    },
+    score: '0–2',
+    videoFile: 'https://vimeo.com/1240759239/ff8a17036b',
+  },
+  {
+    id: 'man-city-ref-aek',
+    title: {
+      en: 'Manchester City vs AEK Athens 1–1',
+      it: 'Manchester City vs AEK Athens 1–1',
+    },
+    competition: {
+      en: 'UEFA Youth League reference',
+      it: 'Riferimento UEFA Youth League',
+    },
+    score: '1–1',
+    videoFile: 'https://vimeo.com/1240759240/57eeb8eda5',
   },
 ]);
 
