@@ -5377,6 +5377,39 @@ a.gacon-ind-row:hover {
   color: var(--text-dark);
 }
 
+.standings-path-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-left: 3px solid var(--border-light);
+}
+
+.standings-path-step {
+  padding: 6px 0 6px 12px;
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+.standings-path-step a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.standings-path-step--done {
+  color: var(--text-gray);
+}
+
+.standings-path-step--next {
+  border-left: 3px solid var(--napoli-blue);
+  margin-left: -3px;
+  font-weight: 700;
+}
+
+.standings-path-step--ifWin {
+  color: var(--text-gray);
+  font-style: italic;
+}
+
 .standings-fixture-list {
   list-style: none;
   margin: 0;

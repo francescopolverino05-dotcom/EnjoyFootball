@@ -228,6 +228,8 @@ const dictionaries = {
     tableCupBracketAria: 'Coppa Italia knockout bracket',
     tableCupPreliminaries: 'Preliminary rounds',
     tableCupKnockout: 'Knockout bracket',
+    tableCupIfWin: 'If we win',
+    tableCupVs: 'vs',
     tableUylEmpty:
       'UEFA Youth League league-phase fixtures are listed on the calendar and Matches tab.',
     opposition: 'Opposition',
@@ -750,6 +752,8 @@ const dictionaries = {
     tableCupBracketAria: 'Tabellone Coppa Italia',
     tableCupPreliminaries: 'Turni preliminari',
     tableCupKnockout: 'Tabellone eliminazione diretta',
+    tableCupIfWin: 'Se vinciamo',
+    tableCupVs: 'vs',
     tableUylEmpty:
       'Le partite della fase a gironi UEFA Youth League sono in calendario e nella scheda Partite.',
     opposition: 'Avversari',

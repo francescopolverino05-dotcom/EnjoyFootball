@@ -2,8 +2,8 @@ import { useMemo, useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import CupKnockoutBracket, {
   cupHasKnockoutBracket,
-  cupPreliminaryRounds,
 } from '../components/CupKnockoutBracket';
+import { CupOurPath, CupRoundsList } from '../components/CupRoundsList';
 import ReportHeader from '../components/ReportHeader';
 import StandingsForm from '../components/StandingsForm';
 import {
@@ -14,7 +14,6 @@ import {
   getUefaYouthLeagueStandings,
   STANDING_COMPETITION_ORDER,
   standingRowClassName,
-  teamNameById,
   uylZone,
   type StandingCompetitionId,
 } from '../data/standings';
@@ -396,57 +395,13 @@ export default function TablesPage() {
                 </p>
               </header>
 
-              {coppa.ourPath?.next ? (
-                <div className="standings-our-path">
-                  <div className="section-title">{t('tableOurPath')}</div>
-                  <p className="standings-our-path-body">
-                    <strong>{coppa.ourPath.next.round}</strong>
-                    {' · '}
-                    {formatDate(coppa.ourPath.next.date, locale)}
-                    {' · '}
-                    {teamNameById(league, coppa.ourPath.next.homeId)}
-                    {' – '}
-                    {teamNameById(league, coppa.ourPath.next.awayId)}
-                  </p>
-                </div>
-              ) : null}
+              <CupOurPath rounds={coppa.rounds} />
 
               {coppa.rounds.length === 0 ? (
                 <p className="home-empty">{t('tableCupEmpty')}</p>
               ) : (
                 <>
-                  {cupPreliminaryRounds(coppa.rounds).map((round) => (
-                    <div key={round.id} className="standings-cup-round">
-                      <h4 className="standings-matchday-title">
-                        {L(round.name)}
-                      </h4>
-                      <ul className="standings-fixture-list">
-                        {round.fixtures.map((fx, i) => (
-                          <li
-                            key={`${round.id}-${i}`}
-                            className={
-                              fx.us
-                                ? 'standings-fixture standings-fixture--us'
-                                : 'standings-fixture'
-                            }
-                          >
-                            <span className="standings-fixture-date">
-                              {formatDate(fx.date, locale)}
-                            </span>
-                            <span className="standings-fixture-home">
-                              {fx.home}
-                            </span>
-                            <span className="standings-fixture-sep">
-                              {fx.score?.replace(/-/g, ':') ?? '–'}
-                            </span>
-                            <span className="standings-fixture-away">
-                              {fx.away}
-                            </span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
+                  <CupRoundsList rounds={coppa.rounds} />
 
                   {cupHasKnockoutBracket(coppa.rounds) ? (
                     <div className="standings-cup-round">
