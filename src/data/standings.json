@@ -1660,11 +1660,11 @@
       "ourPath": {
         "entryRound": "firstRound",
         "next": {
-          "round": "First Round",
-          "date": "2026-10-28",
+          "round": "Round of 32",
+          "date": "2026-12-02",
           "homeId": "napoli",
-          "awayId": "spezia",
-          "score": "2-1"
+          "awayId": "Bari",
+          "score": null
         }
       },
       "rounds": [
@@ -1860,7 +1860,8 @@
               "date": "2026-10-28",
               "home": "Verona",
               "away": "Pro Vercelli",
-              "score": "0-0"
+              "score": "0-0",
+              "penalties": "1-4"
             },
             {
               "date": "2026-10-28",
@@ -1899,50 +1900,52 @@
           "fixtures": [
             {
               "date": "2026-12-02",
-              "home": "TBD",
-              "away": "TBD",
+              "home": "Sampdoria",
+              "away": "Renate",
               "score": null
             },
             {
               "date": "2026-12-02",
-              "home": "TBD",
-              "away": "TBD",
+              "home": "Lecce",
+              "away": "Cagliari",
               "score": null
             },
             {
               "date": "2026-12-02",
-              "home": "TBD",
-              "away": "TBD",
+              "home": "AlbinoLeffe",
+              "away": "Pro Vercelli",
               "score": null
             },
             {
               "date": "2026-12-02",
-              "home": "TBD",
-              "away": "TBD",
+              "home": "Napoli",
+              "away": "Bari",
+              "score": null,
+              "ourClub": "napoli",
+              "us": true
+            },
+            {
+              "date": "2026-12-02",
+              "home": "Monza",
+              "away": "Virtus Entella",
               "score": null
             },
             {
               "date": "2026-12-02",
-              "home": "TBD",
-              "away": "TBD",
+              "home": "Milan",
+              "away": "Como",
               "score": null
             },
             {
               "date": "2026-12-02",
-              "home": "TBD",
-              "away": "TBD",
+              "home": "Genoa",
+              "away": "Empoli",
               "score": null
             },
             {
               "date": "2026-12-02",
-              "home": "TBD",
-              "away": "TBD",
-              "score": null
-            },
-            {
-              "date": "2026-12-02",
-              "home": "TBD",
-              "away": "TBD",
+              "home": "Lazio",
+              "away": "Cremonese",
               "score": null
             }
           ]
