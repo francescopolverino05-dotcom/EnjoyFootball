@@ -46,7 +46,7 @@ export function parseSubs(
   squad: { name: string; position?: string }[],
 ): ParsedSub[] {
   if (!notes) return [];
-  const m = notes.match(/Subs(?: used)?:\s*([^]*?)(?:\.\s|\.$|\s\(switch|$)/);
+  const m = notes.match(/Subs(?: used)?:\s*([^]*?)(?:(?<!\b[A-Z])\.\s|\.$|\s\(switch|$)/);
   if (!m) return [];
   const out: ParsedSub[] = [];
   for (const raw of m[1].split(/,\s*/)) {

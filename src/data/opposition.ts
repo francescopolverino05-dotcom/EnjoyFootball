@@ -658,7 +658,7 @@ if (villarreal) {
     system: '1-4-4-2',
     note: {
       en: 'Last 4 starting XIs (Castellón 4-4-2, Dortmund 3-4-2-1 / defensive 5-3-2, Elche 4-4-2, Murcia 4-4-2) mapped onto 4-4-2. vs BVB Toni stayed RCB in the back five; when Vivo stepped into midfield Toni covered RB — Vivo’s Dortmund start counted at RM, one Toni start at RB. Order = most starts in that slot. Short display names on pitch; full names in the squad table.',
-      it: 'Ultime 4 formazioni (Castellón 4-4-2, Dortmund 3-4-2-1 / 5-3-2 in non possesso, Elche 4-4-2, Murcia 4-4-2) mappate sul 4-4-2. vs BVB Toni restava RCB nel 5; quando Vivo saliva Toni copriva da RB — la partenza Dortmund di Vivo è contata da RM, una di Toni da RB. Ordine = più partite in quel ruolo. Nomi corti sul campo; nomi completi in tabella rosa.',
+      it: 'Ultime 4 formazioni (Castellón 4-4-2, Dortmund 3-4-2-1 / 5-3-2 in non possesso, Elche 4-4-2, Murcia 4-4-2) mappate sul 4-4-2. vs BVB Toni restava difensore centrale nel 5; quando Vivo saliva Toni copriva da terzino destro — la partenza Dortmund di Vivo è contata da esterno destro, una di Toni da terzino destro. Ordine = più partite in quel ruolo. Nomi corti sul campo; nomi completi in tabella rosa.',
     },
     slots: [
       {
