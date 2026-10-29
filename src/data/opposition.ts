@@ -3017,67 +3017,97 @@ if (monopoli) {
 
 /**
  * Monopoli set pieces — all 19 from the reference tape (8 corners, 11 free kicks), logged by Francesco.
- * Zones: area 14 · near post 2 · far post 2 · short 1 · edge of box 0.
- * Sides are as seen attacking the goal at the top of the pitch. Free-kick arrows start at the bottom edge (30–50 yd, out of view).
+ * Same shape as Spezia's panels. Sides are as seen attacking the goal at the top; numbers on the pitch match the ordered list.
+ * Zones: area 14 · near post 2 · far post 2 · short 1 · edge of box 0. Free-kick origins are drawn at the distance noted (capped at the bottom edge for 40–50 yd and halfway balls).
+ * Takers were not logged, so the taker tables stay empty.
  */
 if (monopoli) {
   monopoli.setPieces = {
-    diagram: {
-      counts: { area: 14, near: 2, far: 2, short: 1, edge: 0 },
-      arrows: [
-        // Corners from the left flag
-        { kind: 'corner', zone: 'area', x1: 12, y1: 8, cx: 50, cy: 56, x2: 138, y2: 42, n: 4 },
-        { kind: 'corner', zone: 'near', x1: 12, y1: 8, cx: 70, cy: 6, x2: 140, y2: 12, n: 1 },
-        { kind: 'corner', zone: 'short', x1: 12, y1: 8, cx: 20, cy: 24, x2: 40, y2: 38, n: 1 },
-        // Corners from the right flag
-        { kind: 'corner', zone: 'area', x1: 308, y1: 8, cx: 270, cy: 56, x2: 182, y2: 42, n: 1 },
-        { kind: 'corner', zone: 'near', x1: 308, y1: 8, cx: 250, cy: 6, x2: 180, y2: 12, n: 1 },
-        // Free kicks from the left
-        { kind: 'freeKick', zone: 'area', x1: 70, y1: 172, cx: 70, cy: 100, x2: 144, y2: 60, n: 5 },
-        { kind: 'freeKick', zone: 'far', x1: 52, y1: 172, cx: 110, cy: 70, x2: 184, y2: 25, n: 1 },
-        // Free kicks from the right
-        { kind: 'freeKick', zone: 'area', x1: 250, y1: 172, cx: 250, cy: 100, x2: 176, y2: 60, n: 4 },
-        { kind: 'freeKick', zone: 'far', x1: 268, y1: 172, cx: 210, cy: 70, x2: 136, y2: 25, n: 1 },
-      ],
-      notes: [
-        {
-          en: '14 of the 19 set pieces went into the middle of the penalty area, and only 1 was scored (78:43, headed from a left-side inswinging corner).',
-          it: '14 palle inattive su 19 sono finite nel mezzo dell’area di rigore e solo 1 è diventata gol (78:43, colpo di testa su calcio d’angolo con traiettoria rientrante da sinistra).',
-        },
-        {
-          en: 'Inswingers were the main delivery.',
-          it: 'La traiettoria rientrante è stata la battuta principale.',
-        },
-        {
-          en: 'Our white-shirted defenders won most of the first contacts.',
-          it: 'I nostri difensori in maglia bianca hanno vinto la maggior parte dei primi contatti.',
-        },
-        {
-          en: 'Both near-post balls came from corners; both far-post balls came from long free kicks.',
-          it: 'Entrambi i palloni sul primo palo sono arrivati da calcio d’angolo; entrambi quelli sul secondo palo da calci di punizione lunghi.',
-        },
-      ],
-      events: [
-        { time: '3:08', kind: 'corner', side: 'R', zone: 'near', delivery: { en: 'Driven, near post', it: 'Tesa sul primo palo' }, outcome: { en: 'Cleared', it: 'Respinto' } },
-        { time: '11:24', kind: 'freeKick', side: 'L', zone: 'area', delivery: { en: '~35 yd outswinger into the area', it: 'Da ~32 m, traiettoria uscente in area' }, outcome: { en: '—', it: '—' } },
-        { time: '15:36', kind: 'freeKick', side: 'R', zone: 'area', delivery: { en: 'Lofted from far out into the area', it: 'Lancio alto da lontano in area' }, outcome: { en: 'Cleared', it: 'Respinto' } },
-        { time: '21:14', kind: 'freeKick', side: 'L', zone: 'far', delivery: { en: 'Long ball from near halfway, far post', it: 'Lancio lungo da quasi metà campo sul secondo palo' }, outcome: { en: '—', it: '—' } },
-        { time: '22:06', kind: 'corner', side: 'L', zone: 'near', delivery: { en: 'Inswinger, near post', it: 'Traiettoria rientrante sul primo palo' }, outcome: { en: 'Cleared', it: 'Respinto' } },
-        { time: '23:28', kind: 'freeKick', side: 'R', zone: 'area', delivery: { en: '35–40 yd outswinger into the area', it: 'Da 32-37 m, traiettoria uscente in area' }, outcome: { en: 'Cleared', it: 'Respinto' } },
-        { time: '31:44', kind: 'corner', side: 'R', zone: 'area', delivery: { en: 'Outswinger into the penalty area', it: 'Traiettoria uscente in area di rigore' }, outcome: { en: 'Cleared', it: 'Respinto' } },
-        { time: '33:52', kind: 'freeKick', side: 'L', zone: 'area', delivery: { en: '~30 yd, dummy run then inswinger into the area', it: 'Da ~27 m, finta di corsa e poi traiettoria rientrante in area' }, outcome: { en: 'Cleared', it: 'Respinto' } },
-        { time: '44:38', kind: 'corner', side: 'L', zone: 'area', delivery: { en: 'Inswinger into the area', it: 'Traiettoria rientrante in area' }, outcome: { en: 'Cleared', it: 'Respinto' } },
-        { time: '49:18', kind: 'freeKick', side: 'L', zone: 'area', delivery: { en: '40–50 yd lofted into the area', it: 'Lancio alto da 37-46 m in area' }, outcome: { en: 'Cleared', it: 'Respinto' } },
-        { time: '52:27', kind: 'freeKick', side: 'R', zone: 'far', delivery: { en: '~35 yd, far post', it: 'Da ~32 m sul secondo palo' }, outcome: { en: '—', it: '—' } },
-        { time: '67:31', kind: 'freeKick', side: 'R', zone: 'area', delivery: { en: '~40 yd into the area', it: 'Da ~37 m in area' }, outcome: { en: '—', it: '—' } },
-        { time: '76:50', kind: 'corner', side: 'L', zone: 'area', delivery: { en: 'Inswinger into the area', it: 'Traiettoria rientrante in area' }, outcome: { en: 'Punched out by the GK', it: 'Respinto di pugno dal portiere' } },
-        { time: '78:43', kind: 'corner', side: 'L', zone: 'area', delivery: { en: 'Inswinger into the area', it: 'Traiettoria rientrante in area' }, outcome: { en: 'Headed GOAL', it: 'Gol di testa' }, goal: true },
-        { time: '83:44', kind: 'freeKick', side: 'L', zone: 'area', delivery: { en: '35–40 yd inswinger into the area', it: 'Da 32-37 m, traiettoria rientrante in area' }, outcome: { en: 'Cleared', it: 'Respinto' } },
-        { time: '84:43', kind: 'freeKick', side: 'L', zone: 'area', delivery: { en: '35–40 yd inswinger into the area', it: 'Da 32-37 m, traiettoria rientrante in area' }, outcome: { en: 'Flicked on (header)', it: 'Deviato di testa' } },
-        { time: '85:05', kind: 'corner', side: 'L', zone: 'area', delivery: { en: 'Inswinger into the area', it: 'Traiettoria rientrante in area' }, outcome: { en: 'Cleared', it: 'Respinto' } },
-        { time: '86:14', kind: 'freeKick', side: 'R', zone: 'area', delivery: { en: '35–40 yd, dummy run then left-foot inswinger into the area', it: 'Da 32-37 m, finta di corsa e traiettoria rientrante di sinistro in area' }, outcome: { en: 'Cleared', it: 'Respinto' } },
-        { time: '100:12', kind: 'corner', side: 'L', zone: 'short', delivery: { en: 'Short corner, then cross into the area', it: 'Schema corto, poi cross in area' }, outcome: { en: 'Cleared', it: 'Respinto' } },
-      ],
+    keyNotesTitle: { en: 'Key notes — 19 set pieces (8 corners, 11 free kicks)', it: 'Note chiave — 19 palle inattive (8 calci d’angolo, 11 punizioni)' },
+    keyNotes: [
+      { en: '14 of the 19 went into the middle of the penalty area, and only 1 was scored (78:43, headed from a left-side inswinging corner).', it: '14 su 19 sono finite nel mezzo dell’area di rigore e solo 1 è diventata gol (78:43, colpo di testa su calcio d’angolo con traiettoria rientrante da sinistra).' },
+      { en: 'By zone: penalty area 14 · near post 2 · far post 2 · short 1 · edge of the box 0.', it: 'Per zona: area di rigore 14 · primo palo 2 · secondo palo 2 · corto 1 · limite dell’area 0.' },
+      { en: 'Inswingers were the main delivery.', it: 'La traiettoria rientrante è stata la battuta principale.' },
+      { en: 'Our white-shirted defenders won most of the first contacts.', it: 'I nostri difensori in maglia bianca hanno vinto la maggior parte dei primi contatti.' },
+      { en: 'Both near-post balls came from corners; both far-post balls came from long free kicks.', it: 'Entrambi i palloni sul primo palo sono arrivati da calcio d’angolo; entrambi quelli sul secondo palo da punizioni lunghe.' },
+    ],
+    corners: {
+      left: {
+        arrows: [
+          { x1: 12, y1: 8, x2: 138, y2: 15, n: 1, nAt: 'end' },
+          { x1: 12, y1: 8, x2: 150, y2: 38, n: 2, nAt: 'end' },
+          { x1: 12, y1: 8, x2: 162, y2: 50, n: 3, nAt: 'end' },
+          { x1: 12, y1: 8, x2: 172, y2: 34, n: 4, nAt: 'end' },
+          { x1: 12, y1: 8, x2: 152, y2: 62, n: 5, nAt: 'end' },
+          { x1: 12, y1: 8, x2: 40, y2: 34, n: 6, nAt: 'end' },
+        ],
+        note: { en: '6 corners: 1 near post, 4 into the area, 1 short', it: '6 calci d’angolo: 1 sul primo palo, 4 in area, 1 corto' },
+        noteTitle: { en: 'From the left:', it: 'Da sinistra:' },
+        orderedNotesTitle: { en: 'In order (yellow numbers on the pitch):', it: 'In ordine (numeri gialli sul campo):' },
+        orderedNotes: [
+          { en: '22:06 — inswinger to the near post, cleared', it: '22:06 — traiettoria rientrante sul primo palo, respinto' },
+          { en: '44:38 — inswinger into the area, cleared', it: '44:38 — traiettoria rientrante in area, respinto' },
+          { en: '76:50 — inswinger into the area, punched out by the GK', it: '76:50 — traiettoria rientrante in area, respinto di pugno dal portiere' },
+          { en: '78:43 — inswinger into the area, headed GOAL', it: '78:43 — traiettoria rientrante in area, gol di testa' },
+          { en: '85:05 — inswinger into the area, cleared', it: '85:05 — traiettoria rientrante in area, respinto' },
+          { en: '100:12 — short corner, then cross into the area, cleared', it: '100:12 — calcio d’angolo battuto corto, poi cross in area, respinto' },
+        ],
+      },
+      right: {
+        arrows: [
+          { x1: 308, y1: 8, x2: 182, y2: 15, n: 1, nAt: 'end' },
+          { x1: 308, y1: 8, x2: 168, y2: 44, n: 2, nAt: 'end' },
+        ],
+        note: { en: '2 corners: 1 near post, 1 into the penalty area', it: '2 calci d’angolo: 1 sul primo palo, 1 in area di rigore' },
+        noteTitle: { en: 'From the right:', it: 'Da destra:' },
+        orderedNotesTitle: { en: 'In order (yellow numbers on the pitch):', it: 'In ordine (numeri gialli sul campo):' },
+        orderedNotes: [
+          { en: '3:08 — driven to the near post, cleared', it: '3:08 — tiro teso sul primo palo, respinto' },
+          { en: '31:44 — outswinger into the penalty area, cleared', it: '31:44 — traiettoria uscente in area di rigore, respinto' },
+        ],
+      },
+    },
+    freeKicks: {
+      left: {
+        arrows: [
+          { x1: 60, y1: 142, x2: 150, y2: 40, n: 1 },
+          { x1: 24, y1: 172, x2: 190, y2: 16, n: 2 },
+          { x1: 85, y1: 123, x2: 162, y2: 46, n: 3 },
+          { x1: 66, y1: 172, x2: 148, y2: 58, n: 4 },
+          { x1: 100, y1: 152, x2: 166, y2: 50, n: 5 },
+          { x1: 78, y1: 154, x2: 144, y2: 52, n: 6 },
+        ],
+        note: { en: '6 free kicks: 5 into the area, 1 to the far post', it: '6 punizioni: 5 in area, 1 sul secondo palo' },
+        noteTitle: { en: 'From the left:', it: 'Da sinistra:' },
+        orderedNotesTitle: { en: 'Left side, in order (yellow numbers on the pitch):', it: 'Lato sinistro, in ordine (numeri gialli sul campo):' },
+        orderedNotes: [
+          { en: '11:24 — about 35 yd, outswinger into the area', it: '11:24 — da circa 32 m, traiettoria uscente in area' },
+          { en: '21:14 — long ball from near halfway, to the far post', it: '21:14 — lancio lungo da quasi metà campo sul secondo palo' },
+          { en: '33:52 — about 30 yd, dummy run then inswinger into the area, cleared', it: '33:52 — da circa 27 m, finta di corsa e poi traiettoria rientrante in area, respinto' },
+          { en: '49:18 — 40–50 yd, lofted into the area, cleared', it: '49:18 — da 37–46 m, lancio alto in area, respinto' },
+          { en: '83:44 — 35–40 yd, inswinger into the area, cleared', it: '83:44 — da 32–37 m, traiettoria rientrante in area, respinto' },
+          { en: '84:43 — 35–40 yd, inswinger into the area, flicked on', it: '84:43 — da 32–37 m, traiettoria rientrante in area, deviato di testa' },
+        ],
+      },
+      right: {
+        arrows: [
+          { x1: 272, y1: 170, x2: 160, y2: 44, n: 1 },
+          { x1: 250, y1: 152, x2: 152, y2: 38, n: 2 },
+          { x1: 292, y1: 142, x2: 130, y2: 16, n: 3 },
+          { x1: 228, y1: 162, x2: 172, y2: 54, n: 4 },
+          { x1: 212, y1: 150, x2: 150, y2: 48, n: 5 },
+        ],
+        note: { en: '5 free kicks: 4 into the area, 1 to the far post', it: '5 punizioni: 4 in area, 1 sul secondo palo' },
+        noteTitle: { en: 'From the right:', it: 'Da destra:' },
+        orderedNotesTitle: { en: 'Right side, in order (yellow numbers on the pitch):', it: 'Lato destro, in ordine (numeri gialli sul campo):' },
+        orderedNotes: [
+          { en: '15:36 — far out, lofted into the area, cleared', it: '15:36 — da lontano, lancio alto in area, respinto' },
+          { en: '23:28 — 35–40 yd, outswinger into the area, cleared', it: '23:28 — da 32–37 m, traiettoria uscente in area, respinto' },
+          { en: '52:27 — about 35 yd, to the far post', it: '52:27 — da circa 32 m, sul secondo palo' },
+          { en: '67:31 — about 40 yd, into the area', it: '67:31 — da circa 37 m, in area' },
+          { en: '86:14 — 35–40 yd, dummy run then left-foot inswinger into the area, cleared', it: '86:14 — da 32–37 m, finta di corsa e poi traiettoria rientrante di sinistro in area, respinto' },
+        ],
+      },
     },
   };
 }

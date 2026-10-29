@@ -1,6 +1,6 @@
 import SetPiecePitch from '../components/SetPiecePitch';
-import SetPieceDiagram from './SetPieceDiagram';
 import type { OppositionSetPieces, SpPanel, SpSection } from '../data/setPieces';
+import { useLanguage } from '../i18n/LanguageContext';
 
 const card: React.CSSProperties = { flex: 1, minWidth: 300, background: 'var(--card-bg, rgba(255,255,255,0.04))', border: '1px solid rgba(127,127,127,0.25)', borderRadius: 10, padding: 14 };
 const noteStyle: React.CSSProperties = { marginTop: 8, padding: 8, borderLeft: '3px solid #2e9e5b', background: 'rgba(46,158,91,0.1)', fontSize: 13 };
@@ -8,16 +8,17 @@ const cell: React.CSSProperties = { padding: 5, borderBottom: '1px solid rgba(12
 const first: React.CSSProperties = { ...cell, textAlign: 'left' };
 
 function Panel({ title, panel }: { title: string; panel?: SpPanel }) {
+  const { t, L } = useLanguage();
   return (
     <div style={card}>
       <h4 style={{ margin: '0 0 8px', fontSize: 12, letterSpacing: 1, opacity: 0.7 }}>{title}</h4>
       <SetPiecePitch panel={panel} label={title} />
-      {panel?.note && <div style={noteStyle}><b>Takers:</b> {panel.note}</div>}
+      {panel?.note && <div style={noteStyle}><b>{panel.noteTitle ? L(panel.noteTitle) : t('spTakers')}</b> {L(panel.note)}</div>}
       {panel?.orderedNotes?.length ? (
         <div style={noteStyle}>
-          <b>{panel.orderedNotesTitle}</b>
+          <b>{L(panel.orderedNotesTitle)}</b>
           <ol style={{ margin: '4px 0 0 18px', padding: 0 }}>
-            {panel.orderedNotes.map((n, i) => <li key={i}>{n}</li>)}
+            {panel.orderedNotes.map((n, i) => <li key={i}>{L(n)}</li>)}
           </ol>
         </div>
       ) : null}
@@ -25,23 +26,26 @@ function Panel({ title, panel }: { title: string; panel?: SpPanel }) {
   );
 }
 
-function Section({ title, kind, data }: { title: string; kind: string; data?: SpSection }) {
+function Section({ kind, data }: { kind: 'corners' | 'freeKicks'; data?: SpSection }) {
+  const { t } = useLanguage();
+  const corners = kind === 'corners';
+  const title = t(corners ? 'spCorners' : 'spFreeKicks');
   return (
     <section style={{ marginTop: 24 }}>
       <div className="section-title">{title}</div>
       <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
-        <Panel title={`LEFT ${title.toUpperCase()}`} panel={data?.left} />
-        <Panel title={`RIGHT ${title.toUpperCase()}`} panel={data?.right} />
+        <Panel title={t(corners ? 'spLeftCorners' : 'spLeftFreeKicks')} panel={data?.left} />
+        <Panel title={t(corners ? 'spRightCorners' : 'spRightFreeKicks')} panel={data?.right} />
       </div>
       <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13, marginTop: 12 }}>
         <thead>
-          <tr><th style={first}>{title} takers</th><th style={cell}>Foot</th><th style={cell}>{kind}</th><th style={cell}>From left</th><th style={cell}>From right</th></tr>
+          <tr><th style={first}>{t(corners ? 'spCornersTakers' : 'spFreeKicksTakers')}</th><th style={cell}>{t('spFoot')}</th><th style={cell}>{title}</th><th style={cell}>{t('spFromLeft')}</th><th style={cell}>{t('spFromRight')}</th></tr>
         </thead>
         <tbody>
-          {data?.takers?.length ? data.takers.map((t) => (
-            <tr key={t.player}><td style={first}>{t.player}</td><td style={cell}>{t.foot}</td><td style={cell}>{t.total}</td><td style={cell}>{t.fromLeft}</td><td style={cell}>{t.fromRight}</td></tr>
+          {data?.takers?.length ? data.takers.map((tk) => (
+            <tr key={tk.player}><td style={first}>{tk.player}</td><td style={cell}>{tk.foot}</td><td style={cell}>{tk.total}</td><td style={cell}>{tk.fromLeft}</td><td style={cell}>{tk.fromRight}</td></tr>
           )) : (
-            <tr><td style={{ ...first, opacity: 0.6 }} colSpan={5}>Not filled in yet</td></tr>
+            <tr><td style={{ ...first, opacity: 0.6 }} colSpan={5}>{t('spNotFilled')}</td></tr>
           )}
         </tbody>
       </table>
@@ -50,16 +54,18 @@ function Section({ title, kind, data }: { title: string; kind: string; data?: Sp
 }
 
 export default function SetPiecesPanel({ data }: { data?: OppositionSetPieces }) {
+  const { L } = useLanguage();
   return (
     <div className="set-pieces-panel">
-      {data?.source ? <p className="video-hint">{data.source}</p> : null}
-      {data?.diagram ? <SetPieceDiagram data={data.diagram} /> : null}
-      {data?.diagram && !data.corners && !data.freeKicks ? null : (
-        <>
-          <Section title="Corners" kind="Corners" data={data?.corners} />
-          <Section title="Free kicks" kind="Free kicks" data={data?.freeKicks} />
-        </>
-      )}
+      {data?.source ? <p className="video-hint">{L(data.source)}</p> : null}
+      {data?.keyNotes?.length ? (
+        <section style={{ marginTop: 16 }}>
+          <div className="section-title">{L(data.keyNotesTitle)}</div>
+          {data.keyNotes.map((n, i) => <div key={i} style={noteStyle}>{L(n)}</div>)}
+        </section>
+      ) : null}
+      <Section kind="corners" data={data?.corners} />
+      <Section kind="freeKicks" data={data?.freeKicks} />
     </div>
   );
 }
