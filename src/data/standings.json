@@ -1834,33 +1834,33 @@
               "date": "2026-10-28",
               "home": "Lecce",
               "away": "Pisa",
-              "score": null,
+              "score": "5-2",
               "ourClub": "pisa"
             },
             {
               "date": "2026-10-28",
               "home": "Cagliari",
               "away": "Lecco",
-              "score": null
+              "score": "4-1"
             },
             {
               "date": "2026-10-28",
               "home": "Empoli",
               "away": "Perugia",
-              "score": null,
+              "score": "1-0",
               "ourClub": "perugia"
             },
             {
               "date": "2026-10-28",
               "home": "Modena",
               "away": "Sampdoria",
-              "score": null
+              "score": "2-2"
             },
             {
               "date": "2026-10-28",
               "home": "Verona",
               "away": "Pro Vercelli",
-              "score": null
+              "score": "0-0"
             },
             {
               "date": "2026-10-28",
@@ -1876,14 +1876,14 @@
               "date": "2026-10-28",
               "home": "Milan",
               "away": "Catanzaro",
-              "score": null,
+              "score": "2-1",
               "ourClub": "catanzaro"
             },
             {
               "date": "2026-10-28",
               "home": "AlbinoLeffe",
               "away": "Avellino",
-              "score": null,
+              "score": "2-1",
               "ourClub": "avellino"
             }
           ],
