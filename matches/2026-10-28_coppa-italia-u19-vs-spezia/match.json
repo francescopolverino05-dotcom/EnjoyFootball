@@ -873,7 +873,26 @@
     }
   ],
   "clips": [],
-  "analysisVideos": [],
+  "analysisVideos": [
+    {
+      "id": "gps-report-full-match",
+      "title": {
+        "en": "K-Sport GPS report — full match",
+        "it": "Report GPS K-Sport — partita intera"
+      },
+      "description": {
+        "en": "SSC Napoli Primavera K-Sport full GPS analytics vs Spezia, Coppa Italia (9 players, 3 pages).",
+        "it": "Report GPS completo K-Sport SSC Napoli Primavera vs Spezia, Coppa Italia (9 giocatori, 3 pagine)."
+      },
+      "videoFile": "gps/Report_GPS_NAPOLI-SPEZIA_2026_10_28.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "gps",
+        "physical"
+      ]
+    }
+  ],
   "clipTabs": {
     "hint": {
       "it": "Clip di riferimento dall'andata (Napoli 3-1 Spezia, 24 ott 2026)",
@@ -1459,6 +1478,137 @@
       "it": "Titolari e panchina dalla distinta ufficiale (Napoli: Marotta capitano, Anic vice; allenatore Nocerino Antonio. Spezia: Vignali capitano, Guidi vice; allenatore Lupoli Arturo). Arbitro: Liotta Antonio (Castellammare di Stabia); assistenti La Regina Steven (Battipaglia), Valcaccia Nicola (Castellammare di Stabia). Stadio G. Piccolo, Cercola (NA), ore 15:00. Napoli 4-3-3, Spezia 5-3-2."
     }
   },
+  "gpsStats": [
+    {
+      "half": {
+        "en": "GPS — Full Match",
+        "it": "GPS — Partita intera"
+      },
+      "summary": {
+        "en": "D'Angelo led distance (13756 m), high intensity (>16 km/h: 2926 m) and density (125 m/min); Anic top metabolic power (11.4 W/kg, 124 m/min). Candela most accelerations (43), D'Angelo most decelerations (69), Esposito most sprint distance (214.99 m >24 km/h). Liccardo top speed (31.28 km/h). Team average 10025 m (9 players tracked).",
+        "it": "D'Angelo distanza (13756 m), alta intensità (>16 km/h: 2926 m) e densità (125 m/min); Anic potenza metabolica (11,4 W/kg, 124 m/min). Candela più accelerazioni (43), D'Angelo più decelerazioni (69), Esposito più distanza in sprint (214,99 m >24 km/h). Liccardo velocità max (31,28 km/h). Media squadra 10025 m (9 giocatori rilevati)."
+      },
+      "players": [
+        {
+          "player": "D'Angelo",
+          "totalDistanceM": 13756,
+          "distancePerMin": 125,
+          "distanceOver16KmhM": 2926.0,
+          "distance20to24KmhM": 854.01,
+          "distanceOver24KmhM": 143.39,
+          "metabolicPowerWkg": 11.5,
+          "accelerationsOver3": 34,
+          "decelerationsUnder3": 69,
+          "maxSpeedKmh": 31.14,
+          "recoveryPct": 61.0
+        },
+        {
+          "player": "De Michele",
+          "totalDistanceM": 12508,
+          "distancePerMin": 115,
+          "distanceOver16KmhM": 1420.0,
+          "distance20to24KmhM": 250.01,
+          "distanceOver24KmhM": 83.45,
+          "metabolicPowerWkg": 10.4,
+          "accelerationsOver3": 36,
+          "decelerationsUnder3": 57,
+          "maxSpeedKmh": 27.65,
+          "recoveryPct": 62.94
+        },
+        {
+          "player": "Candela",
+          "totalDistanceM": 10801,
+          "distancePerMin": 105,
+          "distanceOver16KmhM": 1210.0,
+          "distance20to24KmhM": 333.03,
+          "distanceOver24KmhM": 103.3,
+          "metabolicPowerWkg": 9.7,
+          "accelerationsOver3": 43,
+          "decelerationsUnder3": 62,
+          "maxSpeedKmh": 30.92,
+          "recoveryPct": 69.45
+        },
+        {
+          "player": "Marotta",
+          "totalDistanceM": 10349,
+          "distancePerMin": 101,
+          "distanceOver16KmhM": 799.0,
+          "distance20to24KmhM": 182.59,
+          "distanceOver24KmhM": 35.38,
+          "metabolicPowerWkg": 8.9,
+          "accelerationsOver3": 31,
+          "decelerationsUnder3": 33,
+          "maxSpeedKmh": 28.99,
+          "recoveryPct": 73.86
+        },
+        {
+          "player": "Liccardo",
+          "totalDistanceM": 9536,
+          "distancePerMin": 111,
+          "distanceOver16KmhM": 1339.0,
+          "distance20to24KmhM": 383.66,
+          "distanceOver24KmhM": 190.2,
+          "metabolicPowerWkg": 10.0,
+          "accelerationsOver3": 38,
+          "decelerationsUnder3": 41,
+          "maxSpeedKmh": 31.28,
+          "recoveryPct": 69.76
+        },
+        {
+          "player": "Saviano",
+          "totalDistanceM": 8601,
+          "distancePerMin": 102,
+          "distanceOver16KmhM": 1020.0,
+          "distance20to24KmhM": 243.81,
+          "distanceOver24KmhM": 29.42,
+          "metabolicPowerWkg": 9.0,
+          "accelerationsOver3": 13,
+          "decelerationsUnder3": 24,
+          "maxSpeedKmh": 25.81,
+          "recoveryPct": 71.03
+        },
+        {
+          "player": "Esposito",
+          "totalDistanceM": 8396,
+          "distancePerMin": 100,
+          "distanceOver16KmhM": 1300.0,
+          "distance20to24KmhM": 391.96,
+          "distanceOver24KmhM": 214.99,
+          "metabolicPowerWkg": 9.1,
+          "accelerationsOver3": 35,
+          "decelerationsUnder3": 36,
+          "maxSpeedKmh": 29.47,
+          "recoveryPct": 75.55
+        },
+        {
+          "player": "Anic",
+          "totalDistanceM": 8263,
+          "distancePerMin": 124,
+          "distanceOver16KmhM": 1479.0,
+          "distance20to24KmhM": 502.35,
+          "distanceOver24KmhM": 67.86,
+          "metabolicPowerWkg": 11.4,
+          "accelerationsOver3": 21,
+          "decelerationsUnder3": 28,
+          "maxSpeedKmh": 27.26,
+          "recoveryPct": 62.09
+        },
+        {
+          "player": "Natale",
+          "totalDistanceM": 8014,
+          "distancePerMin": 107,
+          "distanceOver16KmhM": 653.0,
+          "distance20to24KmhM": 144.22,
+          "distanceOver24KmhM": 33.08,
+          "metabolicPowerWkg": 9.7,
+          "accelerationsOver3": 25,
+          "decelerationsUnder3": 22,
+          "maxSpeedKmh": 28.08,
+          "recoveryPct": 69.66
+        }
+      ]
+    }
+  ],
   "video": {
     "fullMatch": "https://vimeo.com/1240362797/037bf47ae3",
     "notes": {
