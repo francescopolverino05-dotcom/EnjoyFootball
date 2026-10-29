@@ -3,13 +3,14 @@ import type {
   OppositionSquadPlayer,
 } from '../types/opposition';
 import {
-  localizePosition,
+  localizePdfPosition,
   localizePreferredFoot,
   sortOppositionSquadByDepth,
 } from '../i18n/positions';
 import type { Locale } from '../i18n/translations';
 import { withGoalkeeperInSystem } from './formationSystem';
 import type { MostSubRow } from './mostSubs';
+import blankPitch from '../assets/blank-pitch.png?inline';
 
 function esc(value: string): string {
   return value
@@ -136,13 +137,13 @@ function renderDepthSection(
   </style>`;
 }
 
-function renderSubsSection(rows: MostSubRow[], labels: OppositionSquadPdfLabels): string {
+function renderSubsSection(rows: MostSubRow[], labels: OppositionSquadPdfLabels, locale: Locale): string {
   if (!rows.length || !labels.subsTitle) return '';
   const body = rows
     .map(
       (r) => `<tr>
         <td class="name">${esc(r.name)}</td>
-        <td>${esc(r.role ?? '—')}</td>
+        <td class="role">${esc(localizePdfPosition(r.role, locale))}</td>
         <td class="meta apps">${esc(String(r.count))}</td>
       </tr>`
     )
@@ -163,6 +164,31 @@ function renderSubsSection(rows: MostSubRow[], labels: OppositionSquadPdfLabels)
       </tbody>
     </table>
   </section>`;
+}
+
+/**
+ * Players with no squad position borrow their usual sub role (from "most subs"),
+ * matched by the short name used in sub notes (e.g. "Ettorre" → Angelo Ettorre).
+ * Ambiguous short names are skipped.
+ */
+function withSubRoleFallback(
+  players: OppositionSquadPlayer[],
+  mostSubs: MostSubRow[]
+): OppositionSquadPlayer[] {
+  const nameParts = (full: string) =>
+    full.toLowerCase().split(/[\s-]+/).filter(Boolean);
+  return players.map((p) => {
+    if (p.position) return p;
+    const parts = nameParts(p.name);
+    const hit = mostSubs.find((s) => {
+      if (!s.role) return false;
+      const needle = s.name.trim().toLowerCase();
+      if (!parts.includes(needle)) return false;
+      const owners = players.filter((o) => nameParts(o.name).includes(needle));
+      return owners.length === 1;
+    });
+    return hit?.role ? { ...p, position: hit.role } : p;
+  });
 }
 
 export interface OppositionSquadPdfOptions {
@@ -194,14 +220,16 @@ export function buildOppositionSquadPdfHtml(
   options?: OppositionSquadPdfOptions
 ): string {
   const locale = options?.locale ?? 'en';
-  const rows = sortOppositionSquadByDepth(players)
+  const rows = sortOppositionSquadByDepth(
+    withSubRoleFallback(players, options?.mostSubs ?? [])
+  )
     .map((p) => {
       const height =
         p.heightCm != null ? `${p.heightCm} ${labels.heightUnit}` : '—';
       return `<tr>
         <td class="num">${p.number != null ? esc(String(p.number)) : '—'}</td>
         <td class="name">${esc(p.name)}</td>
-        <td>${esc(localizePosition(p.position, locale))}</td>
+        <td class="role">${esc(localizePdfPosition(p.position, locale))}</td>
         <td class="meta">${esc(height)}</td>
         <td class="meta">${esc(localizePreferredFoot(p.preferredFoot, locale))}</td>
       </tr>`;
@@ -222,7 +250,7 @@ export function buildOppositionSquadPdfHtml(
       ? renderDepthSection(options.depth, options.teamId, labels, players)
       : '';
 
-  const subsHtml = renderSubsSection((options?.mostSubs ?? []).slice(0, 6), labels);
+  const subsHtml = renderSubsSection((options?.mostSubs ?? []), labels, locale);
 
   return `<!DOCTYPE html>
 <html lang="${locale === 'it' ? 'it' : 'en'}">
@@ -410,6 +438,42 @@ export function buildOppositionSquadPdfHtml(
     .subs-section .apps { width: 80px; text-align: right; }
     .subs-section h2 { font-size: 11pt; margin-bottom: 2px; }
     .subs-section th, .subs-section td { padding: 3px 7px; font-size: 9.5pt; }
+
+    /* --- page 1 redesign: depth left, subs right, 3 blank pitches at bottom --- */
+    .page-1 { display: flex; flex-direction: column; height: 272mm; overflow: hidden; }
+    .page-1 header { margin-bottom: 10px; }
+    .top-row { display: flex; gap: 14px; align-items: stretch; flex: 1 1 0; min-height: 0; margin-bottom: 8px; }
+    .top-left { flex: 0 0 62%; max-width: 62%; display: flex; flex-direction: column; min-height: 0; }
+    .top-left .depth-section, .top-left .pitch-card { flex: 1 1 auto; display: flex; flex-direction: column; min-height: 0; }
+    .top-left .depth-section { margin-bottom: 0; }
+    .top-left.solo { flex: 1 1 auto; max-width: 100%; }
+    .top-right { flex: 1 1 0; min-width: 0; align-self: flex-start; }
+    .top-left .depth-section h2 { margin-bottom: 4px; }
+    .top-left .depth-note { margin-bottom: 8px; }
+    .top-left .pitch { flex: 1 1 auto; height: auto; min-height: 340px; }
+    .top-left .depth-slot { max-width: 140px; }
+    .top-left .depth-label { max-width: 140px; }
+    .top-left .depth-stack { padding: 4px 5px 5px; font-size: 8.5pt; }
+    .top-left .depth-name.primary { font-size: 9pt; }
+    .top-right .subs-section { margin-top: 0; }
+    .top-right .subs-section h2 { font-size: 13pt; margin-bottom: 4px; }
+    .top-right .subs-section table { margin-top: 0; table-layout: fixed; width: 100%; }
+    .top-right .subs-section th:nth-child(1), .top-right .subs-section td:nth-child(1) { width: 32%; }
+    .top-right .subs-section th:nth-child(3), .top-right .subs-section td:nth-child(3) { width: 28%; white-space: nowrap; }
+    .top-right .subs-section th { font-size: 6.5pt; letter-spacing: 0; overflow: visible; vertical-align: bottom; }
+    .top-right .subs-section th, .top-right .subs-section td { padding: 6px 4px; font-size: 10pt; }
+    
+    .draw-row {
+      flex: none;
+      display: flex;
+      gap: 3mm;
+      justify-content: space-between;
+    }
+    .draw-row img { display: block; flex: none; width: calc((100% - 6mm) / 3); height: auto; }
+    .role { line-height: 1.25; }
+    .top-right .subs-section td { vertical-align: middle; }
+    .top-right .subs-section td.role { font-size: 9pt; }
+    .squad-section td.role { width: 34%; }
     @media print {
       body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
       .page-1, .depth-section { break-inside: avoid; page-break-inside: avoid; }
@@ -429,8 +493,15 @@ export function buildOppositionSquadPdfHtml(
     <h1>${esc(teamName)}</h1>
     <p class="meta-line">${esc(labels.generatedLabel)} ${esc(dateLine)}</p>
   </header>
-  ${depthHtml}
-  ${subsHtml}
+  <div class="top-row">
+    <div class="top-left${subsHtml ? '' : ' solo'}">${depthHtml}</div>
+    ${subsHtml ? `<div class="top-right">${subsHtml}</div>` : ''}
+  </div>
+  <div class="draw-row">
+    <img src="${blankPitch}" alt="" />
+    <img src="${blankPitch}" alt="" />
+    <img src="${blankPitch}" alt="" />
+  </div>
 </div>
   <section class="squad-section page-break">
     <header>

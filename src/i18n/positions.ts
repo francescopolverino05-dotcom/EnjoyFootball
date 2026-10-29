@@ -132,3 +132,95 @@ export function localizePreferredFoot(
   if (locale === 'it') return FOOT_IT[key] ?? foot;
   return FOOT_EN[key] ?? foot;
 }
+
+/**
+ * PDF-only role vocabulary. Every input (English codes, Italian abbreviations)
+ * is first normalised to an English code, then rendered strictly per language:
+ * EN → English abbreviations, IT → full Italian words. Side-specific centres
+ * (LCM / RCM) are kept, not collapsed.
+ */
+const PDF_CODE_ALIASES: Record<string, string> = {
+  POR: 'GK',
+  DC: 'CB',
+  DCD: 'CB',
+  DCS: 'CB',
+  LCB: 'CB',
+  RCB: 'CB',
+  TD: 'RB',
+  TS: 'LB',
+  EDD: 'RWB',
+  EDS: 'LWB',
+  ED: 'RM',
+  ES: 'LM',
+  MED: 'CDM',
+  DM: 'CDM',
+  CC: 'CM',
+  CCD: 'CM',
+  CCS: 'CM',
+  TRQ: 'CAM',
+  AM: 'CAM',
+  AD: 'RW',
+  AS: 'LW',
+  ATT: 'ST',
+  LST: 'ST',
+  RST: 'ST',
+  PORTIERE: 'GK',
+  DIFENSORE: 'DF',
+  CENTROCAMPISTA: 'MF',
+  ATTACCANTE: 'FW',
+  ESTERNO: 'W',
+  WINGER: 'W',
+  'TERZINO DX': 'RB',
+  'TERZINO SX': 'LB',
+};
+
+const PDF_ROLE_IT: Record<string, string> = {
+  GK: 'Portiere',
+  CB: 'Difensore centrale',
+  RB: 'Terzino destro',
+  LB: 'Terzino sinistro',
+  RWB: 'Esterno destro',
+  LWB: 'Esterno sinistro',
+  RM: 'Esterno destro',
+  LM: 'Esterno sinistro',
+  CDM: 'Mediano',
+  CM: 'Centrocampista centrale',
+  LCM: 'Mezzala sinistra',
+  RCM: 'Mezzala destra',
+  CAM: 'Trequartista',
+  RW: 'Ala destra',
+  LW: 'Ala sinistra',
+  ST: 'Attaccante',
+  LS: 'Attaccante',
+  RS: 'Attaccante',
+  CF: 'Attaccante',
+  DF: 'Difensore',
+  MF: 'Centrocampista',
+  FW: 'Attaccante',
+  W: 'Esterno',
+};
+
+/** Role label for PDFs: English abbreviations on EN, full Italian words on IT. */
+export function localizePdfPosition(
+  position: string | null | undefined,
+  locale: Locale
+): string {
+  if (position == null || position.trim() === '') return '—';
+  const out: string[] = [];
+  for (const part of position.split(/\s*\/\s*/)) {
+    // Data sometimes carries a note, e.g. "CM (profile)".
+    const m = part.trim().match(/^([^(]*?)\s*(?:\(([^)]*)\))?$/);
+    const base = (m?.[1] ?? part).trim();
+    const note = m?.[2]?.trim();
+    const raw = base.toUpperCase();
+    if (!raw) continue;
+    const code = PDF_CODE_ALIASES[raw] ?? raw;
+    let label = locale === 'it' ? (PDF_ROLE_IT[code] ?? base) : code;
+    if (note) {
+      const n = note.toLowerCase() === 'profile' && locale === 'it' ? 'profilo' : note;
+      label += ` (${n})`;
+    }
+    if (!out.includes(label)) out.push(label);
+  }
+  return out.length ? out.join(' / ') : '—';
+}
