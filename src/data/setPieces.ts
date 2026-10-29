@@ -15,8 +15,30 @@ export interface SpPanel {
   orderedNotes?: string[];
 }
 export interface SpSection { left?: SpPanel; right?: SpPanel; takers?: SpTaker[] }
+export type SpZoneId = 'area' | 'near' | 'far' | 'short' | 'edge';
+export type SpLoc = { en: string; it: string };
+/** One logged set piece. `side` is the side of the pitch it was taken from, goal at the top. */
+export interface SpEvent {
+  time: string;
+  kind: 'corner' | 'freeKick';
+  side: 'L' | 'R';
+  zone: SpZoneId;
+  delivery: SpLoc;
+  outcome: SpLoc;
+  goal?: boolean;
+}
+/** Curved arrow in the 320×190 pitch viewBox: start, control point, end. `n` = how many set pieces it stands for. */
+export interface SpDiagramArrow { kind: 'corner' | 'freeKick'; zone: SpZoneId; x1: number; y1: number; cx: number; cy: number; x2: number; y2: number; n: number }
+/** Delivery-zone diagram + full event list (all set pieces from the reference tape). */
+export interface SpDiagram {
+  counts: Record<SpZoneId, number>;
+  arrows: SpDiagramArrow[];
+  events: SpEvent[];
+  notes: SpLoc[];
+}
 export interface OppositionSetPieces {
   source?: string;
+  diagram?: SpDiagram;
   corners?: SpSection;
   freeKicks?: SpSection;
 }

@@ -1,4 +1,5 @@
 import SetPiecePitch from '../components/SetPiecePitch';
+import SetPieceDiagram from './SetPieceDiagram';
 import type { OppositionSetPieces, SpPanel, SpSection } from '../data/setPieces';
 
 const card: React.CSSProperties = { flex: 1, minWidth: 300, background: 'var(--card-bg, rgba(255,255,255,0.04))', border: '1px solid rgba(127,127,127,0.25)', borderRadius: 10, padding: 14 };
@@ -52,8 +53,13 @@ export default function SetPiecesPanel({ data }: { data?: OppositionSetPieces })
   return (
     <div className="set-pieces-panel">
       {data?.source ? <p className="video-hint">{data.source}</p> : null}
-      <Section title="Corners" kind="Corners" data={data?.corners} />
-      <Section title="Free kicks" kind="Free kicks" data={data?.freeKicks} />
+      {data?.diagram ? <SetPieceDiagram data={data.diagram} /> : null}
+      {data?.diagram && !data.corners && !data.freeKicks ? null : (
+        <>
+          <Section title="Corners" kind="Corners" data={data?.corners} />
+          <Section title="Free kicks" kind="Free kicks" data={data?.freeKicks} />
+        </>
+      )}
     </div>
   );
 }
