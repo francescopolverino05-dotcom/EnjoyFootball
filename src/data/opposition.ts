@@ -3882,6 +3882,22 @@ attachReferencePack('porto', '2026-11-04_uyl-porto-vs-u19', [
   },
 ]);
 
+attachReferencePack('man-city', '2026-11-24_uyl-man-city-vs-u19', [
+  {
+    id: 'man-city-ref-porto',
+    title: {
+      en: 'Porto vs Manchester City 3–1',
+      it: 'Porto vs Manchester City 3–1',
+    },
+    competition: {
+      en: 'UEFA Youth League reference',
+      it: 'Riferimento UEFA Youth League',
+    },
+    score: '3–1',
+    videoFile: 'https://vimeo.com/1225051128/cd33c8c29e',
+  },
+]);
+
 attachReferencePack('club-brugge', '2026-12-08_uyl-u19-vs-club-brugge', [
   {
     id: 'brugge-ref-inter',
