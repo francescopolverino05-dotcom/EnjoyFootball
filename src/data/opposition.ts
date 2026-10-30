@@ -3015,7 +3015,7 @@ if (monopoli) {
  * Monopoli set pieces — all 19 from the reference tape (8 corners, 11 free kicks), logged by Francesco.
  * Same shape as Spezia's panels. Sides are as seen attacking the goal at the top; numbers on the pitch match the ordered list.
  * Zones: area 14 · near post 2 · far post 2 · short 1 · edge of box 0. Free-kick origins are drawn at the distance noted (capped at the bottom edge for 40–50 yd and halfway balls).
- * Takers: Positano on the left (corners and free kicks); corners per Francesco's multi-game list (left: Šedvartas, Lanza; right: Lanza, Ziedelis; no per-event attribution); right free kicks Ziedelis (#7, left-footed, 86:14) and #10 (Positano, 23:28) — only those two mapped, the other three right FKs have no logged taker.
+ * Takers: per-game counts from Francesco's multi-game list (corners and free kicks); no per-event attribution.
  */
 if (monopoli) {
   monopoli.setPieces = {
@@ -3084,8 +3084,11 @@ if (monopoli) {
           { x1: 100, y1: 152, x2: 166, y2: 50, n: 5 },
           { x1: 78, y1: 154, x2: 144, y2: 52, n: 6 },
         ],
-        note: { en: 'Positano ×6 (5 into the area, 1 to the far post)', it: 'Positano ×6 (5 in area, 1 sul secondo palo)' },
-        noteTitle: { en: 'Taker (left):', it: 'Battitore (sinistra):' },
+        note: {
+          en: 'Positano: 1 vs Ascoli, 1 vs Benevento.',
+          it: 'Positano: 1 contro l’Ascoli, 1 contro il Benevento.',
+        },
+        noteTitle: { en: 'Takers (left):', it: 'Battitori (sinistra):' },
         orderedNotesTitle: { en: 'Left side, in order (yellow numbers on the pitch):', it: 'Lato sinistro, in ordine (numeri gialli sul campo):' },
         orderedNotes: [
           { en: '11:24 — about 35 yd, outswinger into the area', it: '11:24 — da circa 32 m, traiettoria uscente in area' },
@@ -3105,22 +3108,22 @@ if (monopoli) {
           { x1: 212, y1: 150, x2: 150, y2: 48, n: 5 },
         ],
         note: {
-          en: 'Ziedelis (#7, left-footed): the inswinger from right by the byline near the box. #10 Positano: the outswinger from further out, near the centre of the pitch. Other right-side kicks: taker not logged.',
-          it: 'Ziedelis (n. 7, mancino): la battuta rientrante da destra, vicino alla linea di fondo e all’area. N. 10 Positano: la battuta uscente da più lontano, vicino al centro del campo. Altre punizioni da destra: battitore non registrato.',
+          en: 'Positano: 1 vs Ascoli. Ziedelis: 1 vs Ascoli.',
+          it: 'Positano: 1 contro l’Ascoli. Ziedelis: 1 contro l’Ascoli.',
         },
         noteTitle: { en: 'Takers (right):', it: 'Battitori (destra):' },
         orderedNotesTitle: { en: 'Right side, in order (yellow numbers on the pitch):', it: 'Lato destro, in ordine (numeri gialli sul campo):' },
         orderedNotes: [
           { en: '15:36 — far out, lofted into the area, cleared', it: '15:36 — da lontano, lancio alto in area, respinto' },
-          { en: '23:28 — #10 Positano, 35–40 yd, outswinger into the area, cleared', it: '23:28 — n. 10 Positano, da 32–37 m, traiettoria uscente in area, respinto' },
+          { en: '23:28 — 35–40 yd, outswinger into the area, cleared', it: '23:28 — da 32–37 m, traiettoria uscente in area, respinto' },
           { en: '52:27 — about 35 yd, to the far post', it: '52:27 — da circa 32 m, sul secondo palo' },
           { en: '67:31 — about 40 yd, into the area', it: '67:31 — da circa 37 m, in area' },
-          { en: '86:14 — #7 Ziedelis, 35–40 yd, dummy run then left-foot inswinger into the area, cleared', it: '86:14 — n. 7 Ziedelis, da 32–37 m, finta di corsa e poi traiettoria rientrante di sinistro in area, respinto' },
+          { en: '86:14 — 35–40 yd, dummy run then left-foot inswinger into the area, cleared', it: '86:14 — da 32–37 m, finta di corsa e poi traiettoria rientrante di sinistro in area, respinto' },
         ],
       },
       takers: [
-        { player: 'Positano', foot: { en: 'Both feet', it: 'Ambidestro' }, total: 7, fromLeft: 6, fromRight: 1 },
-        { player: 'Ziedelis', foot: { en: 'Left', it: 'Sinistro' }, total: 1, fromLeft: 0, fromRight: 1 },
+        { player: 'Positano', foot: { en: 'Both feet', it: 'Ambidestro' }, total: 3, fromLeft: 2, fromRight: 1 },
+        { player: 'Ziedelis', foot: { en: 'Both feet', it: 'Ambidestro' }, total: 1, fromLeft: 0, fromRight: 1 },
       ],
     },
   };
