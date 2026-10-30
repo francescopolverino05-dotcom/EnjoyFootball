@@ -137,8 +137,17 @@ function renderDepthSection(
   </style>`;
 }
 
-function renderSubsSection(rows: MostSubRow[], labels: OppositionSquadPdfLabels, locale: Locale): string {
-  if (!rows.length || !labels.subsTitle) return '';
+/** Page-1 "most subbed on" table is capped at the top 12 (rows arrive sorted by appearances, then name). */
+const PAGE1_SUBS_CAP = 12;
+
+function renderSubsSection(
+  allRows: MostSubRow[],
+  labels: OppositionSquadPdfLabels,
+  locale: Locale,
+  cap?: number
+): string {
+  if (!allRows.length || !labels.subsTitle) return '';
+  const rows = cap != null ? allRows.slice(0, cap) : allRows;
   const body = rows
     .map(
       (r) => `<tr>
@@ -250,7 +259,12 @@ export function buildOppositionSquadPdfHtml(
       ? renderDepthSection(options.depth, options.teamId, labels, players)
       : '';
 
-  const subsHtml = renderSubsSection((options?.mostSubs ?? []), labels, locale);
+  const subsHtml = renderSubsSection(
+    options?.mostSubs ?? [],
+    labels,
+    locale,
+    depthHtml ? PAGE1_SUBS_CAP : undefined
+  );
 
   return `<!DOCTYPE html>
 <html lang="${locale === 'it' ? 'it' : 'en'}">
@@ -258,7 +272,7 @@ export function buildOppositionSquadPdfHtml(
   <meta charset="utf-8" />
   <title>${esc(teamName)} — ${esc(labels.title)}</title>
   <style>
-    @page { margin: 12mm 12mm; size: A4; }
+    @page { margin: 9mm 11mm; size: A4 landscape; }
     * { box-sizing: border-box; }
     body {
       margin: 0;
@@ -474,6 +488,39 @@ export function buildOppositionSquadPdfHtml(
     .top-right .subs-section td { vertical-align: middle; }
     .top-right .subs-section td.role { font-size: 9pt; }
     .squad-section td.role { width: 34%; }
+
+    /* --- A4 landscape: depth pitch left, subs top-left of a 2x2 grid on the right, 3 blank vertical pitches --- */
+    body { font-size: 10pt; }
+    .page-1 { display: grid; grid-template-columns: 1fr 63mm 63mm; grid-template-rows: auto 84mm 84mm; column-gap: 4mm; row-gap: 3mm; height: 190mm; align-content: start; overflow: visible; }
+    .page-1 header { grid-column: 1 / -1; display: flex; align-items: baseline; gap: 14px; margin-bottom: 0; }
+    .page-1 header .eyebrow { order: 3; margin: 0 0 0 auto; }
+    .page-1 header h1 { font-size: 17pt; }
+    .page-1 header .meta-line { margin: 0; order: 2; }
+    .top-row { display: contents; }
+    .top-left { grid-column: 1; grid-row: 2 / 4; max-width: none; flex: none; min-height: 0; margin-right: 4mm; }
+    .top-right { grid-column: 2; grid-row: 2; max-width: none; flex: none; align-self: stretch; overflow: hidden; }
+    .draw-row { display: contents; }
+    .draw-row img { width: 63mm; height: 84mm; display: block; }
+    .draw-row img:nth-child(1) { grid-column: 3; grid-row: 2; }
+    .draw-row img:nth-child(2) { grid-column: 2; grid-row: 3; }
+    .draw-row img:nth-child(3) { grid-column: 3; grid-row: 3; }
+    .top-right .subs-section h2 { font-size: 11pt; margin-bottom: 2px; }
+    .top-right .subs-section th, .top-right .subs-section td { padding: 3.6px 3px; font-size: 8.5pt; line-height: 1.2; }
+    .top-right .subs-section td.role { font-size: 7.5pt; }
+    .top-right .subs-section th { font-size: 5.5pt; letter-spacing: 0; }
+    .top-right .subs-section th:nth-child(1), .top-right .subs-section td:nth-child(1) { width: 27%; }
+    .top-right .subs-section th:nth-child(2), .top-right .subs-section td:nth-child(2) { width: 46%; text-align: center; }
+    .top-right .subs-section th:nth-child(3), .top-right .subs-section td:nth-child(3) { width: 27%; text-align: right; white-space: nowrap; }
+    .squad-section header { display: flex; align-items: baseline; gap: 14px; margin-bottom: 6px; }
+    .squad-section header .eyebrow { order: 3; margin: 0 0 0 auto; }
+    .squad-section header .meta-line { margin: 0; order: 2; }
+    .squad-section td, .squad-section th { padding: 2.6px 8px; font-size: 9pt; }
+    .squad-section table { table-layout: fixed; }
+    .squad-section th:nth-child(1), .squad-section td:nth-child(1) { width: 6%; }
+    .squad-section th:nth-child(2), .squad-section td:nth-child(2) { width: 28%; }
+    .squad-section th:nth-child(3), .squad-section td:nth-child(3) { width: 32%; text-align: center; }
+    .squad-section th:nth-child(4), .squad-section td:nth-child(4) { width: 17%; }
+    .squad-section th:nth-child(5), .squad-section td:nth-child(5) { width: 17%; }
     @media print {
       body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
       .page-1, .depth-section { break-inside: avoid; page-break-inside: avoid; }

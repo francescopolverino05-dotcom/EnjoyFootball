@@ -3019,7 +3019,7 @@ if (monopoli) {
  * Monopoli set pieces — all 19 from the reference tape (8 corners, 11 free kicks), logged by Francesco.
  * Same shape as Spezia's panels. Sides are as seen attacking the goal at the top; numbers on the pitch match the ordered list.
  * Zones: area 14 · near post 2 · far post 2 · short 1 · edge of box 0. Free-kick origins are drawn at the distance noted (capped at the bottom edge for 40–50 yd and halfway balls).
- * Takers were not logged, so the taker tables stay empty.
+ * Takers: Positano on the left (corners and free kicks); right-side takers not logged yet.
  */
 if (monopoli) {
   monopoli.setPieces = {
@@ -3041,8 +3041,8 @@ if (monopoli) {
           { x1: 12, y1: 8, x2: 152, y2: 62, n: 5, nAt: 'end' },
           { x1: 12, y1: 8, x2: 40, y2: 34, n: 6, nAt: 'end' },
         ],
-        note: { en: '6 corners: 1 near post, 4 into the area, 1 short', it: '6 calci d’angolo: 1 sul primo palo, 4 in area, 1 corto' },
-        noteTitle: { en: 'From the left:', it: 'Da sinistra:' },
+        note: { en: 'Positano ×6 (1 near post, 4 into the area, 1 short)', it: 'Positano ×6 (1 sul primo palo, 4 in area, 1 corto)' },
+        noteTitle: { en: 'Taker (left):', it: 'Battitore (sinistra):' },
         orderedNotesTitle: { en: 'In order (yellow numbers on the pitch):', it: 'In ordine (numeri gialli sul campo):' },
         orderedNotes: [
           { en: '22:06 — inswinger to the near post, cleared', it: '22:06 — traiettoria rientrante sul primo palo, respinto' },
@@ -3066,6 +3066,7 @@ if (monopoli) {
           { en: '31:44 — outswinger into the penalty area, cleared', it: '31:44 — traiettoria uscente in area di rigore, respinto' },
         ],
       },
+      takers: [{ player: 'Positano', foot: { en: 'Both feet', it: 'Ambidestro' }, total: 6, fromLeft: 6, fromRight: 0 }],
     },
     freeKicks: {
       left: {
@@ -3077,8 +3078,8 @@ if (monopoli) {
           { x1: 100, y1: 152, x2: 166, y2: 50, n: 5 },
           { x1: 78, y1: 154, x2: 144, y2: 52, n: 6 },
         ],
-        note: { en: '6 free kicks: 5 into the area, 1 to the far post', it: '6 punizioni: 5 in area, 1 sul secondo palo' },
-        noteTitle: { en: 'From the left:', it: 'Da sinistra:' },
+        note: { en: 'Positano ×6 (5 into the area, 1 to the far post)', it: 'Positano ×6 (5 in area, 1 sul secondo palo)' },
+        noteTitle: { en: 'Taker (left):', it: 'Battitore (sinistra):' },
         orderedNotesTitle: { en: 'Left side, in order (yellow numbers on the pitch):', it: 'Lato sinistro, in ordine (numeri gialli sul campo):' },
         orderedNotes: [
           { en: '11:24 — about 35 yd, outswinger into the area', it: '11:24 — da circa 32 m, traiettoria uscente in area' },
@@ -3108,6 +3109,7 @@ if (monopoli) {
           { en: '86:14 — 35–40 yd, dummy run then left-foot inswinger into the area, cleared', it: '86:14 — da 32–37 m, finta di corsa e poi traiettoria rientrante di sinistro in area, respinto' },
         ],
       },
+      takers: [{ player: 'Positano', foot: { en: 'Both feet', it: 'Ambidestro' }, total: 6, fromLeft: 6, fromRight: 0 }],
     },
   };
 }

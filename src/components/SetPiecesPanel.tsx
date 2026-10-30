@@ -27,7 +27,7 @@ function Panel({ title, panel }: { title: string; panel?: SpPanel }) {
 }
 
 function Section({ kind, data }: { kind: 'corners' | 'freeKicks'; data?: SpSection }) {
-  const { t } = useLanguage();
+  const { t, L } = useLanguage();
   const corners = kind === 'corners';
   const title = t(corners ? 'spCorners' : 'spFreeKicks');
   return (
@@ -43,7 +43,7 @@ function Section({ kind, data }: { kind: 'corners' | 'freeKicks'; data?: SpSecti
         </thead>
         <tbody>
           {data?.takers?.length ? data.takers.map((tk) => (
-            <tr key={tk.player}><td style={first}>{tk.player}</td><td style={cell}>{tk.foot}</td><td style={cell}>{tk.total}</td><td style={cell}>{tk.fromLeft}</td><td style={cell}>{tk.fromRight}</td></tr>
+            <tr key={tk.player}><td style={first}>{tk.player}</td><td style={cell}>{L(tk.foot)}</td><td style={cell}>{tk.total}</td><td style={cell}>{tk.fromLeft}</td><td style={cell}>{tk.fromRight}</td></tr>
           )) : (
             <tr><td style={{ ...first, opacity: 0.6 }} colSpan={5}>{t('spNotFilled')}</td></tr>
           )}

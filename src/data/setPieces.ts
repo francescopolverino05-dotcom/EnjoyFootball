@@ -8,7 +8,7 @@ import type { Localized } from '../i18n/translations';
  */
 export interface SpZone { x: number; y: number; width: number; height: number; opacity?: number }
 export interface SpArrow { x1: number; y1: number; x2: number; y2: number; n?: number; nAt?: 'start' | 'end' }
-export interface SpTaker { player: string; foot: string; total: number; fromLeft: number; fromRight: number }
+export interface SpTaker { player: string; foot: SpText; total: number; fromLeft: number; fromRight: number }
 /** Plain string (shown as-is in both languages) or {en,it}. */
 export type SpText = Localized;
 export interface SpPanel {
