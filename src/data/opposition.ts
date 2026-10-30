@@ -3035,7 +3035,6 @@ if (monopoli) {
           { x1: 12, y1: 8, x2: 162, y2: 50, n: 3, nAt: 'end' },
           { x1: 12, y1: 8, x2: 172, y2: 34, n: 4, nAt: 'end' },
           { x1: 12, y1: 8, x2: 152, y2: 62, n: 5, nAt: 'end' },
-          { x1: 12, y1: 8, x2: 40, y2: 34, n: 6, nAt: 'end' },
         ],
         note: {
           en: 'Šedvartas: 1 vs Benevento (goal). Lanza: 2 vs Ascoli.',
@@ -3049,13 +3048,13 @@ if (monopoli) {
           { en: '76:50 — inswinger into the area, punched out by the GK', it: '76:50 — traiettoria rientrante in area, respinto di pugno dal portiere' },
           { en: '78:43 — inswinger into the area, headed GOAL', it: '78:43 — traiettoria rientrante in area, gol di testa' },
           { en: '85:05 — inswinger into the area, cleared', it: '85:05 — traiettoria rientrante in area, respinto' },
-          { en: '100:12 — short corner, then cross into the area, cleared', it: '100:12 — calcio d’angolo battuto corto, poi cross in area, respinto' },
         ],
       },
       right: {
         arrows: [
           { x1: 308, y1: 8, x2: 182, y2: 15, n: 1, nAt: 'end' },
           { x1: 308, y1: 8, x2: 168, y2: 44, n: 2, nAt: 'end' },
+          { x1: 308, y1: 8, x2: 280, y2: 34, n: 3, nAt: 'end' },
         ],
         note: {
           en: 'Lanza: 1 vs Spezia (short combination). Ziedelis: 2 vs Ascoli, 1 vs Benevento.',
@@ -3066,6 +3065,7 @@ if (monopoli) {
         orderedNotes: [
           { en: '3:08 — driven to the near post, cleared', it: '3:08 — tiro teso sul primo palo, respinto' },
           { en: '31:44 — outswinger into the penalty area, cleared', it: '31:44 — traiettoria uscente in area di rigore, respinto' },
+          { en: '100:12 — short corner, then cross into the area, cleared', it: '100:12 — calcio d’angolo battuto corto, poi cross in area, respinto' },
         ],
       },
       takers: [
