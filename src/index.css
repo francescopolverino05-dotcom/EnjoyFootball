@@ -5684,3 +5684,99 @@ a.gacon-ind-row:hover {
   text-align: right;
   opacity: 0.7;
 }
+
+/* Site-wide Vimeo clip viewer (custom fullscreen wrapper) */
+.clip-viewer {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  background: #05070b;
+  color: #fff;
+  outline: none;
+}
+.clip-viewer__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+}
+.clip-viewer__title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  min-width: 0;
+}
+.clip-viewer__count {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  opacity: 0.9;
+}
+.clip-viewer__name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.clip-viewer__actions {
+  display: flex;
+  gap: 8px;
+}
+.clip-viewer__actions button {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font: inherit;
+}
+.clip-viewer__stage {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  padding: 0 8px;
+}
+.clip-viewer__video {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clip-viewer__video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #000;
+}
+.clip-viewer__nav {
+  flex: 0 0 56px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  font-size: 40px;
+  cursor: pointer;
+}
+.clip-viewer__nav:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.clip-viewer__hint {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.6;
+  padding: 8px;
+}
+@media (max-width: 640px) {
+  .clip-viewer__nav {
+    flex-basis: 36px;
+    font-size: 30px;
+  }
+  .clip-viewer__hint {
+    display: none;
+  }
+}

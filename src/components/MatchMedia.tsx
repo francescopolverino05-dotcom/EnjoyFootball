@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { collectClipGroup, openClipViewer } from '../utils/clipViewerStore';
 import {
   sessionMediaUrl,
   isVimeoUrl,
@@ -47,7 +48,7 @@ export default function MatchMedia({
   fullHeight = false,
   autoload = false,
 }: MatchMediaProps) {
-  const [playing, setPlaying] = useState(autoload);
+  const [playing] = useState(autoload);
 
   if (isVimeoUrl(src)) {
     const embed = vimeoEmbedUrl(src);
@@ -63,7 +64,12 @@ export default function MatchMedia({
           <button
             type="button"
             className="vimeo-play-button"
-            onClick={() => setPlaying(true)}
+            data-clip-src={src}
+            data-clip-title={title || ''}
+            onClick={(e) => {
+              const { clips, index } = collectClipGroup(e.currentTarget);
+              openClipViewer(clips, index);
+            }}
             aria-label={playLabel}
           >
             <span className="vimeo-poster vimeo-poster--empty" />

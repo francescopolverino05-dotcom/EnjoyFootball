@@ -5,6 +5,7 @@ import LeagueMatchStatsPage from './pages/LeagueMatchStatsPage';
 import AppNav from './components/AppNav';
 import GlobalSearch from './components/GlobalSearch';
 import LanguageToggle from './components/LanguageToggle';
+import ClipViewer from './components/ClipViewer';
 import PasswordGate from './components/PasswordGate';
 import CalendarPage from './pages/CalendarPage';
 import HomePage from './pages/HomePage';
@@ -45,6 +46,7 @@ export default function App() {
           element={<LeagueMatchStatsPage />}
         />
       </Routes>
+      <ClipViewer />
     </PasswordGate>
   );
 }
