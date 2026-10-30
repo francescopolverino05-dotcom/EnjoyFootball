@@ -3019,7 +3019,7 @@ if (monopoli) {
  * Monopoli set pieces — all 19 from the reference tape (8 corners, 11 free kicks), logged by Francesco.
  * Same shape as Spezia's panels. Sides are as seen attacking the goal at the top; numbers on the pitch match the ordered list.
  * Zones: area 14 · near post 2 · far post 2 · short 1 · edge of box 0. Free-kick origins are drawn at the distance noted (capped at the bottom edge for 40–50 yd and halfway balls).
- * Takers: Positano on the left (corners and free kicks); right-side takers not logged yet.
+ * Takers: Positano on the left (corners and free kicks); right corners Lanza (#3, played short); right free kicks Ziedelis (#7, left-footed, 86:14) and #10 (Positano, 23:28) — only those two mapped, the other three right FKs have no logged taker.
  */
 if (monopoli) {
   monopoli.setPieces = {
@@ -3058,15 +3058,18 @@ if (monopoli) {
           { x1: 308, y1: 8, x2: 182, y2: 15, n: 1, nAt: 'end' },
           { x1: 308, y1: 8, x2: 168, y2: 44, n: 2, nAt: 'end' },
         ],
-        note: { en: '2 corners: 1 near post, 1 into the penalty area', it: '2 calci d’angolo: 1 sul primo palo, 1 in area di rigore' },
-        noteTitle: { en: 'From the right:', it: 'Da destra:' },
+        note: { en: 'Lanza (#3), played short. Logged: 1 near post, 1 into the penalty area.', it: 'Lanza (n. 3), battuti corti. Registrati: 1 sul primo palo, 1 in area di rigore.' },
+        noteTitle: { en: 'Taker (right):', it: 'Battitore (destra):' },
         orderedNotesTitle: { en: 'In order (yellow numbers on the pitch):', it: 'In ordine (numeri gialli sul campo):' },
         orderedNotes: [
           { en: '3:08 — driven to the near post, cleared', it: '3:08 — tiro teso sul primo palo, respinto' },
           { en: '31:44 — outswinger into the penalty area, cleared', it: '31:44 — traiettoria uscente in area di rigore, respinto' },
         ],
       },
-      takers: [{ player: 'Positano', foot: { en: 'Both feet', it: 'Ambidestro' }, total: 6, fromLeft: 6, fromRight: 0 }],
+      takers: [
+        { player: 'Positano', foot: { en: 'Both feet', it: 'Ambidestro' }, total: 6, fromLeft: 6, fromRight: 0 },
+        { player: 'Lanza', foot: { en: 'Left', it: 'Sinistro' }, total: 2, fromLeft: 0, fromRight: 2 },
+      ],
     },
     freeKicks: {
       left: {
@@ -3098,18 +3101,24 @@ if (monopoli) {
           { x1: 228, y1: 162, x2: 172, y2: 54, n: 4 },
           { x1: 212, y1: 150, x2: 150, y2: 48, n: 5 },
         ],
-        note: { en: '5 free kicks: 4 into the area, 1 to the far post', it: '5 punizioni: 4 in area, 1 sul secondo palo' },
-        noteTitle: { en: 'From the right:', it: 'Da destra:' },
+        note: {
+          en: 'Ziedelis (#7, left-footed): the inswinger from right by the byline near the box. #10 Positano: the outswinger from further out, near the centre of the pitch. Other right-side kicks: taker not logged.',
+          it: 'Ziedelis (n. 7, mancino): la battuta rientrante da destra, vicino alla linea di fondo e all’area. N. 10 Positano: la battuta uscente da più lontano, vicino al centro del campo. Altre punizioni da destra: battitore non registrato.',
+        },
+        noteTitle: { en: 'Takers (right):', it: 'Battitori (destra):' },
         orderedNotesTitle: { en: 'Right side, in order (yellow numbers on the pitch):', it: 'Lato destro, in ordine (numeri gialli sul campo):' },
         orderedNotes: [
           { en: '15:36 — far out, lofted into the area, cleared', it: '15:36 — da lontano, lancio alto in area, respinto' },
-          { en: '23:28 — 35–40 yd, outswinger into the area, cleared', it: '23:28 — da 32–37 m, traiettoria uscente in area, respinto' },
+          { en: '23:28 — #10 Positano, 35–40 yd, outswinger into the area, cleared', it: '23:28 — n. 10 Positano, da 32–37 m, traiettoria uscente in area, respinto' },
           { en: '52:27 — about 35 yd, to the far post', it: '52:27 — da circa 32 m, sul secondo palo' },
           { en: '67:31 — about 40 yd, into the area', it: '67:31 — da circa 37 m, in area' },
-          { en: '86:14 — 35–40 yd, dummy run then left-foot inswinger into the area, cleared', it: '86:14 — da 32–37 m, finta di corsa e poi traiettoria rientrante di sinistro in area, respinto' },
+          { en: '86:14 — #7 Ziedelis, 35–40 yd, dummy run then left-foot inswinger into the area, cleared', it: '86:14 — n. 7 Ziedelis, da 32–37 m, finta di corsa e poi traiettoria rientrante di sinistro in area, respinto' },
         ],
       },
-      takers: [{ player: 'Positano', foot: { en: 'Both feet', it: 'Ambidestro' }, total: 6, fromLeft: 6, fromRight: 0 }],
+      takers: [
+        { player: 'Positano', foot: { en: 'Both feet', it: 'Ambidestro' }, total: 7, fromLeft: 6, fromRight: 1 },
+        { player: 'Ziedelis', foot: { en: 'Left', it: 'Sinistro' }, total: 1, fromLeft: 0, fromRight: 1 },
+      ],
     },
   };
 }
