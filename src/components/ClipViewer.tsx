@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
+import Player from '@vimeo/player';
 import { useLanguage } from '../i18n/LanguageContext';
 import {
   closeClipViewer,
@@ -11,7 +12,8 @@ import { vimeoEmbedUrl } from '../utils/mediaUrl';
  * Site-wide Vimeo clip viewer. A single wrapper element holds the iframe, the
  * prev/next buttons and the title/counter, so fullscreen is requested on OUR
  * container (not the iframe) and persists while the clip is swapped.
- * ArrowRight/ArrowLeft cycle through the clips of the current group.
+ * ArrowDown/ArrowUp go to the next/previous clip of the current group;
+ * ArrowRight/ArrowLeft seek ±5 s through the Vimeo Player SDK.
  */
 export default function ClipViewer() {
   const viewer = useClipViewerState();
@@ -24,6 +26,8 @@ function ClipViewerInner() {
   const { t } = useLanguage();
   const wrapRef = useRef<HTMLDivElement>(null);
   const [isFs, setIsFs] = useState(false);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const playerRef = useRef<Player | null>(null);
   const clips = viewer?.clips ?? [];
   const index = viewer?.index ?? 0;
   const clip = clips[index];
@@ -46,12 +50,35 @@ function ClipViewerInner() {
   // Keyboard: arrows cycle clips, Esc leaves fullscreen first, then closes.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'ArrowRight') {
+      const seek = (delta: number) => {
+        const pl = playerRef.current;
+        if (!pl) return;
+        void pl
+          .getCurrentTime()
+          .then((cur) => pl.setCurrentTime(Math.max(0, cur + delta)))
+          .catch(() => undefined);
+      };
+      if (e.key === 'ArrowDown') {
         e.preventDefault();
         stepClipViewer(1);
-      } else if (e.key === 'ArrowLeft') {
+      } else if (e.key === 'ArrowUp') {
         e.preventDefault();
         stepClipViewer(-1);
+      } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        seek(5);
+      } else if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        seek(-5);
+      } else if (e.key === ' ' && !(e.target instanceof HTMLButtonElement)) {
+        e.preventDefault();
+        const pl = playerRef.current;
+        if (pl) {
+          void pl
+            .getPaused()
+            .then((paused) => (paused ? pl.play() : pl.pause()))
+            .catch(() => undefined);
+        }
       } else if (e.key === 'Escape') {
         if (!document.fullscreenElement) closeClipViewer();
       } else if ((e.key === 'f' || e.key === 'F') && !e.metaKey && !e.ctrlKey) {
@@ -154,6 +181,12 @@ function ClipViewerInner() {
           {embedSrc ? (
             <iframe
               key={clip.src}
+              ref={iframeRef}
+              onLoad={() => {
+                if (iframeRef.current) {
+                  playerRef.current = new Player(iframeRef.current);
+                }
+              }}
               src={embedSrc}
               title={clip.title}
               allow="autoplay; picture-in-picture; encrypted-media"

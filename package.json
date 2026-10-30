@@ -18,6 +18,7 @@
     "publish-clips": "node scripts/publish-clips.mjs"
   },
   "dependencies": {
+    "@vimeo/player": "^2.30.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.0"
