@@ -3624,7 +3624,38 @@ attachReferencePack('monopoli', '2026-10-31_campionato-monopoli-vs-u19', [
   },
 ]);
 
+attachReferencePack('perugia', '2026-11-21_campionato-u19-vs-perugia', [
+  {
+    id: 'perugia-ref-frosinone',
+    title: {
+      en: 'Perugia vs Frosinone 5–0',
+      it: 'Perugia vs Frosinone 5–0',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 6',
+      it: 'Primavera 2 · Giornata 6',
+    },
+    score: '5–0',
+    date: '2026-10-24',
+    videoFile: 'https://vimeo.com/1241220538/3af1ec3a3c',
+  },
+]);
+
 attachReferencePack('frosinone', '2026-11-07_campionato-u19-vs-frosinone', [
+  {
+    id: 'frosinone-ref-perugia',
+    title: {
+      en: 'Perugia vs Frosinone 5–0',
+      it: 'Perugia vs Frosinone 5–0',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 6',
+      it: 'Primavera 2 · Giornata 6',
+    },
+    score: '5–0',
+    date: '2026-10-24',
+    videoFile: 'https://vimeo.com/1241220538/3af1ec3a3c',
+  },
   {
     id: 'frosinone-ref-cosenza',
     title: {
@@ -3637,6 +3668,20 @@ attachReferencePack('frosinone', '2026-11-07_campionato-u19-vs-frosinone', [
     },
     score: '1–2',
     videoFile: 'https://vimeo.com/1237876189/9c9f91db5c',
+  },
+  {
+    id: 'frosinone-ref-palermo',
+    title: {
+      en: 'Frosinone vs Palermo 0–0',
+      it: 'Frosinone vs Palermo 0–0',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 4',
+      it: 'Primavera 2 · Giornata 4',
+    },
+    score: '0–0',
+    date: '2026-10-10',
+    videoFile: 'https://vimeo.com/1241209324/e5d2692e1e',
   },
 ]);
 
@@ -3889,7 +3934,7 @@ attachReferencePack(
         en: 'Opposition studio report (Avversari → Studio Report).',
         it: 'Studio report avversario (Avversari → Studio Report).',
       },
-      videoFile: 'https://vimeo.com/1240476372/f2e0345617',
+      videoFile: 'https://vimeo.com/1241228015/386c5aec76',
       tags: ['vimeo', 'opposition', 'studio-report'],
     },
   ]
