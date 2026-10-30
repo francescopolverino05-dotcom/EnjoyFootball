@@ -3015,7 +3015,7 @@ if (monopoli) {
  * Monopoli set pieces — all 19 from the reference tape (8 corners, 11 free kicks), logged by Francesco.
  * Same shape as Spezia's panels. Sides are as seen attacking the goal at the top; numbers on the pitch match the ordered list.
  * Zones: area 14 · near post 2 · far post 2 · short 1 · edge of box 0. Free-kick origins are drawn at the distance noted (capped at the bottom edge for 40–50 yd and halfway balls).
- * Takers: Positano on the left (corners and free kicks); right corners Lanza (#3, played short); right free kicks Ziedelis (#7, left-footed, 86:14) and #10 (Positano, 23:28) — only those two mapped, the other three right FKs have no logged taker.
+ * Takers: Positano on the left (corners and free kicks); corners per Francesco's multi-game list (left: Šedvartas, Lanza; right: Lanza, Ziedelis; no per-event attribution); right free kicks Ziedelis (#7, left-footed, 86:14) and #10 (Positano, 23:28) — only those two mapped, the other three right FKs have no logged taker.
  */
 if (monopoli) {
   monopoli.setPieces = {
@@ -3037,8 +3037,11 @@ if (monopoli) {
           { x1: 12, y1: 8, x2: 152, y2: 62, n: 5, nAt: 'end' },
           { x1: 12, y1: 8, x2: 40, y2: 34, n: 6, nAt: 'end' },
         ],
-        note: { en: 'Positano ×6 (1 near post, 4 into the area, 1 short)', it: 'Positano ×6 (1 sul primo palo, 4 in area, 1 corto)' },
-        noteTitle: { en: 'Taker (left):', it: 'Battitore (sinistra):' },
+        note: {
+          en: 'Šedvartas: 1 vs Benevento (goal). Lanza: 2 vs Ascoli.',
+          it: 'Šedvartas: 1 contro il Benevento (gol). Lanza: 2 contro l’Ascoli.',
+        },
+        noteTitle: { en: 'Takers (left):', it: 'Battitori (sinistra):' },
         orderedNotesTitle: { en: 'In order (yellow numbers on the pitch):', it: 'In ordine (numeri gialli sul campo):' },
         orderedNotes: [
           { en: '22:06 — inswinger to the near post, cleared', it: '22:06 — traiettoria rientrante sul primo palo, respinto' },
@@ -3054,8 +3057,11 @@ if (monopoli) {
           { x1: 308, y1: 8, x2: 182, y2: 15, n: 1, nAt: 'end' },
           { x1: 308, y1: 8, x2: 168, y2: 44, n: 2, nAt: 'end' },
         ],
-        note: { en: 'Lanza (#3), played short. Logged: 1 near post, 1 into the penalty area.', it: 'Lanza (n. 3), battuti corti. Registrati: 1 sul primo palo, 1 in area di rigore.' },
-        noteTitle: { en: 'Taker (right):', it: 'Battitore (destra):' },
+        note: {
+          en: 'Lanza: 1 vs Spezia (short combination). Ziedelis: 2 vs Ascoli, 1 vs Benevento.',
+          it: 'Lanza: 1 contro lo Spezia (combinazione corta). Ziedelis: 2 contro l’Ascoli, 1 contro il Benevento.',
+        },
+        noteTitle: { en: 'Takers (right):', it: 'Battitori (destra):' },
         orderedNotesTitle: { en: 'In order (yellow numbers on the pitch):', it: 'In ordine (numeri gialli sul campo):' },
         orderedNotes: [
           { en: '3:08 — driven to the near post, cleared', it: '3:08 — tiro teso sul primo palo, respinto' },
@@ -3063,8 +3069,9 @@ if (monopoli) {
         ],
       },
       takers: [
-        { player: 'Positano', foot: { en: 'Both feet', it: 'Ambidestro' }, total: 6, fromLeft: 6, fromRight: 0 },
-        { player: 'Lanza', foot: { en: 'Left', it: 'Sinistro' }, total: 2, fromLeft: 0, fromRight: 2 },
+        { player: 'Lanza', foot: { en: 'Left', it: 'Sinistro' }, total: 3, fromLeft: 2, fromRight: 1 },
+        { player: 'Ziedelis', foot: { en: 'Both feet', it: 'Ambidestro' }, total: 3, fromLeft: 0, fromRight: 3 },
+        { player: 'Šedvartas', foot: { en: 'Both feet', it: 'Ambidestro' }, total: 1, fromLeft: 1, fromRight: 0 },
       ],
     },
     freeKicks: {
