@@ -36,13 +36,311 @@
     "colorClass": "u19",
     "logo": "napoli-logo.png"
   },
-  "score": null,
+  "score": {
+    "home": 0,
+    "away": 0
+  },
   "goals": [],
   "timeline": [],
   "formations": [],
   "dynamics": [],
-  "teamStats": [],
+  "teamStats": [
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
+      "home": "43.7%",
+      "away": "56.3%"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes (completed)",
+        "it": "Passaggi (riusciti)"
+      },
+      "home": "499 (409), 82.3%",
+      "away": "669 (559), 84.1%"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Progressive passes",
+        "it": "Passaggi progressivi"
+      },
+      "home": "58 (24 completed)",
+      "away": "87 (50 completed)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots / on target",
+        "it": "Tiri / in porta"
+      },
+      "home": "4 / 2",
+      "away": "11 / 3"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Estimated xG",
+        "it": "xG stimato"
+      },
+      "home": "0.25",
+      "away": "0.53"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Corners",
+        "it": "Calci d'angolo"
+      },
+      "home": "1",
+      "away": "5"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Fouls",
+        "it": "Falli"
+      },
+      "home": "16",
+      "away": "23"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Yellow cards",
+        "it": "Cartellini gialli"
+      },
+      "home": "3",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Offsides",
+        "it": "Fuorigioco"
+      },
+      "home": "0",
+      "away": "6"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "PPDA (full match)",
+        "it": "PPDA (intera gara)"
+      },
+      "home": "7.24",
+      "away": "5.74"
+    }
+  ],
   "goalkeepers": [],
   "clips": [],
-  "analysisVideos": []
+  "analysisVideos": [
+    {
+      "id": "gps-report-full-match",
+      "title": {
+        "en": "K-Sport GPS report — full match",
+        "it": "Report GPS K-Sport — partita intera"
+      },
+      "description": {
+        "en": "SSC Napoli Primavera K-Sport full GPS analytics vs Monopoli (10 players, 2 pages).",
+        "it": "Report GPS completo K-Sport SSC Napoli Primavera vs Monopoli (10 giocatori, 2 pagine)."
+      },
+      "videoFile": "gps/Report_GPS_MONOPOLI-NAPOLI_2026_10_31.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "gps",
+        "physical"
+      ]
+    }
+  ],
+  "gpsStats": [
+    {
+      "half": {
+        "en": "GPS — Full Match",
+        "it": "GPS — Partita intera"
+      },
+      "summary": {
+        "en": "Rovetini led distance (12322 m), high intensity (>16 km/h: 2496 m) and 20-24 km/h (708.12 m). Liccardo top sprint (286.16 m >24 km/h) and top speed (31.82 km/h). Candela most accelerations (52), D'Angelo most decelerations (61). Riccio top metabolic power (12.0 W/kg) and density (130 m/min). Average of the 10 players tracked: 10075 m.",
+        "it": "Rovetini distanza (12322 m), alta intensità (>16 km/h: 2496 m) e 20-24 km/h (708,12 m). Liccardo sprint (286,16 m >24 km/h) e velocità max (31,82 km/h). Candela più accelerazioni (52), D'Angelo più decelerazioni (61). Riccio potenza metabolica (12,0 W/kg) e densità (130 m/min). Media dei 10 giocatori monitorati: 10075 m."
+      },
+      "players": [
+        {
+          "player": "Rovetini",
+          "totalDistanceM": 12322,
+          "distancePerMin": 114,
+          "distanceOver16KmhM": 2496,
+          "distance20to24KmhM": 708.12,
+          "distanceOver24KmhM": 254.53,
+          "metabolicPowerWkg": 10.5,
+          "accelerationsOver3": 36,
+          "decelerationsUnder3": 60,
+          "maxSpeedKmh": 30.73,
+          "recoveryPct": 64.55
+        },
+        {
+          "player": "D'Angelo",
+          "totalDistanceM": 12309,
+          "distancePerMin": 110,
+          "distanceOver16KmhM": 2242,
+          "distance20to24KmhM": 607.33,
+          "distanceOver24KmhM": 114.72,
+          "metabolicPowerWkg": 10.1,
+          "accelerationsOver3": 43,
+          "decelerationsUnder3": 61,
+          "maxSpeedKmh": 27.89,
+          "recoveryPct": 66.63
+        },
+        {
+          "player": "Liccardo",
+          "totalDistanceM": 12167,
+          "distancePerMin": 109,
+          "distanceOver16KmhM": 1999,
+          "distance20to24KmhM": 454.73,
+          "distanceOver24KmhM": 286.16,
+          "metabolicPowerWkg": 9.9,
+          "accelerationsOver3": 25,
+          "decelerationsUnder3": 49,
+          "maxSpeedKmh": 31.82,
+          "recoveryPct": 67.91
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 11687,
+          "distancePerMin": 104,
+          "distanceOver16KmhM": 1616,
+          "distance20to24KmhM": 293.23,
+          "distanceOver24KmhM": 80.14,
+          "metabolicPowerWkg": 9.7,
+          "accelerationsOver3": 44,
+          "decelerationsUnder3": 48,
+          "maxSpeedKmh": 27.48
+        },
+        {
+          "player": "Candela",
+          "totalDistanceM": 11008,
+          "distancePerMin": 99,
+          "distanceOver16KmhM": 1326,
+          "distance20to24KmhM": 355.08,
+          "distanceOver24KmhM": 215.49,
+          "metabolicPowerWkg": 9.1,
+          "accelerationsOver3": 52,
+          "decelerationsUnder3": 59,
+          "maxSpeedKmh": 30.18,
+          "recoveryPct": 70.81
+        },
+        {
+          "player": "Marotta",
+          "totalDistanceM": 10561,
+          "distancePerMin": 93,
+          "distanceOver16KmhM": 1056,
+          "distance20to24KmhM": 328.87,
+          "distanceOver24KmhM": 83.29,
+          "metabolicPowerWkg": 8.5,
+          "accelerationsOver3": 33,
+          "decelerationsUnder3": 31,
+          "maxSpeedKmh": 28.8,
+          "recoveryPct": 75.51
+        },
+        {
+          "player": "Natale",
+          "totalDistanceM": 10526,
+          "distancePerMin": 94,
+          "distanceOver16KmhM": 1078,
+          "distance20to24KmhM": 238.42,
+          "distanceOver24KmhM": 43.01,
+          "metabolicPowerWkg": 8.5,
+          "accelerationsOver3": 34,
+          "decelerationsUnder3": 27,
+          "maxSpeedKmh": 29.08,
+          "recoveryPct": 74.35
+        },
+        {
+          "player": "Santella",
+          "totalDistanceM": 8622,
+          "distancePerMin": 99,
+          "distanceOver16KmhM": 1425,
+          "distance20to24KmhM": 398.35,
+          "distanceOver24KmhM": 151.43,
+          "metabolicPowerWkg": 9.2,
+          "accelerationsOver3": 29,
+          "decelerationsUnder3": 31,
+          "maxSpeedKmh": 31.64,
+          "recoveryPct": 72.05
+        },
+        {
+          "player": "Riccio",
+          "totalDistanceM": 6249,
+          "distancePerMin": 130,
+          "distanceOver16KmhM": 1222,
+          "distance20to24KmhM": 382.24,
+          "distanceOver24KmhM": 156.03,
+          "metabolicPowerWkg": 12.0,
+          "accelerationsOver3": 13,
+          "decelerationsUnder3": 29,
+          "maxSpeedKmh": 28.19,
+          "recoveryPct": 58.7
+        },
+        {
+          "player": "Manè",
+          "totalDistanceM": 5298,
+          "distancePerMin": 112,
+          "distanceOver16KmhM": 674,
+          "distance20to24KmhM": 197.29,
+          "distanceOver24KmhM": 85.25,
+          "metabolicPowerWkg": 10.4,
+          "accelerationsOver3": 23,
+          "decelerationsUnder3": 26,
+          "maxSpeedKmh": 29.86,
+          "recoveryPct": 71.02
+        }
+      ]
+    }
+  ],
+  "video": {
+    "fullMatch": "https://vimeo.com/1241763841/e49d73d9cc",
+    "notes": {
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
+    }
+  },
+  "vimeo": {
+    "folderId": "31110523",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/31110523",
+    "lastSyncedAt": "2026-10-31T19:11:15.000Z"
+  }
 }
