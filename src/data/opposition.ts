@@ -5050,3 +5050,49 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
     ];
   }
 }
+
+{
+  const portoSp = OPPONENTS.find((o) => o.id === "porto");
+  if (portoSp) {
+    portoSp.setPieces = {
+      keyNotesTitle: { en: 'Key notes — 7 corners (Porto attacking)', it: 'Note chiave — 7 calci d’angolo (Porto in attacco)' },
+      keyNotes: [
+        { en: 'Corners seen: 3 vs Man City (44:25, 50:05, 102:09), 3 vs PSV (65:26, 71:30, 86:53), 1 vs a red-shirted opponent (52:26, match not confirmed).', it: 'Calci d’angolo visti: 3 contro il Man City (44:25, 50:05, 102:09), 3 contro il PSV (65:26, 71:30, 86:53), 1 contro un avversario in maglia rossa (52:26, partita non confermata).' },
+        { en: 'Side: right 2 (50:05, 52:26) · left 2 (65:26, 71:30) · unclear 3 (44:25, 86:53, 102:09).', it: 'Lato: destra 2 (50:05, 52:26) · sinistra 2 (65:26, 71:30) · non chiaro 3 (44:25, 86:53, 102:09).' },
+        { en: 'Taker: unclear in all 7 (wide 640×360 footage, no shirt number legible).', it: 'Battitore: non chiaro in tutti e 7 (riprese larghe 640×360, nessun numero di maglia leggibile).' },
+        { en: 'Delivery: 1 short corner (52:26). The other 6 are unclear: target zone and inswinger/outswinger cannot be seen.', it: 'Battuta: 1 calcio d’angolo corto (52:26). Gli altri 6 non sono chiari: zona di arrivo e traiettoria rientrante/uscente non si vedono.' },
+        { en: '102:09 ends with the Man City GK holding the ball, with Porto #2 challenging him.', it: '102:09 finisce con il portiere del Man City che blocca il pallone, con il #2 del Porto in contrasto.' },
+      ],
+      corners: {
+        left: {
+          arrows: [],
+          note: {
+            en: 'Taker unclear (number not legible) in both.',
+            it: 'Battitore non chiaro (numero non leggibile) in entrambi.',
+          },
+          noteTitle: { en: 'Takers (left):', it: 'Battitori (sinistra):' },
+          orderedNotesTitle: { en: 'In order:', it: 'In ordine:' },
+          orderedNotes: [
+            { en: '65:26 — vs PSV, delivery and target unclear', it: '65:26 — contro il PSV, battuta e zona di arrivo non chiare' },
+            { en: '71:30 — vs PSV, delivery and target unclear', it: '71:30 — contro il PSV, battuta e zona di arrivo non chiare' },
+          ],
+        },
+        right: {
+          arrows: [
+            { x1: 308, y1: 8, x2: 284, y2: 30 },
+          ],
+          note: {
+            en: 'Taker unclear (number not legible) in both.',
+            it: 'Battitore non chiaro (numero non leggibile) in entrambi.',
+          },
+          noteTitle: { en: 'Takers (right):', it: 'Battitori (destra):' },
+          orderedNotesTitle: { en: 'In order:', it: 'In ordine:' },
+          orderedNotes: [
+            { en: '50:05 — vs Man City, delivery and target unclear', it: '50:05 — contro il Man City, battuta e zona di arrivo non chiare' },
+            { en: '52:26 — short corner, ball played along the ground to a teammate coming towards the corner (arrow)', it: '52:26 — calcio d’angolo corto, palla rasoterra a un compagno che viene verso la bandierina (freccia)' },
+          ],
+        },
+      },
+    };
+  }
+}
