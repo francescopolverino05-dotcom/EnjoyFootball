@@ -4104,6 +4104,21 @@ attachReferencePack('porto', '2026-11-04_uyl-porto-vs-u19', [
     score: '5–0',
     videoFile: 'https://vimeo.com/1239477871/7ce8b1b173',
   },
+],
+[
+  {
+    id: 'porto-studio-report',
+    title: {
+      en: 'Studio Porto',
+      it: 'Studio Porto',
+    },
+    description: {
+      en: 'Opposition studio report (Avversari → Studio Report).',
+      it: 'Studio report avversario (Avversari → Studio Report).',
+    },
+    videoFile: 'https://vimeo.com/1242026831/10b1115273',
+    tags: ['vimeo', 'opposition', 'studio-report'],
+  },
 ]);
 
 attachReferencePack('man-city', '2026-11-24_uyl-man-city-vs-u19', [
