@@ -3481,6 +3481,19 @@ attachReferencePack(
       videoFile: 'https://vimeo.com/1225651608/524a5457e3',
       tags: ['vimeo', 'opposition', 'studio-report'],
     },
+    {
+      id: 'catanzaro-match-prep',
+      title: {
+        en: 'Match Prep Catanzaro',
+        it: 'Match Prep Catanzaro',
+      },
+      description: {
+        en: 'Opposition studio report (Avversari → Studio Report).',
+        it: 'Studio report avversario (Avversari → Studio Report).',
+      },
+      videoFile: 'https://vimeo.com/1242054845/ed6381d925',
+      tags: ['vimeo', 'opposition', 'studio-report'],
+    },
   ]
 );
 
