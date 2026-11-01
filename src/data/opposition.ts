@@ -4809,7 +4809,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "porto-sp-corner-1242096974",
-        title: { en: "Corner 6", it: "Angolo 6" },
+        title: { en: "Corner 5", it: "Angolo 5" },
         comments: { en: "Porto set pieces · Vimeo Piazzati Offensivi · 71:30", it: "Palle inattive Porto · Vimeo Piazzati Offensivi · 71:30" },
         videoFile: "https://vimeo.com/1242096974/1a6b3b2950",
         section: "attacking-corners",
@@ -4817,7 +4817,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "porto-sp-corner-1242096978",
-        title: { en: "Corner 7", it: "Angolo 7" },
+        title: { en: "Corner 6", it: "Angolo 6" },
         comments: { en: "Porto set pieces · Vimeo Piazzati Offensivi · 86:53", it: "Palle inattive Porto · Vimeo Piazzati Offensivi · 86:53" },
         videoFile: "https://vimeo.com/1242096978/4fa70b4559",
         section: "attacking-corners",
@@ -4825,7 +4825,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "porto-sp-corner-1242096981",
-        title: { en: "Corner 9", it: "Angolo 9" },
+        title: { en: "Corner 7", it: "Angolo 7" },
         comments: { en: "Porto set pieces · Vimeo Piazzati Offensivi · 102:09", it: "Palle inattive Porto · Vimeo Piazzati Offensivi · 102:09" },
         videoFile: "https://vimeo.com/1242096981/12c4c3a57e",
         section: "attacking-corners",
@@ -4948,46 +4948,144 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
 }
 
 {
+  /**
+   * Porto OFFENSIVE set pieces — Francesco's analysis of 13 clips from three matches (PSV, Man City, Betis), 1 Nov 2026.
+   * Source: /workspace/porto_setpieces.md. Sides are as seen attacking the goal at the top (same as Spezia/Monopoli).
+   * The 14:41 "free kick" vs Betis is a corner (per Francesco): shown under right corners as #6 with a note.
+   * Takers: only #10 is readable; everyone else by foot. Target dots are zones, not exact landing points.
+   * Free-kick origins are drawn at the stated distance (35 m = 160, 30 m = 138), capped at the bottom edge for 40–45 m.
+   */
   const portoSp = OPPONENTS.find((o) => o.id === "porto");
   if (portoSp) {
     portoSp.setPieces = {
-      keyNotesTitle: { en: 'Key notes — 7 corners (Porto attacking)', it: 'Note chiave — 7 calci d’angolo (Porto in attacco)' },
+      keyNotesTitle: {
+        en: 'Key notes — Porto attacking: 13 set pieces (8 corners, 5 free kicks)',
+        it: 'Note chiave — Porto in attacco: 13 palle inattive (8 calci d’angolo, 5 punizioni)',
+      },
       keyNotes: [
-        { en: 'Corners seen: 3 vs Man City (44:25, 50:05, 102:09), 3 vs PSV (65:26, 71:30, 86:53), 1 vs a red-shirted opponent (52:26, match not confirmed).', it: 'Calci d’angolo visti: 3 contro il Man City (44:25, 50:05, 102:09), 3 contro il PSV (65:26, 71:30, 86:53), 1 contro un avversario in maglia rossa (52:26, partita non confermata).' },
-        { en: 'Side: right 2 (50:05, 52:26) · left 2 (65:26, 71:30) · unclear 3 (44:25, 86:53, 102:09).', it: 'Lato: destra 2 (50:05, 52:26) · sinistra 2 (65:26, 71:30) · non chiaro 3 (44:25, 86:53, 102:09).' },
-        { en: 'Taker: unclear in all 7 (wide 640×360 footage, no shirt number legible).', it: 'Battitore: non chiaro in tutti e 7 (riprese larghe 640×360, nessun numero di maglia leggibile).' },
-        { en: 'Delivery: 1 short corner (52:26). The other 6 are unclear: target zone and inswinger/outswinger cannot be seen.', it: 'Battuta: 1 calcio d’angolo corto (52:26). Gli altri 6 non sono chiari: zona di arrivo e traiettoria rientrante/uscente non si vedono.' },
-        { en: '102:09 ends with the Man City GK holding the ball, with Porto #2 challenging him.', it: '102:09 finisce con il portiere del Man City che blocca il pallone, con il #2 del Porto in contrasto.' },
+        {
+          en: 'Porto mostly deliver inswingers (10 of 13). Corners go to the near post, and wide free kicks go to the far post or the central area.',
+          it: 'Il Porto batte soprattutto con traiettoria rientrante (10 su 13). I calci d’angolo vanno sul primo palo, le punizioni da fuori sul secondo palo o in zona centrale.',
+        },
+        {
+          en: 'The free kicks were their most dangerous delivery here: a goal (60:45 vs PSV), a post (51:43 vs PSV) and a save (40:32 vs PSV).',
+          it: 'Le punizioni sono state la loro battuta più pericolosa: un gol (60:45 contro il PSV), un palo (51:43 contro il PSV) e una parata (40:32 contro il PSV).',
+        },
+        {
+          en: 'Sample: 13 clips from three matches — vs PSV (red/white), vs Man City (black) and vs Betis. The match is only given for the free kicks.',
+          it: 'Campione: 13 clip da tre partite — contro il PSV (maglia rossa/bianca), contro il Man City (maglia nera) e contro il Betis. La partita è indicata solo per le punizioni.',
+        },
+        {
+          en: 'Corners: 6 from the right, 2 from the left. Near post 5 · penalty area 2 · short 1. Delivery: 6 inswingers, 1 outswinger (44:25, hit the top of the bar), 1 short pass (71:30).',
+          it: 'Calci d’angolo: 6 da destra, 2 da sinistra. Primo palo 5 · area di rigore 2 · corto 1. Battuta: 6 rientranti, 1 uscente (44:25, colpita la parte alta della traversa), 1 passaggio corto (71:30).',
+        },
+        {
+          en: 'The 14:41 clip vs Betis was logged as a free kick but is actually a corner (right side, near post, inswinger, headed clear): it is shown under right corners as #6.',
+          it: 'La clip 14:41 contro il Betis era stata registrata come punizione ma è in realtà un calcio d’angolo (da destra, primo palo, traiettoria rientrante, respinto di testa): è mostrata tra i calci d’angolo da destra come n. 6.',
+        },
+        {
+          en: 'Free kicks: 5 (4 wide, 1 central). Wide ones: far post 2 · penalty area 1 · edge of the box 1. Central: penalty area 1 (inswinger, low confidence). Only #10 could be identified as a taker; the others are listed by foot.',
+          it: 'Punizioni: 5 (4 laterali, 1 centrale). Quelle laterali: secondo palo 2 · area di rigore 1 · limite dell’area 1. Centrale: area di rigore 1 (traiettoria rientrante, poco sicuro). Solo il #10 è stato identificato come battitore; gli altri sono indicati per piede.',
+        },
       ],
       corners: {
         left: {
-          arrows: [],
+          arrows: [
+            { x1: 12, y1: 8, x2: 148, y2: 44, n: 1, nAt: 'end', swing: 'in', outcome: 'cleared' },
+            { x1: 12, y1: 8, x2: 134, y2: 18, n: 2, nAt: 'end', swing: 'in', outcome: 'cleared' },
+          ],
           note: {
-            en: 'Taker unclear (number not legible) in both.',
-            it: 'Battitore non chiaro (numero non leggibile) in entrambi.',
+            en: 'Right foot ×2 (taker not identified).',
+            it: 'Piede destro ×2 (battitore non identificato).',
           },
           noteTitle: { en: 'Takers (left):', it: 'Battitori (sinistra):' },
-          orderedNotesTitle: { en: 'In order:', it: 'In ordine:' },
+          orderedNotesTitle: { en: 'In order (yellow numbers on the pitch):', it: 'In ordine (numeri gialli sul campo):' },
           orderedNotes: [
-            { en: '65:26 — vs PSV, delivery and target unclear', it: '65:26 — contro il PSV, battuta e zona di arrivo non chiare' },
-            { en: '71:30 — vs PSV, delivery and target unclear', it: '71:30 — contro il PSV, battuta e zona di arrivo non chiare' },
+            { en: 'Angolo 2 (clip 50:05, match clock 41:01) — right foot, inswinger into the penalty area, defender headed clear', it: 'Angolo 2 (clip 50:05, minuto 41:01) — piede destro, traiettoria rientrante in area di rigore, il difensore respinge di testa' },
+            { en: 'Angolo 4 (clip 65:26, match clock 53:13) — right foot, inswinger to the near post, defender cleared', it: 'Angolo 4 (clip 65:26, minuto 53:13) — piede destro, traiettoria rientrante sul primo palo, respinto dal difensore' },
           ],
         },
         right: {
           arrows: [
-            { x1: 308, y1: 8, x2: 284, y2: 30 },
+            { x1: 308, y1: 8, x2: 166, y2: 14, n: 1, nAt: 'end', swing: 'out', outcome: 'woodwork' },
+            { x1: 308, y1: 8, x2: 206, y2: 26, n: 2, nAt: 'end', swing: 'in', outcome: 'cleared' },
+            { x1: 308, y1: 8, x2: 284, y2: 32, n: 3, nAt: 'end', swing: 'short' },
+            { x1: 308, y1: 8, x2: 172, y2: 52, n: 4, nAt: 'end', swing: 'in', outcome: 'cleared' },
+            { x1: 308, y1: 8, x2: 186, y2: 34, n: 5, nAt: 'end', swing: 'in', outcome: 'save' },
+            { x1: 308, y1: 8, x2: 196, y2: 12, n: 6, nAt: 'end', swing: 'in', outcome: 'cleared' },
           ],
           note: {
-            en: 'Taker unclear (number not legible) in both.',
-            it: 'Battitore non chiaro (numero non leggibile) in entrambi.',
+            en: '#10 (left foot) ×1 (52:26). Left foot ×2 (86:53, 102:09) and right foot ×3 (44:25, 71:30, 14:41) — taker not identified.',
+            it: '#10 (piede sinistro) ×1 (52:26). Piede sinistro ×2 (86:53, 102:09) e piede destro ×3 (44:25, 71:30, 14:41) — battitore non identificato.',
           },
           noteTitle: { en: 'Takers (right):', it: 'Battitori (destra):' },
-          orderedNotesTitle: { en: 'In order:', it: 'In ordine:' },
+          orderedNotesTitle: { en: 'In order (yellow numbers on the pitch):', it: 'In ordine (numeri gialli sul campo):' },
           orderedNotes: [
-            { en: '50:05 — vs Man City, delivery and target unclear', it: '50:05 — contro il Man City, battuta e zona di arrivo non chiare' },
-            { en: '52:26 — short corner, ball played along the ground to a teammate coming towards the corner (arrow)', it: '52:26 — calcio d’angolo corto, palla rasoterra a un compagno che viene verso la bandierina (freccia)' },
+            { en: 'Angolo 1 (clip 44:25, match clock 35:34) — right foot, OUTswinger to the near post, attacker’s header hit the top of the bar', it: 'Angolo 1 (clip 44:25, minuto 35:34) — piede destro, traiettoria USCENTE sul primo palo, colpo di testa dell’attaccante sulla parte alta della traversa' },
+            { en: 'Angolo 3 (clip 52:26, match clock 45+2) — #10, left foot, inswinger to the near post, defender headed clear', it: 'Angolo 3 (clip 52:26, minuto 45+2) — #10, piede sinistro, traiettoria rientrante sul primo palo, il difensore respinge di testa' },
+            { en: 'Angolo 5 (clip 71:30, match clock 59:16) — right foot, short corner, played short to a teammate (dashed arrow)', it: 'Angolo 5 (clip 71:30, minuto 59:16) — piede destro, calcio d’angolo corto, palla corta a un compagno (freccia tratteggiata)' },
+            { en: 'Angolo 6 (clip 86:53, match clock 74:49) — left foot, inswinger into the penalty area, defender headed clear', it: 'Angolo 6 (clip 86:53, minuto 74:49) — piede sinistro, traiettoria rientrante in area di rigore, il difensore respinge di testa' },
+            { en: 'Angolo 7 (clip 102:09, match clock 74:34) — left foot, inswinger to the near post, goalkeeper punched clear', it: 'Angolo 7 (clip 102:09, minuto 74:34) — piede sinistro, traiettoria rientrante sul primo palo, il portiere respinge di pugno' },
+            { en: 'Clip 14:41 vs Betis — logged as a free kick, actually a corner: right foot, inswinger to the near post, defender headed clear', it: 'Clip 14:41 contro il Betis — registrata come punizione, in realtà un calcio d’angolo: piede destro, traiettoria rientrante sul primo palo, il difensore respinge di testa' },
           ],
         },
+        takers: [
+          { player: '#10', foot: { en: 'Left', it: 'Sinistro' }, total: 1, fromLeft: 0, fromRight: 1 },
+          { player: { en: 'Not identified', it: 'Non identificato' }, foot: { en: 'Right', it: 'Destro' }, total: 5, fromLeft: 2, fromRight: 3 },
+          { player: { en: 'Not identified', it: 'Non identificato' }, foot: { en: 'Left', it: 'Sinistro' }, total: 2, fromLeft: 0, fromRight: 2 },
+        ],
+      },
+      freeKicks: {
+        left: {
+          arrows: [
+            { x1: 50, y1: 160, x2: 178, y2: 18, n: 1, nAt: 'end', swing: 'in', outcome: 'save' },
+            { x1: 44, y1: 172, x2: 152, y2: 48, n: 2, nAt: 'end', swing: 'in', outcome: 'goal' },
+          ],
+          note: {
+            en: 'Right foot ×2 (taker not identified).',
+            it: 'Piede destro ×2 (battitore non identificato).',
+          },
+          noteTitle: { en: 'Takers (left):', it: 'Battitori (sinistra):' },
+          orderedNotesTitle: { en: 'Left side, in order (yellow numbers on the pitch):', it: 'Lato sinistro, in ordine (numeri gialli sul campo):' },
+          orderedNotes: [
+            { en: 'Clip 40:32 vs PSV — wide left, about 35 m out, right foot, inswinger to the far post, attacker’s header saved', it: 'Clip 40:32 contro il PSV — da sinistra, circa 35 m, piede destro, traiettoria rientrante sul secondo palo, colpo di testa dell’attaccante parato' },
+            { en: 'Clip 60:45 vs PSV — wide left, about 40 m out, right foot, inswinger into the penalty area, attacker’s header: GOAL', it: 'Clip 60:45 contro il PSV — da sinistra, circa 40 m, piede destro, traiettoria rientrante in area di rigore, colpo di testa dell’attaccante: GOL' },
+          ],
+        },
+        right: {
+          arrows: [
+            { x1: 270, y1: 160, x2: 142, y2: 18, n: 1, nAt: 'end', swing: 'in', outcome: 'woodwork' },
+            { x1: 274, y1: 172, x2: 192, y2: 70, n: 2, nAt: 'end', swing: 'out', outcome: 'cleared' },
+          ],
+          note: {
+            en: 'Left foot ×1 (51:43), right foot ×1 (84:25) — takers not identified.',
+            it: 'Piede sinistro ×1 (51:43), piede destro ×1 (84:25) — battitori non identificati.',
+          },
+          noteTitle: { en: 'Takers (right):', it: 'Battitori (destra):' },
+          orderedNotesTitle: { en: 'Right side, in order (yellow numbers on the pitch):', it: 'Lato destro, in ordine (numeri gialli sul campo):' },
+          orderedNotes: [
+            { en: 'Clip 51:43 vs PSV — wide right, about 35 m out, left foot, inswinger to the far post, attacker’s header hit the far post', it: 'Clip 51:43 contro il PSV — da destra, circa 35 m, piede sinistro, traiettoria rientrante sul secondo palo, colpo di testa dell’attaccante sul palo lontano' },
+            { en: 'Clip 84:25 vs Man City — wide right, about 45 m out, right foot, OUTswinger to the edge of the box, defender headed clear', it: 'Clip 84:25 contro il Man City — da destra, circa 45 m, piede destro, traiettoria USCENTE al limite dell’area, il difensore respinge di testa' },
+          ],
+        },
+        centre: {
+          arrows: [
+            { x1: 160, y1: 138, x2: 160, y2: 46, n: 1, nAt: 'end', swing: 'in', outcome: 'offTarget' },
+          ],
+          note: {
+            en: 'Right foot ×1 (taker not identified).',
+            it: 'Piede destro ×1 (battitore non identificato).',
+          },
+          noteTitle: { en: 'Taker (central):', it: 'Battitore (centrale):' },
+          orderedNotesTitle: { en: 'In order (yellow number on the pitch):', it: 'In ordine (numero giallo sul campo):' },
+          orderedNotes: [
+            { en: 'Clip 7:50 vs Betis — central, about 30 m out, right foot, inswinger into the penalty area (low confidence), attacker’s header off target', it: 'Clip 7:50 contro il Betis — centrale, circa 30 m, piede destro, traiettoria rientrante in area di rigore (poco sicuro), colpo di testa dell’attaccante fuori bersaglio' },
+          ],
+        },
+        takers: [
+          { player: { en: 'Not identified', it: 'Non identificato' }, foot: { en: 'Right', it: 'Destro' }, total: 4, fromLeft: 2, fromRight: 1, fromCentre: 1 },
+          { player: { en: 'Not identified', it: 'Non identificato' }, foot: { en: 'Left', it: 'Sinistro' }, total: 1, fromLeft: 0, fromRight: 1, fromCentre: 0 },
+        ],
       },
     };
   }
