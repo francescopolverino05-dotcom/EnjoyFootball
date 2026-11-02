@@ -4,6 +4,7 @@ import type {
 } from '../types/opposition';
 import { useLanguage } from '../i18n/LanguageContext';
 import {
+  localizePdfPosition,
   localizePosition,
   sortOppositionSquadByDepth,
 } from '../i18n/positions';
@@ -118,7 +119,11 @@ export default function OppositionSquadTable({
                 {p.number != null ? p.number : '—'}
               </td>
               <td className="opposition-squad-name">{p.name}</td>
-              <td>{localizePosition(p.position, locale)}</td>
+              <td>
+                {teamId === 'porto'
+                  ? localizePdfPosition(p.position, locale)
+                  : localizePosition(p.position, locale)}
+              </td>
               <td className="opposition-squad-meta">
                 {p.heightCm != null ? `${p.heightCm} cm` : '—'}
               </td>

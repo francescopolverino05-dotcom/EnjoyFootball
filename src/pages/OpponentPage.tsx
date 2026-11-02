@@ -1,4 +1,5 @@
-import { computeMostSubs } from '../utils/mostSubs';
+import { computeMostSubs, withSquadRoles } from '../utils/mostSubs';
+import { localizePdfPosition } from '../i18n/positions';
 import { parseSubs } from '../utils/parseSubs';
 import SetPiecesPanel from '../components/SetPiecesPanel';
 import { useMemo, useState } from 'react';
@@ -51,7 +52,7 @@ type OpponentTab =
 export default function OpponentPage() {
   const { slug } = useParams<{ slug: string }>();
   const opponent = slug ? getOpponentBySlug(slug) : undefined;
-  const { t, L, formatDate } = useLanguage();
+  const { t, L, formatDate, locale } = useLanguage();
   const [tab, setTab] = useState<OpponentTab>(
     typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('tab') === 'setPieces'
       ? 'setPieces'
@@ -133,7 +134,12 @@ export default function OpponentPage() {
     clips: opponent.clips.filter((c) => c.section === id),
   }));
 
-  const mostSubs = computeMostSubs(formations);
+  // Porto: "usual role" is each player's own specific squad position (full Italian terms on IT).
+  const usesSpecificPositions = opponent.id === 'porto';
+  const mostSubsRaw = computeMostSubs(formations);
+  const mostSubs = usesSpecificPositions
+    ? withSquadRoles(mostSubsRaw, opponent.squad)
+    : mostSubsRaw;
 
   const tabs: [
     OpponentTab,
@@ -287,7 +293,11 @@ export default function OpponentPage() {
                   {mostSubs.map((r) => (
                     <tr key={r.name}>
                       <td className="standings-team">{r.name}</td>
-                      <td>{r.role ?? '—'}</td>
+                      <td>
+                        {usesSpecificPositions
+                          ? localizePdfPosition(r.role, locale)
+                          : (r.role ?? '—')}
+                      </td>
                       <td className="stats-value-cell">{r.count}</td>
                     </tr>
                   ))}
