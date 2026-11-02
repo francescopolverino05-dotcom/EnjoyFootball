@@ -1,0 +1,63 @@
+{
+  "id": "2026-11-02_lunedi",
+  "slug": "2026-11-02_lunedi",
+  "date": "2026-11-02",
+  "title": {
+    "en": "Costruzione vs Porto (-2)",
+    "it": "Costruzione vs Porto (-2)"
+  },
+  "focus": {
+    "en": "Build-up vs Porto — two days out (UYL)",
+    "it": "Costruzione vs Porto — due giorni prima (UYL)"
+  },
+  "sessionType": "match-practice",
+  "startTime": "09:00",
+  "endTime": "11:00",
+  "status": "published",
+  "notes": {
+    "en": "Videos hosted on Vimeo — run npm run sync-vimeo -- --training 2026-11-02_lunedi",
+    "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-11-02_lunedi"
+  },
+  "video": {
+    "fullSession": "https://vimeo.com/1242440857/044405be0a",
+    "notes": {
+      "en": "Synced from Vimeo after upload.",
+      "it": "Sincronizzato da Vimeo dopo il caricamento."
+    },
+    "parts": [
+      {
+        "id": "vimeo-1242440857",
+        "title": {
+          "en": "Costruzione vs Porto",
+          "it": "Costruzione vs Porto"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1242440857/044405be0a",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      }
+    ]
+  },
+  "clips": [],
+  "analysisVideos": [],
+  "trainingDesign": [],
+  "goalkeepers": {
+    "video": {
+      "parts": []
+    },
+    "clips": [],
+    "trainingDesign": null,
+    "analysisVideos": []
+  },
+  "vimeo": {
+    "folderId": "30714187",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/30714187",
+    "lastSyncedAt": "2026-11-02T16:10:26.036Z"
+  }
+}
