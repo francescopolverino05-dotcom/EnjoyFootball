@@ -167,7 +167,472 @@
     }
   ],
   "goalkeepers": [],
-  "clips": [],
+  "clips": [
+    {
+      "id": "vimeo-1242099750",
+      "title": {
+        "en": "Min 39 2v2 non sfruttato",
+        "it": "Min 39 2v2 non sfruttato"
+      },
+      "comments": {
+        "en": "Min 39 2v2 non sfruttato",
+        "it": "Min 39 2v2 non sfruttato"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242099750/8c80ebead5",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242099721",
+      "title": {
+        "en": "Min. 27 Nessuno in Area",
+        "it": "Min. 27 Nessuno in Area"
+      },
+      "comments": {
+        "en": "Min. 27 Nessuno in Area",
+        "it": "Min. 27 Nessuno in Area"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242099721/f14403c16f",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242099722",
+      "title": {
+        "en": "Min 30 Perdiamo Uomo Punizione DIF",
+        "it": "Min 30 Perdiamo Uomo Punizione DIF"
+      },
+      "comments": {
+        "en": "Min 30 Perdiamo Uomo Punizione DIF",
+        "it": "Min 30 Perdiamo Uomo Punizione DIF"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242099722/67f05eed41",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242099715",
+      "title": {
+        "en": "Min. 29 Gol Fuorigioco",
+        "it": "Min. 29 Gol Fuorigioco"
+      },
+      "comments": {
+        "en": "Min. 29 Gol Fuorigioco",
+        "it": "Min. 29 Gol Fuorigioco"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242099715/f476506573",
+      "section": "goal",
+      "labels": [
+        "goal"
+      ],
+      "tags": [
+        "vimeo",
+        "goal"
+      ]
+    },
+    {
+      "id": "vimeo-1242099712",
+      "title": {
+        "en": "Min 22' Giocata Giusta riempiamo l'area",
+        "it": "Min 22' Giocata Giusta riempiamo l'area"
+      },
+      "comments": {
+        "en": "Min 22' Giocata Giusta riempiamo l'area",
+        "it": "Min 22' Giocata Giusta riempiamo l'area"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242099712/e74af93f32",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242099658",
+      "title": {
+        "en": "Min. 14 Buon BUild up Liccardo Libero sulla fascia",
+        "it": "Min. 14 Buon BUild up Liccardo Libero sulla fascia"
+      },
+      "comments": {
+        "en": "Min. 14 Buon BUild up Liccardo Libero sulla fascia",
+        "it": "Min. 14 Buon BUild up Liccardo Libero sulla fascia"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242099658/331f639a3d",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo",
+        "build-up"
+      ]
+    },
+    {
+      "id": "vimeo-1242099654",
+      "title": {
+        "en": "Min 16 Gioco Lento",
+        "it": "Min 16 Gioco Lento"
+      },
+      "comments": {
+        "en": "Min 16 Gioco Lento",
+        "it": "Min 16 Gioco Lento"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242099654/4557522224",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242099656",
+      "title": {
+        "en": "Min 18 Imbucata Buona. RElease ball quicker",
+        "it": "Min 18 Imbucata Buona. RElease ball quicker"
+      },
+      "comments": {
+        "en": "Min 18 Imbucata Buona. RElease ball quicker",
+        "it": "Min 18 Imbucata Buona. RElease ball quicker"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242099656/6d30910b90",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242099655",
+      "title": {
+        "en": "Min. 10 Buona azione Tiriamo Prima",
+        "it": "Min. 10 Buona azione Tiriamo Prima"
+      },
+      "comments": {
+        "en": "Min. 10 Buona azione Tiriamo Prima",
+        "it": "Min. 10 Buona azione Tiriamo Prima"
+      },
+      "minute": 0,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242099655/6b7cbf5f80",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242097556",
+      "title": {
+        "en": "other",
+        "it": "other"
+      },
+      "comments": {
+        "en": "other",
+        "it": "other"
+      },
+      "minute": 6,
+      "second": 35,
+      "videoFile": "https://vimeo.com/1242097556/aa314e8a41",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242097555",
+      "title": {
+        "en": "other",
+        "it": "other"
+      },
+      "comments": {
+        "en": "other",
+        "it": "other"
+      },
+      "minute": 1,
+      "second": 34,
+      "videoFile": "https://vimeo.com/1242097555/122388f2f9",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242097558",
+      "title": {
+        "en": "other",
+        "it": "other"
+      },
+      "comments": {
+        "en": "other",
+        "it": "other"
+      },
+      "minute": 90,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242097558/e8a4f0f208",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242097559",
+      "title": {
+        "en": "other",
+        "it": "other"
+      },
+      "comments": {
+        "en": "other",
+        "it": "other"
+      },
+      "minute": 68,
+      "second": 58,
+      "videoFile": "https://vimeo.com/1242097559/ed7add9344",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242097420",
+      "title": {
+        "en": "other",
+        "it": "other"
+      },
+      "comments": {
+        "en": "other",
+        "it": "other"
+      },
+      "minute": 82,
+      "second": 38,
+      "videoFile": "https://vimeo.com/1242097420/c14aebf69d",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242097416",
+      "title": {
+        "en": "other",
+        "it": "other"
+      },
+      "comments": {
+        "en": "other",
+        "it": "other"
+      },
+      "minute": 77,
+      "second": 1,
+      "videoFile": "https://vimeo.com/1242097416/7d800daf7f",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242097400",
+      "title": {
+        "en": "other",
+        "it": "other"
+      },
+      "comments": {
+        "en": "other",
+        "it": "other"
+      },
+      "minute": 56,
+      "second": 44,
+      "videoFile": "https://vimeo.com/1242097400/8adcdf4b41",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242097396",
+      "title": {
+        "en": "other",
+        "it": "other"
+      },
+      "comments": {
+        "en": "other",
+        "it": "other"
+      },
+      "minute": 38,
+      "second": 56,
+      "videoFile": "https://vimeo.com/1242097396/9c293b0b0c",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242097393",
+      "title": {
+        "en": "other",
+        "it": "other"
+      },
+      "comments": {
+        "en": "other",
+        "it": "other"
+      },
+      "minute": 30,
+      "second": 34,
+      "videoFile": "https://vimeo.com/1242097393/4c6dadecbe",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242097345",
+      "title": {
+        "en": "other",
+        "it": "other"
+      },
+      "comments": {
+        "en": "other",
+        "it": "other"
+      },
+      "minute": 5,
+      "second": 19,
+      "videoFile": "https://vimeo.com/1242097345/e8fdfc68be",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242097346",
+      "title": {
+        "en": "other",
+        "it": "other"
+      },
+      "comments": {
+        "en": "other",
+        "it": "other"
+      },
+      "minute": 13,
+      "second": 6,
+      "videoFile": "https://vimeo.com/1242097346/bea82837b1",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242097343",
+      "title": {
+        "en": "other",
+        "it": "other"
+      },
+      "comments": {
+        "en": "other",
+        "it": "other"
+      },
+      "minute": 66,
+      "second": 34,
+      "videoFile": "https://vimeo.com/1242097343/d356e5926e",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1242097344",
+      "title": {
+        "en": "other",
+        "it": "other"
+      },
+      "comments": {
+        "en": "other",
+        "it": "other"
+      },
+      "minute": 65,
+      "second": 55,
+      "videoFile": "https://vimeo.com/1242097344/62813c4a06",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    }
+  ],
   "analysisVideos": [
     {
       "id": "gps-report-full-match",
@@ -309,7 +774,7 @@
           "distanceOver16KmhM": 1222,
           "distance20to24KmhM": 382.24,
           "distanceOver24KmhM": 156.03,
-          "metabolicPowerWkg": 12.0,
+          "metabolicPowerWkg": 12,
           "accelerationsOver3": 13,
           "decelerationsUnder3": 29,
           "maxSpeedKmh": 28.19,
@@ -341,6 +806,6 @@
   "vimeo": {
     "folderId": "31110523",
     "folderUrl": "https://vimeo.com/user/170593333/folder/31110523",
-    "lastSyncedAt": "2026-10-31T19:11:15.000Z"
+    "lastSyncedAt": "2026-11-02T12:31:10.582Z"
   }
 }

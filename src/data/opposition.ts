@@ -4146,7 +4146,7 @@ attachReferencePack('porto', '2026-11-04_uyl-porto-vs-u19', [
       en: 'Opposition studio report (Avversari → Studio Report).',
       it: 'Studio report avversario (Avversari → Studio Report).',
     },
-    videoFile: 'https://vimeo.com/1242026831/10b1115273',
+    videoFile: 'https://vimeo.com/1242352327/c45e162a20',
     tags: ['vimeo', 'opposition', 'studio-report'],
   },
 ]);
