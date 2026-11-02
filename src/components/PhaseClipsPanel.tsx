@@ -43,10 +43,7 @@ export default function PhaseClipsPanel({
 }) {
   const { t, L } = useLanguage();
   const [activeGroups, setActiveGroups] = useState<Set<MatchClipGroupId>>(
-    () =>
-      new Set<MatchClipGroupId>(
-        library === 'matches' ? ['attack', 'setPieces'] : ['attack']
-      )
+    () => new Set<MatchClipGroupId>(['attack', 'setPieces'])
   );
 
   const sectionOrder = useMemo(() => {

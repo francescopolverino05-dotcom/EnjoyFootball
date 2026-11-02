@@ -725,6 +725,27 @@ function isSetPieceTrainingVideo(name, parentFolderName = '') {
   return re.test(String(name || '')) || re.test(String(parentFolderName || ''));
 }
 
+/**
+ * Numbered set-piece clips (Angolo 1, Punizione 2, …) or anything in a
+ * "Clips Piazzati" subfolder → Clips tab, not the Set Pieces overview tab.
+ */
+function isNumberedSetPieceClip(name, parentFolderName = '') {
+  if (/clips?\s*piazzat/i.test(String(parentFolderName || ''))) return true;
+  return /^(angolo|punizione|corner|free[\s_-]*kick|fk)\s*#?\s*\d+/i.test(
+    String(name || '').trim()
+  );
+}
+
+function setPieceClipSection(name) {
+  const n = String(name || '').toLowerCase();
+  const defending = /difens|subit|conced|against|opp/.test(n);
+  if (/angol|corner/.test(n)) return defending ? 'defending-corners' : 'attacking-corners';
+  if (/punizion|free|fk/.test(n)) {
+    return defending ? 'defending-free-kicks' : 'attacking-free-kicks';
+  }
+  return 'set-piece';
+}
+
 /** Rifinitura = labelled "Rifinitura" or the day before a match in matches/. */
 function isRifinituraTraining(training) {
   const text = JSON.stringify([training.title, training.focus] ?? '');
@@ -845,11 +866,32 @@ Upload videos into the Vimeo folder, then re-run:
     if (rifinitura && isSetPieceTrainingVideo(name, parentFolderName)) {
       if (skipVideoIds.has(String(videoNumericId(video)))) continue;
       const link = videoLink(video);
+      const id = videoNumericId(video);
+      // Numbered clips (Angolo 1…) live on the Clips tab; overview tapes stay on Set Pieces.
+      if (isNumberedSetPieceClip(name, parentFolderName)) {
+        const prev = prevByUrl.get(normalizeVideoUrl(link));
+        const n = clipNumberFromName(name);
+        const section = prev?.section || setPieceClipSection(name);
+        clipEntries.push({
+          id: prev?.id || `vimeo-${id}`,
+          title: prev?.title || humanizeTrainingTitle(name),
+          comments: prev?.comments || humanizeTrainingTitle(name),
+          minute: prev?.minute ?? (Number.isFinite(n) ? n : 0),
+          second: prev?.second ?? 0,
+          videoFile: link,
+          section,
+          labels: prev?.labels || [section],
+          tags: prev?.tags || ['vimeo', 'training', 'clip', 'set-pieces'],
+          ...(prev?.localFile ? { localFile: prev.localFile } : {}),
+        });
+        console.log(`  clip [set-piece] ← ${name}`);
+        continue;
+      }
       const prev = prevSetPieces.find(
         (a) => normalizeVideoUrl(a.videoFile) === normalizeVideoUrl(link)
       );
       setPieceParts.push({
-        id: prev?.id || `vimeo-${videoNumericId(video)}`,
+        id: prev?.id || `vimeo-${id}`,
         title: prev?.title || humanizeTrainingTitle(name),
         videoFile: link,
         tags: prev?.tags || ['vimeo', 'training', 'set-pieces'],

@@ -95,7 +95,200 @@
       }
     ]
   },
-  "clips": [],
+  "clips": [
+    {
+      "id": "vimeo-1242448396",
+      "title": {
+        "en": "Angolo 1",
+        "it": "Angolo 1"
+      },
+      "comments": {
+        "en": "Angolo 1",
+        "it": "Angolo 1"
+      },
+      "minute": 1,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242448396/0442dfaa09",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip",
+        "set-pieces"
+      ]
+    },
+    {
+      "id": "vimeo-1242448688",
+      "title": {
+        "en": "Punizione 1",
+        "it": "Punizione 1"
+      },
+      "comments": {
+        "en": "Punizione 1",
+        "it": "Punizione 1"
+      },
+      "minute": 1,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242448688/bb461b6c50",
+      "section": "attacking-free-kicks",
+      "labels": [
+        "attacking-free-kicks"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip",
+        "set-pieces"
+      ]
+    },
+    {
+      "id": "vimeo-1242448393",
+      "title": {
+        "en": "Angolo 2",
+        "it": "Angolo 2"
+      },
+      "comments": {
+        "en": "Angolo 2",
+        "it": "Angolo 2"
+      },
+      "minute": 2,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242448393/388401026c",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip",
+        "set-pieces"
+      ]
+    },
+    {
+      "id": "vimeo-1242448680",
+      "title": {
+        "en": "Punizione 2",
+        "it": "Punizione 2"
+      },
+      "comments": {
+        "en": "Punizione 2",
+        "it": "Punizione 2"
+      },
+      "minute": 2,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242448680/45e141c3ee",
+      "section": "attacking-free-kicks",
+      "labels": [
+        "attacking-free-kicks"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip",
+        "set-pieces"
+      ]
+    },
+    {
+      "id": "vimeo-1242448394",
+      "title": {
+        "en": "Angolo 3",
+        "it": "Angolo 3"
+      },
+      "comments": {
+        "en": "Angolo 3",
+        "it": "Angolo 3"
+      },
+      "minute": 3,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242448394/99b20572c6",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip",
+        "set-pieces"
+      ]
+    },
+    {
+      "id": "vimeo-1242448708",
+      "title": {
+        "en": "Punizione 3",
+        "it": "Punizione 3"
+      },
+      "comments": {
+        "en": "Punizione 3",
+        "it": "Punizione 3"
+      },
+      "minute": 3,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242448708/e8a255f5ea",
+      "section": "attacking-free-kicks",
+      "labels": [
+        "attacking-free-kicks"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip",
+        "set-pieces"
+      ]
+    },
+    {
+      "id": "vimeo-1242448398",
+      "title": {
+        "en": "Angolo 4",
+        "it": "Angolo 4"
+      },
+      "comments": {
+        "en": "Angolo 4",
+        "it": "Angolo 4"
+      },
+      "minute": 4,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242448398/ea3e9b7d98",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip",
+        "set-pieces"
+      ]
+    },
+    {
+      "id": "vimeo-1242448699",
+      "title": {
+        "en": "Punizione 4",
+        "it": "Punizione 4"
+      },
+      "comments": {
+        "en": "Punizione 4",
+        "it": "Punizione 4"
+      },
+      "minute": 4,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1242448699/58ed2e3c41",
+      "section": "attacking-free-kicks",
+      "labels": [
+        "attacking-free-kicks"
+      ],
+      "tags": [
+        "vimeo",
+        "training",
+        "clip",
+        "set-pieces"
+      ]
+    }
+  ],
   "analysisVideos": [],
   "trainingDesign": [],
   "goalkeepers": {
@@ -109,7 +302,7 @@
   "vimeo": {
     "folderId": "30714187",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30714187",
-    "lastSyncedAt": "2026-11-02T22:20:57.653Z"
+    "lastSyncedAt": "2026-11-02T22:25:45.425Z"
   },
   "setPieces": {
     "parts": [
@@ -120,110 +313,6 @@
           "it": "Angoli Difensivi"
         },
         "videoFile": "https://vimeo.com/1242570762/1c9cf9dac5",
-        "tags": [
-          "vimeo",
-          "training",
-          "set-pieces"
-        ]
-      },
-      {
-        "id": "vimeo-1242448708",
-        "title": {
-          "en": "Punizione 3",
-          "it": "Punizione 3"
-        },
-        "videoFile": "https://vimeo.com/1242448708/e8a255f5ea",
-        "tags": [
-          "vimeo",
-          "training",
-          "set-pieces"
-        ]
-      },
-      {
-        "id": "vimeo-1242448699",
-        "title": {
-          "en": "Punizione 4",
-          "it": "Punizione 4"
-        },
-        "videoFile": "https://vimeo.com/1242448699/58ed2e3c41",
-        "tags": [
-          "vimeo",
-          "training",
-          "set-pieces"
-        ]
-      },
-      {
-        "id": "vimeo-1242448680",
-        "title": {
-          "en": "Punizione 2",
-          "it": "Punizione 2"
-        },
-        "videoFile": "https://vimeo.com/1242448680/45e141c3ee",
-        "tags": [
-          "vimeo",
-          "training",
-          "set-pieces"
-        ]
-      },
-      {
-        "id": "vimeo-1242448688",
-        "title": {
-          "en": "Punizione 1",
-          "it": "Punizione 1"
-        },
-        "videoFile": "https://vimeo.com/1242448688/bb461b6c50",
-        "tags": [
-          "vimeo",
-          "training",
-          "set-pieces"
-        ]
-      },
-      {
-        "id": "vimeo-1242448393",
-        "title": {
-          "en": "Angolo 2",
-          "it": "Angolo 2"
-        },
-        "videoFile": "https://vimeo.com/1242448393/388401026c",
-        "tags": [
-          "vimeo",
-          "training",
-          "set-pieces"
-        ]
-      },
-      {
-        "id": "vimeo-1242448394",
-        "title": {
-          "en": "Angolo 3",
-          "it": "Angolo 3"
-        },
-        "videoFile": "https://vimeo.com/1242448394/99b20572c6",
-        "tags": [
-          "vimeo",
-          "training",
-          "set-pieces"
-        ]
-      },
-      {
-        "id": "vimeo-1242448396",
-        "title": {
-          "en": "Angolo 1",
-          "it": "Angolo 1"
-        },
-        "videoFile": "https://vimeo.com/1242448396/0442dfaa09",
-        "tags": [
-          "vimeo",
-          "training",
-          "set-pieces"
-        ]
-      },
-      {
-        "id": "vimeo-1242448398",
-        "title": {
-          "en": "Angolo 4",
-          "it": "Angolo 4"
-        },
-        "videoFile": "https://vimeo.com/1242448398/ea3e9b7d98",
         "tags": [
           "vimeo",
           "training",
