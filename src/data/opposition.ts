@@ -2529,12 +2529,12 @@ if (porto) {
     { number: 4, name: 'Teixeira', teamId: 'porto', role: 'RCB', top: '24%', left: '40%' },
     { number: 3, name: 'Gomes', teamId: 'porto', role: 'LCB', top: '24%', left: '60%' },
     { number: 5, name: 'Domingues', teamId: 'porto', role: 'LB', top: '24%', left: '80%' },
-    { number: 7, name: 'Carvalho', teamId: 'porto', role: 'RCM', top: '46%', left: '30%' },
-    { number: 8, name: 'Lima', teamId: 'porto', role: 'CM', top: '46%', left: '50%' },
-    { number: 6, name: 'T. Silva', teamId: 'porto', role: 'LCM', top: '46%', left: '70%' },
-    { number: 10, name: 'Mide', teamId: 'porto', role: 'RW', top: '72%', left: '30%' },
-    { number: 9, name: 'E. Ferreira', teamId: 'porto', role: 'ST', top: '72%', left: '50%' },
-    { number: 11, name: 'D. Cunha', teamId: 'porto', role: 'LW', top: '72%', left: '70%' },
+    { number: 7, name: 'Carvalho', teamId: 'porto', role: 'RW', top: '64%', left: '18%' },
+    { number: 8, name: 'Lima', teamId: 'porto', role: 'RDM', top: '44%', left: '36%' },
+    { number: 6, name: 'T. Silva', teamId: 'porto', role: 'LDM', top: '44%', left: '64%' },
+    { number: 10, name: 'Mide', teamId: 'porto', role: 'CAM', top: '60%', left: '50%' },
+    { number: 9, name: 'E. Ferreira', teamId: 'porto', role: 'ST', top: '80%', left: '50%' },
+    { number: 11, name: 'D. Cunha', teamId: 'porto', role: 'LW', top: '64%', left: '82%' },
   ];
   const vsManCity: PitchPlayer[] = [
     { number: 1, name: 'Nikolov', teamId: 'porto', role: 'GK', isGk: true, top: '8%', left: '50%' },
@@ -2542,12 +2542,12 @@ if (porto) {
     { number: 4, name: 'Gomes', teamId: 'porto', role: 'RCB', top: '24%', left: '40%' },
     { number: 3, name: 'Chelmik', teamId: 'porto', role: 'LCB', top: '24%', left: '60%' },
     { number: 5, name: 'M. Cunha', teamId: 'porto', role: 'LB', top: '24%', left: '80%' },
-    { number: 11, name: 'Granaas', teamId: 'porto', role: 'RM', top: '46%', left: '20%' },
-    { number: 8, name: 'Lima', teamId: 'porto', role: 'RCM', top: '46%', left: '40%' },
-    { number: 6, name: 'T. Silva', teamId: 'porto', role: 'LCM', top: '46%', left: '60%' },
-    { number: 10, name: 'Mide', teamId: 'porto', role: 'LM', top: '46%', left: '80%' },
-    { number: 7, name: 'Varela', teamId: 'porto', role: 'RS', top: '72%', left: '40%' },
-    { number: 9, name: 'E. Ferreira', teamId: 'porto', role: 'LS', top: '72%', left: '60%' },
+    { number: 11, name: 'Granaas', teamId: 'porto', role: 'LW', top: '64%', left: '82%' },
+    { number: 8, name: 'Lima', teamId: 'porto', role: 'RDM', top: '44%', left: '36%' },
+    { number: 6, name: 'T. Silva', teamId: 'porto', role: 'LDM', top: '44%', left: '64%' },
+    { number: 10, name: 'Mide', teamId: 'porto', role: 'CAM', top: '60%', left: '50%' },
+    { number: 7, name: 'Varela', teamId: 'porto', role: 'RW', top: '64%', left: '18%' },
+    { number: 9, name: 'E. Ferreira', teamId: 'porto', role: 'ST', top: '80%', left: '50%' },
   ];
   const vsBetis: PitchPlayer[] = [
     { number: 1, name: 'Ribeiro', teamId: 'porto', role: 'GK', isGk: true, top: '8%', left: '50%' },
@@ -2555,52 +2555,52 @@ if (porto) {
     { number: 3, name: 'F. Sousa', teamId: 'porto', role: 'RCB', top: '24%', left: '40%' },
     { number: 4, name: 'Chelmik', teamId: 'porto', role: 'LCB', top: '24%', left: '60%' },
     { number: 5, name: 'Pereira', teamId: 'porto', role: 'LB', top: '24%', left: '80%' },
-    { number: 8, name: 'Lima', teamId: 'porto', role: 'RCM', top: '46%', left: '30%' },
-    { number: 6, name: 'T. Silva', teamId: 'porto', role: 'CM', top: '46%', left: '50%' },
-    { number: 10, name: 'Mide', teamId: 'porto', role: 'LCM', top: '46%', left: '70%' },
-    { number: 7, name: 'D. Cunha', teamId: 'porto', role: 'RW', top: '72%', left: '30%' },
-    { number: 9, name: 'E. Ferreira', teamId: 'porto', role: 'ST', top: '72%', left: '50%' },
-    { number: 11, name: 'Abreu', teamId: 'porto', role: 'LW', top: '72%', left: '70%' },
+    { number: 8, name: 'Lima', teamId: 'porto', role: 'RDM', top: '44%', left: '36%' },
+    { number: 6, name: 'T. Silva', teamId: 'porto', role: 'LDM', top: '44%', left: '64%' },
+    { number: 10, name: 'Mide', teamId: 'porto', role: 'CAM', top: '60%', left: '50%' },
+    { number: 7, name: 'D. Cunha', teamId: 'porto', role: 'RW', top: '64%', left: '18%' },
+    { number: 9, name: 'E. Ferreira', teamId: 'porto', role: 'ST', top: '80%', left: '50%' },
+    { number: 11, name: 'Abreu', teamId: 'porto', role: 'LW', top: '64%', left: '82%' },
   ];
-  porto.formationSystem = '1-4-3-3';
+  porto.formationSystem = '1-4-2-3-1';
   porto.starters = vsPsv;
   porto.scoutedFormations = [
     {
       id: 'porto-vs-psv',
       label: { en: 'vs PSV (3–1)', it: 'vs PSV (3–1)' },
-      system: '4-3-3',
+      system: '4-2-3-1',
       players: vsPsv,
       notes: {
-        en: "UYL MD3, 20 Oct 2026, home, Porto 3–1 PSV (UEFA 2049845). UEFA 4-3-3: Carvalho (#7) RCM, Mide (#10) RW, D. Cunha (#11) LW. Goals: E. Ferreira 33', Mide 49', E. Ferreira 90+3'; PSV: Ostrander 72' (pen.). Subs: Varela for Carvalho HT, Oliveira for Froholdt 61', Miranda for D. Cunha 72', Abreu for Mide 72', M. Cunha for Domingues 77'.",
-        it: "UYL gior. 3, 20 ott 2026, casa, Porto 3–1 PSV (UEFA 2049845). 4-3-3 UEFA: Carvalho (#7) CC destro, Mide (#10) ala destra, D. Cunha (#11) ala sinistra. Gol: E. Ferreira 33', Mide 49', E. Ferreira 90+3'; PSV: Ostrander 72' (rig.). Sub: Varela per Carvalho INT, Oliveira per Froholdt 61', Miranda per D. Cunha 72', Abreu per Mide 72', M. Cunha per Domingues 77'.",
+        en: "UYL MD3, 20 Oct 2026, home, Porto 3–1 PSV (UEFA 2049845). UEFA 4-3-3: Carvalho (#7) RCM, Mide (#10) RW, D. Cunha (#11) LW. Goals: E. Ferreira 33', Mide 49', E. Ferreira 90+3'; PSV: Ostrander 72' (pen.). Shown here as a 4-2-3-1 by shirt number: Lima (#8) RDM, T. Silva (#6) LDM, Mide (#10) CAM, Carvalho (#7) RW, D. Cunha (#11) LW, E. Ferreira (#9) ST. Subs: Varela for Carvalho HT, Oliveira for Froholdt 61', Miranda for D. Cunha 72', Abreu for Mide 72', M. Cunha for Domingues 77'.",
+        it: "UYL gior. 3, 20 ott 2026, casa, Porto 3–1 PSV (UEFA 2049845). 4-3-3 UEFA: Carvalho (#7) CC destro, Mide (#10) ala destra, D. Cunha (#11) ala sinistra. Gol: E. Ferreira 33', Mide 49', E. Ferreira 90+3'; PSV: Ostrander 72' (rig.). Qui riportato come 4-2-3-1 per numero di maglia: Lima (#8) mediano destro, T. Silva (#6) mediano sinistro, Mide (#10) trequartista, Carvalho (#7) ala destra, D. Cunha (#11) ala sinistra, E. Ferreira (#9) attaccante. Sub: Varela per Carvalho INT, Oliveira per Froholdt 61', Miranda per D. Cunha 72', Abreu per Mide 72', M. Cunha per Domingues 77'.",
       },
     },
     {
       id: 'porto-vs-man-city',
       label: { en: 'vs Man City (3–1)', it: 'vs Man City (3–1)' },
-      system: '4-4-2',
+      system: '4-2-3-1',
       players: vsManCity,
       notes: {
-        en: "UYL MD1, 8 Sep 2026, home, Porto 3–1 Manchester City (UEFA 2049807). UEFA 4-4-2: Granaas (#11) RM, Mide (#10) LM, Varela (#7) and E. Ferreira (#9) up front. Goals: T. Silva 17' (pen.), Mide 43', Jamanca 82'; City: Lamb 73'. Subs: D. Cunha for Varela 61', Jamanca for E. Ferreira 68', Froholdt for F. Ferreira 68', Oliveira for Granaas 76', Muxito for Mide 76'.",
-        it: "UYL gior. 1, 8 set 2026, casa, Porto 3–1 Manchester City (UEFA 2049807). 4-4-2 UEFA: Granaas (#11) esterno destro, Mide (#10) esterno sinistro, Varela (#7) ed E. Ferreira (#9) punte. Gol: T. Silva 17' (rig.), Mide 43', Jamanca 82'; City: Lamb 73'. Sub: D. Cunha per Varela 61', Jamanca per E. Ferreira 68', Froholdt per F. Ferreira 68', Oliveira per Granaas 76', Muxito per Mide 76'.",
+        en: "UYL MD1, 8 Sep 2026, home, Porto 3–1 Manchester City (UEFA 2049807). UEFA 4-4-2: Granaas (#11) RM, Mide (#10) LM, Varela (#7) and E. Ferreira (#9) up front. Goals: T. Silva 17' (pen.), Mide 43', Jamanca 82'; City: Lamb 73'. Shown here as a 4-2-3-1 by shirt number: Lima (#8) RDM, T. Silva (#6) LDM, Mide (#10) CAM, Varela (#7) RW, Granaas (#11) LW, E. Ferreira (#9) ST. Subs: D. Cunha for Varela 61', Jamanca for E. Ferreira 68', Froholdt for F. Ferreira 68', Oliveira for Granaas 76', Muxito for Mide 76'.",
+        it: "UYL gior. 1, 8 set 2026, casa, Porto 3–1 Manchester City (UEFA 2049807). 4-4-2 UEFA: Granaas (#11) esterno destro, Mide (#10) esterno sinistro, Varela (#7) ed E. Ferreira (#9) punte. Gol: T. Silva 17' (rig.), Mide 43', Jamanca 82'; City: Lamb 73'. Qui riportato come 4-2-3-1 per numero di maglia: Lima (#8) mediano destro, T. Silva (#6) mediano sinistro, Mide (#10) trequartista, Varela (#7) ala destra, Granaas (#11) ala sinistra, E. Ferreira (#9) attaccante. Sub: D. Cunha per Varela 61', Jamanca per E. Ferreira 68', Froholdt per F. Ferreira 68', Oliveira per Granaas 76', Muxito per Mide 76'.",
       },
     },
     {
       id: 'porto-vs-real-betis',
       label: { en: 'vs Real Betis (0–5, 2025/26)', it: 'vs Real Betis (0–5, 2025/26)' },
-      system: '4-3-3',
+      system: '4-2-3-1',
       players: vsBetis,
       notes: {
-        en: "UYL 2025/26, 10 Dec 2025, away, Real Betis 5–0 Porto (UEFA 2046518). UEFA 4-3-3: Mide (#10) LCM, D. Cunha (#7) RW, Abreu (#11) LW. Pereira sent off 45+2'. Betis: Marina 19', 34', De Sá 51', Cordón 70', Mora 90'. Subs: Domingues for E. Ferreira 45+4', Fajardo Duarte for Abreu HT, Peixoto for D. Cunha 57', Sousa Barbosa for Mide 57', Magalhães for M. Silva 71'.",
-        it: "UYL 2025/26, 10 dic 2025, trasferta, Real Betis 5–0 Porto (UEFA 2046518). 4-3-3 UEFA: Mide (#10) CC sinistro, D. Cunha (#7) ala destra, Abreu (#11) ala sinistra. Pereira espulso 45+2'. Betis: Marina 19', 34', De Sá 51', Cordón 70', Mora 90'. Sub: Domingues per E. Ferreira 45+4', Fajardo Duarte per Abreu INT, Peixoto per D. Cunha 57', Sousa Barbosa per Mide 57', Magalhães per M. Silva 71'.",
+        en: "UYL 2025/26, 10 Dec 2025, away, Real Betis 5–0 Porto (UEFA 2046518). UEFA 4-3-3: Mide (#10) LCM, D. Cunha (#7) RW, Abreu (#11) LW. Pereira sent off 45+2'. Betis: Marina 19', 34', De Sá 51', Cordón 70', Mora 90'. Shown here as a 4-2-3-1 by shirt number: Lima (#8) RDM, T. Silva (#6) LDM, Mide (#10) CAM, D. Cunha (#7) RW, Abreu (#11) LW, E. Ferreira (#9) ST. Subs: Domingues for E. Ferreira 45+4', Fajardo Duarte for Abreu HT, Peixoto for D. Cunha 57', Sousa Barbosa for Mide 57', Magalhães for M. Silva 71'.",
+        it: "UYL 2025/26, 10 dic 2025, trasferta, Real Betis 5–0 Porto (UEFA 2046518). 4-3-3 UEFA: Mide (#10) CC sinistro, D. Cunha (#7) ala destra, Abreu (#11) ala sinistra. Pereira espulso 45+2'. Betis: Marina 19', 34', De Sá 51', Cordón 70', Mora 90'. Qui riportato come 4-2-3-1 per numero di maglia: Lima (#8) mediano destro, T. Silva (#6) mediano sinistro, Mide (#10) trequartista, D. Cunha (#7) ala destra, Abreu (#11) ala sinistra, E. Ferreira (#9) attaccante. Sub: Domingues per E. Ferreira 45+4', Fajardo Duarte per Abreu INT, Peixoto per D. Cunha 57', Sousa Barbosa per Mide 57', Magalhães per M. Silva 71'.",
       },
     },
   ];
   porto.squadDepth = {
-    system: '1-4-3-3',
+    system: '1-4-2-3-1',
     note: {
-      en: 'UYL: PSV (20 Oct 2026), Man City (8 Sep 2026), Real Betis (10 Dec 2025). Roles as reported by UEFA; the Man City 4-4-2 is mapped onto the 4-3-3 (RM/LM as RW/LW, RS/LS as ST).',
-      it: 'UYL: PSV (20 ott 2026), Man City (8 set 2026), Real Betis (10 dic 2025). Ruoli come da UEFA; il 4-4-2 col Man City è riportato sul 4-3-3 (esterni destro/sinistro come ala destra/sinistra, punte come ST).',
+      en: 'UYL: PSV (20 Oct 2026), Man City (8 Sep 2026), Real Betis (10 Dec 2025). Shown as a 4-2-3-1 by shirt number: #6 LDM, #8 RDM, #10 CAM, #7 RW, #11 LW, #9 ST (UEFA-reported shapes: 4-3-3, 4-4-2, 4-3-3).',
+      it: 'UYL: PSV (20 ott 2026), Man City (8 set 2026), Real Betis (10 dic 2025). Riportato come 4-2-3-1 per numero di maglia: n. 6 mediano sinistro, n. 8 mediano destro, n. 10 trequartista, n. 7 ala destra, n. 11 ala sinistra, n. 9 attaccante (moduli UEFA: 4-3-3, 4-4-2, 4-3-3).',
     },
     slots: [
       { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Nikolov', starts: 2 }, { name: 'Ribeiro', starts: 1 }] },
@@ -2608,12 +2608,12 @@ if (porto) {
       { role: 'RCB', top: '28%', left: '38%', players: [{ name: 'F. Sousa', starts: 1 }, { name: 'Gomes', starts: 1 }, { name: 'Teixeira', starts: 1 }] },
       { role: 'LCB', top: '28%', left: '62%', players: [{ name: 'Chelmik', starts: 2 }, { name: 'Gomes', starts: 1 }] },
       { role: 'LB', top: '28%', left: '86%', players: [{ name: 'Domingues', starts: 1 }, { name: 'M. Cunha', starts: 1 }, { name: 'Pereira', starts: 1 }] },
-      { role: 'RCM', top: '52%', left: '26%', players: [{ name: 'Lima', starts: 2 }, { name: 'Carvalho', starts: 1 }] },
-      { role: 'CM', top: '52%', left: '50%', players: [{ name: 'Lima', starts: 1 }, { name: 'T. Silva', starts: 1 }] },
-      { role: 'LCM', top: '52%', left: '74%', players: [{ name: 'T. Silva', starts: 2 }, { name: 'Mide', starts: 1 }] },
-      { role: 'RW', top: '76%', left: '18%', players: [{ name: 'D. Cunha', starts: 1 }, { name: 'Granaas', starts: 1 }, { name: 'Mide', starts: 1 }] },
-      { role: 'ST', top: '78%', left: '50%', players: [{ name: 'E. Ferreira', starts: 3 }, { name: 'Varela', starts: 1 }] },
-      { role: 'LW', top: '76%', left: '82%', players: [{ name: 'Abreu', starts: 1 }, { name: 'D. Cunha', starts: 1 }, { name: 'Mide', starts: 1 }] },
+      { role: 'RDM', top: '48%', left: '36%', players: [{ name: 'Lima', starts: 3 }] },
+      { role: 'LDM', top: '48%', left: '64%', players: [{ name: 'T. Silva', starts: 3 }] },
+      { role: 'RW', top: '74%', left: '16%', players: [{ name: 'Carvalho', starts: 1 }, { name: 'D. Cunha', starts: 1 }, { name: 'Varela', starts: 1 }] },
+      { role: 'CAM', top: '62%', left: '50%', players: [{ name: 'Mide', starts: 3 }] },
+      { role: 'LW', top: '74%', left: '84%', players: [{ name: 'Abreu', starts: 1 }, { name: 'D. Cunha', starts: 1 }, { name: 'Granaas', starts: 1 }] },
+      { role: 'ST', top: '84%', left: '50%', players: [{ name: 'E. Ferreira', starts: 3 }] },
     ],
   };
   porto.substitutes = [

@@ -184,6 +184,8 @@ const PDF_ROLE_IT: Record<string, string> = {
   RM: 'Esterno destro',
   LM: 'Esterno sinistro',
   CDM: 'Mediano',
+  LDM: 'Mediano sinistro',
+  RDM: 'Mediano destro',
   CM: 'Centrocampista centrale',
   LCM: 'Mezzala sinistra',
   RCM: 'Mezzala destra',
