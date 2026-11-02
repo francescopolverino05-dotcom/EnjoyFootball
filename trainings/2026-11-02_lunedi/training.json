@@ -3,12 +3,12 @@
   "slug": "2026-11-02_lunedi",
   "date": "2026-11-02",
   "title": {
-    "en": "Costruzione vs Porto (-2)",
-    "it": "Costruzione vs Porto (-2)"
+    "en": "Rifinitura (-2 Porto)",
+    "it": "Rifinitura (-2 Porto)"
   },
   "focus": {
-    "en": "Build-up vs Porto — two days out (UYL)",
-    "it": "Costruzione vs Porto — due giorni prima (UYL)"
+    "en": "Build-up, mid/high block, progressions & set pieces vs Porto",
+    "it": "Costruzione, blocco medio/alto, progressioni e piazzati vs Porto"
   },
   "sessionType": "match-practice",
   "startTime": "09:00",
@@ -19,7 +19,7 @@
     "it": "Video su Vimeo — esegui npm run sync-vimeo -- --training 2026-11-02_lunedi"
   },
   "video": {
-    "fullSession": "https://vimeo.com/1242440857/044405be0a",
+    "fullSession": "https://vimeo.com/1242570761/4dd9978a67",
     "notes": {
       "en": "Synced from Vimeo after upload.",
       "it": "Sincronizzato da Vimeo dopo il caricamento."
@@ -36,6 +36,57 @@
           "it": "Registrazione della sessione di allenamento."
         },
         "videoFile": "https://vimeo.com/1242440857/044405be0a",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1242570759",
+        "title": {
+          "en": "Blocco Medio",
+          "it": "Blocco Medio"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1242570759/95de347614",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1242570760",
+        "title": {
+          "en": "Difesa Alta",
+          "it": "Difesa Alta"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1242570760/6bcee5bd46",
+        "tags": [
+          "vimeo",
+          "training",
+          "session"
+        ]
+      },
+      {
+        "id": "vimeo-1242570761",
+        "title": {
+          "en": "Progressioni",
+          "it": "Progressioni"
+        },
+        "description": {
+          "en": "Training session recording.",
+          "it": "Registrazione della sessione di allenamento."
+        },
+        "videoFile": "https://vimeo.com/1242570761/4dd9978a67",
         "tags": [
           "vimeo",
           "training",
@@ -58,6 +109,140 @@
   "vimeo": {
     "folderId": "30714187",
     "folderUrl": "https://vimeo.com/user/170593333/folder/30714187",
-    "lastSyncedAt": "2026-11-02T16:10:26.036Z"
+    "lastSyncedAt": "2026-11-02T22:20:57.653Z"
+  },
+  "setPieces": {
+    "parts": [
+      {
+        "id": "vimeo-1242570762",
+        "title": {
+          "en": "Angoli Difensivi",
+          "it": "Angoli Difensivi"
+        },
+        "videoFile": "https://vimeo.com/1242570762/1c9cf9dac5",
+        "tags": [
+          "vimeo",
+          "training",
+          "set-pieces"
+        ]
+      },
+      {
+        "id": "vimeo-1242448708",
+        "title": {
+          "en": "Punizione 3",
+          "it": "Punizione 3"
+        },
+        "videoFile": "https://vimeo.com/1242448708/e8a255f5ea",
+        "tags": [
+          "vimeo",
+          "training",
+          "set-pieces"
+        ]
+      },
+      {
+        "id": "vimeo-1242448699",
+        "title": {
+          "en": "Punizione 4",
+          "it": "Punizione 4"
+        },
+        "videoFile": "https://vimeo.com/1242448699/58ed2e3c41",
+        "tags": [
+          "vimeo",
+          "training",
+          "set-pieces"
+        ]
+      },
+      {
+        "id": "vimeo-1242448680",
+        "title": {
+          "en": "Punizione 2",
+          "it": "Punizione 2"
+        },
+        "videoFile": "https://vimeo.com/1242448680/45e141c3ee",
+        "tags": [
+          "vimeo",
+          "training",
+          "set-pieces"
+        ]
+      },
+      {
+        "id": "vimeo-1242448688",
+        "title": {
+          "en": "Punizione 1",
+          "it": "Punizione 1"
+        },
+        "videoFile": "https://vimeo.com/1242448688/bb461b6c50",
+        "tags": [
+          "vimeo",
+          "training",
+          "set-pieces"
+        ]
+      },
+      {
+        "id": "vimeo-1242448393",
+        "title": {
+          "en": "Angolo 2",
+          "it": "Angolo 2"
+        },
+        "videoFile": "https://vimeo.com/1242448393/388401026c",
+        "tags": [
+          "vimeo",
+          "training",
+          "set-pieces"
+        ]
+      },
+      {
+        "id": "vimeo-1242448394",
+        "title": {
+          "en": "Angolo 3",
+          "it": "Angolo 3"
+        },
+        "videoFile": "https://vimeo.com/1242448394/99b20572c6",
+        "tags": [
+          "vimeo",
+          "training",
+          "set-pieces"
+        ]
+      },
+      {
+        "id": "vimeo-1242448396",
+        "title": {
+          "en": "Angolo 1",
+          "it": "Angolo 1"
+        },
+        "videoFile": "https://vimeo.com/1242448396/0442dfaa09",
+        "tags": [
+          "vimeo",
+          "training",
+          "set-pieces"
+        ]
+      },
+      {
+        "id": "vimeo-1242448398",
+        "title": {
+          "en": "Angolo 4",
+          "it": "Angolo 4"
+        },
+        "videoFile": "https://vimeo.com/1242448398/ea3e9b7d98",
+        "tags": [
+          "vimeo",
+          "training",
+          "set-pieces"
+        ]
+      },
+      {
+        "id": "vimeo-1242447287",
+        "title": {
+          "en": "Piazzati Offensivi vs Porto",
+          "it": "Piazzati Offensivi vs Porto"
+        },
+        "videoFile": "https://vimeo.com/1242447287/d24c67c6cf",
+        "tags": [
+          "vimeo",
+          "training",
+          "set-pieces"
+        ]
+      }
+    ]
   }
 }
