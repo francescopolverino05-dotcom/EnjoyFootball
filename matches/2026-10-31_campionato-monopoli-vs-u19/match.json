@@ -41,8 +41,398 @@
     "away": 0
   },
   "goals": [],
-  "timeline": [],
-  "formations": [],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "monopoli",
+      "positionPercent": 2
+    },
+    {
+      "minute": 20,
+      "label": {
+        "en": "Tumminelli shot wide",
+        "it": "Tumminelli tiro largo"
+      },
+      "type": "other",
+      "teamId": "monopoli",
+      "positionPercent": 22
+    },
+    {
+      "minute": 29,
+      "label": {
+        "en": "Mané goal disallowed (offside)",
+        "it": "Mané gol annullato (fuorigioco)"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 32
+    },
+    {
+      "minute": 31,
+      "label": {
+        "en": "Errico yellow",
+        "it": "Errico ammonito"
+      },
+      "type": "other",
+      "teamId": "monopoli",
+      "positionPercent": 34
+    },
+    {
+      "minute": 35,
+      "label": {
+        "en": "D'Angelo yellow",
+        "it": "D'Angelo ammonito"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 39
+    },
+    {
+      "minute": 45,
+      "label": {
+        "en": "Turcinskas yellow",
+        "it": "Turcinskas ammonito"
+      },
+      "type": "other",
+      "teamId": "monopoli",
+      "positionPercent": 50
+    },
+    {
+      "minute": 46,
+      "label": {
+        "en": "Amendola on / Spinelli off",
+        "it": "Amendola on / Spinelli off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 51
+    },
+    {
+      "minute": 46,
+      "label": {
+        "en": "Esposito on / Riccio off",
+        "it": "Esposito on / Riccio off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 51
+    },
+    {
+      "minute": 46,
+      "label": {
+        "en": "Saviano on / Mane off",
+        "it": "Saviano on / Mane off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 51
+    },
+    {
+      "minute": 63,
+      "label": {
+        "en": "Turcinskas shot over the bar",
+        "it": "Turcinskas tiro sopra la traversa"
+      },
+      "type": "other",
+      "teamId": "monopoli",
+      "positionPercent": 70
+    },
+    {
+      "minute": 66,
+      "label": {
+        "en": "Illuzzi shot saved by Amendola",
+        "it": "Illuzzi tiro parato da Amendola"
+      },
+      "type": "other",
+      "teamId": "monopoli",
+      "positionPercent": 73
+    },
+    {
+      "minute": 68,
+      "label": {
+        "en": "De Stefano shot saved by De Michele",
+        "it": "De Stefano tiro parato da De Michele"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 76
+    },
+    {
+      "minute": 69,
+      "label": {
+        "en": "Bennet on / Errico off",
+        "it": "Bennet on / Errico off"
+      },
+      "type": "substitution",
+      "teamId": "monopoli",
+      "positionPercent": 77
+    },
+    {
+      "minute": 69,
+      "label": {
+        "en": "Morrone on / Tumminelli off",
+        "it": "Morrone on / Tumminelli off"
+      },
+      "type": "substitution",
+      "teamId": "monopoli",
+      "positionPercent": 77
+    },
+    {
+      "minute": 69,
+      "label": {
+        "en": "Lepre on / Santella off",
+        "it": "Lepre on / Santella off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 77
+    },
+    {
+      "minute": 80,
+      "label": {
+        "en": "Bottalico on / Keptoukoua off",
+        "it": "Bottalico on / Keptoukoua off"
+      },
+      "type": "substitution",
+      "teamId": "monopoli",
+      "positionPercent": 89
+    },
+    {
+      "minute": 85,
+      "label": {
+        "en": "Casillo yellow",
+        "it": "Casillo ammonito"
+      },
+      "type": "other",
+      "teamId": "monopoli",
+      "positionPercent": 94
+    },
+    {
+      "minute": 90,
+      "label": {
+        "en": "M. De Michele on / Rovetini off",
+        "it": "M. De Michele on / Rovetini off"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 99
+    },
+    {
+      "minute": 93,
+      "label": {
+        "en": "Positano shot wide (90+3)",
+        "it": "Positano tiro largo (90+3)"
+      },
+      "type": "other",
+      "teamId": "monopoli",
+      "positionPercent": 99
+    }
+  ],
+  "formations": [
+    {
+      "teamId": "monopoli",
+      "label": {
+        "en": "Monopoli",
+        "it": "Monopoli"
+      },
+      "system": "5-3-2",
+      "players": [
+        {
+          "number": 0,
+          "name": "De Michele",
+          "teamId": "monopoli",
+          "role": "GK",
+          "isGk": true,
+          "bottom": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 0,
+          "name": "Sedvartas",
+          "teamId": "monopoli",
+          "role": "RWB",
+          "bottom": "32%",
+          "left": "90%"
+        },
+        {
+          "number": 3,
+          "name": "Illuzzi",
+          "teamId": "monopoli",
+          "role": "LWB",
+          "bottom": "32%",
+          "left": "10%"
+        },
+        {
+          "number": 0,
+          "name": "Lanza",
+          "teamId": "monopoli",
+          "role": "LCB",
+          "bottom": "20%",
+          "left": "30%"
+        },
+        {
+          "number": 0,
+          "name": "Turcinskas",
+          "teamId": "monopoli",
+          "role": "RCB",
+          "bottom": "20%",
+          "left": "70%"
+        },
+        {
+          "number": 0,
+          "name": "Ziedelis",
+          "teamId": "monopoli",
+          "role": "CB",
+          "bottom": "18%",
+          "left": "50%"
+        },
+        {
+          "number": 0,
+          "name": "Errico",
+          "teamId": "monopoli",
+          "role": "CM",
+          "bottom": "44%",
+          "left": "50%"
+        },
+        {
+          "number": 0,
+          "name": "Casillo",
+          "teamId": "monopoli",
+          "role": "RCM",
+          "bottom": "48%",
+          "left": "70%"
+        },
+        {
+          "number": 10,
+          "name": "Positano",
+          "teamId": "monopoli",
+          "role": "LCM",
+          "bottom": "48%",
+          "left": "30%"
+        },
+        {
+          "number": 9,
+          "name": "Tumminelli",
+          "teamId": "monopoli",
+          "role": "RS",
+          "bottom": "74%",
+          "left": "60%"
+        },
+        {
+          "number": 0,
+          "name": "Ni Gariga Keptoukoua",
+          "teamId": "monopoli",
+          "role": "LS",
+          "bottom": "74%",
+          "left": "40%"
+        }
+      ]
+    },
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "system": "3-4-2-1",
+      "players": [
+        {
+          "number": 0,
+          "name": "Spinelli",
+          "teamId": "u19",
+          "role": "GK",
+          "isGk": true,
+          "top": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 0,
+          "name": "Natale",
+          "teamId": "u19",
+          "role": "RCB",
+          "top": "22%",
+          "left": "22%"
+        },
+        {
+          "number": 0,
+          "name": "Marotta",
+          "teamId": "u19",
+          "role": "CB",
+          "top": "20%",
+          "left": "50%"
+        },
+        {
+          "number": 0,
+          "name": "Candela",
+          "teamId": "u19",
+          "role": "LCB",
+          "top": "22%",
+          "left": "78%"
+        },
+        {
+          "number": 0,
+          "name": "Liccardo",
+          "teamId": "u19",
+          "role": "RWB",
+          "top": "40%",
+          "left": "12%"
+        },
+        {
+          "number": 0,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "role": "RCM",
+          "top": "42%",
+          "left": "38%"
+        },
+        {
+          "number": 0,
+          "name": "D'Angelo",
+          "teamId": "u19",
+          "role": "LCM",
+          "top": "42%",
+          "left": "62%"
+        },
+        {
+          "number": 0,
+          "name": "Santella",
+          "teamId": "u19",
+          "role": "LWB",
+          "top": "40%",
+          "left": "88%"
+        },
+        {
+          "number": 0,
+          "name": "Rovetini",
+          "teamId": "u19",
+          "role": "RAM",
+          "top": "68%",
+          "left": "28%"
+        },
+        {
+          "number": 0,
+          "name": "Riccio",
+          "teamId": "u19",
+          "role": "LAM",
+          "top": "68%",
+          "left": "72%"
+        },
+        {
+          "number": 0,
+          "name": "Mané",
+          "teamId": "u19",
+          "role": "ST",
+          "top": "78%",
+          "left": "50%"
+        }
+      ]
+    }
+  ],
   "dynamics": [],
   "teamStats": [
     {
@@ -807,5 +1197,290 @@
     "folderId": "31110523",
     "folderUrl": "https://vimeo.com/user/170593333/folder/31110523",
     "lastSyncedAt": "2026-11-02T12:31:10.582Z"
+  },
+  "appearances": {
+    "home": [
+      {
+        "name": "De Michele",
+        "teamId": "monopoli",
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Sedvartas",
+        "teamId": "monopoli",
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Illuzzi",
+        "teamId": "monopoli",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Lanza",
+        "teamId": "monopoli",
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Turcinskas",
+        "teamId": "monopoli",
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [
+          45
+        ]
+      },
+      {
+        "name": "Ziedelis",
+        "teamId": "monopoli",
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Errico",
+        "teamId": "monopoli",
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 69,
+        "yellowCards": [
+          31
+        ]
+      },
+      {
+        "name": "Casillo",
+        "teamId": "monopoli",
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [
+          85
+        ]
+      },
+      {
+        "name": "Tumminelli",
+        "teamId": "monopoli",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 69
+      },
+      {
+        "name": "Positano",
+        "teamId": "monopoli",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Ni Gariga Keptoukoua",
+        "teamId": "monopoli",
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 80
+      },
+      {
+        "name": "Bennet",
+        "teamId": "monopoli",
+        "starter": false,
+        "onMinute": 69
+      },
+      {
+        "name": "Morrone",
+        "teamId": "monopoli",
+        "starter": false,
+        "onMinute": 69
+      },
+      {
+        "name": "Bottalico",
+        "teamId": "monopoli",
+        "starter": false,
+        "onMinute": 80
+      },
+      {
+        "name": "Palazzo",
+        "teamId": "monopoli",
+        "starter": false,
+        "onMinute": null
+      },
+      {
+        "name": "Filolungo",
+        "teamId": "monopoli",
+        "starter": false,
+        "onMinute": null
+      },
+      {
+        "name": "Sette",
+        "teamId": "monopoli",
+        "starter": false,
+        "onMinute": null
+      },
+      {
+        "name": "Cardinale",
+        "teamId": "monopoli",
+        "starter": false,
+        "onMinute": null
+      },
+      {
+        "name": "Montrone",
+        "teamId": "monopoli",
+        "starter": false,
+        "onMinute": null
+      },
+      {
+        "name": "Paparella",
+        "teamId": "monopoli",
+        "starter": false,
+        "onMinute": null
+      },
+      {
+        "name": "Margheri",
+        "teamId": "monopoli",
+        "starter": false,
+        "onMinute": null
+      },
+      {
+        "name": "Gora",
+        "teamId": "monopoli",
+        "starter": false,
+        "onMinute": null
+      },
+      {
+        "name": "Guerra",
+        "teamId": "monopoli",
+        "starter": false,
+        "onMinute": null
+      }
+    ],
+    "away": [
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 46
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Candela",
+        "teamId": "u19",
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Natale",
+        "teamId": "u19",
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Marotta",
+        "teamId": "u19",
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Rovetini",
+        "teamId": "u19",
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 90
+      },
+      {
+        "name": "D'Angelo",
+        "teamId": "u19",
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [
+          35
+        ]
+      },
+      {
+        "name": "Mané",
+        "teamId": "u19",
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 46
+      },
+      {
+        "name": "Riccio",
+        "teamId": "u19",
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 46
+      },
+      {
+        "name": "Santella",
+        "teamId": "u19",
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 69
+      },
+      {
+        "name": "Amendola",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 46
+      },
+      {
+        "name": "Esposito",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 46
+      },
+      {
+        "name": "Saviano",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 46
+      },
+      {
+        "name": "Lepre",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 69
+      },
+      {
+        "name": "M. De Michele",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 90
+      },
+      {
+        "name": "Pepe",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": null
+      },
+      {
+        "name": "Anic",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": null
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": null
+      }
+    ],
+    "notes": {
+      "en": "Lineups, substitutions and cards from the mondoprimavera.com live report and tabellino (Marotta captain, Casillo captain; coaches Antonio Nocerino for Napoli, Roberto D'Ermilio for Monopoli). Referee: Alessandro Pio Carpentiere; assistants Michele Bonavita and Francesco Di Muzio. Stadio Vito Simone Veneziani, Monopoli, 31 Oct 2026, 14:30; rain, heavier from the 52nd minute. Napoli 3-4-2-1 with positions from staff (Spinelli; Natale RCB, Marotta CB, Candela LCB; Liccardo RWB, De Stefano RCM, D'Angelo LCM, Santella LWB; Rovetini RAM, Riccio LAM; Mané ST). Monopoli 5-3-2: the report gives no positions or formation, so players are placed in tabellino order (GK; RWB Sedvartas, LWB Illuzzi, LCB Lanza, RCB Turcinskas, CB Ziedelis; CM Errico, RCM Casillo, LCM Positano; RS Tumminelli, LS Keptoukoua), as for earlier Monopoli XIs. The report states shirt numbers only for Illuzzi (3), Tumminelli (9) and Positano (10). Napoli changed goalkeeper at half-time (Amendola for Spinelli, with no injury reported). No red cards. Mané goal disallowed for offside at 29'. Final score 0-0.",
+      "it": "Formazioni, cambi e ammonizioni dalla cronaca live e dal tabellino di mondoprimavera.com (capitani Marotta e Casillo; allenatori Antonio Nocerino per il Napoli, Roberto D'Ermilio per il Monopoli). Arbitro: Alessandro Pio Carpentiere; assistenti Michele Bonavita e Francesco Di Muzio. Stadio Vito Simone Veneziani, Monopoli, 31 ott 2026, ore 14:30; pioggia, più intensa dal 52'. Napoli 3-4-2-1 con ruoli dallo staff (Spinelli; Natale difensore centrale destro, Marotta difensore centrale, Candela difensore centrale sinistro; Liccardo esterno destro, De Stefano centrocampista centrale destro, D'Angelo centrocampista centrale sinistro, Santella esterno sinistro; Rovetini trequartista destro, Riccio trequartista sinistro; Mané centravanti). Monopoli 5-3-2: la cronaca non indica ruoli né modulo, quindi i giocatori sono disposti nell'ordine del tabellino (portiere; esterno destro Sedvartas, esterno sinistro Illuzzi, difensore centrale sinistro Lanza, difensore centrale destro Turcinskas, difensore centrale Ziedelis; centrocampista centrale Errico, centrocampista destro Casillo, centrocampista sinistro Positano; attaccante destro Tumminelli, attaccante sinistro Ni Gariga Keptoukoua), come per le formazioni precedenti del Monopoli. La cronaca indica i numeri di maglia solo per Illuzzi (3), Tumminelli (9) e Positano (10). Il Napoli ha cambiato portiere all'intervallo (Amendola per Spinelli, senza infortuni segnalati). Nessun espulso. Gol di Mané annullato per fuorigioco al 29'. Risultato finale 0-0."
+    }
   }
 }
