@@ -746,6 +746,16 @@ function setPieceClipSection(name) {
   return 'set-piece';
 }
 
+/** Trailing/embedded number from "Angolo 3" / "Punizione 1" / "Clip 2". */
+function setPieceClipNumber(name) {
+  const fromClip = clipNumberFromName(name);
+  if (fromClip) return fromClip;
+  const m = String(name || '').match(
+    /(?:angolo|punizione|corner|free[\s_-]*kick|fk)\s*#?\s*(\d+)/i
+  );
+  return m ? Number(m[1]) : 0;
+}
+
 /** Rifinitura = labelled "Rifinitura" or the day before a match in matches/. */
 function isRifinituraTraining(training) {
   const text = JSON.stringify([training.title, training.focus] ?? '');
@@ -870,7 +880,7 @@ Upload videos into the Vimeo folder, then re-run:
       // Numbered clips (Angolo 1…) live on the Clips tab; overview tapes stay on Set Pieces.
       if (isNumberedSetPieceClip(name, parentFolderName)) {
         const prev = prevByUrl.get(normalizeVideoUrl(link));
-        const n = clipNumberFromName(name);
+        const n = setPieceClipNumber(name);
         const section = prev?.section || setPieceClipSection(name);
         clipEntries.push({
           id: prev?.id || `vimeo-${id}`,
