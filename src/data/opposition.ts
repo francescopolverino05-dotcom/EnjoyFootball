@@ -4822,19 +4822,8 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
         tags: ["vimeo", "opposition", "set-piece"],
       },
       {
-        id: "frosinone-sp-attackingcorners-1242569542",
-        title: { en: "Corner 4", it: "Angolo 4" },
-        comments: {
-          en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 38:27",
-          it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 38:27",
-        },
-        videoFile: "https://vimeo.com/1242569542/16e4098a77",
-        section: "attacking-corners",
-        tags: ["vimeo", "opposition", "set-piece"],
-      },
-      {
         id: "frosinone-sp-attackingcorners-1242569537",
-        title: { en: "Corner 5", it: "Angolo 5" },
+        title: { en: "Corner 4", it: "Angolo 4" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 41:55",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 41:55",
@@ -4845,7 +4834,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569508",
-        title: { en: "Corner 6", it: "Angolo 6" },
+        title: { en: "Corner 5", it: "Angolo 5" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 42:17",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 42:17",
@@ -4856,7 +4845,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569485",
-        title: { en: "Corner 7", it: "Angolo 7" },
+        title: { en: "Corner 6", it: "Angolo 6" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 44:03",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 44:03",
@@ -4867,7 +4856,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569459",
-        title: { en: "Corner 8", it: "Angolo 8" },
+        title: { en: "Corner 7", it: "Angolo 7" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 56:23",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 56:23",
@@ -4878,7 +4867,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569456",
-        title: { en: "Corner 9", it: "Angolo 9" },
+        title: { en: "Corner 8", it: "Angolo 8" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 62:42",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 62:42",
@@ -4889,7 +4878,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569443",
-        title: { en: "Corner 10", it: "Angolo 10" },
+        title: { en: "Corner 9", it: "Angolo 9" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 63:58",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 63:58",
@@ -4900,7 +4889,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569425",
-        title: { en: "Corner 11", it: "Angolo 11" },
+        title: { en: "Corner 10", it: "Angolo 10" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 64:06",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 64:06",
@@ -4911,7 +4900,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569348",
-        title: { en: "Corner 12", it: "Angolo 12" },
+        title: { en: "Corner 11", it: "Angolo 11" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 64:16",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 64:16",
@@ -4922,7 +4911,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569323",
-        title: { en: "Corner 13", it: "Angolo 13" },
+        title: { en: "Corner 12", it: "Angolo 12" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 64:43",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 64:43",
@@ -4933,7 +4922,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569285",
-        title: { en: "Corner 14", it: "Angolo 14" },
+        title: { en: "Corner 13", it: "Angolo 13" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 66:59",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 66:59",
@@ -4944,7 +4933,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569195",
-        title: { en: "Corner 15", it: "Angolo 15" },
+        title: { en: "Corner 14", it: "Angolo 14" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 68:54",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 68:54",
@@ -4955,7 +4944,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569197",
-        title: { en: "Corner 16", it: "Angolo 16" },
+        title: { en: "Corner 15", it: "Angolo 15" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 69:29",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 69:29",
@@ -4966,7 +4955,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569196",
-        title: { en: "Corner 17", it: "Angolo 17" },
+        title: { en: "Corner 16", it: "Angolo 16" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 74:28",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 74:28",
@@ -4977,7 +4966,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569194",
-        title: { en: "Corner 18", it: "Angolo 18" },
+        title: { en: "Corner 17", it: "Angolo 17" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 77:26",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 77:26",
@@ -4988,7 +4977,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569756",
-        title: { en: "Corner 19", it: "Angolo 19" },
+        title: { en: "Corner 18", it: "Angolo 18" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 86:20",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 86:20",
@@ -4999,7 +4988,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569749",
-        title: { en: "Corner 20", it: "Angolo 20" },
+        title: { en: "Corner 19", it: "Angolo 19" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 87:41",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 87:41",
@@ -5010,7 +4999,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569750",
-        title: { en: "Corner 21", it: "Angolo 21" },
+        title: { en: "Corner 20", it: "Angolo 20" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 89:38",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 89:38",
@@ -5021,7 +5010,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569738",
-        title: { en: "Corner 22", it: "Angolo 22" },
+        title: { en: "Corner 21", it: "Angolo 21" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 90:02",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 90:02",
@@ -5032,7 +5021,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569685",
-        title: { en: "Corner 23", it: "Angolo 23" },
+        title: { en: "Corner 22", it: "Angolo 22" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 90:10",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 90:10",
@@ -5043,7 +5032,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569644",
-        title: { en: "Corner 24", it: "Angolo 24" },
+        title: { en: "Corner 23", it: "Angolo 23" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 90:48",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 90:48",
@@ -5054,7 +5043,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569643",
-        title: { en: "Corner 25", it: "Angolo 25" },
+        title: { en: "Corner 24", it: "Angolo 24" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 92:12",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 92:12",
@@ -5065,7 +5054,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-attackingcorners-1242569614",
-        title: { en: "Corner 26", it: "Angolo 26" },
+        title: { en: "Corner 25", it: "Angolo 25" },
         comments: {
           en: "Frosinone set pieces · Vimeo Offensivi · Angoli · 92:35",
           it: "Palle inattive Frosinone · Vimeo Offensivi · Angoli · 92:35",
@@ -5306,8 +5295,19 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
         tags: ["vimeo", "opposition", "set-piece"],
       },
       {
-        id: "frosinone-sp-defendingcorners-1242568270",
+        id: "frosinone-sp-defendingcorners-1242569542",
         title: { en: "Defending corner 10", it: "Angolo subito 10" },
+        comments: {
+          en: "Frosinone set pieces · Vimeo Difensivi · Angoli · 38:27",
+          it: "Palle inattive Frosinone · Vimeo Difensivi · Angoli · 38:27",
+        },
+        videoFile: "https://vimeo.com/1242569542/16e4098a77",
+        section: "defending-corners",
+        tags: ["vimeo", "opposition", "set-piece"],
+      },
+      {
+        id: "frosinone-sp-defendingcorners-1242568270",
+        title: { en: "Defending corner 11", it: "Angolo subito 11" },
         comments: {
           en: "Frosinone set pieces · Vimeo Difensivi · Angoli · 42:31",
           it: "Palle inattive Frosinone · Vimeo Difensivi · Angoli · 42:31",
@@ -5318,7 +5318,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-defendingcorners-1242568263",
-        title: { en: "Defending corner 11", it: "Angolo subito 11" },
+        title: { en: "Defending corner 12", it: "Angolo subito 12" },
         comments: {
           en: "Frosinone set pieces · Vimeo Difensivi · Angoli · 44:45",
           it: "Palle inattive Frosinone · Vimeo Difensivi · Angoli · 44:45",
@@ -5329,7 +5329,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-defendingcorners-1242568225",
-        title: { en: "Defending corner 12", it: "Angolo subito 12" },
+        title: { en: "Defending corner 13", it: "Angolo subito 13" },
         comments: {
           en: "Frosinone set pieces · Vimeo Difensivi · Angoli · 46:03",
           it: "Palle inattive Frosinone · Vimeo Difensivi · Angoli · 46:03",
@@ -5340,7 +5340,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-defendingcorners-1242568585",
-        title: { en: "Defending corner 13", it: "Angolo subito 13" },
+        title: { en: "Defending corner 14", it: "Angolo subito 14" },
         comments: {
           en: "Frosinone set pieces · Vimeo Difensivi · Punizioni · 54:18",
           it: "Palle inattive Frosinone · Vimeo Difensivi · Punizioni · 54:18",
@@ -5351,7 +5351,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-defendingcorners-1242568197",
-        title: { en: "Defending corner 14", it: "Angolo subito 14" },
+        title: { en: "Defending corner 15", it: "Angolo subito 15" },
         comments: {
           en: "Frosinone set pieces · Vimeo Difensivi · Angoli · 57:46",
           it: "Palle inattive Frosinone · Vimeo Difensivi · Angoli · 57:46",
@@ -5362,7 +5362,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-defendingcorners-1242568198",
-        title: { en: "Defending corner 15", it: "Angolo subito 15" },
+        title: { en: "Defending corner 16", it: "Angolo subito 16" },
         comments: {
           en: "Frosinone set pieces · Vimeo Difensivi · Angoli · 79:22",
           it: "Palle inattive Frosinone · Vimeo Difensivi · Angoli · 79:22",
@@ -5373,7 +5373,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-defendingcorners-1242568155",
-        title: { en: "Defending corner 16", it: "Angolo subito 16" },
+        title: { en: "Defending corner 17", it: "Angolo subito 17" },
         comments: {
           en: "Frosinone set pieces · Vimeo Difensivi · Angoli · 80:41",
           it: "Palle inattive Frosinone · Vimeo Difensivi · Angoli · 80:41",
@@ -5384,7 +5384,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-defendingcorners-1242568154",
-        title: { en: "Defending corner 17", it: "Angolo subito 17" },
+        title: { en: "Defending corner 18", it: "Angolo subito 18" },
         comments: {
           en: "Frosinone set pieces · Vimeo Difensivi · Angoli · 84:09",
           it: "Palle inattive Frosinone · Vimeo Difensivi · Angoli · 84:09",
@@ -5395,7 +5395,7 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       },
       {
         id: "frosinone-sp-defendingcorners-1242568156",
-        title: { en: "Defending corner 18", it: "Angolo subito 18" },
+        title: { en: "Defending corner 19", it: "Angolo subito 19" },
         comments: {
           en: "Frosinone set pieces · Vimeo Difensivi · Angoli · 94:01",
           it: "Palle inattive Frosinone · Vimeo Difensivi · Angoli · 94:01",
