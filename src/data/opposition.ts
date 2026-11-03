@@ -3206,7 +3206,6 @@ if (frosinone) {
   const vs_palermo = frosinone352(["Capanna", "Mirenzi", "Colafrancesco", "Esposito", "Grande", "Bosi", "Taddei", "Marchetti", "Carpentieri", "Menghini", "Castroreale"]);
   const vs_catanzaro = frosinone352(["Amato", "Anzidei", "Colafrancesco", "Esposito", "Reali", "Grande", "Mirenzi", "Marchetti", "Carpentieri", "Menghini", "Castroreale"]);
   const vs_pisa = frosinone352(["Amato", "Bosi", "Colafrancesco", "Esposito", "Reali", "Grande", "Mirenzi", "Marchetti", "Carpentieri", "Menghini", "Castroreale"]);
-  const vs_benevento = frosinone352(["Amato", "Mirenzi", "Colafrancesco", "Esposito", "Grande", "Bosi", "Taddei", "Millozzi", "Carpentieri", "Menghini", "Carfagna"]);
   frosinone.formationSystem = '1-3-5-2';
   frosinone.starters = frosinone352(["Capanna", "Mirenzi", "Colafrancesco", "Esposito", "Reali", "Bosi", "Taddei", "Millozzi", "Carpentieri", "Menghini", "Marchetti"]);
   frosinone.scoutedFormations = [
@@ -3216,8 +3215,8 @@ if (frosinone) {
       system: '3-5-2',
       players: frosinone.starters,
       notes: {
-        en: 'Most frequent starter per role, Primavera 2 MD1–MD7 (LS: Marchetti — last three starts).',
-        it: 'Titolare più frequente per ruolo, Primavera 2 gior. 1–7 (LS: Marchetti — ultime tre titolarità).',
+        en: 'Most frequent starter per role, Primavera 2 MD2–MD7 (LS: Marchetti — last three starts).',
+        it: 'Titolare più frequente per ruolo, Primavera 2 gior. 2–7 (LS: Marchetti — ultime tre titolarità).',
       },
     },
     {
@@ -3280,35 +3279,25 @@ if (frosinone) {
         it: "Primavera 2 gior. 2, 12 set 2026, casa, Frosinone 2–3 Pisa (distinta). XI dalla distinta ufficiale. Gol/sub (TM): Marchetti 70', Carpentieri 90'+5; Ghizzani 6', 52', 60'. Sub: Anzidei per Bosi 66', Polinari per Castroreale 66', Valente per Marchetti 70', Ndao per Colafrancesco 86'. Cartellini: Giallo Bosi. All. Guberti.",
       },
     },
-    {
-      id: 'frosinone-vs-benevento',
-      label: { en: "vs Benevento (0–3)", it: "vs Benevento (0–3)" },
-      system: '3-5-2',
-      players: vs_benevento,
-      notes: {
-        en: "Primavera 2 MD1, 5 Sep 2026, away, Benevento 3–0 Frosinone (distinta + Transfermarkt). Benevento goals: Giugliano 5', Lo Russo 30', Giugliano 64' (free kick). Subs: Castroreale for Millozzi 67', Reali for Grande 67', Marchetti for Colafrancesco 72', Valente for Carpentieri 72', Anzidei for Bosi 77'. Cards: Yellow Mirenzi, Grande, Valente; Red (2nd yellow) Carfagna 79'. Coach Guberti.",
-        it: "Primavera 2 gior. 1, 5 set 2026, trasferta, Benevento 3–0 Frosinone (distinta + Transfermarkt). Gol Benevento: Giugliano 5', Lo Russo 30', Giugliano 64' (punizione). Sub: Castroreale per Millozzi 67', Reali per Grande 67', Marchetti per Colafrancesco 72', Valente per Carpentieri 72', Anzidei per Bosi 77'. Cartellini: Gialli Mirenzi, Grande, Valente; Rosso (doppio giallo) Carfagna 79'. All. Guberti.",
-      },
-    },
   ];
   frosinone.squadDepth = {
     system: '1-3-5-2',
     note: {
-      en: 'Primavera 2 MD1–MD7 (Benevento, Pisa, Catanzaro, Palermo, Cosenza, Perugia, Latina) — distinte + Mondoprimavera.',
-      it: 'Primavera 2 gior. 1–7 (Benevento, Pisa, Catanzaro, Palermo, Cosenza, Perugia, Latina) — distinte + Mondoprimavera.',
+      en: 'Primavera 2 MD2–MD7 (Pisa, Catanzaro, Palermo, Cosenza, Perugia, Latina) — distinte + Mondoprimavera.',
+      it: 'Primavera 2 gior. 2–7 (Pisa, Catanzaro, Palermo, Cosenza, Perugia, Latina) — distinte + Mondoprimavera.',
     },
     slots: [
-      { role: 'GK', top: '10%', left: '50%', players: [{ name: "Capanna", starts: 4 }, { name: "Amato", starts: 3 }] },
-      { role: 'RCB', top: '24%', left: '30%', players: [{ name: "Reali", starts: 5 }, { name: "Grande", starts: 2 }] },
-      { role: 'CB', top: '22%', left: '50%', players: [{ name: "Bosi", starts: 5 }, { name: "Grande", starts: 2 }] },
-      { role: 'LCB', top: '24%', left: '70%', players: [{ name: "Esposito", starts: 7 }] },
-      { role: 'RWB', top: '46%', left: '10%', players: [{ name: "Mirenzi", starts: 5 }, { name: "Bosi", starts: 1 }, { name: "Anzidei", starts: 1 }] },
-      { role: 'LWB', top: '46%', left: '90%', players: [{ name: "Colafrancesco", starts: 7 }] },
-      { role: 'RCM', top: '52%', left: '32%', players: [{ name: "Millozzi", starts: 4 }, { name: "Marchetti", starts: 3 }] },
-      { role: 'CM', top: '42%', left: '50%', players: [{ name: "Taddei", starts: 5 }, { name: "Mirenzi", starts: 2 }] },
-      { role: 'LCM', top: '52%', left: '68%', players: [{ name: "Menghini", starts: 7 }] },
-      { role: 'RS', top: '74%', left: '40%', players: [{ name: "Carpentieri", starts: 7 }] },
-      { role: 'LS', top: '74%', left: '60%', players: [{ name: "Marchetti", starts: 3 }, { name: "Castroreale", starts: 3 }, { name: "Carfagna", starts: 1 }] },
+      { role: 'GK', top: '10%', left: '50%', players: [{ name: "Capanna", starts: 4 }, { name: "Amato", starts: 2 }] },
+      { role: 'RCB', top: '24%', left: '30%', players: [{ name: "Reali", starts: 5 }, { name: "Grande", starts: 1 }] },
+      { role: 'CB', top: '22%', left: '50%', players: [{ name: "Bosi", starts: 4 }, { name: "Grande", starts: 2 }] },
+      { role: 'LCB', top: '24%', left: '70%', players: [{ name: "Esposito", starts: 6 }] },
+      { role: 'RWB', top: '46%', left: '10%', players: [{ name: "Mirenzi", starts: 4 }, { name: "Bosi", starts: 1 }, { name: "Anzidei", starts: 1 }] },
+      { role: 'LWB', top: '46%', left: '90%', players: [{ name: "Colafrancesco", starts: 6 }] },
+      { role: 'RCM', top: '52%', left: '32%', players: [{ name: "Millozzi", starts: 3 }, { name: "Marchetti", starts: 3 }] },
+      { role: 'CM', top: '42%', left: '50%', players: [{ name: "Taddei", starts: 4 }, { name: "Mirenzi", starts: 2 }] },
+      { role: 'LCM', top: '52%', left: '68%', players: [{ name: "Menghini", starts: 6 }] },
+      { role: 'RS', top: '74%', left: '40%', players: [{ name: "Carpentieri", starts: 6 }] },
+      { role: 'LS', top: '74%', left: '60%', players: [{ name: "Marchetti", starts: 3 }, { name: "Castroreale", starts: 3 }] },
     ],
   };
   frosinone.substitutes = [
