@@ -10,7 +10,17 @@ import {
 import type { Locale } from '../i18n/translations';
 import { withGoalkeeperInSystem } from './formationSystem';
 import type { MostSubRow } from './mostSubs';
+import { splitSquadListName } from './playerNameFormat';
 import blankPitch from '../assets/blank-pitch.png?inline';
+
+/** Page-2 squad list name as "SURNAME, Given" (HTML); see splitSquadListName for the rules. */
+function squadListNameHtml(name: string, squad: OppositionSquadPlayer[], teamId: string): string {
+  const n = splitSquadListName(name, squad, teamId);
+  const surname = `<span class="sn">${esc(n.surname.toLocaleUpperCase())}</span>`;
+  const given = n.given ? `, ${esc(n.given)}` : '';
+  const alias = n.alias ? ` <span class="alias">(${esc(n.alias)})</span>` : '';
+  return `${surname}${given}${alias}`;
+}
 
 function esc(value: string): string {
   return value
@@ -222,6 +232,11 @@ export function openOppositionSquadPdf(
   win.document.close();
 }
 
+/** Rows that fit page 2 at the standard density (A4 landscape, v5 layout). */
+const SQUAD_FULL_ROWS = 28;
+/** Rows that fit page 2 at the compact density; beyond this the table splits in two columns. */
+const SQUAD_COMPACT_ROWS = 32;
+
 export function buildOppositionSquadPdfHtml(
   teamName: string,
   players: OppositionSquadPlayer[],
@@ -229,21 +244,45 @@ export function buildOppositionSquadPdfHtml(
   options?: OppositionSquadPdfOptions
 ): string {
   const locale = options?.locale ?? 'en';
-  const rows = sortOppositionSquadByDepth(
+  const rowList = sortOppositionSquadByDepth(
     withSubRoleFallback(players, options?.mostSubs ?? [])
-  )
-    .map((p) => {
+  ).map((p) => {
       const height =
         p.heightCm != null ? `${p.heightCm} ${labels.heightUnit}` : '—';
       return `<tr>
         <td class="num">${p.number != null ? esc(String(p.number)) : '—'}</td>
-        <td class="name">${esc(p.name)}</td>
+        <td class="name">${squadListNameHtml(p.name, players, options?.teamId ?? '')}</td>
         <td class="role">${esc(localizePdfPosition(p.position, locale))}</td>
         <td class="meta">${esc(height)}</td>
         <td class="meta">${esc(localizePreferredFoot(p.preferredFoot, locale))}</td>
       </tr>`;
-    })
-    .join('\n');
+  });
+  // Page 2 must always hold the full squad on ONE page (v5 two-page layout):
+  // up to SQUAD_FULL_ROWS keep the original density, then tighter rows, then two columns.
+  const squadDensity: 'normal' | 'compact' | 'two-col' =
+    rowList.length <= SQUAD_FULL_ROWS
+      ? 'normal'
+      : rowList.length <= SQUAD_COMPACT_ROWS
+        ? 'compact'
+        : 'two-col';
+  const rows = rowList.join('\n');
+  const half = Math.ceil(rowList.length / 2);
+  const rowsLeft = rowList.slice(0, half).join('\n');
+  const rowsRight = rowList.slice(half).join('\n');
+  const theadHtml = `<thead>
+        <tr>
+          <th>${esc(labels.colNumber)}</th>
+          <th>${esc(labels.colPlayer)}</th>
+          <th>${esc(labels.colRole)}</th>
+          <th>${esc(labels.colHeight)}</th>
+          <th>${esc(labels.colFoot)}</th>
+        </tr>
+      </thead>`;
+  const useColumns = Boolean(options?.depth && options.teamId) && squadDensity === 'two-col';
+  const squadClass =
+    options?.depth && options.teamId && squadDensity !== 'normal'
+      ? ` squad-${squadDensity}`
+      : '';
 
   const dateLine = new Date().toLocaleDateString(
     locale === 'it' ? 'it-IT' : 'en-GB',
@@ -521,6 +560,22 @@ export function buildOppositionSquadPdfHtml(
     .squad-section th:nth-child(3), .squad-section td:nth-child(3) { width: 32%; text-align: center; }
     .squad-section th:nth-child(4), .squad-section td:nth-child(4) { width: 17%; }
     .squad-section th:nth-child(5), .squad-section td:nth-child(5) { width: 17%; }
+    /* Adaptive page 2: only applied when the squad is larger than the standard page holds. */
+    .squad-section td.name { font-weight: 500; }
+    .squad-section td.name .sn { font-weight: 700; }
+    .squad-section td.name .alias { color: #64748b; font-weight: 400; }
+    .squad-compact td, .squad-compact th { padding-top: 1.3px; padding-bottom: 1.3px; font-size: 8.5pt; }
+    .squad-compact header { margin-bottom: 3px; }
+    .squad-compact table { margin-top: 2px; }
+    .squad-two-col .squad-cols { display: grid; grid-template-columns: 1fr 1fr; column-gap: 8mm; align-items: start; }
+    .squad-two-col .squad-cols table { margin-top: 2px; }
+    .squad-two-col td, .squad-two-col th { padding: 2.6px 5px; font-size: 9pt; }
+    .squad-two-col th:nth-child(1), .squad-two-col td:nth-child(1) { width: 8%; }
+    .squad-two-col th:nth-child(2), .squad-two-col td:nth-child(2) { width: 34%; }
+    .squad-two-col th:nth-child(3), .squad-two-col td:nth-child(3) { width: 22%; text-align: center; }
+    .squad-two-col th:nth-child(4), .squad-two-col td:nth-child(4) { width: 18%; }
+    .squad-two-col th:nth-child(5), .squad-two-col td:nth-child(5) { width: 18%; }
+    .squad-two-col .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     @media print {
       body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
       .page-1, .depth-section { break-inside: avoid; page-break-inside: avoid; }
@@ -550,13 +605,13 @@ export function buildOppositionSquadPdfHtml(
     <img src="${blankPitch}" alt="" />
   </div>
 </div>
-  <section class="squad-section page-break">
+  <section class="squad-section page-break${squadClass}">
     <header>
       <p class="eyebrow">Enjoy Football</p>
       <h1>${esc(teamName)} — ${esc(labels.title)}</h1>
       <p class="meta-line">${esc(labels.generatedLabel)} ${esc(dateLine)}</p>
     </header>
-    <table>`
+    ${useColumns ? '<div class="squad-cols"><table>' : '<table>'}`
       : `<header>
     <p class="eyebrow">Enjoy Football</p>
     <h1>${esc(teamName)} — ${esc(labels.title)}</h1>
@@ -566,19 +621,20 @@ export function buildOppositionSquadPdfHtml(
   <section class="squad-section">
     <table>`
   }
-      <thead>
-        <tr>
-          <th>${esc(labels.colNumber)}</th>
-          <th>${esc(labels.colPlayer)}</th>
-          <th>${esc(labels.colRole)}</th>
-          <th>${esc(labels.colHeight)}</th>
-          <th>${esc(labels.colFoot)}</th>
-        </tr>
-      </thead>
+      ${theadHtml}
       <tbody>
-        ${rows}
+        ${useColumns ? rowsLeft : rows}
       </tbody>
-    </table>
+    </table>${
+      useColumns
+        ? `<table>
+      ${theadHtml}
+      <tbody>
+        ${rowsRight}
+      </tbody>
+    </table></div>`
+        : ''
+    }
   </section>
   <script>
     window.addEventListener('load', function () {
