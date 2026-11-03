@@ -3781,14 +3781,14 @@ attachReferencePack('frosinone', '2026-11-07_campionato-u19-vs-frosinone', [
   {
     id: 'frosinone-ref-latina',
     title: {
-      en: 'Frosinone vs Latina 2–1',
-      it: 'Frosinone vs Latina 2–1',
+      en: 'Frosinone vs Latina 1–2',
+      it: 'Frosinone vs Latina 1–2',
     },
     competition: {
       en: 'Primavera 2 · Matchday 7',
       it: 'Primavera 2 · Giornata 7',
     },
-    score: '2–1',
+    score: '1–2',
     videoFile: 'https://vimeo.com/1242567335/d20b9bfcf3',
   },
 ]);
