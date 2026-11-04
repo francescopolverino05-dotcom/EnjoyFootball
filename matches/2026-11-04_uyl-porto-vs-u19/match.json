@@ -6,8 +6,8 @@
     "it": "Porto vs Napoli"
   },
   "subtitle": {
-    "en": "UEFA Youth League · Matchday 4 · KO 11:00/12:00 (TBC)",
-    "it": "UEFA Youth League · Giornata 4 · KO 11:00/12:00 (da confermare)"
+    "en": "UEFA Youth League · Matchday 4",
+    "it": "UEFA Youth League · Giornata 4"
   },
   "date": "2026-11-04",
   "competitionId": "uefaYouthLeague",
@@ -36,7 +36,10 @@
     "colorClass": "u19",
     "logo": "napoli-logo.png"
   },
-  "score": null,
+  "score": {
+    "home": 3,
+    "away": 1
+  },
   "goals": [],
   "timeline": [],
   "formations": [],
@@ -44,5 +47,17 @@
   "teamStats": [],
   "goalkeepers": [],
   "clips": [],
-  "analysisVideos": []
+  "analysisVideos": [],
+  "vimeo": {
+    "folderId": "31152000",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/31152000",
+    "lastSyncedAt": "2026-11-04T14:36:04.623Z"
+  },
+  "video": {
+    "fullMatch": "https://vimeo.com/1243297279/f37e045f38",
+    "notes": {
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
+    }
+  }
 }
