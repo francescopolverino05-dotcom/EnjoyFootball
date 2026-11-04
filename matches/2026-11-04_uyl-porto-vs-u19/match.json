@@ -44,7 +44,242 @@
   "timeline": [],
   "formations": [],
   "dynamics": [],
-  "teamStats": [],
+  "teamStats": [
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Goals",
+        "it": "Gol"
+      },
+      "home": "3",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "Possession % (share of passes)",
+        "it": "Possesso Palla % (quota passaggi)"
+      },
+      "home": "51.4%",
+      "away": "48.6%"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes (completed)",
+        "it": "Passaggi (riusciti)"
+      },
+      "home": "551 (477)",
+      "away": "521 (443)"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Pass accuracy",
+        "it": "Precisione passaggi"
+      },
+      "home": "86.9%",
+      "away": "85.2%"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots",
+        "it": "Tiri"
+      },
+      "home": "12",
+      "away": "15"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "On target",
+        "it": "In porta"
+      },
+      "home": "4",
+      "away": "7"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Blocked",
+        "it": "Bloccati"
+      },
+      "home": "3",
+      "away": "5"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Off target",
+        "it": "Fuori"
+      },
+      "home": "5",
+      "away": {
+        "en": "2 + 1 woodwork",
+        "it": "2 + 1 legno"
+      }
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Estimated xG",
+        "it": "xG stimato"
+      },
+      "home": "1.61",
+      "away": "1.08"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Corners",
+        "it": "Calci d'angolo"
+      },
+      "home": "2",
+      "away": "6"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Fouls",
+        "it": "Falli"
+      },
+      "home": "18",
+      "away": "18"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Offsides",
+        "it": "Fuorigioco"
+      },
+      "home": "2",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Yellow cards",
+        "it": "Cartellini gialli"
+      },
+      "home": "4",
+      "away": {
+        "en": "3 + coach",
+        "it": "3 + allenatore"
+      }
+    },
+    {
+      "category": {
+        "en": "Goalkeeping",
+        "it": "Portieri"
+      },
+      "name": {
+        "en": "Keeper saves",
+        "it": "Parate portiere"
+      },
+      "home": "Nikolov 6",
+      "away": "Spinelli 1"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Interceptions",
+        "it": "Intercetti"
+      },
+      "home": "54",
+      "away": "38"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Recoveries",
+        "it": "Recuperi"
+      },
+      "home": "47",
+      "away": "49"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Duels won",
+        "it": "Duelli vinti"
+      },
+      "home": "28",
+      "away": "24"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Aerials won",
+        "it": "Duelli aerei vinti"
+      },
+      "home": "13",
+      "away": "17"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "PPDA (lower = more pressing)",
+        "it": "PPDA (più basso = più pressing)"
+      },
+      "home": "5.40",
+      "away": "7.34"
+    }
+  ],
   "goalkeepers": [],
   "clips": [],
   "analysisVideos": [],
