@@ -3386,6 +3386,216 @@ if (frosinone) {
     { name: "Alessandro Castroreale", position: 'LS / RCM', birthYear: 2009, heightCm: 184, preferredFoot: 'Destro' },
     { name: "Roberto Morra", position: 'CAM', birthYear: 2009 },
   ];
+  /**
+   * GK-area shooters from StatMan `/workspace/frosinone/shots/frosinone_shots_all.csv`
+   * (13 identified of 87). Shirt→name via 4-2-3-1 rule matching all three scouted XIs
+   * (2 Mirenzi, 6 Bosi, 7 Taddei, 8 Millozzi, 9 Carpentieri, 10 Menghini, 11 Marchetti).
+   * Goal-target coords never recorded → omitted. Foot zones only when technique maps
+   * cleanly to inside/toe/outside (laces / overhead / "not recorded" left unshaded).
+   */
+  frosinone.gkStrikers = [
+    {
+      id: 'frosinone-gk-carpentieri',
+      name: 'Carpentieri',
+      number: 9,
+      clips: [],
+      shots: [
+        {
+          id: 'fro-carp-perugia-03-13',
+          title: {
+            en: "Perugia 03:13 — inside box, left · left foot · Saved",
+            it: "Perugia 03:13 — in area, sinistra · sinistro · Parato",
+          },
+          type: 'inside-box',
+          pitchX: 25,
+          pitchY: 92,
+          foot: 'left',
+        },
+        {
+          id: 'fro-carp-perugia-11-34',
+          title: {
+            en: "Perugia 11:34 — centre of box · overhead (foot side not recorded) · Crossbar (foul)",
+            it: "Perugia 11:34 — centro area · rovesciata (piede non registrato) · Traversa (fallo)",
+          },
+          type: 'inside-box',
+          pitchX: 50,
+          pitchY: 90,
+        },
+        {
+          id: 'fro-carp-perugia-18-03',
+          title: {
+            en: "Perugia 18:03 — outside box, right · left foot, laces · Saved",
+            it: "Perugia 18:03 — fuori area, destra · sinistro, lacci · Parato",
+          },
+          type: 'outside-box',
+          pitchX: 70,
+          pitchY: 75,
+          foot: 'left',
+        },
+        {
+          id: 'fro-carp-cosenza-77-16',
+          title: {
+            en: "Cosenza 77:16 — edge of 6-yd box, centre · left foot, inside · GOAL",
+            it: "Cosenza 77:16 — limite dei 6 m, centro · sinistro, interno · GOL",
+          },
+          type: 'inside-box',
+          pitchX: 50,
+          pitchY: 93,
+          foot: 'left',
+          footZone: 'inside',
+        },
+        {
+          id: 'fro-carp-latina-51-16',
+          title: {
+            en: "Latina 51:16 — box centre · left foot, inside · GOAL",
+            it: "Latina 51:16 — centro area · sinistro, interno · GOL",
+          },
+          type: 'inside-box',
+          pitchX: 50,
+          pitchY: 90,
+          foot: 'left',
+          footZone: 'inside',
+        },
+      ],
+    },
+    {
+      id: 'frosinone-gk-marchetti',
+      name: 'Marchetti',
+      number: 11,
+      clips: [],
+      shots: [
+        {
+          id: 'fro-marc-perugia-26-56',
+          title: {
+            en: "Perugia 26:56 — left side of box · right foot, inside · Saved",
+            it: "Perugia 26:56 — lato sinistro area · destro, interno · Parato",
+          },
+          type: 'inside-box',
+          pitchX: 20,
+          pitchY: 90,
+          foot: 'right',
+          footZone: 'inside',
+        },
+        {
+          id: 'fro-marc-perugia-33-06',
+          title: {
+            en: "Perugia 33:06 — direct free kick · right foot, inside · Off target (pitch location doubtful — not plotted)",
+            it: "Perugia 33:06 — punizione diretta · destro, interno · Fuori (posizione in dubbio — non plottata)",
+          },
+          type: 'free-kick',
+          foot: 'right',
+          footZone: 'inside',
+        },
+      ],
+    },
+    {
+      id: 'frosinone-gk-bosi',
+      name: 'Bosi',
+      number: 6,
+      clips: [],
+      shots: [
+        {
+          id: 'fro-bosi-perugia-62-55',
+          title: {
+            en: "Perugia 62:55 — six-yard box centre · header · Off target",
+            it: "Perugia 62:55 — centro dei 6 m · di testa · Fuori",
+          },
+          type: 'inside-box',
+          pitchX: 45,
+          pitchY: 92,
+          body: 'head',
+        },
+        {
+          id: 'fro-bosi-cosenza-69-35',
+          title: {
+            en: "Cosenza 69:35 — box right · left foot, inside · GOAL",
+            it: "Cosenza 69:35 — area destra · sinistro, interno · GOL",
+          },
+          type: 'inside-box',
+          pitchX: 75,
+          pitchY: 85,
+          foot: 'left',
+          footZone: 'inside',
+        },
+      ],
+    },
+    {
+      id: 'frosinone-gk-taddei',
+      name: 'Taddei',
+      number: 7,
+      clips: [],
+      shots: [
+        {
+          id: 'fro-tad-perugia-01-23',
+          title: {
+            en: "Perugia 01:23 — edge of box, centre-right · right foot · Off target",
+            it: "Perugia 01:23 — limite area, centro-destra · destro · Fuori",
+          },
+          type: 'outside-box',
+          pitchX: 60,
+          pitchY: 80,
+          foot: 'right',
+        },
+      ],
+    },
+    {
+      id: 'frosinone-gk-millozzi',
+      name: 'Millozzi',
+      number: 8,
+      clips: [],
+      shots: [
+        {
+          id: 'fro-mil-perugia-07-56',
+          title: {
+            en: "Perugia 07:56 — outside box, right · right foot · Woodwork (crossbar)",
+            it: "Perugia 07:56 — fuori area, destra · destro · Traversa",
+          },
+          type: 'outside-box',
+          pitchX: 75,
+          pitchY: 75,
+          foot: 'right',
+        },
+      ],
+    },
+    {
+      id: 'frosinone-gk-menghini',
+      name: 'Menghini',
+      number: 10,
+      clips: [],
+      shots: [
+        {
+          id: 'fro-men-perugia-08-11',
+          title: {
+            en: "Perugia 08:11 — inside box, centre · right foot · Off target",
+            it: "Perugia 08:11 — in area, centro · destro · Fuori",
+          },
+          type: 'inside-box',
+          pitchX: 50,
+          pitchY: 88,
+          foot: 'right',
+        },
+      ],
+    },
+    {
+      id: 'frosinone-gk-mirenzi',
+      name: 'Mirenzi',
+      number: 2,
+      clips: [],
+      shots: [
+        {
+          id: 'fro-mir-perugia-93-04',
+          title: {
+            en: "Perugia 93:04 — centre of box · header · Off target",
+            it: "Perugia 93:04 — centro area · di testa · Fuori",
+          },
+          type: 'inside-box',
+          pitchX: 50,
+          pitchY: 95,
+          body: 'head',
+        },
+      ],
+    },
+  ];
 }
 
 /** Reference tapes from Vimeo Avversari folders (synced manually from folder uploads). */

@@ -75,22 +75,26 @@ export type GkShotType = 'outside-box' | 'inside-box' | 'penalty' | 'free-kick';
 export type GkFootSide = 'left' | 'right';
 export type GkFootZone = 'inside' | 'toe' | 'outside';
 
-/** One finishing action, plotted on the pitch and the goal. */
+/** One finishing action, plotted on the pitch and (when known) the goal. */
 export interface GkShot {
   id: string;
   title: Localized;
   videoFile?: string;
   type: GkShotType;
-  /** 0 = left touchline, 100 = right, attacking toward the goal at the top. */
-  pitchX: number;
-  /** 0 = far from goal, 100 = goal line. */
-  pitchY: number;
-  /** 0 = left post, 100 = right post. */
-  goalX: number;
-  /** 0 = crossbar, 100 = ground. */
-  goalY: number;
-  foot: GkFootSide;
-  footZone: GkFootZone;
+  /** 0 = left touchline, 100 = right, attacking toward the goal at the top. Omit if location unknown. */
+  pitchX?: number;
+  /** 0 = far from goal, 100 = goal line. Omit if location unknown. */
+  pitchY?: number;
+  /** 0 = left post, 100 = right post. Omit when goal target was not recorded. */
+  goalX?: number;
+  /** 0 = crossbar, 100 = ground. Omit when goal target was not recorded. */
+  goalY?: number;
+  /** Which foot; omit for headers or when side was not recorded. */
+  foot?: GkFootSide;
+  /** Part of the foot (inside / toe / outside). Omit when not recorded or no matching zone (e.g. laces, overhead). */
+  footZone?: GkFootZone;
+  /** Set when the finish was with the head (no foot shading). */
+  body?: 'head';
 }
 
 export interface GkStrikerClip {

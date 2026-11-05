@@ -25,7 +25,7 @@ function shotColor(type: GkShotType): string {
 function countZones(shots: GkShot[], side: GkFootSide): Record<GkFootZone, number> {
   const counts: Record<GkFootZone, number> = { inside: 0, toe: 0, outside: 0 };
   for (const shot of shots) {
-    if (shot.foot === side) counts[shot.footZone] += 1;
+    if (shot.foot === side && shot.footZone) counts[shot.footZone] += 1;
   }
   return counts;
 }
@@ -124,14 +124,16 @@ function ShotPitch({
         <div className="gk-shot-box gk-shot-box-6" />
         <div className="gk-shot-spot" />
         <div className="gk-shot-goal-line" />
-        {shots.map((shot) => (
+        {shots
+          .filter((shot) => shot.pitchX != null && shot.pitchY != null)
+          .map((shot) => (
           <button
             key={shot.id}
             type="button"
             className={`gk-shot-dot ${activeId === shot.id ? 'active' : ''}`}
             style={{
               left: `${shot.pitchX}%`,
-              top: `${100 - shot.pitchY}%`,
+              top: `${100 - (shot.pitchY as number)}%`,
               background: shotColor(shot.type),
             }}
             title={typeof shot.title === 'string' ? shot.title : shot.title.en}
@@ -159,7 +161,9 @@ function GoalFrame({
       <div className="gk-goal-bar" />
       <div className="gk-goal-mouth">
         <div className="gk-goal-net" />
-        {shots.map((shot) => (
+        {shots
+          .filter((shot) => shot.goalX != null && shot.goalY != null)
+          .map((shot) => (
           <button
             key={shot.id}
             type="button"
@@ -195,6 +199,7 @@ export default function GkStrikerScout({
     ...FOOT_ZONES.map((z) => right[z]),
     1
   );
+  const headCount = striker.shots.filter((s) => s.body === 'head').length;
   const active = striker.shots.find((s) => s.id === activeId) ?? null;
   const byType = striker.shots.reduce(
     (acc, shot) => {
@@ -238,6 +243,14 @@ export default function GkStrikerScout({
           </span>
         ))}
       </div>
+      {headCount > 0 ? (
+        <p className="gk-active-shot" style={{ marginTop: 0 }}>
+          {L({
+            en: `Headers recorded: ${headCount} (not shaded on the feet).`,
+            it: `Colpi di testa registrati: ${headCount} (non ombreggiati sui piedi).`,
+          })}
+        </p>
+      ) : null}
 
       <div className="gk-striker-graphics">
         <div>
