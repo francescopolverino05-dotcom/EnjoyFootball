@@ -122,6 +122,7 @@ export default function OpponentPage() {
   const refs = pack.referenceMatches.slice(0, refCap);
   const emptySlots = Math.max(0, refCap - refs.length);
   const reports = pack.reportItems;
+  const writtenReports = pack.writtenReports ?? [];
   const strengthsWeaknesses =
     pack.strengthsWeaknesses ?? EMPTY_STRENGTHS_WEAKNESSES;
   const gkStrikers = strikersForGkTab(opponent.gkStrikers, opponent.shortName);
@@ -496,7 +497,33 @@ export default function OpponentPage() {
           <div className="tab-content active" role="tabpanel">
             <div className="opposition-report-shell">
               <div className="section-title">{t('oppositionReportWritten')}</div>
-              <p className="home-empty">{t('oppositionReportWrittenEmpty')}</p>
+              {writtenReports.length === 0 || !selectedSlug ? (
+                <p className="home-empty">{t('oppositionReportWrittenEmpty')}</p>
+              ) : (
+                <div className="opposition-written-report">
+                  {writtenReports.map((item) => (
+                    <article className="analysis-card" key={item.id}>
+                      <MatchMedia
+                        slug={selectedSlug}
+                        src={item.videoFile}
+                        kind="analysis"
+                        fullHeight
+                        unsupportedLabel={t('videoUnsupported')}
+                        playLabel={t('playVideo')}
+                        openPdfLabel={t('openPdf')}
+                        downloadPdfLabel={t('downloadPdf')}
+                        title={L(item.title)}
+                      />
+                      <div className="clip-card-body">
+                        <div className="clip-card-title">{L(item.title)}</div>
+                        {item.description ? (
+                          <div className="clip-card-desc">{L(item.description)}</div>
+                        ) : null}
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              )}
               <div className="section-title">{t('oppositionReportVideo')}</div>
               {reports.length === 0 ? (
                 <p className="home-empty">{t('oppositionReportVideoEmpty')}</p>

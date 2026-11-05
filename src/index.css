@@ -3291,7 +3291,17 @@ button {
 }
 
 .opposition-report-shell {
-  max-width: 720px;
+  max-width: 920px;
+}
+
+.opposition-written-report {
+  max-width: 920px;
+  margin-bottom: 28px;
+}
+
+.opposition-written-report .video-player-wrap--pdf .pdf-frame,
+.opposition-written-report .video-player-wrap--full.video-player-wrap--pdf .pdf-frame {
+  height: min(78vh, 920px);
 }
 
 .two-column-notes {

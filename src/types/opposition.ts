@@ -126,6 +126,8 @@ export interface OppositionFixturePack {
   referenceMatches: OppositionReferenceMatch[];
   /** Written notes and/or video reports for this fixture. */
   reportItems: AnalysisVideo[];
+  /** Staff written report (PDF) for this fixture. */
+  writtenReports?: AnalysisVideo[];
   /** Scout strengths / weaknesses for this fixture. */
   strengthsWeaknesses?: StrengthsWeaknesses;
 }

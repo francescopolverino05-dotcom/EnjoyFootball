@@ -3405,6 +3405,7 @@ function attachReferencePack(
       : prev?.reportItems ?? [],
     strengthsWeaknesses:
       prev?.strengthsWeaknesses ?? EMPTY_STRENGTHS_WEAKNESSES,
+    writtenReports: prev?.writtenReports ?? [],
   };
 }
 
@@ -3840,6 +3841,29 @@ attachReferencePack('frosinone', '2026-11-07_campionato-u19-vs-frosinone', [
     tags: ['vimeo', 'opposition', 'studio-report'],
   },
 ]);
+
+{
+  const frosinonePack = OPPONENTS.find((o) => o.id === 'frosinone')?.fixturePacks[
+    '2026-11-07_campionato-u19-vs-frosinone'
+  ];
+  if (frosinonePack) {
+    frosinonePack.writtenReports = [
+      {
+        id: 'frosinone-relazione-tecnica',
+        title: {
+          en: 'Technical report — Frosinone',
+          it: 'Relazione tecnica — Frosinone',
+        },
+        description: {
+          en: 'Pre-match tactical report (staff, 2–5 November 2026).',
+          it: 'Relazione tattica pre-gara (staff, 2–5 novembre 2026).',
+        },
+        videoFile: 'Relazione_Tecnica_Frosinone.pdf',
+        kind: 'pdf',
+      },
+    ];
+  }
+}
 
 attachReferencePack(
   'bari',
