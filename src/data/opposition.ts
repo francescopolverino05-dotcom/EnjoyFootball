@@ -260,7 +260,7 @@ const OPPONENTS: OppositionOpponent[] = [
   club('benevento', 'Benevento', ['primavera2']),
   club('catanzaro', 'Catanzaro', ['primavera2']),
   club('cosenza', 'Cosenza', ['primavera2']),
-  club('frosinone', 'Frosinone', ['primavera2'], '1-3-5-2'),
+  club('frosinone', 'Frosinone', ['primavera2'], '1-4-2-3-1', ['1-3-5-2']),
   club('latina', 'Latina', ['primavera2']),
   club('monopoli', 'Monopoli', ['primavera2'], '1-5-3-2'),
   club('palermo', 'Palermo', ['primavera2']),
@@ -3199,30 +3199,59 @@ if (frosinone) {
   /** XIs by shirt onto 3-5-2: 1 GK, 5 RCB, 6 CB, 4 LCB, 2 RWB, 3 LWB, 8 RCM, 7 CM, 10 LCM, 9 RS, 11 LS. */
   const frosinone352 = (byShirt: string[]): PitchPlayer[] =>
     placeholder352('frosinone').map((p) => ({ ...p, name: byShirt[p.number - 1] }));
-  /** Same XI last three league matches (Cosenza, Perugia, Latina). */
-  const vs_latina = frosinone352(["Capanna", "Mirenzi", "Colafrancesco", "Esposito", "Reali", "Bosi", "Taddei", "Millozzi", "Carpentieri", "Menghini", "Marchetti"]);
-  const vs_perugia = frosinone352(["Capanna", "Mirenzi", "Colafrancesco", "Esposito", "Reali", "Bosi", "Taddei", "Millozzi", "Carpentieri", "Menghini", "Marchetti"]);
-  const vs_cosenza = frosinone352(["Capanna", "Mirenzi", "Colafrancesco", "Esposito", "Reali", "Bosi", "Taddei", "Millozzi", "Carpentieri", "Menghini", "Marchetti"]);
+  /**
+   * XIs by shirt onto 4-2-3-1: 1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 RCM, 8 LCM, 11 CAM, 9 ST, 7 RW, 10 LW.
+   * Latina only: 7 LW, 10 RW (`wingsSwapped`).
+   */
+  const frosinone4231 = (byShirt: string[], wingsSwapped = false): PitchPlayer[] => {
+    const t = 'frosinone';
+    const n = (shirt: number) => byShirt[shirt - 1];
+    const wingRight = wingsSwapped
+      ? { number: 10, name: n(10), role: 'RW' as const, teamId: t, top: '60%', left: '20%' }
+      : { number: 7, name: n(7), role: 'RW' as const, teamId: t, top: '60%', left: '20%' };
+    const wingLeft = wingsSwapped
+      ? { number: 7, name: n(7), role: 'LW' as const, teamId: t, top: '60%', left: '80%' }
+      : { number: 10, name: n(10), role: 'LW' as const, teamId: t, top: '60%', left: '80%' };
+    return [
+      { number: 1, name: n(1), role: 'GK', teamId: t, isGk: true, top: '8%', left: '50%' },
+      { number: 2, name: n(2), role: 'RB', teamId: t, top: '22%', left: '18%' },
+      { number: 5, name: n(5), role: 'RCB', teamId: t, top: '20%', left: '38%' },
+      { number: 6, name: n(6), role: 'LCB', teamId: t, top: '20%', left: '62%' },
+      { number: 3, name: n(3), role: 'LB', teamId: t, top: '22%', left: '82%' },
+      { number: 4, name: n(4), role: 'RCM', teamId: t, top: '40%', left: '36%' },
+      { number: 8, name: n(8), role: 'LCM', teamId: t, top: '40%', left: '64%' },
+      wingRight,
+      { number: 11, name: n(11), role: 'CAM', teamId: t, top: '58%', left: '50%' },
+      wingLeft,
+      { number: 9, name: n(9), role: 'ST', teamId: t, top: '78%', left: '50%' },
+    ];
+  };
+  /** Same XI last three league matches (Cosenza, Perugia, Latina) — now 4-2-3-1. */
+  const xi4231 = ["Capanna", "Mirenzi", "Colafrancesco", "Esposito", "Reali", "Bosi", "Taddei", "Millozzi", "Carpentieri", "Menghini", "Marchetti"];
+  const vs_latina = frosinone4231(xi4231, true);
+  const vs_perugia = frosinone4231(xi4231);
+  const vs_cosenza = frosinone4231(xi4231);
   const vs_palermo = frosinone352(["Capanna", "Mirenzi", "Colafrancesco", "Esposito", "Grande", "Bosi", "Taddei", "Marchetti", "Carpentieri", "Menghini", "Castroreale"]);
   const vs_catanzaro = frosinone352(["Amato", "Anzidei", "Colafrancesco", "Esposito", "Reali", "Grande", "Mirenzi", "Marchetti", "Carpentieri", "Menghini", "Castroreale"]);
   const vs_pisa = frosinone352(["Amato", "Bosi", "Colafrancesco", "Esposito", "Reali", "Grande", "Mirenzi", "Marchetti", "Carpentieri", "Menghini", "Castroreale"]);
-  frosinone.formationSystem = '1-3-5-2';
-  frosinone.starters = frosinone352(["Capanna", "Mirenzi", "Colafrancesco", "Esposito", "Reali", "Bosi", "Taddei", "Millozzi", "Carpentieri", "Menghini", "Marchetti"]);
+  frosinone.formationSystem = '1-4-2-3-1';
+  frosinone.alternateFormationSystems = ['1-3-5-2'];
+  frosinone.starters = frosinone4231(xi4231);
   frosinone.scoutedFormations = [
     {
       id: 'frosinone-probable-xi',
       label: { en: 'Probable XI', it: 'Probabile XI' },
-      system: '3-5-2',
+      system: '4-2-3-1',
       players: frosinone.starters,
       notes: {
-        en: 'Most frequent starter per role, Primavera 2 MD2–MD7 (LS: Marchetti — last three starts).',
-        it: 'Titolare più frequente per ruolo, Primavera 2 gior. 2–7 (LS: Marchetti — ultime tre titolarità).',
+        en: 'Most frequent starter per role, Primavera 2 MD2–MD7 mapped onto 4-2-3-1 by shirt (CAM: Marchetti — last three starts).',
+        it: 'Titolare più frequente per ruolo, Primavera 2 gior. 2–7 mappate sul 4-2-3-1 per maglia (CAM: Marchetti — ultime tre titolarità).',
       },
     },
     {
       id: 'frosinone-vs-latina',
       label: { en: "vs Latina (1–2)", it: "vs Latina (1–2)" },
-      system: '3-5-2',
+      system: '4-2-3-1',
       players: vs_latina,
       notes: {
         en: "Primavera 2 MD7, 31 Oct 2026, home, Frosinone 1–2 Latina (distinta). HT 0–1. Goals: De Caro (L) 4', De Caro (L) 54', Mirenzi 68'. Subs: Morra for Carpentieri 43', Silvestri for Esposito 56', Danieli for Millozzi 56', Castellani for Taddei 65', Pantano for Reali 85'. Cards: Yellow Carpentieri 37', Colafrancesco; Mutarelli (L) 81'. Coach Guberti.",
@@ -3232,7 +3261,7 @@ if (frosinone) {
     {
       id: 'frosinone-vs-perugia',
       label: { en: "vs Perugia (0–5)", it: "vs Perugia (0–5)" },
-      system: '3-5-2',
+      system: '4-2-3-1',
       players: vs_perugia,
       notes: {
         en: "Primavera 2 MD6, 24 Oct 2026, away, Perugia 5–0 Frosinone (Mondoprimavera). Perugia goals: Dottori 37' (pen.), Agnissan 70', 75', 83', 90'+2. XI confirmed on Mondoprimavera (Carpentieri listed as Carpineti). Bench: Monaldi, Trulli, Gori, Pantano, Castellani, Ndao, Leonardi, Polinari, Silvestri, Danieli, Montesano, Casagrande. Coach Guberti.",
@@ -3242,7 +3271,7 @@ if (frosinone) {
     {
       id: 'frosinone-vs-cosenza',
       label: { en: "vs Cosenza (2–1)", it: "vs Cosenza (2–1)" },
-      system: '3-5-2',
+      system: '4-2-3-1',
       players: vs_cosenza,
       notes: {
         en: "Primavera 2 MD5, 17 Oct 2026, away, Cosenza 1–2 Frosinone (distinta). Starting XI from official sheet. Goals/subs cross-checked with Transfermarkt: Bosi 65', Carpentieri 69'; Mazzulla (C) 38'. Subs: Castroreale for Marchetti 62', Casagrande for Taddei 62', Ndao for Colafrancesco 84', Pantano for Carpentieri 90', Castellani for Millozzi 90'. Coach Guberti.",
@@ -3281,23 +3310,23 @@ if (frosinone) {
     },
   ];
   frosinone.squadDepth = {
-    system: '1-3-5-2',
+    system: '1-4-2-3-1',
     note: {
-      en: 'Primavera 2 MD2–MD7 (Pisa, Catanzaro, Palermo, Cosenza, Perugia, Latina) — distinte + Mondoprimavera.',
-      it: 'Primavera 2 gior. 2–7 (Pisa, Catanzaro, Palermo, Cosenza, Perugia, Latina) — distinte + Mondoprimavera.',
+      en: 'Primavera 2 MD2–MD7 mapped onto 4-2-3-1 by shirt (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 RCM, 8 LCM, 11 CAM, 9 ST, 7 RW, 10 LW; Latina: 7 LW, 10 RW). MD2–MD4 cards remain 3-5-2.',
+      it: 'Primavera 2 gior. 2–7 mappate sul 4-2-3-1 per maglia (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 RCM, 8 LCM, 11 CAM, 9 ST, 7 RW, 10 LW; Latina: 7 LW, 10 RW). Le schede gior. 2–4 restano 3-5-2.',
     },
     slots: [
       { role: 'GK', top: '10%', left: '50%', players: [{ name: "Capanna", starts: 4 }, { name: "Amato", starts: 2 }] },
-      { role: 'RCB', top: '24%', left: '30%', players: [{ name: "Reali", starts: 5 }, { name: "Grande", starts: 1 }] },
-      { role: 'CB', top: '22%', left: '50%', players: [{ name: "Bosi", starts: 4 }, { name: "Grande", starts: 2 }] },
-      { role: 'LCB', top: '24%', left: '70%', players: [{ name: "Esposito", starts: 6 }] },
-      { role: 'RWB', top: '46%', left: '10%', players: [{ name: "Mirenzi", starts: 4 }, { name: "Bosi", starts: 1 }, { name: "Anzidei", starts: 1 }] },
-      { role: 'LWB', top: '46%', left: '90%', players: [{ name: "Colafrancesco", starts: 6 }] },
-      { role: 'RCM', top: '52%', left: '32%', players: [{ name: "Millozzi", starts: 3 }, { name: "Marchetti", starts: 3 }] },
-      { role: 'CM', top: '42%', left: '50%', players: [{ name: "Taddei", starts: 4 }, { name: "Mirenzi", starts: 2 }] },
-      { role: 'LCM', top: '52%', left: '68%', players: [{ name: "Menghini", starts: 6 }] },
-      { role: 'RS', top: '74%', left: '40%', players: [{ name: "Carpentieri", starts: 6 }] },
-      { role: 'LS', top: '74%', left: '60%', players: [{ name: "Marchetti", starts: 3 }, { name: "Castroreale", starts: 3 }] },
+      { role: 'RB', top: '28%', left: '14%', players: [{ name: "Mirenzi", starts: 4 }, { name: "Anzidei", starts: 1 }, { name: "Bosi", starts: 1 }] },
+      { role: 'RCB', top: '28%', left: '38%', players: [{ name: "Reali", starts: 5 }, { name: "Grande", starts: 1 }] },
+      { role: 'LCB', top: '28%', left: '62%', players: [{ name: "Bosi", starts: 4 }, { name: "Grande", starts: 2 }] },
+      { role: 'LB', top: '28%', left: '86%', players: [{ name: "Colafrancesco", starts: 6 }] },
+      { role: 'RCM', top: '48%', left: '36%', players: [{ name: "Esposito", starts: 6 }] },
+      { role: 'LCM', top: '48%', left: '64%', players: [{ name: "Millozzi", starts: 3 }, { name: "Marchetti", starts: 3 }] },
+      { role: 'RW', top: '74%', left: '16%', players: [{ name: "Taddei", starts: 3 }, { name: "Mirenzi", starts: 2 }, { name: "Menghini", starts: 1 }] },
+      { role: 'CAM', top: '62%', left: '50%', players: [{ name: "Marchetti", starts: 3 }, { name: "Castroreale", starts: 3 }] },
+      { role: 'LW', top: '74%', left: '84%', players: [{ name: "Menghini", starts: 5 }, { name: "Taddei", starts: 1 }] },
+      { role: 'ST', top: '84%', left: '50%', players: [{ name: "Carpentieri", starts: 6 }] },
     ],
   };
   frosinone.substitutes = [
