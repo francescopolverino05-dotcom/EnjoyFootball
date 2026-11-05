@@ -1871,6 +1871,19 @@ if (perugia) {
   });
   perugia.formationSystem = '1-4-1-4-1';
   perugia.starters = vsPisa;
+  const vsFrosinone = perugia4141({
+    gk: 'Piccini',
+    lb: 'Ragni',
+    lcb: 'Peruzzi',
+    rcb: 'Cesarini',
+    rb: 'Bisonni',
+    cdm: 'Malfatti',
+    lm: 'Ciani',
+    lcm: 'Perugini',
+    rcm: 'Dottori',
+    rm: 'Merico',
+    st: 'Iachini',
+  });
   perugia.scoutedFormations = [
     {
       id: 'perugia-vs-pisa',
@@ -1882,6 +1895,28 @@ if (perugia) {
         it: 'Sub: Raffaelli 65′ (Merico), Ximenez 65′ (Vanni), Giambarveri 74′ (Buonafede), Calva 89′ (Sheji), Pierangelini 89′ (Perugini).',
       },
     },
+    {
+      id: 'perugia-vs-frosinone',
+      label: { en: 'vs Frosinone (5–0)', it: 'vs Frosinone (5–0)' },
+      system: '4-1-4-1',
+      players: vsFrosinone,
+      notes: {
+        en: "Primavera 2 MD6, 24 Oct 2026, home, Perugia 5–0 Frosinone (tabellino). Goals: Dottori 37' (pen.), Agnissan 70', 75', 83', 90'+2. Subs: Vanni 64′ (Dottori), Agnissan 64′ (Iachini), Di Salvatore 77′ (Ragni), Raffaelli 77′ (Merico), Bellali 84′ (Perugini). Bench unused: Strappini, Olimpieri, Calvà, Giambarveri, Pierangelini, Santillo, Fasanella. Coach Giorgi.",
+        it: "Primavera 2 gior. 6, 24 ott 2026, casa, Perugia 5–0 Frosinone (tabellino). Gol: Dottori 37' (rig.), Agnissan 70', 75', 83', 90'+2. Sub: Vanni 64′ (Dottori), Agnissan 64′ (Iachini), Di Salvatore 77′ (Ragni), Raffaelli 77′ (Merico), Bellali 84′ (Perugini). Panchina non usata: Strappini, Olimpieri, Calvà, Giambarveri, Pierangelini, Santillo, Fasanella. All. Giorgi.",
+      },
+    },
+  ];
+  /** Most sub appearances across Pisa + Frosinone. */
+  perugia.substitutes = [
+    { name: 'Raffaelli' },
+    { name: 'Agnissan' },
+    { name: 'Bellali' },
+    { name: 'Di Salvatore' },
+    { name: 'Vanni' },
+    { name: 'Ximenez' },
+    { name: 'Giambarveri' },
+    { name: 'Calva' },
+    { name: 'Pierangelini' },
   ];
   perugia.squad = [
     { number: 1, name: 'Strappini', position: 'GK', isGk: true, birthYear: 2008 },
@@ -1907,6 +1942,12 @@ if (perugia) {
     { number: 21, name: 'Di Salvatore', birthYear: 2008 },
     { number: 22, name: 'Organai', position: 'GK', isGk: true, birthYear: 2010 },
     { number: 23, name: 'Ciarapica', birthYear: 2009 },
+    { name: 'Bisonni' },
+    { name: 'Dottori' },
+    { name: 'Agnissan' },
+    { name: 'Bellali' },
+    { name: 'Santillo' },
+    { name: 'Fasanella' },
   ];
 }
 
@@ -3257,8 +3298,8 @@ if (frosinone) {
       system: '4-2-3-1',
       players: vs_perugia,
       notes: {
-        en: "Primavera 2 MD6, 24 Oct 2026, away, Perugia 5–0 Frosinone (Mondoprimavera). Perugia goals: Dottori 37' (pen.), Agnissan 70', 75', 83', 90'+2. XI confirmed on Mondoprimavera (Carpentieri listed as Carpineti). Bench: Monaldi, Trulli, Gori, Pantano, Castellani, Ndao, Leonardi, Polinari, Silvestri, Danieli, Montesano, Casagrande. Coach Guberti.",
-        it: "Primavera 2 gior. 6, 24 ott 2026, trasferta, Perugia 5–0 Frosinone (Mondoprimavera). Gol Perugia: Dottori 37' (rig.), Agnissan 70', 75', 83', 90'+2. XI confermata su Mondoprimavera (Carpentieri riportato come Carpineti). Panchina: Monaldi, Trulli, Gori, Pantano, Castellani, Ndao, Leonardi, Polinari, Silvestri, Danieli, Montesano, Casagrande. All. Guberti.",
+        en: "Primavera 2 MD6, 24 Oct 2026, away, Perugia 5–0 Frosinone (tabellino). Perugia goals: Dottori 37' (pen.), Agnissan 70', 75', 83', 90'+2. XI confirmed (Carpentieri listed as Carpineti). Subs: Casagrande for Taddei 58', Ndao for Marchetti 58', Pantano for Bosi 84', Castellani for Millozzi 84', Polinari for Carpentieri 84'. Bench unused: Monaldi, Trulli, Gori, Leonardi, Silvestri, Danieli, Montesano. Coach Guberti.",
+        it: "Primavera 2 gior. 6, 24 ott 2026, trasferta, Perugia 5–0 Frosinone (tabellino). Gol Perugia: Dottori 37' (rig.), Agnissan 70', 75', 83', 90'+2. XI confermata (Carpentieri riportato come Carpineti). Sub: Casagrande per Taddei 58', Ndao per Marchetti 58', Pantano per Bosi 84', Castellani per Millozzi 84', Polinari per Carpentieri 84'. Panchina non usata: Monaldi, Trulli, Gori, Leonardi, Silvestri, Danieli, Montesano. All. Guberti.",
       },
     },
     {
@@ -3292,17 +3333,17 @@ if (frosinone) {
       { role: 'ST', top: '84%', left: '50%', players: [{ name: "Carpentieri", starts: 3 }] },
     ],
   };
-  /** Most sub appearances across Cosenza + Latina (Perugia note lists bench only). */
+  /** Most sub appearances across Cosenza + Perugia + Latina (came-on counts). */
   frosinone.substitutes = [
     { name: 'Cristian Pantano', position: 'RS / CB' },
     { name: 'Andrea Castellani', position: 'RCM / LCB' },
-    { name: 'Alessandro Castroreale', position: 'LS / RCM' },
     { name: 'Gianfilippo Casagrande', position: 'CM / LS' },
     { name: 'Yankhoba Ndao', position: 'LWB / LS' },
+    { name: 'Alessandro Castroreale', position: 'LS / RCM' },
+    { name: 'Fabio Polinari', position: 'LS / RS' },
     { name: 'Roberto Morra', position: 'FW' },
     { name: 'Manuel Silvestri', position: 'ST' },
     { name: 'Alessio Danieli', position: 'RWB' },
-    { name: 'Fabio Polinari', position: 'LS / RS' },
     { name: 'Federico Montesano', position: 'CM' },
     { name: 'Lorenzo Trulli', position: 'RM / RW' },
     { name: 'Matias Monaldi', position: 'GK' },
