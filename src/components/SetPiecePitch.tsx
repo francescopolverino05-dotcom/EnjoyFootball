@@ -50,9 +50,20 @@ function Badge({ outcome, x, y }: { outcome: SpOutcome; x: number; y: number }) 
   return <path d={`M${x - 4} ${y - 4} L${x + 4} ${y + 4} M${x + 4} ${y - 4} L${x - 4} ${y + 4}`} stroke="#fff" strokeWidth={3.4} />;
 }
 
-export default function SetPiecePitch({ panel, label }: { panel?: SpPanel; label: string }) {
+export default function SetPiecePitch({
+  panel,
+  label,
+  kind,
+}: {
+  panel?: SpPanel;
+  label: string;
+  /** Shown as an on-pitch badge so corners and free kicks stay distinct at a glance. */
+  kind?: 'corners' | 'freeKicks';
+}) {
   const { t } = useLanguage();
   const mid = `ah-${useId().replace(/:/g, '')}`;
+  const kindLabel = kind === 'corners' ? t('spPitchKindCorner') : kind === 'freeKicks' ? t('spPitchKindFreeKick') : null;
+  const kindFill = kind === 'corners' ? '#1b5e20' : kind === 'freeKicks' ? '#0d47a1' : null;
   return (
     <svg viewBox="0 0 320 190" role="img" aria-label={label} style={{ width: '100%', display: 'block', borderRadius: 8 }}>
       <defs>
@@ -74,7 +85,17 @@ export default function SetPiecePitch({ panel, label }: { panel?: SpPanel; label
       <path d="M125 76 A40 30 0 0 0 195 76" {...W} />
       <circle cx={160} cy={54} r={1.5} fill="#fff" />
       <line x1={10} y1={176} x2={310} y2={176} stroke="#fff" strokeDasharray="8 5" strokeWidth={2} />
-      <text x={160} y={187} fill="#fff" fontSize={8} textAnchor="middle" fontWeight="bold">{t('spFinalThird')}</text>
+      {kindLabel && kindFill ? (
+        <g>
+          <rect x={12} y={178} width={kind === 'freeKicks' ? 78 : 62} height={11} rx={2} fill={kindFill} />
+          <text x={kind === 'freeKicks' ? 51 : 43} y={186} fill="#fff" fontSize={7} textAnchor="middle" fontWeight="bold" letterSpacing={0.5}>
+            {kindLabel}
+          </text>
+          <text x={210} y={187} fill="#fff" fontSize={8} textAnchor="middle" fontWeight="bold">{t('spFinalThird')}</text>
+        </g>
+      ) : (
+        <text x={160} y={187} fill="#fff" fontSize={8} textAnchor="middle" fontWeight="bold">{t('spFinalThird')}</text>
+      )}
       {panel?.arrows?.map((a, i) => {
         const color = a.swing === 'short' ? SHORT_COLOR : a.outcome ? SP_OUTCOME_COLOR[a.outcome] : '#000';
         const markerKey = a.swing === 'short' ? 'short' : a.outcome && a.outcome !== 'cleared' ? a.outcome : '';

@@ -6,16 +6,22 @@ const card: React.CSSProperties = { flex: 1, minWidth: 300, background: 'var(--c
 const noteStyle: React.CSSProperties = { marginTop: 8, padding: 8, borderLeft: '3px solid #2e9e5b', background: 'rgba(46,158,91,0.1)', fontSize: 13 };
 const cell: React.CSSProperties = { padding: 5, borderBottom: '1px solid rgba(127,127,127,0.25)', textAlign: 'right' };
 const first: React.CSSProperties = { ...cell, textAlign: 'left' };
+const KIND_ACCENT = { corners: '#1b5e20', freeKicks: '#0d47a1' } as const;
 
-function Panel({ title, panel }: { title: string; panel?: SpPanel }) {
+function Panel({ title, panel, kind }: { title: string; panel?: SpPanel; kind: 'corners' | 'freeKicks' }) {
   const { t, L } = useLanguage();
+  const accent = KIND_ACCENT[kind];
+  const kindChip = kind === 'corners' ? t('spPitchKindCorner') : t('spPitchKindFreeKick');
   return (
-    <div style={card}>
-      <h4 style={{ margin: '0 0 8px', fontSize: 12, letterSpacing: 1, opacity: 0.7 }}>{title}</h4>
-      <SetPiecePitch panel={panel} label={title} />
-      {panel?.note && <div style={noteStyle}><b>{panel.noteTitle ? L(panel.noteTitle) : t('spTakers')}</b> {L(panel.note)}</div>}
+    <div style={{ ...card, borderTop: `3px solid ${accent}` }}>
+      <h4 style={{ margin: '0 0 8px', fontSize: 12, letterSpacing: 1, display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+        <span style={{ display: 'inline-block', padding: '2px 7px', borderRadius: 4, background: accent, color: '#fff', fontSize: 10, letterSpacing: 0.8 }}>{kindChip}</span>
+        <span style={{ opacity: 0.85 }}>{title}</span>
+      </h4>
+      <SetPiecePitch panel={panel} label={title} kind={kind} />
+      {panel?.note && <div style={{ ...noteStyle, borderLeftColor: accent }}><b>{panel.noteTitle ? L(panel.noteTitle) : t('spTakers')}</b> {L(panel.note)}</div>}
       {panel?.orderedNotes?.length ? (
-        <div style={noteStyle}>
+        <div style={{ ...noteStyle, borderLeftColor: accent }}>
           <b>{L(panel.orderedNotesTitle)}</b>
           <ol style={{ margin: '4px 0 0 18px', padding: 0 }}>
             {panel.orderedNotes.map((n, i) => <li key={i}>{L(n)}</li>)}
@@ -72,14 +78,18 @@ function Section({ kind, data }: { kind: 'corners' | 'freeKicks'; data?: SpSecti
   const { t, L } = useLanguage();
   const corners = kind === 'corners';
   const title = t(corners ? 'spCorners' : 'spFreeKicks');
+  const accent = KIND_ACCENT[kind];
   const showCentre = !!data?.takers?.some((tk) => tk.fromCentre != null);
   return (
-    <section style={{ marginTop: 24 }}>
-      <div className="section-title">{title}</div>
+    <section style={{ marginTop: 28, paddingTop: corners ? 0 : 8, borderTop: corners ? undefined : '1px solid rgba(127,127,127,0.25)' }}>
+      <div className="section-title" style={{ color: accent, display: 'flex', alignItems: 'center', gap: 8 }}>
+        <span style={{ display: 'inline-block', width: 10, height: 10, borderRadius: 2, background: accent }} aria-hidden />
+        {title}
+      </div>
       <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap' }}>
-        <Panel title={t(corners ? 'spLeftCorners' : 'spLeftFreeKicks')} panel={data?.left} />
-        <Panel title={t(corners ? 'spRightCorners' : 'spRightFreeKicks')} panel={data?.right} />
-        {data?.centre && <Panel title={t('spCentreFreeKicks')} panel={data.centre} />}
+        <Panel kind={kind} title={t(corners ? 'spLeftCorners' : 'spLeftFreeKicks')} panel={data?.left} />
+        <Panel kind={kind} title={t(corners ? 'spRightCorners' : 'spRightFreeKicks')} panel={data?.right} />
+        {data?.centre && <Panel kind={kind} title={t('spCentreFreeKicks')} panel={data.centre} />}
       </div>
       <Legend data={data} />
       <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13, marginTop: 12 }}>
