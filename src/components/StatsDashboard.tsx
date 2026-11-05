@@ -564,10 +564,16 @@ function isAnalysisDocument(item: AnalysisVideo): boolean {
   return /\.(pdf|docx?|md)$/i.test(src.split(/[?#]/)[0] ?? '');
 }
 
+function analysisGroupKey(item: AnalysisVideo): string {
+  if (!item.group) return '';
+  return typeof item.group === 'string' ? item.group : item.group.en;
+}
+
 function VideoAnalysisPanel({ match }: { match: MatchData }) {
   const { t, L } = useLanguage();
+  const source = match.analysisVideos ?? [];
   // Videos first so post-match Vimeo is not buried under tall PDF previews.
-  const videos = [...(match.analysisVideos ?? [])].sort((a, b) => {
+  const videos = [...source].sort((a, b) => {
     const aDoc = isAnalysisDocument(a) ? 1 : 0;
     const bDoc = isAnalysisDocument(b) ? 1 : 0;
     return aDoc - bDoc;
@@ -581,39 +587,76 @@ function VideoAnalysisPanel({ match }: { match: MatchData }) {
     );
   }
 
+  const grouped = videos.some((item) => item.group);
+  const buckets: { key: string; title?: AnalysisVideo['group']; items: AnalysisVideo[] }[] =
+    [];
+  if (!grouped) {
+    buckets.push({ key: 'all', items: videos });
+  } else {
+    const ungrouped: AnalysisVideo[] = [];
+    for (const item of source) {
+      const key = analysisGroupKey(item);
+      if (!key) {
+        ungrouped.push(item);
+        continue;
+      }
+      let bucket = buckets.find((entry) => entry.key === key);
+      if (!bucket) {
+        bucket = { key, title: item.group, items: [] };
+        buckets.push(bucket);
+      }
+      bucket.items.push(item);
+    }
+    if (ungrouped.length > 0) {
+      ungrouped.sort((a, b) => {
+        const aDoc = isAnalysisDocument(a) ? 1 : 0;
+        const bDoc = isAnalysisDocument(b) ? 1 : 0;
+        return aDoc - bDoc;
+      });
+      buckets.push({ key: 'other', items: ungrouped });
+    }
+  }
+
   return (
     <div className="video-section">
-      <div className="analysis-grid">
-        {videos.map((item: AnalysisVideo) => (
-          <article className="analysis-card" key={item.id}>
-            <div className="clip-card-body clip-card-body--above">
-              <div className="clip-card-title">{L(item.title)}</div>
-              <div className="clip-card-desc">{L(item.description)}</div>
-              {item.tags && item.tags.length > 0 ? (
-                <div className="clip-tags">
-                  {item.tags.map((tag) => (
-                    <span className="clip-tag" key={tag}>
-                      {tag}
-                    </span>
-                  ))}
+      {buckets.map((bucket) => (
+        <div className="opposition-clip-section" key={bucket.key}>
+          {bucket.title ? (
+            <div className="section-title">{L(bucket.title)}</div>
+          ) : null}
+          <div className="analysis-grid">
+            {bucket.items.map((item: AnalysisVideo) => (
+              <article className="analysis-card" key={item.id}>
+                <div className="clip-card-body clip-card-body--above">
+                  <div className="clip-card-title">{L(item.title)}</div>
+                  <div className="clip-card-desc">{L(item.description)}</div>
+                  {item.tags && item.tags.length > 0 ? (
+                    <div className="clip-tags">
+                      {item.tags.map((tag) => (
+                        <span className="clip-tag" key={tag}>
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  ) : null}
                 </div>
-              ) : null}
-            </div>
-            <MatchMedia
-              slug={match.slug}
-              src={item.videoFile}
-              kind="analysis"
-              unsupportedLabel={t('videoUnsupported')}
-              playLabel={t('playVideo')}
-              openPdfLabel={t('openPdf')}
-              downloadPdfLabel={t('downloadPdf')}
-              openReportLabel={t('openReport')}
-              openDocLabel={t('openDoc')}
-              title={L(item.title)}
-            />
-          </article>
-        ))}
-      </div>
+                <MatchMedia
+                  slug={match.slug}
+                  src={item.videoFile}
+                  kind="analysis"
+                  unsupportedLabel={t('videoUnsupported')}
+                  playLabel={t('playVideo')}
+                  openPdfLabel={t('openPdf')}
+                  downloadPdfLabel={t('downloadPdf')}
+                  openReportLabel={t('openReport')}
+                  openDocLabel={t('openDoc')}
+                  title={L(item.title)}
+                />
+              </article>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

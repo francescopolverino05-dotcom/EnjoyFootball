@@ -192,6 +192,8 @@ export interface AnalysisVideo {
   kind?: 'video' | 'pdf' | 'markdown' | 'docx';
   createdAt?: string;
   tags?: string[];
+  /** Clusters this item under a heading on the Video Analysis tab. */
+  group?: Localized;
 }
 
 /** Season bucket for Matches list tabs (see matchCompetitions.ts). */

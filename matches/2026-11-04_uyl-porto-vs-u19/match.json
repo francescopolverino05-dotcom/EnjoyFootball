@@ -281,12 +281,1047 @@
     }
   ],
   "goalkeepers": [],
-  "clips": [],
-  "analysisVideos": [],
+  "clips": [
+    {
+      "id": "vimeo-1243938252",
+      "title": {
+        "en": "Defending corners 50:15",
+        "it": "Calci d’angolo difensivi 50:15"
+      },
+      "comments": {
+        "en": "Defending corners 50:15",
+        "it": "Calci d’angolo difensivi 50:15"
+      },
+      "minute": 50,
+      "second": 15,
+      "videoFile": "https://vimeo.com/1243938252/867798cd6f",
+      "section": "defending-corners",
+      "labels": [
+        "defending-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938204",
+      "title": {
+        "en": "High defence 42:23",
+        "it": "Difesa alta 42:23"
+      },
+      "comments": {
+        "en": "High defence 42:23",
+        "it": "Difesa alta 42:23"
+      },
+      "minute": 42,
+      "second": 23,
+      "videoFile": "https://vimeo.com/1243938204/83312c77cd",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938176",
+      "title": {
+        "en": "Defending corners 32:11",
+        "it": "Calci d’angolo difensivi 32:11"
+      },
+      "comments": {
+        "en": "Defending corners 32:11",
+        "it": "Calci d’angolo difensivi 32:11"
+      },
+      "minute": 32,
+      "second": 11,
+      "videoFile": "https://vimeo.com/1243938176/48a1acc074",
+      "section": "defending-corners",
+      "labels": [
+        "defending-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938139",
+      "title": {
+        "en": "Defending free kicks 25:50",
+        "it": "Punizioni difensive 25:50"
+      },
+      "comments": {
+        "en": "Defending free kicks 25:50",
+        "it": "Punizioni difensive 25:50"
+      },
+      "minute": 25,
+      "second": 50,
+      "videoFile": "https://vimeo.com/1243938139/cb7e0e8c08",
+      "section": "defending-free-kicks",
+      "labels": [
+        "defending-free-kicks"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243940337",
+      "title": {
+        "en": "Progression 81:18",
+        "it": "Progressione 81:18"
+      },
+      "comments": {
+        "en": "Progression 81:18",
+        "it": "Progressione 81:18"
+      },
+      "minute": 81,
+      "second": 18,
+      "videoFile": "https://vimeo.com/1243940337/01854e9a12",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243940302",
+      "title": {
+        "en": "Progression 62:55",
+        "it": "Progressione 62:55"
+      },
+      "comments": {
+        "en": "Progression 62:55",
+        "it": "Progressione 62:55"
+      },
+      "minute": 62,
+      "second": 55,
+      "videoFile": "https://vimeo.com/1243940302/b51ec5dda8",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243940254",
+      "title": {
+        "en": "Progression 57:49",
+        "it": "Progressione 57:49"
+      },
+      "comments": {
+        "en": "Progression 57:49",
+        "it": "Progressione 57:49"
+      },
+      "minute": 57,
+      "second": 49,
+      "videoFile": "https://vimeo.com/1243940254/6d69929033",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243940211",
+      "title": {
+        "en": "Progression 38:36",
+        "it": "Progressione 38:36"
+      },
+      "comments": {
+        "en": "Progression 38:36",
+        "it": "Progressione 38:36"
+      },
+      "minute": 38,
+      "second": 36,
+      "videoFile": "https://vimeo.com/1243940211/3925a7702b",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243940213",
+      "title": {
+        "en": "Progression 50:47",
+        "it": "Progressione 50:47"
+      },
+      "comments": {
+        "en": "Progression 50:47",
+        "it": "Progressione 50:47"
+      },
+      "minute": 50,
+      "second": 47,
+      "videoFile": "https://vimeo.com/1243940213/88fa6a1db5",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243940207",
+      "title": {
+        "en": "Progression 35:41",
+        "it": "Progressione 35:41"
+      },
+      "comments": {
+        "en": "Progression 35:41",
+        "it": "Progressione 35:41"
+      },
+      "minute": 35,
+      "second": 41,
+      "videoFile": "https://vimeo.com/1243940207/8b4cc1540d",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243940189",
+      "title": {
+        "en": "Transition to attack 26:55",
+        "it": "Transizione offensiva 26:55"
+      },
+      "comments": {
+        "en": "Transition to attack 26:55",
+        "it": "Transizione offensiva 26:55"
+      },
+      "minute": 26,
+      "second": 55,
+      "videoFile": "https://vimeo.com/1243940189/21f0aee7ee",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243940077",
+      "title": {
+        "en": "Progression 22:31",
+        "it": "Progressione 22:31"
+      },
+      "comments": {
+        "en": "Progression 22:31",
+        "it": "Progressione 22:31"
+      },
+      "minute": 22,
+      "second": 31,
+      "videoFile": "https://vimeo.com/1243940077/442fd9aea7",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243940075",
+      "title": {
+        "en": "Transition to attack 18:11",
+        "it": "Transizione offensiva 18:11"
+      },
+      "comments": {
+        "en": "Transition to attack 18:11",
+        "it": "Transizione offensiva 18:11"
+      },
+      "minute": 18,
+      "second": 11,
+      "videoFile": "https://vimeo.com/1243940075/e7431f8b58",
+      "section": "offensive-transition",
+      "labels": [
+        "offensive-transition"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243940073",
+      "title": {
+        "en": "Progression 19:11",
+        "it": "Progressione 19:11"
+      },
+      "comments": {
+        "en": "Progression 19:11",
+        "it": "Progressione 19:11"
+      },
+      "minute": 19,
+      "second": 11,
+      "videoFile": "https://vimeo.com/1243940073/476c679fc3",
+      "section": "progress",
+      "labels": [
+        "progress"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243940074",
+      "title": {
+        "en": "Build-up 10:10",
+        "it": "Costruzione 10:10"
+      },
+      "comments": {
+        "en": "Build-up 10:10",
+        "it": "Costruzione 10:10"
+      },
+      "minute": 10,
+      "second": 10,
+      "videoFile": "https://vimeo.com/1243940074/4813022073",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938432",
+      "title": {
+        "en": "Mid block 65:07",
+        "it": "Blocco medio 65:07"
+      },
+      "comments": {
+        "en": "Mid block 65:07",
+        "it": "Blocco medio 65:07"
+      },
+      "minute": 65,
+      "second": 7,
+      "videoFile": "https://vimeo.com/1243938432/8f5d29e81f",
+      "section": "mid-block",
+      "labels": [
+        "mid-block"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938394",
+      "title": {
+        "en": "Transition to defence 62:05",
+        "it": "Transizione difensiva 62:05"
+      },
+      "comments": {
+        "en": "Transition to defence 62:05",
+        "it": "Transizione difensiva 62:05"
+      },
+      "minute": 62,
+      "second": 5,
+      "videoFile": "https://vimeo.com/1243938394/ba55e25092",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938368",
+      "title": {
+        "en": "Own third 54:57",
+        "it": "Proprio terzo 54:57"
+      },
+      "comments": {
+        "en": "Own third 54:57",
+        "it": "Proprio terzo 54:57"
+      },
+      "minute": 54,
+      "second": 57,
+      "videoFile": "https://vimeo.com/1243938368/598dfa785c",
+      "section": "own-third",
+      "labels": [
+        "own-third"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938372",
+      "title": {
+        "en": "Transition to defence 60:42",
+        "it": "Transizione difensiva 60:42"
+      },
+      "comments": {
+        "en": "Transition to defence 60:42",
+        "it": "Transizione difensiva 60:42"
+      },
+      "minute": 60,
+      "second": 42,
+      "videoFile": "https://vimeo.com/1243938372/21e3279640",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938358",
+      "title": {
+        "en": "Transition to defence 53:54",
+        "it": "Transizione difensiva 53:54"
+      },
+      "comments": {
+        "en": "Transition to defence 53:54",
+        "it": "Transizione difensiva 53:54"
+      },
+      "minute": 53,
+      "second": 54,
+      "videoFile": "https://vimeo.com/1243938358/8450b1ec42",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938264",
+      "title": {
+        "en": "Transition to defence 51:22",
+        "it": "Transizione difensiva 51:22"
+      },
+      "comments": {
+        "en": "Transition to defence 51:22",
+        "it": "Transizione difensiva 51:22"
+      },
+      "minute": 51,
+      "second": 22,
+      "videoFile": "https://vimeo.com/1243938264/2fb0cc0f7a",
+      "section": "defensive-transition",
+      "labels": [
+        "defensive-transition"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938173",
+      "title": {
+        "en": "Mid block 31:08",
+        "it": "Blocco medio 31:08"
+      },
+      "comments": {
+        "en": "Mid block 31:08",
+        "it": "Blocco medio 31:08"
+      },
+      "minute": 31,
+      "second": 8,
+      "videoFile": "https://vimeo.com/1243938173/6534812579",
+      "section": "mid-block",
+      "labels": [
+        "mid-block"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938070",
+      "title": {
+        "en": "High defence 16:18",
+        "it": "Difesa alta 16:18"
+      },
+      "comments": {
+        "en": "High defence 16:18",
+        "it": "Difesa alta 16:18"
+      },
+      "minute": 16,
+      "second": 18,
+      "videoFile": "https://vimeo.com/1243938070/4d24881f13",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938073",
+      "title": {
+        "en": "High defence 6:16",
+        "it": "Difesa alta 6:16"
+      },
+      "comments": {
+        "en": "High defence 6:16",
+        "it": "Difesa alta 6:16"
+      },
+      "minute": 6,
+      "second": 16,
+      "videoFile": "https://vimeo.com/1243938073/2294d23fa7",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938542",
+      "title": {
+        "en": "Attacking free kicks 92:50",
+        "it": "Punizioni offensive 92:50"
+      },
+      "comments": {
+        "en": "Attacking free kicks 92:50",
+        "it": "Punizioni offensive 92:50"
+      },
+      "minute": 92,
+      "second": 50,
+      "videoFile": "https://vimeo.com/1243938542/e0262b745f",
+      "section": "attacking-free-kicks",
+      "labels": [
+        "attacking-free-kicks"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938534",
+      "title": {
+        "en": "Attacking corners 90:40",
+        "it": "Calci d’angolo offensivi 90:40"
+      },
+      "comments": {
+        "en": "Attacking corners 90:40",
+        "it": "Calci d’angolo offensivi 90:40"
+      },
+      "minute": 90,
+      "second": 40,
+      "videoFile": "https://vimeo.com/1243938534/3cfc35ce97",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938521",
+      "title": {
+        "en": "Attacking corners 87:45",
+        "it": "Calci d’angolo offensivi 87:45"
+      },
+      "comments": {
+        "en": "Attacking corners 87:45",
+        "it": "Calci d’angolo offensivi 87:45"
+      },
+      "minute": 87,
+      "second": 45,
+      "videoFile": "https://vimeo.com/1243938521/ff1756c973",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938508",
+      "title": {
+        "en": "Attacking corners 72:56",
+        "it": "Calci d’angolo offensivi 72:56"
+      },
+      "comments": {
+        "en": "Attacking corners 72:56",
+        "it": "Calci d’angolo offensivi 72:56"
+      },
+      "minute": 72,
+      "second": 56,
+      "videoFile": "https://vimeo.com/1243938508/2e9439539c",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938456",
+      "title": {
+        "en": "Attacking corners 72:10",
+        "it": "Calci d’angolo offensivi 72:10"
+      },
+      "comments": {
+        "en": "Attacking corners 72:10",
+        "it": "Calci d’angolo offensivi 72:10"
+      },
+      "minute": 72,
+      "second": 10,
+      "videoFile": "https://vimeo.com/1243938456/4af6097fd1",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938234",
+      "title": {
+        "en": "Attacking free kicks 44:30",
+        "it": "Punizioni offensive 44:30"
+      },
+      "comments": {
+        "en": "Attacking free kicks 44:30",
+        "it": "Punizioni offensive 44:30"
+      },
+      "minute": 44,
+      "second": 30,
+      "videoFile": "https://vimeo.com/1243938234/1a7da6b1bf",
+      "section": "attacking-free-kicks",
+      "labels": [
+        "attacking-free-kicks"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938140",
+      "title": {
+        "en": "Attacking free kicks 21:35",
+        "it": "Punizioni offensive 21:35"
+      },
+      "comments": {
+        "en": "Attacking free kicks 21:35",
+        "it": "Punizioni offensive 21:35"
+      },
+      "minute": 21,
+      "second": 35,
+      "videoFile": "https://vimeo.com/1243938140/1fea554057",
+      "section": "attacking-free-kicks",
+      "labels": [
+        "attacking-free-kicks"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938069",
+      "title": {
+        "en": "Attacking corners 13:48",
+        "it": "Calci d’angolo offensivi 13:48"
+      },
+      "comments": {
+        "en": "Attacking corners 13:48",
+        "it": "Calci d’angolo offensivi 13:48"
+      },
+      "minute": 13,
+      "second": 48,
+      "videoFile": "https://vimeo.com/1243938069/f15d5d75bc",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1243938071",
+      "title": {
+        "en": "Attacking corners 12:10",
+        "it": "Calci d’angolo offensivi 12:10"
+      },
+      "comments": {
+        "en": "Attacking corners 12:10",
+        "it": "Calci d’angolo offensivi 12:10"
+      },
+      "minute": 12,
+      "second": 10,
+      "videoFile": "https://vimeo.com/1243938071/a3c9112985",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    }
+  ],
+  "analysisVideos": [
+    {
+      "id": "monday-vimeo-1242448396",
+      "title": {
+        "en": "Angolo 1",
+        "it": "Angolo 1"
+      },
+      "description": {
+        "en": "Offensive set piece from Monday 2 Nov (Rifinitura vs Porto).",
+        "it": "Piazzato offensivo di lunedì 2 nov (Rifinitura vs Porto)."
+      },
+      "videoFile": "https://vimeo.com/1242448396/0442dfaa09",
+      "kind": "video",
+      "group": {
+        "en": "Offensive corners — Monday training",
+        "it": "Calci d’angolo offensivi — allenamento di lunedì"
+      },
+      "tags": [
+        "training"
+      ]
+    },
+    {
+      "id": "monday-vimeo-1242448393",
+      "title": {
+        "en": "Angolo 2",
+        "it": "Angolo 2"
+      },
+      "description": {
+        "en": "Offensive set piece from Monday 2 Nov (Rifinitura vs Porto).",
+        "it": "Piazzato offensivo di lunedì 2 nov (Rifinitura vs Porto)."
+      },
+      "videoFile": "https://vimeo.com/1242448393/388401026c",
+      "kind": "video",
+      "group": {
+        "en": "Offensive corners — Monday training",
+        "it": "Calci d’angolo offensivi — allenamento di lunedì"
+      },
+      "tags": [
+        "training"
+      ]
+    },
+    {
+      "id": "monday-vimeo-1242448394",
+      "title": {
+        "en": "Angolo 3",
+        "it": "Angolo 3"
+      },
+      "description": {
+        "en": "Offensive set piece from Monday 2 Nov (Rifinitura vs Porto).",
+        "it": "Piazzato offensivo di lunedì 2 nov (Rifinitura vs Porto)."
+      },
+      "videoFile": "https://vimeo.com/1242448394/99b20572c6",
+      "kind": "video",
+      "group": {
+        "en": "Offensive corners — Monday training",
+        "it": "Calci d’angolo offensivi — allenamento di lunedì"
+      },
+      "tags": [
+        "training"
+      ]
+    },
+    {
+      "id": "monday-vimeo-1242448398",
+      "title": {
+        "en": "Angolo 4",
+        "it": "Angolo 4"
+      },
+      "description": {
+        "en": "Offensive set piece from Monday 2 Nov (Rifinitura vs Porto).",
+        "it": "Piazzato offensivo di lunedì 2 nov (Rifinitura vs Porto)."
+      },
+      "videoFile": "https://vimeo.com/1242448398/ea3e9b7d98",
+      "kind": "video",
+      "group": {
+        "en": "Offensive corners — Monday training",
+        "it": "Calci d’angolo offensivi — allenamento di lunedì"
+      },
+      "tags": [
+        "training"
+      ]
+    },
+    {
+      "id": "match-vimeo-1243938071",
+      "title": {
+        "en": "Attacking corners 12:10",
+        "it": "Calci d’angolo offensivi 12:10"
+      },
+      "description": {
+        "en": "Offensive set piece from Porto vs Napoli.",
+        "it": "Piazzato offensivo di Porto–Napoli."
+      },
+      "videoFile": "https://vimeo.com/1243938071/a3c9112985",
+      "kind": "video",
+      "group": {
+        "en": "Offensive corners — match",
+        "it": "Calci d’angolo offensivi — partita"
+      },
+      "tags": [
+        "match"
+      ]
+    },
+    {
+      "id": "match-vimeo-1243938069",
+      "title": {
+        "en": "Attacking corners 13:48",
+        "it": "Calci d’angolo offensivi 13:48"
+      },
+      "description": {
+        "en": "Offensive set piece from Porto vs Napoli.",
+        "it": "Piazzato offensivo di Porto–Napoli."
+      },
+      "videoFile": "https://vimeo.com/1243938069/f15d5d75bc",
+      "kind": "video",
+      "group": {
+        "en": "Offensive corners — match",
+        "it": "Calci d’angolo offensivi — partita"
+      },
+      "tags": [
+        "match"
+      ]
+    },
+    {
+      "id": "match-vimeo-1243938456",
+      "title": {
+        "en": "Attacking corners 72:10",
+        "it": "Calci d’angolo offensivi 72:10"
+      },
+      "description": {
+        "en": "Offensive set piece from Porto vs Napoli.",
+        "it": "Piazzato offensivo di Porto–Napoli."
+      },
+      "videoFile": "https://vimeo.com/1243938456/4af6097fd1",
+      "kind": "video",
+      "group": {
+        "en": "Offensive corners — match",
+        "it": "Calci d’angolo offensivi — partita"
+      },
+      "tags": [
+        "match"
+      ]
+    },
+    {
+      "id": "match-vimeo-1243938508",
+      "title": {
+        "en": "Attacking corners 72:56",
+        "it": "Calci d’angolo offensivi 72:56"
+      },
+      "description": {
+        "en": "Offensive set piece from Porto vs Napoli.",
+        "it": "Piazzato offensivo di Porto–Napoli."
+      },
+      "videoFile": "https://vimeo.com/1243938508/2e9439539c",
+      "kind": "video",
+      "group": {
+        "en": "Offensive corners — match",
+        "it": "Calci d’angolo offensivi — partita"
+      },
+      "tags": [
+        "match"
+      ]
+    },
+    {
+      "id": "match-vimeo-1243938521",
+      "title": {
+        "en": "Attacking corners 87:45",
+        "it": "Calci d’angolo offensivi 87:45"
+      },
+      "description": {
+        "en": "Offensive set piece from Porto vs Napoli.",
+        "it": "Piazzato offensivo di Porto–Napoli."
+      },
+      "videoFile": "https://vimeo.com/1243938521/ff1756c973",
+      "kind": "video",
+      "group": {
+        "en": "Offensive corners — match",
+        "it": "Calci d’angolo offensivi — partita"
+      },
+      "tags": [
+        "match"
+      ]
+    },
+    {
+      "id": "match-vimeo-1243938534",
+      "title": {
+        "en": "Attacking corners 90:40",
+        "it": "Calci d’angolo offensivi 90:40"
+      },
+      "description": {
+        "en": "Offensive set piece from Porto vs Napoli.",
+        "it": "Piazzato offensivo di Porto–Napoli."
+      },
+      "videoFile": "https://vimeo.com/1243938534/3cfc35ce97",
+      "kind": "video",
+      "group": {
+        "en": "Offensive corners — match",
+        "it": "Calci d’angolo offensivi — partita"
+      },
+      "tags": [
+        "match"
+      ]
+    },
+    {
+      "id": "monday-vimeo-1242448688",
+      "title": {
+        "en": "Punizione 1",
+        "it": "Punizione 1"
+      },
+      "description": {
+        "en": "Offensive set piece from Monday 2 Nov (Rifinitura vs Porto).",
+        "it": "Piazzato offensivo di lunedì 2 nov (Rifinitura vs Porto)."
+      },
+      "videoFile": "https://vimeo.com/1242448688/bb461b6c50",
+      "kind": "video",
+      "group": {
+        "en": "Offensive free kicks — Monday training",
+        "it": "Punizioni offensive — allenamento di lunedì"
+      },
+      "tags": [
+        "training"
+      ]
+    },
+    {
+      "id": "monday-vimeo-1242448680",
+      "title": {
+        "en": "Punizione 2",
+        "it": "Punizione 2"
+      },
+      "description": {
+        "en": "Offensive set piece from Monday 2 Nov (Rifinitura vs Porto).",
+        "it": "Piazzato offensivo di lunedì 2 nov (Rifinitura vs Porto)."
+      },
+      "videoFile": "https://vimeo.com/1242448680/45e141c3ee",
+      "kind": "video",
+      "group": {
+        "en": "Offensive free kicks — Monday training",
+        "it": "Punizioni offensive — allenamento di lunedì"
+      },
+      "tags": [
+        "training"
+      ]
+    },
+    {
+      "id": "monday-vimeo-1242448708",
+      "title": {
+        "en": "Punizione 3",
+        "it": "Punizione 3"
+      },
+      "description": {
+        "en": "Offensive set piece from Monday 2 Nov (Rifinitura vs Porto).",
+        "it": "Piazzato offensivo di lunedì 2 nov (Rifinitura vs Porto)."
+      },
+      "videoFile": "https://vimeo.com/1242448708/e8a255f5ea",
+      "kind": "video",
+      "group": {
+        "en": "Offensive free kicks — Monday training",
+        "it": "Punizioni offensive — allenamento di lunedì"
+      },
+      "tags": [
+        "training"
+      ]
+    },
+    {
+      "id": "monday-vimeo-1242448699",
+      "title": {
+        "en": "Punizione 4",
+        "it": "Punizione 4"
+      },
+      "description": {
+        "en": "Offensive set piece from Monday 2 Nov (Rifinitura vs Porto).",
+        "it": "Piazzato offensivo di lunedì 2 nov (Rifinitura vs Porto)."
+      },
+      "videoFile": "https://vimeo.com/1242448699/58ed2e3c41",
+      "kind": "video",
+      "group": {
+        "en": "Offensive free kicks — Monday training",
+        "it": "Punizioni offensive — allenamento di lunedì"
+      },
+      "tags": [
+        "training"
+      ]
+    },
+    {
+      "id": "match-vimeo-1243938140",
+      "title": {
+        "en": "Attacking free kicks 21:35",
+        "it": "Punizioni offensive 21:35"
+      },
+      "description": {
+        "en": "Offensive set piece from Porto vs Napoli.",
+        "it": "Piazzato offensivo di Porto–Napoli."
+      },
+      "videoFile": "https://vimeo.com/1243938140/1fea554057",
+      "kind": "video",
+      "group": {
+        "en": "Offensive free kicks — match",
+        "it": "Punizioni offensive — partita"
+      },
+      "tags": [
+        "match"
+      ]
+    },
+    {
+      "id": "match-vimeo-1243938234",
+      "title": {
+        "en": "Attacking free kicks 44:30",
+        "it": "Punizioni offensive 44:30"
+      },
+      "description": {
+        "en": "Offensive set piece from Porto vs Napoli.",
+        "it": "Piazzato offensivo di Porto–Napoli."
+      },
+      "videoFile": "https://vimeo.com/1243938234/1a7da6b1bf",
+      "kind": "video",
+      "group": {
+        "en": "Offensive free kicks — match",
+        "it": "Punizioni offensive — partita"
+      },
+      "tags": [
+        "match"
+      ]
+    },
+    {
+      "id": "match-vimeo-1243938542",
+      "title": {
+        "en": "Attacking free kicks 92:50",
+        "it": "Punizioni offensive 92:50"
+      },
+      "description": {
+        "en": "Offensive set piece from Porto vs Napoli.",
+        "it": "Piazzato offensivo di Porto–Napoli."
+      },
+      "videoFile": "https://vimeo.com/1243938542/e0262b745f",
+      "kind": "video",
+      "group": {
+        "en": "Offensive free kicks — match",
+        "it": "Punizioni offensive — partita"
+      },
+      "tags": [
+        "match"
+      ]
+    }
+  ],
   "vimeo": {
     "folderId": "31152000",
     "folderUrl": "https://vimeo.com/user/170593333/folder/31152000",
-    "lastSyncedAt": "2026-11-05T20:57:19.870Z"
+    "lastSyncedAt": "2026-11-05T22:01:32.006Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1243912159/cdd9f24a91",

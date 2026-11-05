@@ -53,23 +53,32 @@ const SECTION_ALIASES = {
   progress: 'progress',
   progression: 'progress',
   progressione: 'progress',
+  progressioni: 'progress',
   transition_to_attack: 'offensive-transition',
   'transition-to-attack': 'offensive-transition',
   'offensive-transition': 'offensive-transition',
+  transizione_off: 'offensive-transition',
+  transizione_offensiva: 'offensive-transition',
   attack_transition: 'offensive-transition',
   mid_block: 'mid-block',
   'mid-block': 'mid-block',
+  blocco_medio: 'mid-block',
   high_defence: 'high-defence',
   high_defense: 'high-defence',
   'high-defence': 'high-defence',
+  difesa_alta: 'high-defence',
+  blocco_alto: 'high-defence',
   hugh_defence: 'high-defence', // typo in titles
   hugh_defense: 'high-defence',
   final_third: 'final-third',
   'final-third': 'final-third',
   own_third: 'own-third',
   'own-third': 'own-third',
+  blocco_basso: 'own-third',
   transition_to_defence: 'defensive-transition',
   transition_to_defense: 'defensive-transition',
+  transizione_dif: 'defensive-transition',
+  transizione_difensiva: 'defensive-transition',
   'transition-to-defence': 'defensive-transition',
   'defensive-transition': 'defensive-transition',
   transition_defence: 'defensive-transition',
@@ -83,6 +92,10 @@ const SECTION_ALIASES = {
   penalty: 'goal',
   free_kick: 'set-piece',
   'free-kick': 'set-piece',
+  punizione: 'set-piece',
+  punizioni: 'set-piece',
+  calcio_d_angolo: 'attacking-corners',
+  calci_d_angolo: 'attacking-corners',
   opponent_free_kick: 'set-piece',
   'opponent-free-kick': 'set-piece',
   set_piece: 'set-piece',
@@ -186,6 +199,13 @@ function titleFromClipName(name, section) {
       .trim();
   }
   let title = { ...labels };
+  if (!comment) {
+    const clock = String(name || '').match(/^(\d{1,3})_(\d{2})_/);
+    if (clock) {
+      const stamp = `${Number(clock[1])}:${clock[2]}`;
+      title = { en: `${labels.en} ${stamp}`, it: `${labels.it} ${stamp}` };
+    }
+  }
   if (comment) {
     title = { en: comment, it: comment };
     for (const [key, fixed] of COMMENT_FIX) {
@@ -223,8 +243,12 @@ function normalizeSection(raw) {
   const key = String(raw)
     .trim()
     .toLowerCase()
+    .replace(/['’]/g, '_')
+    .replace(/\./g, '')
     .replace(/\s+/g, '_')
-    .replace(/-/g, '_');
+    .replace(/-/g, '_')
+    .replace(/_+/g, '_')
+    .replace(/^_|_$/g, '');
   const dashed = key.replace(/_/g, '-');
   return SECTION_ALIASES[key] || SECTION_ALIASES[dashed] || null;
 }
@@ -234,9 +258,33 @@ function isClipStyleName(name) {
 }
 
 function sectionFromClipName(name) {
-  // e.g. 88_45_wd_Build_up__good... or 13_57_nd_Transition_to_defence__14_30...
-  const m = (name || '').match(/^\d{1,3}_\d{2}_(?:nd|wd)_([A-Za-z0-9]+(?:_[A-Za-z0-9]+)*)__/i);
+  // e.g. 88_45_wd_Build_up__good... or 12_10_nd_Calcio_d'Angolo__12_21...
+  // Nacsport sometimes leaves a trailing dot: Transizione_Off.__
+  const m = (name || '').match(
+    /^\d{1,3}_\d{2}_(?:nd|wd)_([A-Za-z0-9'’.]+(?:_[A-Za-z0-9'’.]+)*)__/i
+  );
   return m ? normalizeSection(m[1]) : null;
+}
+
+/** Offensive / defensive set-piece folders decide corner and free-kick side. */
+function applySetPieceSide(section, name, parentFolderName) {
+  const parent = String(parentFolderName || '').toLowerCase();
+  const attacking = /offensiv/.test(parent);
+  const defending = /difensiv/.test(parent);
+  if (attacking === defending) return section;
+  const n = String(name || '').toLowerCase();
+  const isCorner =
+    /angol/.test(n) ||
+    section === 'attacking-corners' ||
+    section === 'defending-corners';
+  const isFk =
+    /punizion/.test(n) ||
+    section === 'set-piece' ||
+    section === 'attacking-free-kicks' ||
+    section === 'defending-free-kicks';
+  if (isCorner) return defending ? 'defending-corners' : 'attacking-corners';
+  if (isFk) return defending ? 'defending-free-kicks' : 'attacking-free-kicks';
+  return section;
 }
 
 function isGoalkeeperMatchAnalysis(name, duration = 0) {
@@ -310,6 +358,8 @@ function classifyVideo(name, parentFolderName, duration = 0) {
       section = 'final-third';
     }
   }
+
+  section = applySetPieceSide(section, name, parentFolderName);
 
   // Skip half markers / unused "other" export buckets — keep goal clips.
   if (section === 'other') {
