@@ -3825,6 +3825,20 @@ attachReferencePack('frosinone', '2026-11-07_campionato-u19-vs-frosinone', [
     score: '1–2',
     videoFile: 'https://vimeo.com/1242567335/d20b9bfcf3',
   },
+], [
+  {
+    id: 'frosinone-studio-report',
+    title: {
+      en: 'Studio Frosinone',
+      it: 'Studio Frosinone',
+    },
+    description: {
+      en: 'Opposition studio report (Avversari → Studio Report).',
+      it: 'Studio report avversario (Avversari → Studio Report).',
+    },
+    videoFile: 'https://vimeo.com/1243721761/0d107539b3',
+    tags: ['vimeo', 'opposition', 'studio-report'],
+  },
 ]);
 
 attachReferencePack(
