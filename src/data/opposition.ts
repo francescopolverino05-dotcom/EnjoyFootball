@@ -3372,7 +3372,7 @@ if (frosinone) {
     { name: "Francesco Millozzi", position: 'RCM / RS', birthYear: 2008, preferredFoot: 'Destro' },
     { name: "Lorenzo Menghini", position: 'LW', birthYear: 2008, preferredFoot: 'Destro' },
     { name: "Valerio Esposito", position: 'LCB', birthYear: 2009, heightCm: 170, preferredFoot: 'Sinistro' },
-    { name: "Matteo Marchetti", position: 'LS / RCM / LWB', birthYear: 2009 },
+    { name: "Matteo Marchetti", position: 'LS / RCM / LWB', birthYear: 2009, preferredFoot: 'Destro' },
     { name: "Federico Montesano", position: 'CM', birthYear: 2009, preferredFoot: 'Ambidestro' },
     { name: "Matteo Carfagna", position: 'LS', birthYear: 2008, preferredFoot: 'Destro' },
     { name: "Lorenzo Trulli", position: 'RM / RW', birthYear: 2009, heightCm: 177, preferredFoot: 'Ambidestro' },
