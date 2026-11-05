@@ -3339,7 +3339,7 @@ if (frosinone) {
     { name: "Gianfilippo Casagrande", position: 'CM / LS', birthYear: 2009, heightCm: 172, preferredFoot: 'Ambidestro' },
     { name: "Lorenzo Giurdanella", position: 'LW', birthYear: 2009 },
     { name: "Alessio Danieli", position: 'RWB', birthYear: 2008, preferredFoot: 'Sinistro' },
-    { name: "Christian Carpentieri", position: 'RS', birthYear: 2008, preferredFoot: 'Ambidestro' },
+    { name: "Christian Carpentieri", position: 'RS', birthYear: 2008, heightCm: 174, preferredFoot: 'Ambidestro' },
     { name: "Fabio Polinari", position: 'LS / RS', birthYear: 2008, heightCm: 175, preferredFoot: 'Destro' },
     { name: "Manuel Silvestri", position: 'ST', birthYear: 2009, preferredFoot: 'Destro' },
     { name: "Alessandro Castroreale", position: 'LS / RCM', birthYear: 2009, heightCm: 184, preferredFoot: 'Destro' },
