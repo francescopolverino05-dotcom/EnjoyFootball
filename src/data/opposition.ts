@@ -3239,7 +3239,7 @@ const frosinone = OPPONENTS.find((o) => o.id === 'frosinone');
 if (frosinone) {
   /**
    * XIs by shirt onto 4-2-3-1: 1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 RCM, 8 LCM, 11 CAM, 9 ST, 7 RW, 10 LW.
-   * Latina only: 7 LW, 10 RW (`wingsSwapped`).
+   * #7 (Taddei) is the RW and #10 (Menghini) the LW in every XI.
    */
   const frosinone4231 = (byShirt: string[], wingsSwapped = false): PitchPlayer[] => {
     const t = 'frosinone';
@@ -3266,7 +3266,7 @@ if (frosinone) {
   };
   /** Same XI last three league matches (Cosenza, Perugia, Latina) — 4-2-3-1. */
   const xi4231 = ["Capanna", "Mirenzi", "Colafrancesco", "Esposito", "Reali", "Bosi", "Taddei", "Millozzi", "Carpentieri", "Menghini", "Marchetti"];
-  const vs_latina = frosinone4231(xi4231, true);
+  const vs_latina = frosinone4231(xi4231);
   const vs_perugia = frosinone4231(xi4231);
   const vs_cosenza = frosinone4231(xi4231);
   frosinone.formationSystem = '1-4-2-3-1';
@@ -3316,8 +3316,8 @@ if (frosinone) {
   frosinone.squadDepth = {
     system: '1-4-2-3-1',
     note: {
-      en: 'Primavera 2 MD5–MD7 (Cosenza, Perugia, Latina) mapped onto 4-2-3-1 by shirt (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 RCM, 8 LCM, 11 CAM, 9 ST, 7 RW, 10 LW; Latina: 7 LW, 10 RW).',
-      it: 'Primavera 2 gior. 5–7 (Cosenza, Perugia, Latina) mappate sul 4-2-3-1 per maglia (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 RCM, 8 LCM, 11 CAM, 9 ST, 7 RW, 10 LW; Latina: 7 LW, 10 RW).',
+      en: 'Primavera 2 MD5–MD7 (Cosenza, Perugia, Latina) mapped onto 4-2-3-1 by shirt (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 RCM, 8 LCM, 11 CAM, 9 ST, 7 RW, 10 LW).',
+      it: 'Primavera 2 gior. 5–7 (Cosenza, Perugia, Latina) mappate sul 4-2-3-1 per maglia (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 RCM, 8 LCM, 11 CAM, 9 ST, 7 RW, 10 LW).',
     },
     slots: [
       { role: 'GK', top: '10%', left: '50%', players: [{ name: "Capanna", starts: 3 }] },
@@ -3327,9 +3327,9 @@ if (frosinone) {
       { role: 'LB', top: '28%', left: '86%', players: [{ name: "Colafrancesco", starts: 3 }] },
       { role: 'RCM', top: '48%', left: '36%', players: [{ name: "Esposito", starts: 3 }] },
       { role: 'LCM', top: '48%', left: '64%', players: [{ name: "Millozzi", starts: 3 }] },
-      { role: 'RW', top: '74%', left: '16%', players: [{ name: "Taddei", starts: 2 }, { name: "Menghini", starts: 1 }] },
+      { role: 'RW', top: '74%', left: '16%', players: [{ name: "Taddei", starts: 3 }] },
       { role: 'CAM', top: '62%', left: '50%', players: [{ name: "Marchetti", starts: 3 }] },
-      { role: 'LW', top: '74%', left: '84%', players: [{ name: "Menghini", starts: 2 }, { name: "Taddei", starts: 1 }] },
+      { role: 'LW', top: '74%', left: '84%', players: [{ name: "Menghini", starts: 3 }] },
       { role: 'ST', top: '84%', left: '50%', players: [{ name: "Carpentieri", starts: 3 }] },
     ],
   };
@@ -3370,13 +3370,13 @@ if (frosinone) {
     { name: "Andrea Castellani", position: 'RCM / LCB', birthYear: 2008, preferredFoot: 'Destro' },
     { name: "Domenico Agostini", birthYear: 2009, preferredFoot: 'Destro' },
     { name: "Francesco Millozzi", position: 'RCM / RS', birthYear: 2008, preferredFoot: 'Destro' },
-    { name: "Lorenzo Menghini", position: 'LCM', birthYear: 2008, preferredFoot: 'Destro' },
+    { name: "Lorenzo Menghini", position: 'LW', birthYear: 2008, preferredFoot: 'Destro' },
     { name: "Valerio Esposito", position: 'LCB', birthYear: 2009, heightCm: 170, preferredFoot: 'Sinistro' },
     { name: "Matteo Marchetti", position: 'LS / RCM / LWB', birthYear: 2009 },
     { name: "Federico Montesano", position: 'CM', birthYear: 2009, preferredFoot: 'Ambidestro' },
     { name: "Matteo Carfagna", position: 'LS', birthYear: 2008, preferredFoot: 'Destro' },
     { name: "Lorenzo Trulli", position: 'RM / RW', birthYear: 2009, heightCm: 177, preferredFoot: 'Ambidestro' },
-    { name: "Leonardo Taddei", position: 'CM / LWB', birthYear: 2009, preferredFoot: 'Destro' },
+    { name: "Leonardo Taddei", position: 'RW', birthYear: 2009, preferredFoot: 'Destro' },
     { name: "Gianfilippo Casagrande", position: 'CM / LS', birthYear: 2009, heightCm: 172, preferredFoot: 'Ambidestro' },
     { name: "Lorenzo Giurdanella", position: 'LW', birthYear: 2009 },
     { name: "Alessio Danieli", position: 'RWB', birthYear: 2008, preferredFoot: 'Sinistro' },
