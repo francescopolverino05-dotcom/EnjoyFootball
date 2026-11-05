@@ -3317,7 +3317,7 @@ if (frosinone) {
     { name: "Cristian Pantano", position: 'RS / CB', birthYear: 2008, heightCm: 191, preferredFoot: 'Destro' },
     { name: "Alessandro Grande", position: 'RCB / CB', birthYear: 2009, preferredFoot: 'Destro' },
     { name: "Massimo Anzidei", position: 'RWB / CB', birthYear: 2009, preferredFoot: 'Destro' },
-    { name: "Giorgio Bosi", position: 'CB / RWB', birthYear: 2009 },
+    { name: "Giorgio Bosi", position: 'CB / RWB', birthYear: 2009, preferredFoot: 'Sinistro' },
     { name: "Francesco Molina", position: 'CB', birthYear: 2008, preferredFoot: 'Sinistro' },
     { name: "Tommaso Reali", position: 'RCB', birthYear: 2008, heightCm: 186, preferredFoot: 'Destro' },
     { name: "Cristian Di Battista", birthYear: 2008 },
