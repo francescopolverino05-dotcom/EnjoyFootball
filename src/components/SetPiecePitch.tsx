@@ -90,9 +90,15 @@ export default function SetPiecePitch({ panel, label }: { panel?: SpPanel; label
               strokeDasharray={a.swing === 'short' ? '4 3' : undefined}
               markerEnd={`url(#${mid}${markerKey})`}
             />
+            {a.headerWon === 'confirmed' && (
+              <circle cx={a.x2} cy={a.y2} r={8} fill="#ffd34d" stroke="#8a6d00" strokeWidth={2.2} opacity={0.95} />
+            )}
+            {a.headerWon === 'possible' && (
+              <circle cx={a.x2} cy={a.y2} r={8} fill="none" stroke="#ffd34d" strokeWidth={2.4} strokeDasharray="3 2" opacity={0.95} />
+            )}
             {a.n != null && (
               <>
-                <circle cx={nx} cy={ny} r={6} fill="#ffd34d" stroke="#000" />
+                <circle cx={nx} cy={ny} r={6} fill={a.headerWon && a.nAt === 'end' ? '#ffe9a0' : '#ffd34d'} stroke="#000" />
                 <text x={nx} y={ny + 3} fontSize={8} textAnchor="middle" fontWeight="bold">{a.n}</text>
               </>
             )}
