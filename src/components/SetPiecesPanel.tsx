@@ -32,7 +32,8 @@ const legendChip: React.CSSProperties = { display: 'inline-flex', alignItems: 'c
 function Legend({ data }: { data?: SpSection }) {
   const { t } = useLanguage();
   const arrows = [data?.left, data?.right, data?.centre].flatMap((p) => p?.arrows ?? []);
-  if (!arrows.some((a) => a.outcome || a.swing)) return null;
+  const hasHeader = arrows.some((a) => a.headerWon);
+  if (!arrows.some((a) => a.outcome || a.swing) && !hasHeader) return null;
   const items: [string, string, string][] = [
     ['goal', SP_OUTCOME_COLOR.goal, t('spLegendGoal')],
     ['woodwork', SP_OUTCOME_COLOR.woodwork, t('spLegendWoodwork')],
@@ -50,6 +51,18 @@ function Legend({ data }: { data?: SpSection }) {
           {label}
         </span>
       ))}
+      {arrows.some((a) => a.headerWon === 'confirmed') && (
+        <span style={legendChip}>
+          <span style={{ width: 12, height: 12, borderRadius: 99, background: '#ffd34d', border: '2px solid #8a6d00', display: 'inline-block' }} />
+          {t('spLegendHeaderConfirmed')}
+        </span>
+      )}
+      {arrows.some((a) => a.headerWon === 'possible') && (
+        <span style={legendChip}>
+          <span style={{ width: 12, height: 12, borderRadius: 99, background: 'transparent', border: '2px dashed #ffd34d', display: 'inline-block' }} />
+          {t('spLegendHeaderPossible')}
+        </span>
+      )}
       <div style={{ marginTop: 4, opacity: 0.8 }}>{t('spLegendIn')}</div>
     </div>
   );

@@ -11,7 +11,7 @@ export interface SpZone { x: number; y: number; width: number; height: number; o
 export type SpOutcome = 'goal' | 'woodwork' | 'save' | 'cleared' | 'offTarget';
 /** Delivery type: 'in' / 'out' curve the arrow (in = towards the goal, out = away); 'short' draws a dashed straight pass. Omitted = straight black arrow. */
 export type SpSwing = 'in' | 'out' | 'short';
-export interface SpArrow { x1: number; y1: number; x2: number; y2: number; n?: number; nAt?: 'start' | 'end'; swing?: SpSwing; outcome?: SpOutcome }
+export interface SpArrow { x1: number; y1: number; x2: number; y2: number; n?: number; nAt?: 'start' | 'end'; swing?: SpSwing; outcome?: SpOutcome; /** Yellow first-header: 'confirmed' = both tagging passes agree; 'possible' = only one pass. */ headerWon?: 'confirmed' | 'possible' }
 export interface SpTaker { player: SpText; foot: SpText; total: number; fromLeft: number; fromRight: number; fromCentre?: number }
 /** Plain string (shown as-is in both languages) or {en,it}. */
 export type SpText = Localized;

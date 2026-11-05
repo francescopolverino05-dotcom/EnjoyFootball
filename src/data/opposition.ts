@@ -5519,6 +5519,186 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
         tags: ["vimeo", "opposition", "set-piece"],
       },
     ];
+    frosinoneSp.setPieces = {
+      source: {
+        en: 'Attacking set pieces tagged from Vimeo Offensivi (C01–C25 corners, F01–F12 free kicks). Corner landings from second-pass NEAR/CENTRAL/FAR review; yellow first-header flags compared across two passes (confirmed = both, possible = one only).',
+        it: 'Palle inattive offensive taggate da Vimeo Offensivi (C01–C25 angoli, F01–F12 punizioni). Atterraggi angoli dalla seconda passata NEAR/CENTRAL/FAR; primi colpi di testa gialli confrontati su due passate (confermato = entrambe, possibile = una sola).',
+      },
+      keyNotesTitle: {
+        en: 'Key notes — Frosinone attacking: 37 set pieces (25 corners, 12 free kicks)',
+        it: 'Note chiave — Frosinone in attacco: 37 palle inattive (25 calci d’angolo, 12 punizioni)',
+      },
+      keyNotes: [
+        {
+          en: "Corner landings (2nd pass): central 14 · near post 8 · far post 3 (C17, C19, C24). Arrows use these spots.",
+          it: "Atterraggi angoli (2ª passata): centrale 14 · primo palo 8 · secondo palo 3 (C17, C19, C24). Le frecce usano questi punti.",
+        },
+        {
+          en: "Yellow first header — do not treat as certain: confirmed in both passes 3/25 (C07, C17, C22); possible in one pass only 13/25. Free kicks (single CSV pass): 7/12 yellow first headers marked possible (CSV only — not dual-pass confirmed), mostly lofted to the far post.",
+          it: "Primo colpo di testa giallo — non dare per certo: confermato in entrambe le passate 3/25 (C07, C17, C22); possibile in una sola passata 13/25. Punizioni (unica passata CSV): 7/12 primi colpi di testa gialli segnati come possibili (solo CSV — non confermati su due passate), soprattutto alte sul secondo palo.",
+        },
+        {
+          en: "Goals from corners: C08 headed GOAL; C10 header saved on the line then GOAL from the rebound. (Pass 2 did not tag yellow first-header on either — shown as possible where pass 1 said yes.)",
+          it: "Gol da calcio d’angolo: C08 gol di testa; C10 colpo di testa parato sulla linea poi GOL sul rimbalzo. (La 2ª passata non ha taggato il primo colpo giallo su nessuno dei due — mostrati come possibili dove la 1ª diceva sì.)",
+        },
+        {
+          en: "Setup: almost always 5 in the box (cluster of 4 at the penalty spot + 1 screening the GK). Short-corner decoy is offered but never used. Near-post dart from the cluster is a common trigger. Always 1–2 on the edge for second balls.",
+          it: "Disposizione: quasi sempre 5 in area (cluster di 4 sul dischetto + 1 a schermo sul portiere). Il corto come esca c’è ma non viene mai giocato. Scatto sul primo palo dal cluster come trigger ricorrente. Sempre 1–2 sul limite per le seconde palle.",
+        },
+        {
+          en: "Inswingers dominate: #3 Colafrancesco (left foot) from the right; #4 Esposito (right foot) from the left. Exceptions: C01 and C04–C06 are outswingers from a right-footer on the right (likely Esposito).",
+          it: "Dominano le rientranti: #3 Colafrancesco (sinistro) da destra; #4 Esposito (destro) da sinistra. Eccezioni: C01 e C04–C06 uscenti di destro da destra (likely Esposito).",
+        },
+        {
+          en: "Free kicks: wide horizontal line vs a high line, or a tight stack; lofted to the far post for a headed knock-down / head-back-across (F01/F02 created saved shots).",
+          it: "Punizioni: linea orizzontale larga contro linea alta, oppure stack stretto; palla alta sul secondo palo per sponda / rinvio di testa indietro (F01/F02 hanno creato tiri parati).",
+        },
+        {
+          en: "Takers often marked 'likely' when the shirt was not fully readable — those are labelled in the ordered notes.",
+          it: "I battitori spesso segnati come ‘likely’ quando il numero non era ben leggibile — indicati nelle note in ordine.",
+        },
+      ],
+      corners: {
+        left: {
+          zones: [
+            { x: 125, y: 10, width: 70, height: 28, opacity: 0.55 },
+            { x: 100, y: 10, width: 30, height: 22, opacity: 0.4 },
+          ],
+          arrows: [
+            { x1: 12, y1: 8, x2: 160.4, y2: 16, n: 1, nAt: 'end', swing: 'out', outcome: 'cleared', headerWon: 'possible' },
+            { x1: 12, y1: 8, x2: 145.6, y2: 22.8, n: 2, nAt: 'end', swing: 'in', outcome: 'offTarget', headerWon: 'confirmed' },
+            { x1: 12, y1: 8, x2: 148.8, y2: 24.4, n: 3, nAt: 'end', swing: 'in', outcome: 'goal', headerWon: 'possible' },
+            { x1: 12, y1: 8, x2: 112.0, y2: 14.0, n: 4, nAt: 'end', swing: 'in', outcome: 'cleared' },
+            { x1: 12, y1: 8, x2: 155.2, y2: 27.6, n: 5, nAt: 'end', swing: 'in', outcome: 'cleared', headerWon: 'possible' },
+            { x1: 12, y1: 8, x2: 118.4, y2: 17.2, n: 6, nAt: 'end', swing: 'in', outcome: 'save', headerWon: 'possible' },
+            { x1: 12, y1: 8, x2: 161.6, y2: 30.8, n: 7, nAt: 'end', swing: 'in', outcome: 'offTarget', headerWon: 'possible' },
+            { x1: 12, y1: 8, x2: 164.8, y2: 32.4, n: 8, nAt: 'end', swing: 'in', outcome: 'goal', headerWon: 'possible' },
+            { x1: 12, y1: 8, x2: 168.0, y2: 22.0, n: 9, nAt: 'end', swing: 'in', outcome: 'offTarget', headerWon: 'confirmed' },
+            { x1: 12, y1: 8, x2: 131.2, y2: 23.6, n: 10, nAt: 'end', swing: 'in', outcome: 'cleared' },
+            { x1: 12, y1: 8, x2: 216.4, y2: 37.2, n: 11, nAt: 'end', swing: 'in', outcome: 'cleared' },
+            { x1: 12, y1: 8, x2: 177.6, y2: 26.8, n: 12, nAt: 'end', swing: 'in', outcome: 'cleared' },
+          ],
+          note: { en: "Esposito #4 (right foot) ×11 (5 marked likely); Colafrancesco #3 (left foot) ×1 (1 marked likely).", it: "Esposito #4 (right foot) ×11 (5 segnati come likely); Colafrancesco #3 (left foot) ×1 (1 segnati come likely)." },
+          noteTitle: { en: "Takers (left):", it: "Battitori (sinistra):" },
+          orderedNotesTitle: { en: "In order (yellow numbers on the pitch):", it: "In ordine (numeri gialli sul campo):" },
+          orderedNotes: [
+            { en: "C03 — likely Colafrancesco #3 (taker marked likely), left foot, outswinger driven → central, inside the 6-yard box, close to the far post; cleared; FRO regains 2nd ball · YELLOW HEADER possible (one pass only)", it: "C03 — likely Colafrancesco #3 (taker marked likely), piede sinistro, traiettoria uscente tesa → centrale, dentro i 6 metri, vicino al secondo palo; cleared; FRO regains 2nd ball · TESTA GIALLO possibile (una sola passata)" },
+            { en: "C07 — likely Esposito #4 (taker marked likely), right foot, inswinger lofted → central, on the 6-yard line / towards the spot; near-post flick over bar · YELLOW HEADER confirmed (both passes)", it: "C07 — likely Esposito #4 (taker marked likely), piede destro, traiettoria rientrante alta → centrale, sulla linea dei 6 m / verso il dischetto; near-post flick over bar · TESTA GIALLO confermata (entrambe le passate)" },
+            { en: "C08 — likely Esposito #4 (taker marked likely), right foot, inswinger lofted → central, on the 6-yard line / towards the spot; GOAL header · YELLOW HEADER possible (one pass only)", it: "C08 — likely Esposito #4 (taker marked likely), piede destro, traiettoria rientrante alta → centrale, sulla linea dei 6 m / verso il dischetto; GOAL header · TESTA GIALLO possibile (una sola passata)" },
+            { en: "C11 — Esposito #4, right foot, inswinger → near post, inside the 6-yard box; cleared", it: "C11 — Esposito #4, piede destro, traiettoria rientrante → primo palo, dentro i 6 metri; cleared" },
+            { en: "C12 — Esposito #4, right foot, inswinger → central, on the 6-yard line / towards the spot; cleared · YELLOW HEADER possible (one pass only)", it: "C12 — Esposito #4, piede destro, traiettoria rientrante → centrale, sulla linea dei 6 m / verso il dischetto; cleared · TESTA GIALLO possibile (una sola passata)" },
+            { en: "C16 — Esposito #4, right foot, inswinger → near post, inside the 6-yard box; punched to edge; FRO shot on target · YELLOW HEADER possible (one pass only)", it: "C16 — Esposito #4, piede destro, traiettoria rientrante → primo palo, dentro i 6 metri; punched to edge; FRO shot on target · TESTA GIALLO possibile (una sola passata)" },
+            { en: "C18 — Esposito #4, right foot, inswinger high → central, on the 6-yard line / towards the spot; header off target · YELLOW HEADER possible (one pass only)", it: "C18 — Esposito #4, piede destro, traiettoria rientrante alta → centrale, sulla linea dei 6 m / verso il dischetto; header off target · TESTA GIALLO possibile (una sola passata)" },
+            { en: "C20 — Esposito #4, right foot, inswinger → central, on the 6-yard line / towards the spot; near-post flick across goal out · YELLOW HEADER possible (one pass only)", it: "C20 — Esposito #4, piede destro, traiettoria rientrante → centrale, sulla linea dei 6 m / verso il dischetto; near-post flick across goal out · TESTA GIALLO possibile (una sola passata)" },
+            { en: "C22 — Esposito #4, right foot, inswinger lofted → central, inside the 6-yard box; header over · YELLOW HEADER confirmed (both passes)", it: "C22 — Esposito #4, piede destro, traiettoria rientrante alta → centrale, dentro i 6 metri; header over · TESTA GIALLO confermata (entrambe le passate)" },
+            { en: "C23 — likely Esposito #4 (taker marked likely), right foot, inswinger driven → near post, inside the 6-yard box; cleared", it: "C23 — likely Esposito #4 (taker marked likely), piede destro, traiettoria rientrante tesa → primo palo, dentro i 6 metri; cleared" },
+            { en: "C24 — likely Esposito #4 (taker marked likely), right foot, inswinger lofted → far post, on the 6-yard line / towards the spot; cleared; edge player intercepts", it: "C24 — likely Esposito #4 (taker marked likely), piede destro, traiettoria rientrante alta → secondo palo, sulla linea dei 6 m / verso il dischetto; cleared; edge player intercepts" },
+            { en: "C25 — likely Esposito #4 (taker marked likely), right foot, inswinger driven → central, inside the 6-yard box; cleared", it: "C25 — likely Esposito #4 (taker marked likely), piede destro, traiettoria rientrante tesa → centrale, dentro i 6 metri; cleared" },
+          ],
+        },
+        right: {
+          zones: [
+            { x: 125, y: 10, width: 70, height: 28, opacity: 0.55 },
+            { x: 190, y: 10, width: 30, height: 22, opacity: 0.4 },
+          ],
+          arrows: [
+            { x1: 308, y1: 8, x2: 140.8, y2: 20.4, n: 1, nAt: 'end', swing: 'out', outcome: 'cleared' },
+            { x1: 308, y1: 8, x2: 144.0, y2: 22.0, n: 2, nAt: 'end', swing: 'in', outcome: 'cleared' },
+            { x1: 308, y1: 8, x2: 187.2, y2: 11.6, n: 3, nAt: 'end', swing: 'out', outcome: 'offTarget', headerWon: 'possible' },
+            { x1: 308, y1: 8, x2: 150.4, y2: 25.2, n: 4, nAt: 'end', swing: 'out', outcome: 'save', headerWon: 'possible' },
+            { x1: 308, y1: 8, x2: 153.6, y2: 26.8, n: 5, nAt: 'end', swing: 'out', outcome: 'offTarget', headerWon: 'possible' },
+            { x1: 308, y1: 8, x2: 196.8, y2: 16.4, n: 6, nAt: 'end', swing: 'in', outcome: 'cleared' },
+            { x1: 308, y1: 8, x2: 200.0, y2: 18.0, n: 7, nAt: 'end', swing: 'in', outcome: 'goal', headerWon: 'possible' },
+            { x1: 308, y1: 8, x2: 203.2, y2: 19.6, n: 8, nAt: 'end', swing: 'in', outcome: 'offTarget', headerWon: 'possible' },
+            { x1: 308, y1: 8, x2: 206.4, y2: 21.2, n: 9, nAt: 'end', swing: 'in', outcome: 'cleared' },
+            { x1: 308, y1: 8, x2: 169.6, y2: 34.8, n: 10, nAt: 'end', swing: 'in', outcome: 'offTarget', headerWon: 'possible' },
+            { x1: 308, y1: 8, x2: 130.8, y2: 24.4, n: 11, nAt: 'end', swing: 'in', outcome: 'save', headerWon: 'confirmed' },
+            { x1: 308, y1: 8, x2: 134.0, y2: 26.0, n: 12, nAt: 'end', swing: 'in', outcome: 'cleared' },
+            { x1: 308, y1: 8, x2: 179.2, y2: 39.6, n: 13, nAt: 'end', swing: 'in', outcome: 'offTarget', headerWon: 'possible' },
+          ],
+          note: { en: "Colafrancesco #3 (left foot) ×9 (1 marked likely); Esposito #4 (right foot) ×4 (4 marked likely).", it: "Colafrancesco #3 (left foot) ×9 (1 segnati come likely); Esposito #4 (right foot) ×4 (4 segnati come likely)." },
+          noteTitle: { en: "Takers (right):", it: "Battitori (destra):" },
+          orderedNotesTitle: { en: "In order (yellow numbers on the pitch):", it: "In ordine (numeri gialli sul campo):" },
+          orderedNotes: [
+            { en: "C01 — likely Esposito #4 (taker marked likely), right foot, outswinger lofted → central, on the 6-yard line / towards the spot; cleared; 2nd ball shot off from edge", it: "C01 — likely Esposito #4 (taker marked likely), piede destro, traiettoria uscente alta → centrale, sulla linea dei 6 m / verso il dischetto; cleared; 2nd ball shot off from edge" },
+            { en: "C02 — likely Colafrancesco #3 (taker marked likely), left foot, inswinger lofted → central, on the 6-yard line / towards the spot; cleared", it: "C02 — likely Colafrancesco #3 (taker marked likely), piede sinistro, traiettoria rientrante alta → centrale, sulla linea dei 6 m / verso il dischetto; cleared" },
+            { en: "C04 — likely Esposito #4 (taker marked likely), right foot, outswinger lofted → near post, inside the 6-yard box; free header over bar · YELLOW HEADER possible (one pass only)", it: "C04 — likely Esposito #4 (taker marked likely), piede destro, traiettoria uscente alta → primo palo, dentro i 6 metri; free header over bar · TESTA GIALLO possibile (una sola passata)" },
+            { en: "C05 — likely Esposito #4 (taker marked likely), right foot, outswinger lofted → central, on the 6-yard line / towards the spot; header on target saved · YELLOW HEADER possible (one pass only)", it: "C05 — likely Esposito #4 (taker marked likely), piede destro, traiettoria uscente alta → centrale, sulla linea dei 6 m / verso il dischetto; header on target saved · TESTA GIALLO possibile (una sola passata)" },
+            { en: "C06 — likely Esposito #4 (taker marked likely), right foot, outswinger lofted → central, on the 6-yard line / towards the spot; header wide · YELLOW HEADER possible (one pass only)", it: "C06 — likely Esposito #4 (taker marked likely), piede destro, traiettoria uscente alta → centrale, sulla linea dei 6 m / verso il dischetto; header wide · TESTA GIALLO possibile (una sola passata)" },
+            { en: "C09 — Colafrancesco #3, left foot, inswinger → near post, inside the 6-yard box; cleared", it: "C09 — Colafrancesco #3, piede sinistro, traiettoria rientrante → primo palo, dentro i 6 metri; cleared" },
+            { en: "C10 — Colafrancesco #3, left foot, inswinger → near post, inside the 6-yard box; header saved on line; GOAL from rebound · YELLOW HEADER possible (one pass only)", it: "C10 — Colafrancesco #3, piede sinistro, traiettoria rientrante → primo palo, dentro i 6 metri; header saved on line; GOAL from rebound · TESTA GIALLO possibile (una sola passata)" },
+            { en: "C13 — Colafrancesco #3, left foot, inswinger → near post, inside the 6-yard box; near-post flick wide · YELLOW HEADER possible (one pass only)", it: "C13 — Colafrancesco #3, piede sinistro, traiettoria rientrante → primo palo, dentro i 6 metri; near-post flick wide · TESTA GIALLO possibile (una sola passata)" },
+            { en: "C14 — Colafrancesco #3, left foot, inswinger → near post, inside the 6-yard box; cleared", it: "C14 — Colafrancesco #3, piede sinistro, traiettoria rientrante → primo palo, dentro i 6 metri; cleared" },
+            { en: "C15 — Colafrancesco #3, left foot, inswinger driven → central, on the 6-yard line / towards the spot; header over · YELLOW HEADER possible (one pass only)", it: "C15 — Colafrancesco #3, piede sinistro, traiettoria rientrante tesa → centrale, sulla linea dei 6 m / verso il dischetto; header over · TESTA GIALLO possibile (una sola passata)" },
+            { en: "C17 — Colafrancesco #3, left foot, inswinger driven → far post, inside the 6-yard box; header on target saved; scramble · YELLOW HEADER confirmed (both passes)", it: "C17 — Colafrancesco #3, piede sinistro, traiettoria rientrante tesa → secondo palo, dentro i 6 metri; header on target saved; scramble · TESTA GIALLO confermata (entrambe le passate)" },
+            { en: "C19 — Colafrancesco #3, left foot, inswinger driven → far post, inside the 6-yard box; cleared near post", it: "C19 — Colafrancesco #3, piede sinistro, traiettoria rientrante tesa → secondo palo, dentro i 6 metri; cleared near post" },
+            { en: "C21 — Colafrancesco #3, left foot, inswinger driven → central, on the 6-yard line / towards the spot; cleared; 2nd ball shot wide · YELLOW HEADER possible (one pass only)", it: "C21 — Colafrancesco #3, piede sinistro, traiettoria rientrante tesa → centrale, sulla linea dei 6 m / verso il dischetto; cleared; 2nd ball shot wide · TESTA GIALLO possibile (una sola passata)" },
+          ],
+        },
+        takers: [
+          { player: 'Esposito #4', foot: { en: 'Right', it: 'Destro' }, total: 15, fromLeft: 11, fromRight: 4 },
+          { player: 'Colafrancesco #3', foot: { en: 'Left', it: 'Sinistro' }, total: 10, fromLeft: 1, fromRight: 9 },
+        ],
+      },
+      freeKicks: {
+        left: {
+          arrows: [
+            { x1: 85, y1: 150, x2: 200, y2: 16, n: 1, nAt: 'end', swing: 'in', outcome: 'save', headerWon: 'possible' },
+            { x1: 85, y1: 130, x2: 160, y2: 36, n: 2, nAt: 'end', swing: 'in', outcome: 'offTarget' },
+            { x1: 50, y1: 130, x2: 160, y2: 36, n: 3, nAt: 'end', swing: 'in', outcome: 'cleared', headerWon: 'possible' },
+          ],
+          note: { en: "Esposito #4 (right foot) ×2; right-footer (likely Esposito #4) ×1.", it: "Esposito #4 (piede destro) ×2; destro (likely Esposito #4) ×1." },
+          noteTitle: { en: "Takers (left):", it: "Battitori (sinistra):" },
+          orderedNotesTitle: { en: "In order (yellow numbers on the pitch):", it: "In ordine (numeri gialli sul campo):" },
+          orderedNotes: [
+            { en: "F02 — Esposito #4, left half-space ~35m, lofted cross → far post; knock-down -> shot saved · YELLOW HEADER (CSV)", it: "F02 — Esposito #4, left half-space ~35m, lofted cross → far post; knock-down -> shot saved · TESTA GIALLO (CSV)" },
+            { en: "F04 — right-footer (left-footer dummies) (taker marked likely), left half-space ~30m, driven cross → central; cleared; 2nd ball long shot over", it: "F04 — right-footer (left-footer dummies) (taker marked likely), left half-space ~30m, driven cross → central; cleared; 2nd ball long shot over" },
+            { en: "F12 — Esposito #4, left wide ~30m, inswinger → central; header on target caught · YELLOW HEADER (CSV)", it: "F12 — Esposito #4, left wide ~30m, inswinger → central; header on target caught · TESTA GIALLO (CSV)" },
+          ],
+        },
+        right: {
+          arrows: [
+            { x1: 240, y1: 150, x2: 120, y2: 16, n: 1, nAt: 'end', swing: 'in', outcome: 'cleared' },
+            { x1: 240, y1: 150, x2: 120, y2: 16, n: 2, nAt: 'end', swing: 'in', outcome: 'cleared' },
+            { x1: 275, y1: 128, x2: 160, y2: 20, n: 3, nAt: 'end', swing: 'in', outcome: 'offTarget', headerWon: 'possible' },
+            { x1: 275, y1: 128, x2: 120, y2: 16, n: 4, nAt: 'end', swing: 'in', outcome: 'offTarget', headerWon: 'possible' },
+            { x1: 275, y1: 150, x2: 120, y2: 16, n: 5, nAt: 'end', swing: 'in', outcome: 'goal', headerWon: 'possible' },
+          ],
+          note: { en: "Colafrancesco #3 (left foot) ×4; Esposito #4 (right foot, likely) ×1.", it: "Colafrancesco #3 (piede sinistro) ×4; Esposito #4 (piede destro, likely) ×1." },
+          noteTitle: { en: "Takers (right):", it: "Battitori (destra):" },
+          orderedNotesTitle: { en: "In order (yellow numbers on the pitch):", it: "In ordine (numeri gialli sul campo):" },
+          orderedNotes: [
+            { en: "F03 — likely Esposito #4 (taker marked likely), right half-space ~40m, lofted cross → far post; cleared for throw-in", it: "F03 — likely Esposito #4 (taker marked likely), right half-space ~40m, lofted cross → far post; cleared for throw-in" },
+            { en: "F05 — Colafrancesco #3 (R-footer dummies), right half-space ~35m, lofted cross → central/far post; cleared", it: "F05 — Colafrancesco #3 (R-footer dummies), right half-space ~35m, lofted cross → central/far post; cleared" },
+            { en: "F06 — Colafrancesco #3, right wide ~30m, inswinger → central near 6-yard; header over · YELLOW HEADER (CSV)", it: "F06 — Colafrancesco #3, right wide ~30m, inswinger → central near 6-yard; header over · TESTA GIALLO (CSV)" },
+            { en: "F07 — Colafrancesco #3, right central-wide ~30m, inswinger → far post/deep central; header wide · YELLOW HEADER (CSV)", it: "F07 — Colafrancesco #3, right central-wide ~30m, inswinger → far post/deep central; header wide · TESTA GIALLO (CSV)" },
+            { en: "F08 — Colafrancesco #3, right wide ~35m, inswinger → far post; header across goal; far-post slide misses · YELLOW HEADER (CSV)", it: "F08 — Colafrancesco #3, right wide ~35m, inswinger → far post; header across goal; far-post slide misses · TESTA GIALLO (CSV)" },
+          ],
+        },
+        centre: {
+          arrows: [
+            { x1: 160, y1: 140, x2: 200, y2: 16, n: 1, nAt: 'end', swing: 'in', outcome: 'save', headerWon: 'possible' },
+            { x1: 130, y1: 155, x2: 160, y2: 54, n: 2, nAt: 'end', swing: 'in', outcome: 'cleared' },
+            { x1: 190, y1: 120, x2: 120, y2: 16, n: 3, nAt: 'end', swing: 'in', outcome: 'offTarget', headerWon: 'possible' },
+            { x1: 130, y1: 155, x2: 160, y2: 54, n: 4, nAt: 'end', swing: 'in', outcome: 'cleared' },
+          ],
+          note: { en: "Esposito #4 (right foot) ×2; Colafrancesco #3 (left foot) ×2.", it: "Esposito #4 (piede destro) ×2; Colafrancesco #3 (piede sinistro) ×2." },
+          noteTitle: { en: "Takers (central):", it: "Battitori (centrale):" },
+          orderedNotesTitle: { en: "In order (yellow numbers on the pitch):", it: "In ordine (numeri gialli sul campo):" },
+          orderedNotes: [
+            { en: "F01 — Esposito #4, central ~35m, lofted cross → far post right side; knock-down -> shot saved (offside) · YELLOW HEADER (CSV)", it: "F01 — Esposito #4, central ~35m, lofted cross → far post right side; knock-down -> shot saved (offside) · TESTA GIALLO (CSV)" },
+            { en: "F09 — Esposito #4, central-left ~40m, driven/lofted → penalty spot; headed clear", it: "F09 — Esposito #4, central-left ~40m, driven/lofted → penalty spot; headed clear" },
+            { en: "F10 — Colafrancesco #3 (Esposito decoy), central-right ~25m, inswinger floated → far post; header wide · YELLOW HEADER (CSV)", it: "F10 — Colafrancesco #3 (Esposito decoy), central-right ~25m, inswinger floated → far post; header wide · TESTA GIALLO (CSV)" },
+            { en: "F11 — Esposito #4 (Colafrancesco over ball), central-left ~35m, lofted → penalty spot; headed clear", it: "F11 — Esposito #4 (Colafrancesco over ball), central-left ~35m, lofted → penalty spot; headed clear" },
+          ],
+        },
+        takers: [
+          { player: 'Esposito #4', foot: { en: 'Right', it: 'Destro' }, total: 5, fromLeft: 2, fromRight: 1, fromCentre: 2 },
+          { player: 'Colafrancesco #3', foot: { en: 'Left', it: 'Sinistro' }, total: 6, fromLeft: 0, fromRight: 4, fromCentre: 2 },
+          { player: { en: 'Right-footer (likely Esposito #4)', it: 'Destro (likely Esposito #4)' }, foot: { en: 'Right', it: 'Destro' }, total: 1, fromLeft: 1, fromRight: 0, fromCentre: 0 },
+        ],
+      },
+    };
   }
 }
 
