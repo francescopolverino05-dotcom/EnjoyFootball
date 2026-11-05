@@ -3233,7 +3233,6 @@ if (frosinone) {
   const vs_cosenza = frosinone4231(xi4231);
   const vs_palermo = frosinone352(["Capanna", "Mirenzi", "Colafrancesco", "Esposito", "Grande", "Bosi", "Taddei", "Marchetti", "Carpentieri", "Menghini", "Castroreale"]);
   const vs_catanzaro = frosinone352(["Amato", "Anzidei", "Colafrancesco", "Esposito", "Reali", "Grande", "Mirenzi", "Marchetti", "Carpentieri", "Menghini", "Castroreale"]);
-  const vs_pisa = frosinone352(["Amato", "Bosi", "Colafrancesco", "Esposito", "Reali", "Grande", "Mirenzi", "Marchetti", "Carpentieri", "Menghini", "Castroreale"]);
   frosinone.formationSystem = '1-4-2-3-1';
   frosinone.alternateFormationSystems = ['1-3-5-2'];
   frosinone.starters = frosinone4231(xi4231);
@@ -3244,8 +3243,8 @@ if (frosinone) {
       system: '4-2-3-1',
       players: frosinone.starters,
       notes: {
-        en: 'Most frequent starter per role, Primavera 2 MD2–MD7 mapped onto 4-2-3-1 by shirt (CAM: Marchetti — last three starts).',
-        it: 'Titolare più frequente per ruolo, Primavera 2 gior. 2–7 mappate sul 4-2-3-1 per maglia (CAM: Marchetti — ultime tre titolarità).',
+        en: 'Most frequent starter per role, Primavera 2 MD3–MD7 mapped onto 4-2-3-1 by shirt (CAM: Marchetti — last three starts).',
+        it: 'Titolare più frequente per ruolo, Primavera 2 gior. 3–7 mappate sul 4-2-3-1 per maglia (CAM: Marchetti — ultime tre titolarità).',
       },
     },
     {
@@ -3298,35 +3297,25 @@ if (frosinone) {
         it: "Primavera 2 gior. 3, 19 set 2026, trasferta, Catanzaro 6–0 Frosinone (distinta). XI dalla distinta ufficiale. Gol/sub (TM): Pellegrini 4', 14', Gjoka 38', Greco 60', Ciani 84', Vella 86'. Sub: Millozzi per Carpentieri 30', Taddei per Colafrancesco 45', Danieli per Anzidei 45', Polinari per Castroreale 61', Castellani per Esposito 66'. Cartellini: Giallo Millozzi 31'. All. Guberti.",
       },
     },
-    {
-      id: 'frosinone-vs-pisa',
-      label: { en: "vs Pisa (2–3)", it: "vs Pisa (2–3)" },
-      system: '3-5-2',
-      players: vs_pisa,
-      notes: {
-        en: "Primavera 2 MD2, 12 Sep 2026, home, Frosinone 2–3 Pisa (distinta). Starting XI from official sheet. Goals/subs (TM): Marchetti 70', Carpentieri 90'+5; Ghizzani 6', 52', 60'. Subs: Anzidei for Bosi 66', Polinari for Castroreale 66', Valente for Marchetti 70', Ndao for Colafrancesco 86'. Cards: Yellow Bosi. Coach Guberti.",
-        it: "Primavera 2 gior. 2, 12 set 2026, casa, Frosinone 2–3 Pisa (distinta). XI dalla distinta ufficiale. Gol/sub (TM): Marchetti 70', Carpentieri 90'+5; Ghizzani 6', 52', 60'. Sub: Anzidei per Bosi 66', Polinari per Castroreale 66', Valente per Marchetti 70', Ndao per Colafrancesco 86'. Cartellini: Giallo Bosi. All. Guberti.",
-      },
-    },
   ];
   frosinone.squadDepth = {
     system: '1-4-2-3-1',
     note: {
-      en: 'Primavera 2 MD2–MD7 mapped onto 4-2-3-1 by shirt (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 RCM, 8 LCM, 11 CAM, 9 ST, 7 RW, 10 LW; Latina: 7 LW, 10 RW). MD2–MD4 cards remain 3-5-2.',
-      it: 'Primavera 2 gior. 2–7 mappate sul 4-2-3-1 per maglia (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 RCM, 8 LCM, 11 CAM, 9 ST, 7 RW, 10 LW; Latina: 7 LW, 10 RW). Le schede gior. 2–4 restano 3-5-2.',
+      en: 'Primavera 2 MD3–MD7 mapped onto 4-2-3-1 by shirt (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 RCM, 8 LCM, 11 CAM, 9 ST, 7 RW, 10 LW; Latina: 7 LW, 10 RW). MD3–MD4 cards remain 3-5-2.',
+      it: 'Primavera 2 gior. 3–7 mappate sul 4-2-3-1 per maglia (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 RCM, 8 LCM, 11 CAM, 9 ST, 7 RW, 10 LW; Latina: 7 LW, 10 RW). Le schede gior. 3–4 restano 3-5-2.',
     },
     slots: [
-      { role: 'GK', top: '10%', left: '50%', players: [{ name: "Capanna", starts: 4 }, { name: "Amato", starts: 2 }] },
-      { role: 'RB', top: '28%', left: '14%', players: [{ name: "Mirenzi", starts: 4 }, { name: "Anzidei", starts: 1 }, { name: "Bosi", starts: 1 }] },
-      { role: 'RCB', top: '28%', left: '38%', players: [{ name: "Reali", starts: 5 }, { name: "Grande", starts: 1 }] },
-      { role: 'LCB', top: '28%', left: '62%', players: [{ name: "Bosi", starts: 4 }, { name: "Grande", starts: 2 }] },
-      { role: 'LB', top: '28%', left: '86%', players: [{ name: "Colafrancesco", starts: 6 }] },
-      { role: 'RCM', top: '48%', left: '36%', players: [{ name: "Esposito", starts: 6 }] },
-      { role: 'LCM', top: '48%', left: '64%', players: [{ name: "Millozzi", starts: 3 }, { name: "Marchetti", starts: 3 }] },
-      { role: 'RW', top: '74%', left: '16%', players: [{ name: "Taddei", starts: 3 }, { name: "Mirenzi", starts: 2 }, { name: "Menghini", starts: 1 }] },
-      { role: 'CAM', top: '62%', left: '50%', players: [{ name: "Marchetti", starts: 3 }, { name: "Castroreale", starts: 3 }] },
-      { role: 'LW', top: '74%', left: '84%', players: [{ name: "Menghini", starts: 5 }, { name: "Taddei", starts: 1 }] },
-      { role: 'ST', top: '84%', left: '50%', players: [{ name: "Carpentieri", starts: 6 }] },
+      { role: 'GK', top: '10%', left: '50%', players: [{ name: "Capanna", starts: 4 }, { name: "Amato", starts: 1 }] },
+      { role: 'RB', top: '28%', left: '14%', players: [{ name: "Mirenzi", starts: 4 }, { name: "Anzidei", starts: 1 }] },
+      { role: 'RCB', top: '28%', left: '38%', players: [{ name: "Reali", starts: 4 }, { name: "Grande", starts: 1 }] },
+      { role: 'LCB', top: '28%', left: '62%', players: [{ name: "Bosi", starts: 4 }, { name: "Grande", starts: 1 }] },
+      { role: 'LB', top: '28%', left: '86%', players: [{ name: "Colafrancesco", starts: 5 }] },
+      { role: 'RCM', top: '48%', left: '36%', players: [{ name: "Esposito", starts: 5 }] },
+      { role: 'LCM', top: '48%', left: '64%', players: [{ name: "Millozzi", starts: 3 }, { name: "Marchetti", starts: 2 }] },
+      { role: 'RW', top: '74%', left: '16%', players: [{ name: "Taddei", starts: 3 }, { name: "Menghini", starts: 1 }, { name: "Mirenzi", starts: 1 }] },
+      { role: 'CAM', top: '62%', left: '50%', players: [{ name: "Marchetti", starts: 3 }, { name: "Castroreale", starts: 2 }] },
+      { role: 'LW', top: '74%', left: '84%', players: [{ name: "Menghini", starts: 4 }, { name: "Taddei", starts: 1 }] },
+      { role: 'ST', top: '84%', left: '50%', players: [{ name: "Carpentieri", starts: 5 }] },
     ],
   };
   frosinone.substitutes = [
