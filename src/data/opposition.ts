@@ -3962,6 +3962,20 @@ attachReferencePack('perugia', '2026-11-21_campionato-u19-vs-perugia', [
     date: '2026-10-24',
     videoFile: 'https://vimeo.com/1241220538/3af1ec3a3c',
   },
+  {
+    id: 'perugia-ref-benevento',
+    title: {
+      en: 'Benevento vs Perugia 1–0',
+      it: 'Benevento vs Perugia 1–0',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 7',
+      it: 'Primavera 2 · Giornata 7',
+    },
+    score: '1–0',
+    date: '2026-10-31',
+    videoFile: 'https://vimeo.com/1242054563/5d28421c39',
+  },
 ]);
 
 attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [

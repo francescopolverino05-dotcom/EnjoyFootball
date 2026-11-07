@@ -304,9 +304,14 @@ function classifyVideo(name, parentFolderName, duration = 0) {
     return { kind: 'gk-analysis' };
   }
   // Full match uploads often keep the match title (no clip timestamp prefix).
-  // Prefer long duration; also accept short/processing stubs with match-like titles.
+  // Prefer long duration; also accept short/processing stubs with match-like titles
+  // (e.g. "Napoli - Frosinone (0-0)" while Vimeo still reports duration 0).
   if (!isClipStyleName(name) && !/post[\s_-]*match|analisi|analysis|video\s*analysis/.test(n)) {
-    if (duration >= 1800 || /amichevole|friendly|vs\.?\s*u18|vs\.?\s*u19|primavera/i.test(name || '')) {
+    if (
+      duration >= 1800 ||
+      /amichevole|friendly|vs\.?\s*u18|vs\.?\s*u19|primavera/i.test(name || '') ||
+      /\(\s*\d+\s*[-–]\s*\d+\s*\)/.test(name || '')
+    ) {
       return { kind: 'full' };
     }
   }

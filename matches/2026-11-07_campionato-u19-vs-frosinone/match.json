@@ -36,7 +36,10 @@
     "colorClass": "opponent",
     "logo": "logos/frosinone.png"
   },
-  "score": null,
+  "score": {
+    "home": 0,
+    "away": 0
+  },
   "goals": [],
   "timeline": [],
   "formations": [],
@@ -44,5 +47,17 @@
   "teamStats": [],
   "goalkeepers": [],
   "clips": [],
-  "analysisVideos": []
+  "analysisVideos": [],
+  "vimeo": {
+    "folderId": "31188954",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/31188954",
+    "lastSyncedAt": "2026-11-07T23:17:14.583Z"
+  },
+  "video": {
+    "fullMatch": "https://vimeo.com/1244766192/1ceb169941",
+    "notes": {
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
+    }
+  }
 }
