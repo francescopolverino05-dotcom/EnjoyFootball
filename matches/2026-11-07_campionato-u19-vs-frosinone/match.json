@@ -47,7 +47,26 @@
   "teamStats": [],
   "goalkeepers": [],
   "clips": [],
-  "analysisVideos": [],
+  "analysisVideos": [
+    {
+      "id": "gps-report-full-match",
+      "title": {
+        "en": "K-Sport GPS report — full match",
+        "it": "Report GPS K-Sport — partita intera"
+      },
+      "description": {
+        "en": "SSC Napoli Primavera K-Sport full GPS analytics vs Frosinone (10 players, 2 pages).",
+        "it": "Report GPS completo K-Sport SSC Napoli Primavera vs Frosinone (10 giocatori, 2 pagine)."
+      },
+      "videoFile": "gps/Report_GPS_NAPOLI-FROSINONE_2026_11_07.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "gps",
+        "physical"
+      ]
+    }
+  ],
   "vimeo": {
     "folderId": "31188954",
     "folderUrl": "https://vimeo.com/user/170593333/folder/31188954",
@@ -59,5 +78,149 @@
       "en": "Full match hosted on Vimeo.",
       "it": "Partita intera su Vimeo."
     }
-  }
+  },
+  "gpsStats": [
+    {
+      "half": {
+        "en": "GPS — Full Match",
+        "it": "GPS — Partita intera"
+      },
+      "summary": {
+        "en": "D'Angelo led distance (13029 m), high intensity (>16 km/h: 2731 m), 20–24 km/h (792.82 m), sprint (320.94 m >24 km/h), metabolic power (11.8 W/kg), density (129 m/min), accelerations (41) and decelerations (80). Zappalà top speed (31.45 km/h). Branchizio highest recovery (74.32%). Average of the 10 players tracked: 9573 m.",
+        "it": "D'Angelo distanza (13029 m), alta intensità (>16 km/h: 2731 m), 20–24 km/h (792,82 m), sprint (320,94 m >24 km/h), potenza metabolica (11,8 W/kg), densità (129 m/min), accelerazioni (41) e decelerazioni (80). Zappalà velocità max (31,45 km/h). Branchizio recovery più alto (74,32%). Media dei 10 giocatori monitorati: 9573 m."
+      },
+      "players": [
+        {
+          "player": "D'Angelo",
+          "totalDistanceM": 13029,
+          "distancePerMin": 129,
+          "distanceOver16KmhM": 2731,
+          "distance20to24KmhM": 792.82,
+          "distanceOver24KmhM": 320.94,
+          "metabolicPowerWkg": 11.8,
+          "accelerationsOver3": 41,
+          "decelerationsUnder3": 80,
+          "maxSpeedKmh": 30.95,
+          "recoveryPct": 59.67
+        },
+        {
+          "player": "Zappalà",
+          "totalDistanceM": 11560,
+          "distancePerMin": 103,
+          "distanceOver16KmhM": 1801,
+          "distance20to24KmhM": 440.92,
+          "distanceOver24KmhM": 220.58,
+          "metabolicPowerWkg": 9.5,
+          "accelerationsOver3": 37,
+          "decelerationsUnder3": 58,
+          "maxSpeedKmh": 31.45,
+          "recoveryPct": 68.59
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 11386,
+          "distancePerMin": 112,
+          "distanceOver16KmhM": 1653,
+          "distance20to24KmhM": 351.44,
+          "distanceOver24KmhM": 196.36,
+          "metabolicPowerWkg": 10.2,
+          "accelerationsOver3": 40,
+          "decelerationsUnder3": 33,
+          "maxSpeedKmh": 29.64,
+          "recoveryPct": 65.8
+        },
+        {
+          "player": "Marotta",
+          "totalDistanceM": 11089,
+          "distancePerMin": 99,
+          "distanceOver16KmhM": 1377,
+          "distance20to24KmhM": 414.29,
+          "distanceOver24KmhM": 95.64,
+          "metabolicPowerWkg": 8.8,
+          "accelerationsOver3": 27,
+          "decelerationsUnder3": 35,
+          "maxSpeedKmh": 28.22,
+          "recoveryPct": 74.11
+        },
+        {
+          "player": "Branchizio",
+          "totalDistanceM": 10230,
+          "distancePerMin": 102,
+          "distanceOver16KmhM": 1562,
+          "distance20to24KmhM": 421.25,
+          "distanceOver24KmhM": 127.57,
+          "metabolicPowerWkg": 9.1,
+          "accelerationsOver3": 39,
+          "decelerationsUnder3": 33,
+          "maxSpeedKmh": 28.97,
+          "recoveryPct": 74.32
+        },
+        {
+          "player": "Rovetini",
+          "totalDistanceM": 9885,
+          "distancePerMin": 125,
+          "distanceOver16KmhM": 2068,
+          "distance20to24KmhM": 610.71,
+          "distanceOver24KmhM": 265.5,
+          "metabolicPowerWkg": 11.5,
+          "accelerationsOver3": 32,
+          "decelerationsUnder3": 43,
+          "maxSpeedKmh": 31.24,
+          "recoveryPct": 62.63
+        },
+        {
+          "player": "Saviano",
+          "totalDistanceM": 8242,
+          "distancePerMin": 102,
+          "distanceOver16KmhM": 1016,
+          "distance20to24KmhM": 212.59,
+          "distanceOver24KmhM": 34.57,
+          "metabolicPowerWkg": 9,
+          "accelerationsOver3": 15,
+          "decelerationsUnder3": 23,
+          "maxSpeedKmh": 27.28,
+          "recoveryPct": 71.14
+        },
+        {
+          "player": "Liccardo",
+          "totalDistanceM": 8232,
+          "distancePerMin": 119,
+          "distanceOver16KmhM": 1748,
+          "distance20to24KmhM": 417.08,
+          "distanceOver24KmhM": 217.19,
+          "metabolicPowerWkg": 10.6,
+          "accelerationsOver3": 17,
+          "decelerationsUnder3": 26,
+          "maxSpeedKmh": 31.13,
+          "recoveryPct": 66.21
+        },
+        {
+          "player": "Riccio",
+          "totalDistanceM": 6491,
+          "distancePerMin": 126,
+          "distanceOver16KmhM": 1202,
+          "distance20to24KmhM": 353.4,
+          "distanceOver24KmhM": 133.41,
+          "metabolicPowerWkg": 11.7,
+          "accelerationsOver3": 15,
+          "decelerationsUnder3": 32,
+          "maxSpeedKmh": 29.6,
+          "recoveryPct": 58.65
+        },
+        {
+          "player": "Picardi",
+          "totalDistanceM": 5581,
+          "distancePerMin": 117,
+          "distanceOver16KmhM": 754,
+          "distance20to24KmhM": 173.12,
+          "distanceOver24KmhM": 10.08,
+          "metabolicPowerWkg": 10.7,
+          "accelerationsOver3": 16,
+          "decelerationsUnder3": 22,
+          "maxSpeedKmh": 24.53,
+          "recoveryPct": 65.27
+        }
+      ]
+    }
+  ]
 }
