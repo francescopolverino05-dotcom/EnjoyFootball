@@ -744,7 +744,365 @@
       "colorClass": "green"
     }
   ],
-  "clips": [],
+  "clips": [
+    {
+      "id": "vimeo-1244933909",
+      "title": {
+        "en": "Defending free kicks 59:18",
+        "it": "Punizioni difensive 59:18"
+      },
+      "comments": {
+        "en": "Defending free kicks 59:18",
+        "it": "Punizioni difensive 59:18"
+      },
+      "minute": 59,
+      "second": 18,
+      "videoFile": "https://vimeo.com/1244933909/8b24ba0e5d",
+      "section": "defending-free-kicks",
+      "labels": [
+        "defending-free-kicks"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244933810",
+      "title": {
+        "en": "Defending free kicks 25:08",
+        "it": "Punizioni difensive 25:08"
+      },
+      "comments": {
+        "en": "Defending free kicks 25:08",
+        "it": "Punizioni difensive 25:08"
+      },
+      "minute": 25,
+      "second": 8,
+      "videoFile": "https://vimeo.com/1244933810/e72a86286c",
+      "section": "defending-free-kicks",
+      "labels": [
+        "defending-free-kicks"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244933723",
+      "title": {
+        "en": "Defending free kicks 13:19",
+        "it": "Punizioni difensive 13:19"
+      },
+      "comments": {
+        "en": "Defending free kicks 13:19",
+        "it": "Punizioni difensive 13:19"
+      },
+      "minute": 13,
+      "second": 19,
+      "videoFile": "https://vimeo.com/1244933723/db31b598fc",
+      "section": "defending-free-kicks",
+      "labels": [
+        "defending-free-kicks"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244933699",
+      "title": {
+        "en": "Defending corners 86:53",
+        "it": "Calci d’angolo difensivi 86:53"
+      },
+      "comments": {
+        "en": "Defending corners 86:53",
+        "it": "Calci d’angolo difensivi 86:53"
+      },
+      "minute": 86,
+      "second": 53,
+      "videoFile": "https://vimeo.com/1244933699/2afea8aaf0",
+      "section": "defending-corners",
+      "labels": [
+        "defending-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244933516",
+      "title": {
+        "en": "Defending corners 39:01",
+        "it": "Calci d’angolo difensivi 39:01"
+      },
+      "comments": {
+        "en": "Defending corners 39:01",
+        "it": "Calci d’angolo difensivi 39:01"
+      },
+      "minute": 39,
+      "second": 1,
+      "videoFile": "https://vimeo.com/1244933516/68d717c7d2",
+      "section": "defending-corners",
+      "labels": [
+        "defending-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244933517",
+      "title": {
+        "en": "Defending corners 15:37",
+        "it": "Calci d’angolo difensivi 15:37"
+      },
+      "comments": {
+        "en": "Defending corners 15:37",
+        "it": "Calci d’angolo difensivi 15:37"
+      },
+      "minute": 15,
+      "second": 37,
+      "videoFile": "https://vimeo.com/1244933517/e5e5d30dac",
+      "section": "defending-corners",
+      "labels": [
+        "defending-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244933514",
+      "title": {
+        "en": "Defending corners 60:13",
+        "it": "Calci d’angolo difensivi 60:13"
+      },
+      "comments": {
+        "en": "Defending corners 60:13",
+        "it": "Calci d’angolo difensivi 60:13"
+      },
+      "minute": 60,
+      "second": 13,
+      "videoFile": "https://vimeo.com/1244933514/6c431f8b5b",
+      "section": "defending-corners",
+      "labels": [
+        "defending-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244933515",
+      "title": {
+        "en": "Defending corners 46:05",
+        "it": "Calci d’angolo difensivi 46:05"
+      },
+      "comments": {
+        "en": "Defending corners 46:05",
+        "it": "Calci d’angolo difensivi 46:05"
+      },
+      "minute": 46,
+      "second": 5,
+      "videoFile": "https://vimeo.com/1244933515/fbfe65d373",
+      "section": "defending-corners",
+      "labels": [
+        "defending-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244934144",
+      "title": {
+        "en": "Attacking free kicks 90:15",
+        "it": "Punizioni offensive 90:15"
+      },
+      "comments": {
+        "en": "Attacking free kicks 90:15",
+        "it": "Punizioni offensive 90:15"
+      },
+      "minute": 90,
+      "second": 15,
+      "videoFile": "https://vimeo.com/1244934144/4774a13f21",
+      "section": "attacking-free-kicks",
+      "labels": [
+        "attacking-free-kicks"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244934115",
+      "title": {
+        "en": "Attacking corners 78:00",
+        "it": "Calci d’angolo offensivi 78:00"
+      },
+      "comments": {
+        "en": "Attacking corners 78:00",
+        "it": "Calci d’angolo offensivi 78:00"
+      },
+      "minute": 78,
+      "second": 0,
+      "videoFile": "https://vimeo.com/1244934115/20b04ce3a2",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244934118",
+      "title": {
+        "en": "Attacking free kicks 23:26",
+        "it": "Punizioni offensive 23:26"
+      },
+      "comments": {
+        "en": "Attacking free kicks 23:26",
+        "it": "Punizioni offensive 23:26"
+      },
+      "minute": 23,
+      "second": 26,
+      "videoFile": "https://vimeo.com/1244934118/c157b8af5f",
+      "section": "attacking-free-kicks",
+      "labels": [
+        "attacking-free-kicks"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244934111",
+      "title": {
+        "en": "Attacking corners 68:17",
+        "it": "Calci d’angolo offensivi 68:17"
+      },
+      "comments": {
+        "en": "Attacking corners 68:17",
+        "it": "Calci d’angolo offensivi 68:17"
+      },
+      "minute": 68,
+      "second": 17,
+      "videoFile": "https://vimeo.com/1244934111/da05f1ec48",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244934103",
+      "title": {
+        "en": "Attacking corners 54:31",
+        "it": "Calci d’angolo offensivi 54:31"
+      },
+      "comments": {
+        "en": "Attacking corners 54:31",
+        "it": "Calci d’angolo offensivi 54:31"
+      },
+      "minute": 54,
+      "second": 31,
+      "videoFile": "https://vimeo.com/1244934103/e81724a1d5",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244934086",
+      "title": {
+        "en": "Attacking corners 47:09",
+        "it": "Calci d’angolo offensivi 47:09"
+      },
+      "comments": {
+        "en": "Attacking corners 47:09",
+        "it": "Calci d’angolo offensivi 47:09"
+      },
+      "minute": 47,
+      "second": 9,
+      "videoFile": "https://vimeo.com/1244934086/71748b70e8",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244934088",
+      "title": {
+        "en": "Attacking corners 51:36",
+        "it": "Calci d’angolo offensivi 51:36"
+      },
+      "comments": {
+        "en": "Attacking corners 51:36",
+        "it": "Calci d’angolo offensivi 51:36"
+      },
+      "minute": 51,
+      "second": 36,
+      "videoFile": "https://vimeo.com/1244934088/753283ac36",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244933977",
+      "title": {
+        "en": "Attacking corners 21:16",
+        "it": "Calci d’angolo offensivi 21:16"
+      },
+      "comments": {
+        "en": "Attacking corners 21:16",
+        "it": "Calci d’angolo offensivi 21:16"
+      },
+      "minute": 21,
+      "second": 16,
+      "videoFile": "https://vimeo.com/1244933977/83eff54465",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244933964",
+      "title": {
+        "en": "Attacking corners 5:24",
+        "it": "Calci d’angolo offensivi 5:24"
+      },
+      "comments": {
+        "en": "Attacking corners 5:24",
+        "it": "Calci d’angolo offensivi 5:24"
+      },
+      "minute": 5,
+      "second": 24,
+      "videoFile": "https://vimeo.com/1244933964/429f78aaed",
+      "section": "attacking-corners",
+      "labels": [
+        "attacking-corners"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    }
+  ],
   "analysisVideos": [
     {
       "id": "gps-report-full-match",
@@ -786,7 +1144,7 @@
   "vimeo": {
     "folderId": "31188954",
     "folderUrl": "https://vimeo.com/user/170593333/folder/31188954",
-    "lastSyncedAt": "2026-11-07T23:17:14.583Z"
+    "lastSyncedAt": "2026-11-08T21:40:34.621Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1244766192/1ceb169941",

@@ -4013,6 +4013,37 @@ attachReferencePack('perugia', '2026-11-21_campionato-u19-vs-perugia', [
     date: '2026-10-31',
     videoFile: 'https://vimeo.com/1242054563/5d28421c39',
   },
+  {
+    id: 'perugia-ref-pescara',
+    title: {
+      en: 'Perugia vs Pescara 3–2',
+      it: 'Perugia vs Pescara 3–2',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 8',
+      it: 'Primavera 2 · Giornata 8',
+    },
+    score: '3–2',
+    date: '2026-11-07',
+    videoFile: 'https://vimeo.com/1244934566/7695d42cc2',
+  },
+]);
+
+attachReferencePack('pescara', '2026-12-05_campionato-u19-vs-pescara', [
+  {
+    id: 'pescara-ref-perugia',
+    title: {
+      en: 'Perugia vs Pescara 3–2',
+      it: 'Perugia vs Pescara 3–2',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 8',
+      it: 'Primavera 2 · Giornata 8',
+    },
+    score: '3–2',
+    date: '2026-11-07',
+    videoFile: 'https://vimeo.com/1244934566/7695d42cc2',
+  },
 ]);
 
 attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [
@@ -4029,6 +4060,20 @@ attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [
     score: '1–0',
     date: '2026-10-31',
     videoFile: 'https://vimeo.com/1242054563/5d28421c39',
+  },
+  {
+    id: 'benevento-ref-latina',
+    title: {
+      en: 'Latina vs Benevento 0–1',
+      it: 'Latina vs Benevento 0–1',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 8',
+      it: 'Primavera 2 · Giornata 8',
+    },
+    score: '0–1',
+    date: '2026-11-07',
+    videoFile: 'https://vimeo.com/1244934512/6c4a680e83',
   },
 ]);
 
@@ -4536,6 +4581,20 @@ attachReferencePack('man-city', '2026-11-24_uyl-man-city-vs-u19', [
     },
     score: '1–1',
     videoFile: 'https://vimeo.com/1240759240/57eeb8eda5',
+  },
+  {
+    id: 'man-city-ref-leipzig',
+    title: {
+      en: 'RB Leipzig vs Manchester City 1–2',
+      it: 'RB Leipzig vs Manchester City 1–2',
+    },
+    competition: {
+      en: 'UEFA Youth League reference',
+      it: 'Riferimento UEFA Youth League',
+    },
+    score: '1–2',
+    date: '2026-11-08',
+    videoFile: 'https://vimeo.com/1244937094/70177835be',
   },
 ]);
 
