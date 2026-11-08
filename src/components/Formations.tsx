@@ -52,7 +52,10 @@ export default function Formations({ formations, matchSlug }: FormationsProps) {
         {formations.map((formation) => (
           <div className="tactical-pitch-card" key={formation.teamId}>
             <div className="pitch-header">
-              {L(formation.label)} ({withGoalkeeperInSystem(formation.system)})
+              {L(formation.label)}
+              {formation.system.trim()
+                ? ` (${withGoalkeeperInSystem(formation.system)})`
+                : ''}
             </div>
             {formation.image && matchSlug ? (
               <div className="formation-image-wrap">

@@ -41,10 +41,127 @@
     "away": 0
   },
   "goals": [],
-  "timeline": [],
-  "formations": [],
+  "timeline": [
+    {
+      "minute": 63,
+      "label": {
+        "en": "Pengue on / Liccardo off",
+        "it": "Pengue entra / Liccardo esce"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 66
+    },
+    {
+      "minute": 63,
+      "label": {
+        "en": "Anic on / Saviano off",
+        "it": "Anic entra / Saviano esce"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 69
+    },
+    {
+      "minute": 67,
+      "label": {
+        "en": "Bosi on / Casagrande off",
+        "it": "Bosi entra / Casagrande esce"
+      },
+      "type": "substitution",
+      "teamId": "frosinone",
+      "positionPercent": 71
+    },
+    {
+      "minute": 72,
+      "label": {
+        "en": "Santella on / Rovetini off",
+        "it": "Santella entra / Rovetini esce"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 76
+    },
+    {
+      "minute": 77,
+      "label": {
+        "en": "Ndao on / Pantano off",
+        "it": "Ndao entra / Pantano esce"
+      },
+      "type": "substitution",
+      "teamId": "frosinone",
+      "positionPercent": 82
+    },
+    {
+      "minute": 87,
+      "label": {
+        "en": "Taddei on / Esposito off",
+        "it": "Taddei entra / Esposito esce"
+      },
+      "type": "substitution",
+      "teamId": "frosinone",
+      "positionPercent": 92
+    }
+  ],
+  "formations": [
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli",
+        "it": "Napoli"
+      },
+      "system": "",
+      "players": [
+        { "number": 1, "name": "Spinelli", "teamId": "u19", "isGk": true, "positionUnknown": true, "left": "50%" },
+        { "number": 2, "name": "Picardi", "teamId": "u19", "positionUnknown": true, "left": "50%" },
+        { "number": 3, "name": "Zappalà", "teamId": "u19", "positionUnknown": true, "left": "50%" },
+        { "number": 4, "name": "De Stefano", "teamId": "u19", "positionUnknown": true, "left": "50%" },
+        { "number": 5, "name": "Branchizio", "teamId": "u19", "positionUnknown": true, "left": "50%" },
+        { "number": 6, "name": "Marotta", "teamId": "u19", "positionUnknown": true, "left": "50%" },
+        { "number": 7, "name": "Liccardo", "teamId": "u19", "positionUnknown": true, "left": "50%" },
+        { "number": 8, "name": "D'Angelo", "teamId": "u19", "positionUnknown": true, "left": "50%" },
+        { "number": 9, "name": "Saviano", "teamId": "u19", "positionUnknown": true, "left": "50%" },
+        { "number": 10, "name": "Riccio", "teamId": "u19", "positionUnknown": true, "left": "50%" },
+        { "number": 11, "name": "Rovetini", "teamId": "u19", "positionUnknown": true, "left": "50%" }
+      ]
+    },
+    {
+      "teamId": "frosinone",
+      "label": {
+        "en": "Frosinone",
+        "it": "Frosinone"
+      },
+      "system": "",
+      "players": [
+        { "number": 1, "name": "Capanna", "teamId": "frosinone", "isGk": true, "positionUnknown": true, "left": "50%" },
+        { "number": 2, "name": "Mirenzi", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
+        { "number": 3, "name": "Colafrancesco", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
+        { "number": 4, "name": "Castellani", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
+        { "number": 5, "name": "Reali", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
+        { "number": 6, "name": "Pantano", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
+        { "number": 7, "name": "Casagrande", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
+        { "number": 8, "name": "Esposito", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
+        { "number": 9, "name": "Carpentieri", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
+        { "number": 10, "name": "Millozzi", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
+        { "number": 11, "name": "Marchetti", "teamId": "frosinone", "positionUnknown": true, "left": "50%" }
+      ]
+    }
+  ],
   "dynamics": [],
-  "teamStats": [],
+  "teamStats": [
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Yellow cards",
+        "it": "Cartellini gialli"
+      },
+      "home": "2",
+      "away": "1"
+    }
+  ],
   "goalkeepers": [],
   "clips": [],
   "analysisVideos": [
@@ -222,5 +339,108 @@
         }
       ]
     }
-  ]
+  ],
+  "appearances": {
+    "home": [
+      { "name": "Spinelli", "teamId": "u19", "number": 1, "starter": true, "onMinute": 0 },
+      { "name": "Picardi", "teamId": "u19", "number": 2, "starter": true, "onMinute": 0 },
+      { "name": "Zappalà", "teamId": "u19", "number": 3, "starter": true, "onMinute": 0 },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0,
+        "notes": { "en": "Vice-captain", "it": "Vice capitano" }
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [null]
+      },
+      {
+        "name": "Marotta",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "notes": { "en": "Captain", "it": "Capitano" }
+      },
+      { "name": "Liccardo", "teamId": "u19", "number": 7, "starter": true, "onMinute": 0, "offMinute": 63 },
+      { "name": "D'Angelo", "teamId": "u19", "number": 8, "starter": true, "onMinute": 0 },
+      { "name": "Saviano", "teamId": "u19", "number": 9, "starter": true, "onMinute": 0, "offMinute": 63 },
+      {
+        "name": "Riccio",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [null]
+      },
+      { "name": "Rovetini", "teamId": "u19", "number": 11, "starter": true, "onMinute": 0, "offMinute": 72 },
+      { "name": "Pengue", "teamId": "u19", "number": 20, "starter": false, "onMinute": 63 },
+      { "name": "Anic", "teamId": "u19", "number": 18, "starter": false, "onMinute": 63 },
+      { "name": "Santella", "teamId": "u19", "number": 15, "starter": false, "onMinute": 72 },
+      { "name": "Merone", "teamId": "u19", "number": 12, "starter": false },
+      { "name": "Candela", "teamId": "u19", "number": 13, "starter": false },
+      { "name": "Natale", "teamId": "u19", "number": 14, "starter": false },
+      { "name": "Pepe", "teamId": "u19", "number": 16, "starter": false },
+      { "name": "Russo", "teamId": "u19", "number": 17, "starter": false },
+      { "name": "Mané", "teamId": "u19", "number": 19, "starter": false }
+    ],
+    "away": [
+      { "name": "Capanna", "teamId": "frosinone", "number": 1, "starter": true, "onMinute": 0 },
+      { "name": "Mirenzi", "teamId": "frosinone", "number": 2, "starter": true, "onMinute": 0 },
+      {
+        "name": "Colafrancesco",
+        "teamId": "frosinone",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0,
+        "notes": { "en": "Vice-captain", "it": "Vice capitano" }
+      },
+      { "name": "Castellani", "teamId": "frosinone", "number": 4, "starter": true, "onMinute": 0 },
+      { "name": "Reali", "teamId": "frosinone", "number": 5, "starter": true, "onMinute": 0 },
+      {
+        "name": "Pantano",
+        "teamId": "frosinone",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 77,
+        "notes": { "en": "Captain", "it": "Capitano" }
+      },
+      { "name": "Casagrande", "teamId": "frosinone", "number": 7, "starter": true, "onMinute": 0, "offMinute": 67 },
+      { "name": "Esposito", "teamId": "frosinone", "number": 8, "starter": true, "onMinute": 0, "offMinute": 87 },
+      { "name": "Carpentieri", "teamId": "frosinone", "number": 9, "starter": true, "onMinute": 0 },
+      {
+        "name": "Millozzi",
+        "teamId": "frosinone",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [null]
+      },
+      { "name": "Marchetti", "teamId": "frosinone", "number": 11, "starter": true, "onMinute": 0 },
+      { "name": "Bosi", "teamId": "frosinone", "number": 13, "starter": false, "onMinute": 67 },
+      { "name": "Ndao", "teamId": "frosinone", "number": 14, "starter": false, "onMinute": 77 },
+      { "name": "Taddei", "teamId": "frosinone", "number": 18, "starter": false, "onMinute": 87 },
+      { "name": "Monaldi", "teamId": "frosinone", "number": 12, "starter": false },
+      { "name": "Montesano", "teamId": "frosinone", "number": 15, "starter": false },
+      { "name": "Pugliatti", "teamId": "frosinone", "number": 16, "starter": false },
+      { "name": "Trulli", "teamId": "frosinone", "number": 17, "starter": false },
+      { "name": "Valente", "teamId": "frosinone", "number": 19, "starter": false },
+      { "name": "Aversa", "teamId": "frosinone", "number": 20, "starter": false },
+      { "name": "Morra", "teamId": "frosinone", "number": 21, "starter": false },
+      { "name": "Silvestri", "teamId": "frosinone", "number": 22, "starter": false },
+      { "name": "Danieli", "teamId": "frosinone", "number": 23, "starter": false }
+    ],
+    "notes": {
+      "en": "Starters, bench, shirt numbers, captains and officials from the official pre-match sheet. Stadio G. Piccolo, Cercola (NA), Saturday 7 Nov 2026, 14:30. Napoli: Marotta captain, De Stefano vice-captain; coach Nocerino Antonio. Frosinone: Pantano captain, Colafrancesco vice-captain; coach Guberti Stefano. Referee: Leone Mario (Avezzano); assistants Cocciolone Gianmarco (L'Aquila), Leli Matteo (L'Aquila). Result 0–0, substitutions and yellow cards from mondoprimavera.com (Primavera 2 Girone B, matchday 8; Angelo Zarra). Subs: Pengue for Liccardo 63', Anic for Saviano 63', Santella for Rovetini 72'; Bosi for Casagrande 67', Ndao for Pantano 77', Taddei for Esposito 87'. Yellow cards: Millozzi (Frosinone), Riccio and Branchizio (Napoli); minutes not published. No shape is recorded: the sheet is shirt-number order, and the report gives no positions. The report says Mané played Branchizio in at 86' and does not list a Mané substitution.",
+      "it": "Titolari, panchina, numeri, capitani e ufficiali di gara dalla distinta ufficiale. Stadio G. Piccolo, Cercola (NA), sabato 7 nov 2026, ore 14:30. Napoli: Marotta capitano, De Stefano vice; allenatore Nocerino Antonio. Frosinone: Pantano capitano, Colafrancesco vice; allenatore Guberti Stefano. Arbitro: Leone Mario (Avezzano); assistenti Cocciolone Gianmarco (L'Aquila), Leli Matteo (L'Aquila). Risultato 0–0, cambi e ammonizioni da mondoprimavera.com (Primavera 2 Girone B, giornata 8; Angelo Zarra). Sub: Pengue per Liccardo 63', Anic per Saviano 63', Santella per Rovetini 72'; Bosi per Casagrande 67', Ndao per Pantano 77', Taddei per Esposito 87'. Ammoniti: Millozzi (Frosinone), Riccio e Branchizio (Napoli); minuti non pubblicati. Nessun modulo registrato: la distinta è in ordine di maglia e la cronaca non indica i ruoli. La cronaca scrive che Mané serve Branchizio all'86' e non elenca un cambio di Mané."
+    }
+  }
 }

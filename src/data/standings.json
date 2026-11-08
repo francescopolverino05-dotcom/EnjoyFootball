@@ -617,7 +617,8 @@
             {
               "homeId": "napoli",
               "awayId": "frosinone",
-              "score": null
+              "score": "0-0",
+              "matchSlug": "2026-11-07_campionato-u19-vs-frosinone"
             },
             {
               "homeId": "perugia",

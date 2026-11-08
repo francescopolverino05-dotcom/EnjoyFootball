@@ -143,8 +143,8 @@ export interface PlayerAppearance {
   goals?: number[];
   /** Assist minutes. */
   assists?: number[];
-  /** Yellow card minutes. */
-  yellowCards?: number[];
+  /** Yellow card minutes. `null` is a card whose minute was not published. */
+  yellowCards?: Array<number | null>;
   /** Red card minutes. */
   redCards?: number[];
   notes?: Localized;
