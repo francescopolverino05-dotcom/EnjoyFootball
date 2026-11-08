@@ -138,88 +138,88 @@
           "teamId": "u19",
           "role": "GK",
           "isGk": true,
-          "bottom": "10%",
-          "left": "50%"
+          "left": "50%",
+          "top": "10%"
         },
         {
           "number": 2,
           "name": "Picardi",
           "teamId": "u19",
           "role": "RCB",
-          "bottom": "24%",
-          "left": "25%"
+          "left": "25%",
+          "top": "24%"
         },
         {
           "number": 6,
           "name": "Marotta",
           "teamId": "u19",
           "role": "CB",
-          "bottom": "22%",
-          "left": "50%"
+          "left": "50%",
+          "top": "22%"
         },
         {
           "number": 5,
           "name": "Branchizio",
           "teamId": "u19",
           "role": "LCB",
-          "bottom": "24%",
-          "left": "75%"
+          "left": "75%",
+          "top": "24%"
         },
         {
           "number": 3,
           "name": "Zappalà",
           "teamId": "u19",
           "role": "RWB",
-          "bottom": "44%",
-          "left": "10%"
+          "left": "10%",
+          "top": "44%"
         },
         {
           "number": 4,
           "name": "De Stefano",
           "teamId": "u19",
           "role": "RCM",
-          "bottom": "40%",
-          "left": "37%"
+          "left": "37%",
+          "top": "40%"
         },
         {
           "number": 8,
           "name": "D'Angelo",
           "teamId": "u19",
           "role": "LCM",
-          "bottom": "40%",
-          "left": "63%"
+          "left": "63%",
+          "top": "40%"
         },
         {
           "number": 7,
           "name": "Liccardo",
           "teamId": "u19",
           "role": "LWB",
-          "bottom": "44%",
-          "left": "90%"
+          "left": "90%",
+          "top": "44%"
         },
         {
           "number": 10,
           "name": "Riccio",
           "teamId": "u19",
           "role": "CAM",
-          "bottom": "58%",
-          "left": "50%"
+          "left": "50%",
+          "top": "58%"
         },
         {
           "number": 9,
           "name": "Saviano",
           "teamId": "u19",
           "role": "RS",
-          "bottom": "76%",
-          "left": "35%"
+          "left": "35%",
+          "top": "76%"
         },
         {
           "number": 11,
           "name": "Rovetini",
           "teamId": "u19",
           "role": "LS",
-          "bottom": "76%",
-          "left": "65%"
+          "left": "65%",
+          "top": "76%"
         }
       ]
     },
