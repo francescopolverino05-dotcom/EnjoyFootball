@@ -11,14 +11,21 @@ interface FormationsProps {
 export default function Formations({ formations, matchSlug }: FormationsProps) {
   const { t, L } = useLanguage();
 
-  const renderPitch = (players: PitchPlayer[]) => (
-    <>
+  const renderPitch = (players: PitchPlayer[]) => {
+    const placed = players.filter((player) => !player.positionUnknown);
+    const unplaced = players.filter((player) => player.positionUnknown);
+    const xiList = unplaced
+      .map((player) => (player.number ? `${player.number} ${player.name}` : player.name))
+      .join(', ');
+    return (
+      <>
+            {placed.length > 0 ? (
             <div className="pitch-canvas">
               <div className="pitch-center-line" />
               <div className="pitch-center-circle" />
               <div className="pitch-penalty-area bottom" />
               <div className="pitch-penalty-area top" />
-              {players.filter((player) => !player.positionUnknown).map((player) => (
+              {placed.map((player) => (
                 <div
                   key={`${player.number}-${player.name}-${player.left}`}
                   className={`pitch-player ${player.isGk ? 'gk' : player.teamId}`}
@@ -33,17 +40,11 @@ export default function Formations({ formations, matchSlug }: FormationsProps) {
                 </div>
               ))}
             </div>
-            {players.some((player) => player.positionUnknown) ? (
-              <div className="pitch-unplaced">
-                {t('positionUnknown')}:{' '}
-                {players
-                  .filter((player) => player.positionUnknown)
-                  .map((player) => (player.number ? `${player.number} ${player.name}` : player.name))
-                  .join(', ')}
-              </div>
             ) : null}
-    </>
-  );
+            {xiList ? <div className="pitch-unplaced">{xiList}</div> : null}
+      </>
+    );
+  };
 
   return (
     <>
