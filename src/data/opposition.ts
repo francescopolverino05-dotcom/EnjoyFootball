@@ -3266,11 +3266,14 @@ if (frosinone) {
   };
   /** Same XI last three league matches (Cosenza, Perugia, Latina) — 4-2-3-1. */
   const xi4231 = ["Capanna", "Mirenzi", "Colafrancesco", "Esposito", "Reali", "Bosi", "Taddei", "Millozzi", "Carpentieri", "Menghini", "Marchetti"];
+  /** vs Napoli MD8: Castellani RCM #4, Pantano LCB #6, Casagrande RW #7, Esposito LCM #8, Millozzi LW #10. */
+  const xiVsNapoli = ["Capanna", "Mirenzi", "Colafrancesco", "Castellani", "Reali", "Pantano", "Casagrande", "Esposito", "Carpentieri", "Millozzi", "Marchetti"];
+  const vs_napoli = frosinone4231(xiVsNapoli);
   const vs_latina = frosinone4231(xi4231);
   const vs_perugia = frosinone4231(xi4231);
   const vs_cosenza = frosinone4231(xi4231);
   frosinone.formationSystem = '1-4-2-3-1';
-  frosinone.starters = frosinone4231(xi4231);
+  frosinone.starters = vs_napoli;
   frosinone.scoutedFormations = [
     {
       id: 'frosinone-probable-xi',
@@ -3278,8 +3281,18 @@ if (frosinone) {
       system: '4-2-3-1',
       players: frosinone.starters,
       notes: {
-        en: 'Most frequent starter per role, Primavera 2 MD5–MD7 (Cosenza, Perugia, Latina) mapped onto 4-2-3-1 by shirt (CAM: Marchetti).',
-        it: 'Titolare più frequente per ruolo, Primavera 2 gior. 5–7 (Cosenza, Perugia, Latina) mappate sul 4-2-3-1 per maglia (CAM: Marchetti).',
+        en: 'Latest XI: vs Napoli Primavera 2 MD8 (0–0), 4-2-3-1 by shirt (Castellani RCM, Pantano LCB, Casagrande RW, Millozzi LW, Marchetti CAM).',
+        it: 'XI più recente: vs Napoli Primavera 2 gior. 8 (0–0), 4-2-3-1 per maglia (Castellani RCM, Pantano LCB, Casagrande RW, Millozzi LW, Marchetti CAM).',
+      },
+    },
+    {
+      id: 'frosinone-vs-napoli',
+      label: { en: 'vs Napoli (0–0)', it: 'vs Napoli (0–0)' },
+      system: '4-2-3-1',
+      players: vs_napoli,
+      notes: {
+        en: "Primavera 2 MD8, 7 Nov 2026, away, Napoli 0–0 Frosinone (staff XI). Capanna; Mirenzi, Reali, Pantano, Colafrancesco; Castellani, Esposito; Casagrande, Marchetti, Millozzi; Carpentieri. Subs: Bosi for Casagrande 67', Ndao for Pantano 77', Taddei for Esposito 87'. Yellow: Millozzi 38'. Coach Guberti.",
+        it: "Primavera 2 gior. 8, 7 nov 2026, trasferta, Napoli 0–0 Frosinone (XI staff). Capanna; Mirenzi, Reali, Pantano, Colafrancesco; Castellani, Esposito; Casagrande, Marchetti, Millozzi; Carpentieri. Sub: Bosi per Casagrande 67', Ndao per Pantano 77', Taddei per Esposito 87'. Giallo: Millozzi 38'. All. Guberti.",
       },
     },
     {
