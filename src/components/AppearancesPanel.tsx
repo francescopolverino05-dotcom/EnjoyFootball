@@ -12,9 +12,11 @@ function formatMinute(minute: number): string {
   return `${minute}'`;
 }
 
-function formatMinuteList(minutes: number[] | undefined): string | null {
+function formatMinuteList(minutes: Array<number | null> | undefined): string | null {
   if (!minutes || minutes.length === 0) return null;
-  return minutes.map(formatMinute).join(', ');
+  const known = minutes.filter((minute): minute is number => minute != null);
+  if (known.length === 0) return '';
+  return known.map(formatMinute).join(', ');
 }
 
 function subStatus(player: PlayerAppearance, t: (key: UiKey) => string): string {
@@ -63,10 +65,10 @@ function EventChips({ player }: { player: PlayerAppearance }) {
   }
 
   const yellows = formatMinuteList(player.yellowCards);
-  if (yellows) {
+  if (yellows != null) {
     chips.push({
       key: 'y',
-      label: `${t('appearanceYellow')} ${yellows}`,
+      label: yellows ? `${t('appearanceYellow')} ${yellows}` : t('appearanceYellow'),
       className: 'appearance-chip appearance-chip-yellow',
     });
   }

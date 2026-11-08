@@ -24,6 +24,16 @@ export function inferRole(p: PitchPlayer): string | undefined {
   return side === 'L' ? 'LW' : side === 'R' ? 'RW' : side === 'C' ? 'ST' : `${side[0]}ST`;
 }
 
+function starterUnplaced(name: string | undefined, starters: PitchPlayer[]): boolean {
+  if (!name) return false;
+  const n = norm(name);
+  const hit = starters.find((p) => {
+    const pn = norm(p.name);
+    return pn === n || pn.endsWith(` ${n}`) || n.endsWith(` ${pn}`) || pn.split(' ').pop() === n.split(' ').pop();
+  });
+  return Boolean(hit?.positionUnknown);
+}
+
 function findRole(name: string | undefined, pools: { name: string; role?: string; position?: string }[]) {
   if (!name) return undefined;
   const n = norm(name);
@@ -39,6 +49,7 @@ function findRole(name: string | undefined, pools: { name: string; role?: string
  * Parse the "Subs: …" part of scouted-formation notes into structured subs.
  * Supports "X for Y 51'", "X 57′ (Y)" and plain "A, B, C" lists. The sub's
  * position is the replaced starter's role; otherwise the squad position.
+ * A starter whose pitch position was not recorded does not lend a squad role.
  */
 export function parseSubs(
   notes: string | undefined,
@@ -61,7 +72,9 @@ export function parseSubs(
     if (!name) continue;
     minute = minute?.replace(/\s/g, '').replace(/'/g, '′');
     if (minute && minute !== 'HT' && !minute.endsWith('′')) minute += '′';
-    const role = findRole(replaced, starters) ?? findRole(name, squad);
+    const role = starterUnplaced(replaced, starters)
+      ? undefined
+      : (findRole(replaced, starters) ?? findRole(name, squad));
     out.push({ name, minute, replaced: replaced?.trim(), role });
   }
   return out;
