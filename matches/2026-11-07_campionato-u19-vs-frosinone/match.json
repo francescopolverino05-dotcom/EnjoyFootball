@@ -746,6 +746,300 @@
   ],
   "clips": [
     {
+      "id": "vimeo-1244944569",
+      "title": {
+        "en": "Mid block 14:35",
+        "it": "Blocco medio 14:35"
+      },
+      "comments": {
+        "en": "Mid block 14:35",
+        "it": "Blocco medio 14:35"
+      },
+      "minute": 14,
+      "second": 35,
+      "videoFile": "https://vimeo.com/1244944569/d6d6b6b213",
+      "section": "mid-block",
+      "labels": [
+        "mid-block"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244944559",
+      "title": {
+        "en": "High defence 3:12",
+        "it": "Difesa alta 3:12"
+      },
+      "comments": {
+        "en": "High defence 3:12",
+        "it": "Difesa alta 3:12"
+      },
+      "minute": 3,
+      "second": 12,
+      "videoFile": "https://vimeo.com/1244944559/ab9a4bb516",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244944554",
+      "title": {
+        "en": "other 45:05",
+        "it": "other 45:05"
+      },
+      "comments": {
+        "en": "other 45:05",
+        "it": "other 45:05"
+      },
+      "minute": 45,
+      "second": 5,
+      "videoFile": "https://vimeo.com/1244944554/c037bcd971",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244944555",
+      "title": {
+        "en": "High defence 62:46",
+        "it": "Difesa alta 62:46"
+      },
+      "comments": {
+        "en": "High defence 62:46",
+        "it": "Difesa alta 62:46"
+      },
+      "minute": 62,
+      "second": 46,
+      "videoFile": "https://vimeo.com/1244944555/397cdbab65",
+      "section": "high-defence",
+      "labels": [
+        "high-defence"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244944536",
+      "title": {
+        "en": "Build-up 25:43",
+        "it": "Costruzione 25:43"
+      },
+      "comments": {
+        "en": "Build-up 25:43",
+        "it": "Costruzione 25:43"
+      },
+      "minute": 25,
+      "second": 43,
+      "videoFile": "https://vimeo.com/1244944536/348801f647",
+      "section": "build-up",
+      "labels": [
+        "build-up"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244944535",
+      "title": {
+        "en": "other 2:43",
+        "it": "other 2:43"
+      },
+      "comments": {
+        "en": "other 2:43",
+        "it": "other 2:43"
+      },
+      "minute": 2,
+      "second": 43,
+      "videoFile": "https://vimeo.com/1244944535/28c22da8e7",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244944528",
+      "title": {
+        "en": "other 4:46",
+        "it": "other 4:46"
+      },
+      "comments": {
+        "en": "other 4:46",
+        "it": "other 4:46"
+      },
+      "minute": 4,
+      "second": 46,
+      "videoFile": "https://vimeo.com/1244944528/1f31ccb193",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244944514",
+      "title": {
+        "en": "other 5:46",
+        "it": "other 5:46"
+      },
+      "comments": {
+        "en": "other 5:46",
+        "it": "other 5:46"
+      },
+      "minute": 5,
+      "second": 46,
+      "videoFile": "https://vimeo.com/1244944514/4078f9eea3",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244944506",
+      "title": {
+        "en": "other 16:19",
+        "it": "other 16:19"
+      },
+      "comments": {
+        "en": "other 16:19",
+        "it": "other 16:19"
+      },
+      "minute": 16,
+      "second": 19,
+      "videoFile": "https://vimeo.com/1244944506/5f860f3726",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244944507",
+      "title": {
+        "en": "other 8:57",
+        "it": "other 8:57"
+      },
+      "comments": {
+        "en": "other 8:57",
+        "it": "other 8:57"
+      },
+      "minute": 8,
+      "second": 57,
+      "videoFile": "https://vimeo.com/1244944507/2e342d436b",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244944464",
+      "title": {
+        "en": "other 43:28",
+        "it": "other 43:28"
+      },
+      "comments": {
+        "en": "other 43:28",
+        "it": "other 43:28"
+      },
+      "minute": 43,
+      "second": 28,
+      "videoFile": "https://vimeo.com/1244944464/74baeea243",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244944465",
+      "title": {
+        "en": "other 42:21",
+        "it": "other 42:21"
+      },
+      "comments": {
+        "en": "other 42:21",
+        "it": "other 42:21"
+      },
+      "minute": 42,
+      "second": 21,
+      "videoFile": "https://vimeo.com/1244944465/28b5cfac7a",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244944466",
+      "title": {
+        "en": "other 41:23",
+        "it": "other 41:23"
+      },
+      "comments": {
+        "en": "other 41:23",
+        "it": "other 41:23"
+      },
+      "minute": 41,
+      "second": 23,
+      "videoFile": "https://vimeo.com/1244944466/46e0aaeddf",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
+      "id": "vimeo-1244944468",
+      "title": {
+        "en": "other 26:57",
+        "it": "other 26:57"
+      },
+      "comments": {
+        "en": "other 26:57",
+        "it": "other 26:57"
+      },
+      "minute": 26,
+      "second": 57,
+      "videoFile": "https://vimeo.com/1244944468/7f5e052e3a",
+      "section": "other",
+      "labels": [
+        "other"
+      ],
+      "tags": [
+        "vimeo"
+      ]
+    },
+    {
       "id": "vimeo-1244933909",
       "title": {
         "en": "Defending free kicks 59:18",
@@ -1144,7 +1438,7 @@
   "vimeo": {
     "folderId": "31188954",
     "folderUrl": "https://vimeo.com/user/170593333/folder/31188954",
-    "lastSyncedAt": "2026-11-08T21:40:34.621Z"
+    "lastSyncedAt": "2026-11-08T22:05:47.803Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1244766192/1ceb169941",
