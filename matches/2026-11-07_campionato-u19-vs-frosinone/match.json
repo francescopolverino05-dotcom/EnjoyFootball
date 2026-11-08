@@ -112,17 +112,84 @@
       },
       "system": "",
       "players": [
-        { "number": 1, "name": "Spinelli", "teamId": "u19", "isGk": true, "positionUnknown": true, "left": "50%" },
-        { "number": 2, "name": "Picardi", "teamId": "u19", "positionUnknown": true, "left": "50%" },
-        { "number": 3, "name": "Zappalà", "teamId": "u19", "positionUnknown": true, "left": "50%" },
-        { "number": 4, "name": "De Stefano", "teamId": "u19", "positionUnknown": true, "left": "50%" },
-        { "number": 5, "name": "Branchizio", "teamId": "u19", "positionUnknown": true, "left": "50%" },
-        { "number": 6, "name": "Marotta", "teamId": "u19", "positionUnknown": true, "left": "50%" },
-        { "number": 7, "name": "Liccardo", "teamId": "u19", "positionUnknown": true, "left": "50%" },
-        { "number": 8, "name": "D'Angelo", "teamId": "u19", "positionUnknown": true, "left": "50%" },
-        { "number": 9, "name": "Saviano", "teamId": "u19", "positionUnknown": true, "left": "50%" },
-        { "number": 10, "name": "Riccio", "teamId": "u19", "positionUnknown": true, "left": "50%" },
-        { "number": 11, "name": "Rovetini", "teamId": "u19", "positionUnknown": true, "left": "50%" }
+        {
+          "number": 1,
+          "name": "Spinelli",
+          "teamId": "u19",
+          "isGk": true,
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Picardi",
+          "teamId": "u19",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 3,
+          "name": "Zappalà",
+          "teamId": "u19",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 4,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 5,
+          "name": "Branchizio",
+          "teamId": "u19",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 6,
+          "name": "Marotta",
+          "teamId": "u19",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 7,
+          "name": "Liccardo",
+          "teamId": "u19",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 8,
+          "name": "D'Angelo",
+          "teamId": "u19",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 9,
+          "name": "Saviano",
+          "teamId": "u19",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 10,
+          "name": "Riccio",
+          "teamId": "u19",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 11,
+          "name": "Rovetini",
+          "teamId": "u19",
+          "positionUnknown": true,
+          "left": "50%"
+        }
       ]
     },
     {
@@ -133,22 +200,407 @@
       },
       "system": "",
       "players": [
-        { "number": 1, "name": "Capanna", "teamId": "frosinone", "isGk": true, "positionUnknown": true, "left": "50%" },
-        { "number": 2, "name": "Mirenzi", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
-        { "number": 3, "name": "Colafrancesco", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
-        { "number": 4, "name": "Castellani", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
-        { "number": 5, "name": "Reali", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
-        { "number": 6, "name": "Pantano", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
-        { "number": 7, "name": "Casagrande", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
-        { "number": 8, "name": "Esposito", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
-        { "number": 9, "name": "Carpentieri", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
-        { "number": 10, "name": "Millozzi", "teamId": "frosinone", "positionUnknown": true, "left": "50%" },
-        { "number": 11, "name": "Marchetti", "teamId": "frosinone", "positionUnknown": true, "left": "50%" }
+        {
+          "number": 1,
+          "name": "Capanna",
+          "teamId": "frosinone",
+          "isGk": true,
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Mirenzi",
+          "teamId": "frosinone",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 3,
+          "name": "Colafrancesco",
+          "teamId": "frosinone",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 4,
+          "name": "Castellani",
+          "teamId": "frosinone",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 5,
+          "name": "Reali",
+          "teamId": "frosinone",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 6,
+          "name": "Pantano",
+          "teamId": "frosinone",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 7,
+          "name": "Casagrande",
+          "teamId": "frosinone",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 8,
+          "name": "Esposito",
+          "teamId": "frosinone",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 9,
+          "name": "Carpentieri",
+          "teamId": "frosinone",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 10,
+          "name": "Millozzi",
+          "teamId": "frosinone",
+          "positionUnknown": true,
+          "left": "50%"
+        },
+        {
+          "number": 11,
+          "name": "Marchetti",
+          "teamId": "frosinone",
+          "positionUnknown": true,
+          "left": "50%"
+        }
       ]
     }
   ],
-  "dynamics": [],
+  "dynamics": [
+    {
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
+      "homeValue": 59.3,
+      "awayValue": 40.7,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Pass Accuracy %",
+        "it": "Precisione Passaggi %"
+      },
+      "homeValue": 83.7,
+      "awayValue": 70.6,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Shot Accuracy %",
+        "it": "Precisione Tiri %"
+      },
+      "homeValue": 50,
+      "awayValue": 75,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Ground Duels Won %",
+        "it": "Duelli a Terra Vinti %"
+      },
+      "homeValue": 53.1,
+      "awayValue": 46.9,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "Aerial Duels Won %",
+        "it": "Duelli Aerei Vinti %"
+      },
+      "homeValue": 52.9,
+      "awayValue": 47.1,
+      "unit": "%"
+    },
+    {
+      "name": {
+        "en": "PPDA",
+        "it": "PPDA"
+      },
+      "homeValue": 9.71,
+      "awayValue": 15.62
+    }
+  ],
   "teamStats": [
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Goals",
+        "it": "Gol"
+      },
+      "home": "0",
+      "away": "0"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots / on target",
+        "it": "Tiri / in porta"
+      },
+      "home": "10 / 5",
+      "away": "4 / 3"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shot accuracy",
+        "it": "Precisione tiri"
+      },
+      "home": "50.0%",
+      "away": "75.0%"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Shots inside / outside box",
+        "it": "Tiri in / fuori area"
+      },
+      "home": "7 / 3",
+      "away": "2 / 2"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Expected Goals (xG)",
+        "it": "Expected Goals (xG)"
+      },
+      "home": "1.385",
+      "away": "0.700"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "xG per shot",
+        "it": "xG per tiro"
+      },
+      "home": "0.139",
+      "away": "0.175"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Big chances (xG ≥ 0.25)",
+        "it": "Grand occasioni (xG ≥ 0.25)"
+      },
+      "home": "2",
+      "away": "2"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "Possession %",
+        "it": "Possesso Palla %"
+      },
+      "home": "59.3%",
+      "away": "40.7%"
+    },
+    {
+      "category": {
+        "en": "Possession",
+        "it": "Possesso"
+      },
+      "name": {
+        "en": "Possession % (1H / 2H)",
+        "it": "Possesso % (1T / 2T)"
+      },
+      "home": "57.4% / 61.2%",
+      "away": "42.6% / 38.8%"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Passes (completed)",
+        "it": "Passaggi (riusciti)"
+      },
+      "home": "510 (427), 83.7%",
+      "away": "320 (226), 70.6%"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Progressive passes",
+        "it": "Passaggi progressivi"
+      },
+      "home": "57",
+      "away": "29"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "PPDA (full match)",
+        "it": "PPDA (intera gara)"
+      },
+      "home": "9.71",
+      "away": "15.62"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "PPDA (1H / 2H)",
+        "it": "PPDA (1T / 2T)"
+      },
+      "home": "9.00 / 10.67",
+      "away": "15.60 / 15.64"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Interceptions",
+        "it": "Intercetti"
+      },
+      "home": "15",
+      "away": "24"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Clearances",
+        "it": "Rinvii"
+      },
+      "home": "11",
+      "away": "35"
+    },
+    {
+      "category": {
+        "en": "Defence",
+        "it": "Difesa"
+      },
+      "name": {
+        "en": "Recoveries",
+        "it": "Recuperi"
+      },
+      "home": "61",
+      "away": "46"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Ground duels won",
+        "it": "Duelli a terra vinti"
+      },
+      "home": "51 / 96 (53.1%)",
+      "away": "45 / 96 (46.9%)"
+    },
+    {
+      "category": {
+        "en": "Duels",
+        "it": "Duelli"
+      },
+      "name": {
+        "en": "Aerial duels won",
+        "it": "Duelli aerei vinti"
+      },
+      "home": "18 / 34 (52.9%)",
+      "away": "16 / 34 (47.1%)"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Corners",
+        "it": "Calci d'angolo"
+      },
+      "home": "7",
+      "away": "3"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Free kicks",
+        "it": "Punizioni"
+      },
+      "home": "17",
+      "away": "13"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Throw-ins",
+        "it": "Rimesse laterali"
+      },
+      "home": "26",
+      "away": "21"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Fouls",
+        "it": "Falli"
+      },
+      "home": "13",
+      "away": "17"
+    },
     {
       "category": {
         "en": "General",
@@ -160,9 +612,84 @@
       },
       "home": "2",
       "away": "1"
+    },
+    {
+      "category": {
+        "en": "General",
+        "it": "Generale"
+      },
+      "name": {
+        "en": "Offsides",
+        "it": "Fuorigioco"
+      },
+      "home": "3",
+      "away": "1"
+    },
+    {
+      "category": {
+        "en": "Goalkeeping",
+        "it": "Portieri"
+      },
+      "name": {
+        "en": "Saves",
+        "it": "Parate"
+      },
+      "home": "3 (Spinelli)",
+      "away": "5 (Capanna)"
     }
   ],
-  "goalkeepers": [],
+  "goalkeepers": [
+    {
+      "name": "Spinelli",
+      "minutes": 97,
+      "team": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "jerseyColor": {
+        "en": "—",
+        "it": "—"
+      },
+      "shotsFaced": 4,
+      "shotsOnTargetFaced": 3,
+      "saves": 3,
+      "goalsConceded": 0,
+      "savePercentage": {
+        "en": "100%",
+        "it": "100%"
+      },
+      "notes": {
+        "en": "Clean sheet. Saves: Castellani double (46'), Millozzi (70'). PSxG prevented ≈ +0.645.",
+        "it": "Clean sheet. Parate: doppietta Castellani (46'), Millozzi (70'). PSxG prevenuto ≈ +0.645."
+      },
+      "colorClass": "blue"
+    },
+    {
+      "name": "Capanna",
+      "minutes": 97,
+      "team": {
+        "en": "Frosinone Primavera",
+        "it": "Frosinone Primavera"
+      },
+      "jerseyColor": {
+        "en": "—",
+        "it": "—"
+      },
+      "shotsFaced": 10,
+      "shotsOnTargetFaced": 5,
+      "saves": 5,
+      "goalsConceded": 0,
+      "savePercentage": {
+        "en": "100%",
+        "it": "100%"
+      },
+      "notes": {
+        "en": "Clean sheet. Saves vs Riccio (5', 44'), Pengue (63'), Mané (92'). PSxG prevented ≈ +0.765.",
+        "it": "Clean sheet. Parate su Riccio (5', 44'), Pengue (63'), Mané (92'). PSxG prevenuto ≈ +0.765."
+      },
+      "colorClass": "green"
+    }
+  ],
   "clips": [],
   "analysisVideos": [
     {
@@ -181,6 +708,24 @@
         "pdf",
         "gps",
         "physical"
+      ]
+    },
+    {
+      "id": "match-stats-report",
+      "title": {
+        "en": "Match statistical analysis",
+        "it": "Analisi statistica della partita"
+      },
+      "description": {
+        "en": "Full match report: shots/xG, possession, PPDA, defending, set pieces and substitutions (7 Nov 2026).",
+        "it": "Report completo: tiri/xG, possesso, PPDA, fase difensiva, palle inattive e sostituzioni (7 nov 2026)."
+      },
+      "videoFile": "match_report_napoli_frosinone.md",
+      "kind": "markdown",
+      "tags": [
+        "markdown",
+        "stats",
+        "analysis"
       ]
     }
   ],
@@ -342,16 +887,37 @@
   ],
   "appearances": {
     "home": [
-      { "name": "Spinelli", "teamId": "u19", "number": 1, "starter": true, "onMinute": 0 },
-      { "name": "Picardi", "teamId": "u19", "number": 2, "starter": true, "onMinute": 0 },
-      { "name": "Zappalà", "teamId": "u19", "number": 3, "starter": true, "onMinute": 0 },
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Picardi",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Zappalà",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
       {
         "name": "De Stefano",
         "teamId": "u19",
         "number": 4,
         "starter": true,
         "onMinute": 0,
-        "notes": { "en": "Vice-captain", "it": "Vice capitano" }
+        "notes": {
+          "en": "Vice-captain",
+          "it": "Vice capitano"
+        }
       },
       {
         "name": "Branchizio",
@@ -359,7 +925,9 @@
         "number": 5,
         "starter": true,
         "onMinute": 0,
-        "yellowCards": [null]
+        "yellowCards": [
+          null
+        ]
       },
       {
         "name": "Marotta",
@@ -367,43 +935,150 @@
         "number": 6,
         "starter": true,
         "onMinute": 0,
-        "notes": { "en": "Captain", "it": "Capitano" }
+        "notes": {
+          "en": "Captain",
+          "it": "Capitano"
+        }
       },
-      { "name": "Liccardo", "teamId": "u19", "number": 7, "starter": true, "onMinute": 0, "offMinute": 63 },
-      { "name": "D'Angelo", "teamId": "u19", "number": 8, "starter": true, "onMinute": 0 },
-      { "name": "Saviano", "teamId": "u19", "number": 9, "starter": true, "onMinute": 0, "offMinute": 63 },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 63
+      },
+      {
+        "name": "D'Angelo",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Saviano",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 63
+      },
       {
         "name": "Riccio",
         "teamId": "u19",
         "number": 10,
         "starter": true,
         "onMinute": 0,
-        "yellowCards": [null]
+        "yellowCards": [
+          null
+        ]
       },
-      { "name": "Rovetini", "teamId": "u19", "number": 11, "starter": true, "onMinute": 0, "offMinute": 72 },
-      { "name": "Pengue", "teamId": "u19", "number": 20, "starter": false, "onMinute": 63 },
-      { "name": "Anic", "teamId": "u19", "number": 18, "starter": false, "onMinute": 63 },
-      { "name": "Santella", "teamId": "u19", "number": 15, "starter": false, "onMinute": 72 },
-      { "name": "Merone", "teamId": "u19", "number": 12, "starter": false },
-      { "name": "Candela", "teamId": "u19", "number": 13, "starter": false },
-      { "name": "Natale", "teamId": "u19", "number": 14, "starter": false },
-      { "name": "Pepe", "teamId": "u19", "number": 16, "starter": false },
-      { "name": "Russo", "teamId": "u19", "number": 17, "starter": false },
-      { "name": "Mané", "teamId": "u19", "number": 19, "starter": false }
+      {
+        "name": "Rovetini",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 72
+      },
+      {
+        "name": "Pengue",
+        "teamId": "u19",
+        "number": 20,
+        "starter": false,
+        "onMinute": 63
+      },
+      {
+        "name": "Anic",
+        "teamId": "u19",
+        "number": 18,
+        "starter": false,
+        "onMinute": 63
+      },
+      {
+        "name": "Santella",
+        "teamId": "u19",
+        "number": 15,
+        "starter": false,
+        "onMinute": 72
+      },
+      {
+        "name": "Merone",
+        "teamId": "u19",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Candela",
+        "teamId": "u19",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Natale",
+        "teamId": "u19",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Pepe",
+        "teamId": "u19",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Russo",
+        "teamId": "u19",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "Mané",
+        "teamId": "u19",
+        "number": 19,
+        "starter": false
+      }
     ],
     "away": [
-      { "name": "Capanna", "teamId": "frosinone", "number": 1, "starter": true, "onMinute": 0 },
-      { "name": "Mirenzi", "teamId": "frosinone", "number": 2, "starter": true, "onMinute": 0 },
+      {
+        "name": "Capanna",
+        "teamId": "frosinone",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Mirenzi",
+        "teamId": "frosinone",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
       {
         "name": "Colafrancesco",
         "teamId": "frosinone",
         "number": 3,
         "starter": true,
         "onMinute": 0,
-        "notes": { "en": "Vice-captain", "it": "Vice capitano" }
+        "notes": {
+          "en": "Vice-captain",
+          "it": "Vice capitano"
+        }
       },
-      { "name": "Castellani", "teamId": "frosinone", "number": 4, "starter": true, "onMinute": 0 },
-      { "name": "Reali", "teamId": "frosinone", "number": 5, "starter": true, "onMinute": 0 },
+      {
+        "name": "Castellani",
+        "teamId": "frosinone",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Reali",
+        "teamId": "frosinone",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
       {
         "name": "Pantano",
         "teamId": "frosinone",
@@ -411,32 +1086,126 @@
         "starter": true,
         "onMinute": 0,
         "offMinute": 77,
-        "notes": { "en": "Captain", "it": "Capitano" }
+        "notes": {
+          "en": "Captain",
+          "it": "Capitano"
+        }
       },
-      { "name": "Casagrande", "teamId": "frosinone", "number": 7, "starter": true, "onMinute": 0, "offMinute": 67 },
-      { "name": "Esposito", "teamId": "frosinone", "number": 8, "starter": true, "onMinute": 0, "offMinute": 87 },
-      { "name": "Carpentieri", "teamId": "frosinone", "number": 9, "starter": true, "onMinute": 0 },
+      {
+        "name": "Casagrande",
+        "teamId": "frosinone",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 67
+      },
+      {
+        "name": "Esposito",
+        "teamId": "frosinone",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 87
+      },
+      {
+        "name": "Carpentieri",
+        "teamId": "frosinone",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0
+      },
       {
         "name": "Millozzi",
         "teamId": "frosinone",
         "number": 10,
         "starter": true,
         "onMinute": 0,
-        "yellowCards": [null]
+        "yellowCards": [
+          null
+        ]
       },
-      { "name": "Marchetti", "teamId": "frosinone", "number": 11, "starter": true, "onMinute": 0 },
-      { "name": "Bosi", "teamId": "frosinone", "number": 13, "starter": false, "onMinute": 67 },
-      { "name": "Ndao", "teamId": "frosinone", "number": 14, "starter": false, "onMinute": 77 },
-      { "name": "Taddei", "teamId": "frosinone", "number": 18, "starter": false, "onMinute": 87 },
-      { "name": "Monaldi", "teamId": "frosinone", "number": 12, "starter": false },
-      { "name": "Montesano", "teamId": "frosinone", "number": 15, "starter": false },
-      { "name": "Pugliatti", "teamId": "frosinone", "number": 16, "starter": false },
-      { "name": "Trulli", "teamId": "frosinone", "number": 17, "starter": false },
-      { "name": "Valente", "teamId": "frosinone", "number": 19, "starter": false },
-      { "name": "Aversa", "teamId": "frosinone", "number": 20, "starter": false },
-      { "name": "Morra", "teamId": "frosinone", "number": 21, "starter": false },
-      { "name": "Silvestri", "teamId": "frosinone", "number": 22, "starter": false },
-      { "name": "Danieli", "teamId": "frosinone", "number": 23, "starter": false }
+      {
+        "name": "Marchetti",
+        "teamId": "frosinone",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Bosi",
+        "teamId": "frosinone",
+        "number": 13,
+        "starter": false,
+        "onMinute": 67
+      },
+      {
+        "name": "Ndao",
+        "teamId": "frosinone",
+        "number": 14,
+        "starter": false,
+        "onMinute": 77
+      },
+      {
+        "name": "Taddei",
+        "teamId": "frosinone",
+        "number": 18,
+        "starter": false,
+        "onMinute": 87
+      },
+      {
+        "name": "Monaldi",
+        "teamId": "frosinone",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Montesano",
+        "teamId": "frosinone",
+        "number": 15,
+        "starter": false
+      },
+      {
+        "name": "Pugliatti",
+        "teamId": "frosinone",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Trulli",
+        "teamId": "frosinone",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "Valente",
+        "teamId": "frosinone",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Aversa",
+        "teamId": "frosinone",
+        "number": 20,
+        "starter": false
+      },
+      {
+        "name": "Morra",
+        "teamId": "frosinone",
+        "number": 21,
+        "starter": false
+      },
+      {
+        "name": "Silvestri",
+        "teamId": "frosinone",
+        "number": 22,
+        "starter": false
+      },
+      {
+        "name": "Danieli",
+        "teamId": "frosinone",
+        "number": 23,
+        "starter": false
+      }
     ],
     "notes": {
       "en": "Starters, bench, shirt numbers, captains and officials from the official pre-match sheet. Stadio G. Piccolo, Cercola (NA), Saturday 7 Nov 2026, 14:30. Napoli: Marotta captain, De Stefano vice-captain; coach Nocerino Antonio. Frosinone: Pantano captain, Colafrancesco vice-captain; coach Guberti Stefano. Referee: Leone Mario (Avezzano); assistants Cocciolone Gianmarco (L'Aquila), Leli Matteo (L'Aquila). Result 0–0, substitutions and yellow cards from mondoprimavera.com (Primavera 2 Girone B, matchday 8; Angelo Zarra). Subs: Pengue for Liccardo 63', Anic for Saviano 63', Santella for Rovetini 72'; Bosi for Casagrande 67', Ndao for Pantano 77', Taddei for Esposito 87'. Yellow cards: Millozzi (Frosinone), Riccio and Branchizio (Napoli); minutes not published. No shape is recorded: the sheet is shirt-number order, and the report gives no positions. The report says Mané played Branchizio in at 86' and does not list a Mané substitution.",
