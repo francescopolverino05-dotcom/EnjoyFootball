@@ -485,11 +485,23 @@
         "it": "Passaggi"
       },
       "name": {
-        "en": "Progressive passes",
-        "it": "Passaggi progressivi"
+        "en": "Progressive passes (attempted / completed / %)",
+        "it": "Passaggi progressivi (tentati / riusciti / %)"
       },
-      "home": "57",
-      "away": "29"
+      "home": "74 / 57 / 77.0%",
+      "away": "48 / 29 / 60.4%"
+    },
+    {
+      "category": {
+        "en": "Passes",
+        "it": "Passaggi"
+      },
+      "name": {
+        "en": "Progressive passes completed (1H / 2H)",
+        "it": "Passaggi progressivi riusciti (1T / 2T)"
+      },
+      "home": "26 / 31",
+      "away": "16 / 13"
     },
     {
       "category": {
