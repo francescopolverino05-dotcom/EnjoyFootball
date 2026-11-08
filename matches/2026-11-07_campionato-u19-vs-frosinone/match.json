@@ -43,6 +43,26 @@
   "goals": [],
   "timeline": [
     {
+      "minute": 45,
+      "label": {
+        "en": "Natale on / Picardi off",
+        "it": "Natale entra / Picardi esce"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 50
+    },
+    {
+      "minute": 50,
+      "label": {
+        "en": "Mané on / Riccio off",
+        "it": "Mané entra / Riccio esce"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 56
+    },
+    {
       "minute": 63,
       "label": {
         "en": "Pengue on / Liccardo off",
@@ -933,7 +953,8 @@
         "teamId": "u19",
         "number": 2,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 45
       },
       {
         "name": "Zappalà",
@@ -1005,7 +1026,8 @@
         "onMinute": 0,
         "yellowCards": [
           null
-        ]
+        ],
+        "offMinute": 50
       },
       {
         "name": "Rovetini",
@@ -1052,7 +1074,8 @@
         "name": "Natale",
         "teamId": "u19",
         "number": 14,
-        "starter": false
+        "starter": false,
+        "onMinute": 45
       },
       {
         "name": "Pepe",
@@ -1070,7 +1093,8 @@
         "name": "Mané",
         "teamId": "u19",
         "number": 19,
-        "starter": false
+        "starter": false,
+        "onMinute": 50
       }
     ],
     "away": [
