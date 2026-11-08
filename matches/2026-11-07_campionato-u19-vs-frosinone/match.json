@@ -146,7 +146,7 @@
           "name": "Picardi",
           "teamId": "u19",
           "role": "RCB",
-          "left": "25%",
+          "left": "75%",
           "top": "24%"
         },
         {
@@ -162,7 +162,7 @@
           "name": "Branchizio",
           "teamId": "u19",
           "role": "LCB",
-          "left": "75%",
+          "left": "25%",
           "top": "24%"
         },
         {
@@ -170,7 +170,7 @@
           "name": "Zappalà",
           "teamId": "u19",
           "role": "RWB",
-          "left": "10%",
+          "left": "90%",
           "top": "44%"
         },
         {
@@ -178,7 +178,7 @@
           "name": "De Stefano",
           "teamId": "u19",
           "role": "RCM",
-          "left": "37%",
+          "left": "63%",
           "top": "40%"
         },
         {
@@ -186,7 +186,7 @@
           "name": "D'Angelo",
           "teamId": "u19",
           "role": "LCM",
-          "left": "63%",
+          "left": "37%",
           "top": "40%"
         },
         {
@@ -194,7 +194,7 @@
           "name": "Liccardo",
           "teamId": "u19",
           "role": "LWB",
-          "left": "90%",
+          "left": "10%",
           "top": "44%"
         },
         {
@@ -210,7 +210,7 @@
           "name": "Saviano",
           "teamId": "u19",
           "role": "RS",
-          "left": "35%",
+          "left": "65%",
           "top": "76%"
         },
         {
@@ -218,7 +218,7 @@
           "name": "Rovetini",
           "teamId": "u19",
           "role": "LS",
-          "left": "65%",
+          "left": "35%",
           "top": "76%"
         }
       ]
