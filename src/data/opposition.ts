@@ -1868,10 +1868,59 @@ if (pisa) {
   ];
 }
 
-/** Perugia pack — Primavera 2 MD6 vs Frosinone 4-3-3. */
+/** Perugia pack — Primavera 2 MD5–MD8 4-3-3 (Palermo, Frosinone, Benevento, Pescara). */
 const perugia = OPPONENTS.find((o) => o.id === 'perugia');
 if (perugia) {
-  /** MD6 vs Frosinone — 4-3-3: 12 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 CDM, 10 LCM, 8 RCM, 11 RW, 9 ST, 7 LW. */
+  const vsPescara = perugia433({
+    gk: 'Strappini',
+    rb: 'Giambarveri',
+    rcb: 'Peruzzi',
+    lcb: 'Cesarini',
+    lb: 'Di Salvatore',
+    cdm: 'Malfatti',
+    lcm: 'Bellali',
+    rcm: 'Perugini',
+    rw: 'Ciani',
+    st: 'Agnissan',
+    lw: 'Raffaelli',
+  }, {
+    gk: 1,
+    rb: 2,
+    rcb: 5,
+    lcb: 6,
+    lb: 3,
+    cdm: 4,
+    lcm: 10,
+    rcm: 8,
+    rw: 11,
+    st: 9,
+    lw: 7,
+  });
+  const vsBenevento = perugia433({
+    gk: 'Strappini',
+    rb: 'Bisonni',
+    rcb: 'Peruzzi',
+    lcb: 'Cesarini',
+    lb: 'Di Salvatore',
+    cdm: 'Malfatti',
+    lcm: 'Vanni',
+    rcm: 'Perugini',
+    rw: 'Ciani',
+    st: 'Iachini',
+    lw: 'Merico',
+  }, {
+    gk: 1,
+    rb: 2,
+    rcb: 5,
+    lcb: 6,
+    lb: 3,
+    cdm: 4,
+    lcm: 10,
+    rcm: 8,
+    rw: 11,
+    st: 9,
+    lw: 7,
+  });
   const vsFrosinone = perugia433({
     gk: 'Piccini',
     rb: 'Bisonni',
@@ -1897,9 +1946,54 @@ if (perugia) {
     st: 9,
     lw: 7,
   });
+  const vsPalermo = perugia433({
+    gk: 'Strappini',
+    rb: 'Giambarveri',
+    rcb: 'Peruzzi',
+    lcb: 'Cesarini',
+    lb: 'Di Salvatore',
+    cdm: 'Malfatti',
+    lcm: 'Vanni',
+    rcm: 'Perugini',
+    rw: 'Olimpieri',
+    st: 'Agnissan',
+    lw: 'Merico',
+  }, {
+    gk: 1,
+    rb: 2,
+    rcb: 5,
+    lcb: 6,
+    lb: 3,
+    cdm: 4,
+    lcm: 10,
+    rcm: 8,
+    rw: 11,
+    st: 9,
+    lw: 7,
+  });
   perugia.formationSystem = '1-4-3-3';
-  perugia.starters = vsFrosinone;
+  perugia.starters = vsPescara;
   perugia.scoutedFormations = [
+    {
+      id: 'perugia-vs-pescara',
+      label: { en: 'vs Pescara (3–2)', it: 'vs Pescara (3–2)' },
+      system: '4-3-3',
+      players: vsPescara,
+      notes: {
+        en: "Primavera 2 MD8, 7 Nov 2026, home, Perugia 3–2 Pescara (official distinta). 4-3-3: Strappini 1; Giambarveri 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Ciani 11, Bellali 10, Raffaelli 7; Agnissan 9, Perugini 8. Goals (club): Giambarveri 20′ pt, Bacalini (P) 35′ pt, Bellali 15′ st, Giacalone (P) 39′ st, Merico 45′ st. Subs (distinta): Iachini 19 for Agnissan 21′ st (66′), Merico 14 for Bellali 21′ st, Vanni 13 for Raffaelli 21′ st, Pierangelini 22 for Malfatti 44′ st (89′), Bisonni 16 for Giambarveri 44′ st. Bench unused: Piccini, Bevanati, Ragni, Calvà, Fasanella/Ximenez, Santillo, Ciarapica. Coach Giorgi.",
+        it: "Primavera 2 gior. 8, 7 nov 2026, casa, Perugia 3–2 Pescara (distinta ufficiale). 4-3-3: Strappini 1; Giambarveri 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Ciani 11, Bellali 10, Raffaelli 7; Agnissan 9, Perugini 8. Gol (società): Giambarveri 20′ pt, Bacalini (P) 35′ pt, Bellali 15′ st, Giacalone (P) 39′ st, Merico 45′ st. Sub (distinta): Iachini 19 per Agnissan 21′ st (66′), Merico 14 per Bellali 21′ st, Vanni 13 per Raffaelli 21′ st, Pierangelini 22 per Malfatti 44′ st (89′), Bisonni 16 per Giambarveri 44′ st. Panchina non usata: Piccini, Bevanati, Ragni, Calvà, Fasanella/Ximenez, Santillo, Ciarapica. All. Giorgi.",
+      },
+    },
+    {
+      id: 'perugia-vs-benevento',
+      label: { en: 'vs Benevento (0–1)', it: 'vs Benevento (0–1)' },
+      system: '4-3-3',
+      players: vsBenevento,
+      notes: {
+        en: "Primavera 2 MD7, 31 Oct 2026, away, Benevento 1–0 Perugia (club tabellino; shirts inferred from the 1–11 slot pattern). 4-3-3: Strappini 1; Bisonni 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Ciani 11, Vanni 10, Merico 7; Iachini 9, Perugini 8. Goal: Soprano (B) 22′ pt. Subs: Agnissan for Merico 15′ st (60′), Ximenez for Vanni 15′ st, Giambarveri for Bisonni 26′ st (71′), Raffaelli for Iachini 26′ st, Calvà for Perugini 36′ st (81′). Bench unused: Piccini, Ragni, Olimpieri, Bellali, Pierangelini, Ciarapica, Santillo. Coach Giorgi.",
+        it: "Primavera 2 gior. 7, 31 ott 2026, trasferta, Benevento 1–0 Perugia (tabellino societario; numeri inferiti dallo schema 1–11). 4-3-3: Strappini 1; Bisonni 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Ciani 11, Vanni 10, Merico 7; Iachini 9, Perugini 8. Gol: Soprano (B) 22′ pt. Sub: Agnissan per Merico 15′ st (60′), Ximenez per Vanni 15′ st, Giambarveri per Bisonni 26′ st (71′), Raffaelli per Iachini 26′ st, Calvà per Perugini 36′ st (81′). Panchina non usata: Piccini, Ragni, Olimpieri, Bellali, Pierangelini, Ciarapica, Santillo. All. Giorgi.",
+      },
+    },
     {
       id: 'perugia-vs-frosinone',
       label: { en: 'vs Frosinone (5–0)', it: 'vs Frosinone (5–0)' },
@@ -1910,25 +2004,35 @@ if (perugia) {
         it: "Primavera 2 gior. 6, 24 ott 2026, casa, Perugia 5–0 Frosinone (tabellino Mondoprimavera + comunicato societario; numeri confermati). 4-3-3: Piccini 12; Bisonni 2, Peruzzi 5, Cesarini 6, Ragni 3; Malfatti 4; Ciani 11, Dottori 10, Merico 7; Iachini 9, Perugini 8. Gol: Dottori 37' (rig.), Agnissan 70', 75', 83', 90'+2. Sub: Vanni per Dottori 64′, Agnissan per Iachini 64′, Di Salvatore per Ragni 77′, Raffaelli per Merico 77′, Bellali per Perugini 84′. Panchina non usata: Strappini, Olimpieri, Calvà, Giambarveri, Pierangelini, Santillo, Fasanella. All. Giorgi.",
       },
     },
+    {
+      id: 'perugia-vs-palermo',
+      label: { en: 'vs Palermo (0–1)', it: 'vs Palermo (0–1)' },
+      system: '4-3-3',
+      players: vsPalermo,
+      notes: {
+        en: "Primavera 2 MD5, 17 Oct 2026, away, Palermo 1–0 Perugia (Palermo FC official line-ups; subs from club tabellino). 4-3-3: Strappini 1; Giambarveri 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Olimpieri 11, Vanni 10, Merico 7; Agnissan 9, Perugini 8. Goal: Bennardo (PA) 9′ pt. Subs: Iachini 13 for Olimpieri 12′ st (57′), Raffaelli 20 for Giambarveri 25′ st (70′), Pierangelini 16 for Merico 25′ st, Bellali 14 for Agnissan 34′ st (79′), Ximenez 17 for Vanni 34′ st. Bench unused: Piccini, Ragni, Ciarapica, Santillo. Coach Giorgi.",
+        it: "Primavera 2 gior. 5, 17 ott 2026, trasferta, Palermo 1–0 Perugia (formazioni ufficiali Palermo FC; cambi dal tabellino societario). 4-3-3: Strappini 1; Giambarveri 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Olimpieri 11, Vanni 10, Merico 7; Agnissan 9, Perugini 8. Gol: Bennardo (PA) 9′ pt. Sub: Iachini 13 per Olimpieri 12′ st (57′), Raffaelli 20 per Giambarveri 25′ st (70′), Pierangelini 16 per Merico 25′ st, Bellali 14 per Agnissan 34′ st (79′), Ximenez 17 per Vanni 34′ st. Panchina non usata: Piccini, Ragni, Ciarapica, Santillo. All. Giorgi.",
+      },
+    },
   ];
   perugia.squadDepth = {
     system: '1-4-3-3',
     note: {
-      en: 'Primavera 2 MD6 vs Frosinone mapped onto 4-3-3 (12 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 CDM, 10 LCM, 8 RCM, 11 RW, 9 ST, 7 LW).',
-      it: 'Primavera 2 gior. 6 vs Frosinone mappata sul 4-3-3 (12 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 CDM, 10 LCM, 8 RCM, 11 RW, 9 ST, 7 LW).',
+      en: 'Primavera 2 MD5–MD8 (Palermo, Frosinone, Benevento, Pescara) mapped onto 4-3-3 (1/12 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 CDM, 10 LCM, 8 RCM, 11 RW, 9 ST, 7 LW).',
+      it: 'Primavera 2 gior. 5–8 (Palermo, Frosinone, Benevento, Pescara) mappate sul 4-3-3 (1/12 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 CDM, 10 LCM, 8 RCM, 11 RW, 9 ST, 7 LW).',
     },
     slots: [
-      { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Piccini', starts: 1 }] },
-      { role: 'RB', top: '28%', left: '14%', players: [{ name: 'Bisonni', starts: 1 }] },
-      { role: 'RCB', top: '28%', left: '38%', players: [{ name: 'Peruzzi', starts: 1 }] },
-      { role: 'LCB', top: '28%', left: '62%', players: [{ name: 'Cesarini', starts: 1 }] },
-      { role: 'LB', top: '28%', left: '86%', players: [{ name: 'Ragni', starts: 1 }] },
-      { role: 'CDM', top: '46%', left: '50%', players: [{ name: 'Malfatti', starts: 1 }] },
-      { role: 'RCM', top: '58%', left: '32%', players: [{ name: 'Perugini', starts: 1 }] },
-      { role: 'LCM', top: '58%', left: '68%', players: [{ name: 'Dottori', starts: 1 }] },
-      { role: 'RW', top: '74%', left: '16%', players: [{ name: 'Ciani', starts: 1 }] },
-      { role: 'LW', top: '74%', left: '84%', players: [{ name: 'Merico', starts: 1 }] },
-      { role: 'ST', top: '84%', left: '50%', players: [{ name: 'Iachini', starts: 1 }] },
+      { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Strappini', starts: 3 }, { name: 'Piccini', starts: 1 }] },
+      { role: 'RB', top: '28%', left: '14%', players: [{ name: 'Giambarveri', starts: 2 }, { name: 'Bisonni', starts: 2 }] },
+      { role: 'RCB', top: '28%', left: '38%', players: [{ name: 'Peruzzi', starts: 4 }] },
+      { role: 'LCB', top: '28%', left: '62%', players: [{ name: 'Cesarini', starts: 4 }] },
+      { role: 'LB', top: '28%', left: '86%', players: [{ name: 'Di Salvatore', starts: 3 }, { name: 'Ragni', starts: 1 }] },
+      { role: 'CDM', top: '46%', left: '50%', players: [{ name: 'Malfatti', starts: 4 }] },
+      { role: 'RCM', top: '58%', left: '32%', players: [{ name: 'Perugini', starts: 4 }] },
+      { role: 'LCM', top: '58%', left: '68%', players: [{ name: 'Vanni', starts: 2 }, { name: 'Bellali', starts: 1 }, { name: 'Dottori', starts: 1 }] },
+      { role: 'RW', top: '74%', left: '16%', players: [{ name: 'Ciani', starts: 3 }, { name: 'Olimpieri', starts: 1 }] },
+      { role: 'LW', top: '74%', left: '84%', players: [{ name: 'Merico', starts: 3 }, { name: 'Raffaelli', starts: 1 }] },
+      { role: 'ST', top: '84%', left: '50%', players: [{ name: 'Agnissan', starts: 2 }, { name: 'Iachini', starts: 2 }] },
     ],
   };
   /** Most sub appearances across Pisa + Frosinone. */
