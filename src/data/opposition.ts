@@ -1599,6 +1599,51 @@ function perugia4141(names: {
 }
 
 /**
+ * 4-3-3 by shirt: 1 GK, 2 RB, 3 LB, 6 LCB, 5 RCB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW.
+ * Pitch attacks downward: team-left = screen-right.
+ */
+function perugia433(names: {
+  gk: string;
+  rb: string;
+  rcb: string;
+  lcb: string;
+  lb: string;
+  cdm: string;
+  lcm: string;
+  rcm: string;
+  rw: string;
+  st: string;
+  lw: string;
+}, nums: {
+  gk: number;
+  rb: number;
+  rcb: number;
+  lcb: number;
+  lb: number;
+  cdm: number;
+  lcm: number;
+  rcm: number;
+  rw: number;
+  st: number;
+  lw: number;
+}): PitchPlayer[] {
+  const teamId = 'perugia';
+  return [
+    { number: nums.gk, name: names.gk, role: 'GK', teamId, isGk: true, top: '8%', left: '50%' },
+    { number: nums.rb, name: names.rb, role: 'RB', teamId, top: '22%', left: '18%' },
+    { number: nums.rcb, name: names.rcb, role: 'RCB', teamId, top: '20%', left: '38%' },
+    { number: nums.lcb, name: names.lcb, role: 'LCB', teamId, top: '20%', left: '62%' },
+    { number: nums.lb, name: names.lb, role: 'LB', teamId, top: '22%', left: '82%' },
+    { number: nums.cdm, name: names.cdm, role: 'CDM', teamId, top: '38%', left: '50%' },
+    { number: nums.rcm, name: names.rcm, role: 'RCM', teamId, top: '50%', left: '32%' },
+    { number: nums.lcm, name: names.lcm, role: 'LCM', teamId, top: '50%', left: '68%' },
+    { number: nums.rw, name: names.rw, role: 'RW', teamId, top: '68%', left: '18%' },
+    { number: nums.st, name: names.st, role: 'ST', teamId, top: '78%', left: '50%' },
+    { number: nums.lw, name: names.lw, role: 'LW', teamId, top: '68%', left: '82%' },
+  ];
+}
+
+/**
  * Pisa scout pack — notebook “Profili giocatori” + last 3 XIs + Combined XI.
  * On the sheet, “//” = same starter as the previous match in that slot.
  */
@@ -1869,22 +1914,46 @@ if (perugia) {
     rm: 'Merico',
     st: 'Sheji',
   });
-  perugia.formationSystem = '1-4-1-4-1';
-  perugia.starters = vsPisa;
-  const vsFrosinone = perugia4141({
+  /** MD6 vs Frosinone — 4-3-3 by shirt (1 GK, 2 RB, 3 LB, 6 LCB, 5 RCB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW). */
+  const vsFrosinone = perugia433({
     gk: 'Piccini',
-    lb: 'Ragni',
-    lcb: 'Peruzzi',
-    rcb: 'Cesarini',
     rb: 'Bisonni',
+    rcb: 'Peruzzi',
+    lcb: 'Cesarini',
+    lb: 'Ragni',
     cdm: 'Malfatti',
-    lm: 'Ciani',
     lcm: 'Perugini',
     rcm: 'Dottori',
-    rm: 'Merico',
+    rw: 'Ciani',
     st: 'Iachini',
+    lw: 'Merico',
+  }, {
+    gk: 12,
+    rb: 0,
+    rcb: 5,
+    lcb: 6,
+    lb: 13,
+    cdm: 4,
+    lcm: 8,
+    rcm: 0,
+    rw: 11,
+    st: 0,
+    lw: 7,
   });
+  perugia.formationSystem = '1-4-3-3';
+  perugia.alternateFormationSystems = ['1-4-1-4-1'];
+  perugia.starters = vsFrosinone;
   perugia.scoutedFormations = [
+    {
+      id: 'perugia-vs-frosinone',
+      label: { en: 'vs Frosinone (5–0)', it: 'vs Frosinone (5–0)' },
+      system: '4-3-3',
+      players: vsFrosinone,
+      notes: {
+        en: "Primavera 2 MD6, 24 Oct 2026, home, Perugia 5–0 Frosinone (mondoprimavera tabellino + club report). 4-3-3 by shirt: 1 GK, 2 RB, 3 LB, 6 LCB, 5 RCB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW. XI: Piccini 12; Bisonni (number not confirmed), Peruzzi 5, Cesarini 6, Ragni 13; Malfatti 4; Ciani 11, Perugini 8, Merico 7; Iachini (number not confirmed), Dottori (number not confirmed). Goals: Dottori 37' (pen.), Agnissan 70', 75', 83', 90'+2. Subs: Vanni for Dottori 64′, Agnissan for Iachini 64′, Di Salvatore for Ragni 77′, Raffaelli for Merico 77′, Bellali for Perugini 84′. Bench unused: Strappini, Olimpieri, Calvà, Giambarveri, Pierangelini, Santillo, Fasanella. Coach Giorgi.",
+        it: "Primavera 2 gior. 6, 24 ott 2026, casa, Perugia 5–0 Frosinone (tabellino Mondoprimavera + comunicato societario). 4-3-3 per maglia: 1 GK, 2 RB, 3 LB, 6 LCB, 5 RCB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW. XI: Piccini 12; Bisonni (numero non confermato), Peruzzi 5, Cesarini 6, Ragni 13; Malfatti 4; Ciani 11, Perugini 8, Merico 7; Iachini (numero non confermato), Dottori (numero non confermato). Gol: Dottori 37' (rig.), Agnissan 70', 75', 83', 90'+2. Sub: Vanni per Dottori 64′, Agnissan per Iachini 64′, Di Salvatore per Ragni 77′, Raffaelli per Merico 77′, Bellali per Perugini 84′. Panchina non usata: Strappini, Olimpieri, Calvà, Giambarveri, Pierangelini, Santillo, Fasanella. All. Giorgi.",
+      },
+    },
     {
       id: 'perugia-vs-pisa',
       label: { en: 'vs Pisa', it: 'vs Pisa' },
@@ -1895,17 +1964,27 @@ if (perugia) {
         it: 'Sub: Raffaelli 65′ (Merico), Ximenez 65′ (Vanni), Giambarveri 74′ (Buonafede), Calva 89′ (Sheji), Pierangelini 89′ (Perugini).',
       },
     },
-    {
-      id: 'perugia-vs-frosinone',
-      label: { en: 'vs Frosinone (5–0)', it: 'vs Frosinone (5–0)' },
-      system: '4-1-4-1',
-      players: vsFrosinone,
-      notes: {
-        en: "Primavera 2 MD6, 24 Oct 2026, home, Perugia 5–0 Frosinone (tabellino). Goals: Dottori 37' (pen.), Agnissan 70', 75', 83', 90'+2. Subs: Vanni 64′ (Dottori), Agnissan 64′ (Iachini), Di Salvatore 77′ (Ragni), Raffaelli 77′ (Merico), Bellali 84′ (Perugini). Bench unused: Strappini, Olimpieri, Calvà, Giambarveri, Pierangelini, Santillo, Fasanella. Coach Giorgi.",
-        it: "Primavera 2 gior. 6, 24 ott 2026, casa, Perugia 5–0 Frosinone (tabellino). Gol: Dottori 37' (rig.), Agnissan 70', 75', 83', 90'+2. Sub: Vanni 64′ (Dottori), Agnissan 64′ (Iachini), Di Salvatore 77′ (Ragni), Raffaelli 77′ (Merico), Bellali 84′ (Perugini). Panchina non usata: Strappini, Olimpieri, Calvà, Giambarveri, Pierangelini, Santillo, Fasanella. All. Giorgi.",
-      },
-    },
   ];
+  perugia.squadDepth = {
+    system: '1-4-3-3',
+    note: {
+      en: 'Primavera 2 MD6 vs Frosinone mapped onto 4-3-3 by shirt (1 GK, 2 RB, 3 LB, 6 LCB, 5 RCB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW).',
+      it: 'Primavera 2 gior. 6 vs Frosinone mappata sul 4-3-3 per maglia (1 GK, 2 RB, 3 LB, 6 LCB, 5 RCB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW).',
+    },
+    slots: [
+      { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Piccini', starts: 1 }] },
+      { role: 'RB', top: '28%', left: '14%', players: [{ name: 'Bisonni', starts: 1 }] },
+      { role: 'RCB', top: '28%', left: '38%', players: [{ name: 'Peruzzi', starts: 1 }] },
+      { role: 'LCB', top: '28%', left: '62%', players: [{ name: 'Cesarini', starts: 1 }] },
+      { role: 'LB', top: '28%', left: '86%', players: [{ name: 'Ragni', starts: 1 }] },
+      { role: 'CDM', top: '46%', left: '50%', players: [{ name: 'Malfatti', starts: 1 }] },
+      { role: 'RCM', top: '58%', left: '32%', players: [{ name: 'Dottori', starts: 1 }] },
+      { role: 'LCM', top: '58%', left: '68%', players: [{ name: 'Perugini', starts: 1 }] },
+      { role: 'RW', top: '74%', left: '16%', players: [{ name: 'Ciani', starts: 1 }] },
+      { role: 'LW', top: '74%', left: '84%', players: [{ name: 'Merico', starts: 1 }] },
+      { role: 'ST', top: '84%', left: '50%', players: [{ name: 'Iachini', starts: 1 }] },
+    ],
+  };
   /** Most sub appearances across Pisa + Frosinone. */
   perugia.substitutes = [
     { name: 'Raffaelli' },
@@ -1931,10 +2010,10 @@ if (perugia) {
     { number: 10, name: 'Vanni', position: 'CM', birthYear: 2008 },
     { number: 11, name: 'Ciani', position: 'LW', birthYear: 2008 },
     { number: 12, name: 'Piccini', position: 'GK', isGk: true, birthYear: 2009 },
-    { number: 13, name: 'Ragni', birthYear: 2009 },
+    { number: 13, name: 'Ragni', position: 'LB', birthYear: 2009 },
     { number: 14, name: 'Olimpieri', birthYear: 2009 },
     { number: 15, name: 'Pierangelini', birthYear: 2009 },
-    { number: 16, name: 'Iachini', birthYear: 2009 },
+    { number: 16, name: 'Iachini', position: 'ST', birthYear: 2009 },
     { number: 17, name: 'Giambarveri', birthYear: 2008 },
     { number: 18, name: 'Ximenez', birthYear: 2008 },
     { number: 19, name: 'Raffaelli', birthYear: 2009 },
@@ -1942,8 +2021,8 @@ if (perugia) {
     { number: 21, name: 'Di Salvatore', birthYear: 2008 },
     { number: 22, name: 'Organai', position: 'GK', isGk: true, birthYear: 2010 },
     { number: 23, name: 'Ciarapica', birthYear: 2009 },
-    { name: 'Bisonni' },
-    { name: 'Dottori' },
+    { name: 'Bisonni', position: 'RB', birthYear: 2010 },
+    { name: 'Dottori', position: 'RCM' },
     { name: 'Agnissan' },
     { name: 'Bellali' },
     { name: 'Santillo' },
