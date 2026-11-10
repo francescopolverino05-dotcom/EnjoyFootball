@@ -1568,39 +1568,9 @@ function pisa442(names: {
   ];
 }
 
-/** 4-1-4-1 named XI. Pitch attacks downward: team-left = screen-right. */
-function perugia4141(names: {
-  gk: string;
-  lb: string;
-  lcb: string;
-  rcb: string;
-  rb: string;
-  cdm: string;
-  lm: string;
-  lcm: string;
-  rcm: string;
-  rm: string;
-  st: string;
-}): PitchPlayer[] {
-  const teamId = 'perugia';
-  return [
-    { number: 0, name: names.gk, teamId, isGk: true, top: '8%', left: '50%' },
-    { number: 0, name: names.lb, teamId, top: '22%', left: '82%' },
-    { number: 0, name: names.lcb, teamId, top: '20%', left: '62%' },
-    { number: 0, name: names.rcb, teamId, top: '20%', left: '38%' },
-    { number: 0, name: names.rb, teamId, top: '22%', left: '18%' },
-    { number: 0, name: names.cdm, teamId, top: '38%', left: '50%' },
-    { number: 0, name: names.lm, teamId, top: '58%', left: '82%' },
-    { number: 0, name: names.lcm, teamId, top: '52%', left: '62%' },
-    { number: 0, name: names.rcm, teamId, top: '52%', left: '38%' },
-    { number: 0, name: names.rm, teamId, top: '58%', left: '18%' },
-    { number: 0, name: names.st, teamId, top: '78%', left: '50%' },
-  ];
-}
-
 /**
- * 4-3-3 by shirt: 1 GK, 2 RB, 3 LB, 6 LCB, 5 RCB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW.
- * Pitch attacks downward: team-left = screen-right.
+ * 4-3-3 named XI. Pitch attacks downward: team-left = screen-right.
+ * vs Frosinone shirts: 12 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 CDM, 10 LCM, 8 RCM, 11 RW, 9 ST, 7 LW.
  */
 function perugia433(names: {
   gk: string;
@@ -1898,23 +1868,10 @@ if (pisa) {
   ];
 }
 
-/** Perugia XI vs Pisa — team sheet 04.09.2026 (Alfredo Pagni). */
+/** Perugia pack — Primavera 2 MD6 vs Frosinone 4-3-3. */
 const perugia = OPPONENTS.find((o) => o.id === 'perugia');
 if (perugia) {
-  const vsPisa = perugia4141({
-    gk: 'Strappini',
-    lb: 'Bevanati',
-    lcb: 'Peruzzi',
-    rcb: 'Cesarini',
-    rb: 'Buonafede',
-    cdm: 'Malfatti',
-    lm: 'Ciani',
-    lcm: 'Perugini',
-    rcm: 'Vanni',
-    rm: 'Merico',
-    st: 'Sheji',
-  });
-  /** MD6 vs Frosinone — 4-3-3 by shirt (1 GK, 2 RB, 3 LB, 6 LCB, 5 RCB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW). */
+  /** MD6 vs Frosinone — 4-3-3: 12 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 CDM, 10 LCM, 8 RCM, 11 RW, 9 ST, 7 LW. */
   const vsFrosinone = perugia433({
     gk: 'Piccini',
     rb: 'Bisonni',
@@ -1922,26 +1879,25 @@ if (perugia) {
     lcb: 'Cesarini',
     lb: 'Ragni',
     cdm: 'Malfatti',
-    lcm: 'Perugini',
-    rcm: 'Dottori',
+    lcm: 'Dottori',
+    rcm: 'Perugini',
     rw: 'Ciani',
     st: 'Iachini',
     lw: 'Merico',
   }, {
     gk: 12,
-    rb: 0,
+    rb: 2,
     rcb: 5,
     lcb: 6,
-    lb: 13,
+    lb: 3,
     cdm: 4,
-    lcm: 8,
-    rcm: 0,
+    lcm: 10,
+    rcm: 8,
     rw: 11,
-    st: 0,
+    st: 9,
     lw: 7,
   });
   perugia.formationSystem = '1-4-3-3';
-  perugia.alternateFormationSystems = ['1-4-1-4-1'];
   perugia.starters = vsFrosinone;
   perugia.scoutedFormations = [
     {
@@ -1950,26 +1906,16 @@ if (perugia) {
       system: '4-3-3',
       players: vsFrosinone,
       notes: {
-        en: "Primavera 2 MD6, 24 Oct 2026, home, Perugia 5–0 Frosinone (mondoprimavera tabellino + club report). 4-3-3 by shirt: 1 GK, 2 RB, 3 LB, 6 LCB, 5 RCB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW. XI: Piccini 12; Bisonni (number not confirmed), Peruzzi 5, Cesarini 6, Ragni 13; Malfatti 4; Ciani 11, Perugini 8, Merico 7; Iachini (number not confirmed), Dottori (number not confirmed). Goals: Dottori 37' (pen.), Agnissan 70', 75', 83', 90'+2. Subs: Vanni for Dottori 64′, Agnissan for Iachini 64′, Di Salvatore for Ragni 77′, Raffaelli for Merico 77′, Bellali for Perugini 84′. Bench unused: Strappini, Olimpieri, Calvà, Giambarveri, Pierangelini, Santillo, Fasanella. Coach Giorgi.",
-        it: "Primavera 2 gior. 6, 24 ott 2026, casa, Perugia 5–0 Frosinone (tabellino Mondoprimavera + comunicato societario). 4-3-3 per maglia: 1 GK, 2 RB, 3 LB, 6 LCB, 5 RCB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW. XI: Piccini 12; Bisonni (numero non confermato), Peruzzi 5, Cesarini 6, Ragni 13; Malfatti 4; Ciani 11, Perugini 8, Merico 7; Iachini (numero non confermato), Dottori (numero non confermato). Gol: Dottori 37' (rig.), Agnissan 70', 75', 83', 90'+2. Sub: Vanni per Dottori 64′, Agnissan per Iachini 64′, Di Salvatore per Ragni 77′, Raffaelli per Merico 77′, Bellali per Perugini 84′. Panchina non usata: Strappini, Olimpieri, Calvà, Giambarveri, Pierangelini, Santillo, Fasanella. All. Giorgi.",
-      },
-    },
-    {
-      id: 'perugia-vs-pisa',
-      label: { en: 'vs Pisa', it: 'vs Pisa' },
-      system: '4-1-4-1',
-      players: vsPisa,
-      notes: {
-        en: 'Subs: Raffaelli 65′ (Merico), Ximenez 65′ (Vanni), Giambarveri 74′ (Buonafede), Calva 89′ (Sheji), Pierangelini 89′ (Perugini).',
-        it: 'Sub: Raffaelli 65′ (Merico), Ximenez 65′ (Vanni), Giambarveri 74′ (Buonafede), Calva 89′ (Sheji), Pierangelini 89′ (Perugini).',
+        en: "Primavera 2 MD6, 24 Oct 2026, home, Perugia 5–0 Frosinone (mondoprimavera tabellino + club report; shirts confirmed). 4-3-3: Piccini 12; Bisonni 2, Peruzzi 5, Cesarini 6, Ragni 3; Malfatti 4; Ciani 11, Dottori 10, Merico 7; Iachini 9, Perugini 8. Goals: Dottori 37' (pen.), Agnissan 70', 75', 83', 90'+2. Subs: Vanni for Dottori 64′, Agnissan for Iachini 64′, Di Salvatore for Ragni 77′, Raffaelli for Merico 77′, Bellali for Perugini 84′. Bench unused: Strappini, Olimpieri, Calvà, Giambarveri, Pierangelini, Santillo, Fasanella. Coach Giorgi.",
+        it: "Primavera 2 gior. 6, 24 ott 2026, casa, Perugia 5–0 Frosinone (tabellino Mondoprimavera + comunicato societario; numeri confermati). 4-3-3: Piccini 12; Bisonni 2, Peruzzi 5, Cesarini 6, Ragni 3; Malfatti 4; Ciani 11, Dottori 10, Merico 7; Iachini 9, Perugini 8. Gol: Dottori 37' (rig.), Agnissan 70', 75', 83', 90'+2. Sub: Vanni per Dottori 64′, Agnissan per Iachini 64′, Di Salvatore per Ragni 77′, Raffaelli per Merico 77′, Bellali per Perugini 84′. Panchina non usata: Strappini, Olimpieri, Calvà, Giambarveri, Pierangelini, Santillo, Fasanella. All. Giorgi.",
       },
     },
   ];
   perugia.squadDepth = {
     system: '1-4-3-3',
     note: {
-      en: 'Primavera 2 MD6 vs Frosinone mapped onto 4-3-3 by shirt (1 GK, 2 RB, 3 LB, 6 LCB, 5 RCB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW).',
-      it: 'Primavera 2 gior. 6 vs Frosinone mappata sul 4-3-3 per maglia (1 GK, 2 RB, 3 LB, 6 LCB, 5 RCB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW).',
+      en: 'Primavera 2 MD6 vs Frosinone mapped onto 4-3-3 (12 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 CDM, 10 LCM, 8 RCM, 11 RW, 9 ST, 7 LW).',
+      it: 'Primavera 2 gior. 6 vs Frosinone mappata sul 4-3-3 (12 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 CDM, 10 LCM, 8 RCM, 11 RW, 9 ST, 7 LW).',
     },
     slots: [
       { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Piccini', starts: 1 }] },
@@ -1978,8 +1924,8 @@ if (perugia) {
       { role: 'LCB', top: '28%', left: '62%', players: [{ name: 'Cesarini', starts: 1 }] },
       { role: 'LB', top: '28%', left: '86%', players: [{ name: 'Ragni', starts: 1 }] },
       { role: 'CDM', top: '46%', left: '50%', players: [{ name: 'Malfatti', starts: 1 }] },
-      { role: 'RCM', top: '58%', left: '32%', players: [{ name: 'Dottori', starts: 1 }] },
-      { role: 'LCM', top: '58%', left: '68%', players: [{ name: 'Perugini', starts: 1 }] },
+      { role: 'RCM', top: '58%', left: '32%', players: [{ name: 'Perugini', starts: 1 }] },
+      { role: 'LCM', top: '58%', left: '68%', players: [{ name: 'Dottori', starts: 1 }] },
       { role: 'RW', top: '74%', left: '16%', players: [{ name: 'Ciani', starts: 1 }] },
       { role: 'LW', top: '74%', left: '84%', players: [{ name: 'Merico', starts: 1 }] },
       { role: 'ST', top: '84%', left: '50%', players: [{ name: 'Iachini', starts: 1 }] },
@@ -2022,7 +1968,7 @@ if (perugia) {
     { number: 22, name: 'Organai', position: 'GK', isGk: true, birthYear: 2010 },
     { number: 23, name: 'Ciarapica', birthYear: 2009 },
     { name: 'Bisonni', position: 'RB', birthYear: 2010 },
-    { name: 'Dottori', position: 'RCM' },
+    { name: 'Dottori', position: 'LCM' },
     { name: 'Agnissan' },
     { name: 'Bellali' },
     { name: 'Santillo' },
