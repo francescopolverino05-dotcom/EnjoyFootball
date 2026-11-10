@@ -295,9 +295,7 @@ export default function OpponentPage() {
                     <tr key={r.name}>
                       <td className="standings-team">{r.name}</td>
                       <td>
-                        {usesSpecificPositions
-                          ? localizePdfPosition(r.role, locale)
-                          : (r.role ?? '—')}
+                        {localizePdfPosition(r.role, locale)}
                       </td>
                       <td className="stats-value-cell">{r.count}</td>
                     </tr>

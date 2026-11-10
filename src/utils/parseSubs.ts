@@ -47,7 +47,7 @@ function findRole(name: string | undefined, pools: { name: string; role?: string
 
 /**
  * Parse the "Subs: …" part of scouted-formation notes into structured subs.
- * Supports "X for Y 51'", "X 57′ (Y)" and plain "A, B, C" lists. The sub's
+ * Supports "X for Y 51'", "X for Y 21′ st (66′)", "Subs (distinta):", "X 57′ (Y)" and plain lists. The sub's
  * position is the replaced starter's role; otherwise the squad position.
  * A starter whose pitch position was not recorded does not lend a squad role.
  */
@@ -57,25 +57,60 @@ export function parseSubs(
   squad: { name: string; position?: string }[],
 ): ParsedSub[] {
   if (!notes) return [];
-  const m = notes.match(/Subs(?: used)?:\s*([^]*?)(?:(?<!\b[A-Z])\.\s|\.$|\s\(switch|$)/);
+  // "Subs:", "Subs used:", or "Subs (distinta):" / "Subs (club):"
+  const m = notes.match(/Subs(?:\s*\([^)]*\))?(?: used)?:\s*([^]*?)(?:(?<!\b[A-Z])\.\s|\.$|\s\(switch|$)/);
   if (!m) return [];
   const out: ParsedSub[] = [];
   for (const raw of m[1].split(/,\s*/)) {
     const part = raw.trim().replace(/\.$/, '');
     if (!part) continue;
     let name: string | undefined, minute: string | undefined, replaced: string | undefined;
-    let r = part.match(/^(.+?)\s+for\s+(.+?)\s+(HT|[~\d+–-]+\s*['′]?)$/);
-    if (r) [name, replaced, minute] = [r[1], r[2], r[3]];
-    else if ((r = part.match(/^(.*?)\s*([~\d+–-]+\s*['′])\s*\((.+)\)$/))) [name, minute, replaced] = [r[1], r[2], r[3]];
-    else name = part;
+    // "X for Y 64′", "X for Y 21′ st (66′)", "X 19 for Y 15′ st"
+    let r = part.match(/^(.+?)\s+for\s+(.+?)\s+(HT|[~\d+–-]+\s*['′]?)(?:\s*(pt|st))?(?:\s*\(([^)]+)\))?$/i);
+    if (r) {
+      name = stripShirt(r[1]);
+      replaced = stripShirt(r[2]);
+      minute = clockMinute(r[3], r[4], r[5]);
+    } else if ((r = part.match(/^(.*?)\s*([~\d+–-]+\s*['′])\s*\((.+)\)$/))) {
+      name = stripShirt(r[1]);
+      minute = formatMinute(r[2]);
+      replaced = stripShirt(r[3]);
+    } else name = stripShirt(part);
     name = name?.trim();
     if (!name) continue;
-    minute = minute?.replace(/\s/g, '').replace(/'/g, '′');
-    if (minute && minute !== 'HT' && !minute.endsWith('′')) minute += '′';
     const role = starterUnplaced(replaced, starters)
       ? undefined
       : (findRole(replaced, starters) ?? findRole(name, squad));
     out.push({ name, minute, replaced: replaced?.trim(), role });
   }
   return out;
+}
+
+/** Drop trailing match-day shirts ("Iachini 19", "Iachini (#19)"). */
+function stripShirt(s: string): string {
+  return s.replace(/\s*\(#\d+\)/g, '').replace(/\s+#?\d+\s*$/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function formatMinute(raw: string): string {
+  const minute = raw.replace(/\s/g, '').replace(/'/g, '′');
+  if (minute.toUpperCase() === 'HT') return 'HT';
+  return minute.endsWith('′') ? minute : `${minute}′`;
+}
+
+/**
+ * Prefer an explicit clock minute in parentheses ("21′ st (66′)").
+ * A bare "15′ st" with no clock is treated as second-half 45+15.
+ */
+function clockMinute(raw: string, half?: string, paren?: string): string {
+  if (paren) {
+    const hit = paren.trim().match(/[~\d+–-]+\s*['′]?/);
+    if (hit) return formatMinute(hit[0]);
+  }
+  if (/^HT$/i.test(raw.trim())) return 'HT';
+  const formatted = formatMinute(raw);
+  if (half && /^st$/i.test(half)) {
+    const n = parseInt(formatted, 10);
+    if (Number.isFinite(n) && n <= 45 && !formatted.includes('+')) return `${n + 45}′`;
+  }
+  return formatted;
 }

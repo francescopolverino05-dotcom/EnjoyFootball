@@ -2,6 +2,7 @@ import { Formation, PitchPlayer } from '../types/match';
 import { useLanguage } from '../i18n/LanguageContext';
 import { mediaUrl } from '../utils/mediaUrl';
 import { withGoalkeeperInSystem } from '../utils/formationSystem';
+import { localizePdfPosition } from '../i18n/positions';
 
 interface FormationsProps {
   formations: Formation[];
@@ -9,7 +10,7 @@ interface FormationsProps {
 }
 
 export default function Formations({ formations, matchSlug }: FormationsProps) {
-  const { t, L } = useLanguage();
+  const { t, L, locale } = useLanguage();
 
   const renderPitch = (players: PitchPlayer[]) => {
     const placed = players.filter((player) => !player.positionUnknown);
@@ -86,7 +87,7 @@ export default function Formations({ formations, matchSlug }: FormationsProps) {
                   <ul>
                     {formation.subs.map((s, i) => (
                       <li key={`${s.name}-${i}`}>
-                        <span className="formation-subs-role">{s.role ?? '–'}</span>
+                        <span className="formation-subs-role">{s.role ? localizePdfPosition(s.role, locale) : '–'}</span>
                         <span className="formation-subs-name">{s.name}</span>
                         {s.minute ? <span className="formation-subs-min">{s.minute}</span> : null}
                       </li>

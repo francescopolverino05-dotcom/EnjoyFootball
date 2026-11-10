@@ -1980,8 +1980,8 @@ if (perugia) {
       system: '4-3-3',
       players: vsPescara,
       notes: {
-        en: "Primavera 2 MD8, 7 Nov 2026, home, Perugia 3–2 Pescara (official distinta). 4-3-3: Strappini 1; Giambarveri 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Ciani 11, Bellali 10, Raffaelli 7; Agnissan 9, Perugini 8. Goals (club): Giambarveri 20′ pt, Bacalini (P) 35′ pt, Bellali 15′ st, Giacalone (P) 39′ st, Merico 45′ st. Subs (distinta): Iachini 19 for Agnissan 21′ st (66′), Merico 14 for Bellali 21′ st, Vanni 13 for Raffaelli 21′ st, Pierangelini 22 for Malfatti 44′ st (89′), Bisonni 16 for Giambarveri 44′ st. Bench unused: Piccini, Bevanati, Ragni, Calvà, Fasanella/Ximenez, Santillo, Ciarapica. Coach Giorgi.",
-        it: "Primavera 2 gior. 8, 7 nov 2026, casa, Perugia 3–2 Pescara (distinta ufficiale). 4-3-3: Strappini 1; Giambarveri 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Ciani 11, Bellali 10, Raffaelli 7; Agnissan 9, Perugini 8. Gol (società): Giambarveri 20′ pt, Bacalini (P) 35′ pt, Bellali 15′ st, Giacalone (P) 39′ st, Merico 45′ st. Sub (distinta): Iachini 19 per Agnissan 21′ st (66′), Merico 14 per Bellali 21′ st, Vanni 13 per Raffaelli 21′ st, Pierangelini 22 per Malfatti 44′ st (89′), Bisonni 16 per Giambarveri 44′ st. Panchina non usata: Piccini, Bevanati, Ragni, Calvà, Fasanella/Ximenez, Santillo, Ciarapica. All. Giorgi.",
+        en: "Primavera 2 MD8, 7 Nov 2026, home, Perugia 3–2 Pescara (official distinta). 4-3-3: Strappini 1; Giambarveri 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Ciani 11, Bellali 10, Raffaelli 7; Agnissan 9, Perugini 8. Goals (club): Giambarveri 20′ pt, Bacalini (P) 35′ pt, Bellali 15′ st, Giacalone (P) 39′ st, Merico 45′ st. Subs: Iachini for Agnissan 66′, Merico for Bellali 66′, Vanni for Raffaelli 66′, Pierangelini for Malfatti 89′, Bisonni for Giambarveri 89′. Bench unused: Piccini, Bevanati, Ragni, Calvà, Ximenez Fasanella, Santillo, Ciarapica. Coach Giorgi.",
+        it: "Primavera 2 gior. 8, 7 nov 2026, casa, Perugia 3–2 Pescara (distinta ufficiale). 4-3-3: Strappini 1; Giambarveri 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Ciani 11, Bellali 10, Raffaelli 7; Agnissan 9, Perugini 8. Gol (società): Giambarveri 20′ pt, Bacalini (P) 35′ pt, Bellali 15′ st, Giacalone (P) 39′ st, Merico 45′ st. Sub: Iachini per Agnissan 66′, Merico per Bellali 66′, Vanni per Raffaelli 66′, Pierangelini per Malfatti 89′, Bisonni per Giambarveri 89′. Panchina non usata: Piccini, Bevanati, Ragni, Calvà, Ximenez Fasanella, Santillo, Ciarapica. All. Giorgi.",
       },
     },
     {
@@ -1990,8 +1990,8 @@ if (perugia) {
       system: '4-3-3',
       players: vsBenevento,
       notes: {
-        en: "Primavera 2 MD7, 31 Oct 2026, away, Benevento 1–0 Perugia (club tabellino; shirts inferred from the 1–11 slot pattern). 4-3-3: Strappini 1; Bisonni 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Ciani 11, Vanni 10, Merico 7; Iachini 9, Perugini 8. Goal: Soprano (B) 22′ pt. Subs: Agnissan for Merico 15′ st (60′), Ximenez for Vanni 15′ st, Giambarveri for Bisonni 26′ st (71′), Raffaelli for Iachini 26′ st, Calvà for Perugini 36′ st (81′). Bench unused: Piccini, Ragni, Olimpieri, Bellali, Pierangelini, Ciarapica, Santillo. Coach Giorgi.",
-        it: "Primavera 2 gior. 7, 31 ott 2026, trasferta, Benevento 1–0 Perugia (tabellino societario; numeri inferiti dallo schema 1–11). 4-3-3: Strappini 1; Bisonni 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Ciani 11, Vanni 10, Merico 7; Iachini 9, Perugini 8. Gol: Soprano (B) 22′ pt. Sub: Agnissan per Merico 15′ st (60′), Ximenez per Vanni 15′ st, Giambarveri per Bisonni 26′ st (71′), Raffaelli per Iachini 26′ st, Calvà per Perugini 36′ st (81′). Panchina non usata: Piccini, Ragni, Olimpieri, Bellali, Pierangelini, Ciarapica, Santillo. All. Giorgi.",
+        en: "Primavera 2 MD7, 31 Oct 2026, away, Benevento 1–0 Perugia (club tabellino; shirts inferred from the 1–11 slot pattern). 4-3-3: Strappini 1; Bisonni 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Ciani 11, Vanni 10, Merico 7; Iachini 9, Perugini 8. Goal: Soprano (B) 22′ pt. Subs: Agnissan for Merico 60′, Ximenez for Vanni 60′, Giambarveri for Bisonni 71′, Raffaelli for Iachini 71′, Calvà for Perugini 81′. Bench unused: Piccini, Ragni, Olimpieri, Bellali, Pierangelini, Ciarapica, Santillo. Coach Giorgi.",
+        it: "Primavera 2 gior. 7, 31 ott 2026, trasferta, Benevento 1–0 Perugia (tabellino societario; numeri inferiti dallo schema 1–11). 4-3-3: Strappini 1; Bisonni 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Ciani 11, Vanni 10, Merico 7; Iachini 9, Perugini 8. Gol: Soprano (B) 22′ pt. Sub: Agnissan per Merico 60′, Ximenez per Vanni 60′, Giambarveri per Bisonni 71′, Raffaelli per Iachini 71′, Calvà per Perugini 81′. Panchina non usata: Piccini, Ragni, Olimpieri, Bellali, Pierangelini, Ciarapica, Santillo. All. Giorgi.",
       },
     },
     {
@@ -2000,8 +2000,8 @@ if (perugia) {
       system: '4-3-3',
       players: vsFrosinone,
       notes: {
-        en: "Primavera 2 MD6, 24 Oct 2026, home, Perugia 5–0 Frosinone (mondoprimavera tabellino + club report; shirts confirmed). 4-3-3: Piccini 12; Bisonni 2, Peruzzi 5, Cesarini 6, Ragni 3; Malfatti 4; Ciani 11, Dottori 10, Merico 7; Iachini 9, Perugini 8. Goals: Dottori 37' (pen.), Agnissan 70', 75', 83', 90'+2. Subs: Vanni for Dottori 64′, Agnissan for Iachini 64′, Di Salvatore for Ragni 77′, Raffaelli for Merico 77′, Bellali for Perugini 84′. Bench unused: Strappini, Olimpieri, Calvà, Giambarveri, Pierangelini, Santillo, Fasanella. Coach Giorgi.",
-        it: "Primavera 2 gior. 6, 24 ott 2026, casa, Perugia 5–0 Frosinone (tabellino Mondoprimavera + comunicato societario; numeri confermati). 4-3-3: Piccini 12; Bisonni 2, Peruzzi 5, Cesarini 6, Ragni 3; Malfatti 4; Ciani 11, Dottori 10, Merico 7; Iachini 9, Perugini 8. Gol: Dottori 37' (rig.), Agnissan 70', 75', 83', 90'+2. Sub: Vanni per Dottori 64′, Agnissan per Iachini 64′, Di Salvatore per Ragni 77′, Raffaelli per Merico 77′, Bellali per Perugini 84′. Panchina non usata: Strappini, Olimpieri, Calvà, Giambarveri, Pierangelini, Santillo, Fasanella. All. Giorgi.",
+        en: "Primavera 2 MD6, 24 Oct 2026, home, Perugia 5–0 Frosinone (mondoprimavera tabellino + club report; shirts confirmed). 4-3-3: Piccini 12; Bisonni 2, Peruzzi 5, Cesarini 6, Ragni 3; Malfatti 4; Ciani 11, Dottori 10, Merico 7; Iachini 9, Perugini 8. Goals: Dottori 37' (pen.), Agnissan 70', 75', 83', 90'+2. Subs: Vanni for Dottori 64′, Agnissan for Iachini 64′, Di Salvatore for Ragni 77′, Raffaelli for Merico 77′, Bellali for Perugini 84′. Bench unused: Strappini, Olimpieri, Calvà, Giambarveri, Pierangelini, Santillo, Ximenez Fasanella. Coach Giorgi.",
+        it: "Primavera 2 gior. 6, 24 ott 2026, casa, Perugia 5–0 Frosinone (tabellino Mondoprimavera + comunicato societario; numeri confermati). 4-3-3: Piccini 12; Bisonni 2, Peruzzi 5, Cesarini 6, Ragni 3; Malfatti 4; Ciani 11, Dottori 10, Merico 7; Iachini 9, Perugini 8. Gol: Dottori 37' (rig.), Agnissan 70', 75', 83', 90'+2. Sub: Vanni per Dottori 64′, Agnissan per Iachini 64′, Di Salvatore per Ragni 77′, Raffaelli per Merico 77′, Bellali per Perugini 84′. Panchina non usata: Strappini, Olimpieri, Calvà, Giambarveri, Pierangelini, Santillo, Ximenez Fasanella. All. Giorgi.",
       },
     },
     {
@@ -2010,8 +2010,8 @@ if (perugia) {
       system: '4-3-3',
       players: vsPalermo,
       notes: {
-        en: "Primavera 2 MD5, 17 Oct 2026, away, Palermo 1–0 Perugia (Palermo FC official line-ups; subs from club tabellino). 4-3-3: Strappini 1; Giambarveri 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Olimpieri 11, Vanni 10, Merico 7; Agnissan 9, Perugini 8. Goal: Bennardo (PA) 9′ pt. Subs: Iachini 13 for Olimpieri 12′ st (57′), Raffaelli 20 for Giambarveri 25′ st (70′), Pierangelini 16 for Merico 25′ st, Bellali 14 for Agnissan 34′ st (79′), Ximenez 17 for Vanni 34′ st. Bench unused: Piccini, Ragni, Ciarapica, Santillo. Coach Giorgi.",
-        it: "Primavera 2 gior. 5, 17 ott 2026, trasferta, Palermo 1–0 Perugia (formazioni ufficiali Palermo FC; cambi dal tabellino societario). 4-3-3: Strappini 1; Giambarveri 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Olimpieri 11, Vanni 10, Merico 7; Agnissan 9, Perugini 8. Gol: Bennardo (PA) 9′ pt. Sub: Iachini 13 per Olimpieri 12′ st (57′), Raffaelli 20 per Giambarveri 25′ st (70′), Pierangelini 16 per Merico 25′ st, Bellali 14 per Agnissan 34′ st (79′), Ximenez 17 per Vanni 34′ st. Panchina non usata: Piccini, Ragni, Ciarapica, Santillo. All. Giorgi.",
+        en: "Primavera 2 MD5, 17 Oct 2026, away, Palermo 1–0 Perugia (Palermo FC official line-ups; subs from club tabellino). 4-3-3: Strappini 1; Giambarveri 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Olimpieri 11, Vanni 10, Merico 7; Agnissan 9, Perugini 8. Goal: Bennardo (PA) 9′ pt. Subs: Iachini for Olimpieri 57′, Raffaelli for Giambarveri 70′, Pierangelini for Merico 70′, Bellali for Agnissan 79′, Ximenez for Vanni 79′. Bench unused: Piccini, Ragni, Ciarapica, Santillo. Coach Giorgi.",
+        it: "Primavera 2 gior. 5, 17 ott 2026, trasferta, Palermo 1–0 Perugia (formazioni ufficiali Palermo FC; cambi dal tabellino societario). 4-3-3: Strappini 1; Giambarveri 2, Peruzzi 5, Cesarini 6, Di Salvatore 3; Malfatti 4; Olimpieri 11, Vanni 10, Merico 7; Agnissan 9, Perugini 8. Gol: Bennardo (PA) 9′ pt. Sub: Iachini per Olimpieri 57′, Raffaelli per Giambarveri 70′, Pierangelini per Merico 70′, Bellali per Agnissan 79′, Ximenez per Vanni 79′. Panchina non usata: Piccini, Ragni, Ciarapica, Santillo. All. Giorgi.",
       },
     },
   ];
@@ -2035,7 +2035,7 @@ if (perugia) {
       { role: 'ST', top: '84%', left: '50%', players: [{ name: 'Agnissan', starts: 2 }, { name: 'Iachini', starts: 2 }] },
     ],
   };
-  /** Most sub appearances across Pisa + Frosinone. */
+  /** Most sub appearances across last-4 XIs (Pescara, Benevento, Frosinone, Palermo). */
   perugia.substitutes = [
     { name: 'Raffaelli' },
     { name: 'Agnissan' },
@@ -2044,39 +2044,39 @@ if (perugia) {
     { name: 'Vanni' },
     { name: 'Ximenez' },
     { name: 'Giambarveri' },
-    { name: 'Calva' },
+    { name: 'Calvà' },
     { name: 'Pierangelini' },
   ];
   perugia.squad = [
     { number: 1, name: 'Strappini', position: 'GK', isGk: true, birthYear: 2008 },
-    { number: 2, name: 'Buonafede', position: 'RB', birthYear: 2008 },
+    { number: 2, name: 'Buonafede', position: 'RB', birthYear: 2008, heightCm: 180, preferredFoot: 'Destro' },
     { number: 3, name: 'Bevanati', position: 'LB', birthYear: 2008 },
-    { number: 4, name: 'Malfatti', position: 'CDM', birthYear: 2008 },
-    { number: 5, name: 'Peruzzi', position: 'CB', birthYear: 2008 },
-    { number: 6, name: 'Cesarini', position: 'CB', birthYear: 2008 },
-    { number: 7, name: 'Merico', position: 'RW', birthYear: 2008 },
-    { number: 8, name: 'Perugini', position: 'CM', birthYear: 2008 },
+    { number: 4, name: 'Malfatti', position: 'CDM', birthYear: 2008, preferredFoot: 'Destro' },
+    { number: 5, name: 'Peruzzi', position: 'RCB', birthYear: 2008, preferredFoot: 'Sinistro' },
+    { number: 6, name: 'Cesarini', position: 'LCB', birthYear: 2008 },
+    { number: 7, name: 'Merico', position: 'LW', birthYear: 2008, heightCm: 171, preferredFoot: 'Destro' },
+    { number: 8, name: 'Perugini', position: 'RCM', birthYear: 2008 },
     { number: 9, name: 'Sheji', position: 'ST', birthYear: 2008 },
-    { number: 10, name: 'Vanni', position: 'CM', birthYear: 2008 },
-    { number: 11, name: 'Ciani', position: 'LW', birthYear: 2008 },
+    { number: 10, name: 'Vanni', position: 'LCM', birthYear: 2008, heightCm: 176, preferredFoot: 'Sinistro' },
+    { number: 11, name: 'Ciani', position: 'RW', birthYear: 2008, heightCm: 187, preferredFoot: 'Sinistro' },
     { number: 12, name: 'Piccini', position: 'GK', isGk: true, birthYear: 2009 },
-    { number: 13, name: 'Ragni', position: 'LB', birthYear: 2009 },
-    { number: 14, name: 'Olimpieri', birthYear: 2009 },
-    { number: 15, name: 'Pierangelini', birthYear: 2009 },
-    { number: 16, name: 'Iachini', position: 'ST', birthYear: 2009 },
-    { number: 17, name: 'Giambarveri', birthYear: 2008 },
-    { number: 18, name: 'Ximenez', birthYear: 2008 },
-    { number: 19, name: 'Raffaelli', birthYear: 2009 },
-    { number: 20, name: 'Calva', birthYear: 2009 },
-    { number: 21, name: 'Di Salvatore', birthYear: 2008 },
+    { number: 13, name: 'Ragni', position: 'LB', birthYear: 2009, preferredFoot: 'Destro' },
+    { number: 14, name: 'Olimpieri', position: 'RW', birthYear: 2009, preferredFoot: 'Destro' },
+    { number: 15, name: 'Pierangelini', position: 'CM', birthYear: 2009 },
+    { number: 16, name: 'Iachini', position: 'ST', birthYear: 2009, preferredFoot: 'Destro' },
+    { number: 17, name: 'Giambarveri', position: 'RB', birthYear: 2008, heightCm: 186, preferredFoot: 'Destro' },
+    { number: 18, name: 'Rafael Ximenez Fasanella', position: 'LCM', birthYear: 2008 },
+    { number: 19, name: 'Raffaelli', position: 'LW', birthYear: 2009, preferredFoot: 'Destro' },
+    { number: 20, name: 'Calvà', position: 'ST', birthYear: 2009, heightCm: 182, preferredFoot: 'Sinistro' },
+    { number: 21, name: 'Di Salvatore', position: 'LB', birthYear: 2008 },
     { number: 22, name: 'Organai', position: 'GK', isGk: true, birthYear: 2010 },
+    { name: 'Cataldi', position: 'GK', isGk: true, birthYear: 2009 },
     { number: 23, name: 'Ciarapica', birthYear: 2009 },
-    { name: 'Bisonni', position: 'RB', birthYear: 2010 },
-    { name: 'Dottori', position: 'LCM' },
-    { name: 'Agnissan' },
-    { name: 'Bellali' },
-    { name: 'Santillo' },
-    { name: 'Fasanella' },
+    { name: 'Bisonni', position: 'RB', birthYear: 2010, heightCm: 178, preferredFoot: 'Destro' },
+    { name: 'Dottori', position: 'LCM', birthYear: 2008 },
+    { name: 'Agnissan', position: 'ST', birthYear: 2008, heightCm: 177, preferredFoot: 'Destro' },
+    { name: 'Bellali', position: 'LCM', birthYear: 2008, heightCm: 172, preferredFoot: 'Sinistro' },
+    { name: 'Santillo', birthYear: 2009, heightCm: 193 },
   ];
 }
 
