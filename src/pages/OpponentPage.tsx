@@ -1,6 +1,7 @@
 import { computeMostSubs, withSquadRoles } from '../utils/mostSubs';
 import { localizePdfPosition } from '../i18n/positions';
 import { parseSubs } from '../utils/parseSubs';
+import { applyPrimavera2PitchNumbers } from '../utils/primavera2Shirts';
 import SetPiecesPanel from '../components/SetPiecesPanel';
 import { useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
@@ -21,6 +22,7 @@ import {
   getOpponentBySlug,
   getOurFixturesVsOpponent,
   isNapoliHomeVsOpponent,
+  isPrimavera2TeamId,
   oppositionClipSectionLabel,
   formationSystemsFor,
   placeholderPlayersForSystem,
@@ -98,7 +100,9 @@ export default function OpponentPage() {
           teamId: `${opponent.id}-${f.id}`,
           label: f.label,
           system: f.system,
-          players: f.players,
+          players: isPrimavera2TeamId(opponent.id)
+            ? applyPrimavera2PitchNumbers(f.players)
+            : f.players,
           subs: parseSubs(typeof f.notes === 'string' ? f.notes : f.notes?.en, f.players, opponent.squad),
         }))
       : systems.map((system, index) => {
@@ -108,9 +112,14 @@ export default function OpponentPage() {
             teamId: `${opponent.id}-${system}`,
             label: opponent.name,
             system,
-            players: useScoutedStarters
-              ? opponent.starters
-              : placeholderPlayersForSystem(system, opponent.id),
+            players: (() => {
+              const raw = useScoutedStarters
+                ? opponent.starters
+                : placeholderPlayersForSystem(system, opponent.id);
+              return isPrimavera2TeamId(opponent.id)
+                ? applyPrimavera2PitchNumbers(raw)
+                : raw;
+            })(),
           };
         });
   const firstLeg = selectedMatch?.firstLegSlug
@@ -276,6 +285,7 @@ export default function OpponentPage() {
                 depth={opponent.squadDepth}
                 teamId={opponent.id}
                 teamName={L(opponent.name)}
+                showPositionShirts={isPrimavera2TeamId(opponent.id)}
               />
             ) : null}
             <div className="section-title">{t('oppositionMostSubbedOn')}</div>

@@ -10,6 +10,7 @@ import {
 import type { Locale } from '../i18n/translations';
 import { withGoalkeeperInSystem } from './formationSystem';
 import type { MostSubRow } from './mostSubs';
+import { shirtNumberForPrimavera2Role } from './primavera2Shirts';
 import { splitSquadListName } from './playerNameFormat';
 import blankPitch from '../assets/blank-pitch.png?inline';
 
@@ -93,23 +94,31 @@ function renderDepthSection(
   depth: OppositionSquadDepth,
   teamId: string,
   labels: OppositionSquadPdfLabels,
-  squad: OppositionSquadPlayer[]
+  squad: OppositionSquadPlayer[],
+  positionShirtsOnDepth = false
 ): string {
   const colors = playerDotColor(teamId);
   const slots = depth.slots
     .map((slot) => {
       const isGk = slot.role === 'GK';
+      const slotNumber = positionShirtsOnDepth
+        ? shirtNumberForPrimavera2Role(slot.role)
+        : null;
       const names = slot.players
         .map((p, index) => {
-          const number = shirtNumberForDepthName(p.name, squad);
+          const number = positionShirtsOnDepth
+            ? null
+            : shirtNumberForDepthName(p.name, squad);
           const label = formatDepthPlayerLabel(p.name, p.starts, number);
           return `<div class="depth-name ${index === 0 ? 'primary' : ''}">
               <span class="depth-label">${esc(label)}</span>
             </div>`;
         })
         .join('');
+      const dotNum =
+        positionShirtsOnDepth && slotNumber != null ? esc(String(slotNumber)) : '';
       return `<div class="depth-slot ${isGk ? 'is-gk' : ''}" style="top:${esc(slot.top)};left:${esc(slot.left)}">
-        <div class="depth-dot" title="${esc(slot.role)}"></div>
+        <div class="depth-dot" title="${esc(slot.role)}">${dotNum}</div>
         <div class="depth-stack">${names}</div>
       </div>`;
     })
@@ -143,6 +152,12 @@ function renderDepthSection(
       border: 2px solid ${colors.border};
       color: ${colors.text};
       flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8pt;
+      font-weight: 700;
+      line-height: 1;
     }
   </style>`;
 }
@@ -215,6 +230,10 @@ export interface OppositionSquadPdfOptions {
   teamId?: string;
   locale?: Locale;
   mostSubs?: MostSubRow[];
+  /** Primavera 2: omit the shirt-number column on squad list tables. */
+  hideShirtNumbers?: boolean;
+  /** Primavera 2: number depth-pitch tokens by position map, not squad shirts. */
+  positionShirtsOnDepth?: boolean;
 }
 
 /** Opens a print-ready squad sheet (browser “Save as PDF”). */
@@ -249,8 +268,11 @@ export function buildOppositionSquadPdfHtml(
   ).map((p) => {
       const height =
         p.heightCm != null ? `${p.heightCm} ${labels.heightUnit}` : '—';
+      const numCell = options?.hideShirtNumbers
+        ? ''
+        : `<td class="num">${p.number != null ? esc(String(p.number)) : '—'}</td>`;
       return `<tr>
-        <td class="num">${p.number != null ? esc(String(p.number)) : '—'}</td>
+        ${numCell}
         <td class="name">${squadListNameHtml(p.name, players, options?.teamId ?? '')}</td>
         <td class="role">${esc(localizePdfPosition(p.position, locale))}</td>
         <td class="meta">${esc(height)}</td>
@@ -269,9 +291,10 @@ export function buildOppositionSquadPdfHtml(
   const half = Math.ceil(rowList.length / 2);
   const rowsLeft = rowList.slice(0, half).join('\n');
   const rowsRight = rowList.slice(half).join('\n');
+  const hideShirtNumbers = options?.hideShirtNumbers === true;
   const theadHtml = `<thead>
         <tr>
-          <th>${esc(labels.colNumber)}</th>
+          ${hideShirtNumbers ? '' : `<th>${esc(labels.colNumber)}</th>`}
           <th>${esc(labels.colPlayer)}</th>
           <th>${esc(labels.colRole)}</th>
           <th>${esc(labels.colHeight)}</th>
@@ -279,10 +302,15 @@ export function buildOppositionSquadPdfHtml(
         </tr>
       </thead>`;
   const useColumns = Boolean(options?.depth && options.teamId) && squadDensity === 'two-col';
-  const squadClass =
+  const squadClass = [
     options?.depth && options.teamId && squadDensity !== 'normal'
-      ? ` squad-${squadDensity}`
-      : '';
+      ? `squad-${squadDensity}`
+      : '',
+    hideShirtNumbers ? 'squad-no-num' : '',
+  ]
+    .filter(Boolean)
+    .map((c) => ` ${c}`)
+    .join('');
 
   const dateLine = new Date().toLocaleDateString(
     locale === 'it' ? 'it-IT' : 'en-GB',
@@ -295,7 +323,13 @@ export function buildOppositionSquadPdfHtml(
 
   const depthHtml =
     options?.depth && options.teamId
-      ? renderDepthSection(options.depth, options.teamId, labels, players)
+      ? renderDepthSection(
+          options.depth,
+          options.teamId,
+          labels,
+          players,
+          options.positionShirtsOnDepth === true
+        )
       : '';
 
   const subsHtml = renderSubsSection(
@@ -576,6 +610,15 @@ export function buildOppositionSquadPdfHtml(
     .squad-two-col th:nth-child(4), .squad-two-col td:nth-child(4) { width: 18%; }
     .squad-two-col th:nth-child(5), .squad-two-col td:nth-child(5) { width: 18%; }
     .squad-two-col .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    /* Primavera 2: no shirt-number column; Ruolo stays centred. */
+    .squad-no-num th:nth-child(1), .squad-no-num td:nth-child(1) { width: 32%; }
+    .squad-no-num th:nth-child(2), .squad-no-num td:nth-child(2) { width: 34%; text-align: center; }
+    .squad-no-num th:nth-child(3), .squad-no-num td:nth-child(3) { width: 17%; text-align: left; }
+    .squad-no-num th:nth-child(4), .squad-no-num td:nth-child(4) { width: 17%; text-align: left; }
+    .squad-two-col.squad-no-num th:nth-child(1), .squad-two-col.squad-no-num td:nth-child(1) { width: 40%; }
+    .squad-two-col.squad-no-num th:nth-child(2), .squad-two-col.squad-no-num td:nth-child(2) { width: 24%; text-align: center; }
+    .squad-two-col.squad-no-num th:nth-child(3), .squad-two-col.squad-no-num td:nth-child(3) { width: 18%; text-align: left; }
+    .squad-two-col.squad-no-num th:nth-child(4), .squad-two-col.squad-no-num td:nth-child(4) { width: 18%; text-align: left; }
     @media print {
       body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
       .page-1, .depth-section { break-inside: avoid; page-break-inside: avoid; }

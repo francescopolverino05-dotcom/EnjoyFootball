@@ -14,6 +14,7 @@ import {
   type Locale,
 } from '../i18n/translations';
 import { openOppositionSquadPdf } from '../utils/oppositionSquadPdf';
+import { isPrimavera2TeamId } from '../data/opposition';
 import type { MostSubRow } from '../utils/mostSubs';
 
 interface OppositionSquadTableProps {
@@ -66,6 +67,7 @@ export default function OppositionSquadTable({
   mostSubs,
 }: OppositionSquadTableProps) {
   const { t, locale } = useLanguage();
+  const hideShirtNumbers = Boolean(teamId && isPrimavera2TeamId(teamId));
   const ordered = sortOppositionSquadByDepth(players);
 
   const downloadPdf = (pdfLocale: Locale) => {
@@ -77,6 +79,8 @@ export default function OppositionSquadTable({
         locale: pdfLocale,
         ...(depth && teamId ? { depth, teamId } : {}),
         mostSubs,
+        hideShirtNumbers: Boolean(teamId && isPrimavera2TeamId(teamId)),
+        positionShirtsOnDepth: Boolean(teamId && isPrimavera2TeamId(teamId)),
       }
     );
   };
@@ -102,10 +106,12 @@ export default function OppositionSquadTable({
           </button>
         </div>
       </div>
-      <table className="opposition-squad-table">
+      <table className={`opposition-squad-table${hideShirtNumbers ? ' no-shirt-numbers' : ''}`}>
         <thead>
           <tr>
-            <th scope="col">{t('oppositionSquadColNumber')}</th>
+            {hideShirtNumbers ? null : (
+              <th scope="col">{t('oppositionSquadColNumber')}</th>
+            )}
             <th scope="col">{t('oppositionSquadColPlayer')}</th>
             <th scope="col">{t('oppositionSquadColRole')}</th>
             <th scope="col">{t('oppositionSquadColHeight')}</th>
@@ -115,9 +121,11 @@ export default function OppositionSquadTable({
         <tbody>
           {ordered.map((p) => (
             <tr key={`squad-${p.number ?? 'x'}-${p.name}`}>
-              <td className="opposition-squad-num">
-                {p.number != null ? p.number : '—'}
-              </td>
+              {hideShirtNumbers ? null : (
+                <td className="opposition-squad-num">
+                  {p.number != null ? p.number : '—'}
+                </td>
+              )}
               <td className="opposition-squad-name">{p.name}</td>
               <td>
                 {teamId === 'porto'

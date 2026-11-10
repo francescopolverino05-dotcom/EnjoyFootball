@@ -15,7 +15,8 @@ import {
   mapLeagueGoalkeepers,
   mapLeagueTeamStats,
 } from '../data/leagueMatchStatsMap';
-import { getOpponentBySlug } from '../data/opposition';
+import { getOpponentBySlug, isPrimavera2TeamId } from '../data/opposition';
+import { applyPrimavera2PitchNumbers } from '../utils/primavera2Shirts';
 import {
   getCoppaItaliaStandings,
   getPrimavera2Standings,
@@ -146,7 +147,7 @@ function buildMatchView(pack: NonNullable<ReturnType<typeof getLeagueMatchStats>
       teamId: `${pack.home.teamId}-xi`,
       label: { en: pack.home.name, it: pack.home.name },
       system: homeScout.system,
-      players: homeScout.players.map((p) => ({
+      players: (isPrimavera2TeamId(pack.home.teamId) ? applyPrimavera2PitchNumbers(homeScout.players) : homeScout.players).map((p) => ({
         ...p,
         teamId: pack.home.teamId,
       })),
@@ -161,7 +162,7 @@ function buildMatchView(pack: NonNullable<ReturnType<typeof getLeagueMatchStats>
       teamId: `${pack.away.teamId}-xi`,
       label: { en: pack.away.name, it: pack.away.name },
       system: awayScout.system,
-      players: awayScout.players.map((p) => ({
+      players: (isPrimavera2TeamId(pack.away.teamId) ? applyPrimavera2PitchNumbers(awayScout.players) : awayScout.players).map((p) => ({
         ...p,
         teamId: pack.away.teamId,
       })),

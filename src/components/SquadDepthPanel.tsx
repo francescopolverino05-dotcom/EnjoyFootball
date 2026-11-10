@@ -1,18 +1,22 @@
 import { useLanguage } from '../i18n/LanguageContext';
 import type { OppositionSquadDepth } from '../types/opposition';
 import { withGoalkeeperInSystem } from '../utils/formationSystem';
+import { shirtNumberForPrimavera2Role } from '../utils/primavera2Shirts';
 
 interface SquadDepthPanelProps {
   depth: OppositionSquadDepth;
   teamId: string;
   /** Shown as “{team} Squad” on the pitch card. */
   teamName: string;
+  /** Primavera 2: show Francesco's position-map number on the slot token. */
+  showPositionShirts?: boolean;
 }
 
 export default function SquadDepthPanel({
   depth,
   teamId,
   teamName,
+  showPositionShirts = false,
 }: SquadDepthPanelProps) {
   const { t, L, locale } = useLanguage();
   const pitchTitle =
@@ -43,7 +47,11 @@ export default function SquadDepthPanel({
               <div
                 className={`pitch-player ${slot.role === 'GK' ? 'gk' : teamId}`}
                 title={slot.role}
-              />
+              >
+                {showPositionShirts
+                  ? (shirtNumberForPrimavera2Role(slot.role) ?? '')
+                  : ''}
+              </div>
               <div className="squad-depth-stack">
                 {slot.players.map((p, index) => (
                   <div

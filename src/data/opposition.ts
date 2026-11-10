@@ -1036,21 +1036,22 @@ if (bari) {
     {
       number: nums.gk,
       name: names.gk,
+      role: 'GK',
       teamId: 'bari',
       isGk: true,
       top: '8%',
       left: '50%',
     },
-    { number: nums.rb, name: names.rb, teamId: 'bari', top: '22%', left: '18%' },
-    { number: nums.rcb, name: names.rcb, teamId: 'bari', top: '20%', left: '38%' },
-    { number: nums.lcb, name: names.lcb, teamId: 'bari', top: '20%', left: '62%' },
-    { number: nums.lb, name: names.lb, teamId: 'bari', top: '22%', left: '82%' },
-    { number: nums.rcm, name: names.rcm, teamId: 'bari', top: '42%', left: '28%' },
-    { number: nums.cdm, name: names.cdm, teamId: 'bari', top: '38%', left: '50%' },
-    { number: nums.lcm, name: names.lcm, teamId: 'bari', top: '42%', left: '72%' },
-    { number: nums.cam, name: names.cam, teamId: 'bari', top: '58%', left: '50%' },
-    { number: nums.rst, name: names.rst, teamId: 'bari', top: '75%', left: '38%' },
-    { number: nums.lst, name: names.lst, teamId: 'bari', top: '75%', left: '62%' },
+    { number: nums.rb, name: names.rb, role: 'RB', teamId: 'bari', top: '22%', left: '18%' },
+    { number: nums.rcb, name: names.rcb, role: 'RCB', teamId: 'bari', top: '20%', left: '38%' },
+    { number: nums.lcb, name: names.lcb, role: 'LCB', teamId: 'bari', top: '20%', left: '62%' },
+    { number: nums.lb, name: names.lb, role: 'LB', teamId: 'bari', top: '22%', left: '82%' },
+    { number: nums.rcm, name: names.rcm, role: 'RCM', teamId: 'bari', top: '42%', left: '28%' },
+    { number: nums.cdm, name: names.cdm, role: 'CDM', teamId: 'bari', top: '38%', left: '50%' },
+    { number: nums.lcm, name: names.lcm, role: 'LCM', teamId: 'bari', top: '42%', left: '72%' },
+    { number: nums.cam, name: names.cam, role: 'CAM', teamId: 'bari', top: '58%', left: '50%' },
+    { number: nums.rst, name: names.rst, role: 'RST', teamId: 'bari', top: '75%', left: '38%' },
+    { number: nums.lst, name: names.lst, role: 'LST', teamId: 'bari', top: '75%', left: '62%' },
   ];
 
   const vsSalernitana = bari4312({
@@ -1475,21 +1476,22 @@ if (ascoli) {
     {
       number: 1,
       name: 'Angeletti',
+      role: 'GK',
       teamId: 'ascoli',
       isGk: true,
       top: '8%',
       left: '50%',
     },
-    { number: 2, name: 'Zampardi', teamId: 'ascoli', top: '22%', left: '18%' },
-    { number: 5, name: 'Tocchi', teamId: 'ascoli', top: '20%', left: '38%' },
-    { number: 6, name: 'Curzi', teamId: 'ascoli', top: '20%', left: '62%' },
-    { number: 3, name: 'Bruni', teamId: 'ascoli', top: '22%', left: '82%' },
-    { number: 4, name: 'Russo', teamId: 'ascoli', top: '38%', left: '50%' },
-    { number: 10, name: 'Angelino', teamId: 'ascoli', top: '50%', left: '32%' },
-    { number: 8, name: 'Dente', teamId: 'ascoli', top: '50%', left: '68%' },
-    { number: 7, name: 'Suzzi', teamId: 'ascoli', top: '68%', left: '18%' },
-    { number: 9, name: 'Raimondo', teamId: 'ascoli', top: '78%', left: '50%' },
-    { number: 11, name: 'Aloisi', teamId: 'ascoli', top: '68%', left: '82%' },
+    { number: 2, name: 'Zampardi', role: 'RB', teamId: 'ascoli', top: '22%', left: '18%' },
+    { number: 5, name: 'Tocchi', role: 'RCB', teamId: 'ascoli', top: '20%', left: '38%' },
+    { number: 6, name: 'Curzi', role: 'LCB', teamId: 'ascoli', top: '20%', left: '62%' },
+    { number: 3, name: 'Bruni', role: 'LB', teamId: 'ascoli', top: '22%', left: '82%' },
+    { number: 4, name: 'Russo', role: 'CDM', teamId: 'ascoli', top: '38%', left: '50%' },
+    { number: 10, name: 'Angelino', role: 'RCM', teamId: 'ascoli', top: '50%', left: '32%' },
+    { number: 8, name: 'Dente', role: 'LCM', teamId: 'ascoli', top: '50%', left: '68%' },
+    { number: 7, name: 'Suzzi', role: 'RW', teamId: 'ascoli', top: '68%', left: '18%' },
+    { number: 9, name: 'Raimondo', role: 'ST', teamId: 'ascoli', top: '78%', left: '50%' },
+    { number: 11, name: 'Aloisi', role: 'LW', teamId: 'ascoli', top: '68%', left: '82%' },
   ];
   ascoli.substitutes = [
     { number: 12, name: 'Ferrazzoli', position: 'GK', isGk: true },
@@ -1554,17 +1556,17 @@ function pisa442(names: {
 }): PitchPlayer[] {
   const teamId = 'pisa';
   return [
-    { number: 0, name: names.gk, teamId, isGk: true, top: '8%', left: '50%' },
-    { number: 0, name: names.lb, teamId, top: '22%', left: '82%' },
-    { number: 0, name: names.lcb, teamId, top: '20%', left: '62%' },
-    { number: 0, name: names.rcb, teamId, top: '20%', left: '38%' },
-    { number: 0, name: names.rb, teamId, top: '22%', left: '18%' },
-    { number: 0, name: names.lm, teamId, top: '48%', left: '82%' },
-    { number: 0, name: names.lcm, teamId, top: '45%', left: '62%' },
-    { number: 0, name: names.rcm, teamId, top: '45%', left: '38%' },
-    { number: 0, name: names.rm, teamId, top: '48%', left: '18%' },
-    { number: 0, name: names.lst, teamId, top: '75%', left: '62%' },
-    { number: 0, name: names.rst, teamId, top: '75%', left: '38%' },
+    { number: 0, name: names.gk, role: 'GK', teamId, isGk: true, top: '8%', left: '50%' },
+    { number: 0, name: names.lb, role: 'LB', teamId, top: '22%', left: '82%' },
+    { number: 0, name: names.lcb, role: 'LCB', teamId, top: '20%', left: '62%' },
+    { number: 0, name: names.rcb, role: 'RCB', teamId, top: '20%', left: '38%' },
+    { number: 0, name: names.rb, role: 'RB', teamId, top: '22%', left: '18%' },
+    { number: 0, name: names.lm, role: 'LM', teamId, top: '48%', left: '82%' },
+    { number: 0, name: names.lcm, role: 'LCM', teamId, top: '45%', left: '62%' },
+    { number: 0, name: names.rcm, role: 'RCM', teamId, top: '45%', left: '38%' },
+    { number: 0, name: names.rm, role: 'RM', teamId, top: '48%', left: '18%' },
+    { number: 0, name: names.lst, role: 'LST', teamId, top: '75%', left: '62%' },
+    { number: 0, name: names.rst, role: 'RST', teamId, top: '75%', left: '38%' },
   ];
 }
 
@@ -2018,8 +2020,8 @@ if (perugia) {
   perugia.squadDepth = {
     system: '1-4-3-3',
     note: {
-      en: 'Primavera 2 MD5–MD8 (Palermo, Frosinone, Benevento, Pescara) mapped onto 4-3-3 (1/12 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 CDM, 10 LCM, 8 RCM, 11 RW, 9 ST, 7 LW).',
-      it: 'Primavera 2 gior. 5–8 (Palermo, Frosinone, Benevento, Pescara) mappate sul 4-3-3 (1/12 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 CDM, 10 LCM, 8 RCM, 11 RW, 9 ST, 7 LW).',
+      en: 'Primavera 2 MD5–MD8 (Palermo, Frosinone, Benevento, Pescara) mapped onto 4-3-3 (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW).',
+      it: 'Primavera 2 gior. 5–8 (Palermo, Frosinone, Benevento, Pescara) mappate sul 4-3-3 (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW).',
     },
     slots: [
       { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Strappini', starts: 3 }, { name: 'Piccini', starts: 1 }] },
@@ -2876,17 +2878,17 @@ if (spezia) {
     st: string;
     lw: string;
   }): PitchPlayer[] => [
-    { number: 1, name: names.gk, teamId: 'spezia', isGk: true, top: '8%', left: '50%' },
-    { number: 2, name: names.rb, teamId: 'spezia', top: '22%', left: '18%' },
-    { number: 6, name: names.rcb, teamId: 'spezia', top: '20%', left: '38%' },
-    { number: 5, name: names.lcb, teamId: 'spezia', top: '20%', left: '62%' },
-    { number: 3, name: names.lb, teamId: 'spezia', top: '22%', left: '82%' },
-    { number: 4, name: names.cdm, teamId: 'spezia', top: '38%', left: '50%' },
-    { number: 8, name: names.rcm, teamId: 'spezia', top: '50%', left: '32%' },
-    { number: 10, name: names.lcm, teamId: 'spezia', top: '50%', left: '68%' },
-    { number: 7, name: names.rw, teamId: 'spezia', top: '68%', left: '18%' },
-    { number: 9, name: names.st, teamId: 'spezia', top: '78%', left: '50%' },
-    { number: 11, name: names.lw, teamId: 'spezia', top: '68%', left: '82%' },
+    { number: 1, name: names.gk, role: 'GK', teamId: 'spezia', isGk: true, top: '8%', left: '50%' },
+    { number: 2, name: names.rb, role: 'RB', teamId: 'spezia', top: '22%', left: '18%' },
+    { number: 6, name: names.rcb, role: 'RCB', teamId: 'spezia', top: '20%', left: '38%' },
+    { number: 5, name: names.lcb, role: 'LCB', teamId: 'spezia', top: '20%', left: '62%' },
+    { number: 3, name: names.lb, role: 'LB', teamId: 'spezia', top: '22%', left: '82%' },
+    { number: 4, name: names.cdm, role: 'CDM', teamId: 'spezia', top: '38%', left: '50%' },
+    { number: 8, name: names.rcm, role: 'RCM', teamId: 'spezia', top: '50%', left: '32%' },
+    { number: 10, name: names.lcm, role: 'LCM', teamId: 'spezia', top: '50%', left: '68%' },
+    { number: 7, name: names.rw, role: 'RW', teamId: 'spezia', top: '68%', left: '18%' },
+    { number: 9, name: names.st, role: 'ST', teamId: 'spezia', top: '78%', left: '50%' },
+    { number: 11, name: names.lw, role: 'LW', teamId: 'spezia', top: '68%', left: '82%' },
   ];
 
   const vsAscoli = spezia433({
@@ -3055,8 +3057,8 @@ if (spezia) {
   spezia.squadDepth = {
     system: '1-4-3-3',
     note: {
-      en: 'Scouted 4-3-3 XIs so far (Ascoli MD1, Palermo MD2, Pisa MD3, Monopoli MD4, Latina MD5, Napoli MD6) mapped by shirt onto 4-3-3: 4 = CDM, 8 = RCM, 10 = LCM. Order = most starts in that slot. The 28 Oct Coppa XI (5-3-2) is not counted.',
-      it: 'Formazioni 4-3-3 scoutate finora (Ascoli gior. 1, Palermo gior. 2, Pisa gior. 3, Monopoli gior. 4, Latina gior. 5, Napoli gior. 6) mappate per numero sul 4-3-3: 4 = play, 8 = CC destro, 10 = CC sinistro. Ordine = più partite in quel ruolo. La formazione di Coppa del 28 ott (5-3-2) non è conteggiata.',
+      en: 'Scouted 4-3-3 XIs so far (Ascoli MD1, Palermo MD2, Pisa MD3, Monopoli MD4, Latina MD5, Napoli MD6) mapped onto 4-3-3 (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW). Order = most starts in that slot. The 28 Oct Coppa XI (5-3-2) is not counted.',
+      it: 'Formazioni 4-3-3 scoutate finora (Ascoli gior. 1, Palermo gior. 2, Pisa gior. 3, Monopoli gior. 4, Latina gior. 5, Napoli gior. 6) mappate sul 4-3-3 (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 CDM, 8 LCM, 10 RCM, 11 RW, 9 ST, 7 LW). Ordine = più partite in quel ruolo. La formazione di Coppa del 28 ott (5-3-2) non è conteggiata.',
     },
     slots: [
       { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Doretti', starts: 3 }, { name: 'Guidi', starts: 2 }, { name: 'Azzoni', starts: 1 }] },
@@ -3480,8 +3482,8 @@ if (frosinone) {
   frosinone.squadDepth = {
     system: '1-4-2-3-1',
     note: {
-      en: 'Primavera 2 MD5–MD7 (Cosenza, Perugia, Latina) mapped onto 4-2-3-1 by shirt (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 RCM, 8 LCM, 11 CAM, 9 ST, 7 RW, 10 LW).',
-      it: 'Primavera 2 gior. 5–7 (Cosenza, Perugia, Latina) mappate sul 4-2-3-1 per maglia (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 4 RCM, 8 LCM, 11 CAM, 9 ST, 7 RW, 10 LW).',
+      en: 'Primavera 2 MD5–MD7 (Cosenza, Perugia, Latina) mapped onto 4-2-3-1 (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 8 LCM, 10 RCM, 7 LW, 11 RW, 9 ST; CAM unnumbered).',
+      it: 'Primavera 2 gior. 5–7 (Cosenza, Perugia, Latina) mappate sul 4-2-3-1 (1 GK, 2 RB, 5 RCB, 6 LCB, 3 LB, 8 LCM, 10 RCM, 7 LW, 11 RW, 9 ST; trequartista senza numero).',
     },
     slots: [
       { role: 'GK', top: '10%', left: '50%', players: [{ name: "Capanna", starts: 3 }] },
@@ -4837,6 +4839,12 @@ export function getOpponentsByCompetition(
   competitionId: OppositionCompetitionId
 ): OppositionOpponent[] {
   return getAllOpponents().filter((o) => o.competitions.includes(competitionId));
+}
+
+export function isPrimavera2TeamId(id: string): boolean {
+  return Boolean(
+    OPPONENTS.find((o) => o.id === id)?.competitions.includes('primavera2')
+  );
 }
 
 export function getOpponentBySlug(slug: string): OppositionOpponent | undefined {
