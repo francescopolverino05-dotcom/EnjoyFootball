@@ -4117,18 +4117,18 @@ attachReferencePack('monopoli', '2026-10-31_campionato-monopoli-vs-u19', [
 
 attachReferencePack('perugia', '2026-11-21_campionato-u19-vs-perugia', [
   {
-    id: 'perugia-ref-frosinone',
+    id: 'perugia-ref-monopoli',
     title: {
-      en: 'Perugia vs Frosinone 5–0',
-      it: 'Perugia vs Frosinone 5–0',
+      en: 'Perugia vs Monopoli 3–0',
+      it: 'Perugia vs Monopoli 3–0',
     },
     competition: {
-      en: 'Primavera 2 · Matchday 6',
-      it: 'Primavera 2 · Giornata 6',
+      en: 'Primavera 2 · Matchday 2',
+      it: 'Primavera 2 · Giornata 2',
     },
-    score: '5–0',
-    date: '2026-10-24',
-    videoFile: 'https://vimeo.com/1241220538/3af1ec3a3c',
+    score: '3–0',
+    date: '2026-09-12',
+    videoFile: 'https://vimeo.com/1245761277/79708c8f4a',
   },
   {
     id: 'perugia-ref-benevento',
@@ -4157,6 +4157,20 @@ attachReferencePack('perugia', '2026-11-21_campionato-u19-vs-perugia', [
     score: '3–2',
     date: '2026-11-07',
     videoFile: 'https://vimeo.com/1244934566/7695d42cc2',
+  },
+  {
+    id: 'perugia-ref-frosinone',
+    title: {
+      en: 'Perugia vs Frosinone 5–0',
+      it: 'Perugia vs Frosinone 5–0',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 6',
+      it: 'Primavera 2 · Giornata 6',
+    },
+    score: '5–0',
+    date: '2026-10-24',
+    videoFile: 'https://vimeo.com/1241220538/3af1ec3a3c',
   },
 ]);
 
