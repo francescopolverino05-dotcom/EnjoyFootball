@@ -2474,6 +2474,34 @@ if (bodo) {
   ];
 }
 
+/** Manchester City UEFA U19 — official UYL registered squad (it.uefa.com/…/2605445, 2026/27).
+ * Heights / preferred feet / specific positions / birth years: Transfermarkt kader plus/1, season 26/27.
+ * Official UEFA shirt numbers were not present in the fetched squad page (and TM lists “-”); omitted rather than invented.
+ */
+const manCity = OPPONENTS.find((o) => o.id === 'man-city');
+if (manCity) {
+  manCity.squad = [
+    { name: 'Ben Vickery', position: 'GK', isGk: true, birthYear: 2009, heightCm: 191, preferredFoot: 'Destro' },
+    { name: 'Max-Edgar Chabot', position: 'GK', isGk: true, birthYear: 2008, heightCm: 191, preferredFoot: 'Sinistro' },
+    { name: 'Kian Noble', position: 'CB', birthYear: 2007 },
+    { name: 'Kaden Braithwaite', position: 'CB', birthYear: 2008, heightCm: 194 },
+    { name: 'Leke Drake', position: 'CB', birthYear: 2007 },
+    { name: 'Freddie Lawrie', position: 'CB', birthYear: 2009, heightCm: 191, preferredFoot: 'Destro' },
+    { name: 'Dante Headley', position: 'RB', birthYear: 2008, heightCm: 179 },
+    { name: 'Marlow Barrett', position: 'CB', birthYear: 2009 },
+    { name: 'Harrison Miles', position: 'CM', birthYear: 2008, heightCm: 178 },
+    { name: 'Finlay Gorman', position: 'CAM', birthYear: 2008 },
+    { name: 'Xavier Parker', position: 'CAM', birthYear: 2010 },
+    { name: 'Kylan Midwood', position: 'ST', birthYear: 2008 },
+    { name: 'Dexter Oliver', position: 'CAM', birthYear: 2008 },
+    { name: 'Darren Motsi', position: 'CAM', birthYear: 2010 },
+    { name: 'Ryan McAidoo', position: 'RW', birthYear: 2008, heightCm: 174, preferredFoot: 'Sinistro' },
+    { name: 'Timeo Whisker', position: 'RW', birthYear: 2009 },
+    { name: 'Teddie Lamb', position: 'ST', birthYear: 2009 },
+    { name: 'Brooklyn Nfonkeu', position: 'RB', birthYear: 2007, preferredFoot: 'Destro' },
+  ];
+}
+
 /** Porto UEFA U19 — UEFA Youth League club squad (it.uefa.com/…/2605454). */
 const porto = OPPONENTS.find((o) => o.id === 'porto');
 if (porto) {
