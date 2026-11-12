@@ -2489,7 +2489,7 @@ if (manCity) {
     { name: 'Leke Drake', position: 'CB', birthYear: 2007, heightCm: 184, preferredFoot: 'Sinistro' },
     { name: 'Freddie Lawrie', position: 'CB', birthYear: 2009, heightCm: 191, preferredFoot: 'Destro' },
     { name: 'Dante Headley', position: 'RB', birthYear: 2008, heightCm: 179, preferredFoot: 'Destro' },
-    { name: 'Marlow Barrett', position: 'CB', birthYear: 2009 },
+    { name: 'Marlow Barrett', position: 'CB', birthYear: 2009, heightCm: 185, preferredFoot: 'Sinistro' },
     { name: 'Harrison Miles', position: 'CM', birthYear: 2008, heightCm: 178, preferredFoot: 'Sinistro' },
     { name: 'Finlay Gorman', position: 'CM', birthYear: 2008, heightCm: 174, preferredFoot: 'Sinistro' },
     { name: 'Xavier Parker', position: 'CAM', birthYear: 2010, heightCm: 183, preferredFoot: 'Destro' },
