@@ -128,7 +128,9 @@ export default function OpponentPage() {
   const reserveFourth =
     Boolean(firstLeg) && refSlotLimit >= OPPOSITION_MAX_REFERENCE_MATCHES;
   const refCap = refSlotLimit - (reserveFourth ? 1 : 0);
-  const refs = pack.referenceMatches.slice(0, refCap);
+  // Show every stored reference tape; the slot cap only fills empty placeholders,
+  // it must not hide later matches (e.g. City's Leipzig / Port Vale on a 3-slot UYL cap).
+  const refs = pack.referenceMatches;
   const emptySlots = Math.max(0, refCap - refs.length);
   const reports = pack.reportItems;
   const writtenReports = pack.writtenReports ?? [];
