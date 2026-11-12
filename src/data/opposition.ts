@@ -2474,8 +2474,9 @@ if (bodo) {
   ];
 }
 
-/** Manchester City UEFA U19 — official UYL registered squad (it.uefa.com/…/2605445, 2026/27).
- * Heights / preferred feet / specific positions / birth years: Transfermarkt kader plus/1, season 26/27.
+/** Manchester City UEFA U19 — official UYL registered squad (it.uefa.com/…/2605445, 2026/27)
+ * plus Francesco-confirmed players from Transfermarkt / Sofascore who are not on the UEFA list.
+ * Heights / preferred feet / specific positions / birth years: Transfermarkt kader plus/1, season 26/27, then Sofascore.
  * Official UEFA shirt numbers were not present in the fetched squad page (and TM lists “-”); omitted rather than invented.
  */
 const manCity = OPPONENTS.find((o) => o.id === 'man-city');
@@ -2499,6 +2500,17 @@ if (manCity) {
     { name: 'Timeo Whisker', position: 'RW', birthYear: 2009, preferredFoot: 'Sinistro' },
     { name: 'Teddie Lamb', position: 'ST', birthYear: 2009, heightCm: 187, preferredFoot: 'Destro' },
     { name: 'Brooklyn Nfonkeu', position: 'RB', birthYear: 2007, heightCm: 184, preferredFoot: 'Destro' },
+    { name: 'Max Hudson', position: 'GK', isGk: true, birthYear: 2007, heightCm: 191, preferredFoot: 'Destro' },
+    { name: 'Oliver Houlihan', position: 'LB', birthYear: 2010, preferredFoot: 'Sinistro' },
+    { name: 'Jake Wain', position: 'RB', birthYear: 2009, preferredFoot: 'Destro' },
+    { name: 'Matthew Henderson-Hall', position: 'RB', preferredFoot: 'Ambidestro' },
+    { name: 'Femi Fapetu', position: 'CDM', birthYear: 2007, preferredFoot: 'Destro' },
+    { name: 'Floyd Samba', position: 'CM', birthYear: 2009, heightCm: 183, preferredFoot: 'Destro' },
+    { name: 'Theo Carrington', position: 'CM', birthYear: 2010, preferredFoot: 'Destro' },
+    { name: 'Mishel Nduka', position: 'CAM', birthYear: 2010, preferredFoot: 'Destro' },
+    { name: 'Christian Dunbar-McDonald', position: 'LW', birthYear: 2007, heightCm: 178, preferredFoot: 'Destro' },
+    { name: 'Tyrone Samba', position: 'LW', birthYear: 2007, heightCm: 183, preferredFoot: 'Destro' },
+    { name: 'Javahn Woode', position: 'LW', birthYear: 2010, heightCm: 176, preferredFoot: 'Destro' },
   ];
 }
 

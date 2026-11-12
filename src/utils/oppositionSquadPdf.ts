@@ -301,11 +301,11 @@ export function buildOppositionSquadPdfHtml(
           <th>${esc(labels.colFoot)}</th>
         </tr>
       </thead>`;
-  const useColumns = Boolean(options?.depth && options.teamId) && squadDensity === 'two-col';
+  // Compact / two-col apply whenever the squad exceeds SQUAD_FULL_ROWS, including
+  // one-page (no-depth) PDFs, so the full list still fits on a single sheet.
+  const useColumns = squadDensity === 'two-col';
   const squadClass = [
-    options?.depth && options.teamId && squadDensity !== 'normal'
-      ? `squad-${squadDensity}`
-      : '',
+    squadDensity !== 'normal' ? `squad-${squadDensity}` : '',
     hideShirtNumbers ? 'squad-no-num' : '',
   ]
     .filter(Boolean)
@@ -661,8 +661,8 @@ export function buildOppositionSquadPdfHtml(
     <p class="meta-line">${esc(labels.generatedLabel)} ${esc(dateLine)}</p>
   </header>
   ${subsHtml}
-  <section class="squad-section">
-    <table>`
+  <section class="squad-section${squadClass}">
+    ${useColumns ? '<div class="squad-cols"><table>' : '<table>'}`
   }
       ${theadHtml}
       <tbody>
