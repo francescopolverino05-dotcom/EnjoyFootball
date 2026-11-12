@@ -4800,6 +4800,15 @@ attachReferencePack('man-city', '2026-11-24_uyl-man-city-vs-u19', [
     date: '2026-11-08',
     videoFile: 'https://vimeo.com/1244937094/70177835be',
   },
+  {
+    id: 'man-city-ref-port-vale',
+    title: {
+      en: 'Port Vale vs Manchester City 5–0',
+      it: 'Port Vale vs Manchester City 5–0',
+    },
+    score: '5–0',
+    videoFile: 'https://vimeo.com/1246321511/1ff897bf94',
+  },
 ]);
 
 attachReferencePack('club-brugge', '2026-12-08_uyl-u19-vs-club-brugge', [
