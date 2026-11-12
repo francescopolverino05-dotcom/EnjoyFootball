@@ -54,7 +54,10 @@ function toUnits(tokens: string[]): string[][] {
       return;
     }
     // A leading particle on the very first token ("De Rossi") also joins the next one.
-    if (!isLast && i === 0 && PARTICLES.has(norm(t))) {
+    // "Ben" is a common given name, so it is not a leading particle
+    // ("Ben Vickery" → given Ben, surname Vickery). Mid-name "ben"
+    // ("Tal Ben Haim") still joins the following token.
+    if (!isLast && i === 0 && PARTICLES.has(norm(t)) && norm(t) !== 'ben') {
       pending.push(t);
       return;
     }
