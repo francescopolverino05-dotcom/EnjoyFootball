@@ -2057,7 +2057,7 @@ if (perugia) {
     { number: 5, name: 'Peruzzi', position: 'RCB', birthYear: 2008, preferredFoot: 'Sinistro' },
     { number: 6, name: 'Cesarini', position: 'LCB', birthYear: 2008 },
     { number: 7, name: 'Merico', position: 'LW', birthYear: 2008, heightCm: 171, preferredFoot: 'Destro' },
-    { number: 8, name: 'Perugini', position: 'RCM', birthYear: 2008 },
+    { number: 8, name: 'Perugini', position: 'RCM', birthYear: 2008, preferredFoot: 'Destro' },
     { number: 9, name: 'Sheji', position: 'ST', birthYear: 2008 },
     { number: 10, name: 'Vanni', position: 'LCM', birthYear: 2008, heightCm: 176, preferredFoot: 'Sinistro' },
     { number: 11, name: 'Ciani', position: 'RW', birthYear: 2008, heightCm: 187, preferredFoot: 'Sinistro' },
