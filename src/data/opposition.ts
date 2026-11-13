@@ -2050,7 +2050,7 @@ if (perugia) {
     { name: 'Pierangelini' },
   ];
   perugia.squad = [
-    { number: 1, name: 'Strappini', position: 'GK', isGk: true, birthYear: 2008 },
+    { number: 1, name: 'Strappini', position: 'GK', isGk: true, birthYear: 2008, preferredFoot: 'Destro' },
     { number: 2, name: 'Buonafede', position: 'RB', birthYear: 2008, heightCm: 180, preferredFoot: 'Destro' },
     { number: 3, name: 'Bevanati', position: 'LB', birthYear: 2008 },
     { number: 4, name: 'Malfatti', position: 'CDM', birthYear: 2008, preferredFoot: 'Destro' },
