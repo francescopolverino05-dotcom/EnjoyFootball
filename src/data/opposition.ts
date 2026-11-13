@@ -2512,6 +2512,153 @@ if (manCity) {
     { name: 'Tyrone Samba', position: 'LW', birthYear: 2007, heightCm: 183, preferredFoot: 'Destro' },
     { name: 'Javahn Woode', position: 'LW', birthYear: 2010, heightCm: 176, preferredFoot: 'Destro' },
   ];
+
+  const city4231 = (
+    players: [number, string, string, boolean?][],
+  ): PitchPlayer[] =>
+    players.map(([number, name, role, isGk]) => ({
+      number,
+      name,
+      teamId: 'man-city',
+      role,
+      left:
+        role === 'GK' || role === 'CAM' || role === 'ST' ? '50%'
+        : role === 'RB' ? '20%'
+        : role === 'RW' ? '18%'
+        : role === 'RCB' ? '40%'
+        : role === 'LCB' ? '60%'
+        : role === 'LB' ? '80%'
+        : role === 'LW' ? '82%'
+        : role === 'RDM' ? '36%'
+        : role === 'LDM' ? '64%'
+        : '50%',
+      top:
+        role === 'GK' ? '8%'
+        : role === 'RB' || role === 'RCB' || role === 'LCB' || role === 'LB' ? '24%'
+        : role === 'RDM' || role === 'LDM' ? '44%'
+        : role === 'CAM' ? '60%'
+        : role === 'RW' || role === 'LW' ? '64%'
+        : '80%',
+      ...(isGk ? { isGk: true } : {}),
+    }));
+
+  const vsLeipzig = city4231([
+    [1, 'Chabot', 'GK', true],
+    [2, 'Nfonkeu', 'RB'],
+    [3, 'Drake', 'RCB'],
+    [4, 'Noble', 'LCB'],
+    [5, 'Braithwaite', 'LB'],
+    [8, 'Headley', 'RDM'],
+    [6, 'Miles', 'LDM'],
+    [10, 'Oliver', 'CAM'],
+    [7, 'McAidoo', 'RW'],
+    [9, 'Lamb', 'ST'],
+    [11, 'Parker', 'LW'],
+  ]);
+  const vsAek = city4231([
+    [1, 'Chabot', 'GK', true],
+    [2, 'Nfonkeu', 'RB'],
+    [3, 'Drake', 'RCB'],
+    [4, 'Barrett', 'LCB'],
+    [5, 'Headley', 'LB'],
+    [8, 'Oliver', 'RDM'],
+    [6, 'Miles', 'LDM'],
+    [10, 'Parker', 'CAM'],
+    [7, 'Gorman', 'RW'],
+    [9, 'Lamb', 'ST'],
+    [11, 'T. Samba', 'LW'],
+  ]);
+  const vsPsg = city4231([
+    [1, 'Chabot', 'GK', true],
+    [2, 'Headley', 'RB'],
+    [3, 'Drake', 'RCB'],
+    [4, 'Noble', 'LCB'],
+    [5, 'Braithwaite', 'LB'],
+    [8, 'F. Samba', 'RDM'],
+    [6, 'Miles', 'LDM'],
+    [10, 'Parker', 'CAM'],
+    [7, 'McAidoo', 'RW'],
+    [9, 'Lamb', 'ST'],
+    [11, 'T. Samba', 'LW'],
+  ]);
+  const vsPorto = city4231([
+    [1, 'Chabot', 'GK', true],
+    [2, 'Nfonkeu', 'RB'],
+    [3, 'Noble', 'RCB'],
+    [4, 'Braithwaite', 'LCB'],
+    [5, 'Barrett', 'LB'],
+    [8, 'Gorman', 'RDM'],
+    [6, 'Miles', 'LDM'],
+    [10, 'F. Samba', 'CAM'],
+    [7, 'Midwood', 'RW'],
+    [9, 'Parker', 'ST'],
+    [11, 'Dunbar-McDonald', 'LW'],
+  ]);
+
+  manCity.formationSystem = '1-4-2-3-1';
+  manCity.starters = vsLeipzig;
+  manCity.scoutedFormations = [
+    {
+      id: 'man-city-vs-leipzig',
+      label: { en: 'vs Leipzig (2–1)', it: 'vs Leipzig (2–1)' },
+      system: '4-2-3-1',
+      players: vsLeipzig,
+      notes: {
+        en: "UYL MD4, 4 Nov 2026, away, RB Leipzig 1–2 Manchester City (UEFA 2049871). UEFA 4-3-3: Headley (#8) RCM, Miles (#6) CM, Oliver (#10) LCM; McAidoo (#7) RW, Lamb (#9) ST, Parker (#11) LW. Goals: Lamb 53', Oliver 57' (pen.); Leipzig: Ogette 84'. Shown here as a 4-2-3-1 by shirt number: Headley (#8) RDM, Miles (#6) LDM, Oliver (#10) CAM, McAidoo (#7) RW, Parker (#11) LW, Lamb (#9) ST. Headley, a right-back, started at #8. Subs: Gorman for Parker 81', Midwood for McAidoo 90'.",
+        it: "UYL gior. 4, 4 nov 2026, trasferta, RB Leipzig 1–2 Manchester City (UEFA 2049871). 4-3-3 UEFA: Headley (n. 8) CC destro, Miles (n. 6) CC, Oliver (n. 10) CC sinistro; McAidoo (n. 7) ala destra, Lamb (n. 9) attaccante, Parker (n. 11) ala sinistra. Gol: Lamb 53', Oliver 57' (rig.); Lipsia: Ogette 84'. Qui riportato come 4-2-3-1 per numero di maglia: Headley (n. 8) mediano destro, Miles (n. 6) mediano sinistro, Oliver (n. 10) trequartista, McAidoo (n. 7) ala destra, Parker (n. 11) ala sinistra, Lamb (n. 9) attaccante. Headley, terzino destro, titolare con il n. 8. Sub: Gorman per Parker 81', Midwood per McAidoo 90'.",
+      },
+    },
+    {
+      id: 'man-city-vs-aek',
+      label: { en: 'vs AEK Athens (1–1)', it: 'vs AEK Atene (1–1)' },
+      system: '4-2-3-1',
+      players: vsAek,
+      notes: {
+        en: "UYL MD3, 20 Oct 2026, home, Manchester City 1–1 AEK Athens (UEFA 2049843). UEFA 4-3-3: Oliver (#8) RCM, Miles (#6) CM, Parker (#10) LCM; Gorman (#7) RW, Lamb (#9) ST, T. Samba (#11) LW. Goals: Sioutas 5'; City: Lamb 8'. Shown here as a 4-2-3-1 by shirt number: Oliver (#8) RDM, Miles (#6) LDM, Parker (#10) CAM, Gorman (#7) RW, T. Samba (#11) LW, Lamb (#9) ST. Subs: Woode for Parker 78', Lawrie for Nfonkeu 80'.",
+        it: "UYL gior. 3, 20 ott 2026, casa, Manchester City 1–1 AEK Atene (UEFA 2049843). 4-3-3 UEFA: Oliver (n. 8) CC destro, Miles (n. 6) CC, Parker (n. 10) CC sinistro; Gorman (n. 7) ala destra, Lamb (n. 9) attaccante, T. Samba (n. 11) ala sinistra. Gol: Sioutas 5'; City: Lamb 8'. Qui riportato come 4-2-3-1 per numero di maglia: Oliver (n. 8) mediano destro, Miles (n. 6) mediano sinistro, Parker (n. 10) trequartista, Gorman (n. 7) ala destra, T. Samba (n. 11) ala sinistra, Lamb (n. 9) attaccante. Sub: Woode per Parker 78', Lawrie per Nfonkeu 80'.",
+      },
+    },
+    {
+      id: 'man-city-vs-psg',
+      label: { en: 'vs PSG (0–2)', it: 'vs PSG (0–2)' },
+      system: '4-2-3-1',
+      players: vsPsg,
+      notes: {
+        en: "UYL MD2, 14 Oct 2026, home, Manchester City 0–2 Paris Saint-Germain (UEFA 2049832). UEFA 4-3-3: F. Samba (#8) RCM, Miles (#6) CM, Parker (#10) LCM; McAidoo (#7) RW, Lamb (#9) ST, T. Samba (#11) LW. Goals: Meïté 15', Ayari 78'. Shown here as a 4-2-3-1 by shirt number: F. Samba (#8) RDM, Miles (#6) LDM, Parker (#10) CAM, McAidoo (#7) RW, T. Samba (#11) LW, Lamb (#9) ST. Subs: Barrett for Miles 26', Oliver for Parker 46', Gorman for Headley 70', Midwood for T. Samba 70', Woode for McAidoo 85'. On-field roles uncertain for Barrett (defender on for LDM) and Gorman (midfielder on for RB).",
+        it: "UYL gior. 2, 14 ott 2026, casa, Manchester City 0–2 Paris Saint-Germain (UEFA 2049832). 4-3-3 UEFA: F. Samba (n. 8) CC destro, Miles (n. 6) CC, Parker (n. 10) CC sinistro; McAidoo (n. 7) ala destra, Lamb (n. 9) attaccante, T. Samba (n. 11) ala sinistra. Gol: Meïté 15', Ayari 78'. Qui riportato come 4-2-3-1 per numero di maglia: F. Samba (n. 8) mediano destro, Miles (n. 6) mediano sinistro, Parker (n. 10) trequartista, McAidoo (n. 7) ala destra, T. Samba (n. 11) ala sinistra, Lamb (n. 9) attaccante. Sub: Barrett per Miles 26', Oliver per Parker 46', Gorman per Headley 70', Midwood per T. Samba 70', Woode per McAidoo 85'. Ruoli in campo incerti per Barrett (difensore al posto del mediano sinistro) e Gorman (centrocampista al posto del terzino destro).",
+      },
+    },
+    {
+      id: 'man-city-vs-porto',
+      label: { en: 'vs Porto (1–3)', it: 'vs Porto (1–3)' },
+      system: '4-2-3-1',
+      players: vsPorto,
+      notes: {
+        en: "UYL MD1, 8 Sep 2026, away, Porto 3–1 Manchester City (UEFA 2049807). UEFA 4-3-3: Gorman (#8) RCM, Miles (#6) CM, F. Samba (#10) LCM; Midwood (#7) RW, Parker (#9) ST, Dunbar-McDonald (#11) LW. Goals: T. Silva 17' (pen.), Mide 43', Jamanca 82'; City: Lamb 73'. Shown here as a 4-2-3-1 by shirt number: Gorman (#8) RDM, Miles (#6) LDM, F. Samba (#10) CAM, Midwood (#7) RW, Dunbar-McDonald (#11) LW, Parker (#9) ST. Subs: Lamb for Gorman 58', Wain for Midwood 58', Oliver for Dunbar-McDonald 68', Houlihan for Barrett 83'. On-field roles uncertain for Lamb (on for RDM), Wain (on for RW) and Oliver (on for LW); Houlihan likely LB.",
+        it: "UYL gior. 1, 8 set 2026, trasferta, Porto 3–1 Manchester City (UEFA 2049807). 4-3-3 UEFA: Gorman (n. 8) CC destro, Miles (n. 6) CC, F. Samba (n. 10) CC sinistro; Midwood (n. 7) ala destra, Parker (n. 9) attaccante, Dunbar-McDonald (n. 11) ala sinistra. Gol: T. Silva 17' (rig.), Mide 43', Jamanca 82'; City: Lamb 73'. Qui riportato come 4-2-3-1 per numero di maglia: Gorman (n. 8) mediano destro, Miles (n. 6) mediano sinistro, F. Samba (n. 10) trequartista, Midwood (n. 7) ala destra, Dunbar-McDonald (n. 11) ala sinistra, Parker (n. 9) attaccante. Sub: Lamb per Gorman 58', Wain per Midwood 58', Oliver per Dunbar-McDonald 68', Houlihan per Barrett 83'. Ruoli in campo incerti per Lamb (al posto del mediano destro), Wain (al posto dell'ala destra) e Oliver (al posto dell'ala sinistra); Houlihan probabilmente terzino sinistro.",
+      },
+    },
+  ];
+  manCity.squadDepth = {
+    system: '1-4-2-3-1',
+    note: {
+      en: 'UYL: Leipzig (4 Nov 2026), AEK (20 Oct), PSG (14 Oct), Porto (8 Sep). Shown as a 4-2-3-1 by shirt number: #6 LDM, #8 RDM, #10 CAM, #7 RW, #11 LW, #9 ST (UEFA-reported shape in all four: 4-3-3). Order = most starts in that slot.',
+      it: 'UYL: Lipsia (4 nov 2026), AEK (20 ott), PSG (14 ott), Porto (8 set). Riportato come 4-2-3-1 per numero di maglia: n. 6 mediano sinistro, n. 8 mediano destro, n. 10 trequartista, n. 7 ala destra, n. 11 ala sinistra, n. 9 attaccante (modulo UEFA in tutte e quattro: 4-3-3). Ordine = più partite in quel ruolo.',
+    },
+    slots: [
+      { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Chabot', starts: 4 }] },
+      { role: 'RB', top: '28%', left: '14%', players: [{ name: 'Nfonkeu', starts: 3 }, { name: 'Headley', starts: 1 }] },
+      { role: 'RCB', top: '28%', left: '38%', players: [{ name: 'Drake', starts: 3 }, { name: 'Noble', starts: 1 }] },
+      { role: 'LCB', top: '28%', left: '62%', players: [{ name: 'Noble', starts: 2 }, { name: 'Barrett', starts: 1 }, { name: 'Braithwaite', starts: 1 }] },
+      { role: 'LB', top: '28%', left: '86%', players: [{ name: 'Braithwaite', starts: 2 }, { name: 'Barrett', starts: 1 }, { name: 'Headley', starts: 1 }] },
+      { role: 'RDM', top: '48%', left: '36%', players: [{ name: 'F. Samba', starts: 1 }, { name: 'Gorman', starts: 1 }, { name: 'Headley', starts: 1 }, { name: 'Oliver', starts: 1 }] },
+      { role: 'LDM', top: '48%', left: '64%', players: [{ name: 'Miles', starts: 4 }] },
+      { role: 'RW', top: '74%', left: '16%', players: [{ name: 'McAidoo', starts: 2 }, { name: 'Gorman', starts: 1 }, { name: 'Midwood', starts: 1 }] },
+      { role: 'CAM', top: '62%', left: '50%', players: [{ name: 'Parker', starts: 2 }, { name: 'F. Samba', starts: 1 }, { name: 'Oliver', starts: 1 }] },
+      { role: 'LW', top: '74%', left: '84%', players: [{ name: 'T. Samba', starts: 2 }, { name: 'Dunbar-McDonald', starts: 1 }, { name: 'Parker', starts: 1 }] },
+      { role: 'ST', top: '84%', left: '50%', players: [{ name: 'Lamb', starts: 3 }, { name: 'Parker', starts: 1 }] },
+    ],
+  };
 }
 
 /** Porto UEFA U19 — UEFA Youth League club squad (it.uefa.com/…/2605454). */
