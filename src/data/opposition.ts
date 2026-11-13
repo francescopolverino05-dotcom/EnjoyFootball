@@ -2506,7 +2506,7 @@ if (manCity) {
     { name: 'Matthew Henderson-Hall', position: 'RB', birthYear: 2006, preferredFoot: 'Ambidestro', dateOfBirth: '2006-12-08' },
     { name: 'Femi Fapetu', position: 'CDM', birthYear: 2007, preferredFoot: 'Destro', dateOfBirth: '2007-08-04' },
     { name: 'Floyd Samba', position: 'CM', birthYear: 2009, heightCm: 183, preferredFoot: 'Destro', dateOfBirth: '2009-01-15' },
-    { name: 'Theo Carrington', position: 'CM', birthYear: 2010, preferredFoot: 'Destro', dateOfBirth: '2010-06-13' },
+    { name: 'Theo Carrington', position: 'LB', birthYear: 2010, preferredFoot: 'Destro', dateOfBirth: '2010-06-13' },
     { name: 'Mishel Nduka', position: 'CAM', birthYear: 2010, preferredFoot: 'Destro', dateOfBirth: '2010-04-03' },
     { name: 'Christian Dunbar-McDonald', position: 'LW', birthYear: 2007, heightCm: 178, preferredFoot: 'Destro', dateOfBirth: '2007-10-29' },
     { name: 'Tyrone Samba', position: 'LW', birthYear: 2007, heightCm: 183, preferredFoot: 'Destro', dateOfBirth: '2007-12-31' },
