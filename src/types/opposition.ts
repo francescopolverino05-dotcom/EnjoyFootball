@@ -24,6 +24,8 @@ export interface OppositionSquadPlayer {
   isGk?: boolean;
   /** Birth year (e.g. 2008). */
   birthYear?: number | null;
+  /** Full date of birth as ISO YYYY-MM-DD, when known. */
+  dateOfBirth?: string;
   /** Preferred foot as written on scout sheet (Destro / Sinistro / Ambidestro). */
   preferredFoot?: string;
   /** Height in cm. */

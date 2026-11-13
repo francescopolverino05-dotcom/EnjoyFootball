@@ -12,6 +12,7 @@ import { withGoalkeeperInSystem } from './formationSystem';
 import type { MostSubRow } from './mostSubs';
 import { shirtNumberForPrimavera2Role } from './primavera2Shirts';
 import { splitSquadListName } from './playerNameFormat';
+import { formatDateOfBirth, squadHasDateOfBirth } from './dateOfBirth';
 import blankPitch from '../assets/blank-pitch.png?inline';
 
 /** Page-2 squad list name as "SURNAME, Given" (HTML); see splitSquadListName for the rules. */
@@ -41,6 +42,7 @@ export interface OppositionSquadPdfLabels {
   colRole: string;
   colHeight: string;
   colFoot: string;
+  colDob?: string;
   heightUnit: string;
   generatedLabel: string;
   subsTitle?: string;
@@ -263,18 +265,24 @@ export function buildOppositionSquadPdfHtml(
   options?: OppositionSquadPdfOptions
 ): string {
   const locale = options?.locale ?? 'en';
+  const showDob = squadHasDateOfBirth(players);
   const rowList = sortOppositionSquadByDepth(
     withSubRoleFallback(players, options?.mostSubs ?? [])
   ).map((p) => {
       const height =
         p.heightCm != null ? `${p.heightCm} ${labels.heightUnit}` : '—';
+      const dob = formatDateOfBirth(p.dateOfBirth);
       const numCell = options?.hideShirtNumbers
         ? ''
         : `<td class="num">${p.number != null ? esc(String(p.number)) : '—'}</td>`;
+      const dobCell = showDob
+        ? `<td class="meta dob">${esc(dob || '—')}</td>`
+        : '';
       return `<tr>
         ${numCell}
         <td class="name">${squadListNameHtml(p.name, players, options?.teamId ?? '')}</td>
         <td class="role">${esc(localizePdfPosition(p.position, locale))}</td>
+        ${dobCell}
         <td class="meta">${esc(height)}</td>
         <td class="meta">${esc(localizePreferredFoot(p.preferredFoot, locale))}</td>
       </tr>`;
@@ -297,6 +305,7 @@ export function buildOppositionSquadPdfHtml(
           ${hideShirtNumbers ? '' : `<th>${esc(labels.colNumber)}</th>`}
           <th>${esc(labels.colPlayer)}</th>
           <th>${esc(labels.colRole)}</th>
+          ${showDob ? `<th class="dob">${esc(labels.colDob ?? 'DoB')}</th>` : ''}
           <th>${esc(labels.colHeight)}</th>
           <th>${esc(labels.colFoot)}</th>
         </tr>
@@ -307,6 +316,7 @@ export function buildOppositionSquadPdfHtml(
   const squadClass = [
     squadDensity !== 'normal' ? `squad-${squadDensity}` : '',
     hideShirtNumbers ? 'squad-no-num' : '',
+    showDob ? 'has-dob' : '',
   ]
     .filter(Boolean)
     .map((c) => ` ${c}`)
@@ -619,6 +629,30 @@ export function buildOppositionSquadPdfHtml(
     .squad-two-col.squad-no-num th:nth-child(2), .squad-two-col.squad-no-num td:nth-child(2) { width: 24%; text-align: center; }
     .squad-two-col.squad-no-num th:nth-child(3), .squad-two-col.squad-no-num td:nth-child(3) { width: 18%; text-align: left; }
     .squad-two-col.squad-no-num th:nth-child(4), .squad-two-col.squad-no-num td:nth-child(4) { width: 18%; text-align: left; }
+    /* Date-of-birth column: only when at least one player has a full date. */
+    .squad-section td.dob, .squad-section th.dob { white-space: nowrap; font-variant-numeric: tabular-nums; }
+    .squad-section.has-dob th:nth-child(1), .squad-section.has-dob td:nth-child(1) { width: 5%; }
+    .squad-section.has-dob th:nth-child(2), .squad-section.has-dob td:nth-child(2) { width: 24%; }
+    .squad-section.has-dob th:nth-child(3), .squad-section.has-dob td:nth-child(3) { width: 18%; text-align: center; }
+    .squad-section.has-dob th:nth-child(4), .squad-section.has-dob td:nth-child(4) { width: 18%; }
+    .squad-section.has-dob th:nth-child(5), .squad-section.has-dob td:nth-child(5) { width: 17%; }
+    .squad-section.has-dob th:nth-child(6), .squad-section.has-dob td:nth-child(6) { width: 18%; }
+    .squad-two-col.has-dob th:nth-child(1), .squad-two-col.has-dob td:nth-child(1) { width: 7%; }
+    .squad-two-col.has-dob th:nth-child(2), .squad-two-col.has-dob td:nth-child(2) { width: 28%; }
+    .squad-two-col.has-dob th:nth-child(3), .squad-two-col.has-dob td:nth-child(3) { width: 16%; text-align: center; }
+    .squad-two-col.has-dob th:nth-child(4), .squad-two-col.has-dob td:nth-child(4) { width: 17%; }
+    .squad-two-col.has-dob th:nth-child(5), .squad-two-col.has-dob td:nth-child(5) { width: 16%; }
+    .squad-two-col.has-dob th:nth-child(6), .squad-two-col.has-dob td:nth-child(6) { width: 16%; }
+    .squad-no-num.has-dob th:nth-child(1), .squad-no-num.has-dob td:nth-child(1) { width: 28%; }
+    .squad-no-num.has-dob th:nth-child(2), .squad-no-num.has-dob td:nth-child(2) { width: 22%; text-align: center; }
+    .squad-no-num.has-dob th:nth-child(3), .squad-no-num.has-dob td:nth-child(3) { width: 18%; text-align: left; }
+    .squad-no-num.has-dob th:nth-child(4), .squad-no-num.has-dob td:nth-child(4) { width: 16%; text-align: left; }
+    .squad-no-num.has-dob th:nth-child(5), .squad-no-num.has-dob td:nth-child(5) { width: 16%; text-align: left; }
+    .squad-two-col.squad-no-num.has-dob th:nth-child(1), .squad-two-col.squad-no-num.has-dob td:nth-child(1) { width: 32%; }
+    .squad-two-col.squad-no-num.has-dob th:nth-child(2), .squad-two-col.squad-no-num.has-dob td:nth-child(2) { width: 18%; text-align: center; }
+    .squad-two-col.squad-no-num.has-dob th:nth-child(3), .squad-two-col.squad-no-num.has-dob td:nth-child(3) { width: 18%; text-align: left; }
+    .squad-two-col.squad-no-num.has-dob th:nth-child(4), .squad-two-col.squad-no-num.has-dob td:nth-child(4) { width: 16%; text-align: left; }
+    .squad-two-col.squad-no-num.has-dob th:nth-child(5), .squad-two-col.squad-no-num.has-dob td:nth-child(5) { width: 16%; text-align: left; }
     @media print {
       body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
       .page-1, .depth-section { break-inside: avoid; page-break-inside: avoid; }

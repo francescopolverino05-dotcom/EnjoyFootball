@@ -14,6 +14,7 @@ import {
   type Locale,
 } from '../i18n/translations';
 import { openOppositionSquadPdf } from '../utils/oppositionSquadPdf';
+import { formatDateOfBirth, squadHasDateOfBirth } from '../utils/dateOfBirth';
 import { isPrimavera2TeamId } from '../data/opposition';
 import type { MostSubRow } from '../utils/mostSubs';
 
@@ -50,6 +51,7 @@ function pdfLabelsFor(locale: Locale, teamName: string, depth?: OppositionSquadD
     colRole: ui(locale, 'oppositionSquadColRole'),
     colHeight: ui(locale, 'oppositionSquadColHeight'),
     colFoot: ui(locale, 'oppositionSquadColFoot'),
+    colDob: ui(locale, 'oppositionSquadColDob'),
     heightUnit: 'cm',
     generatedLabel: ui(locale, 'oppositionSquadPdfGenerated'),
     subsTitle: ui(locale, 'oppositionMostSubbedOn'),
@@ -68,6 +70,7 @@ export default function OppositionSquadTable({
 }: OppositionSquadTableProps) {
   const { t, locale } = useLanguage();
   const hideShirtNumbers = Boolean(teamId && isPrimavera2TeamId(teamId));
+  const showDob = squadHasDateOfBirth(players);
   const ordered = sortOppositionSquadByDepth(players);
 
   const downloadPdf = (pdfLocale: Locale) => {
@@ -114,6 +117,7 @@ export default function OppositionSquadTable({
             )}
             <th scope="col">{t('oppositionSquadColPlayer')}</th>
             <th scope="col">{t('oppositionSquadColRole')}</th>
+            {showDob ? <th scope="col">{t('oppositionSquadColDob')}</th> : null}
             <th scope="col">{t('oppositionSquadColHeight')}</th>
             <th scope="col">{t('oppositionSquadColFoot')}</th>
           </tr>
@@ -132,6 +136,11 @@ export default function OppositionSquadTable({
                   ? localizePdfPosition(p.position, locale)
                   : localizePosition(p.position, locale)}
               </td>
+              {showDob ? (
+                <td className="opposition-squad-meta">
+                  {formatDateOfBirth(p.dateOfBirth) || '—'}
+                </td>
+              ) : null}
               <td className="opposition-squad-meta">
                 {p.heightCm != null ? `${p.heightCm} cm` : '—'}
               </td>

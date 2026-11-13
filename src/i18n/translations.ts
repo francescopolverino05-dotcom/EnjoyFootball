@@ -281,6 +281,7 @@ const dictionaries = {
     oppositionSquadColRole: 'Role',
     oppositionSquadColHeight: 'Height',
     oppositionSquadColFoot: 'Foot',
+    oppositionSquadColDob: 'DoB',
     oppositionClipsHint:
       'Tactical clip library by phase. Start on Attack, then add Defence, Transition or Set pieces (including kickoffs).',
     oppositionClipSectionEmpty: 'No clips in this phase yet.',
@@ -837,6 +838,7 @@ const dictionaries = {
     oppositionSquadColRole: 'Ruolo',
     oppositionSquadColHeight: 'Altezza',
     oppositionSquadColFoot: 'Piede',
+    oppositionSquadColDob: 'Nascita',
     oppositionClipsHint:
       'Libreria tattica per fase. Parti da Attacco, poi aggiungi Difesa, Transizione o Piazzati (calci d’inizio compresi).',
     oppositionClipSectionEmpty: 'Nessuna clip in questa fase.',
