@@ -13,6 +13,7 @@ import { EMPTY_STRENGTHS_WEAKNESSES } from '../types/scoutNotes';
 import { getAllMatches } from './matches';
 import { manCitySetPiecesDraft } from './manCitySetPieces';
 import { perugiaSetPiecesDraft } from './perugiaSetPieces';
+import { perugiaGkStrikers } from './perugiaGkStrikers';
 import {
   OPPOSITION_CLIP_SECTION_LABELS,
   type OppositionClipSectionId,
@@ -2084,11 +2085,12 @@ if (perugia) {
   ];
 }
 
-/** Attacking set-piece designs for Perugia, from StatMan tags p00–p36. */
+/** Attacking set-piece designs and goalkeeper-area shot maps for Perugia. */
 {
   const perugiaSet = OPPONENTS.find((o) => o.id === 'perugia');
   if (perugiaSet) {
     perugiaSet.setPieces = perugiaSetPiecesDraft;
+    perugiaSet.gkStrikers = perugiaGkStrikers;
   }
 }
 

@@ -3188,6 +3188,14 @@ button {
   background: #fff;
 }
 
+.gk-goal-pad {
+  position: relative;
+  padding: 36px 36px 24px;
+  background: #dce8d4;
+  border-radius: 4px;
+  overflow: visible;
+}
+
 .gk-goal-bar {
   height: 8px;
   background: #e5e7eb;
@@ -3202,7 +3210,7 @@ button {
   background: #f3f4f6;
   border: 3px solid #9ca3af;
   border-top: none;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .gk-goal-net {
@@ -3230,6 +3238,60 @@ button {
 .gk-shot-dot.active {
   outline: 2px solid var(--text-dark);
   z-index: 2;
+}
+
+.gk-shot-dot-miss,
+.gk-shot-outcome-off-target {
+  background: #fff !important;
+  border-width: 3px;
+}
+
+.gk-shot-outcome-goal {
+  box-shadow: 0 0 0 2px rgba(17, 24, 39, 0.45);
+}
+
+.gk-shot-outcome-woodwork {
+  border-radius: 2px;
+  transform: rotate(45deg);
+}
+
+.gk-shot-outcome-woodwork.active {
+  outline-offset: 1px;
+}
+
+.gk-outcome-legend {
+  margin-top: -8px;
+}
+
+.gk-outcome-swatch {
+  width: 10px;
+  height: 10px;
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  border: 2px solid #4b5563;
+}
+
+.gk-outcome-swatch.gk-shot-outcome-goal {
+  background: #111827;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px rgba(17, 24, 39, 0.35);
+}
+
+.gk-outcome-swatch.gk-shot-outcome-saved {
+  background: #4b5563;
+  border-radius: 50%;
+}
+
+.gk-outcome-swatch.gk-shot-outcome-off-target {
+  background: #fff !important;
+  border-radius: 50%;
+  border-width: 2px;
+}
+
+.gk-outcome-swatch.gk-shot-outcome-woodwork {
+  background: #4b5563;
+  border-radius: 2px;
+  transform: rotate(45deg);
 }
 
 .gk-feet {
@@ -3276,6 +3338,12 @@ button {
   font-size: 13px;
   font-weight: 600;
   color: var(--text-dark);
+}
+
+.gk-header-note {
+  margin: 0 0 12px;
+  display: block;
+  width: 100%;
 }
 
 .gk-striker-clips {

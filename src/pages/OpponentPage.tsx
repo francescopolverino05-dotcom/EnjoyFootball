@@ -55,10 +55,11 @@ export default function OpponentPage() {
   const { slug } = useParams<{ slug: string }>();
   const opponent = slug ? getOpponentBySlug(slug) : undefined;
   const { t, L, formatDate, locale } = useLanguage();
+  const tabFromQuery = typeof window !== 'undefined'
+    ? new URLSearchParams(window.location.search).get('tab')
+    : null;
   const [tab, setTab] = useState<OpponentTab>(
-    typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('tab') === 'setPieces'
-      ? 'setPieces'
-      : 'formation',
+    tabFromQuery === 'setPieces' || tabFromQuery === 'gk' ? tabFromQuery : 'formation',
   );
   const [activeGroups, setActiveGroups] = useState<Set<OppositionClipGroupId>>(
     () => new Set<OppositionClipGroupId>(['attack'])

@@ -75,7 +75,8 @@ export interface OppositionReferenceMatch {
 
 export type GkShotType = 'outside-box' | 'inside-box' | 'penalty' | 'free-kick';
 export type GkFootSide = 'left' | 'right';
-export type GkFootZone = 'inside' | 'toe' | 'outside';
+export type GkFootZone = 'inside' | 'laces' | 'toe' | 'outside';
+export type GkShotOutcome = 'goal' | 'saved' | 'off-target' | 'woodwork';
 
 /** One finishing action, plotted on the pitch and (when known) the goal. */
 export interface GkShot {
@@ -89,11 +90,13 @@ export interface GkShot {
   pitchY?: number;
   /** 0 = left post, 100 = right post. Omit when goal target was not recorded. */
   goalX?: number;
-  /** 0 = crossbar, 100 = ground. Omit when goal target was not recorded. */
+  /** 0 = crossbar, 100 = ground. Off-target shots may sit outside 0–100. Omit when not recorded. */
   goalY?: number;
+  /** Finish result, when recorded. */
+  outcome?: GkShotOutcome;
   /** Which foot; omit for headers or when side was not recorded. */
   foot?: GkFootSide;
-  /** Part of the foot (inside / toe / outside). Omit when not recorded or no matching zone (e.g. laces, overhead). */
+  /** Part of the foot (inside / laces / toe / outside). Omit when not recorded. */
   footZone?: GkFootZone;
   /** Set when the finish was with the head (no foot shading). */
   body?: 'head';

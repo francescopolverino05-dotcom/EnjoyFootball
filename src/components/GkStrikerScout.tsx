@@ -1,10 +1,12 @@
 import { useMemo, useState } from 'react';
 import MatchMedia from './MatchMedia';
 import { useLanguage } from '../i18n/LanguageContext';
+import type { UiKey } from '../i18n/translations';
 import type {
   GkFootSide,
   GkFootZone,
   GkShot,
+  GkShotOutcome,
   GkShotType,
   GkStrikerProfile,
 } from '../types/opposition';
@@ -16,14 +18,35 @@ const SHOT_COLORS: Record<GkShotType, string> = {
   'free-kick': '#e8590c',
 };
 
-const FOOT_ZONES: GkFootZone[] = ['inside', 'toe', 'outside'];
+const FOOT_ZONES: GkFootZone[] = ['inside', 'laces', 'toe', 'outside'];
+
+const FOOT_ZONE_KEYS: Record<GkFootZone, UiKey> = {
+  inside: 'oppositionGkFootInside',
+  laces: 'oppositionGkFootLaces',
+  toe: 'oppositionGkFootToe',
+  outside: 'oppositionGkFootOutside',
+};
+
+const OUTCOMES: GkShotOutcome[] = ['goal', 'saved', 'off-target', 'woodwork'];
+
+const OUTCOME_KEYS: Record<GkShotOutcome, UiKey> = {
+  goal: 'oppositionGkOutcomeGoal',
+  saved: 'oppositionGkOutcomeSaved',
+  'off-target': 'oppositionGkOutcomeOffTarget',
+  woodwork: 'oppositionGkOutcomeWoodwork',
+};
+
+/** Clamp off-frame goal coordinates into a visible margin around the mouth. */
+const GOAL_MARGIN_X = 16;
+const GOAL_MARGIN_Y_TOP = 20;
+const GOAL_MARGIN_Y_BOTTOM = 10;
 
 function shotColor(type: GkShotType): string {
   return SHOT_COLORS[type];
 }
 
 function countZones(shots: GkShot[], side: GkFootSide): Record<GkFootZone, number> {
-  const counts: Record<GkFootZone, number> = { inside: 0, toe: 0, outside: 0 };
+  const counts: Record<GkFootZone, number> = { inside: 0, laces: 0, toe: 0, outside: 0 };
   for (const shot of shots) {
     if (shot.foot === side && shot.footZone) counts[shot.footZone] += 1;
   }
@@ -34,6 +57,36 @@ function zoneFill(count: number, max: number): string {
   if (max <= 0 || count <= 0) return 'rgba(0, 84, 166, 0.08)';
   const t = count / max;
   return `rgba(0, 84, 166, ${0.18 + t * 0.72})`;
+}
+
+function clamp(n: number, min: number, max: number): number {
+  return Math.min(max, Math.max(min, n));
+}
+
+function isOffFrame(shot: GkShot): boolean {
+  return (
+    shot.goalX != null &&
+    shot.goalY != null &&
+    (shot.goalX < 0 || shot.goalX > 100 || shot.goalY < 0 || shot.goalY > 100)
+  );
+}
+
+function goalDotPos(shot: GkShot): { left: number; top: number } {
+  return {
+    left: clamp(shot.goalX as number, -GOAL_MARGIN_X, 100 + GOAL_MARGIN_X),
+    top: clamp(shot.goalY as number, -GOAL_MARGIN_Y_TOP, 100 + GOAL_MARGIN_Y_BOTTOM),
+  };
+}
+
+function shotTitleText(shot: GkShot): string {
+  return typeof shot.title === 'string' ? shot.title : shot.title.en;
+}
+
+function outcomeClass(shot: GkShot): string {
+  const parts = ['gk-shot-dot'];
+  if (shot.outcome) parts.push(`gk-shot-outcome-${shot.outcome}`);
+  if (isOffFrame(shot) || shot.outcome === 'off-target') parts.push('gk-shot-dot-miss');
+  return parts.join(' ');
 }
 
 function FootGraphic({
@@ -66,19 +119,25 @@ function FootGraphic({
             strokeWidth="2"
           />
           <path
-            d="M40 22 C56 14 82 20 90 44 C86 70 70 78 52 72 C40 66 34 48 40 22 Z"
+            d="M40 20 C56 12 82 18 91 40 C86 54 72 60 52 58 C40 54 34 36 40 20 Z"
             fill={zoneFill(counts.toe, max)}
             stroke="#fff"
             strokeWidth="1.5"
           />
           <path
-            d="M32 78 C36 58 48 70 58 88 C70 112 74 148 62 176 C50 188 38 178 34 160 C28 132 28 100 32 78 Z"
+            d="M48 58 C64 52 84 60 90 82 C88 100 76 112 58 110 C46 108 42 80 48 58 Z"
+            fill={zoneFill(counts.laces, max)}
+            stroke="#fff"
+            strokeWidth="1.5"
+          />
+          <path
+            d="M30 82 C34 66 42 80 50 100 C60 126 66 156 58 176 C46 188 36 176 32 158 C26 130 26 102 30 82 Z"
             fill={zoneFill(counts.inside, max)}
             stroke="#fff"
             strokeWidth="1.5"
           />
           <path
-            d="M62 76 C78 70 96 78 98 108 C100 136 92 160 80 176 C72 168 70 140 64 112 C60 96 58 84 62 76 Z"
+            d="M72 78 C86 70 99 82 100 110 C102 138 92 162 80 178 C72 168 70 140 66 114 C64 96 66 84 72 78 Z"
             fill={zoneFill(counts.outside, max)}
             stroke="#fff"
             strokeWidth="1.5"
@@ -92,13 +151,7 @@ function FootGraphic({
               className="gk-foot-swatch"
               style={{ background: zoneFill(counts[zone], Math.max(max, 1)) }}
             />
-            {t(
-              zone === 'inside'
-                ? 'oppositionGkFootInside'
-                : zone === 'toe'
-                  ? 'oppositionGkFootToe'
-                  : 'oppositionGkFootOutside'
-            )}
+            {t(FOOT_ZONE_KEYS[zone])}
             {` · ${counts[zone]}`}
           </li>
         ))}
@@ -130,13 +183,14 @@ function ShotPitch({
           <button
             key={shot.id}
             type="button"
-            className={`gk-shot-dot ${activeId === shot.id ? 'active' : ''}`}
+            className={`${outcomeClass(shot)} ${activeId === shot.id ? 'active' : ''}`}
             style={{
               left: `${shot.pitchX}%`,
               top: `${100 - (shot.pitchY as number)}%`,
               background: shotColor(shot.type),
+              borderColor: shotColor(shot.type),
             }}
-            title={typeof shot.title === 'string' ? shot.title : shot.title.en}
+            title={shotTitleText(shot)}
             aria-pressed={activeId === shot.id}
             onClick={() => onSelect(shot.id)}
           />
@@ -158,26 +212,38 @@ function GoalFrame({
   const { t } = useLanguage();
   return (
     <div className="gk-goal" aria-label={t('oppositionGkGoalTitle')}>
-      <div className="gk-goal-bar" />
-      <div className="gk-goal-mouth">
-        <div className="gk-goal-net" />
-        {shots
-          .filter((shot) => shot.goalX != null && shot.goalY != null)
-          .map((shot) => (
-          <button
-            key={shot.id}
-            type="button"
-            className={`gk-shot-dot gk-shot-dot-goal ${activeId === shot.id ? 'active' : ''}`}
-            style={{
-              left: `${shot.goalX}%`,
-              top: `${shot.goalY}%`,
-              background: shotColor(shot.type),
-            }}
-            title={typeof shot.title === 'string' ? shot.title : shot.title.en}
-            aria-pressed={activeId === shot.id}
-            onClick={() => onSelect(shot.id)}
-          />
-        ))}
+      <div className="gk-goal-pad">
+        <div className="gk-goal-bar" />
+        <div className="gk-goal-mouth">
+          <div className="gk-goal-net" />
+          {shots
+            .filter((shot) => shot.goalX != null && shot.goalY != null)
+            .map((shot) => {
+              const pos = goalDotPos(shot);
+              const miss = isOffFrame(shot) || shot.outcome === 'off-target';
+              return (
+                <button
+                  key={shot.id}
+                  type="button"
+                  className={`gk-shot-dot-goal ${outcomeClass(shot)} ${activeId === shot.id ? 'active' : ''}`}
+                  style={{
+                    left: `${pos.left}%`,
+                    top: `${pos.top}%`,
+                    background: miss ? '#fff' : shotColor(shot.type),
+                    borderColor: shotColor(shot.type),
+                  }}
+                  title={shotTitleText(shot)}
+                  aria-label={
+                    miss
+                      ? `${shotTitleText(shot)} (${t('oppositionGkOutcomeOffTarget')})`
+                      : shotTitleText(shot)
+                  }
+                  aria-pressed={activeId === shot.id}
+                  onClick={() => onSelect(shot.id)}
+                />
+              );
+            })}
+        </div>
       </div>
     </div>
   );
@@ -211,6 +277,14 @@ export default function GkStrikerScout({
       number
     >
   );
+  const byOutcome = striker.shots.reduce(
+    (acc, shot) => {
+      if (shot.outcome) acc[shot.outcome] += 1;
+      return acc;
+    },
+    { goal: 0, saved: 0, 'off-target': 0, woodwork: 0 } as Record<GkShotOutcome, number>
+  );
+  const hasOutcomes = striker.shots.some((s) => s.outcome);
 
   return (
     <article className="gk-striker-card">
@@ -243,8 +317,19 @@ export default function GkStrikerScout({
           </span>
         ))}
       </div>
+      {hasOutcomes ? (
+        <div className="gk-shot-legend gk-outcome-legend" aria-label={t('oppositionGkOutcomeLegend')}>
+          {OUTCOMES.filter((outcome) => byOutcome[outcome] > 0).map((outcome) => (
+            <span key={outcome} className="gk-shot-legend-item">
+              <span className={`gk-outcome-swatch gk-shot-outcome-${outcome}`} />
+              {t(OUTCOME_KEYS[outcome])}
+              {` (${byOutcome[outcome]})`}
+            </span>
+          ))}
+        </div>
+      ) : null}
       {headCount > 0 ? (
-        <p className="gk-active-shot" style={{ marginTop: 0 }}>
+        <p className="gk-active-shot gk-header-note">
           {L({
             en: `Headers recorded: ${headCount} (not shaded on the feet).`,
             it: `Colpi di testa registrati: ${headCount} (non ombreggiati sui piedi).`,
@@ -273,6 +358,7 @@ export default function GkStrikerScout({
       {active ? (
         <p className="gk-active-shot">
           {L(active.title)}
+          {active.outcome ? ` · ${t(OUTCOME_KEYS[active.outcome])}` : ''}
           {active.videoFile ? ` · ${t('oppositionGkHasVideo')}` : ''}
         </p>
       ) : null}
