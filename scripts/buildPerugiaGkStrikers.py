@@ -22,6 +22,13 @@ scouted XIs in opposition.ts, not from the CSV:
 
 Values are copied from the CSV only. Blank foot / footZone / body
 / minute stay omitted — nothing is invented.
+
+StatMan pitchY (~1 unit per metre from the goal line; 100 = goal
+line, 89 = penalty spot, 83 = 18-yard line) is converted to the
+GkStrikerScout graphic scale, whose 18-yard box, 6-yard box and
+penalty spot sit at 38%, 16% and 22% from the goal line. pitchX
+and goal coordinates are already 0–100 on that graphic and are
+copied as tagged. Sample / other-opponent shots are left alone.
 """
 
 from __future__ import annotations
@@ -87,6 +94,39 @@ def as_int(value: str) -> int | None:
         return None
 
 
+# GkStrikerScout draws pitchY with top = (100 - pitchY)%. The CSS
+# graphic is a schematic, not a metre-true half: the 6-yard box is
+# 16% deep, the penalty spot is at 22%, and the 18-yard box is 38%
+# deep (the sample penalty at pitchY 78 sits on that spot).
+# StatMan tags ~1 unit per metre from the goal line (spot 89, box
+# edge 83.5), so a raw 24 m shot at 76 would land inside the drawn
+# box. Convert through those landmarks, then continue the 18-yard
+# scale (38% / 16.5 m) out to the bottom of the graphic (~43.4 m).
+_PITCH_Y_LANDMARKS_M = (0.0, 5.5, 11.0, 16.5)
+_PITCH_Y_LANDMARKS_TOP = (0.0, 16.0, 22.0, 38.0)
+_PITCH_Y_OUTSIDE_PER_M = 38.0 / 16.5
+
+
+def statman_pitch_y_to_component(statman_y: int) -> int:
+    metres = 100.0 - float(statman_y)
+    if metres <= _PITCH_Y_LANDMARKS_M[0]:
+        top = _PITCH_Y_LANDMARKS_TOP[0]
+    elif metres >= 16.5:
+        top = 38.0 + (metres - 16.5) * _PITCH_Y_OUTSIDE_PER_M
+    else:
+        top = None
+        for i in range(1, len(_PITCH_Y_LANDMARKS_M)):
+            m0, m1 = _PITCH_Y_LANDMARKS_M[i - 1], _PITCH_Y_LANDMARKS_M[i]
+            t0, t1 = _PITCH_Y_LANDMARKS_TOP[i - 1], _PITCH_Y_LANDMARKS_TOP[i]
+            if metres <= m1:
+                top = t0 + (metres - m0) * (t1 - t0) / (m1 - m0)
+                break
+        if top is None:
+            top = _PITCH_Y_LANDMARKS_TOP[-1]
+    top = min(100.0, max(0.0, top))
+    return int(round(100.0 - top))
+
+
 def keep(row: dict[str, str]) -> bool:
     clip = (row.get('clip') or '').strip()
     shot_n = (row.get('shot_n') or '').strip()
@@ -147,8 +187,11 @@ def emit_shot(row: dict[str, str]) -> str:
     ]
     for key in ('pitchX', 'pitchY', 'goalX', 'goalY'):
         value = as_int(row.get(key) or '')
-        if value is not None:
-            lines.append(f'          {key}: {value},')
+        if value is None:
+            continue
+        if key == 'pitchY':
+            value = statman_pitch_y_to_component(value)
+        lines.append(f'          {key}: {value},')
     outcome = (row.get('outcome') or '').strip()
     if outcome in ALLOWED_OUTCOMES:
         lines.append(f'          outcome: {ts_str(outcome)},')
@@ -207,8 +250,12 @@ def build(csv_path: Path) -> str:
         ' * list (#9 is Sheji; Agnissan wore 9 when starting, and Iachini',
         ' * also wears 9 as the starting striker).',
         ' *',
-        ' * Coordinates, foot, foot part, body and outcome are copied from',
-        ' * the CSV only. Blank foot parts stay omitted (s03, s05, s09).',
+        ' * Foot, foot part, body, outcome, pitchX and goal coordinates',
+        ' * are copied from the CSV only. pitchY is converted from',
+        ' * StatMan metres-from-goal (100 = goal line) onto the',
+        ' * GkStrikerScout graphic (18-yard box ends at pitchY 62,',
+        ' * penalty spot at 78). Blank foot parts stay omitted',
+        ' * (s03, s05, s09).',
         ' * Clips are not attached: opposition videos on this site are',
         ' * Vimeo URLs, and these files have not been uploaded.',
         ' */',

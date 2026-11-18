@@ -15,8 +15,12 @@ import type { GkStrikerProfile } from '../types/opposition';
  * list (#9 is Sheji; Agnissan wore 9 when starting, and Iachini
  * also wears 9 as the starting striker).
  *
- * Coordinates, foot, foot part, body and outcome are copied from
- * the CSV only. Blank foot parts stay omitted (s03, s05, s09).
+ * Foot, foot part, body, outcome, pitchX and goal coordinates
+ * are copied from the CSV only. pitchY is converted from
+ * StatMan metres-from-goal (100 = goal line) onto the
+ * GkStrikerScout graphic (18-yard box ends at pitchY 62,
+ * penalty spot at 78). Blank foot parts stay omitted
+ * (s03, s05, s09).
  * Clips are not attached: opposition videos on this site are
  * Vimeo URLs, and these files have not been uploaded.
  */
@@ -33,7 +37,7 @@ export const perugiaGkStrikers: GkStrikerProfile[] = [
           title: { en: 'Inside the box, right laces', it: 'In area, collo destro' },
           type: 'inside-box',
           pitchX: 37,
-          pitchY: 86,
+          pitchY: 69,
           goalX: 80,
           goalY: 85,
           outcome: 'saved',
@@ -45,7 +49,7 @@ export const perugiaGkStrikers: GkStrikerProfile[] = [
           title: { en: '10’ · Penalty, right inside', it: '10′ · Rigore, interno destro' },
           type: 'penalty',
           pitchX: 50,
-          pitchY: 89,
+          pitchY: 78,
           goalX: 92,
           goalY: 92,
           outcome: 'saved',
@@ -57,7 +61,7 @@ export const perugiaGkStrikers: GkStrikerProfile[] = [
           title: { en: '27’ · Outside the box, right laces', it: '27′ · Fuori area, collo destro' },
           type: 'outside-box',
           pitchX: 28,
-          pitchY: 78,
+          pitchY: 49,
           goalX: -20,
           goalY: -15,
           outcome: 'off-target',
@@ -77,7 +81,7 @@ export const perugiaGkStrikers: GkStrikerProfile[] = [
           title: { en: '17’ · Inside the box, left foot', it: '17′ · In area, sinistro' },
           type: 'inside-box',
           pitchX: 40,
-          pitchY: 87,
+          pitchY: 72,
           goalX: 80,
           goalY: 85,
           outcome: 'saved',
@@ -88,7 +92,7 @@ export const perugiaGkStrikers: GkStrikerProfile[] = [
           title: { en: '24’ · Inside the box, right inside', it: '24′ · In area, interno destro' },
           type: 'inside-box',
           pitchX: 51,
-          pitchY: 88,
+          pitchY: 75,
           goalX: 80,
           goalY: 85,
           outcome: 'goal',
@@ -100,7 +104,7 @@ export const perugiaGkStrikers: GkStrikerProfile[] = [
           title: { en: '29’ · Inside the box, right foot', it: '29′ · In area, destro' },
           type: 'inside-box',
           pitchX: 56,
-          pitchY: 91,
+          pitchY: 80,
           goalX: 20,
           goalY: 85,
           outcome: 'goal',
@@ -111,7 +115,7 @@ export const perugiaGkStrikers: GkStrikerProfile[] = [
           title: { en: '37’ · Inside the box, header', it: '37′ · In area, di testa' },
           type: 'inside-box',
           pitchX: 50,
-          pitchY: 97,
+          pitchY: 91,
           goalX: 65,
           goalY: 50,
           outcome: 'goal',
@@ -122,7 +126,7 @@ export const perugiaGkStrikers: GkStrikerProfile[] = [
           title: { en: '47’ · Inside the box, left inside', it: '47′ · In area, interno sinistro' },
           type: 'inside-box',
           pitchX: 40,
-          pitchY: 86,
+          pitchY: 69,
           goalX: 85,
           goalY: 85,
           outcome: 'goal',
@@ -142,7 +146,7 @@ export const perugiaGkStrikers: GkStrikerProfile[] = [
           title: { en: '30’ · Inside the box, left laces', it: '30′ · In area, collo sinistro' },
           type: 'inside-box',
           pitchX: 38,
-          pitchY: 88,
+          pitchY: 75,
           goalX: -8,
           goalY: 90,
           outcome: 'off-target',
@@ -154,7 +158,7 @@ export const perugiaGkStrikers: GkStrikerProfile[] = [
           title: { en: '37’ · Inside the box, right foot', it: '37′ · In area, destro' },
           type: 'inside-box',
           pitchX: 54,
-          pitchY: 88,
+          pitchY: 75,
           goalX: 108,
           goalY: 90,
           outcome: 'off-target',
@@ -165,7 +169,7 @@ export const perugiaGkStrikers: GkStrikerProfile[] = [
           title: { en: 'Outside the box, right laces', it: 'Fuori area, collo destro' },
           type: 'outside-box',
           pitchX: 46,
-          pitchY: 76,
+          pitchY: 45,
           goalX: 20,
           goalY: 10,
           outcome: 'saved',
