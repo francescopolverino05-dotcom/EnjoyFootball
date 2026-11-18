@@ -12,6 +12,7 @@ import {
 import { EMPTY_STRENGTHS_WEAKNESSES } from '../types/scoutNotes';
 import { getAllMatches } from './matches';
 import { manCitySetPiecesDraft } from './manCitySetPieces';
+import { perugiaSetPiecesDraft } from './perugiaSetPieces';
 import {
   OPPOSITION_CLIP_SECTION_LABELS,
   type OppositionClipSectionId,
@@ -2081,6 +2082,14 @@ if (perugia) {
     { name: 'Omar Bellali', position: 'LCM', birthYear: 2008, heightCm: 172, preferredFoot: 'Sinistro', dateOfBirth: '2008-05-14' },
     { name: 'Jacopo Santillo', birthYear: 2009, heightCm: 193, dateOfBirth: '2009-02-04' },
   ];
+}
+
+/** Attacking set-piece designs for Perugia, from StatMan tags p00–p36. */
+{
+  const perugiaSet = OPPONENTS.find((o) => o.id === 'perugia');
+  if (perugiaSet) {
+    perugiaSet.setPieces = perugiaSetPiecesDraft;
+  }
 }
 
 /**
