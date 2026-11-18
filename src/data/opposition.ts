@@ -5196,6 +5196,184 @@ export function getOurFixturesVsOpponent(opponent: OppositionOpponent) {
 }
 
 
+
+{
+  /* __PERUGIA_GK_STRIKERS__ */
+  const perugiaGk = OPPONENTS.find((o) => o.id === 'perugia');
+  if (perugiaGk) {
+    perugiaGk.gkStrikers = [
+      {
+        "id": "perugia-gk-agnissan",
+        "name": "Agnissan",
+        "number": 9,
+        "shots": [],
+        "clips": [
+          {
+            "id": "perugia-gk-agnissan-1247981286",
+            "title": {
+              "en": "20:18 · Finish",
+              "it": "20:18 · Conclusione"
+            },
+            "videoFile": "https://vimeo.com/1247981286/01f03b5df6",
+            "comments": {
+              "en": "Perugia Tiri · Agnissan · 20:18",
+              "it": "Perugia Tiri · Agnissan · 20:18"
+            }
+          },
+          {
+            "id": "perugia-gk-agnissan-1247981283",
+            "title": {
+              "en": "70:56 · Build-up finish · GOAL",
+              "it": "70:56 · Conclusione da impostazione · GOL"
+            },
+            "videoFile": "https://vimeo.com/1247981283/d1a45149e2",
+            "comments": {
+              "en": "Perugia Tiri · Agnissan · 70:56 · GOAL",
+              "it": "Perugia Tiri · Agnissan · 70:56 · GOL"
+            }
+          },
+          {
+            "id": "perugia-gk-agnissan-1247981282",
+            "title": {
+              "en": "75:29 · Build-up finish · GOAL",
+              "it": "75:29 · Conclusione da impostazione · GOL"
+            },
+            "videoFile": "https://vimeo.com/1247981282/d0b4d5bb11",
+            "comments": {
+              "en": "Perugia Tiri · Agnissan · 75:29 · GOAL",
+              "it": "Perugia Tiri · Agnissan · 75:29 · GOL"
+            }
+          },
+          {
+            "id": "perugia-gk-agnissan-1247981285",
+            "title": {
+              "en": "84:09 · Set-piece finish · GOAL",
+              "it": "84:09 · Conclusione da piazzato · GOL"
+            },
+            "videoFile": "https://vimeo.com/1247981285/4bb453664c",
+            "comments": {
+              "en": "Perugia Tiri · Agnissan · 84:09 · GOAL",
+              "it": "Perugia Tiri · Agnissan · 84:09 · GOL"
+            }
+          },
+          {
+            "id": "perugia-gk-agnissan-1247988201",
+            "title": {
+              "en": "Agnissan · 2-0",
+              "it": "Agnissan · 2-0"
+            },
+            "videoFile": "https://vimeo.com/1247988201/cca82ff57b",
+            "comments": {
+              "en": "Perugia Tiri · Agnissan · 2-0",
+              "it": "Perugia Tiri · Agnissan · 2-0"
+            }
+          },
+          {
+            "id": "perugia-gk-agnissan-1247982068",
+            "title": {
+              "en": "Agnissan · 5-0",
+              "it": "Agnissan · 5-0"
+            },
+            "videoFile": "https://vimeo.com/1247982068/e0ac342ef3",
+            "comments": {
+              "en": "Perugia Tiri · Agnissan · 5-0",
+              "it": "Perugia Tiri · Agnissan · 5-0"
+            }
+          }
+        ]
+      },
+      {
+        "id": "perugia-gk-merico",
+        "name": "Merico",
+        "number": 7,
+        "shots": [],
+        "clips": [
+          {
+            "id": "perugia-gk-merico-1247982277",
+            "title": {
+              "en": "38:19 · Build-up finish",
+              "it": "38:19 · Conclusione da costruzione"
+            },
+            "videoFile": "https://vimeo.com/1247982277/9791409e9b",
+            "comments": {
+              "en": "Perugia Tiri · Merico · 38:19",
+              "it": "Perugia Tiri · Merico · 38:19"
+            }
+          },
+          {
+            "id": "perugia-gk-merico-1247982406",
+            "title": {
+              "en": "57:30 · Set-piece finish",
+              "it": "57:30 · Conclusione da piazzato"
+            },
+            "videoFile": "https://vimeo.com/1247982406/059ca3d96a",
+            "comments": {
+              "en": "Perugia Tiri · Merico · 57:30",
+              "it": "Perugia Tiri · Merico · 57:30"
+            }
+          },
+          {
+            "id": "perugia-gk-merico-1247982342",
+            "title": {
+              "en": "77:12 · Transition finish",
+              "it": "77:12 · Conclusione da transizione"
+            },
+            "videoFile": "https://vimeo.com/1247982342/a1efd1f113",
+            "comments": {
+              "en": "Perugia Tiri · Merico · 77:12",
+              "it": "Perugia Tiri · Merico · 77:12"
+            }
+          }
+        ]
+      },
+      {
+        "id": "perugia-gk-ciani",
+        "name": "Ciani",
+        "number": 11,
+        "shots": [],
+        "clips": [
+          {
+            "id": "perugia-gk-ciani-1247982813",
+            "title": {
+              "en": "34:02 · Build-up finish",
+              "it": "34:02 · Conclusione da impostazione"
+            },
+            "videoFile": "https://vimeo.com/1247982813/95e4d0d7ad",
+            "comments": {
+              "en": "Perugia Tiri · Ciani · 34:02",
+              "it": "Perugia Tiri · Ciani · 34:02"
+            }
+          },
+          {
+            "id": "perugia-gk-ciani-1247982472",
+            "title": {
+              "en": "40:06 · Transition finish",
+              "it": "40:06 · Conclusione da transizione"
+            },
+            "videoFile": "https://vimeo.com/1247982472/d3055f6a3a",
+            "comments": {
+              "en": "Perugia Tiri · Ciani · 40:06",
+              "it": "Perugia Tiri · Ciani · 40:06"
+            }
+          },
+          {
+            "id": "perugia-gk-ciani-1247982609",
+            "title": {
+              "en": "87:47 · Build-up finish",
+              "it": "87:47 · Conclusione da impostazione"
+            },
+            "videoFile": "https://vimeo.com/1247982609/5229f4e708",
+            "comments": {
+              "en": "Perugia Tiri · Ciani · 87:47",
+              "it": "Perugia Tiri · Ciani · 87:47"
+            }
+          }
+        ]
+      }
+    ];
+  }
+}
+
 export function referenceMatchSlotLimit(
   match: Pick<MatchSummary, 'competitionId' | 'slug'> | null
 ): number {
