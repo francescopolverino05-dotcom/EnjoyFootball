@@ -4902,70 +4902,94 @@ attachReferencePack('porto', '2026-11-04_uyl-porto-vs-u19', [
   },
 ]);
 
-attachReferencePack('man-city', '2026-11-24_uyl-man-city-vs-u19', [
-  {
-    id: 'man-city-ref-porto',
-    title: {
-      en: 'Porto vs Manchester City 3–1',
-      it: 'Porto vs Manchester City 3–1',
+attachReferencePack(
+  'man-city',
+  '2026-11-24_uyl-man-city-vs-u19',
+  [
+    {
+      id: 'man-city-ref-port-vale',
+      title: {
+        en: 'Port Vale vs Manchester City 5–0',
+        it: 'Port Vale vs Manchester City 5–0',
+      },
+      competition: {
+        en: 'UEFA Youth League reference',
+        it: 'Riferimento UEFA Youth League',
+      },
+      score: '5–0',
+      date: '2026-11-12',
+      videoFile: 'https://vimeo.com/1246321511/1ff897bf94',
     },
-    competition: {
-      en: 'UEFA Youth League reference',
-      it: 'Riferimento UEFA Youth League',
+    {
+      id: 'man-city-ref-leipzig',
+      title: {
+        en: 'RB Leipzig vs Manchester City 1–2',
+        it: 'RB Leipzig vs Manchester City 1–2',
+      },
+      competition: {
+        en: 'UEFA Youth League reference',
+        it: 'Riferimento UEFA Youth League',
+      },
+      score: '1–2',
+      date: '2026-11-08',
+      videoFile: 'https://vimeo.com/1244937094/70177835be',
     },
-    score: '3–1',
-    videoFile: 'https://vimeo.com/1225051128/cd33c8c29e',
-  },
-  {
-    id: 'man-city-ref-psg',
-    title: {
-      en: 'Manchester City vs PSG 0–2',
-      it: 'Manchester City vs PSG 0–2',
+    {
+      id: 'man-city-ref-aek',
+      title: {
+        en: 'Manchester City vs AEK Athens 1–1',
+        it: 'Manchester City vs AEK Athens 1–1',
+      },
+      competition: {
+        en: 'UEFA Youth League reference',
+        it: 'Riferimento UEFA Youth League',
+      },
+      score: '1–1',
+      videoFile: 'https://vimeo.com/1240759240/57eeb8eda5',
     },
-    competition: {
-      en: 'UEFA Youth League reference',
-      it: 'Riferimento UEFA Youth League',
+    {
+      id: 'man-city-ref-psg',
+      title: {
+        en: 'Manchester City vs PSG 0–2',
+        it: 'Manchester City vs PSG 0–2',
+      },
+      competition: {
+        en: 'UEFA Youth League reference',
+        it: 'Riferimento UEFA Youth League',
+      },
+      score: '0–2',
+      videoFile: 'https://vimeo.com/1240759239/ff8a17036b',
     },
-    score: '0–2',
-    videoFile: 'https://vimeo.com/1240759239/ff8a17036b',
-  },
-  {
-    id: 'man-city-ref-aek',
-    title: {
-      en: 'Manchester City vs AEK Athens 1–1',
-      it: 'Manchester City vs AEK Athens 1–1',
+    {
+      id: 'man-city-ref-porto',
+      title: {
+        en: 'Porto vs Manchester City 3–1',
+        it: 'Porto vs Manchester City 3–1',
+      },
+      competition: {
+        en: 'UEFA Youth League reference',
+        it: 'Riferimento UEFA Youth League',
+      },
+      score: '3–1',
+      videoFile: 'https://vimeo.com/1225051128/cd33c8c29e',
     },
-    competition: {
-      en: 'UEFA Youth League reference',
-      it: 'Riferimento UEFA Youth League',
+  ],
+  [
+    {
+      id: 'man-city-studio-report',
+      title: {
+        en: 'Studio City',
+        it: 'Studio City',
+      },
+      description: {
+        en: 'Opposition studio report (Avversari → Studio Report).',
+        it: 'Studio report avversario (Avversari → Studio Report).',
+      },
+      videoFile: 'https://vimeo.com/1247811311/14dee2f513',
+      tags: ['vimeo', 'opposition', 'studio-report'],
     },
-    score: '1–1',
-    videoFile: 'https://vimeo.com/1240759240/57eeb8eda5',
-  },
-  {
-    id: 'man-city-ref-leipzig',
-    title: {
-      en: 'RB Leipzig vs Manchester City 1–2',
-      it: 'RB Leipzig vs Manchester City 1–2',
-    },
-    competition: {
-      en: 'UEFA Youth League reference',
-      it: 'Riferimento UEFA Youth League',
-    },
-    score: '1–2',
-    date: '2026-11-08',
-    videoFile: 'https://vimeo.com/1244937094/70177835be',
-  },
-  {
-    id: 'man-city-ref-port-vale',
-    title: {
-      en: 'Port Vale vs Manchester City 5–0',
-      it: 'Port Vale vs Manchester City 5–0',
-    },
-    score: '5–0',
-    videoFile: 'https://vimeo.com/1246321511/1ff897bf94',
-  },
-]);
+  ],
+);
 
 attachReferencePack('club-brugge', '2026-12-08_uyl-u19-vs-club-brugge', [
   {
@@ -5105,6 +5129,62 @@ export function getOurFixturesVsOpponent(opponent: OppositionOpponent) {
  * UYL + first 15 Primavera 2 games: 3 (theirs only).
  * Later Primavera 2 (return) / Coppa: 4 (includes “how we played them” slot).
  */
+
+
+{
+  /* __MANCITY_SET_PIECE_CLIPS__ */
+  const manCitySp = OPPONENTS.find((o) => o.id === 'man-city');
+  if (manCitySp) {
+    manCitySp.clips = [
+      ...manCitySp.clips,
+      {"id":"mancity-sp-attackingcorners-1247805525","title":{"en":"Corner 1 · Tyrone Samba - Inswinger pen a","it":"Angolo 1 · Tyrone Samba - Inswinger pen a"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 8:21 · Tyrone Samba - Inswinger pen a","it":"Palle inattive Man City · Vimeo Offensivi · 8:21 · Tyrone Samba - Inswinger pen a"},"videoFile":"https://vimeo.com/1247805525/faca7e341a","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805520","title":{"en":"Corner 2 · Mcaidoo - Inswinger far post","it":"Angolo 2 · Mcaidoo - Inswinger far post"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 14:17 · Mcaidoo - Inswinger far post","it":"Palle inattive Man City · Vimeo Offensivi · 14:17 · Mcaidoo - Inswinger far post"},"videoFile":"https://vimeo.com/1247805520/e54d5104fa","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805516","title":{"en":"Corner 3 · Gorman - Outswinger near post","it":"Angolo 3 · Gorman - Outswinger near post"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 22:00 · Gorman - Outswinger near post","it":"Palle inattive Man City · Vimeo Offensivi · 22:00 · Gorman - Outswinger near post"},"videoFile":"https://vimeo.com/1247805516/817155b0fa","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805491","title":{"en":"Corner 4 · Parker - Inswinger 6 yard box","it":"Angolo 4 · Parker - Inswinger 6 yard box"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 23:27 · Parker - Inswinger 6 yard box","it":"Palle inattive Man City · Vimeo Offensivi · 23:27 · Parker - Inswinger 6 yard box"},"videoFile":"https://vimeo.com/1247805491/3245db9574","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805476","title":{"en":"Corner 5 · Gorman - Inswinger 6 yard box","it":"Angolo 5 · Gorman - Inswinger 6 yard box"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 30:22 · Gorman - Inswinger 6 yard box","it":"Palle inattive Man City · Vimeo Offensivi · 30:22 · Gorman - Inswinger 6 yard box"},"videoFile":"https://vimeo.com/1247805476/b68583e97e","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingfreekicks-1247805249","title":{"en":"Free kick 1 · Mcaidoo - Inswinger penalty ar","it":"Punizione 1 · Mcaidoo - Inswinger penalty ar"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 31:47 · Mcaidoo - Inswinger penalty ar","it":"Palle inattive Man City · Vimeo Offensivi · 31:47 · Mcaidoo - Inswinger penalty ar"},"videoFile":"https://vimeo.com/1247805249/9f950e54c0","section":"attacking-free-kicks","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805472","title":{"en":"Corner 6 · Mcaidoo - Inswinger near post","it":"Angolo 6 · Mcaidoo - Inswinger near post"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 31:58 · Mcaidoo - Inswinger near post","it":"Palle inattive Man City · Vimeo Offensivi · 31:58 · Mcaidoo - Inswinger near post"},"videoFile":"https://vimeo.com/1247805472/c9aa18eaf6","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805463","title":{"en":"Corner 7 · Mcaidoo - Inswinger near post","it":"Angolo 7 · Mcaidoo - Inswinger near post"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 32:05 · Mcaidoo - Inswinger near post","it":"Palle inattive Man City · Vimeo Offensivi · 32:05 · Mcaidoo - Inswinger near post"},"videoFile":"https://vimeo.com/1247805463/028ea1649d","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805462","title":{"en":"Corner 8 · Mcaidoo - Inswinger near post","it":"Angolo 8 · Mcaidoo - Inswinger near post"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 32:43 · Mcaidoo - Inswinger near post","it":"Palle inattive Man City · Vimeo Offensivi · 32:43 · Mcaidoo - Inswinger near post"},"videoFile":"https://vimeo.com/1247805462/ae8a820b3d","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingfreekicks-1247805229","title":{"en":"Free kick 2 · Gorman - Short","it":"Punizione 2 · Gorman - Short"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 35:23 · Gorman - Short","it":"Palle inattive Man City · Vimeo Offensivi · 35:23 · Gorman - Short"},"videoFile":"https://vimeo.com/1247805229/ede9f9f305","section":"attacking-free-kicks","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingfreekicks-1247805222","title":{"en":"Free kick 3 · Gorman - Inswinger far post","it":"Punizione 3 · Gorman - Inswinger far post"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 40:35 · Gorman - Inswinger far post","it":"Palle inattive Man City · Vimeo Offensivi · 40:35 · Gorman - Inswinger far post"},"videoFile":"https://vimeo.com/1247805222/0a0cb20df6","section":"attacking-free-kicks","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805436","title":{"en":"Corner 9 · Gorman - Inswinger near post","it":"Angolo 9 · Gorman - Inswinger near post"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 41:28 · Gorman - Inswinger near post","it":"Palle inattive Man City · Vimeo Offensivi · 41:28 · Gorman - Inswinger near post"},"videoFile":"https://vimeo.com/1247805436/6937e86589","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingfreekicks-1247805218","title":{"en":"Free kick 4 · Mcaidoo - inswinger to penaty","it":"Punizione 4 · Mcaidoo - inswinger to penaty"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 47:49 · Mcaidoo - inswinger to penaty","it":"Palle inattive Man City · Vimeo Offensivi · 47:49 · Mcaidoo - inswinger to penaty"},"videoFile":"https://vimeo.com/1247805218/a0c38e4911","section":"attacking-free-kicks","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingfreekicks-1247805179","title":{"en":"Free kick 5 · Braithwaite - Sho0rt","it":"Punizione 5 · Braithwaite - Sho0rt"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 47:52 · Braithwaite - Sho0rt","it":"Palle inattive Man City · Vimeo Offensivi · 47:52 · Braithwaite - Sho0rt"},"videoFile":"https://vimeo.com/1247805179/767b0fa306","section":"attacking-free-kicks","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805433","title":{"en":"Corner 10 · Tyrone Samba - Inswinger near","it":"Angolo 10 · Tyrone Samba - Inswinger near"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 48:32 · Tyrone Samba - Inswinger near","it":"Palle inattive Man City · Vimeo Offensivi · 48:32 · Tyrone Samba - Inswinger near"},"videoFile":"https://vimeo.com/1247805433/78cb00ede8","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805425","title":{"en":"Corner 11 · Parker - Inswinger far post","it":"Angolo 11 · Parker - Inswinger far post"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 48:45 · Parker - Inswinger far post","it":"Palle inattive Man City · Vimeo Offensivi · 48:45 · Parker - Inswinger far post"},"videoFile":"https://vimeo.com/1247805425/0bf431c8c3","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805420","title":{"en":"Corner 12 · Parker - short","it":"Angolo 12 · Parker - short"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 51:09 · Parker - short","it":"Palle inattive Man City · Vimeo Offensivi · 51:09 · Parker - short"},"videoFile":"https://vimeo.com/1247805420/f931b82b4e","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingfreekicks-1247805183","title":{"en":"Free kick 6 · Gorman - Outswinger penalty ar","it":"Punizione 6 · Gorman - Outswinger penalty ar"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 51:49 · Gorman - Outswinger penalty ar","it":"Palle inattive Man City · Vimeo Offensivi · 51:49 · Gorman - Outswinger penalty ar"},"videoFile":"https://vimeo.com/1247805183/5e56232042","section":"attacking-free-kicks","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805399","title":{"en":"Corner 13 · Gorman - Outswinger near post","it":"Angolo 13 · Gorman - Outswinger near post"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 54:59 · Gorman - Outswinger near post","it":"Palle inattive Man City · Vimeo Offensivi · 54:59 · Gorman - Outswinger near post"},"videoFile":"https://vimeo.com/1247805399/4f7c3ee9df","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805390","title":{"en":"Corner 14 · Tyrone Samba - Inswinger near","it":"Angolo 14 · Tyrone Samba - Inswinger near"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 57:15 · Tyrone Samba - Inswinger near","it":"Palle inattive Man City · Vimeo Offensivi · 57:15 · Tyrone Samba - Inswinger near"},"videoFile":"https://vimeo.com/1247805390/98df5e0988","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingfreekicks-1247805181","title":{"en":"Free kick 7 · Braithwaite - Short","it":"Punizione 7 · Braithwaite - Short"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 62:42 · Braithwaite - Short","it":"Palle inattive Man City · Vimeo Offensivi · 62:42 · Braithwaite - Short"},"videoFile":"https://vimeo.com/1247805181/c23d08b608","section":"attacking-free-kicks","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805339","title":{"en":"Corner 15 · Tyrone Samba - short","it":"Angolo 15 · Tyrone Samba - short"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 66:07 · Tyrone Samba - short","it":"Palle inattive Man City · Vimeo Offensivi · 66:07 · Tyrone Samba - short"},"videoFile":"https://vimeo.com/1247805339/ae6427d449","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805336","title":{"en":"Corner 16 · Mcaidoo - Inswinger near post","it":"Angolo 16 · Mcaidoo - Inswinger near post"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 68:03 · Mcaidoo - Inswinger near post","it":"Palle inattive Man City · Vimeo Offensivi · 68:03 · Mcaidoo - Inswinger near post"},"videoFile":"https://vimeo.com/1247805336/633609f5ab","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805333","title":{"en":"Corner 17 · Midwood - Inswinger near post","it":"Angolo 17 · Midwood - Inswinger near post"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 78:21 · Midwood - Inswinger near post","it":"Palle inattive Man City · Vimeo Offensivi · 78:21 · Midwood - Inswinger near post"},"videoFile":"https://vimeo.com/1247805333/c158b885b0","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805332","title":{"en":"Corner 18 · Parker - Inswinger near post","it":"Angolo 18 · Parker - Inswinger near post"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 83:11 · Parker - Inswinger near post","it":"Palle inattive Man City · Vimeo Offensivi · 83:11 · Parker - Inswinger near post"},"videoFile":"https://vimeo.com/1247805332/ff0f520eaa","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingfreekicks-1247805182","title":{"en":"Free kick 8 · Felix Samba - Outswinger far p","it":"Punizione 8 · Felix Samba - Outswinger far p"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 111:21 · Felix Samba - Outswinger far p","it":"Palle inattive Man City · Vimeo Offensivi · 111:21 · Felix Samba - Outswinger far p"},"videoFile":"https://vimeo.com/1247805182/87a173f4bf","section":"attacking-free-kicks","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805286","title":{"en":"Corner 19 · Wain - Inswinger near post","it":"Angolo 19 · Wain - Inswinger near post"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 111:39 · Wain - Inswinger near post","it":"Palle inattive Man City · Vimeo Offensivi · 111:39 · Wain - Inswinger near post"},"videoFile":"https://vimeo.com/1247805286/f7faed7135","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-attackingcorners-1247805264","title":{"en":"Corner 20 · Houlihan - Inswinger far post","it":"Angolo 20 · Houlihan - Inswinger far post"},"comments":{"en":"Man City set pieces · Vimeo Offensivi · 112:46 · Houlihan - Inswinger far post","it":"Palle inattive Man City · Vimeo Offensivi · 112:46 · Houlihan - Inswinger far post"},"videoFile":"https://vimeo.com/1247805264/9db629d9e9","section":"attacking-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-defendingfreekicks-1247805726","title":{"en":"Defending free kick 1","it":"Punizione subita 1"},"comments":{"en":"Man City set pieces · Vimeo Difensivi · 10:07","it":"Palle inattive Man City · Vimeo Difensivi · 10:07"},"videoFile":"https://vimeo.com/1247805726/a682418458","section":"defending-free-kicks","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-defendingcorners-1247805835","title":{"en":"Defending corner 1","it":"Angolo subito 1"},"comments":{"en":"Man City set pieces · Vimeo Difensivi · 13:09","it":"Palle inattive Man City · Vimeo Difensivi · 13:09"},"videoFile":"https://vimeo.com/1247805835/769c42d200","section":"defending-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-defendingcorners-1247805573","title":{"en":"Defending corner 2","it":"Angolo subito 2"},"comments":{"en":"Man City set pieces · Vimeo Difensivi · 22:57","it":"Palle inattive Man City · Vimeo Difensivi · 22:57"},"videoFile":"https://vimeo.com/1247805573/bb0d4578c7","section":"defending-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-defendingfreekicks-1247805707","title":{"en":"Defending free kick 2","it":"Punizione subita 2"},"comments":{"en":"Man City set pieces · Vimeo Difensivi · 39:08","it":"Palle inattive Man City · Vimeo Difensivi · 39:08"},"videoFile":"https://vimeo.com/1247805707/9f592d2d0b","section":"defending-free-kicks","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-defendingcorners-1247805566","title":{"en":"Defending corner 3","it":"Angolo subito 3"},"comments":{"en":"Man City set pieces · Vimeo Difensivi · 44:25","it":"Palle inattive Man City · Vimeo Difensivi · 44:25"},"videoFile":"https://vimeo.com/1247805566/40429a7531","section":"defending-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-defendingcorners-1247805558","title":{"en":"Defending corner 4","it":"Angolo subito 4"},"comments":{"en":"Man City set pieces · Vimeo Difensivi · 44:51","it":"Palle inattive Man City · Vimeo Difensivi · 44:51"},"videoFile":"https://vimeo.com/1247805558/f1a6231985","section":"defending-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-defendingcorners-1247805524","title":{"en":"Defending corner 5","it":"Angolo subito 5"},"comments":{"en":"Man City set pieces · Vimeo Difensivi · 45:33","it":"Palle inattive Man City · Vimeo Difensivi · 45:33"},"videoFile":"https://vimeo.com/1247805524/393a434e52","section":"defending-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-defendingcorners-1247805823","title":{"en":"Defending corner 6","it":"Angolo subito 6"},"comments":{"en":"Man City set pieces · Vimeo Difensivi · 50:05","it":"Palle inattive Man City · Vimeo Difensivi · 50:05"},"videoFile":"https://vimeo.com/1247805823/f9c7698ab2","section":"defending-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-defendingfreekicks-1247805696","title":{"en":"Defending free kick 3","it":"Punizione subita 3"},"comments":{"en":"Man City set pieces · Vimeo Difensivi · 53:00","it":"Palle inattive Man City · Vimeo Difensivi · 53:00"},"videoFile":"https://vimeo.com/1247805696/f8ad95a178","section":"defending-free-kicks","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-defendingcorners-1247805793","title":{"en":"Defending corner 7","it":"Angolo subito 7"},"comments":{"en":"Man City set pieces · Vimeo Difensivi · 54:56","it":"Palle inattive Man City · Vimeo Difensivi · 54:56"},"videoFile":"https://vimeo.com/1247805793/2336dd77fe","section":"defending-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-defendingcorners-1247805792","title":{"en":"Defending corner 8","it":"Angolo subito 8"},"comments":{"en":"Man City set pieces · Vimeo Difensivi · 73:41","it":"Palle inattive Man City · Vimeo Difensivi · 73:41"},"videoFile":"https://vimeo.com/1247805792/c5db21175b","section":"defending-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-defendingcorners-1247805782","title":{"en":"Defending corner 9","it":"Angolo subito 9"},"comments":{"en":"Man City set pieces · Vimeo Difensivi · 81:59","it":"Palle inattive Man City · Vimeo Difensivi · 81:59"},"videoFile":"https://vimeo.com/1247805782/fdbd6241ac","section":"defending-corners","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-defendingfreekicks-1247805675","title":{"en":"Defending free kick 4","it":"Punizione subita 4"},"comments":{"en":"Man City set pieces · Vimeo Difensivi · 84:25","it":"Palle inattive Man City · Vimeo Difensivi · 84:25"},"videoFile":"https://vimeo.com/1247805675/0733948aea","section":"defending-free-kicks","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-defendingfreekicks-1247805582","title":{"en":"Defending free kick 5","it":"Punizione subita 5"},"comments":{"en":"Man City set pieces · Vimeo Difensivi · 92:23","it":"Palle inattive Man City · Vimeo Difensivi · 92:23"},"videoFile":"https://vimeo.com/1247805582/0e887cb73e","section":"defending-free-kicks","tags":["vimeo","opposition","set-piece"]},
+      {"id":"mancity-sp-defendingcorners-1247805773","title":{"en":"Defending corner 10","it":"Angolo subito 10"},"comments":{"en":"Man City set pieces · Vimeo Difensivi · 102:09","it":"Palle inattive Man City · Vimeo Difensivi · 102:09"},"videoFile":"https://vimeo.com/1247805773/7c4de659f8","section":"defending-corners","tags":["vimeo","opposition","set-piece"]},
+    ];
+  }
+}
+
+
 export function referenceMatchSlotLimit(
   match: Pick<MatchSummary, 'competitionId' | 'slug'> | null
 ): number {
