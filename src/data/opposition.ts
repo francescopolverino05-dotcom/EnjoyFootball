@@ -5201,7 +5201,7 @@ export function getOurFixturesVsOpponent(opponent: OppositionOpponent) {
   /* __PERUGIA_GK_STRIKERS__ */
   const perugiaGk = OPPONENTS.find((o) => o.id === 'perugia');
   if (perugiaGk) {
-    perugiaGk.gkStrikers = [
+    const vimeoGk = [
       {
         "id": "perugia-gk-agnissan",
         "name": "Agnissan",
@@ -5371,6 +5371,12 @@ export function getOurFixturesVsOpponent(opponent: OppositionOpponent) {
         ]
       }
     ];
+    // Keep the scouted shot maps; only attach the Vimeo clips by profile id.
+    for (const v of vimeoGk) {
+      const existing = perugiaGk.gkStrikers.find((p) => p.id === v.id);
+      if (existing) existing.clips = v.clips;
+      else perugiaGk.gkStrikers.push(v);
+    }
   }
 }
 
