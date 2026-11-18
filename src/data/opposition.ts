@@ -11,6 +11,7 @@ import {
 } from '../types/opposition';
 import { EMPTY_STRENGTHS_WEAKNESSES } from '../types/scoutNotes';
 import { getAllMatches } from './matches';
+import { manCitySetPiecesDraft } from './manCitySetPieces';
 import {
   OPPOSITION_CLIP_SECTION_LABELS,
   type OppositionClipSectionId,
@@ -2659,6 +2660,14 @@ if (manCity) {
       { role: 'ST', top: '84%', left: '50%', players: [{ name: 'Lamb', starts: 3 }, { name: 'Parker', starts: 1 }] },
     ],
   };
+}
+
+/** Attacking set-piece designs for Manchester City, from Hudl folder PIAZZATI_17.11.2026. */
+{
+  const manCitySp = OPPONENTS.find((o) => o.id === 'man-city');
+  if (manCitySp) {
+    manCitySp.setPieces = manCitySetPiecesDraft;
+  }
 }
 
 /** Porto UEFA U19 — UEFA Youth League club squad (it.uefa.com/…/2605454). */
