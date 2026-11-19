@@ -1,6 +1,6 @@
 {
   "season": "2026/27",
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-11-19",
   "scope": {
     "en": "Club rankings from logged match sheets within each competition (league packs + Napoli match reports). Values are averages from games with stats so far.",
     "it": "Classifiche di club dai fogli partita per competizione (pack di lega + report Napoli). Valori = medie delle gare con stats finora."
@@ -33,8 +33,8 @@
               "teamId": "spezia",
               "team": "Spezia",
               "isUs": false,
-              "value": 1.5,
-              "played": 4,
+              "value": 1.4,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -73,8 +73,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 1.4,
-              "played": 5,
+              "value": 1.25,
+              "played": 8,
               "competitionId": "primavera2"
             },
             {
@@ -98,7 +98,7 @@
               "team": "Frosinone",
               "isUs": false,
               "value": 0.0,
-              "played": 3,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -121,8 +121,8 @@
               "teamId": "monopoli",
               "team": "Monopoli",
               "isUs": false,
-              "value": 2.0,
-              "played": 5,
+              "value": 1.67,
+              "played": 6,
               "competitionId": "primavera2"
             },
             {
@@ -134,12 +134,44 @@
               "competitionId": "primavera2"
             },
             {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 0.75,
+              "played": 4,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 0.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
               "teamId": "pisa",
               "team": "Pisa",
               "isUs": false,
               "value": 1.5,
               "played": 4,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 2.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
+            },
+            {
+              "teamId": "spezia",
+              "team": "Spezia",
+              "isUs": false,
+              "value": 1.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
             },
             {
               "teamId": "perugia",
@@ -158,18 +190,18 @@
               "competitionId": "uefaYouthLeague"
             },
             {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 0.5,
-              "played": 2,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
               "teamId": "arsenal",
               "team": "Arsenal",
               "isUs": false,
               "value": 2.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "porto",
+              "team": "Porto",
+              "isUs": false,
+              "value": 3.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -235,8 +267,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 1.47,
-              "played": 5,
+              "value": 1.32,
+              "played": 7,
               "competitionId": "primavera2"
             },
             {
@@ -259,8 +291,8 @@
               "teamId": "frosinone",
               "team": "Frosinone",
               "isUs": false,
-              "value": 0.55,
-              "played": 3,
+              "value": 0.59,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -283,8 +315,8 @@
               "teamId": "monopoli",
               "team": "Monopoli",
               "isUs": false,
-              "value": 1.52,
-              "played": 5,
+              "value": 1.3,
+              "played": 6,
               "competitionId": "primavera2"
             },
             {
@@ -294,6 +326,22 @@
               "value": 1.79,
               "played": 5,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 1.67,
+              "played": 4,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 0.16,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
             },
             {
               "teamId": "pisa",
@@ -320,18 +368,18 @@
               "competitionId": "uefaYouthLeague"
             },
             {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 1.73,
-              "played": 2,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
               "teamId": "arsenal",
               "team": "Arsenal",
               "isUs": false,
               "value": 1.88,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "porto",
+              "team": "Porto",
+              "isUs": false,
+              "value": 1.61,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -397,8 +445,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 15.2,
-              "played": 5,
+              "value": 13.86,
+              "played": 7,
               "competitionId": "primavera2"
             },
             {
@@ -421,8 +469,8 @@
               "teamId": "frosinone",
               "team": "Frosinone",
               "isUs": false,
-              "value": 6.67,
-              "played": 3,
+              "value": 6.0,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -445,8 +493,8 @@
               "teamId": "monopoli",
               "team": "Monopoli",
               "isUs": false,
-              "value": 12.0,
-              "played": 5,
+              "value": 10.67,
+              "played": 6,
               "competitionId": "primavera2"
             },
             {
@@ -456,6 +504,22 @@
               "value": 12.6,
               "played": 5,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 15.5,
+              "played": 4,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 4.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
             },
             {
               "teamId": "pisa",
@@ -482,18 +546,18 @@
               "competitionId": "uefaYouthLeague"
             },
             {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 15.0,
-              "played": 2,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
               "teamId": "arsenal",
               "team": "Arsenal",
               "isUs": false,
               "value": 10.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "porto",
+              "team": "Porto",
+              "isUs": false,
+              "value": 12.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -519,8 +583,8 @@
               "teamId": "spezia",
               "team": "Spezia",
               "isUs": false,
-              "value": 4.75,
-              "played": 4,
+              "value": 4.8,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -559,8 +623,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 3.4,
-              "played": 5,
+              "value": 4.12,
+              "played": 8,
               "competitionId": "primavera2"
             },
             {
@@ -583,8 +647,8 @@
               "teamId": "frosinone",
               "team": "Frosinone",
               "isUs": false,
-              "value": 1.67,
-              "played": 3,
+              "value": 2.0,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -607,8 +671,8 @@
               "teamId": "monopoli",
               "team": "Monopoli",
               "isUs": false,
-              "value": 5.0,
-              "played": 5,
+              "value": 4.5,
+              "played": 6,
               "competitionId": "primavera2"
             },
             {
@@ -620,12 +684,44 @@
               "competitionId": "primavera2"
             },
             {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 6.75,
+              "played": 4,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 1.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
               "teamId": "pisa",
               "team": "Pisa",
               "isUs": false,
               "value": 3.75,
               "played": 4,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 3.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
+            },
+            {
+              "teamId": "spezia",
+              "team": "Spezia",
+              "isUs": false,
+              "value": 5.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
             },
             {
               "teamId": "perugia",
@@ -644,18 +740,18 @@
               "competitionId": "uefaYouthLeague"
             },
             {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 6.5,
-              "played": 2,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
               "teamId": "arsenal",
               "team": "Arsenal",
               "isUs": false,
               "value": 5.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "porto",
+              "team": "Porto",
+              "isUs": false,
+              "value": 4.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -681,8 +777,8 @@
               "teamId": "spezia",
               "team": "Spezia",
               "isUs": false,
-              "value": 17.0,
-              "played": 4,
+              "value": 15.4,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -721,8 +817,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 17.8,
-              "played": 5,
+              "value": 16.25,
+              "played": 8,
               "competitionId": "primavera2"
             },
             {
@@ -745,8 +841,8 @@
               "teamId": "frosinone",
               "team": "Frosinone",
               "isUs": false,
-              "value": 17.67,
-              "played": 3,
+              "value": 17.5,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -769,8 +865,8 @@
               "teamId": "monopoli",
               "team": "Monopoli",
               "isUs": false,
-              "value": 15.6,
-              "played": 5,
+              "value": 15.67,
+              "played": 6,
               "competitionId": "primavera2"
             },
             {
@@ -782,12 +878,44 @@
               "competitionId": "primavera2"
             },
             {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 19.25,
+              "played": 4,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 10.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
               "teamId": "pisa",
               "team": "Pisa",
               "isUs": false,
               "value": 16.75,
               "played": 4,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 7.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
+            },
+            {
+              "teamId": "spezia",
+              "team": "Spezia",
+              "isUs": false,
+              "value": 14.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
             },
             {
               "teamId": "perugia",
@@ -806,18 +934,18 @@
               "competitionId": "uefaYouthLeague"
             },
             {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 17.5,
-              "played": 2,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
               "teamId": "arsenal",
               "team": "Arsenal",
               "isUs": false,
               "value": 13.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "porto",
+              "team": "Porto",
+              "isUs": false,
+              "value": 18.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -843,8 +971,8 @@
               "teamId": "spezia",
               "team": "Spezia",
               "isUs": false,
-              "value": 9.97,
-              "played": 4,
+              "value": 10.48,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -883,8 +1011,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 9.51,
-              "played": 5,
+              "value": 8.84,
+              "played": 8,
               "competitionId": "primavera2"
             },
             {
@@ -907,8 +1035,8 @@
               "teamId": "frosinone",
               "team": "Frosinone",
               "isUs": false,
-              "value": 13.32,
-              "played": 3,
+              "value": 13.9,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -931,8 +1059,8 @@
               "teamId": "monopoli",
               "team": "Monopoli",
               "isUs": false,
-              "value": 9.42,
-              "played": 5,
+              "value": 9.06,
+              "played": 6,
               "competitionId": "primavera2"
             },
             {
@@ -944,12 +1072,44 @@
               "competitionId": "primavera2"
             },
             {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 12.57,
+              "played": 4,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 15.43,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
               "teamId": "pisa",
               "team": "Pisa",
               "isUs": false,
               "value": 10.23,
               "played": 4,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 8.5,
+              "played": 1,
+              "competitionId": "coppaItalia"
+            },
+            {
+              "teamId": "spezia",
+              "team": "Spezia",
+              "isUs": false,
+              "value": 12.7,
+              "played": 1,
+              "competitionId": "coppaItalia"
             },
             {
               "teamId": "perugia",
@@ -968,18 +1128,18 @@
               "competitionId": "uefaYouthLeague"
             },
             {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 16.69,
-              "played": 2,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
               "teamId": "arsenal",
               "team": "Arsenal",
               "isUs": false,
               "value": 10.25,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "porto",
+              "team": "Porto",
+              "isUs": false,
+              "value": 5.4,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -1055,8 +1215,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 54.18,
-              "played": 4,
+              "value": 58.53,
+              "played": 6,
               "competitionId": "primavera2"
             },
             {
@@ -1079,8 +1239,8 @@
               "teamId": "frosinone",
               "team": "Frosinone",
               "isUs": false,
-              "value": 46.63,
-              "played": 3,
+              "value": 50.08,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -1103,8 +1263,8 @@
               "teamId": "monopoli",
               "team": "Monopoli",
               "isUs": false,
-              "value": 56.4,
-              "played": 5,
+              "value": 53.89,
+              "played": 6,
               "competitionId": "primavera2"
             },
             {
@@ -1114,6 +1274,22 @@
               "value": 56.92,
               "played": 5,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 53.12,
+              "played": 3,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 37.33,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
             },
             {
               "teamId": "pisa",
@@ -1137,14 +1313,6 @@
               "isUs": false,
               "value": 48.24,
               "played": 1,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 53.45,
-              "played": 2,
               "competitionId": "uefaYouthLeague"
             },
             {
@@ -1278,6 +1446,22 @@
               "competitionId": "primavera2"
             },
             {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 31.67,
+              "played": 3,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 10.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
               "teamId": "pisa",
               "team": "Pisa",
               "isUs": false,
@@ -1299,14 +1483,6 @@
               "isUs": false,
               "value": 41.0,
               "played": 1,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 30.0,
-              "played": 2,
               "competitionId": "uefaYouthLeague"
             },
             {
@@ -1441,6 +1617,22 @@
               "competitionId": "primavera2"
             },
             {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 58.99,
+              "played": 3,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 37.04,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
               "teamId": "pisa",
               "team": "Pisa",
               "isUs": false,
@@ -1462,14 +1654,6 @@
               "isUs": false,
               "value": 57.75,
               "played": 1,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 60.26,
-              "played": 2,
               "competitionId": "uefaYouthLeague"
             },
             {
@@ -1503,8 +1687,8 @@
               "teamId": "spezia",
               "team": "Spezia",
               "isUs": false,
-              "value": 24.23,
-              "played": 4,
+              "value": 20.52,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1543,8 +1727,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 21.64,
-              "played": 4,
+              "value": 20.07,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1604,12 +1788,44 @@
               "competitionId": "primavera2"
             },
             {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 22.98,
+              "played": 3,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 27.27,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
               "teamId": "pisa",
               "team": "Pisa",
               "isUs": false,
               "value": 20.0,
               "played": 3,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 18.75,
+              "played": 1,
+              "competitionId": "coppaItalia"
+            },
+            {
+              "teamId": "spezia",
+              "team": "Spezia",
+              "isUs": false,
+              "value": 20.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
             },
             {
               "teamId": "perugia",
@@ -1625,14 +1841,6 @@
               "isUs": false,
               "value": 23.53,
               "played": 1,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 29.46,
-              "played": 2,
               "competitionId": "uefaYouthLeague"
             },
             {
@@ -1665,8 +1873,8 @@
               "teamId": "spezia",
               "team": "Spezia",
               "isUs": false,
-              "value": 4.25,
-              "played": 4,
+              "value": 4.4,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1705,8 +1913,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 9.0,
-              "played": 5,
+              "value": 7.38,
+              "played": 8,
               "competitionId": "primavera2"
             },
             {
@@ -1730,7 +1938,7 @@
               "team": "Frosinone",
               "isUs": false,
               "value": 3.0,
-              "played": 3,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -1753,8 +1961,8 @@
               "teamId": "monopoli",
               "team": "Monopoli",
               "isUs": false,
-              "value": 5.8,
-              "played": 5,
+              "value": 5.0,
+              "played": 6,
               "competitionId": "primavera2"
             },
             {
@@ -1766,12 +1974,44 @@
               "competitionId": "primavera2"
             },
             {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 7.25,
+              "played": 4,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 3.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
               "teamId": "pisa",
               "team": "Pisa",
               "isUs": false,
               "value": 3.0,
               "played": 4,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 5.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
+            },
+            {
+              "teamId": "spezia",
+              "team": "Spezia",
+              "isUs": false,
+              "value": 3.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
             },
             {
               "teamId": "perugia",
@@ -1790,18 +2030,18 @@
               "competitionId": "uefaYouthLeague"
             },
             {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 6.0,
-              "played": 2,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
               "teamId": "arsenal",
               "team": "Arsenal",
               "isUs": false,
               "value": 4.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "porto",
+              "team": "Porto",
+              "isUs": false,
+              "value": 2.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -1836,8 +2076,8 @@
               "teamId": "spezia",
               "team": "Spezia",
               "isUs": false,
-              "value": 44.0,
-              "played": 4,
+              "value": 62.2,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -1876,8 +2116,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 58.4,
-              "played": 5,
+              "value": 60.57,
+              "played": 7,
               "competitionId": "primavera2"
             },
             {
@@ -1900,8 +2140,8 @@
               "teamId": "frosinone",
               "team": "Frosinone",
               "isUs": false,
-              "value": 46.33,
-              "played": 3,
+              "value": 40.75,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -1937,12 +2177,44 @@
               "competitionId": "primavera2"
             },
             {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 46.5,
+              "played": 4,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 65.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
               "teamId": "pisa",
               "team": "Pisa",
               "isUs": false,
               "value": 62.0,
               "played": 4,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 78.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
+            },
+            {
+              "teamId": "spezia",
+              "team": "Spezia",
+              "isUs": false,
+              "value": 81.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
             },
             {
               "teamId": "perugia",
@@ -1961,18 +2233,18 @@
               "competitionId": "uefaYouthLeague"
             },
             {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 40.5,
-              "played": 2,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
               "teamId": "arsenal",
               "team": "Arsenal",
               "isUs": false,
               "value": 42.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "porto",
+              "team": "Porto",
+              "isUs": false,
+              "value": 54.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -2099,12 +2371,44 @@
               "competitionId": "primavera2"
             },
             {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 25.0,
+              "played": 3,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 31.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
               "teamId": "pisa",
               "team": "Pisa",
               "isUs": false,
               "value": 42.25,
               "played": 4,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 29.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
+            },
+            {
+              "teamId": "spezia",
+              "team": "Spezia",
+              "isUs": false,
+              "value": 55.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
             },
             {
               "teamId": "perugia",
@@ -2120,14 +2424,6 @@
               "isUs": false,
               "value": 19.0,
               "played": 1,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 29.0,
-              "played": 2,
               "competitionId": "uefaYouthLeague"
             },
             {
@@ -2262,6 +2558,22 @@
               "competitionId": "primavera2"
             },
             {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 43.88,
+              "played": 3,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 65.22,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
               "teamId": "pisa",
               "team": "Pisa",
               "isUs": false,
@@ -2283,14 +2595,6 @@
               "isUs": false,
               "value": 64.0,
               "played": 1,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 48.47,
-              "played": 2,
               "competitionId": "uefaYouthLeague"
             },
             {
@@ -2424,12 +2728,44 @@
               "competitionId": "primavera2"
             },
             {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 60.0,
+              "played": 3,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 27.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
               "teamId": "pisa",
               "team": "Pisa",
               "isUs": false,
               "value": 41.75,
               "played": 4,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 52.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
+            },
+            {
+              "teamId": "spezia",
+              "team": "Spezia",
+              "isUs": false,
+              "value": 21.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
             },
             {
               "teamId": "perugia",
@@ -2445,14 +2781,6 @@
               "isUs": false,
               "value": 37.0,
               "played": 1,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 48.5,
-              "played": 2,
               "competitionId": "uefaYouthLeague"
             },
             {
@@ -2495,8 +2823,8 @@
               "teamId": "spezia",
               "team": "Spezia",
               "isUs": false,
-              "value": 49.02,
-              "played": 4,
+              "value": 47.78,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -2535,8 +2863,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 54.82,
-              "played": 5,
+              "value": 55.86,
+              "played": 8,
               "competitionId": "primavera2"
             },
             {
@@ -2559,8 +2887,8 @@
               "teamId": "frosinone",
               "team": "Frosinone",
               "isUs": false,
-              "value": 42.93,
-              "played": 3,
+              "value": 42.38,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -2583,8 +2911,8 @@
               "teamId": "monopoli",
               "team": "Monopoli",
               "isUs": false,
-              "value": 51.16,
-              "played": 5,
+              "value": 49.92,
+              "played": 6,
               "competitionId": "primavera2"
             },
             {
@@ -2596,12 +2924,44 @@
               "competitionId": "primavera2"
             },
             {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 51.0,
+              "played": 4,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 40.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
               "teamId": "pisa",
               "team": "Pisa",
               "isUs": false,
               "value": 46.9,
               "played": 4,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 63.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
+            },
+            {
+              "teamId": "spezia",
+              "team": "Spezia",
+              "isUs": false,
+              "value": 37.0,
+              "played": 1,
+              "competitionId": "coppaItalia"
             },
             {
               "teamId": "perugia",
@@ -2620,18 +2980,18 @@
               "competitionId": "uefaYouthLeague"
             },
             {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 47.7,
-              "played": 2,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
               "teamId": "arsenal",
               "team": "Arsenal",
               "isUs": false,
               "value": 46.5,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "porto",
+              "team": "Porto",
+              "isUs": false,
+              "value": 51.4,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -2650,8 +3010,8 @@
               "teamId": "ascoli",
               "team": "Ascoli",
               "isUs": false,
-              "value": 79.58,
-              "played": 4,
+              "value": 70.66,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -2698,8 +3058,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 83.61,
-              "played": 4,
+              "value": 75.75,
+              "played": 7,
               "competitionId": "primavera2"
             },
             {
@@ -2722,8 +3082,8 @@
               "teamId": "frosinone",
               "team": "Frosinone",
               "isUs": false,
-              "value": 77.83,
-              "played": 3,
+              "value": 76.03,
+              "played": 4,
               "competitionId": "primavera2"
             },
             {
@@ -2746,8 +3106,8 @@
               "teamId": "monopoli",
               "team": "Monopoli",
               "isUs": false,
-              "value": 81.32,
-              "played": 5,
+              "value": 81.48,
+              "played": 6,
               "competitionId": "primavera2"
             },
             {
@@ -2757,6 +3117,22 @@
               "value": 81.22,
               "played": 5,
               "competitionId": "primavera2"
+            },
+            {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 195.89,
+              "played": 4,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 86.5,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
             },
             {
               "teamId": "pisa",
@@ -2783,18 +3159,18 @@
               "competitionId": "uefaYouthLeague"
             },
             {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 86.08,
-              "played": 2,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
               "teamId": "arsenal",
               "team": "Arsenal",
               "isUs": false,
               "value": 81.25,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "porto",
+              "team": "Porto",
+              "isUs": false,
+              "value": 551.0,
               "played": 1,
               "competitionId": "uefaYouthLeague"
             }
@@ -2820,8 +3196,8 @@
               "teamId": "spezia",
               "team": "Spezia",
               "isUs": false,
-              "value": 18.25,
-              "played": 4,
+              "value": 15.0,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -2860,8 +3236,8 @@
               "teamId": "napoli",
               "team": "Napoli",
               "isUs": true,
-              "value": 59.5,
-              "played": 4,
+              "value": 48.2,
+              "played": 5,
               "competitionId": "primavera2"
             },
             {
@@ -2921,6 +3297,22 @@
               "competitionId": "primavera2"
             },
             {
+              "teamId": "napoli",
+              "team": "Napoli",
+              "isUs": true,
+              "value": 68.33,
+              "played": 3,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
+              "teamId": "bodo-glimt",
+              "team": "Bodø/Glimt",
+              "isUs": false,
+              "value": 103.0,
+              "played": 1,
+              "competitionId": "uefaYouthLeague"
+            },
+            {
               "teamId": "pisa",
               "team": "Pisa",
               "isUs": false,
@@ -2942,14 +3334,6 @@
               "isUs": false,
               "value": 4.0,
               "played": 1,
-              "competitionId": "uefaYouthLeague"
-            },
-            {
-              "teamId": "napoli",
-              "team": "Napoli",
-              "isUs": true,
-              "value": 57.0,
-              "played": 2,
               "competitionId": "uefaYouthLeague"
             },
             {

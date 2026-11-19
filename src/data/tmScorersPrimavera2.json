@@ -1,181 +1,174 @@
 {
  "source": "https://www.transfermarkt.it/primavera-2-b/torschuetzenliste/wettbewerb/IJ2B",
- "updatedAt": "2026-11-01",
+ "updatedAt": "2026-11-07",
  "scorers": [
   {
    "player": "Lapo Ghizzani",
    "club": "Pisa Primavera",
-   "apps": 6,
+   "apps": 8,
    "goals": 7,
    "teamId": "pisa"
   },
   {
    "player": "Fernando Pellegrini",
    "club": "Catanzaro Primavera",
-   "apps": 6,
+   "apps": 8,
    "goals": 6,
-   "teamId": "catanzaro"
-  },
-  {
-   "player": "Kevin Gjoka",
-   "club": "Catanzaro Primavera",
-   "apps": 7,
-   "goals": 5,
    "teamId": "catanzaro"
   },
   {
    "player": "Marco Giugliano",
    "club": "Benevento Primavera",
-   "apps": 7,
-   "goals": 5,
+   "apps": 8,
+   "goals": 6,
    "teamId": "benevento"
   },
   {
-   "player": "Giancarlo Soprano",
-   "club": "Benevento Primavera",
-   "apps": 7,
-   "goals": 5,
-   "teamId": "benevento"
-  },
-  {
-   "player": "Gabriele Pio Greco",
+   "player": "Kevin Gjoka",
    "club": "Catanzaro Primavera",
-   "apps": 7,
-   "goals": 4,
+   "apps": 8,
+   "goals": 6,
    "teamId": "catanzaro"
-  },
-  {
-   "player": "Francesco Merico",
-   "club": "Perugia Primavera",
-   "apps": 7,
-   "goals": 4,
-   "teamId": "perugia"
-  },
-  {
-   "player": "Luigi Casillo",
-   "club": "Monopoli Primavera",
-   "apps": 7,
-   "goals": 4,
-   "teamId": "monopoli"
-  },
-  {
-   "player": "Davide De Fraia",
-   "club": "Latina Primavera",
-   "apps": 6,
-   "goals": 4,
-   "teamId": "latina"
-  },
-  {
-   "player": "Alessandro Shehaj",
-   "club": "Pescara Primavera",
-   "apps": 6,
-   "goals": 4,
-   "teamId": "pescara"
-  },
-  {
-   "player": "Pietro Angelino",
-   "club": "Avellino Primavera",
-   "apps": 6,
-   "goals": 4,
-   "teamId": "avellino"
   },
   {
    "player": "Gabriele Giacalone",
    "club": "Pescara Primavera",
-   "apps": 6,
-   "goals": 4,
+   "apps": 8,
+   "goals": 5,
    "teamId": "pescara"
+  },
+  {
+   "player": "Giancarlo Soprano",
+   "club": "Benevento Primavera",
+   "apps": 8,
+   "goals": 5,
+   "teamId": "benevento"
   },
   {
    "player": "Elio Agnissan",
    "club": "Perugia Primavera",
-   "apps": 5,
+   "apps": 8,
    "goals": 4,
    "teamId": "perugia"
   },
   {
-   "player": "Milton Pereyra",
+   "player": "Pietro Angelino",
+   "club": "Avellino Primavera",
+   "apps": 8,
+   "goals": 4,
+   "teamId": "avellino"
+  },
+  {
+   "player": "Gabriele Pio Greco",
+   "club": "Catanzaro Primavera",
+   "apps": 8,
+   "goals": 4,
+   "teamId": "catanzaro"
+  },
+  {
+   "player": "Davide De Fraia",
+   "club": "Latina Primavera",
+   "apps": 8,
+   "goals": 4,
+   "teamId": "latina"
+  },
+  {
+   "player": "Francesco Merico",
+   "club": "Perugia Primavera",
+   "apps": 8,
+   "goals": 4,
+   "teamId": "perugia"
+  },
+  {
+   "player": "Alessandro Shehaj",
+   "club": "Pescara Primavera",
+   "apps": 8,
+   "goals": 4,
+   "teamId": "pescara"
+  },
+  {
+   "player": "Milton Pereyra Álvarez",
    "club": "Napoli Primavera",
-   "apps": 5,
+   "apps": 8,
    "goals": 4,
    "teamId": "napoli"
+  },
+  {
+   "player": "Luigi Casillo",
+   "club": "Monopoli Primavera",
+   "apps": 8,
+   "goals": 4,
+   "teamId": "monopoli"
   },
   {
    "player": "Matteo Del Gaudio",
    "club": "Benevento Primavera",
-   "apps": 7,
+   "apps": 8,
    "goals": 3,
    "teamId": "benevento"
   },
   {
-   "player": "Mohamed Seick Mané",
-   "club": "Napoli Primavera",
-   "apps": 7,
-   "goals": 3,
-   "teamId": "napoli"
-  },
-  {
-   "player": "Maxim Schirliu",
-   "club": "Palermo Primavera",
-   "apps": 7,
-   "goals": 3,
-   "teamId": "palermo"
-  },
-  {
    "player": "Daniele Caruso",
    "club": "Cosenza Primavera",
-   "apps": 6,
+   "apps": 8,
    "goals": 3,
    "teamId": "cosenza"
   },
   {
-   "player": "Marco Trentinella",
-   "club": "Spezia Primavera",
-   "apps": 6,
+   "player": "Luca Carpentieri",
+   "club": "Frosinone Primavera",
+   "apps": 8,
    "goals": 3,
-   "teamId": "spezia"
+   "teamId": "frosinone"
   },
   {
-   "player": "Diego Traunini",
+   "player": "Emanuele De Caro",
    "club": "Latina Primavera",
-   "apps": 5,
+   "apps": 8,
    "goals": 3,
    "teamId": "latina"
-  },
-  {
-   "player": "Pietro Bertolino",
-   "club": "Palermo Primavera",
-   "apps": 4,
-   "goals": 3,
-   "teamId": "palermo"
   },
   {
    "player": "Emanuele Modugno",
    "club": "Latina Primavera",
-   "apps": 4,
+   "apps": 8,
    "goals": 3,
    "teamId": "latina"
   },
   {
-   "player": "Francesco Illuzzi",
-   "club": "Monopoli Primavera",
-   "apps": 7,
-   "goals": 2,
-   "teamId": "monopoli"
+   "player": "Diego Traunini",
+   "club": "Latina Primavera",
+   "apps": 8,
+   "goals": 3,
+   "teamId": "latina"
   },
   {
-   "player": "Rikardo Sheji",
-   "club": "Perugia Primavera",
-   "apps": 3,
-   "goals": 2,
-   "teamId": "perugia"
+   "player": "Mohamed Seick Mané",
+   "club": "Napoli Primavera",
+   "apps": 8,
+   "goals": 3,
+   "teamId": "napoli"
   },
   {
-   "player": "Michelangelo Perugini",
-   "club": "Perugia Primavera",
-   "apps": 7,
-   "goals": 2,
-   "teamId": "perugia"
+   "player": "Pietro Bertolino",
+   "club": "Palermo Primavera",
+   "apps": 8,
+   "goals": 3,
+   "teamId": "palermo"
+  },
+  {
+   "player": "Maxim Schirliu",
+   "club": "Palermo Primavera",
+   "apps": 8,
+   "goals": 3,
+   "teamId": "palermo"
+  },
+  {
+   "player": "Marco Trentinella",
+   "club": "Spezia Primavera",
+   "apps": 8,
+   "goals": 3,
+   "teamId": "spezia"
   }
  ]
 }

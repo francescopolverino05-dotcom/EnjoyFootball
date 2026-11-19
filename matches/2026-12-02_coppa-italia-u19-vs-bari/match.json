@@ -1,0 +1,58 @@
+{
+  "id": "2026-12-02_coppa-italia-u19-vs-bari",
+  "slug": "2026-12-02_coppa-italia-u19-vs-bari",
+  "title": {
+    "en": "Napoli vs Bari",
+    "it": "Napoli vs Bari"
+  },
+  "subtitle": {
+    "en": "Coppa Italia Primavera · Round of 32 · 2 Dec 2026",
+    "it": "Coppa Italia Primavera · Sedicesimi di finale · 2 dic 2026"
+  },
+  "date": "2026-12-02",
+  "competitionId": "coppaItalia",
+  "competition": {
+    "en": "Coppa Italia",
+    "it": "Coppa Italia"
+  },
+  "status": "draft",
+  "homeTeam": {
+    "id": "u19",
+    "name": {
+      "en": "Napoli Primavera",
+      "it": "Napoli Primavera"
+    },
+    "shortName": "Napoli",
+    "colorClass": "u19",
+    "logo": "napoli-logo.png"
+  },
+  "awayTeam": {
+    "id": "bari",
+    "name": {
+      "en": "Bari Primavera",
+      "it": "Bari Primavera"
+    },
+    "shortName": "Bari",
+    "colorClass": "opponent",
+    "logo": "logos/bari.png"
+  },
+  "score": {
+    "home": null,
+    "away": null
+  },
+  "goals": [],
+  "timeline": [],
+  "formations": [],
+  "dynamics": [],
+  "teamStats": [],
+  "goalkeepers": [],
+  "video": {
+    "fullMatch": null,
+    "notes": {
+      "en": "Coppa Italia Round of 32 — Napoli vs Bari (2 Dec 2026). Full match video TBA.",
+      "it": "Coppa Italia Sedicesimi — Napoli vs Bari (2 dic 2026). Video gara completo in arrivo."
+    }
+  },
+  "clips": [],
+  "analysisVideos": []
+}
