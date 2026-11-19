@@ -5888,3 +5888,28 @@ a.gacon-ind-row:hover {
 .player-tech-table thead th:first-child {
   text-align: left;
 }
+
+.player-tech-log-title {
+  margin-top: 22px;
+}
+
+.player-tech-log-table {
+  min-width: 640px;
+}
+
+.player-tech-log-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.player-tech-log-bench td,
+.player-tech-log-bench th {
+  color: var(--text-gray);
+}
+
+.player-tech-log-reason {
+  max-width: 220px;
+  font-size: 12px;
+  line-height: 1.35;
+}

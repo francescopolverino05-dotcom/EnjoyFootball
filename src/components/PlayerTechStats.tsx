@@ -1,11 +1,15 @@
+import { Link } from 'react-router-dom';
 import {
   getPlayerTechStats,
   getTechStatsCoverage,
   TECH_STATS_COMPETITIONS,
+  type MatchLogStatus,
+  type PlayerMatchLogEntry,
   type TechStatLine,
 } from '../data/playerMatchStats';
 import { MATCH_COMPETITION_TAB_KEYS } from '../data/matchCompetitions';
 import { useLanguage } from '../i18n/LanguageContext';
+import type { UiKey } from '../i18n/translations';
 
 function minutesCell(line: TechStatLine): string {
   if (line.appearances === 0) return '0';
@@ -13,8 +17,26 @@ function minutesCell(line: TechStatLine): string {
   return line.minutesUnknown > 0 ? `${line.minutes}*` : String(line.minutes);
 }
 
+const STATUS_KEYS: Record<MatchLogStatus, UiKey> = {
+  started: 'techStatsLogStarted',
+  startedOff: 'techStatsLogStartedOff',
+  subOn: 'techStatsLogSubOn',
+  subOnOff: 'techStatsLogSubOnOff',
+  bench: 'techStatsLogBench',
+};
+
+function formatStatus(
+  entry: PlayerMatchLogEntry,
+  t: (key: UiKey) => string
+): string {
+  const template = t(STATUS_KEYS[entry.status]);
+  return template
+    .replace('{on}', entry.onMinute != null ? String(entry.onMinute) : '–')
+    .replace('{off}', entry.offMinute != null ? String(entry.offMinute) : '–');
+}
+
 export default function PlayerTechStats({ playerSlug }: { playerSlug: string }) {
-  const { t } = useLanguage();
+  const { t, L } = useLanguage();
   const stats = getPlayerTechStats(playerSlug);
   const coverage = getTechStatsCoverage();
 
@@ -109,6 +131,53 @@ export default function PlayerTechStats({ playerSlug }: { playerSlug: string }) 
         </table>
       </div>
 
+      {stats.matchLog.length > 0 ? (
+        <>
+          <div className="section-title player-tech-log-title">{t('techStatsLogTitle')}</div>
+          <div className="gps-table-wrap">
+            <table className="gps-table player-tech-table player-tech-log-table">
+              <thead>
+                <tr>
+                  <th scope="col">{t('techStatsLogDate')}</th>
+                  <th scope="col">{t('techStatsLogMatch')}</th>
+                  <th scope="col">{t('techStatsCompetition')}</th>
+                  <th scope="col">{t('techStatsLogStatus')}</th>
+                  <th scope="col">{t('techStatsMinutes')}</th>
+                  <th scope="col">{t('techStatsLogReason')}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {stats.matchLog.map((entry) => (
+                  <tr
+                    key={`${entry.slug}-${entry.status}-${entry.onMinute ?? 'x'}`}
+                    className={entry.counted ? undefined : 'player-tech-log-bench'}
+                  >
+                    <td>{entry.date.slice(5).replace('-', '/')}</td>
+                    <th scope="row">
+                      <Link to={`/matches/${entry.slug}`} className="player-tech-log-link">
+                        {entry.label}
+                      </Link>
+                    </th>
+                    <td>{t(MATCH_COMPETITION_TAB_KEYS[entry.competitionId])}</td>
+                    <td>{formatStatus(entry, t)}</td>
+                    <td>
+                      {entry.status === 'bench'
+                        ? '–'
+                        : entry.minutes == null
+                          ? '–'
+                          : entry.minutes}
+                    </td>
+                    <td className="player-tech-log-reason">
+                      {entry.notes ? L(entry.notes) : '–'}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
+      ) : null}
+
       <p className="video-hint player-tech-note">
         {unknownList && (
           <>
@@ -120,6 +189,8 @@ export default function PlayerTechStats({ playerSlug }: { playerSlug: string }) 
         {missingList && ` ${t('techStatsMissing').replace('{matches}', missingList)}`}
         <br />
         {t('techStatsMethod')}
+        <br />
+        {t('techStatsLogHint')}
       </p>
     </div>
   );

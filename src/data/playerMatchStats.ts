@@ -13,6 +13,7 @@
  *   Unknown when the sheet has no substitution data at all, or when a bench
  *   player appears through an event without an entry minute.
  */
+import type { Localized } from '../i18n/translations';
 import type { MatchCompetitionId, MatchData, PlayerAppearance } from '../types/match';
 import { resolveMatchCompetitionId } from './matchCompetitions';
 import { getAllMatchData, hasMatchScore } from './matches';
@@ -57,11 +58,41 @@ export interface MissingMatch {
   label: string;
 }
 
+/** How the player featured on a single match sheet. */
+export type MatchLogStatus =
+  | 'started'
+  | 'startedOff'
+  | 'subOn'
+  | 'subOnOff'
+  | 'bench';
+
+export interface PlayerMatchLogEntry {
+  slug: string;
+  date: string;
+  label: string;
+  competitionId: TechStatsCompetition;
+  status: MatchLogStatus;
+  onMinute: number | null;
+  offMinute: number | null;
+  /** Minutes played when computable; null for unused bench or unknown. */
+  minutes: number | null;
+  /** Counted toward season appearances. */
+  counted: boolean;
+  goals: number;
+  assists: number;
+  yellowCards: number;
+  redCards: number;
+  /** Source note when present (e.g. injury). */
+  notes?: Localized;
+}
+
 export interface PlayerTechStats {
   byCompetition: Record<TechStatsCompetition, TechStatLine>;
   total: TechStatLine;
   /** Matches this player appeared in where minutes could not be computed. */
   minutesUnknownIn: MissingMatch[];
+  /** Every competitive sheet row for this player (played + unused bench), newest first. */
+  matchLog: PlayerMatchLogEntry[];
 }
 
 export interface TechStatsCoverage {
@@ -205,6 +236,18 @@ export function resolvePlayerSlug(
   return hits.length === 1 ? hits[0].slug : undefined;
 }
 
+function logStatus(row: PlayerAppearance): MatchLogStatus {
+  const didPlay = played(row);
+  if (!didPlay) return 'bench';
+  const hasOn = num(row.onMinute) && row.onMinute > 0;
+  const hasOff = num(row.offMinute);
+  if (row.starter) return hasOff ? 'startedOff' : 'started';
+  if (hasOn && hasOff) return 'subOnOff';
+  if (hasOn) return 'subOn';
+  // Event-only row without entry minute — treat as unknown sub appearance.
+  return 'subOn';
+}
+
 export function getPlayerTechStats(slug: string): PlayerTechStats {
   const { matches } = load();
   const players = getAllPlayers();
@@ -214,14 +257,37 @@ export function getPlayerTechStats(slug: string): PlayerTechStats {
     coppaItalia: emptyLine(),
   } as Record<TechStatsCompetition, TechStatLine>;
   const minutesUnknownIn: MissingMatch[] = [];
+  const matchLog: PlayerMatchLogEntry[] = [];
 
   for (const { match, competitionId, rows, sheetHasSubs } of matches) {
     const row = rows.find((r) => resolvePlayerSlug(r.name, players) === slug);
-    if (!row || !played(row)) continue;
+    if (!row) continue;
+
+    const didPlay = played(row);
+    const mins = didPlay ? minutesFor(row, sheetHasSubs) : null;
+    const status = logStatus(row);
+
+    matchLog.push({
+      slug: match.slug,
+      date: match.date,
+      label: matchLabel(match),
+      competitionId,
+      status,
+      onMinute: num(row.onMinute) ? row.onMinute : null,
+      offMinute: num(row.offMinute) ? row.offMinute : null,
+      minutes: mins,
+      counted: didPlay,
+      goals: row.goals?.length ?? 0,
+      assists: row.assists?.length ?? 0,
+      yellowCards: row.yellowCards?.length ?? 0,
+      redCards: row.redCards?.length ?? 0,
+      notes: row.notes,
+    });
+
+    if (!didPlay) continue;
     const line = byCompetition[competitionId];
     line.appearances += 1;
     if (row.starter) line.starts += 1;
-    const mins = minutesFor(row, sheetHasSubs);
     if (mins == null) {
       line.minutesUnknown += 1;
       minutesUnknownIn.push({ slug: match.slug, competitionId, label: matchLabel(match) });
@@ -234,9 +300,10 @@ export function getPlayerTechStats(slug: string): PlayerTechStats {
     line.redCards += row.redCards?.length ?? 0;
   }
 
+  matchLog.reverse(); // newest first
   const total = emptyLine();
   TECH_STATS_COMPETITIONS.forEach((c) => addLine(total, byCompetition[c]));
-  return { byCompetition, total, minutesUnknownIn };
+  return { byCompetition, total, minutesUnknownIn, matchLog };
 }
 
 /** Appearance names on Napoli sheets that match no squad profile (for audits). */
