@@ -44,13 +44,13 @@
     {
       "minute": 19,
       "scorer": "Pellegrini",
-      "assist": null,
+      "assist": "Greco",
       "teamId": "catanzaro"
     },
     {
-      "minute": 24,
+      "minute": 26,
       "scorer": "Gjoka",
-      "assist": null,
+      "assist": "Greco",
       "teamId": "catanzaro"
     },
     {
@@ -60,13 +60,13 @@
       "teamId": "catanzaro"
     },
     {
-      "minute": 58,
+      "minute": 59,
       "scorer": "Pereyra",
-      "assist": null,
+      "assist": "Rovetini",
       "teamId": "u19"
     },
     {
-      "minute": 77,
+      "minute": 76,
       "scorer": "Mané",
       "assist": null,
       "teamId": "u19"
@@ -94,14 +94,44 @@
       "positionPercent": 20
     },
     {
-      "minute": 24,
+      "minute": 26,
       "label": {
         "en": "Gjoka 0-2",
         "it": "Gjoka 0-2"
       },
       "type": "goal",
       "teamId": "catanzaro",
-      "positionPercent": 25
+      "positionPercent": 28
+    },
+    {
+      "minute": 28,
+      "label": {
+        "en": "Esposito on (Branchizio)",
+        "it": "Entra Esposito (Branchizio)"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 30
+    },
+    {
+      "minute": 46,
+      "label": {
+        "en": "Liccardo 🟨",
+        "it": "Liccardo 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 48
+    },
+    {
+      "minute": 46,
+      "label": {
+        "en": "Rovetini on (Baridò)",
+        "it": "Entra Rovetini (Baridò)"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 49
     },
     {
       "minute": 47,
@@ -111,20 +141,80 @@
       },
       "type": "goal",
       "teamId": "catanzaro",
-      "positionPercent": 49
+      "positionPercent": 51
+    },
+    {
+      "minute": 48,
+      "label": {
+        "en": "Greco 🟨",
+        "it": "Greco 🟨"
+      },
+      "type": "other",
+      "teamId": "catanzaro",
+      "positionPercent": 52
     },
     {
       "minute": 58,
+      "label": {
+        "en": "Fiorentino on (Molon)",
+        "it": "Entra Fiorentino (Molon)"
+      },
+      "type": "substitution",
+      "teamId": "catanzaro",
+      "positionPercent": 61
+    },
+    {
+      "minute": 59,
       "label": {
         "en": "Pereyra 1-3",
         "it": "Pereyra 1-3"
       },
       "type": "goal",
       "teamId": "u19",
-      "positionPercent": 61
+      "positionPercent": 63
     },
     {
-      "minute": 77,
+      "minute": 60,
+      "label": {
+        "en": "Favicchio 🟨",
+        "it": "Favicchio 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 64
+    },
+    {
+      "minute": 62,
+      "label": {
+        "en": "Ciani & Saitta on",
+        "it": "Entrano Ciani e Saitta"
+      },
+      "type": "substitution",
+      "teamId": "catanzaro",
+      "positionPercent": 66
+    },
+    {
+      "minute": 67,
+      "label": {
+        "en": "Chiaiese & Mané on",
+        "it": "Entrano Chiaiese e Mané"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 71
+    },
+    {
+      "minute": 75,
+      "label": {
+        "en": "Castro & Bruno on",
+        "it": "Entrano Castro e Bruno"
+      },
+      "type": "substitution",
+      "teamId": "catanzaro",
+      "positionPercent": 79
+    },
+    {
+      "minute": 76,
       "label": {
         "en": "Mané 2-3",
         "it": "Mané 2-3"
@@ -134,14 +224,54 @@
       "positionPercent": 81
     },
     {
-      "minute": 90,
+      "minute": 77,
       "label": {
-        "en": "Full time 2-3",
-        "it": "Fine partita 2-3"
+        "en": "Lepre on (Lieto)",
+        "it": "Entra Lepre (Lieto)"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 82
+    },
+    {
+      "minute": 77,
+      "label": {
+        "en": "Pellegrini 🟨",
+        "it": "Pellegrini 🟨"
+      },
+      "type": "other",
+      "teamId": "catanzaro",
+      "positionPercent": 83
+    },
+    {
+      "minute": 79,
+      "label": {
+        "en": "Esposito 🟨",
+        "it": "Esposito 🟨"
       },
       "type": "other",
       "teamId": "u19",
-      "positionPercent": 98
+      "positionPercent": 85
+    },
+    {
+      "minute": 84,
+      "label": {
+        "en": "Ciani 🟨",
+        "it": "Ciani 🟨"
+      },
+      "type": "other",
+      "teamId": "catanzaro",
+      "positionPercent": 90
+    },
+    {
+      "minute": 92,
+      "label": {
+        "en": "Chiaiese 🟨",
+        "it": "Chiaiese 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 96
     }
   ],
   "formations": [
@@ -1232,7 +1362,11 @@
         "teamId": "u19",
         "number": 3,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 67,
+        "yellowCards": [
+          46
+        ]
       },
       {
         "name": "De Stefano",
@@ -1246,14 +1380,16 @@
         "teamId": "u19",
         "number": 5,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 28
       },
       {
         "name": "Lieto",
         "teamId": "u19",
         "number": 6,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 77
       },
       {
         "name": "Melnyk",
@@ -1276,7 +1412,7 @@
         "starter": true,
         "onMinute": 0,
         "goals": [
-          58
+          59
         ]
       },
       {
@@ -1284,14 +1420,19 @@
         "teamId": "u19",
         "number": 10,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 46
       },
       {
         "name": "Favicchio",
         "teamId": "u19",
         "number": 11,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 67,
+        "yellowCards": [
+          60
+        ]
       },
       {
         "name": "Merone",
@@ -1303,7 +1444,8 @@
         "name": "Lepre",
         "teamId": "u19",
         "number": 13,
-        "starter": false
+        "starter": false,
+        "onMinute": 77
       },
       {
         "name": "Picardi",
@@ -1315,7 +1457,11 @@
         "name": "Chiaiese",
         "teamId": "u19",
         "number": 15,
-        "starter": false
+        "starter": false,
+        "onMinute": 67,
+        "yellowCards": [
+          92
+        ]
       },
       {
         "name": "Santella",
@@ -1333,7 +1479,11 @@
         "name": "Rovetini",
         "teamId": "u19",
         "number": 18,
-        "starter": false
+        "starter": false,
+        "onMinute": 46,
+        "assists": [
+          59
+        ]
       },
       {
         "name": "Chiummariello",
@@ -1345,15 +1495,20 @@
         "name": "Esposito",
         "teamId": "u19",
         "number": 20,
-        "starter": false
+        "starter": false,
+        "onMinute": 28,
+        "yellowCards": [
+          79
+        ]
       },
       {
         "name": "Mané",
         "teamId": "u19",
         "number": 21,
         "starter": false,
+        "onMinute": 67,
         "goals": [
-          77
+          76
         ]
       },
       {
@@ -1385,7 +1540,7 @@
         "onMinute": 0
       },
       {
-        "name": "Cesnauskis",
+        "name": "Česnauskis",
         "teamId": "catanzaro",
         "number": 3,
         "starter": true,
@@ -1396,7 +1551,8 @@
         "teamId": "catanzaro",
         "number": 4,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 75
       },
       {
         "name": "Distante",
@@ -1413,18 +1569,20 @@
         "onMinute": 0
       },
       {
-        "name": "Aloiso",
+        "name": "Aloisio",
         "teamId": "catanzaro",
         "number": 7,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 62
       },
       {
         "name": "Molon",
         "teamId": "catanzaro",
         "number": 8,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": 58
       },
       {
         "name": "Pellegrini",
@@ -1434,6 +1592,9 @@
         "onMinute": 0,
         "goals": [
           19
+        ],
+        "yellowCards": [
+          77
         ]
       },
       {
@@ -1442,8 +1603,16 @@
         "number": 10,
         "starter": true,
         "onMinute": 0,
+        "offMinute": 75,
         "goals": [
           47
+        ],
+        "assists": [
+          19,
+          26
+        ],
+        "yellowCards": [
+          48
         ]
       },
       {
@@ -1452,12 +1621,13 @@
         "number": 11,
         "starter": true,
         "onMinute": 0,
+        "offMinute": 62,
         "goals": [
-          24
+          26
         ]
       },
       {
-        "name": "Gisotti",
+        "name": "Maiolino",
         "teamId": "catanzaro",
         "number": 12,
         "starter": false
@@ -1478,25 +1648,32 @@
         "name": "Saitta",
         "teamId": "catanzaro",
         "number": 15,
-        "starter": false
+        "starter": false,
+        "onMinute": 62
       },
       {
         "name": "Fiorentino",
         "teamId": "catanzaro",
         "number": 16,
-        "starter": false
+        "starter": false,
+        "onMinute": 58
       },
       {
         "name": "Bruno",
         "teamId": "catanzaro",
         "number": 17,
-        "starter": false
+        "starter": false,
+        "onMinute": 75
       },
       {
         "name": "Ciani",
         "teamId": "catanzaro",
         "number": 18,
-        "starter": false
+        "starter": false,
+        "onMinute": 62,
+        "yellowCards": [
+          84
+        ]
       },
       {
         "name": "Socco",
@@ -1513,14 +1690,9 @@
       {
         "name": "Castro",
         "teamId": "catanzaro",
-        "number": 21,
-        "starter": false
-      },
-      {
-        "name": "Maiolino",
-        "teamId": "catanzaro",
         "number": 22,
-        "starter": false
+        "starter": false,
+        "onMinute": 75
       },
       {
         "name": "Drago",
@@ -1528,10 +1700,6 @@
         "number": 23,
         "starter": false
       }
-    ],
-    "notes": {
-      "en": "Starting XI from match sheet (Napoli 3-4-2-1; Catanzaro 5-3-2). Bench listed from convocati; substitution minutes not on sheet.",
-      "it": "Titolari dalla distinta (Napoli 3-4-2-1; Catanzaro 5-3-2). Panchina dai convocati; minuti sostituzioni non presenti sulla distinta."
-    }
+    ]
   }
 }

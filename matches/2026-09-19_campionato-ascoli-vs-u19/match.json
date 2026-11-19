@@ -158,6 +158,16 @@
       "positionPercent": 77
     },
     {
+      "minute": 81,
+      "label": {
+        "en": "Balducci, Martinelli & Cicchitti on",
+        "it": "Entrano Balducci, Martinelli e Cicchitti"
+      },
+      "type": "substitution",
+      "teamId": "ascoli",
+      "positionPercent": 88
+    },
+    {
       "minute": 90,
       "label": {
         "en": "Full time 2-2",
@@ -756,5 +766,340 @@
         }
       ]
     }
-  ]
+  ],
+  "appearances": {
+    "home": [
+      {
+        "name": "Dente",
+        "teamId": "ascoli",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Zampardi",
+        "teamId": "ascoli",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Bruni",
+        "teamId": "ascoli",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 81
+      },
+      {
+        "name": "Diamanti",
+        "teamId": "ascoli",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [
+          null
+        ]
+      },
+      {
+        "name": "Russo",
+        "teamId": "ascoli",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Curzi",
+        "teamId": "ascoli",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [
+          null
+        ]
+      },
+      {
+        "name": "Berete",
+        "teamId": "ascoli",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 81,
+        "goals": [
+          50
+        ]
+      },
+      {
+        "name": "Angelino",
+        "teamId": "ascoli",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Raimondo",
+        "teamId": "ascoli",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 81,
+        "goals": [
+          30
+        ]
+      },
+      {
+        "name": "Dente G.",
+        "teamId": "ascoli",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 69
+      },
+      {
+        "name": "Aloisi",
+        "teamId": "ascoli",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 61
+      },
+      {
+        "name": "Angeletti",
+        "teamId": "ascoli",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Leonori",
+        "teamId": "ascoli",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Parente",
+        "teamId": "ascoli",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Cicchitti",
+        "teamId": "ascoli",
+        "number": 15,
+        "starter": false,
+        "onMinute": 81
+      },
+      {
+        "name": "Cucco",
+        "teamId": "ascoli",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Balducci",
+        "teamId": "ascoli",
+        "number": 17,
+        "starter": false,
+        "onMinute": 81
+      },
+      {
+        "name": "Cantini",
+        "teamId": "ascoli",
+        "number": 18,
+        "starter": false
+      },
+      {
+        "name": "Di Mattia",
+        "teamId": "ascoli",
+        "number": 19,
+        "starter": false,
+        "onMinute": 69
+      },
+      {
+        "name": "Diamanti T.",
+        "teamId": "ascoli",
+        "number": 20,
+        "starter": false
+      },
+      {
+        "name": "Martinelli",
+        "teamId": "ascoli",
+        "number": 21,
+        "starter": false,
+        "onMinute": 81
+      },
+      {
+        "name": "Perrulli",
+        "teamId": "ascoli",
+        "number": 22,
+        "starter": false
+      },
+      {
+        "name": "Sulli",
+        "teamId": "ascoli",
+        "number": 23,
+        "starter": false,
+        "onMinute": 61,
+        "yellowCards": [
+          null
+        ]
+      }
+    ],
+    "away": [
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [
+          null
+        ]
+      },
+      {
+        "name": "Picardi",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [
+          null
+        ]
+      },
+      {
+        "name": "Zappalà",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 14
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Chiummariello",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 54
+      },
+      {
+        "name": "Pereyra",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          53
+        ],
+        "yellowCards": [
+          null
+        ]
+      },
+      {
+        "name": "Baridó",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          18
+        ]
+      },
+      {
+        "name": "Mané",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 54,
+        "yellowCards": [
+          null
+        ]
+      },
+      {
+        "name": "Merone",
+        "teamId": "u19",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Candela",
+        "teamId": "u19",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Lieto",
+        "teamId": "u19",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 15,
+        "starter": false,
+        "onMinute": 14
+      },
+      {
+        "name": "Santella",
+        "teamId": "u19",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Anic",
+        "teamId": "u19",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "Riccio",
+        "teamId": "u19",
+        "number": 18,
+        "starter": false,
+        "onMinute": 54
+      },
+      {
+        "name": "Pengue",
+        "teamId": "u19",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Esposito",
+        "teamId": "u19",
+        "number": 20,
+        "starter": false,
+        "onMinute": 54
+      }
+    ]
+  }
 }
