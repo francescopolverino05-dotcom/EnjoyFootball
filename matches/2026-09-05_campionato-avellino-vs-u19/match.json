@@ -1177,7 +1177,10 @@
         "notes": {
           "en": "Yellow card (minute unknown)",
           "it": "Ammonito (minuto sconosciuto)"
-        }
+        },
+        "yellowCards": [
+          null
+        ]
       },
       {
         "name": "Melnyk",
@@ -1189,7 +1192,10 @@
         "notes": {
           "en": "Yellow card (minute unknown)",
           "it": "Ammonito (minuto sconosciuto)"
-        }
+        },
+        "yellowCards": [
+          null
+        ]
       },
       {
         "name": "Cumariello",
@@ -1201,7 +1207,10 @@
         "notes": {
           "en": "Yellow card (minute unknown)",
           "it": "Ammonito (minuto sconosciuto)"
-        }
+        },
+        "yellowCards": [
+          null
+        ]
       },
       {
         "name": "Pereira",
@@ -1243,7 +1252,10 @@
         "notes": {
           "en": "Yellow card (minute unknown)",
           "it": "Ammonito (minuto sconosciuto)"
-        }
+        },
+        "yellowCards": [
+          null
+        ]
       },
       {
         "name": "Liccardo",

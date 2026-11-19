@@ -45,6 +45,11 @@ export function getAllMatches(): MatchSummary[] {
     .sort((a, b) => b.date.localeCompare(a.date));
 }
 
+/** Every match.json (with effective status), unsorted. */
+export function getAllMatchData(): MatchData[] {
+  return Object.values(matchModules).map((mod) => withEffectiveStatus(mod.default));
+}
+
 export function getMatchBySlug(slug: string): MatchData | undefined {
   const entry = Object.entries(matchModules).find(([path]) =>
     path.includes(`/${slug}/`)
