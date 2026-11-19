@@ -4397,6 +4397,32 @@ attachReferencePack(
       videoFile: 'https://vimeo.com/1246032146/45caa4dce4',
       tags: ['vimeo', 'opposition', 'studio-report'],
     },
+    {
+      id: 'perugia-studio-agnissan',
+      title: {
+        en: 'Elio Agnissan Studio',
+        it: 'Studio Elio Agnissan',
+      },
+      description: {
+        en: 'Individual Agnissan studio (Avversari → Perugia → Studio Report).',
+        it: 'Studio individuale su Agnissan (Avversari → Perugia → Studio Report).',
+      },
+      videoFile: 'https://vimeo.com/1248037038/168d1b4cdf',
+      tags: ['vimeo', 'opposition', 'studio-report', 'agnissan'],
+    },
+    {
+      id: 'perugia-studio-difesa-sui-lati',
+      title: {
+        en: 'Defending wide (for #10s and wingers)',
+        it: 'Difesa sui lati (per trequartisti e ali)',
+      },
+      description: {
+        en: 'How Perugia defend the flanks — video for attacking mids and wide players (Avversari → Perugia → Studio Report).',
+        it: 'Come il Perugia difende sulle fasce — video per trequartisti e ali (Avversari → Perugia → Studio Report).',
+      },
+      videoFile: 'https://vimeo.com/1248038702/3e2c499a44',
+      tags: ['vimeo', 'opposition', 'studio-report', 'wide-defence'],
+    },
   ],
 );
 
@@ -5279,6 +5305,18 @@ export function getOurFixturesVsOpponent(opponent: OppositionOpponent) {
               "en": "Perugia Tiri · Agnissan · 5-0",
               "it": "Perugia Tiri · Agnissan · 5-0"
             }
+          },
+          {
+            "id": "perugia-gk-agnissan-1248037038",
+            "title": {
+              "en": "Elio Agnissan Studio",
+              "it": "Studio Elio Agnissan"
+            },
+            "videoFile": "https://vimeo.com/1248037038/168d1b4cdf",
+            "comments": {
+              "en": "Perugia · individual Agnissan studio · 3:07",
+              "it": "Perugia · studio individuale Agnissan · 3:07"
+            }
           }
         ]
       },
@@ -5499,6 +5537,34 @@ export function getNextOppositionTarget(today = todayIsoDate()): {
       {"id":"perugia-sp-defendingcorners-1245486569","title":{"en":"Defending corner 19","it":"Angolo subito 19"},"comments":{"en":"Perugia set pieces · Vimeo Difensivi · vs Pescara · 89:50","it":"Palle inattive Perugia · Vimeo Difensivi · vs Pescara · 89:50"},"videoFile":"https://vimeo.com/1245486569/e4de8b88b3","section":"defending-corners","tags":["vimeo","opposition","set-piece"]},
       {"id":"perugia-sp-defendingcorners-1242569685","title":{"en":"Defending corner 20","it":"Angolo subito 20"},"comments":{"en":"Perugia defending · reused from Frosinone Offensivi (vs Frosinone) · 90:10","it":"Perugia in difesa · da Frosinone Offensivi (vs Frosinone) · 90:10"},"videoFile":"https://vimeo.com/1242569685/8b26469c77","section":"defending-corners","tags":["vimeo","opposition","set-piece"]},
       {"id":"perugia-sp-defendingcorners-1245486571","title":{"en":"Defending corner 21","it":"Angolo subito 21"},"comments":{"en":"Perugia set pieces · Vimeo Difensivi · vs Pescara · 95:34","it":"Palle inattive Perugia · Vimeo Difensivi · vs Pescara · 95:34"},"videoFile":"https://vimeo.com/1245486571/a0e71981eb","section":"defending-corners","tags":["vimeo","opposition","set-piece"]},
+      {
+        id: 'perugia-midblock-difesa-sui-lati-1248038702',
+        title: {
+          en: 'Defending wide (for #10s and wingers)',
+          it: 'Difesa sui lati (per trequartisti e ali)',
+        },
+        comments: {
+          en: 'Perugia · how they defend the flanks · Studio Report · 1:58',
+          it: 'Perugia · come difendono sulle fasce · Studio Report · 1:58',
+        },
+        videoFile: 'https://vimeo.com/1248038702/3e2c499a44',
+        section: 'mid-block',
+        tags: ['vimeo', 'opposition', 'wide-defence'],
+      },
+      {
+        id: 'perugia-last30m-agnissan-studio-1248037038',
+        title: {
+          en: 'Elio Agnissan Studio',
+          it: 'Studio Elio Agnissan',
+        },
+        comments: {
+          en: 'Perugia · individual Agnissan studio · Studio Report · 3:07',
+          it: 'Perugia · studio individuale Agnissan · Studio Report · 3:07',
+        },
+        videoFile: 'https://vimeo.com/1248037038/168d1b4cdf',
+        section: 'last-30m',
+        tags: ['vimeo', 'opposition', 'agnissan'],
+      },
     ];
   }
 }
