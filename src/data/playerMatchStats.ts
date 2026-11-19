@@ -47,7 +47,9 @@ const NAME_ALIASES: Record<string, string> = {
   rovettini: 'rovetini',
   pereira: 'pereyra',
   cumariello: 'chiummariello',
+  // Sheets swing between Simone / Simeone for Pepe; also folded in foldNameVariants.
   'pepe simeone': 'pepe simone',
+  'simeone pepe': 'pepe simone',
 };
 
 export interface TechStatLine {
@@ -165,6 +167,11 @@ export function normalizeName(name: string): string {
     .replace(/^[a-z]\s+/, '') // "M. De Michele" → "de michele"
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+/** Sheet/staff spellings that are the same person (Simone ↔ Simeone). */
+function foldNameVariants(name: string): string {
+  return name.replace(/\bsimeone\b/g, 'simone');
 }
 
 function matchLabel(m: MatchData): string {
@@ -480,17 +487,27 @@ export function getTechStatsCoverage(): TechStatsCoverage {
   return load().coverage;
 }
 
+function namesMatch(query: string, full: string): boolean {
+  if (full === query || full.startsWith(`${query} `)) return true;
+  const qt = query.split(' ').filter(Boolean);
+  const ft = full.split(' ').filter(Boolean);
+  // "Simone Pepe" vs roster "Pepe Simone" (same tokens, either order).
+  if (qt.length >= 2 && qt.length === ft.length) {
+    return [...qt].sort().join(' ') === [...ft].sort().join(' ');
+  }
+  return false;
+}
+
 /** Map an appearance name to a squad slug (unique prefix match on surname). */
 export function resolvePlayerSlug(
   name: string,
   players: Player[] = getAllPlayers()
 ): string | undefined {
-  let key = normalizeName(name);
-  key = NAME_ALIASES[key] ?? key;
-  const hits = players.filter((pl) => {
-    const full = normalizeName(pl.displayName);
-    return full === key || full.startsWith(`${key} `);
-  });
+  let key = foldNameVariants(normalizeName(name));
+  key = foldNameVariants(NAME_ALIASES[key] ?? NAME_ALIASES[normalizeName(name)] ?? key);
+  const hits = players.filter((pl) =>
+    namesMatch(key, foldNameVariants(normalizeName(pl.displayName)))
+  );
   return hits.length === 1 ? hits[0].slug : undefined;
 }
 

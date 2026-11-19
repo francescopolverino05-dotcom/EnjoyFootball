@@ -101,6 +101,8 @@ ALIASES = {
     "pepe": "pepe-simone",
     "pepe simone": "pepe-simone",
     "pepe simeone": "pepe-simone",
+    "simeone pepe": "pepe-simone",
+    "simone pepe": "pepe-simone",
 }
 
 
@@ -132,17 +134,29 @@ def build_roster_map(players: list[dict]) -> dict[str, str]:
     return by_full
 
 
+def fold_name_variants(n: str) -> str:
+    """Sheets swing between Simone / Simeone for Pepe."""
+    return re.sub(r"\bsimeone\b", "simone", n)
+
+
 def match_player(raw: str, by_full: dict[str, str]) -> str | None:
-    n = clean_name(raw)
+    n = fold_name_variants(clean_name(raw))
     if n in ALIASES:
         return ALIASES[n]
+    # Also try pre-fold alias keys (pepe simeone).
+    raw_n = clean_name(raw)
+    if raw_n in ALIASES:
+        return ALIASES[raw_n]
     if n in by_full:
         return by_full[n]
     for full, slug in by_full.items():
-        if n == full or n.startswith(full) or full.startswith(n):
+        f = fold_name_variants(full)
+        if n == f or n.startswith(f) or f.startswith(n):
             return slug
-        nt, ft = set(n.split()), set(full.split())
-        if len(nt & ft) >= 2 and n.split()[0] == full.split()[0]:
+        nt, ft = set(n.split()), set(f.split())
+        if len(nt) >= 2 and nt == ft:
+            return slug
+        if len(nt & ft) >= 2 and n.split()[0] == f.split()[0]:
             return slug
     return None
 

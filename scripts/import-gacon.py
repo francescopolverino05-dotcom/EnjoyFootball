@@ -49,6 +49,8 @@ ALIASES = {
     "pepe": "pepe-simone",
     "pepe simone": "pepe-simone",
     "pepe simeone": "pepe-simone",
+    "simeone pepe": "pepe-simone",
+    "simone pepe": "pepe-simone",
 }
 
 
@@ -81,14 +83,22 @@ def build_roster_map(players: list[dict]) -> tuple[dict[str, str], Counter]:
     return by_full, surnames
 
 
+def fold_name_variants(n: str) -> str:
+    """Sheets swing between Simone / Simeone for Pepe."""
+    return re.sub(r"\bsimeone\b", "simone", n)
+
+
 def match_player(
     raw: str, by_full: dict[str, str], surnames: Counter
 ) -> str | None:
-    n = clean_name(raw)
+    raw_n = clean_name(raw)
+    n = fold_name_variants(raw_n)
     if not n:
         return None
     if n in ALIASES:
         return ALIASES[n]
+    if raw_n in ALIASES:
+        return ALIASES[raw_n]
     if n in by_full:
         return by_full[n]
 
@@ -96,14 +106,18 @@ def match_player(
     tokens = n.split()
     if len(tokens) == 1 and surnames[tokens[0]] == 1:
         for full, slug in by_full.items():
-            if full.split()[0] == tokens[0]:
+            if fold_name_variants(full).split()[0] == tokens[0]:
                 return slug
 
     for full, slug in by_full.items():
-        if n == full or n.startswith(full) or full.startswith(n):
+        f = fold_name_variants(full)
+        if n == f or n.startswith(f) or f.startswith(n):
             return slug
-        nt, ft = set(n.split()), set(full.split())
-        if len(nt & ft) >= 2 and n.split()[0] == full.split()[0]:
+        nt, ft = set(n.split()), set(f.split())
+        # Same tokens either order ("Simone Pepe" vs "Pepe Simone").
+        if len(nt) >= 2 and nt == ft:
+            return slug
+        if len(nt & ft) >= 2 and n.split()[0] == f.split()[0]:
             return slug
         # Close surname typo with unique target (Zappalardo → Zappalá).
         sur = full.split()[0]
