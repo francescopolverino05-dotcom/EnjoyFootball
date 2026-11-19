@@ -255,11 +255,11 @@ export function oppositionClipSectionLabel(id: OppositionClipSectionId) {
   return OPPOSITION_CLIP_SECTION_LABELS[id];
 }
 
-/** Primavera 2 Girone B + Coppa Italia Spezia + UYL league-phase opponents. */
+/** Primavera 2 Girone B + Coppa Italia (Spezia, Bari) + UYL league-phase opponents. */
 const OPPONENTS: OppositionOpponent[] = [
   club('ascoli', 'Ascoli', ['primavera2'], '1-4-1-2-3'),
   club('avellino', 'Avellino', ['primavera2'], '1-4-3-3', ['1-4-2-3-1']),
-  club('bari', 'Bari', ['primavera2'], '1-4-3-1-2'),
+  club('bari', 'Bari', ['primavera2', 'coppaItalia'], '1-4-3-1-2'),
   club('benevento', 'Benevento', ['primavera2']),
   club('catanzaro', 'Catanzaro', ['primavera2']),
   club('cosenza', 'Cosenza', ['primavera2']),
