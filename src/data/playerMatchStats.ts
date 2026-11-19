@@ -308,7 +308,7 @@ export function listNapoliSeasonFixtures(): SeasonFixture[] {
   const byPair = new Map<string, SeasonFixture>();
 
   const upsert = (
-    pairKey: string,
+    _pairKey: string,
     fx: SeasonFixture,
     homeId: string,
     awayId: string
@@ -322,18 +322,31 @@ export function listNapoliSeasonFixtures(): SeasonFixture[] {
         awayId,
       });
     const report = resolved ? getMatchBySlug(resolved) : undefined;
+    // Prefer the match-report date when known so ±1 calendar drift (e.g. Porto
+    // UYL MD4 on 3 Nov vs kick-off 4 Nov) does not create a second row.
+    const date = report?.date || fx.date;
     const next: SeasonFixture = {
       ...fx,
+      date,
       matchSlug: resolved,
       label: report ? matchLabel(report) : fx.label,
       played: fx.played || (!!resolved && hasMatchScore(report?.score)),
     };
-    const prev = byPair.get(pairKey);
+    // Collapse by slug when we have one; otherwise by date+opponents.
+    const key = resolved
+      ? `${fx.competitionId}|slug:${resolved}`
+      : fixturePairKey(date, fx.competitionId, homeId, awayId);
+    if (resolved) {
+      for (const [k, v] of byPair) {
+        if (k !== key && v.matchSlug === resolved) byPair.delete(k);
+      }
+    }
+    const prev = byPair.get(key);
     if (!prev) {
-      byPair.set(pairKey, next);
+      byPair.set(key, next);
       return;
     }
-    byPair.set(pairKey, {
+    byPair.set(key, {
       id: prev.id,
       date: next.date || prev.date,
       competitionId: prev.competitionId,
