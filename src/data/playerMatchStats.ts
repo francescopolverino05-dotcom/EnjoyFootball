@@ -47,6 +47,7 @@ const NAME_ALIASES: Record<string, string> = {
   rovettini: 'rovetini',
   pereira: 'pereyra',
   cumariello: 'chiummariello',
+  'pepe simeone': 'pepe simone',
 };
 
 export interface TechStatLine {

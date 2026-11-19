@@ -109,6 +109,9 @@ ALIASES = {
     "chialese": "chiaiese-riccardo",
     "chiaiese": "chiaiese-riccardo",
     "chianese": "chiaiese-riccardo",
+    "pepe": "pepe-simone",
+    "pepe simone": "pepe-simone",
+    "pepe simeone": "pepe-simone",
 }
 
 

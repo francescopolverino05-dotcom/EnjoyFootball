@@ -46,6 +46,9 @@ ALIASES = {
     "rovettini alessandro": "rovetini-alessandro",
     "zappalardo": "zappala-andrea",
     "zappalardo andrea": "zappala-andrea",
+    "pepe": "pepe-simone",
+    "pepe simone": "pepe-simone",
+    "pepe simeone": "pepe-simone",
 }
 
 
