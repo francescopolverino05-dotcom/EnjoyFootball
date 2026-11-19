@@ -233,16 +233,106 @@ function fixturePlayed(score: string | null | undefined, matchSlug: string | nul
   return !!m && hasMatchScore(m.score);
 }
 
+function normTeamId(id: string): string {
+  return isNapoliId(id) ? 'napoli' : id;
+}
+
+/** Pair key so standings rows and match reports collapse to one fixture. */
+function fixturePairKey(
+  date: string,
+  competitionId: TechStatsCompetition,
+  homeId: string,
+  awayId: string
+): string {
+  return `${competitionId}|${date}|${normTeamId(homeId)}|${normTeamId(awayId)}`;
+}
+
+function opponentIdFromCupName(name: string): string {
+  const key = name
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+  if (key.includes('napoli')) return 'napoli';
+  if (key.includes('bodo')) return 'bodo-glimt';
+  if (key.includes('man-city') || key.includes('manchester')) return 'man-city';
+  if (key.includes('club-brugge') || key.includes('brugge')) return 'club-brugge';
+  return key;
+}
+
+/**
+ * Resolve a match report slug when standings omit it: same competition, date,
+ * and opponents (u19 ↔ napoli).
+ */
+function resolveMatchSlug(options: {
+  date: string;
+  competitionId: TechStatsCompetition;
+  homeId: string;
+  awayId: string;
+}): string | null {
+  const home = normTeamId(options.homeId);
+  const away = normTeamId(options.awayId);
+  for (const match of getAllMatchData()) {
+    if (match.date !== options.date) continue;
+    if (resolveMatchCompetitionId(match) !== options.competitionId) continue;
+    const mh = normTeamId(match.homeTeam.id);
+    const ma = normTeamId(match.awayTeam.id);
+    if (mh === home && ma === away) return match.slug;
+  }
+  // Date drift of ±1 day (UYL kick-off vs calendar day).
+  for (const match of getAllMatchData()) {
+    if (resolveMatchCompetitionId(match) !== options.competitionId) continue;
+    const mh = normTeamId(match.homeTeam.id);
+    const ma = normTeamId(match.awayTeam.id);
+    if (mh !== home || ma !== away) continue;
+    const d0 = Date.parse(options.date);
+    const d1 = Date.parse(match.date);
+    if (Number.isFinite(d0) && Number.isFinite(d1) && Math.abs(d0 - d1) <= 86400000) {
+      return match.slug;
+    }
+  }
+  return null;
+}
+
 /** Every competitive Napoli fixture on the season calendar (P2 + Coppa + UYL). */
 export function listNapoliSeasonFixtures(): SeasonFixture[] {
-  const out: SeasonFixture[] = [];
-  const seen = new Set<string>();
+  const byPair = new Map<string, SeasonFixture>();
 
-  const push = (fx: SeasonFixture) => {
-    const key = fx.matchSlug ?? fx.id;
-    if (seen.has(key)) return;
-    seen.add(key);
-    out.push(fx);
+  const upsert = (
+    pairKey: string,
+    fx: SeasonFixture,
+    homeId: string,
+    awayId: string
+  ) => {
+    const resolved =
+      fx.matchSlug?.trim() ||
+      resolveMatchSlug({
+        date: fx.date,
+        competitionId: fx.competitionId,
+        homeId,
+        awayId,
+      });
+    const report = resolved ? getMatchBySlug(resolved) : undefined;
+    const next: SeasonFixture = {
+      ...fx,
+      matchSlug: resolved,
+      label: report ? matchLabel(report) : fx.label,
+      played: fx.played || (!!resolved && hasMatchScore(report?.score)),
+    };
+    const prev = byPair.get(pairKey);
+    if (!prev) {
+      byPair.set(pairKey, next);
+      return;
+    }
+    byPair.set(pairKey, {
+      id: prev.id,
+      date: next.date || prev.date,
+      competitionId: prev.competitionId,
+      label: next.label || prev.label,
+      matchSlug: next.matchSlug ?? prev.matchSlug,
+      played: prev.played || next.played,
+    });
   };
 
   const p2 = getPrimavera2Standings();
@@ -252,14 +342,19 @@ export function listNapoliSeasonFixtures(): SeasonFixture[] {
       const home = teamNameById(p2, f.homeId);
       const away = teamNameById(p2, f.awayId);
       const matchSlug = f.matchSlug?.trim() || null;
-      push({
-        id: `p2:${md.date}:${f.homeId}-${f.awayId}`,
-        date: md.date,
-        label: `${home}–${away}`,
-        competitionId: 'primavera2',
-        matchSlug,
-        played: fixturePlayed(f.score, matchSlug),
-      });
+      upsert(
+        fixturePairKey(md.date, 'primavera2', f.homeId, f.awayId),
+        {
+          id: `p2:${md.date}:${f.homeId}-${f.awayId}`,
+          date: md.date,
+          label: `${home}–${away}`,
+          competitionId: 'primavera2',
+          matchSlug,
+          played: fixturePlayed(f.score, matchSlug),
+        },
+        f.homeId,
+        f.awayId
+      );
     }
   }
 
@@ -268,14 +363,21 @@ export function listNapoliSeasonFixtures(): SeasonFixture[] {
     for (const f of round.fixtures) {
       if (!f.us && !isNapoliCupSide(f.home) && !isNapoliCupSide(f.away)) continue;
       const matchSlug = f.matchSlug?.trim() || null;
-      push({
-        id: `coppa:${f.date}:${f.home}-${f.away}`,
-        date: f.date,
-        label: `${f.home}–${f.away}`,
-        competitionId: 'coppaItalia',
-        matchSlug,
-        played: fixturePlayed(f.score, matchSlug),
-      });
+      const homeId = opponentIdFromCupName(f.home);
+      const awayId = opponentIdFromCupName(f.away);
+      upsert(
+        fixturePairKey(f.date, 'coppaItalia', homeId, awayId),
+        {
+          id: `coppa:${f.date}:${f.home}-${f.away}`,
+          date: f.date,
+          label: `${f.home}–${f.away}`,
+          competitionId: 'coppaItalia',
+          matchSlug,
+          played: fixturePlayed(f.score, matchSlug),
+        },
+        homeId,
+        awayId
+      );
     }
   }
 
@@ -288,34 +390,44 @@ export function listNapoliSeasonFixtures(): SeasonFixture[] {
         const home = teamNameById(uylTable, f.homeId);
         const away = teamNameById(uylTable, f.awayId);
         const matchSlug = f.matchSlug?.trim() || null;
-        push({
-          id: `uyl:${md.date}:${f.homeId}-${f.awayId}`,
-          date: md.date,
-          label: `${home}–${away}`,
-          competitionId: 'uefaYouthLeague',
-          matchSlug,
-          played: fixturePlayed(f.score, matchSlug),
-        });
+        upsert(
+          fixturePairKey(md.date, 'uefaYouthLeague', f.homeId, f.awayId),
+          {
+            id: `uyl:${md.date}:${f.homeId}-${f.awayId}`,
+            date: md.date,
+            label: `${home}–${away}`,
+            competitionId: 'uefaYouthLeague',
+            matchSlug,
+            played: fixturePlayed(f.score, matchSlug),
+          },
+          f.homeId,
+          f.awayId
+        );
       }
     }
   }
 
-  // Include any played report not yet linked from standings (safety net).
+  // Safety net: played reports still missing from the calendar.
   for (const match of getAllMatchData()) {
     if (!hasMatchScore(match.score)) continue;
     const competitionId = resolveMatchCompetitionId(match);
     if (!isTechComp(competitionId)) continue;
-    push({
-      id: `match:${match.slug}`,
-      date: match.date,
-      label: matchLabel(match),
-      competitionId,
-      matchSlug: match.slug,
-      played: true,
-    });
+    upsert(
+      fixturePairKey(match.date, competitionId, match.homeTeam.id, match.awayTeam.id),
+      {
+        id: `match:${match.slug}`,
+        date: match.date,
+        label: matchLabel(match),
+        competitionId,
+        matchSlug: match.slug,
+        played: true,
+      },
+      match.homeTeam.id,
+      match.awayTeam.id
+    );
   }
 
-  return out.sort(
+  return [...byPair.values()].sort(
     (a, b) => a.date.localeCompare(b.date) || a.label.localeCompare(b.label)
   );
 }

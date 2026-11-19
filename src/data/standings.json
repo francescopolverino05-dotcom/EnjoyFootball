@@ -242,7 +242,8 @@
             {
               "homeId": "avellino",
               "awayId": "napoli",
-              "score": "3-1"
+              "score": "3-1",
+              "matchSlug": "2026-09-05_campionato-avellino-vs-u19"
             },
             {
               "homeId": "benevento",
@@ -312,7 +313,8 @@
             {
               "homeId": "napoli",
               "awayId": "catanzaro",
-              "score": "2-3"
+              "score": "2-3",
+              "matchSlug": "2026-09-12_campionato-u19-vs-catanzaro"
             },
             {
               "homeId": "perugia",
