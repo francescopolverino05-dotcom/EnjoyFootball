@@ -5894,7 +5894,7 @@ a.gacon-ind-row:hover {
 }
 
 .player-tech-log-table {
-  min-width: 640px;
+  min-width: 720px;
 }
 
 .player-tech-log-link {
@@ -5903,13 +5903,57 @@ a.gacon-ind-row:hover {
   text-underline-offset: 2px;
 }
 
+.player-tech-log-legend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  font-size: 12px;
+  color: var(--text-gray);
+}
+
+.player-tech-log-swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.player-tech-log-swatch--absent {
+  background: #ffedd5;
+  border: 1px solid #f97316;
+}
+
 .player-tech-log-bench td,
 .player-tech-log-bench th {
   color: var(--text-gray);
 }
 
+.player-tech-log-absent td,
+.player-tech-log-absent th {
+  background: #ffedd5;
+  color: #9a3412;
+}
+
+.player-tech-log-absent td.player-tech-log-reason {
+  font-weight: 700;
+}
+
+.player-tech-log-upcoming td,
+.player-tech-log-upcoming th {
+  color: var(--text-light);
+  font-style: italic;
+}
+
+.player-tech-log-nolineup td,
+.player-tech-log-nolineup th {
+  background: #f3f4f6;
+  color: var(--text-gray);
+}
+
 .player-tech-log-reason {
-  max-width: 220px;
+  max-width: 260px;
   font-size: 12px;
   line-height: 1.35;
 }

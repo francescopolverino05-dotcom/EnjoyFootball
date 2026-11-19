@@ -12,13 +12,22 @@
  *   Sub = onMinute → offMinute (or red-card minute, else 90).
  *   Unknown when the sheet has no substitution data at all, or when a bench
  *   player appears through an event without an entry minute.
+ * - Match log lists every competitive Napoli fixture in the season calendar
+ *   (played + upcoming). Not called up / unused bench / upcoming are explicit.
  */
 import type { Localized } from '../i18n/translations';
 import type { MatchCompetitionId, MatchData, PlayerAppearance } from '../types/match';
 import { resolveMatchCompetitionId } from './matchCompetitions';
-import { getAllMatchData, hasMatchScore } from './matches';
+import { getAllMatchData, getMatchBySlug, hasMatchScore } from './matches';
 import { getAllPlayers } from './players';
 import type { Player } from '../types/player';
+import {
+  getCoppaItaliaStandings,
+  getPrimavera2Standings,
+  getStandingsDataset,
+  getUefaYouthLeagueStandings,
+  teamNameById,
+} from './standings';
 
 export const TECH_STATS_COMPETITIONS = [
   'primavera2',
@@ -30,6 +39,7 @@ export type TechStatsCompetition = (typeof TECH_STATS_COMPETITIONS)[number];
 
 const MATCH_LENGTH = 90;
 const NAPOLI_TEAM_ID = 'u19';
+const NAPOLI_IDS = new Set(['napoli', 'u19']);
 
 /** Spellings found on sources that differ from the squad list. */
 const NAME_ALIASES: Record<string, string> = {
@@ -58,23 +68,37 @@ export interface MissingMatch {
   label: string;
 }
 
-/** How the player featured on a single match sheet. */
+/** How the player featured on a single fixture. */
 export type MatchLogStatus =
   | 'started'
   | 'startedOff'
   | 'subOn'
   | 'subOnOff'
-  | 'bench';
+  | 'bench'
+  | 'notCalledUp'
+  | 'noLineup'
+  | 'upcoming';
+
+/** Default reason column when no free-text note exists. */
+export type MatchLogReasonKind =
+  | 'notCalledUp'
+  | 'noLineup'
+  | 'upcoming'
+  | 'subNote'
+  | 'none';
 
 export interface PlayerMatchLogEntry {
-  slug: string;
+  /** Match report slug when available. */
+  slug: string | null;
+  /** Stable row id for React keys. */
+  id: string;
   date: string;
   label: string;
   competitionId: TechStatsCompetition;
   status: MatchLogStatus;
   onMinute: number | null;
   offMinute: number | null;
-  /** Minutes played when computable; null for unused bench or unknown. */
+  /** Minutes played when computable; null for unused bench / absence / upcoming. */
   minutes: number | null;
   /** Counted toward season appearances. */
   counted: boolean;
@@ -82,7 +106,8 @@ export interface PlayerMatchLogEntry {
   assists: number;
   yellowCards: number;
   redCards: number;
-  /** Source note when present (e.g. injury). */
+  reasonKind: MatchLogReasonKind;
+  /** Source note when present (e.g. injury on a substitution). */
   notes?: Localized;
 }
 
@@ -91,7 +116,7 @@ export interface PlayerTechStats {
   total: TechStatLine;
   /** Matches this player appeared in where minutes could not be computed. */
   minutesUnknownIn: MissingMatch[];
-  /** Every competitive sheet row for this player (played + unused bench), newest first. */
+  /** Full season fixture list for this player (chronological). */
   matchLog: PlayerMatchLogEntry[];
 }
 
@@ -100,6 +125,15 @@ export interface TechStatsCoverage {
   withLineups: Record<TechStatsCompetition, number>;
   /** Played matches with no line-up data (not counted). */
   missing: MissingMatch[];
+}
+
+interface SeasonFixture {
+  id: string;
+  date: string;
+  label: string;
+  competitionId: TechStatsCompetition;
+  matchSlug: string | null;
+  played: boolean;
 }
 
 function emptyLine(): TechStatLine {
@@ -183,8 +217,116 @@ function isTechComp(id: MatchCompetitionId): id is TechStatsCompetition {
   return (TECH_STATS_COMPETITIONS as readonly string[]).includes(id);
 }
 
+function isNapoliId(id: string | undefined | null): boolean {
+  return !!id && NAPOLI_IDS.has(id);
+}
+
+function isNapoliCupSide(name: string | undefined | null): boolean {
+  if (!name) return false;
+  return /napoli/i.test(name);
+}
+
+function fixturePlayed(score: string | null | undefined, matchSlug: string | null): boolean {
+  if (score != null && String(score).trim() !== '') return true;
+  if (!matchSlug) return false;
+  const m = getMatchBySlug(matchSlug);
+  return !!m && hasMatchScore(m.score);
+}
+
+/** Every competitive Napoli fixture on the season calendar (P2 + Coppa + UYL). */
+export function listNapoliSeasonFixtures(): SeasonFixture[] {
+  const out: SeasonFixture[] = [];
+  const seen = new Set<string>();
+
+  const push = (fx: SeasonFixture) => {
+    const key = fx.matchSlug ?? fx.id;
+    if (seen.has(key)) return;
+    seen.add(key);
+    out.push(fx);
+  };
+
+  const p2 = getPrimavera2Standings();
+  for (const md of p2.matchdays) {
+    for (const f of md.fixtures) {
+      if (!isNapoliId(f.homeId) && !isNapoliId(f.awayId)) continue;
+      const home = teamNameById(p2, f.homeId);
+      const away = teamNameById(p2, f.awayId);
+      const matchSlug = f.matchSlug?.trim() || null;
+      push({
+        id: `p2:${md.date}:${f.homeId}-${f.awayId}`,
+        date: md.date,
+        label: `${home}–${away}`,
+        competitionId: 'primavera2',
+        matchSlug,
+        played: fixturePlayed(f.score, matchSlug),
+      });
+    }
+  }
+
+  const coppa = getCoppaItaliaStandings();
+  for (const round of coppa.rounds) {
+    for (const f of round.fixtures) {
+      if (!f.us && !isNapoliCupSide(f.home) && !isNapoliCupSide(f.away)) continue;
+      const matchSlug = f.matchSlug?.trim() || null;
+      push({
+        id: `coppa:${f.date}:${f.home}-${f.away}`,
+        date: f.date,
+        label: `${f.home}–${f.away}`,
+        competitionId: 'coppaItalia',
+        matchSlug,
+        played: fixturePlayed(f.score, matchSlug),
+      });
+    }
+  }
+
+  const uyl = getUefaYouthLeagueStandings();
+  const uylTable = uyl.groupTable ?? getStandingsDataset().competitions.uefaYouthLeague.groupTable;
+  if (uylTable) {
+    for (const md of uylTable.matchdays) {
+      for (const f of md.fixtures) {
+        if (!isNapoliId(f.homeId) && !isNapoliId(f.awayId)) continue;
+        const home = teamNameById(uylTable, f.homeId);
+        const away = teamNameById(uylTable, f.awayId);
+        const matchSlug = f.matchSlug?.trim() || null;
+        push({
+          id: `uyl:${md.date}:${f.homeId}-${f.awayId}`,
+          date: md.date,
+          label: `${home}–${away}`,
+          competitionId: 'uefaYouthLeague',
+          matchSlug,
+          played: fixturePlayed(f.score, matchSlug),
+        });
+      }
+    }
+  }
+
+  // Include any played report not yet linked from standings (safety net).
+  for (const match of getAllMatchData()) {
+    if (!hasMatchScore(match.score)) continue;
+    const competitionId = resolveMatchCompetitionId(match);
+    if (!isTechComp(competitionId)) continue;
+    push({
+      id: `match:${match.slug}`,
+      date: match.date,
+      label: matchLabel(match),
+      competitionId,
+      matchSlug: match.slug,
+      played: true,
+    });
+  }
+
+  return out.sort(
+    (a, b) => a.date.localeCompare(b.date) || a.label.localeCompare(b.label)
+  );
+}
+
 let cache:
-  | { coverage: TechStatsCoverage; matches: CompetitiveMatch[] }
+  | {
+      coverage: TechStatsCoverage;
+      matches: CompetitiveMatch[];
+      bySlug: Map<string, CompetitiveMatch>;
+      fixtures: SeasonFixture[];
+    }
   | undefined;
 
 function load() {
@@ -196,6 +338,7 @@ function load() {
     missing: [],
   };
   const matches: CompetitiveMatch[] = [];
+  const bySlug = new Map<string, CompetitiveMatch>();
 
   const all = getAllMatchData().sort((a, b) => a.date.localeCompare(b.date));
   for (const match of all) {
@@ -212,9 +355,11 @@ function load() {
     const sheetHasSubs = rows.some(
       (r) => num(r.offMinute) || (!r.starter && num(r.onMinute) && r.onMinute > 0)
     );
-    matches.push({ match, competitionId, rows, sheetHasSubs });
+    const entry = { match, competitionId, rows, sheetHasSubs };
+    matches.push(entry);
+    bySlug.set(match.slug, entry);
   }
-  cache = { coverage, matches };
+  cache = { coverage, matches, bySlug, fixtures: listNapoliSeasonFixtures() };
   return cache;
 }
 
@@ -244,12 +389,11 @@ function logStatus(row: PlayerAppearance): MatchLogStatus {
   if (row.starter) return hasOff ? 'startedOff' : 'started';
   if (hasOn && hasOff) return 'subOnOff';
   if (hasOn) return 'subOn';
-  // Event-only row without entry minute — treat as unknown sub appearance.
   return 'subOn';
 }
 
 export function getPlayerTechStats(slug: string): PlayerTechStats {
-  const { matches } = load();
+  const { matches, bySlug, fixtures } = load();
   const players = getAllPlayers();
   const byCompetition = {
     primavera2: emptyLine(),
@@ -257,37 +401,15 @@ export function getPlayerTechStats(slug: string): PlayerTechStats {
     coppaItalia: emptyLine(),
   } as Record<TechStatsCompetition, TechStatLine>;
   const minutesUnknownIn: MissingMatch[] = [];
-  const matchLog: PlayerMatchLogEntry[] = [];
 
+  // Season totals from sheets where the player actually featured.
   for (const { match, competitionId, rows, sheetHasSubs } of matches) {
     const row = rows.find((r) => resolvePlayerSlug(r.name, players) === slug);
-    if (!row) continue;
-
-    const didPlay = played(row);
-    const mins = didPlay ? minutesFor(row, sheetHasSubs) : null;
-    const status = logStatus(row);
-
-    matchLog.push({
-      slug: match.slug,
-      date: match.date,
-      label: matchLabel(match),
-      competitionId,
-      status,
-      onMinute: num(row.onMinute) ? row.onMinute : null,
-      offMinute: num(row.offMinute) ? row.offMinute : null,
-      minutes: mins,
-      counted: didPlay,
-      goals: row.goals?.length ?? 0,
-      assists: row.assists?.length ?? 0,
-      yellowCards: row.yellowCards?.length ?? 0,
-      redCards: row.redCards?.length ?? 0,
-      notes: row.notes,
-    });
-
-    if (!didPlay) continue;
+    if (!row || !played(row)) continue;
     const line = byCompetition[competitionId];
     line.appearances += 1;
     if (row.starter) line.starts += 1;
+    const mins = minutesFor(row, sheetHasSubs);
     if (mins == null) {
       line.minutesUnknown += 1;
       minutesUnknownIn.push({ slug: match.slug, competitionId, label: matchLabel(match) });
@@ -300,7 +422,94 @@ export function getPlayerTechStats(slug: string): PlayerTechStats {
     line.redCards += row.redCards?.length ?? 0;
   }
 
-  matchLog.reverse(); // newest first
+  const matchLog: PlayerMatchLogEntry[] = fixtures.map((fx) => {
+    const sheet = fx.matchSlug ? bySlug.get(fx.matchSlug) : undefined;
+    const row = sheet?.rows.find((r) => resolvePlayerSlug(r.name, players) === slug);
+
+    if (!fx.played) {
+      return {
+        id: fx.id,
+        slug: fx.matchSlug,
+        date: fx.date,
+        label: fx.label,
+        competitionId: fx.competitionId,
+        status: 'upcoming',
+        onMinute: null,
+        offMinute: null,
+        minutes: null,
+        counted: false,
+        goals: 0,
+        assists: 0,
+        yellowCards: 0,
+        redCards: 0,
+        reasonKind: 'upcoming',
+      };
+    }
+
+    if (!sheet) {
+      // Played but no Napoli appearance sheet yet — cannot claim non-call-up.
+      return {
+        id: fx.id,
+        slug: fx.matchSlug,
+        date: fx.date,
+        label: fx.label,
+        competitionId: fx.competitionId,
+        status: 'noLineup',
+        onMinute: null,
+        offMinute: null,
+        minutes: null,
+        counted: false,
+        goals: 0,
+        assists: 0,
+        yellowCards: 0,
+        redCards: 0,
+        reasonKind: 'noLineup',
+      };
+    }
+
+    if (!row) {
+      return {
+        id: fx.id,
+        slug: fx.matchSlug,
+        date: fx.date,
+        label: sheet ? matchLabel(sheet.match) : fx.label,
+        competitionId: fx.competitionId,
+        status: 'notCalledUp',
+        onMinute: null,
+        offMinute: null,
+        minutes: null,
+        counted: false,
+        goals: 0,
+        assists: 0,
+        yellowCards: 0,
+        redCards: 0,
+        reasonKind: 'notCalledUp',
+      };
+    }
+
+    const didPlay = played(row);
+    const mins = didPlay ? minutesFor(row, sheet.sheetHasSubs) : null;
+    const status = logStatus(row);
+    return {
+      id: fx.id,
+      slug: fx.matchSlug,
+      date: fx.date,
+      label: matchLabel(sheet.match),
+      competitionId: fx.competitionId,
+      status,
+      onMinute: num(row.onMinute) ? row.onMinute : null,
+      offMinute: num(row.offMinute) ? row.offMinute : null,
+      minutes: mins,
+      counted: didPlay,
+      goals: row.goals?.length ?? 0,
+      assists: row.assists?.length ?? 0,
+      yellowCards: row.yellowCards?.length ?? 0,
+      redCards: row.redCards?.length ?? 0,
+      reasonKind: row.notes ? 'subNote' : 'none',
+      notes: row.notes,
+    };
+  });
+
   const total = emptyLine();
   TECH_STATS_COMPETITIONS.forEach((c) => addLine(total, byCompetition[c]));
   return { byCompetition, total, minutesUnknownIn, matchLog };

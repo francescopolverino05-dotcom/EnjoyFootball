@@ -3,6 +3,7 @@ import {
   getPlayerTechStats,
   getTechStatsCoverage,
   TECH_STATS_COMPETITIONS,
+  type MatchLogReasonKind,
   type MatchLogStatus,
   type PlayerMatchLogEntry,
   type TechStatLine,
@@ -23,6 +24,15 @@ const STATUS_KEYS: Record<MatchLogStatus, UiKey> = {
   subOn: 'techStatsLogSubOn',
   subOnOff: 'techStatsLogSubOnOff',
   bench: 'techStatsLogBench',
+  notCalledUp: 'techStatsLogNotCalledUp',
+  noLineup: 'techStatsLogNoLineup',
+  upcoming: 'techStatsLogUpcoming',
+};
+
+const REASON_KEYS: Record<Exclude<MatchLogReasonKind, 'subNote' | 'none'>, UiKey> = {
+  notCalledUp: 'techStatsReasonNotCalledUp',
+  noLineup: 'techStatsReasonNoLineup',
+  upcoming: 'techStatsReasonUpcoming',
 };
 
 function formatStatus(
@@ -33,6 +43,26 @@ function formatStatus(
   return template
     .replace('{on}', entry.onMinute != null ? String(entry.onMinute) : '–')
     .replace('{off}', entry.offMinute != null ? String(entry.offMinute) : '–');
+}
+
+function formatReason(
+  entry: PlayerMatchLogEntry,
+  t: (key: UiKey) => string,
+  L: (value: { en: string; it: string } | string) => string
+): string {
+  if (entry.notes) return L(entry.notes);
+  if (entry.reasonKind === 'notCalledUp') return t(REASON_KEYS.notCalledUp);
+  if (entry.reasonKind === 'noLineup') return t(REASON_KEYS.noLineup);
+  if (entry.reasonKind === 'upcoming') return t(REASON_KEYS.upcoming);
+  return '–';
+}
+
+function rowClass(entry: PlayerMatchLogEntry): string | undefined {
+  if (entry.status === 'notCalledUp') return 'player-tech-log-absent';
+  if (entry.status === 'bench') return 'player-tech-log-bench';
+  if (entry.status === 'upcoming') return 'player-tech-log-upcoming';
+  if (entry.status === 'noLineup') return 'player-tech-log-nolineup';
+  return undefined;
 }
 
 export default function PlayerTechStats({ playerSlug }: { playerSlug: string }) {
@@ -64,6 +94,7 @@ export default function PlayerTechStats({ playerSlug }: { playerSlug: string }) 
       '{played}',
       String(TECH_STATS_COMPETITIONS.reduce((n, c) => n + coverage.played[c], 0))
     );
+  const absentCount = stats.matchLog.filter((e) => e.status === 'notCalledUp').length;
 
   return (
     <div className="player-tech-stats">
@@ -134,6 +165,12 @@ export default function PlayerTechStats({ playerSlug }: { playerSlug: string }) 
       {stats.matchLog.length > 0 ? (
         <>
           <div className="section-title player-tech-log-title">{t('techStatsLogTitle')}</div>
+          {absentCount > 0 ? (
+            <p className="player-tech-log-legend">
+              <span className="player-tech-log-swatch player-tech-log-swatch--absent" />
+              {t('techStatsLogAbsentLegend').replace('{n}', String(absentCount))}
+            </p>
+          ) : null}
           <div className="gps-table-wrap">
             <table className="gps-table player-tech-table player-tech-log-table">
               <thead>
@@ -148,28 +185,30 @@ export default function PlayerTechStats({ playerSlug }: { playerSlug: string }) 
               </thead>
               <tbody>
                 {stats.matchLog.map((entry) => (
-                  <tr
-                    key={`${entry.slug}-${entry.status}-${entry.onMinute ?? 'x'}`}
-                    className={entry.counted ? undefined : 'player-tech-log-bench'}
-                  >
+                  <tr key={entry.id} className={rowClass(entry)}>
                     <td>{entry.date.slice(5).replace('-', '/')}</td>
                     <th scope="row">
-                      <Link to={`/matches/${entry.slug}`} className="player-tech-log-link">
-                        {entry.label}
-                      </Link>
+                      {entry.slug ? (
+                        <Link to={`/matches/${entry.slug}`} className="player-tech-log-link">
+                          {entry.label}
+                        </Link>
+                      ) : (
+                        entry.label
+                      )}
                     </th>
                     <td>{t(MATCH_COMPETITION_TAB_KEYS[entry.competitionId])}</td>
                     <td>{formatStatus(entry, t)}</td>
                     <td>
-                      {entry.status === 'bench'
+                      {entry.status === 'bench' ||
+                      entry.status === 'notCalledUp' ||
+                      entry.status === 'upcoming' ||
+                      entry.status === 'noLineup'
                         ? '–'
                         : entry.minutes == null
                           ? '–'
                           : entry.minutes}
                     </td>
-                    <td className="player-tech-log-reason">
-                      {entry.notes ? L(entry.notes) : '–'}
-                    </td>
+                    <td className="player-tech-log-reason">{formatReason(entry, t, L)}</td>
                   </tr>
                 ))}
               </tbody>
