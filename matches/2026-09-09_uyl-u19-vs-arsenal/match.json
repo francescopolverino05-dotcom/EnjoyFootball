@@ -892,5 +892,256 @@
       "en": "Full match hosted on Vimeo.",
       "it": "Partita intera su Vimeo."
     }
+  },
+  "appearances": {
+    "home": [
+      {
+        "name": "Pugliese",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Lieto",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Zappalà",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 80,
+        "yellowCards": [
+          53
+        ]
+      },
+      {
+        "name": "Chiummariello",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [
+          16
+        ]
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Baridó",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 55
+      },
+      {
+        "name": "Pereyra",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          58
+        ]
+      },
+      {
+        "name": "Mané",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 46
+      },
+      {
+        "name": "Esposito",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 46,
+        "yellowCards": [
+          92
+        ]
+      },
+      {
+        "name": "Riccio",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 55,
+        "yellowCards": [
+          63
+        ]
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 80
+      },
+      {
+        "name": "Rovetini",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 83
+      },
+      {
+        "name": "Chiaiese",
+        "teamId": "u19",
+        "starter": false,
+        "onMinute": 83
+      }
+    ],
+    "away": [
+      {
+        "name": "Porter",
+        "teamId": "arsenal",
+        "number": 55,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Ogunnaike",
+        "teamId": "arsenal",
+        "number": 52,
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [
+          88
+        ]
+      },
+      {
+        "name": "Clarke",
+        "teamId": "arsenal",
+        "number": 38,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Upson",
+        "teamId": "arsenal",
+        "number": 57,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Hamill",
+        "teamId": "arsenal",
+        "number": 73,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Julienne",
+        "teamId": "arsenal",
+        "number": 45,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Ibrahim",
+        "teamId": "arsenal",
+        "number": 44,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 67
+      },
+      {
+        "name": "Hashi",
+        "teamId": "arsenal",
+        "number": 74,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Donczew",
+        "teamId": "arsenal",
+        "number": 80,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Nwaneri",
+        "teamId": "arsenal",
+        "number": 90,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Harriman-Annous",
+        "teamId": "arsenal",
+        "number": 43,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          28
+        ]
+      },
+      {
+        "name": "Tyjon",
+        "teamId": "arsenal",
+        "starter": false,
+        "onMinute": 46,
+        "assists": [
+          94
+        ]
+      },
+      {
+        "name": "Sampang",
+        "teamId": "arsenal",
+        "starter": false,
+        "onMinute": 46
+      },
+      {
+        "name": "Murisa",
+        "teamId": "arsenal",
+        "starter": false,
+        "onMinute": 67
+      },
+      {
+        "name": "Muñoz",
+        "teamId": "arsenal",
+        "starter": false,
+        "onMinute": 77,
+        "goals": [
+          94
+        ]
+      },
+      {
+        "name": "Mbala",
+        "teamId": "arsenal",
+        "starter": false,
+        "onMinute": 77
+      }
+    ]
   }
 }
