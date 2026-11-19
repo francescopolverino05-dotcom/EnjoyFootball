@@ -991,218 +991,16 @@ if (villarreal) {
  */
 const bari = OPPONENTS.find((o) => o.id === 'bari');
 if (bari) {
-  /**
-   * Shared 4-3-1-2 slots. Pitch attacks downward: team-right = screen-left.
-   * Back RTL: #2 RB, #5 RCB, #6 LCB, #3 LB. Mid RTL: #7 RCM, #4 CDM, #10 LCM.
-   * #8 Scarano = CAM; #10 Campagna = LCM.
-   */
-  const bari4312 = (
-    names: {
-      gk: string;
-      lb: string;
-      lcb: string;
-      rcb: string;
-      rb: string;
-      rcm: string;
-      cdm: string;
-      lcm: string;
-      cam: string;
-      lst: string;
-      rst: string;
-    },
-    nums: {
-      gk: number;
-      lb: number;
-      lcb: number;
-      rcb: number;
-      rb: number;
-      rcm: number;
-      cdm: number;
-      lcm: number;
-      cam: number;
-      lst: number;
-      rst: number;
-    } = {
-      gk: 1,
-      rb: 2,
-      rcb: 5,
-      lcb: 6,
-      lb: 3,
-      rcm: 7,
-      cdm: 4,
-      lcm: 10,
-      cam: 8,
-      rst: 9,
-      lst: 11,
-    }
-  ): PitchPlayer[] => [
-    {
-      number: nums.gk,
-      name: names.gk,
-      role: 'GK',
-      teamId: 'bari',
-      isGk: true,
-      top: '8%',
-      left: '50%',
-    },
-    { number: nums.rb, name: names.rb, role: 'RB', teamId: 'bari', top: '22%', left: '18%' },
-    { number: nums.rcb, name: names.rcb, role: 'RCB', teamId: 'bari', top: '20%', left: '38%' },
-    { number: nums.lcb, name: names.lcb, role: 'LCB', teamId: 'bari', top: '20%', left: '62%' },
-    { number: nums.lb, name: names.lb, role: 'LB', teamId: 'bari', top: '22%', left: '82%' },
-    { number: nums.rcm, name: names.rcm, role: 'RCM', teamId: 'bari', top: '42%', left: '28%' },
-    { number: nums.cdm, name: names.cdm, role: 'CDM', teamId: 'bari', top: '38%', left: '50%' },
-    { number: nums.lcm, name: names.lcm, role: 'LCM', teamId: 'bari', top: '42%', left: '72%' },
-    { number: nums.cam, name: names.cam, role: 'CAM', teamId: 'bari', top: '58%', left: '50%' },
-    { number: nums.rst, name: names.rst, role: 'RST', teamId: 'bari', top: '75%', left: '38%' },
-    { number: nums.lst, name: names.lst, role: 'LST', teamId: 'bari', top: '75%', left: '62%' },
-  ];
-
-  const vsSalernitana = bari4312({
-    gk: 'Cipolla',
-    rb: 'Emiliano',
-    rcb: 'Dimonte',
-    lcb: 'De Lucia',
-    lb: 'Legrottaglie',
-    rcm: 'Valoroso',
-    cdm: 'Mundo',
-    lcm: 'Alonso Cam.',
-    cam: 'Scarano',
-    rst: 'Scifoni',
-    lst: 'Italia',
-  });
-
-  const vsAscoli = bari4312({
-    gk: 'Mezzapesa',
-    rb: 'Emiliano',
-    rcb: 'Dimonte',
-    lcb: 'De Lucia',
-    lb: 'Spadavecchia',
-    rcm: 'Valoroso',
-    cdm: 'Mundo',
-    lcm: 'Alonso Cam.',
-    cam: 'Scarano',
-    rst: 'Scifoni',
-    lst: 'Italia',
-  });
-
-  /** Official shirts 1–11 map cleanly onto 4-3-1-2; TM labels 3-4-2-1. */
-  const vsPalermo = bari4312({
-    gk: 'Mezzapesa',
-    rb: 'Emiliano',
-    rcb: 'Dimonte',
-    lcb: 'De Lucia',
-    lb: 'Caputo',
-    rcm: 'Vitale',
-    cdm: 'Mundo',
-    lcm: 'Alonso Cam.',
-    cam: 'Scarano',
-    rst: 'Leone',
-    lst: 'Italia',
-  });
-
-  const vsPalermoCoppa = bari4312({
-    gk: 'Mezzapesa',
-    rb: 'Emiliano',
-    rcb: 'Dimonte',
-    lcb: 'De Lucia',
-    lb: 'Legrottaglie',
-    rcm: 'Vitale',
-    cdm: 'Mundo',
-    lcm: 'Alonso Cam.',
-    cam: 'Grimaldi',
-    rst: 'Leone',
-    lst: 'Keita',
-  });
-
-  const vsLatina = bari4312({
-    gk: 'Falbo',
-    rb: 'Emiliano',
-    rcb: 'Dimonte',
-    lcb: 'De Lucia',
-    lb: 'Legrottaglie',
-    rcm: 'Vitale',
-    cdm: 'Mundo',
-    lcm: 'Alonso Cam.',
-    cam: 'Scarano',
-    rst: 'Leone',
-    lst: 'Felice',
-  });
-
   bari.formationSystem = '1-4-3-1-2';
-  bari.starters = vsLatina;
-  bari.scoutedFormations = [
-    {
-      id: 'bari-vs-salernitana',
-      label: {
-        en: 'vs Salernitana (4–0)',
-        it: 'vs Salernitana (4–0)',
-      },
-      system: '4-3-1-2',
-      players: vsSalernitana,
-      notes: {
-        en: 'Primavera 2 MD1, 5 Sep 2026 (tabellino). Cipolla in goal; Legrottaglie at LB. Goals: Dimonte, Italia, Campagna, Grimaldi. Subs: Grimaldi, Leone, Pietraniello, Felice, Vitale.',
-        it: 'Primavera 2 gior. 1, 5 set 2026 (tabellino). Cipolla in porta; Legrottaglie terzino sinistro. Gol: Dimonte, Italia, Campagna, Grimaldi. Sub: Grimaldi, Leone, Pietraniello, Felice, Vitale.',
-      },
-    },
-    {
-      id: 'bari-vs-ascoli',
-      label: {
-        en: 'vs Ascoli (2–1)',
-        it: 'vs Ascoli (2–1)',
-      },
-      system: '4-3-1-2',
-      players: vsAscoli,
-      notes: {
-        en: 'Primavera 2 MD2, 12 Sep 2026 (TM 5014172). Spadavecchia at LB. TM lists 4-4-1-1 in error — same diamond shirts as other games. Subs: Vitale, Felice, Leone, Grimaldi.',
-        it: 'Primavera 2 gior. 2, 12 set 2026 (TM 5014172). Spadavecchia terzino sinistro. TM riporta 4-4-1-1 per errore — stessi numeri a rombo. Sub: Vitale, Felice, Leone, Grimaldi.',
-      },
-    },
-    {
-      id: 'bari-vs-palermo',
-      label: {
-        en: 'vs Palermo (2–2)',
-        it: 'vs Palermo (2–2)',
-      },
-      system: '4-3-1-2',
-      players: vsPalermo,
-      notes: {
-        en: 'Primavera 2 MD3, 19 Sep 2026 (TM 5014185). Official shirts = diamond: Caputo (#3) LB, Vitale (#7) RCM, Campagna (#10) LCM, Scarano (#8) CAM; Leone–Italia. TM lists 3-4-2-1. Goals: Leone, Scarano. Subs: Felice, Barbera, Valoroso, Scifoni, Napoleone.',
-        it: 'Primavera 2 gior. 3, 19 set 2026 (TM 5014185). Numeri ufficiali = rombo: Caputo (#3) TS, Vitale (#7) CC destro, Campagna (#10) CC sinistro, Scarano (#8) trequartista; Leone–Italia. TM riporta 3-4-2-1. Gol: Leone, Scarano. Sub: Felice, Barbera, Valoroso, Scifoni, Napoleone.',
-      },
-    },
-    {
-      id: 'bari-vs-palermo-coppa',
-      label: {
-        en: 'vs Palermo (Coppa 3–2)',
-        it: 'vs Palermo (Coppa 3–2)',
-      },
-      system: '4-3-1-2',
-      players: vsPalermoCoppa,
-      notes: {
-        en: 'Coppa Italia Primavera, 26 Sep 2026 (TM 4913072). Vitale (#7) RCM / Campagna (#10) LCM; Grimaldi at CAM; Leone–Keita up top. Subs: Scarano, Felice, Italia, Valoroso, Caputo.',
-        it: 'Coppa Italia Primavera, 26 set 2026 (TM 4913072). Vitale (#7) CC destro / Campagna (#10) CC sinistro; Grimaldi trequartista; Leone–Keita davanti. Sub: Scarano, Felice, Italia, Valoroso, Caputo.',
-      },
-    },
-    {
-      id: 'bari-vs-latina',
-      label: {
-        en: 'vs Latina (0–0)',
-        it: 'vs Latina (0–0)',
-      },
-      system: '4-3-1-2',
-      players: vsLatina,
-      notes: {
-        en: 'Primavera 2 MD4, 10 Oct 2026 (distinta). Falbo in goal; Vitale (#7) RCM, Campagna (#10) LCM, Scarano (#8) CAM; Leone–Felice. Most recent scouted XI.',
-        it: 'Primavera 2 gior. 4, 10 ott 2026 (distinta). Falbo in porta; Vitale (#7) CC destro, Campagna (#10) CC sinistro, Scarano (#8) trequartista; Leone–Felice. XI scoutata più recente.',
-      },
-    },
-  ];
-  /** Depth = all 5 scouted XIs onto 4-3-1-2 diamond. */
+  // Coppa Italia (2 Dec 2026): old scouted XIs cleared — updated formations coming.
+  bari.starters = [];
+  bari.scoutedFormations = [];
+  /** Depth kept as a working sheet until new Coppa scouted XIs land. */
   bari.squadDepth = {
     system: '1-4-3-1-2',
     note: {
-      en: 'Last 5 scouted XIs (Salernitana, Ascoli, Palermo MD3, Palermo Coppa, Latina) mapped onto 4-3-1-2. Scarano (#8) at CAM; Campagna (#10) at LCM. Order = most starts in that slot.',
-      it: 'Ultime 5 formazioni scoutate (Salernitana, Ascoli, Palermo gior. 3, Palermo Coppa, Latina) mappate sul 4-3-1-2. Scarano (#8) trequartista; Campagna (#10) CC sinistro. Ordine = più partite in quel ruolo.',
+      en: 'Previous scouted XIs cleared for Coppa Italia (2 Dec 2026). Depth sheet retained until updated formations are added.',
+      it: 'Formazioni scoutate precedenti rimosse per la Coppa Italia (2 dic 2026). Depth chart mantenuto finché non arrivano le nuove XI.',
     },
     slots: [
       {
@@ -4568,78 +4366,104 @@ attachReferencePack('frosinone', '2026-11-07_campionato-u19-vs-frosinone', [
   }
 }
 
+const bariReferenceMatches = [
+  {
+    id: 'bari-ref-napoli',
+    title: {
+      en: 'Bari vs Napoli 1–1',
+      it: 'Bari vs Napoli 1–1',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 5 · Our last meeting',
+      it: 'Primavera 2 · Giornata 5 · Ultimo scontro diretto',
+    },
+    score: '1–1',
+    date: '2026-10-17',
+    videoFile: 'https://vimeo.com/1236877598/37d5947b29',
+  },
+  {
+    id: 'bari-ref-salernitana',
+    title: {
+      en: 'Salernitana vs Bari 0–4',
+      it: 'Salernitana vs Bari 0–4',
+    },
+    competition: {
+      en: 'Reference',
+      it: 'Riferimento',
+    },
+    score: '0–4',
+    videoFile: 'https://vimeo.com/1235611592/1c16123127',
+  },
+  {
+    id: 'bari-ref-palermo',
+    title: {
+      en: 'Palermo vs Bari 2–2',
+      it: 'Palermo vs Bari 2–2',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 3',
+      it: 'Primavera 2 · Giornata 3',
+    },
+    score: '2–2',
+    videoFile: 'https://vimeo.com/1235614846/7346b8ba76',
+  },
+  {
+    id: 'bari-ref-palermo-coppa',
+    title: {
+      en: 'Bari vs Palermo 3–2',
+      it: 'Bari vs Palermo 3–2',
+    },
+    competition: {
+      en: 'Coppa Italia Primavera',
+      it: 'Coppa Italia Primavera',
+    },
+    score: '3–2',
+    videoFile: 'https://vimeo.com/1230878196/46f5b3f40c',
+  },
+  {
+    id: 'bari-ref-ascoli',
+    title: {
+      en: 'Bari vs Ascoli 2–1',
+      it: 'Bari vs Ascoli 2–1',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 2',
+      it: 'Primavera 2 · Giornata 2',
+    },
+    score: '2–1',
+    videoFile: 'https://vimeo.com/1226442948/3870ec7bac',
+  },
+] as const;
+
+const bariStudioReports = [
+  {
+    id: 'bari-studio-report',
+    title: {
+      en: 'Studio Bari',
+      it: 'Studio Bari',
+    },
+    description: {
+      en: 'Opposition studio report (Avversari → Studio Report).',
+      it: 'Studio report avversario (Avversari → Studio Report).',
+    },
+    videoFile: 'https://vimeo.com/1236350398/bbbe7d7a75',
+    tags: ['vimeo', 'opposition', 'studio-report'],
+  },
+];
+
 attachReferencePack(
   'bari',
   '2026-10-17_campionato-bari-vs-u19',
-  [
-    {
-      id: 'bari-ref-salernitana',
-      title: {
-        en: 'Salernitana vs Bari 0–4',
-        it: 'Salernitana vs Bari 0–4',
-      },
-      competition: {
-        en: 'Reference',
-        it: 'Riferimento',
-      },
-      score: '0–4',
-      videoFile: 'https://vimeo.com/1235611592/1c16123127',
-    },
-    {
-      id: 'bari-ref-palermo',
-      title: {
-        en: 'Palermo vs Bari 2–2',
-        it: 'Palermo vs Bari 2–2',
-      },
-      competition: {
-        en: 'Primavera 2 · Matchday 3',
-        it: 'Primavera 2 · Giornata 3',
-      },
-      score: '2–2',
-      videoFile: 'https://vimeo.com/1235614846/7346b8ba76',
-    },
-    {
-      id: 'bari-ref-palermo-coppa',
-      title: {
-        en: 'Bari vs Palermo 3–2',
-        it: 'Bari vs Palermo 3–2',
-      },
-      competition: {
-        en: 'Coppa Italia Primavera',
-        it: 'Coppa Italia Primavera',
-      },
-      score: '3–2',
-      videoFile: 'https://vimeo.com/1230878196/46f5b3f40c',
-    },
-    {
-      id: 'bari-ref-ascoli',
-      title: {
-        en: 'Bari vs Ascoli 2–1',
-        it: 'Bari vs Ascoli 2–1',
-      },
-      competition: {
-        en: 'Primavera 2 · Matchday 2',
-        it: 'Primavera 2 · Giornata 2',
-      },
-      score: '2–1',
-      videoFile: 'https://vimeo.com/1226442948/3870ec7bac',
-    },
-  ],
-  [
-    {
-      id: 'bari-studio-report',
-      title: {
-        en: 'Studio Bari',
-        it: 'Studio Bari',
-      },
-      description: {
-        en: 'Opposition studio report (Avversari → Studio Report).',
-        it: 'Studio report avversario (Avversari → Studio Report).',
-      },
-      videoFile: 'https://vimeo.com/1236350398/bbbe7d7a75',
-      tags: ['vimeo', 'opposition', 'studio-report'],
-    },
-  ]
+  [...bariReferenceMatches],
+  [...bariStudioReports]
+);
+
+/** Coppa Italia Round of 32 — 2 Dec 2026: include our last league meeting. */
+attachReferencePack(
+  'bari',
+  '2026-12-02_coppa-italia-u19-vs-bari',
+  [...bariReferenceMatches],
+  [...bariStudioReports]
 );
 
 attachReferencePack('villarreal', '2026-10-13_uyl-villarreal-vs-u19', [
