@@ -257,7 +257,7 @@ export function oppositionClipSectionLabel(id: OppositionClipSectionId) {
 
 /** Primavera 2 Girone B + Coppa Italia (Spezia, Bari) + UYL league-phase opponents. */
 const OPPONENTS: OppositionOpponent[] = [
-  club('ascoli', 'Ascoli', ['primavera2'], '1-4-1-2-3'),
+  club('ascoli', 'Ascoli', ['primavera2'], '1-4-2-3-1'),
   club('avellino', 'Avellino', ['primavera2'], '1-4-3-3', ['1-4-2-3-1']),
   club('bari', 'Bari', ['primavera2', 'coppaItalia'], '1-4-3-1-2'),
   club('benevento', 'Benevento', ['primavera2']),
@@ -1273,10 +1273,11 @@ if (bari) {
 /** Ascoli scouted XI — 4-3-3 with holding mid (sheet 15 Sep 2026). */
 const ascoli = OPPONENTS.find((o) => o.id === 'ascoli');
 if (ascoli) {
+  /** vs Napoli MD3 (doppia): 4-2-3-1. */
   ascoli.starters = [
     {
       number: 1,
-      name: 'Angeletti',
+      name: 'Dente R.',
       role: 'GK',
       teamId: 'ascoli',
       isGk: true,
@@ -1284,15 +1285,38 @@ if (ascoli) {
       left: '50%',
     },
     { number: 2, name: 'Zampardi', role: 'RB', teamId: 'ascoli', top: '22%', left: '18%' },
-    { number: 5, name: 'Tocchi', role: 'RCB', teamId: 'ascoli', top: '20%', left: '38%' },
+    { number: 5, name: 'Diamanti F.', role: 'RCB', teamId: 'ascoli', top: '20%', left: '38%' },
     { number: 6, name: 'Curzi', role: 'LCB', teamId: 'ascoli', top: '20%', left: '62%' },
     { number: 3, name: 'Bruni', role: 'LB', teamId: 'ascoli', top: '22%', left: '82%' },
-    { number: 4, name: 'Russo', role: 'CDM', teamId: 'ascoli', top: '38%', left: '50%' },
-    { number: 10, name: 'Angelino', role: 'RCM', teamId: 'ascoli', top: '50%', left: '32%' },
-    { number: 8, name: 'Dente', role: 'LCM', teamId: 'ascoli', top: '50%', left: '68%' },
-    { number: 7, name: 'Suzzi', role: 'RW', teamId: 'ascoli', top: '68%', left: '18%' },
+    { number: 4, name: 'Russo', role: 'RDM', teamId: 'ascoli', top: '40%', left: '36%' },
+    { number: 8, name: 'Angelino', role: 'LDM', teamId: 'ascoli', top: '40%', left: '64%' },
+    { number: 7, name: 'Berete', role: 'RW', teamId: 'ascoli', top: '60%', left: '20%' },
+    { number: 10, name: 'Dente G.', role: 'CAM', teamId: 'ascoli', top: '58%', left: '50%' },
+    { number: 11, name: 'Aloisi', role: 'LW', teamId: 'ascoli', top: '60%', left: '80%' },
     { number: 9, name: 'Raimondo', role: 'ST', teamId: 'ascoli', top: '78%', left: '50%' },
-    { number: 11, name: 'Aloisi', role: 'LW', teamId: 'ascoli', top: '68%', left: '82%' },
+  ];
+  ascoli.scoutedFormations = [
+    {
+      id: 'ascoli-vs-napoli-md3',
+      system: '4-2-3-1',
+      label: {
+        en: 'Primavera 2 MD3, 19 Sep 2026, home, Ascoli 2–2 Napoli (doppia). 4-2-3-1: Dente R.; Zampardi, Diamanti F., Curzi, Bruni; Russo, Angelino; Berete, Dente G., Aloisi; Raimondo. Goals: Raimondo 30\', Berete 50\'; Napoli: Barido\' 18\' (pen), Pereyra 53\' (pen). Subs: Sulli for Aloisi 62\', Di Mattia for Dente G. 70\', Cicchitti for Russo 82\', Balducci for Raimondo 82\', Martinelli for Berete 82\'.',
+        it: 'Primavera 2 gior. 3, 19 set 2026, casa, Ascoli 2–2 Napoli (doppia). 4-2-3-1: Dente R.; Zampardi, Diamanti F., Curzi, Bruni; Russo, Angelino; Berete, Dente G., Aloisi; Raimondo. Gol: Raimondo 30\', Berete 50\'; Napoli: Barido\' 18\' (rig.), Pereyra 53\' (rig.). Sub: Sulli per Aloisi 62\', Di Mattia per Dente G. 70\', Cicchitti per Russo 82\', Balducci per Raimondo 82\', Martinelli per Berete 82\'.',
+      },
+      players: [
+        { number: 1, name: 'Dente R.', role: 'GK', teamId: 'ascoli', isGk: true, top: '8%', left: '50%' },
+        { number: 2, name: 'Zampardi', role: 'RB', teamId: 'ascoli', top: '22%', left: '18%' },
+        { number: 5, name: 'Diamanti F.', role: 'RCB', teamId: 'ascoli', top: '20%', left: '38%' },
+        { number: 6, name: 'Curzi', role: 'LCB', teamId: 'ascoli', top: '20%', left: '62%' },
+        { number: 3, name: 'Bruni', role: 'LB', teamId: 'ascoli', top: '22%', left: '82%' },
+        { number: 4, name: 'Russo', role: 'RDM', teamId: 'ascoli', top: '40%', left: '36%' },
+        { number: 8, name: 'Angelino', role: 'LDM', teamId: 'ascoli', top: '40%', left: '64%' },
+        { number: 7, name: 'Berete', role: 'RW', teamId: 'ascoli', top: '60%', left: '20%' },
+        { number: 10, name: 'Dente G.', role: 'CAM', teamId: 'ascoli', top: '58%', left: '50%' },
+        { number: 11, name: 'Aloisi', role: 'LW', teamId: 'ascoli', top: '60%', left: '80%' },
+        { number: 9, name: 'Raimondo', role: 'ST', teamId: 'ascoli', top: '78%', left: '50%' },
+      ],
+    },
   ];
   ascoli.substitutes = [
     { number: 12, name: 'Ferrazzoli', position: 'GK', isGk: true },

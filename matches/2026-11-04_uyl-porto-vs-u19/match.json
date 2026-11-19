@@ -40,9 +40,434 @@
     "home": 3,
     "away": 1
   },
-  "goals": [],
-  "timeline": [],
-  "formations": [],
+  "goals": [
+    {
+      "minute": 8,
+      "scorer": "T. Silva (pen)",
+      "assist": null,
+      "teamId": "porto"
+    },
+    {
+      "minute": 50,
+      "scorer": "E. Ferreira",
+      "assist": "T. Silva",
+      "teamId": "porto"
+    },
+    {
+      "minute": 64,
+      "scorer": "D. Cunha",
+      "assist": "Froholdt",
+      "teamId": "porto"
+    },
+    {
+      "minute": 71,
+      "scorer": "Liccardo",
+      "assist": "Baridó",
+      "teamId": "u19"
+    }
+  ],
+  "timeline": [
+    {
+      "minute": 1,
+      "label": {
+        "en": "Kick-off",
+        "it": "Inizio partita"
+      },
+      "type": "other",
+      "teamId": "porto",
+      "positionPercent": 2
+    },
+    {
+      "minute": 8,
+      "label": {
+        "en": "T. Silva (pen) 1-0",
+        "it": "T. Silva (rig.) 1-0"
+      },
+      "type": "goal",
+      "teamId": "porto",
+      "positionPercent": 9
+    },
+    {
+      "minute": 22,
+      "label": {
+        "en": "Nocerino 🟨",
+        "it": "Nocerino 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 23
+    },
+    {
+      "minute": 26,
+      "label": {
+        "en": "Branchizio 🟨",
+        "it": "Branchizio 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 27
+    },
+    {
+      "minute": 30,
+      "label": {
+        "en": "Liccardo on (Santella)",
+        "it": "Entra Liccardo (Santella)"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 31
+    },
+    {
+      "minute": 44,
+      "label": {
+        "en": "E. Ferreira 🟨",
+        "it": "E. Ferreira 🟨"
+      },
+      "type": "other",
+      "teamId": "porto",
+      "positionPercent": 46
+    },
+    {
+      "minute": 50,
+      "label": {
+        "en": "E. Ferreira 2-0",
+        "it": "E. Ferreira 2-0"
+      },
+      "type": "goal",
+      "teamId": "porto",
+      "positionPercent": 53
+    },
+    {
+      "minute": 57,
+      "label": {
+        "en": "Gomes 🟨",
+        "it": "Gomes 🟨"
+      },
+      "type": "other",
+      "teamId": "porto",
+      "positionPercent": 60
+    },
+    {
+      "minute": 60,
+      "label": {
+        "en": "Lima 🟨",
+        "it": "Lima 🟨"
+      },
+      "type": "other",
+      "teamId": "porto",
+      "positionPercent": 63
+    },
+    {
+      "minute": 62,
+      "label": {
+        "en": "Marotta 🟨",
+        "it": "Marotta 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 65
+    },
+    {
+      "minute": 64,
+      "label": {
+        "en": "D. Cunha 3-0",
+        "it": "D. Cunha 3-0"
+      },
+      "type": "goal",
+      "teamId": "porto",
+      "positionPercent": 67
+    },
+    {
+      "minute": 66,
+      "label": {
+        "en": "Froholdt 🟨",
+        "it": "Froholdt 🟨"
+      },
+      "type": "other",
+      "teamId": "porto",
+      "positionPercent": 69
+    },
+    {
+      "minute": 67,
+      "label": {
+        "en": "Cande & Abreu on",
+        "it": "Entrano Cande e Abreu"
+      },
+      "type": "substitution",
+      "teamId": "porto",
+      "positionPercent": 70
+    },
+    {
+      "minute": 71,
+      "label": {
+        "en": "Liccardo 3-1",
+        "it": "Liccardo 3-1"
+      },
+      "type": "goal",
+      "teamId": "u19",
+      "positionPercent": 75
+    },
+    {
+      "minute": 72,
+      "label": {
+        "en": "Picardi & Saviano on",
+        "it": "Entrano Picardi e Saviano"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 76
+    },
+    {
+      "minute": 76,
+      "label": {
+        "en": "Chelmik on (Gomes)",
+        "it": "Entra Chelmik (Gomes)"
+      },
+      "type": "substitution",
+      "teamId": "porto",
+      "positionPercent": 80
+    },
+    {
+      "minute": 82,
+      "label": {
+        "en": "Russo on (De Stefano)",
+        "it": "Entra Russo (De Stefano)"
+      },
+      "type": "substitution",
+      "teamId": "u19",
+      "positionPercent": 86
+    },
+    {
+      "minute": 84,
+      "label": {
+        "en": "Oliveira & Varela on",
+        "it": "Entrano Oliveira e Varela"
+      },
+      "type": "substitution",
+      "teamId": "porto",
+      "positionPercent": 88
+    },
+    {
+      "minute": 86,
+      "label": {
+        "en": "Pereyra 🟨",
+        "it": "Pereyra 🟨"
+      },
+      "type": "other",
+      "teamId": "u19",
+      "positionPercent": 91
+    },
+    {
+      "minute": 90,
+      "label": {
+        "en": "Full time 3-1",
+        "it": "Fine partita 3-1"
+      },
+      "type": "other",
+      "teamId": "porto",
+      "positionPercent": 98
+    }
+  ],
+  "formations": [
+    {
+      "teamId": "porto",
+      "label": {
+        "en": "Porto",
+        "it": "Porto"
+      },
+      "system": "4-3-3",
+      "players": [
+        {
+          "number": 1,
+          "name": "Nikolov",
+          "teamId": "porto",
+          "role": "GK",
+          "isGk": true,
+          "bottom": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Froholdt",
+          "teamId": "porto",
+          "role": "RB",
+          "bottom": "22%",
+          "left": "18%"
+        },
+        {
+          "number": 4,
+          "name": "Teixeira",
+          "teamId": "porto",
+          "role": "RCB",
+          "bottom": "20%",
+          "left": "38%"
+        },
+        {
+          "number": 3,
+          "name": "Gomes",
+          "teamId": "porto",
+          "role": "LCB",
+          "bottom": "20%",
+          "left": "62%"
+        },
+        {
+          "number": 5,
+          "name": "M. Cunha",
+          "teamId": "porto",
+          "role": "LB",
+          "bottom": "22%",
+          "left": "82%"
+        },
+        {
+          "number": 7,
+          "name": "D. Cunha",
+          "teamId": "porto",
+          "role": "RCM",
+          "bottom": "42%",
+          "left": "28%"
+        },
+        {
+          "number": 6,
+          "name": "T. Silva",
+          "teamId": "porto",
+          "role": "CM",
+          "bottom": "40%",
+          "left": "50%"
+        },
+        {
+          "number": 8,
+          "name": "Lima",
+          "teamId": "porto",
+          "role": "LCM",
+          "bottom": "42%",
+          "left": "72%"
+        },
+        {
+          "number": 11,
+          "name": "Granaas",
+          "teamId": "porto",
+          "role": "RW",
+          "bottom": "68%",
+          "left": "20%"
+        },
+        {
+          "number": 9,
+          "name": "E. Ferreira",
+          "teamId": "porto",
+          "role": "ST",
+          "bottom": "78%",
+          "left": "50%"
+        },
+        {
+          "number": 10,
+          "name": "Mide",
+          "teamId": "porto",
+          "role": "LW",
+          "bottom": "68%",
+          "left": "80%"
+        }
+      ]
+    },
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "system": "3-4-1-2",
+      "players": [
+        {
+          "number": 1,
+          "name": "Spinelli",
+          "teamId": "u19",
+          "role": "GK",
+          "isGk": true,
+          "top": "8%",
+          "left": "50%"
+        },
+        {
+          "number": 6,
+          "name": "Marotta",
+          "teamId": "u19",
+          "role": "LCB",
+          "top": "22%",
+          "left": "22%"
+        },
+        {
+          "number": 5,
+          "name": "Branchizio",
+          "teamId": "u19",
+          "role": "CB",
+          "top": "20%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Zappalà",
+          "teamId": "u19",
+          "role": "RCB",
+          "top": "22%",
+          "left": "78%"
+        },
+        {
+          "number": 7,
+          "name": "Melnyk",
+          "teamId": "u19",
+          "role": "LWB",
+          "top": "40%",
+          "left": "12%"
+        },
+        {
+          "number": 8,
+          "name": "D'Angelo",
+          "teamId": "u19",
+          "role": "LCM",
+          "top": "42%",
+          "left": "38%"
+        },
+        {
+          "number": 4,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "role": "RCM",
+          "top": "42%",
+          "left": "62%"
+        },
+        {
+          "number": 3,
+          "name": "Santella",
+          "teamId": "u19",
+          "role": "RWB",
+          "top": "40%",
+          "left": "88%"
+        },
+        {
+          "number": 10,
+          "name": "Baridó",
+          "teamId": "u19",
+          "role": "CAM",
+          "top": "58%",
+          "left": "50%"
+        },
+        {
+          "number": 9,
+          "name": "Pereyra",
+          "teamId": "u19",
+          "role": "ST",
+          "top": "78%",
+          "left": "35%"
+        },
+        {
+          "number": 11,
+          "name": "Mané",
+          "teamId": "u19",
+          "role": "ST",
+          "top": "78%",
+          "left": "65%"
+        }
+      ]
+    }
+  ],
   "dynamics": [],
   "teamStats": [
     {
@@ -1329,5 +1754,333 @@
       "en": "Full match hosted on Vimeo.",
       "it": "Partita intera su Vimeo."
     }
+  },
+  "appearances": {
+    "home": [
+      {
+        "name": "Nikolov",
+        "teamId": "porto",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Froholdt",
+        "teamId": "porto",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0,
+        "assists": [
+          64
+        ],
+        "yellowCards": [
+          66
+        ]
+      },
+      {
+        "name": "Gomes",
+        "teamId": "porto",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 76,
+        "yellowCards": [
+          57
+        ]
+      },
+      {
+        "name": "Teixeira",
+        "teamId": "porto",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "M. Cunha",
+        "teamId": "porto",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "T. Silva",
+        "teamId": "porto",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          8
+        ],
+        "assists": [
+          50
+        ]
+      },
+      {
+        "name": "D. Cunha",
+        "teamId": "porto",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0,
+        "goals": [
+          64
+        ]
+      },
+      {
+        "name": "Lima",
+        "teamId": "porto",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 84,
+        "yellowCards": [
+          60
+        ]
+      },
+      {
+        "name": "E. Ferreira",
+        "teamId": "porto",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 67,
+        "goals": [
+          50
+        ],
+        "yellowCards": [
+          44
+        ]
+      },
+      {
+        "name": "Mide",
+        "teamId": "porto",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 84
+      },
+      {
+        "name": "Granaas",
+        "teamId": "porto",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 67
+      },
+      {
+        "name": "Charuży",
+        "teamId": "porto",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Zé Afonso",
+        "teamId": "porto",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Chelmik",
+        "teamId": "porto",
+        "number": 14,
+        "starter": false,
+        "onMinute": 76
+      },
+      {
+        "name": "Oliveira",
+        "teamId": "porto",
+        "number": 15,
+        "starter": false,
+        "onMinute": 84
+      },
+      {
+        "name": "Gonçalves",
+        "teamId": "porto",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Abreu",
+        "teamId": "porto",
+        "number": 17,
+        "starter": false,
+        "onMinute": 67
+      },
+      {
+        "name": "Muxito",
+        "teamId": "porto",
+        "number": 18,
+        "starter": false
+      },
+      {
+        "name": "Varela",
+        "teamId": "porto",
+        "number": 19,
+        "starter": false,
+        "onMinute": 84
+      },
+      {
+        "name": "Cande",
+        "teamId": "porto",
+        "number": 20,
+        "starter": false,
+        "onMinute": 67
+      }
+    ],
+    "away": [
+      {
+        "name": "Spinelli",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Zappalà",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Santella",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 30
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 82
+      },
+      {
+        "name": "Branchizio",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [
+          26
+        ]
+      },
+      {
+        "name": "Marotta",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 72,
+        "yellowCards": [
+          62
+        ]
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "D'Angelo",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0
+      },
+      {
+        "name": "Pereyra",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "yellowCards": [
+          86
+        ]
+      },
+      {
+        "name": "Baridó",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "assists": [
+          71
+        ]
+      },
+      {
+        "name": "Mané",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": 72
+      },
+      {
+        "name": "Amendola",
+        "teamId": "u19",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Lepre",
+        "teamId": "u19",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Natale",
+        "teamId": "u19",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Picardi",
+        "teamId": "u19",
+        "number": 15,
+        "starter": false,
+        "onMinute": 72
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 16,
+        "starter": false,
+        "onMinute": 30,
+        "goals": [
+          71
+        ]
+      },
+      {
+        "name": "Russo",
+        "teamId": "u19",
+        "number": 17,
+        "starter": false,
+        "onMinute": 82
+      },
+      {
+        "name": "Riccio",
+        "teamId": "u19",
+        "number": 18,
+        "starter": false
+      },
+      {
+        "name": "Saviano",
+        "teamId": "u19",
+        "number": 19,
+        "starter": false,
+        "onMinute": 72
+      },
+      {
+        "name": "Pengue",
+        "teamId": "u19",
+        "number": 20,
+        "starter": false
+      }
+    ]
   }
 }
