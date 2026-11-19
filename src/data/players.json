@@ -274,6 +274,19 @@
       "photoPath": "/players/pengue-salvatore.png"
     },
     {
+      "slug": "pepe-simone",
+      "displayName": "Pepe Simone",
+      "positionShort": "CM",
+      "age": 18,
+      "birthDate": "19/09/2008",
+      "foot": "Right",
+      "heightCm": null,
+      "weightKg": null,
+      "bmi": null,
+      "squad": "Primavera",
+      "photoPath": "/players/pepe-simone.png"
+    },
+    {
       "slug": "pereyra-alvarez-milton-agustin",
       "displayName": "Pereyra Alvarez Milton Agustin",
       "positionShort": "CF",
