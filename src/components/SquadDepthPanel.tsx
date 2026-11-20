@@ -49,7 +49,7 @@ export default function SquadDepthPanel({
                 title={slot.role}
               >
                 {showPositionShirts
-                  ? (shirtNumberForPrimavera2Role(slot.role) ?? '')
+                  ? (slot.shirt ?? shirtNumberForPrimavera2Role(slot.role) ?? '')
                   : ''}
               </div>
               <div className="squad-depth-stack">

@@ -54,6 +54,8 @@ export interface OppositionSquadDepthSlot {
   /** Pitch position (same coordinate system as PitchPlayer). */
   top: string;
   left: string;
+  /** Optional shirt shown on the token, overriding the Primavera 2 position map. */
+  shirt?: number;
   players: OppositionDepthPlayer[];
 }
 
