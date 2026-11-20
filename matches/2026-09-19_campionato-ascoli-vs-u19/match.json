@@ -1150,28 +1150,32 @@
         "teamId": "u19",
         "number": 1,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Melnyk",
         "teamId": "u19",
         "number": 2,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Liccardo",
         "teamId": "u19",
         "number": 3,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "De Stefano",
         "teamId": "u19",
         "number": 4,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Picardi",
@@ -1193,7 +1197,8 @@
         "teamId": "u19",
         "number": 7,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Chiummariello",
@@ -1201,7 +1206,7 @@
         "number": 8,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 54
+        "offMinute": 56
       },
       {
         "name": "Pereyra",
@@ -1211,7 +1216,8 @@
         "onMinute": 0,
         "goals": [
           53
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Barido'",
@@ -1219,7 +1225,7 @@
         "number": 10,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 88,
+        "offMinute": 90,
         "goals": [
           18
         ]
@@ -1230,7 +1236,7 @@
         "number": 11,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 54
+        "offMinute": 56
       },
       {
         "name": "Merone",
@@ -1255,7 +1261,8 @@
         "teamId": "u19",
         "number": 15,
         "starter": false,
-        "onMinute": 14
+        "onMinute": 14,
+        "offMinute": null
       },
       {
         "name": "Santella",
@@ -1274,22 +1281,26 @@
         "teamId": "u19",
         "number": 18,
         "starter": false,
-        "onMinute": 54
+        "onMinute": 56,
+        "offMinute": null
       },
       {
         "name": "Pengue",
         "teamId": "u19",
         "number": 19,
         "starter": false,
-        "onMinute": 88
+        "onMinute": 90,
+        "offMinute": null
       },
       {
         "name": "Esposito",
         "teamId": "u19",
         "number": 20,
         "starter": false,
-        "onMinute": 54
+        "onMinute": 56,
+        "offMinute": null
       }
     ]
-  }
+  },
+  "durationMinutes": 96
 }

@@ -1348,14 +1348,16 @@
         "teamId": "u19",
         "number": 1,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Zappalà",
         "teamId": "u19",
         "number": 2,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Liccardo",
@@ -1363,7 +1365,7 @@
         "number": 3,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 67,
+        "offMinute": 69,
         "yellowCards": [
           46
         ]
@@ -1373,7 +1375,8 @@
         "teamId": "u19",
         "number": 4,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Branchizio",
@@ -1381,7 +1384,7 @@
         "number": 5,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 28
+        "offMinute": 29
       },
       {
         "name": "Lieto",
@@ -1389,21 +1392,23 @@
         "number": 6,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 77
+        "offMinute": 83
       },
       {
         "name": "Melnyk",
         "teamId": "u19",
         "number": 7,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Anic",
         "teamId": "u19",
         "number": 8,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Pereyra",
@@ -1413,7 +1418,8 @@
         "onMinute": 0,
         "goals": [
           59
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Baridò",
@@ -1421,7 +1427,7 @@
         "number": 10,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 46
+        "offMinute": 47
       },
       {
         "name": "Favicchio",
@@ -1429,7 +1435,7 @@
         "number": 11,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 67,
+        "offMinute": 69,
         "yellowCards": [
           60
         ]
@@ -1445,7 +1451,8 @@
         "teamId": "u19",
         "number": 13,
         "starter": false,
-        "onMinute": 77
+        "onMinute": 83,
+        "offMinute": null
       },
       {
         "name": "Picardi",
@@ -1458,10 +1465,11 @@
         "teamId": "u19",
         "number": 15,
         "starter": false,
-        "onMinute": 67,
+        "onMinute": 69,
         "yellowCards": [
           92
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Santella",
@@ -1480,10 +1488,11 @@
         "teamId": "u19",
         "number": 18,
         "starter": false,
-        "onMinute": 46,
+        "onMinute": 47,
         "assists": [
           59
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Chiummariello",
@@ -1496,20 +1505,22 @@
         "teamId": "u19",
         "number": 20,
         "starter": false,
-        "onMinute": 28,
+        "onMinute": 29,
         "yellowCards": [
           79
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Mané",
         "teamId": "u19",
         "number": 21,
         "starter": false,
-        "onMinute": 67,
+        "onMinute": 69,
         "goals": [
           76
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Riccio",
@@ -1701,5 +1712,6 @@
         "starter": false
       }
     ]
-  }
+  },
+  "durationMinutes": 97
 }

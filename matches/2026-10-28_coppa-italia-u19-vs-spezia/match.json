@@ -1180,7 +1180,8 @@
         "teamId": "u19",
         "number": 1,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Liccardo",
@@ -1188,21 +1189,23 @@
         "number": 2,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 81
+        "offMinute": 83
       },
       {
         "name": "Candela",
         "teamId": "u19",
         "number": 3,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "De Michele",
         "teamId": "u19",
         "number": 4,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Natale",
@@ -1212,14 +1215,16 @@
         "onMinute": 0,
         "yellowCards": [
           77
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Marotta",
         "teamId": "u19",
         "number": 6,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Esposito",
@@ -1227,14 +1232,15 @@
         "number": 7,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 68
+        "offMinute": 66
       },
       {
         "name": "D'Angelo",
         "teamId": "u19",
         "number": 8,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Saviano",
@@ -1242,7 +1248,7 @@
         "number": 9,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 68
+        "offMinute": 66
       },
       {
         "name": "Anic",
@@ -1289,7 +1295,8 @@
         "teamId": "u19",
         "number": 16,
         "starter": false,
-        "onMinute": 60
+        "onMinute": 60,
+        "offMinute": null
       },
       {
         "name": "Pepe",
@@ -1312,21 +1319,24 @@
         "teamId": "u19",
         "number": 19,
         "starter": false,
-        "onMinute": 45
+        "onMinute": 45,
+        "offMinute": null
       },
       {
         "name": "Baridò",
         "teamId": "u19",
         "number": 20,
         "starter": false,
-        "onMinute": 68
+        "onMinute": 66,
+        "offMinute": null
       },
       {
         "name": "Pengue",
         "teamId": "u19",
         "number": 21,
         "starter": false,
-        "onMinute": 68
+        "onMinute": 66,
+        "offMinute": null
       }
     ],
     "away": [
@@ -1620,5 +1630,6 @@
     "folderId": "31074076",
     "folderUrl": "https://vimeo.com/user/170593333/folder/31074076",
     "lastSyncedAt": "2026-10-29T12:50:00.000Z"
-  }
+  },
+  "durationMinutes": 95
 }

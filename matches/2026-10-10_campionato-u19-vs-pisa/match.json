@@ -514,35 +514,40 @@
         "teamId": "u19",
         "number": 1,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Melnyk",
         "teamId": "u19",
         "number": 2,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Zappalà",
         "teamId": "u19",
         "number": 3,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "De Stefano",
         "teamId": "u19",
         "number": 4,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Branchizio",
         "teamId": "u19",
         "number": 5,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Lieto",
@@ -550,7 +555,7 @@
         "number": 6,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 70
+        "offMinute": 72
       },
       {
         "name": "Anic",
@@ -558,14 +563,15 @@
         "number": 7,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 55
+        "offMinute": 56
       },
       {
         "name": "D'Angelo",
         "teamId": "u19",
         "number": 8,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Pengue",
@@ -573,7 +579,7 @@
         "number": 9,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 70
+        "offMinute": 72
       },
       {
         "name": "Baridò",
@@ -581,7 +587,7 @@
         "number": 10,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 83
+        "offMinute": 84
       },
       {
         "name": "Santella",
@@ -589,7 +595,7 @@
         "number": 11,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 55
+        "offMinute": 56
       },
       {
         "name": "Spinelli",
@@ -614,14 +620,16 @@
         "teamId": "u19",
         "number": 15,
         "starter": false,
-        "onMinute": 70
+        "onMinute": 72,
+        "offMinute": null
       },
       {
         "name": "Liccardo",
         "teamId": "u19",
         "number": 16,
         "starter": false,
-        "onMinute": 55
+        "onMinute": 56,
+        "offMinute": null
       },
       {
         "name": "Candela",
@@ -634,7 +642,8 @@
         "teamId": "u19",
         "number": 18,
         "starter": false,
-        "onMinute": 83
+        "onMinute": 84,
+        "offMinute": null
       },
       {
         "name": "Pepe",
@@ -647,7 +656,8 @@
         "teamId": "u19",
         "number": 20,
         "starter": false,
-        "onMinute": 55
+        "onMinute": 56,
+        "offMinute": null
       },
       {
         "name": "Mané",
@@ -657,7 +667,8 @@
         "goals": [
           74
         ],
-        "onMinute": 70
+        "onMinute": 72,
+        "offMinute": null
       },
       {
         "name": "Russo",
@@ -989,5 +1000,6 @@
         }
       }
     ]
-  }
+  },
+  "durationMinutes": 95
 }

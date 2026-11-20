@@ -1630,14 +1630,16 @@
         "teamId": "u19",
         "number": 1,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Zappala'",
         "teamId": "u19",
         "number": 2,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Santella",
@@ -1652,14 +1654,16 @@
         "teamId": "u19",
         "number": 4,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Branchizio",
         "teamId": "u19",
         "number": 5,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Lieto",
@@ -1674,7 +1678,8 @@
         "teamId": "u19",
         "number": 7,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Chiummariello",
@@ -1684,7 +1689,8 @@
         "onMinute": 0,
         "assists": [
           34
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Pereyra",
@@ -1714,7 +1720,7 @@
         "number": 11,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 64,
+        "offMinute": 72,
         "goals": [
           34
         ]
@@ -1742,7 +1748,8 @@
         "teamId": "u19",
         "number": 15,
         "starter": false,
-        "onMinute": 46
+        "onMinute": 46,
+        "offMinute": null
       },
       {
         "name": "Anic",
@@ -1776,14 +1783,16 @@
         "onMinute": 59,
         "assists": [
           70
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Rovetini",
         "teamId": "u19",
         "number": 21,
         "starter": false,
-        "onMinute": 64
+        "onMinute": 72,
+        "offMinute": null
       },
       {
         "name": "Esposito",
@@ -1796,14 +1805,16 @@
         ],
         "yellowCards": [
           84
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Favicchio",
         "teamId": "u19",
         "number": 23,
         "starter": false,
-        "onMinute": 59
+        "onMinute": 59,
+        "offMinute": null
       }
     ],
     "away": [
@@ -2466,5 +2477,6 @@
         }
       }
     ]
-  }
+  },
+  "durationMinutes": 95
 }

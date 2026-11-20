@@ -1360,37 +1360,42 @@
         "teamId": "u19",
         "starter": true,
         "onMinute": 0,
-        "offMinute": 46
+        "offMinute": 45
       },
       {
         "name": "Liccardo",
         "teamId": "u19",
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Candela",
         "teamId": "u19",
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "De Stefano",
         "teamId": "u19",
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Natale",
         "teamId": "u19",
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Marotta",
         "teamId": "u19",
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Rovetini",
@@ -1406,28 +1411,29 @@
         "onMinute": 0,
         "yellowCards": [
           35
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Mané",
         "teamId": "u19",
         "starter": true,
         "onMinute": 0,
-        "offMinute": 46
+        "offMinute": 45
       },
       {
         "name": "Riccio",
         "teamId": "u19",
         "starter": true,
         "onMinute": 0,
-        "offMinute": 46
+        "offMinute": 45
       },
       {
         "name": "Santella",
         "teamId": "u19",
         "starter": true,
         "onMinute": 0,
-        "offMinute": 69
+        "offMinute": 70
       },
       {
         "name": "Amendola",
@@ -1439,25 +1445,29 @@
         "name": "Esposito",
         "teamId": "u19",
         "starter": false,
-        "onMinute": 46
+        "onMinute": 45,
+        "offMinute": null
       },
       {
         "name": "Saviano",
         "teamId": "u19",
         "starter": false,
-        "onMinute": 46
+        "onMinute": 45,
+        "offMinute": null
       },
       {
         "name": "Lepre",
         "teamId": "u19",
         "starter": false,
-        "onMinute": 69
+        "onMinute": 70,
+        "offMinute": null
       },
       {
         "name": "M. De Michele",
         "teamId": "u19",
         "starter": false,
-        "onMinute": 90
+        "onMinute": 90,
+        "offMinute": null
       },
       {
         "name": "Pepe",
@@ -1482,5 +1492,6 @@
       "en": "Lineups, substitutions and cards from the mondoprimavera.com live report and tabellino (Marotta captain, Casillo captain; coaches Antonio Nocerino for Napoli, Roberto D'Ermilio for Monopoli). Referee: Alessandro Pio Carpentiere; assistants Michele Bonavita and Francesco Di Muzio. Stadio Vito Simone Veneziani, Monopoli, 31 Oct 2026, 14:30; rain, heavier from the 52nd minute. Napoli 3-4-2-1 with positions from staff (Spinelli; Natale RCB, Marotta CB, Candela LCB; Liccardo RWB, De Stefano RCM, D'Angelo LCM, Santella LWB; Rovetini RAM, Riccio LAM; Mané ST). Monopoli 5-3-2: the report gives no positions or formation, so players are placed in tabellino order (GK; RWB Sedvartas, LWB Illuzzi, LCB Lanza, RCB Turcinskas, CB Ziedelis; CM Errico, RCM Casillo, LCM Positano; RS Tumminelli, LS Keptoukoua), as for earlier Monopoli XIs. The report states shirt numbers only for Illuzzi (3), Tumminelli (9) and Positano (10). Napoli changed goalkeeper at half-time (Amendola for Spinelli, with no injury reported). No red cards. Mané goal disallowed for offside at 29'. Final score 0-0.",
       "it": "Formazioni, cambi e ammonizioni dalla cronaca live e dal tabellino di mondoprimavera.com (capitani Marotta e Casillo; allenatori Antonio Nocerino per il Napoli, Roberto D'Ermilio per il Monopoli). Arbitro: Alessandro Pio Carpentiere; assistenti Michele Bonavita e Francesco Di Muzio. Stadio Vito Simone Veneziani, Monopoli, 31 ott 2026, ore 14:30; pioggia, più intensa dal 52'. Napoli 3-4-2-1 con ruoli dallo staff (Spinelli; Natale difensore centrale destro, Marotta difensore centrale, Candela difensore centrale sinistro; Liccardo esterno destro, De Stefano centrocampista centrale destro, D'Angelo centrocampista centrale sinistro, Santella esterno sinistro; Rovetini trequartista destro, Riccio trequartista sinistro; Mané centravanti). Monopoli 5-3-2: la cronaca non indica ruoli né modulo, quindi i giocatori sono disposti nell'ordine del tabellino (portiere; esterno destro Sedvartas, esterno sinistro Illuzzi, difensore centrale sinistro Lanza, difensore centrale destro Turcinskas, difensore centrale Ziedelis; centrocampista centrale Errico, centrocampista destro Casillo, centrocampista sinistro Positano; attaccante destro Tumminelli, attaccante sinistro Ni Gariga Keptoukoua), come per le formazioni precedenti del Monopoli. La cronaca indica i numeri di maglia solo per Illuzzi (3), Tumminelli (9) e Positano (10). Il Napoli ha cambiato portiere all'intervallo (Amendola per Spinelli, senza infortuni segnalati). Nessun espulso. Gol di Mané annullato per fuorigioco al 29'. Risultato finale 0-0."
     }
-  }
+  },
+  "durationMinutes": 94
 }

@@ -1598,7 +1598,8 @@
         "teamId": "u19",
         "number": 1,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Picardi",
@@ -1613,7 +1614,8 @@
         "teamId": "u19",
         "number": 3,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "De Stefano",
@@ -1624,7 +1626,8 @@
         "notes": {
           "en": "Vice-captain",
           "it": "Vice capitano"
-        }
+        },
+        "offMinute": null
       },
       {
         "name": "Branchizio",
@@ -1634,7 +1637,8 @@
         "onMinute": 0,
         "yellowCards": [
           null
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Marotta",
@@ -1645,7 +1649,8 @@
         "notes": {
           "en": "Captain",
           "it": "Capitano"
-        }
+        },
+        "offMinute": null
       },
       {
         "name": "Liccardo",
@@ -1653,14 +1658,15 @@
         "number": 7,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 63
+        "offMinute": 66
       },
       {
         "name": "D'Angelo",
         "teamId": "u19",
         "number": 8,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Saviano",
@@ -1668,7 +1674,7 @@
         "number": 9,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 63
+        "offMinute": 66
       },
       {
         "name": "Riccio",
@@ -1679,7 +1685,7 @@
         "yellowCards": [
           null
         ],
-        "offMinute": 50
+        "offMinute": 51
       },
       {
         "name": "Rovetini",
@@ -1687,28 +1693,31 @@
         "number": 11,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 72
+        "offMinute": 74
       },
       {
         "name": "Pengue",
         "teamId": "u19",
         "number": 20,
         "starter": false,
-        "onMinute": 63
+        "onMinute": 66,
+        "offMinute": null
       },
       {
         "name": "Anic",
         "teamId": "u19",
         "number": 18,
         "starter": false,
-        "onMinute": 63
+        "onMinute": 66,
+        "offMinute": null
       },
       {
         "name": "Santella",
         "teamId": "u19",
         "number": 15,
         "starter": false,
-        "onMinute": 72
+        "onMinute": 74,
+        "offMinute": null
       },
       {
         "name": "Merone",
@@ -1727,7 +1736,8 @@
         "teamId": "u19",
         "number": 14,
         "starter": false,
-        "onMinute": 45
+        "onMinute": 47,
+        "offMinute": null
       },
       {
         "name": "Pepe",
@@ -1746,7 +1756,8 @@
         "teamId": "u19",
         "number": 19,
         "starter": false,
-        "onMinute": 50
+        "onMinute": 51,
+        "offMinute": null
       }
     ],
     "away": [
@@ -1921,5 +1932,6 @@
       "en": "Starters, bench, shirt numbers, captains and officials from the official pre-match sheet. Stadio G. Piccolo, Cercola (NA), Saturday 7 Nov 2026, 14:30. Napoli: Marotta captain, De Stefano vice-captain; coach Nocerino Antonio. Frosinone: Pantano captain, Colafrancesco vice-captain; coach Guberti Stefano. Referee: Leone Mario (Avezzano); assistants Cocciolone Gianmarco (L'Aquila), Leli Matteo (L'Aquila). Result 0–0, substitutions and yellow cards from mondoprimavera.com (Primavera 2 Girone B, matchday 8; Angelo Zarra). Subs: Pengue for Liccardo 63', Anic for Saviano 63', Santella for Rovetini 72'; Bosi for Casagrande 67', Ndao for Pantano 77', Taddei for Esposito 87'. Yellow cards: Millozzi (Frosinone), Riccio and Branchizio (Napoli); minutes not published. No shape is recorded: the sheet is shirt-number order, and the report gives no positions. The report says Mané played Branchizio in at 86' and does not list a Mané substitution.",
       "it": "Titolari, panchina, numeri, capitani e ufficiali di gara dalla distinta ufficiale. Stadio G. Piccolo, Cercola (NA), sabato 7 nov 2026, ore 14:30. Napoli: Marotta capitano, De Stefano vice; allenatore Nocerino Antonio. Frosinone: Pantano capitano, Colafrancesco vice; allenatore Guberti Stefano. Arbitro: Leone Mario (Avezzano); assistenti Cocciolone Gianmarco (L'Aquila), Leli Matteo (L'Aquila). Risultato 0–0, cambi e ammonizioni da mondoprimavera.com (Primavera 2 Girone B, giornata 8; Angelo Zarra). Sub: Pengue per Liccardo 63', Anic per Saviano 63', Santella per Rovetini 72'; Bosi per Casagrande 67', Ndao per Pantano 77', Taddei per Esposito 87'. Ammoniti: Millozzi (Frosinone), Riccio e Branchizio (Napoli); minuti non pubblicati. Nessun modulo registrato: la distinta è in ordine di maglia e la cronaca non indica i ruoli. La cronaca scrive che Mané serve Branchizio all'86' e non elenca un cambio di Mané."
     }
-  }
+  },
+  "durationMinutes": 96
 }

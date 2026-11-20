@@ -337,14 +337,16 @@
         "teamId": "u19",
         "number": 1,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Zappala'",
         "teamId": "u19",
         "number": 2,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Melnyk",
@@ -354,21 +356,24 @@
         "onMinute": 0,
         "assists": [
           25
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "De Stefano",
         "teamId": "u19",
         "number": 4,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Branchizio",
         "teamId": "u19",
         "number": 5,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Marotta",
@@ -376,7 +381,7 @@
         "number": 6,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 46,
+        "offMinute": 45,
         "yellowCards": [
           36
         ]
@@ -387,7 +392,7 @@
         "number": 7,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 70
+        "offMinute": 71
       },
       {
         "name": "Chiummariello",
@@ -395,7 +400,7 @@
         "number": 8,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 85
+        "offMinute": 86
       },
       {
         "name": "Pereyra",
@@ -405,7 +410,8 @@
         "onMinute": 0,
         "goals": [
           25
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Riccio",
@@ -413,7 +419,7 @@
         "number": 10,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 56
+        "offMinute": 57
       },
       {
         "name": "Mane",
@@ -421,45 +427,50 @@
         "number": 11,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 56
+        "offMinute": 57
       },
       {
         "name": "Natale",
         "teamId": "u19",
         "number": 14,
         "starter": false,
-        "onMinute": 46
+        "onMinute": 45,
+        "offMinute": null
       },
       {
         "name": "De Michele",
         "teamId": "u19",
         "number": 16,
         "starter": false,
-        "onMinute": 85
+        "onMinute": 86,
+        "offMinute": null
       },
       {
         "name": "Favicchio",
         "teamId": "u19",
         "number": 17,
         "starter": false,
-        "onMinute": 56,
+        "onMinute": 57,
         "yellowCards": [
           73
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Pengue",
         "teamId": "u19",
         "number": 18,
         "starter": false,
-        "onMinute": 56
+        "onMinute": 57,
+        "offMinute": null
       },
       {
         "name": "Barido'",
         "teamId": "u19",
         "number": 19,
         "starter": false,
-        "onMinute": 70
+        "onMinute": 71,
+        "offMinute": null
       }
     ]
   },
@@ -620,5 +631,6 @@
         }
       ]
     }
-  ]
+  ],
+  "durationMinutes": 94
 }

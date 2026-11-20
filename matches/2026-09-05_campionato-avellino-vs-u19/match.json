@@ -1136,7 +1136,8 @@
         "teamId": "u19",
         "number": 1,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Natale",
@@ -1144,14 +1145,15 @@
         "number": 2,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 43
+        "offMinute": 46
       },
       {
         "name": "Zappalà",
         "teamId": "u19",
         "number": 3,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "De Stefano",
@@ -1159,14 +1161,15 @@
         "number": 4,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 69
+        "offMinute": 72
       },
       {
         "name": "Branchizio",
         "teamId": "u19",
         "number": 5,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Lieto",
@@ -1180,7 +1183,8 @@
         },
         "yellowCards": [
           null
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Melnyk",
@@ -1188,7 +1192,7 @@
         "number": 7,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 69,
+        "offMinute": 72,
         "notes": {
           "en": "Yellow card (minute unknown)",
           "it": "Ammonito (minuto sconosciuto)"
@@ -1203,7 +1207,7 @@
         "number": 8,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 82,
+        "offMinute": 83,
         "notes": {
           "en": "Yellow card (minute unknown)",
           "it": "Ammonito (minuto sconosciuto)"
@@ -1220,14 +1224,16 @@
         "onMinute": 0,
         "goals": [
           61
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Baridó",
         "teamId": "u19",
         "number": 10,
         "starter": true,
-        "onMinute": 0
+        "onMinute": 0,
+        "offMinute": null
       },
       {
         "name": "Rovettini",
@@ -1235,7 +1241,7 @@
         "number": 11,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 45
+        "offMinute": 48
       },
       {
         "name": "Merone",
@@ -1248,21 +1254,23 @@
         "teamId": "u19",
         "number": 13,
         "starter": false,
-        "onMinute": 43,
+        "onMinute": 46,
         "notes": {
           "en": "Yellow card (minute unknown)",
           "it": "Ammonito (minuto sconosciuto)"
         },
         "yellowCards": [
           null
-        ]
+        ],
+        "offMinute": null
       },
       {
         "name": "Liccardo",
         "teamId": "u19",
         "number": 14,
         "starter": false,
-        "onMinute": 69
+        "onMinute": 72,
+        "offMinute": null
       },
       {
         "name": "Chiaiese",
@@ -1275,21 +1283,24 @@
         "teamId": "u19",
         "number": 16,
         "starter": false,
-        "onMinute": 69
+        "onMinute": 72,
+        "offMinute": null
       },
       {
         "name": "Riccio",
         "teamId": "u19",
         "number": 17,
         "starter": false,
-        "onMinute": 82
+        "onMinute": 83,
+        "offMinute": null
       },
       {
         "name": "Mané",
         "teamId": "u19",
         "number": 18,
         "starter": false,
-        "onMinute": 45
+        "onMinute": null,
+        "offMinute": null
       },
       {
         "name": "Favicchio",
@@ -1301,7 +1312,9 @@
         "name": "Esposito",
         "teamId": "u19",
         "number": 20,
-        "starter": false
+        "starter": false,
+        "onMinute": 48,
+        "offMinute": null
       },
       {
         "name": "Amendola",
@@ -1483,5 +1496,6 @@
         }
       ]
     }
-  ]
+  ],
+  "durationMinutes": 98
 }

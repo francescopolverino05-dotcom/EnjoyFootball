@@ -226,6 +226,12 @@ export interface MatchData {
   awayTeam: TeamInfo;
   /** Final score, or null when the fixture has not been played yet. */
   score: { home: number; away: number } | null;
+  /**
+   * Full-match clock length including stoppage (e.g. 95).
+   * Used for minutes when a player finishes the match (no offMinute).
+   * Defaults to 90 when omitted.
+   */
+  durationMinutes?: number;
   goals: Goal[];
   timeline: TimelineEvent[];
   formations: Formation[];

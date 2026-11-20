@@ -7,9 +7,10 @@
  * - Only matches with a recorded score count as played.
  * - Appearance: in the starting XI, or came on (numeric onMinute), or has a
  *   goal / assist / card recorded.
- * - Minutes: match length 90 (no stoppage is recorded on any sheet).
- *   Starter = 0 → offMinute (or red-card minute, else 90).
- *   Sub = onMinute → offMinute (or red-card minute, else 90).
+ * - Minutes: match length from match.durationMinutes when set (stoppage
+ *   included), otherwise 90.
+ *   Starter = 0 → offMinute (or red-card minute, else match length).
+ *   Sub = onMinute → offMinute (or red-card minute, else match length).
  *   Unknown when the sheet has no substitution data at all, or when a bench
  *   player appears through an event without an entry minute.
  * - Match log lists every competitive Napoli fixture in the season calendar
@@ -50,6 +51,7 @@ const NAME_ALIASES: Record<string, string> = {
   // Sheets swing between Simone / Simeone for Pepe; also folded in foldNameVariants.
   'pepe simeone': 'pepe simone',
   'simeone pepe': 'pepe simone',
+  "d angelo": "d'angelo",
 };
 
 export interface TechStatLine {
@@ -205,13 +207,23 @@ function played(p: PlayerAppearance): boolean {
 }
 
 /** Minutes played, or null when the data cannot tell. */
-function minutesFor(p: PlayerAppearance, sheetHasSubs: boolean): number | null {
+function minutesFor(
+  p: PlayerAppearance,
+  sheetHasSubs: boolean,
+  matchLength: number = MATCH_LENGTH
+): number | null {
   if (!sheetHasSubs) return null;
   const start = p.starter ? 0 : num(p.onMinute) ? p.onMinute : null;
   if (start == null) return null;
   const red = p.redCards?.find(num);
-  const end = num(p.offMinute) ? p.offMinute : num(red) ? red : MATCH_LENGTH;
+  const end = num(p.offMinute) ? p.offMinute : num(red) ? red : matchLength;
   return Math.max(0, end - start);
+}
+
+function matchLengthOf(match: MatchData): number {
+  return num(match.durationMinutes) && match.durationMinutes! > 0
+    ? match.durationMinutes!
+    : MATCH_LENGTH;
 }
 
 interface CompetitiveMatch {
@@ -219,6 +231,7 @@ interface CompetitiveMatch {
   competitionId: TechStatsCompetition;
   rows: PlayerAppearance[];
   sheetHasSubs: boolean;
+  matchLength: number;
 }
 
 function isTechComp(id: MatchCompetitionId): id is TechStatsCompetition {
@@ -488,7 +501,8 @@ function load() {
     const sheetHasSubs = rows.some(
       (r) => num(r.offMinute) || (!r.starter && num(r.onMinute) && r.onMinute > 0)
     );
-    const entry = { match, competitionId, rows, sheetHasSubs };
+    const matchLength = matchLengthOf(match);
+    const entry = { match, competitionId, rows, sheetHasSubs, matchLength };
     matches.push(entry);
     bySlug.set(match.slug, entry);
   }
@@ -546,13 +560,13 @@ export function getPlayerTechStats(slug: string): PlayerTechStats {
   const minutesUnknownIn: MissingMatch[] = [];
 
   // Season totals from sheets where the player actually featured.
-  for (const { match, competitionId, rows, sheetHasSubs } of matches) {
+  for (const { match, competitionId, rows, sheetHasSubs, matchLength } of matches) {
     const row = rows.find((r) => resolvePlayerSlug(r.name, players) === slug);
     if (!row || !played(row)) continue;
     const line = byCompetition[competitionId];
     line.appearances += 1;
     if (row.starter) line.starts += 1;
-    const mins = minutesFor(row, sheetHasSubs);
+    const mins = minutesFor(row, sheetHasSubs, matchLength);
     if (mins == null) {
       line.minutesUnknown += 1;
       minutesUnknownIn.push({ slug: match.slug, competitionId, label: matchLabel(match) });
@@ -631,7 +645,7 @@ export function getPlayerTechStats(slug: string): PlayerTechStats {
     }
 
     const didPlay = played(row);
-    const mins = didPlay ? minutesFor(row, sheet.sheetHasSubs) : null;
+    const mins = didPlay ? minutesFor(row, sheet.sheetHasSubs, sheet.matchLength) : null;
     const status = logStatus(row);
     return {
       id: fx.id,
