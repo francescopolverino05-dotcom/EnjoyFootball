@@ -776,7 +776,8 @@ Updated ${matchPath}
 
 /** Set-piece videos (Piazzati / Set Pieces / Palle inattive), by title or parent folder. */
 function isSetPieceTrainingVideo(name, parentFolderName = '') {
-  const re = /(piazzat|angol[io]|punizion[ie]|set[\s_-]*pieces?|palle\s+inattive|palla\s+inattiva)/i;
+  // punision = common Vimeo typo for punizioni
+  const re = /(piazzat|angol[io]|punizion[ie]|punision|set[\s_-]*pieces?|palle\s+inattive|palla\s+inattiva)/i;
   return re.test(String(name || '')) || re.test(String(parentFolderName || ''));
 }
 
