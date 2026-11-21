@@ -39,10 +39,263 @@
   "score": null,
   "goals": [],
   "timeline": [],
-  "formations": [],
+  "formations": [
+    {
+      "teamId": "u19",
+      "label": {
+        "en": "Napoli Primavera",
+        "it": "Napoli Primavera"
+      },
+      "system": "4-2-3-1",
+      "players": [
+        {
+          "number": 1,
+          "name": "Merone",
+          "teamId": "u19",
+          "role": "GK",
+          "isGk": true,
+          "bottom": "10%",
+          "left": "50%"
+        },
+        {
+          "number": 2,
+          "name": "Melnyk",
+          "teamId": "u19",
+          "role": "LB",
+          "bottom": "25%",
+          "left": "15%"
+        },
+        {
+          "number": 5,
+          "name": "Zappalà",
+          "teamId": "u19",
+          "role": "LCB",
+          "bottom": "22%",
+          "left": "38%"
+        },
+        {
+          "number": 6,
+          "name": "Marotta",
+          "teamId": "u19",
+          "role": "RCB",
+          "bottom": "22%",
+          "left": "62%"
+        },
+        {
+          "number": 3,
+          "name": "Santella",
+          "teamId": "u19",
+          "role": "RB",
+          "bottom": "25%",
+          "left": "85%"
+        },
+        {
+          "number": 4,
+          "name": "De Stefano",
+          "teamId": "u19",
+          "role": "LCM",
+          "bottom": "40%",
+          "left": "35%"
+        },
+        {
+          "number": 8,
+          "name": "Chiummariello",
+          "teamId": "u19",
+          "role": "RCM",
+          "bottom": "40%",
+          "left": "65%"
+        },
+        {
+          "number": 7,
+          "name": "Esposito",
+          "teamId": "u19",
+          "role": "LW",
+          "bottom": "58%",
+          "left": "20%"
+        },
+        {
+          "number": 10,
+          "name": "Baridò",
+          "teamId": "u19",
+          "role": "CAM",
+          "bottom": "58%",
+          "left": "50%"
+        },
+        {
+          "number": 11,
+          "name": "Favicchio",
+          "teamId": "u19",
+          "role": "RW",
+          "bottom": "58%",
+          "left": "80%"
+        },
+        {
+          "number": 9,
+          "name": "Saviano",
+          "teamId": "u19",
+          "role": "CF",
+          "bottom": "78%",
+          "left": "50%"
+        }
+      ]
+    }
+  ],
   "dynamics": [],
   "teamStats": [],
   "goalkeepers": [],
   "clips": [],
-  "analysisVideos": []
+  "analysisVideos": [],
+  "appearances": {
+    "home": [
+      {
+        "name": "Merone",
+        "teamId": "u19",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Melnyk",
+        "teamId": "u19",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Zappalà",
+        "teamId": "u19",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Marotta",
+        "teamId": "u19",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Santella",
+        "teamId": "u19",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "De Stefano",
+        "teamId": "u19",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Chiummariello",
+        "teamId": "u19",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Esposito",
+        "teamId": "u19",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Baridò",
+        "teamId": "u19",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Favicchio",
+        "teamId": "u19",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Saviano",
+        "teamId": "u19",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Capasso",
+        "teamId": "u19",
+        "number": 12,
+        "starter": false
+      },
+      {
+        "name": "Candela",
+        "teamId": "u19",
+        "number": 13,
+        "starter": false
+      },
+      {
+        "name": "Natale",
+        "teamId": "u19",
+        "number": 14,
+        "starter": false
+      },
+      {
+        "name": "Liccardo",
+        "teamId": "u19",
+        "number": 15,
+        "starter": false
+      },
+      {
+        "name": "D'Angelo",
+        "teamId": "u19",
+        "number": 16,
+        "starter": false
+      },
+      {
+        "name": "Pepe",
+        "teamId": "u19",
+        "number": 17,
+        "starter": false
+      },
+      {
+        "name": "Anic",
+        "teamId": "u19",
+        "number": 18,
+        "starter": false
+      },
+      {
+        "name": "Mané",
+        "teamId": "u19",
+        "number": 19,
+        "starter": false
+      },
+      {
+        "name": "Rovetini",
+        "teamId": "u19",
+        "number": 20,
+        "starter": false
+      },
+      {
+        "name": "Riccio",
+        "teamId": "u19",
+        "number": 21,
+        "starter": false
+      }
+    ],
+    "away": []
+  }
 }

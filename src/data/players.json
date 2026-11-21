@@ -1,6 +1,19 @@
 {
   "players": [
     {
+      "slug": "amendola-antonio",
+      "displayName": "Amendola Antonio",
+      "positionShort": "GK",
+      "age": 17,
+      "birthDate": "03/08/2009",
+      "foot": "Left",
+      "heightCm": 182,
+      "weightKg": null,
+      "bmi": null,
+      "squad": "Primavera",
+      "photoPath": "/players/amendola-antonio.png"
+    },
+    {
       "slug": "anic-ivan",
       "displayName": "Anic Ivan",
       "positionShort": "AM",
@@ -12,6 +25,19 @@
       "bmi": 21.9,
       "squad": "Primavera",
       "photoPath": "/players/anic-ivan.png"
+    },
+    {
+      "slug": "ascione-simone",
+      "displayName": "Ascione Simone",
+      "positionShort": "CF",
+      "age": 17,
+      "birthDate": "21/11/2009",
+      "foot": null,
+      "heightCm": 194,
+      "weightKg": null,
+      "bmi": null,
+      "squad": "U18",
+      "photoPath": "/players/ascione-simone.png"
     },
     {
       "slug": "barido-francisco-martin",
@@ -51,6 +77,19 @@
       "bmi": 23.7,
       "squad": "Primavera",
       "photoPath": "/players/candela-ivan-giovanni.png"
+    },
+    {
+      "slug": "capasso-antonio",
+      "displayName": "Capasso Antonio",
+      "positionShort": "GK",
+      "age": 17,
+      "birthDate": "06/08/2009",
+      "foot": "Right",
+      "heightCm": null,
+      "weightKg": null,
+      "bmi": null,
+      "squad": "Primavera",
+      "photoPath": "/players/capasso-antonio.png"
     },
     {
       "slug": "chiaiese-riccardo",
@@ -298,6 +337,19 @@
       "bmi": null,
       "squad": "Prima Squadra",
       "photoPath": "/players/pereyra-alvarez-milton-agustin.png"
+    },
+    {
+      "slug": "picardi-davide",
+      "displayName": "Picardi Davide",
+      "positionShort": "CB",
+      "age": 17,
+      "birthDate": "06/01/2009",
+      "foot": null,
+      "heightCm": 175,
+      "weightKg": null,
+      "bmi": null,
+      "squad": "Primavera",
+      "photoPath": "/players/picardi-davide.png"
     },
     {
       "slug": "pugliese-claudio",
