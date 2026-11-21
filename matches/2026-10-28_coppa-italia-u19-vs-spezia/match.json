@@ -210,14 +210,14 @@
       "positionPercent": 86
     },
     {
-      "minute": 81,
+      "minute": 83,
       "label": {
         "en": "Ascione on / Liccardo off",
         "it": "Ascione on / Liccardo off"
       },
       "type": "substitution",
       "teamId": "u19",
-      "positionPercent": 90
+      "positionPercent": 87
     },
     {
       "minute": 90,
@@ -1309,7 +1309,7 @@
         "teamId": "u19",
         "number": 18,
         "starter": false,
-        "onMinute": 81,
+        "onMinute": 83,
         "goals": [
           90
         ]

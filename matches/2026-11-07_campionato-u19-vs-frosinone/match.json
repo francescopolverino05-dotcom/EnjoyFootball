@@ -43,14 +43,14 @@
   "goals": [],
   "timeline": [
     {
-      "minute": 45,
+      "minute": 47,
       "label": {
         "en": "Natale on / Picardi off",
         "it": "Natale entra / Picardi esce"
       },
       "type": "substitution",
       "teamId": "u19",
-      "positionPercent": 50
+      "positionPercent": 49
     },
     {
       "minute": 50,
@@ -1607,7 +1607,7 @@
         "number": 2,
         "starter": true,
         "onMinute": 0,
-        "offMinute": 45
+        "offMinute": 47
       },
       {
         "name": "Zappalà",

@@ -103,14 +103,14 @@
       "positionPercent": 50
     },
     {
-      "minute": 46,
+      "minute": 45,
       "label": {
         "en": "Amendola on / Spinelli off",
         "it": "Amendola on / Spinelli off"
       },
       "type": "substitution",
       "teamId": "u19",
-      "positionPercent": 51
+      "positionPercent": 48
     },
     {
       "minute": 46,
@@ -1439,7 +1439,7 @@
         "name": "Amendola",
         "teamId": "u19",
         "starter": false,
-        "onMinute": 46
+        "onMinute": 45
       },
       {
         "name": "Esposito",
