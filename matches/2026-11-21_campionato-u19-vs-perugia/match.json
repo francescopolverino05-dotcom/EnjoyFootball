@@ -36,7 +36,10 @@
     "colorClass": "opponent",
     "logo": "logos/perugia.png"
   },
-  "score": null,
+  "score": {
+    "home": 1,
+    "away": 1
+  },
   "goals": [],
   "timeline": [],
   "formations": [
@@ -297,5 +300,17 @@
       }
     ],
     "away": []
+  },
+  "vimeo": {
+    "folderId": "31360211",
+    "folderUrl": "https://vimeo.com/user/170593333/folder/31360211",
+    "lastSyncedAt": "2026-11-21T14:03:11.014Z"
+  },
+  "video": {
+    "fullMatch": "https://vimeo.com/1248930473/3b5c0c0740",
+    "notes": {
+      "en": "Full match hosted on Vimeo.",
+      "it": "Partita intera su Vimeo."
+    }
   }
 }
