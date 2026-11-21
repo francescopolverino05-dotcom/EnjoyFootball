@@ -141,6 +141,105 @@
           "left": "50%"
         }
       ]
+    },
+    {
+      "teamId": "perugia",
+      "label": {
+        "en": "Perugia",
+        "it": "Perugia"
+      },
+      "system": "4-3-3",
+      "players": [
+        {
+          "number": 1,
+          "name": "Strappini",
+          "role": "GK",
+          "isGk": true,
+          "top": "8%",
+          "left": "50%",
+          "teamId": "perugia"
+        },
+        {
+          "number": 2,
+          "name": "Giambarveri",
+          "role": "RB",
+          "top": "22%",
+          "left": "18%",
+          "teamId": "perugia"
+        },
+        {
+          "number": 6,
+          "name": "Cesarini",
+          "role": "RCB",
+          "top": "20%",
+          "left": "38%",
+          "teamId": "perugia"
+        },
+        {
+          "number": 5,
+          "name": "Peruzzi",
+          "role": "LCB",
+          "top": "20%",
+          "left": "62%",
+          "teamId": "perugia"
+        },
+        {
+          "number": 3,
+          "name": "Di Salvatore",
+          "role": "LB",
+          "top": "22%",
+          "left": "82%",
+          "teamId": "perugia"
+        },
+        {
+          "number": 4,
+          "name": "Malfatti",
+          "role": "CDM",
+          "top": "38%",
+          "left": "50%",
+          "teamId": "perugia"
+        },
+        {
+          "number": 10,
+          "name": "Merico",
+          "role": "RCM",
+          "top": "50%",
+          "left": "32%",
+          "teamId": "perugia"
+        },
+        {
+          "number": 8,
+          "name": "Perugini",
+          "role": "LCM",
+          "top": "50%",
+          "left": "68%",
+          "teamId": "perugia"
+        },
+        {
+          "number": 11,
+          "name": "Ciani",
+          "role": "RW",
+          "top": "68%",
+          "left": "18%",
+          "teamId": "perugia"
+        },
+        {
+          "number": 9,
+          "name": "Vanni",
+          "role": "ST",
+          "top": "78%",
+          "left": "50%",
+          "teamId": "perugia"
+        },
+        {
+          "number": 7,
+          "name": "Pierangelini",
+          "role": "LW",
+          "top": "68%",
+          "left": "82%",
+          "teamId": "perugia"
+        }
+      ]
     }
   ],
   "dynamics": [],
@@ -299,7 +398,178 @@
         "starter": false
       }
     ],
-    "away": []
+    "away": [
+      {
+        "name": "Strappini",
+        "teamId": "perugia",
+        "number": 1,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Giambarveri",
+        "teamId": "perugia",
+        "number": 2,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Di Salvatore",
+        "teamId": "perugia",
+        "number": 3,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Malfatti",
+        "teamId": "perugia",
+        "number": 4,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Peruzzi",
+        "teamId": "perugia",
+        "number": 5,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null,
+        "notes": {
+          "en": "Captain",
+          "it": "Capitano"
+        }
+      },
+      {
+        "name": "Cesarini",
+        "teamId": "perugia",
+        "number": 6,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Pierangelini",
+        "teamId": "perugia",
+        "number": 7,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Perugini",
+        "teamId": "perugia",
+        "number": 8,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Vanni",
+        "teamId": "perugia",
+        "number": 9,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Merico",
+        "teamId": "perugia",
+        "number": 10,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Ciani",
+        "teamId": "perugia",
+        "number": 11,
+        "starter": true,
+        "onMinute": 0,
+        "offMinute": null
+      },
+      {
+        "name": "Piccini",
+        "teamId": "perugia",
+        "starter": false,
+        "number": 12
+      },
+      {
+        "name": "Ragni",
+        "teamId": "perugia",
+        "starter": false,
+        "number": 13
+      },
+      {
+        "name": "Olimpieri",
+        "teamId": "perugia",
+        "starter": false,
+        "number": 14
+      },
+      {
+        "name": "Iachini",
+        "teamId": "perugia",
+        "starter": false,
+        "number": 16
+      },
+      {
+        "name": "Ximenez",
+        "teamId": "perugia",
+        "starter": false,
+        "number": 18
+      },
+      {
+        "name": "Raffaelli",
+        "teamId": "perugia",
+        "starter": false,
+        "number": 19
+      },
+      {
+        "name": "Calvà",
+        "teamId": "perugia",
+        "starter": false,
+        "number": 20
+      },
+      {
+        "name": "Ciarapica",
+        "teamId": "perugia",
+        "starter": false,
+        "number": 23
+      },
+      {
+        "name": "Bevanati",
+        "teamId": "perugia",
+        "starter": false
+      },
+      {
+        "name": "Bisonni",
+        "teamId": "perugia",
+        "starter": false
+      },
+      {
+        "name": "Dottori",
+        "teamId": "perugia",
+        "starter": false
+      },
+      {
+        "name": "Agnissan",
+        "teamId": "perugia",
+        "starter": false
+      },
+      {
+        "name": "Bellali",
+        "teamId": "perugia",
+        "starter": false
+      },
+      {
+        "name": "Santillo",
+        "teamId": "perugia",
+        "starter": false
+      }
+    ]
   },
   "vimeo": {
     "folderId": "31360211",
