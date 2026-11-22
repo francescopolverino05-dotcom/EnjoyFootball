@@ -4419,6 +4419,20 @@ const bariReferenceMatches = [
     date: '2026-10-17',
     videoFile: 'https://vimeo.com/1236877598/37d5947b29',
   },
+  {
+    id: 'bari-ref-catanzaro',
+    title: {
+      en: 'Bari vs Catanzaro 1–1',
+      it: 'Bari vs Catanzaro 1–1',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 9',
+      it: 'Primavera 2 · Giornata 9',
+    },
+    score: '1–1',
+    date: '2026-11-21',
+    videoFile: 'https://vimeo.com/1249167781/2c2960c8de',
+  },
 ] as const;
 
 const bariStudioReports = [
