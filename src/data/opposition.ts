@@ -4294,6 +4294,20 @@ attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [
     date: '2026-11-07',
     videoFile: 'https://vimeo.com/1244934512/6c4a680e83',
   },
+  {
+    id: 'benevento-ref-ascoli',
+    title: {
+      en: 'Ascoli vs Benevento 0–1',
+      it: 'Ascoli vs Benevento 0–1',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 9',
+      it: 'Primavera 2 · Giornata 9',
+    },
+    score: '0–1',
+    date: '2026-11-21',
+    videoFile: 'https://vimeo.com/1249164972/788708cb2d',
+  },
 ]);
 
 attachReferencePack('frosinone', '2026-11-07_campionato-u19-vs-frosinone', [
