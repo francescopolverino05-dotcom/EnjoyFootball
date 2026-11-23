@@ -908,7 +908,26 @@
     }
   ],
   "clips": [],
-  "analysisVideos": [],
+  "analysisVideos": [
+    {
+      "id": "gps-report-full-match",
+      "title": {
+        "en": "K-Sport GPS report — full match",
+        "it": "Report GPS K-Sport — partita intera"
+      },
+      "description": {
+        "en": "SSC Napoli Primavera K-Sport full GPS analytics vs Perugia (10 players, 4 pages).",
+        "it": "Report GPS completo K-Sport SSC Napoli Primavera vs Perugia (10 giocatori, 4 pagine)."
+      },
+      "videoFile": "gps/Report_GPS_NAPOLI-PERUGIA_2026_11_21.pdf",
+      "kind": "pdf",
+      "tags": [
+        "pdf",
+        "gps",
+        "physical"
+      ]
+    }
+  ],
   "appearances": {
     "home": [
       {
@@ -1277,5 +1296,149 @@
       "it": "Partita intera su Vimeo."
     }
   },
-  "durationMinutes": 94
+  "durationMinutes": 94,
+  "gpsStats": [
+    {
+      "half": {
+        "en": "GPS — Full Match",
+        "it": "GPS — Partita intera"
+      },
+      "summary": {
+        "en": "Chiummariello led distance (11663 m). Chiummariello high intensity (>16 km/h: 2289 m) and 20–24 km/h (626.77 m). Santella sprint (442.94 m >24 km/h) and top speed (33.59 km/h). De Stefano metabolic power (11.4 W/kg) and density (125 m/min). Favicchio accelerations (47) and decelerations (57); highest recovery (75.1%). Average of the 10 players tracked: 9248 m.",
+        "it": "Chiummariello distanza (11663 m). Chiummariello alta intensità (>16 km/h: 2289 m) e 20–24 km/h (626.77 m). Santella sprint (442.94 m >24 km/h) e velocità max (33.59 km/h). De Stefano potenza metabolica (11.4 W/kg) e densità (125 m/min). Favicchio accelerazioni (47) e decelerazioni (57); recovery più alto (75,1%). Media dei 10 giocatori monitorati: 9248 m."
+      },
+      "players": [
+        {
+          "player": "Chiummariello",
+          "totalDistanceM": 11663,
+          "distancePerMin": 117,
+          "distanceOver16KmhM": 2289,
+          "distance20to24KmhM": 626.77,
+          "distanceOver24KmhM": 221.7,
+          "metabolicPowerWkg": 10.4,
+          "accelerationsOver3": 26,
+          "decelerationsUnder3": 48,
+          "maxSpeedKmh": 28.21,
+          "recoveryPct": 63.63
+        },
+        {
+          "player": "Santella",
+          "totalDistanceM": 11056,
+          "distancePerMin": 108,
+          "distanceOver16KmhM": 2235,
+          "distance20to24KmhM": 576.97,
+          "distanceOver24KmhM": 442.94,
+          "metabolicPowerWkg": 9.8,
+          "accelerationsOver3": 24,
+          "decelerationsUnder3": 32,
+          "maxSpeedKmh": 33.59,
+          "recoveryPct": 70.28
+        },
+        {
+          "player": "Zappalà",
+          "totalDistanceM": 10877,
+          "distancePerMin": 108,
+          "distanceOver16KmhM": 1693,
+          "distance20to24KmhM": 553.19,
+          "distanceOver24KmhM": 196.18,
+          "metabolicPowerWkg": 9.9,
+          "accelerationsOver3": 31,
+          "decelerationsUnder3": 49,
+          "maxSpeedKmh": 32.18,
+          "recoveryPct": 67.23
+        },
+        {
+          "player": "Esposito",
+          "totalDistanceM": 10818,
+          "distancePerMin": 103,
+          "distanceOver16KmhM": 2040,
+          "distance20to24KmhM": 494.1,
+          "distanceOver24KmhM": 279.22,
+          "metabolicPowerWkg": 9.4,
+          "accelerationsOver3": 34,
+          "decelerationsUnder3": 56,
+          "maxSpeedKmh": 31.98,
+          "recoveryPct": 74.7
+        },
+        {
+          "player": "Marotta",
+          "totalDistanceM": 9575,
+          "distancePerMin": 100,
+          "distanceOver16KmhM": 1213,
+          "distance20to24KmhM": 341.42,
+          "distanceOver24KmhM": 128.02,
+          "metabolicPowerWkg": 8.8,
+          "accelerationsOver3": 22,
+          "decelerationsUnder3": 29,
+          "maxSpeedKmh": 29.59,
+          "recoveryPct": 71.66
+        },
+        {
+          "player": "Baridò",
+          "totalDistanceM": 9520,
+          "distancePerMin": 112,
+          "distanceOver16KmhM": 1859,
+          "distance20to24KmhM": 500.12,
+          "distanceOver24KmhM": 199.23,
+          "metabolicPowerWkg": 10.0,
+          "accelerationsOver3": 30,
+          "decelerationsUnder3": 34,
+          "maxSpeedKmh": 29.83,
+          "recoveryPct": 68.58
+        },
+        {
+          "player": "Favicchio",
+          "totalDistanceM": 8845,
+          "distancePerMin": 95,
+          "distanceOver16KmhM": 1777,
+          "distance20to24KmhM": 584.8,
+          "distanceOver24KmhM": 291.45,
+          "metabolicPowerWkg": 9.0,
+          "accelerationsOver3": 47,
+          "decelerationsUnder3": 57,
+          "maxSpeedKmh": 31.46,
+          "recoveryPct": 75.1
+        },
+        {
+          "player": "De Stefano",
+          "totalDistanceM": 7725,
+          "distancePerMin": 125,
+          "distanceOver16KmhM": 1488,
+          "distance20to24KmhM": 379.51,
+          "distanceOver24KmhM": 249.42,
+          "metabolicPowerWkg": 11.4,
+          "accelerationsOver3": 14,
+          "decelerationsUnder3": 29,
+          "maxSpeedKmh": 29.82,
+          "recoveryPct": 60.44
+        },
+        {
+          "player": "Saviano",
+          "totalDistanceM": 6733,
+          "distancePerMin": 92,
+          "distanceOver16KmhM": 905,
+          "distance20to24KmhM": 296.68,
+          "distanceOver24KmhM": 123.41,
+          "metabolicPowerWkg": 8.3,
+          "accelerationsOver3": 18,
+          "decelerationsUnder3": 24,
+          "maxSpeedKmh": 27.68,
+          "recoveryPct": 74.39
+        },
+        {
+          "player": "Melnyk",
+          "totalDistanceM": 5671,
+          "distancePerMin": 116,
+          "distanceOver16KmhM": 1163,
+          "distance20to24KmhM": 366.99,
+          "distanceOver24KmhM": 293.52,
+          "metabolicPowerWkg": 10.8,
+          "accelerationsOver3": 22,
+          "decelerationsUnder3": 48,
+          "maxSpeedKmh": 31.52,
+          "recoveryPct": 66.2
+        }
+      ]
+    }
+  ]
 }
