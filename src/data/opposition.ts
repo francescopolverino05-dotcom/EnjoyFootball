@@ -4315,31 +4315,34 @@ attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [
  * Sources: Transfermarkt detailed kader verein/26332 saison 2026 plus/1, plus
  * individual TM profiles where height or foot was blank on the kader; official
  * club rosa (giovanili.beneventocalcio.club/primavera/giocatori) for full names,
- * DOBs and broad role groups. Tuttocampo’s team rosa is login-gated, so
- * positions use the most specific TM role (CB, LB, CM, CAM, LW, RW, ST, GK) and
- * stay blank when TM only says Defender or Midfielder (Striker / Centre-Forward mapped to ST).
+ * DOBs and broad role groups; Tuttocampo rosa (BeneventoU19/1031264) for feet
+ * and heights. Positions use the most specific TM role (CB, LB, CM, CAM, LW,
+ * RW, ST, GK) and stay blank when TM only says Defender or Midfielder
+ * (Striker / Centre-Forward mapped to ST). Palmieri and Scalici are
+ * Centrocampista on Tuttocampo, so their positions stay blank.
  * No P2 shirt numbers (they change match to match by slot).
  * Donatiello is on the TM 26/27 squad (first team, 2nd club Primavera) but not
- * on the official Primavera page. Official vs TM DOB conflicts kept as TM:
- * Formicola 01/04/2008 (official 04/01/2008), Coltorti 02/02/2008 (official
- * 06/06/2008). Grilli is CF on TM and a midfielder on the official rosa;
- * Soprano is AM on TM and an attacker on the official rosa; Jerradi is
- * Midfield on TM and a defender on the official rosa (position left blank).
+ * on the official Primavera page. Formicola and Coltorti DOBs resolved to
+ * official + Tuttocampo (04/01/2008 and 06/06/2008). Bembo DOB conflict:
+ * TM/official 26/06/2009 vs Tuttocampo 29/06/2009 (kept 26/06). Grilli is CF
+ * on TM and a midfielder on the official rosa; Soprano is AM on TM and an
+ * attacker on the official rosa; Jerradi is Midfield on TM and a defender on
+ * the official rosa (position left blank).
  */
 {
   const benevento = OPPONENTS.find((o) => o.id === 'benevento');
   if (benevento) {
     benevento.squad = [
       { name: 'Francesco Mandato', position: 'GK', isGk: true, birthYear: 2008, dateOfBirth: '2008-05-24' },
-      { name: 'Gianmarco Rosa', position: 'GK', isGk: true, birthYear: 2009, heightCm: 185, dateOfBirth: '2009-01-27' },
-      { name: 'Davide Sessa', position: 'GK', isGk: true, birthYear: 2009, dateOfBirth: '2009-09-15' },
-      { name: 'Domenico Petrizzo', birthYear: 2009, dateOfBirth: '2009-03-16' },
+      { name: 'Gianmarco Rosa', position: 'GK', isGk: true, birthYear: 2009, heightCm: 185, preferredFoot: 'Sinistro', dateOfBirth: '2009-01-27' },
+      { name: 'Davide Sessa', position: 'GK', isGk: true, birthYear: 2009, preferredFoot: 'Sinistro', dateOfBirth: '2009-09-15' },
+      { name: 'Domenico Petrizzo', birthYear: 2009, heightCm: 178, preferredFoot: 'Destro', dateOfBirth: '2009-03-16' },
       { name: 'Andrea Bembo', birthYear: 2009, dateOfBirth: '2009-06-26' },
       { name: 'Marcel Kwete', position: 'CB', birthYear: 2008, dateOfBirth: '2008-09-06' },
       { name: 'Francesco Biancafarina', position: 'CB', birthYear: 2008, dateOfBirth: '2008-10-25' },
       { name: "Angelo D'Ambrosio", position: 'CB', birthYear: 2008, dateOfBirth: '2008-04-23' },
-      { name: 'Enrico Formicola', position: 'CB', birthYear: 2008, dateOfBirth: '2008-04-01' },
-      { name: 'Gennaro Scarpitella', position: 'CB', birthYear: 2008, dateOfBirth: '2008-08-23' },
+      { name: 'Enrico Formicola', position: 'CB', birthYear: 2008, dateOfBirth: '2008-01-04' },
+      { name: 'Gennaro Scarpitella', position: 'CB', birthYear: 2008, preferredFoot: 'Destro', dateOfBirth: '2008-08-23' },
       { name: 'Gianmatteo Masone', position: 'CB', birthYear: 2009, dateOfBirth: '2009-05-06' },
       { name: 'Davide Manuzzi', position: 'LB', birthYear: 2008, heightCm: 175, preferredFoot: 'Sinistro', dateOfBirth: '2008-09-30' },
       { name: 'Sergio Liguori', position: 'LB', birthYear: 2009, preferredFoot: 'Sinistro', dateOfBirth: '2009-03-27' },
@@ -4347,11 +4350,13 @@ attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [
       { name: 'Mohamed Jerradi', birthYear: 2009, dateOfBirth: '2009-01-17' },
       { name: 'Raffaele Pirozzi', birthYear: 2009, dateOfBirth: '2009-09-12' },
       { name: 'Michele Viscovo', birthYear: 2009, dateOfBirth: '2009-11-04' },
-      { name: 'Antonio Carandente', birthYear: 2009, dateOfBirth: '2009-09-25' },
+      { name: 'Antonio Carandente', birthYear: 2009, preferredFoot: 'Destro', dateOfBirth: '2009-09-25' },
+      { name: 'Giovanni Palmieri', birthYear: 2008, dateOfBirth: '2008-02-24' },
+      { name: 'Andrea Scalici', birthYear: 2008, dateOfBirth: '2008-11-10' },
       { name: 'Matteo Del Gaudio', position: 'CM', birthYear: 2008, preferredFoot: 'Destro', dateOfBirth: '2008-01-28' },
       { name: 'Matteo Donatiello', position: 'CM', birthYear: 2006, heightCm: 172, preferredFoot: 'Destro', dateOfBirth: '2006-03-01' },
-      { name: 'Giancarlo Soprano', position: 'CAM', birthYear: 2008, dateOfBirth: '2008-07-01' },
-      { name: 'Alessandro Coltorti', position: 'LW', birthYear: 2008, heightCm: 180, preferredFoot: 'Destro', dateOfBirth: '2008-02-02' },
+      { name: 'Giancarlo Soprano', position: 'CAM', birthYear: 2008, heightCm: 190, preferredFoot: 'Sinistro', dateOfBirth: '2008-07-01' },
+      { name: 'Alessandro Coltorti', position: 'LW', birthYear: 2008, heightCm: 180, preferredFoot: 'Destro', dateOfBirth: '2008-06-06' },
       { name: 'Vincenzo Battista', position: 'RW', birthYear: 2008, heightCm: 175, preferredFoot: 'Destro', dateOfBirth: '2008-01-26' },
       { name: 'Marco Giugliano', position: 'ST', birthYear: 2008, preferredFoot: 'Destro', dateOfBirth: '2008-09-24' },
       { name: 'Filippo Grilli', position: 'ST', birthYear: 2008, dateOfBirth: '2008-09-26' },
