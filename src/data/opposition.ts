@@ -4387,8 +4387,8 @@ attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [
      * role→number map, but wide players sit on the Transfermarkt side:
      * #7 Battista (TM RW) on the team's right (role LW so the token shows 7);
      * #11 on the left (role RW so the token shows 11). CAM uses RCM so the
-     * unnumbered CAM slot still shows 10. #4 / #8 sides are conventional
-     * (both listed as CM on TM).
+     * unnumbered CAM slot still shows 10. #4 is the left pivot and #8
+     * the right (both listed as CM on TM).
      */
     const benevento4231 = (byShirt: string[]): PitchPlayer[] => {
       const teamId = 'benevento';
@@ -4399,8 +4399,8 @@ attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [
         { number: 5, name: n(5), role: 'RCB', teamId, top: '20%', left: '38%' },
         { number: 6, name: n(6), role: 'LCB', teamId, top: '20%', left: '62%' },
         { number: 3, name: n(3), role: 'LB', teamId, top: '22%', left: '82%' },
-        { number: 4, name: n(4), role: 'CDM', teamId, top: '40%', left: '36%' },
-        { number: 8, name: n(8), role: 'LCM', teamId, top: '40%', left: '64%' },
+        { number: 4, name: n(4), role: 'CDM', teamId, top: '40%', left: '64%' },
+        { number: 8, name: n(8), role: 'LCM', teamId, top: '40%', left: '36%' },
         { number: 7, name: n(7), role: 'LW', teamId, top: '60%', left: '20%' },
         { number: 10, name: n(10), role: 'RCM', teamId, top: '58%', left: '50%' },
         { number: 11, name: n(11), role: 'RW', teamId, top: '60%', left: '80%' },
@@ -4495,8 +4495,8 @@ attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [
         { role: 'RCB', top: '28%', left: '38%', players: [{ name: 'Formicola', starts: 9 }] },
         { role: 'LCB', top: '28%', left: '62%', players: [{ name: "D'Ambrosio", starts: 9 }] },
         { role: 'LB', top: '28%', left: '86%', players: [{ name: 'Manuzzi', starts: 7 }, { name: 'Scarpitella', starts: 2 }] },
-        { role: 'CDM', top: '48%', left: '36%', players: [{ name: 'Del Gaudio', starts: 7 }, { name: 'Grilli', starts: 1 }, { name: 'Viscovo', starts: 1 }] },
-        { role: 'LCM', top: '48%', left: '64%', players: [{ name: 'Donatiello', starts: 5 }, { name: 'Kwete', starts: 2 }, { name: 'Grilli', starts: 2 }] },
+        { role: 'CDM', top: '48%', left: '64%', players: [{ name: 'Del Gaudio', starts: 7 }, { name: 'Grilli', starts: 1 }, { name: 'Viscovo', starts: 1 }] },
+        { role: 'LCM', top: '48%', left: '36%', players: [{ name: 'Donatiello', starts: 5 }, { name: 'Kwete', starts: 2 }, { name: 'Grilli', starts: 2 }] },
         { role: 'RCM', top: '62%', left: '50%', players: [{ name: 'Giugliano', starts: 8 }, { name: 'Grilli', starts: 1 }] },
         { role: 'LW', top: '74%', left: '16%', players: [{ name: 'Battista', starts: 5 }, { name: 'Lo Russo', starts: 2 }, { name: 'Coltorti', starts: 1 }, { name: 'Kwete', starts: 1 }] },
         { role: 'RW', top: '74%', left: '84%', players: [{ name: 'Grilli', starts: 5 }, { name: 'Coltorti', starts: 3 }, { name: 'Lo Russo', starts: 1 }] },
