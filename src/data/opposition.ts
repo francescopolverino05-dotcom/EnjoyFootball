@@ -4308,6 +4308,21 @@ attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [
     date: '2026-11-21',
     videoFile: 'https://vimeo.com/1249164972/788708cb2d',
   },
+],
+[
+  {
+    id: 'benevento-studio-report',
+    title: {
+      en: 'Studio Benevento',
+      it: 'Studio Benevento',
+    },
+    description: {
+      en: 'Opposition studio report (Avversari → Studio Report).',
+      it: 'Studio report avversario (Avversari → Studio Report).',
+    },
+    videoFile: 'https://vimeo.com/1250106928/da12d57e02',
+    tags: ['vimeo', 'opposition', 'studio-report'],
+  },
 ]);
 
 /**
