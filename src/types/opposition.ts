@@ -65,6 +65,11 @@ export interface OppositionSquadDepth {
   slots: OppositionSquadDepthSlot[];
 }
 
+/** Games represented in a depth chart (sum of starts in the fullest slot). */
+export function squadDepthMatchCount(depth: OppositionSquadDepth): number {
+  return Math.max(0, ...depth.slots.map((s) => s.players.reduce((n, p) => n + p.starts, 0)));
+}
+
 export interface OppositionReferenceMatch {
   id: string;
   date?: string;
@@ -183,6 +188,11 @@ export interface OppositionOpponent {
   recentMatches?: OppositionRecentMatch[];
   /** Depth chart from recent XIs mapped onto the primary system. */
   squadDepth?: OppositionSquadDepth;
+  /**
+   * When set, used for the most-subbed-on table/PDF instead of parsing
+   * scouted-formation notes (e.g. counts from more sheets than the last XIs shown).
+   */
+  mostSubAppearances?: { name: string; count: number; role?: string }[];
   substitutes: OppositionSquadPlayer[];
   squad: OppositionSquadPlayer[];
   /** Club clip library (tactical phases). Not copied per fixture. */

@@ -149,7 +149,7 @@ export default function OpponentPage() {
 
   // Porto: "usual role" is each player's own specific squad position (full Italian terms on IT).
   const usesSpecificPositions = opponent.id === 'porto';
-  const mostSubsRaw = computeMostSubs(formations);
+  const mostSubsRaw = opponent.mostSubAppearances ?? computeMostSubs(formations);
   const mostSubs = usesSpecificPositions
     ? withSquadRoles(mostSubsRaw, opponent.squad)
     : mostSubsRaw;

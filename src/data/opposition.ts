@@ -4381,6 +4381,155 @@ attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [
       { name: 'Giuseppe Amico', position: 'ST', birthYear: 2009, dateOfBirth: '2009-11-20' },
       { name: 'Niccolò Pacifico', position: 'ST', birthYear: 2009, dateOfBirth: '2009-08-03' },
     ];
+
+    /**
+     * 4-2-3-1 from 9 Primavera 2 distinte (MD1–9). Tokens use the P2
+     * role→number map, but wide players sit on the Transfermarkt side:
+     * #7 Battista (TM RW) on the team's right (role LW so the token shows 7);
+     * #11 on the left (role RW so the token shows 11). CAM uses RCM so the
+     * unnumbered CAM slot still shows 10. #4 / #8 sides are conventional
+     * (both listed as CM on TM).
+     */
+    const benevento4231 = (byShirt: string[]): PitchPlayer[] => {
+      const teamId = 'benevento';
+      const n = (shirt: number) => byShirt[shirt - 1];
+      return [
+        { number: 1, name: n(1), role: 'GK', teamId, isGk: true, top: '8%', left: '50%' },
+        { number: 2, name: n(2), role: 'RB', teamId, top: '22%', left: '18%' },
+        { number: 5, name: n(5), role: 'RCB', teamId, top: '20%', left: '38%' },
+        { number: 6, name: n(6), role: 'LCB', teamId, top: '20%', left: '62%' },
+        { number: 3, name: n(3), role: 'LB', teamId, top: '22%', left: '82%' },
+        { number: 4, name: n(4), role: 'CDM', teamId, top: '40%', left: '36%' },
+        { number: 8, name: n(8), role: 'LCM', teamId, top: '40%', left: '64%' },
+        { number: 7, name: n(7), role: 'LW', teamId, top: '60%', left: '20%' },
+        { number: 10, name: n(10), role: 'RCM', teamId, top: '58%', left: '50%' },
+        { number: 11, name: n(11), role: 'RW', teamId, top: '60%', left: '80%' },
+        { number: 9, name: n(9), role: 'ST', teamId, top: '78%', left: '50%' },
+      ];
+    };
+
+    const vsAscoli = benevento4231([
+      'Rosa', 'Scarpitella', 'Manuzzi', 'Viscovo', 'Formicola', "D'Ambrosio",
+      'Battista', 'Kwete', 'Soprano', 'Grilli', 'Lo Russo',
+    ]);
+    const vsLatina = benevento4231([
+      'Rosa', 'Scarpitella', 'Manuzzi', 'Grilli', 'Formicola', "D'Ambrosio",
+      'Battista', 'Kwete', 'Soprano', 'Giugliano', 'Coltorti',
+    ]);
+    const vsPerugia = benevento4231([
+      'Mandato', 'Kwete', 'Manuzzi', 'Del Gaudio', 'Formicola', "D'Ambrosio",
+      'Battista', 'Grilli', 'Soprano', 'Giugliano', 'Coltorti',
+    ]);
+    const vsAvellino = benevento4231([
+      'Rosa', 'Kwete', 'Manuzzi', 'Del Gaudio', 'Formicola', "D'Ambrosio",
+      'Battista', 'Grilli', 'Soprano', 'Giugliano', 'Coltorti',
+    ]);
+    const vsMonopoli = benevento4231([
+      'Mandato', 'Kwete', 'Manuzzi', 'Del Gaudio', 'Formicola', "D'Ambrosio",
+      'Coltorti', 'Donatiello', 'Soprano', 'Giugliano', 'Grilli',
+    ]);
+
+    benevento.formationSystem = '1-4-2-3-1';
+    benevento.starters = vsAscoli;
+    benevento.scoutedFormations = [
+      {
+        id: 'benevento-vs-ascoli',
+        label: { en: 'vs Ascoli (0–1)', it: 'vs Ascoli (0–1)' },
+        system: '4-2-3-1',
+        players: vsAscoli,
+        notes: {
+          en: "Primavera 2 MD9, 21 Nov 2026, away at Picchio Village, Ascoli 0–1 Benevento (distinta; only Soprano 14′ pt is listed among the scorers, matching the 0–1 already recorded in this pack). 4-2-3-1: Rosa 1; Scarpitella 2, Formicola 5, D'Ambrosio 6, Manuzzi 3; Viscovo 4, Kwete 8; Battista 7, Grilli 10, Lo Russo 11; Soprano 9. Goal: Soprano 14′ pt. Subs: Paolini for Grilli 63′, De Benedetto for Lo Russo 75′, Amico for Soprano 84′, Jerradi for Viscovo 84′. Coach Pietrantonio Cristiani.",
+          it: "Primavera 2 gior. 9, 21 nov 2026, trasferta al Picchio Village, Ascoli 0–1 Benevento (distinta; unico marcatore elencato Soprano 14′ pt, in linea con lo 0–1 già registrato in questo pacchetto). 4-2-3-1: Rosa 1; Scarpitella 2, Formicola 5, D'Ambrosio 6, Manuzzi 3; Viscovo 4, Kwete 8; Battista 7, Grilli 10, Lo Russo 11; Soprano 9. Gol: Soprano 14′ pt. Sub: Paolini per Grilli 63′, De Benedetto per Lo Russo 75′, Amico per Soprano 84′, Jerradi per Viscovo 84′. All. Pietrantonio Cristiani.",
+        },
+      },
+      {
+        id: 'benevento-vs-latina',
+        label: { en: 'vs Latina (0–1)', it: 'vs Latina (0–1)' },
+        system: '4-2-3-1',
+        players: vsLatina,
+        notes: {
+          en: "Primavera 2 MD8, 7 Nov 2026, away at Ex Fulgorcavi, Latina 0–1 Benevento (distinta). 4-2-3-1: Rosa 1; Scarpitella 2, Formicola 5, D'Ambrosio 6, Manuzzi 3; Grilli 4, Kwete 8; Battista 7, Giugliano 10, Coltorti 11; Soprano 9. Goal: Giugliano 35′ st. Subs: Amico for Kwete 17′ st, Viscovo for Battista 17′ st, De Benedetto for Soprano 22′ st, Jerradi for Coltorti 38′ st. Yellow: Formicola, Battista, De Benedetto. Coach Panarelli sent off 48′ st (sheet prints the name as ‘Panrelli’) — double yellow.",
+          it: "Primavera 2 gior. 8, 7 nov 2026, trasferta all'Ex Fulgorcavi, Latina 0–1 Benevento (distinta). 4-2-3-1: Rosa 1; Scarpitella 2, Formicola 5, D'Ambrosio 6, Manuzzi 3; Grilli 4, Kwete 8; Battista 7, Giugliano 10, Coltorti 11; Soprano 9. Gol: Giugliano 35′ st. Sub: Amico per Kwete 17′ st, Viscovo per Battista 17′ st, De Benedetto per Soprano 22′ st, Jerradi per Coltorti 38′ st. Gialli: Formicola, Battista, De Benedetto. All. Panarelli espulso al 48′ st (sulla distinta è scritto ‘Panrelli’) — doppio giallo.",
+        },
+      },
+      {
+        id: 'benevento-vs-perugia',
+        label: { en: 'vs Perugia (1–0)', it: 'vs Perugia (1–0)' },
+        system: '4-2-3-1',
+        players: vsPerugia,
+        notes: {
+          en: "Primavera 2 MD7, 31 Oct 2026, home at Avellola, Benevento 1–0 Perugia (distinta; the sheet is printed as 6^ giornata). 4-2-3-1: Mandato 1; Kwete 2, Formicola 5, D'Ambrosio 6, Manuzzi 3; Del Gaudio 4, Grilli 8; Battista 7, Giugliano 10, Coltorti 11; Soprano 9. Goal: Soprano 22′ pt. Subs: Scarpitella for Coltorti 14′, Lo Russo for Giugliano 33′, Viscovo for Grilli 33′ (sheet does not mark pt/st on the Benevento changes). Yellow: Grilli 9′ st. Coach Panarelli.",
+          it: "Primavera 2 gior. 7, 31 ott 2026, casa all'Avellola, Benevento 1–0 Perugia (distinta; il foglio è stampato come 6^ giornata). 4-2-3-1: Mandato 1; Kwete 2, Formicola 5, D'Ambrosio 6, Manuzzi 3; Del Gaudio 4, Grilli 8; Battista 7, Giugliano 10, Coltorti 11; Soprano 9. Gol: Soprano 22′ pt. Sub: Scarpitella per Coltorti 14′, Lo Russo per Giugliano 33′, Viscovo per Grilli 33′ (la distinta non indica pt/st sui cambi del Benevento). Giallo: Grilli 9′ st. All. Panarelli.",
+        },
+      },
+      {
+        id: 'benevento-vs-avellino',
+        label: { en: 'vs Avellino (5–2)', it: 'vs Avellino (5–2)' },
+        system: '4-2-3-1',
+        players: vsAvellino,
+        notes: {
+          en: "Primavera 2 MD6, 24 Oct 2026, home at Avellola, Benevento 5–2 Avellino (distinta). 4-2-3-1: Rosa 1; Kwete 2, Formicola 5, D'Ambrosio 6, Manuzzi 3; Del Gaudio 4, Grilli 8; Battista 7, Giugliano 10, Coltorti 11; Soprano 9. Goals: Del Gaudio 35′ pt, Giugliano 4′ st, Coltorti 14′ st, Amico 39′ st, Battista 49′ st. Subs: Amico for Soprano 12′ st, Scarpitella for Giugliano 27′ st, De Benedetto for Coltorti 33′ st, Paolini for Grilli 33′ st, Jerradi for Formicola 33′ st. Yellow: Soprano 30′ pt, Battista 49′ st. Coach Panarelli.",
+          it: "Primavera 2 gior. 6, 24 ott 2026, casa all'Avellola, Benevento 5–2 Avellino (distinta). 4-2-3-1: Rosa 1; Kwete 2, Formicola 5, D'Ambrosio 6, Manuzzi 3; Del Gaudio 4, Grilli 8; Battista 7, Giugliano 10, Coltorti 11; Soprano 9. Gol: Del Gaudio 35′ pt, Giugliano 4′ st, Coltorti 14′ st, Amico 39′ st, Battista 49′ st. Sub: Amico per Soprano 12′ st, Scarpitella per Giugliano 27′ st, De Benedetto per Coltorti 33′ st, Paolini per Grilli 33′ st, Jerradi per Formicola 33′ st. Gialli: Soprano 30′ pt, Battista 49′ st. All. Panarelli.",
+        },
+      },
+      {
+        id: 'benevento-vs-monopoli',
+        label: { en: 'vs Monopoli (2–2)', it: 'vs Monopoli (2–2)' },
+        system: '4-2-3-1',
+        players: vsMonopoli,
+        notes: {
+          en: "Primavera 2 MD5, 17 Oct 2026, away at Stadio P. Martucci (Gioia del Colle), Monopoli 2–2 Benevento (distinta for the XI; score from the Monopoli pack / Transfermarkt — the sheet's score and substitution boxes are blank). 4-2-3-1: Mandato 1; Kwete 2, Formicola 5, D'Ambrosio 6, Manuzzi 3; Del Gaudio 4, Donatiello 8; Coltorti 7, Giugliano 10, Grilli 11; Soprano 9. Coach Panarelli. Bench on the sheet included Raoul Porcelli (12), who is not on the site squad list.",
+          it: "Primavera 2 gior. 5, 17 ott 2026, trasferta allo Stadio P. Martucci (Gioia del Colle), Monopoli 2–2 Benevento (XI dalla distinta; risultato dal pacchetto Monopoli / Transfermarkt — caselle di risultato e sostituzioni vuote sul foglio). 4-2-3-1: Mandato 1; Kwete 2, Formicola 5, D'Ambrosio 6, Manuzzi 3; Del Gaudio 4, Donatiello 8; Coltorti 7, Giugliano 10, Grilli 11; Soprano 9. All. Panarelli. In panchina sulla distinta anche Raoul Porcelli (12), assente dalla rosa del sito.",
+        },
+      },
+    ];
+    benevento.squadDepth = {
+      system: '1-4-2-3-1',
+      note: {
+        en: 'Primavera 2 MD1–9 (Frosinone, Pescara, Cosenza, Salernitana, Monopoli, Avellino, Perugia, Latina, Ascoli) mapped onto 4-2-3-1 from the distinte (1 Rosa, 2 Kwete, 3 Manuzzi, 5 Formicola, 6 D’Ambrosio, 4 Del Gaudio, 8 Donatiello, 10 Giugliano, 9 Soprano). Wide players placed by Transfermarkt side: #7 Battista (TM RW) on the right, #11 Grilli on the left (Coltorti is TM LW). Order = most starts in that slot.',
+        it: 'Primavera 2 gior. 1–9 (Frosinone, Pescara, Cosenza, Salernitana, Monopoli, Avellino, Perugia, Latina, Ascoli) mappate sul 4-2-3-1 dalle distinte (1 Rosa, 2 Kwete, 3 Manuzzi, 5 Formicola, 6 D’Ambrosio, 4 Del Gaudio, 8 Donatiello, 10 Giugliano, 9 Soprano). Esterni sul lato Transfermarkt: n. 7 Battista (TM AD) a destra, n. 11 Grilli a sinistra (Coltorti è AS su TM). Ordine = più titolari in quel ruolo.',
+      },
+      slots: [
+        { role: 'GK', top: '10%', left: '50%', players: [{ name: 'Rosa', starts: 7 }, { name: 'Mandato', starts: 2 }] },
+        { role: 'RB', top: '28%', left: '14%', players: [{ name: 'Kwete', starts: 6 }, { name: 'Scarpitella', starts: 3 }] },
+        { role: 'RCB', top: '28%', left: '38%', players: [{ name: 'Formicola', starts: 9 }] },
+        { role: 'LCB', top: '28%', left: '62%', players: [{ name: "D'Ambrosio", starts: 9 }] },
+        { role: 'LB', top: '28%', left: '86%', players: [{ name: 'Manuzzi', starts: 7 }, { name: 'Scarpitella', starts: 2 }] },
+        { role: 'CDM', top: '48%', left: '36%', players: [{ name: 'Del Gaudio', starts: 7 }, { name: 'Grilli', starts: 1 }, { name: 'Viscovo', starts: 1 }] },
+        { role: 'LCM', top: '48%', left: '64%', players: [{ name: 'Donatiello', starts: 5 }, { name: 'Kwete', starts: 2 }, { name: 'Grilli', starts: 2 }] },
+        { role: 'RCM', top: '62%', left: '50%', players: [{ name: 'Giugliano', starts: 8 }, { name: 'Grilli', starts: 1 }] },
+        { role: 'LW', top: '74%', left: '16%', players: [{ name: 'Battista', starts: 5 }, { name: 'Lo Russo', starts: 2 }, { name: 'Coltorti', starts: 1 }, { name: 'Kwete', starts: 1 }] },
+        { role: 'RW', top: '74%', left: '84%', players: [{ name: 'Grilli', starts: 5 }, { name: 'Coltorti', starts: 3 }, { name: 'Lo Russo', starts: 1 }] },
+        { role: 'ST', top: '84%', left: '50%', players: [{ name: 'Soprano', starts: 9 }] },
+      ],
+    };
+    /** Came-on appearances from the 8 distinte with filled sub boxes (Monopoli excluded). */
+    benevento.mostSubAppearances = [
+      { name: 'De Benedetto', count: 7, role: 'ST' },
+      { name: 'Amico', count: 6, role: 'ST' },
+      { name: 'Coltorti', count: 4, role: 'LW' },
+      { name: 'Jerradi', count: 4 },
+      { name: 'Paolini', count: 4 },
+      { name: 'Viscovo', count: 4 },
+      { name: 'Scarpitella', count: 3, role: 'CB' },
+      { name: 'Lo Russo', count: 1, role: 'ST' },
+      { name: 'Mandato', count: 1, role: 'GK' },
+      { name: 'Manuzzi', count: 1, role: 'LB' },
+      { name: 'Pacifico', count: 1, role: 'ST' },
+    ];
+    benevento.substitutes = [
+      { name: 'De Benedetto' },
+      { name: 'Amico' },
+      { name: 'Coltorti' },
+      { name: 'Jerradi' },
+      { name: 'Paolini' },
+      { name: 'Viscovo' },
+      { name: 'Scarpitella' },
+      { name: 'Lo Russo' },
+      { name: 'Mandato' },
+      { name: 'Manuzzi' },
+      { name: 'Pacifico' },
+    ];
   }
 }
 

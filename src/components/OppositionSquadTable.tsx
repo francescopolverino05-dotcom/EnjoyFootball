@@ -1,6 +1,7 @@
-import type {
-  OppositionSquadDepth,
-  OppositionSquadPlayer,
+import {
+  squadDepthMatchCount,
+  type OppositionSquadDepth,
+  type OppositionSquadPlayer,
 } from '../types/opposition';
 import { useLanguage } from '../i18n/LanguageContext';
 import {
@@ -23,7 +24,7 @@ interface OppositionSquadTableProps {
   /** Team display name used in the PDF title (e.g. Villarreal). */
   teamName: string;
   teamId?: string;
-  /** When set, PDF also includes the last-4-XIs depth pitch. */
+  /** When set, PDF also includes the squad-depth pitch. */
   depth?: OppositionSquadDepth;
   /** Most frequent substitutes (shown as a PDF section). */
   mostSubs?: MostSubRow[];
@@ -39,7 +40,10 @@ function pdfLabelsFor(locale: Locale, teamName: string, depth?: OppositionSquadD
     locale === 'it' ? `Rosa ${teamName}` : `${teamName} Squad`;
   return {
     title: ui(locale, 'oppositionSquad'),
-    depthTitle: ui(locale, 'oppositionSquadDepth'),
+    depthTitle: ui(locale, 'oppositionSquadDepth').replace(
+      '{n}',
+      String(depth ? squadDepthMatchCount(depth) : 0),
+    ),
     depthPitchTitle: pitchTitle,
     depthNote: depth?.note
       ? localize(depth.note, locale)

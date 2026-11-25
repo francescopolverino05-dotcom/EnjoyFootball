@@ -1,5 +1,5 @@
 import { useLanguage } from '../i18n/LanguageContext';
-import type { OppositionSquadDepth } from '../types/opposition';
+import { squadDepthMatchCount, type OppositionSquadDepth } from '../types/opposition';
 import { withGoalkeeperInSystem } from '../utils/formationSystem';
 import { shirtNumberForPrimavera2Role } from '../utils/primavera2Shirts';
 
@@ -24,7 +24,7 @@ export default function SquadDepthPanel({
 
   return (
     <div className="squad-depth-panel">
-      <div className="section-title">{t('oppositionSquadDepth')}</div>
+      <div className="section-title">{t('oppositionSquadDepth').replace('{n}', String(squadDepthMatchCount(depth)))}</div>
       <p className="video-hint">
         {depth.note ? L(depth.note) : null}
       </p>
