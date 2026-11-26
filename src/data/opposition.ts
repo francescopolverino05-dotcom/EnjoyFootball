@@ -4371,7 +4371,7 @@ attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [
       { name: 'Filippo Grilli', position: 'CAM', birthYear: 2008, dateOfBirth: '2008-09-26' },
       { name: 'Diego Biancolino', position: 'ST', birthYear: 2009, dateOfBirth: '2009-08-15' },
       { name: 'Francesco De Benedetto', position: 'ST', birthYear: 2009, dateOfBirth: '2009-05-04' },
-      { name: 'Carlo Lo Russo', position: 'ST', birthYear: 2009, dateOfBirth: '2009-07-06' },
+      { name: 'Carlo Lo Russo', position: 'RW', birthYear: 2009, dateOfBirth: '2009-07-06' },
       { name: 'Giuseppe Amico', position: 'ST', birthYear: 2009, dateOfBirth: '2009-11-20' },
       { name: 'Niccolò Pacifico', position: 'ST', birthYear: 2009, dateOfBirth: '2009-08-03' },
     ];
@@ -4506,7 +4506,7 @@ attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [
       { name: 'Paolini', count: 4, role: 'CAM' },
       { name: 'Viscovo', count: 4, role: 'CM' },
       { name: 'Scarpitella', count: 3, role: 'CB' },
-      { name: 'Lo Russo', count: 1, role: 'ST' },
+      { name: 'Lo Russo', count: 1, role: 'RW' },
       { name: 'Mandato', count: 1, role: 'GK' },
       { name: 'Manuzzi', count: 1, role: 'LB' },
       { name: 'Pacifico', count: 1, role: 'ST' },
