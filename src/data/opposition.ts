@@ -4308,6 +4308,20 @@ attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [
     date: '2026-11-21',
     videoFile: 'https://vimeo.com/1249164972/788708cb2d',
   },
+  {
+    id: 'benevento-ref-avellino',
+    title: {
+      en: 'Benevento vs Avellino 5–2',
+      it: 'Benevento vs Avellino 5–2',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 10',
+      it: 'Primavera 2 · Giornata 10',
+    },
+    score: '5–2',
+    date: '2026-11-24',
+    videoFile: 'https://vimeo.com/1250301069/ad6881a560',
+  },
 ],
 [
   {
