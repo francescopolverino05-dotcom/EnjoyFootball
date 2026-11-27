@@ -4635,6 +4635,35 @@ attachReferencePack('frosinone', '2026-11-07_campionato-u19-vs-frosinone', [
   }
 }
 
+const palermoReferenceMatches = [
+  {
+    id: 'palermo-ref-frosinone',
+    title: {
+      en: 'Frosinone vs Palermo 0–0',
+      it: 'Frosinone vs Palermo 0–0',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 4',
+      it: 'Primavera 2 · Giornata 4',
+    },
+    score: '0–0',
+    date: '2026-10-10',
+    videoFile: 'https://vimeo.com/1241209324/e5d2692e1e',
+  },
+];
+
+attachReferencePack(
+  'palermo',
+  '2026-12-12_campionato-u19-vs-palermo',
+  [...palermoReferenceMatches]
+);
+
+attachReferencePack(
+  'palermo',
+  '2027-02-13_campionato-palermo-vs-u19',
+  [...palermoReferenceMatches]
+);
+
 const bariReferenceMatches = [
   {
     id: 'bari-ref-napoli',
