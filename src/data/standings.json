@@ -15,216 +15,216 @@
         "it": "Primavera 2 — B"
       },
       "kind": "league",
-      "matchday": 8,
-      "nextMatchday": 9,
-      "nextMatchdayDate": "2026-11-21",
+      "matchday": 9,
+      "nextMatchday": 10,
+      "nextMatchdayDate": "2026-11-28",
       "rows": [
-        {
-          "teamId": "catanzaro",
-          "shortName": "Catanzaro",
-          "played": 8,
-          "won": 6,
-          "drawn": 2,
-          "lost": 0,
-          "gf": 20,
-          "ga": 7,
-          "gd": 13,
-          "pts": 20,
-          "pos": 1
-        },
         {
           "teamId": "benevento",
           "shortName": "Benevento",
-          "played": 8,
-          "won": 6,
+          "played": 9,
+          "won": 7,
           "drawn": 1,
           "lost": 1,
-          "gf": 21,
+          "gf": 22,
           "ga": 7,
-          "gd": 14,
-          "pts": 19,
+          "gd": 15,
+          "pts": 22,
+          "pos": 1
+        },
+        {
+          "teamId": "catanzaro",
+          "shortName": "Catanzaro",
+          "played": 9,
+          "won": 6,
+          "drawn": 3,
+          "lost": 0,
+          "gf": 21,
+          "ga": 8,
+          "gd": 13,
+          "pts": 21,
           "pos": 2
         },
         {
           "teamId": "perugia",
           "shortName": "Perugia",
-          "played": 8,
+          "played": 9,
           "won": 6,
-          "drawn": 0,
+          "drawn": 1,
           "lost": 2,
-          "gf": 21,
-          "ga": 6,
+          "gf": 22,
+          "ga": 7,
           "gd": 15,
-          "pts": 18,
+          "pts": 19,
           "pos": 3
         },
         {
           "teamId": "palermo",
           "shortName": "Palermo",
-          "played": 8,
+          "played": 9,
           "won": 4,
-          "drawn": 4,
+          "drawn": 5,
           "lost": 0,
-          "gf": 13,
-          "ga": 8,
+          "gf": 15,
+          "ga": 10,
           "gd": 5,
-          "pts": 16,
+          "pts": 17,
           "pos": 4
         },
         {
           "teamId": "bari",
           "shortName": "Bari",
-          "played": 8,
+          "played": 9,
           "won": 4,
-          "drawn": 3,
+          "drawn": 4,
           "lost": 1,
-          "gf": 13,
-          "ga": 6,
+          "gf": 14,
+          "ga": 7,
           "gd": 7,
-          "pts": 15,
+          "pts": 16,
           "pos": 5
-        },
-        {
-          "teamId": "avellino",
-          "shortName": "Avellino",
-          "played": 8,
-          "won": 4,
-          "drawn": 1,
-          "lost": 3,
-          "gf": 12,
-          "ga": 11,
-          "gd": 1,
-          "pts": 13,
-          "pos": 6
         },
         {
           "teamId": "monopoli",
           "shortName": "Monopoli",
-          "played": 8,
-          "won": 3,
+          "played": 9,
+          "won": 4,
           "drawn": 3,
           "lost": 2,
-          "gf": 12,
-          "ga": 9,
-          "gd": 3,
-          "pts": 12,
-          "pos": 7
-        },
-        {
-          "teamId": "latina",
-          "shortName": "Latina",
-          "played": 8,
-          "won": 3,
-          "drawn": 2,
-          "lost": 3,
-          "gf": 15,
-          "ga": 12,
-          "gd": 3,
-          "pts": 11,
-          "pos": 8
+          "gf": 14,
+          "ga": 10,
+          "gd": 4,
+          "pts": 15,
+          "pos": 6
         },
         {
           "teamId": "pescara",
           "shortName": "Pescara",
-          "played": 8,
-          "won": 3,
+          "played": 9,
+          "won": 4,
           "drawn": 2,
           "lost": 3,
-          "gf": 17,
+          "gf": 22,
           "ga": 17,
-          "gd": 0,
+          "gd": 5,
+          "pts": 14,
+          "pos": 7
+        },
+        {
+          "teamId": "avellino",
+          "shortName": "Avellino",
+          "played": 9,
+          "won": 4,
+          "drawn": 2,
+          "lost": 3,
+          "gf": 12,
+          "ga": 11,
+          "gd": 1,
+          "pts": 14,
+          "pos": 8
+        },
+        {
+          "teamId": "latina",
+          "shortName": "Latina",
+          "played": 9,
+          "won": 3,
+          "drawn": 2,
+          "lost": 4,
+          "gf": 16,
+          "ga": 14,
+          "gd": 2,
           "pts": 11,
           "pos": 9
         },
         {
           "teamId": "napoli",
           "shortName": "Napoli",
-          "played": 8,
+          "played": 9,
           "won": 2,
-          "drawn": 4,
+          "drawn": 5,
           "lost": 2,
-          "gf": 10,
-          "ga": 10,
+          "gf": 11,
+          "ga": 11,
           "gd": 0,
-          "pts": 10,
+          "pts": 11,
           "pos": 10
         },
         {
           "teamId": "spezia",
           "shortName": "Spezia",
-          "played": 8,
+          "played": 9,
           "won": 3,
           "drawn": 1,
-          "lost": 4,
-          "gf": 12,
-          "ga": 14,
-          "gd": -2,
+          "lost": 5,
+          "gf": 13,
+          "ga": 16,
+          "gd": -3,
           "pts": 10,
           "pos": 11
         },
         {
           "teamId": "pisa",
           "shortName": "Pisa",
-          "played": 8,
+          "played": 9,
           "won": 2,
-          "drawn": 1,
+          "drawn": 2,
           "lost": 5,
-          "gf": 11,
-          "ga": 14,
+          "gf": 13,
+          "ga": 16,
           "gd": -3,
-          "pts": 7,
+          "pts": 8,
           "pos": 12
         },
         {
           "teamId": "frosinone",
           "shortName": "Frosinone",
-          "played": 8,
+          "played": 9,
           "won": 1,
-          "drawn": 2,
+          "drawn": 3,
           "lost": 5,
           "gf": 5,
           "ga": 20,
           "gd": -15,
-          "pts": 5,
+          "pts": 6,
           "pos": 13
-        },
-        {
-          "teamId": "cosenza",
-          "shortName": "Cosenza",
-          "played": 8,
-          "won": 1,
-          "drawn": 1,
-          "lost": 6,
-          "gf": 7,
-          "ga": 19,
-          "gd": -12,
-          "pts": 4,
-          "pos": 14
-        },
-        {
-          "teamId": "ascoli",
-          "shortName": "Ascoli",
-          "played": 8,
-          "won": 0,
-          "drawn": 3,
-          "lost": 5,
-          "gf": 8,
-          "ga": 18,
-          "gd": -10,
-          "pts": 3,
-          "pos": 15
         },
         {
           "teamId": "salernitana",
           "shortName": "Salernitana",
-          "played": 8,
-          "won": 0,
+          "played": 9,
+          "won": 1,
           "drawn": 2,
           "lost": 6,
-          "gf": 5,
+          "gf": 7,
+          "ga": 25,
+          "gd": -18,
+          "pts": 5,
+          "pos": 14
+        },
+        {
+          "teamId": "cosenza",
+          "shortName": "Cosenza",
+          "played": 9,
+          "won": 1,
+          "drawn": 1,
+          "lost": 7,
+          "gf": 7,
           "ga": 24,
-          "gd": -19,
-          "pts": 2,
+          "gd": -17,
+          "pts": 4,
+          "pos": 15
+        },
+        {
+          "teamId": "ascoli",
+          "shortName": "Ascoli",
+          "played": 9,
+          "won": 0,
+          "drawn": 3,
+          "lost": 6,
+          "gf": 8,
+          "ga": 19,
+          "gd": -11,
+          "pts": 3,
           "pos": 16
         }
       ],
@@ -646,43 +646,43 @@
             {
               "homeId": "ascoli",
               "awayId": "benevento",
-              "score": null
+              "score": "0-1"
             },
             {
               "homeId": "bari",
               "awayId": "catanzaro",
-              "score": null
+              "score": "1-1"
             },
             {
               "homeId": "frosinone",
               "awayId": "avellino",
-              "score": null
+              "score": "0-0"
             },
             {
               "homeId": "latina",
               "awayId": "monopoli",
-              "score": null
+              "score": "1-2"
             },
             {
               "homeId": "napoli",
               "awayId": "perugia",
-              "score": null,
+              "score": "1-1",
               "matchSlug": "2026-11-21_campionato-u19-vs-perugia"
             },
             {
               "homeId": "pescara",
               "awayId": "cosenza",
-              "score": null
+              "score": "5-0"
             },
             {
               "homeId": "pisa",
               "awayId": "palermo",
-              "score": null
+              "score": "2-2"
             },
             {
               "homeId": "salernitana",
               "awayId": "spezia",
-              "score": null
+              "score": "2-1"
             }
           ]
         },
@@ -698,7 +698,8 @@
             {
               "homeId": "benevento",
               "awayId": "napoli",
-              "score": null
+              "score": null,
+              "matchSlug": "2026-11-28_campionato-benevento-vs-u19"
             },
             {
               "homeId": "catanzaro",
@@ -2100,12 +2101,12 @@
       "ourPath": {
         "entryRound": "leaguePhase",
         "next": {
-          "round": "Matchday 5",
-          "date": "2026-11-24",
-          "homeId": "man-city",
-          "awayId": "napoli",
+          "round": "Matchday 6",
+          "date": "2026-12-08",
+          "homeId": "napoli",
+          "awayId": "club-brugge",
           "score": null,
-          "matchSlug": "2026-11-24_uyl-man-city-vs-u19"
+          "matchSlug": "2026-12-08_uyl-u19-vs-club-brugge"
         }
       },
       "rounds": [
@@ -2602,111 +2603,112 @@
               "date": "2026-11-24",
               "home": "Bodø/Glimt",
               "away": "LASK",
-              "score": null
+              "score": "2-6"
             },
             {
               "date": "2026-11-24",
               "home": "Galatasaray",
               "away": "Aston Villa",
-              "score": null
+              "score": "3-1"
             },
             {
               "date": "2026-11-24",
               "home": "Arsenal",
               "away": "Dortmund",
-              "score": null
+              "score": "3-2"
             },
             {
               "date": "2026-11-24",
               "home": "Feyenoord",
               "away": "Porto",
-              "score": null
+              "score": "0-1"
             },
             {
               "date": "2026-11-24",
               "home": "Slovan Bratislava",
               "away": "Real Betis",
-              "score": null
+              "score": "1-2"
             },
             {
               "date": "2026-11-24",
               "home": "Como",
               "away": "AEK Athens",
-              "score": null
+              "score": "1-1"
             },
             {
               "date": "2026-11-24",
               "home": "Man City",
               "away": "Napoli",
-              "score": null,
+              "score": "4-1",
               "us": true,
-              "ourClub": "napoli"
+              "ourClub": "napoli",
+              "matchSlug": "2026-11-24_uyl-man-city-vs-u19"
             },
             {
               "date": "2026-11-24",
               "home": "Leipzig",
               "away": "Lens",
-              "score": null
+              "score": "2-3"
             },
             {
               "date": "2026-11-24",
               "home": "Real Madrid",
               "away": "PSV",
-              "score": null
+              "score": "3-3"
             },
             {
               "date": "2026-11-25",
               "home": "Sabah",
               "away": "Barcelona",
-              "score": null
+              "score": "0-7"
             },
             {
               "date": "2026-11-25",
               "home": "Slavia Prague",
               "away": "Villarreal",
-              "score": null
+              "score": "1-2"
             },
             {
               "date": "2026-11-25",
               "home": "Shakhtar",
               "away": "Fenerbahçe",
-              "score": null
+              "score": "6-0"
             },
             {
               "date": "2026-11-25",
               "home": "PSG",
               "away": "Roma",
-              "score": null
+              "score": "1-2"
             },
             {
               "date": "2026-11-25",
               "home": "Club Brugge",
               "away": "Liverpool",
-              "score": null
+              "score": "4-3"
             },
             {
               "date": "2026-11-25",
               "home": "Inter",
               "away": "Stuttgart",
-              "score": null
+              "score": "0-3"
             },
             {
               "date": "2026-11-25",
               "home": "Lille",
               "away": "Bayern",
-              "score": null
+              "score": "2-3"
             },
             {
               "date": "2026-11-25",
               "home": "Sporting",
               "away": "Man United",
-              "score": null
+              "score": "2-2"
             },
             {
               "date": "2026-11-25",
               "home": "Atlético",
               "away": "Viking",
-              "score": null
+              "score": "2-0"
             }
           ]
         },
@@ -2754,7 +2756,8 @@
               "away": "Club Brugge",
               "score": null,
               "us": true,
-              "ourClub": "napoli"
+              "ourClub": "napoli",
+              "matchSlug": "2026-12-08_uyl-u19-vs-club-brugge"
             },
             {
               "date": "2026-12-08",
@@ -2839,549 +2842,549 @@
           "it": "UEFA Youth League — Fase a gironi"
         },
         "kind": "league",
-        "matchday": 4,
-        "nextMatchday": 5,
-        "nextMatchdayDate": "2026-11-24",
+        "matchday": 5,
+        "nextMatchday": 6,
+        "nextMatchdayDate": "2026-12-08",
         "rows": [
           {
-            "pos": 1,
             "teamId": "real-madrid",
             "shortName": "Real Madrid",
-            "played": 4,
+            "played": 5,
             "won": 4,
-            "drawn": 0,
+            "drawn": 1,
+            "lost": 0,
+            "gf": 16,
+            "ga": 6,
+            "gd": 10,
+            "pts": 13,
+            "awayGf": 5,
+            "awayWins": 2,
+            "pos": 1
+          },
+          {
+            "teamId": "atletico",
+            "shortName": "Atlético Madrid",
+            "played": 5,
+            "won": 4,
+            "drawn": 1,
+            "lost": 0,
+            "gf": 15,
+            "ga": 5,
+            "gd": 10,
+            "pts": 13,
+            "awayGf": 6,
+            "awayWins": 1,
+            "pos": 2
+          },
+          {
+            "teamId": "villarreal",
+            "shortName": "Villarreal",
+            "played": 5,
+            "won": 4,
+            "drawn": 1,
             "lost": 0,
             "gf": 13,
             "ga": 3,
             "gd": 10,
-            "pts": 12,
+            "pts": 13,
             "awayGf": 5,
-            "awayWins": 2
+            "awayWins": 2,
+            "pos": 3
           },
           {
-            "pos": 2,
             "teamId": "feyenoord",
             "shortName": "Feyenoord",
-            "played": 4,
+            "played": 5,
             "won": 4,
             "drawn": 0,
-            "lost": 0,
-            "gf": 10,
-            "ga": 3,
-            "gd": 7,
-            "pts": 12,
-            "awayGf": 6,
-            "awayWins": 2
-          },
-          {
-            "pos": 3,
-            "teamId": "slavia-prague",
-            "shortName": "Slavia Prague",
-            "played": 4,
-            "won": 4,
-            "drawn": 0,
-            "lost": 0,
-            "gf": 9,
-            "ga": 2,
-            "gd": 7,
-            "pts": 12,
-            "awayGf": 6,
-            "awayWins": 2
-          },
-          {
-            "pos": 4,
-            "teamId": "villarreal",
-            "shortName": "Villarreal",
-            "played": 4,
-            "won": 3,
-            "drawn": 1,
-            "lost": 0,
-            "gf": 11,
-            "ga": 2,
-            "gd": 9,
-            "pts": 10,
-            "awayGf": 3,
-            "awayWins": 1
-          },
-          {
-            "pos": 5,
-            "teamId": "atletico",
-            "shortName": "Atlético Madrid",
-            "played": 4,
-            "won": 3,
-            "drawn": 1,
-            "lost": 0,
-            "gf": 13,
-            "ga": 5,
-            "gd": 8,
-            "pts": 10,
-            "awayGf": 6,
-            "awayWins": 1
-          },
-          {
-            "pos": 6,
-            "teamId": "psv",
-            "shortName": "PSV Eindhoven",
-            "played": 4,
-            "won": 3,
-            "drawn": 0,
-            "lost": 1,
-            "gf": 11,
-            "ga": 6,
-            "gd": 5,
-            "pts": 9,
-            "awayGf": 7,
-            "awayWins": 1
-          },
-          {
-            "pos": 7,
-            "teamId": "viking",
-            "shortName": "Viking",
-            "played": 4,
-            "won": 3,
-            "drawn": 0,
-            "lost": 1,
-            "gf": 8,
-            "ga": 5,
-            "gd": 3,
-            "pts": 9,
-            "awayGf": 1,
-            "awayWins": 1
-          },
-          {
-            "pos": 8,
-            "teamId": "porto",
-            "shortName": "Porto",
-            "played": 4,
-            "won": 3,
-            "drawn": 0,
-            "lost": 1,
-            "gf": 9,
-            "ga": 8,
-            "gd": 1,
-            "pts": 9,
-            "awayGf": 0,
-            "awayWins": 0
-          },
-          {
-            "pos": 9,
-            "teamId": "liverpool",
-            "shortName": "Liverpool",
-            "played": 4,
-            "won": 2,
-            "drawn": 2,
-            "lost": 0,
-            "gf": 11,
-            "ga": 7,
-            "gd": 4,
-            "pts": 8,
-            "awayGf": 9,
-            "awayWins": 2
-          },
-          {
-            "pos": 10,
-            "teamId": "dortmund",
-            "shortName": "Borussia Dortmund",
-            "played": 4,
-            "won": 2,
-            "drawn": 1,
-            "lost": 1,
-            "gf": 11,
-            "ga": 5,
-            "gd": 6,
-            "pts": 7,
-            "awayGf": 7,
-            "awayWins": 2
-          },
-          {
-            "pos": 11,
-            "teamId": "roma",
-            "shortName": "Roma",
-            "played": 4,
-            "won": 2,
-            "drawn": 1,
             "lost": 1,
             "gf": 10,
             "ga": 4,
             "gd": 6,
-            "pts": 7,
-            "awayGf": 5,
-            "awayWins": 1
+            "pts": 12,
+            "awayGf": 6,
+            "awayWins": 2,
+            "pos": 4
           },
           {
-            "pos": 12,
-            "teamId": "psg",
-            "shortName": "Paris Saint-Germain",
-            "played": 4,
-            "won": 2,
-            "drawn": 1,
+            "teamId": "slavia-prague",
+            "shortName": "Slavia Prague",
+            "played": 5,
+            "won": 4,
+            "drawn": 0,
             "lost": 1,
-            "gf": 9,
-            "ga": 5,
-            "gd": 4,
-            "pts": 7,
-            "awayGf": 2,
-            "awayWins": 1
+            "gf": 10,
+            "ga": 4,
+            "gd": 6,
+            "pts": 12,
+            "awayGf": 6,
+            "awayWins": 2,
+            "pos": 5
           },
           {
-            "pos": 13,
-            "teamId": "club-brugge",
-            "shortName": "Club Brugge",
-            "played": 4,
-            "won": 2,
+            "teamId": "porto",
+            "shortName": "Porto",
+            "played": 5,
+            "won": 4,
+            "drawn": 0,
+            "lost": 1,
+            "gf": 10,
+            "ga": 8,
+            "gd": 2,
+            "pts": 12,
+            "awayGf": 1,
+            "awayWins": 1,
+            "pos": 6
+          },
+          {
+            "teamId": "roma",
+            "shortName": "Roma",
+            "played": 5,
+            "won": 3,
             "drawn": 1,
             "lost": 1,
             "gf": 12,
-            "ga": 9,
-            "gd": 3,
-            "pts": 7,
-            "awayGf": 3,
-            "awayWins": 0
-          },
-          {
-            "pos": 14,
-            "teamId": "sporting",
-            "shortName": "Sporting CP",
-            "played": 4,
-            "won": 2,
-            "drawn": 1,
-            "lost": 1,
-            "gf": 9,
-            "ga": 7,
-            "gd": 2,
-            "pts": 7,
-            "awayGf": 5,
-            "awayWins": 1
-          },
-          {
-            "pos": 15,
-            "teamId": "lille",
-            "shortName": "Lille",
-            "played": 4,
-            "won": 2,
-            "drawn": 1,
-            "lost": 1,
-            "gf": 7,
             "ga": 5,
-            "gd": 2,
-            "pts": 7,
-            "awayGf": 4,
-            "awayWins": 1
+            "gd": 7,
+            "pts": 10,
+            "awayGf": 7,
+            "awayWins": 2,
+            "pos": 7
           },
           {
-            "pos": 16,
-            "teamId": "lens",
-            "shortName": "Lens",
-            "played": 4,
-            "won": 2,
+            "teamId": "psv",
+            "shortName": "PSV Eindhoven",
+            "played": 5,
+            "won": 3,
+            "drawn": 1,
+            "lost": 1,
+            "gf": 14,
+            "ga": 9,
+            "gd": 5,
+            "pts": 10,
+            "awayGf": 10,
+            "awayWins": 1,
+            "pos": 8
+          },
+          {
+            "teamId": "club-brugge",
+            "shortName": "Club Brugge",
+            "played": 5,
+            "won": 3,
+            "drawn": 1,
+            "lost": 1,
+            "gf": 16,
+            "ga": 12,
+            "gd": 4,
+            "pts": 10,
+            "awayGf": 3,
+            "awayWins": 0,
+            "pos": 9
+          },
+          {
+            "teamId": "viking",
+            "shortName": "Viking",
+            "played": 5,
+            "won": 3,
             "drawn": 0,
             "lost": 2,
             "gf": 8,
-            "ga": 9,
-            "gd": -1,
-            "pts": 6,
-            "awayGf": 3,
-            "awayWins": 0
+            "ga": 7,
+            "gd": 1,
+            "pts": 9,
+            "awayGf": 1,
+            "awayWins": 1,
+            "pos": 10
           },
           {
-            "pos": 17,
-            "teamId": "betis",
-            "shortName": "Real Betis",
-            "played": 4,
-            "won": 1,
-            "drawn": 2,
-            "lost": 1,
-            "gf": 8,
-            "ga": 6,
-            "gd": 2,
-            "pts": 5,
-            "awayGf": 2,
-            "awayWins": 0
+            "teamId": "lens",
+            "shortName": "Lens",
+            "played": 5,
+            "won": 3,
+            "drawn": 0,
+            "lost": 2,
+            "gf": 11,
+            "ga": 11,
+            "gd": 0,
+            "pts": 9,
+            "awayGf": 6,
+            "awayWins": 1,
+            "pos": 11
           },
           {
-            "pos": 18,
             "teamId": "barcelona",
             "shortName": "Barcelona",
-            "played": 4,
-            "won": 1,
+            "played": 5,
+            "won": 2,
             "drawn": 2,
             "lost": 1,
-            "gf": 6,
+            "gf": 13,
             "ga": 6,
-            "gd": 0,
-            "pts": 5,
-            "awayGf": 2,
-            "awayWins": 1
+            "gd": 7,
+            "pts": 8,
+            "awayGf": 9,
+            "awayWins": 2,
+            "pos": 12
           },
           {
-            "pos": 19,
-            "teamId": "aek",
-            "shortName": "AEK Athens",
-            "played": 4,
-            "won": 1,
+            "teamId": "liverpool",
+            "shortName": "Liverpool",
+            "played": 5,
+            "won": 2,
             "drawn": 2,
             "lost": 1,
-            "gf": 4,
-            "ga": 6,
-            "gd": -2,
-            "pts": 5,
-            "awayGf": 3,
-            "awayWins": 1
+            "gf": 14,
+            "ga": 11,
+            "gd": 3,
+            "pts": 8,
+            "awayGf": 12,
+            "awayWins": 2,
+            "pos": 13
           },
           {
-            "pos": 20,
+            "teamId": "betis",
+            "shortName": "Real Betis",
+            "played": 5,
+            "won": 2,
+            "drawn": 2,
+            "lost": 1,
+            "gf": 10,
+            "ga": 7,
+            "gd": 3,
+            "pts": 8,
+            "awayGf": 4,
+            "awayWins": 1,
+            "pos": 14
+          },
+          {
+            "teamId": "sporting",
+            "shortName": "Sporting CP",
+            "played": 5,
+            "won": 2,
+            "drawn": 2,
+            "lost": 1,
+            "gf": 11,
+            "ga": 9,
+            "gd": 2,
+            "pts": 8,
+            "awayGf": 5,
+            "awayWins": 1,
+            "pos": 15
+          },
+          {
+            "teamId": "dortmund",
+            "shortName": "Borussia Dortmund",
+            "played": 5,
+            "won": 2,
+            "drawn": 1,
+            "lost": 2,
+            "gf": 13,
+            "ga": 8,
+            "gd": 5,
+            "pts": 7,
+            "awayGf": 9,
+            "awayWins": 2,
+            "pos": 16
+          },
+          {
             "teamId": "stuttgart",
             "shortName": "Stuttgart",
-            "played": 4,
-            "won": 1,
+            "played": 5,
+            "won": 2,
+            "drawn": 1,
+            "lost": 2,
+            "gf": 12,
+            "ga": 7,
+            "gd": 5,
+            "pts": 7,
+            "awayGf": 5,
+            "awayWins": 1,
+            "pos": 17
+          },
+          {
+            "teamId": "psg",
+            "shortName": "Paris Saint-Germain",
+            "played": 5,
+            "won": 2,
+            "drawn": 1,
+            "lost": 2,
+            "gf": 10,
+            "ga": 7,
+            "gd": 3,
+            "pts": 7,
+            "awayGf": 2,
+            "awayWins": 1,
+            "pos": 18
+          },
+          {
+            "teamId": "lask",
+            "shortName": "LASK",
+            "played": 5,
+            "won": 2,
+            "drawn": 1,
+            "lost": 2,
+            "gf": 11,
+            "ga": 9,
+            "gd": 2,
+            "pts": 7,
+            "awayGf": 7,
+            "awayWins": 1,
+            "pos": 19
+          },
+          {
+            "teamId": "bayern",
+            "shortName": "Bayern Munich",
+            "played": 5,
+            "won": 2,
+            "drawn": 1,
+            "lost": 2,
+            "gf": 13,
+            "ga": 12,
+            "gd": 1,
+            "pts": 7,
+            "awayGf": 4,
+            "awayWins": 1,
+            "pos": 20
+          },
+          {
+            "teamId": "lille",
+            "shortName": "Lille",
+            "played": 5,
+            "won": 2,
             "drawn": 1,
             "lost": 2,
             "gf": 9,
-            "ga": 7,
-            "gd": 2,
-            "pts": 4,
-            "awayGf": 2,
-            "awayWins": 0
-          },
-          {
-            "pos": 21,
-            "teamId": "man-utd",
-            "shortName": "Manchester United",
-            "played": 4,
-            "won": 1,
-            "drawn": 1,
-            "lost": 2,
-            "gf": 7,
-            "ga": 6,
+            "ga": 8,
             "gd": 1,
-            "pts": 4,
-            "awayGf": 1,
-            "awayWins": 0
+            "pts": 7,
+            "awayGf": 4,
+            "awayWins": 1,
+            "pos": 21
           },
           {
-            "pos": 22,
-            "teamId": "bayern",
-            "shortName": "Bayern Munich",
-            "played": 4,
-            "won": 1,
+            "teamId": "arsenal",
+            "shortName": "Arsenal",
+            "played": 5,
+            "won": 2,
             "drawn": 1,
             "lost": 2,
             "gf": 10,
             "ga": 10,
             "gd": 0,
-            "pts": 4,
-            "awayGf": 1,
-            "awayWins": 0
-          },
-          {
-            "pos": 23,
-            "teamId": "arsenal",
-            "shortName": "Arsenal",
-            "played": 4,
-            "won": 1,
-            "drawn": 1,
-            "lost": 2,
-            "gf": 7,
-            "ga": 8,
-            "gd": -1,
-            "pts": 4,
+            "pts": 7,
             "awayGf": 5,
-            "awayWins": 1
+            "awayWins": 1,
+            "pos": 22
           },
           {
-            "pos": 24,
-            "teamId": "como",
-            "shortName": "Como",
-            "played": 4,
-            "won": 1,
-            "drawn": 1,
-            "lost": 2,
-            "gf": 4,
-            "ga": 5,
-            "gd": -1,
-            "pts": 4,
-            "awayGf": 0,
-            "awayWins": 0
-          },
-          {
-            "pos": 25,
-            "teamId": "aston-villa",
-            "shortName": "Aston Villa",
-            "played": 4,
-            "won": 1,
+            "teamId": "man-city",
+            "shortName": "Manchester City",
+            "played": 5,
+            "won": 2,
             "drawn": 1,
             "lost": 2,
             "gf": 8,
-            "ga": 10,
-            "gd": -2,
-            "pts": 4,
-            "awayGf": 6,
-            "awayWins": 0
+            "ga": 8,
+            "gd": 0,
+            "pts": 7,
+            "awayGf": 3,
+            "awayWins": 1,
+            "pos": 23
           },
           {
-            "pos": 26,
-            "teamId": "lask",
-            "shortName": "LASK",
-            "played": 4,
+            "teamId": "aek",
+            "shortName": "AEK Athens",
+            "played": 5,
             "won": 1,
-            "drawn": 1,
-            "lost": 2,
+            "drawn": 3,
+            "lost": 1,
             "gf": 5,
             "ga": 7,
             "gd": -2,
-            "pts": 4,
-            "awayGf": 1,
-            "awayWins": 0
+            "pts": 6,
+            "awayGf": 4,
+            "awayWins": 1,
+            "pos": 24
           },
           {
-            "pos": 27,
-            "teamId": "inter",
-            "shortName": "Inter",
-            "played": 4,
+            "teamId": "man-utd",
+            "shortName": "Manchester United",
+            "played": 5,
             "won": 1,
-            "drawn": 1,
+            "drawn": 2,
             "lost": 2,
-            "gf": 4,
-            "ga": 7,
-            "gd": -3,
-            "pts": 4,
-            "awayGf": 1,
-            "awayWins": 0
-          },
-          {
-            "pos": 28,
-            "teamId": "man-city",
-            "shortName": "Manchester City",
-            "played": 4,
-            "won": 1,
-            "drawn": 1,
-            "lost": 2,
-            "gf": 4,
-            "ga": 7,
-            "gd": -3,
-            "pts": 4,
+            "gf": 9,
+            "ga": 8,
+            "gd": 1,
+            "pts": 5,
             "awayGf": 3,
-            "awayWins": 1
+            "awayWins": 0,
+            "pos": 25
           },
           {
-            "pos": 29,
-            "teamId": "napoli",
-            "shortName": "Napoli",
-            "played": 4,
-            "won": 1,
-            "drawn": 0,
-            "lost": 3,
-            "gf": 3,
-            "ga": 10,
-            "gd": -7,
-            "pts": 3,
-            "awayGf": 1,
-            "awayWins": 0
-          },
-          {
-            "pos": 30,
-            "teamId": "slovan-bratislava",
-            "shortName": "Slovan Bratislava",
-            "played": 4,
-            "won": 1,
-            "drawn": 0,
-            "lost": 3,
-            "gf": 3,
-            "ga": 13,
-            "gd": -10,
-            "pts": 3,
-            "awayGf": 1,
-            "awayWins": 0
-          },
-          {
-            "pos": 31,
-            "teamId": "bodo-glimt",
-            "shortName": "Bodø/Glimt",
-            "played": 4,
-            "won": 1,
-            "drawn": 0,
-            "lost": 3,
-            "gf": 3,
-            "ga": 13,
-            "gd": -10,
-            "pts": 3,
-            "awayGf": 1,
-            "awayWins": 0
-          },
-          {
-            "pos": 32,
             "teamId": "galatasaray",
             "shortName": "Galatasaray",
-            "played": 4,
-            "won": 0,
+            "played": 5,
+            "won": 1,
+            "drawn": 2,
+            "lost": 2,
+            "gf": 8,
+            "ga": 9,
+            "gd": -1,
+            "pts": 5,
+            "awayGf": 3,
+            "awayWins": 0,
+            "pos": 26
+          },
+          {
+            "teamId": "como",
+            "shortName": "Como",
+            "played": 5,
+            "won": 1,
             "drawn": 2,
             "lost": 2,
             "gf": 5,
-            "ga": 8,
-            "gd": -3,
-            "pts": 2,
-            "awayGf": 3,
-            "awayWins": 0
+            "ga": 6,
+            "gd": -1,
+            "pts": 5,
+            "awayGf": 1,
+            "awayWins": 0,
+            "pos": 27
           },
           {
-            "pos": 33,
-            "teamId": "leipzig",
-            "shortName": "RB Leipzig",
-            "played": 4,
-            "won": 0,
+            "teamId": "aston-villa",
+            "shortName": "Aston Villa",
+            "played": 5,
+            "won": 1,
             "drawn": 1,
             "lost": 3,
-            "gf": 5,
-            "ga": 14,
-            "gd": -9,
-            "pts": 1,
-            "awayGf": 3,
-            "awayWins": 0
+            "gf": 9,
+            "ga": 13,
+            "gd": -4,
+            "pts": 4,
+            "awayGf": 7,
+            "awayWins": 0,
+            "pos": 28
           },
           {
-            "pos": 34,
+            "teamId": "inter",
+            "shortName": "Inter",
+            "played": 5,
+            "won": 1,
+            "drawn": 1,
+            "lost": 3,
+            "gf": 4,
+            "ga": 10,
+            "gd": -6,
+            "pts": 4,
+            "awayGf": 1,
+            "awayWins": 0,
+            "pos": 29
+          },
+          {
             "teamId": "shakhtar",
             "shortName": "Shakhtar",
-            "played": 4,
-            "won": 0,
+            "played": 5,
+            "won": 1,
             "drawn": 0,
             "lost": 4,
-            "gf": 2,
+            "gf": 8,
             "ga": 8,
-            "gd": -6,
-            "pts": 0,
+            "gd": 0,
+            "pts": 3,
             "awayGf": 0,
-            "awayWins": 0
+            "awayWins": 0,
+            "pos": 30
           },
           {
-            "pos": 35,
-            "teamId": "fenerbahce",
-            "shortName": "Fenerbahçe",
-            "played": 4,
-            "won": 0,
+            "teamId": "napoli",
+            "shortName": "Napoli",
+            "played": 5,
+            "won": 1,
             "drawn": 0,
+            "lost": 4,
+            "gf": 4,
+            "ga": 14,
+            "gd": -10,
+            "pts": 3,
+            "awayGf": 2,
+            "awayWins": 0,
+            "pos": 31
+          },
+          {
+            "teamId": "slovan-bratislava",
+            "shortName": "Slovan Bratislava",
+            "played": 5,
+            "won": 1,
+            "drawn": 0,
+            "lost": 4,
+            "gf": 4,
+            "ga": 15,
+            "gd": -11,
+            "pts": 3,
+            "awayGf": 2,
+            "awayWins": 0,
+            "pos": 32
+          },
+          {
+            "teamId": "bodo-glimt",
+            "shortName": "Bodø/Glimt",
+            "played": 5,
+            "won": 1,
+            "drawn": 0,
+            "lost": 4,
+            "gf": 5,
+            "ga": 19,
+            "gd": -14,
+            "pts": 3,
+            "awayGf": 1,
+            "awayWins": 0,
+            "pos": 33
+          },
+          {
+            "teamId": "leipzig",
+            "shortName": "RB Leipzig",
+            "played": 5,
+            "won": 0,
+            "drawn": 1,
             "lost": 4,
             "gf": 7,
-            "ga": 14,
-            "gd": -7,
-            "pts": 0,
-            "awayGf": 1,
-            "awayWins": 0
+            "ga": 17,
+            "gd": -10,
+            "pts": 1,
+            "awayGf": 3,
+            "awayWins": 0,
+            "pos": 34
           },
           {
-            "pos": 36,
-            "teamId": "sabah",
-            "shortName": "Sabah",
-            "played": 4,
+            "teamId": "fenerbahce",
+            "shortName": "Fenerbahçe",
+            "played": 5,
             "won": 0,
             "drawn": 0,
-            "lost": 4,
+            "lost": 5,
+            "gf": 7,
+            "ga": 20,
+            "gd": -13,
+            "pts": 0,
+            "awayGf": 1,
+            "awayWins": 0,
+            "pos": 35
+          },
+          {
+            "teamId": "sabah",
+            "shortName": "Sabah",
+            "played": 5,
+            "won": 0,
+            "drawn": 0,
+            "lost": 5,
             "gf": 0,
-            "ga": 15,
-            "gd": -15,
+            "ga": 22,
+            "gd": -22,
             "pts": 0,
             "awayGf": 0,
-            "awayWins": 0
+            "awayWins": 0,
+            "pos": 36
           }
         ],
         "matchdays": [
@@ -3782,93 +3785,93 @@
               {
                 "homeId": "bodo-glimt",
                 "awayId": "lask",
-                "score": null
+                "score": "2-6"
               },
               {
                 "homeId": "galatasaray",
                 "awayId": "aston-villa",
-                "score": null
+                "score": "3-1"
               },
               {
                 "homeId": "arsenal",
                 "awayId": "dortmund",
-                "score": null
+                "score": "3-2"
               },
               {
                 "homeId": "feyenoord",
                 "awayId": "porto",
-                "score": null
+                "score": "0-1"
               },
               {
                 "homeId": "slovan-bratislava",
                 "awayId": "betis",
-                "score": null
+                "score": "1-2"
               },
               {
                 "homeId": "como",
                 "awayId": "aek",
-                "score": null
+                "score": "1-1"
               },
               {
                 "homeId": "man-city",
                 "awayId": "napoli",
-                "score": null,
+                "score": "4-1",
                 "matchSlug": "2026-11-24_uyl-man-city-vs-u19"
               },
               {
                 "homeId": "leipzig",
                 "awayId": "lens",
-                "score": null
+                "score": "2-3"
               },
               {
                 "homeId": "real-madrid",
                 "awayId": "psv",
-                "score": null
+                "score": "3-3"
               },
               {
                 "homeId": "sabah",
                 "awayId": "barcelona",
-                "score": null
+                "score": "0-7"
               },
               {
                 "homeId": "slavia-prague",
                 "awayId": "villarreal",
-                "score": null
+                "score": "1-2"
               },
               {
                 "homeId": "shakhtar",
                 "awayId": "fenerbahce",
-                "score": null
+                "score": "6-0"
               },
               {
                 "homeId": "psg",
                 "awayId": "roma",
-                "score": null
+                "score": "1-2"
               },
               {
                 "homeId": "club-brugge",
                 "awayId": "liverpool",
-                "score": null
+                "score": "4-3"
               },
               {
                 "homeId": "inter",
                 "awayId": "stuttgart",
-                "score": null
+                "score": "0-3"
               },
               {
                 "homeId": "lille",
                 "awayId": "bayern",
-                "score": null
+                "score": "2-3"
               },
               {
                 "homeId": "sporting",
                 "awayId": "man-utd",
-                "score": null
+                "score": "2-2"
               },
               {
                 "homeId": "atletico",
                 "awayId": "viking",
-                "score": null
+                "score": "2-0"
               }
             ]
           },
