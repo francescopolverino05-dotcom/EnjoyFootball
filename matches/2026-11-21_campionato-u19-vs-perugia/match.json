@@ -1287,7 +1287,7 @@
   "vimeo": {
     "folderId": "31360211",
     "folderUrl": "https://vimeo.com/user/170593333/folder/31360211",
-    "lastSyncedAt": "2026-11-22T22:29:48.145Z"
+    "lastSyncedAt": "2026-11-27T12:59:15.526Z"
   },
   "video": {
     "fullMatch": "https://vimeo.com/1248930473/3b5c0c0740",
@@ -1380,7 +1380,7 @@
           "distanceOver16KmhM": 1859,
           "distance20to24KmhM": 500.12,
           "distanceOver24KmhM": 199.23,
-          "metabolicPowerWkg": 10.0,
+          "metabolicPowerWkg": 10,
           "accelerationsOver3": 30,
           "decelerationsUnder3": 34,
           "maxSpeedKmh": 29.83,
@@ -1393,7 +1393,7 @@
           "distanceOver16KmhM": 1777,
           "distance20to24KmhM": 584.8,
           "distanceOver24KmhM": 291.45,
-          "metabolicPowerWkg": 9.0,
+          "metabolicPowerWkg": 9,
           "accelerationsOver3": 47,
           "decelerationsUnder3": 57,
           "maxSpeedKmh": 31.46,

@@ -4263,6 +4263,34 @@ attachReferencePack('pescara', '2026-12-05_campionato-u19-vs-pescara', [
     date: '2026-11-07',
     videoFile: 'https://vimeo.com/1244934566/7695d42cc2',
   },
+  {
+    id: 'pescara-ref-monopoli',
+    title: {
+      en: 'Monopoli vs Pescara 2–2',
+      it: 'Monopoli vs Pescara 2–2',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 3',
+      it: 'Primavera 2 · Giornata 3',
+    },
+    score: '2–2',
+    date: '2026-09-19',
+    videoFile: 'https://vimeo.com/1250592459/2aec015d4e',
+  },
+  {
+    id: 'pescara-ref-cosenza',
+    title: {
+      en: 'Pescara vs Cosenza 5–0',
+      it: 'Pescara vs Cosenza 5–0',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 9',
+      it: 'Primavera 2 · Giornata 9',
+    },
+    score: '5–0',
+    date: '2026-11-21',
+    videoFile: 'https://vimeo.com/1250592460/8223c0559f',
+  },
 ]);
 
 attachReferencePack('benevento', '2026-11-28_campionato-benevento-vs-u19', [
@@ -4903,6 +4931,20 @@ attachReferencePack(
       date: '2026-10-10',
       videoFile: 'https://vimeo.com/1235994929/30860268db',
     },
+    {
+      id: 'monopoli-ref-pescara',
+      title: {
+        en: 'Monopoli vs Pescara 2–2',
+        it: 'Monopoli vs Pescara 2–2',
+      },
+      competition: {
+        en: 'Primavera 2 · Matchday 3',
+        it: 'Primavera 2 · Giornata 3',
+      },
+      score: '2–2',
+      date: '2026-09-19',
+      videoFile: 'https://vimeo.com/1250592459/2aec015d4e',
+    },
   ],
   [
     {
@@ -5127,6 +5169,20 @@ attachReferencePack(
 );
 
 attachReferencePack('club-brugge', '2026-12-08_uyl-u19-vs-club-brugge', [
+  {
+    id: 'brugge-ref-lens',
+    title: {
+      en: 'Club Brugge vs Lens 4–2',
+      it: 'Club Brugge vs Lens 4–2',
+    },
+    competition: {
+      en: 'UEFA Youth League · Matchday 3',
+      it: 'UEFA Youth League · Giornata 3',
+    },
+    score: '4–2',
+    date: '2026-10-20',
+    videoFile: 'https://vimeo.com/1250582434/9eb54df2ba',
+  },
   {
     id: 'brugge-ref-inter',
     title: {
