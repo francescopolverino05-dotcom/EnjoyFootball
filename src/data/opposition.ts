@@ -4664,6 +4664,20 @@ const bariReferenceMatches = [
     date: '2026-11-21',
     videoFile: 'https://vimeo.com/1249167781/2c2960c8de',
   },
+  {
+    id: 'bari-ref-pisa',
+    title: {
+      en: 'Pisa vs Bari 1–2',
+      it: 'Pisa vs Bari 1–2',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 10',
+      it: 'Primavera 2 · Giornata 10',
+    },
+    score: '1–2',
+    date: '2026-11-24',
+    videoFile: 'https://vimeo.com/1250467789/c6369f5be6',
+  },
 ] as const;
 
 const bariStudioReports = [
