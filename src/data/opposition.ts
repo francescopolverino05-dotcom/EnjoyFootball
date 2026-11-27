@@ -4678,6 +4678,20 @@ const palermoReferenceMatches = [
     date: '2026-10-10',
     videoFile: 'https://vimeo.com/1241209324/e5d2692e1e',
   },
+  {
+    id: 'palermo-ref-salernitana',
+    title: {
+      en: 'Salernitana vs Palermo 1–2',
+      it: 'Salernitana vs Palermo 1–2',
+    },
+    competition: {
+      en: 'Primavera 2 · Matchday 6',
+      it: 'Primavera 2 · Giornata 6',
+    },
+    score: '1–2',
+    date: '2026-10-24',
+    videoFile: 'https://vimeo.com/1250610568/313c2bea1d',
+  },
 ];
 
 attachReferencePack(
